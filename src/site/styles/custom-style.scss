@@ -10,4 +10,51 @@ body {
     //  h1 {
     //   color: black;
     //  }
+
+
+
+    body {
+    /*** ADD YOUR CUSTOM STYLING HERE ***/
+
+    // Background color for the entire page
+    background-color: #f4f4f4;
+
+    // Styling for content area
+    .content {
+        font-size: 16px;
+        line-height: 1.6;
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+    }
+
+    // Headings
+    h1 {
+        color: #2a7ae2;
+        font-size: 2.5em;
+    }
+
+    h2 {
+        color: #3a88e2;
+    }
+
+    // Links
+    a {
+        color: #e25822;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    // Code blocks
+    pre, code {
+        background-color: #272822;
+        color: #f8f8f2;
+        font-family: 'Courier New', monospace;
+        padding: 5px;
+        border-radius: 4px;
+    }
+}
+
 }
