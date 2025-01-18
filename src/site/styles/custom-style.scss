@@ -1,15 +1,15 @@
 body {
     /*** CUSTOM SEARCH BAR STYLING ***/
 
-    // Target the search bar placeholder text
+    // Target the placeholder text of the search bar
     .search-bar::placeholder {
-        color: transparent; // Makes the placeholder invisible
+        color: transparent !important; // Ensure the placeholder becomes invisible
     }
 
     // Optionally, replace the placeholder text
     .search-bar::before {
-        content: "Search here..."; // Custom text
-        color: #aaa; // Placeholder color
-        font-style: italic; // Optional: make it italic
+        content: "Search here..." !important; // Replace placeholder text
+        color: #aaa !important; // Style the new text
+        font-style: italic !important; // Make it italic
     }
 }
