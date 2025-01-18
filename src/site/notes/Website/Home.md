@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/website/home/","hide":"true","tags":["gardenEntry"],"dgEnableSearch":"true","updated":"2025-01-18T17:57:27.800+01:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgEnableSearch":"true","updated":"2025-01-18T17:57:27.800+01:00"}
 ---
 
 Hi folks!
