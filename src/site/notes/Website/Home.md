@@ -1,18 +1,21 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgEnableSearch":"true","updated":"2025-01-18T17:57:27.800+01:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgEnableSearch":"true","updated":"2025-01-18T20:40:57.113+01:00"}
 ---
 
-Hi folks!
+Hi there!
 
-This is my private website, containing everything that I have decided is worth publishing. It is meant as a 'knowledge vault', also called a 'digital garden'. Of course, there is a definition for that word, but for me specifically, that means:
-- Notes on courses that I took during my studies 
-- Notes on specific topics that I took outside the curriculum (those are rare)
-- Notes for my PhD in the attoline, e.g. not interesting for people outside the group.
+Welcome to my personal website—a space where I share everything I consider worth publishing. This site serves as a "knowledge vault," also known as a "digital garden." While the term has its own definition, here’s what it means for me:
 
-For note-taking without a stylus, I highly recommend [Obsidian](https://obsidian.md/). Seriously, it's a game changer. To publish the website for free, I use the digital garden plugin found [here](https://github.com/oleeskild/obsidian-digital-garden). 
+- Notes from courses I attended during my studies.
+- Notes on specific topics I explored outside the curriculum (though these are rare).
+- Notes related to my PhD work at the Attoline, which may not be relevant to those outside the group.
 
-You will often see the symbol 🔗, you can ignore that, its only for internal use within obsidian.
+For efficient and stylus-free note-taking, I highly recommend [Obsidian](https://obsidian.md). It’s genuinely a game changer. To host this website for free, I use the Digital Garden plugin, which you can find [here](https://github.com/oleeskild/obsidian-digital-garden).
 
-_Any comments or suggestions? Write me an email to marcel.koeberlin(at)posteo.ch._
+You may notice the 🔗 symbol throughout the site. It’s used for internal navigation within Obsidian and can be safely ignored.
 
-Marcel, 18. Jan 2025
+If you have any comments or suggestions, feel free to email me at marcel.koeberlin(at)posteo.ch.
+
+Cheers,  
+Marcel  
+18 January 2025
