@@ -1,60 +1,15 @@
 body {
-    /***
-      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+    /*** CUSTOM SEARCH BAR STYLING ***/
 
-
-
-    body {
-    /*** ADD YOUR CUSTOM STYLING HERE ***/
-
-    // Background color for the entire page
-    background-color: #f4f4f4;
-
-    // Styling for content area
-    .content {
-        font-size: 40px;
-        line-height: 1.6;
-        font-family: 'Roboto', sans-serif;
-        color: #333;
+    // Target the search bar placeholder text
+    .search-bar::placeholder {
+        color: transparent; // Makes the placeholder invisible
     }
 
-    // Headings
-    h1 {
-        color: #2a7ae2;
-        font-size: 2.5em;
+    // Optionally, replace the placeholder text
+    .search-bar::before {
+        content: "Search here..."; // Custom text
+        color: #aaa; // Placeholder color
+        font-style: italic; // Optional: make it italic
     }
-
-    h2 {
-        color: #3a88e2;
-    }
-
-    // Links
-    a {
-        color: #e25822;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    // Code blocks
-    pre, code {
-        background-color: #272822;
-        color: #f8f8f2;
-        font-family: 'Courier New', monospace;
-        padding: 5px;
-        border-radius: 4px;
-    }
-}
-
 }
