@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-18T23:12:18.172+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-19T12:13:55.722+01:00"}
 ---
 
 This note will mostly follow along the book 'Signals and Systems - 2nd edition' by Alan V. Oppenheim and Alan S. Willsky. Not every chapter is covered, especially the more 'basic' ones. Also its not an in-depth note.
@@ -191,74 +191,102 @@ Next, consider $$\frac{d y}{d t}+a y(t)=b x(t)$$ in continuous time. We find tha
 The upper image shows the pictorial representation of the integrator, while the bottom shows the representation of the equation. 
 The integrator is a memory -element, which becomes clear when we write $$y(t)=y\left(t_{0}\right)+\int_{t}^{t} d \tau(b x(\tau)-a y(\tau)) d\tau,$$ where it must store $y\left(t_{0}\right)$.
 
+> [!WARNING] Information  
+> From here on, its work in progress. Expect mistakes and strange formating.
+
 ## 2.6 Singularity functions
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&selection=151,0,155,9|🔗]]
 
-We define the unit impulse through convolution, so $x(t)=x(t) * \delta(t)$ for any signal $x(t)$.
-This also implies $1=x=1 \times \delta=\int_{-\infty}^{\infty} d \tau \cdot \delta(\tau)$.
+From the sifting property, the unit impulse is the impulse response of the identity system, that is$$x(t)=x(t) * \delta(t)$$ for any signal $x(t)$. Therefore, this also implies $\delta(t)=\delta(t)*\delta(t)$. Note that if define the unit impulse as the limiting form of _some_ signal it also means that there is an unlimited number of very dissimilar-looking signals, all of which behave like an impulse in the limit. While a normal function is usually defined by what it is at each value of $t$, the unit impulse is defined by what is does under convolution. Thus, we may alternatively define the unit impulse as the signal which, when applied to an LTI system, yields the impulse response. If we let $x=1$, then $$1=1 * \delta=\int_{-\infty}^{\infty} d \tau \cdot \delta(\tau).$$The unit impulse has unit area. Another completely equivalent operational definition is that 
+$$ \begin{align} g(-t)=g(-t)*\delta(t) && \text{and thus} && g(0)=\int_{-\infty}^\infty d\tau\cdot g(\tau)\delta(\tau)\end{align}$$ for any given signal $g(t)$. The unit impulse is of the class of singularity functions. We further can find that $$f(t)\delta(t)=f(0)\delta(t).$$
+Each singularity function can be defined operationally in terms of its behaviour under convolution. Consider the LTI system that implements $$y(t)=\frac{d x}{d t}\coloneqq x(t)* u_{1}(t)$$where we defined $u_{1}$ as the unit doublet. Similarly, we can define higher orders of the doublet, such as the second order: $$\frac{d^{2} x}{d t^{2}}\coloneqq x * u_{2}=\left(x * u_{1}\right) * u_{1},$$ where it follows $u_{2}=u_{1} * u_{1}$ by associativity. Generally then 
+$$u_k(t)=\underbrace{u_1(t) * \cdots * u_1(t)}_{k \text { times }} .$$
+Further, consider $x=1$ so $$0=\frac{d x}{d t}=\int_{-\infty}^{\infty} d \tau \cdot u_{1}(\tau),$$ implying that the unit doublet has zero area. 
+As seen in an example, the unit step is the impulse response of an integrator: $$y(t)=\int_{-\infty}^t x(\tau) d \tau.$$ Therefore,
+ $$ u(t)=\int_{-\infty}^t \delta(\tau) d \tau,$$ which then leads to the operational definition of $u(t)$: $$x(t)*u(t)=\int_{-\infty}^td\tau\cdot x(\tau).$$
+ Similarly to before, we can define the system that consists of a cascade of two integrators. Its impulse response is denoted $$u_{-2}(t)=u(t)*u(t)=\int_{-\infty}^t d\tau \cdot u(\tau)=tu(t).$$ This signal is referred to as the unit ramp function:
+ ![Attachments/Oppenheim,Willsky_Signals and Systems 1.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%201.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=166&rect=131,42,303,145|🔗]]
+ We can define higher order intergals of $\delta(t)$ as the impulse reponses of cascades of integrators:
+ $$u_{-k}(t)=\underbrace{u(t) * \cdots * u(t)}_{k \text { times }}=\int_{-\infty}^t u_{-(k-1)}(\tau) d \tau.$$ 
+One can also rewrite this as $$u_{-k}=\frac{t^{k-1}}{(k-1)!} u(t).$$
+Alternative notations are $\delta(t)=u_{0}(t)$ and $u_{-1}(t)=u(t)$. Then $\delta(t)=u_{1} * u_{-1}$ as expected, or generally $u_{k+r}(t)=u_{k}(t) * u_{r}(t)$.
 
-The unit impulse is of the class of singularity functions.
-Consider the system that does $y(t)=\frac{d x}{d t}:=x(t): u_{1}(t)$ with $u_{1}$ the unit doublet.
-If $\frac{d^{2} x}{d t^{2}}:=x * u_{2}=\left(x * u_{1}\right) * u_{1}$ if follows $u_{2}=u_{1} * u_{1}$ by associativity.
-Further, consider $x=1$ so $0=\frac{d x}{d t}=\int_{-\infty}^{\infty} d \tau \cdot u_{1}(\tau)$ and $-g^{\prime}(0)=\int_{-\infty}^{\infty} d\tau \cdot g(\tau) \cdot u_{1}(\tau)$.
+# 3 Fourier Series Representation of Periodic Signals
+[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=208&selection=6,0,16,7|🔗]]
 
-We can define the integrator $y(t)=x * u=\int_{-\infty}^{n_{0}} d \tau \cdot x(\tau)$.
-We find $u(t)=\int_{-\infty}^{t} d \tau \cdot \delta(\tau)$ and $x(t) * u_{1}(t)=\int_{\infty}^{t} d \tau \cdot x(\tau)$.
-Again, we define $u_{-2}(t)=u * u=\int_{-\infty}^{t} d\tau \cdot u(\tau)=t \cdot u(t)$ since $u(t)=1$ for $t>0$.
-Therefore, $u_{-2}$ is also called the unit ramp function.
-Then $u_{-k}=\int_{-\infty}^{t} d\tau \cdot u_{-(k-1)}(\tau)=\frac{t^{k-1}}{(k-1)!} u(t)$ is the cascade of integrators.
-Alternative notations are $\delta(t)=u_{0}(t)$ and $u_{-1}(t)=u(t)$.
+The representation and analysis of LTI systems through the convolution sum is based on representing signals as linear combinations of shifted impulses. This chapter explores an alternative representation for signals and LTI systems. 
+## 3.1 The Response of LTI Systems to Complex Exponentials
+[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=213&selection=58,0,72,12|🔗]]
 
-Then $\delta(t)=u_{1} * u_{-1}$ as expected, or generally $u_{k+r}(t)=u_{k}(t) * u_{r}(t)$.
+It is advantageous in the study of LTI systems to represent signals as linear combinations of basic signals that possess the following two properties:
+1. The set of basic signals can be used to construct a broad and useful class of signals. 
+2. The response of an LTI system to each signal should be simple enough in structure to provide us with a convenient representation for the response of the system to any signal constructed as a linear combination of the basic signals.
+Much of the importance of Fourier analysis results from the fact that both of these properties are provided by the set of complex exponential signals in continuous and discrete time. The importance of complex exponentials in the study of LTI systems stems from the fact that the response of an LTI system to a complex exponential input is the same complex exponential with only a change in amplitude, that is $$\begin{aligned}
+\text { continuous time: } e^{s t} & \longrightarrow H(s) e^{s t}, \\
+\text { discrete time: } z^{\prime \prime} & \longrightarrow H(z) z^{\prime \prime},
+\end{aligned}$$with a complex amplitude factor $H(s)$ or $H(z)$. A signal $x \longrightarrow a \cdot x$ is called the eigenfunction of the system, and the (complex) constant $a$ is called the eigenvalue. Additionally, the claim is that exponentials are eigenfunctions of any
+LTI system. For that, we show $$y(t)=\int_{-\infty}^{t} d \tau \cdot h(\tau) x(t-\tau)=\int_{-\infty}^{t} d \tau \cdot h(\tau) e^{s(t-\tau)}=e^{s t} \int_{-\infty}^{t} d \tau \cdot h(\tau) e^{-s \tau},$$ assuming that the integral converges. Then, we end with $y(t)=H(s)e^{st}$. Hence, we have shown that complex exponentials are eigenfunctions of LTI systems.
+In an exactly parallel manner, we can show that complex exponential sequences are eigenfunctions of discrete-time LTI systems. That is, suppose that an LTI system with impulse response $h[n]$ has as its input the sequence
+$$\begin{align*}
+x[n]=z^n
+\end{align*},$$
+where $z$ is a complex number. Then the output of the system can be determined from the convolution sum as
+$$\begin{align*}
+\begin{aligned}
+y[n] & =\sum_{k=-\infty}^{+\infty} h[k] x[n-k] \\
+& =\sum_{k=-\infty}^{+\infty} h[k] z^{n-k}=z^n \sum_{k=-\infty}^{+\infty} h[k] z^{-k}
+\end{aligned}
+\end{align*}$$
 
-# 3 Fourier series representation of periodic signals
-In LTI systems, we have $e^{s t} \longrightarrow H(s) e^{s t}$ and $e^{z} \longrightarrow H(\tau) e^{z}$ for continons, respectively discrete time with a complex amplitude factor $H$.
+From this expression, we see that if the input $x[n]$ is the complex exponential given by the prior equation, then, assuming that the summation on the right-hand side, the output is the same complex exponential multiplied by a constant that depends on the value of $z$. That is,
+$$\begin{align*}
+y[n]=H(z) z^n
+\end{align*}$$
+where
+$$\begin{align*}
+H(z)=\sum_{k=-\infty}^{+\infty} h[k] z^{-k}
+\end{align*}.$$
+Consequently, as in the continuous-time case, complex exponentials are eigenfunctions of discrete-time LTI systems.
+For the analysis of LTI systems, it is useful to decompose a general signal into eigenfunctions. Let $$x(t)=\sum_{n} a_{n} e^{s . t}$$ such that, from the eigenfunction and superposition property, $$y(t)=\sum_{n} a_{n} H\left(s_{n}\right) e^{s_{n} t}.$$
+In other words, for both continuous time and discrete time, if the input to an LTI system is represented as a linear combination of complex exponentials, then the output can also be represented as a linear combination of the same complex exponential signals.
 
-A signal $x \longrightarrow a \cdot x$ is called eigenfunction of the system and the (complex) constant a
-is called the eigenvalue. Therefore, we claim that exponentials are eigenfunctions of any
-LTI system, we show $y(t)=\int_{-\infty}^{t} d \tau \cdot h(\tau) x(t-\tau)=\int_{-\infty}^{t} d \tau \cdot h(\tau) e^{s(t-\tau)}=e^{s t} \int_{-\infty}^{t} d \tau \cdot h(\tau) e^{-s \tau}$ assuming that the integral converges.
+## 3.2 Fourier series representation continuous-time periodic signals
+[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=217&selection=120,0,132,7|🔗]]
 
-It is useful to decompose a general signal into eigenfunctions $x(t)=\sum_{n} a_{n} e^{s . t}$ such that $y(t)=\sum_{n} a_{n} H\left(s_{n}\right) e^{s_{n} t}$.
-
-Fourier series representation continons-time periodic signals
-The representation is $x(t)=\sum_{k=-\infty}^{\infty} a_{k} e^{i k \frac{2 \pi}{T} t}$ for a periodic signal with periodicity 7 .
-For real $x=x^{*}$, we also get $a_{k}^{*}=a_{-k}$ which allows to write
+For any periodic signal $x(t)$ with periodicity $T$, a linear combination of harmonically related complex exponentials is $$x(t)=\sum_{k=-\infty}^{\infty} a_{k} e^{i k \frac{2 \pi}{T} t}.$$ This representation is referred to as the _Fourier series_ representation. Suppose now that the signal is real, e.g. $x=x^{*}$. Then, we find that $a_{k}^{*}=a_{-k}$ which allows writing
 $$
 x(t)=a_{0}+\sum_{k=1}^{\infty}\left\{a_{k} e^{i k \omega_{0} t}+a_{k}^{*} e^{-i k \omega_{0} t}\right\}=a_{0}+\sum_{k=1}^{\infty} 2 \operatorname{Re}\left(a_{k} e^{i k \omega_{0} t}\right)=a_{0}+2 \cdot \sum_{k=1}^{\infty} A_{k} \cos \left(k \omega_{0} t+\theta_{k}\right)
-$$
-if we write $a_{k}=A_{k} e^{i \theta_{k}}$.
-Equivalently, if $a_{k}=B_{k}+i C_{k}$, then $x(t)=a_{0}+2 \cdot \sum_{k=1}^{\infty}\left\{B_{k} \cos \left(k \omega_{0} t\right)-C_{k} \sin \left(k \omega_{0} t\right)\right\}$.
-We still weed to proof that any periodic $x(t)$ can be written in that form.
-Continuing the assumption, we $g e t \int_{0}^{T} d t \cdot x(t) e^{-i k n \omega_{0} t}=\int_{0}^{T} d t \cdot \sum_{k} a_{k} e^{i(k-n) \omega_{0} t}$ which eventually implies $\int_{t^{\prime}}^{t^{\prime}+T} d t \cdot e^{i(k-n) w_{0} t}=T$ if $k=n$ for any $t^{\prime}$.
-We will write the integral $\int_{t^{\prime}}^{t^{\prime}+T}$ ar $\int_{T}$ from now on.
-Then, $a_{n}=\frac{1}{T} \int_{T} d t \cdot x(t) e^{-i n \omega_{0} t}$ and $a_{0}=\frac{1}{T} \int_{T} d t \cdot x(t)=\bar{x}(t)$, so the average over one period.
+,$$
+if we write $a_{k}=A_{k} e^{i \theta_{k}}$. This representation is one commonly encountered form for the Fourier series of real periodic signals in continuous time. Another, equivalent, representation is writing $a_{k}=B_{k}+i C_{k}$. Then, $$x(t)=a_{0}+2 \cdot \sum_{k=1}^{\infty}\left\{B_{k} \cos \left(k \omega_{0} t\right)-C_{k} \sin \left(k \omega_{0} t\right)\right\}.$$ What still remains is proofing that any periodic $x(t)$ can be written in those forms. However, for now  we continue to believe the assumption holds. Multiplying both sides by $e^{-jn\omega_0t}$  and integrating, we get $$\int_{0}^{T} d t \cdot x(t) e^{-i k n \omega_{0} t}=\int_{0}^{T} d t \cdot \sum_{k} a_{k} e^{i(k-n) \omega_{0} t}.$$Using Euler's formula and considering the periodicity of the sinusiods, we find 
+$$\int_0^T e^{j(k-n) \omega_{19} t} d t= \begin{cases}T, & k=n \\ 0, & k \neq n\end{cases}$$
+Eventually we find: If $x(t)$ has a Fourier series representation, e.g. if it can be expressed as a linear combination of harmonically related complex exponentials, then the coefficients are given by:
+$$\begin{gathered}x(t)=\sum_{k=-\infty}^{+\infty} a_k e^{j k \omega_0 t}=\sum_{k=-\infty}^{+\infty} a_k e^{j k(2 \pi / T) t}, \\ a_k=\frac{1}{T} \int_T x(t) e^{-j k \omega_0 t} d t=\frac{1}{T} \int_T x(t) e^{-j k(2 \pi / T) t} d t\end{gathered}.$$
+Then, $a_{0}=\frac{1}{T} \int_{T} d t \cdot x(t)$ is simply the average value of $x(t)$ over one period.
 
-# 4 Convergence of the Fourier series
-Approximate a general signal $x(t)$ as $x_{N}(t)=\sum_{k=-N}^{N} a_{k} e^{i k w_{0} t}$ such that the error of approximation becomes $e_{N}(t)=x(t)-x_{N}(t)=x(t)-\sum_{k=-N}^{N} a_{k} e^{i k w_{0} t}$
-The energy over one period is $E_{N}=\int_{T} d t \cdot\left|e_{N}(t)\right|^{2}$ which is minimized by $a_{k}=\frac{1}{T} \int_{T} d t \cdot x(t) e^{-i k w_{0} t}$.
-Obviously $\lim _{N \rightarrow \infty} E_{N}=0$ if $x(t)$ has a founder series representation.
-Consider two classes of signals:
-1) Periodic signals with finite power, $\int_{T} d t \cdot|x(t)|<\infty$ implying $\left|a_{k}\right|<\infty$, and $a \mid$ so $\int_{T} d t \cdot|e(t)|^{2}=0$ for $e(t)=x(t)-\sum_{k=-\infty}^{\infty} a_{k} e^{i k w_{0} t}$. However, this does not imply $x(t)=\sum_{k=-\infty}^{\infty} a_{k} e^{i k w_{0} t}$. It only means that their energies are equal. This is useful, since physical systems react to signal energy so that from their perspective, $x(t)$ and its fourier representation are equal.
+## 3.3 Convergence of the Fourier series
+[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=226&selection=234,0,246,6|🔗]]
 
-The Dinchlet conditions are
-1) Over one period, $x(t)$ must absolutely integrable, so $\int_{T} d t \cdot|x(t)|^{2}<\infty$.
+In fact, Fourier maintained that any periodic signal could be represented by a Fourier series. Although this is not quite true, it is true that Fourier series can be used to represent an extremely large class of periodic signals, including the square wave and all other periodic signals with which we will be concerned in this book and which are of interest in practice.
+Let us approximate a given periodic signal $x(t)$ as $$x_{N}(t)=\sum_{k=-N}^{N} a_{k} e^{i k w_{0} t},$$such that the error of approximation becomes $$e_{N}(t)=x(t)-x_{N}(t)=x(t)-\sum_{k=-N}^{N} a_{k} e^{i k w_{0} t}.$$
+In order to determine how good any particular approximation is, we need to specify a quantitative measure of the size of the approximation error. The criterion that we will use is the energy in the error over one period: $$E_{N}=\int_{T} d t \cdot\left|e_{N}(t)\right|^{2},$$which is minimized (without proof) $$a_{k}=\frac{1}{T} \int_{T} d t \cdot x(t) e^{-i k w_{0} t}.$$
+Comparing these equations, we see that they are identical to the expression used to determine the Fourier series coefficients. Thus, if $x(t)$ has a Fourier series representation, the best approximation using only a finite number of harmonically related complex exponentials is obtained by truncating the Fourier series to the desired number of terms. As $N$ increases, new terms are added and $E_N$ decreases. If, in fact, $x(t)$ has a Fourier series representation, then $\lim _{N \rightarrow \infty} E_{N}=0$. 
 
-This implies $\left|a_{k}\right| \leq \int_{T} d t \cdot|x(t)|^{2}<\infty$.
-2) In any finite interval of time, $x(t)$ is of bounded variation. In other words, there ave only a finite number of minima and maxima per period.
-3) In any finite interval of time, $x(t)$ has only a finite number of discontinonties, and each of them is finite.
+Of course, for any signal, we can attempt to obtain a set of Fourier coefficients. However, in some cases, the integral may diverge; that is, the value obtained for some $a_k$ may be infinite. Moreover, even if all the coefficients obtained are finite, when these coefficients are substituted into the synthesis equation, the resulting infinite series may not converge to the original signal $x(t)$. Fortunately, there are no convergence difficulties for large classes of periodic signals. For example, every continuous periodic signal has a Fourier series representation for which the energy $E_N$ in the approximation error approaches $0$ as $N$ goes to $\infty$. This is also true for many discontinuous signals. 
+Since we will find it very useful to include discontinuous signals such as square waves in our discussions, it is worthwhile to investigate the issue of convergence in a bit more detail. Specifically, there are two somewhat different classes of conditions that a periodic signal can satisfy to guarantee that it can be represented by a Fourier series:
+**Periodic signals with finite power**: $$\int_{T} d t \cdot|x(t)|<\infty$$ implies $\left|a_{k}\right|<\infty$. Considering again the approximation of $x(t)$, then we are guaranted that the energy $E_N$ in the approximation error, converges to $0$ as more and more terms are added, e.g. $N \rightarrow 0$. Then, $$\int_{T} d t \cdot|e(t)|^{2}=0.$$ However, this does not imply that the signal $x(t)$ and its Fourier series representation are equal. It only implies that there is no energy in their difference. Since physical systems respond to signal energy, from this perspective $x(t)$ and its Fourier series representation are indistinguishable. Because most of the periodic signals that we consider do have finite energy over a single period, they have Fourier series representations. 
+Moreover, the Dirichlet conditions are also satisfied by essentially all the signals with which we will be concerned. They guarantee that $x(t)$ equals its Fourier series representation, except at isolated values oft for which $x(t)$ is discontinuous. At these values, the infinite series converges to the average of the values on either side of the discontinuity. 
+The Dirichlet conditions are as follows:
+1) Over one period, $x(t)$ must absolutely integrable, so $$\int_{T} d t \cdot|x(t)|^{2}<\infty.$$ As  with square integrability, this guarantees the finiteness of each coeffcient: $$\left|a_{k}\right| \leq \int_{T} d t \cdot|x(t)|^{2}<\infty.$$ A periodic signal that violates the first dirichlet condition is $x(t)=1/t$.
+2) In any finite interval of time, $x(t)$ is of bounded variation. That is, there are no more than a finite number of maxima and minima during any single period of the signal. An example of a function that meets condition 1, but not condition 2 is $$x(t)=\sin\left(\frac{2\pi}{t}\right).$$
+3) In any finite interval of time, there are only a finite number of discontinuities. Furthermore, each of these discontinuities is finite
 
-While there are many functions violating one of the conditions, most signals in nature do fulfill them.
+As can be seen, signals that do not satisfy the Dirichlet conditions are generally pathological in nature and consequently do not typically arise in practical contexts. For a periodic signal that has no discontinuities, the Fourier series representation converges and equals the original signal at every value of $t$. For a periodic signal with a finite number of discontinuities in each period, the Fourier series representation equals the signal everywhere except at the isolated points of discontinuity, at which the series converges to the average value of the signal on either side of the discontinuity. In this case the difference between the original signal and its Fourier series representation contains no energy, and consequently, the two signals can be thought of as being the same for all practical purposes. Specifically, since the signals differ only at isolated points, the integrals of both signals over any interval are identical. For this reason, the two signals behave identically under convolution and consequently are identical from the standpoint of the analysis of LTI systems. 
 
-For a penodic signal without discontinuities, $x(t)=\sum_{k=-\infty}^{\infty} a_{k} e^{i k w_{0} t}$ for all $t$.
-For a periodic signal with a finite number of discontinuities, $x(t)=\sum_{k=-\infty}^{\infty} a_{k} e^{i k w_{0} t}$ for all $t$, expect at the discontinuities. There, $\sum_{k=\infty}^{\infty} a_{k} e^{i k w_{0} t} \rightarrow \frac{1}{2}\left(x\left(t_{\text {dis is }}^{+}\right)+x\left(t_{\text {disc }}^{-}\right)\right)$the average valve on either side.
+## 3.4 Properties of the continuous-time Fourier Series
+[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=233&selection=18,0,28,6|🔗]]
 
-Their energy difference is zero, and since they only differ at isolated points, the integral over any interval is equal for both. Therefore, both signals behave equal under convolution, and are identical in LTI systems.
+Several useful properties of the continuous-time Fourier series:
 
-The Gibbs phenomenon implies that near to a discontinuity, the truncated Fourier sanies
-will exhibit high -frequency riples that get wake with increasing $N$.
-![](https://cdn.mathpix.com/cropped/2025_01_18_52f89a1b79001871df74g-10.jpg?height=269&width=1900&top_left_y=1162&top_left_x=55)
-
-## 4.1 Properties of continous-time Founder series
 
 |                                     Property                                      | Section |                                                                                              Periodic Signal                                                                                              |                                                                                                                                  Fourier Series Coefficients                                                                                                                                  |
 | :-------------------------------------------------------------------------------: | :-----: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -327,7 +355,7 @@ Parseval's Relation for Periodic Signals
 $$
 \frac{1}{T} \int_{T}|x(t)|^{2} d t=\sum_{k=-\infty}^{+\infty}\left|a_{k}\right|^{2}
 $$ 
-## 4.2 Fourier series representation of discreete-tiue periodic signals
+## 3.5 Fourier series representation of discreete-tiue periodic signals
 As before, we consider periodic signals $x(n)=x(n+N)$ with $w_{0}=\frac{2 \pi}{N}$ the fundamental frequency.
 Consider $x(n)=\sum_{k} a_{k} e^{i k w_{0} n}=\sum_{k=\langle N\rangle} a_{k} e^{i k w_{0} n}$ where $k=\langle N\rangle$ indicates a sum from $m$ to $m+N-1$.
 This is a new set of $N$ equations with the $N$ unknowns being $a_{k}$. They are (without proof)
@@ -364,13 +392,13 @@ $$
 \frac{1}{N} \sum_{n=(N)}|x[n]|^{2}=\sum_{k=(N)}\left|a_{k}\right|^{2}
 $$
 
-## 4.3 Fourier series and LTI systems
+## 3.6 Fourier series and LTI systems
 As a reminder, we have $y(t)=H(s) e^{s t}$ for $x(t)=e^{s t}$ and $H(s)=\int_{-\infty}^{\infty} h(\tau) e^{-s t} d \tau$ the system functions.
 We will consider $\operatorname{Re}(s)=0$, egg $s=i w$. Then, $H(s)$ is called the frequency response.
 For $x(t) \stackrel{F S}{\longleftrightarrow} a_{k}$ with period $T$, we obtain $y(t)=\sum_{k=-\infty}^{\infty} a_{k} \cdot H\left(i k w_{0}\right) e^{i k w_{0} t}$, also penodic with 7 . $O$ obviously, $y(t) \stackrel{F S}{\longleftrightarrow} a_{k} H\left(i k w_{0}\right)$.
 
 As a side remark, a system with impulse response $\alpha^{n} u(n)$ is stable for $|\alpha|<1$ and unstable for $|\alpha|>1$. Stable means a converging sum in $H$.
-## 4.4 Filtering
+## 3.7 Filtering
 
 LTI systems that change the shape of the spectrum are called frequency-shaping filters. If they only let some frequencies pass, we call them frequency-selective filters.
 
@@ -387,7 +415,7 @@ band pass
 ![](https://cdn.mathpix.com/cropped/2025_01_18_fe980612f9d3f033eaf5g-02.jpg?height=182&width=729&top_left_y=2632&top_left_x=65)
 (c)
 
-## 4.5 Important examples: Continous time
+## 3.8 Important examples: Continous time
 $R C$-lowpass filter: we obtain $\quad R C \frac{d V_{c}}{d t}+V_{c}=V_{s}$ and is an LTI system.
 UW~ Using $V_{c}(t)=e^{i \omega t}$ and, consequentely, $V_{s}(t)=H(w) \cdot e^{\text {int }}$, we
 R
@@ -411,7 +439,7 @@ RC-highpass filter: Take the same circuit as before, but now the output is the v
 
 Since $v_{s}=v_{R}+v_{c}$, and if $v_{s}(t)=u(t)$, then $v_{R}(t)=e^{-t / R c} u(t)$. We obtain another trade-off.
 
-## 4.6 Important examples: Discrete time
+## 3.9 Important examples: Discrete time
 
 We differentiate between recursive with impulse responser of infinite length ( $\| R$ system,) and
 non-recursive with impulse responses of finite length (FIR systems).
@@ -444,7 +472,7 @@ To implement a highpass filling, one could implement $y(n)=\frac{x(n)-x(n-1)}{2}
 
 All filters in $F \mathbb{R}$ systems are stable since they are absolutely summable over $b_{k}$.
 
-# 5 Continous-time Fourier transform
+# 4 Continous-time Fourier transform
 As an illustrious example consider $x(t)=\left\{\begin{array}{ll}1 & \text { for }|t|<T_{1} \\ 0 & \text { for } T_{1}<|t|<T / 2\end{array} \quad\right.$ and it repeats with period 7 .
 We found $T a_{k}=\left.\frac{2 \sin \left(\omega T_{1}\right)}{w}\right|_{w=k w_{0}}$, which can be interpreted as samples of an envelope function:
 Think of $w$ as continuous, then $\frac{2 \sin \left(\omega T_{A}\right)}{w}$ represents the envelope of $T a_{n}$, with $a_{n}$ being the
@@ -457,7 +485,7 @@ Then, $a_{k}=\frac{1}{T} \int_{-T / 2}^{T / 2} d t \cdot \tilde{x}(t) e^{-i k w_
 Finally, $x(t)=\frac{1}{2 \pi} \int_{-\infty}^{\infty} d w \cdot X(w) e^{i w t}$ for $T \rightarrow \infty$. Note then $w_{0} \rightarrow 0$.
 
 Further, $X(\omega)=\int_{-\infty}^{\infty} d t \cdot x(t) e^{-i \omega t}$.
-## 5.1 Convergence of Fourier transforms
+## 4.1 Convergence of Fourier transforms
 
 If $x(t)$ has finite energy, e.g it is square integrable, then $x(w)$ is finite. Then, also $e(t)=\hat{x}(t)-x(t)$
 has no energy.
@@ -468,7 +496,7 @@ Sufficient conditions for $\hat{x}=x$ expect at discontinuities are the Dirichle
 2) In any finite interval, $x(t)$ has a finite amount of maxima and minima
 3) In any finite interval, there are a finite number of discontinonitier. Further, there are finite.
 
-## 5.2 Properties of the continons time Fourier transform
+## 4.2 Properties of the continons time Fourier transform
 ![](https://cdn.mathpix.com/cropped/2025_01_18_fe980612f9d3f033eaf5g-07.jpg?height=1894&width=1934&top_left_y=195&top_left_x=67)
 4.3.7 Parseval's Relation for Aperiodic Signals
 
@@ -478,22 +506,22 @@ $$
 
 Parseval's theorem states that total energy is energy per time integrated over all tines, or energy per frequency integrated over all frequencies. Therefore, $|\hat{x}(i w)|^{2}$ is considered an evergy-density spectrum.
 
-# 6 The discrete-time Fourier transform
+# 5 The discrete-time Fourier transform
 Consider the general sequence $x(n)$ of finite duration, e.g. $x(n)=0$ outride of $\left[-N_{1}, N_{2}\right]$.
 Then, the discrete-time Fourier transform is $\tilde{x}\left(e^{i \omega}\right)=\sum_{n} x(n) e^{-i \omega n}$, and then also $\sim^{n}$ "Analysis equation" $x(n)=\frac{1}{2 \pi} \int_{2 \pi} d \omega \cdot \tilde{x}\left(e^{i \omega}\right) e^{i \omega}$. Note, $\tilde{x}\left(e^{i \omega}\right)$ has a period of $2 \pi$.
 "Synthesis equation"
 Thu, an aperiodic sequence can be thought of as a linear combination of complex exponentials.
-## 6.1 Convergence issue
+## 5.1 Convergence issue
 The analysis equation will converge either if
 1)... $x(n)$ is absolutely summable: $\sum_{n}|x(n)|<\infty$
 2)... $x(n)$ has finite energy: $\quad \sum_{n}|x(n)|^{2}<\infty$
 
 The synthesis equation on the other hand will always converge, since the integral is over a finite interval.
 
-## 6.2 Fourier transform for periodic signals
+## 5.2 Fourier transform for periodic signals
 Consider the sequence $x(n)$ with periodicity $N$ and Fourier series representation
 $x(n)=\sum_{k=\sim N} a_{k} e^{i k \frac{2 \pi}{N} n}$. Then, its Fourier transform is $\tilde{x}\left(e^{i \omega}\right)=\sum_{k} 2 \pi a_{k} \cdot \delta\left(\omega-\frac{2 \pi k}{N}\right)$.
-## 6.3 Properties of the discrete-time Fourier transform
+## 5.3 Properties of the discrete-time Fourier transform
 ![](https://cdn.mathpix.com/cropped/2025_01_18_fe980612f9d3f033eaf5g-09.jpg?height=2682&width=1974&top_left_y=198&top_left_x=47)
 ![](https://cdn.mathpix.com/cropped/2025_01_18_fe980612f9d3f033eaf5g-10.jpg?height=641&width=1955&top_left_y=108&top_left_x=42)
 
