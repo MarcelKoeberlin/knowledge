@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-19T18:16:59.109+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-19T18:23:45.145+01:00"}
 ---
 
 > [!INFO] To do  
@@ -145,13 +145,13 @@ The unit impulse should be considered an idealization of an infinitely short pul
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=72&selection=144,0,150,7|🔗]]
 
 An important idea is the concept of interconnecting systems since many real systems are built as interconnections of several subsystems. By breaking down a system into its interconnection of simpler subsystems, it may be possible to synthesize complex systems out of simpler, basic building blocks. The most frequently encountered connections are the _series/cascade_ and _parallel_ types:
-![Attachments/Signals and Systems/IMG-0119135229.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135229.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=73&rect=88,274,456,600|🔗]]
+![Attachments/Signals and Systems/IMG-0119181838.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181838.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=73&rect=88,274,456,600|🔗]]
 
 The symbol $\bigoplus$ denotes addition, so that the output of the parallel system is the sum of the outputs of systems 1 and 2. Another important type is the feedback interconnection:
-![Attachments/Signals and Systems/IMG-0119135229-1.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135229-1.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=54,505,325,597|🔗]]
+![Attachments/Signals and Systems/IMG-0119181838-1.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181838-1.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=54,505,325,597|🔗]]
 
 The output of system 1 is the input to system 2, while the output of system 2 is fed back and added to the external input to produce the actual input to system 1. These types of connections often arise in real systems. Consider figure (a) and note that it is equivalent to (b):
-![Attachments/Signals and Systems/IMG-0119135230.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=79,82,323,316|🔗]]
+![Attachments/Signals and Systems/IMG-0119181838-2.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181838-2.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=79,82,323,316|🔗]]
 
 ## 1.9 Basic Properties
 
@@ -173,7 +173,7 @@ $$
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=76&selection=165,0,173,7|🔗]]
 
 A system is said to be invertible if distinct inputs produce distinct outputs. An inverse system exists such that:
-![Attachments/Signals and Systems/IMG-0119135230-1.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230-1.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&rect=106,565,359,612|🔗]]
+![Attachments/Signals and Systems/IMG-0119181838-3.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181838-3.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&rect=106,565,359,612|🔗]]
 
 Invertibility is important in contexts like encoding and decoding systems, such as in communication or cryptography. For example, lossless coding requires that the encoder must be invertible.
 
@@ -189,7 +189,7 @@ $$
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&selection=55,0,59,9|🔗]]
 
 A system is stable if small inputs lead to bounded outputs. For example:
-![Attachments/Signals and Systems/IMG-0119135230-2.webp|400](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230-2.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&rect=188,46,306,245|🔗]]
+![Attachments/Signals and Systems/IMG-0119181838-4.webp|400](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181838-4.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&rect=188,46,306,245|🔗]]
 
 If the input is bounded, the output must also remain bounded.
 
@@ -267,10 +267,10 @@ LTI systems satisfy important properties:
 3. **Associativity**: $x * \left(h_1 * h_2\right) = \left(x * h_1\right) * h_2$.
 
 Distributivity can be depicted graphically:
-![Attachments/Signals and Systems/IMG-0119135230-3.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230-3.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=136&rect=108,407,300,593|🔗]]
+![Attachments/Signals and Systems/IMG-0119181838-5.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181838-5.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=136&rect=108,407,300,593|🔗]]
 
 Similarly, associativity can be depicted graphically:
-![Attachments/Signals and Systems/IMG-0119135230-4.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230-4.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=139&rect=94,310,303,595|🔗]]
+![Attachments/Signals and Systems/IMG-0119181838-6.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181838-6.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=139&rect=94,310,303,595|🔗]]
 
 ## 2.3 Basic Properties
 
@@ -387,10 +387,10 @@ y[n] = b x[n] - a y[n-1].
 $$
 
 This equation requires three basic operations: addition, multiplication, and delay:
-![Attachments/Signals and Systems/IMG-0119135230-5.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230-5.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=113,383,295,597|🔗]]
+![Attachments/Signals and Systems/IMG-0119181838-7.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181838-7.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=113,383,295,597|🔗]]
 
 The block diagram representation of this equation is:
-![Attachments/Signals and Systems/IMG-0119135230-6.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230-6.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=138,279,302,373|🔗]]
+![Attachments/Signals and Systems/IMG-0119181838-8.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181838-8.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=138,279,302,373|🔗]]
 
 The feedback arises because the equation is recursive. The block diagram shows that memory is required for this system, corresponding to the delay operator.
 
@@ -407,7 +407,7 @@ $$
 y(t) = \int_{-\infty}^t \left( b x(\tau) - a y(\tau) \right) \, d\tau,
 $$
 assuming $y(-\infty) = 0$, allows for implementation using integrators:
-![Attachments/Signals and Systems/IMG-0119135231.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&rect=142,463,338,599|🔗]]
+![Attachments/Signals and Systems/IMG-0119181838-9.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181838-9.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&rect=142,463,338,599|🔗]]
 
 The integrator is a memory element, as seen from:
 $$
@@ -646,7 +646,7 @@ Below is a table summarizing several useful properties of the continuous-time Fo
 |         **Real and Even Signals**          |                                        $x(t)$ real and even                                        |                                                        $a_k$ real and even                                                        |
 |          **Real and Odd Signals**          |                                        $x(t)$ real and odd                                         |                                                  $a_k$ purely imaginary and odd                                                   |
 | **Even-Odd Decomposition of Real Signals** | $x(t) = x_e(t) + x_o(t)$, where $x_e(t) = \frac{x(t) + x(-t)}{2}, x_o(t) = \frac{x(t) - x(-t)}{2}$ |                             $\operatorname{Re}\{a_k\}$ for even, $i \operatorname{Im}\{a_k\}$ for odd                             |
-|          **Parseval's Relation**           |             $$\frac{1}{T} \int_T dt\cdot\| x(t)\|^2=\sum_{k=-\infty}^\infty\|a_k\|^2$$             |                                                                                                                                   |
+|          **Parseval's Relation**           |              $\frac{1}{T} \int_T dt\cdot\| x(t)\|^2=\sum_{k=-\infty}^\infty\|a_k\|^2$              |                                                                                                                                   |
 
 
 ---
@@ -669,20 +669,20 @@ The coefficients satisfy $a_k = a_{k+N}$ due to periodicity. This representation
 ## 3.6 Properties of the Discrete-Time Fourier Series
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=252&selection=33,0,43,6|🔗]]
 
-|                Property                 |                           Periodic Signal                            |       Fourier Series Coefficients        |
-| :-------------------------------------: | :------------------------------------------------------------------: | :--------------------------------------: |
-|              **Linearity**              |                          $A x[n] + B y[n]$                           |             $A a_k + B b_k$              |
-|            **Time Shifting**            |                             $x[n - n_0]$                             |       $a_k e^{-i k \omega_0 n_0}$        |
-|         **Frequency Shifting**          |                      $e^{j M \omega_0 n} x[n]$                       |                $a_{k-M}$                 |
-|             **Conjugation**             |                               $x^*[n]$                               |                $a_{-k}^*$                |
-|            **Time Reversal**            |                               $x[-n]$                                |                 $a_{-k}$                 |
-|            **Time Scaling**             |                 $x[mn]$ (if $n$ is divisible by $m$)                 |            $\frac{1}{m} a_k$             |
-|        **Periodic Convolution**         |                   $\sum_{r=0}^{N-1} x[r] y[n - r]$                   |               $N a_k b_k$                |
-|           **Multiplication**            |                             $x[n] y[n]$                              |      $\sum_{l=0}^{N-1} a_l b_{k-l}$      |
-|          **First Difference**           |                           $x[n] - x[n-1]$                            | $\left(1 - e^{-i k \omega_0}\right) a_k$ |
-|             **Running Sum**             |     $\sum_{m=0}^n x[m]$ (finite and periodic only if $a_0 = 0$)      |  $\frac{1}{1 - e^{-i k \omega_0}} a_k$   |
-| **Conjugate Symmetry for Real Signals** |                             $x[n]$ real                              |             $a_k = a_{-k}^*$             |
-|         **Parseval's Relation**         | $$\frac{1}{N} \sum_{n=0}^{N-1}\|x[n]\|^2=\sum_{k=0}^{N-1}\|a_k\|^2$$ |                                          |
+|                Property                 |                          Periodic Signal                           |       Fourier Series Coefficients        |
+| :-------------------------------------: | :----------------------------------------------------------------: | :--------------------------------------: |
+|              **Linearity**              |                         $A x[n] + B y[n]$                          |             $A a_k + B b_k$              |
+|            **Time Shifting**            |                            $x[n - n_0]$                            |       $a_k e^{-i k \omega_0 n_0}$        |
+|         **Frequency Shifting**          |                     $e^{j M \omega_0 n} x[n]$                      |                $a_{k-M}$                 |
+|             **Conjugation**             |                              $x^*[n]$                              |                $a_{-k}^*$                |
+|            **Time Reversal**            |                              $x[-n]$                               |                 $a_{-k}$                 |
+|            **Time Scaling**             |                $x[mn]$ (if $n$ is divisible by $m$)                |            $\frac{1}{m} a_k$             |
+|        **Periodic Convolution**         |                  $\sum_{r=0}^{N-1} x[r] y[n - r]$                  |               $N a_k b_k$                |
+|           **Multiplication**            |                            $x[n] y[n]$                             |      $\sum_{l=0}^{N-1} a_l b_{k-l}$      |
+|          **First Difference**           |                          $x[n] - x[n-1]$                           | $\left(1 - e^{-i k \omega_0}\right) a_k$ |
+|             **Running Sum**             |    $\sum_{m=0}^n x[m]$ (finite and periodic only if $a_0 = 0$)     |  $\frac{1}{1 - e^{-i k \omega_0}} a_k$   |
+| **Conjugate Symmetry for Real Signals** |                            $x[n]$ real                             |             $a_k = a_{-k}^*$             |
+|         **Parseval's Relation**         | $\frac{1}{N} \sum_{n=0}^{N-1}\|x[n]\|^2=\sum_{k=0}^{N-1}\|a_k\|^2$ |                                          |
 
 ---
 
@@ -721,9 +721,9 @@ Ideal filters in continuous and discrete time differ because discrete-time filte
 
 Visual examples of ideal filters:
 - Continuous-time low-pass, high-pass, and bandpass:
-  ![Attachments/Signals and Systems/IMG-0119135231-3.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-3.webp)
+  ![Attachments/Signals and Systems/IMG-0119181838-10.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181838-10.webp)
 - Discrete-time low-pass, high-pass, and bandpass:
-  ![Attachments/Signals and Systems/IMG-0119135231-4.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-4.webp)
+  ![Attachments/Signals and Systems/IMG-0119181839.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181839.webp)
 
 ## 3.9 Important Examples: Continuous-Time
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=270&selection=76,0,93,9|🔗]]
@@ -733,7 +733,7 @@ Visual examples of ideal filters:
 
 Electrical circuits are commonly used to implement continuous-time filtering operations. One of the simplest examples is the first-order RC circuit:
 
-![Attachments/Signals and Systems/IMG-0119135231-5.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-5.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=271&rect=146,482,300,597|🔗]]
+![Attachments/Signals and Systems/IMG-0119181839-1.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181839-1.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=271&rect=146,482,300,597|🔗]]
 
 In this circuit, the output signal can either be the capacitor voltage $v_c(t)$ or the resistor voltage. If we take the capacitor voltage as the output, the relationship between input and output is described by the differential equation:
 $$
@@ -746,7 +746,7 @@ H(i \omega) = \frac{1}{1 + RC \cdot i \omega}.
 $$
 
 The magnitude and phase of $H(i \omega)$ are as follows:
-![Attachments/Signals and Systems/IMG-0119135231-6.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-6.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&rect=104,317,440,603|🔗]]
+![Attachments/Signals and Systems/IMG-0119181839-2.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181839-2.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&rect=104,317,440,603|🔗]]
 
 For $\omega \approx 0$, $|H(i\omega)| \approx 1$, indicating that low frequencies pass with minimal attenuation. For higher $\omega$, $|H(i\omega)|$ decreases, making this circuit a nonideal low-pass filter.
 
@@ -758,7 +758,7 @@ $$
 s(t) = \left[1 - e^{-t / RC}\right] u(t).
 $$
 
-![Attachments/Signals and Systems/IMG-0119135231-7.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-7.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=273&rect=73,344,313,604|🔗]]
+![Attachments/Signals and Systems/IMG-0119181839-3.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181839-3.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=273&rect=73,344,313,604|🔗]]
 
 There is a trade-off between frequency response and time-domain behavior. A larger $RC$ enhances low-pass filtering but results in slower step response.
 
@@ -778,7 +778,7 @@ G(i\omega) = \frac{i \omega RC}{1 + i \omega RC}.
 $$
 
 The magnitude and phase of $G(i\omega)$ are shown below:
-![Attachments/Signals and Systems/IMG-0119135232.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135232.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=274&rect=128,320,467,606|🔗]]
+![Attachments/Signals and Systems/IMG-0119181839-4.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181839-4.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=274&rect=128,320,467,606|🔗]]
 
 The high-pass filter attenuates low frequencies and allows high frequencies to pass, particularly for $|\omega| \gg 1 / RC$.
 
@@ -809,10 +809,10 @@ H(e^{i\omega}) = \frac{1}{1 - a e^{-i\omega}}.
 $$
 
 For $a = 0.6$, the magnitude and phase of $H(e^{i\omega})$ are shown below:
-![Attachments/Signals and Systems/IMG-0119135232-1.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135232-1.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=124,371,345,631|🔗]]
+![Attachments/Signals and Systems/IMG-0119181839-5.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181839-5.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=124,371,345,631|🔗]]
 
 For $a = -0.6$, the magnitude and phase are as follows:
-![Attachments/Signals and Systems/IMG-0119135232-2.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135232-2.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=123,53,345,356|🔗]]
+![Attachments/Signals and Systems/IMG-0119181839-6.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181839-6.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=123,53,345,356|🔗]]
 
 - **Low-pass behavior**: For $a > 0$, the system acts as a low-pass filter.
 - **High-pass behavior**: For $a < 0$, the system acts as a high-pass filter.
@@ -845,7 +845,7 @@ H(e^{i\omega}) = \frac{1}{N + M + 1} e^{i \omega [(N - M) / 2]} \frac{\sin[\omeg
 $$
 
 The magnitude of $H(e^{i\omega})$ for $N + M + 1 = 33$ and $N + M + 1 = 65$ is shown:
-![Attachments/Signals and Systems/IMG-0119135232-3.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135232-3.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=279&rect=88,179,456,458|🔗]]
+![Attachments/Signals and Systems/IMG-0119181839-7.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181839-7.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=279&rect=88,179,456,458|🔗]]
 
 ---
 
@@ -882,7 +882,7 @@ As $T \to \infty$, the square wave approaches a rectangular pulse, and the Fouri
 
 ### 4.1.2 Derivation
 For a finite-duration signal $x(t)$, we construct a periodic signal $\tilde{x}(t)$ where $x(t)$ is one period:
-![Attachments/Oppenheim,Willsky_Signals and Systems 1.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%201.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=318&rect=123,434,423,595|🔗]]
+![Attachments/Signals and Systems/IMG-0119181839-8.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119181839-8.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=318&rect=123,434,423,595|🔗]]
 
 As $T \to \infty$, $\tilde{x}(t)$ becomes identical to $x(t)$. The Fourier series representation of $\tilde{x}(t)$ is:
 $$
@@ -948,28 +948,28 @@ Periodic signals, which are neither absolutely nor square integrable over an inf
 
 Several useful properties of the continuous-time Fourier transform:
 
-|                Property                 |                                         Aperiodic Signal                                         |                                                                                          Fourier Transform                                                                                          |
-| :-------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                         |                                              $x(t)$                                              |                                                                                            $X(i \omega)$                                                                                            |
-|                                         |                                              $y(t)$                                              |                                                                                            $Y(i \omega)$                                                                                            |
-|                Linearity                |                                        $a x(t) + b y(t)$                                         |                                                                                   $a X(i \omega) + b Y(i \omega)$                                                                                   |
-|              Time Shifting              |                                     $x\left(t - t_0\right)$                                      |                                                                                   $e^{-i \omega t_0} X(i \omega)$                                                                                   |
-|           Frequency Shifting            |                                     $e^{i \omega_0 t} x(t)$                                      |                                                                                $X\left(i (\omega - \omega_0)\right)$                                                                                |
-|               Conjugation               |                                             $x^*(t)$                                             |                                                                                          $X^*(-i \omega)$                                                                                           |
-|              Time Reversal              |                                             $x(-t)$                                              |                                                                                           $X(-i \omega)$                                                                                            |
-|       Time and Frequency Scaling        |                                             $x(a t)$                                             |                                                                           $\frac{1}{a} X\left(\frac{i \omega}{a}\right)$                                                                            |
-|               Convolution               |                                          $x(t) * y(t)$                                           |                                                                                      $X(i \omega) Y(i \omega)$                                                                                      |
-|             Multiplication              |                                           $x(t) y(t)$                                            |                                                         $\frac{1}{2 \pi} \int_{-\infty}^\infty X(i \theta) Y(i (\omega - \theta)) d\theta$                                                          |
-|         Differentiation in Time         |                                       $\frac{d}{d t} x(t)$                                       |                                                                                       $i \omega X(i \omega)$                                                                                        |
-|               Integration               |                                  $\int_{-\infty}^t x(t) \, dt$                                   |                                                                     $\frac{1}{i \omega} X(i \omega) + \pi X(0) \delta(\omega)$                                                                      |
-|      Differentiation in Frequency       |                                             $t x(t)$                                             |                                                                                 $i \frac{d}{d \omega} X(i \omega)$                                                                                  |
-|   Conjugate Symmetry for Real Signals   |                                           $x(t)$ real                                            | $\begin{aligned} & X(i \omega) = X^*(-i \omega) \\ & \mathfrak{Re}\{X(i \omega)\} = \mathfrak{Re}\{X(-i \omega)\} \\ & \mathfrak{Im}\{X(i \omega)\} = -\mathfrak{Im}\{X(-i \omega)\} \end{aligned}$ |
-|   Symmetry for Real and Even Signals    |                                       $x(t)$ real and even                                       |                                                                                     $X(i \omega)$ real and even                                                                                     |
-|    Symmetry for Real and Odd Signals    |                                       $x(t)$ real and odd                                        |                                                                               $X(i \omega)$ purely imaginary and odd                                                                                |
-| Even-Odd Decomposition for Real Signals | $\begin{aligned} & x_e(t) = \mathcal{E}\{x(t)\} \\ & x_o(t) = \mathcal{O}\{x(t)\} \end{aligned}$ |                                                 $\begin{aligned} & \mathfrak{Re}\{X(i \omega)\} \\ & i \mathfrak{Im}\{X(i \omega)\} \end{aligned}$                                                  |
-|                                         |                          **Parseval's Relation for Aperiodic Signals**                           |                                              $$\int_{-\infty}^\infty x(t)
+|                   Property                    |                                            Aperiodic Signal                                            |                                                                                          Fourier Transform                                                                                          |
+| :-------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                               |                                                 $x(t)$                                                 |                                                                                            $X(i \omega)$                                                                                            |
+|                                               |                                                 $y(t)$                                                 |                                                                                            $Y(i \omega)$                                                                                            |
+|                 **Linearity**                 |                                           $a x(t) + b y(t)$                                            |                                                                                   $a X(i \omega) + b Y(i \omega)$                                                                                   |
+|               **Time Shifting**               |                                        $x\left(t - t_0\right)$                                         |                                                                                   $e^{-i \omega t_0} X(i \omega)$                                                                                   |
+|              **Frequency Shifting**               |                                        $e^{i \omega_0 t} x(t)$                                         |                                                                                $X\left(i (\omega - \omega_0)\right)$                                                                                |
+|                  **Conjugation**                  |                                                $x^*(t)$                                                |                                                                                          $X^*(-i \omega)$                                                                                           |
+|                 **Time Reversal**                 |                                                $x(-t)$                                                 |                                                                                           $X(-i \omega)$                                                                                            |
+|          **Time and Frequency Scaling**           |                                                $x(a t)$                                                |                                                                           $\frac{1}{a} X\left(\frac{i \omega}{a}\right)$                                                                            |
+|                  **Convolution**                  |                                             $x(t) * y(t)$                                              |                                                                                      $X(i \omega) Y(i \omega)$                                                                                      |
+|                **Multiplication**                 |                                              $x(t) y(t)$                                               |                                                         $\frac{1}{2 \pi} \int_{-\infty}^\infty X(i \theta) Y(i (\omega - \theta)) d\theta$                                                          |
+|            **Differentiation in Time**            |                                          $\frac{d}{d t} x(t)$                                          |                                                                                       $i \omega X(i \omega)$                                                                                        |
+|                  **Integration**                  |                                     $\int_{-\infty}^t x(t) \, dt$                                      |                                                                     $\frac{1}{i \omega} X(i \omega) + \pi X(0) \delta(\omega)$                                                                      |
+|         **Differentiation in Frequency**          |                                                $t x(t)$                                                |                                                                                 $i \frac{d}{d \omega} X(i \omega)$                                                                                  |
+|      **Conjugate Symmetry for Real Signals**      |                                              $x(t)$ real                                               | $\begin{aligned} & X(i \omega) = X^*(-i \omega) \\ & \mathfrak{Re}\{X(i \omega)\} = \mathfrak{Re}\{X(-i \omega)\} \\ & \mathfrak{Im}\{X(i \omega)\} = -\mathfrak{Im}\{X(-i \omega)\} \end{aligned}$ |
+|      **Symmetry for Real and Even Signals**       |                                          $x(t)$ real and even                                          |                                                                                     $X(i \omega)$ real and even                                                                                     |
+|       **Symmetry for Real and Odd Signals**       |                                          $x(t)$ real and odd                                           |                                                                               $X(i \omega)$ purely imaginary and odd                                                                                |
+|    **Even-Odd Decomposition for Real Signals**    |    $\begin{aligned} & x_e(t) = \mathcal{E}\{x(t)\} \\ & x_o(t) = \mathcal{O}\{x(t)\} \end{aligned}$    |                                                 $\begin{aligned} & \mathfrak{Re}\{X(i \omega)\} \\ & i \mathfrak{Im}\{X(i \omega)\} \end{aligned}$                                                  |
+| **Parseval's Relation for Aperiodic Signals** | $\int_{-\infty}^\infty x(t)
 { #2}
- \, dt = \frac{1}{2 \pi} \int_{-\infty}^\infty X(i \omega)^2 \, d\omega$$                                               |
+ \, dt = \frac{1}{2 \pi} \int_{-\infty}^\infty X(i \omega)^2 \, d\omega$ |                                                                                                                                                                                                     |
 
 Parseval's theorem states that total energy can be expressed as energy over time integrated across all time or as energy per frequency integrated across all frequencies. Consequently, $|X(i \omega)|^2$ is often referred to as the **energy-density spectrum**.
 
