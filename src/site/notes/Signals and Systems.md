@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-19T12:43:57.547+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-19T13:00:09.294+01:00"}
 ---
 
 This note will mostly follow along the book 'Signals and Systems - 2nd edition' by Alan V. Oppenheim and Alan S. Willsky. Not every chapter is covered, especially the more 'basic' ones. Also its not an in-depth note.
@@ -392,14 +392,17 @@ $$\begin{aligned} x[0] & =\sum_{k=\langle N\rangle} a_k, \\ x[1] & =\sum_{k=\lan
 ## 3.7 Fourier Series and LTI Systems
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=257&selection=275,0,285,7|🔗]]
 
-As a reminder, we have $y(t)=H(s) e^{s t}$ for $x(t)=e^{s t}$ and $H(s)=\int_{-\infty}^{\infty} h(\tau) e^{-s t} d \tau$ the system functions.
-We will consider $\operatorname{Re}(s)=0$, egg $s=i w$. Then, $H(s)$ is called the frequency response.
-For $x(t) \stackrel{F S}{\longleftrightarrow} a_{k}$ with period $T$, we obtain $y(t)=\sum_{k=-\infty}^{\infty} a_{k} \cdot H\left(i k w_{0}\right) e^{i k w_{0} t}$, also penodic with 7 . $O$ obviously, $y(t) \stackrel{F S}{\longleftrightarrow} a_{k} H\left(i k w_{0}\right)$.
+We saw that the response of an LTI system to a linear combination of complex exponentials takes a particularly simple form. Specifically, we have $$y(t)=H(s) e^{s t}$$for $x(t)=e^{s t}$ and $$H(s)=\int_{-\infty}^{\infty}d \tau\cdot h(\tau) e^{-s t} $$in which $h(\tau)$ is the impulse response of an LTI system. Let's focus on the case that $\mathcal{R}(s)=0$, so that $s=i \omega$. Then, $H(s)$ is referred to as the frequency response:
+$$H(i\omega)=\int_{-\infty}^{\infty}dt \cdot h(t) e^{-i\omega t} .$$ 
 
-As a side remark, a system with impulse response $\alpha^{n} u[n]$ is stable for $|\alpha|<1$ and unstable for $|\alpha|>1$. Stable means a converging sum in $H$.
+For $x(t) \stackrel{F S}{\longleftrightarrow} a_{k}$ with period $T$, we obtain $$y(t)=\sum_{k=-\infty}^{\infty} a_{k} \cdot H\left(i k w_{0}\right) e^{i k w_{0} t},$$also periodic with $T$. Then, obviously, $y(t) \stackrel{F S}{\longleftrightarrow} a_{k} H\left(i k w_{0}\right)$. That is, the effect of the LTI system is to modify individually each of the Fourier coefficients of the input through multiplication by the value of the frequency response at the corresponding frequency.
+
 ## 3.8 Filtering
+[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=262&selection=148,0,150,9|🔗]]
 
-LTI systems that change the shape of the spectrum are called frequency-shaping filters. If they only let some frequencies pass, we call them frequency-selective filters.
+In a variety of applications, it is of interest to change the relative amplitudes of the frequency components in a signal or perhaps eliminate some frequency components entirely, a process referred to as .filtering. Linear time-invariant systems that change the shape of the spectrum are often referred to as frequency-shaping filters. Systems that are designed to pass some frequencies essentially undistorted and significantly attenuate or eliminate others are referred to as frequency-selective filters.
+LTI systems that change the shape of the spectrum are called frequency-shaping filters. If they only let some frequencies pass, we call them frequency-selective filters. 
+As we have seen, the Fourier series coefficients of the output of an LTI system are those of the input multiplied by the frequency response of the system. Consequently, filtering can be conveniently accomplished through the use of LTI systems with an appropriately chosen frequency response, and frequency-domain methods provide us with the ideal tools to examine this very important class of applications.
 
 One class of filters does $x(t)=e^{i n t} \rightarrow y(t)=\frac{d x}{d t}$ such that $H(i w)=$ in. Thus, the amplification increases with $w$. This is used in image processing to enhance edges. The signal here is $x\left(t_{1}, t_{2}\right)$ where $t_{i}$ are coordinates and $x$ the brightness.
 
