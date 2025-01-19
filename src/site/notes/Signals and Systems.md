@@ -1,709 +1,1024 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-19T17:12:45.371+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-19T18:16:59.109+01:00"}
 ---
 
-This note will mostly follow along the book 'Signals and Systems - 2nd edition' by Alan V. Oppenheim and Alan S. Willsky. Not every chapter is covered, especially the more 'basic' ones. Also its not an in-depth note.
+> [!INFO] To do  
+> More details to property tables, relevance of parsevals theorem
+> Check grammar 
+
+
+This note will mostly follow along the book *Signals and Systems - 2nd edition* by Alan V. Oppenheim and Alan S. Willsky. Not every chapter is covered, especially the more 'basic' ones. Also, it is not an in-depth note.
 
 # 1 Signals and Systems
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=32&selection=2,0,6,7|🔗]]
 
-## 1.1 Continous-time and discrete-time signals 
+## 1.1 Continuous-time and Discrete-time Signals 
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=32&selection=69,0,79,7|🔗]]
 
-Signals are represented mathematically as functions of one or more independent variables. Here, attention is on signals involving a single independent variable, usually time $t$ for convenience. In the case of continuous-time signals the independent variable is continuous, and thus these signals are defined for a continuum of values of the independent variable. On the other hand, discrete-time signals are defined only at discrete times, and consequently, for these signals, the independent variable takes on only a discrete set of values. For continuous-time signals we will enclose the independent variable in parentheses $( · )$, whereas for discrete-time signals we will use brackets $[ · ]$ to enclose the independent variable. A discrete-time signal $x[n]$ may represent a phenomenon for which the independent variable is inherently discrete. Signals such as demographic data are examples of this. On the other hand, a very important class of discrete-time signals arises from the sampling of continuous-time signals. In this case, the discrete-time signal $x[n]$ represents successive samples of an underlying phenomenon for which the independent variable is continuous. 
+Signals are represented mathematically as functions of one or more independent variables. Here, attention is on signals involving a single independent variable, usually time $t$ for convenience. In the case of continuous-time signals, the independent variable is continuous, and thus these signals are defined for a continuum of values of the independent variable. On the other hand, discrete-time signals are defined only at discrete times, and consequently, for these signals, the independent variable takes on only a discrete set of values. 
+
+For continuous-time signals, we will enclose the independent variable in parentheses $(\cdot)$, whereas for discrete-time signals we will use brackets $[\cdot]$ to enclose the independent variable. A discrete-time signal $x[n]$ may represent a phenomenon for which the independent variable is inherently discrete. Signals such as demographic data are examples of this. 
+
+On the other hand, a very important class of discrete-time signals arises from the sampling of continuous-time signals. In this case, the discrete-time signal $x[n]$ represents successive samples of an underlying phenomenon for which the independent variable is continuous. 
 
 ## 1.2 Energy and Power
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=36&selection=158,0,170,5|🔗]]
 
-In many applications, the signals considered are directly related to physical quantities capturing power and energy in a physical system. As starting example, consider voltage $v(t)$ and current $I(t)$ across a resistor with resistance $R$. The instantaneous power is $p(t)=v(t)I(t)=v^2(t)/R$. This allows to get the total energy expended over the time interval $t_1<t<t_2$ as 
-$$\int_{t_1}^{t_2}dt\cdot p(t) $$
-and the average power as
-$$\frac{1}{t_2-t_1}\int_{t_1}^{t_2}dt\cdot p(t).$$
-With these simple physical examples in mind, it is common to use similar terminology for power and energy for _any_ continuous-time signal $x(t)$ and _any_ discrete-time signal $x[n]$. 
-The energy in a given time-interval $[t_1, t_2]$ is
-$$E=\int_{t_{1}}^{t_{2}} d t \cdot|x(t)|^{2}=\sum_{n=n_{1}}^{n_{2}}|x[n]|^{2},$$
-while the time-averaged power is
-$$P=\frac{E}{t_{2}-t_{1}}=\frac{E}{n_{2}-n_{1}+1}.$$
-For signals over infinite time-intervals, we find
-$$E_{\infty}=\int_{-\infty}^{\infty} d t \cdot|x(t)|^{2}=\sum_{n=-\infty}^{\infty}|x[n]|^{2}.$$
-Note that for some signals, these integrals might not converge (for example a non-zero constant signal). These signals have infinite energy. The time-averaged power then becomes
-$$P_{\infty}=\lim _{T \rightarrow \infty} \frac{1}{2 T} \int_{-T}^{T} d t \cdot|x(t)|^{2}=\lim _{N \rightarrow \infty} \frac{1}{2 N+1} \sum_{n=-N}^{N}|x[n]|^{2}.$$
+In many applications, the signals considered are directly related to physical quantities capturing power and energy in a physical system. As a starting example, consider voltage $v(t)$ and current $I(t)$ across a resistor with resistance $R$. The instantaneous power is $p(t) = v(t)I(t) = \frac{v^2(t)}{R}$. This allows us to calculate the total energy expended over the time interval $t_1 < t < t_2$ as: 
+$$
+\int_{t_1}^{t_2} p(t) \, dt,
+$$
+and the average power as:
+$$
+\frac{1}{t_2 - t_1} \int_{t_1}^{t_2} p(t) \, dt.
+$$
+
+With these simple physical examples in mind, it is common to use similar terminology for power and energy for *any* continuous-time signal $x(t)$ and *any* discrete-time signal $x[n]$. 
+
+The energy in a given time interval $[t_1, t_2]$ is:
+$$
+E = \int_{t_1}^{t_2} |x(t)|^2 \, dt \quad \text{or} \quad E = \sum_{n=n_1}^{n_2} |x[n]|^2,
+$$
+while the time-averaged power is:
+$$
+P = \frac{E}{t_2 - t_1} \quad \text{or} \quad P = \frac{E}{n_2 - n_1 + 1}.
+$$
+
+For signals over infinite time intervals, we find:
+$$
+E_\infty = \int_{-\infty}^\infty |x(t)|^2 \, dt \quad \text{or} \quad E_\infty = \sum_{n=-\infty}^\infty |x[n]|^2.
+$$
+Note that for some signals, these integrals might not converge (for example, a non-zero constant signal). Such signals have infinite energy. The time-averaged power then becomes:
+$$
+P_\infty = \lim_{T \to \infty} \frac{1}{2T} \int_{-T}^T |x(t)|^2 \, dt \quad \text{or} \quad P_\infty = \lim_{N \to \infty} \frac{1}{2N + 1} \sum_{n=-N}^N |x[n]|^2.
+$$
+
 These definitions allow us to identify three important classes of signals:
-1) Finite energy signals: $E_{\infty}<\infty \Rightarrow P_{\infty}=\lim \frac{E_{\infty}}{2 T}=0.$
-2) Finite average power signals: $P_{\infty}<\infty \Rightarrow E_{\infty}=\infty.$
-3) Signal with neither finite energy nor finite power, such as $x(t)=t$.
+1. **Finite energy signals**: $E_\infty < \infty \implies P_\infty = 0.$
+2. **Finite average power signals**: $P_\infty < \infty \implies E_\infty = \infty.$
+3. **Signals with neither finite energy nor finite power**, such as $x(t) = t$.
 
 ## 1.3 Transformations
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=38&selection=226,0,236,8|🔗]]
 
-A very central concept in signal and system analysis is that of the transformation of a signal. Transformations happen all around us: Digital-analog-converters or noise-reduction in music systems for example. 
+A very central concept in signal and system analysis is that of the transformation of a signal. Transformations happen all around us: digital-to-analog converters or noise reduction in music systems, for example. 
 
 Some important and very fundamental transformations:
-- Time shift: $x(t) \rightarrow x\left(t-t_{0}\right)$, 
-- Time-reversal: $x(t) \rightarrow x(-t)$, and
-- Time scaling: $x(t) \rightarrow x(\alpha \cdot t)$.
-## 1.4 Periodic signals 
+- **Time shift**: $x(t) \to x(t - t_0)$,
+- **Time reversal**: $x(t) \to x(-t)$, and
+- **Time scaling**: $x(t) \to x(\alpha t)$.
+
+## 1.4 Periodic Signals 
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=42&selection=502,0,506,7|🔗]]
 
-A very important class of signals encountered frequently here, are periodic signals. The defining property is that, for a positive value of $T$, it holds that
-$$x(t)=x(t)+T$$
+A very important class of signals encountered frequently is periodic signals. The defining property is that for a positive value of $T$, it holds that:
+$$
+x(t) = x(t + T),
+$$
 for all values of $t$. In other words, a periodic signal is unchanged by a time shift $T$. Then, the signal $x(t)$ is periodic with period $T$. 
-## 1.5 Even and odd signals
+
+## 1.5 Even and Odd Signals
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=44&selection=36,0,46,7|🔗]]
 
-Another set of useful properties of signals relates to their symmetry under time reversal. A signal is considered even if $x(t)=x(-t)$, and odd if $x(-t)=-x(t)$. An odd signal must be zero at time zero, as we can see from the definition. Thus, every signal can be written as superposition of an odd and even part, 
-$$x(t)=\mathcal{E}(x)+\mathcal{O}(x)=\frac{x(t)+x(-t)}{2}+\frac{x(t)-x(-t)}{2}.$$
+Another set of useful properties of signals relates to their symmetry under time reversal. A signal is considered **even** if $x(t) = x(-t)$, and **odd** if $x(-t) = -x(t)$. An odd signal must be zero at time zero, as we can see from the definition. Thus, every signal can be written as a superposition of an odd and even part:
+$$
+x(t) = \mathcal{E}(x) + \mathcal{O}(x) = \frac{x(t) + x(-t)}{2} + \frac{x(t) - x(-t)}{2}.
+$$
 
-## 1.6 Exponential signals
+## 1.6 Exponential Signals
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=46&selection=12,0,17,18|🔗]]
 
-Consider the continous-time complex exponential signal of the form $x(t)=C \cdot e^{\alpha^{t}}$.
-Depending on the values of $\alpha$ and $C$, these signals can have different characteristics:
-1) Real exponential signals $\alpha, c \in \mathbb{R}$. They have two different behaviours:
-	1) $\alpha<0 \Rightarrow$ exponential decrease, or
-	2) $\alpha>0 \Rightarrow$ exponential increase with time.
-2) Periodic complex exponential $\operatorname{Re}(\alpha)=0$. These signals are periodic with periodicity $T_{0}=\frac{2 \pi}{w_{0}}$ for $\alpha=i\omega_{0}$. Like any periodic signal, they have infinite total energy, but finite average power. 
-3) General complex exponential signals $\alpha, C \in \mathbb{C}$. We can differentiate two cases:
-	1) $\operatorname{Re}(\alpha)=0$ : $x(t)$ sinusoidal, or
-	2) $\operatorname{Re}(\alpha)>0$ : sinusoidal multiplied by increasing exponential, or
-	3) $\operatorname{Re}(\alpha)<0$ : sinusoidal multiplied by decaying exponential.
+Consider the continuous-time complex exponential signal of the form $x(t) = C \cdot e^{\alpha t}$. Depending on the values of $\alpha$ and $C$, these signals can have different characteristics:
+1. **Real exponential signals**: $\alpha, C \in \mathbb{R}$. These have two different behaviors:
+   1. $\alpha < 0 \Rightarrow$ exponential decay, or
+   2. $\alpha > 0 \Rightarrow$ exponential growth with time.
+2. **Periodic complex exponential signals**: $\operatorname{Re}(\alpha) = 0$. These signals are periodic with periodicity $T_0 = \frac{2 \pi}{\omega_0}$ for $\alpha = i\omega_0$. Like any periodic signal, they have infinite total energy but finite average power. 
+3. **General complex exponential signals**: $\alpha, C \in \mathbb{C}$. We can differentiate three cases:
+   1. $\operatorname{Re}(\alpha) = 0$: $x(t)$ is sinusoidal,
+   2. $\operatorname{Re}(\alpha) > 0$: $x(t)$ is sinusoidal multiplied by an exponentially increasing envelope, or
+   3. $\operatorname{Re}(\alpha) < 0$: $x(t)$ is sinusoidal multiplied by an exponentially decaying envelope.
 
-The discussions from [[Signals and Systems#1.3 Transformations\|#1.3 Transformations]] to [[Signals and Systems#1.6 Exponential signals\|#1.6 Exponential signals]] are exactly analogous in the case of a discrete-time signal and will not be repeated. Note that this is the last notice about this occurence.
-## 1.7 Unit impulse and unit step
+The discussions from [[Signals and Systems#1.3 Transformations\|#1.3 Transformations]] to [[Signals and Systems#1.6 Exponential signals\|#1.6 Exponential signals]] are exactly analogous in the case of a discrete-time signal and will not be repeated. Note that this is the last notice about this occurrence.
+
+## 1.7 Unit Impulse and Unit Step
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=61&selection=111,0,127,9|🔗]]
 
-In this section, several other basic signals of considerable importance are introduced. Consider the unit impulse
-$$\delta[n] =
+In this section, several other basic signals of considerable importance are introduced. Consider the unit impulse:
+$$
+\delta[n] =
 \begin{cases} 
 1 & \text{if } n = 0, \\
-0 & \text{otherwise}
-\end{cases},$$
-and the unit step
-$$u[n] = \begin{cases} 1 & \text{if } n \geq 0, \\ 0 & \text{otherwise.} \end{cases}$$
+0 & \text{otherwise.}
+\end{cases}
+$$
+
+And the unit step:
+$$
+u[n] = 
+\begin{cases} 
+1 & \text{if } n \geq 0, \\
+0 & \text{otherwise.}
+\end{cases}
+$$
+
 There is a close relation between the unit impulse and the unit step. In particular, the unit impulse is the _first difference_ of the unit step: 
-$$\delta[n]=u[n]-u[n-1],$$
-while the unit step is the _running sum_ of the unit sample: 
-$$u[n]=\sum_{m=-\infty}^{n} \delta[n]=\sum_{k=0}^{\infty} \delta[n-k].$$
-Further, we find that $x[n] \delta\left[n-n_{0}\right]=x\left[n_{0}\right] \delta\left[n-n_{0}\right]$. Instead, in continuous independant variables, the relation is  
-$$u(t)=\int_{-\infty}^t d\tau\cdot\delta(\tau)=\int_{0}^{\infty} d \sigma \cdot \delta(t-\sigma),$$
+$$
+\delta[n] = u[n] - u[n-1],
+$$
+while the unit step is the _running sum_ of the unit impulse: 
+$$
+u[n] = \sum_{m=-\infty}^{n} \delta[m] = \sum_{k=0}^{\infty} \delta[n-k].
+$$
+
+Further, we find that $x[n] \delta\left[n-n_0\right] = x\left[n_0\right] \delta\left[n-n_0\right]$. For continuous-time signals, the relation is:
+$$
+u(t) = \int_{-\infty}^t \delta(\tau) \, d\tau = \int_{0}^\infty \delta(t - \sigma) \, d\sigma,
+$$
 and 
-$$\delta(t)=\frac{d u(t)}{d t}.$$
-The unit impulse should be considered an idealization of an infinitely short pulse. Any system has some 'inertia' associated to it, such that the response of a system to a _sufficiently short_ pulse is independent of the pulse duration or shape. The primary characteristic of the pulse is therefore only its integrated effect, e.g. its area. For system with a fast response, the pulse must be shorter as well for this to hold true. The ideal unit impulse is short enough for _any_ system. 
-## 1.8 Interconnection of systems
+$$
+\delta(t) = \frac{d u(t)}{dt}.
+$$
+
+The unit impulse should be considered an idealization of an infinitely short pulse. Any system has some "inertia" associated with it, such that the response of a system to a _sufficiently short_ pulse is independent of the pulse duration or shape. The primary characteristic of the pulse is therefore only its integrated effect, e.g., its area. For a system with a fast response, the pulse must be shorter for this approximation to hold. The ideal unit impulse is short enough for _any_ system. 
+
+## 1.8 Interconnection of Systems
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=72&selection=144,0,150,7|🔗]]
 
-An important idea is the concept of interconnecting systems, since many real systems are built as interconnections of several subsystems. By breaking down a system into its interconnection of simpler subsystems, it may be possible to synethize compelx systems out of simpler, basic building blocks. The most frequently encountered connections are the _series/cascade_ and _parallel_ type:
+An important idea is the concept of interconnecting systems since many real systems are built as interconnections of several subsystems. By breaking down a system into its interconnection of simpler subsystems, it may be possible to synthesize complex systems out of simpler, basic building blocks. The most frequently encountered connections are the _series/cascade_ and _parallel_ types:
 ![Attachments/Signals and Systems/IMG-0119135229.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135229.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=73&rect=88,274,456,600|🔗]]
 
-The symbol $\bigoplus$ denotes additions, so that the output of the parallel system is the sum of the outputs of systems 1 and 2. Another important type is the feedback interconnection:
+The symbol $\bigoplus$ denotes addition, so that the output of the parallel system is the sum of the outputs of systems 1 and 2. Another important type is the feedback interconnection:
 ![Attachments/Signals and Systems/IMG-0119135229-1.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135229-1.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=54,505,325,597|🔗]]
 
-The output of system 1 is the input to system 2, while the output of system 2 is fed back and added to the external input oto produce the actual input of system 1. These type of connection often arise in real systems. Consider figure (a) and note that it is equivalent to (b):
+The output of system 1 is the input to system 2, while the output of system 2 is fed back and added to the external input to produce the actual input to system 1. These types of connections often arise in real systems. Consider figure (a) and note that it is equivalent to (b):
 ![Attachments/Signals and Systems/IMG-0119135230.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=79,82,323,316|🔗]]
-## 1.9 Basic properties
+
+## 1.9 Basic Properties
+
 ### 1.9.1 Memory
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=75&selection=51,0,63,6|🔗]]
 
-A system is said to be _memoryless_ if the output at a given time depends only on the input at that time. A basic memoryless system is the identity system, whose output is its input. As counterexamples, the accumulator $y[n]=\sum_{k=-\infty}^{n} x[n]$ has memory, as well as the delay $y[n]=x[n-1]$. A capacitor is an example of real system with memory, since the output (voltage) is $V(t)=\frac{1}{c} \int_{-\infty}^{t} d \tau \cdot I(\tau)$. 
-Roughly speaking, the concept of memory in a system corresponds to the presence of a mechanism in the system that retains or stores information about input values at times other htna the current time. 
+A system is said to be _memoryless_ if the output at a given time depends only on the input at that time. A basic memoryless system is the identity system, whose output is its input. 
+
+As counterexamples:
+- The accumulator $y[n] = \sum_{k=-\infty}^{n} x[k]$ has memory.
+- The delay system $y[n] = x[n-1]$ also has memory. 
+
+A capacitor is an example of a real system with memory, since the output (voltage) is:
+$$
+V(t) = \frac{1}{C} \int_{-\infty}^{t} I(\tau) \, d\tau.
+$$
 
 ### 1.9.2 Invertibility and Inverse Systems
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=76&selection=165,0,173,7|🔗]]
 
-A system is said to be invertible, if distinct input implies distinct output. Then, an inverse system exist, such that
+A system is said to be invertible if distinct inputs produce distinct outputs. An inverse system exists such that:
 ![Attachments/Signals and Systems/IMG-0119135230-1.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230-1.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&rect=106,565,359,612|🔗]]
 
-The concept of intervibility is important in many contexts: In systems for encoding and decoding, such as communication of cryptography. In the case of lossless coding, the input to the encoder must be exactly recoverable from the output, e.g. the encoder must be intertible. 
-### 1.9.3 Causality, stability, time invariance
+Invertibility is important in contexts like encoding and decoding systems, such as in communication or cryptography. For example, lossless coding requires that the encoder must be invertible.
+
+### 1.9.3 Causality
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&selection=205,0,209,9|🔗]]
 
-A system is called causal if the output at time $t$ depends only on values of the input at the present time or in the past. Such a system is often referred to as being nonanticipative, as the system output does not anticipate future values of the input. Consequently, if two inputs to a causal system are identical up to some point in time, the corresponding outputs must also be equal up to this same time.  
-An example of two system that are _not_ causal:
-$$y[n]=x[n]-x[n+1],$$
-and 
-$$y(t)=x(t+1).$$
-All memoryless systems are causal, since the output response only to the current value of the input. 
+A system is causal if the output at time $t$ depends only on values of the input at the present time or in the past. A system is nonanticipative if it does not depend on future input values. Examples of non-causal systems:
+$$
+y[n] = x[n] - x[n+1], \quad y(t) = x(t+1).
+$$
+
 ### 1.9.4 Stability
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&selection=55,0,59,9|🔗]]
 
-A system is stable, if small inputs lead to non-diverging responses. The figure (a) and (b) show two examples of a stable and unstable systems:
+A system is stable if small inputs lead to bounded outputs. For example:
 ![Attachments/Signals and Systems/IMG-0119135230-2.webp|400](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230-2.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&rect=188,46,306,245|🔗]]
-For a stable system, if the input is bounded, then th eoutput must also be bounded and therefore cannot diverge. This is the definition that is most often used.
+
+If the input is bounded, the output must also remain bounded.
 
 ### 1.9.5 Time Invariance
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=81&selection=204,0,206,15|🔗]]
 
-A system is time-invariant, if its behavior and characteristics are fixed over time. Formally, it is time-invariant if 
-$$x[n] \rightarrow y[n] \Leftrightarrow x\left[n-n_{0}\right] \rightarrow y\left[n-n_{0}\right],$$
-so that it does not matter when the experiment is conducted. 
+A system is time-invariant if its behavior and characteristics are fixed over time. Formally:
+$$
+x[n] \to y[n] \Leftrightarrow x[n-n_0] \to y[n-n_0].
+$$
 
 ### 1.9.6 Linearity
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=84&selection=70,0,74,9|🔗]]
 
-A linear system fulfills 
-1. Additivity $x_{1}+x_{2} \rightarrow y_{1}+y_{2}$, and 
-2. Homogeneity $\alpha x_{1} \rightarrow \alpha y_{1}$.
+A linear system fulfills:
+1. Additivity: $x_1 + x_2 \to y_1 + y_2$,
+2. Homogeneity: $\alpha x_1 \to \alpha y_1$.
 
-Both statements can be combined : $\alpha x_{1}+\beta x_{2} \rightarrow \alpha y_{1}+\beta y_{2}$.
+These can be combined:
+$$
+\alpha x_1 + \beta x_2 \to \alpha y_1 + \beta y_2.
+$$
 
-# 2 Linear time-invariant systems
+# 2 Linear Time-Invariant Systems
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=105&selection=2,0,6,7|🔗]]
 
-In [[Signals and Systems#1 Signals and Systems\|Chapter 1]], a number of basic system properties have been discussed. Two of these, linearity and time invariance, play a fundamental role in signal and system analysis for two major reasons. First, many physical processes possess these properties and thus can be modelled as linear time-invariant (short: **LTI**) systems. In addition, LTI systems can be analysed in considerable detail, providing both insight into their properties and a set of powerful tools that form the core of signal and system analysis. One reason why LTI systems are of interest is that any such system possesses the [[Signals and Systems#1.14 Linearity\|superposition property]]. As a consequence, if we can represent the input to an LTI system in terms of a linear combination of a set of basic signals, we can then use superposition to compute the output of the system in terms of its responses to these basic signals. Consider LTI systems for this chapter unless said otherwise.
+In [[Signals and Systems#1 Signals and Systems\|Chapter 1]], a number of basic system properties have been discussed. Two of these, linearity and time invariance, play a fundamental role in signal and system analysis for two major reasons. First, many physical processes possess these properties and thus can be modeled as linear time-invariant (**LTI**) systems. In addition, LTI systems can be analyzed in considerable detail, providing both insight into their properties and a set of powerful tools that form the core of signal and system analysis.
+
+One reason why LTI systems are of interest is that any such system possesses the [[Signals and Systems#1.14 Linearity\|superposition property]]. As a consequence, if we can represent the input to an LTI system in terms of a linear combination of a set of basic signals, we can then use superposition to compute the output of the system in terms of its responses to these basic signals. Unless stated otherwise, this chapter considers LTI systems.
 
 ## 2.1 The Convolution Sum
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=106&selection=76,0,86,3|🔗]]
 
-The so-called sifting (yes, not shifting) property of the discrete-time unit impulse is 
-$$x[n]=\sum_{k=-\infty}^{\infty} x[k] \delta[n-k].$$
-Because the sequence $\delta[n-k]$ is nonzero only for $k$ equals $n$, the summation on the sight hand side 'sifts' through the sequence of values $x[k]$ and preserves only the corresponding value $k=n$. The importance of this property lies in the fact that it allows to represent $x[n]$ as a superposition of scaled versions of a very simple set of elementary functions. Moreover, the property of time invariance tells us that the responses of a time-invariant system to the time-shifted unit impulses are simply time-shifted versions of one another.
-Let $h_{k}[n]$ be the response of a linear system with input $\delta[n-k]$, e.g. $\delta[n-k] \rightarrow h_{k}[n]$. Then, it holds 
-$$y[n]=\sum_{k=-\infty}^{\infty} x[k] h_{k}[n],$$
-meaning that we are able to contruct the response to an arbitrary input. 
-If the system is additionally time-invariant and $\delta[n] \rightarrow h[n]$, then 
-$$y[n] \rightarrow \sum_{k} x(h) h[n-k].$$
-We call this the convolution/ superposition sum, and also simply write 
-$$y[n]=x[n] * h[n].$$
-The LTI system is therefore completely characterized by its response to the unit impulse. For continous -time LTI systems, we have the sifting property 
-$$x(t)=\int_{-\infty}^{\infty} d \tau \cdot x(\tau) \delta(t-\tau),$$
-and then 
-$$y(t)=x(t) * h(t)=\int_{-\infty}^{\infty} d \tau \cdot x(\tau) h(t-\tau)$$
-for $\delta(t) \rightarrow h(t)$. This is called convolution integral or thesuperpositionn integral.
+The so-called sifting property of the discrete-time unit impulse is:
+$$
+x[n] = \sum_{k=-\infty}^\infty x[k] \delta[n-k].
+$$
 
-## 2.2 Convolution Properties of LTI systems
+Because the sequence $\delta[n-k]$ is nonzero only for $k = n$, the summation on the right-hand side "sifts" through the sequence of values $x[k]$ and preserves only the corresponding value at $k = n$. This property allows us to represent $x[n]$ as a superposition of scaled versions of a simple set of elementary functions.
+
+The property of time invariance tells us that the responses of a time-invariant system to time-shifted unit impulses are simply time-shifted versions of one another. Let $h_k[n]$ be the response of a linear system with input $\delta[n-k]$, i.e., $\delta[n-k] \rightarrow h_k[n]$. Then, it holds:
+$$
+y[n] = \sum_{k=-\infty}^\infty x[k] h_k[n],
+$$
+which means we can construct the response to an arbitrary input.
+
+If the system is also time-invariant and $\delta[n] \rightarrow h[n]$, then:
+$$
+y[n] = \sum_{k=-\infty}^\infty x[k] h[n-k].
+$$
+
+This is called the **convolution sum** or the **superposition sum**, often written as:
+$$
+y[n] = x[n] * h[n].
+$$
+
+The LTI system is therefore completely characterized by its response to the unit impulse.
+
+For continuous-time LTI systems, we have the sifting property:
+$$
+x(t) = \int_{-\infty}^\infty x(\tau) \delta(t-\tau) \, d\tau,
+$$
+and the convolution integral:
+$$
+y(t) = x(t) * h(t) = \int_{-\infty}^\infty x(\tau) h(t-\tau) \, d\tau,
+$$
+where $\delta(t) \rightarrow h(t)$. This is called the **convolution integral** or the **superposition integral**.
+
+## 2.2 Convolution Properties of LTI Systems
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=134&selection=16,0,26,7|🔗]]
 
 LTI systems satisfy important properties:
-1. Commutativity: $x(t) * h(t)=h(t) * x(t)$,
-2. Distributivity: $x *\left(h_{1}+h_{2}\right)=x * h_{1}+x * h_{2}$, and
-3. Associativity: $x *\left(h_{1} * h_{2}\right)=\left(x * h_{1}\right) * h_{2}$.
+1. **Commutativity**: $x(t) * h(t) = h(t) * x(t)$,
+2. **Distributivity**: $x * \left(h_1 + h_2\right) = x * h_1 + x * h_2$, and
+3. **Associativity**: $x * \left(h_1 * h_2\right) = \left(x * h_1\right) * h_2$.
 
-The second point, namely distributivity can be depiced graphically:
+Distributivity can be depicted graphically:
 ![Attachments/Signals and Systems/IMG-0119135230-3.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230-3.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=136&rect=108,407,300,593|🔗]]
-In the same way, associativity can be depiced graphically as:
+
+Similarly, associativity can be depicted graphically:
 ![Attachments/Signals and Systems/IMG-0119135230-4.webp|900](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230-4.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=139&rect=94,310,303,595|🔗]]
 
-
 ## 2.3 Basic Properties
+
 ### 2.3.1 Memory
-If a discrete-time LTI system has an impulse response $h[n]$ that is not identically zero for $n\neq 0$, then the system has memory. Then, $h[n] \sim \delta[n]$ and $y\sim x$. A continous-time LTI system is memoryless if $h(t)=0$ for $t\neq 0$, and such a system has the form 
-$$y(t) = Kx(t),$$
-meaning that $h=K\delta(t)$. If $K=1$, such systems satisfy $x=x * \delta=y$ and become identity systems, which reduces to the sifting property.
+If a discrete-time LTI system has an impulse response $h[n]$ that is not identically zero for $n \neq 0$, then the system has memory. For a continuous-time LTI system, the system is memoryless if $h(t) = 0$ for $t \neq 0$. Such a system has the form:
+$$
+y(t) = Kx(t),
+$$
+where $h(t) = K\delta(t)$. If $K = 1$, the system satisfies $x = x * \delta = y$ and becomes the identity system, which reduces to the sifting property.
+
 ### 2.3.2 Invertibility
-If an LTI system is invertible, its inverse is LTI as well. If 
-$$\begin{aligned} x \xrightarrow{h} y&&\text{and we want}&&y \xrightarrow{h^{\prime}} x\end{aligned},$$
-then we must have $h * h^{\prime}=1=\delta$ the identity.
+If an LTI system is invertible, its inverse is also LTI. If:
+$$
+x \xrightarrow{h} y \quad \text{and we want} \quad y \xrightarrow{h'} x,
+$$
+then we must have:
+$$
+h * h' = \delta.
+$$
+
 ### 2.3.3 Causality
-Causality requires $h[n]=0$ for $n<0$. The impulse response must be zero before the impuslse occurs, consistent with the intuitive concept of causality. The equivalece of causality and the condition of initial rest applies only to linear systems:
-$$\begin{aligned} x\left(t<t^{\prime}\right)=0 &&\text{then}&& y\left(t<t^{\prime}\right)=0.\end{aligned}$$
+Causality requires $h[n] = 0$ for $n < 0$. The impulse response must be zero before the impulse occurs, consistent with the intuitive concept of causality. The equivalence of causality and the condition of initial rest applies only to linear systems:
+$$
+x(t < t') = 0 \quad \text{implies} \quad y(t < t') = 0.
+$$
 
 ### 2.3.4 Stability
-An LTI system is stable if it is absolutely summable, that is 
-$$\sum_{k}|h[k]|<\infty,$$
-since then, for every $n$  
-$$|x[n]|<B<\infty \Rightarrow|y[n]| \leq B \cdot \sum_{k}|h [k]|<\infty,$$
-for some bounding constant $B$.  For continuous variables, 
-$$\int d t \cdot|h(t)|^{2}<\infty$$
-translates to absolutely integrable. The system is stable if the impulse response is absolutely integrable. 
-### 2.3.5 Unit step response of an LTI system
-Besides the impulse response, there is another basic but important signal. The step response is defined as 
-$$s[n]=\sum_{k=-\infty}^{n} h[k]=u[n] * h[n],$$
-or in continous-time: 
-$$s(t)=\int_{-\infty}^{t} d \tau \cdot h(\tau).$$
-Note also that 
-$$\begin{aligned}h[n]=s[n]-s[n-1]&&\text{and}&&h(t)=\frac{d s}{d t}.\end{aligned}$$ 
+An LTI system is stable if the impulse response is absolutely summable, i.e.,
+$$
+\sum_{k=-\infty}^\infty |h[k]| < \infty.
+$$
+For any $n$, if $|x[n]| < B < \infty$, then:
+$$
+|y[n]| \leq B \cdot \sum_{k=-\infty}^\infty |h[k]| < \infty,
+$$
+for some bounding constant $B$.
+
+For continuous-time variables, stability requires:
+$$
+\int_{-\infty}^\infty |h(t)| \, dt < \infty.
+$$
+
+### 2.3.5 Unit Step Response of an LTI System
+Besides the impulse response, the step response is another basic but important signal. The step response is defined as:
+$$
+s[n] = \sum_{k=-\infty}^n h[k] = u[n] * h[n],
+$$
+or in continuous-time:
+$$
+s(t) = \int_{-\infty}^t h(\tau) \, d\tau.
+$$
+
+Also note that:
+$$
+h[n] = s[n] - s[n-1], \quad h(t) = \frac{ds(t)}{dt}.
+$$
 
 ## 2.4 Causal LTI Systems Described by Differential Equations
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=147&selection=54,0,72,9|🔗]]
 
-An important class of discrete-time systems is that for which the input and output are related through a _linear constant-coefficient difference equation_. They provide an implicit specification of the system, that is, they describe a relationship between input and output, rather than an explicit expression. To obtain an explicit expression, one must solve the differential equation.  The condition of initial rest makes a system described by a linear constant-coefficient difference equation time invariant. 
-Consider a general _Nth_-order linear constant-coefficient differential equation:
-$$\sum_{k=0}^{N} a_{k} \cdot \frac{d^{k} y(t)}{d t^{k}}=\sum_{k=0}^{M} b_{k} \cdot \frac{d^{k} x(t)}{d t^{k}},$$
-which becomes $a_{n}$ explicit function for $N=0$, 
-$$y(t)=\frac{1}{a_{0}} \sum_{k=0}^{M} b_{k} \frac{d^{k} x}{d t^{k}}.$$ 
-For $N \geqslant 1$, the solution $y(t)$ consists of two parts, one being the particular solution plus the part that solves the homogeneous equation 
-$$\sum_{k=0}^{N} a_{k} \cdot \frac{d^{k} y(t)}{d t^{k}}=0,$$
-the so-called natural responses of the system. In discrete-time variables, it is 
-$$\sum_{k=0}^{N} a_{k} y[n-k]=\sum_{k=0}^{M} b_{k} x[n-k],$$
-and the natural response are 
-$$\sum_{k=0}^{N} a_{k} y[n-k]=0.$$
-The discrete-time offers an alternate approach. We can rewrite 
-$$y[n]=\frac{1}{a_{0}}\left(\sum_{k=0}^{M} b_{k} x[n-k]-\sum_{k=1}^{N} a_{k} y[n-k]\right),$$
-which requires us to know $y[n-1]$ ... $y[n-N]$. This type of equation is also called a recursive equation. 
-For $N=0$ we have 
-$$y[n]=\sum_{k=0}^{M} \frac{b_{k}}{a_{0}} x[n-k]$$
-so $h[n]=\frac{b_{n}}{a_{0}}$ if $0 \leq n \leq M$. This equation is nonresursive. As its impulse response $\frac{b_{n}}{a_{0}}$ is finite, we call the system that it describes as finite impulse response (short: **FIR**) system. Usually $_{y}$, for $N \geqslant 1$ when the differential equation is recursive, the impulse response is infinite, and they are called infinite impulse response (short: **IIR**) system. 
-## 2.5 Block diagram representation
+An important class of systems is described by a _linear constant-coefficient differential equation_. These equations provide an implicit specification of the system, describing a relationship between input and output rather than providing an explicit expression. To obtain an explicit expression, one must solve the differential equation. The condition of initial rest ensures that a system described by a linear constant-coefficient differential equation is time-invariant.
+
+Consider a general _N_-th order linear constant-coefficient differential equation:
+$$
+\sum_{k=0}^N a_k \cdot \frac{d^k y(t)}{dt^k} = \sum_{k=0}^M b_k \cdot \frac{d^k x(t)}{dt^k}.
+$$
+
+For $N = 0$, this reduces to:
+$$
+y(t) = \frac{1}{a_0} \sum_{k=0}^M b_k \frac{d^k x(t)}{dt^k}.
+$$
+
+For $N \geq 1$, the solution $y(t)$ consists of two parts: the particular solution (dependent on the input) and the homogeneous solution (the solution to the equation with no input):
+$$
+\sum_{k=0}^N a_k \cdot \frac{d^k y(t)}{dt^k} = 0,
+$$
+which represents the natural response of the system.
+
+In discrete-time, the equation becomes:
+$$
+\sum_{k=0}^N a_k y[n-k] = \sum_{k=0}^M b_k x[n-k].
+$$
+The natural response satisfies:
+$$
+\sum_{k=0}^N a_k y[n-k] = 0.
+$$
+
+Alternatively, we can rewrite the discrete-time equation as:
+$$
+y[n] = \frac{1}{a_0} \left( \sum_{k=0}^M b_k x[n-k] - \sum_{k=1}^N a_k y[n-k] \right),
+$$
+which requires knowledge of $y[n-1], \dots, y[n-N]$. This type of equation is called a recursive equation.
+
+For $N = 0$, we have:
+$$
+y[n] = \sum_{k=0}^M \frac{b_k}{a_0} x[n-k],
+$$
+where the impulse response is $h[n] = \frac{b_k}{a_0}$ for $0 \leq n \leq M$. Such systems are non-recursive and have a finite impulse response (FIR). 
+
+For $N \geq 1$, when the differential equation is recursive, the impulse response is infinite, and these systems are referred to as infinite impulse response (IIR) systems.
+
+## 2.5 Block Diagram Representation
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=155&selection=17,0,38,9|🔗]]
 
-An important property of systems described by linear constant-coefficient differential equations is that they can be represented in very simple and natural ways in terms of block diagram interconnections of elementary operations. This is significant, because it provides a pictorial representation which can add to the understanding of the behaviour and properties of these systems. In addition, such representations can be of considerable value for the simulation or implementation of the systems. 
-Start with the causal system described by the first-order difference equation 
-$$y[n]+a y[n-1]=b x[n]$$
-which we can rewrite as 
-$$y[n]=b x[n]-a y[n-1].$$
-The evaluation of this equation requires three basic operations: Addition, multiplication and delay:
+Systems described by linear constant-coefficient differential equations can be represented using block diagrams, providing a visual understanding of their behavior. These diagrams are valuable for both analysis and implementation.
+
+Consider the causal system described by the first-order difference equation:
+$$
+y[n] + a y[n-1] = b x[n],
+$$
+which can be rewritten as:
+$$
+y[n] = b x[n] - a y[n-1].
+$$
+
+This equation requires three basic operations: addition, multiplication, and delay:
 ![Attachments/Signals and Systems/IMG-0119135230-5.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230-5.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=113,383,295,597|🔗]]
 
-Thus, the representation of the given equation is 
+The block diagram representation of this equation is:
 ![Attachments/Signals and Systems/IMG-0119135230-6.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230-6.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=138,279,302,373|🔗]]
-The feedback is a direct consequence of the fact that it is a recursive equation. Further, the block diagram makes it clear that memory is required in this system and the consequent need for initial conditions. In particular, a delay corresponds to a memory element.
 
-Next, consider 
-$$\frac{d y}{d t}+a y(t)=b x(t)$$
-in continuous time. We find that this is equivalent to 
-$$y(t)=-\frac{1}{a} \frac{d y}{d t}+b x(t),$$
-which could be implemented with the elements before, however differentiators $D \hat{=} \frac{d}{d t}$ are both difficult to implement, as well as extremely sensitive to error and noise. Instead, rewriting yields 
-$$y(t)=\int_{-\infty}^{t} d \tau(b x(\tau)-a y(\tau)) d\tau,$$
- assuming that $y(-\infty)=0$. In this form, the system can be implemented with an integrator: 
- ![Attachments/Signals and Systems/IMG-0119135231.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&rect=142,463,338,599|🔗]]
-The upper image shows the pictorial representation of the integrator, while the bottom shows the representation of the equation. 
-The integrator is a memory -element, which becomes clear when we write
-$$y(t)=y\left(t_{0}\right)+\int_{t}^{t} d \tau(b x(\tau)-a y(\tau)) d\tau,$$
-where it must store $y\left(t_{0}\right)$.
+The feedback arises because the equation is recursive. The block diagram shows that memory is required for this system, corresponding to the delay operator.
 
-## 2.6 Singularity functions
+For the continuous-time system:
+$$
+\frac{dy}{dt} + a y(t) = b x(t),
+$$
+we can rewrite it as:
+$$
+y(t) = -\frac{1}{a} \frac{dy}{dt} + b x(t).
+$$
+However, differentiators $\frac{d}{dt}$ are sensitive to noise and errors. Instead, rewriting as:
+$$
+y(t) = \int_{-\infty}^t \left( b x(\tau) - a y(\tau) \right) \, d\tau,
+$$
+assuming $y(-\infty) = 0$, allows for implementation using integrators:
+![Attachments/Signals and Systems/IMG-0119135231.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&rect=142,463,338,599|🔗]]
+
+The integrator is a memory element, as seen from:
+$$
+y(t) = y(t_0) + \int_{t_0}^t \left( b x(\tau) - a y(\tau) \right) \, d\tau,
+$$
+where $y(t_0)$ must be stored.
+
+## 2.6 Singularity Functions
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&selection=151,0,155,9|🔗]]
 
-From the sifting property, the unit impulse is the impulse response of the identity system, that is
-$$x(t)=x(t) * \delta(t)$$
-for any signal $x(t)$. Therefore, this also implies $\delta(t)=\delta(t)*\delta(t)$. Note that if define the unit impulse as the limiting form of _some_ signal it also means that there is an unlimited number of very dissimilar-looking signals, all of which behave like an impulse in the limit. While a normal function is usually defined by what it is at each value of $t$, the unit impulse is defined by what is does under convolution. Thus, we may alternatively define the unit impulse as the signal which, when applied to an LTI system, yields the impulse response. If we let $x=1$, then 
-$$1=1 * \delta=\int_{-\infty}^{\infty} d \tau \cdot \delta(\tau).$$
-The unit impulse has unit area. Another completely equivalent operational definition is that 
-$$ \begin{align} g(-t)=g(-t)*\delta(t) && \text{and thus} && g(0)=\int_{-\infty}^\infty d\tau\cdot g(\tau)\delta(\tau)\end{align}$$
-for any given signal $g(t)$. The unit impulse is of the class of singularity functions. We further can find that 
-$$f(t)\delta(t)=f(0)\delta(t).$$
-Each singularity function can be defined operationally in terms of its behaviour under convolution. Consider the LTI system that implements 
-$$y(t)=\frac{d x}{d t}\coloneqq x(t)* u_{1}(t)$$
-where we defined $u_{1}$ as the unit doublet. Similarly, we can define higher orders of the doublet, such as the second order:
-$$\frac{d^{2} x}{d t^{2}}\coloneqq x * u_{2}=\left(x * u_{1}\right) * u_{1},$$
-where it follows $u_{2}=u_{1} * u_{1}$ by associativity. Generally then 
-$$u_k(t)=\underbrace{u_1(t) * \cdots * u_1(t)}_{k \text { times }} .$$
-Further, consider $x=1$ so 
-$$0=\frac{d x}{d t}=\int_{-\infty}^{\infty} d \tau \cdot u_{1}(\tau),$$
-implying that the unit doublet has zero area. As seen in an example, the unit step is the impulse response of an integrator: 
-$$y(t)=\int_{-\infty}^t x(\tau) d \tau.$$
-Therefore,
- $$ u(t)=\int_{-\infty}^t \delta(\tau) d \tau,$$
-  which then leads to the operational definition of $u(t)$: 
-  $$x(t)*u(t)=\int_{-\infty}^td\tau\cdot x(\tau).$$
- Similarly to before, we can define the system that consists of a cascade of two integrators. Its impulse response is denoted 
- $$u_{-2}(t)=u(t)*u(t)=\int_{-\infty}^t d\tau \cdot u(\tau)=tu(t).$$
-  This signal is referred to as the unit ramp function:
- ![Attachments/Signals and Systems/IMG-0119135231-1.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-1.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=166&rect=131,42,303,145|🔗]]
- We can define higher order intergals of $\delta(t)$ as the impulse reponses of cascades of integrators:
- $$u_{-k}(t)=\underbrace{u(t) * \cdots * u(t)}_{k \text { times }}=\int_{-\infty}^t u_{-(k-1)}(\tau) d \tau.$$ 
-One can also rewrite this as 
-$$u_{-k}=\frac{t^{k-1}}{(k-1)!} u(t).$$
-Alternative notations are $\delta(t)=u_{0}(t)$ and $u_{-1}(t)=u(t)$. Then $\delta(t)=u_{1} * u_{-1}$ as expected, or generally $u_{k+r}(t)=u_{k}(t) * u_{r}(t)$.
+From the sifting property, the unit impulse is the impulse response of the identity system:
+$$
+x(t) = x(t) * \delta(t),
+$$
+which implies:
+$$
+\delta(t) = \delta(t) * \delta(t).
+$$
+
+If we define the unit impulse as the limiting form of a signal, it means there are many dissimilar signals that behave like an impulse in the limit. The impulse is defined by its behavior under convolution.
+
+An equivalent operational definition is:
+$$
+g(-t) = g(-t) * \delta(t) \quad \text{and} \quad g(0) = \int_{-\infty}^\infty g(\tau) \delta(\tau) \, d\tau,
+$$
+for any signal $g(t)$. The unit impulse belongs to the class of singularity functions, satisfying:
+$$
+f(t) \delta(t) = f(0) \delta(t).
+$$
+
+Higher-order singularity functions are defined by their convolution behavior. For example:
+$$
+y(t) = \frac{dx}{dt} \coloneqq x(t) * u_1(t),
+$$
+where $u_1(t)$ is the unit doublet. Higher-order doublets are defined recursively:
+$$
+\frac{d^k x}{dt^k} \coloneqq x * u_k(t) = \left( x * u_1(t) \right) * u_1(t), \quad u_k(t) = u_1(t) * \cdots * u_1(t) \text{ ($k$ times)}.
+$$
+
+For the unit step:
+$$
+u(t) = \int_{-\infty}^t \delta(\tau) \, d\tau,
+$$
+and the unit ramp:
+$$
+u_{-2}(t) = u(t) * u(t) = \int_{-\infty}^t u(\tau) \, d\tau = t u(t).
+$$
+
+Higher-order integrals of $\delta(t)$ are the impulse responses of cascades of integrators:
+$$
+u_{-k}(t) = \underbrace{u(t) * \cdots * u(t)}_{k \text{ times }} = \int_{-\infty}^t u_{-(k-1)}(\tau) \, d\tau.
+$$
+
+This can be expressed as:
+$$
+u_{-k}(t) = \frac{t^{k-1}}{(k-1)!} u(t),
+$$
+with alternative notations:
+$$
+\delta(t) = u_0(t), \quad u_{-1}(t) = u(t), \quad \text{and} \quad u_k(t) = u_{k-1}(t) * u_1(t).
+$$
+
 
 # 3 Fourier Series Representation of Periodic Signals
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=208&selection=6,0,16,7|🔗]]
 
-The representation and analysis of LTI systems through the convolution sum is based on representing signals as linear combinations of shifted impulses. This chapter explores an alternative representation for signals and LTI systems. 
+The representation and analysis of LTI systems through the convolution sum are based on representing signals as linear combinations of shifted impulses. This chapter explores an alternative representation for signals and LTI systems.
+
 ## 3.1 The Response of LTI Systems to Complex Exponentials
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=213&selection=58,0,72,12|🔗]]
 
-It is advantageous in the study of LTI systems to represent signals as linear combinations of basic signals that possess the following two properties:
-1. The set of basic signals can be used to construct a broad and useful class of signals. 
-2. The response of an LTI system to each signal should be simple enough in structure to provide us with a convenient representation for the response of the system to any signal constructed as a linear combination of the basic signals.
+In the study of LTI systems, it is advantageous to represent signals as linear combinations of basic signals with the following two properties:
+1. The set of basic signals can construct a broad and useful class of signals.
+2. The response of an LTI system to each signal is simple enough to provide a convenient representation for the system's response to any signal constructed as a linear combination of the basic signals.
 
-Much of the importance of Fourier analysis results from the fact that both of these properties are provided by the set of complex exponential signals in continuous and discrete time. The importance of complex exponentials in the study of LTI systems stems from the fact that the response of an LTI system to a complex exponential input is the same complex exponential with only a change in amplitude, that is 
-$$\begin{aligned}
-\text { continuous time: } e^{s t} & \longrightarrow H(s) e^{s t}, \\
-\text { discrete time: } z^{\prime \prime} & \longrightarrow H(z) z^{\prime \prime},
-\end{aligned}$$
-with a complex amplitude factor $H(s)$ or $H(z)$. A signal $x \longrightarrow a \cdot x$ is called the eigenfunction of the system, and the (complex) constant $a$ is called the eigenvalue. Additionally, the claim is that exponentials are eigenfunctions of any
-LTI system. For that, we show 
-$$y(t)=\int_{-\infty}^{t} d \tau \cdot h(\tau) x(t-\tau)=\int_{-\infty}^{t} d \tau \cdot h(\tau) e^{s(t-\tau)}=e^{s t} \int_{-\infty}^{t} d \tau \cdot h(\tau) e^{-s \tau},$$
-assuming that the integral converges. Then, we end with $y(t)=H(s)e^{st}$. Hence, we have shown that complex exponentials are eigenfunctions of LTI systems.
-In an exactly parallel manner, we can show that complex exponential sequences are eigenfunctions of discrete-time LTI systems. That is, suppose that an LTI system with impulse response $h[n]$ has as its input the sequence
-$$\begin{align*}
-x[n]=z^n
-\end{align*},$$
-where $z$ is a complex number. Then the output of the system can be determined from the convolution sum as
-$$\begin{align*}\begin{aligned}
-y[n] & =\sum_{k=-\infty}^{+\infty} h[k] x[n-k] \\
-& =\sum_{k=-\infty}^{+\infty} h[k] z^{n-k}=z^n \sum_{k=-\infty}^{+\infty} h[k] z^{-k}
+Fourier analysis is significant because it fulfills these properties using complex exponential signals in both continuous and discrete time. The response of an LTI system to a complex exponential input is the same complex exponential with only a change in amplitude:
+$$
+\begin{aligned}
+\text{Continuous time: } & e^{st} \longrightarrow H(s)e^{st}, \\
+\text{Discrete time: } & z^n \longrightarrow H(z)z^n,
 \end{aligned}
-\end{align*}$$
-From this expression, we see that if the input $x[n]$ is the complex exponential given by the prior equation, then, assuming that the summation on the right-hand side, the output is the same complex exponential multiplied by a constant that depends on the value of $z$. That is,
-$$\begin{align*}
-y[n]=H(z) z^n
-\end{align*}$$
-where
-$$\begin{align*}
-H(z)=\sum_{k=-\infty}^{+\infty} h[k] z^{-k}
-\end{align*}.$$
-Consequently, as in the continuous-time case, complex exponentials are eigenfunctions of discrete-time LTI systems.
-For the analysis of LTI systems, it is useful to decompose a general signal into eigenfunctions. Let 
-$$x(t)=\sum_{n} a_{n} e^{s . t}$$
-such that, from the eigenfunction and superposition property, 
-$$y(t)=\sum_{n} a_{n} H\left(s_{n}\right) e^{s_{n} t}.$$
-In other words, for both continuous time and discrete time, if the input to an LTI system is represented as a linear combination of complex exponentials, then the output can also be represented as a linear combination of the same complex exponential signals.
+$$
+where $H(s)$ or $H(z)$ is a complex amplitude factor. A signal $x \longrightarrow a \cdot x$ is called an **eigenfunction** of the system, and the (complex) constant $a$ is called the **eigenvalue**.
 
-## 3.2 Fourier series representation continuous-time periodic signals
+### 3.1.1 Continuous-Time Proof
+Complex exponentials are eigenfunctions of any LTI system. For example:
+$$
+y(t) = \int_{-\infty}^\infty h(\tau) x(t-\tau) \, d\tau = \int_{-\infty}^\infty h(\tau) e^{s(t-\tau)} \, d\tau.
+$$
+Rewriting:
+$$
+y(t) = e^{st} \int_{-\infty}^\infty h(\tau) e^{-s\tau} \, d\tau = H(s)e^{st},
+$$
+assuming the integral converges. Hence, $y(t)$ is a scaled version of $e^{st}$.
+
+### 3.1.2 Discrete-Time Proof
+Similarly, for discrete-time systems, let the input be:
+$$
+x[n] = z^n,
+$$
+where $z$ is a complex number. The output is:
+$$
+y[n] = \sum_{k=-\infty}^\infty h[k] x[n-k] = \sum_{k=-\infty}^\infty h[k] z^{n-k}.
+$$
+Rewriting:
+$$
+y[n] = z^n \sum_{k=-\infty}^\infty h[k] z^{-k} = H(z)z^n,
+$$
+where:
+$$
+H(z) = \sum_{k=-\infty}^\infty h[k] z^{-k}.
+$$
+
+Thus, complex exponentials are eigenfunctions of discrete-time LTI systems.
+
+### 3.1.3 Decomposition of Signals
+To analyze LTI systems, a general signal can be decomposed into eigenfunctions:
+$$
+x(t) = \sum_n a_n e^{s_nt}.
+$$
+Using the eigenfunction and superposition properties:
+$$
+y(t) = \sum_n a_n H(s_n)e^{s_nt}.
+$$
+
+Both in continuous and discrete time, if the input is a linear combination of complex exponentials, the output is also a linear combination of the same complex exponential signals.
+
+---
+
+## 3.2 Fourier Series Representation of Continuous-Time Periodic Signals
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=217&selection=120,0,132,7|🔗]]
 
-For any periodic signal $x(t)$ with periodicity $T$, a linear combination of harmonically related complex exponentials is 
-$$x(t)=\sum_{k=-\infty}^{\infty} a_{k} e^{i k \frac{2 \pi}{T} t}.$$
-This representation is referred to as the _Fourier series_ representation. Suppose now that the signal is real, e.g. $x=x^{*}$. Then, we find that $a_{k}^{*}=a_{-k}$ which allows writing
+For a periodic signal $x(t)$ with period $T$, it can be represented as a linear combination of harmonically related complex exponentials:
 $$
-x(t)=a_{0}+\sum_{k=1}^{\infty}\left\{a_{k} e^{i k \omega_{0} t}+a_{k}^{*} e^{-i k \omega_{0} t}\right\}=a_{0}+\sum_{k=1}^{\infty} 2 \operatorname{Re}\left(a_{k} e^{i k \omega_{0} t}\right)=a_{0}+2 \cdot \sum_{k=1}^{\infty} A_{k} \cos \left(k \omega_{0} t+\theta_{k}\right)
-,$$
-if we write $a_{k}=A_{k} e^{i \theta_{k}}$. This representation is one commonly encountered form for the Fourier series of real periodic signals in continuous time. Another, equivalent, representation is writing $a_{k}=B_{k}+i C_{k}$. Then, 
-$$x(t)=a_{0}+2 \cdot \sum_{k=1}^{\infty}\left\{B_{k} \cos \left(k \omega_{0} t\right)-C_{k} \sin \left(k \omega_{0} t\right)\right\}.$$
-What still remains is proofing that any periodic $x(t)$ can be written in those forms. However, for now  we continue to believe the assumption holds. Multiplying both sides by $e^{-jn\omega_0t}$  and integrating, we get 
-$$\int_{0}^{T} d t \cdot x(t) e^{-i k n \omega_{0} t}=\int_{0}^{T} d t \cdot \sum_{k} a_{k} e^{i(k-n) \omega_{0} t}.$$
-Using Euler's formula and considering the periodicity of the sinusiods, we find 
-$$\int_0^T e^{j(k-n) \omega_{19} t} d t= \begin{cases}T, & k=n \\ 0, & k \neq n\end{cases}$$
-Eventually we find: If $x(t)$ has a Fourier series representation, e.g. if it can be expressed as a linear combination of harmonically related complex exponentials, then the coefficients are given by:
-$$\begin{gathered}x(t)=\sum_{k=-\infty}^{+\infty} a_k e^{i k \omega_0 t}=\sum_{k=-\infty}^{+\infty} a_k e^{i k(2 \pi / T) t}, \\ a_k=\frac{1}{T} \int_T x(t) e^{-i k \omega_0 t} d t=\frac{1}{T} \int_T x(t) e^{-i k(2 \pi / T) t} d t\end{gathered}.$$
-Then, $a_{0}=\frac{1}{T} \int_{T} d t \cdot x(t)$ is simply the average value of $x(t)$ over one period.
+x(t) = \sum_{k=-\infty}^\infty a_k e^{i k \frac{2\pi}{T}t}.
+$$
+This is the **Fourier series representation**.
 
-## 3.3 Convergence of the Fourier series
+### 3.2.1 Real Signals
+If $x(t)$ is real, $a_k^* = a_{-k}$, allowing:
+$$
+x(t) = a_0 + \sum_{k=1}^\infty \left( a_k e^{i k \omega_0 t} + a_k^* e^{-i k \omega_0 t} \right),
+$$
+where $\omega_0 = \frac{2\pi}{T}$. Rewriting:
+$$
+x(t) = a_0 + 2 \sum_{k=1}^\infty A_k \cos(k\omega_0 t + \theta_k),
+$$
+with $a_k = A_k e^{i \theta_k}$.
+
+Alternatively, using $a_k = B_k + i C_k$:
+$$
+x(t) = a_0 + 2 \sum_{k=1}^\infty \left( B_k \cos(k\omega_0 t) - C_k \sin(k\omega_0 t) \right).
+$$
+
+### 3.2.2 Derivation of Fourier Coefficients
+Assuming $x(t)$ has a Fourier series representation, multiply both sides by $e^{-jn\omega_0t}$ and integrate:
+$$
+\int_0^T x(t)e^{-i n \omega_0 t} \, dt = \int_0^T \sum_k a_k e^{i(k-n)\omega_0 t} \, dt.
+$$
+Using orthogonality:
+$$
+\int_0^T e^{i(k-n)\omega_0 t} \, dt =
+\begin{cases}
+T, & k = n, \\
+0, & k \neq n.
+\end{cases}
+$$
+The Fourier coefficients are:
+$$
+a_k = \frac{1}{T} \int_0^T x(t) e^{-i k \omega_0 t} \, dt.
+$$
+
+The average value of $x(t)$ over one period is:
+$$
+a_0 = \frac{1}{T} \int_0^T x(t) \, dt.
+$$
+
+---
+
+## 3.3 Convergence of the Fourier Series
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=226&selection=234,0,246,6|🔗]]
 
-In fact, Fourier maintained that any periodic signal could be represented by a Fourier series. Although this is not quite true, it is true that Fourier series can be used to represent an extremely large class of periodic signals, including the square wave and all other periodic signals with which we will be concerned in this book and which are of interest in practice.
-Let us approximate a given periodic signal $x(t)$ as 
-$$x_{N}(t)=\sum_{k=-N}^{N} a_{k} e^{i k w_{0} t},$$
-such that the error of approximation becomes 
-$$e_{N}(t)=x(t)-x_{N}(t)=x(t)-\sum_{k=-N}^{N} a_{k} e^{i k w_{0} t}.$$
+Although Fourier claimed that any periodic signal could be represented by a Fourier series, this is only true for specific signal classes.
 
-In order to determine how good any particular approximation is, we need to specify a quantitative measure of the size of the approximation error. The criterion that we will use is the energy in the error over one period: 
-$$E_{N}=\int_{T} d t \cdot\left|e_{N}(t)\right|^{2},$$
-which is minimized (without proof) 
-$$a_{k}=\frac{1}{T} \int_{T} d t \cdot x(t) e^{-i k w_{0} t}.$$
+### 3.3.1 Approximation and Error
+Approximating a periodic signal:
+$$
+x_N(t) = \sum_{k=-N}^N a_k e^{i k \omega_0 t}.
+$$
+The approximation error:
+$$
+e_N(t) = x(t) - x_N(t).
+$$
+The error energy is:
+$$
+E_N = \int_0^T |e_N(t)|^2 \, dt.
+$$
+Minimizing $E_N$ gives the Fourier coefficients:
+$$
+a_k = \frac{1}{T} \int_0^T x(t) e^{-i k \omega_0 t} \, dt.
+$$
 
-Comparing these equations, we see that they are identical to the expression used to determine the Fourier series coefficients. Thus, if $x(t)$ has a Fourier series representation, the best approximation using only a finite number of harmonically related complex exponentials is obtained by truncating the Fourier series to the desired number of terms. As $N$ increases, new terms are added and $E_N$ decreases. If, in fact, $x(t)$ has a Fourier series representation, then $\lim _{N \rightarrow \infty} E_{N}=0$. 
+### 3.3.2 Convergence Conditions
+For periodic signals, Fourier series convergence is guaranteed if:
+1. **Finite power**:
+   $$
+   \int_0^T |x(t)|^2 \, dt < \infty.
+   $$
+2. **Bounded variation**: $x(t)$ has a finite number of maxima and minima in one period.
+3. **Finite discontinuities**: $x(t)$ has a finite number of discontinuities per period, and each discontinuity is finite.
 
-Of course, for any signal, we can attempt to obtain a set of Fourier coefficients. However, in some cases, the integral may diverge; that is, the value obtained for some $a_k$ may be infinite. Moreover, even if all the coefficients obtained are finite, when these coefficients are substituted into the synthesis equation, the resulting infinite series may not converge to the original signal $x(t)$. Fortunately, there are no convergence difficulties for large classes of periodic signals. For example, every continuous periodic signal has a Fourier series representation for which the energy $E_N$ in the approximation error approaches $0$ as $N$ goes to $\infty$. This is also true for many discontinuous signals. 
-Since we will find it very useful to include discontinuous signals such as square waves in our discussions, it is worthwhile to investigate the issue of convergence in a bit more detail. Specifically, there are two somewhat different classes of conditions that a periodic signal can satisfy to guarantee that it can be represented by a Fourier series:
-**Periodic signals with finite power**: 
-$$\int_{T} d t \cdot|x(t)|<\infty$$
-implies $\left|a_{k}\right|<\infty$. Considering again the approximation of $x(t)$, then we are guaranted that the energy $E_N$ in the approximation error, converges to $0$ as more and more terms are added, e.g. $N \rightarrow 0$. Then, 
-$$\int_{T} d t \cdot|e(t)|^{2}=0.$$
-However, this does not imply that the signal $x(t)$ and its Fourier series representation are equal. It only implies that there is no energy in their difference. Since physical systems respond to signal energy, from this perspective $x(t)$ and its Fourier series representation are indistinguishable. Because most of the periodic signals that we consider do have finite energy over a single period, they have Fourier series representations. 
-Moreover, the Dirichlet conditions are also satisfied by essentially all the signals with which we will be concerned. They guarantee that $x(t)$ equals its Fourier series representation, except at isolated values oft for which $x(t)$ is discontinuous. At these values, the infinite series converges to the average of the values on either side of the discontinuity. 
-The Dirichlet conditions are as follows:
-1) Over one period, $x(t)$ must absolutely integrable, so $$\int_{T} d t \cdot|x(t)|^{2}<\infty.$$ As  with square integrability, this guarantees the finiteness of each coeffcient: $$\left|a_{k}\right| \leq \int_{T} d t \cdot|x(t)|^{2}<\infty.$$ A periodic signal that violates the first dirichlet condition is $x(t)=1/t$.
-2) In any finite interval of time, $x(t)$ is of bounded variation. That is, there are no more than a finite number of maxima and minima during any single period of the signal. An example of a function that meets condition 1, but not condition 2 is $$x(t)=\sin\left(\frac{2\pi}{t}\right).$$
-3) In any finite interval of time, there are only a finite number of discontinuities. Furthermore, each of these discontinuities is finite
+At points of discontinuity, the Fourier series converges to the average value of the signal on either side of the discontinuity.
 
-As can be seen, signals that do not satisfy the Dirichlet conditions are generally pathological in nature and consequently do not typically arise in practical contexts. For a periodic signal that has no discontinuities, the Fourier series representation converges and equals the original signal at every value of $t$. For a periodic signal with a finite number of discontinuities in each period, the Fourier series representation equals the signal everywhere except at the isolated points of discontinuity, at which the series converges to the average value of the signal on either side of the discontinuity. In this case the difference between the original signal and its Fourier series representation contains no energy, and consequently, the two signals can be thought of as being the same for all practical purposes. Specifically, since the signals differ only at isolated points, the integrals of both signals over any interval are identical. For this reason, the two signals behave identically under convolution and consequently are identical from the standpoint of the analysis of LTI systems. 
+### 3.3.3 Practical Implications
+Signals satisfying the Dirichlet conditions have Fourier series representations. Even if $x(t)$ and its Fourier series differ at isolated points, their integrals and energy are identical, making them indistinguishable for analysis in LTI systems.
 
-## 3.4 Properties of the continuous-time Fourier Series
+## 3.4 Properties of the Continuous-Time Fourier Series
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=233&selection=18,0,28,6|🔗]]
 
-Several useful properties of the continuous-time Fourier series:
+Below is a table summarizing several useful properties of the continuous-time Fourier series:
+
+|                  Property                  |                                          Periodic Signal                                           |                                                    Fourier Series Coefficients                                                    |
+| :----------------------------------------: | :------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: |
+|                                            |          $x(t)$ periodic with period $T$ and fundamental frequency $\omega_0 = 2 \pi / T$          |                                                               $a_k$                                                               |
+|               **Linearity**                |                                         $A x(t) + B y(t)$                                          |                                                          $A a_k + B b_k$                                                          |
+|             **Time Shifting**              |                                            $x(t - t_0)$                                            |                                    $a_k e^{-i k \omega_0 t_0} = a_k e^{-i k (2 \pi / T) t_0}$                                     |
+|           **Frequency Shifting**           |                                     $e^{j M \omega_0 t} x(t)$                                      |                                                             $a_{k-M}$                                                             |
+|              **Conjugation**               |                                              $x^*(t)$                                              |                                                            $a_{-k}^*$                                                             |
+|             **Time Reversal**              |                                              $x(-t)$                                               |                                                             $a_{-k}$                                                              |
+|              **Time Scaling**              |                         $x(\alpha t)$ (periodic with period $T / \alpha$)                          |                                                               $a_k$                                                               |
+|          **Periodic Convolution**          |                               $\int_T x(\tau) y(t - \tau) \, d\tau$                                |                                                            $T a_k b_k$                                                            |
+|             **Multiplication**             |                                            $x(t) y(t)$                                             |                                              $\sum_{l = -\infty}^\infty a_l b_{k-l}$                                              |
+|            **Differentiation**             |                                        $\frac{d x(t)}{dt}$                                         |                                           $i k \omega_0 a_k = i k \frac{2 \pi}{T} a_k$                                            |
+|              **Integration**               |               $\int_{-\infty}^t x(t) \, dt$ (finite and periodic only if $a_0 = 0$)                |                                   $\frac{1}{i k \omega_0} a_k = \frac{1}{i k (2 \pi / T)} a_k$                                    |
+|  **Conjugate Symmetry for Real Signals**   |                                            $x(t)$ real                                             | $a_k = a_{-k}^*, \operatorname{Re}\{a_k\} = \operatorname{Re}\{a_{-k}\}, \operatorname{Im}\{a_k\} = -\operatorname{Im}\{a_{-k}\}$ |
+|         **Real and Even Signals**          |                                        $x(t)$ real and even                                        |                                                        $a_k$ real and even                                                        |
+|          **Real and Odd Signals**          |                                        $x(t)$ real and odd                                         |                                                  $a_k$ purely imaginary and odd                                                   |
+| **Even-Odd Decomposition of Real Signals** | $x(t) = x_e(t) + x_o(t)$, where $x_e(t) = \frac{x(t) + x(-t)}{2}, x_o(t) = \frac{x(t) - x(-t)}{2}$ |                             $\operatorname{Re}\{a_k\}$ for even, $i \operatorname{Im}\{a_k\}$ for odd                             |
+|          **Parseval's Relation**           |             $$\frac{1}{T} \int_T dt\cdot\| x(t)\|^2=\sum_{k=-\infty}^\infty\|a_k\|^2$$             |                                                                                                                                   |
 
 
-|                Property                |                                                                                              Periodic Signal                                                                                              |                                                                                                                                        Fourier Series Coefficients                                                                                                                                        |
-| :------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                        | $\left.\begin{array}{l} x(t) \\ y(t) \end{array}\right\} \begin{aligned} & \text { Periodic with period } \mathrm{T} \text { and } \\ & \text { fundamental frequency } \omega_0=2 \pi / T \end{aligned}$ |                                                                                                                              $\begin{aligned} & a_k \\ & b_k \end{aligned}$                                                                                                                               |
-|               Linearity                |                                                                                              $A x(t)+B y(t)$                                                                                              |                                                                                                                                               $A a_k+B b_k$                                                                                                                                               |
-|             Time Shifting              |                                                                                           $x\left(t-t_0\right)$                                                                                           |                                                                                                                          $a_k e^{-i k \omega_0 t_0}=a_k e^{-i k(2 \pi / T) t_0}$                                                                                                                          |
-|           Frequency Shifting           |                                                                              $e^{j M \omega_0 t}=e^{j M(2 \pi / T) r} x(t)$                                                                               |                                                                                                                                                 $a_{k-M}$                                                                                                                                                 |
-|              Conjugation               |                                                                                                 $x^*(t)$                                                                                                  |                                                                                                                                                $a_{-k}^*$                                                                                                                                                 |
-|             Time Reversal              |                                                                                                  $x(-t)$                                                                                                  |                                                                                                                                                 $a_{-k}$                                                                                                                                                  |
-|              Time Scaling              |                                                                        $x(\alpha t), \alpha>0$ (periodic with period $T / \alpha)$                                                                        |                                                                                                                                                   $a_k$                                                                                                                                                   |
-|          Periodic Convolution          |                                                                                     $\int_T x(\tau) y(t-\tau) d \tau$                                                                                     |                                                                                                                                                $T a_k b_k$                                                                                                                                                |
-|             Multiplication             |                                                                                                $x(t) y(t)$                                                                                                |                                                                                                                                 $\sum_{l=-\infty}^{+\infty} a_l b_{k-l}$                                                                                                                                  |
-|            Differentiation             |                                                                                           $\frac{d x(t)}{d t}$                                                                                            |                                                                                                                                $i k \omega_0 a_k=i k \frac{2 \pi}{T} a_k$                                                                                                                                 |
-|              Integration               |                                                    $$\int_{-\infty}^t x(t) d t \binom{\text { finite valued and periodic only }}{\text { if } a_0=0}$$                                                    |                                                                                                            $\left(\frac{1}{i k \omega_0}\right) a_k=\left(\frac{1}{i k(2 \pi / T)}\right) a_k$                                                                                                            |
-|  Conjugate Symmetry for Real Signals   |                                                                                                $x(t)$ real                                                                                                | $\left\{\begin{array}{l} a_k=a_{-k}^* \\ \operatorname{Re}\left\{a_k\right\}=\operatorname{Re}\left\{a_{-k}\right\} \\ \mathscr{S} m\left\{a_k\right\}=-\mathscr{I}_n\left\{a_{-k}\right\} \\ \left\|a_k\right\|=\left\|a_{-k}\right\| \\ \sphericalangle a_k=-\sphericalangle a_{-k} \end{array}\right.$ |
-|         Real and Even Signals          |                                                                                           $x(t)$ real and even                                                                                            |                                                                                                                                            $a_k$ real and even                                                                                                                                            |
-|          Real and Odd Signals          |                                                                                            $x(t)$ real and odd                                                                                            |                                                                                                                                      $a_k$ purely imaginary and odd                                                                                                                                       |
-| Even-Odd Decomposition of Real Signals |                                 $\begin{cases}x_e(t)=\mathcal{E}\{x(t)\} \quad[x(t) \text { real }] \\ x_o(t)=\mathcal{O}\{x(t)\} \quad[x(t) \text { real }]\end{cases}$                                  |                                                                                                   $\begin{aligned} & \mathcal{R}\left\{a_k\right\} \\ & i \mathcal{I}\left\{a_k\right\} \end{aligned}$                                                                                                    |
-|                                        |                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                           |
-|                                        |                                                                               **Parseval's Relation for Periodic Signals**                                                                                |                                                                                                                                                                                                                                                                                                           |
-|                                        |                                                            $$\frac{1}{T} \int_T\|x(t)\|^2 d t=\sum_{k=-\infty}^{+\infty}\left\|a_k\right\|^2$$                                                            |                                                                                                                                                                                                                                                                                                           |
-|                                        |                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                           |
-|                                        |                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                           |
->[!WARNING] hi
->test
->
+---
 
-| Section |                          Property                           |                                                            Aperiodic signal                                                            |                                                                                                                                                               Fourier transform                                                                                                                                                                |
-| :-----: | :---------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|         |                                                             |                                                                 $x(t)$                                                                 |                                                                                                                                                                 $X(i \omega)$                                                                                                                                                                  |
-|         |                                                             |                                                                 $y(t)$                                                                 |                                                                                                                                                                 $Y(i \omega)$                                                                                                                                                                  |
-|  4.3.1  |                          Linearity                          |                                                            $a x(t)+b y(t)$                                                             |                                                                                                                                                         $a X(i \omega)+b Y(i \omega)$                                                                                                                                                          |
-|  4.3.2  |                        Time Shifting                        |                                                         $x\left(t-t_0\right)$                                                          |                                                                                                                                                        $e^{-i \omega t_0} X(i \omega)$                                                                                                                                                         |
-|  4.3.6  |                     Frequency Shifting                      |                                                        $e^{i \omega_0 t} x(t)$                                                         |                                                                                                                                                $X\left(j\left(\omega-\omega_0\right)\right.$ )                                                                                                                                                 |
-|  4.3.3  |                         Conjugation                         |                                                                $x^*(t)$                                                                |                                                                                                                                                                $X^*(-i \omega)$                                                                                                                                                                |
-|  4.3.5  |                        Time Reversal                        |                                                                $x(-t)$                                                                 |                                                                                                                                                                 $X(-i \omega)$                                                                                                                                                                 |
-|  4.3.5  |                 Time and Frequency Scaling                  |                                                                $x(a t)$                                                                |                                                                                                                                               $\frac{1}{\|a\|} X\left(\frac{i \omega}{a}\right)$                                                                                                                                               |
-|   4.4   |                         Convolution                         |                                                             $x(t) * y(t)$                                                              |                                                                                                                                                           $X(i \omega) Y(i \omega)$                                                                                                                                                            |
-|   4.5   |                       Multiplication                        |                                                              $x(t) y(t)$                                                               |                                                                                                                              $\frac{1}{2 \pi} \int_{-\infty}^{+\infty} X(j \theta) Y(j(\omega-\theta)) d \theta$                                                                                                                               |
-|  4.3.4  |                   Differentiation in Time                   |                                                          $\frac{d}{d t} x(t)$                                                          |                                                                                                                                                             $i \omega X(i \omega)$                                                                                                                                                             |
-|  4.3.4  |                         Integration                         |                                                         $\int_{-x}^t x(t) d t$                                                         |                                                                                                                                            $\frac{1}{i \omega} X(i \omega)+\pi X(0) \delta(\omega)$                                                                                                                                            |
-|  4.3.6  |                Differentiation in Frequency                 |                                                                $t x(t)$                                                                |                                                                                                                                                       $j \frac{d}{d \omega} X(i \omega)$                                                                                                                                                       |
-|  4.3.3  |             Conjugate Symmetry for Real Signals             |                                                              $x(t)$ real                                                               | $\left\{\begin{array}{l} X(i \omega)=X^*(-i \omega) \\ \mathfrak{R e}_{\mathscr{E}}\{X(i \omega)\}=\operatorname{Re}_{\mathscr{E}}\{X(-i \omega)\} \\ \mathscr{G}_{n t}\{X(i \omega)\}=-\mathscr{S}_{n t}\{X(-i \omega)\} \\ \|X(i \omega)\|=\|X(-i \omega)\| \\ \sphericalangle X(i \omega)=-\sphericalangle X(-i \omega) \end{array}\right.$ |
-|  4.3.3  |             Symmetry for Real and Even Signals              |                                                          $x(t)$ real and even                                                          |                                                                                                                                                          $X(i \omega)$ real and even                                                                                                                                                           |
-|  4.3.3  |              Symmetry for Real and Odd Signals              |                                                          $x(t)$ real and odd                                                           |                                                                                                                                                     $X(i \omega)$ purely imaginary and odd                                                                                                                                                     |
-|  4.3.3  |           Even-Odd Decomposition for Real Signals           | $\begin{array}{ll} x_e(t)=\mathcal{E} v\{x(t)\} & {[x(t) \text { real }]} \\ x_t(t)=O d\{x(t)\} & {[x(t) \text { real }]} \end{array}$ |                                                                                                                        $\begin{gathered} G \mathscr{e}\{X(i \omega)\} \\ j \mathscr{G}_m\{X(i \omega)\} \end{gathered}$                                                                                                                        |
-|  4.3.7  | Parseval's Relati $\int_{-\infty}^{+\infty}\|x(t)\|^2 d t=$ |                      n for Aperiodic Signals $\frac{1}{2 \pi} \int_{-\infty}^{+\infty}\|X(i \omega)\|^2 d \omega$                      |                                                                                                                                                                                                                                                                                                                                                |
->[!WARNING] hi
->test
-## 3.5 Fourier Series Representation of discrete-time Periodic Signals
+## 3.5 Fourier Series Representation of Discrete-Time Periodic Signals
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=242&selection=202,0,214,7|🔗]]
 
-In this section, we consider the Fourier series representation of discrete-time periodic signals. While the discussion closely parallels that of continuous-time periodic signals, there are some important differences. In particular, the Fourier series representation of a discrete-time periodic signal is a.finite series, as opposed to the infinite series representation required for continuous-time periodic signals. 
-As before, we consider periodic signals $x[n]$ with period $N$ and fundamental frequency $w_{0}=\frac{2 \pi}{N}$. We now wish to consider the representation of more general periodic sequences in terms of linear combinations: 
-$$x[n]=\sum_{k} a_{k} e^{i k w_{0} n}=\sum_{k=\langle N\rangle} a_{k} e^{i k w_{0} n}.$$
-Since the sequences are distinct only over a range of $N$ successive values of $k$, the summation need only include terms over this range. Thus, we write $k=\langle N\rangle$ indicates a sum from $m$ to $m+N-1$. This is a new set of $N$ equations with the $N$ unknowns being $a_{k}$:
-$$\begin{aligned} x[0] & =\sum_{k=\langle N\rangle} a_k, \\ x[1] & =\sum_{k=\langle N\rangle} a_k e^{j 2 \pi k / N}, \\ & \vdots \\ x[N-1] & =\sum_{k=\langle N\rangle} a_k e^{j 2 \pi k(N-1) / N} .\end{aligned}$$
- It can be shown that this set of equations is linearly independent and consequently can be solved to obtain the coefficients $a_k$. We can reduce this to a closed-form expression for obtaining the Fourier coefficients, and we have the discrete-time Fourier series pair: 
- $$\begin{aligned} x[n] & =\sum_{k=\langle N\rangle} a_k e^{i k \omega_0 n}=\sum_{k=\langle N\rangle} a_k e^{i k(2 \pi / N) n}, \\ a_k & =\frac{1}{N} \sum_{n=\langle N\rangle} x[n] e^{-i k \omega_0 n}=\frac{1}{N} \sum_{n=\langle N\rangle} x[n] e^{-i k(2 \pi / N) n}\end{aligned}.$$
- The coefficients satisfy $a_{k}=a_{k+N}$. In particular, since there are only $N$ distinct complex exponentials that are periodic with period $N$, the discrete-time Fourier series representation is a finite series with $N$ terms. 
-## 3.6 Properties of the discrete-time Fourier Series
+For discrete-time periodic signals $x[n]$ with period $N$ and fundamental frequency $\omega_0 = \frac{2 \pi}{N}$, the Fourier series representation is finite:
+$$
+x[n] = \sum_{k=0}^{N-1} a_k e^{i k \omega_0 n},
+$$
+where the Fourier coefficients are:
+$$
+a_k = \frac{1}{N} \sum_{n=0}^{N-1} x[n] e^{-i k \omega_0 n}.
+$$
+The coefficients satisfy $a_k = a_{k+N}$ due to periodicity. This representation is a finite series with $N$ terms.
+
+---
+
+## 3.6 Properties of the Discrete-Time Fourier Series
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=252&selection=33,0,43,6|🔗]]
 
+|                Property                 |                           Periodic Signal                            |       Fourier Series Coefficients        |
+| :-------------------------------------: | :------------------------------------------------------------------: | :--------------------------------------: |
+|              **Linearity**              |                          $A x[n] + B y[n]$                           |             $A a_k + B b_k$              |
+|            **Time Shifting**            |                             $x[n - n_0]$                             |       $a_k e^{-i k \omega_0 n_0}$        |
+|         **Frequency Shifting**          |                      $e^{j M \omega_0 n} x[n]$                       |                $a_{k-M}$                 |
+|             **Conjugation**             |                               $x^*[n]$                               |                $a_{-k}^*$                |
+|            **Time Reversal**            |                               $x[-n]$                                |                 $a_{-k}$                 |
+|            **Time Scaling**             |                 $x[mn]$ (if $n$ is divisible by $m$)                 |            $\frac{1}{m} a_k$             |
+|        **Periodic Convolution**         |                   $\sum_{r=0}^{N-1} x[r] y[n - r]$                   |               $N a_k b_k$                |
+|           **Multiplication**            |                             $x[n] y[n]$                              |      $\sum_{l=0}^{N-1} a_l b_{k-l}$      |
+|          **First Difference**           |                           $x[n] - x[n-1]$                            | $\left(1 - e^{-i k \omega_0}\right) a_k$ |
+|             **Running Sum**             |     $\sum_{m=0}^n x[m]$ (finite and periodic only if $a_0 = 0$)      |  $\frac{1}{1 - e^{-i k \omega_0}} a_k$   |
+| **Conjugate Symmetry for Real Signals** |                             $x[n]$ real                              |             $a_k = a_{-k}^*$             |
+|         **Parseval's Relation**         | $$\frac{1}{N} \sum_{n=0}^{N-1}\|x[n]\|^2=\sum_{k=0}^{N-1}\|a_k\|^2$$ |                                          |
 
-|                  Property                  |                                                                                                              Periodic Signal                                                                                                               |                                                                                                                                        Fourier Series Coefficients                                                                                                                                        |
-| :----------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                            |                      $\left.\begin{array}{l} x[n] \\ y[n] \end{array}\right\} \begin{aligned} & \text { Periodic with period } N \text { and } \\ & \text { fundamental frequency } \omega_0=2 \pi / N \end{aligned}$                      |                                                                                  $\left.\begin{array}{l} a_k \\ b_k \end{array}\right\} \begin{aligned} & \text { Periodic with } \\ & \text { period } N \end{aligned}$                                                                                  |
-|                 Linearity                  |                                                                                                              $A x[n]+B y[n]$                                                                                                               |                                                                                                                                               $A a_k+B b_k$                                                                                                                                               |
-|               Time Shifting                |                                                                                                           $x\left[n-n_0\right]$                                                                                                            |                                                                                                                                       $a_k e^{-i k(2 \pi / N) n_0}$                                                                                                                                       |
-|             Frequency Shifting             |                                                                                                        $e^{j M(2 \pi / N) n} x[n]$                                                                                                         |                                                                                                                                                 $a_{k-M}$                                                                                                                                                 |
-|                Conjugation                 |                                                                                                                  $x^*[n]$                                                                                                                  |                                                                                                                                                $a_{-k}^*$                                                                                                                                                 |
-|               Time Reversal                |                                                                                                                  $x[-n]$                                                                                                                   |                                                                                                                                                 $a_{-k}$                                                                                                                                                  |
-|                Time Scaling                | $\begin{aligned} & x_{(m)}[n]= \begin{cases}x[n / m], & \text { if } n \text { is a multiple of } m \\ 0, & \text { if } n \text { is not a multiple of } m\end{cases} \\ & \text { (periodic with period } m N \text { ) } \end{aligned}$ |                                                                                                             $\frac{1}{m} a_k$ $\binom{ \text{viewed as periodic} }{ \text{with period } mN}$                                                                                                              |
-|            Periodic Convolution            |                                                                                                  $\sum_{r=\langle N\rangle} x[r] y[n-r]$                                                                                                   |                                                                                                                                                $N a_k b_k$                                                                                                                                                |
-|               Multiplication               |                                                                                                                $x[n] y[n]$                                                                                                                 |                                                                                                                                  $\sum_{l=\langle N\rangle} a_l b_{k-l}$                                                                                                                                  |
-|              First Difference              |                                                                                                               $x[n]-x[n-1]$                                                                                                                |                                                                                                                                 $\left(1-e^{-i k(2 \pi / N)}\right) a_k$                                                                                                                                  |
-|                Running Sum                 |                                                                         $\sum_{k=-x}^n x[k]\binom{\text { finite valued and periodic only }}{\text { if } a_0=0}$                                                                          |                                                                                                                      $\left(\frac{1}{\left(1-e^{-i k(2 \pi / N)}\right)}\right) a_k$                                                                                                                      |
-|    Conjugate Symmetry for Real Signals     |                                                                                                                $x[n]$ real                                                                                                                 | $\left\{\begin{array}{l} a_k=a_{-k}^* \\ \operatorname{Re}\left\{a_k\right\}=\operatorname{Re}\left\{a_{-k}\right\} \\ \mathscr{I}_m\left\{a_k\right\}=-\mathscr{S}_m\left\{a_{-k}\right\} \\ \left\|a_k\right\|=\left\|a_{-k}\right\| \\ \sphericalangle a_k=-\sphericalangle a_{-k} \end{array}\right.$ |
-| Real and Even Signals Real and Odd Signals |                                                                                               $x[n]$ real and even <br> $x[n]$ real and odd                                                                                                |                                                                                                 $\begin{aligned} & a_k \text { real and even } \\ & a_k \text { purely imaginary and odd } \end{aligned}$                                                                                                 |
-|   Even-Odd Decomposition of Real Signals   |                                 $\begin{cases}x_e[n]=\mathcal{E}\{x[n]\} & {[\mathrm{x}[\mathrm{n}] \text { real }]} \\ x_o[n]=\mathcal{O}\{x[n]\} & {[\mathrm{x}[\mathrm{n}] \text { real }]}\end{cases}$                                 |                                                                                                   $\begin{aligned} & \mathcal{R}\left\{a_k\right\} \\ & i \mathcal{I}\left\{a_k\right\} \end{aligned}$                                                                                                    |
-|                                            |                                                     **Parseval's Relation for Periodic Signals** $$\frac{1}{N} \sum_{n=\langle N\rangle}\|x[n]\|^2=\sum_{k-[n]}\left\|a_k\right\|^2$$                                                      |                                                                                                                                                                                                                                                                                                           |
-|                                            |                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                                           |
->![WARNING] hi
->hi
+---
 
-| Section |                     Property                      |                                                                 Aperiodic Signal                                                                  |                                                                                                                                                                                                                                                           Fourier Transform                                                                                                                                                                                                                                                            |
-| :-----: | :-----------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|         |                                                   |                                                                      $x[n]$                                                                       |                                                                                                                                                                                                                                               $X\left(e^{i \omega}\right)$ periodic with                                                                                                                                                                                                                                               |
-|         |                                                   |                                                                      $y[n]$                                                                       |                                                                                                                                                                                                                                       $\left.Y\left(e^{i \omega}\right)\right\}$ period $2 \pi$                                                                                                                                                                                                                                        |
-|  5.3.2  |                     Linearity                     |                                                                  $a x[n]+b y[n]$                                                                  |                                                                                                                                                                                                                                      $a X\left(e^{i \omega}\right)+b Y\left(e^{i \omega}\right)$                                                                                                                                                                                                                                       |
-|  5.3.3  |                   Time Shifting                   |                                                               $x\left[n-n_0\right]$                                                               |                                                                                                                                                                                                                                             $e^{-i \omega n_0} X\left(e^{i \omega}\right)$                                                                                                                                                                                                                                             |
-| 5.3 .3  |                Frequency Shifting                 |                                                              $e^{i \omega_0 n} x[n]$                                                              |                                                                                                                                                                                                                                           $X\left(e^{j\left(\omega-\omega_0\right)}\right)$                                                                                                                                                                                                                                            |
-| 5.3 .4  |                    Conjugation                    |                                                                     $x^*[n]$                                                                      |                                                                                                                                                                                                                                                    $X^*\left(e^{-i \omega}\right)$                                                                                                                                                                                                                                                     |
-|  5.3.6  |                   Time Reversal                   |                                                                      $x[-n]$                                                                      |                                                                                                                                                                                                                                                     $X\left(e^{-i \omega}\right)$                                                                                                                                                                                                                                                      |
-|  5.3.7  |                  Time Expansion                   | $x_{i k \mid}[n]= \begin{cases}x[n / k], & \text { if } n=\text { multiple of } k \\ 0, & \text { if } n \neq \text { multiple of } k\end{cases}$ |                                                                                                                                                                                                                                                     $X\left(e^{i k \omega}\right)$                                                                                                                                                                                                                                                     |
-|   5.4   |                    Convolution                    |                                                                   $x[n] * y[n]$                                                                   |                                                                                                                                                                                                                                        $X\left(e^{i \omega}\right) Y\left(e^{i \omega}\right)$                                                                                                                                                                                                                                         |
-|   5.5   |                  Multiplication                   |                                                                    $x[n] y[n]$                                                                    |                                                                                                                                                                                                                 $\frac{1}{2 \pi} \int_{2 \pi} X\left(e^{j \theta}\right) Y\left(e^{j(\omega-\theta)}\right) d \theta$                                                                                                                                                                                                                  |
-| 5.3 .5  |               Differencing in Time                |                                                                   $x[n]-x[n-1]$                                                                   |                                                                                                                                                                                                                                       $\left(1-e^{-i \omega}\right) X\left(e^{i \omega}\right)$                                                                                                                                                                                                                                        |
-|  5.3.5  |                   Accumulation                    |                                                             $\sum_{k=-\infty}^n x[k]$                                                             |                                                                                                                                                                                                                                         $\frac{1}{1-e^{-i \omega}} X\left(e^{i \omega}\right)$                                                                                                                                                                                                                                         |
-|  5.3.8  |           Differentiation in Frequency            |                                                                     $n x[n]$                                                                      |                                                                                                                                                                                  $\begin{aligned} & +\pi X\left(e^{j 0}\right) \sum_{k=-\infty}^{+\infty} \delta(\omega-2 \pi k) \\ & j \frac{d X\left(e^{i \omega}\right)}{d \omega} \end{aligned}$                                                                                                                                                                                   |
-| 5.3 .4  |        Conjugate Symmetry for Real Signals        |                                                                    $x[n]$ real                                                                    | $\left\{\begin{array}{l} X\left(e^{i \omega}\right)=X^*\left(e^{-i \omega}\right) \\ \operatorname{Re}\left\{X\left(e^{i \omega}\right)\right\}=\operatorname{Re}\left\{X\left(e^{-i \omega}\right)\right\} \\ \operatorname{S}_{\hbar}\left\{X\left(e^{i \omega}\right)\right\}=-G_t\left\{X\left(e^{-i \omega}\right)\right\} \\ \left\|X\left(e^{i \omega}\right)\right\|=\left\|X\left(e^{-i \omega}\right)\right\| \\ \sphericalangle X\left(e^{i \omega}\right)=-\sphericalangle X\left(e^{-i \omega}\right) \end{array}\right.$ |
-|  5.3.4  |          Symmetry for Real, Even Signals          |                                                                $x[n]$ real an even                                                                |                                                                                                                                                                                                                                               $X\left(e^{i \omega}\right)$ real and even                                                                                                                                                                                                                                               |
-|  5.3.4  |          Symmetry for Real, Odd Signals           |                                                                $x[n]$ real and odd                                                                |                                                                                                                                                                                                                                         $X\left(e^{i \omega}\right)$ purely imaginary and odd                                                                                                                                                                                                                                          |
-|  5.3.4  |      Even-odd Decomposition of Real Signals       | $\begin{array}{ll} x_c[n]=\mathcal{E}_v\{x[n]\} & {[x[n] \text { real }]} \\ x_o[n]=\mathcal{O} d\{x[n]\} & {[x[n] \text { real }]} \end{array}$  |                                                                                                                                                                                    $\begin{aligned} & \mathcal{R} \mathscr{e}\left\{X\left(e^{i \omega}\right)\right\} \\ & j \mathcal{S}_n\left\{X\left(e^{i \omega}\right)\right\} \end{aligned}$                                                                                                                                                                                    |
-|  5.3.9  | Parseval's R $\sum_{n=-\infty}^{+\infty}\|x[n]\|$ |                  ation for Aperiodic Signals $=\frac{1}{2 \pi} \int_{2 \pi}\left\|X\left(e^{i \omega}\right)\right\|^2 d \omega$                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 ## 3.7 Fourier Series and LTI Systems
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=257&selection=275,0,285,7|🔗]]
 
-We saw that the response of an LTI system to a linear combination of complex exponentials takes a particularly simple form. Specifically, we have 
-$$y(t)=H(s) e^{s t}$$
-for $x(t)=e^{s t}$ and 
-$$H(s)=\int_{-\infty}^{\infty}d \tau\cdot h(\tau) e^{-s t} $$
-in which $h(\tau)$ is the impulse response of an LTI system. Let's focus on the case that $\mathcal{R}(s)=0$, so that $s=i \omega$. Then, $H(s)$ is referred to as the frequency response:
-$$H(i\omega)=\int_{-\infty}^{\infty}dt \cdot h(t) e^{-i\omega t} .$$
-For $x(t) \stackrel{F S}{\longleftrightarrow} a_{k}$ with period $T$, we obtain 
-$$y(t)=\sum_{k=-\infty}^{\infty} a_{k} \cdot H\left(i k w_{0}\right) e^{i k w_{0} t},$$
-also periodic with $T$. Then, obviously, $y(t) \stackrel{F S}{\longleftrightarrow} a_{k} H\left(i k w_{0}\right)$. That is, the effect of the LTI system is to modify individually each of the Fourier coefficients of the input through multiplication by the value of the frequency response at the corresponding frequency.
+The response of an LTI system to a Fourier series input takes the form:
+$$
+y(t) = \sum_{k=-\infty}^\infty a_k H(i k \omega_0) e^{i k \omega_0 t}.
+$$
+The Fourier coefficients of the output are modified by the frequency response:
+$$
+a_k \longrightarrow a_k H(i k \omega_0).
+$$
+
+---
 
 ## 3.8 Filtering
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=262&selection=148,0,150,9|🔗]]
 
-In a variety of applications, it is of interest to change the relative amplitudes of the frequency components in a signal or perhaps eliminate some frequency components entirely, a process referred to as filtering. Linear time-invariant systems that change the shape of the spectrum are often referred to as frequency-shaping filters. Systems that are designed to pass some frequencies essentially undistorted and significantly attenuate or eliminate others are referred to as frequency-selective filters.
-LTI systems that change the shape of the spectrum are called frequency-shaping filters. If they only let some frequencies pass, we call them frequency-selective filters. 
-As we have seen, the Fourier series coefficients of the output of an LTI system are those of the input multiplied by the frequency response of the system. Consequently, filtering can be conveniently accomplished through the use of LTI systems with an appropriately chosen frequency response, and frequency-domain methods provide us with the ideal tools to examine this very important class of applications.
+Filtering modifies the frequency components of a signal. Common filters include:
+- **Low-pass filter**: Passes low frequencies near $\omega = 0$, attenuating higher frequencies.
+- **High-pass filter**: Passes high frequencies, attenuating lower ones.
+- **Bandpass filter**: Passes frequencies within a band, attenuating others.
 
-Here, we want to focus on frequency-selective filters, a class of filters specifically intended to accurately or approximately select some bands of frequencies and reject others. While frequency selectivity is not the only issue of concern in applications, its broad importance has led to a widely accepted set of terms describing the characteristics of frequency-selective filters. In particular, while the nature of the frequencies to be passed by a frequency-selective filter varies considerably from application to application, several basic types of filter are widely used and have been given names indicative of their function. 
-For example:
-- Low-pass filter: Passes low frequencies around $\omega = 0$, and attenuates or rejects higher frequencies. 
-- High-pass filter: Passes high frequencies and attenuates or rejects low ones.
-- Bandpass filter: Passes a band of frequencies and attenuates frequencies both higher and lower than those in the band that is passed. 
+An ideal low-pass filter has the frequency response:
+$$
+H(i \omega) =
+\begin{cases}
+1, & |\omega| \leq \omega_c, \\
+0, & |\omega| > \omega_c.
+\end{cases}
+$$
 
-In each case, the cut-off frequencies are the frequencies defining the boundaries between frequencies that are passed and frequencies that are rejected-i.e., the frequencies in the passband and stopband. 
-Numerous questions arise in defining and assessing the quality of a frequency-selective filter. How effective is the filter at passing frequencies in the passband? How effective is it at attenuating frequencies in the stopband? How sharp is the transition near the cut-off frequency, e.g. from nearly free of distortion in the passband to highly attenuated in the stopband? Each of these questions involves a comparison of the characteristics of an actual frequency-selective filter with those of a filter with idealized behaviour. Specifically, an _ideal frequency-selective filter_ is a filter that exactly passes complex exponentials at one set of frequencies without any distortion and completely rejects signals at all other frequencies.
-For example, a continuous-time ideal low-pass filter with cut-off frequency $\omega_c$ implements:
-$$H(i \omega)=\left\{\begin{array}{ll}1, & |\omega| \leq \omega_c \\ 0, & |\omega|>\omega_c\end{array}\right.$$
+Ideal filters in continuous and discrete time differ because discrete-time filters have a periodic frequency response.
 
-We call $w \in\left[-w_{c}, w_{c}\right]$ the pass band and outside the stopband:
-![Attachments/Signals and Systems/IMG-0119135231-2.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-2.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=268&rect=76,113,310,207|🔗]]
-We can also see the ideal continuous-time high-pass (a) and bandpass filter (b):
-![Attachments/Signals and Systems/IMG-0119135231-3.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-3.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=269&rect=99,407,323,599|🔗]]
+Visual examples of ideal filters:
+- Continuous-time low-pass, high-pass, and bandpass:
+  ![Attachments/Signals and Systems/IMG-0119135231-3.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-3.webp)
+- Discrete-time low-pass, high-pass, and bandpass:
+  ![Attachments/Signals and Systems/IMG-0119135231-4.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-4.webp)
 
-Similarly in discrete time, the low-pass (a), high-pass (b) and bandpass (c) filter:
-![Attachments/Signals and Systems/IMG-0119135231-4.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-4.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=269&rect=71,31,322,302|🔗]]
-The characteristics of the continuous-time and discrete-time ideal filters differ by virtue of the fact that, for discrete-time filters, the frequency response $H(e^{i\omega})$ must be periodic with period $2\pi$, with low frequencies near even multiples of$\pi$ and high frequencies near odd multiples of $\pi$.
-
-## 3.9 Important Examples: Continuous-time
+## 3.9 Important Examples: Continuous-Time
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=270&selection=76,0,93,9|🔗]]
 
-### 3.9.1 Simple RC low-pass Filter
+### 3.9.1 Simple RC Low-Pass Filter
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=270&selection=148,0,156,6|🔗]]
 
-Electrical circuits are widely used to implement continuous-time filtering operations. One of the simplest examples of such a circuit is the first-order RC circuit:
+Electrical circuits are commonly used to implement continuous-time filtering operations. One of the simplest examples is the first-order RC circuit:
 
 ![Attachments/Signals and Systems/IMG-0119135231-5.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-5.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=271&rect=146,482,300,597|🔗]]
-This circuit can be used to perform either a low-pass or high-pass filtering operation, depending upon what we take as the output signal. In particular, suppose that we take the capacitor voltage $v_c(t)$ as the output. In this case, the output voltage is related to the input voltage through the linear constant-coefficient differential equation: 
-$$\begin{align*}
-R C \frac{d v_c(t)}{d t}+v_c(t)=v_s(t)
-\end{align*}.$$
-Assuming initial rest, the system is LTI. In order to determine its frequency response $H(i \omega)$, we note that, by definition, with input voltage $v_s(t)=e^{i \omega t}$, we must have the output voltage $v_c(t)=H(i \omega) e^{i \omega t}$. It then follows: 
-$$\begin{align*}
-H(i \omega)=\frac{1}{1+R C i \omega}
-\end{align*}$$
-The magnitude and phase of the frequency response $H(i \omega)$ can be seen here:
+
+In this circuit, the output signal can either be the capacitor voltage $v_c(t)$ or the resistor voltage. If we take the capacitor voltage as the output, the relationship between input and output is described by the differential equation:
+$$
+RC \frac{d v_c(t)}{d t} + v_c(t) = v_s(t).
+$$
+
+Assuming initial rest, the system is LTI. The frequency response $H(i\omega)$ is determined by assuming an input of $v_s(t) = e^{i\omega t}$, resulting in:
+$$
+H(i \omega) = \frac{1}{1 + RC \cdot i \omega}.
+$$
+
+The magnitude and phase of $H(i \omega)$ are as follows:
 ![Attachments/Signals and Systems/IMG-0119135231-6.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-6.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&rect=104,317,440,603|🔗]]
-Note that for frequencies near $\omega=0,|H(i \omega)| \approx 1$, while for larger values of $\omega$ (positive or negative), $|H(i \omega)|$ is considerably smaller and in fact steadily decreases as $|\omega|$ increases. Thus, this simple $R C$ filter (with $v_c(t)$ as output) is a nonideal low-pass filter.
-To provide a first glimpse at the trade-offs involved in filter design, consider the impulse response (a) of the system
-$$h(t)=\frac{1}{RC}e^{-t/RC}u(t),$$
-and its step response (b) 
-$$s(t)=\left[1-e^{-t/RC}\right]u(t).$$
+
+For $\omega \approx 0$, $|H(i\omega)| \approx 1$, indicating that low frequencies pass with minimal attenuation. For higher $\omega$, $|H(i\omega)|$ decreases, making this circuit a nonideal low-pass filter.
+
+The impulse response and step response of the system are:
+$$
+h(t) = \frac{1}{RC} e^{-t / RC} u(t),
+$$
+$$
+s(t) = \left[1 - e^{-t / RC}\right] u(t).
+$$
 
 ![Attachments/Signals and Systems/IMG-0119135231-7.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-7.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=273&rect=73,344,313,604|🔗]]
 
-Comparing the two figures, we see a fundamental trade-off. Specifically, suppose that we would like our filter to pass only very low frequencies. This implies that $1/RC$ must be small, or equivalently, that $RC$ is large, so that frequencies other than the low ones of interest will be attenuated sufficiently. However, looking at the second figure, we see that if $RC$ is large, then the step response will take a considerable amount of time to reach its long-term value of $1$. That is, the system responds sluggishly to the step input. Conversely, if we wish to have a faster step response, we need a smaller value of $RC$, which in tum implies that the filter will pass higher frequencies. 
-### 3.9.2 Simple RC high-pass Filter
+There is a trade-off between frequency response and time-domain behavior. A larger $RC$ enhances low-pass filtering but results in slower step response.
+
+---
+
+### 3.9.2 Simple RC High-Pass Filter
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&selection=193,0,205,6|🔗]]
 
-As an alternative to choosing the capacitor voltage as the output in our RC circuit, we can choose the voltage across the resistor. In this case, the differential equation relating input and output is
-$$\begin{align*}
-R C \frac{d v_r(t)}{d t}+v_r(t)=R C \frac{d v_s(t)}{d t}
-\end{align*}$$
-We can find the frequency response $G(i \omega)$ of this system in exactly the same way we did in the previous case: If $v_s(t)=e^{i \omega t}$, then we must have $v_r(t)=G(i \omega) e^{i \omega t}$. We find that
-$$\begin{align*}
-G(i \omega)=\frac{i \omega R C}{1+i \omega R C}
-.\end{align*}$$
+If we choose the resistor voltage $v_r(t)$ as the output, the relationship between input and output becomes:
+$$
+RC \frac{d v_r(t)}{d t} + v_r(t) = RC \frac{d v_s(t)}{d t}.
+$$
 
-The magnitude and phase of this frequency response:
+The frequency response $G(i\omega)$ is given by:
+$$
+G(i\omega) = \frac{i \omega RC}{1 + i \omega RC}.
+$$
+
+The magnitude and phase of $G(i\omega)$ are shown below:
 ![Attachments/Signals and Systems/IMG-0119135232.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135232.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=274&rect=128,320,467,606|🔗]]
-From the figure, we see that the system attenuates lower frequencies and passes higher frequencies, e.g. those for which $|\omega| \gg 1 / R C$ with minimal attenuation. That is, this system acts as a nonideal high-pass filter.
-As with the low-pass filter, the parameters of the circuit control both the frequency response of the high-pass filter and its time response characteristics. As before there is again a trade-off. As $RC$ is increased, the response becomes more sluggish, e.g. the step response takes a longer time to reach its long-term value of $0$. We see that increasing $RC$ (or equivalently, decreasing $1/RC$) also affects the frequency response, specifically, it extends the passband down to lower frequencies. 
-We observe from the two examples in this section that a simple RC circuit can serve as a rough approximation to a high-pass or a low-pass filter, depending upon the choice of the physical output variable. Because of their simplicity, these examples of electrical  filters do not have a sharp transition from passband to stopband and, in fact, have only a single parameter (namely, RC in the electrical case) that controls both the frequency response and time response behaviour of the system. By designing more complex filters, implemented using more energy storage elements (capacitances and inductances in electrical filters and springs and damping devices in mechanical filters), we obtain filters described by higher order differential equations. Such filters offer considerably more flexibility in terms of their characteristics, allowing, for example, sharper passband-stopband transition or more control over the trade-offs between time response and frequency response.
 
-## 3.10 Important Examples: Discrete-time Filters
+The high-pass filter attenuates low frequencies and allows high frequencies to pass, particularly for $|\omega| \gg 1 / RC$.
+
+As with the low-pass filter, increasing $RC$ extends the passband to lower frequencies but slows the system's step response. More complex filters with additional energy storage elements can achieve sharper transitions and greater flexibility.
+
+---
+
+## 3.10 Important Examples: Discrete-Time Filters
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=275&selection=53,0,69,9|🔗]]
 
-As with their continuous-time counterparts, discrete-time filters described by linear constant-coefficient difference equations are of considerable importance in practice. Indeed, since they can be efficiently implemented in special- or general-purpose digital systems, filters described by difference equations are widely used in practice. As in almost all aspects of signal and system analysis, when we examine discrete-time filters described by difference equations, we find both strong similarities and important differences with the continuous-time case. In particular, discrete-time LTI systems described by difference equations can either be recursive and have impulse responses of infinite length (_IIR_ systems) or be non-recursive and have finite-length impulse responses (_FIR_ systems). The former are the direct counterparts of continuous-time systems described by differential equations illustrated in the previous section, while the latter are also of considerable practical importance in digital systems. These two classes have distinct sets of advantages and disadvantages in terms of ease of implementation and in terms of the order of filter or the complexity required to achieve particular design objectives. 
+Discrete-time filters described by linear constant-coefficient difference equations are widely used in practice. These filters are categorized into:
+1. **Recursive filters** (IIR): Impulse responses of infinite length.
+2. **Non-recursive filters** (FIR): Impulse responses of finite length.
+
+---
+
 ### 3.10.1 First-Order Recursive Discrete-Time Filters
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=275&selection=149,0,151,43|🔗]]
 
-The discrete-time counterpart of each of the first -order filters considered before is the LTI system described by the first-order difference equation: 
-$$y[n]-ay[n-1]=x[n].$$
-We are able to find 
-$$H(e^{i\omega})=\frac{1}{1-ae^{-i\omega}}.$$
-Magnitude and phase of $H$ are shown here for $a=0.6$: 
+A first-order recursive discrete-time filter is described by:
+$$
+y[n] - a y[n-1] = x[n].
+$$
+
+The frequency response is:
+$$
+H(e^{i\omega}) = \frac{1}{1 - a e^{-i\omega}}.
+$$
+
+For $a = 0.6$, the magnitude and phase of $H(e^{i\omega})$ are shown below:
 ![Attachments/Signals and Systems/IMG-0119135232-1.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135232-1.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=124,371,345,631|🔗]]
-Magnitude and phase of $H$ are shown here for $a=-0.6$: 
+
+For $a = -0.6$, the magnitude and phase are as follows:
 ![Attachments/Signals and Systems/IMG-0119135232-2.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135232-2.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=123,53,345,356|🔗]]
 
-We observe that, for the positive value of $a$, the difference equation behaves like a low-pass filter with minimal attenuation of low frequencies near $\omega=0$ and increasing attenuation as we increase $\omega$ toward $\omega=\pi$. For the negative value of $a$, the system is a high-pass filter, passing frequencies near $\omega=\pi$ and attenuating lower frequencies. In fact, for any positive value of $a<1$, the system approximates a low-pass filter, and for any negative value of $a>-1$, the system approximates a high-pass filter, where $|a|$ controls the size of the filter passband, with broader passbands as $|a|$ is decreased.
-As with the continuous-time examples, we again have a trade-off between time domain and frequency domain characteristics. In particular, the impulse response of the system is
-$$\begin{align*}
-h[n]=a^n u[n] .
-\end{align*}$$
+- **Low-pass behavior**: For $a > 0$, the system acts as a low-pass filter.
+- **High-pass behavior**: For $a < 0$, the system acts as a high-pass filter.
 
-The step response $s[n]=u[n] * h[n]$ is
-$$\begin{align*}
-s[n]=\frac{1-a^{n+1}}{1-a} u[n]
-\end{align*}.$$
+The impulse and step responses are:
+$$
+h[n] = a^n u[n],
+$$
+$$
+s[n] = \frac{1 - a^{n+1}}{1 - a} u[n].
+$$
 
-From these expressions, we see that $|a|$ also controls the speed with which the impulse and step responses approach their long-term values, with faster responses for smaller values of $|a|$, and hence, for filters with smaller passbands. Just as with differential equations, higher order recursive difference equations can be used to provide sharper filter characteristics and to provide more flexibility in balancing time-domain and frequency-domain constraints.
-Finally, note that the system described is unstable if $|a| \geq 1$ and thus does not have a finite response to complex exponential inputs. 
-### 3.10.2 Non-recursive Discrete-Time Filters
+Higher-order recursive filters offer sharper filtering characteristics and more flexibility.
+
+---
+
+### 3.10.2 Non-Recursive Discrete-Time Filters
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=276&selection=230,0,234,34|🔗]]
 
-The general form of an FIR non-recursive difference equation is
-$$\begin{align*}
-y[n]=\sum_{k=-N}^M b_k x[n-k]
-\end{align*}.$$
-That is, the output $y[n]$ is a weighted average of the $(N+M+1)$ values of $x[n]$ from $x[n-M]$ through $x[n+N]$, with the weights given by the coefficients $b_k$. Systems of this form can be used to meet a broad array of filtering objectives, including frequency-selective filtering. One frequently used example of such a filter is a moving-average filter, where the output $y[n]$ for any $n$ — say $n_0$ — is an average of values of $x[n]$ in the vicinity of $n_0$. The basic idea is that by averaging values locally, rapid high-frequency components of the input will be averaged out, and lower frequency variations will be retained, corresponding to smoothing or low-pass filtering the original sequence. As a generalization of the moving-average filter, we can consider averaging over $N + M + 1$ neighbouring points-that is, using a difference equation of the form:
-$$y[n]=\frac{1}{N+M+1}\sum_{k=-N}^Me^{-i\omega k}.$$
-We then find
-$$\begin{align*}
-H\left(e^{i \omega}\right)=\frac{1}{N+M+1} e^{i \omega[(N-M) / 2]} \frac{\sin [\omega(M+N+1) / 2]}{\sin (\omega / 2)}
-\end{align*}.$$
-By adjusting the size, $N+M+1$, of the averaging window we can vary the cut-off frequency. For example, the magnitude of $H\left(e^{i \omega}\right)$ is shown for $M+N+1=33$ (a) and $M+N+1=65$ (b):
+A general non-recursive difference equation is:
+$$
+y[n] = \sum_{k=-N}^M b_k x[n-k].
+$$
+
+This equation represents a weighted average of $x[n]$ values, often used in moving-average filters. These filters smooth high-frequency variations, effectively acting as low-pass filters.
+
+For a moving-average filter of size $N + M + 1$, the frequency response is:
+$$
+H(e^{i\omega}) = \frac{1}{N + M + 1} e^{i \omega [(N - M) / 2]} \frac{\sin[\omega (M + N + 1) / 2]}{\sin(\omega / 2)}.
+$$
+
+The magnitude of $H(e^{i\omega})$ for $N + M + 1 = 33$ and $N + M + 1 = 65$ is shown:
 ![Attachments/Signals and Systems/IMG-0119135232-3.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135232-3.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=279&rect=88,179,456,458|🔗]]
 
-# 4 Continuous-time Fourier Transform
+---
+
+# 4 Continuous-Time Fourier Transform
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=315&selection=2,0,8,9|🔗]]
 
-As we will see, a rather large class of signals, including all signals with finite energy, can also be represented through a linear combination of complex exponentials. Whereas for periodic signals the complex exponential building blocks are harmonically related, for aperiodic signals they are infinitesimally close in frequency, and the representation in terms of a linear combination takes the form of an integral rather than a sum. The resulting spectrum of coefficients in this representation is called the Fourier transform, and the synthesis integral itself, which uses these coefficients to represent the signal as a linear combination of complex exponentials, is called the inverse Fourier transform.
-The development of this representation for aperiodic signals in continuous time is one of Fourier's most important contributions, and our development of the Fourier transform follows very closely the approach he used in his original work. In particular, Fourier reasoned that an aperiodic signal can be viewed as a periodic signal with an infinite period. More precisely, in the Fourier series representation of a periodic signal, as the period increases the fundamental frequency decreases and the harmonically related components become closer in frequency. As the period becomes infinite, the frequency components form a continuum and the Fourier series sum becomes an integral. 
+A large class of signals, including all finite-energy signals, can be represented as a linear combination of complex exponentials. For periodic signals, these building blocks are harmonically related. For aperiodic signals, the frequencies are infinitesimally close, and the representation takes the form of an integral rather than a sum. The resulting spectrum of coefficients is called the **Fourier transform**, and the synthesis integral used to reconstruct the signal is called the **inverse Fourier transform**.
 
-## 4.1 Representation of Aperiodic Signals: The continuous-time Fourier Transform
+The Fourier transform was one of Fourier's most significant contributions. He reasoned that an aperiodic signal could be treated as a periodic signal with an infinite period. As the period increases, the fundamental frequency decreases, and the harmonically related components become closer in frequency. In the limit, the Fourier series sum becomes an integral.
+
+---
+
+## 4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=316&selection=38,0,52,9|🔗]]
 
-To gain some insights into the nature of the Fourier transform representation, consider the square wave over one period $T$:
-$$x(t)=\left\{\begin{array}{ll}1 & \text { for }|t|<T_{1} \\ 0 & \text { for } T_{1}<|t|<T / 2\end{array} \quad\right.$$
-We found $T a_{k}=\left.\frac{2 \sin \left(\omega T_{1}\right)}{w}\right|_{w=k w_{0}}$, which can be interpreted as samples of an envelope function. That is, we thought of $w$ as continuous, then $2 \sin\omega(T_{A})/\omega$ represents the envelope of $T a_{n}$, with $a_{n}$ being the equally spaced samples of this envelope. For fixed $T_1$, the envelope is independent of $T$. When $T$ increases, or $w_{0} \sim \frac{1}{T}$ decreases, the envelope is sampled with closer and closer spacing. As $T$ becomes arbitrarily large, the original periodic square wave approaches a rectangular pulse. Also, the Fourier series coefficients, multiplied by $T$, become more and more closely spaced samples of the envelope, so that in some sense, the set of Fourier series coefficients approaches the envelope function as $T \rightarrow \infty$.
+### 4.1.1 Example: Square Wave
+Consider a square wave over one period $T$:
+$$
+x(t) =
+\begin{cases}
+1, & \text{for } |t| < T_1, \\
+0, & \text{for } T_1 < |t| < T/2.
+\end{cases}
+$$
 
-This example illustrates the basic idea behind Fourier's development of a representation for aperiodic signals. Specifically, we think of an aperiodic signal as the limit of a periodic signal as the period becomes arbitrarily large, and we examine the limiting behavior of the Fourier series representation for this signal. In particular, consider a signal $x(t)$ that is of finite duration. That is, for some number $T_1$, $x(t) = 0$ if $|t| > T_1$. From this aperiodic signal, we can construct a periodic signal $\tilde{x}(t)$ for which $x(t)$ is one period:
+The Fourier series coefficients are:
+$$
+T a_k = \frac{2 \sin(\omega T_1)}{\omega}, \quad \omega = k\omega_0.
+$$
+
+As $T \to \infty$, the square wave approaches a rectangular pulse, and the Fourier series coefficients multiplied by $T$ become closely spaced samples of the envelope function $2\sin(\omega T_1)/\omega$. Eventually, they form a continuum.
+
+---
+
+### 4.1.2 Derivation
+For a finite-duration signal $x(t)$, we construct a periodic signal $\tilde{x}(t)$ where $x(t)$ is one period:
 ![Attachments/Oppenheim,Willsky_Signals and Systems 1.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%201.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=318&rect=123,434,423,595|🔗]]
-As we choose the period $T$ to be larger, $\tilde{x}(t)$ is identical to $x(t)$ over a longer interval, and as $T \rightarrow \infty$, they are equal for any finite value of $t$.
-Lets examine the effect of this on the Fourier series representation of $\tilde{x}(t)$. We begin by considering the integral evaluated over the interval $-T / 2 \leq t \leq T / 2$:
-$$\begin{align*}
-\begin{gathered}
-\tilde{x}(t)=\sum_{k=-\infty}^{+\infty} a_k e^{/ k \omega_0 t}, \\
-a_k=\frac{1}{T} \int_{-T / 2}^{T / 2} d t\cdot \tilde{x}(t) e^{-j / \omega_0 t},
-\end{gathered}
-\end{align*}$$
-where $\omega_0=2 \pi / T$. We can define the envelope $X(i \omega)$ of $T a_k$ as
-$$\begin{align*}
-X(i \omega)=\int_{-\infty}^{+\infty} x(t) e^{-i \omega t} d t
-\end{align*},$$
-which eventually allows expressing $\tilde{x}(t)$ in terms of $X(i \omega)$ as
-$$\begin{align*}
-\bar{x}(t)=\sum_{k=-\infty}^{+\infty} \frac{1}{T} X\left(i k \omega_0\right) e^{i k \omega_0 t}
-\end{align*},$$
-or equivalently, since $2 \pi / T=\omega_0$,
-$$\begin{align*}
-\tilde{x}(t)=\frac{1}{2 \pi} \sum_{k=-\infty}^{+\infty} X\left(i k \omega_0\right) e^{i k \omega_0 t} \omega_0
-\end{align*}.$$
-As $T \rightarrow \infty, \vec{x}(t)$ approaches $x(t)$, and consequently, in the limit this equation becomes a representation of $x(t)$. Furthermore, $\omega_0 \rightarrow 0$ as $T \rightarrow \infty$, and the right-hand side passes to an integral. Therefore, using the fact that $\tilde{x}(t) \rightarrow x(t)$ as $T \rightarrow \infty$, we find
-$$\begin{align*}
-x(t)=\frac{1}{2 \pi} \int_{-\infty}^{+x} X(i \omega) e^{i \omega t} d \omega
-\end{align*},$$
-and
-$$\begin{align*}
-X(i \omega)=\int_{-\infty}^{+\infty} x(t) e^{-i \omega t} d t
-\end{align*}.$$
 
-These two equations are referred to as the Fourier transform pair, with $X(i\omega)$ being called the Fourier transform of $x(t)$. For aperiodic signals, the complex exponentials occur at a continuum of frequencies and, according to the synthesis equation, have “amplitude” $X(i\omega)(d\omega/2\pi)$. In analogy with the terminology used for the Fourier series coefficients of a periodic signal, the transform $X(i\omega)$ of an aperiodic signal $x(t)$ is commonly referred to as the spectrum of $x(t)$, as it provides us with the information needed for describing $x(t)$ as a linear combination (specifically, an integral) of sinusoidal signals at different frequencies.
+As $T \to \infty$, $\tilde{x}(t)$ becomes identical to $x(t)$. The Fourier series representation of $\tilde{x}(t)$ is:
+$$
+\tilde{x}(t) = \sum_{k=-\infty}^\infty a_k e^{i k \omega_0 t}, \quad
+a_k = \frac{1}{T} \int_{-T/2}^{T/2} \tilde{x}(t)e^{-i k \omega_0 t} dt,
+$$
+where $\omega_0 = 2\pi / T$. The envelope $X(i\omega)$ of $T a_k$ is defined as:
+$$
+X(i\omega) = \int_{-\infty}^\infty x(t) e^{-i \omega t} dt.
+$$
 
-## 4.2 Convergence of Fourier transforms
+Expressing $\tilde{x}(t)$ in terms of $X(i\omega)$:
+$$
+\tilde{x}(t) = \frac{1}{2\pi} \sum_{k=-\infty}^\infty X(i k \omega_0)e^{i k \omega_0 t}\omega_0.
+$$
+
+As $T \to \infty$, $\omega_0 \to 0$, and the summation becomes an integral:
+$$
+x(t) = \frac{1}{2\pi} \int_{-\infty}^\infty X(i\omega)e^{i\omega t} d\omega.
+$$
+
+Thus, the Fourier transform pair is:
+$$
+x(t) = \frac{1}{2\pi} \int_{-\infty}^\infty X(i\omega) e^{i\omega t} d\omega,
+$$
+$$
+X(i\omega) = \int_{-\infty}^\infty x(t) e^{-i\omega t} dt.
+$$
+
+Here, $X(i\omega)$ represents the **spectrum** of $x(t)$ and provides the information needed to describe $x(t)$ as a linear combination of sinusoidal signals.
+
+---
+
+## 4.2 Convergence of Fourier Transforms
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=320&selection=148,0,154,18|🔗]]
 
-Although the argument we used in deriving the Fourier transform pair assumed that $x(t)$ was of arbitrary but finite duration, the discussions remain valid for an extremely broad class of signals of infinite duration. In fact, our derivation of the Fourier transform suggests that a set of conditions like those required for the convergence of Fourier series should also apply here, and indeed, that can be shown to be the case. Specifically, consider 
-$$\begin{align*}
-\hat{x}(t)=\frac{1}{2\pi}\int_{-\infty}^{+\infty} dt\cdot X(i\omega) e^{i \omega t} 
-\end{align*}.$$
-What we want to know is when this equation is valid - when is $\hat{x}$ a valid representation of the signal $x(t)$? If $x(t)$ has finite energy, e.g it is square integrable, then we are guaranteed that $X(i\omega)$ is finite. Then, also the difference $e(t)=\hat{x}(t)-x(t)$ has no energy. 
-Just as before, there is in an alternative set of conditions which are sufficient to ensure that $\hat{x}(t)$ is equal to $x(t)$ for any $t$, expect at a discontinuity, where it is equal to the average of the values on either side of the discontinuity. These conditions, again referred to as the Dirichlet conditions, require that: 
-1) The signal must be absolutely integrable, e.g. $\int_{-\infty}^{\infty} d t \cdot|x(t)|<\infty$.
-2) In any finite interval, $x(t)$ has a finite number of maxima and minima.
-3) In any finite interval, $x(t)$ has a finite number of discontinuities. Futhermore, each of these discontinuities must be finite.
-
-Therefore, absolutely integrable signals that are continuous or that have a finite number of discontinuities have Fourier transforms. Although the two alternative sets of conditions that we have given are sufficient to guarantee that a signal has a Fourier transform, we will see in the next section that periodic signals, which are neither absolutely integrable nor square integrable over an infinite interval, can be considered to have Fourier transforms if impulse functions are permitted in the transform. This has the advantage that the Fourier series and Fourier transform can be incorporated into a common framework.
-
-## 4.3 Properties of the continons time Fourier transform
-![](https://cdn.mathpix.com/cropped/2025_01_18_fe980612f9d3f033eaf5g-07.jpg?height=1894&width=1934&top_left_y=195&top_left_x=67)
-4.3.7 Parseval's Relation for Aperiodic Signals
-
+Although the derivation assumed $x(t)$ has finite duration, it applies to a broad class of signals, including those of infinite duration. To ensure that the Fourier transform is valid, consider:
 $$
-\int_{-\infty}^{+\infty}|x(t)|^{2} d t=\frac{1}{2 \pi} \int_{-\infty}^{+\infty}|X(i \omega)|^{2} d \omega
+\hat{x}(t) = \frac{1}{2\pi} \int_{-\infty}^\infty X(i\omega) e^{i\omega t} d\omega.
 $$
 
-Parseval's theorem states that total energy is energy per time integrated over all tines, or energy per frequency integrated over all frequencies. Therefore, $|\hat{x}(i w)|^{2}$ is considered an evergy-density spectrum.
+The Fourier transform is valid if:
+1. $x(t)$ is **square integrable** (finite energy):
+   $$
+   \int_{-\infty}^\infty |x(t)|^2 dt < \infty.
+   $$
+   In this case, $X(i\omega)$ is finite, and the difference $e(t) = \hat{x}(t) - x(t)$ has no energy.
+2. $x(t)$ satisfies the **Dirichlet conditions**:
+   - $x(t)$ is absolutely integrable:
+     $$
+     \int_{-\infty}^\infty |x(t)| dt < \infty.
+     $$
+   - $x(t)$ has a finite number of maxima and minima in any finite interval.
+   - $x(t)$ has a finite number of discontinuities, each of which is finite.
+
+For signals that meet these conditions, $\hat{x}(t) = x(t)$ for all $t$ except at points of discontinuity, where $\hat{x}(t)$ equals the average of the values on either side.
+
+### 4.2.1 Periodic Signals and Impulses
+Periodic signals, which are neither absolutely nor square integrable over an infinite interval, can still have Fourier transforms if impulse functions are permitted in the transform. This allows the Fourier series and Fourier transform to be unified into a common framework.
+
+## 4.3 Properties of the Continuous-Time Fourier Transform
+[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=359&selection=16,0,34,5|🔗]]
+
+Several useful properties of the continuous-time Fourier transform:
+
+|                Property                 |                                         Aperiodic Signal                                         |                                                                                          Fourier Transform                                                                                          |
+| :-------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                         |                                              $x(t)$                                              |                                                                                            $X(i \omega)$                                                                                            |
+|                                         |                                              $y(t)$                                              |                                                                                            $Y(i \omega)$                                                                                            |
+|                Linearity                |                                        $a x(t) + b y(t)$                                         |                                                                                   $a X(i \omega) + b Y(i \omega)$                                                                                   |
+|              Time Shifting              |                                     $x\left(t - t_0\right)$                                      |                                                                                   $e^{-i \omega t_0} X(i \omega)$                                                                                   |
+|           Frequency Shifting            |                                     $e^{i \omega_0 t} x(t)$                                      |                                                                                $X\left(i (\omega - \omega_0)\right)$                                                                                |
+|               Conjugation               |                                             $x^*(t)$                                             |                                                                                          $X^*(-i \omega)$                                                                                           |
+|              Time Reversal              |                                             $x(-t)$                                              |                                                                                           $X(-i \omega)$                                                                                            |
+|       Time and Frequency Scaling        |                                             $x(a t)$                                             |                                                                           $\frac{1}{a} X\left(\frac{i \omega}{a}\right)$                                                                            |
+|               Convolution               |                                          $x(t) * y(t)$                                           |                                                                                      $X(i \omega) Y(i \omega)$                                                                                      |
+|             Multiplication              |                                           $x(t) y(t)$                                            |                                                         $\frac{1}{2 \pi} \int_{-\infty}^\infty X(i \theta) Y(i (\omega - \theta)) d\theta$                                                          |
+|         Differentiation in Time         |                                       $\frac{d}{d t} x(t)$                                       |                                                                                       $i \omega X(i \omega)$                                                                                        |
+|               Integration               |                                  $\int_{-\infty}^t x(t) \, dt$                                   |                                                                     $\frac{1}{i \omega} X(i \omega) + \pi X(0) \delta(\omega)$                                                                      |
+|      Differentiation in Frequency       |                                             $t x(t)$                                             |                                                                                 $i \frac{d}{d \omega} X(i \omega)$                                                                                  |
+|   Conjugate Symmetry for Real Signals   |                                           $x(t)$ real                                            | $\begin{aligned} & X(i \omega) = X^*(-i \omega) \\ & \mathfrak{Re}\{X(i \omega)\} = \mathfrak{Re}\{X(-i \omega)\} \\ & \mathfrak{Im}\{X(i \omega)\} = -\mathfrak{Im}\{X(-i \omega)\} \end{aligned}$ |
+|   Symmetry for Real and Even Signals    |                                       $x(t)$ real and even                                       |                                                                                     $X(i \omega)$ real and even                                                                                     |
+|    Symmetry for Real and Odd Signals    |                                       $x(t)$ real and odd                                        |                                                                               $X(i \omega)$ purely imaginary and odd                                                                                |
+| Even-Odd Decomposition for Real Signals | $\begin{aligned} & x_e(t) = \mathcal{E}\{x(t)\} \\ & x_o(t) = \mathcal{O}\{x(t)\} \end{aligned}$ |                                                 $\begin{aligned} & \mathfrak{Re}\{X(i \omega)\} \\ & i \mathfrak{Im}\{X(i \omega)\} \end{aligned}$                                                  |
+|                                         |                          **Parseval's Relation for Aperiodic Signals**                           |                                              $$\int_{-\infty}^\infty x(t)
+{ #2}
+ \, dt = \frac{1}{2 \pi} \int_{-\infty}^\infty X(i \omega)^2 \, d\omega$$                                               |
+
+Parseval's theorem states that total energy can be expressed as energy over time integrated across all time or as energy per frequency integrated across all frequencies. Consequently, $|X(i \omega)|^2$ is often referred to as the **energy-density spectrum**.
+
+---
+
+## 4.4 Basic Fourier Transform Pairs
+[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=360&selection=30,0,36,5|🔗]]
+
+|                      Signal                      |                                  Fourier Transform                                   |          Fourier Series Coefficients (if periodic)           |
+| :----------------------------------------------: | :----------------------------------------------------------------------------------: | :----------------------------------------------------------: |
+| $\sum_{k=-\infty}^\infty a_k e^{i k \omega_0 t}$ |            $2\pi \sum_{k=-\infty}^\infty a_k \delta(\omega - k\omega_0)$             |                            $a_k$                             |
+|                $e^{i \omega_0 t}$                |                           $2\pi \delta(\omega - \omega_0)$                           |             $a_1 = 1$, $a_k = 0$ for $k \neq 1$              |
+|                $\cos(\omega_0 t)$                |      $\pi \left[ \delta(\omega - \omega_0) + \delta(\omega + \omega_0) \right]$      |  $a_1 = a_{-1} = \frac{1}{2}$, $a_k = 0$ for $k \neq \pm 1$  |
+|                $\sin(\omega_0 t)$                | $\frac{\pi}{i} \left[ \delta(\omega - \omega_0) - \delta(\omega + \omega_0) \right]$ | $a_1 = -a_{-1} = \frac{1}{2i}$, $a_k = 0$ for $k \neq \pm 1$ |
+|                    $x(t) = 1$                    |                                $2\pi \delta(\omega)$                                 |             $a_0 = 1$, $a_k = 0$ for $k \neq 0$              |
+|                   $\delta(t)$                    |                                         $1$                                          |                              -                               |
+|                      $u(t)$                      |                      $\frac{1}{i \omega} + \pi \delta(\omega)$                       |                              -                               |
+|                $\delta(t - t_0)$                 |                                 $e^{-i \omega t_0}$                                  |                              -                               |
+|     $e^{-a t} u(t), \mathfrak{Re}\{a\} > 0$      |                               $\frac{1}{a + i \omega}$                               |                              -                               |
+|    $t e^{-a t} u(t), \mathfrak{Re}\{a\} > 0$     |                             $\frac{1}{(a + i \omega)^2}$                             |                              -                               |
+
+---
+
+## 4.5 Systems Characterized by Linear Constant-Coefficient Differential Equations
+[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=361&selection=44,0,58,9|🔗]]
+
+Continuous-time LTI systems described by linear constant-coefficient differential equations are widely used in practice. A general form of such equations is:
+$$
+\sum_{k=0}^N a_k \frac{d^k y(t)}{d t^k} = \sum_{k=0}^M b_k \frac{d^k x(t)}{d t^k}.
+$$
+
+The frequency response $H(i\omega)$ can be derived using the Fourier transform. Applying the transform to both sides:
+$$
+\mathcal{F}\left\{\sum_{k=0}^N a_k \frac{d^k y(t)}{d t^k}\right\} = \mathcal{F}\left\{\sum_{k=0}^M b_k \frac{d^k x(t)}{d t^k}\right\}.
+$$
+
+This leads to:
+$$
+H(i \omega) = \frac{Y(i \omega)}{X(i \omega)} = \frac{\sum_{k=0}^M b_k (i \omega)^k}{\sum_{k=0}^N a_k (i \omega)^k}.
+$$
+
+Thus, $H(i \omega)$ is a rational function (a ratio of polynomials in $i \omega$), commonly referred to as the frequency response of the system.
+
+
 
 # 5 The discrete-time Fourier transform
+[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=389&selection=2,0,8,9|🔗]]
+
+
 Consider the general sequence $x[n]$ of finite duration, e.g. $x[n]=0$ outride of $\left[-N_{1}, N_{2}\right]$.
 Then, the discrete-time Fourier transform is $\tilde{x}\left(e^{i \omega}\right)=\sum_{n} x[n] e^{-i \omega n}$, and then also $\sim^{n}$ "Analysis equation" $x[n]=\frac{1}{2 \pi} \int_{2 \pi} d \omega \cdot \tilde{x}\left(e^{i \omega}\right) e^{i \omega}$. Note, $\tilde{x}\left(e^{i \omega}\right)$ has a period of $2 \pi$.
 "Synthesis equation"
