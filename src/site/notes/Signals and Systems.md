@@ -1,11 +1,12 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowToc":"true","updated":"2025-01-19T18:31:38.380+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowToc":"true","updated":"2025-01-19T18:49:53.851+01:00"}
 ---
 
 > [!INFO] To do  
 > More details to property tables, relevance of parsevals theorem
 > Check grammar 
-
+```table-of-contents
+```
 
 This note will mostly follow along the book *Signals and Systems - 2nd edition* by Alan V. Oppenheim and Alan S. Willsky. Not every chapter is covered, especially the more 'basic' ones. Also, it is not an in-depth note.
 

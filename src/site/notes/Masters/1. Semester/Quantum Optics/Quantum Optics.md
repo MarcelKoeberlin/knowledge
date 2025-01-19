@@ -1,12 +1,10 @@
 ---
-{"dg-publish":true,"dg-path":"Draft/Quantum Optics","permalink":"/draft/quantum-optics/","updated":"2025-01-19T17:25:56.168+01:00"}
+{"dg-publish":true,"dg-path":"Draft/Quantum Optics","permalink":"/draft/quantum-optics/","updated":"2025-01-19T18:36:59.177+01:00"}
 ---
 
->[!WARNING] Rough draft
->This is work in progress from here on
->Notes have been automatically translated from handwritten to latex, still needs plenty of adjustments
-
-
+>[!DANGER] Work in progress from here on
+>Notes have been automatically translated from handwritten to latex
+>No manual adjustments done yet.
 
 Quantization of electromagnetic field
 Maxwell's equations in source-free field:
