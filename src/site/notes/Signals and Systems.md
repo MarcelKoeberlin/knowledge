@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-18T23:10:12.322+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-18T23:12:18.172+01:00"}
 ---
 
 This note will mostly follow along the book 'Signals and Systems - 2nd edition' by Alan V. Oppenheim and Alan S. Willsky. Not every chapter is covered, especially the more 'basic' ones. Also its not an in-depth note.
@@ -233,7 +233,7 @@ Continuing the assumption, we $g e t \int_{0}^{T} d t \cdot x(t) e^{-i k n \omeg
 We will write the integral $\int_{t^{\prime}}^{t^{\prime}+T}$ ar $\int_{T}$ from now on.
 Then, $a_{n}=\frac{1}{T} \int_{T} d t \cdot x(t) e^{-i n \omega_{0} t}$ and $a_{0}=\frac{1}{T} \int_{T} d t \cdot x(t)=\bar{x}(t)$, so the average over one period.
 
-# 4 Convergence of the Founder series
+# 4 Convergence of the Fourier series
 Approximate a general signal $x(t)$ as $x_{N}(t)=\sum_{k=-N}^{N} a_{k} e^{i k w_{0} t}$ such that the error of approximation becomes $e_{N}(t)=x(t)-x_{N}(t)=x(t)-\sum_{k=-N}^{N} a_{k} e^{i k w_{0} t}$
 The energy over one period is $E_{N}=\int_{T} d t \cdot\left|e_{N}(t)\right|^{2}$ which is minimized by $a_{k}=\frac{1}{T} \int_{T} d t \cdot x(t) e^{-i k w_{0} t}$.
 Obviously $\lim _{N \rightarrow \infty} E_{N}=0$ if $x(t)$ has a founder series representation.
