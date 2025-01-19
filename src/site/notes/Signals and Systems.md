@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-19T14:15:24.645+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-19T14:29:29.567+01:00"}
 ---
 
 This note will mostly follow along the book 'Signals and Systems - 2nd edition' by Alan V. Oppenheim and Alan S. Willsky. Not every chapter is covered, especially the more 'basic' ones. Also its not an in-depth note.
@@ -16,10 +16,19 @@ Signals are represented mathematically as functions of one or more independent v
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=36&selection=158,0,170,5|🔗]]
 
 In many applications, the signals considered are directly related to physical quantities capturing power and energy in a physical system. As starting example, consider voltage $v(t)$ and current $I(t)$ across a resistor with resistance $R$. The instantaneous power is $p(t)=v(t)I(t)=v^2(t)/R$. This allows to get the total energy expended over the time interval $t_1<t<t_2$ as 
-$$\int_{t_1}^{t_2}dt\cdot p(t) $$ and the average power as
-$$\frac{1}{t_2-t_1}\int_{t_1}^{t_2}dt\cdot p(t).$$ With these simple physical examples in mind, it is common to use similar terminiology for power and energy for _any_ continous-time signal $x(t)$ and _any_ discrete-time signal $x[n]$. 
-The energy in a given time-interval $[t_1, t_2]$ is $$E=\int_{t_{1}}^{t_{2}} d t \cdot|x(t)|^{2}=\sum_{n=n_{1}}^{n_{2}}|x[n]|^{2},$$while the time-averaged power is $$P=\frac{E}{t_{2}-t_{1}}=\frac{E}{n_{2}-n_{1}+1}.$$
-For signals over in finite time-interrals, we find $$E_{\infty}=\int_{-\infty}^{\infty} d t \cdot|x(t)|^{2}=\sum_{n=-\infty}^{\infty}|x[n]|^{2}.$$Note that for some signals, these integrals might not converge (for example a nonzero constant signal). These signals have infinite energy. The time-areraged power then becomes $$P_{\infty}=\lim _{T \rightarrow \infty} \frac{1}{2 T} \int_{-T}^{T} d t \cdot|x(t)|^{2}=\lim _{N \rightarrow \infty} \frac{1}{2 N+1} \sum_{n=-N}^{N}|x[n]|^{2}.$$These definitions allow us to identify three important classes of signals
+$$\int_{t_1}^{t_2}dt\cdot p(t) $$
+and the average power as
+$$\frac{1}{t_2-t_1}\int_{t_1}^{t_2}dt\cdot p(t).$$
+With these simple physical examples in mind, it is common to use similar terminology for power and energy for _any_ continuous-time signal $x(t)$ and _any_ discrete-time signal $x[n]$. 
+The energy in a given time-interval $[t_1, t_2]$ is
+$$E=\int_{t_{1}}^{t_{2}} d t \cdot|x(t)|^{2}=\sum_{n=n_{1}}^{n_{2}}|x[n]|^{2},$$
+while the time-averaged power is
+$$P=\frac{E}{t_{2}-t_{1}}=\frac{E}{n_{2}-n_{1}+1}.$$
+For signals over in finite time-intervals, we find
+$$E_{\infty}=\int_{-\infty}^{\infty} d t \cdot|x(t)|^{2}=\sum_{n=-\infty}^{\infty}|x[n]|^{2}.$$
+Note that for some signals, these integrals might not converge (for example a non-zero constant signal). These signals have infinite energy. The time-averaged power then becomes
+$$P_{\infty}=\lim _{T \rightarrow \infty} \frac{1}{2 T} \int_{-T}^{T} d t \cdot|x(t)|^{2}=\lim _{N \rightarrow \infty} \frac{1}{2 N+1} \sum_{n=-N}^{N}|x[n]|^{2}.$$
+These definitions allow us to identify three important classes of signals:
 1) Finite energy signals: $E_{\infty}<\infty \Rightarrow P_{\infty}=\lim \frac{E_{\infty}}{2 T}=0.$
 2) Finite average power signals: $P_{\infty}<\infty \Rightarrow E_{\infty}=\infty.$
 3) Signal with neither finite energy nor finite power, such as $x(t)=t$.
@@ -37,11 +46,14 @@ Some important and very fundamental transformations:
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=42&selection=502,0,506,7|🔗]]
 
 A very important class of signals encountered frequently here, are periodic signals. The defining property is that, for a positive value of $T$, it holds that
-$$x(t)=x(t)+T$$ for all values of $t$. In other words, a periodic signal is unchanged by a time shift $T$. Then, the signal $x(t)$ is periodic with period $T$. 
+$$x(t)=x(t)+T$$
+for all values of $t$. In other words, a periodic signal is unchanged by a time shift $T$. Then, the signal $x(t)$ is periodic with period $T$. 
 ## 1.5 Even and odd signals
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=44&selection=36,0,46,7|🔗]]
 
-Another set of useful properties of signals relates to their symmetry under time reversal. A signal is considered even if $x(t)=x(-t)$, and odd if $x(-t)=-x(t)$. An odd signal must be zero at time zero, as we can see from the definition. Thus, every signal can be written as superposition of an odd and even part, $$x(t)=\mathcal{E}(x)+\mathcal{O}(x)=\frac{x(t)+x(-t)}{2}+\frac{x(t)-x(-t)}{2}.$$
+Another set of useful properties of signals relates to their symmetry under time reversal. A signal is considered even if $x(t)=x(-t)$, and odd if $x(-t)=-x(t)$. An odd signal must be zero at time zero, as we can see from the definition. Thus, every signal can be written as superposition of an odd and even part, 
+$$x(t)=\mathcal{E}(x)+\mathcal{O}(x)=\frac{x(t)+x(-t)}{2}+\frac{x(t)-x(-t)}{2}.$$
+
 ## 1.6 Exponential signals
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=46&selection=12,0,17,18|🔗]]
 
@@ -60,13 +72,23 @@ The discussions from [[Signals and Systems#1.3 Transformations\|#1.3 Transformat
 ## 1.7 Unit impulse and unit step
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=61&selection=111,0,127,9|🔗]]
 
-In this section, several other basic signals of considerable importance are introduced. Consider the unit impulse $$\delta[n] =
+In this section, several other basic signals of considerable importance are introduced. Consider the unit impulse
+$$\delta[n] =
 \begin{cases} 
 1 & \text{if } n = 0, \\
 0 & \text{otherwise}
-\end{cases},$$ and the unit step $$u[n] = \begin{cases} 1 & \text{if } n \geq 0, \\ 0 & \text{otherwise.} \end{cases}$$ 
-There is a close relation between the unit impulse and the unit step. In particular, the unit impulse is the _first difference_ of the unit step: $$\delta[n]=u[n]-u[n-1],$$ while the unit step is the _running sum_ of the unit sample: $$u[n]=\sum_{m=-\infty}^{n} \delta[n]=\sum_{k=0}^{\infty} \delta[n-k].$$
-Further, we find that $x[n] \delta\left[n-n_{0}\right]=x\left[n_{0}\right] \delta\left[n-n_{0}\right]$. Instead, in continuous independant variables, the relation is  $$u(t)=\int_{-\infty}^t d\tau\cdot\delta(\tau)=\int_{0}^{\infty} d \sigma \cdot \delta(t-\sigma),$$and $$\delta(t)=\frac{d u(t)}{d t}.$$ The unit impulse should be considered an idealization of an infinitely short pulse. Any system has some 'inertia' associated to it, such that the response of a system to a _sufficiently short_ pulse is independent of the pulse duration or shape. The primary characteristic of the pulse is therefore only its integrated effect, e.g. its area. For system with a fast response, the pulse must be shorter as well for this to hold true. The ideal unit impulse is short enough for _any_ system. 
+\end{cases},$$
+and the unit step
+$$u[n] = \begin{cases} 1 & \text{if } n \geq 0, \\ 0 & \text{otherwise.} \end{cases}$$
+There is a close relation between the unit impulse and the unit step. In particular, the unit impulse is the _first difference_ of the unit step: 
+$$\delta[n]=u[n]-u[n-1],$$
+while the unit step is the _running sum_ of the unit sample: 
+$$u[n]=\sum_{m=-\infty}^{n} \delta[n]=\sum_{k=0}^{\infty} \delta[n-k].$$
+Further, we find that $x[n] \delta\left[n-n_{0}\right]=x\left[n_{0}\right] \delta\left[n-n_{0}\right]$. Instead, in continuous independant variables, the relation is  
+$$u(t)=\int_{-\infty}^t d\tau\cdot\delta(\tau)=\int_{0}^{\infty} d \sigma \cdot \delta(t-\sigma),$$
+and 
+$$\delta(t)=\frac{d u(t)}{d t}.$$
+The unit impulse should be considered an idealization of an infinitely short pulse. Any system has some 'inertia' associated to it, such that the response of a system to a _sufficiently short_ pulse is independent of the pulse duration or shape. The primary characteristic of the pulse is therefore only its integrated effect, e.g. its area. For system with a fast response, the pulse must be shorter as well for this to hold true. The ideal unit impulse is short enough for _any_ system. 
 ## 1.8 Interconnection of systems
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=72&selection=144,0,150,7|🔗]]
 
@@ -98,7 +120,9 @@ The concept of intervibility is important in many contexts: In systems for encod
 A system is called causal if the output at time $t$ depends only on values of the input at the present time or in the past. Such a system is often referred to as being nonanticipative, as the system output does not anticipate future values of the input. Consequently, if two inputs to a causal system are identical up to some point in time, the corresponding outputs must also be equal up to this same time.  
 An example of two system that are _not_ causal:
 $$y[n]=x[n]-x[n+1],$$
-and $$y(t)=x(t+1).$$ All memoryless systems are causal, since the output response only to the current value of the input. 
+and 
+$$y(t)=x(t+1).$$
+All memoryless systems are causal, since the output response only to the current value of the input. 
 ### 1.9.4 Stability
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&selection=55,0,59,9|🔗]]
 
@@ -109,7 +133,9 @@ For a stable system, if the input is bounded, then th eoutput must also be bound
 ### 1.9.5 Time Invariance
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=81&selection=204,0,206,15|🔗]]
 
-A system is time-invariant, if its behavior and characteristics are fixed over time. Formally, it is time-invariant if $$x[n] \rightarrow y[n] \Leftrightarrow x\left[n-n_{0}\right] \rightarrow y\left[n-n_{0}\right],$$ so that it does not matter when the experiment is conducted. 
+A system is time-invariant, if its behavior and characteristics are fixed over time. Formally, it is time-invariant if 
+$$x[n] \rightarrow y[n] \Leftrightarrow x\left[n-n_{0}\right] \rightarrow y\left[n-n_{0}\right],$$
+so that it does not matter when the experiment is conducted. 
 
 ### 1.9.6 Linearity
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=84&selection=70,0,74,9|🔗]]
@@ -123,16 +149,26 @@ Both statements can be combined : $\alpha x_{1}+\beta x_{2} \rightarrow \alpha y
 # 2 Linear time-invariant systems
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=105&selection=2,0,6,7|🔗]]
 
-In [[Signals and Systems#1 Signals and Systems\|Chapter 1]], a number of basic system properties have been discussed. Two of these, linearity and time invariance, play a fundamental role in signal and system analysis for two major reasons. First, many physical processes possess these properties and thus can be modeled as linear time-invariant (short: **LTI**) systems. In addition, LTI systems can be analyzed in considerable detail, providing both insight into their properties and a set of powerful tools that form the core of signal and system analysis. One reason why LTI systems are of interest is that any such system possesses the [[Signals and Systems#1.14 Linearity\|superposition property]]. As a consequence, if we can represent the input to an LTI system in terms of a linear combination of a set of basic signals, we can then use superposition to compute the output of the system in terms of its responses to these basic signals. Consider LTI systems for this chapter unless said otherwise.
+In [[Signals and Systems#1 Signals and Systems\|Chapter 1]], a number of basic system properties have been discussed. Two of these, linearity and time invariance, play a fundamental role in signal and system analysis for two major reasons. First, many physical processes possess these properties and thus can be modelled as linear time-invariant (short: **LTI**) systems. In addition, LTI systems can be analysed in considerable detail, providing both insight into their properties and a set of powerful tools that form the core of signal and system analysis. One reason why LTI systems are of interest is that any such system possesses the [[Signals and Systems#1.14 Linearity\|superposition property]]. As a consequence, if we can represent the input to an LTI system in terms of a linear combination of a set of basic signals, we can then use superposition to compute the output of the system in terms of its responses to these basic signals. Consider LTI systems for this chapter unless said otherwise.
 
 ## 2.1 The Convolution Sum
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=106&selection=76,0,86,3|🔗]]
 
-The so-called sifting (yes, not shifting) property of the discrete-time unit impulse is $$x[n]=\sum_{k=-\infty}^{\infty} x[k] \delta[n-k].$$Because the sequence $\delta[n-k]$ is nonzero only for $k$ equals $n$, the summation on the sight hand side 'sifts' through the sequence of values $x[k]$ and preserves only the corresponding value $k=n$. The importance of this property lies in the fact that it allows to represent $x[n]$ as a superposition of scaled versions of a very simple set of elementary functions. Moreover, the property of time invariance tells us that the responses of a time-invariant system to the time-shifted unit impulses are simply time-shifted versions of one another.
-Let $h_{k}[n]$ be the response of a linear system with input $\delta[n-k]$, e.g. $\delta[n-k] \rightarrow h_{k}[n]$. Then, it holds $$y[n]=\sum_{k=-\infty}^{\infty} x[k] h_{k}[n],$$meaning that we are able to contruct the response to an arbitrary input. 
-If the system is additionally time-invariant and $\delta[n] \rightarrow h[n]$, then $$y[n] \rightarrow \sum_{k} x(h) h[n-k].$$
-We call this the convolution/ superposition sum, and also simply write $$y[n]=x[n] * h[n].$$
-The LTI system is therefore completely characterized by its response to the unit impulse. For continous -time LTI systems, we have the sifting property $$x(t)=\int_{-\infty}^{\infty} d \tau \cdot x(\tau) \delta(t-\tau),$$and then $$y(t)=x(t) * h(t)=\int_{-\infty}^{\infty} d \tau \cdot x(\tau) h(t-\tau)$$ for $\delta(t) \rightarrow h(t)$. This is called convolution integral or the supoerposition integral.
+The so-called sifting (yes, not shifting) property of the discrete-time unit impulse is 
+$$x[n]=\sum_{k=-\infty}^{\infty} x[k] \delta[n-k].$$
+Because the sequence $\delta[n-k]$ is nonzero only for $k$ equals $n$, the summation on the sight hand side 'sifts' through the sequence of values $x[k]$ and preserves only the corresponding value $k=n$. The importance of this property lies in the fact that it allows to represent $x[n]$ as a superposition of scaled versions of a very simple set of elementary functions. Moreover, the property of time invariance tells us that the responses of a time-invariant system to the time-shifted unit impulses are simply time-shifted versions of one another.
+Let $h_{k}[n]$ be the response of a linear system with input $\delta[n-k]$, e.g. $\delta[n-k] \rightarrow h_{k}[n]$. Then, it holds 
+$$y[n]=\sum_{k=-\infty}^{\infty} x[k] h_{k}[n],$$
+meaning that we are able to contruct the response to an arbitrary input. 
+If the system is additionally time-invariant and $\delta[n] \rightarrow h[n]$, then 
+$$y[n] \rightarrow \sum_{k} x(h) h[n-k].$$
+We call this the convolution/ superposition sum, and also simply write 
+$$y[n]=x[n] * h[n].$$
+The LTI system is therefore completely characterized by its response to the unit impulse. For continous -time LTI systems, we have the sifting property 
+$$x(t)=\int_{-\infty}^{\infty} d \tau \cdot x(\tau) \delta(t-\tau),$$
+and then 
+$$y(t)=x(t) * h(t)=\int_{-\infty}^{\infty} d \tau \cdot x(\tau) h(t-\tau)$$
+for $\delta(t) \rightarrow h(t)$. This is called convolution integral or thesuperpositionn integral.
 
 ## 2.2 Convolution Properties of LTI systems
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=134&selection=16,0,26,7|🔗]]
@@ -150,34 +186,61 @@ In the same way, associativity can be depiced graphically as:
 
 ## 2.3 Basic Properties
 ### 2.3.1 Memory
-If a discrete-time LTI system has an impulse response $h[n]$ that is not identically zero for $n\neq 0$, then the system has memory. Then, $h[n] \sim \delta[n]$ and $y\sim x$. A continous-time LTI system is memoryless if $h(t)=0$ for $t\neq 0$, and such a system has the form $$y(t) = Kx(t),$$ meaning that $h=K\delta(t)$. If $K=1$, such systems satisfy $x=x * \delta=y$ and become identity systems, which reduces to the sifting property.
+If a discrete-time LTI system has an impulse response $h[n]$ that is not identically zero for $n\neq 0$, then the system has memory. Then, $h[n] \sim \delta[n]$ and $y\sim x$. A continous-time LTI system is memoryless if $h(t)=0$ for $t\neq 0$, and such a system has the form 
+$$y(t) = Kx(t),$$
+meaning that $h=K\delta(t)$. If $K=1$, such systems satisfy $x=x * \delta=y$ and become identity systems, which reduces to the sifting property.
 ### 2.3.2 Invertibility
-If an LTI system is invertible, its inverse is LTI as well. If $$\begin{aligned} x \xrightarrow{h} y&&\text{and we want}&&y \xrightarrow{h^{\prime}} x\end{aligned},$$
+If an LTI system is invertible, its inverse is LTI as well. If 
+$$\begin{aligned} x \xrightarrow{h} y&&\text{and we want}&&y \xrightarrow{h^{\prime}} x\end{aligned},$$
 then we must have $h * h^{\prime}=1=\delta$ the identity.
 ### 2.3.3 Causality
 Causality requires $h[n]=0$ for $n<0$. The impulse response must be zero before the impuslse occurs, consistent with the intuitive concept of causality. The equivalece of causality and the condition of initial rest applies only to linear systems:
 $$\begin{aligned} x\left(t<t^{\prime}\right)=0 &&\text{then}&& y\left(t<t^{\prime}\right)=0.\end{aligned}$$
 
 ### 2.3.4 Stability
-An LTI system is stable if it is absolutely summable, that is $$\sum_{k}|h[k]|<\infty,$$since then, for every $n$  $$|x[n]|<B<\infty \Rightarrow|y[n]| \leq B \cdot \sum_{k}|h [k]|<\infty,$$ for some bounding constant $B$.  For continuous variables, $$\int d t \cdot|h(t)|^{2}<\infty$$translates to absolutely integrable. The system is stable if the impulse response is absolutely integrable. 
+An LTI system is stable if it is absolutely summable, that is 
+$$\sum_{k}|h[k]|<\infty,$$
+since then, for every $n$  
+$$|x[n]|<B<\infty \Rightarrow|y[n]| \leq B \cdot \sum_{k}|h [k]|<\infty,$$
+for some bounding constant $B$.  For continuous variables, 
+$$\int d t \cdot|h(t)|^{2}<\infty$$
+translates to absolutely integrable. The system is stable if the impulse response is absolutely integrable. 
 ### 2.3.5 Unit step response of an LTI system
-Besides the impulse response, there is another basic but important signal. The step response is defined as $$s[n]=\sum_{k=-\infty}^{n} h[k]=u[n] * h[n],$$ or in continous-time: $$s(t)=\int_{-\infty}^{t} d \tau \cdot h(\tau).$$
-Note also that $$\begin{aligned}h[n]=s[n]-s[n-1]&&\text{and}&&h(t)=\frac{d s}{d t}.\end{aligned}$$ 
+Besides the impulse response, there is another basic but important signal. The step response is defined as 
+$$s[n]=\sum_{k=-\infty}^{n} h[k]=u[n] * h[n],$$
+or in continous-time: 
+$$s(t)=\int_{-\infty}^{t} d \tau \cdot h(\tau).$$
+Note also that 
+$$\begin{aligned}h[n]=s[n]-s[n-1]&&\text{and}&&h(t)=\frac{d s}{d t}.\end{aligned}$$ 
 
 ## 2.4 Causal LTI Systems Described by Differential Equations
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=147&selection=54,0,72,9|🔗]]
 
 An important class of discrete-time systems is that for which the input and output are related through a _linear constant-coefficient difference equation_. They provide an implicit specification of the system, that is, they describe a relationship between input and output, rather than an explicit expression. To obtain an explicit expression, one must solve the differential equation.  The condition of initial rest makes a system described by a linear constant-coefficient difference equation time invariant. 
 Consider a general _Nth_-order linear constant-coefficient differential equation:
-$$\sum_{k=0}^{N} a_{k} \cdot \frac{d^{k} y(t)}{d t^{k}}=\sum_{k=0}^{M} b_{k} \cdot \frac{d^{k} x(t)}{d t^{k}},$$ 
-which becomes $a_{n}$ explicit function for $N=0$, $$y(t)=\frac{1}{a_{0}} \sum_{k=0}^{M} b_{k} \frac{d^{k} x}{d t^{k}}.$$ 
-For $N \geqslant 1$, the solution $y(t)$ consists of two parts, one being the particular solution plus the part that solves the homogeneous equation $$\sum_{k=0}^{N} a_{k} \cdot \frac{d^{k} y(t)}{d t^{k}}=0,$$the so-called natural responses of the system. In discrete-time variables, it is $$\sum_{k=0}^{N} a_{k} y[n-k]=\sum_{k=0}^{M} b_{k} x[n-k],$$ and the natural response are $$\sum_{k=0}^{N} a_{k} y[n-k]=0.$$ The discrete-time offers an alternate approach. We can rewrite $$y[n]=\frac{1}{a_{0}}\left(\sum_{k=0}^{M} b_{k} x[n-k]-\sum_{k=1}^{N} a_{k} y[n-k]\right),$$ which requires us to know $y[n-1]$ ... $y[n-N]$. This type of equation is also called a recursive equation. 
-For $N=0$ we have $$y[n]=\sum_{k=0}^{M} \frac{b_{k}}{a_{0}} x[n-k]$$ so $h[n]=\frac{b_{n}}{a_{0}}$ if $0 \leq n \leq M$. This equation is nonresursive. As its impulse response $\frac{b_{n}}{a_{0}}$ is finite, we call the system that it describes as finite impulse response (short: **FIR**) system. Usually $_{y}$, for $N \geqslant 1$ when the differential equation is recursive, the impulse response is infinite, and they are called infinite impulse response (short: **IIR**) system. 
+$$\sum_{k=0}^{N} a_{k} \cdot \frac{d^{k} y(t)}{d t^{k}}=\sum_{k=0}^{M} b_{k} \cdot \frac{d^{k} x(t)}{d t^{k}},$$
+which becomes $a_{n}$ explicit function for $N=0$, 
+$$y(t)=\frac{1}{a_{0}} \sum_{k=0}^{M} b_{k} \frac{d^{k} x}{d t^{k}}.$$ 
+For $N \geqslant 1$, the solution $y(t)$ consists of two parts, one being the particular solution plus the part that solves the homogeneous equation 
+$$\sum_{k=0}^{N} a_{k} \cdot \frac{d^{k} y(t)}{d t^{k}}=0,$$
+the so-called natural responses of the system. In discrete-time variables, it is 
+$$\sum_{k=0}^{N} a_{k} y[n-k]=\sum_{k=0}^{M} b_{k} x[n-k],$$
+and the natural response are 
+$$\sum_{k=0}^{N} a_{k} y[n-k]=0.$$
+The discrete-time offers an alternate approach. We can rewrite 
+$$y[n]=\frac{1}{a_{0}}\left(\sum_{k=0}^{M} b_{k} x[n-k]-\sum_{k=1}^{N} a_{k} y[n-k]\right),$$
+which requires us to know $y[n-1]$ ... $y[n-N]$. This type of equation is also called a recursive equation. 
+For $N=0$ we have 
+$$y[n]=\sum_{k=0}^{M} \frac{b_{k}}{a_{0}} x[n-k]$$
+so $h[n]=\frac{b_{n}}{a_{0}}$ if $0 \leq n \leq M$. This equation is nonresursive. As its impulse response $\frac{b_{n}}{a_{0}}$ is finite, we call the system that it describes as finite impulse response (short: **FIR**) system. Usually $_{y}$, for $N \geqslant 1$ when the differential equation is recursive, the impulse response is infinite, and they are called infinite impulse response (short: **IIR**) system. 
 ## 2.5 Block diagram representation
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=155&selection=17,0,38,9|🔗]]
 
 An important property of systems described by linear constant-coefficient differential equations is that they can be represented in very simple and natural ways in terms of block diagram interconnections of elementary operations. This is significant, because it provides a pictorial representation which can add to the understanding of the behaviour and properties of these systems. In addition, such representations can be of considerable value for the simulation or implementation of the systems. 
-Start with the causal system described by the first-order difference equation $$y[n]+a y[n-1]=b x[n]$$ which we can rewrite as $$y[n]=b x[n]-a y[n-1].$$
+Start with the causal system described by the first-order difference equation 
+$$y[n]+a y[n-1]=b x[n]$$
+which we can rewrite as 
+$$y[n]=b x[n]-a y[n-1].$$
 The evaluation of this equation requires three basic operations: Addition, multiplication and delay:
 ![Attachments/Signals and Systems/IMG-0119135230-5.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230-5.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=113,383,295,597|🔗]]
 
@@ -185,28 +248,52 @@ Thus, the representation of the given equation is
 ![Attachments/Signals and Systems/IMG-0119135230-6.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135230-6.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=138,279,302,373|🔗]]
 The feedback is a direct consequence of the fact that it is a recursive equation. Further, the block diagram makes it clear that memory is required in this system and the consequent need for initial conditions. In particular, a delay corresponds to a memory element.
 
-Next, consider $$\frac{d y}{d t}+a y(t)=b x(t)$$ in continuous time. We find that this is equivalent to $$y(t)=-\frac{1}{a} \frac{d y}{d t}+b x(t),$$ which could be implemented with the elements before, however differentiators $D \hat{=} \frac{d}{d t}$ are both difficult to implement, as well as extremely sensitive to error and noise. Instead, rewriting yields $$y(t)=\int_{-\infty}^{t} d \tau(b x(\tau)-a y(\tau)) d\tau,$$ 
+Next, consider 
+$$\frac{d y}{d t}+a y(t)=b x(t)$$
+in continuous time. We find that this is equivalent to 
+$$y(t)=-\frac{1}{a} \frac{d y}{d t}+b x(t),$$
+which could be implemented with the elements before, however differentiators $D \hat{=} \frac{d}{d t}$ are both difficult to implement, as well as extremely sensitive to error and noise. Instead, rewriting yields 
+$$y(t)=\int_{-\infty}^{t} d \tau(b x(\tau)-a y(\tau)) d\tau,$$
  assuming that $y(-\infty)=0$. In this form, the system can be implemented with an integrator: 
  ![Attachments/Signals and Systems/IMG-0119135231.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&rect=142,463,338,599|🔗]]
 The upper image shows the pictorial representation of the integrator, while the bottom shows the representation of the equation. 
-The integrator is a memory -element, which becomes clear when we write $$y(t)=y\left(t_{0}\right)+\int_{t}^{t} d \tau(b x(\tau)-a y(\tau)) d\tau,$$ where it must store $y\left(t_{0}\right)$.
-
+The integrator is a memory -element, which becomes clear when we write
+$$y(t)=y\left(t_{0}\right)+\int_{t}^{t} d \tau(b x(\tau)-a y(\tau)) d\tau,$$
+where it must store $y\left(t_{0}\right)$.
 
 ## 2.6 Singularity functions
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&selection=151,0,155,9|🔗]]
 
-From the sifting property, the unit impulse is the impulse response of the identity system, that is$$x(t)=x(t) * \delta(t)$$ for any signal $x(t)$. Therefore, this also implies $\delta(t)=\delta(t)*\delta(t)$. Note that if define the unit impulse as the limiting form of _some_ signal it also means that there is an unlimited number of very dissimilar-looking signals, all of which behave like an impulse in the limit. While a normal function is usually defined by what it is at each value of $t$, the unit impulse is defined by what is does under convolution. Thus, we may alternatively define the unit impulse as the signal which, when applied to an LTI system, yields the impulse response. If we let $x=1$, then $$1=1 * \delta=\int_{-\infty}^{\infty} d \tau \cdot \delta(\tau).$$The unit impulse has unit area. Another completely equivalent operational definition is that 
-$$ \begin{align} g(-t)=g(-t)*\delta(t) && \text{and thus} && g(0)=\int_{-\infty}^\infty d\tau\cdot g(\tau)\delta(\tau)\end{align}$$ for any given signal $g(t)$. The unit impulse is of the class of singularity functions. We further can find that $$f(t)\delta(t)=f(0)\delta(t).$$
-Each singularity function can be defined operationally in terms of its behaviour under convolution. Consider the LTI system that implements $$y(t)=\frac{d x}{d t}\coloneqq x(t)* u_{1}(t)$$where we defined $u_{1}$ as the unit doublet. Similarly, we can define higher orders of the doublet, such as the second order: $$\frac{d^{2} x}{d t^{2}}\coloneqq x * u_{2}=\left(x * u_{1}\right) * u_{1},$$ where it follows $u_{2}=u_{1} * u_{1}$ by associativity. Generally then 
+From the sifting property, the unit impulse is the impulse response of the identity system, that is
+$$x(t)=x(t) * \delta(t)$$
+for any signal $x(t)$. Therefore, this also implies $\delta(t)=\delta(t)*\delta(t)$. Note that if define the unit impulse as the limiting form of _some_ signal it also means that there is an unlimited number of very dissimilar-looking signals, all of which behave like an impulse in the limit. While a normal function is usually defined by what it is at each value of $t$, the unit impulse is defined by what is does under convolution. Thus, we may alternatively define the unit impulse as the signal which, when applied to an LTI system, yields the impulse response. If we let $x=1$, then 
+$$1=1 * \delta=\int_{-\infty}^{\infty} d \tau \cdot \delta(\tau).$$
+The unit impulse has unit area. Another completely equivalent operational definition is that 
+$$ \begin{align} g(-t)=g(-t)*\delta(t) && \text{and thus} && g(0)=\int_{-\infty}^\infty d\tau\cdot g(\tau)\delta(\tau)\end{align}$$
+for any given signal $g(t)$. The unit impulse is of the class of singularity functions. We further can find that 
+$$f(t)\delta(t)=f(0)\delta(t).$$
+Each singularity function can be defined operationally in terms of its behaviour under convolution. Consider the LTI system that implements 
+$$y(t)=\frac{d x}{d t}\coloneqq x(t)* u_{1}(t)$$
+where we defined $u_{1}$ as the unit doublet. Similarly, we can define higher orders of the doublet, such as the second order:
+$$\frac{d^{2} x}{d t^{2}}\coloneqq x * u_{2}=\left(x * u_{1}\right) * u_{1},$$
+where it follows $u_{2}=u_{1} * u_{1}$ by associativity. Generally then 
 $$u_k(t)=\underbrace{u_1(t) * \cdots * u_1(t)}_{k \text { times }} .$$
-Further, consider $x=1$ so $$0=\frac{d x}{d t}=\int_{-\infty}^{\infty} d \tau \cdot u_{1}(\tau),$$ implying that the unit doublet has zero area. 
-As seen in an example, the unit step is the impulse response of an integrator: $$y(t)=\int_{-\infty}^t x(\tau) d \tau.$$ Therefore,
- $$ u(t)=\int_{-\infty}^t \delta(\tau) d \tau,$$ which then leads to the operational definition of $u(t)$: $$x(t)*u(t)=\int_{-\infty}^td\tau\cdot x(\tau).$$
- Similarly to before, we can define the system that consists of a cascade of two integrators. Its impulse response is denoted $$u_{-2}(t)=u(t)*u(t)=\int_{-\infty}^t d\tau \cdot u(\tau)=tu(t).$$ This signal is referred to as the unit ramp function:
+Further, consider $x=1$ so 
+$$0=\frac{d x}{d t}=\int_{-\infty}^{\infty} d \tau \cdot u_{1}(\tau),$$
+implying that the unit doublet has zero area. As seen in an example, the unit step is the impulse response of an integrator: 
+$$y(t)=\int_{-\infty}^t x(\tau) d \tau.$$
+Therefore,
+ $$ u(t)=\int_{-\infty}^t \delta(\tau) d \tau,$$
+  which then leads to the operational definition of $u(t)$: 
+  $$x(t)*u(t)=\int_{-\infty}^td\tau\cdot x(\tau).$$
+ Similarly to before, we can define the system that consists of a cascade of two integrators. Its impulse response is denoted 
+ $$u_{-2}(t)=u(t)*u(t)=\int_{-\infty}^t d\tau \cdot u(\tau)=tu(t).$$
+  This signal is referred to as the unit ramp function:
  ![Attachments/Signals and Systems/IMG-0119135231-1.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-1.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=166&rect=131,42,303,145|🔗]]
  We can define higher order intergals of $\delta(t)$ as the impulse reponses of cascades of integrators:
  $$u_{-k}(t)=\underbrace{u(t) * \cdots * u(t)}_{k \text { times }}=\int_{-\infty}^t u_{-(k-1)}(\tau) d \tau.$$ 
-One can also rewrite this as $$u_{-k}=\frac{t^{k-1}}{(k-1)!} u(t).$$
+One can also rewrite this as 
+$$u_{-k}=\frac{t^{k-1}}{(k-1)!} u(t).$$
 Alternative notations are $\delta(t)=u_{0}(t)$ and $u_{-1}(t)=u(t)$. Then $\delta(t)=u_{1} * u_{-1}$ as expected, or generally $u_{k+r}(t)=u_{k}(t) * u_{r}(t)$.
 
 # 3 Fourier Series Representation of Periodic Signals
@@ -219,23 +306,25 @@ The representation and analysis of LTI systems through the convolution sum is ba
 It is advantageous in the study of LTI systems to represent signals as linear combinations of basic signals that possess the following two properties:
 1. The set of basic signals can be used to construct a broad and useful class of signals. 
 2. The response of an LTI system to each signal should be simple enough in structure to provide us with a convenient representation for the response of the system to any signal constructed as a linear combination of the basic signals.
-Much of the importance of Fourier analysis results from the fact that both of these properties are provided by the set of complex exponential signals in continuous and discrete time. The importance of complex exponentials in the study of LTI systems stems from the fact that the response of an LTI system to a complex exponential input is the same complex exponential with only a change in amplitude, that is $$\begin{aligned}
+Much of the importance of Fourier analysis results from the fact that both of these properties are provided by the set of complex exponential signals in continuous and discrete time. The importance of complex exponentials in the study of LTI systems stems from the fact that the response of an LTI system to a complex exponential input is the same complex exponential with only a change in amplitude, that is 
+$$\begin{aligned}
 \text { continuous time: } e^{s t} & \longrightarrow H(s) e^{s t}, \\
 \text { discrete time: } z^{\prime \prime} & \longrightarrow H(z) z^{\prime \prime},
-\end{aligned}$$with a complex amplitude factor $H(s)$ or $H(z)$. A signal $x \longrightarrow a \cdot x$ is called the eigenfunction of the system, and the (complex) constant $a$ is called the eigenvalue. Additionally, the claim is that exponentials are eigenfunctions of any
-LTI system. For that, we show $$y(t)=\int_{-\infty}^{t} d \tau \cdot h(\tau) x(t-\tau)=\int_{-\infty}^{t} d \tau \cdot h(\tau) e^{s(t-\tau)}=e^{s t} \int_{-\infty}^{t} d \tau \cdot h(\tau) e^{-s \tau},$$ assuming that the integral converges. Then, we end with $y(t)=H(s)e^{st}$. Hence, we have shown that complex exponentials are eigenfunctions of LTI systems.
+\end{aligned}$$
+with a complex amplitude factor $H(s)$ or $H(z)$. A signal $x \longrightarrow a \cdot x$ is called the eigenfunction of the system, and the (complex) constant $a$ is called the eigenvalue. Additionally, the claim is that exponentials are eigenfunctions of any
+LTI system. For that, we show 
+$$y(t)=\int_{-\infty}^{t} d \tau \cdot h(\tau) x(t-\tau)=\int_{-\infty}^{t} d \tau \cdot h(\tau) e^{s(t-\tau)}=e^{s t} \int_{-\infty}^{t} d \tau \cdot h(\tau) e^{-s \tau},$$
+assuming that the integral converges. Then, we end with $y(t)=H(s)e^{st}$. Hence, we have shown that complex exponentials are eigenfunctions of LTI systems.
 In an exactly parallel manner, we can show that complex exponential sequences are eigenfunctions of discrete-time LTI systems. That is, suppose that an LTI system with impulse response $h[n]$ has as its input the sequence
 $$\begin{align*}
 x[n]=z^n
 \end{align*},$$
 where $z$ is a complex number. Then the output of the system can be determined from the convolution sum as
-$$\begin{align*}
-\begin{aligned}
+$$\begin{align*}\begin{aligned}
 y[n] & =\sum_{k=-\infty}^{+\infty} h[k] x[n-k] \\
 & =\sum_{k=-\infty}^{+\infty} h[k] z^{n-k}=z^n \sum_{k=-\infty}^{+\infty} h[k] z^{-k}
 \end{aligned}
 \end{align*}$$
-
 From this expression, we see that if the input $x[n]$ is the complex exponential given by the prior equation, then, assuming that the summation on the right-hand side, the output is the same complex exponential multiplied by a constant that depends on the value of $z$. That is,
 $$\begin{align*}
 y[n]=H(z) z^n
@@ -245,17 +334,26 @@ $$\begin{align*}
 H(z)=\sum_{k=-\infty}^{+\infty} h[k] z^{-k}
 \end{align*}.$$
 Consequently, as in the continuous-time case, complex exponentials are eigenfunctions of discrete-time LTI systems.
-For the analysis of LTI systems, it is useful to decompose a general signal into eigenfunctions. Let $$x(t)=\sum_{n} a_{n} e^{s . t}$$ such that, from the eigenfunction and superposition property, $$y(t)=\sum_{n} a_{n} H\left(s_{n}\right) e^{s_{n} t}.$$
+For the analysis of LTI systems, it is useful to decompose a general signal into eigenfunctions. Let 
+$$x(t)=\sum_{n} a_{n} e^{s . t}$$
+such that, from the eigenfunction and superposition property, 
+$$y(t)=\sum_{n} a_{n} H\left(s_{n}\right) e^{s_{n} t}.$$
 In other words, for both continuous time and discrete time, if the input to an LTI system is represented as a linear combination of complex exponentials, then the output can also be represented as a linear combination of the same complex exponential signals.
 
 ## 3.2 Fourier series representation continuous-time periodic signals
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=217&selection=120,0,132,7|🔗]]
 
-For any periodic signal $x(t)$ with periodicity $T$, a linear combination of harmonically related complex exponentials is $$x(t)=\sum_{k=-\infty}^{\infty} a_{k} e^{i k \frac{2 \pi}{T} t}.$$ This representation is referred to as the _Fourier series_ representation. Suppose now that the signal is real, e.g. $x=x^{*}$. Then, we find that $a_{k}^{*}=a_{-k}$ which allows writing
+For any periodic signal $x(t)$ with periodicity $T$, a linear combination of harmonically related complex exponentials is 
+$$x(t)=\sum_{k=-\infty}^{\infty} a_{k} e^{i k \frac{2 \pi}{T} t}.$$
+This representation is referred to as the _Fourier series_ representation. Suppose now that the signal is real, e.g. $x=x^{*}$. Then, we find that $a_{k}^{*}=a_{-k}$ which allows writing
 $$
 x(t)=a_{0}+\sum_{k=1}^{\infty}\left\{a_{k} e^{i k \omega_{0} t}+a_{k}^{*} e^{-i k \omega_{0} t}\right\}=a_{0}+\sum_{k=1}^{\infty} 2 \operatorname{Re}\left(a_{k} e^{i k \omega_{0} t}\right)=a_{0}+2 \cdot \sum_{k=1}^{\infty} A_{k} \cos \left(k \omega_{0} t+\theta_{k}\right)
 ,$$
-if we write $a_{k}=A_{k} e^{i \theta_{k}}$. This representation is one commonly encountered form for the Fourier series of real periodic signals in continuous time. Another, equivalent, representation is writing $a_{k}=B_{k}+i C_{k}$. Then, $$x(t)=a_{0}+2 \cdot \sum_{k=1}^{\infty}\left\{B_{k} \cos \left(k \omega_{0} t\right)-C_{k} \sin \left(k \omega_{0} t\right)\right\}.$$ What still remains is proofing that any periodic $x(t)$ can be written in those forms. However, for now  we continue to believe the assumption holds. Multiplying both sides by $e^{-jn\omega_0t}$  and integrating, we get $$\int_{0}^{T} d t \cdot x(t) e^{-i k n \omega_{0} t}=\int_{0}^{T} d t \cdot \sum_{k} a_{k} e^{i(k-n) \omega_{0} t}.$$Using Euler's formula and considering the periodicity of the sinusiods, we find 
+if we write $a_{k}=A_{k} e^{i \theta_{k}}$. This representation is one commonly encountered form for the Fourier series of real periodic signals in continuous time. Another, equivalent, representation is writing $a_{k}=B_{k}+i C_{k}$. Then, 
+$$x(t)=a_{0}+2 \cdot \sum_{k=1}^{\infty}\left\{B_{k} \cos \left(k \omega_{0} t\right)-C_{k} \sin \left(k \omega_{0} t\right)\right\}.$$
+What still remains is proofing that any periodic $x(t)$ can be written in those forms. However, for now  we continue to believe the assumption holds. Multiplying both sides by $e^{-jn\omega_0t}$  and integrating, we get 
+$$\int_{0}^{T} d t \cdot x(t) e^{-i k n \omega_{0} t}=\int_{0}^{T} d t \cdot \sum_{k} a_{k} e^{i(k-n) \omega_{0} t}.$$
+Using Euler's formula and considering the periodicity of the sinusiods, we find 
 $$\int_0^T e^{j(k-n) \omega_{19} t} d t= \begin{cases}T, & k=n \\ 0, & k \neq n\end{cases}$$
 Eventually we find: If $x(t)$ has a Fourier series representation, e.g. if it can be expressed as a linear combination of harmonically related complex exponentials, then the coefficients are given by:
 $$\begin{gathered}x(t)=\sum_{k=-\infty}^{+\infty} a_k e^{i k \omega_0 t}=\sum_{k=-\infty}^{+\infty} a_k e^{i k(2 \pi / T) t}, \\ a_k=\frac{1}{T} \int_T x(t) e^{-i k \omega_0 t} d t=\frac{1}{T} \int_T x(t) e^{-i k(2 \pi / T) t} d t\end{gathered}.$$
@@ -265,13 +363,25 @@ Then, $a_{0}=\frac{1}{T} \int_{T} d t \cdot x(t)$ is simply the average value of
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=226&selection=234,0,246,6|🔗]]
 
 In fact, Fourier maintained that any periodic signal could be represented by a Fourier series. Although this is not quite true, it is true that Fourier series can be used to represent an extremely large class of periodic signals, including the square wave and all other periodic signals with which we will be concerned in this book and which are of interest in practice.
-Let us approximate a given periodic signal $x(t)$ as $$x_{N}(t)=\sum_{k=-N}^{N} a_{k} e^{i k w_{0} t},$$such that the error of approximation becomes $$e_{N}(t)=x(t)-x_{N}(t)=x(t)-\sum_{k=-N}^{N} a_{k} e^{i k w_{0} t}.$$
-In order to determine how good any particular approximation is, we need to specify a quantitative measure of the size of the approximation error. The criterion that we will use is the energy in the error over one period: $$E_{N}=\int_{T} d t \cdot\left|e_{N}(t)\right|^{2},$$which is minimized (without proof) $$a_{k}=\frac{1}{T} \int_{T} d t \cdot x(t) e^{-i k w_{0} t}.$$
+Let us approximate a given periodic signal $x(t)$ as 
+$$x_{N}(t)=\sum_{k=-N}^{N} a_{k} e^{i k w_{0} t},$$
+such that the error of approximation becomes 
+$$e_{N}(t)=x(t)-x_{N}(t)=x(t)-\sum_{k=-N}^{N} a_{k} e^{i k w_{0} t}.$$
+
+In order to determine how good any particular approximation is, we need to specify a quantitative measure of the size of the approximation error. The criterion that we will use is the energy in the error over one period: 
+$$E_{N}=\int_{T} d t \cdot\left|e_{N}(t)\right|^{2},$$
+which is minimized (without proof) 
+$$a_{k}=\frac{1}{T} \int_{T} d t \cdot x(t) e^{-i k w_{0} t}.$$
+
 Comparing these equations, we see that they are identical to the expression used to determine the Fourier series coefficients. Thus, if $x(t)$ has a Fourier series representation, the best approximation using only a finite number of harmonically related complex exponentials is obtained by truncating the Fourier series to the desired number of terms. As $N$ increases, new terms are added and $E_N$ decreases. If, in fact, $x(t)$ has a Fourier series representation, then $\lim _{N \rightarrow \infty} E_{N}=0$. 
 
 Of course, for any signal, we can attempt to obtain a set of Fourier coefficients. However, in some cases, the integral may diverge; that is, the value obtained for some $a_k$ may be infinite. Moreover, even if all the coefficients obtained are finite, when these coefficients are substituted into the synthesis equation, the resulting infinite series may not converge to the original signal $x(t)$. Fortunately, there are no convergence difficulties for large classes of periodic signals. For example, every continuous periodic signal has a Fourier series representation for which the energy $E_N$ in the approximation error approaches $0$ as $N$ goes to $\infty$. This is also true for many discontinuous signals. 
 Since we will find it very useful to include discontinuous signals such as square waves in our discussions, it is worthwhile to investigate the issue of convergence in a bit more detail. Specifically, there are two somewhat different classes of conditions that a periodic signal can satisfy to guarantee that it can be represented by a Fourier series:
-**Periodic signals with finite power**: $$\int_{T} d t \cdot|x(t)|<\infty$$ implies $\left|a_{k}\right|<\infty$. Considering again the approximation of $x(t)$, then we are guaranted that the energy $E_N$ in the approximation error, converges to $0$ as more and more terms are added, e.g. $N \rightarrow 0$. Then, $$\int_{T} d t \cdot|e(t)|^{2}=0.$$ However, this does not imply that the signal $x(t)$ and its Fourier series representation are equal. It only implies that there is no energy in their difference. Since physical systems respond to signal energy, from this perspective $x(t)$ and its Fourier series representation are indistinguishable. Because most of the periodic signals that we consider do have finite energy over a single period, they have Fourier series representations. 
+**Periodic signals with finite power**: 
+$$\int_{T} d t \cdot|x(t)|<\infty$$
+implies $\left|a_{k}\right|<\infty$. Considering again the approximation of $x(t)$, then we are guaranted that the energy $E_N$ in the approximation error, converges to $0$ as more and more terms are added, e.g. $N \rightarrow 0$. Then, 
+$$\int_{T} d t \cdot|e(t)|^{2}=0.$$
+However, this does not imply that the signal $x(t)$ and its Fourier series representation are equal. It only implies that there is no energy in their difference. Since physical systems respond to signal energy, from this perspective $x(t)$ and its Fourier series representation are indistinguishable. Because most of the periodic signals that we consider do have finite energy over a single period, they have Fourier series representations. 
 Moreover, the Dirichlet conditions are also satisfied by essentially all the signals with which we will be concerned. They guarantee that $x(t)$ equals its Fourier series representation, except at isolated values oft for which $x(t)$ is discontinuous. At these values, the infinite series converges to the average of the values on either side of the discontinuity. 
 The Dirichlet conditions are as follows:
 1) Over one period, $x(t)$ must absolutely integrable, so $$\int_{T} d t \cdot|x(t)|^{2}<\infty.$$ As  with square integrability, this guarantees the finiteness of each coeffcient: $$\left|a_{k}\right| \leq \int_{T} d t \cdot|x(t)|^{2}<\infty.$$ A periodic signal that violates the first dirichlet condition is $x(t)=1/t$.
@@ -338,9 +448,12 @@ Several useful properties of the continuous-time Fourier series:
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=242&selection=202,0,214,7|🔗]]
 
 In this section, we consider the Fourier series representation of discrete-time periodic signals. While the discussion closely parallels that of continuous-time periodic signals, there are some important differences. In particular, the Fourier series representation of a discrete-time periodic signal is a.finite series, as opposed to the infinite series representation required for continuous-time periodic signals. 
-As before, we consider periodic signals $x[n]$ with period $N$ and fundamental frequency $w_{0}=\frac{2 \pi}{N}$. We now wish to consider the representation of more general periodic sequences in terms of linear combinations: $$x[n]=\sum_{k} a_{k} e^{i k w_{0} n}=\sum_{k=\langle N\rangle} a_{k} e^{i k w_{0} n}.$$ Since the sequences are distinct only over a range of $N$ successive values of $k$, the summation need only include terms over this range. Thus, we write $k=\langle N\rangle$ indicates a sum from $m$ to $m+N-1$. This is a new set of $N$ equations with the $N$ unknowns being $a_{k}$:
+As before, we consider periodic signals $x[n]$ with period $N$ and fundamental frequency $w_{0}=\frac{2 \pi}{N}$. We now wish to consider the representation of more general periodic sequences in terms of linear combinations: 
+$$x[n]=\sum_{k} a_{k} e^{i k w_{0} n}=\sum_{k=\langle N\rangle} a_{k} e^{i k w_{0} n}.$$
+Since the sequences are distinct only over a range of $N$ successive values of $k$, the summation need only include terms over this range. Thus, we write $k=\langle N\rangle$ indicates a sum from $m$ to $m+N-1$. This is a new set of $N$ equations with the $N$ unknowns being $a_{k}$:
 $$\begin{aligned} x[0] & =\sum_{k=\langle N\rangle} a_k, \\ x[1] & =\sum_{k=\langle N\rangle} a_k e^{j 2 \pi k / N}, \\ & \vdots \\ x[N-1] & =\sum_{k=\langle N\rangle} a_k e^{j 2 \pi k(N-1) / N} .\end{aligned}$$
- It can be shown that this set of equations is linearly independent and consequently can be solved to obtain the coefficients $a_k$. We can reduce this to a closed-form expression for obtaining the Fourier coefficients, and we have the discrete-time Fourier series pair: $$\begin{aligned} x[n] & =\sum_{k=\langle N\rangle} a_k e^{i k \omega_0 n}=\sum_{k=\langle N\rangle} a_k e^{i k(2 \pi / N) n}, \\ a_k & =\frac{1}{N} \sum_{n=\langle N\rangle} x[n] e^{-i k \omega_0 n}=\frac{1}{N} \sum_{n=\langle N\rangle} x[n] e^{-i k(2 \pi / N) n}\end{aligned}.$$
+ It can be shown that this set of equations is linearly independent and consequently can be solved to obtain the coefficients $a_k$. We can reduce this to a closed-form expression for obtaining the Fourier coefficients, and we have the discrete-time Fourier series pair: 
+ $$\begin{aligned} x[n] & =\sum_{k=\langle N\rangle} a_k e^{i k \omega_0 n}=\sum_{k=\langle N\rangle} a_k e^{i k(2 \pi / N) n}, \\ a_k & =\frac{1}{N} \sum_{n=\langle N\rangle} x[n] e^{-i k \omega_0 n}=\frac{1}{N} \sum_{n=\langle N\rangle} x[n] e^{-i k(2 \pi / N) n}\end{aligned}.$$
  The coefficients satisfy $a_{k}=a_{k+N}$. In particular, since there are only $N$ distinct complex exponentials that are periodic with period $N$, the discrete-time Fourier series representation is a finite series with $N$ terms. 
 ## 3.6 Properties of the discrete-time Fourier Series
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=252&selection=33,0,43,6|🔗]]
@@ -390,10 +503,15 @@ $$\begin{aligned} x[0] & =\sum_{k=\langle N\rangle} a_k, \\ x[1] & =\sum_{k=\lan
 ## 3.7 Fourier Series and LTI Systems
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=257&selection=275,0,285,7|🔗]]
 
-We saw that the response of an LTI system to a linear combination of complex exponentials takes a particularly simple form. Specifically, we have $$y(t)=H(s) e^{s t}$$for $x(t)=e^{s t}$ and $$H(s)=\int_{-\infty}^{\infty}d \tau\cdot h(\tau) e^{-s t} $$in which $h(\tau)$ is the impulse response of an LTI system. Let's focus on the case that $\mathcal{R}(s)=0$, so that $s=i \omega$. Then, $H(s)$ is referred to as the frequency response:
-$$H(i\omega)=\int_{-\infty}^{\infty}dt \cdot h(t) e^{-i\omega t} .$$ 
-
-For $x(t) \stackrel{F S}{\longleftrightarrow} a_{k}$ with period $T$, we obtain $$y(t)=\sum_{k=-\infty}^{\infty} a_{k} \cdot H\left(i k w_{0}\right) e^{i k w_{0} t},$$also periodic with $T$. Then, obviously, $y(t) \stackrel{F S}{\longleftrightarrow} a_{k} H\left(i k w_{0}\right)$. That is, the effect of the LTI system is to modify individually each of the Fourier coefficients of the input through multiplication by the value of the frequency response at the corresponding frequency.
+We saw that the response of an LTI system to a linear combination of complex exponentials takes a particularly simple form. Specifically, we have 
+$$y(t)=H(s) e^{s t}$$
+for $x(t)=e^{s t}$ and 
+$$H(s)=\int_{-\infty}^{\infty}d \tau\cdot h(\tau) e^{-s t} $$
+in which $h(\tau)$ is the impulse response of an LTI system. Let's focus on the case that $\mathcal{R}(s)=0$, so that $s=i \omega$. Then, $H(s)$ is referred to as the frequency response:
+$$H(i\omega)=\int_{-\infty}^{\infty}dt \cdot h(t) e^{-i\omega t} .$$
+For $x(t) \stackrel{F S}{\longleftrightarrow} a_{k}$ with period $T$, we obtain 
+$$y(t)=\sum_{k=-\infty}^{\infty} a_{k} \cdot H\left(i k w_{0}\right) e^{i k w_{0} t},$$
+also periodic with $T$. Then, obviously, $y(t) \stackrel{F S}{\longleftrightarrow} a_{k} H\left(i k w_{0}\right)$. That is, the effect of the LTI system is to modify individually each of the Fourier coefficients of the input through multiplication by the value of the frequency response at the corresponding frequency.
 
 ## 3.8 Filtering
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=262&selection=148,0,150,9|🔗]]
@@ -431,16 +549,22 @@ The characteristics of the continuous-time and discrete-time ideal filters diffe
 Electrical circuits are widely used to implement continuous-time filtering operations. One of the simplest examples of such a circuit is the first-order RC circuit:
 
 ![Attachments/Signals and Systems/IMG-0119135231-5.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-5.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=271&rect=146,482,300,597|🔗]]
-This circuit can be used to perform either a low-pass or high-pass filtering operation, depending upon what we take as the output signal. In particular, suppose that we take the capacitor voltage $v_c(t)$ as the output. In this case, the output voltage is related to the input voltage through the linear constant-coefficient differential equation: $$\begin{align*}
+This circuit can be used to perform either a low-pass or high-pass filtering operation, depending upon what we take as the output signal. In particular, suppose that we take the capacitor voltage $v_c(t)$ as the output. In this case, the output voltage is related to the input voltage through the linear constant-coefficient differential equation: 
+$$\begin{align*}
 R C \frac{d v_c(t)}{d t}+v_c(t)=v_s(t)
-\end{align*}.$$ Assuming initial rest, the system is LTI. In order to determine its frequency response $H(i \omega)$, we note that, by definition, with input voltage $v_s(t)=e^{i \omega t}$, we must have the output voltage $v_c(t)=H(i \omega) e^{i \omega t}$. It then follows: $$\begin{align*}
+\end{align*}.$$
+Assuming initial rest, the system is LTI. In order to determine its frequency response $H(i \omega)$, we note that, by definition, with input voltage $v_s(t)=e^{i \omega t}$, we must have the output voltage $v_c(t)=H(i \omega) e^{i \omega t}$. It then follows: 
+$$\begin{align*}
 H(i \omega)=\frac{1}{1+R C i \omega}
 \end{align*}$$
 The magnitude and phase of the frequency response $H(i \omega)$ can be seen here:
 ![Attachments/Signals and Systems/IMG-0119135231-6.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-6.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&rect=104,317,440,603|🔗]]
 Note that for frequencies near $\omega=0,|H(i \omega)| \approx 1$, while for larger values of $\omega$ (positive or negative), $|H(i \omega)|$ is considerably smaller and in fact steadily decreases as $|\omega|$ increases. Thus, this simple $R C$ filter (with $v_c(t)$ as output) is a nonideal low-pass filter.
 To provide a first glimpse at the trade-offs involved in filter design, consider the impulse response (a) of the system
-$$h(t)=\frac{1}{RC}e^{-t/RC}u(t),$$ and its step response (b) $$s(t)=\left[1-e^{-t/RC}\right]u(t).$$ 
+$$h(t)=\frac{1}{RC}e^{-t/RC}u(t),$$
+and its step response (b) 
+$$s(t)=\left[1-e^{-t/RC}\right]u(t).$$
+
 ![Attachments/Signals and Systems/IMG-0119135231-7.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135231-7.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=273&rect=73,344,313,604|🔗]]
 
 Comparing the two figures, we see a fundamental trade-off. Specifically, suppose that we would like our filter to pass only very low frequencies. This implies that $1/RC$ must be small, or equivalently, that $RC$ is large, so that frequencies other than the low ones of interest will be attenuated sufficiently. However, looking at the second figure, we see that if $RC$ is large, then the step response will take a considerable amount of time to reach its long-term value of $1$. That is, the system responds sluggishly to the step input. Conversely, if we wish to have a faster step response, we need a smaller value of $RC$, which in tum implies that the filter will pass higher frequencies. 
@@ -469,7 +593,11 @@ As with their continuous-time counterparts, discrete-time filters described by l
 ### 3.10.1 First-Order Recursive Discrete-Time Filters
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=275&selection=149,0,151,43|🔗]]
 
-The discrete-time counterpart of each of the first -order filters considered before is the LTI system described by the first-order difference equation: $$y[n]-ay[n-1]=x[n].$$ We are able to find $$H(e^{i\omega})=\frac{1}{1-ae^{-i\omega}}.$$ Magnitude and phase of $H$ are shown here for $a=0.6$: 
+The discrete-time counterpart of each of the first -order filters considered before is the LTI system described by the first-order difference equation: 
+$$y[n]-ay[n-1]=x[n].$$
+We are able to find 
+$$H(e^{i\omega})=\frac{1}{1-ae^{-i\omega}}.$$
+Magnitude and phase of $H$ are shown here for $a=0.6$: 
 ![Attachments/Signals and Systems/IMG-0119135232-1.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135232-1.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=124,371,345,631|🔗]]
 Magnitude and phase of $H$ are shown here for $a=-0.6$: 
 ![Attachments/Signals and Systems/IMG-0119135232-2.webp|700](/img/user/Attachments/Signals%20and%20Systems/IMG-0119135232-2.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=123,53,345,356|🔗]]
@@ -512,7 +640,9 @@ The development of this representation for aperiodic signals in continuous time 
 ## 4.1 Representation of Aperiodic Signals: The continuous-time Fourier Transform
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=316&selection=38,0,52,9|🔗]]
 
-To gain some insights into the nature of the Fourier transform representation, consider the square wave over one period $T$:$$x(t)=\left\{\begin{array}{ll}1 & \text { for }|t|<T_{1} \\ 0 & \text { for } T_{1}<|t|<T / 2\end{array} \quad\right.$$ We found $T a_{k}=\left.\frac{2 \sin \left(\omega T_{1}\right)}{w}\right|_{w=k w_{0}}$, which can be interpreted as samples of an envelope function. That is, we thought of $w$ as continuous, then $2 \sin\omega(T_{A})/\omega$ represents the envelope of $T a_{n}$, with $a_{n}$ being the equally spaced samples of this envelope. For fixed $T_1$, the envelope is independent of $T$. When $T$ increases, or $w_{0} \sim \frac{1}{T}$ decreases, the envelope is sampled with closer and closer spacing. As $T$ becomes arbitrarily large, the original periodic square wave approaches a rectangular pulse. Also, the Fourier series coefficients, multiplied by $T$, become more and more closely spaced samples of the envelope, so that in some sense, the set of Fourier series coefficients approaches the envelope function as $T \rightarrow \infty$.
+To gain some insights into the nature of the Fourier transform representation, consider the square wave over one period $T$:
+$$x(t)=\left\{\begin{array}{ll}1 & \text { for }|t|<T_{1} \\ 0 & \text { for } T_{1}<|t|<T / 2\end{array} \quad\right.$$
+We found $T a_{k}=\left.\frac{2 \sin \left(\omega T_{1}\right)}{w}\right|_{w=k w_{0}}$, which can be interpreted as samples of an envelope function. That is, we thought of $w$ as continuous, then $2 \sin\omega(T_{A})/\omega$ represents the envelope of $T a_{n}$, with $a_{n}$ being the equally spaced samples of this envelope. For fixed $T_1$, the envelope is independent of $T$. When $T$ increases, or $w_{0} \sim \frac{1}{T}$ decreases, the envelope is sampled with closer and closer spacing. As $T$ becomes arbitrarily large, the original periodic square wave approaches a rectangular pulse. Also, the Fourier series coefficients, multiplied by $T$, become more and more closely spaced samples of the envelope, so that in some sense, the set of Fourier series coefficients approaches the envelope function as $T \rightarrow \infty$.
 
 This example illustrates the basic idea behind Fourier's development of a representation for aperiodic signals. Specifically, we think of an aperiodic signal as the limit of a periodic signal as the period becomes arbitrarily large, and we examine the limiting behavior of the Fourier series representation for this signal. In particular, consider a signal $x(t)$ that is of finite duration. That is, for some number $T_1$, $x(t) = 0$ if $|t| > T_1$. From this aperiodic signal, we can construct a periodic signal $\tilde{x}(t)$ for which $x(t)$ is one period:
 ![Attachments/Oppenheim,Willsky_Signals and Systems 1.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%201.webp)[[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=318&rect=123,434,423,595|🔗]]
@@ -527,10 +657,12 @@ a_k=\frac{1}{T} \int_{-T / 2}^{T / 2} d t\cdot \tilde{x}(t) e^{-j / \omega_0 t},
 where $\omega_0=2 \pi / T$. We can define the envelope $X(i \omega)$ of $T a_k$ as
 $$\begin{align*}
 X(i \omega)=\int_{-\infty}^{+\infty} x(t) e^{-i \omega t} d t
-\end{align*},$$ which eventually allows to express $\tilde{x}(t)$ in terms of $X(i \omega)$ as
+\end{align*},$$
+which eventually allows expressing $\tilde{x}(t)$ in terms of $X(i \omega)$ as
 $$\begin{align*}
 \bar{x}(t)=\sum_{k=-\infty}^{+\infty} \frac{1}{T} X\left(i k \omega_0\right) e^{i k \omega_0 t}
-\end{align*},$$or equivalently, since $2 \pi / T=\omega_0$,
+\end{align*},$$
+or equivalently, since $2 \pi / T=\omega_0$,
 $$\begin{align*}
 \tilde{x}(t)=\frac{1}{2 \pi} \sum_{k=-\infty}^{+\infty} X\left(i k \omega_0\right) e^{i k \omega_0 t} \omega_0
 \end{align*}.$$
