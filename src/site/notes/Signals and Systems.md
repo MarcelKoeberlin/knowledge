@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowToc":"true","updated":"2025-01-19T18:28:10.187+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowToc":"true","updated":"2025-01-19T18:31:38.380+01:00"}
 ---
 
 > [!INFO] To do  
@@ -943,6 +943,8 @@ For signals that meet these conditions, $\hat{x}(t) = x(t)$ for all $t$ except a
 ### 4.2.1 Periodic Signals and Impulses
 Periodic signals, which are neither absolutely nor square integrable over an infinite interval, can still have Fourier transforms if impulse functions are permitted in the transform. This allows the Fourier series and Fourier transform to be unified into a common framework.
 
+---
+
 ## 4.3 Properties of the Continuous-Time Fourier Transform
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=359&selection=16,0,34,5|🔗]]
 
@@ -1011,7 +1013,9 @@ $$
 
 Thus, $H(i \omega)$ is a rational function (a ratio of polynomials in $i \omega$), commonly referred to as the frequency response of the system.
 
-
+---
+>[!DANGER] Work in progress from here on
+>Expect low quality and strange formatting
 
 # 5 The discrete-time Fourier transform
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=389&selection=2,0,8,9|🔗]]
