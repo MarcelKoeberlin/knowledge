@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowToc":"true","updated":"2025-01-19T18:49:53.851+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowToc":"true","updated":"2025-01-19T18:49:53.000+01:00"}
 ---
 
 > [!INFO] To do  

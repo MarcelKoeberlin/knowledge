@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","updated":"2025-01-18T17:59:06.201+01:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","updated":"2025-01-18T17:59:06.000+01:00"}
 ---
 
 # 1 High-harmonic generation
