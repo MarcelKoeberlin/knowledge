@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"To Do","permalink":"/to-do/","dgHomeLink":"true","updated":"2025-01-20T17:00:31.000+01:00"}
+{"dg-publish":true,"dg-path":"To Do","permalink":"/to-do/","dgHomeLink":"true","updated":"2025-01-20T17:00:50.000+01:00"}
 ---
 
 > [!INFO] To do  
@@ -11,4 +11,4 @@ What remains to be done:
 - [[Notes/Intersubband Optoelectronics\|Intersubband Optoelectronics]] needs manual adjustment and images. Plenty of work ahead compared to SST.
 - [[Notes/Ultrafast Laser Physics Notes\|Ultrafast Laser Physics Notes]] (my favourite course!) needs some work, mainly images.
 - 'About me' and 'About' page, since every professional page needs that, I think
-- Add footer with contact information, light/dark button.
+- Add footer with contact information, plus light/dark button.
