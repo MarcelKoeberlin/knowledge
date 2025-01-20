@@ -1,10 +1,9 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowToc":"true","updated":"2025-01-20T13:29:21.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowToc":"true","updated":"2025-01-20T13:47:46.000+01:00"}
 ---
 
 > [!INFO] To do  
 > More details to property tables, relevance of parsevals theorem
-> Check grammar 
 
 >[!abstract] Foreword
 > While working on my master’s thesis and trying to figure out how to perform accurate noise measurements, I discovered that signal processing is about much more than just Fourier transforming your measured signal. This realization hit me when we were using a highly sensitive oscilloscope to measure laser noise. After Fourier transforming the data—which was time-consuming and computationally intensive—we noticed something surprising: the noise trace was _still_ too noisy.
@@ -13,75 +12,7 @@
 > 
 > It didn’t take long for me to realize this was a fascinating topic, and I started reading more about it in my free time.
 
-This note will mostly follow along the book [Signals and Systems - 2nd edition](https://github.com/gigahidjrikaaa/Engineering-Books/blob/main/Signals%20and%20Systems/Oppenheim%2C%20Willsky%2C%20Nawab%20-%20Signals%20%26%20Systems%20%5B2nd%20Edition%5D.pdf) by Alan V. Oppenheim and Alan S. Willsky. Not every chapter is covered, especially the more 'basic' ones. It is not supposed to be a simple summary, but instead a place where the main concepts are covered, without having to read through 987 pages again/yourself.
-
-**Table of Contents**
-
-- [[Signals and Systems#1 Signals and Systems\|1 Signals and Systems]]
-	- [[Signals and Systems#1 Signals and Systems\|1.1 Continuous-time and Discrete-time Signals]]
-	- [[Signals and Systems#1 Signals and Systems\|1.2 Energy and Power]]
-	- [[Signals and Systems#1 Signals and Systems\|1.3 Transformations]]
-	- [[Signals and Systems#1 Signals and Systems\|1.4 Periodic Signals]]
-	- [[Signals and Systems#1 Signals and Systems\|1.5 Even and Odd Signals]]
-	- [[Signals and Systems#1 Signals and Systems\|1.6 Exponential Signals]]
-	- [[Signals and Systems#1 Signals and Systems\|1.7 Unit Impulse and Unit Step]]
-	- [[Signals and Systems#1 Signals and Systems\|1.8 Interconnection of Systems]]
-	- [[Signals and Systems#1 Signals and Systems\|1.9 Basic Properties]]
-		- [[Signals and Systems#1.9 Basic Properties\|1.9.1 Memory]]
-		- [[Signals and Systems#1.9 Basic Properties\|1.9.2 Invertibility and Inverse Systems]]
-		- [[Signals and Systems#1.9 Basic Properties\|1.9.3 Causality]]
-		- [[Signals and Systems#1.9 Basic Properties\|1.9.4 Stability]]
-		- [[Signals and Systems#1.9 Basic Properties\|1.9.5 Time Invariance]]
-		- [[Signals and Systems#1.9 Basic Properties\|1.9.6 Linearity]]
-- [[Signals and Systems#2 Linear Time-Invariant Systems\|2 Linear Time-Invariant Systems]]
-	- [[Signals and Systems#2 Linear Time-Invariant Systems\|2.1 The Convolution Sum]]
-	- [[Signals and Systems#2 Linear Time-Invariant Systems\|2.2 Convolution Properties of LTI Systems]]
-	- [[Signals and Systems#2 Linear Time-Invariant Systems\|2.3 Basic Properties]]
-		- [[Signals and Systems#2.3 Basic Properties\|2.3.1 Memory]]
-		- [[Signals and Systems#2.3 Basic Properties\|2.3.2 Invertibility]]
-		- [[Signals and Systems#2.3 Basic Properties\|2.3.3 Causality]]
-		- [[Signals and Systems#2.3 Basic Properties\|2.3.4 Stability]]
-		- [[Signals and Systems#2.3 Basic Properties\|2.3.5 Unit Step Response of an LTI System]]
-	- [[Signals and Systems#2 Linear Time-Invariant Systems\|2.4 Causal LTI Systems Described by Differential Equations]]
-	- [[Signals and Systems#2 Linear Time-Invariant Systems\|2.5 Block Diagram Representation]]
-	- [[Signals and Systems#2 Linear Time-Invariant Systems\|2.6 Singularity Functions]]
-- [[Signals and Systems#3 Fourier Series Representation of Periodic Signals\|3 Fourier Series Representation of Periodic Signals]]
-	- [[Signals and Systems#3 Fourier Series Representation of Periodic Signals\|3.1 The Response of LTI Systems to Complex Exponentials]]
-		- [[Signals and Systems#3.1 The Response of LTI Systems to Complex Exponentials\|3.1.1 Continuous-Time Proof]]
-		- [[Signals and Systems#3.1 The Response of LTI Systems to Complex Exponentials\|3.1.2 Discrete-Time Proof]]
-		- [[Signals and Systems#3.1 The Response of LTI Systems to Complex Exponentials\|3.1.3 Decomposition of Signals]]
-	- [[Signals and Systems#3 Fourier Series Representation of Periodic Signals\|3.2 Fourier Series Representation of Continuous-Time Periodic Signals]]
-		- [[Signals and Systems#3.2 Fourier Series Representation of Continuous-Time Periodic Signals\|3.2.1 Real Signals]]
-		- [[Signals and Systems#3.2 Fourier Series Representation of Continuous-Time Periodic Signals\|3.2.2 Derivation of Fourier Coefficients]]
-	- [[Signals and Systems#3 Fourier Series Representation of Periodic Signals\|3.3 Convergence of the Fourier Series]]
-		- [[Signals and Systems#3.3 Convergence of the Fourier Series\|3.3.1 Approximation and Error]]
-		- [[Signals and Systems#3.3 Convergence of the Fourier Series\|3.3.2 Convergence Conditions]]
-		- [[Signals and Systems#3.3 Convergence of the Fourier Series\|3.3.3 Practical Implications]]
-	- [[Signals and Systems#3 Fourier Series Representation of Periodic Signals\|3.4 Properties of the Continuous-Time Fourier Series]]
-	- [[Signals and Systems#3 Fourier Series Representation of Periodic Signals\|3.5 Fourier Series Representation of Discrete-Time Periodic Signals]]
-	- [[Signals and Systems#3 Fourier Series Representation of Periodic Signals\|3.6 Properties of the Discrete-Time Fourier Series]]
-	- [[Signals and Systems#3 Fourier Series Representation of Periodic Signals\|3.7 Fourier Series and LTI Systems]]
-	- [[Signals and Systems#3 Fourier Series Representation of Periodic Signals\|3.8 Filtering]]
-	- [[Signals and Systems#3 Fourier Series Representation of Periodic Signals\|3.9 Important Examples: Continuous-Time]]
-		- [[Signals and Systems#3.9 Important Examples: Continuous-Time\|3.9.1 Simple RC Low-Pass Filter]]
-		- [[Signals and Systems#3.9 Important Examples: Continuous-Time\|3.9.2 Simple RC High-Pass Filter]]
-	- [[Signals and Systems#3 Fourier Series Representation of Periodic Signals\|3.10 Important Examples: Discrete-Time Filters]]
-		- [[Signals and Systems#3.10 Important Examples: Discrete-Time Filters\|3.10.1 First-Order Recursive Discrete-Time Filters]]
-		- [[Signals and Systems#3.10 Important Examples: Discrete-Time Filters\|3.10.2 Non-Recursive Discrete-Time Filters]]
-- [[Signals and Systems#4 Continuous-Time Fourier Transform\|4 Continuous-Time Fourier Transform]]
-	- [[Signals and Systems#4 Continuous-Time Fourier Transform\|4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform]]
-		- [[Signals and Systems#4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform\|4.1.1 Example: Square Wave]]
-		- [[Signals and Systems#4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform\|4.1.2 Derivation]]
-	- [[Signals and Systems#4 Continuous-Time Fourier Transform\|4.2 Convergence of Fourier Transforms]]
-		- [[Signals and Systems#4.2 Convergence of Fourier Transforms\|4.2.1 Periodic Signals and Impulses]]
-	- [[Signals and Systems#4 Continuous-Time Fourier Transform\|4.3 Properties of the Continuous-Time Fourier Transform]]
-	- [[Signals and Systems#4 Continuous-Time Fourier Transform\|4.4 Basic Fourier Transform Pairs]]
-	- [[Signals and Systems#4 Continuous-Time Fourier Transform\|4.5 Systems Characterized by Linear Constant-Coefficient Differential Equations]]
-- [[Signals and Systems#5 The discrete-time Fourier transform\|5 The discrete-time Fourier transform]]
-	- [[Signals and Systems#5 The discrete-time Fourier transform\|5.1 Convergence issue]]
-	- [[Signals and Systems#5 The discrete-time Fourier transform\|5.2 Fourier transform for periodic signals]]
-	- [[Signals and Systems#5 The discrete-time Fourier transform\|5.3 Properties of the discrete-time Fourier transform]]
-
+This note will mostly follow along the book [Signals and Systems - 2nd edition](https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574) by Alan V. Oppenheim and Alan S. Willsky. Not every chapter is covered, especially the more 'basic' ones. It is not supposed to be a simple summary, but instead a place where the main concepts are covered, without having to read through 987 pages again/yourself.
 
 # 1 Signals and Systems
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=32&selection=2,0,6,7|🔗]]
@@ -89,7 +20,7 @@ This note will mostly follow along the book [Signals and Systems - 2nd edition](
 ## 1.1 Continuous-time and Discrete-time Signals 
 [[Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=32&selection=69,0,79,7|🔗]]
 
-Signals are represented mathematically as functions of one or more independent variables. Here, attention is on signals involving a single independent variable, usually time $t$ for convenience. In the case of continuou  s-time signals, the independent variable is continuous, and thus these signals are defined for a continuum of values of the independent variable. On the other hand, discrete-time signals are defined only at discrete times, and consequently, for these signals, the independent variable takes on only a discrete set of values. 
+Signals are represented mathematically as functions of one or more independent variables. Here, attention is on signals involving a single independent variable, usually time $t$ for convenience. In the case of continuou s-time signals, the independent variable is continuous, and thus these signals are defined for a continuum of values of the independent variable. On the other hand, discrete-time signals are defined only at discrete times, and consequently, for these signals, the independent variable takes on only a discrete set of values. 
 
 For continuous-time signals, we will enclose the independent variable in parentheses $(\cdot)$, whereas for discrete-time signals we will use brackets $[\cdot]$ to enclose the independent variable. A discrete-time signal $x[n]$ may represent a phenomenon for which the independent variable is inherently discrete. Signals such as demographic data are examples of this. 
 
@@ -399,7 +330,7 @@ $$
 
 Also note that:
 $$
-h[n] = s[n] - s[n-1], \quad h(t) = \frac{ds(t)}{dt}.
+	h[n] = s[n] - s[n-1], \quad h(t) = \frac{ds(t)}{dt}.
 $$
 
 ## 2.4 Causal LTI Systems Described by Differential Equations
