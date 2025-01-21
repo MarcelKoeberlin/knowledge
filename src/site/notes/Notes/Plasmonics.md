@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-21T18:56:29.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-21T18:59:28.000+01:00"}
 ---
 
 Sources used: [Springer: Plasmonics - From Basics to Advanced Topics](https://link.springer.com/book/10.1007/978-3-642-28079-5)
@@ -49,9 +49,10 @@ F^i=\left\{\begin{array}{l}
 
 with $\theta$ being the angle of incidence, $\alpha$ and $\beta$ being called normalized propagation constants of the wave in the following. It can be shown that the projections on the $z$-axis of the reflected and transmitted fields $F^r$ and $F^t$ can be written as:
 
-$$F_r = r \exp \left( i k_1 \left( \alpha x + i \beta y \right) \right)$$ $$F_t = t \exp \left( i k_1 \left( \alpha x - i \gamma y \right) \right)$$ $$\gamma = \sqrt{\nu^2 - \alpha^2}, \quad \nu = \frac{\nu_2}{\nu_1}$$
+$$F_r = r \exp \left( i k_1 \left( \alpha x + i \beta y \right) \right)$$
+$$F_t = t \exp \left( i k_1 \left( \alpha x - i \gamma y \right) \right)$$
+$$\gamma = \sqrt{\nu^2 - \alpha^2}, \quad \nu = \frac{\nu_2}{\nu_1}$$
 { #eq-reflected-transmitted-field}
-
 
 
 If the metal is replaced by a lossless dielectric material, the choice of determination of $\gamma$ is clear: The transmitted wave must propagate downwards to satisfy a radiation condition, thus the real value of  must be positive.  
