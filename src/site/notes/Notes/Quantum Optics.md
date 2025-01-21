@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Draft/Quantum Optics","permalink":"/draft/quantum-optics/","updated":"2025-01-20T23:28:42.174+01:00"}
+{"dg-publish":true,"dg-path":"Draft/Quantum Optics","permalink":"/draft/quantum-optics/","updated":"2025-01-20T23:28:42.000+01:00"}
 ---
 
 >[!DANGER] Work in progress from here on
