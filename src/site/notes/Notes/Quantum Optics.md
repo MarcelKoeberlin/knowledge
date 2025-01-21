@@ -1,10 +1,6 @@
 ---
-{"dg-publish":true,"dg-path":"Draft/Quantum Optics","permalink":"/draft/quantum-optics/","updated":"2025-01-20T23:28:42.000+01:00"}
+{"dg-publish":true,"dg-path":"Draft/Quantum Optics","permalink":"/draft/quantum-optics/","updated":"2025-01-21T21:22:44.470+01:00"}
 ---
-
->[!DANGER] Work in progress from here on
->Notes have been automatically translated from handwritten to latex
->No manual adjustments done yet.
 
 # 1 Quantisation of the Electro-Magnetic Field
 
@@ -32,67 +28,88 @@ $$
 $$
 In this notation, vectors such as the electric $E$ and magnetic $B$ field without tilde are in real space, e.g. $E(r)$ and $B(r)$. Vectors with a tilde, like $\tilde{E}$ and $\tilde{B}$ are meant in reciprocal, meaning that they are functions of the wavevector $\vec{k}$. In other words, vectors with tilde indicate being the Fourier transform of the vector without tilde, and vice versa. Note that throughout this script, the vector notation may be dropped if it doesn't add to understanding the content.
 The advantage of using the Maxwell's equations in reciprocal space is that they are now local, hence no spatial derivative appears. The next step is 'finding' the Lagrangian for the free-field Maxwell's equation:
-$$L=\int d^{3} r \cdot \mathcal{L}(r)=\int d^3 r \frac{\varepsilon_{0}}{2}\left(\vec{E}^{2}-c^{2} \vec{B}^{2}\right).$$
+$$L=\int d^{3} r \cdot \alpha(r)=\int d^3 r \frac{\varepsilon_{0}}{2}\left(\vec{E}^{2}-c^{2} \vec{B}^{2}\right).$$
 The vector potential $\vec{A}$ is defined such that its negative temporal derivative is the electric field, and that it's curl is the magnetic field:
 $$\begin{align}\vec{E}=-\frac{\partial \vec{A}}{\partial t}&&\text{and} \quad\nabla \times \vec{A}=\vec{B}. \end{align}$$
 There is now freedom in the chosen gauge, and we choose the Coulomb gauge:
 $$\vec{\nabla} \cdot \vec{A}=0 \Leftrightarrow \vec{k} \cdot \tilde{A}=0$$ 
 In this gauge, the vector field is said to be transverse. An implication of this is that the Lagrangian can now be written as
-$$\Rightarrow \mathcal{L}(r)=\frac{\varepsilon_{0}}{2}\left(\dot{\vec{A}}^{2}-c^{2}(\vec{\nabla} \times \vec{A})^{2}\right),$$
+$$\Rightarrow \alpha(r)=\frac{\varepsilon_{0}}{2}\left(\dot{\vec{A}}^{2}-c^{2}(\vec{\nabla} \times \vec{A})^{2}\right),$$
 making it depend only on $\vec{A}(r)$. However, knowing that we are working in the Coulomb gauge, we know that the components of the vector potential, e.g. the $\left\{A_{i}\right\}$ are not independent. The definition of the Lagrangian does not change in reciprocal space, such that 
 $$L=\int d^3k\cdot\tilde{L}(k)$$
 still holds the same way it held in real space $\vec{r}$. The Lagrangian density is readily found to be
-$$\tilde{\mathcal{L}}(k)=\frac{\varepsilon_{0}}{2}\left(|\tilde{E}|^{2}-c^{2} \cdot|\tilde{B}|^{2}\right)=\frac{\varepsilon_{0}}{2}\left(|\dot{\tilde{A}}|^{2}-c^{2} k^{2}|\tilde{A}|^{2}\right)=\sum_{\sigma_{k}} \frac{\varepsilon_{0}}{2}\left(\left|\dot{\tilde{A}}_{\sigma_{k}}\right|^{2}-c^{2} k^{2}\left|\tilde{A}_{\sigma_{k}}\right|^{2}\right),$$
-since $k \cdot \tilde{A}=0$ constrains to the vector potential to the plane perpendicular to $k$. The $\sigma_{k}$ are two independent and orthonormal polarisation vectors per $k$. Thus, the generalised, independent coordinates are $\tilde{A}_{\sigma_{k}^{1}}$ and $\tilde{A}_{\sigma_{k}^{2}}$, the transverse vector field.
-
-The conjugate momentum is defined as $\pi_{\sigma_{k}}(k)=\left(\frac{\partial \tilde{L}}{\partial \dot{\tilde{A}}_{\sigma_{k}}}\right)^{*}=\varepsilon_{0} \cdot \dot{\tilde{A}}_{\sigma_{k}}=-\varepsilon_{0} \tilde{E}_{\sigma_{k}}$
-Now the quantization: Introduce operators $\left[\tilde{A}_{\sigma_{k}}(k), \pi_{\sigma_{k^{\prime}}}^{*}\left(k^{\prime}\right)\right]=i \hbar \delta_{\sigma_{k} \sigma_{k^{\prime}}} \delta\left(k-k^{\prime}\right)$
-The hamiltonian becomes $H=\int d^{3} k \cdot \tilde{\mathcal{H}}(k)$ with $\tilde{H}=\frac{|\tilde{\Pi}|^{2}}{2 \varepsilon_{0}}+\frac{\varepsilon_{0} c^{2} k^{2}}{2}|\tilde{A}|^{2}$ similar to harm. oscillator: $\frac{p^{2}}{2 m}+\frac{k^{2} x^{2}}{2}$
-
-Introduce new operator: $a_{\sigma_{k}}(k)=\sqrt{\frac{1}{2 \hbar w}}\left(w \varepsilon_{0} \tilde{A}_{\sigma_{k}}+i \tilde{\pi}_{\sigma_{k}}\right)$ satisfying $\left[a_{\sigma_{k}}(k), a_{\sigma_{k^{\prime}}}^{+}\left(k^{\prime}\right)\right]=\delta_{\sigma_{k} \sigma_{k^{\prime}}} \delta\left(k-k^{\prime}\right)$
-Switching to volume $V=L^{3}$, replacing $\int d^{3} k$ with $\left(\frac{2 \pi}{L}\right)^{3} \sum_{k}$ yields:
+$$\tilde{\alpha}(k)=\frac{\varepsilon_{0}}{2}\left(|\tilde{E}|^{2}-c^{2} \cdot|\tilde{B}|^{2}\right)=\frac{\varepsilon_{0}}{2}\left(|\dot{\tilde{A}}|^{2}-c^{2} k^{2}|\tilde{A}|^{2}\right)=\sum_{\sigma_{k}} \frac{\varepsilon_{0}}{2}\left(\left|\dot{\tilde{A}}_{\sigma_{k}}\right|^{2}-c^{2} k^{2}\left|\tilde{A}_{\sigma_{k}}\right|^{2}\right),$$
+since $k \cdot \tilde{A}=0$ constrains to the vector potential to the plane perpendicular to $k$. The $\sigma_{k}$ are two independent and orthonormal polarisation vectors per $k$. Thus, the generalised, independent coordinates are $\tilde{A}_{\sigma_{k}^{1}}$ and $\tilde{A}_{\sigma_{k}^{2}}$, the transverse vector field. 
+Next, the conjugate momentum is defined as 
+$$\pi_{\sigma_{k}}(k)=\left(\frac{\partial \tilde{L}}{\partial \dot{\tilde{A}}_{\sigma_{k}}}\right)^{*}=\varepsilon_{0} \cdot \dot{\tilde{A}}_{\sigma_{k}}=-\varepsilon_{0} \tilde{E}_{\sigma_{k}}.$$
+A very important step now is the **quantisation**, by introducing operators that satisfy a commutation relation:
+$$\left[\tilde{A}_{\sigma_{k}}(k), \pi_{\sigma_{k^{\prime}}}^{*}\left(k^{\prime}\right)\right]=i \hbar \delta_{\sigma_{k} \sigma_{k^{\prime}}} \delta\left(k-k^{\prime}\right).$$
+With this, the Hamiltonian is $H=\int d^{3} k \cdot \tilde{\mathcal{H}}(k)$ with $$\tilde{\mathcal{H}}=\frac{|\tilde{\Pi}|^{2}}{2 \varepsilon_{0}}+\frac{\varepsilon_{0} c^{2} k^{2}}{2}|\tilde{A}|^{2}.$$
+The first part is the electric part of the electromagnetic field, while the second part contains the magnetic part. This Hamiltonian is there very similar to the harmonic oscillator: $\frac{p^{2}}{2 m}+\frac{k^{2} x^{2}}{2}.$ To tidy up, new operators are introduced: 
+$$a_{\sigma_{k}}(k)=\sqrt{\frac{1}{2 \hbar w}}\left(w \varepsilon_{0} \tilde{A}_{\sigma_{k}}+i \tilde{\pi}_{\sigma_{k}}\right),$$
+satisfying the commutation relation $\left[a_{\sigma_{k}}(k), a_{\sigma_{k^{\prime}}}^{\dagger}\left(k^{\prime}\right)\right]=\delta_{\sigma_{k} \sigma_{k^{\prime}}} \delta\left(k-k^{\prime}\right)$. 
+Considering a volume $L^3$, and replacing the integral over all k-space, $\int d^{3} k$, with $\left(\frac{2 \pi}{L}\right)^{3} \sum_{k}$, we find that the electric field can finally be written as:
 $$
 \begin{align*}
-\vec{E}(r)=\sum_{k, \sigma_{k}} \sqrt{\frac{\hbar w_{k}}{2 \varepsilon_{0} L^{3}}} \cdot \hat{\sigma}_{k} \cdot\left(a_{k, \sigma_{k}} e^{i k r}+a_{k, \sigma_{k}}^{\dagger} e^{-i k r}\right) \text { and } H=\sum_{k, \sigma_{k}} \hbar w_{k}\left(a_{k, \sigma_{k}}^{\dagger} a_{k, \sigma_{k}}+\frac{1}{2}\right) \text { infinite collection of harm. osailators }
-\end{align*}
+\vec{E}(r)=\sum_{k, \sigma_{k}} \sqrt{\frac{\hbar w_{k}}{2 \varepsilon_{0} L^{3}}} \cdot \hat{\sigma}_{k} \cdot\left(a_{k, \sigma_{k}} e^{i k r}+a_{k, \sigma_{k}}^{\dagger} e^{-i k r}\right)
+\end{align*}.
 $$
+The Hamiltonian is then 
+$$H=\sum_{k, \sigma_{k}} \hbar w_{k}\left(a_{k, \sigma_{k}}^{\dagger} a_{k, \sigma_{k}}+\frac{1}{2}\right),$$
+which is an infinite collection of harmonic oscillators. The constant of $+1/2$ can be omitted. Then, the ground state, denoted as $|0\rangle$, satisfies $a_{k, \sigma_{k}}|0\rangle=0$ by definition.
 
-The ground state $|0\rangle$ satisfies $a_{k_{1} \sigma_{k}}|0\rangle=0$
+## 1.1 Quantum States of Light
 
-## 1.1 Quantum states of light
-Focussing on single-field mode: $a_{k_{1} \sigma_{k}} \rightarrow a_{c}$ ar hamiltonian becomes $H=\hbar w_{c} a_{c}^{\dagger} a_{c}$ with $\left[a_{c} a_{c}^{\dagger}\right]=1$
-The eigenstates are $\left|n_{c}\right\rangle=\sqrt{\frac{1}{n!}}\left(a_{c}^{+}\right)^{n}|0\rangle$ with energy $E_{n}=\hbar w_{c} n$ and the spectrum is
-The spectrum is harmonic for all $\left(k, \sigma_{k}\right)$, a direct consequence of linearity of the maxwells equations.
+By focusing on a single field mode, we can replace the general operator $a_{k_{1} \sigma_{k}}$ with $a_{c}$. This then simplifies the Hamiltonian to 
+$$H=\hbar w_{c} a_{c}^{\dagger} a_{c}.$$
+The operators satisfy $\left[a_{c} a_{c}^{\dagger}\right]=1$. The eigenstates are found to be
+$$\left|n_{c}\right\rangle=\sqrt{\frac{1}{n!}}\left(a_{c}^{\dagger}\right)^{n}|0\rangle,$$
+where each state has an energy $E_{n}=\hbar w_{c} n$. The spectrum is harmonic for all values of $\left(k, \sigma_{k}\right)$, which is a direct consequence of linearity of the Maxwell equations.
+Interestingly, we have that  $$\langle n| \vec{E}(r)|n\rangle=0 \quad \forall n,$$
+however zero-results are uncommon in reality: We are rarely dealing with fields in an eigenstate. We may define a new state, the coherent state:
+$$|\alpha\rangle=e^{-|\alpha|^{2} / 2} \sum_{n} \frac{\alpha^{n}}{\sqrt{n!}}|n\rangle.$$
+The ground state is the one associated with $\alpha=0$. The coherent state has the main properties:
+1. Properties of a noise-free classical field: $\begin{array}{l}\langle\alpha| \vec{E}|\alpha\rangle=E_{c 1} \neq 0 \\ \langle\alpha| n_{c}|\alpha\rangle=|\alpha|^{2}\end{array}.$ Furthermore, $\Delta n^{2}=|\alpha|^{2}$, which corresponds to intensity fluctuations and a Poissonian distribution.
+2. Driving the mode of the field with a classical current $j(r, t)$ generates the state $|\alpha\rangle.$ This is described by the interaction Hamiltonian $H_{int} =-i\left(\beta^{*} a_{c}-\beta a_{c}^{\dagger}\right)$ such  $|\psi(\tau)\rangle=D(\alpha)|0\rangle=|\alpha\rangle$ with the displacement operator $D(\alpha)=e^{\alpha a_{c}^{\dagger}-\alpha^{*} O_{c}^{\dagger}}, \alpha=\beta \tau.$
+3. The coherent state is all order [[Notes/Quantum Optics#3 Cohence, classical, coherent states\|coherent]]: $g^{(n)}\left(t_{1} \ldots t_{n}\right)=1 \quad\forall n$.
 
-Interestingly, $\langle n| \vec{E}(r)|n\rangle=0 \forall n$, however 2 ero-results are uncomnon: Rarely dealing with fields in eigenstate.
-Defining the coherent state $|\mathcal{L}\rangle=e^{-|\mathcal{L}|^{2} / 2} \sum_{n} \frac{\mathcal{L}^{n}}{\sqrt{n!}}|n\rangle$ (ground state coherent with $\mathcal{L}=0$ ) with key properties.
-$\left(\begin{array}{l}\text { 1) }\langle\mathcal{L}| \vec{E}|\mathcal{L}\rangle=E_{c 1} \neq 0 \\ \langle\mathcal{L}| n_{c}|\mathcal{L}\rangle=|\mathcal{L}|^{2}\end{array}\right\} \begin{aligned} & \text { Properties of noise-free } \quad \text { Furthermore, } \Delta n^{2}=|\mathcal{L}|^{2} \cong \text { intensity fluctuations and poissonian dishibution. } \\ & \text { classical field. }\end{aligned}$
-11) Driving fields mode with classical current $j(r, t)$, generates $|\mathcal{L}\rangle$.
+We may now split the electric field into a positive and negative frequency term:
+$$E(r, t)=E^{(+)}(r, t)+E^{(-)}(r, t),$$
+where  $$E^{(+)}=\sqrt{\frac{\hbar \omega_{c}}{2 \varepsilon_{0} L^{3}}} \cdot a_{c} \cdot e^{i(k r-\omega t)}=\left(E^{(-)}\right)^{\dagger}.$$
 
-Described by Hint $=-i\left(\beta^{*} a_{c}-\beta a_{c}^{+}\right)$so $|\psi(\tau)\rangle=D(\mathcal{L})|0\rangle=|\mathcal{L}\rangle$ with displacement operator $D(\mathcal{L})=e^{\mathcal{L} a_{c}^{+}-\mathcal{L}^{*} O_{c}^{+}}, \mathcal{L}=\beta \tau$
-IIII) It is all order coherent: $g^{(n)}\left(t_{1} \ldots t_{n}\right)=1 \quad \forall n$
+## 1.2 Phase-Space Representation
 
-Splitting $E(r, t)=E^{(t)}(r, t)+E^{(-)}(r, t)$ in positive and negative fequency terms $E^{(t)}=\sqrt{\frac{\hbar \omega_{c}}{2 \varepsilon_{0} L^{3}}} \cdot a_{c} \cdot e^{i(k r-\omega t)}=\left(E^{(-)}\right)^{t}$
+Further, it is useful to split the electric field into a field term in z-direction, and another in transverse direction:
+$$E_{c}(r)=\sqrt{\frac{\hbar w_{c}}{2 \varepsilon_{0} V}}\left(a_{c} e^{i k z}+a_{c}^{\dagger} e^{-i k z}\right) \varepsilon_{c}(x, y),$$
+where $\varepsilon_{c}$ is the extent of the field in transverse direction. Again, new operators, the so-called quadratures can be introduced:
+$$\begin{align}a_{Q}=\frac{a_{c}+a_{c}^{\dagger}}{2}&& \text{and}&& a_{p}=\frac{a_{c}-a_{c}^{\dagger}}{2 i}\end{align}.$$
+This allows to write the electric field as 
+$$E_{c}(r)=2 E_{\text{vac}}\left(a_{Q} \cdot \cos (k z)-a_{p} \cdot \sin (k z)\right) \varepsilon(x, y),$$
+where it important to note that these two operators do not commute:
+$$\left[a_{Q}, a_{p}\right]=\frac{i}{2}.$$
+This has important implications, such that is the $\cos$ and $\sin$ component of the electric field can not be measured with arbitrary precision. To find the eigenstates of these two operators, we start from $a_{Q}|q\rangle=q|q\rangle$ and $a_{p}|p\rangle=p|p\rangle$. This then implies that
+$$|q\rangle=\int d p \cdot e^{i p q}|p\rangle,$$
+which leads to 
+$$a_{p}|q\rangle=\int d p \cdot e^{i p q} \cdot p|p\rangle=\frac{1}{i} \frac{d}{d q}|q\rangle.$$
+In words, this means that the photon number and the phase are conjugate. The wavefunctions of these state are then denoted as $\phi_{0}(q)=\langle q \mid 0\rangle$ and $\phi_{0}(p)=\langle p\mid0\rangle$. Noting that $a_{c}=a_{Q}+i a_{p}$ holds, we find 
+$$\langle q| a_{c}|0\rangle=0=q \cdot \phi_{0}(q)+\frac{d}{d q} \phi_{0}(q)=0.$$
+We can conclude $\left\{\begin{array}{l}\phi_{0}(q)=\sqrt{\frac{1}{2 \pi}} e^{-q^{2} / 2} \\ \phi_{0}(p)=\sqrt{\frac{1}{2 \pi}} e^{-p^{2} / 2}.\end{array}\right.$
 
-## 1.2 Phase-space representation
-Writing $E_{c}(r)=\sqrt{\frac{\hbar w_{c}}{2 \varepsilon_{0} v}}\left(a_{c} e^{i k z}+a_{c}^{+} e^{-i k z}\right) \varepsilon_{c}(x, y)$ where $\varepsilon_{c}$ is extent of field in transverse direction.
-Introduce quadratures $a_{Q}=\frac{a_{c}+a_{c}^{+}}{2}$ and $a_{p}=\frac{a_{c}-a_{c}^{+}}{2 i}$ allows to write $E_{c}(r)=2 E_{v a c}\left(a_{Q} \cdot \cos (k z)-a_{p} \cdot \sin (k z)\right) \varepsilon(x, y)$
-They do not commute $\left[a_{Q}, a_{p}\right]=\frac{i}{2}$ so the cos and sin component can't be measured with arbitrary precision.
-We define $a_{Q}|q\rangle=q|q\rangle$ and $a_{p}|p\rangle=p|p\rangle$ to get $|q\rangle=\int d p \cdot e^{i p q}|p\rangle$
-This implies $a_{p}|q\rangle=\int d p \cdot e^{i p q} \cdot p|p\rangle=\frac{1}{i} \frac{d}{d q}|q\rangle$
-Photon number $\leftrightarrow$ phase are conjugate
+The joint-probability distribution in $q$-$p$ space means that the eigenstates $|n\rangle$ sit at the origin and increase with the value of $n$. On the other hand, the coherent state revolves around the origin for $\alpha \neq 0$.
 
-Next, $\phi_{0}(q)=\langle q \mid 0\rangle$ and $\phi_{0}(p)=\langle p \mid 0\rangle$. Noting $a_{c}=a_{Q}+i a_{p}:\langle q| a_{c}|0\rangle=0=q \cdot \phi_{0}(q)+\frac{d}{d q} \phi_{0}(q)=0$
-We can conclude $\left\{\begin{array}{l}\phi_{0}(q)=\sqrt{\frac{1}{2 \pi}} e^{-q^{2} / 2} \\ \phi_{0}(p)=\sqrt{\frac{1}{2 \pi}} e^{-p^{2} / 2}\end{array}\right.$
-![](https://cdn.mathpix.com/cropped/2025_01_19_965791fe7c92864a8cd2g-03.jpg?height=826&width=2389&top_left_y=491&top_left_x=2264)
+Since the phase is unknown, there is a rotational symmetry. Using the Wigner-function: 
+$$W_{|0\rangle}(p, q)=\frac{1}{\pi} \int d q_{1} \cdot\left\langle q-q_{1} \mid 0\right\rangle\left\langle 0 \mid q+q_{1}\right\rangle e^{-i 2 p \cdot q_{1}}.$$
+Then, if $|\psi\rangle$ is a classical state, the Wigner function is semi-positive. Further note that coherent state satisfy $\langle a_{Q}^{2}\rangle=\langle a_{p}^{2}\rangle=\frac{1}{4},$ meaning that they are minimum uncertainty states.
 
-Since the phase is unknown, we have rotational symmetry.
-We use the Wigner-function $W_{10\rangle}(p, q)=\frac{1}{\pi} \int d q_{1} \cdot\left\langle q-q_{1} \mid 0\right\rangle\left\langle 0 \mid q+q_{1}\right\rangle e^{-i 2 p \cdot q_{1}}$ where $|\psi\rangle$ classical $\Rightarrow W \geqslant 0$
-Coherent stales have $\left\langle a_{Q}^{2}\right\rangle=\left\langle a_{p}^{2}\right\rangle=\frac{1}{4}$ and is thus a minimum uncertanity state.
+>[!DANGER] Work in progress from here on
+>Notes have been automatically translated from handwritten to latex
+>No manual adjustments done yet.
+
+
 ## 1.3 Generation of squeezed states non-linear optics
 Since the uncertainity relation requires $\Delta a_{Q} \cdot \Delta a_{P} \geqslant \frac{1}{4}$, we can squeeze the state in one direction: $\Delta a_{Q}<\Delta a_{p}$
 We now consider two modes $\omega_{b}$ and $\omega_{c}$ :
-$H=\hbar w_{c} a_{c}^{\dagger} a_{c}+\hbar w_{b}^{b_{b}^{\dagger} b}+i \hbar X\left(a_{c}^{+} b-b^{\dagger} a_{c}^{2}\right)^{2}$ where the last term couples both modes. Non linear optics: One photon crates two.
+$H=\hbar w_{c} a_{c}^{\dagger} a_{c}+\hbar w_{b}^{b_{b}^{\dagger} b}+i \hbar X\left(a_{c}^{\dagger} b-b^{\dagger} a_{c}^{2}\right)^{2}$ where the last term couples both modes. Non linear optics: One photon crates two.
 
 We choose 2 simplifications:
 
@@ -102,7 +119,7 @@ memean-field approximation
 We go to interaction picture, e.g. $a_{c}=\tilde{a}_{c} e^{-i w_{c} t}, b=\tilde{b} e^{-i \omega_{b} t}$ and replace $\tilde{b}$ by $\beta$. Then the $e^{i\left(2 w_{c}-w_{b}\right) t}$ term candles.
 $\tilde{H}=\hbar \omega_{c} \tilde{a}_{c}^{t} \tilde{a}_{c}+i \hbar X \beta\left(\tilde{a}_{c}^{t^{2}}-\tilde{a}_{c}^{2}\right)$ and the Leisenberg-equation gives it $\frac{d a_{c}}{d t}=\left[H, a_{c}\right]=i \hbar \frac{d}{d t}\left(\tilde{a}_{c} e^{-i \omega_{c} t}\right)$
 
-We find $\frac{d \tilde{a}_{c}}{d t}=2 x \beta \tilde{a}_{c}^{+}$and the same for $\tilde{a}_{c}^{+}$. Using $a_{Q}=\frac{a_{c}+a_{c}^{+}}{2}$ and $a_{p}=\frac{a_{c}-a_{c}^{+}}{2 i}$, we have finally decoupled the equation:
+We find $\frac{d \tilde{a}_{c}}{d t}=2 x \beta \tilde{a}_{c}^{\dagger}$and the same for $\tilde{a}_{c}^{\dagger}$. Using $a_{Q}=\frac{a_{c}+a_{c}^{\dagger}}{2}$ and $a_{p}=\frac{a_{c}-a_{c}^{\dagger}}{2 i}$, we have finally decoupled the equation:
 Non linearity mixes $a_{c}$ and $\tilde{a}_{c}$
 $$
 \begin{align*}
@@ -120,13 +137,13 @@ III) Since $\Delta a_{Q}^{2}=\left\langle a_{Q}^{2}\right\rangle-\left\langle Q_
 ## 1.4 Atom-field interactions
 Consider charged particle interacting with quantized field in coulomb gauge:
 
-We rewrite $L_{\text {int }}=\sum_{\mathcal{L}} q_{\mathcal{L}} \dot{r}_{\mathcal{L}} A\left(r_{\mathcal{L}}\right)$ which is independent of $\dot{A} \Rightarrow$ Conjugate momenta $\Pi_{\sigma_{k}}(k)=\left(\frac{\partial \mathcal{L}}{\partial \dot{A}}\right)^{x}=\varepsilon_{0} \widetilde{A}_{\sigma_{k}}(k)$ unchanged. However conjugate momenta for charged particle gets modified: $p_{\mathcal{L}}=\frac{\partial \mathcal{L}}{\partial \dot{r}_{\mathcal{L}}}=m_{\mathcal{L}} \dot{r}_{\mathcal{L}}+q_{\mathcal{L}} A\left(r_{\mathcal{L}}\right) \Leftrightarrow \dot{r}_{\mathcal{L}}=\frac{p_{\mathcal{L}}-q_{\mathcal{L}} A\left(r_{\mathcal{L}}\right)}{m_{\mathcal{L}}}$
+We rewrite $L_{\text {int }}=\sum_{\alpha} q_{\alpha} \dot{r}_{\alpha} A\left(r_{\alpha}\right)$ which is independent of $\dot{A} \Rightarrow$ Conjugate momenta $\Pi_{\sigma_{k}}(k)=\left(\frac{\partial \alpha}{\partial \dot{A}}\right)^{x}=\varepsilon_{0} \widetilde{A}_{\sigma_{k}}(k)$ unchanged. However conjugate momenta for charged particle gets modified: $p_{\alpha}=\frac{\partial \alpha}{\partial \dot{r}_{\alpha}}=m_{\alpha} \dot{r}_{\alpha}+q_{\alpha} A\left(r_{\alpha}\right) \Leftrightarrow \dot{r}_{\alpha}=\frac{p_{\alpha}-q_{\alpha} A\left(r_{\alpha}\right)}{m_{\alpha}}$
 
-The hamiltonian is $H=\sum_{\mathcal{L}} \dot{r}_{\mathcal{L}} \cdot p_{\mathcal{L}}-L=\sum_{\mathcal{L}} \frac{1}{2} m_{\mathcal{L}} \dot{r}_{\mathcal{L}}^{2}+V_{\text {coil }}-L_{\text {field }}=\sum_{\mathcal{L}} \frac{1}{2 m_{\mathcal{L}}}\left(p_{\mathcal{L}}-q_{\mathcal{L}} A\left(r_{\mathcal{L}}\right)\right)^{2}+V_{\text {coll }}+H_{\text {field }}$
+The hamiltonian is $H=\sum_{\alpha} \dot{r}_{\alpha} \cdot p_{\alpha}-L=\sum_{\alpha} \frac{1}{2} m_{\alpha} \dot{r}_{\alpha}^{2}+V_{\text {coil }}-L_{\text {field }}=\sum_{\alpha} \frac{1}{2 m_{\alpha}}\left(p_{\alpha}-q_{\alpha} A\left(r_{\alpha}\right)\right)^{2}+V_{\text {coll }}+H_{\text {field }}$
 $$
 \begin{align*}
 \begin{aligned}
-& =\sum_{\mathcal{L}} \frac{p_{\mathcal{L}}^{2}}{2 m_{\mathcal{L}}}+V_{\text {col }}-\sum_{\mathcal{L}} \frac{p_{\mathcal{L}}}{m_{\mathcal{L}}} q_{\mathcal{L}} A\left(r_{\mathcal{L}}\right)+\sum_{\mathcal{L}} \frac{1}{2 m_{\mathcal{L}}} q_{\mathcal{L}}^{2} A^{2}\left(r_{r_{\mathcal{L}}}\right)+H_{\text {field }} \\
+& =\sum_{\alpha} \frac{p_{\alpha}^{2}}{2 m_{\alpha}}+V_{\text {col }}-\sum_{\alpha} \frac{p_{\alpha}}{m_{\alpha}} q_{\alpha} A\left(r_{\alpha}\right)+\sum_{\alpha} \frac{1}{2 m_{\alpha}} q_{\alpha}^{2} A^{2}\left(r_{r_{\alpha}}\right)+H_{\text {field }} \\
 & =H_{\text {particle }}+H_{\text {int }}^{(1)}+H_{\text {int }}^{(2)}+H_{\text {field }}
 \end{aligned}
 \end{align*}
@@ -136,18 +153,18 @@ $$
 - $H_{\text {lint }}^{(2)}$ describes vibrational kinetic energy of charged particle in sinusoidal field.
 $\Rightarrow$ Provided intra-atomic folds $\gg$ external fields: $\left|H_{\text {mit }}^{(1)}\right| \gg\left|H_{\text {int }}^{(2)}\right| \triangleq$ optical domain
 
-In Quantum optic, we use $H_{\text {int }}=-\sum_{\mathcal{L}} q_{\mathcal{L}} \vec{r}_{\mathcal{L}} \vec{E}_{\mathcal{L}}$ the electric-dipole hamiltonian.
+In Quantum optic, we use $H_{\text {int }}=-\sum_{\alpha} q_{\alpha} \vec{r}_{\alpha} \vec{E}_{\alpha}$ the electric-dipole hamiltonian.
 We want formulation where $H_{\text {paticices }}=H_{\text {emitter }}=H_{\text {athens }}$ remains unchanged in presence of field.
-$L \rightarrow \tilde{L}=L+\frac{d}{d t} F\left(r_{\mathcal{L}}\right)$ gives same equations.
+$L \rightarrow \tilde{L}=L+\frac{d}{d t} F\left(r_{\alpha}\right)$ gives same equations.
 
 ### 1.4.1 Göppert-Meyer transformation relevant for LWA
 
-We choose $F=-\sum_{\mathcal{L}} q_{\mathcal{L}} \cdot \vec{r}_{\mathcal{L}} \cdot \vec{A}(0, t)$ where $A\left(r_{1}+t\right) \rightarrow A(0, t)$ justified for field wavelength $\lambda$ assonnm maximums so vation of a atoms 0.1 nm Then $\tilde{L}=L_{\text {particle }}+L_{\text {Redd }}+L_{\text {int }}-\sum_{\mathcal{L}} q_{\mathcal{L}} \frac{d}{d t}\left(r_{\mathcal{L}} A(0,+)\right)=L_{\text {partite }}+L_{\text {redd }}+\sum_{\mathcal{L}} q_{\mathcal{L}} \dot{r}_{\mathcal{L}} A\left(r_{\mathcal{L}}\right)-\sum_{\mathcal{L}} q_{\mathcal{L}} \frac{d}{d t}\left(r_{\mathcal{L}} A(0, t)\right)=L_{\text {particle }}+L_{\text {reid }}-\sum_{\mathcal{L}} q_{\mathcal{L}} r_{\mathcal{L}} \dot{A}(0,+)$ Assuming field is not dynamical: $L_{\text {field }}=0$ or $\dot{A}=0 \Rightarrow p_{\mathcal{L}}=m_{\mathcal{L}} \dot{r}_{\mathcal{L}}$ we get our new hamiltonian:
+We choose $F=-\sum_{\alpha} q_{\alpha} \cdot \vec{r}_{\alpha} \cdot \vec{A}(0, t)$ where $A\left(r_{1}+t\right) \rightarrow A(0, t)$ justified for field wavelength $\lambda$ assonnm maximums so vation of a atoms 0.1 nm Then $\tilde{L}=L_{\text {particle }}+L_{\text {Redd }}+L_{\text {int }}-\sum_{\alpha} q_{\alpha} \frac{d}{d t}\left(r_{\alpha} A(0,+)\right)=L_{\text {partite }}+L_{\text {redd }}+\sum_{\alpha} q_{\alpha} \dot{r}_{\alpha} A\left(r_{\alpha}\right)-\sum_{\alpha} q_{\alpha} \frac{d}{d t}\left(r_{\alpha} A(0, t)\right)=L_{\text {particle }}+L_{\text {reid }}-\sum_{\alpha} q_{\alpha} r_{\alpha} \dot{A}(0,+)$ Assuming field is not dynamical: $L_{\text {field }}=0$ or $\dot{A}=0 \Rightarrow p_{\alpha}=m_{\alpha} \dot{r}_{\alpha}$ we get our new hamiltonian:
 $$
 \begin{align*}
 \begin{aligned}
-\tilde{H}=\sum_{\mathcal{L}} \dot{r}_{\mathcal{L}} p_{\mathcal{L}}-\tilde{L}=\sum_{\mathcal{L}} m_{\mathcal{L}} \dot{r}_{\mathcal{L}}^{2}-\tilde{L} & =\sum_{\mathcal{L}} \frac{1}{2} m_{\mathcal{L}} \dot{r}_{\mathcal{L}}^{2}+V_{\text {cool }}+\sum_{\mathcal{L}} q_{\mathcal{L}} r_{\mathcal{L}} \dot{A}(0,+) \\
-& =\sum_{\mathcal{L}} \frac{p_{\mathcal{L}}^{2}}{2 m_{\mathcal{L}}}+V_{\text {col }}-d \cdot E(0, t) \quad \text { where the dipole operator is } \vec{d}=\sum_{\mathcal{L}} q_{\mathcal{L}} \vec{r}_{\mathcal{L}}
+\tilde{H}=\sum_{\alpha} \dot{r}_{\alpha} p_{\alpha}-\tilde{L}=\sum_{\alpha} m_{\alpha} \dot{r}_{\alpha}^{2}-\tilde{L} & =\sum_{\alpha} \frac{1}{2} m_{\alpha} \dot{r}_{\alpha}^{2}+V_{\text {cool }}+\sum_{\alpha} q_{\alpha} r_{\alpha} \dot{A}(0,+) \\
+& =\sum_{\alpha} \frac{p_{\alpha}^{2}}{2 m_{\alpha}}+V_{\text {col }}-d \cdot E(0, t) \quad \text { where the dipole operator is } \vec{d}=\sum_{\alpha} q_{\alpha} \vec{r}_{\alpha}
 \end{aligned}
 \end{align*}
 $$
@@ -155,8 +172,8 @@ $$
 Justified for servi-classical limit and dynamical fields in LWA limit.
 ### 1.4.2 Power - Zienav - Wooley transformation
 
-Consider $F(r)=-\int d^{3} r \cdot \vec{P}(r) \cdot \vec{A}(r)$ with the polarization density: $\vec{P}(r)=\sum_{\mathcal{L}} q_{\mathcal{L}} r_{\mathcal{L}} \int_{0}^{1} d \lambda \cdot \delta\left(r-\lambda r_{\mathcal{L}}\right)$.
-Further assume globally neutral system: $\sum_{\mathcal{L}} q_{\mathcal{L}}=0$
+Consider $F(r)=-\int d^{3} r \cdot \vec{P}(r) \cdot \vec{A}(r)$ with the polarization density: $\vec{P}(r)=\sum_{\alpha} q_{\alpha} r_{\alpha} \int_{0}^{1} d \lambda \cdot \delta\left(r-\lambda r_{\alpha}\right)$.
+Further assume globally neutral system: $\sum_{\alpha} q_{\alpha}=0$
 We can write $j(r)=\dot{P}(r)+\nabla \times M(r)$ where $\dot{P}$ is polavization comment and $\nabla \times \vec{M}$ is magnetization current.
 
 Going back to $L_{\text {int }}=\int d^{3} r \cdot \vec{\jmath}(r) \cdot \vec{A}(r)=\int d^{3} r \cdot \dot{P}(r) A(r)+\int d^{3} r \cdot(\nabla \times M(r)) A(r)$. Our specific choice of $F(r)=-\int d^{3} r \cdot \vec{P}(r) \cdot \vec{A}(r)$ will get rid of first part, it however leaves $-\int d^{3} r \cdot \vec{P}(r) \dot{\vec{A}}(r)$.
@@ -168,32 +185,32 @@ Furthermore, the conjugate momenta?
 term leads to magn.dipole
 transitions and diamagnetic terms
 for fields: $\tilde{\Pi}_{\sigma_{k}}(k)=-\varepsilon_{0} \dot{\tilde{A}}_{\sigma_{k}}(k)-\widetilde{P}_{\sigma_{k}}(k)$
-In the LWA limit and $E(r) \approx E(0)+\left.\vec{r} \cdot \vec{\nabla} \vec{E}(r)\right|_{r=0} \ldots$ gives $\mathcal{H}_{\text {int }}=\int d^{3} r \cdot P(r) \cdot E(r) \approx-\sum_{\mathcal{L}} q_{\mathcal{L}} \vec{r}_{\mathcal{L}} \vec{E}_{1}(0, t)+\ldots$
+In the LWA limit and $E(r) \approx E(0)+\left.\vec{r} \cdot \vec{\nabla} \vec{E}(r)\right|_{r=0} \ldots$ gives $\mathcal{H}_{\text {int }}=\int d^{3} r \cdot P(r) \cdot E(r) \approx-\sum_{\alpha} q_{\alpha} \vec{r}_{\alpha} \vec{E}_{1}(0, t)+\ldots$
 where the first term is the electric-dipole term. Note $r=0$ is position of emitter.
-Note further, $\frac{\text { magn. dipole }}{\text { elechic dipole }} \approx \frac{\mathcal{L}}{2}$ so $M D \ll E D \quad M D$ and $E Q$ only important if ED transitions are not allowed by symmetry.
+Note further, $\frac{\text { magn. dipole }}{\text { elechic dipole }} \approx \frac{\alpha}{2}$ so $M D \ll E D \quad M D$ and $E Q$ only important if ED transitions are not allowed by symmetry.
 
 ## 1.5 Taynes-Cummings model
-We can now write $H=H_{\text {emitter }}+\sum_{k, \sigma_{k}} \hbar w_{k} a_{k}^{+} a_{k}-\vec{d} \vec{E}(0, t)$ which is valid in the LWA limit.
+We can now write $H=H_{\text {emitter }}+\sum_{k, \sigma_{k}} \hbar w_{k} a_{k}^{\dagger} a_{k}-\vec{d} \vec{E}(0, t)$ which is valid in the LWA limit.
 For states such as $1 s, 2 s, 2 p \ldots \quad \sqrt{\left\langle r^{2}\right\rangle} \approx 1 \AA<\lambda_{i j} \approx 2 n m$, this is a good approximation.
 We will consider $H_{e m i t t e r}=H_{a t o m}=\sum_{i} \hbar w_{i} \mid i><i l$ e.g a single emitter, since we are interested in emitter-field-intevaction.
 Writing $\vec{d}=q \vec{r}=\sum_{i j}|i><i| \vec{d}|j \ll j|=\sum_{i j} M_{i j}|i\rangle\langle j|$ with $M_{i j}$ mahix element. Important is that $M_{i i}=\langle i| d|i\rangle=0$ (angular momentum $\underset{\text { conservation) }}{\text { ( }}$
 
-It follows: $\quad H_{\text {lint }}=-d \cdot E(0, t)=-i \sum_{i j k \mathcal{L}} M_{i j}^{(\mathcal{L})} \sqrt{\frac{\hbar \omega_{k}}{2 E_{0} V}} \operatorname{li}<j l_{a}\left(a_{k} e^{i k R_{\mathcal{L}}}+a_{k}^{+} e^{-i k R_{\mathcal{L}}}\right)$
-We note that $\left|R_{\mathcal{L}}-R_{\mathcal{L}}\right| \gg \lambda$, does not violate $L W A$, since each dipole has to be small to $\lambda$.
-Introduce $g_{k}^{i j}=M_{i j}^{(\mathcal{L})} \sqrt{\frac{\hbar w_{k}}{2 \varepsilon_{0} V}}$ the coupling strength of mode $k$ and atomic transition $i \rightarrow j$.
+It follows: $\quad H_{\text {lint }}=-d \cdot E(0, t)=-i \sum_{i j k \alpha} M_{i j}^{(\alpha)} \sqrt{\frac{\hbar \omega_{k}}{2 E_{0} V}} \operatorname{li}<j l_{a}\left(a_{k} e^{i k R_{\alpha}}+a_{k}^{\dagger} e^{-i k R_{\alpha}}\right)$
+We note that $\left|R_{\alpha}-R_{\alpha}\right| \gg \lambda$, does not violate $L W A$, since each dipole has to be small to $\lambda$.
+Introduce $g_{k}^{i j}=M_{i j}^{(\alpha)} \sqrt{\frac{\hbar w_{k}}{2 \varepsilon_{0} V}}$ the coupling strength of mode $k$ and atomic transition $i \rightarrow j$.
 
 Now, three key approximations are made:
 
-1) We deal with emitter at $R_{\mathcal{L}}=0$
+1) We deal with emitter at $R_{\alpha}=0$
 II) Only single mode couples strongly to emitter: $\left\{w_{c}, a_{c}\right\}$ (done by carry)
 III) Only two states $|g\rangle$ and $|e\rangle$ couple to $a_{c}$ with decent strength.
 $$
 \begin{align*}
-\Rightarrow H_{\text {int }}^{\text {shr. }}=-i \hbar g_{c}(|e><g|+|g><e|)\left(a_{c}-a_{c}^{+}\right)=-i \hbar g_{c}\left(\sigma_{e g}+\sigma_{g e}\right)\left(a_{c}-a_{c}^{\dagger}\right) \text { with } g_{c}=M_{e g} \sqrt{\frac{\hbar w_{c}}{2 \varepsilon_{0} V_{c}}} \text { and optimal cavity volume } V_{c}=\left(\frac{M_{e g}}{q}\right)^{2} \cdot \lambda
+\Rightarrow H_{\text {int }}^{\text {shr. }}=-i \hbar g_{c}(|e><g|+|g><e|)\left(a_{c}-a_{c}^{\dagger}\right)=-i \hbar g_{c}\left(\sigma_{e g}+\sigma_{g e}\right)\left(a_{c}-a_{c}^{\dagger}\right) \text { with } g_{c}=M_{e g} \sqrt{\frac{\hbar w_{c}}{2 \varepsilon_{0} V_{c}}} \text { and optimal cavity volume } V_{c}=\left(\frac{M_{e g}}{q}\right)^{2} \cdot \lambda
 \end{align*}
 $$
 
-Now to the rotating wave approximation: $H_{i n t}^{\operatorname{sch} r .}$ contains 4 terms: $\left\{\begin{array}{l}\sigma_{e g} a_{c}^{+}, \sigma_{g e} a_{c} \\ \sigma_{e g} a_{c}, \sigma_{g e} a_{c}^{\dagger}\end{array}\right.$ for $w_{c} \approx w_{e g: ~}^{\text {not energy cons er }} \begin{array}{l}\text { energy conserving }\end{array}$
+Now to the rotating wave approximation: $H_{i n t}^{\operatorname{sch} r .}$ contains 4 terms: $\left\{\begin{array}{l}\sigma_{e g} a_{c}^{\dagger}, \sigma_{g e} a_{c} \\ \sigma_{e g} a_{c}, \sigma_{g e} a_{c}^{\dagger}\end{array}\right.$ for $w_{c} \approx w_{e g: ~}^{\text {not energy cons er }} \begin{array}{l}\text { energy conserving }\end{array}$
 The non-conserving terms lead to energy change of $\omega_{\text {eg }}+w_{c} \hat{=}$ virtual process
 Transforming to interaction picture $\mathcal{H}_{\text {int }}^{i n k t .}=-i \hbar g_{c}\left(\sigma_{e g} a_{c} e^{i\left(\omega_{e g}-\omega_{c}\right) t}-\sigma_{e g} a_{c}^{t} e^{i\left(\omega_{e g}+\omega_{c}\right) t}+h^{c}\right)$
 
@@ -205,7 +222,7 @@ Now assume $g_{e} \sqrt{n}, w_{e g}-w_{c} \ll w_{e g}+w_{c}$ so we get $\left\{\
 Then the Jaynos-Cummings hamiltonian is $\mathcal{H}_{J C}^{\text {inter }}(t)=-i \hbar g_{c}\left(\sigma_{e g} a_{c} e^{i\left(\omega_{e g}-\omega_{c}\right) t}-\sigma_{g e} a_{c}^{t} e^{-i\left(\omega_{e g}-\omega_{c}\right) t}\right)$
 $$
 \begin{align*}
-\mathcal{H}_{J c}^{\sin r}=-i \hbar g_{c}\left(\sigma_{e g} a_{c}-\sigma_{g e} a_{c}^{+}\right)=-\hbar g_{c}\left(\sigma_{\text {eg }} a_{c}+\sigma_{g e} a_{c}^{+}\right)
+\mathcal{H}_{J c}^{\sin r}=-i \hbar g_{c}\left(\sigma_{e g} a_{c}-\sigma_{g e} a_{c}^{\dagger}\right)=-\hbar g_{c}\left(\sigma_{\text {eg }} a_{c}+\sigma_{g e} a_{c}^{\dagger}\right)
 \end{align*}
 $$
 
@@ -216,10 +233,10 @@ $$
 If $g_{c} \sqrt{n} \sim \omega_{\text {eg, }}$ the RWA would not be valid and we consider another transition: $\left|g_{1} 1\right\rangle \leftrightarrow\left|f_{1} 0\right\rangle$
 
 # 2 Jaynes-Cummings Model: Cavity QED
-$g_{c}$ is usually $\sim 10 \mathrm{MHz}, w_{\text {eg }} \sim 300 T H z \sim w_{c}, M_{\text {eg }} \sim e\langle r\rangle$ eg $\sim 10^{-2 g}$. We want $l \geqslant\langle r\rangle_{\text {eg }} \Rightarrow \frac{g_{c}}{w_{c}}=\sqrt{\mathcal{L}} \Leftrightarrow g_{c}\left\langle w_{c}\right.$ as expected.
+$g_{c}$ is usually $\sim 10 \mathrm{MHz}, w_{\text {eg }} \sim 300 T H z \sim w_{c}, M_{\text {eg }} \sim e\langle r\rangle$ eg $\sim 10^{-2 g}$. We want $l \geqslant\langle r\rangle_{\text {eg }} \Rightarrow \frac{g_{c}}{w_{c}}=\sqrt{\alpha} \Leftrightarrow g_{c}\left\langle w_{c}\right.$ as expected.
 
 ## 2.1 Vacuum Rabi oscillations
-Assume $|\psi(0)\rangle=|e, n\rangle$ and $\omega_{e g}=\omega_{c}$, then $\mathcal{H}_{\text {int }}^{\text {inter. }}=\hbar g_{c}\left(\sigma_{\text {eg }} a_{c}+\sigma_{g e} a_{c}^{+}\right)$is relevant.
+Assume $|\psi(0)\rangle=|e, n\rangle$ and $\omega_{e g}=\omega_{c}$, then $\mathcal{H}_{\text {int }}^{\text {inter. }}=\hbar g_{c}\left(\sigma_{\text {eg }} a_{c}+\sigma_{g e} a_{c}^{\dagger}\right)$is relevant.
 In RWA only states within excitation manifolds couple: $|e, n\rangle \longleftrightarrow|g, n+1\rangle \quad$ (without $R W A_{1}|g, n\rangle \leftrightarrow|e, n+1\rangle$ )
 
 Setting $|\Psi(t)\rangle=a_{g}|g, n+1\rangle+a_{e}|e, n\rangle$ and using Schrödinger equation yields:
@@ -233,7 +250,7 @@ solved by $a_{g}(t)=-\sin \left(g_{c} \cdot \sqrt{n+1} \cdot t\right)$ and $a_{e
 
 Important: Even $n=0$ yields sinusoidal oscillations. Vacuum acts like coherent field.
 For $g_{c} \sqrt{n+1} t \neq k \pi$, the field are entangled.
-If we were to set $|\Psi(0)\rangle=|e, \mathcal{L}\rangle, P_{e}(t)=\sum_{n}\left|c_{n}\right|^{2} \frac{1+\cos (2 g \sqrt{n+1} t)}{2} \cong$ Oscillation quickly gets out of phase.
+If we were to set $|\Psi(0)\rangle=|e, \alpha\rangle, P_{e}(t)=\sum_{n}\left|c_{n}\right|^{2} \frac{1+\cos (2 g \sqrt{n+1} t)}{2} \cong$ Oscillation quickly gets out of phase.
 Collaps time $t_{c 0 l}$ can be estimated by $t_{c 01} \cdot g\left(\sqrt{\bar{n}+\frac{\Delta n}{2}}-\sqrt{n-\frac{\Delta n}{2}}\right)=\pi$ when $\left\langle\sigma_{e e}\right\rangle \approx \frac{1}{2}$
 For coherent fields, $\bar{n}=\Delta n$, here we get $t_{c o 1} \approx \frac{2 \pi}{g_{c}}$ which is independant of the photon number.
 The oscillatory behavior reoccurs when the different terms are $2 \pi$ out of phase: $g_{c}(\sqrt{\bar{n}+1}-\sqrt{\bar{n}}) t_{\text {rev }}=2 \pi \Rightarrow t_{\text {rev }}=\frac{4 \pi}{g_{e}} \sqrt{n}$ 
@@ -244,13 +261,13 @@ $$
 \end{align*}
 $$
 
-We now set $w_{e g} \neq w_{c}$ and the hamiltonian of interest is $H=\hbar w_{c} a_{c}^{+} a_{c}+\hbar w_{e g} \sigma_{e e}+\hbar g_{c}\left(\sigma_{e g} a_{c}+\sigma_{g e} a_{c}^{+}\right)=H_{0}+H_{\text {int }}$
-We want to solve the schrodinger equation: $\left(H_{0}+H_{1 n t}\right)(\mathcal{L}|g, n+1\rangle+\beta|e, n\rangle)=E_{n+1}\left(\mathcal{L}\left|g_{1} n+1\right\rangle+\beta|e, n\rangle\right)$ where $H_{0}\left|g_{1} n+1\right\rangle=E_{g n+1}\left|g_{1 n+1}\right\rangle$.
+We now set $w_{e g} \neq w_{c}$ and the hamiltonian of interest is $H=\hbar w_{c} a_{c}^{\dagger} a_{c}+\hbar w_{e g} \sigma_{e e}+\hbar g_{c}\left(\sigma_{e g} a_{c}+\sigma_{g e} a_{c}^{\dagger}\right)=H_{0}+H_{\text {int }}$
+We want to solve the schrodinger equation: $\left(H_{0}+H_{1 n t}\right)(\alpha|g, n+1\rangle+\beta|e, n\rangle)=E_{n+1}\left(\alpha\left|g_{1} n+1\right\rangle+\beta|e, n\rangle\right)$ where $H_{0}\left|g_{1} n+1\right\rangle=E_{g n+1}\left|g_{1 n+1}\right\rangle$.
 $$
 \begin{align*}
 \text { Multiply }\left\langle g_{, n}+1\right| \text { and <e,n| from left: }\left\{\begin{array}{l}
-\mathcal{L} E_{g_{1 n+1}}=\mathcal{L} E_{n+1}+\beta\left\langle g_{1} n+1\right|+\|_{i n t}\left|e_{1} n\right\rangle \\
-\beta E_{e_{1} n}=\beta E_{n+1}+\mathcal{L}\left\langle e_{1 n}\right| H_{i n t}\left|g_{1} n+1\right\rangle
+\alpha E_{g_{1 n+1}}=\alpha E_{n+1}+\beta\left\langle g_{1} n+1\right|+\|_{i n t}\left|e_{1} n\right\rangle \\
+\beta E_{e_{1} n}=\beta E_{n+1}+\alpha\left\langle e_{1 n}\right| H_{i n t}\left|g_{1} n+1\right\rangle
 \end{array}\right.
 \end{align*}
 $$
@@ -329,10 +346,10 @@ Anharmonic
 For a single emitter in cavity with $\Delta w=w_{0 g}-\omega_{c} \gg g_{c} \sqrt{n}$, the spectrum is
 ![](https://cdn.mathpix.com/cropped/2025_01_19_965791fe7c92864a8cd2g-08.jpg?height=1009&width=1152&top_left_y=4096&top_left_x=4778)
 
-The schrieffer-Wolff transformation is $\tilde{H}=e^{-s} H e^{s}$ with $S=-\frac{g_{c}}{\Delta w}\left(\sigma_{e g} a_{c}-a_{c}^{+} \sigma_{g e}\right)$
+The schrieffer-Wolff transformation is $\tilde{H}=e^{-s} H e^{s}$ with $S=-\frac{g_{c}}{\Delta w}\left(\sigma_{e g} a_{c}-a_{c}^{\dagger} \sigma_{g e}\right)$
 $$
 \begin{align*}
-\Rightarrow \tilde{H}=e^{-s}\left(H_{0}+H_{i h t}\right) e^{s}=H_{0}+\frac{1}{2}\left[H_{i n t,} s\right]+0\left(\left(\frac{g_{c}}{\Delta w}\right)^{3}\right)=\hbar \omega_{c} a_{c}^{+} a_{c}+\hbar \omega_{e g} \sigma_{e e}+\hbar \frac{g_{c}^{2}}{\Delta \omega} \sigma_{e e}+\hbar \frac{g_{c}^{2}}{\Delta w} a_{c}^{+} a_{c}\left(\sigma_{e e}-\sigma_{g g}\right)=\tilde{H}
+\Rightarrow \tilde{H}=e^{-s}\left(H_{0}+H_{i h t}\right) e^{s}=H_{0}+\frac{1}{2}\left[H_{i n t,} s\right]+0\left(\left(\frac{g_{c}}{\Delta w}\right)^{3}\right)=\hbar \omega_{c} a_{c}^{\dagger} a_{c}+\hbar \omega_{e g} \sigma_{e e}+\hbar \frac{g_{c}^{2}}{\Delta \omega} \sigma_{e e}+\hbar \frac{g_{c}^{2}}{\Delta w} a_{c}^{\dagger} a_{c}\left(\sigma_{e e}-\sigma_{g g}\right)=\tilde{H}
 \end{align*}
 $$
 
@@ -343,7 +360,7 @@ $\cong$ Cavity induced $A C$-stark shift:
 ![](https://cdn.mathpix.com/cropped/2025_01_19_965791fe7c92864a8cd2g-08.jpg?height=787&width=4070&top_left_y=7237&top_left_x=1947)
 emitter sees AC-staik shift, field seen stake dependant detuning
 ## 2.4 Cavity $A C$-Stark shift
-In the heisenberg picture: $i \hbar \frac{d \sigma_{e g}}{d t}=\left[H_{1} \sigma_{e g}\right] \Rightarrow \sigma_{e g}(t)=\sigma_{e g}(0) \cdot e^{-i \frac{g_{c}^{2}}{\Delta \omega} \tau_{\text {transit }} \cdot a_{c}^{+} a_{c}}$
+In the heisenberg picture: $i \hbar \frac{d \sigma_{e g}}{d t}=\left[H_{1} \sigma_{e g}\right] \Rightarrow \sigma_{e g}(t)=\sigma_{e g}(0) \cdot e^{-i \frac{g_{c}^{2}}{\Delta \omega} \tau_{\text {transit }} \cdot a_{c}^{\dagger} a_{c}}$
 Similarly, $a_{c}(t)=a_{c}(0) \cdot \exp \left(-i \frac{q_{c}^{2}}{\Delta w}\left(\sigma_{e e}-\sigma_{g g}\right)\right)$
 $\Rightarrow$ Atomic phase contains information about photon number $\Rightarrow$ Quantum non-demolition measurement QND
 ## 2.5 "Extensions" of the Jaynes-Cummings model
@@ -353,7 +370,7 @@ $\Rightarrow$ Atomic phase contains information about photon number $\Rightarrow
 iII) Single atom coupled to continuum of field modes: Spontaneous emission.
 
 ### 2.5.1 Tavis-Cummings model
-$N$ identical atoms $\left(\omega_{e g}^{i}=\omega_{\text {eg }}, g_{c}^{i} \equiv g_{c}\right)$ coupled to same cavity mode $a_{c}: H_{T c}=\sum \hbar \omega_{e g} \sigma_{e e}^{i}+\sum_{i} \hbar g_{c}\left(\sigma_{e g}^{i} a_{c}+a_{c}^{+} \sigma_{g e}^{i}\right)$
+$N$ identical atoms $\left(\omega_{e g}^{i}=\omega_{\text {eg }}, g_{c}^{i} \equiv g_{c}\right)$ coupled to same cavity mode $a_{c}: H_{T c}=\sum \hbar \omega_{e g} \sigma_{e e}^{i}+\sum_{i} \hbar g_{c}\left(\sigma_{e g}^{i} a_{c}+a_{c}^{\dagger} \sigma_{g e}^{i}\right)$
 For $N=2: \quad \frac{}{\sqrt{2} g_{c}}|+, 1\rangle$
 For $N=2: \frac{\sqrt{2} g_{c}}{\sqrt{2} g_{c}}-\left|\varphi_{0}, 0\right\rangle$ with the dark state $\left|\varphi_{D}\right\rangle=\frac{|e, g\rangle-|g, 0\rangle}{\sqrt{2}}$ that does not couple to the cavity.
 It's "dark" since $H_{\text {int }}\left|\varphi_{0,}, n\right\rangle=0$. It will never decay, however that is hard to implement:
@@ -402,7 +419,7 @@ $$
 
 Now we couple single atom to continuum $\left(k, \sigma_{k}\right)$ of modes: $|g\rangle--\left|0_{k}\right\rangle$ approximation
 
-Start at $H=\hbar \omega_{e g} \sigma_{e e}+\hbar \sum_{k, \sigma_{k}} g_{k} a_{k}^{+} a_{k}^{+}+\hbar \sum_{k, \sigma_{k}} g_{k}^{+}\left(\sigma_{e g} a_{k}+a_{k}^{+} \sigma_{g_{e}}\right)$ still using RWA.
+Start at $H=\hbar \omega_{e g} \sigma_{e e}+\hbar \sum_{k, \sigma_{k}} g_{k} a_{k}^{\dagger} a_{k}^{\dagger}+\hbar \sum_{k, \sigma_{k}} g_{k}^{\dagger}\left(\sigma_{e g} a_{k}+a_{k}^{\dagger} \sigma_{g_{e}}\right)$ still using RWA.
 
 Wigner-Weisckopf derivation:
 $|\psi(0)\rangle=\left|e_{1} 0_{k}\right\rangle$ where $O_{k}$ denotes no photons in mode $k$. Then $|\psi(t)\rangle=a_{e}(t)\left|e_{1} 0_{k}\right\rangle+\sum_{k} a_{k}(t)\left|g_{1} 1_{k}\right\rangle$
@@ -435,7 +452,7 @@ $$
 \end{align*}
 $$
 
-The first term describes decay, the second is the lamb shift. Since its complex, its an energy shift of atomic transitions. Then $\frac{\Gamma_{e g}}{\omega_{e g}}=\mathcal{L} \cdot \frac{\left\langle\sigma_{e q}\right\rangle^{2}}{\lambda^{2}} \cdot \frac{4 \pi^{3}}{3}$ small! So for $\Gamma_{e g} \ll \omega_{e g}$ our assumptions are correct.
+The first term describes decay, the second is the lamb shift. Since its complex, its an energy shift of atomic transitions. Then $\frac{\Gamma_{e g}}{\omega_{e g}}=\alpha \cdot \frac{\left\langle\sigma_{e q}\right\rangle^{2}}{\lambda^{2}} \cdot \frac{4 \pi^{3}}{3}$ small! So for $\Gamma_{e g} \ll \omega_{e g}$ our assumptions are correct.
 
 Note that effective hamiltonian $\mathcal{H}_{e f f}=\left(\hbar \omega_{e g}-\hbar \Delta_{l s}\right) \sigma_{e e}-i \hbar \frac{\Gamma_{e q}}{2} \sigma_{e e}$ would yield $\lim _{t \rightarrow \infty} a_{e}(t)=0$, but also $a_{g}(t)=0$ since there is no coupling to ground state. $\%$
 
@@ -443,27 +460,27 @@ Important observations: 1) Unitary Schrödinges equation ends in exponential dec
 11) Not just $\omega_{e g}=\omega_{k}$ are responsible for spontaneous emission, but vather the presence of large bandwidth of modes ensures validity of Markov's approximation.
 
 ## 2.7 Density operator
-Since emitter becomes correlated with reservoir $|\psi(t)\rangle \neq\left|\varphi_{\text {atom }}\right\rangle\left|\phi_{\text {rad.f.eld }}\right\rangle$, we can't use $|\psi(t)\rangle=\mathcal{L}|e\rangle+\beta|g\rangle$.
+Since emitter becomes correlated with reservoir $|\psi(t)\rangle \neq\left|\varphi_{\text {atom }}\right\rangle\left|\phi_{\text {rad.f.eld }}\right\rangle$, we can't use $|\psi(t)\rangle=\alpha|e\rangle+\beta|g\rangle$.
 Our information is incomplete, so we need the density operator formalism.
 Assume closed system: Full information of system contained in $|\psi(t)\rangle$ where $\rho(t)=|\psi(t)\rangle\langle\psi(t)|$
 $\operatorname{Van}$ Newman equation: it $\frac{d \rho}{d t}=[H, \rho(t)]$ and $\langle A\rangle=\langle\psi| A|\psi\rangle=\operatorname{Tr}[A \rho(t)]=\operatorname{Tr}[\rho A(t)]$
 
-For the $J C$ model, $|\psi(t)\rangle_{A B}=\mathcal{L}\left|e_{1} O_{C}\right\rangle+\beta\left|g_{1} 1_{c}\right\rangle$ such that $T_{B}\left[|\psi\rangle\left\langle\left.\psi\right|_{A B}\right] \approx \frac{1}{2} \mathbb{1}_{A} \hat{=} N_{0}\right.$ information, but information in corelation.
+For the $J C$ model, $|\psi(t)\rangle_{A B}=\alpha\left|e_{1} O_{C}\right\rangle+\beta\left|g_{1} 1_{c}\right\rangle$ such that $T_{B}\left[|\psi\rangle\left\langle\left.\psi\right|_{A B}\right] \approx \frac{1}{2} \mathbb{1}_{A} \hat{=} N_{0}\right.$ information, but information in corelation.
 Properties of density operator:
 
 1) $\operatorname{Tr}[9]=1$ so probability is conserved
 2) $\rho(t)=\sum_{i} p_{i}|\psi(t)\rangle\langle\psi(t)|$ with $\sum_{i} p_{i}=1$ and $\operatorname{Tr}\left[\rho^{2}\right] \leqslant 1$
 3) $\rho$ pure $\Rightarrow \operatorname{Van~Neumann~entropy~}-k_{B} \operatorname{Tr}[\rho \log \rho]=0$
-4) Time evolution $\frac{d \rho_{A}}{d t}=\frac{1}{i \hbar}\left[H_{A_{1}} \rho_{A}\right]+\mathcal{L}\left(\rho_{A}\right)$ where $\mathcal{L}\left(\rho_{A}\right)=0$ for $\rho_{A}^{2}=\rho_{A}$
+4) Time evolution $\frac{d \rho_{A}}{d t}=\frac{1}{i \hbar}\left[H_{A_{1}} \rho_{A}\right]+\alpha\left(\rho_{A}\right)$ where $\alpha\left(\rho_{A}\right)=0$ for $\rho_{A}^{2}=\rho_{A}$
 
 Note that $\rho(t)$ is hermitian. The thermal state $\rho_{T}=\sum_{n} \frac{\bar{n}^{n}}{(n+1)^{n+1}}|n\rangle\langle n|$ maximizes entropy.
 
 ## 2.8 Master equation
 We want expand derivation of spontaneous emission and get time evolution for reduced $P_{s}$.
 
-Consider $\quad H_{i n t}=\sum_{i} \beta_{i} A_{s}^{i} \otimes B_{R}^{i}=\hbar \sum_{k} g_{k}\left(\sigma_{e g} a_{c}+\sigma_{g e} a_{c}^{+}\right)$with assumption that bath is bosonic and $B_{i}$ linear in $a_{k} a_{k}^{+}$.
+Consider $\quad H_{i n t}=\sum_{i} \beta_{i} A_{s}^{i} \otimes B_{R}^{i}=\hbar \sum_{k} g_{k}\left(\sigma_{e g} a_{c}+\sigma_{g e} a_{c}^{\dagger}\right)$with assumption that bath is bosonic and $B_{i}$ linear in $a_{k} a_{k}^{\dagger}$.
 
-In the interaction picture $H_{\text {int }}^{\text {inter. }}=\hbar \sum_{k} g_{k}\left(\sigma_{e g} a_{c} e^{i\left(\omega_{e g}-\omega\right) t}+\sigma_{g e} a_{c}^{+} e^{-i\left(\omega_{e g}-\omega\right) t}\right)$
+In the interaction picture $H_{\text {int }}^{\text {inter. }}=\hbar \sum_{k} g_{k}\left(\sigma_{e g} a_{c} e^{i\left(\omega_{e g}-\omega\right) t}+\sigma_{g e} a_{c}^{\dagger} e^{-i\left(\omega_{e g}-\omega\right) t}\right)$
 
 1) Integrate van Neumann equation: $\rho_{A B}(t)=\rho_{A B}(0)+\frac{1}{i \hbar} \int_{0}^{t} d t^{\prime} \cdot\left[H_{\text {int }}\left(t^{\prime}\right), \rho_{A B}\left(t^{\prime}\right)\right]$
 2) Plug back into von Newman equation: $\frac{d \rho_{A B}}{d t}=\frac{1}{i \hbar}\left[H_{\text {int }}(t), \rho_{A B}(0)\right]-\frac{1}{\hbar^{2}} \int_{0}^{t} d t^{\prime}\left[H_{\text {int }}(t),\left[H_{\text {int }}\left(t^{\prime}\right), P_{A D}\left(t^{\prime}\right)\right]\right]$
@@ -477,10 +494,10 @@ $\approx \rho_{A}\left(t^{\prime}\right) \otimes \rho_{B}(0) \quad$ Reservoir ap
 $\approx P_{A}(t) \otimes \rho_{B}(0) \quad$ Markov approximation: System has no memory (implies Born)
 broad and flat bandwidth require to use single rate
 $\Rightarrow \frac{d \rho_{A}}{d t}=-\frac{1}{\hbar^{2}} \int_{0}^{t} d t^{\prime} \cdot \operatorname{Tr}_{B}\left[H_{\text {int }}(t) H_{\text {int }}\left(t^{\prime}\right) \rho_{A}(t) \rho_{B}(0)+3\right.$ other $]$. All 4 terms with $\operatorname{Tr}_{b}$ give $\sim \hbar^{2} \sum_{k}\left|g_{k}\right|^{2} e^{ \pm i\left(w_{e g}-w_{k}\right)\left(t-t^{\prime}\right)}$
-since only $\operatorname{Tr}_{r_{B}}\left[a_{k^{\prime}} a_{k}^{+} \rho_{B}(0)\right]=\delta_{k k^{\prime}}$. All 4 terms integrated gives: $\sim \int_{0}^{t} d t^{\prime} \cdot \sum_{k}\left|g_{k}\right|^{2} e^{ \pm i\left(w_{e g}-w_{k}\right)\left(t-t^{\prime}\right)}=-\frac{\Gamma_{e g}}{2}+i \Delta_{L s}$
+since only $\operatorname{Tr}_{r_{B}}\left[a_{k^{\prime}} a_{k}^{\dagger} \rho_{B}(0)\right]=\delta_{k k^{\prime}}$. All 4 terms integrated gives: $\sim \int_{0}^{t} d t^{\prime} \cdot \sum_{k}\left|g_{k}\right|^{2} e^{ \pm i\left(w_{e g}-w_{k}\right)\left(t-t^{\prime}\right)}=-\frac{\Gamma_{e g}}{2}+i \Delta_{L s}$
 so finally $\frac{d \rho_{A}}{d t}=\frac{\Gamma_{e g}}{2}\left(2 \sigma_{g e} \rho_{A} \sigma_{e g}-\sigma_{e e} \rho_{A}-\rho_{A} \sigma_{e e}\right)+$ terms with $\Delta_{L S}$
 
-The general Master equation $\frac{d \rho_{A}}{d t}=\frac{1}{i \hbar}\left[H_{A} \rho_{A}\right]+\sum_{i} \frac{\Gamma_{i}}{2}\left(2 C_{i} \rho_{A} C_{i}^{+}-C_{i}^{+} c_{i} \rho_{A}-P_{A} c_{i}^{+} c_{i}\right)$ for Born+ Markov + RWA justified.
+The general Master equation $\frac{d \rho_{A}}{d t}=\frac{1}{i \hbar}\left[H_{A} \rho_{A}\right]+\sum_{i} \frac{\Gamma_{i}}{2}\left(2 C_{i} \rho_{A} C_{i}^{\dagger}-C_{i}^{\dagger} c_{i} \rho_{A}-P_{A} c_{i}^{\dagger} c_{i}\right)$ for Born+ Markov + RWA justified.
 
 Consider $\left\langle\dot{\sigma}_{e e}\right\rangle=\operatorname{Tr}\left[\sigma_{e e} \cdot \frac{d \rho_{A}}{d t}\right]=-\Gamma_{e g}\left\langle\sigma_{e e}\right\rangle$ exponential decay
 Similarly $\left\langle\dot{\sigma}_{g g}\right\rangle=\Gamma_{\text {eg }}\left\langle\sigma_{g g}\right\rangle$ population increase due to spontaneous emission $V$
@@ -490,7 +507,7 @@ The coherences decay exponentially: $\left\langle\dot{\sigma}_{\text {eg }}\righ
 Consider photon loss due to imperfect mirror at rate $\mathrm{K}_{c}$ :
 ![](https://cdn.mathpix.com/cropped/2025_01_19_965791fe7c92864a8cd2g-13.jpg?height=946&width=2338&top_left_y=307&top_left_x=3022)
 
-System $s$ is emitter and cavity $\Rightarrow \frac{d \rho_{s}}{d t}=\frac{1}{i \hbar}\left[H_{s} \rho_{s}\right]+\frac{\Gamma_{e g}}{2}\left(2 \sigma_{g e} \rho_{s} \sigma_{e g}-\sigma_{e e} \rho_{s}-\rho_{s} \sigma_{e c}\right)+\frac{k_{c}}{2}\left(2 a_{c} \rho_{s} a_{c}^{+}-a_{c}^{+} a_{c} \rho_{s}-\rho_{s} a_{c}^{+} a_{c}\right)$
+System $s$ is emitter and cavity $\Rightarrow \frac{d \rho_{s}}{d t}=\frac{1}{i \hbar}\left[H_{s} \rho_{s}\right]+\frac{\Gamma_{e g}}{2}\left(2 \sigma_{g e} \rho_{s} \sigma_{e g}-\sigma_{e e} \rho_{s}-\rho_{s} \sigma_{e c}\right)+\frac{k_{c}}{2}\left(2 a_{c} \rho_{s} a_{c}^{\dagger}-a_{c}^{\dagger} a_{c} \rho_{s}-\rho_{s} a_{c}^{\dagger} a_{c}\right)$
 ![](https://cdn.mathpix.com/cropped/2025_01_19_965791fe7c92864a8cd2g-13.jpg?height=604&width=6678&top_left_y=1788&top_left_x=166)
 Then $\left\langle\sigma_{e e}\right\rangle=T_{1}\left[\sigma_{\text {oe }} g_{s}\right]=\left\langle e_{1} 0\right| \rho_{s}\left|e_{1} 0\right\rangle$ and similarly $\left.\left\langle a_{c} \sigma_{e g}\right\rangle=\operatorname{Tr}\left[a_{c} \sigma_{\text {eg }} \rho_{s}\right]=\left\langle g_{1}\right| 1 \rho_{s}\left|\rho_{1},\right\rangle\right\rangle=g_{g e}$
 $$
@@ -541,14 +558,14 @@ B) Quantum approach
 
 Detector measures $I=\left\langle E^{(-1}\left(r_{1}+\right) E^{(+)}\left(r_{1}+\right)\right\rangle$
 
-In heisenberg picture: $E^{(+)}\left(r_{1} t\right)=i \sum_{k} \sqrt{\frac{\hbar \omega_{k}}{2 \varepsilon_{0} V}} \cdot \hat{\delta}_{k} a_{k} e^{i k r}$ and use $H_{i n t}=\hbar \sum_{k} g_{k}\left(\sigma_{e g} a_{k} e^{i k R}+\sigma_{g e} a_{k}^{+} e^{-i k R}\right)_{1} H_{0}=\sum_{k} \hbar \omega_{k} a_{k}^{\dagger} a_{k}$
+In heisenberg picture: $E^{(+)}\left(r_{1} t\right)=i \sum_{k} \sqrt{\frac{\hbar \omega_{k}}{2 \varepsilon_{0} V}} \cdot \hat{\delta}_{k} a_{k} e^{i k r}$ and use $H_{i n t}=\hbar \sum_{k} g_{k}\left(\sigma_{e g} a_{k} e^{i k R}+\sigma_{g e} a_{k}^{\dagger} e^{-i k R}\right)_{1} H_{0}=\sum_{k} \hbar \omega_{k} a_{k}^{\dagger} a_{k}$
 
 1) Heisenberg equation: $\quad \frac{d a_{k}}{d t}=\frac{1}{i \hbar}\left[a_{k 1} H_{0}+H_{i n t}\right]=-i w_{k} a_{k}-g_{k} \sigma_{g e} e^{-i k R}$. Write $a_{k}(t)=\tilde{a}_{k}(t) e^{-i \omega_{k} t}$ and $\sigma_{g e}(t)=\tilde{\sigma}_{g e}(t) e^{-i \omega_{\text {eg }} t}$
 2) Integrating: $\tilde{a}_{k}(t)=\tilde{a}_{k}(0)-g_{k} \int_{0}^{t} d t^{\prime} \cdot \tilde{\sigma}_{g e}\left(t^{\prime}\right) e^{-i k R} e^{-i\left(\omega \operatorname{vg}_{g}-\omega\right) t^{\prime}}$
 3) Plugging into $E^{(t)}\left(r_{i} t\right)=i \sum_{k} \sqrt{\frac{\hbar \omega_{k}}{2 \varepsilon_{0} v}} \hat{\varepsilon}_{k} \tilde{a}_{k} e^{i\left(k r-\omega_{k} t\right)}=E_{\text {free fold }}^{(+)}+E_{\text {Source }}^{(+)}$
 with $E_{\text {source }}^{(t)}\left(r_{1} t\right)=-i \sum_{k} \sqrt{\frac{\omega_{k}}{2 \hbar \xi_{0} V}} \hat{\varepsilon}_{k}\left(\hat{\varepsilon}_{k} \vec{M}_{\text {eg }}\right) e^{i k(r-R)} e^{i \omega_{\text {eg }} t} \cdot \int_{0}^{t} d t^{\prime} \cdot \tilde{\sigma}_{g e}\left(t^{\prime}\right) e^{i\left(\omega_{\text {eg }}-\omega_{k}\right)\left(t-t^{\prime}\right)}$ using $g_{k}=\hat{\varepsilon}_{k} \vec{M}_{\text {eg }} \sqrt{\frac{\omega}{2 \varepsilon \hbar V}}$
 
-In far field: $|r-R| \gg \lambda$ and $\vec{k} \| \vec{r}-\vec{R}$ and transverse field $\hat{\varepsilon}_{k} \vec{\Pi}_{e g}=\sin \mathcal{L} \cdot \mu_{e g}$ :
+In far field: $|r-R| \gg \lambda$ and $\vec{k} \| \vec{r}-\vec{R}$ and transverse field $\hat{\varepsilon}_{k} \vec{\Pi}_{e g}=\sin \alpha \cdot \mu_{e g}$ :
 We get two terms in the integral of $E_{\text {Source }}^{(+)}: e^{i\left(\omega_{\text {eg }}-\omega\right)\left(t-t^{\prime} \pm \frac{|r-R|}{c}\right)} e^{i \frac{\omega_{e g}}{c}|r-R|}$ where $\left\{\begin{array}{l}t \text { is non-2ero for } t^{\prime}=t+\frac{|r-R|}{c}>t \\ - \text { is non-2ero for } t^{\prime}=t-\frac{|r-R|}{c}<t\end{array}\right.$
 The adranced-time term with "+" will give 0 in integral:
 $$
@@ -583,12 +600,12 @@ Stronger driver $\Rightarrow$ stronger intensity.
 # 3 Cohence, classical, coherent states
 
 1) Coherence of light field does not allow (quasi)-classical description
-2) "Coherence" $\equiv 1^{s^{+}}$order coherence $\equiv$ electric fold correlation
+2) "Coherence" $\equiv 1^{s^{\dagger}}$order coherence $\equiv$ electric fold correlation
 3) Single mode thermal/conereet/fock state $=1^{\text {st }}$ order coherent
 4) "Conenert state" $\equiv$ All order coherent: $g^{(n)}=1$ for all $n$.
 5) Driving cavity with classical current $j_{c e}=\frac{\partial}{\partial t}\langle P\rangle$ creates coherent state: $\langle P\rangle,\left\langle\sigma_{\text {eg }}\right\rangle \neq 0$
 
-Driving emitter with "classical laser" $\hat{a} \rightarrow \mathcal{L}: \quad\left\langle\sigma_{g e}\right\rangle \neq 0$ from $O B E$
+Driving emitter with "classical laser" $\hat{a} \rightarrow \alpha: \quad\left\langle\sigma_{g e}\right\rangle \neq 0$ from $O B E$
 6) Coherent state does not imply classical dynamics, for example revival of conerences.
 7) Incoherent emission: Information about emitted field shared by emitter.
 
@@ -693,7 +710,7 @@ $$
 
 Detection based on absorption enforces normal ordering as direct consequence of photon field detection based on stimulated absorption. Initial state of detector being ground-state also enforces it: Creation left $E^{(-)}$, annihilation right. key difference to classical physics.
 
-So we write $G^{(2)}(\tau)=\left\langle E^{(-1)}(t) E^{(-)}(t+\tau) E^{(t)}(t+\tau) E^{(t)}(t)\right\rangle$ evaluated on $\left|\varphi_{\text {single }}\right\rangle=\int d k \cdot a_{k}^{+} \varphi(k)|0\rangle$ and
+So we write $G^{(2)}(\tau)=\left\langle E^{(-1)}(t) E^{(-)}(t+\tau) E^{(t)}(t+\tau) E^{(t)}(t)\right\rangle$ evaluated on $\left|\varphi_{\text {single }}\right\rangle=\int d k \cdot a_{k}^{\dagger} \varphi(k)|0\rangle$ and
 
 For photons of 2-level emitter: $g^{(2)}(\tau)=\frac{\left\langle\sigma_{\text {eg }}(t) \sigma_{e g}(t+\tau) \sigma_{g e}(t+\tau) \sigma_{g e}(t)\right\rangle}{\left\langle\sigma_{\text {gee }}(t)\right\rangle \cdot\left\langle\sigma_{e e}(t+\tau)\right\rangle}=\frac{\left\langle\sigma_{e g}(t) \sigma_{e e}(t+\tau) \sigma_{g e}(t)\right\rangle}{\left\langle\sigma_{e e}(t)\right\rangle^{2}}$ since $t$ is stationary.
 
@@ -736,7 +753,7 @@ The generic form of single-photon pulse $\left|\psi_{a}(t)\right\rangle=\int d k
 We will use $\left|\psi_{a}(t)\right\rangle$ instead of $E_{\text {sarre }}^{(t)} \sim\left\langle\sigma_{g e}\left(t-\frac{|r-R|}{c}\right)\right.$, since we now use single photon-source instead of continuous drive.
 ![](https://cdn.mathpix.com/cropped/2025_01_19_965791fe7c92864a8cd2g-20.jpg?height=1564&width=6568&top_left_y=3454&top_left_x=0)
 
-The input: $\left|\psi_{\text {in }}\right\rangle=\int d k_{1} \cdot d k_{2} \cdot e^{-i c t\left(k_{1}+k_{2}\right)} \varphi_{a}^{*}\left(k_{n}\right) \varphi_{b}^{*}\left(k_{2}\right) a_{k_{1}}^{+} b_{k_{2}}^{+}|0,0\rangle a b \hat{} \hat{=} \ln p t$ is single-photon pulse. HBT uses continuous laser. The output: $\left|\Psi_{\text {out }}\right\rangle=\frac{1}{2} \int d k_{1} \cdot d k_{2} \cdot e^{-i c t\left(k_{1}+k_{2}\right)} \varphi_{a}^{*}\left(k_{1}\right) \varphi_{b}^{*}\left(k_{2}\right)\left(c_{k_{1}}^{\dagger}+d_{k_{1}}^{+}\right)\left(c_{k_{2}}^{\dagger}-d_{k_{2}}^{+}\right)|0,0\rangle<d$
+The input: $\left|\psi_{\text {in }}\right\rangle=\int d k_{1} \cdot d k_{2} \cdot e^{-i c t\left(k_{1}+k_{2}\right)} \varphi_{a}^{*}\left(k_{n}\right) \varphi_{b}^{*}\left(k_{2}\right) a_{k_{1}}^{\dagger} b_{k_{2}}^{\dagger}|0,0\rangle a b \hat{} \hat{=} \ln p t$ is single-photon pulse. HBT uses continuous laser. The output: $\left|\Psi_{\text {out }}\right\rangle=\frac{1}{2} \int d k_{1} \cdot d k_{2} \cdot e^{-i c t\left(k_{1}+k_{2}\right)} \varphi_{a}^{*}\left(k_{1}\right) \varphi_{b}^{*}\left(k_{2}\right)\left(c_{k_{1}}^{\dagger}+d_{k_{1}}^{\dagger}\right)\left(c_{k_{2}}^{\dagger}-d_{k_{2}}^{\dagger}\right)|0,0\rangle<d$
 $$
 \begin{align*}
 \text { focus only on coincidence: } c^{1 / A}, \not t / d^{t}
@@ -745,8 +762,8 @@ $$
 $$
 \begin{align*}
 \begin{aligned}
-& \simeq \frac{1}{2} \int d k_{1} \cdot d k_{2} \cdot e^{-i c t\left(k_{1}+k_{2}\right)} \varphi_{a}^{*}\left(k_{1}\right) \varphi_{b}^{*}\left(k_{2}\right)\left(d_{k_{1}}^{+} c_{k_{2}}^{+}-c_{k_{1}}^{+} d_{k_{2}}^{t}\right)|0,0\rangle_{c d} \\
-& \left.=\frac{1}{2} \int d k_{1} \cdot d k_{2} e^{-i c t\left(k_{1}+k_{2}\right)}\left(\varphi_{a}^{*}\left(k_{1}\right) \varphi_{b}^{*}\left(k_{2}\right)-\varphi_{a}^{*}\left(k_{2}\right) \varphi_{b}^{*}\left(k_{1}\right)\right) d_{k_{1}}^{+} c_{k_{2}}^{t}|0,0\rangle\right\rangle_{c d}
+& \simeq \frac{1}{2} \int d k_{1} \cdot d k_{2} \cdot e^{-i c t\left(k_{1}+k_{2}\right)} \varphi_{a}^{*}\left(k_{1}\right) \varphi_{b}^{*}\left(k_{2}\right)\left(d_{k_{1}}^{\dagger} c_{k_{2}}^{\dagger}-c_{k_{1}}^{\dagger} d_{k_{2}}^{t}\right)|0,0\rangle_{c d} \\
+& \left.=\frac{1}{2} \int d k_{1} \cdot d k_{2} e^{-i c t\left(k_{1}+k_{2}\right)}\left(\varphi_{a}^{*}\left(k_{1}\right) \varphi_{b}^{*}\left(k_{2}\right)-\varphi_{a}^{*}\left(k_{2}\right) \varphi_{b}^{*}\left(k_{1}\right)\right) d_{k_{1}}^{\dagger} c_{k_{2}}^{t}|0,0\rangle\right\rangle_{c d}
 \end{aligned}
 \end{align*}
 $$
@@ -764,13 +781,13 @@ a) Show that pulses really contain at most 1 photon: $\rho=p_{0}|0 \times 0|+p_{
 b) Show indistinguishability with HOM.
 c) Generate photonic quits:
 
-Polarization quits: $\quad \frac{p_{-}}{\sigma_{-}} \frac{p_{+}}{\left.\right|^{z}} p_{1} J=1 \quad\left|\psi_{\text {in }}\right\rangle=|s\rangle|0\rangle$, apply elliptically pol. $\pi$-pulse: $\left|\psi_{\text {intern. }}\right\rangle=\left(\mathcal{L}\left|p_{+}\right\rangle+\beta\left|p_{-}\right\rangle\right)|0\rangle$
-After spontaneous emission: $\left|\psi_{\text {final }}\right\rangle=|s\rangle\left(\mathcal{L} \psi_{+}^{+}+\beta \psi_{-}^{+}\right)|0\rangle$ with $\psi_{+}^{+}=\int d k \cdot \varphi_{+}(k) a_{k_{1, t}}^{+} e^{-i k c t}$
+Polarization quits: $\quad \frac{p_{-}}{\sigma_{-}} \frac{p_{+}}{\left.\right|^{z}} p_{1} J=1 \quad\left|\psi_{\text {in }}\right\rangle=|s\rangle|0\rangle$, apply elliptically pol. $\pi$-pulse: $\left|\psi_{\text {intern. }}\right\rangle=\left(\alpha\left|p_{+}\right\rangle+\beta\left|p_{-}\right\rangle\right)|0\rangle$
+After spontaneous emission: $\left|\psi_{\text {final }}\right\rangle=|s\rangle\left(\alpha \psi_{+}^{\dagger}+\beta \psi_{-}^{\dagger}\right)|0\rangle$ with $\psi_{+}^{\dagger}=\int d k \cdot \varphi_{+}(k) a_{k_{1, t}}^{\dagger} e^{-i k c t}$
 
 ### 3.5.1 Partial Bell-basis measurement
-We use $\left|\psi_{\text {in }}\right\rangle=\sqrt{\frac{1}{2}}\left(a_{H}^{\dagger} b_{v}^{\dagger}-a_{v}^{\dagger} b_{H}^{\dagger}\right)|0\rangle$ only leads to coincidences, due to destructive inter ference (two different signs $\pm \frac{1}{2}$ ) Consider $\left|\psi_{\text {in }}\right\rangle=\underbrace{\left(\mathcal{L} a_{H}^{t}+\beta a_{v}^{\dagger}\right)}_{\text {photonic qubit }} \cdot \underbrace{\left(\gamma b_{H}^{+}+\delta b_{v}^{t}\right)})|0\rangle$ with computational basis $a_{H}^{t} b_{H}^{+} a_{H}^{+} b_{v}^{+}, a_{V}^{+} b_{H}^{\dagger}, a_{v}^{\dagger} b_{v}^{t}$.
-The bell basis is $\left|\phi^{ \pm}\right\rangle=\sqrt{\frac{1}{2}}\left(a_{H}^{+} b_{H}^{+} \pm a_{v}^{+} b_{v}^{+}\right)|0\rangle$ and $\left|\psi^{ \pm}\right\rangle=\sqrt{\frac{1}{2}}\left(a_{H}^{+} b_{v}^{+} \pm a_{v}^{+} b_{H}^{+}\right)|0\rangle$
-In HOM, only $\left|\psi^{-}\right\rangle=\sqrt{\frac{1}{2}}\left(a_{H}^{+} b_{v}^{+}-a_{v}^{+} b_{H}^{+}\right)|0\rangle$ leads to coincidences, while $\left|\phi^{ \pm}\right\rangle$and $\left|\psi^{+}\right\rangle$give no coincidences, so bunching.
+We use $\left|\psi_{\text {in }}\right\rangle=\sqrt{\frac{1}{2}}\left(a_{H}^{\dagger} b_{v}^{\dagger}-a_{v}^{\dagger} b_{H}^{\dagger}\right)|0\rangle$ only leads to coincidences, due to destructive inter ference (two different signs $\pm \frac{1}{2}$ ) Consider $\left|\psi_{\text {in }}\right\rangle=\underbrace{\left(\alpha a_{H}^{t}+\beta a_{v}^{\dagger}\right)}_{\text {photonic qubit }} \cdot \underbrace{\left(\gamma b_{H}^{\dagger}+\delta b_{v}^{t}\right)})|0\rangle$ with computational basis $a_{H}^{t} b_{H}^{\dagger} a_{H}^{\dagger} b_{v}^{\dagger}, a_{V}^{\dagger} b_{H}^{\dagger}, a_{v}^{\dagger} b_{v}^{t}$.
+The bell basis is $\left|\phi^{ \pm}\right\rangle=\sqrt{\frac{1}{2}}\left(a_{H}^{\dagger} b_{H}^{\dagger} \pm a_{v}^{\dagger} b_{v}^{\dagger}\right)|0\rangle$ and $\left|\psi^{ \pm}\right\rangle=\sqrt{\frac{1}{2}}\left(a_{H}^{\dagger} b_{v}^{\dagger} \pm a_{v}^{\dagger} b_{H}^{\dagger}\right)|0\rangle$
+In HOM, only $\left|\psi^{-}\right\rangle=\sqrt{\frac{1}{2}}\left(a_{H}^{\dagger} b_{v}^{\dagger}-a_{v}^{\dagger} b_{H}^{\dagger}\right)|0\rangle$ leads to coincidences, while $\left|\phi^{ \pm}\right\rangle$and $\left|\psi^{\dagger}\right\rangle$give no coincidences, so bunching.
 If coincidence has been detected, input state is projected onto maximally entangled state $\left|\psi^{-}\right\rangle$.
 
 ### 3.5.2 Quantum Teleportation
@@ -791,7 +808,7 @@ $$
 $$
 $$
 \begin{align*}
-=\frac{1}{2}(\left|\psi^{-}\right\rangle \frac{\left|g_{1}\right\rangle\left|f_{2}\right\rangle-\left|g_{2}\right\rangle\left|f_{1}\right\rangle}{\sqrt{2}}+\underbrace{\left.\left|\psi^{+}\right\rangle \ldots\right)|0\rangle}
+=\frac{1}{2}(\left|\psi^{-}\right\rangle \frac{\left|g_{1}\right\rangle\left|f_{2}\right\rangle-\left|g_{2}\right\rangle\left|f_{1}\right\rangle}{\sqrt{2}}+\underbrace{\left.\left|\psi^{\dagger}\right\rangle \ldots\right)|0\rangle}
 \end{align*}
 $$
 no coincidence
@@ -823,24 +840,24 @@ Excitation of 2 photons is not possible due to defusing.
 # 4 Cavity-Optomechanics
 Photons are elementary excitations of elechomagnetic field with frequency $\omega_{c}$ : Energy $\hbar w_{c}$, momentum $|\vec{k}|=\frac{w_{c}}{c}$.
 Cavity with movable mirror: Mirror can be moved by $x$ to get new
-Treating mirror as quantum mechanical oscillator: $\quad H_{m i r r o r}=\hbar \omega_{m} C_{m}^{+} c_{m}$ and displacement operator $x=x_{0}\left(C_{m}^{+}+c_{m}\right)$
-So we can write $\omega_{c}(x)=\omega_{0}-\omega_{0} \frac{x}{L}=\omega_{0}-\omega_{0} \frac{x_{0}}{L}\left(c_{m}^{+}+c_{m}\right)$ to get:
+Treating mirror as quantum mechanical oscillator: $\quad H_{m i r r o r}=\hbar \omega_{m} C_{m}^{\dagger} c_{m}$ and displacement operator $x=x_{0}\left(C_{m}^{\dagger}+c_{m}\right)$
+So we can write $\omega_{c}(x)=\omega_{0}-\omega_{0} \frac{x}{L}=\omega_{0}-\omega_{0} \frac{x_{0}}{L}\left(c_{m}^{\dagger}+c_{m}\right)$ to get:
 $\Rightarrow H=\hbar w_{0} a_{c}^{\dagger} a_{c}+\hbar w_{m} c_{m}^{\dagger} c_{m}-\hbar w_{0} \frac{x_{0}}{L} a_{c}^{\dagger} a_{c}\left(c_{m}^{\dagger}+c_{m}\right)$ coupled non-linear oph-mechanical system.
 
 We can also consider $\Delta p=2 \hbar k \cong$ imported momentum on mirror $\Rightarrow$ Average force on mirror: $\langle F\rangle=\frac{2 \hbar k}{T}=2 \hbar k \cdot \frac{c}{2 L}=\hbar \omega_{0} \frac{1}{L}$
 Work done also yields $H=\hbar w_{0} a_{c}^{\dagger} a_{c}-\hbar w_{0} \frac{x_{0}}{L} a_{c}^{\dagger} a_{c}$. The effective coupling is $g_{m}=w_{0} \frac{x_{0}}{L}$ with $g_{m} \ll w_{m}$ : Change in frequency minor upon displacement. Then it becomes $H_{1}=-\hbar g_{m} a_{c} a_{c}\left(C_{m}+C_{m}^{\dagger}\right)$ similar to $J C$.
 
 Consider drive term: $H_{\text {drive }}=\hbar w_{L} a_{L}^{\dagger} a_{L}+\hbar g_{L}\left(a_{L}^{\dagger} a_{L}+a_{c}^{\dagger} a_{L}\right)$ couples external field mode to cavity via fixed mirror.
-$H^{\text {shr. }}=\hbar \omega_{0} a_{c}^{+} a_{c}+\hbar \omega_{m} c_{m}^{\dagger} c_{m}+\hbar \omega_{L} a_{L}^{\dagger} a_{L}-\hbar g_{m} a_{c}^{\dagger} a_{c}\left(c_{m}+c_{m}\right)+\hbar g_{L}\left(a_{L}^{\dagger} a_{c}+a_{c}^{\dagger} a_{L}\right)$ Full hamiltonian in schrodinger picture.
+$H^{\text {shr. }}=\hbar \omega_{0} a_{c}^{\dagger} a_{c}+\hbar \omega_{m} c_{m}^{\dagger} c_{m}+\hbar \omega_{L} a_{L}^{\dagger} a_{L}-\hbar g_{m} a_{c}^{\dagger} a_{c}\left(c_{m}+c_{m}\right)+\hbar g_{L}\left(a_{L}^{\dagger} a_{c}+a_{c}^{\dagger} a_{L}\right)$ Full hamiltonian in schrodinger picture.
 
-Using Schrieffer-Wolff: $S=\frac{g_{m}}{\omega_{m}} a_{c}^{+} a_{c}\left(C_{m}^{+}-C_{m}\right)$ with $\left[H_{0} s\right]=-H_{1}$. We have $\frac{g_{m}}{w_{m}} \ll 1$ so we consider up to $g_{m}^{2}$ :
+Using Schrieffer-Wolff: $S=\frac{g_{m}}{\omega_{m}} a_{c}^{\dagger} a_{c}\left(C_{m}^{\dagger}-C_{m}\right)$ with $\left[H_{0} s\right]=-H_{1}$. We have $\frac{g_{m}}{w_{m}} \ll 1$ so we consider up to $g_{m}^{2}$ :
 $$
 \begin{align*}
-\tilde{H}=e^{s} H e^{-s}=H+\left[S_{1} H\right]+\ldots \approx H_{0}-\hbar \frac{g_{m}^{2}}{\omega_{m}}\left(a_{c}^{+} a_{c}\right)^{2}+\hbar g_{L}\left(a_{c}^{+} a_{l}+a_{l}^{+} a_{c}\right)+\hbar \frac{g_{L} g_{m}}{\omega_{m}}\left(a_{c}^{+} a_{l}+a_{L}^{+} a_{c}\right)\left(c_{m}-c_{m}^{+}\right) \quad \frac{g_{m}}{w_{m}} \ll 1
+\tilde{H}=e^{s} H e^{-s}=H+\left[S_{1} H\right]+\ldots \approx H_{0}-\hbar \frac{g_{m}^{2}}{\omega_{m}}\left(a_{c}^{\dagger} a_{c}\right)^{2}+\hbar g_{L}\left(a_{c}^{\dagger} a_{l}+a_{l}^{\dagger} a_{c}\right)+\hbar \frac{g_{L} g_{m}}{\omega_{m}}\left(a_{c}^{\dagger} a_{l}+a_{L}^{\dagger} a_{c}\right)\left(c_{m}-c_{m}^{\dagger}\right) \quad \frac{g_{m}}{w_{m}} \ll 1
 \end{align*}
 $$
 
-Going to interaction picture, replacing $\left\langle a_{L} \rightarrow \mathcal{L}_{L} \in \mathbb{R}\right.$ and $g_{L} \mathcal{L}_{L}=\Omega_{L}$ gives new hamiltonian:
+Going to interaction picture, replacing $\left\langle a_{L} \rightarrow \alpha_{L} \in \mathbb{R}\right.$ and $g_{L} \alpha_{L}=\Omega_{L}$ gives new hamiltonian:
 $$
 \begin{align*}
 \tilde{H}^{\text {inter }}=-\hbar \frac{g_{m}^{2}}{w_{m}}\left(a_{c}^{\dagger} a_{c}\right)^{2}+\hbar \Omega_{L}\left(a_{c} e^{i\left(\omega_{L}-w_{c}\right) t}+h_{. c}\right)+\hbar \frac{g_{m} \Omega_{L}}{\omega_{m}}\left(\left(a_{c} e^{i\left(\omega_{L}-\omega_{c}\right) t}+h . c\right) \cdot\left(c_{m} e^{-i w_{m} t}+h . c\right)\right) \quad \frac{x_{0} w_{0}}{w_{m L}} \ll 1
@@ -859,14 +876,14 @@ RWA invalid: $w_{w_{14}}<W_{c}$
 Spectrum of coupled cavity-mechanical system:
 ![](https://cdn.mathpix.com/cropped/2025_01_19_965791fe7c92864a8cd2g-23.jpg?height=1159&width=2016&top_left_y=7670&top_left_x=3204)
 
-Considering $W_{L}=W_{L}-W_{m}$ and $g_{L} \cdot \mathcal{L}_{L}=\Omega_{L} \ll W_{m}$, only the red sideband maters.
+Considering $W_{L}=W_{L}-W_{m}$ and $g_{L} \cdot \alpha_{L}=\Omega_{L} \ll W_{m}$, only the red sideband maters.
 Trausitition rates: $\left\{\begin{array}{l}\omega_{\text {exc, vertical }}=\left(\frac{\Omega_{L}}{w_{m}}\right)^{2} k_{\text {car }} \text { decay rale }|1, n\rangle+0|0, n\rangle \\ \omega_{\text {exc, red }}=\frac{\Omega_{L} g_{m}}{\omega_{m}}\end{array}\right.$. For red-sideband transition dominant: $\left.\left.\omega_{\text {exc, red }}\right\rangle \omega_{\text {exc, vert }} \Rightarrow g_{m}\right\rangle \frac{\Omega_{L} k_{\text {cav }}}{\omega_{m}}$
 
 For dominant red-sideband and $V_{\text {excired }}<k_{\text {cav }}$ we can describe dynamics in incoherent way. By fermi's golden rule says:
 $\omega_{\text {cool }}=\frac{V_{\text {exceed }}}{k_{\text {cav }}}=\left(\frac{g_{m} \Omega_{L}}{\omega_{m}}\right)^{2} k_{\text {cav }} \hat{=}$ cooling rate / rate at which phonons ave removed.
 thervoul pumping
 phonon decay
-$\frac{d S_{m}}{d t}=\frac{\Gamma_{m} \bar{t}_{t h}}{2}\left(2 c_{m}^{\dagger} P_{m} c_{m}-c_{m} c_{m}^{+} P_{m}-P_{m} c_{m} c_{m}^{\dagger}\right)+\frac{W_{\text {cool }}+P_{m}\left(1+\bar{n}_{t a}\right)}{2}\left(2 c_{m} P_{m} c_{m}^{\dagger}-c_{m}^{+} c_{m} P_{m}-P_{m} c_{m}^{\dagger} c_{m}\right)$ for $\Gamma_{m}\left(1+\bar{u}_{t h}\right)$ phonon decay.
+$\frac{d S_{m}}{d t}=\frac{\Gamma_{m} \bar{t}_{t h}}{2}\left(2 c_{m}^{\dagger} P_{m} c_{m}-c_{m} c_{m}^{\dagger} P_{m}-P_{m} c_{m} c_{m}^{\dagger}\right)+\frac{W_{\text {cool }}+P_{m}\left(1+\bar{n}_{t a}\right)}{2}\left(2 c_{m} P_{m} c_{m}^{\dagger}-c_{m}^{\dagger} c_{m} P_{m}-P_{m} c_{m}^{\dagger} c_{m}\right)$ for $\Gamma_{m}\left(1+\bar{u}_{t h}\right)$ phonon decay.
 
 Using steady state: $\frac{d}{d t}\left\langle n_{m}\right\rangle=T_{r}\left[n_{m} \cdot \frac{d \Phi_{m}}{d t}\right]=-\left(\omega_{\text {cool }}+\Gamma_{m}\right)\left\langle n_{m}\right\rangle+\Gamma_{m} \bar{n}_{t h} \stackrel{!}{=} 0 \Rightarrow\left\langle n_{m}\right\rangle=\frac{\Gamma_{m} \bar{n}_{t n}}{w_{\text {cool }}+\Gamma_{m}} \quad$ steady- state phonon number
 We require $\left.W_{\text {cool }}\right\rangle \Gamma_{m}$ and low $\bar{n}_{t h}$ to get low $\left\langle n_{m}\right\rangle$.
@@ -923,7 +940,7 @@ Analogy from cavity QED:
 ![](https://cdn.mathpix.com/cropped/2025_01_19_965791fe7c92864a8cd2g-25.jpg?height=613&width=1259&top_left_y=4056&top_left_x=1750)
 $$
 \begin{align*}
-H_{\text {int }}=\hbar \sum_{A_{1} B_{i}, c} g_{i}\left(\sigma_{\text {eg }}^{i} a_{c}+a_{c}^{+} \sigma_{g e}^{i}\right) \text { One atom effects the others: }
+H_{\text {int }}=\hbar \sum_{A_{1} B_{i}, c} g_{i}\left(\sigma_{\text {eg }}^{i} a_{c}+a_{c}^{\dagger} \sigma_{g e}^{i}\right) \text { One atom effects the others: }
 \end{align*}
 $$
 
@@ -935,10 +952,10 @@ $X_{0}^{2}=\sqrt{\frac{\hbar}{2 m w_{z}}}$ three ions increase mass
 Put atom $A$ in $n=1$, all atoms will be in $n=1$.
 Phononmode that corresponds to slashing motion of ions is the cavity mode.
 
-For $\mathrm{Ca}^{+}$ion with $4 s$ ground state:
+For $\mathrm{Ca}^{\dagger}$ion with $4 s$ ground state:
 ![](https://cdn.mathpix.com/cropped/2025_01_19_965791fe7c92864a8cd2g-25.jpg?height=787&width=2833&top_left_y=6777&top_left_x=2010)
 
-Replace $g\left\langle a_{L}\right\rangle$ with classical $g \mathcal{L}_{L}$ will give is $\Omega_{L}$ lases rabi frequency.
+Replace $g\left\langle a_{L}\right\rangle$ with classical $g \alpha_{L}$ will give is $\Omega_{L}$ lases rabi frequency.
 $H_{\text {int }}=\hbar \Omega_{L}\left(\sigma_{\text {eg }} e^{i k_{L} R_{A}}+\sigma_{g e} e^{-i k_{L} R_{A}}\right)$ we keep phase as ion not perfectly shill anymore. $R_{A}$ is position operates of ion $A$.
 Write $R_{A}=R_{0}+x$ with $x$ small fluctuations (compared to wavelength). Check: $x_{0}=\sqrt{\frac{\hbar}{2 m w_{z}}}\left(b+b^{t}\right)=x_{\text {Rms }}\left(b+b^{\dagger}\right)$ so $x_{\text {RMs }}=10^{-8} \mathrm{~m}<\lambda \approx 400 \mathrm{~nm}$
 So wavelength of eight much larger than uncertainty of position $\Rightarrow$ LWA shill valid:
@@ -965,7 +982,7 @@ $$
 Red sideband will only couple if blue sideband has excited first atom, since red sideband takes away phonon.
 
 ## 4.6 Cirac-Zoller
-Consider 2 ions and initial state $|\psi\rangle_{\text {init }}=\left(\mathcal{L}|g\rangle_{A}+\beta|e\rangle_{A}\right) \cdot\left(\gamma|g\rangle_{B}+\delta|e\rangle_{B}\right) \otimes|0\rangle \quad$ and drive sideband of ion $A$ :
+Consider 2 ions and initial state $|\psi\rangle_{\text {init }}=\left(\alpha|g\rangle_{A}+\beta|e\rangle_{A}\right) \cdot\left(\gamma|g\rangle_{B}+\delta|e\rangle_{B}\right) \otimes|0\rangle \quad$ and drive sideband of ion $A$ :
 $$
 \begin{align*}
 \begin{aligned}
@@ -976,7 +993,7 @@ $$
 $$
 \begin{align*}
 \begin{aligned}
-& \left.\left|\left|\psi_{1}\right\rangle=\right| g\right\rangle_{A} \cdot\left(\gamma|g\rangle_{B}+\delta|e\rangle_{D}\right) \otimes(\mathcal{L}|0\rangle+\beta|1\rangle)
+& \left.\left|\left|\psi_{1}\right\rangle=\right| g\right\rangle_{A} \cdot\left(\gamma|g\rangle_{B}+\delta|e\rangle_{D}\right) \otimes(\alpha|0\rangle+\beta|1\rangle)
 \end{aligned}
 \end{align*}
 $$
@@ -987,7 +1004,7 @@ Requires 10$\rangle$ initially
 We have phonon only if ion A initially in excited state.
 
 Measurement of the quantum state:
-For single quit $|\psi\rangle=\mathcal{L}|g\rangle+\beta|e\rangle$. Projecting this onto $|g\rangle$ or $|e\rangle:|\psi\rangle_{\text {final }}=|g\rangle$ or $|e\rangle$
+For single quit $|\psi\rangle=\alpha|g\rangle+\beta|e\rangle$. Projecting this onto $|g\rangle$ or $|e\rangle:|\psi\rangle_{\text {final }}=|g\rangle$ or $|e\rangle$
 ![](https://cdn.mathpix.com/cropped/2025_01_19_965791fe7c92864a8cd2g-27.jpg?height=1437&width=1056&top_left_y=1011&top_left_x=313)
 
 Turn on the laser: If we see photons, the system is in the exited states.
@@ -997,7 +1014,7 @@ Initial superposition of
 $\Rightarrow$ Transition $|f\rangle \rightarrow|e\rangle$ not allowed.
 
 ## 4.7 Light forces: Laser cooling
-Drive free 2 -level atom with laser: $\quad H=\hbar w_{\text {eg }} \sigma_{e l}+\hbar \Omega_{L}(R)\left(\sigma_{e g} e^{i\left(k_{L} R_{A}-w_{L}+\right)}+h \cdot c\right)+\frac{P^{2}}{2 m} \quad$ for $\Omega_{L}(R)=2 \frac{M_{e g}}{\hbar} E_{L}(R)=g_{L} \cdot \mathcal{L} \cdot f(R)$ with $\mathcal{L}=\left\langle a_{L}\right\rangle$ and $f(R) \cong e^{\frac{-x^{2}-y^{2}}{R^{2}}}$ laser shape function.
+Drive free 2 -level atom with laser: $\quad H=\hbar w_{\text {eg }} \sigma_{e l}+\hbar \Omega_{L}(R)\left(\sigma_{e g} e^{i\left(k_{L} R_{A}-w_{L}+\right)}+h \cdot c\right)+\frac{P^{2}}{2 m} \quad$ for $\Omega_{L}(R)=2 \frac{M_{e g}}{\hbar} E_{L}(R)=g_{L} \cdot \alpha \cdot f(R)$ with $\alpha=\left\langle a_{L}\right\rangle$ and $f(R) \cong e^{\frac{-x^{2}-y^{2}}{R^{2}}}$ laser shape function.
 
 Center of mass motion and internal motion are coupled.
 Rotating frame: $\sigma_{e g} \rightarrow \sigma_{e g} e^{i \omega_{L} t} \quad$ and $\Delta=\omega_{a g}-\omega_{L}: \quad H=\hbar \Delta \cdot \sigma_{e e}+\frac{p^{2}}{2 m}+i \hbar \Omega(R) \cdot\left(\sigma_{e g} e^{i k_{L} R_{A}}-h_{\cdot c}\right)$
