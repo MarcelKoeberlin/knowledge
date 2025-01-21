@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-21T18:50:35.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-21T18:56:29.000+01:00"}
 ---
 
 Sources used: [Springer: Plasmonics - From Basics to Advanced Topics](https://link.springer.com/book/10.1007/978-3-642-28079-5)
@@ -49,9 +49,7 @@ F^i=\left\{\begin{array}{l}
 
 with $\theta$ being the angle of incidence, $\alpha$ and $\beta$ being called normalized propagation constants of the wave in the following. It can be shown that the projections on the $z$-axis of the reflected and transmitted fields $F^r$ and $F^t$ can be written as:
 
-$$F_r = r \exp \left( i k_1 \left( \alpha x + i \beta y \right) \right)$$
-$$F_t = t \exp \left( i k_1 \left( \alpha x - i \gamma y \right) \right)$$
-$$\gamma = \sqrt{\nu^2 - \alpha^2}, \quad \nu = \frac{\nu_2}{\nu_1}$$
+$$F_r = r \exp \left( i k_1 \left( \alpha x + i \beta y \right) \right)$$ $$F_t = t \exp \left( i k_1 \left( \alpha x - i \gamma y \right) \right)$$ $$\gamma = \sqrt{\nu^2 - \alpha^2}, \quad \nu = \frac{\nu_2}{\nu_1}$$
 { #eq-reflected-transmitted-field}
 
 
@@ -60,27 +58,30 @@ If the metal is replaced by a lossless dielectric material, the choice of determ
 The assumption that $\nu$ is purely imaginary, i.e., $\nu = i \nu''$ is close to the actual values of indices of metals in the visible region, and leads to 
 $$
 \gamma = \sqrt{-\nu''^2 - \alpha^2} = \pm i \sqrt{\nu''^2 + \alpha^2}.
-$$ Since the field must decrease in modulus as $y \to -\infty$, the imaginary part must be positive. Thus, to adopt a determination of $\gamma$ which applies to any material, the authorized region of the complex plane of $\gamma$ must include both half-lines defined by $\text{Im} (\gamma) = 0, \text{Re} (\gamma) > 0$ and $\text{Re} (\gamma) = 0, \text{Im} (\gamma) > 0$.  
+$$
+Since the field must decrease in modulus as $y \to -\infty$, the imaginary part must be positive. Thus, to adopt a determination of $\gamma$ which applies to any material, the authorized region of the complex plane of $\gamma$ must include both half-lines defined by $\text{Im} (\gamma) = 0, \text{Re} (\gamma) > 0$ and $\text{Re} (\gamma) = 0, \text{Im} (\gamma) > 0$.  
 In reality, the index of metals is neither real nor purely imaginary, but its real and imaginary parts are always positive. Thus, a natural way to adopt a general determination for $\gamma$ is to choose in the complex plane a half-plane containing both the positive real axis (choice of $\nu$ for a lossless dielectric material) and the positive imaginary axis (choice of $\nu$ for a purely imaginary index).  
-
 In the following, we will determine $\gamma$ from:  
 $$
-\text{Re} \{\gamma\} + \text{Im} \{\gamma\} > 0, \quad (2.9)
-$$  Eventually, this leads to the Fresnel coefficients for p-polarised light,
+\text{Re} \{\gamma\} + \text{Im} \{\gamma\} > 0.$$
+Eventually, this leads to the Fresnel coefficients for p-polarised light,
 $$ r = \frac{\beta / \varepsilon_1 - \gamma / \varepsilon_2}{\beta / \varepsilon_1 + \gamma / \varepsilon_2}, \quad t = \frac{2 \beta / \varepsilon_1}{\beta / \varepsilon_1 + \gamma / \varepsilon_2}, $$
 which allows to solve the problem of scattering on a flat interface.
-### Guiding by a Flat Surface: The Surface Plasmon Polariton
+### 1.2.2 Guiding by a Flat Surface: The Surface Plasmon Polariton
 [[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=62&selection=180,0,180,45|🔗]]
 
 We want to know whether a surface wave can propagate at the surface of the metal. Classically, a guided wave is a wave propagating along the x-axis and satisfies a radiation condition at infinity:
  - For $y → +\infty$, the field must propagate upwards or vanish,  
  - For $y → −\infty$, the field must propagate downwards or vanish.
+
 In addition to these conditions, the total field in the guided wave must satisfy the Maxwell equations and boundary conditions at the interface. The field above the interface contains the incident wave, which does not satisfy the radiation condition since it propagates towards the interface. In other words, a guided wave corresponds to a problem of scattering in which the incident field does not exist. At first glance, such a guided wave should not exist. Indeed, in the scattering problem, the incident energy is shared between the scattered field and the losses inside the metal. On the other hand, in the problem of guiding, there is no incident energy at all, and of course the existence of a field generates losses in the metal. Thus it seems that such a wave cannot satisfy the energy balance. This remark is quite correct as far as the propagation constant of the guided wave is real. 
 Considering the expressions of the reflected and transmitted [[Notes/Plasmonics#^eq-reflected-transmitted-field\|waves]], the propagation constant $k_1\alpha$ is real since it is imposed by the incident plane wave. This requirement does not hold in guiding, and it can be conjectured that a surface wave may propagate along the x-axis with an exponentially decreasing amplitude, due to the losses in the metal. The consequence: The imaginary part of the propagation constant must be positive, if its real part is positive. 
 Therefore, the search for a surface wave leads to the search for a solution of the field in a scattering problem, but without an incident wave (or the 'homogeneous solution to the Maxwell equations).
-This leads to several solutins:
-- If $\nu = +1$, it means the metal has been replaced by the same dielectric materal as above the interface.
+This leads to several solutions:
+
+- If $\nu = +1$, it means the metal has been replaced by the same dielectric material as above the interface.
 - If $\nu=-1$, the solution is unrealistic for non-magnetic materials.
+
 The conclusion is that, for s-polarised light, the propagation on a flat metal surface of a guided wave is impossible. Regarding p-polarised light, the solution is 
 $$\alpha=\tilde{\alpha}^\text{plane}=\pm \nu/\sqrt{1+\nu^2},$$
 where the tilde indicates a surface wave, and the plane superscript indicates that the interface is a plane. The two opposite values for $\alpha$ represent the constants of propagation of two waves propagating in opposite directions. This kind of wave is called surface plasmon (polariton). In normalised form, the magnetic field $H$ is given as
@@ -96,7 +97,7 @@ The real part of $\tilde{\alpha}_{\text{plane}}$ is slightly greater than unity,
 ![Attachments/Plasmonics - From Basics to Advanced Topics 1.webp|700](/img/user/Attachments/Plasmonics%20-%20From%20Basics%20to%20Advanced%20Topics%201.webp)![Attachments/Plasmonics - From Basics to Advanced Topics 2.webp|700](/img/user/Attachments/Plasmonics%20-%20From%20Basics%20to%20Advanced%20Topics%202.webp)[[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=65&rect=50,454,392,493|🔗]]
 
 The propagation constant on the $x$-axis of a plane wave is equal to $k_1 \sin(\theta)$ (circle), which is always smaller than $k_1$ in modulus. In contrast, the real part of $k_1 \tilde{\alpha}_{\text{plane}}$ is larger. Since the surface is flat, a plane wave cannot excite a field with a significantly different propagation constant and, hence, cannot excite the SPP.
-### SPP and Brewster Effect
+### 1.2.3 SPP and Brewster Effect
 [[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=65&selection=236,0,236,23|🔗]]
 
 
