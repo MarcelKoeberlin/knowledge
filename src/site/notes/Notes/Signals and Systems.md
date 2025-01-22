@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowToc":"true","updated":"2025-01-21T14:31:07.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowToc":"true","updated":"2025-01-22T16:09:41.000+01:00"}
 ---
 
 This note will mostly follow along the book [Signals and Systems - 2nd edition](https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574) by Alan V. Oppenheim and Alan S. Willsky. Not every chapter is covered, especially the more 'basic' ones. It is not supposed to be a simple summary, but instead a place where the main concepts are covered, without having to read through 987 pages again/yourself.
@@ -12,10 +12,10 @@ This note will mostly follow along the book [Signals and Systems - 2nd edition](
 > It didn’t take long for me to realize this was a fascinating topic, and I started reading more about it in my free time.
 
 # 1 Signals and Systems
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=32&selection=2,0,6,7|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=32&selection=2,0,6,7|•]]
 
 ## 1.1 Continuous-time and Discrete-time Signals 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=32&selection=69,0,79,7|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=32&selection=69,0,79,7|•]]
 
 Signals are represented mathematically as functions of one or more independent variables. Here, attention is on signals involving a single independent variable, usually time $t$ for convenience. In the case of continuou s-time signals, the independent variable is continuous, and thus these signals are defined for a continuum of values of the independent variable. On the other hand, discrete-time signals are defined only at discrete times, and consequently, for these signals, the independent variable takes on only a discrete set of values. 
 
@@ -24,7 +24,7 @@ For continuous-time signals, we will enclose the independent variable in parenth
 On the other hand, a very important class of discrete-time signals arises from the sampling of continuous-time signals. In this case, the discrete-time signal $x[n]$ represents successive samples of an underlying phenomenon for which the independent variable is continuous. 
 
 ## 1.2 Energy and Power
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=36&selection=158,0,170,5|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=36&selection=158,0,170,5|•]]
 
 In many applications, the signals considered are directly related to physical quantities capturing power and energy in a physical system. As a starting example, consider voltage $v(t)$ and current $I(t)$ across a resistor with resistance $R$. The instantaneous power is $p(t) = v(t)I(t) = \frac{v^2(t)}{R}$. This allows us to calculate the total energy expended over the time interval $t_1 < t < t_2$ as: 
 $$
@@ -61,7 +61,7 @@ These definitions allow us to identify three important classes of signals:
 3. **Signals with neither finite energy nor finite power**, such as $x(t) = t$.
 
 ## 1.3 Transformations
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=38&selection=226,0,236,8|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=38&selection=226,0,236,8|•]]
 
 A very central concept in signal and system analysis is that of the transformation of a signal. Transformations happen all around us: digital-to-analog converters or noise reduction in music systems, for example. 
 
@@ -71,7 +71,7 @@ Some important and very fundamental transformations:
 - **Time scaling**: $x(t) \to x(\alpha t)$.
 
 ## 1.4 Periodic Signals 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=42&selection=502,0,506,7|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=42&selection=502,0,506,7|•]]
 
 A very important class of signals encountered frequently is periodic signals. The defining property is that for a positive value of $T$, it holds that:
 $$
@@ -80,7 +80,7 @@ $$
 for all values of $t$. In other words, a periodic signal is unchanged by a time shift $T$. Then, the signal $x(t)$ is periodic with period $T$. 
 
 ## 1.5 Even and Odd Signals
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=44&selection=36,0,46,7|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=44&selection=36,0,46,7|•]]
 
 Another set of useful properties of signals relates to their symmetry under time reversal. A signal is considered **even** if $x(t) = x(-t)$, and **odd** if $x(-t) = -x(t)$. An odd signal must be zero at time zero, as we can see from the definition. Thus, every signal can be written as a superposition of an odd and even part:
 $$
@@ -88,7 +88,7 @@ x(t) = \mathcal{E}(x) + \mathcal{O}(x) = \frac{x(t) + x(-t)}{2} + \frac{x(t) - x
 $$
 
 ## 1.6 Exponential Signals
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=46&selection=12,0,17,18|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=46&selection=12,0,17,18|•]]
 
 Consider the continuous-time complex exponential signal of the form $x(t) = C \cdot e^{\alpha t}$. Depending on the values of $\alpha$ and $C$, these signals can have different characteristics:
 1. **Real exponential signals**: $\alpha, C \in \mathbb{R}$. These have two different behaviors:
@@ -103,7 +103,7 @@ Consider the continuous-time complex exponential signal of the form $x(t) = C \c
 The discussions from [[Notes/Signals and Systems#1.3 Transformations\|#1.3 Transformations]] to [[Notes/Signals and Systems#1.6 Exponential signals\|#1.6 Exponential signals]] are exactly analogous in the case of a discrete-time signal and will not be repeated. Note that this is the last notice about this occurrence.
 
 ## 1.7 Unit Impulse and Unit Step
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=61&selection=111,0,127,9|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=61&selection=111,0,127,9|•]]
 
 In this section, several other basic signals of considerable importance are introduced. Consider the unit impulse:
 $$
@@ -144,21 +144,21 @@ $$
 The unit impulse should be considered an idealization of an infinitely short pulse. Any system has some "inertia" associated with it, such that the response of a system to a _sufficiently short_ pulse is independent of the pulse duration or shape. The primary characteristic of the pulse is therefore only its integrated effect, e.g., its area. For a system with a fast response, the pulse must be shorter for this approximation to hold. The ideal unit impulse is short enough for _any_ system. 
 
 ## 1.8 Interconnection of Systems
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=72&selection=144,0,150,7|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=72&selection=144,0,150,7|•]]
 
 An important idea is the concept of interconnecting systems since many real systems are built as interconnections of several subsystems. By breaking down a system into its interconnection of simpler subsystems, it may be possible to synthesize complex systems out of simpler, basic building blocks. The most frequently encountered connections are the _series/cascade_ and _parallel_ types:
-![Attachments/Notes/Signals and Systems/IMG-0120164805.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164805.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=73&rect=88,274,456,600|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164805.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164805.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=73&rect=88,274,456,600|•]]
 
 The symbol $\bigoplus$ denotes addition, so that the output of the parallel system is the sum of the outputs of systems 1 and 2. Another important type is the feedback interconnection:
-![Attachments/Notes/Signals and Systems/IMG-0120164805-1.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164805-1.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=54,505,325,597|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164805-1.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164805-1.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=54,505,325,597|•]]
 
 The output of system 1 is the input to system 2, while the output of system 2 is fed back and added to the external input to produce the actual input to system 1. These types of connections often arise in real systems. Consider figure (a) and note that it is equivalent to (b):
-![Attachments/Notes/Signals and Systems/IMG-0120164805-2.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164805-2.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=79,82,323,316|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164805-2.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164805-2.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=79,82,323,316|•]]
 
 ## 1.9 Basic Properties
 
 ### 1.9.1 Memory
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=75&selection=51,0,63,6|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=75&selection=51,0,63,6|•]]
 
 A system is said to be _memoryless_ if the output at a given time depends only on the input at that time. A basic memoryless system is the identity system, whose output is its input. 
 
@@ -172,15 +172,15 @@ V(t) = \frac{1}{C} \int_{-\infty}^{t} I(\tau) \, d\tau.
 $$
 
 ### 1.9.2 Invertibility and Inverse Systems
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=76&selection=165,0,173,7|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=76&selection=165,0,173,7|•]]
 
 A system is said to be invertible if distinct inputs produce distinct outputs. An inverse system exists such that:
-![Attachments/Notes/Signals and Systems/IMG-0120164806.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164806.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&rect=106,565,359,612|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164806.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164806.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&rect=106,565,359,612|•]]
 
 Invertibility is important in contexts like encoding and decoding systems, such as in communication or cryptography. For example, lossless coding requires that the encoder must be invertible.
 
 ### 1.9.3 Causality
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&selection=205,0,209,9|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&selection=205,0,209,9|•]]
 
 A system is causal if the output at time $t$ depends only on values of the input at the present time or in the past. A system is nonanticipative if it does not depend on future input values. Examples of non-causal systems:
 $$
@@ -188,15 +188,15 @@ y[n] = x[n] - x[n+1], \quad y(t) = x(t+1).
 $$
 
 ### 1.9.4 Stability
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&selection=55,0,59,9|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&selection=55,0,59,9|•]]
 
 A system is stable if small inputs lead to bounded outputs. For example:
-![Attachments/Notes/Signals and Systems/IMG-0120164806-1.webp|400](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164806-1.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&rect=188,46,306,245|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164806-1.webp|400](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164806-1.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&rect=188,46,306,245|•]]
 
 If the input is bounded, the output must also remain bounded.
 
 ### 1.9.5 Time Invariance
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=81&selection=204,0,206,15|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=81&selection=204,0,206,15|•]]
 
 A system is time-invariant if its behavior and characteristics are fixed over time. Formally:
 $$
@@ -204,7 +204,7 @@ x[n] \to y[n] \Leftrightarrow x[n-n_0] \to y[n-n_0].
 $$
 
 ### 1.9.6 Linearity
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=84&selection=70,0,74,9|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=84&selection=70,0,74,9|•]]
 
 A linear system fulfills:
 1. Additivity: $x_1 + x_2 \to y_1 + y_2$,
@@ -216,14 +216,14 @@ $$
 $$
 
 # 2 Linear Time-Invariant Systems
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=105&selection=2,0,6,7|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=105&selection=2,0,6,7|•]]
 
 In [[Notes/Signals and Systems#1 Signals and Systems\|Chapter 1]], a number of basic system properties have been discussed. Two of these, linearity and time invariance, play a fundamental role in signal and system analysis for two major reasons. First, many physical processes possess these properties and thus can be modeled as linear time-invariant (**LTI**) systems. In addition, LTI systems can be analyzed in considerable detail, providing both insight into their properties and a set of powerful tools that form the core of signal and system analysis.
 
 One reason why LTI systems are of interest is that any such system possesses the [[Notes/Signals and Systems#1.14 Linearity\|superposition property]]. As a consequence, if we can represent the input to an LTI system in terms of a linear combination of a set of basic signals, we can then use superposition to compute the output of the system in terms of its responses to these basic signals. Unless stated otherwise, this chapter considers LTI systems.
 
 ## 2.1 The Convolution Sum
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=106&selection=76,0,86,3|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=106&selection=76,0,86,3|•]]
 
 The so-called sifting property of the discrete-time unit impulse is:
 $$
@@ -261,7 +261,7 @@ $$
 where $\delta(t) \rightarrow h(t)$. This is called the **convolution integral** or the **superposition integral**.
 
 ## 2.2 Convolution Properties of LTI Systems
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=134&selection=16,0,26,7|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=134&selection=16,0,26,7|•]]
 
 LTI systems satisfy important properties:
 1. **Commutativity**: $x(t) * h(t) = h(t) * x(t)$,
@@ -269,10 +269,10 @@ LTI systems satisfy important properties:
 3. **Associativity**: $x * \left(h_1 * h_2\right) = \left(x * h_1\right) * h_2$.
 
 Distributivity can be depicted graphically:
-![Attachments/Notes/Signals and Systems/IMG-0120164807.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164807.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=136&rect=108,407,300,593|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164807.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164807.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=136&rect=108,407,300,593|•]]
 
 Similarly, associativity can be depicted graphically:
-![Attachments/Notes/Signals and Systems/IMG-0120164807-1.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164807-1.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=139&rect=94,310,303,595|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164807-1.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164807-1.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=139&rect=94,310,303,595|•]]
 
 ## 2.3 Basic Properties
 
@@ -331,7 +331,7 @@ $$
 $$
 
 ## 2.4 Causal LTI Systems Described by Differential Equations
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=147&selection=54,0,72,9|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=147&selection=54,0,72,9|•]]
 
 An important class of systems is described by a _linear constant-coefficient differential equation_. These equations provide an implicit specification of the system, describing a relationship between input and output rather than providing an explicit expression. To obtain an explicit expression, one must solve the differential equation. The condition of initial rest ensures that a system described by a linear constant-coefficient differential equation is time-invariant.
 
@@ -375,7 +375,7 @@ where the impulse response is $h[n] = \frac{b_k}{a_0}$ for $0 \leq n \leq M$. Su
 For $N \geq 1$, when the differential equation is recursive, the impulse response is infinite, and these systems are referred to as infinite impulse response (IIR) systems.
 
 ## 2.5 Block Diagram Representation
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=155&selection=17,0,38,9|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=155&selection=17,0,38,9|•]]
 
 Systems described by linear constant-coefficient differential equations can be represented using block diagrams, providing a visual understanding of their behavior. These diagrams are valuable for both analysis and implementation.
 
@@ -389,10 +389,10 @@ y[n] = b x[n] - a y[n-1].
 $$
 
 This equation requires three basic operations: addition, multiplication, and delay:
-![Attachments/Notes/Signals and Systems/IMG-0120164807-2.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164807-2.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=113,383,295,597|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164807-2.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164807-2.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=113,383,295,597|•]]
 
 The block diagram representation of this equation is:
-![Attachments/Notes/Signals and Systems/IMG-0120164808.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164808.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=138,279,302,373|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164808.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164808.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=138,279,302,373|•]]
 
 The feedback arises because the equation is recursive. The block diagram shows that memory is required for this system, corresponding to the delay operator.
 
@@ -409,7 +409,7 @@ $$
 y(t) = \int_{-\infty}^t \left( b x(\tau) - a y(\tau) \right) \, d\tau,
 $$
 assuming $y(-\infty) = 0$, allows for implementation using integrators:
-![Attachments/Notes/Signals and Systems/IMG-0120164808-1.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164808-1.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&rect=142,463,338,599|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164808-1.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164808-1.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&rect=142,463,338,599|•]]
 
 The integrator is a memory element, as seen from:
 $$
@@ -418,7 +418,7 @@ $$
 where $y(t_0)$ must be stored.
 
 ## 2.6 Singularity Functions
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&selection=151,0,155,9|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&selection=151,0,155,9|•]]
 
 From the sifting property, the unit impulse is the impulse response of the identity system:
 $$
@@ -474,12 +474,12 @@ $$
 
 
 # 3 Fourier Series Representation of Periodic Signals
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=208&selection=6,0,16,7|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=208&selection=6,0,16,7|•]]
 
 The representation and analysis of LTI systems through the convolution sum are based on representing signals as linear combinations of shifted impulses. This chapter explores an alternative representation for signals and LTI systems.
 
 ## 3.1 The Response of LTI Systems to Complex Exponentials
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=213&selection=58,0,72,12|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=213&selection=58,0,72,12|•]]
 
 In the study of LTI systems, it is advantageous to represent signals as linear combinations of basic signals with the following two properties:
 1. The set of basic signals can construct a broad and useful class of signals.
@@ -540,7 +540,7 @@ Both in continuous and discrete time, if the input is a linear combination of co
 ---
 
 ## 3.2 Fourier Series Representation of Continuous-Time Periodic Signals
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=217&selection=120,0,132,7|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=217&selection=120,0,132,7|•]]
 
 For a periodic signal $x(t)$ with period $T$, it can be represented as a linear combination of harmonically related complex exponentials:
 $$
@@ -590,7 +590,7 @@ $$
 ---
 
 ## 3.3 Convergence of the Fourier Series
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=226&selection=234,0,246,6|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=226&selection=234,0,246,6|•]]
 
 Although Fourier claimed that any periodic signal could be represented by a Fourier series, this is only true for specific signal classes.
 
@@ -627,7 +627,7 @@ At points of discontinuity, the Fourier series converges to the average value of
 Signals satisfying the Dirichlet conditions have Fourier series representations. Even if $x(t)$ and its Fourier series differ at isolated points, their integrals and energy are identical, making them indistinguishable for analysis in LTI systems.
 
 ## 3.4 Properties of the Continuous-Time Fourier Series
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=233&selection=18,0,28,6|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=233&selection=18,0,28,6|•]]
 
 Below is a table summarizing several useful properties of the continuous-time Fourier series:
 
@@ -654,7 +654,7 @@ Below is a table summarizing several useful properties of the continuous-time Fo
 ---
 
 ## 3.5 Fourier Series Representation of Discrete-Time Periodic Signals
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=242&selection=202,0,214,7|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=242&selection=202,0,214,7|•]]
 
 For discrete-time periodic signals $x[n]$ with period $N$ and fundamental frequency $\omega_0 = \frac{2 \pi}{N}$, the Fourier series representation is finite:
 $$
@@ -669,7 +669,7 @@ The coefficients satisfy $a_k = a_{k+N}$ due to periodicity. This representation
 ---
 
 ## 3.6 Properties of the Discrete-Time Fourier Series
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=252&selection=33,0,43,6|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=252&selection=33,0,43,6|•]]
 
 |                Property                 |                          Periodic Signal                           |       Fourier Series Coefficients        |
 | :-------------------------------------: | :----------------------------------------------------------------: | :--------------------------------------: |
@@ -689,7 +689,7 @@ The coefficients satisfy $a_k = a_{k+N}$ due to periodicity. This representation
 ---
 
 ## 3.7 Fourier Series and LTI Systems
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=257&selection=275,0,285,7|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=257&selection=275,0,285,7|•]]
 
 The response of an LTI system to a Fourier series input takes the form:
 $$
@@ -703,7 +703,7 @@ $$
 ---
 
 ## 3.8 Filtering
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=262&selection=148,0,150,9|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=262&selection=148,0,150,9|•]]
 
 Filtering modifies the frequency components of a signal. Common filters include:
 - **Low-pass filter**: Passes low frequencies near $\omega = 0$, attenuating higher frequencies.
@@ -728,14 +728,14 @@ Visual examples of ideal filters:
   ![Attachments/Notes/Signals and Systems/IMG-0120164809-1.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164809-1.webp)
 
 ## 3.9 Important Examples: Continuous-Time
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=270&selection=76,0,93,9|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=270&selection=76,0,93,9|•]]
 
 ### 3.9.1 Simple RC Low-Pass Filter
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=270&selection=148,0,156,6|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=270&selection=148,0,156,6|•]]
 
 Electrical circuits are commonly used to implement continuous-time filtering operations. One of the simplest examples is the first-order RC circuit:
 
-![Attachments/Notes/Signals and Systems/IMG-0120164809-2.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164809-2.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=271&rect=146,482,300,597|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164809-2.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164809-2.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=271&rect=146,482,300,597|•]]
 
 In this circuit, the output signal can either be the capacitor voltage $v_c(t)$ or the resistor voltage. If we take the capacitor voltage as the output, the relationship between input and output is described by the differential equation:
 $$
@@ -748,7 +748,7 @@ H(i \omega) = \frac{1}{1 + RC \cdot i \omega}.
 $$
 
 The magnitude and phase of $H(i \omega)$ are as follows:
-![Attachments/Notes/Signals and Systems/IMG-0120164810.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164810.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&rect=104,317,440,603|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164810.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164810.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&rect=104,317,440,603|•]]
 
 For $\omega \approx 0$, $|H(i\omega)| \approx 1$, indicating that low frequencies pass with minimal attenuation. For higher $\omega$, $|H(i\omega)|$ decreases, making this circuit a nonideal low-pass filter.
 
@@ -760,14 +760,14 @@ $$
 s(t) = \left[1 - e^{-t / RC}\right] u(t).
 $$
 
-![Attachments/Notes/Signals and Systems/IMG-0120164810-1.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164810-1.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=273&rect=73,344,313,604|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164810-1.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164810-1.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=273&rect=73,344,313,604|•]]
 
 There is a trade-off between frequency response and time-domain behavior. A larger $RC$ enhances low-pass filtering but results in slower step response.
 
 ---
 
 ### 3.9.2 Simple RC High-Pass Filter
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&selection=193,0,205,6|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&selection=193,0,205,6|•]]
 
 If we choose the resistor voltage $v_r(t)$ as the output, the relationship between input and output becomes:
 $$
@@ -780,7 +780,7 @@ G(i\omega) = \frac{i \omega RC}{1 + i \omega RC}.
 $$
 
 The magnitude and phase of $G(i\omega)$ are shown below:
-![Attachments/Notes/Signals and Systems/IMG-0120164810-2.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164810-2.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=274&rect=128,320,467,606|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164810-2.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164810-2.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=274&rect=128,320,467,606|•]]
 
 The high-pass filter attenuates low frequencies and allows high frequencies to pass, particularly for $|\omega| \gg 1 / RC$.
 
@@ -789,7 +789,7 @@ As with the low-pass filter, increasing $RC$ extends the passband to lower frequ
 ---
 
 ## 3.10 Important Examples: Discrete-Time Filters
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=275&selection=53,0,69,9|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=275&selection=53,0,69,9|•]]
 
 Discrete-time filters described by linear constant-coefficient difference equations are widely used in practice. These filters are categorized into:
 1. **Recursive filters** (IIR): Impulse responses of infinite length.
@@ -798,7 +798,7 @@ Discrete-time filters described by linear constant-coefficient difference equati
 ---
 
 ### 3.10.1 First-Order Recursive Discrete-Time Filters
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=275&selection=149,0,151,43|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=275&selection=149,0,151,43|•]]
 
 A first-order recursive discrete-time filter is described by:
 $$
@@ -811,10 +811,10 @@ H(e^{i\omega}) = \frac{1}{1 - a e^{-i\omega}}.
 $$
 
 For $a = 0.6$, the magnitude and phase of $H(e^{i\omega})$ are shown below:
-![Attachments/Notes/Signals and Systems/IMG-0120164811.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164811.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=124,371,345,631|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164811.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164811.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=124,371,345,631|•]]
 
 For $a = -0.6$, the magnitude and phase are as follows:
-![Attachments/Notes/Signals and Systems/IMG-0120164811-1.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164811-1.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=123,53,345,356|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164811-1.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164811-1.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=123,53,345,356|•]]
 
 - **Low-pass behavior**: For $a > 0$, the system acts as a low-pass filter.
 - **High-pass behavior**: For $a < 0$, the system acts as a high-pass filter.
@@ -832,7 +832,7 @@ Higher-order recursive filters offer sharper filtering characteristics and more 
 ---
 
 ### 3.10.2 Non-Recursive Discrete-Time Filters
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=276&selection=230,0,234,34|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=276&selection=230,0,234,34|•]]
 
 A general non-recursive difference equation is:
 $$
@@ -847,12 +847,12 @@ H(e^{i\omega}) = \frac{1}{N + M + 1} e^{i \omega [(N - M) / 2]} \frac{\sin[\omeg
 $$
 
 The magnitude of $H(e^{i\omega})$ for $N + M + 1 = 33$ and $N + M + 1 = 65$ is shown:
-![Attachments/Notes/Signals and Systems/IMG-0120164812.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164812.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=279&rect=88,179,456,458|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164812.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164812.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=279&rect=88,179,456,458|•]]
 
 ---
 
 # 4 Continuous-Time Fourier Transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=315&selection=2,0,8,9|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=315&selection=2,0,8,9|•]]
 
 A large class of signals, including all finite-energy signals, can be represented as a linear combination of complex exponentials. For periodic signals, these building blocks are harmonically related. For aperiodic signals, the frequencies are infinitesimally close, and the representation takes the form of an integral rather than a sum. The resulting spectrum of coefficients is called the **Fourier transform**, and the synthesis integral used to reconstruct the signal is called the **inverse Fourier transform**.
 
@@ -861,7 +861,7 @@ The Fourier transform was one of Fourier's most significant contributions. He re
 ---
 
 ## 4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=316&selection=38,0,52,9|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=316&selection=38,0,52,9|•]]
 
 ### 4.1.1 Example: Square Wave
 Consider a square wave over one period $T$:
@@ -884,7 +884,7 @@ As $T \to \infty$, the square wave approaches a rectangular pulse, and the Fouri
 
 ### 4.1.2 Derivation
 For a finite-duration signal $x(t)$, we construct a periodic signal $\tilde{x}(t)$ where $x(t)$ is one period:
-![Attachments/Notes/Signals and Systems/IMG-0120164812-1.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164812-1.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=318&rect=123,434,423,595|🔗]]
+![Attachments/Notes/Signals and Systems/IMG-0120164812-1.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/IMG-0120164812-1.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=318&rect=123,434,423,595|•]]
 
 As $T \to \infty$, $\tilde{x}(t)$ becomes identical to $x(t)$. The Fourier series representation of $\tilde{x}(t)$ is:
 $$
@@ -919,7 +919,7 @@ Here, $X(i\omega)$ represents the **spectrum** of $x(t)$ and provides the inform
 ---
 
 ## 4.2 Convergence of Fourier Transforms
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=320&selection=148,0,154,18|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=320&selection=148,0,154,18|•]]
 
 Although the derivation assumed $x(t)$ has finite duration, it applies to a broad class of signals, including those of infinite duration. To ensure that the Fourier transform is valid, consider:
 $$
@@ -948,7 +948,7 @@ Periodic signals, which are neither absolutely nor square integrable over an inf
 ---
 
 ## 4.3 Properties of the Continuous-Time Fourier Transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=359&selection=16,0,34,5|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=359&selection=16,0,34,5|•]]
 
 Several useful properties of the continuous-time Fourier transform:
 
@@ -978,7 +978,7 @@ Parseval's theorem states that total energy can be expressed as energy over time
 ---
 
 ## 4.4 Basic Fourier Transform Pairs
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=360&selection=30,0,36,5|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=360&selection=30,0,36,5|•]]
 
 |                      Signal                      |                                  Fourier Transform                                   |          Fourier Series Coefficients (if periodic)           |
 | :----------------------------------------------: | :----------------------------------------------------------------------------------: | :----------------------------------------------------------: |
@@ -996,7 +996,7 @@ Parseval's theorem states that total energy can be expressed as energy over time
 ---
 
 ## 4.5 Systems Characterized by Linear Constant-Coefficient Differential Equations
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=361&selection=44,0,58,9|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=361&selection=44,0,58,9|•]]
 
 Continuous-time LTI systems described by linear constant-coefficient differential equations are widely used in practice. A general form of such equations is:
 $$
@@ -1020,7 +1020,7 @@ Thus, $H(i \omega)$ is a rational function (a ratio of polynomials in $i \omega$
 >Expect low quality and strange formatting
 
 # 5 The discrete-time Fourier transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=389&selection=2,0,8,9|🔗]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=389&selection=2,0,8,9|•]]
 
 
 Consider the general sequence $x[n]$ of finite duration, e.g. $x[n]=0$ outride of $\left[-N_{1}, N_{2}\right]$.

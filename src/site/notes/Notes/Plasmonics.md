@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-22T16:15:20.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-22T17:45:57.000+01:00"}
 ---
 
 These notes are following mainly along [Plasmonics: Fundamentals and Applications](https://link.springer.com/book/10.1007/0-387-37825-1)and [Plasmonics: From Basics to Advanced Topics](https://link.springer.com/book/10.1007/978-3-642-28079-5).
@@ -114,7 +114,7 @@ $$
 \varepsilon(k, \omega) = 1 + \frac{i\sigma(k, \omega)}{\varepsilon_0 \omega},
 $$
 
-for a given wavevector $k$. If the wavelength $\lambda$ is significantly longer than all characteristic dimensions (such as the unit cell size or the mean free path of the electrons), and considering the interaction of light with metals, this equation can be simplified to the limit of a spatially local response:
+for a given wave vector $k$. If the wavelength $\lambda$ is significantly longer than all characteristic dimensions (such as the unit cell size or the mean free path of the electrons), and considering the interaction of light with metals, this equation can be simplified to the limit of a spatially local response:
 
 $$
 \varepsilon(k = 0, \omega) = \varepsilon(\omega).
@@ -250,7 +250,7 @@ $$
 
 Comparing this description to the measured dielectric function of gold shows that the applicability of the free-electron model in the visible spectrum breaks down due to interband transitions:
 
-![Attachments/Notes/Plasmonics/IMG-0122153506.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122153506.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=33&rect=46,494,390,614|•]]
+![Attachments/Notes/Plasmonics/IMG-0122174556.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122174556.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=33&rect=46,494,390,614|•]]
 
 The dielectric function of the free electron plasma is closely related to the classical Drude model for the AC conductivity $\sigma(\omega)$ of metals:
 
@@ -274,22 +274,22 @@ $$
 \omega^2=\omega_p^2+K^2c^2.
 $$
 This relation is plotted here:
-![Attachments/Notes/Plasmonics/IMG-0122153506-1.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122153506-1.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&rect=115,101,334,248|•]]
+![Attachments/Notes/Plasmonics/IMG-0122174556-1.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122174556-1.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&rect=115,101,334,248|•]]
 
 For frequencies below the plasma frequency, the propagation of transverse electromagnetic waves is forbidden inside the metal plasma. For larger frequencies however, the plasma supports transverse waves propagating with a group velocity $v_g=d\omega/dK<c$. Noting that $\epsilon(K=0, \omega_p)=0$, the excitation must correspond to a collective longitudinal mode. Then, at the plasma frequency, the electric field is a pure depolarisation field.
 The physical significance if this excitation at the plasma frequency can be understood considering the collective longitudinal oscillation of the conduction electron gas versus the fixed positive background of the ion core in a plasma slab:
-![Attachments/Notes/Plasmonics/IMG-0122153506-2.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122153506-2.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=35&rect=103,535,333,620|•]]
+![Attachments/Notes/Plasmonics/IMG-0122174556-2.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122174556-2.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=35&rect=103,535,333,620|•]]
 
 A collective displacement of the electron cloud leads to a surface charge density at the slab boundaries. This establishes a homogeneous electric field inside the slab. Therefore, the displace electrons experience a restoring force, and the plasma frequency is the natural frequency of a free oscillation of the electron sea. This assumes all electrons move in phase, thus the plasma frequency corresponds to the oscillation frequency in the long-wavelength limit where $K=0$. 
 The quanta of these charge oscillations are called volume plasmons, to distinguish them from surface and localized plasmons. Due to the longitudinal nature of the excitation, volume plasmons do not couple to transverse electromagnetic waves, and can only be excited by particle impact. Another consequence of this is that their decay occurs only via energy transfer to single electrons, a process known as Landau damping.
-In addition to the in-phase oscillation at $\omega_p$ , there exists a whole class of longitudinal oscillations at higher frequencies with finite wavevectors, for which $\epsilon(K,\omega)=0$ is fulfilled:
+In addition to the in-phase oscillation at $\omega_p$ , there exists a whole class of longitudinal oscillations at higher frequencies with finite wave vectors, for which $\epsilon(K,\omega)=0$ is fulfilled:
 
 $$\omega^2=\omega_{\mathrm{p}}^2+\frac{6 E_{\mathrm{F}} K^2}{5 m}.$$
 
 ### 1.1.6 Real Metals and Interband Transitions [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&selection=53,0,53,37|•]]
 
 As already mentioned, the dielectric function of the Drude model adequately describes th eoptical response of metals only for photons below the transition energy between electronic bands. For some noble metals, interband effects already occur around 1 eV ($\lambda\approx 1\mu m$), for example for silver:
-![Attachments/Notes/Plasmonics/IMG-0122153507.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122153507.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&rect=51,99,394,215|•]]
+![Attachments/Notes/Plasmonics/IMG-0122174556-3.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122174556-3.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&rect=51,99,394,215|•]]
 The red dots are experimentally obtained results, while the line is a fit of the Drude model. Clearly, the model is no adequate to describe neither real nor imaginary part of the dielectric function at high frequencies, and in the case of gold, its validity already breaks down close to the visible. 
 ### 1.1.7 The Energy of the Electromagnetic Field in Metals [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=37&selection=80,0,82,49|•]]
 
@@ -335,7 +335,7 @@ $$\begin{align*}
 where $k_0=\frac{\omega}{c}$ is the wave vector of the propagating wave in vacuum. This equation is known as the Helmholtz equation.
 
 Next, we have to define the propagation geometry. We assume for simplicity a one-dimensional problem, i.e. $\varepsilon$ depends only on one spatial coordinate. Specifically, the waves propagate along the x-direction of a Cartesian coordinate system, and show no spatial variation in the perpendicular, in-plane y-direction; therefore $\varepsilon=\varepsilon(z)$: 
-![Attachments/Plasmonics - Fundamentals and Applications.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=40&rect=112,109,350,191|•]]
+![Attachments/Notes/Plasmonics/IMG-0122174557.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122174557.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=40&rect=112,109,350,191|•]]
 
 Applied to electromagnetic surface problems, the plane $z=0$ coincides with the interface sustaining the propagating waves. We then find the desired form of the wave equation:
 $$\begin{align*}
@@ -350,21 +350,42 @@ where the complex parameter $\beta=k_x$ is  called the propagation constant, fro
 
  The most simple geometry sustaining SPPs is that of a single, flat interface between a dielectric, non-absorbing half space ($z > 0$) with positive real dielectric constant $\varepsilon_2$ and an adjacent conducting half space ($z < 0$) described via a dielectric function $\varepsilon(\omega)$. The requirement of metallic character implies that $\mathfrak{R}(\varepsilon(\omega))<0$, which is fulfilled at frequencies below the bulk plasmon frequency $\omega_p$ . We want to look for propagating wave solutions confined to the interface, i.e. with evanescent decay in the perpendicular z-direction.
 
-![Attachments/Plasmonics - Fundamentals and Applications 1.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%201.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=43&rect=109,95,336,207|•]]
+![Attachments/Notes/Plasmonics/IMG-0122174557-1.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122174557-1.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=43&rect=109,95,336,207|•]]
+
+For **TM modes**, the equation 
+$$\frac{k_2}{k_1}=-\frac{\varepsilon_2}{\varepsilon_2}$$
+ has to hold by continuity of $H_y$ and $\varepsilon_iE_z$ at the interface. Then, confinement to the surface demands: 
+ $$\mathfrak{R}(\varepsilon_1) < 0 \quad \text{if} \quad \varepsilon_2 > 0.$$
+ Surface waves exist only at interfaces between materials with opposite signs of the real part of their dielectric permittivities, i.e., between a conductor and an insulator. We then arrive at the dispersion relation of surface plasmon polaritons (SPPs) propagating at the interface between the two half-spaces:
+
+$$
+\beta = k_0 \sqrt{\frac{\varepsilon_1 \varepsilon_2}{\varepsilon_1 + \varepsilon_2}}.
+$$
+This expression is valid for both real and complex $\varepsilon_1$, i.e., for conductors without and with attenuation. Note that $k_0=\omega/c$.
+
+For **TE modes**, continuity of $E_y$ and $H_x$ at the interface leads to the condition (where $E_y, H_x, H_z \sim A_1$)
+$$
+A_1 (k_1 + k_2) = 0. 
+$$
+Since confinement to the surface requires $\mathfrak{R}(k_1) > 0$ and $\mathfrak{R}(k_2) > 0$, this condition is only fulfilled if $A_1 = 0$, so that also $A_2 = A_1 = 0$. **Thus, no surface modes exist for TE polarization. Surface plasmon polaritons only exist for TM polarization.**
 
 
+The figure shows plots of the SPPs' dispersion relation for a metal with negligible damping described by the real Drude dielectric function for an air ($ε_2$ = 1) and a fused silica ($ε_2$ = 2.25) interface. Due to their bound nature, the SPP excitations correspond to the part of the dispersion curves lying to the right of the respective light lines of air and silica. Radiation into the metal occurs in the transparency regime $ω > ω_p$ as mentioned earlier. Between the regime of the bound and radiative modes, a frequency gap region with purely imaginary $β$ prohibiting propagation exists. The dashed line shows the imaginary part of $\beta$, while the normal line shows its real part.
+![Attachments/Notes/Plasmonics/IMG-0122174557-2.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122174557-2.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=45&rect=78,414,373,615|•]]
 
+**For small wave vectors** correpondig to low frequencies (mid-IR or lower), the SPP propagation constant is close to $k_0$ at the light line and the wavelengths extend over many wavelengtsh into the dielectric space. In this regime, SPPs therefore acquire the nature of a grazing-incidence light field, and are also known as Sommerfeld-Zenneck wave. 
+**For large wave vectors**, the frequency of the SPPs approaches the characteristic surface plasmon frequency 
+$$\begin{align*}
+\omega_{\mathrm{sp}}=\frac{\omega_{\mathrm{p}}}{\sqrt{1+\varepsilon_2}}
+\end{align*}.$$
+In the limit of negligible damping of the conduction electron oscillation, implying $\mathfrak{I}\left(\varepsilon_1(\omega)\right)=0$, the wave vector $\beta$ goes to infinity as the frequency approaches $\omega_{\text {sp }}$, and the group velocity $v_{\mathrm{g}} \rightarrow 0$. The mode thus acquires electrostatic character, and is known as the surface plasmon. This is because it can be obtained as a solution to the Laplace equation for a single interface geometry. It wavelike in x-direction and exponentially decays in the z-direction. 
 
+The above discussions have assumed an ideal conductor with no damping. Excitations of the conduction electrons of real metals however suffer both from free-electron and interband damping. Therefore, $ε_1(ω)$ is complex, and the SPP propagation constant $β$ as well. The traveling SPPs are damped with an energy attenuation length, also called propagation length,  $L = (2\cdot\mathfrak{I}(β))^{−1}$ , typically between 10 and 100 $\mu m$ in the visible regime, depending upon the metal/dielectric configuration.
 
-
-
-
-
-
-
-
-
-
+The next figure shows the dispersion relation of SPPs propagating at a silver/air and silver/silica interface. In comparison to before, the bound SPPs now approach maximum, finite wave vector at the surface plasmon frequency of the system. This puts a lower bound both on the wavelength $\lambda_{sp}=2\pi/\mathfrak{R}(\beta)$ of the surface plasmon, and also on the amount of mode confinement perpendicular to the interface, since the SPP fields in the dielectric fall of exponentially in $k_z$. The quasibound, leaky part of the dispersion between $\omega_p$ and $\omega_{sp}$ is now allowed compared to the case of an ideal conductor. 
+![Attachments/Notes/Plasmonics/IMG-0122174557-3.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122174557-3.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=47&rect=75,420,371,612|•]]
+We note that there is generally a characteristic trade-off between localisation and loss in plasmonics. Field confinement below the diffraction limit of half the wavelength in the dielectric can be achieved close the $\omega_{sp}$. In the metal itself, the field falls off over distances on the order of 20 nm over a wide frequency range.
+### 1.2.3 Multilayer Systems [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=48&selection=7,0,9,18|•]]
 
 
 
@@ -395,7 +416,7 @@ The theory of Wood’s anomalies described in this chapter is based on electroma
 [[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=60&selection=10,0,10,30|•]]
 
 In a scattering problem, an object is illuminated by an incident electromagnetic wave, and one is interested in the total field at any point in space. This total field consists of the known incident field and the scattered field generated by the object. This chapter treats the scattering on a metallic half-plane:
-![Attachments/Notes/Plasmonics/IMG-0122153507-1.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122153507-1.webp)[[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=61&rect=165,478,388,612|•]]
+![Attachments/Notes/Plasmonics/IMG-0122174557-4.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122174557-4.webp)[[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=61&rect=165,478,388,612|•]]
 An incident plane wave propagating in a lossless dielectric material of optical index $\nu_1=\sqrt{\varepsilon_1}$, where $\varepsilon_1$  is the relative permittivity, illuminates a non-magnetic metallic half-plane of complex index $\nu_2=\sqrt{\varepsilon_2}$. An incident field $\mathbf{F}^{\mathbf{i}}$ with unit amplitude can be written in the form:
 
 $$\begin{align*}
@@ -460,7 +481,7 @@ H =
 \end{cases}
 $$
 The real part of $\tilde{\alpha}_{\text{plane}}$ is slightly greater than unity, while its imaginary part is very small. This is a general result for metals in the visible and infrared regions, explaining why SPPs cannot be excited by a plane wave.  
-![Attachments/Notes/Plasmonics/IMG-0122153507-2.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122153507-2.webp)![Attachments/Notes/Plasmonics/IMG-0122153507-3.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122153507-3.webp)[[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=65&rect=50,454,392,493|•]]
+![Attachments/Notes/Plasmonics/IMG-0122174557-5.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122174557-5.webp)![Attachments/Notes/Plasmonics/IMG-0122174557-6.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122174557-6.webp)[[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=65&rect=50,454,392,493|•]]
 
 The propagation constant on the $x$-axis of a plane wave is equal to $k_1 \sin(\theta)$ (circle), which is always smaller than $k_1$ in modulus. In contrast, the real part of $k_1 \tilde{\alpha}_{\text{plane}}$ is larger. Since the surface is flat, a plane wave cannot excite a field with a significantly different propagation constant and, hence, cannot excite the SPP.
 ### 2.2.3 SPP and Brewster Effect

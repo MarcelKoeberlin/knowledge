@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Draft/Quantum Optics","permalink":"/draft/quantum-optics/","updated":"2025-01-21T21:22:44.470+01:00"}
+{"dg-publish":true,"dg-path":"Draft/Quantum Optics","permalink":"/draft/quantum-optics/","updated":"2025-01-21T21:22:44.000+01:00"}
 ---
 
 # 1 Quantisation of the Electro-Magnetic Field
