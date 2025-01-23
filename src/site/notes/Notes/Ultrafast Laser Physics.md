@@ -1,265 +1,311 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Ultrafast Laser Physics","permalink":"/notes/ultrafast-laser-physics/","updated":"2025-01-23T18:00:52.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Ultrafast Laser Physics","permalink":"/notes/ultrafast-laser-physics/","updated":"2025-01-23T21:00:15.920+01:00"}
 ---
 
 For my notes of 'ultra-fast laser physics' 2023, taught by Prof. Gallmann, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/lecture-notes). The pdf might load for quite a while, since its 182 MBs of size. At the same time, I am working on transcoding these notes to the markdown format used on this website. However this is a quite intense process, so it might take some weeks for it to appear here below. However, be assured that the quality will be even higher!
 
 ---
-
 # 1 Linear Pulse Propagation
-The discussion starts a monochromatic wave, which is a superposition of plane waves and is mathematically described by:
-$$ \begin{align*}
-E(z, t)=E_0 e^{i(\omega t-k z)}=F^{-1}(\tilde{E}(z, w)):=\frac{1}{2 \pi} \int d \omega \cdot \tilde{E}(z, w) e^{i \omega t}.
-\end{align*} $$
-Its _spectrum_ is defined as
-$$S(\omega)=\left|\mathcal{F}(E(z,t))\right|^2=\left|\tilde{E}(\omega)\right|^2,$$
-where we will use the tilde notation to express that a quantity is in reciprocal space, instead of real space. The more waves are superimposed, the more and more narrow the wave becomes, until it ultimately looks like a Dirac delta function. 
-In a dispersive medium, some quantities change: 
- $$\begin{align}v_p(\lambda)=\frac{c}{n(\lambda)}=\frac{\omega}{k_n} &&\text {and}&& \lambda_n=\frac{\lambda}{n} &&\text {and} &&k_n=\frac{2 \pi}{\lambda_n}=k_n=\frac{\omega}{c} n=\frac{\omega}{v_p}.\end{align}$$
-The Kramers-Kronig relation allows us to find the refractive index $n(\lambda)$, given the absorption spectrum. Since $n(\lambda)$ decreases with the wavelength $\lambda$ in the visible spectrum, and $\lambda_{\text {red }}>\lambda_{\text {blue, }}$ we find $n_{\text {blue }}>n_{\text {red }}$.
-> [!question] Image
 
-Further using $v_p(\lambda)=\frac{c}{n(\lambda)}$, we see that blue light is slower than red, such that the light pulse spreads over time
+The discussion begins with a monochromatic wave, represented as a superposition of plane waves:
+$$
+E(z, t) = E_0 e^{i(\omega t - k z)} = F^{-1}(\tilde{E}(z, \omega)) := \frac{1}{2\pi} \int d\omega \, \tilde{E}(z, \omega) e^{i\omega t}.
+$$
+Its _spectrum_ is defined as:
+$$
+S(\omega) = \left|\mathcal{F}(E(z, t))\right|^2 = \left|\tilde{E}(\omega)\right|^2,
+$$
+where the tilde notation indicates reciprocal space instead of real space. By superimposing more waves, the resulting wave becomes narrower in the time domain until it resembles a Dirac delta function. 
+
+In a dispersive medium, certain wave properties are modified:
+$$
+v_p(\lambda) = \frac{c}{n(\lambda)} = \frac{\omega}{k_n}, \quad \lambda_n = \frac{\lambda}{n}, \quad k_n = \frac{2\pi}{\lambda_n} = \frac{\omega}{c} n = \frac{\omega}{v_p}.
+$$
+The Kramers-Kronig relations allow the refractive index $n(\lambda)$ to be deduced from the absorption spectrum. Since $n(\lambda)$ typically decreases with increasing wavelength $\lambda$ in the visible spectrum, and $\lambda_{\text{red}} > \lambda_{\text{blue}}$, it follows that $n_{\text{blue}} > n_{\text{red}}$.
+
+From $v_p(\lambda) = \frac{c}{n(\lambda)}$, it is clear that blue light travels more slowly than red light in such materials. This results in the temporal spreading of a light pulse as it propagates.
 
 ## 1.1 Helmholtz Equation
 
-Starting withthe wave equation for a homogeneous dielectric material without free charges and without electric currents, 
-$$\nabla^2 E(z, t)-\frac{1}{c^2} \partial_t^2 E(z, t)=\mu_0 \partial_t^2 P(z, t),$$
-we may Fourier transform this equation. Since we know that $\partial_t \longleftrightarrow i w$, and $\tilde{P}(z, w)=\chi(w) \cdot \varepsilon_0 \tilde{E}(z, w)=(\varepsilon(w)-1) \varepsilon_0 \tilde{E},$ we find: 
-$$\left(\partial_z^2+k_n^2(w)\right) \tilde{E}(z, w)=0,$$
-the Helmholtz equation. Here, the refractive index dependent wavevector is $k_n(w)=\frac{w}{c} n(w)=\frac{w}{c} \sqrt{\varepsilon(w)}$. The solutions are found to be counter-propagating plane waves: 
-$$\tilde{E}(z, w)=\tilde{E}_0^{\dagger} e^{-i k_n(\omega) z}+ \text{h.c}.$$
+The wave equation for a homogeneous dielectric material without free charges or currents is:
+$$
+\nabla^2 E(z, t) - \frac{1}{c^2} \partial_t^2 E(z, t) = \mu_0 \partial_t^2 P(z, t),
+$$
+where $P(z, t)$ is the polarization density. By applying a Fourier transform and using the relations $\partial_t \longleftrightarrow i \omega$ and $\tilde{P}(z, \omega) = \chi(\omega) \cdot \varepsilon_0 \tilde{E}(z, \omega) = (\varepsilon(\omega) - 1) \varepsilon_0 \tilde{E}$, we derive:
+$$
+\left(\partial_z^2 + k_n^2(\omega)\right) \tilde{E}(z, \omega) = 0,
+$$
+the Helmholtz equation. Here, the wavevector $k_n(\omega)$ depends on the refractive index:
+$$
+k_n(\omega) = \frac{\omega}{c} n(\omega) = \frac{\omega}{c} \sqrt{\varepsilon(\omega)}.
+$$
+The solutions are counter-propagating plane waves:
+$$
+\tilde{E}(z, \omega) = \tilde{E}_0^{\dagger} e^{-i k_n(\omega) z} + \text{h.c.}
+$$
+This equation forms the foundation for analyzing wave propagation in dispersive media.
 
 ## 1.2 Linear System Theory
 
-Note that this topic was covered only very briefly in the course, but for a better, more in-depth discussion, please see my notes on [[Notes/Signals and Systems\|Signals and Systems]]. 
+Linear system theory is critical for understanding how pulses evolve through optical systems. For an input $E_{\text{in}}(t) = \delta(t)$, the output is the system's impulse response $E_{\text{out}}(t) = h(t)$. For arbitrary inputs, the system response is described by convolution:
+$$
+E_{\text{out}}(t) = \int dt' \, h(t') E_{\text{in}}(t - t') = h(t) * E_{\text{in}}(t),
+$$
+where $*$ denotes convolution. Fourier transforming this yields:
+$$
+\tilde{E}_{\text{out}}(\omega) = \tilde{h}(\omega) \cdot \tilde{E}_{\text{in}}(\omega).
+$$
+The transfer function $\tilde{h}(\omega)$ defines the system's effect on amplitude and phase. Importantly, linear systems cannot generate new frequencies but only adjust the amplitude and phase of existing ones. Spectral power is defined as:
+$$
+P_{\text{in}}(\omega) = \left|\tilde{E}_{\text{in}}(\omega)\right|^2,
+$$
+and the output power becomes:
+$$
+P_{\text{out}} = \left|\tilde{E}_{\text{out}}(\omega)\right|^2 = |\tilde{h}(\omega)|^2 \cdot \left|\tilde{E}_{\text{in}}(\omega)\right|^2 = S(\omega) \cdot P_{\text{in}}(\omega).
+$$
+For a pure phase transfer function, $\tilde{h}(\omega) = e^{i k_n(\omega) z}$, the spectrum $S(\omega) = 1$ remains unchanged, meaning a linear, non-absorbing medium cannot alter the power spectrum but can broaden the pulse in the time domain.
 
-Consider the input $E_{\text {in }}(t)=\delta(t)$ into a system, which leads to an output $E_{\text {out }}(t)=h(t)$. Linear systems have the very powerful property, that knowing the output to the delta function (formally the unit impulse) gives us the ability to actually know the output to _any_ input. For an arbitrary input:
-$$ \begin{align*}
-E_{\text {out }}(t)=\int d t^{\prime}\cdot h\left(t^{\prime}\right) E_{\text {in}}\left(t-t^{\prime}\right) =h(t) * E_{\text {in}}(t).
-\end{align*} $$
-Note that the symbol $*$ indicates convolution. This statement is equivalent, by Fourier transforming, to 
-$$  \tilde{E}_{\text {out }}(w)=\tilde{h}(w) \cdot \tilde{E}_{\text {in }}(w).$$
-This is a very simple equation, and also the reason why $h$ is called the transfer function of the system! From this equation we immediately see an important implication: Linear systems are not able to generate new frequencies, but can only adjust amplitude and phase. Next, we define the spectral power as 
-$$P_{\text {in }}(w)=\left|\tilde{E}_{\text {in }}(\omega)\right|^2,$$
-which leads to
-$$P_{\text {out }}=\left|\tilde{E}_{\text {out }}\right|^2=\underbrace{|\tilde{h}(w)|^2}_{S(w)} \cdot\left|\tilde{E}_{\text {in }}(\omega)\right|^2=S(w) \cdot P_{\text {in }}(w).$$
-With this, we can read the transfer function as $\tilde{h}(w)=e^{i k_n(w) z},$ which is a pure phase factor for $k_n \in \mathbb{R}$. This implies that the spectrum is $S(w)=1$ and that the power remains unchanged, $P_{\text {in }}=P_{\text {out }}$. Therefore, a non-absorbing linear medium can not change the power spectrum, but can only broaden the pulse in time domain, as can be seen from $E_\text{out}$.
 ## 1.3 Laser Pulse
 
-A general light pulse can written as $E(t)=A(t) e^{i w_0 t}$ where $A(t)$ is called the slowly-varying envelope, while $e^{i \omega_0 t}$ contains a fast variation at a fixed position that we call "carrier". 
-Then, we may write 
-$$A(t)=\frac{1}{2 \pi} \int d \Delta w \cdot \tilde{A}(\Delta w) e^{i \Delta \omega t},$$
-such that $A(\Delta w)=\tilde{E}\left(w_0+\Delta w\right)$ is shifted and $\Delta w=w-w_0$.
-Next, consider a Gaussian pulse:
-$$E_{\text {gaussian }}(t)=e^{-\Gamma t^2} e^{i \omega_0 t}=e^{-\Gamma_1 t^2} e^{i \phi_{\text {tot }}},$$
-such that $\omega(t)=\frac{d \phi_{\text {tot }}}{d t}=\omega_0+2 \Gamma_2 t$ and $\tau_p=\sqrt{\frac{2 \ln 2}{\operatorname{Re} \Gamma}}$. We have used the notation $\Gamma=\Gamma_1-i \Gamma_2$ and $T_{\phi_{\text {tot }}}=\omega_0 t+\Gamma_2 t^2$. A time-dependant instantaneous frequency $\omega(t)$ is called a _chirp_, which is the case for $\Gamma_2 \neq 0$. The pulse length/width $\tau_p$ is defined as the full-width-half-maximum (short: **FWHM**) of the intensity $I(t)=|E(t)|^2$. The pulse width defined in this way is not at all a sensitive measure. Therefore, the rms-pulse duration is often also used:
-$$\tau_{r m s}^2=\left\langle(t-\langle t\rangle)^2\right\rangle,$$
-where 
-$$\langle t\rangle=\frac{\int d t \cdot t \cdot I(t)}{\int d t \cdot I}$$
-is the 'centre of gravity'. As it turns out, a constant phase (e.g. $\frac{\partial \phi(\omega)}{\partial w}=0$) yields the shortest rms pulse duration $\tau_{\text {rms}}$,  where $\phi(\omega)=\varphi(\omega)-\omega\langle t\rangle$ for 
-$$\tilde{E}(\omega)=|\tilde{E}(\omega)| \cdot e^{i \varphi(\omega)}.$$
->[!DANGER] Work in progress from here one
+A general light pulse can be expressed as:
+$$
+E(t) = A(t) e^{i \omega_0 t},
+$$
+where $A(t)$ is the slowly-varying envelope and $e^{i \omega_0 t}$ represents the fast carrier wave. The envelope $A(t)$ can be written as:
+$$
+A(t) = \frac{1}{2\pi} \int d\Delta\omega \, \tilde{A}(\Delta\omega) e^{i \Delta\omega t},
+$$
+where $\tilde{A}(\Delta\omega)$ is the Fourier transform of the envelope.
+
+For a Gaussian pulse:
+$$
+E_{\text{gaussian}}(t) = e^{-\Gamma t^2} e^{i \omega_0 t} = e^{-\Gamma_1 t^2} e^{i \phi_{\text{tot}}},
+$$
+the instantaneous frequency is:
+$$
+\omega(t) = \frac{d\phi_{\text{tot}}}{dt} = \omega_0 + 2\Gamma_2 t,
+$$
+and the full-width half-maximum (FWHM) pulse length is:
+$$
+\tau_p = \sqrt{\frac{2 \ln 2}{\operatorname{Re}\Gamma}}.
+$$
+Here, $\Gamma = \Gamma_1 - i \Gamma_2$ and $T_{\phi_{\text{tot}}} = \omega_0 t + \Gamma_2 t^2$. A chirped pulse has a time-dependent frequency $\omega(t)$ and occurs when $\Gamma_2 \neq 0$. The root-mean-square (rms) pulse duration is:
+$$
+\tau_{\text{rms}}^2 = \left\langle (t - \langle t \rangle)^2 \right\rangle, \quad \langle t \rangle = \frac{\int dt \, t \cdot I(t)}{\int dt \, I(t)}.
+$$
+
+## 1.4 Optical Dispersion
+
+Dispersion causes different spectral components of a pulse to travel at different speeds. Positive (normal) dispersion occurs when:
+$$
+\frac{\partial^2 n}{\partial \omega^2} > 0, \quad \frac{\partial^2 n}{\partial \lambda^2} > 0, \quad \frac{\partial^2 \varphi}{\partial \omega^2} > 0.
+$$
+Negative (anomalous) dispersion occurs when:
+$$
+\frac{\partial^2 n}{\partial \omega^2} < 0, \quad \frac{\partial^2 n}{\partial \lambda^2} < 0, \quad \frac{\partial^2 \varphi}{\partial \omega^2} < 0.
+$$
+Most materials exhibit positive dispersion in the visible spectrum but negative dispersion at longer wavelengths. A zero-dispersion point often exists around $1-2 \mu m$, where dispersion transitions from positive to negative.
+
+## 1.5 Slowly-Varying Approximation
+
+Decomposing the electric field:
+$$
+E(z, t) = A(z, t) e^{i\left(\omega_0 t - k_n(\omega_0) z\right)}, \quad \tilde{E}\left(z, \omega_0 + \Delta\omega\right) = \tilde{A}(z, \Delta\omega) e^{-i k_n(\omega_0) z}.
+$$
+The slowly-varying approximations are:
+1. $\left|\partial_z A\right| \ll \left|k_n(\omega_0) A\right|$ (spatial envelope changes are small).
+2. $\left|\partial_t A\right| \ll \left|\omega_0 A\right|$ (temporal envelope changes are small).
+
+Applying these, we neglect $\partial_z^2 \tilde{A}$ and obtain:
+$$
+\partial_z \tilde{A}(z, \Delta\omega) + i \Delta k_n \tilde{A}(z, \Delta\omega) = 0,
+$$
+with $\Delta k_n = k_n(\omega_0 + \Delta\omega) - k_n(\omega_0)$. Solving gives:
+$$
+\tilde{A}(z, \Delta\omega) = \tilde{A}(0, \Delta\omega) e^{-i \Delta k_n z}.
+$$
+Expanding $k_n(\omega)$ yields:
+$$
+k_n(\omega) \approx k_n(\omega_0) + k_n'(\omega_0) \Delta\omega + \frac{1}{2} k_n''(\omega_0) \Delta\omega^2.
+$$
+- First-order dispersion: $k_n' = \frac{d k_n}{d\omega}$ (group delay $\text{GD}$).
+- Second-order dispersion: $k_n'' = \frac{d^2 k_n}{d\omega^2}$ (GDD).
+
+Phase velocity:
+$$
+v_p(\omega) = \frac{c}{n}.
+$$
+Group velocity:
+$$
+v_g(\omega) = \frac{1}{k_n'(\omega)}.
+$$
+Group delay:
+$$
+T_g = \frac{z}{v_g} = k_n' z.
+$$
+
+For an unchirped Gaussian pulse, pulse broadening is described by:
+$$
+\frac{\tau_p(z)}{\tau_p(0)} = \sqrt{1 + \left\{\frac{4 \ln 2 \cdot \frac{d^2 \phi}{d\omega^2}}{\tau_p^2(0)}\right\}^2}.
+$$
+In the strong broadening limit, this simplifies to:
+$$
+\tau_p(z) \approx \frac{d^2\phi}{d\omega^2} \cdot \Delta\omega_p.
+$$
+
+Using the Sellmeier relation:
+$$
+n^2 - 1 = \sum_k B_k \frac{\lambda^2}{\lambda^2 - C_k},
+$$
+we can calculate refractive indices for various materials.
+
+The Wigner distribution, which relates intensity to time and frequency domains, is:
+$$
+W(t, \omega) = \int dt' \, e^{-i\omega t'} E\left(t + \frac{t'}{2}\right) E^*\left(t - \frac{t'}{2}\right),
+$$
+with:
+$$
+I(t) = \int W(t, \omega) d\omega, \quad \tilde{I}(\omega) = \int W(t, \omega) dt.
+$$
+For higher-order dispersion, quadratic phase results in linear chirp, and higher-order terms become relevant when dispersion lengths $L_D$ and $L_D'$ are comparable to the propagation distance. Specifically higher-order dispersion affects the chirp $\omega(t)$:
+- Quadratic phase $\phi(\omega) \sim (\omega - \omega_0)^2$ leads to linear chirp.
+- GDD becomes significant for $\frac{\partial^2\phi}{\partial\omega^2} > \tau_0^2$.
+- TOD becomes significant for $\frac{\partial^3\phi}{\partial\omega^3} > \tau_0^3$.
 
+Dispersion lengths are defined as:
+$$
+L_D = \frac{\tau_0^2}{\left|k_n''\right|}, \quad L_D' = \frac{\tau_0^3}{\left|k_n'''\right|}.
+$$
+The pulse broadening is approximately:
+$$
+\frac{\tau_p(z)}{\tau_p(0)} \approx z \sqrt{1 + \frac{1}{L_D^2} + \left(\frac{1}{2L_D'}\right)^2},
+$$
+for $z > L_D$.
 
-## 1.4 Optical dispersion
+# 2 Dispersion Compensation
 
-Move generally, we define it as $\frac{\partial^2 \varphi}{\partial w^2}>0$ for $\varphi(w)=k_n(w) \cdot z(w)$
-We define negativelanomalous dispersion as $\frac{\partial^2 n}{\partial w^2}<0$ and $\frac{\partial^2 n}{\partial \lambda^2}<0$.
-Move generally, we define it as $\frac{\partial^2 \varphi}{\partial w^2}<0$ for $\varphi(w)=k_n(w) \cdot z(w)$
+As mentioned earlier, most materials exhibit positive dispersion in the visible range, known as 'normal' dispersion. However, in many cases, it is desirable for a pulse to avoid experiencing this dispersion. To achieve this, we need negative dispersion, which typically requires clever optical design. In other words, we must find a way to make blue light propagate faster than red.
 
-The dispersion is positive in the visible spectrum, but negative for large $\lambda$.
+## 2.1 Prism Pairs (Refraction)
 
-Thus, around a wavelength $\lambda \sim 1-2 \mu \mathrm{~m}$, we get no dispersion.
-## 1.5 Slowly-varying approximation
-Write $E(z, t)=A(z, t) \cdot e^{i\left(w_0 t-k_n\left(w_0\right) z\right)}$ or $\tilde{E}\left(z_1 w_0+\Delta w\right)=\tilde{A}(z, \Delta w) e^{-i k_n\left(w_0\right) z}$, and plug it into the Helmholtz equation.
+A common method for dispersion compensation involves using prism pairs. To minimize reflection losses, the angle of incidence is set to the Brewster angle, such that:
+$$\theta_1\left(\lambda_0\right)=\theta_2\left(\lambda_0\right)=\theta_B.$$
+Here, $\tan \theta_B = n\left(\lambda_0\right) = \frac{n_2}{n_1}$, and the apex angle is $\alpha = \pi - 2 \theta_B$. To measure $n=n\left(\delta_{\min}, \alpha\left(\delta_{\min}\right)\right)$ and $\theta_2(\lambda)$, the prism is placed on a rotating table, and $\delta_{\min}$ and the incidence angle $\alpha\left(\delta_{\min}\right)$ are recorded. 
 
-Approximate $\left|\partial_z A\right| \ll\left|k_n\left(w_0\right) A\right|$ so that the envelope changes little over one wavelength.
+The optical path length is given by:
+$$P = 2 \overline{CDE} = 2 \overline{AB} = 2 L \cos \beta.$$
+From the geometric configuration, it is clear that the prism pair defines a horizon wavelength $\lambda_h$, below which wavelengths miss the second prism. This wavelength acts as a cutoff, limiting the range of effective compensation.
 
-Further approximate $\left|\partial_t A\right| \ll\left|w_0 A\right|$ so that the envelope changes little over one field oscillation period.
+Assuming the dispersion of air is negligible, the phase shift is:
+$$\phi_p(\lambda) = k_n(\lambda) z = k P(\lambda),$$
+where $P = P\left(\beta\left(n(\lambda)\right)\right)$. Further, we find:
+$$\frac{d^2 \phi_P}{d \lambda^2} \sim \frac{d^2 P}{d \lambda^2} \approx -8 \cdot \left(\frac{d n}{d \lambda}\right)^2 L < 0 \quad \text{for} \quad \beta \approx 0,$$
+indicating negative group delay dispersion (GDD). The term $\frac{d n}{d \lambda}$ is material-independent, meaning the effectiveness of dispersion compensation depends on the geometry of the prism pair. 
 
-Together, we can neglect $\partial_z^2 \tilde{A}$ and find $\partial_z \tilde{A}(z, \Delta w)+i \cdot \Delta k_n \tilde{A}(z, \Delta w)=0$ with $\Delta k_n=k_n\left(w_0+\Delta w\right)-k_n\left(w_0\right) \ll k_n$.
-The solution is $\tilde{A}(z, \Delta w)=\tilde{A}(0, \Delta w) e^{-i \Delta k_n z}$, implying that each frequency obtains a different phase shift $\Delta k_n z$.
-$$ \begin{align*}
-\int \Delta w=w-w_0 \ll w_0
-\end{align*} $$
+By vertically moving the second prism, the GDD can be adjusted. However, increasing negative dispersion also increases the horizon wavelength $\lambda_h$, causing more wavelengths $\lambda < \lambda_h$ to be lost. This highlights the trade-off between achieving high negative dispersion and maintaining a broad spectral coverage.
 
-Expanding $k_n(w) \approx k_n\left(w_0\right)+k_n^{\prime}\left(w_0\right) \Delta w+\frac{1}{2} k_n^{\prime \prime}\left(w_0\right) \Delta w^2$ allows us to define orders of dispersion.
-$1^{\text {st }}$ order dispersion is $k_n^{\prime}=\frac{d k_n}{d w}$ or group delay $G D=\frac{d \phi}{d \omega}$.
-$2^{n d}$ order dispersion is $k_n^{\prime \prime}=\frac{d^2 k_n}{d \omega^2}$ or group delay dispersion GDD $=\frac{d^2 \phi}{d \omega^2}$.
-The phase velocity is $V_p=c_n=\frac{c}{n}=\frac{\omega}{k_n(w)}$ and the group velocity $V_g(w)=\frac{1}{k_n^{\prime}(\omega)}=\frac{\partial \omega}{\partial k_n}$
-They are identical in vacuum. Then, the group delay is $T_g=\frac{z}{v_g}=k_n^{\prime} \cdot z$. neglect the 1 and get $\tau_p(z) \approx \frac{d^2 \phi}{d w^2}$. $\Delta w_p$ where the FWHM of $\tilde{I}(w)$ is $\Delta f_p=2 \pi \cdot \Delta w_p$ and $\phi=k_n z=k n L_d$ is more $C$ LD $=$ long ale
-the accumulated phase shift of a plane wave in dispersive medium after $L_d$.
+## 2.2 Grating Compressor (Diffraction)
 
-Only second and higher order dispersion contributes to pulse broadening, and a gaussian stays gaussian.
-The Sellmeier relation is $n^2-1=\sum_k B_k \frac{\lambda^2}{\lambda^2-C_k}$
+Grating compressors are another widely used method for dispersion compensation. This setup requires at least two diffraction gratings. The angular dispersion is:
+$$V_{x, m} = \frac{m}{\Lambda} \quad \text{or} \quad \theta_{x, m} = m \cdot \frac{\lambda}{\Lambda},$$
+where $\Lambda$ is the grating spacing and $m$ the diffraction order. In this configuration, red light is diffracted more strongly than blue due to the wavelength dependence of diffraction.
 
-The wigner-distribution is $w(t, w)=\int d t^{\prime} \cdot e^{-i w t^{\prime}} \cdot E\left(t+\frac{t^{\prime}}{2}\right) E^x\left(t-\frac{t^{\prime}}{2}\right)=\int d w^{\prime} e^{-i w^{\prime} t} \cdot \tilde{E}\left(w+\frac{w^{\prime}}{2}\right) \tilde{E}^x\left(w-\frac{w^{\prime}}{2}\right)$
-Its relation to intensity is $I(t)=\int w(t, w) d w$ and $\tilde{I}(w)=\int w(t, w) d w$, e.g its projection on the time or frequency axis yields $I(t)$ or $\tilde{I}(w)$.
+The first grating does not contribute to the grating phase, as all spectral components diffract at the same position. However, the second grating introduces a phase:
+$$\phi_g(x) = \pi - m \frac{x}{\Lambda} 2 \pi,$$
+where $x$ is the position on the grating, and the $\pi$ phase shift arises from reflection. Assuming negligible dispersion between the gratings, the total phase is:
+$$\phi = k L + \phi_g(x).$$
+This results in:
+$$\frac{d^2 \phi}{d \omega} < 0 \quad \text{and} \quad \frac{d^2 \phi}{d \omega} \sim L_g.$$
+Grating compressors produce significantly more negative dispersion than prism pairs, achieving dispersions in the $(\text{ps})^2$ range compared to $(\text{fs})^2$. This makes them highly effective for short pulse durations. However, they also generate higher-order dispersion, introducing distortions to the pulse shape. This presents a trade-off between achieving large negative dispersion and avoiding undesirable higher-order effects.
 
-If $\phi(w)=k \cdot n(w) \cdot L$ is of $n-t h$ order, the angular frequency $w(t)$ is of order $n-1$. so, if $\phi(w) \sim\left(w-w_0\right)^2$,
-the chirp is linear. Note, that an even dispersion order gives a symmetric pulse distortion in $I(t)$.
+## 2.3 Grating-Based Stretcher/Compressor
 
-For general $\phi(\omega)$, the chirp is almost perfectly linear.
+Combining gratings with lenses effectively implements a Fourier transform and provides another approach to dispersion compensation:
+- For $L < f$, the system produces positive dispersion, termed a "stretcher."
+- For $L > f$, it generates negative dispersion, termed a "compressor."
 
-If we expand $\phi(w)=\phi\left(w_0\right)+\frac{\partial \phi}{\partial w}\left(w-w_0\right)+\ldots$, we see that GDD is important if $\frac{\partial^2 \phi}{\partial w^2}>\tau_0^2$ and $70 D$ is important if $\frac{\partial^3 \phi}{\partial \omega^3}>\tau_0^3$, where $\tau_0 \sim \frac{1}{\Delta w}$ is the transform limited pulse duration, and $\Delta w$ the pulse bandwidth.
+When $L = f$, the system is called a 4-f system and introduces no dispersion. Despite this, a 4-f system is useful for modifying each wavelength independently, enabling the implementation of an arbitrary transfer function $\tilde{h}(\omega)$. Such setups are particularly valuable in precision applications where controlling the spectral phase is critical. An example of this is the [[Notes/Ultrafast Laser Physics#2.5 Spatial Light Modulator\|spatial light modulator]].
 
-The condition for TOD to be important is equivalent to $L_D^{\prime}<L_D$.
-Defining the dispersion lengths as $L_D=\frac{\tau_0^2}{\left|k_n^{\prime \prime}\right|}$ and $L_D^{\prime}=\frac{\tau_0^3}{\left|k_n^{\prime \prime \prime}\right|}$, we find $\frac{\tau_p(z)}{\tau_p(0)} \approx z \sqrt{1+\frac{1}{L_D^2}+\left(\frac{1}{2 L_D^{\prime}}\right)^2}$ for $z>L_D$.
-# 2 Dispersion compensation
-- pulses become upchirped
+## 2.4 Chirped Pulse Amplification
 
-Most materials have positive dispersion in the visible range, and to undo it, we need to create negative dispersion.
-We need to find a way to make blue faster.
-## 2.1 Prism pairs (refraction)
+Chirped pulse amplification (short: **CPA**) involves temporally stretching a short laser pulse using dispersion, amplifying it, and then compressing it back to its original duration. The stretching ensures that the pulse intensity is reduced during amplification, preventing damage to optical components. After amplification, the pulse is recompressed to its initial short duration, retaining high peak power. CPA is an essential technique in ultrafast optics and forms the basis of many high-intensity laser systems.
 
-Reflection losses are minimized if the angle of incident is the Brewster's angle.
+## 2.5 Spatial Light Modulator
 
-Further, we choose the apex angle $\alpha$ such that the beam path is symmetric, and the deviation angle $\delta$ minimal.
+A spatial light modulator (SLM) is equivalent to a 4-f system and allows pulse shaping over a broad frequency range. A liquid crystal SLM operates by controlling polar molecules with voltage, leveraging their birefringence to tune the refractive index along the $x$-direction for each molecule. This enables precise pulse shaping:
+- For $V = V_{\text{max}}$, no shaping occurs, and the transfer function $\tilde{h}(\omega)$ remains a simple linear phase.
+- For $0 < V < V_{\text{max}}$, $\tilde{h}(\omega)$ introduces a phase shift:
+  $$\tilde{h}(\omega) = e^{i \frac{2 \pi}{\lambda_i} h_l\left(\theta\left(V_i\right)\right) d L_c}.$$
 
-Then, $\theta_1\left(\lambda_0\right)=\theta_2\left(\lambda_0\right)=\theta_B$.
+This modifies the pulse, yielding:
+$$E_{\text{out}} = E_{\text{in}} \cdot e^{i \varphi_{\text{lin}}} \cdot e^{i \Delta \varphi},$$
+where $\Delta \varphi = \frac{2 \pi}{\lambda_i}\left\{n_e\left(\theta\left(V_i\right)\right) - n_o\right\}$.
 
-Then, we have $\tan \theta_B=n\left(\lambda_0\right)=\frac{n_2}{n_1}$ and $\alpha=\pi-2 \theta_B$
+Amplitude shaping is possible by stacking two liquid crystals rotated by $90^\circ$ relative to each other. This allows simultaneous control of amplitude and phase. However, pixelation imposes a limitation: phase changes between adjacent pixels must not exceed $\pi$. Otherwise, diffraction grating effects arise, causing satellite pulses at:
+$$t_{\text{sat}} = \pm \frac{2 \pi}{\Delta \omega_{\text{avg}}} \approx \pm \frac{\lambda^2}{c \Delta \lambda},$$
+where $\Delta \omega_{\text{avg}}$ is the average bandwidth per pixel.
 
-Placing a prism on a rotating table, one can measure $\delta_{\min }$ and $\alpha\left(\delta_{\min }\right)$, angle of incidence one finds $n=n\left(\delta_{\min } \alpha\left(\delta_{\min }\right)\right)$ and thus $\theta_2(\lambda)$.
+To mitigate pixelation, deformable mirror SLMs can be used, although they can only adjust the phase. Phase-shaping is generally prioritized, as it conveys more information than amplitude. SLMs are also effective for fine-tuning dispersion compensation and addressing higher-order dispersion. They are versatile tools in ultrafast optics, enabling precise control over the spectral and temporal characteristics of light pulses.
 
-The optical path length $P=2 \overline{C D E}=2 \overline{A B}=2 L \cos \beta$.
 
-We can see that a prism pair defines a horizon wavelength $\lambda_n$, so that all wavelengths $\lambda_n$ miss the second prism.
+## 2.6 Fabry-Perot Interferometer
 
-Neglecting dispersion of air, we have the phase shift $\phi_p(\lambda)=k_n(\lambda) z=k \cdot p(\lambda)$ with $n=1$.
-Through $P=P\left(\beta(n(\lambda))\right.$ ), we find $\frac{d^2 \phi_P}{d \lambda^2} \sim \frac{d^2 P}{d \lambda^2} \approx-8 \cdot\left(\frac{d n}{d \lambda}\right)^2 L<0$ for $\beta \approx 0$, implying negative $G D D$.
-By continously moving the second prism vertically, we can adjust the GDD.
+The Fabry-Perot interferometer consists of two highly reflective mirrors separated by a distance $d$, with small transmission coefficients. Due to Fresnel reflection at the interfaces, the light undergoes multiple reflections, leading to interference effects. This creates transmission fringes in the $r_{FP}(\lambda)$ diagram. At specific wavelengths corresponding to resonant conditions, we observe full transmission. These resonances occur when the round-trip phase is an integer multiple of $2\pi$, ensuring constructive interference.
 
-To adjust the GDD, we move the second prism continously vertically. The trade off is a larger horizon wavelength $\lambda_h$, and wavelengthes $\lambda<\lambda_h$ are lost.
+## 2.7 Gires-Tournois Interferometer
 
-More negative dispersion $\longleftrightarrow$ Larger $\lambda_h$.
-## 2.2 Grating compressor (diffraction)
-The angular dispersion is $V_{x, m}=\frac{m}{\Lambda}$ or $\theta_{x, m}=m \cdot \frac{\lambda}{\Lambda}$ the diffraction angle and 1 the grating angle.
+A Gires-Tournois Interferometer (GTI) also uses two mirrors to form a Fabry-Perot cavity. However, the key difference lies in the introduction of a wavelength-dependent phase shift caused by multibeam interference. Neglecting material dispersion, we have $|R_{GTI}| = 1$ and $R_{GTI} = e^{i 2 \phi_{GTI}}$, where $\phi_{GTI}$ depends strongly on frequency. The phase shift is given by:
+$$\varphi = k_n \cdot z = n k d = \frac{\omega t_0}{2},$$
+where $t_0$ is the round-trip time. The group delay dispersion (GDD) is proportional to $d^2$, while the bandwidth scales inversely with $d$. This creates a trade-off: higher GDD corresponds to a narrower bandwidth. The GDD is periodic in wavelength, making GTIs particularly useful in specific applications requiring precise dispersion control.
 
-Thus, red is more strongly diffracted.
+## 2.8 Bragg Mirrors
 
-The first grating does not contribute to the grating phase, since all spectral components diffract at the same position. However, the second grating contributes.
+Bragg mirrors consist of alternating layers of materials with high and low refractive indices. These layers create constructive interference at the Bragg wavelength $\lambda_B$ and within the stopband, resulting in nearly complete reflectivity. For constructive interference, the optical thickness of each layer satisfies:
+$$d_l n_l = d_h n_h = \frac{\lambda_B}{4},$$
+where $d_l$ and $d_h$ are the thicknesses of the low and high refractive index layers, respectively. The fractional bandwidth depends on the refractive index contrast $r = \frac{n_h - n_l}{n_h + n_l}$:
+$$\frac{\Delta \omega}{\omega_B} = \frac{4}{\pi} \arcsin(r).$$
+Within the stopband, the reflected pulse experiences a linear phase shift, ensuring no second-order dispersion. Thus, pulses are reflected without distortion. Outside the stopband, GDD is present, requiring dispersion compensation for short pulses over broad spectral ranges.
 
-Zooming in on the grating:
+## 2.9 Chirped Mirrors
 
-Each groove is an emitter of a spherical wave.
+Chirped mirrors are a variation of Bragg mirrors in which the layer thicknesses gradually change, creating a chirped structure. This design introduces wavelength-dependent penetration depths, allowing controlled GDD over a broader spectral region. Red wavelengths travel deeper into the mirror due to the changing Bragg wavelength, which scales with the optical thickness $d \cdot n$. Chirped mirrors expand the high-reflectance region but exhibit low GDD values, making them suitable for pulses with durations $\tau_p < 10 \, \text{fs}$. However, abrupt refractive index changes between layers can cause dispersion oscillations, limiting their performance.
 
-The grating phase is $\phi_g(x)=\pi-m \frac{x}{\Lambda} 2 \pi$ for $m$ the diffraction order. and $x$ the position on the second grating.
+## 2.10 Double-Chirped Mirrors
 
-The $\pi$ phase shift is from reflection.
+To mitigate the GDD oscillations in standard chirped mirrors, double-chirped mirrors incorporate an impedance-matching strategy. This involves gradually increasing the reflectivity by chirping both the Bragg wavelength and the ratio of the high- and low-index layer thicknesses. The condition:
+$$n_h d_h \gg d_l n_l$$
+ensures effective impedance matching. An anti-reflection (AR) coating is applied to the first interface to minimize initial reflections. However, the AR coating requires extremely low reflectivity below $10^{-4}$, which limits the bandwidth, especially on the blue side of the spectrum.
 
-Again neglecting dispersion between the gratings, the phase at the end is $\phi=k L+\phi_g(x)$ and we find $\frac{d^2 \phi}{d w^2}<0$ and $\frac{d^2 \phi}{d w^2} \sim L_g$.
+## 2.11 Backside-Coated Chirped Mirror
 
-Grating compressors can produce much more negative dispersion than the prism pair so that we are now in the order $(p s)^2$ instead of $(f s)^2$. However, it produces move higher-order dispersion.
+Backside-coated chirped mirrors improve impedance matching by ensuring that the substrate's refractive index equals that of the first layer:
+$$n_{\text{sub}} = n_1.$$
+The AR coating is then used solely to reduce substrate losses. This design achieves a broader bandwidth and reduced dispersion oscillations but introduces more positive dispersion due to the substrate. To counteract this, additional layers are added, increasing the complexity of the design. A significant challenge is maintaining spatial coherence, which may require further impedance-matching measures. Additionally, layer deposition errors can reintroduce unwanted dispersion oscillations.
 
-## 2.3 Grating-based stretcher/compressor
+## 2.12 Acousto-Optic Programmable Dispersive Filter or "Dazzler"
 
-Another way to produce dispersion is to use lenses. We note that lenses makes a Fourier transform.
-If $L<f$, we get positive dispersion, and we call it "stretcher".
+The Dazzler is a compact and versatile device for dispersion compensation. It uses an acoustic wave in a birefringent material to create a dynamic transmission grating. The acoustic wave, which travels much slower than light, induces phase matching for specific frequencies, enabling efficient diffraction from the fast to the slow axis. The polarization of the input beam determines its propagation axis, and phase matching is governed by:
+$$\begin{array}{l}
+\text{Energy conservation: } \omega_0 + \omega_A = \omega_e \approx \omega_0, \\
+\text{Momentum conservation: } k_0 + k_A = k_e \text{ gives } k\left(n_e - n_o\right) = k_A = \frac{n_A}{v_A}.
+\end{array}$$
+Here, the subscripts $o$ and $e$ refer to the fast and slow axes, respectively. By shaping the acoustic wave, arbitrary GDD profiles can be achieved.
 
-For $L>f$, it produces negative dispersion, and call it "compressor".
+## 2.13 White-Light Interferometry
 
-In the case of $L=f(4-f$ system $)$, we get no dispersion. Placing an element at * allows to modify each wavelength seperably and mimic any transfer function $\tilde{h}(w)$. An example is the spatial light modulator.
+White-light interferometry measures dispersion by comparing the sample arm to a reference arm with known dispersion properties. The output signal is:
+$$S(\Delta t) = \mathfrak{R}\left(\int dt \cdot E_s(t) E_R^*(t - \Delta t)\right),$$
+where $S$ represents the sample and $R$ the reference. Fourier transforming the output yields:
+$$\tilde{S}(\omega) = \tilde{E}_s(\omega) \tilde{E}_R(\omega),$$
+where the phase $\varphi(\omega)$ is extracted. The GDD is then calculated as:
+$$\text{GDD} = \frac{d^2 \varphi}{d \omega^2}.$$
+To calibrate the path length, a helium-neon laser with a long coherence length is often used. For spectral-domain implementations, tiltable mirrors adjust the path length, and spectral resolution is achieved with slits. This method assumes the input plane waves remain undistorted.
 
-## 2.4 Chirped pulse amplification
 
-## 2.5 Spatial light modulator
+>[!DANGER] Work in progress from here on...
 
-It is equivalent to a $4-f$-system, and allows us to pulse shape on a broad band.
-A possible variation is the liquid crystal SLM:
-We control polar molecules by tuning a voltage. The birefringence allows us to tune the refractive index in $x$-direction for each molecule. This can be used as pulse shaper.
 
-We get no shaping for $V=V_{\text {max }}$, and the transfer function $\tilde{h}(\omega)$ is a simple linear phase, thus leaving the pulse shape unchanged.
-for $0<V<V_{\text {max }}$, we get $\tilde{h}(\omega)=e^{i \frac{2 \pi}{\lambda_i} h_l\left(\theta\left(v_i\right)\right) d L_c}$ which changes the pulse s
-linear phase. We find $E_{\text {out }}=E_{\text {in }} \cdot \underbrace{e^{i \varphi} e_{\text {lin }}} \cdot e^{i \Delta \varphi}$ where $\Delta \varphi=\frac{2 \pi}{\lambda_i}\left\{n_e\left(\theta\left(v_i\right)\right)-n_e\right\}$.
-simple delay
-pixel index
-Its also possible to change the amplitude by staching two liquid crystals with $90^{\circ}$ rotation.
-molecules
-A problem of this seep is that we use pixels to sample a continous phase. This limits the maximum slope of the phase. The phase should not change by move than $\pi$ between pixels, as the phase is defined mod. $2 \pi$.
 
-The discrete structure acts as a diffraction grating in the frequency domain, thus the sampling
-creates satellite pulses in time at $t_{\text {sat }}= \pm \frac{2 \pi}{\Delta w_{\text {avg }}} \approx \pm \frac{\lambda^2}{c \Delta \lambda}$ with $\Delta w_{\text {avg }}$ the average bandwidth per pixel.
-To circumvent the problem of pixelation, we can use a deformable mirror SLM. However, it is only able to change the phase. The maximum slope of the phase is limited by the minimal radius of the mirror membrane.
-
-Phase-shaping is generally more important, as phase contains more information than amplitude.
-We can further use SLM to fine-correct dispersion compensation and higher-order dispersion.
-## 2.6 Fabry-Perot interferometer
-
-Two highly reflective mirror with small transmission ane spaced by a distance $d$.
-
-We have fresnel reflection due the refractive index difference
-
-These can interfere and create transmission fringes in the
-$r_{F p}(\lambda)$ diagram. At those transmission resonances, we get full transmission.
-
-## 2.7 Gives - Tournois interferometer
-
-The two mirrors form a Fabry-Perot interferometer, but with a
-wavelength-dependant phase shift due to multibeam interference.
-egg no loss
-Neglecting material dispersion, we have $\mathbb{R}_{a T I} \mid=1$ and $R_{G T I}=e^{i 2 \phi_{a T I}}$ where $\phi_{a T 1}$ is strongly frequency-
-dependant. The phase shift is $\varphi=k_n \cdot z=n k d=\frac{w t_0}{2}$ with round-hrip time $t_0$. Then $\frac{d \varphi}{d w} \approx \frac{t_0}{2}$
-The second-order dispersion is $\frac{d T_a}{d w}=\frac{d^2 \phi_{a T 1}}{d w^2} \sim d^2$ while its bandwidth is $\sim \frac{1}{d}$
-This is a clear trade-off between GDD bandwidth and strength. The GDD is periodic in wavelength.
-high refractive index low refractive index $\quad{ }_{\text {constructive interference: phase difference is }} 2 k \frac{\lambda_B}{2}=2 \pi$
-By using many layers, the reflectivity comes close to unity at $\lambda_{B_1}$ and stays high in the "stop band".
-Its fractional width $\frac{\Delta w}{\omega_b}=\frac{4}{\pi} \arcsin (r)$ depends only on the refractive index contrast $r=\frac{n_n-n_l}{n_n+n_l}$.
-In the stop band, we get a linear phase shift and therefore no second-order dispersion. So, a pulse will be reflected without distortion inside the stopband, the highly reflective region. There is GDD outside the stop band.
-
-To achieve shout pulses, dispersion compensation over a large spectral bandwidth is required.
-## 2.8 Chirped mirrors
-
-The penetration depth is wavelength-dependant, and red travels longer than blue, due to the change in $\lambda_B$.
-To the left, $\lambda_B \sim d \cdot n$ increases.
-Substrate
-
-This allows for a controlled GDD and an expanded high-reflectance region. However, the obtained dispersion
-is low, making them useful only for <1ofs pulses. Further, the abrupt change of the refractive index between the layers act as impedance mismatch, causing dispersion osullations.
-
-## 2.9 Double-chirped mirrors
-
-To avoid strong GDD oscillations, we reduce the initial partial reflection in an impedance-matching approach.
-
-Requires $n_h d_n \gg n_l d_l$.
-
-We end up with two chirps; one in the Bragg wavelength, and one in the ratio of the high-low
-refractive index layer thickness, slowly increasing the strength of reflection and acting as impedance matching.
-A broadband AR coating resolve the impedance-matching problem for the first interface lager.
-The $A R$ coating requires a reflection below $10^{-4}$, which limits the bandwidth on the blue side.
-
-## 2.10 Backside-coated chirped mirror
-If the residual reflections do not interfere, the requirement for very low reflectivity of the $A R$ is relaxed.
-
-To achieve perfect impedance matching in the $D C M$, we want $n_{\text {sub }}=n_{\text {firstlager }}$. The $A R$ coating is only needed to reduce losses of the substrate. This results in a big bandwidth and low oscillations, however also in more positive dispersion due to the substrate. To compensate this, a larger number of
-layers is used. A big problem is that the beams are no longer spatially coherent, requiring another impedance matching process. A current limitation is the fabrication, as layer deposition errors bring back dispersion oscillations.
-
-## 2.11 Acousto-optic programmable dispersive filter or "Dazzler"
-
-The dazzler does not require high-quality optical elements, is compact and easy to implement into systems.
-
-The acoustic wave is much slower than the light wave and effectively causes a transmission grating inside the birefringent material. It will diffract radiation from the fast to the slow axis, but only if phase-matched.
-
-Travel distance depends on frequency.
-
-The polarization of the incoming beam determines the axis it will travel along.
-The coupling is efficient if phase-matching is fulfilled: $\left\{ \begin{array}{l}\text { Energy conservation } w_0+w_A=w_e \approx w_0 \\ \text { Momenta conservation } \quad k_0+k_A=k_e \text { gives } k\left(n_e-n_0\right)=k_A=\frac{n_A}{v_A} .\end{array}\right.$
-
-Since these are fulfilled at different points in the material, every frequency is diffracted at a different time.
-This allows to create arbitrary GDD curves by properly choosing the acoustic wave.
-## 2.12 White-light interferometry
-The reference arm contains optics with known dispersion.
-Output signal: $S(\Delta t)=\operatorname{Re}\left(\int d t \cdot E_s(t) E_R^*(t-\Delta t)\right)$ sample $\uparrow$ reference
-This allows to measure the GDD.
-
-Fourier transforming yields $\tilde{S}(w)=\tilde{E}_s(w) \tilde{E}_R(w)$, with its argument being the phase $\varphi(w)$.
-Then, we find $G D D=\frac{d^2 \varphi}{d w^2}$.
-
-To calibrate the path length, we use a HeNe lasers with long coherence length.
-
-For a spectral domain implementation, we do not need a FT. A tillable mirror changes the path length, and two
-slits give spectral resolution. Relies on plane waves entering.
 # 3 Non-linear pulse propagation
 The optical kerr-effect is $n(I)=n+n_2 I$ in lowest order and $n_2 \sim 10^{-16} \frac{\mathrm{~cm}^2}{\mathrm{~W}}$.
 
@@ -357,15 +403,15 @@ SDM without GDD causes a broadening or narrowing in frequency.
 
 ## 3.6 Non-linear Schrodinger equation
 
-Expanding the dispersion as $k_n(w) \approx k_n\left(w_0\right)+k_n^{\prime} \cdot \Delta w+\frac{1}{2} k_n^{\prime \prime} \cdot \Delta w^2$ which we plug into the slowly varying envelope
+Expanding the dispersion as $k_n(\omega) \approx k_n\left(\omega_0\right)+k_n^{\prime} \cdot \Delta w+\frac{1}{2} k_n^{\prime \prime} \cdot \Delta \omega$ which we plug into the slowly varying envelope
 $$ \begin{align*}
-\tilde{A}\left(L_d, \Delta w\right)=e^{-i \Delta k_n\left(w_0\right) L_d} \tilde{A}(0, \Delta w) \approx \exp \left(-i\left\{k_n^{\prime} \cdot \Delta w+\frac{1}{2} k_n^{\prime \prime} \cdot \Delta w^2\right\} L_d\right) \tilde{A}(0, \Delta w) .
+\tilde{A}\left(L_d, \Delta w\right)=e^{-i \Delta k_n\left(\omega_0\right) L_d} \tilde{A}(0, \Delta \omega) \approx \exp \left(-i\left\{k_n^{\prime} \cdot \Delta w+\frac{1}{2} k_n^{\prime \prime} \cdot \Delta \omega\right\} L_d\right) \tilde{A}(0, \Delta \omega) .
 \end{align*} $$
 
-First, consider $k_n^{\prime} \Delta w L_d \ll 1$ and $k_n^{\prime \prime}=0: \tilde{A}\left(L_d \Delta w\right) \approx\left(1-i k_n^{\prime} \Delta w L_d\right) \tilde{A}(0, \Delta w) \Leftrightarrow A\left(L_d, t\right) \approx\left(1-i k_n^{\prime} L_d \cdot \partial_t\right) A(0, t)$.
+First, consider $k_n^{\prime} \Delta w L_d \ll 1$ and $k_n^{\prime \prime}=0: \tilde{A}\left(L_d \Delta w\right) \approx\left(1-i k_n^{\prime} \Delta w L_d\right) \tilde{A}(0, \Delta \omega) \Leftrightarrow A\left(L_d, t\right) \approx\left(1-i k_n^{\prime} L_d \cdot \partial_t\right) A(0, t)$.
 Thus, we get a temporal shift $T_g=k_n^{\prime} L_d=\frac{L_d}{V_g}$, the group delay.
 
-Next, consider $k_n^{\prime}=0$ and $k_n^{\prime \prime} \Delta w^2 L_d \ll 1: \quad \tilde{A}\left(L_d, \Delta w\right) \approx\left(1-\frac{i}{2} k_n^{\prime \prime} \Delta w^2 L_d\right) \tilde{A}(0, \Delta w) \Leftrightarrow A\left(l_d, t\right) \approx\left(1+i D \cdot \partial_t^2\right) A(0, t)$
+Next, consider $k_n^{\prime}=0$ and $k_n^{\prime \prime} \Delta \omega L_d \ll 1: \quad \tilde{A}\left(L_d, \Delta w\right) \approx\left(1-\frac{i}{2} k_n^{\prime \prime} \Delta \omega L_d\right) \tilde{A}(0, \Delta \omega) \Leftrightarrow A\left(l_d, t\right) \approx\left(1+i D \cdot \partial_t^2\right) A(0, t)$
 where $D=\frac{1}{2} k_n^{\prime \prime} L_d=\frac{1}{2}$.GDD is the dispersion parameter.
 
 Now, we apply the slowly-varying envelope approximation, and further introduce a retarded time $t^{\prime}=t-\frac{z}{v g}$ This yields $\partial_z A\left(z, t^{\prime}\right)=i \frac{k_u^{\prime \prime}}{2} \partial_{t^{\prime}}^2 A\left(z, t^{\prime}\right)$
@@ -417,8 +463,8 @@ The NSE is modified: $\partial_2 A\left(z, t^{\prime}\right)=i \frac{k_n^{\prime
 Consequently, the Ansatz is $A\left(z, t^{\prime}\right)=A_s\left(z, t^{\prime}\right)+u\left(z, t^{\prime}\right)$ with $\left|u\left(z, t^{\prime}\right)\right| \ll\left|A_s\left(z, t^{\prime}\right)\right|$.
 
 We find a new equation for $u\left(z, t^{\prime}\right)$, where SPM is now irrelevant due to the low pertubation intensity.
-Thus, dispersion quickly broadens the pertubation in time. At resonance, $\tilde{u}(z, w)$ is no longer a perturbation.
-This is prevented if $\left|\tilde{u}\left(z_1 w\right)\right|<\left|\tilde{A}_s(z, w)\right| \Leftrightarrow z_a \ll 8 z_0$, so that the perturbation can be treated as continous.
+Thus, dispersion quickly broadens the pertubation in time. At resonance, $\tilde{u}(z, \omega)$ is no longer a perturbation.
+This is prevented if $\left|\tilde{u}\left(z_1 w\right)\right|<\left|\tilde{A}_s(z, \omega)\right| \Leftrightarrow z_a \ll 8 z_0$, so that the perturbation can be treated as continous.
 Since $z_0 \sim \tau^2$, the pertubation period should be small for shout pulses. Longer pulses mean lower bitrate.
 
 ## 3.9 Delayed non-linear pulses
@@ -507,11 +553,11 @@ We want $n_0(2 \omega)=n_e(\omega)$, and call $\theta$ the phase matching angle 
 
 Usually this condition is typically only met a one set of frequencies.
 ## 4.4 Conversion efficiency
-The coupled wave equation for $E_w$ and $E_{2 w}$, with phase mismatch $\Delta K=K(2 \omega)-2 K(w)$ yield a conversion
+The coupled wave equation for $E_w$ and $E_{2 w}$, with phase mismatch $\Delta K=K(2 \omega)-2 K(\omega)$ yield a conversion
 efficiency $\eta=\frac{I_{2 w}}{I_w} \sim L^2 \operatorname{sinc}^2\left(\Delta k \cdot \frac{L}{2}\right)$. We assumed no depletion of the fundamental, e.g $I_{2 w}(z=0)=0$ and $I_w(t)=$ cons.
 instead of monochromatic light
 ## 4.5 Second harmonic generation with pulses
-With perfect $P M$, we have $P_{N L}(t) \sim E_w^2(t)$ or $\tilde{P}_{N L}(\omega) \sim \tilde{E}_w(w) * \tilde{E}_w(w) \sim \tilde{E}_{2 w}(w)$ since $E_{2 w}^2(t) \sim P_{M L}(t)$.
+With perfect $P M$, we have $P_{N L}(t) \sim E_\omega(t)$ or $\tilde{P}_{N L}(\omega) \sim \tilde{E}_w(\omega) * \tilde{E}_w(\omega) \sim \tilde{E}_{2 w}(\omega)$ since $E_{2 w}^2(t) \sim P_{M L}(t)$.
 
 Every frequency of the fundamental is mixed, which broadens or shortens the pulse.
 output) input photons
@@ -526,7 +572,7 @@ Different crystal thicknesses
 Different crystal materials
 ## 4.6 Group velocity matching
 
-We have group-velocity matching if $v_g\left(w_0\right)=v_g\left(2 w_0\right)$
+We have group-velocity matching if $v_g\left(\omega_0\right)=v_g\left(2 w_0\right)$
 
 Further, $\Delta K$ varies slowly around phase-matched frequency, if group velocities match too.
 
@@ -551,7 +597,7 @@ The bandwidth can be increased by making the crystal longer. Limited by transpar
 
 A group velocity mismatch plus a spatial localization of conversion leads to a frequency-dependant delay.
 
-There is group-velocity mismatch $V_q(w) \neq V_g(2 w)$, and it can transform positive to negatively chirped fundamental.
+There is group-velocity mismatch $V_q(\omega) \neq V_g(2 \omega)$, and it can transform positive to negatively chirped fundamental.
 
 ## 4.11 Optical parametric amplification
 
@@ -599,12 +645,12 @@ Further assuming the stimulated decay rate to be much langer than the cavity dec
 
 No osullations occur, and the laser will go back to steady state.
 ## 5.3 Under-critically damped regime
-If $s$ is complex, there are relaxation oscillations of the form $n(t)=n_s+n_1 e^{-\gamma_{\text {relax }} t} \cdot \cos \left(w_{\text {relax }} t\right)$ for $\gamma_{\text {relax }}=r \frac{\gamma_L}{2}$ the attenuation rate. We have frelax $=\frac{1}{2 \pi} \sqrt{\gamma_c \gamma_c(r-1)} \approx \frac{1}{2 \pi} \sqrt{\frac{1}{\tau_{\text {sines }} \tau_c}}$ for $\gamma_c \gg r \gamma_c$.
+If $s$ is complex, there are relaxation oscillations of the form $n(t)=n_s+n_1 e^{-\gamma_{\text {relax }} t} \cdot \cos \left(\omega_{\text {relax }} t\right)$ for $\gamma_{\text {relax }}=r \frac{\gamma_L}{2}$ the attenuation rate. We have frelax $=\frac{1}{2 \pi} \sqrt{\gamma_c \gamma_c(r-1)} \approx \frac{1}{2 \pi} \sqrt{\frac{1}{\tau_{\text {sines }} \tau_c}}$ for $\gamma_c \gg r \gamma_c$.
 
 Then, we get $g_0 \sim\left(\tau_L T_R f_{r e l a x}^2+l\right)$ so that a measurement of the relaxation frequency reveals $g_0$.
 material property
 
-# 6 $Q$-switching
+# 6 Q-switching
 First to active Q-switching, where we actively remove an intracacity block, such as an AOM.
 1) The block is present, so stimulated emission does not occur. A pump pulse creates large inversion, and thus increasing the gain.
 2) The block is removed, thus reducing the losses. A large inversion causes stimulated emission to start quickly, thus slowly increasing the intracavity power.
@@ -752,7 +798,7 @@ Multiple axial modes satisfy the boundary condition to oscillate in the cavity.
 Forcing all modes to operate phase-locked, the output turns into an ulhashort pulse.
 
 ## 7.1 Frequency comb
-Modeloching yields $\tilde{E}_T(w)=\tilde{E}(w) e^{i \tilde{\phi}(w)} \sum_n \delta\left(w-n \cdot \Delta w_{a x}\right)$ or $E_T(t)=\sum_n E\left(t-n T_R\right)$ with $\Delta w_{a x}=\frac{2 \pi}{T_R}=2 \pi \cdot f_{\text {rep }}$
+Modeloching yields $\tilde{E}_T(\omega)=\tilde{E}(\omega) e^{i \tilde{\phi}(\omega)} \sum_n \delta\left(\omega-n \cdot \Delta w_{a x}\right)$ or $E_T(t)=\sum_n E\left(t-n T_R\right)$ with $\Delta w_{a x}=\frac{2 \pi}{T_R}=2 \pi \cdot f_{\text {rep }}$
 A comb can be described by $f_n=f_{C E_0}+n f_{\text {rep }}$ with $f_{c E_0}$ the carrier-envelope offset.
 
 Generally, $\Delta \phi_0 \neq 0$ since $V_g \neq v_p$ and $\Delta \phi_0$ different for each pulse.
@@ -781,7 +827,7 @@ A typical AOM is operated under Bragg condition.
 To describe theory, assume produced pulses are gaussian: $E(t)=e^{-r t^2+i w_0 t}$
 In the steady-state, the pulse envelope doesn't change after one round trip of passing the gain and loss modulator. $$$ \begin{aligned} \text { This implies } \Gamma^{\prime \prime}=\Gamma & $$ \begin{array}{l}\text { changed twice, after gain and loss } \\ \text { and } \\ \text { FWHM pulse duration }\end{array} \tau_{p, s} \sim \sqrt{\frac{1}{R e(P)}} \sim \sqrt[4]{\frac{g}{M}} \sqrt{\frac{1}{f_m \cdot \Delta f_g}} \text { for } f_{\text {mod }} \text { the gain modulation frequency. }\end{aligned}$
 
-The gain causes $E^{\prime}(w)=e^{g(w)} E(w)$ and we assume $g \ll 1$, e.g the pulse doesn't change much in a
+The gain causes $E^{\prime}(\omega)=e^{g(\omega)} E(\omega)$ and we assume $g \ll 1$, e.g the pulse doesn't change much in a
 single passage. Approximating the gain os parabola, we find $\Gamma^{\prime}-\Gamma \sim-\frac{g}{\Delta w_g} \Gamma^2<0$ so that the pulse gets broadened after passing the gain medium.
 Two loss modulators exist, the amplimde loss modulator $m_{A H}(t)=e^{-l(t)}=e^{\left.-M\left(1-\cos / \omega_m t\right)\right)}$ and the phase modulator $m_{p h}(t)=e^{-i M \cos \left(\omega_\mu t\right)}$, however AM is more common since it can generate bandwidtn-limited pulses.
 
@@ -1040,8 +1086,8 @@ Photodiode
 Measurement device
 \& firt-oxder linearsyytem
 This differential equation has the form $\tau \dot{y}+y=x$ or in frequency domain $\tau i w \tilde{y}+\tilde{y}=\tilde{x}$, where $x(t)=R_2 J(t)$ is the input and $y(t)=v(t)$ the output.
-The transfer function is $\tilde{h}(w)=\frac{\tilde{y}}{\tilde{x}}=\frac{1}{1+i \omega \tau}$ or $h(t)=\frac{1}{\tau} e^{-t / \tau}$ where $\tau=R_L C$.
-Further, from $\tilde{H}\left(\omega_{3 d B}\right) \equiv\left|\tilde{h}\left(\omega_{3 a B}\right)\right|^2=\frac{1}{2} \operatorname{Max}(\tilde{H}(w))_{\text {, we find }} \omega_{3 d 0}=\frac{1}{2}$. Note $3 d B \cong 10^{-3 / 10} \approx \frac{1}{2}$.
+The transfer function is $\tilde{h}(\omega)=\frac{\tilde{y}}{\tilde{x}}=\frac{1}{1+i \omega \tau}$ or $h(t)=\frac{1}{\tau} e^{-t / \tau}$ where $\tau=R_L C$.
+Further, from $\tilde{H}\left(\omega_{3 d B}\right) \equiv\left|\tilde{h}\left(\omega_{3 a B}\right)\right|^2=\frac{1}{2} \operatorname{Max}(\tilde{H}(\omega))_{\text {, we find }} \omega_{3 d 0}=\frac{1}{2}$. Note $3 d B \cong 10^{-3 / 10} \approx \frac{1}{2}$.
 For a general pulse, $V(t)=h(t) * J(t)=\int h\left(t^{\prime}\right) J\left(t-t^{\prime}\right) d t^{\prime}$.
 Signal
 
@@ -1125,7 +1171,7 @@ This is a limitation of non-collinear crossing, as it can't be used with spatial
 thigh-pass filter removes any fundamental rignal.
 
 Beamsplitter
-The fourier-transformed output of the spectrometer is $I_{F R_{0 G} G}^{s H 1 a}(w, \tau)=\left|F\left(E_{\text {sig }}(t, \tau)\right)\right|^2=\left|\int_{-\infty}^{\infty} d t \cdot E(t) E(t-\tau) e^{-i \omega t}\right|^2$.
+The fourier-transformed output of the spectrometer is $I_{F R_{0 G} G}^{s H 1 a}(\omega, \tau)=\left|F\left(E_{\text {sig }}(t, \tau)\right)\right|^2=\left|\int_{-\infty}^{\infty} d t \cdot E(t) E(t-\tau) e^{-i \omega t}\right|^2$.
 The aperture and filter can be replaced by prism too.
 We define the signal field as $E_{\text {sig }}^{S H G}(t, \tau)=E(t) E(t-\tau)$. Since $S_{\text {Proa }}^{s H 1 a}$ is real, is contains no phase information alone.
 The goal of FROG algorithm is to find the phase by solving $\sqrt{I_{f R_0 a}^{S H}(\omega, \tau)} \cdot \phi(\omega, \tau)=\int E_{\text {sig }}(t, \tau) e^{-i \omega t} d t=\tilde{E}_{\text {sig }}(\omega, \tau)$ $\uparrow$ complex, unit valued
@@ -1145,21 +1191,21 @@ The SHG-FROG trace $I_{\text {FROG }}^{S H 1 G}(\omega, \tau)$ is symmetric in $
 ## 9.10 SPIDER: Spectral phase interferometry for direct electric-field reconshuction
 we rn weed $T \ggg \tau_{p_1}$ implying quasi-monochvomatic
 
-We produce two delayed pulses $E(w)$ and $E(w+\delta w)$, where the spectral shear $\delta w$ is obtained in SFG, by upconversion with a strongly-linear chirped pulse that came from yet another copy passing a
+We produce two delayed pulses $E(\omega)$ and $E(\omega+\delta \omega)$, where the spectral shear $\delta w$ is obtained in SFG, by upconversion with a strongly-linear chirped pulse that came from yet another copy passing a
 glass block with GDD. The time delay ensures that each replica is upconverted with a different portion of the chirped pulse containing different instantaneous frequencies, thus creaking the spectral shear.
 
 The output is $I_{\text {SPIDER }}(\omega)=|E(\omega)+E(\omega+\delta \omega)|^2=|E(\omega)|^2+|E(\omega+\delta \omega)|^2+2|E(\omega) E(\omega+\delta \omega)| \cdot \cos (\varphi(\omega+\delta \omega)-\varphi(\omega)+\omega \tau)$,
-with spectral phase $\varphi(w)$, so it contains phase information, that can be extracted with the Takeda algorithm:
+with spectral phase $\varphi(\omega)$, so it contains phase information, that can be extracted with the Takeda algorithm:
 careful
-Writing $I_{\text {spider }}(w)=a(w)+b(w) \cos (\alpha(w)+\omega \tau)=a(w)+c(w) e^{i \omega \tau}+h . c$ for $c(w)=\frac{1}{2} b(w) e^{i \alpha(w)}$ and $\alpha(w), b(w)$ real.
-Then $F T$ to time, so that $I_{\text {spider }}(t)=F(g(w))=A(t)+C(t-\tau)+C^*(t+\tau)$ with, $A(t)$ and $C(t)$ the $F T$ of a(w)
-and $c(w)$. Thus, $I_{\text {spider }}(t)$ contains peaks at $t=-\tau_1,+\tau$, so we filter one peak and $F T$ back. contain same phase information
-What we get is $F(C(t-\tau))=c(w) e^{i \omega t}$ which allows us to extract $\operatorname{Im}\left[\log \left(c(\omega) e^{i \omega t}\right)\right]=\alpha(\omega)+\omega t$.
+Writing $I_{\text {spider }}(\omega)=a(\omega)+b(\omega) \cos (\alpha(\omega)+\omega \tau)=a(\omega)+c(\omega) e^{i \omega \tau}+h . c$ for $c(\omega)=\frac{1}{2} b(\omega) e^{i \alpha(\omega)}$ and $\alpha(\omega), b(\omega)$ real.
+Then $F T$ to time, so that $I_{\text {spider }}(t)=F(g(\omega))=A(t)+C(t-\tau)+C^*(t+\tau)$ with, $A(t)$ and $C(t)$ the $F T$ of a(\omega)
+and $c(\omega)$. Thus, $I_{\text {spider }}(t)$ contains peaks at $t=-\tau_1,+\tau$, so we filter one peak and $F T$ back. contain same phase information
+What we get is $F(C(t-\tau))=c(\omega) e^{i \omega t}$ which allows us to extract $\operatorname{Im}\left[\log \left(c(\omega) e^{i \omega t}\right)\right]=\alpha(\omega)+\omega t$.
 (characteristic to setup; needs to be done once
-From the interferogram created by the second harmonic, $\omega \tau$ is obtained and we find $\alpha(w)=\varphi(\omega+\delta w)-\varphi(w)$.
+From the interferogram created by the second harmonic, $\omega \tau$ is obtained and we find $\alpha(\omega)=\varphi(\omega+\delta \omega)-\varphi(\omega)$.
 Start at arbitrary $w_0$, and define $w_i=w_0+i \cdot \Delta w$ with $\Delta w<\delta w$ and $i=1, \ldots, n$.
-Then, $\alpha\left(w_n\right)=\varphi\left(w_{n+1}\right)-\varphi\left(w_n\right)$ or $\varphi\left(w_{n+1}\right)=\varphi\left(w_n\right)+\alpha\left(w_n\right)=\varphi\left(w_{n-1}\right)+\alpha\left(w_{n-1}\right)+\alpha\left(w_n\right)=\ldots=\varphi\left(w_1\right)+\sum_{i=1}^n \alpha\left(w_i\right)$.
-Since $\varphi\left(w_1\right)$ is only an offset, we set it to zero. Since $\alpha(\omega)$ is a known quantity, we know $\varphi\left(\omega_{n+1}\right)$. By another trivial spectral power density measurement, we can reconstruct $E(w)=\sqrt{I(w)} e^{i \varphi(w)}$.
+Then, $\alpha\left(\omega_n\right)=\varphi\left(\omega_{n+1}\right)-\varphi\left(\omega_n\right)$ or $\varphi\left(\omega_{n+1}\right)=\varphi\left(\omega_n\right)+\alpha\left(\omega_n\right)=\varphi\left(\omega_{n-1}\right)+\alpha\left(\omega_{n-1}\right)+\alpha\left(\omega_n\right)=\ldots=\varphi\left(\omega_1\right)+\sum_{i=1}^n \alpha\left(\omega_i\right)$.
+Since $\varphi\left(\omega_1\right)$ is only an offset, we set it to zero. Since $\alpha(\omega)$ is a known quantity, we know $\varphi\left(\omega_{n+1}\right)$. By another trivial spectral power density measurement, we can reconstruct $E(\omega)=\sqrt{I(\omega)} e^{i \varphi(\omega)}$.
 
 We don't need constant non-linear conversion efficiency as in FROG, as we work with interferograms, not amplitude.
 These two pulses can interfere despite their delay, since they are superpositions of plane waves, so infinitely long in time.
@@ -1176,13 +1222,13 @@ $I^{\text {ideal }}(t)=I_0 \cdot T \sum_n \delta(t-n T)$ or $\tilde{I}^{\text {i
 
 Including normalized intensity noise $N(t)$ and timing jitter $\Delta T(t)$ changes the intensity to $I^{\text {noise }}(t)=I_0 T \cdot(1+N(t)) \sum_n \delta(t-n T-\Delta T(t))$ for $\langle\Delta T\rangle=0$.
 
-Intensity noise alone results in $S^N(w)=\left(2 \pi I_0\right)^2 \sum_n\left\{\delta\left(w-n w_T\right)+\tilde{N}\left(w-n w_T\right)^2\right\}$, e.g. noise sidebands.
-Timing jitter alone results in $S^{\Delta T}(w)=\left(2 \pi I_0\right)^2 \sum_n\left\{\left(w-n w_T\right)+\left(\frac{n w_T}{2 \pi}\right)^2 \Delta \tilde{T}\left(w-n w_T\right)^2\right\}$, e.g noise sidebands that scale with a factor of $n^2$ for low $n$.
+Intensity noise alone results in $S^N(\omega)=\left(2 \pi I_0\right)^2 \sum_n\left\{\delta\left(\omega-n w_T\right)+\tilde{N}\left(\omega-n w_T\right)^2\right\}$, e.g. noise sidebands.
+Timing jitter alone results in $S^{\Delta T}(\omega)=\left(2 \pi I_0\right)^2 \sum_n\left\{\left(\omega-n w_T\right)+\left(\frac{n w_T}{2 \pi}\right)^2 \Delta \tilde{T}\left(\omega-n w_T\right)^2\right\}$, e.g noise sidebands that scale with a factor of $n^2$ for low $n$.
 
 For large $n$, timing starts to dominate, which allows us to seperate the two contributions by comparing high harmonics with the first harmonic.
 
 In reality, we see two additional sidepeaks, corresponding to relaxation oscillation.
-The rms intensities noise is $\sigma_N\left[w_1, w_2\right]=\sqrt{\left\langle N^2(t)\right\rangle}=\sqrt{\frac{1}{\pi} \int_{w_1}^{w_2} d w \cdot S_N(w)}=\sqrt{\frac{P_{s b}\left[f_1, f_2\right]}{P_c}}$ where $S_N(w)=\left|\tilde{N}\left(w-w_\tau\right)\right|^2$ and $\frac{P_{s b}\left[f_1, f_2\right]}{P_c}=\frac{2}{B} \int_{n f_T+f_1}^{n f_T+f_2} d f \cdot \frac{P_{s b}(f)}{P_c}$ with $B=f_2-f_1$ the measure excludes the harmonic =signal
+The rms intensities noise is $\sigma_N\left[w_1, w_2\right]=\sqrt{\left\langle N^2(t)\right\rangle}=\sqrt{\frac{1}{\pi} \int_{w_1}^{w_2} d w \cdot S_N(\omega)}=\sqrt{\frac{P_{s b}\left[f_1, f_2\right]}{P_c}}$ where $S_N(\omega)=\left|\tilde{N}\left(\omega-w_\tau\right)\right|^2$ and $\frac{P_{s b}\left[f_1, f_2\right]}{P_c}=\frac{2}{B} \int_{n f_T+f_1}^{n f_T+f_2} d f \cdot \frac{P_{s b}(f)}{P_c}$ with $B=f_2-f_1$ the measure excludes the harmonic =signal
 The bounds are required, as a measurement only acquires intensity noise within a region $w_1$ to $w_2$.
 
 The lower bound $w_1$ is given by the measurement time, while $w_2$ is determined by the measurement
@@ -1392,7 +1438,7 @@ The effect doesn't cancle, as every electron sees the rest of the $\mathbb{R}$ p
 ## 13.9 FROC-CRAB
 
 To describe the streaking trace (electron energy vs delay), we use the stiong-field approximation, where we neglect the ion potential after the election left.
-In the end, we can reduce it to a FROG spectrogram $S_{F_{R O Q}}\left(w, t_d\right)=\left|\int_{-\infty}^{\infty} d t \cdot e^{i \omega t} P\left(t-t_d\right) G(t)\right|^2$, which allows us to deduce the pulse shape with the FROG algorithm.
+In the end, we can reduce it to a FROG spectrogram $S_{F_{R O Q}}\left(\omega, t_d\right)=\left|\int_{-\infty}^{\infty} d t \cdot e^{i \omega t} P\left(t-t_d\right) G(t)\right|^2$, which allows us to deduce the pulse shape with the FROG algorithm.
 
 For an attosecond-pulse train:
 For a single atlosecond pulse:
