@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"dg-path":"Notes","permalink":"/notes/","hide":"true","dgShowLocalGraph":true,"updated":"2025-01-23T11:39:50.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes","permalink":"/notes/","hide":"true","dgShowLocalGraph":true,"updated":"2025-01-23T11:45:04.000+01:00"}
 ---
 
 This is the perfect place to start reading up on some topics:
-- [[Notes/Ultrafast Laser Physics Notes\|Ultrafast Laser Physics]]
+- [[Notes/Ultrafast Laser Physics\|Ultrafast Laser Physics]]
 - [[Notes/Solid-State Theory\|Solid-State Theory]]
 - [[Notes/Signals and Systems\|Signals and Systems]]
 - [[Notes/Quantum Optics\|Quantum Optics]]

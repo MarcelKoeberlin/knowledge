@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-23T11:37:06.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-23T11:38:25.000+01:00"}
 ---
 
 These notes are following mainly along [Plasmonics: Fundamentals and Applications](https://link.springer.com/book/10.1007/0-387-37825-1)and [Plasmonics: From Basics to Advanced Topics](https://link.springer.com/book/10.1007/978-3-642-28079-5).
@@ -594,7 +594,7 @@ H =
 \end{cases}
 $$
 The real part of $\tilde{\alpha}_{\text{plane}}$ is slightly greater than unity, while its imaginary part is very small. This is a general result for metals in the visible and infrared regions, explaining why SPPs cannot be excited by a plane wave.  
-![Attachments/Notes/Plasmonics/IMG-0123113706-1.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123113706-1.webp)![Attachments/Notes/Plasmonics/IMG-0123113706-2.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123113706-2.webp)[[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=65&rect=50,454,392,493|•]]
+![[Attachments/Notes/Plasmonics/IMG-0122174557-5.webp\|700]]![[Attachments/Notes/Plasmonics/IMG-0122174557-6.webp\|700]][[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=65&rect=50,454,392,493|•]]
 
 The propagation constant on the $x$-axis of a plane wave is equal to $k_1 \sin(\theta)$ (circle), which is always smaller than $k_1$ in modulus. In contrast, the real part of $k_1 \tilde{\alpha}_{\text{plane}}$ is larger. Since the surface is flat, a plane wave cannot excite a field with a significantly different propagation constant and, hence, cannot excite the SPP.
 ### 2.2.3 SPP and Brewster Effect
