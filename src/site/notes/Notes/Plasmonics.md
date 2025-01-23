@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-23T15:18:23.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-23T15:23:27.000+01:00"}
 ---
 
 These notes are following mainly along [Plasmonics: Fundamentals and Applications](https://link.springer.com/book/10.1007/0-387-37825-1)and [Plasmonics: From Basics to Advanced Topics](https://link.springer.com/book/10.1007/978-3-642-28079-5).
@@ -545,16 +545,6 @@ As shown earlier, the second image (s-polarisation) has no trace since there are
 
 
 ## 1.4 Imaging Surface Plasmon Polariton Propagation [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=70&selection=2,0,3,21&color=important|•]]
-
-
-
-
-
-
-
-
-
-
 
 
 
