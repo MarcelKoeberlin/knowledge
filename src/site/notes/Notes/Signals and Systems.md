@@ -1,15 +1,14 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowToc":"true","updated":"2025-01-22T16:09:41.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowToc":"true","updated":"2025-01-23T17:46:21.000+01:00"}
 ---
 
 This note will mostly follow along the book [Signals and Systems - 2nd edition](https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574) by Alan V. Oppenheim and Alan S. Willsky. Not every chapter is covered, especially the more 'basic' ones. It is not supposed to be a simple summary, but instead a place where the main concepts are covered, without having to read through 987 pages again/yourself.
 
->[!abstract] Foreword
-> While working on my master’s thesis and trying to figure out how to perform accurate noise measurements, I discovered that signal processing is about much more than just Fourier transforming your measured signal. This realization hit me when we were using a highly sensitive oscilloscope to measure laser noise. After Fourier transforming the data—which was time-consuming and computationally intensive—we noticed something surprising: the noise trace was _still_ too noisy.
-> 
-> Naturally, my first instinct was to Google "how to make noisy data smooth." I quickly learned there are countless ways to tackle this problem. However, I also realized how important it is in signal processing to truly understand _where_ and _how_ the data was obtained in the first place, and how you process it. Sure, applying a moving average might smooth the trace, but should I do that in the time domain or the frequency domain? And what if the issue isn’t the processing at all—what if my measurement setup itself isn’t suited to the task? How could that even be possible when I’m using the best and fastest oscilloscope on the market?
-> 
-> It didn’t take long for me to realize this was a fascinating topic, and I started reading more about it in my free time.
+---
+
+While working on my master’s thesis and trying to figure out how to perform accurate noise measurements, I discovered that signal processing is about much more than just Fourier transforming your measured signal. This realization hit me when we were using a highly sensitive oscilloscope to measure laser noise. After Fourier transforming the data—which was time-consuming and computationally intensive—we noticed something surprising: the noise trace was _still_ too noisy.
+Naturally, my first instinct was to Google "how to make noisy data smooth." I quickly learned there are countless ways to tackle this problem. However, I also realized how important it is in signal processing to truly understand _where_ and _how_ the data was obtained in the first place, and how you process it. Sure, applying a moving average might smooth the trace, but should I do that in the time domain or the frequency domain? And what if the issue isn’t the processing at all—what if my measurement setup itself isn’t suited to the task? How could that even be possible when I’m using the best and fastest oscilloscope on the market?
+It didn’t take long for me to realize this was a fascinating topic, and I started reading more about it in my free time.
 
 # 1 Signals and Systems
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=32&selection=2,0,6,7|•]]
