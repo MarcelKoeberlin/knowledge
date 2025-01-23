@@ -1,16 +1,10 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Ultrafast Laser Physics","permalink":"/notes/ultrafast-laser-physics/","updated":"2025-01-21T21:58:30.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Ultrafast Laser Physics","permalink":"/notes/ultrafast-laser-physics/","updated":"2025-01-23T11:26:21.000+01:00"}
 ---
 
 For my notes of 'ultra-fast laser physics' 2023, taught by Prof. Gallmann, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/lecture-notes). The pdf might load for quite a while, since its 182 MBs of size. At the same time, I am working on transcoding these notes to the markdown format used on this website. However this is a quite intense process, so it might take some weeks for it to appear here below. However, be assured that the quality will be even higher!
 
 ![Attachments/Notes/Ultrafast Laser Physics Notes/IMG-0120164833.webp](/img/user/Attachments/Notes/Ultrafast%20Laser%20Physics%20Notes/IMG-0120164833.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=1&rect=157,183,685,418|🔗]]
-
-
->[!DANGER]
->Achtung Baustelle! ⚠
->Those are just the transcoded handwritten notes of myself without manual adjustments, and not images yet.
-
 
 # 1 Linear Pulse Propagation
 The discussion starts a monochromatic wave, which is a superposition of plane waves and is mathematically described by:
@@ -25,7 +19,7 @@ In a dispersive medium, some quantities change:
 The Kramers-Kronig relation allows us to find the refractive index $n(\lambda)$, given the absorption spectrum. Since $n(\lambda)$ decreases with the wavelength $\lambda$ in the visible spectrum, and $\lambda_{\text {red }}>\lambda_{\text {blue, }}$ we find $n_{\text {blue }}>n_{\text {red }}$.
 > [!question] Image
 
-Further using $v_p(\lambda)=\frac{c}{n(\lambda)}$, we see that blue light is slower than red, such that the light pulse spreads over time.
+Further using $v_p(\lambda)=\frac{c}{n(\lambda)}$, we see that blue light is slower than red, such that the light pulse spreads over time
 
 ## 1.1 Helmholtz Equation
 
@@ -37,7 +31,7 @@ $$\tilde{E}(z, w)=\tilde{E}_0^{\dagger} e^{-i k_n(\omega) z}+ \text{h.c}.$$
 
 ## 1.2 Linear System Theory
 
-Note that this topic was very briefly covered in the course, but for a better, but also more indepth discussion, please see my notes on [[Notes/Signals and Systems\|Signals and Systems]]. 
+Note that this topic was covered only very briefly in the course, but for a better, more in-depth discussion, please see my notes on [[Notes/Signals and Systems\|Signals and Systems]]. 
 
 Consider the input $E_{\text {in }}(t)=\delta(t)$ into a system, which leads to an output $E_{\text {out }}(t)=h(t)$. Linear systems have the very powerful property, that knowing the output to the delta function (formally the unit impulse) gives us the ability to actually know the output to _any_ input. For an arbitrary input:
 $$ \begin{align*}
@@ -62,7 +56,6 @@ $$\langle t\rangle=\frac{\int d t \cdot t \cdot I(t)}{\int d t \cdot I}$$
 is the 'centre of gravity'. As it turns out, a constant phase (e.g. $\frac{\partial \phi(\omega)}{\partial w}=0$) yields the shortest rms pulse duration $\tau_{\text {rms}}$,  where $\phi(\omega)=\varphi(\omega)-\omega\langle t\rangle$ for 
 $$\tilde{E}(\omega)=|\tilde{E}(\omega)| \cdot e^{i \varphi(\omega)}.$$
 >[!DANGER] Work in progress from here one
-
 
 
 ## 1.4 Optical dispersion

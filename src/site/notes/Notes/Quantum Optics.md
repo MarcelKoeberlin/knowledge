@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Draft/Quantum Optics","permalink":"/draft/quantum-optics/","updated":"2025-01-21T21:22:44.000+01:00"}
+{"dg-publish":true,"dg-path":"Draft/Quantum Optics","permalink":"/draft/quantum-optics/","updated":"2025-01-23T11:24:21.000+01:00"}
 ---
 
 # 1 Quantisation of the Electro-Magnetic Field
@@ -101,10 +101,7 @@ Since the phase is unknown, there is a rotational symmetry. Using the Wigner-fun
 $$W_{|0\rangle}(p, q)=\frac{1}{\pi} \int d q_{1} \cdot\left\langle q-q_{1} \mid 0\right\rangle\left\langle 0 \mid q+q_{1}\right\rangle e^{-i 2 p \cdot q_{1}}.$$
 Then, if $|\psi\rangle$ is a classical state, the Wigner function is semi-positive. Further note that coherent state satisfy $\langle a_{Q}^{2}\rangle=\langle a_{p}^{2}\rangle=\frac{1}{4},$ meaning that they are minimum uncertainty states.
 
->[!DANGER] Work in progress from here on
->Notes have been automatically translated from handwritten to latex
->No manual adjustments done yet.
-
+>[!DANGER] Work in progress from here on...
 
 ## 1.3 Generation of squeezed states non-linear optics
 Since the uncertainity relation requires $\Delta a_{Q} \cdot \Delta a_{P} \geqslant \frac{1}{4}$, we can squeeze the state in one direction: $\Delta a_{Q}<\Delta a_{p}$

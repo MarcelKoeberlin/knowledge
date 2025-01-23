@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","updated":"2025-01-18T17:59:06.000+01:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","updated":"2025-01-23T11:34:35.000+01:00"}
 ---
 
-# 1 High-harmonic generation
+# 1 High-Harmonic Generation
 
 1. Insert beamblock 1 and 2
 2. Close iris
@@ -49,7 +49,7 @@
 14. > [!WARNING] Turn on the shutter chiller
 
 # 3 Overlap
-## 3.1 Spatial overlap
+## 3.1 Spatial Overlap
 1. Align to camera, place _cross_ with mouse
 2. Close the shutter, main point will vanish
 3. Turn on electornic shutter controller
@@ -57,7 +57,7 @@
 5. Optimize shape with 3AB
 6. Repeat 4. and 5. until shape and position is good
 7. Open shutter
-## 3.2 Temporal overlap
+## 3.2 Temporal Overlap
 1. Use ThinkPad and look at interferogram
 2. Maximize signal with the mirror before the 'wheel', but after the beam splitter
 3. Maximize interference with motion controller: 'Move relative position'
@@ -103,13 +103,13 @@
 26. Open IR with electronic shutter controller
 27. Voltage might need to be readjusted after measurement
 28. As soon as we see pulse, set it from start to (start + steps * delta)
-# 6 10-pass alignment
+# 6 10-Pass Alignment
 1. Connect photodiode to oscilloscope
 2. Use insertable mirror to align pass by pass (actually pass 2,4, 8 and 10)
 3. 
 bla bla
 
-# 7 Venting the back part
+# 7 Venting the Back Part
 1. Close two black valves
 2. Move out filter in front of camera
 3. Close the valves to the turbos
