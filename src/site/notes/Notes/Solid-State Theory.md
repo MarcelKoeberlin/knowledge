@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","updated":"2025-01-23T17:29:18.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","updated":"2025-01-23T17:32:38.000+01:00"}
 ---
 
 For my notes of 'solid-state theory' 2023, taught by Prof. Siegrist, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/notes2023). The pdf might load for quite a while, since its 35 MBs of size. I am currently in the process of transcoding my handwritten (!) notes to the markdown format used on this website. This is a quite intense process so it will take a few weeks. However, it should be noted that the notes of Prof. Sigrist are already extremely high quality, so is it really necessary? Not really, but its damn cool.
@@ -22,7 +22,7 @@ A key objective in solid state physics is characterizing a system’s ground sta
 These principles, along with the study of emergent behaviour and excitations, form the foundation of solid state physics, linking its theoretical depth to practical applications.
 
 
-# 1 Electrons in the Periodic Crystal Band Structure and Physical Properties [[Masters/2. Semester/Solid State Theory/Script.pdf#page=8&selection=2,0,4,10|•]]
+# 1 Electrons in the Periodic Crystal [[Masters/2. Semester/Solid State Theory/Script.pdf#page=8&selection=2,0,4,10|•]]
 
 One defining characteristic of many solids is the regular arrangement of their atoms, forming a crystal. Electrons in such crystals experience a periodic potential, originating from the lattice of ions and the mean interaction with other electrons:
 
@@ -272,7 +272,7 @@ $$
 
 This modifies the dispersion relation, yielding an effective mass $m^{*} > m$, as shown in the figure:
 
-![Attachments/Notes/Solid-State Theory/IMG-0123172918.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/IMG-0123172918.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=14&rect=178,569,419,753|•]]
+![[Attachments/Notes/Solid-State Theory/IMG-0123172002.webp\|700]][[Masters/2. Semester/Solid State Theory/Script.pdf#page=14&rect=178,569,419,753|•]]
 
 The $\boldsymbol{k} \cdot \boldsymbol{p}$ approximation describes this expansion near symmetry points. The next energy level at $k = 0$ results from two crossing parabolas centered at $G_{\pm} = \pm 2\pi/a = \pm\tilde{G}$. Restricting to these components, the eigenvalue problem simplifies to:
 
@@ -325,7 +325,7 @@ $$
 
 and $V_{a}(\boldsymbol{r})$ is the rotationally symmetric atomic potential. The potential landscape is depicted below, showing (a) the discrete spectrum of a single atomic Coulomb potential and (b) the periodic potential arising from a regular lattice:
 
-![Attachments/Notes/Solid-State Theory/IMG-0123172918-1.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/IMG-0123172918-1.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=16&rect=97,261,506,395|•]]
+![[Attachments/Notes/Solid-State Theory/IMG-0123172002-1.webp\|700]][[Masters/2. Semester/Solid State Theory/Script.pdf#page=16&rect=97,261,506,395|•]]
 
 At low energies, electrons remain localized near atomic sites, but at higher energies, wavefunctions extend further and can delocalize to form itinerant states, leading to band formation.
 
