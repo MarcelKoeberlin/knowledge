@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Ultrafast Laser Physics","permalink":"/notes/ultrafast-laser-physics/","updated":"2025-01-23T17:46:40.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Ultrafast Laser Physics","permalink":"/notes/ultrafast-laser-physics/","updated":"2025-01-23T17:56:19.000+01:00"}
 ---
 
 For my notes of 'ultra-fast laser physics' 2023, taught by Prof. Gallmann, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/lecture-notes). The pdf might load for quite a while, since its 182 MBs of size. At the same time, I am working on transcoding these notes to the markdown format used on this website. However this is a quite intense process, so it might take some weeks for it to appear here below. However, be assured that the quality will be even higher!
@@ -1242,7 +1242,7 @@ To create a stable comb, we need a modelocked laser with intensity and low timin
 
 The frequency comb is $f_n=f_{C E O}+n \cdot f_{\text {rep }}$ with $f_{C E O}=f_{r e p} \cdot \frac{\Delta \phi_0}{2 \pi}=\frac{\Delta \phi_0}{2 \pi T_R}$ and $f_{c E 0}=0$ for $v_p=V_g$.
 Both free and $n$ can easily be measured in the GHz regime, by an RF counter and wave-meter.
-## 12.1 $f-$ to- $2 f$ interferometer
+## 12.1 f- to- 2f interferometer
 
 Measuring $f_{c E 0}$ is not trivial, due to its low power density, so that we can't use FROG or SPIDER.
 We use SHG to produce a SH-OFC, that we overlap with the fundamental. This requires the fundamental to span atleast one comb. Since SHG is a coherent process, it provider a phase-stable link.
@@ -1260,7 +1260,7 @@ comb lines contribute to the signal.
 
 For a sufficiently strong CEO beat signal, a minimum photon flux permode is required. However, to avoid cycle slips, the number of detected photons needs to be 100 timer larger.
 
-## 12.2 Feed-forward scheme for $f_{C E_0}=0$
+## 12.2 Feed-forward scheme for fCEO=0
 
 For $f_{C E_0}=0$, there is no beatnote between the two pulses. Further to be really sure $f_{c E_0=}=0$, one would
 have to wait infinitely long. Then, every pulse has same CEO phase $\Delta \phi_{\text {cEO }}$.
