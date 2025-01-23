@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-23T11:38:25.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-23T15:07:48.000+01:00"}
 ---
 
 These notes are following mainly along [Plasmonics: Fundamentals and Applications](https://link.springer.com/book/10.1007/0-387-37825-1)and [Plasmonics: From Basics to Advanced Topics](https://link.springer.com/book/10.1007/978-3-642-28079-5).
@@ -249,7 +249,7 @@ $$
 
 Comparing this description to the measured dielectric function of gold shows that the applicability of the free-electron model in the visible spectrum breaks down due to interband transitions:
 
-![Attachments/Notes/Plasmonics/IMG-0123113705.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123113705.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=33&rect=46,494,390,614|•]]
+![Attachments/Notes/Plasmonics/IMG-0123150747.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150747.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=33&rect=46,494,390,614|•]]
 
 The dielectric function of the free electron plasma is closely related to the classical Drude model for the AC conductivity $\sigma(\omega)$ of metals:
 
@@ -274,12 +274,12 @@ $$
 $$
 
 This relation is plotted here:
-![Attachments/Notes/Plasmonics/IMG-0123113705-1.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123113705-1.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&rect=115,101,334,248|•]]
+![Attachments/Notes/Plasmonics/IMG-0123150747-1.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150747-1.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&rect=115,101,334,248|•]]
 
-For frequencies below the plasma frequency, the propagation of transverse electromagnetic waves is forbidden inside the metal plasma. For larger frequencies, however, the plasma supports transverse waves propagating with a group velocity $v_g = d\omega/dK < c$. Noting that $\varepsilon(K=0, \omega_p) = 0$, the excitation must correspond to a collective longitudinal mode. At the plasma frequency, the electric field is a pure depolarization field.
+For frequencies below the plasma frequency, the propagation of transverse electromagnetic waves is forbidden inside the metal plasma. For larger frequencies, however, the plasma supports transverse waves propagating with a group velocity $v_g = d\omega/dK < c$. Noting that $\varepsilon(K=0, \omega_p) = 0$, the excitation must correspond to a collective longitudinal mode. At the plasma frequency, the electric field is a pure depolarisation field.
 
 The physical significance of this excitation at the plasma frequency can be understood by considering the collective longitudinal oscillation of the conduction electron gas against the fixed positive background of the ion core in a plasma slab:
-![Attachments/Notes/Plasmonics/IMG-0123113705-2.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123113705-2.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=35&rect=103,535,333,620|•]]
+![Attachments/Notes/Plasmonics/IMG-0123150747-2.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150747-2.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=35&rect=103,535,333,620|•]]
 
 A collective displacement of the electron cloud leads to a surface charge density at the slab boundaries. This establishes a homogeneous electric field inside the slab. Therefore, the displaced electrons experience a restoring force, and the plasma frequency is the natural frequency of a free oscillation of the electron sea. This assumes all electrons move in phase, meaning the plasma frequency corresponds to the oscillation frequency in the long-wavelength limit where $K = 0$. 
 
@@ -294,7 +294,7 @@ $$
 ### 1.1.6 Real Metals and Interband Transitions [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&selection=53,0,53,37|•]]
 
 As already mentioned, the dielectric function of the Drude model adequately describes the optical response of metals only for photons below the transition energy between electronic bands. For some noble metals, interband effects already occur around $1 \, \text{eV}$ ($\lambda \approx 1 \, \mu \mathrm{m}$), for example, for silver:
-![Attachments/Notes/Plasmonics/IMG-0123113705-3.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123113705-3.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&rect=51,99,394,215|•]]
+![Attachments/Notes/Plasmonics/IMG-0123150747-3.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150747-3.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&rect=51,99,394,215|•]]
 
 The red dots are experimentally obtained results, while the line is a fit of the Drude model. Clearly, the model is not adequate to describe either the real or imaginary part of the dielectric function at high frequencies, and in the case of gold, its validity already breaks down close to the visible range.
 
@@ -322,7 +322,7 @@ $$
 
 where $\langle\mathbf{E}(\mathbf{r}, t) \cdot \mathbf{E}(\mathbf{r}, t)\rangle$ signifies field-averaging over one optical cycle, and $\omega_0$ is the frequency of interest. This expression is valid if $\mathbf{E}$ is only appreciable in a narrow frequency range around $\omega_0$, and the fields are slowly varying compared to a timescale $1 / \omega_0$. Furthermore, it is assumed that $\left|\varepsilon_2\right| \ll \left|\varepsilon_1\right|$, so that absorption is small.
 
-The requirement of low absorption limits this equation to visible and near-infrared frequencies, but not to lower frequencies or the regime of interband effects where $\left|\varepsilon_2\right| > \left|\varepsilon_1\right|$. However, the electric field energy can also be determined by taking the electric polarization explicitly into account. The obtained expression for the electric field energy of a material described by a free-electron-type dielectric function $\varepsilon = \varepsilon_1 + i \varepsilon_2$ is:
+The requirement of low absorption limits this equation to visible and near-infrared frequencies, but not to lower frequencies or the regime of interband effects where $\left|\varepsilon_2\right| > \left|\varepsilon_1\right|$. However, the electric field energy can also be determined by taking the electric polarisation explicitly into account. The obtained expression for the electric field energy of a material described by a free-electron-type dielectric function $\varepsilon = \varepsilon_1 + i \varepsilon_2$ is:
 
 $$
 u_{\mathrm{eff}} = \frac{\varepsilon_0}{4}\left(\varepsilon_1 + \frac{2 \omega \varepsilon_2}{\gamma}\right)|\mathbf{E}|^2,
@@ -351,7 +351,7 @@ $$
 where $k_0 = \frac{\omega}{c}$ is the wave vector of the propagating wave in vacuum. This equation is known as the Helmholtz equation.
 
 Next, we define the propagation geometry. We assume for simplicity a one-dimensional problem, i.e., $\varepsilon$ depends only on one spatial coordinate. Specifically, the waves propagate along the $x$-direction of a Cartesian coordinate system, showing no spatial variation in the perpendicular, in-plane $y$-direction; therefore $\varepsilon = \varepsilon(z)$:
-![Attachments/Notes/Plasmonics/IMG-0123113705-4.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123113705-4.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=40&rect=112,109,350,191|•]]
+![Attachments/Notes/Plasmonics/IMG-0123150747-4.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150747-4.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=40&rect=112,109,350,191|•]]
 
 Applied to electromagnetic surface problems, the plane $z=0$ coincides with the interface sustaining the propagating waves. The desired form of the wave equation is then:
 
@@ -359,7 +359,7 @@ $$
 \frac{\partial^2 \mathbf{E}(z)}{\partial z^2} + \left(k_0^2 \varepsilon - \beta^2\right) \mathbf{E} = 0,
 $$
 
-where the complex parameter $\beta = k_x$ is called the propagation constant, derived from $\mathbf{E}(x, y, z) = \mathbf{E}(z) e^{i \beta x}$. This equation serves as the starting point for the general analysis of guided electromagnetic modes in waveguides. To use the wave equation for determining the spatial field profile and dispersion of propagating waves, we need explicit expressions for the different field components of $\mathbf{E}$ and $\mathbf{H}$. Using the curl equations, it can be shown that this system allows two sets of self-consistent solutions with different polarization properties of the propagating waves:
+where the complex parameter $\beta = k_x$ is called the propagation constant, derived from $\mathbf{E}(x, y, z) = \mathbf{E}(z) e^{i \beta x}$. This equation serves as the starting point for the general analysis of guided electromagnetic modes in waveguides. To use the wave equation for determining the spatial field profile and dispersion of propagating waves, we need explicit expressions for the different field components of $\mathbf{E}$ and $\mathbf{H}$. Using the curl equations, it can be shown that this system allows two sets of self-consistent solutions with different polarisation properties of the propagating waves:
 1. The first set are the transverse magnetic (TM or p) modes, where only $E_x$, $E_z$, and $H_y$ are non-zero. 
 2. The second set are the transverse electric (TE or s) modes, where only $H_x$, $H_z$, and $E_y$ are non-zero.
 
@@ -367,7 +367,7 @@ where the complex parameter $\beta = k_x$ is called the propagation constant, de
 
 The simplest geometry sustaining SPPs is that of a single, flat interface between a dielectric, non-absorbing half-space ($z > 0$) with positive real dielectric constant $\varepsilon_2$ and an adjacent conducting half-space ($z < 0$) described via a dielectric function $\varepsilon(\omega)$. The requirement of metallic character implies that $\mathfrak{R}(\varepsilon(\omega)) < 0$, which is fulfilled at frequencies below the bulk plasmon frequency $\omega_p$. We seek propagating wave solutions confined to the interface, i.e., with evanescent decay in the perpendicular $z$-direction.
 
-![Attachments/Notes/Plasmonics/IMG-0123113705-5.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123113705-5.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=43&rect=109,95,336,207|•]]
+![Attachments/Notes/Plasmonics/IMG-0123150747-5.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150747-5.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=43&rect=109,95,336,207|•]]
 
 For **TM modes**, the equation:
 
@@ -395,10 +395,10 @@ $$
 A_1 (k_1 + k_2) = 0.
 $$
 
-Since confinement to the surface requires $\mathfrak{R}(k_1) > 0$ and $\mathfrak{R}(k_2) > 0$, this condition is only fulfilled if $A_1 = 0$, so that also $A_2 = A_1 = 0$. **Thus, no surface modes exist for TE polarization. Surface plasmon polaritons only exist for TM polarization.**
+Since confinement to the surface requires $\mathfrak{R}(k_1) > 0$ and $\mathfrak{R}(k_2) > 0$, this condition is only fulfilled if $A_1 = 0$, so that also $A_2 = A_1 = 0$. **Thus, no surface modes exist for TE polarisation. Surface plasmon polaritons only exist for TM polarisation.**
 
 The figure shows plots of the SPPs' dispersion relation for a metal with negligible damping described by the real Drude dielectric function for an air ($\varepsilon_2 = 1$) and a fused silica ($\varepsilon_2 = 2.25$) interface. Due to their bound nature, the SPP excitations correspond to the part of the dispersion curves lying to the right of the respective light lines of air and silica. Radiation into the metal occurs in the transparency regime $\omega > \omega_p$ as mentioned earlier. Between the regime of bound and radiative modes, a frequency gap region with purely imaginary $\beta$ prohibiting propagation exists. The dashed line shows the imaginary part of $\beta$, while the solid line shows its real part.
-![Attachments/Notes/Plasmonics/IMG-0123113705-6.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123113705-6.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=45&rect=78,414,373,615|•]]
+![Attachments/Notes/Plasmonics/IMG-0123150747-6.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150747-6.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=45&rect=78,414,373,615|•]]
 
 **For small wave vectors**, corresponding to low frequencies (mid-IR or lower), the SPP propagation constant is close to $k_0$ at the light line, and the wavelengths extend over many wavelengths into the dielectric space. In this regime, SPPs acquire the nature of a grazing-incidence light field, also known as Sommerfeld-Zenneck waves. 
 
@@ -420,7 +420,7 @@ typically between $10 \, \mu \text{m}$ and $100 \, \mu \text{m}$ in the visible 
 
 The next figure shows the dispersion relation of SPPs propagating at a silver/air and silver/silica interface. In comparison to the ideal case, the bound SPPs now approach a maximum, finite wave vector at the surface plasmon frequency of the system. This places a lower bound on both the wavelength $\lambda_{\text{sp}} = 2\pi / \mathfrak{R}(\beta)$ of the surface plasmon and the amount of mode confinement perpendicular to the interface since the SPP fields in the dielectric fall off exponentially in $k_z$. The quasibound, leaky part of the dispersion between $\omega_p$ and $\omega_{\text{sp}}$ is now allowed compared to the case of an ideal conductor.
 
-![Attachments/Notes/Plasmonics/IMG-0123113705-7.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123113705-7.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=47&rect=75,420,371,612|•]]
+![Attachments/Notes/Plasmonics/IMG-0123150747-7.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150747-7.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=47&rect=75,420,371,612|•]]
 
 There is generally a characteristic trade-off between localization and loss in plasmonics. Field confinement below the diffraction limit of half the wavelength in the dielectric can be achieved close to $\omega_{\text{sp}}$. In the metal itself, the field falls off over distances on the order of $20 \, \text{nm}$ over a wide frequency range.
 
@@ -432,7 +432,7 @@ Consider first a three-layer system:
 1. The insulator/metal/insulator (**IMI**) heterostructure: A thin metallic layer (I) is sandwiched between two (infinitely) thick dielectric claddings (II, III).
 2. The metal/insulator/metal (**MIM**) heterostructure: A thin dielectric core layer (I) is sandwiched between two metallic claddings (II, III).
 
-![Attachments/Notes/Plasmonics/IMG-0123113705-8.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123113705-8.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=48&rect=106,96,329,197|•]]
+![Attachments/Notes/Plasmonics/IMG-0123150748.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150748.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=48&rect=106,96,329,197|•]]
 
 We are only interested in the lowest-order bound modes and thus start with a general description of TM modes that are non-oscillatory in the $z$-direction normal to the interface. We demand that the fields decay exponentially in the claddings (II) and (III). Note that for $a \to \infty$, this problem reduces to the case of two uncoupled SPPs at the respective interface.
 
@@ -450,7 +450,7 @@ $$
 
 For the **IMI geometry**, we have $\varepsilon_1 = \varepsilon(\omega)$ for the metal and $\varepsilon_2$ is positive and real for the insulating cladding. For example, consider the case of air/silver/air with two different thicknesses (50 nm in dashed black and 100 nm in dashed gray) of the silver film:
 
-![Attachments/Notes/Plasmonics/IMG-0123113705-9.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123113705-9.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=50&rect=95,120,349,290|•]]
+![Attachments/Notes/Plasmonics/IMG-0123150748-1.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150748-1.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=50&rect=95,120,349,290|•]]
 
 For simplicity, the dielectric function of silver is approximated as a Drude metal with negligible damping, meaning $\varepsilon(\omega)$ is real so that $\mathfrak{I}(\beta) = 0$. As shown, the odd modes have frequencies $\omega_{+}$ higher than the respective frequencies for a single-interface SPP, while the even modes have lower frequencies $\omega_{-}$. For large wave vectors $\beta$, achievable only if $\mathfrak{I}(\varepsilon(\omega)) = 0$, the limiting frequencies are:
 
@@ -465,7 +465,7 @@ Odd modes have the interesting property that as the metal film thickness decreas
 
 In the **MIM geometry**, the most interesting mode is the fundamental odd mode of the system, which does not exhibit a cut-off for vanishing core layer thickness:
 
-![Attachments/Notes/Plasmonics/IMG-0123113705-10.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123113705-10.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=52&rect=94,444,345,610|•]]
+![Attachments/Notes/Plasmonics/IMG-0123150748-2.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150748-2.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=52&rect=94,444,345,610|•]]
 
 The dielectric function was taken as a complex fit, so the propagation constant $\beta$ does not go to infinity as the surface plasmon frequency is approached. Instead, it folds back and eventually crosses the light line, similar to SPPs at single interfaces. 
 
@@ -473,17 +473,78 @@ Large propagation constants can be achieved even for excitations well below $\om
 
 Note that this discussion was limited to the fundamental bound modes. In IMI structures, there are leaky modes, while in MIM structures, oscillatory modes can exist. Additionally, the coupling between SPPs at the core/cladding interface changes significantly if $\varepsilon_2 \neq \varepsilon_3$, prohibiting phase matching.
 
+## 1.3 Excitation of Surface Plasmon Polaritons at Planar Interfaces [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=56&selection=2,0,3,31|•]]
+
+Surface plasmon polaritons propagating at the flat interface between a conductor and a dielectric are essentially two-dimensional electromagnetic waves. Confinement is achieved since the propagation constant is greater than the wave vector in the dielectric, $\beta > k$, leading to decay on both sides of the interface. Therefore, excitation by three-dimensional light beams is not possible unless special techniques for phase-matching are employed. Alternatively, different geometries may be used.
+
+### 1.3.1 Prism Coupling [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=59&selection=22,0,24,14|•]]
+
+The projection along the interface of the momentum $k_x = k \sin\theta$ is smaller than the SPP propagation constant $\beta$ even at grazing incidence, prohibiting phase-matching. However, phase-matching can still be achieved in a three-layer system with different dielectric constants. Consider one of the materials to be air ($\varepsilon = 1$), such that the beam being reflected at the insulator-metal interface has an in-plane momentum of $k_x = k\sqrt{\varepsilon}\sin\theta$. The insulator in this case would be a prism. Two configurations are possible:
+
+![Attachments/Notes/Plasmonics/IMG-0123150748-3.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150748-3.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=59&rect=89,106,346,186|•]]
+
+This momentum is sufficient to excite SPPs at the interface between the metal and the lower-index dielectric, air in this case. In this way, SPPs propagating between the light lines of air and the higher-index dielectric (prism) can be excited. This excitation manifests as a minimum in the reflected beam intensity. Note that this phase-matching is impossible at the prism/metal interface since the respective SPP dispersion lies outside the prism light cone (there is no crossing of the curves):
+
+![Attachments/Notes/Plasmonics/IMG-0123150748-4.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150748-4.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=60&rect=111,470,332,616|•]]
+
+This coupling scheme is also known as **attenuated total internal reflection** and involves tunneling of the fields of the excitation beam to the metal/air interface. The two configurations are called the **Kretschmann method** (left) and the **Otto configuration** (right). 
+
+SPPs excited via phase-matching with $\beta = k\sqrt{\varepsilon}\sin\theta$ are inherently leaky waves, meaning they lose energy not only due to absorption in the metal but also due to leakage radiation in the prism. The minimum in reflected intensity is due to destructive interference between this leakage radiation and the reflected part of the excitation beam. This minimum can be zero for an optimal metal film thickness. This is the case when the damping due to leakage equals the damping due to absorption (critical coupling):
+
+$$
+\Gamma_{\text{LR}} = \Gamma_{\text{abs}} = \mathfrak{I}(\beta_0),
+$$
+
+where:
+
+$$
+\beta_0 = k_0\sqrt{\frac{\varepsilon_1\varepsilon_2}{\varepsilon_1 + \varepsilon_2}}.
+$$
+
+### 1.3.2 Grating Coupling [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=61&selection=149,0,151,16|•]]
+
+Phase-matching can also be achieved by patterning the metal surface with a shallow grating of grooves or holes with lattice constant $a$. In the simple one-dimensional grating of grooves, phase-matching occurs whenever the condition:
+
+$$
+\beta = k\sin\theta \pm \nu g,
+$$
+
+is fulfilled, where $g = 2\pi/a$ is the reciprocal grating vector, and $\nu = 1, 2, 3, \dots$. The excitation of SPPs is again indicated by a reflection minimum.
+
+![Attachments/Notes/Plasmonics/IMG-0123150748-5.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150748-5.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=61&rect=126,88,310,221|•]]
+
+The reverse process is also possible: SPPs propagating along a surface modulated with a grating can couple to light and radiate. The grating need not be milled directly into the metal surface; it can also consist of dielectric material. By designing the grating shape, the propagation direction can be influenced, and even focusing can be achieved.
+
+More generally, SPPs can also be excited on films with random surface roughness or manufactured localized scatterers. The phase-matching condition:
+
+$$
+\beta = k\sin\theta \pm \Delta k_x,
+$$
+
+with the momentum components $\Delta k_x$ provided by scattering, can also be fulfilled.
+
+### 1.3.3 Excitation Using Highly Focused Optical Beams [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=64&selection=39,0,41,45|•]]
+
+Another approach uses a microscopic objective of high numerical aperture, which ensures a large angular spread of the focused excitation beam, including angles $\theta > \theta_c$ greater than the critical angle of total internal reflection at a glass/air interface:
+
+![Attachments/Notes/Plasmonics/IMG-0123150748-6.webp|500](/img/user/Attachments/Notes/Plasmonics/IMG-0123150748-6.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=64&rect=112,117,331,239|•]]
+
+In this way, wave vectors $k_x = \beta$ are available for phase-matching for SPPs at the metal/air interface at the corresponding angle:
+
+$$
+\theta_{\text{SPP}} = \arcsin\left(\frac{\beta}{nk_0}\right) > \theta_c.
+$$
+
+The excited SPPs will radiate back into the glass substrate as leakage radiation at an angle $\theta_{\text{SPP}} > \theta_c$. The traced path of the excited SPPs for s- and p-polarisation is shown below:
+
+![Attachments/Notes/Plasmonics/IMG-0123150748-7.webp|500](/img/user/Attachments/Notes/Plasmonics/IMG-0123150748-7.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=65&rect=143,528,291,613|•]]
+
+As shown earlier, the second image (s-polarisation) has no trace since there are no surface plasmon polaritons for this polarisation.
+
 >[!DANGER] Work in Progress from here on...
 
 
-## 1.3 Excitation of Surface Plasmon Polaritons at Planar Interfaces [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=56&selection=2,0,3,31|•]]
-
-
-
-
-
-
-
+## 1.4 Imaging Surface Plasmon Polariton Propagation [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=70&selection=2,0,3,21&color=important|•]]
 
 
 
@@ -529,7 +590,7 @@ The theory of Wood’s anomalies described in this chapter is based on electroma
 [[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=60&selection=10,0,10,30|•]]
 
 In a scattering problem, an object is illuminated by an incident electromagnetic wave, and one is interested in the total field at any point in space. This total field consists of the known incident field and the scattered field generated by the object. This chapter treats the scattering on a metallic half-plane:
-![Attachments/Notes/Plasmonics/IMG-0123113706.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123113706.webp)[[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=61&rect=165,478,388,612|•]]
+![Attachments/Notes/Plasmonics/IMG-0123150748-8.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0123150748-8.webp)[[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=61&rect=165,478,388,612|•]]
 An incident plane wave propagating in a lossless dielectric material of optical index $\nu_1=\sqrt{\varepsilon_1}$, where $\varepsilon_1$  is the relative permittivity, illuminates a non-magnetic metallic half-plane of complex index $\nu_2=\sqrt{\varepsilon_2}$. An incident field $\mathbf{F}^{\mathbf{i}}$ with unit amplitude can be written in the form:
 
 $$\begin{align*}
