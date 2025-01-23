@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Ultrafast Laser Physics","permalink":"/notes/ultrafast-laser-physics/","updated":"2025-01-23T21:00:15.920+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Ultrafast Laser Physics","permalink":"/notes/ultrafast-laser-physics/","updated":"2025-01-23T21:18:49.942+01:00"}
 ---
 
 For my notes of 'ultra-fast laser physics' 2023, taught by Prof. Gallmann, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/lecture-notes). The pdf might load for quite a while, since its 182 MBs of size. At the same time, I am working on transcoding these notes to the markdown format used on this website. However this is a quite intense process, so it might take some weeks for it to appear here below. However, be assured that the quality will be even higher!
@@ -15,55 +15,52 @@ Its _spectrum_ is defined as:
 $$
 S(\omega) = \left|\mathcal{F}(E(z, t))\right|^2 = \left|\tilde{E}(\omega)\right|^2,
 $$
-where the tilde notation indicates reciprocal space instead of real space. By superimposing more waves, the resulting wave becomes narrower in the time domain until it resembles a Dirac delta function. 
+where the tilde notation indicates reciprocal space instead of real space. When more waves are superimposed, the wave becomes narrower until it resembles a Dirac delta function.
 
-In a dispersive medium, certain wave properties are modified:
+In a dispersive medium, certain quantities are affected:
 $$
 v_p(\lambda) = \frac{c}{n(\lambda)} = \frac{\omega}{k_n}, \quad \lambda_n = \frac{\lambda}{n}, \quad k_n = \frac{2\pi}{\lambda_n} = \frac{\omega}{c} n = \frac{\omega}{v_p}.
 $$
-The Kramers-Kronig relations allow the refractive index $n(\lambda)$ to be deduced from the absorption spectrum. Since $n(\lambda)$ typically decreases with increasing wavelength $\lambda$ in the visible spectrum, and $\lambda_{\text{red}} > \lambda_{\text{blue}}$, it follows that $n_{\text{blue}} > n_{\text{red}}$.
+The Kramers-Kronig relation allows the refractive index $n(\lambda)$ to be determined from the absorption spectrum. Since $n(\lambda)$ decreases with increasing wavelength $\lambda$ in the visible spectrum, and $\lambda_{\text{red}} > \lambda_{\text{blue}}$, it follows that $n_{\text{blue}} > n_{\text{red}}$.
 
-From $v_p(\lambda) = \frac{c}{n(\lambda)}$, it is clear that blue light travels more slowly than red light in such materials. This results in the temporal spreading of a light pulse as it propagates.
+Using $v_p(\lambda) = \frac{c}{n(\lambda)}$, we see that blue light travels more slowly than red light, causing the light pulse to spread over time.
 
 ## 1.1 Helmholtz Equation
 
-The wave equation for a homogeneous dielectric material without free charges or currents is:
+Starting with the wave equation for a homogeneous dielectric material without free charges or currents:
 $$
 \nabla^2 E(z, t) - \frac{1}{c^2} \partial_t^2 E(z, t) = \mu_0 \partial_t^2 P(z, t),
 $$
-where $P(z, t)$ is the polarization density. By applying a Fourier transform and using the relations $\partial_t \longleftrightarrow i \omega$ and $\tilde{P}(z, \omega) = \chi(\omega) \cdot \varepsilon_0 \tilde{E}(z, \omega) = (\varepsilon(\omega) - 1) \varepsilon_0 \tilde{E}$, we derive:
+we Fourier transform this equation. Using $\partial_t \longleftrightarrow i \omega$ and $\tilde{P}(z, \omega) = \chi(\omega) \cdot \varepsilon_0 \tilde{E}(z, \omega) = (\varepsilon(\omega) - 1) \varepsilon_0 \tilde{E}$, we find:
 $$
 \left(\partial_z^2 + k_n^2(\omega)\right) \tilde{E}(z, \omega) = 0,
 $$
-the Helmholtz equation. Here, the wavevector $k_n(\omega)$ depends on the refractive index:
-$$
-k_n(\omega) = \frac{\omega}{c} n(\omega) = \frac{\omega}{c} \sqrt{\varepsilon(\omega)}.
-$$
-The solutions are counter-propagating plane waves:
+which is the Helmholtz equation. Here, the refractive index-dependent wavevector is $k_n(\omega) = \frac{\omega}{c} n(\omega) = \frac{\omega}{c} \sqrt{\varepsilon(\omega)}$. The solutions are counter-propagating plane waves:
 $$
 \tilde{E}(z, \omega) = \tilde{E}_0^{\dagger} e^{-i k_n(\omega) z} + \text{h.c.}
 $$
-This equation forms the foundation for analyzing wave propagation in dispersive media.
 
 ## 1.2 Linear System Theory
 
-Linear system theory is critical for understanding how pulses evolve through optical systems. For an input $E_{\text{in}}(t) = \delta(t)$, the output is the system's impulse response $E_{\text{out}}(t) = h(t)$. For arbitrary inputs, the system response is described by convolution:
+For a more in-depth discussion, see [[Notes/Signals and Systems\|Signals and Systems]]. 
+
+Consider an input $E_{\text{in}}(t) = \delta(t)$, producing an output $E_{\text{out}}(t) = h(t)$. Linear systems have the remarkable property that the response to any input can be determined if the response to the delta function is known. For an arbitrary input:
 $$
 E_{\text{out}}(t) = \int dt' \, h(t') E_{\text{in}}(t - t') = h(t) * E_{\text{in}}(t),
 $$
-where $*$ denotes convolution. Fourier transforming this yields:
+where $*$ denotes convolution. By Fourier transforming, this becomes:
 $$
 \tilde{E}_{\text{out}}(\omega) = \tilde{h}(\omega) \cdot \tilde{E}_{\text{in}}(\omega).
 $$
-The transfer function $\tilde{h}(\omega)$ defines the system's effect on amplitude and phase. Importantly, linear systems cannot generate new frequencies but only adjust the amplitude and phase of existing ones. Spectral power is defined as:
+Here, $h$ is the transfer function of the system. Linear systems cannot generate new frequencies; they can only adjust amplitude and phase. Defining spectral power as:
 $$
 P_{\text{in}}(\omega) = \left|\tilde{E}_{\text{in}}(\omega)\right|^2,
 $$
-and the output power becomes:
+we find:
 $$
-P_{\text{out}} = \left|\tilde{E}_{\text{out}}(\omega)\right|^2 = |\tilde{h}(\omega)|^2 \cdot \left|\tilde{E}_{\text{in}}(\omega)\right|^2 = S(\omega) \cdot P_{\text{in}}(\omega).
+P_{\text{out}} = \left|\tilde{E}_{\text{out}}\right|^2 = |\tilde{h}(\omega)|^2 \cdot \left|\tilde{E}_{\text{in}}(\omega)\right|^2 = S(\omega) \cdot P_{\text{in}}(\omega).
 $$
-For a pure phase transfer function, $\tilde{h}(\omega) = e^{i k_n(\omega) z}$, the spectrum $S(\omega) = 1$ remains unchanged, meaning a linear, non-absorbing medium cannot alter the power spectrum but can broaden the pulse in the time domain.
+If $\tilde{h}(\omega) = e^{i k_n(\omega) z}$ (a pure phase factor for $k_n \in \mathbb{R}$), the spectrum is unchanged, $S(\omega) = 1$, and $P_{\text{in}} = P_{\text{out}}$. Thus, a non-absorbing linear medium cannot alter the power spectrum but only broadens the pulse in the time domain.
 
 ## 1.3 Laser Pulse
 
@@ -71,40 +68,33 @@ A general light pulse can be expressed as:
 $$
 E(t) = A(t) e^{i \omega_0 t},
 $$
-where $A(t)$ is the slowly-varying envelope and $e^{i \omega_0 t}$ represents the fast carrier wave. The envelope $A(t)$ can be written as:
+where $A(t)$ is the slowly-varying envelope and $e^{i \omega_0 t}$ represents the fast carrier wave. Writing:
 $$
 A(t) = \frac{1}{2\pi} \int d\Delta\omega \, \tilde{A}(\Delta\omega) e^{i \Delta\omega t},
 $$
-where $\tilde{A}(\Delta\omega)$ is the Fourier transform of the envelope.
+we define $A(\Delta\omega) = \tilde{E}(\omega_0 + \Delta\omega)$, with $\Delta\omega = \omega - \omega_0$.
 
 For a Gaussian pulse:
 $$
 E_{\text{gaussian}}(t) = e^{-\Gamma t^2} e^{i \omega_0 t} = e^{-\Gamma_1 t^2} e^{i \phi_{\text{tot}}},
 $$
-the instantaneous frequency is:
-$$
-\omega(t) = \frac{d\phi_{\text{tot}}}{dt} = \omega_0 + 2\Gamma_2 t,
-$$
-and the full-width half-maximum (FWHM) pulse length is:
-$$
-\tau_p = \sqrt{\frac{2 \ln 2}{\operatorname{Re}\Gamma}}.
-$$
-Here, $\Gamma = \Gamma_1 - i \Gamma_2$ and $T_{\phi_{\text{tot}}} = \omega_0 t + \Gamma_2 t^2$. A chirped pulse has a time-dependent frequency $\omega(t)$ and occurs when $\Gamma_2 \neq 0$. The root-mean-square (rms) pulse duration is:
+where $\omega(t) = \frac{d\phi_{\text{tot}}}{dt} = \omega_0 + 2\Gamma_2 t$ and $\tau_p = \sqrt{\frac{2 \ln 2}{\operatorname{Re}\Gamma}}$. Using $\Gamma = \Gamma_1 - i \Gamma_2$ and $T_{\phi_{\text{tot}}} = \omega_0 t + \Gamma_2 t^2$, the pulse length $\tau_p$ is the FWHM of intensity $I(t) = |E(t)|^2$. A time-dependent frequency $\omega(t)$ is called a _chirp_. The rms-pulse duration is defined as:
 $$
 \tau_{\text{rms}}^2 = \left\langle (t - \langle t \rangle)^2 \right\rangle, \quad \langle t \rangle = \frac{\int dt \, t \cdot I(t)}{\int dt \, I(t)}.
 $$
+Constant phase yields the shortest rms pulse duration $\tau_{\text{rms}}$.
 
 ## 1.4 Optical Dispersion
 
-Dispersion causes different spectral components of a pulse to travel at different speeds. Positive (normal) dispersion occurs when:
+Positive (normal) dispersion:
 $$
 \frac{\partial^2 n}{\partial \omega^2} > 0, \quad \frac{\partial^2 n}{\partial \lambda^2} > 0, \quad \frac{\partial^2 \varphi}{\partial \omega^2} > 0.
 $$
-Negative (anomalous) dispersion occurs when:
+Negative (anomalous) dispersion:
 $$
 \frac{\partial^2 n}{\partial \omega^2} < 0, \quad \frac{\partial^2 n}{\partial \lambda^2} < 0, \quad \frac{\partial^2 \varphi}{\partial \omega^2} < 0.
 $$
-Most materials exhibit positive dispersion in the visible spectrum but negative dispersion at longer wavelengths. A zero-dispersion point often exists around $1-2 \mu m$, where dispersion transitions from positive to negative.
+Most materials exhibit positive dispersion in the visible spectrum but negative dispersion for larger $\lambda$. Around $\lambda \sim 1-2 \mu m$, there is typically no dispersion.
 
 ## 1.5 Slowly-Varying Approximation
 
@@ -112,62 +102,58 @@ Decomposing the electric field:
 $$
 E(z, t) = A(z, t) e^{i\left(\omega_0 t - k_n(\omega_0) z\right)}, \quad \tilde{E}\left(z, \omega_0 + \Delta\omega\right) = \tilde{A}(z, \Delta\omega) e^{-i k_n(\omega_0) z}.
 $$
-The slowly-varying approximations are:
-1. $\left|\partial_z A\right| \ll \left|k_n(\omega_0) A\right|$ (spatial envelope changes are small).
-2. $\left|\partial_t A\right| \ll \left|\omega_0 A\right|$ (temporal envelope changes are small).
+The approximations are:
+1. $\left|\partial_z A\right| \ll \left|k_n(\omega_0) A\right|$.
+2. $\left|\partial_t A\right| \ll \left|\omega_0 A\right|$.
 
-Applying these, we neglect $\partial_z^2 \tilde{A}$ and obtain:
+Using these, we neglect $\partial_z^2 \tilde{A}$ and find:
 $$
 \partial_z \tilde{A}(z, \Delta\omega) + i \Delta k_n \tilde{A}(z, \Delta\omega) = 0,
 $$
-with $\Delta k_n = k_n(\omega_0 + \Delta\omega) - k_n(\omega_0)$. Solving gives:
+where $\Delta k_n = k_n(\omega_0 + \Delta\omega) - k_n(\omega_0) \ll k_n$. The solution is:
 $$
 \tilde{A}(z, \Delta\omega) = \tilde{A}(0, \Delta\omega) e^{-i \Delta k_n z}.
 $$
-Expanding $k_n(\omega)$ yields:
+Expanding $k_n(\omega)$:
 $$
-k_n(\omega) \approx k_n(\omega_0) + k_n'(\omega_0) \Delta\omega + \frac{1}{2} k_n''(\omega_0) \Delta\omega^2.
+k_n(\omega) \approx k_n(\omega_0) + k_n'(\omega_0) \Delta\omega + \frac{1}{2} k_n''(\omega_0) \Delta\omega^2,
 $$
-- First-order dispersion: $k_n' = \frac{d k_n}{d\omega}$ (group delay $\text{GD}$).
-- Second-order dispersion: $k_n'' = \frac{d^2 k_n}{d\omega^2}$ (GDD).
+we define:
+- First-order dispersion: $k_n' = \frac{d k_n}{d\omega}$ (group delay: $\text{GD} = \frac{d\phi}{d\omega}$).
+- Second-order dispersion: $k_n'' = \frac{d^2 k_n}{d\omega^2}$ (group delay dispersion: $\text{GDD} = \frac{d^2\phi}{d\omega^2}$).
 
-Phase velocity:
+Phase and group velocities:
 $$
-v_p(\omega) = \frac{c}{n}.
+v_p(\omega) = \frac{c}{n}, \quad v_g(\omega) = \frac{1}{k_n'(\omega)}.
 $$
-Group velocity:
-$$
-v_g(\omega) = \frac{1}{k_n'(\omega)}.
-$$
-Group delay:
-$$
-T_g = \frac{z}{v_g} = k_n' z.
-$$
+The group delay is $T_g = \frac{z}{v_g} = k_n' z$.
 
-For an unchirped Gaussian pulse, pulse broadening is described by:
+For an unchirped Gaussian pulse:
 $$
-\frac{\tau_p(z)}{\tau_p(0)} = \sqrt{1 + \left\{\frac{4 \ln 2 \cdot \frac{d^2 \phi}{d\omega^2}}{\tau_p^2(0)}\right\}^2}.
+\frac{\tau_p(z)}{\tau_p(0)} = \sqrt{1 + \left\{\frac{4 \ln 2 \cdot \frac{d^2 \phi}{d\omega^2}}{\tau_p^2(0)}\right\}^2},
 $$
-In the strong broadening limit, this simplifies to:
+which simplifies to:
 $$
-\tau_p(z) \approx \frac{d^2\phi}{d\omega^2} \cdot \Delta\omega_p.
+\tau_p(z) \approx \frac{d^2\phi}{d\omega^2} \cdot \Delta\omega_p,
 $$
+in the strong broadening limit $\frac{d^2\phi}{d\omega^2} \gg \tau_p^2(0)$. Higher-order dispersion leads to more significant pulse broadening.
 
-Using the Sellmeier relation:
+Using the empirical Sellmeier relation:
 $$
 n^2 - 1 = \sum_k B_k \frac{\lambda^2}{\lambda^2 - C_k},
 $$
-we can calculate refractive indices for various materials.
+we can calculate the refractive index for any material given $B_k$ and $C_k$.
 
-The Wigner distribution, which relates intensity to time and frequency domains, is:
+The Wigner distribution:
 $$
 W(t, \omega) = \int dt' \, e^{-i\omega t'} E\left(t + \frac{t'}{2}\right) E^*\left(t - \frac{t'}{2}\right),
 $$
-with:
+relates intensity to projections on time or frequency:
 $$
 I(t) = \int W(t, \omega) d\omega, \quad \tilde{I}(\omega) = \int W(t, \omega) dt.
 $$
-For higher-order dispersion, quadratic phase results in linear chirp, and higher-order terms become relevant when dispersion lengths $L_D$ and $L_D'$ are comparable to the propagation distance. Specifically higher-order dispersion affects the chirp $\omega(t)$:
+
+Higher-order dispersion affects the chirp $\omega(t)$:
 - Quadratic phase $\phi(\omega) \sim (\omega - \omega_0)^2$ leads to linear chirp.
 - GDD becomes significant for $\frac{\partial^2\phi}{\partial\omega^2} > \tau_0^2$.
 - TOD becomes significant for $\frac{\partial^3\phi}{\partial\omega^3} > \tau_0^3$.
@@ -194,21 +180,19 @@ Here, $\tan \theta_B = n\left(\lambda_0\right) = \frac{n_2}{n_1}$, and the apex 
 
 The optical path length is given by:
 $$P = 2 \overline{CDE} = 2 \overline{AB} = 2 L \cos \beta.$$
-From the geometric configuration, it is clear that the prism pair defines a horizon wavelength $\lambda_h$, below which wavelengths miss the second prism. This wavelength acts as a cutoff, limiting the range of effective compensation.
+From the geometric configuration, it is clear that the prism pair defines a horizon wavelength $\lambda_h$, below which wavelengths miss the second prism.
 
 Assuming the dispersion of air is negligible, the phase shift is:
 $$\phi_p(\lambda) = k_n(\lambda) z = k P(\lambda),$$
 where $P = P\left(\beta\left(n(\lambda)\right)\right)$. Further, we find:
 $$\frac{d^2 \phi_P}{d \lambda^2} \sim \frac{d^2 P}{d \lambda^2} \approx -8 \cdot \left(\frac{d n}{d \lambda}\right)^2 L < 0 \quad \text{for} \quad \beta \approx 0,$$
-indicating negative group delay dispersion (GDD). The term $\frac{d n}{d \lambda}$ is material-independent, meaning the effectiveness of dispersion compensation depends on the geometry of the prism pair. 
-
-By vertically moving the second prism, the GDD can be adjusted. However, increasing negative dispersion also increases the horizon wavelength $\lambda_h$, causing more wavelengths $\lambda < \lambda_h$ to be lost. This highlights the trade-off between achieving high negative dispersion and maintaining a broad spectral coverage.
+indicating negative group delay dispersion (GDD). The term $\frac{d n}{d \lambda}$ is independent of the material. By vertically moving the second prism, the GDD can be adjusted. However, increasing negative dispersion also increases the horizon wavelength $\lambda_h$, causing more wavelengths $\lambda < \lambda_h$ to be lost. Thus, there is a trade-off between negative dispersion and spectral coverage.
 
 ## 2.2 Grating Compressor (Diffraction)
 
 Grating compressors are another widely used method for dispersion compensation. This setup requires at least two diffraction gratings. The angular dispersion is:
 $$V_{x, m} = \frac{m}{\Lambda} \quad \text{or} \quad \theta_{x, m} = m \cdot \frac{\lambda}{\Lambda},$$
-where $\Lambda$ is the grating spacing and $m$ the diffraction order. In this configuration, red light is diffracted more strongly than blue due to the wavelength dependence of diffraction.
+where $\Lambda$ is the grating spacing and $m$ the diffraction order. Red light is diffracted more strongly than blue. 
 
 The first grating does not contribute to the grating phase, as all spectral components diffract at the same position. However, the second grating introduces a phase:
 $$\phi_g(x) = \pi - m \frac{x}{\Lambda} 2 \pi,$$
@@ -216,7 +200,7 @@ where $x$ is the position on the grating, and the $\pi$ phase shift arises from 
 $$\phi = k L + \phi_g(x).$$
 This results in:
 $$\frac{d^2 \phi}{d \omega} < 0 \quad \text{and} \quad \frac{d^2 \phi}{d \omega} \sim L_g.$$
-Grating compressors produce significantly more negative dispersion than prism pairs, achieving dispersions in the $(\text{ps})^2$ range compared to $(\text{fs})^2$. This makes them highly effective for short pulse durations. However, they also generate higher-order dispersion, introducing distortions to the pulse shape. This presents a trade-off between achieving large negative dispersion and avoiding undesirable higher-order effects.
+Grating compressors produce significantly more negative dispersion than prism pairs, achieving dispersions in the $(\text{ps})^2$ range compared to $(\text{fs})^2$. However, they also generate higher-order dispersion, creating a trade-off between magnitude of negative dispersion and higher-order effects.
 
 ## 2.3 Grating-Based Stretcher/Compressor
 
@@ -224,11 +208,11 @@ Combining gratings with lenses effectively implements a Fourier transform and pr
 - For $L < f$, the system produces positive dispersion, termed a "stretcher."
 - For $L > f$, it generates negative dispersion, termed a "compressor."
 
-When $L = f$, the system is called a 4-f system and introduces no dispersion. Despite this, a 4-f system is useful for modifying each wavelength independently, enabling the implementation of an arbitrary transfer function $\tilde{h}(\omega)$. Such setups are particularly valuable in precision applications where controlling the spectral phase is critical. An example of this is the [[Notes/Ultrafast Laser Physics#2.5 Spatial Light Modulator\|spatial light modulator]].
+When $L = f$, the system is called a 4-f system and introduces no dispersion. Despite this, a 4-f system is useful for modifying each wavelength independently, enabling the implementation of an arbitrary transfer function $\tilde{h}(\omega)$. An example is the [[Notes/Ultrafast Laser Physics#2.5 Spatial Light Modulator\|spatial light modulator]].
 
 ## 2.4 Chirped Pulse Amplification
 
-Chirped pulse amplification (short: **CPA**) involves temporally stretching a short laser pulse using dispersion, amplifying it, and then compressing it back to its original duration. The stretching ensures that the pulse intensity is reduced during amplification, preventing damage to optical components. After amplification, the pulse is recompressed to its initial short duration, retaining high peak power. CPA is an essential technique in ultrafast optics and forms the basis of many high-intensity laser systems.
+Chirped pulse amplification (short: **CPA**) involves temporally stretching a short laser pulse using dispersion, amplifying it, and then compressing it back to its original duration. This prevents damage to optical components during amplification while maintaining high peak power after recompression.
 
 ## 2.5 Spatial Light Modulator
 
@@ -241,12 +225,11 @@ This modifies the pulse, yielding:
 $$E_{\text{out}} = E_{\text{in}} \cdot e^{i \varphi_{\text{lin}}} \cdot e^{i \Delta \varphi},$$
 where $\Delta \varphi = \frac{2 \pi}{\lambda_i}\left\{n_e\left(\theta\left(V_i\right)\right) - n_o\right\}$.
 
-Amplitude shaping is possible by stacking two liquid crystals rotated by $90^\circ$ relative to each other. This allows simultaneous control of amplitude and phase. However, pixelation imposes a limitation: phase changes between adjacent pixels must not exceed $\pi$. Otherwise, diffraction grating effects arise, causing satellite pulses at:
+Amplitude shaping is possible by stacking two liquid crystals rotated by $90^\circ$ relative to each other. A limitation of this setup is pixelation, where phase changes between adjacent pixels must not exceed $\pi$. Otherwise, diffraction grating effects arise, causing satellite pulses at:
 $$t_{\text{sat}} = \pm \frac{2 \pi}{\Delta \omega_{\text{avg}}} \approx \pm \frac{\lambda^2}{c \Delta \lambda},$$
-where $\Delta \omega_{\text{avg}}$ is the average bandwidth per pixel.
+where $\Delta \omega_{\text{avg}}$ is the average bandwidth per pixel. 
 
-To mitigate pixelation, deformable mirror SLMs can be used, although they can only adjust the phase. Phase-shaping is generally prioritized, as it conveys more information than amplitude. SLMs are also effective for fine-tuning dispersion compensation and addressing higher-order dispersion. They are versatile tools in ultrafast optics, enabling precise control over the spectral and temporal characteristics of light pulses.
-
+To mitigate pixelation, deformable mirror SLMs can be used, although they can only adjust the phase. Phase-shaping is generally prioritized, as it conveys more information than amplitude. SLMs are also effective for fine-tuning dispersion compensation and addressing higher-order dispersion.
 
 ## 2.6 Fabry-Perot Interferometer
 
@@ -303,9 +286,6 @@ To calibrate the path length, a helium-neon laser with a long coherence length i
 
 
 >[!DANGER] Work in progress from here on...
-
-
-
 # 3 Non-linear pulse propagation
 The optical kerr-effect is $n(I)=n+n_2 I$ in lowest order and $n_2 \sim 10^{-16} \frac{\mathrm{~cm}^2}{\mathrm{~W}}$.
 
