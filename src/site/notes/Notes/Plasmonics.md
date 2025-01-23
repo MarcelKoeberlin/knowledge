@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-22T17:45:57.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-23T10:42:55.000+01:00"}
 ---
 
 These notes are following mainly along [Plasmonics: Fundamentals and Applications](https://link.springer.com/book/10.1007/0-387-37825-1)and [Plasmonics: From Basics to Advanced Topics](https://link.springer.com/book/10.1007/978-3-642-28079-5).
@@ -386,6 +386,68 @@ The next figure shows the dispersion relation of SPPs propagating at a silver/ai
 ![Attachments/Notes/Plasmonics/IMG-0122174557-3.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0122174557-3.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=47&rect=75,420,371,612|•]]
 We note that there is generally a characteristic trade-off between localisation and loss in plasmonics. Field confinement below the diffraction limit of half the wavelength in the dielectric can be achieved close the $\omega_{sp}$. In the metal itself, the field falls off over distances on the order of 20 nm over a wide frequency range.
 ### 1.2.3 Multilayer Systems [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=48&selection=7,0,9,18|•]]
+
+Lets turn our attention to systems consisting of alternating conducting and dielectric thin films. Each single interface can sustain bound SPPs. When the separation between adjacent interfaces is comparable to or smaller than the decay length $\hat{z}=1/|k_z|$ of the interface mode, interaction between SPPs give rise to coupled modes. 
+Consider first a three-layer system:
+1. the insulator/metal/insulator (**IMI**) heterostructure: A thin metallic layer (I) is sandwiched between two (infinitely) thick dielectric claddings (II, III), and then
+2. the metal/insulator/metal (**MIM**) heterostructure: A thin dielectric core layer (I) sandwiched between two metallic claddings (II, III).
+
+
+![Attachments/Plasmonics - Fundamentals and Applications.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=48&rect=106,96,329,197|•]]
+
+We are only interested in the lowest-order bound modes, and thus start with a general description of TM modes that are non-oscillatory in the z-direction normal to the interface. We demand that the fields decay exponentially in the claddings (II) and (III). Note that for $a\rightarrow \infty,$ this problem reduces too the case of two uncoupled SPPs at the respective interface.
+Consider now that the sub- and superstrates (II) and (III) share the same dielectric response $\varepsilon_2=\varepsilon_3$ and thus $k_2=k_3$. For the dispersion relation, we find a pair of equations 
+$$\begin{align*}
+\begin{aligned}
+\tanh k_1 a & =-\frac{k_2 \varepsilon_1}{k_1 \varepsilon_2} &&\text{and} &&
+\tanh k_1 a =-\frac{k_1 \varepsilon_2}{k_2 \varepsilon_1}.
+\end{aligned}
+\end{align*}$$
+1. The first equation describes modes of odd vector parity: $E_x(z)$ is odd, $H_y(z)$ and $E_z(z)$ are even functions, 
+2. while the second describes modes of even vector parity: $E_x(z)$ is even, $H_y(z)$ and $E_z(z)$ are odd.
+
+For the case of the **IMI geometry**, we have that $\varepsilon_1=varepsilon(\omega)$ for the metal $\varepsilon_2$ is positive and real for the insulating cladding. For example, for the case of air/silver/air and two different thicknesses (50 nm in dashed black, and 100 nm in dashed gray) of the silver film: 
+
+![Attachments/Plasmonics - Fundamentals and Applications 1.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%201.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=50&rect=95,120,349,290|•]]
+For simplicity, the dielectric function silver is approximated as a Drude metal with negligible damping, meaning that $\varepsilon(\omega)$ is real so that $\mathfrak{I}(\beta)=0$. As can be seen, the odd modes have frequencies $\omega_{+}$higher than the respective frequencies for a single interface SPP, and the even modes lower frequencies $\omega_{-}$. For large wave vectors $\beta$, which are only achievable if $\mathfrak{I}(\varepsilon(\omega))=0$ , the limiting frequencies are
+
+$$\begin{align*}
+\begin{aligned}
+\omega_{+}=\frac{\omega_{\mathrm{p}}}{\sqrt{1+\varepsilon_2}} \sqrt{1+\frac{2 \varepsilon_2 \mathrm{e}^{-2 \beta a}}{1+\varepsilon_2}} &&\text{and}&& \omega_{-}=\frac{\omega_{\mathrm{p}}}{\sqrt{1+\varepsilon_2}} \sqrt{1-\frac{2 \varepsilon_2 \mathrm{e}^{-2 \beta a}}{1+\varepsilon_2}}.
+\end{aligned}
+\end{align*}$$
+Odd modes have the interesting property that upon decreasing metal film thickness, the confinement of the coupled SPP to the metal film decreases as the mode evolves into a plane wave supported by the homogeneous dielectric environment. For real, absorptive metals described via a complex $\varepsilon(\omega)$, this implies a drastically increased SPP propagation length. These are _long-ranging SPPs_ and will be further discussed in a later chapter.
+Even modes exhibit the opposite behaviour - their confinement to the metal increases with decreasing metal film thickness, resulting in a reduction in propagation length.
+
+In the **MIM geometry**, the most interesting mode is the fundamental odd mode of the system, which does not exhibit a cut-off for vanishing core layer thickness:
+![Attachments/Plasmonics - Fundamentals and Applications 2.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%202.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=52&rect=94,444,345,610|•]]
+The dielectric function was taken as a complex fit, so that the propagation constant $\beta$ does not go to infinity as the surface plasmon frequency is approached, but instead folds back and eventually crosses the light line, the same way that SPPs at single interfaces do. 
+Large propagation constants can be achieved even for excitations well below $\omega_{sp}$, provided that the dielectric core is chosen sufficiently small. The ability to access such large wave vectors and thus small penetration lengths $\hat{z}$ into the metallic layers by adjusting the geometry indicates that localisation effects that for a single interface can only be sustained at excitations near $ω_{sp}$ , can for such MIM structures also be attained for excitation out in the the infrared.
+
+Note this discussion was limited to the fundamental bound modes, and that there are indeed many more modes in this geometry. For example, in the IMI structures there are leaky modes, while in the MIM structure oscillatory modes can exist. Additionally, the coupling between SPPs at the core/cladding interface changes significantly if $\varepsilon_2\neq\varepsilon_3$, prohibiting phase matching. 
+## 1.3 Excitation of Surface Plasmon Polaritons at Planar Interfaces [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=56&selection=2,0,3,31|•]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
