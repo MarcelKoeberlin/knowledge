@@ -1,6 +1,10 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Quantum Optics","permalink":"/notes/quantum-optics/","updated":"2025-01-23T11:40:33.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Quantum Optics","permalink":"/notes/quantum-optics/","updated":"2025-01-24T10:42:33.000+01:00"}
 ---
+
+Quantum optics lies at the intersection of quantum mechanics and the behavior of light, offering profound insights into the quantum nature of our universe. This script explores key topics such as the quantization of the electromagnetic field, the Jaynes-Cummings Hamiltonian, coherence, and cavity optomechanics. These concepts not only deepen our understanding of light-matter interactions but also underpin transformative technologies like quantum communication and precision measurement. By providing a concise introduction to these topics, this work aims to inspire further exploration of this fascinating and impactful field.
+
+
 
 # 1 Quantisation of the Electro-Magnetic Field
 
@@ -32,6 +36,7 @@ $$L=\int d^{3} r \cdot \alpha(r)=\int d^3 r \frac{\varepsilon_{0}}{2}\left(\vec{
 The vector potential $\vec{A}$ is defined such that its negative temporal derivative is the electric field, and that it's curl is the magnetic field:
 $$\begin{align}\vec{E}=-\frac{\partial \vec{A}}{\partial t}&&\text{and} \quad\nabla \times \vec{A}=\vec{B}. \end{align}$$
 There is now freedom in the chosen gauge, and we choose the Coulomb gauge:
+
 $$\vec{\nabla} \cdot \vec{A}=0 \Leftrightarrow \vec{k} \cdot \tilde{A}=0$$ 
 In this gauge, the vector field is said to be transverse. An implication of this is that the Lagrangian can now be written as
 $$\Rightarrow \alpha(r)=\frac{\varepsilon_{0}}{2}\left(\dot{\vec{A}}^{2}-c^{2}(\vec{\nabla} \times \vec{A})^{2}\right),$$
@@ -44,7 +49,8 @@ Next, the conjugate momentum is defined as
 $$\pi_{\sigma_{k}}(k)=\left(\frac{\partial \tilde{L}}{\partial \dot{\tilde{A}}_{\sigma_{k}}}\right)^{*}=\varepsilon_{0} \cdot \dot{\tilde{A}}_{\sigma_{k}}=-\varepsilon_{0} \tilde{E}_{\sigma_{k}}.$$
 A very important step now is the **quantisation**, by introducing operators that satisfy a commutation relation:
 $$\left[\tilde{A}_{\sigma_{k}}(k), \pi_{\sigma_{k^{\prime}}}^{*}\left(k^{\prime}\right)\right]=i \hbar \delta_{\sigma_{k} \sigma_{k^{\prime}}} \delta\left(k-k^{\prime}\right).$$
-With this, the Hamiltonian is $H=\int d^{3} k \cdot \tilde{\mathcal{H}}(k)$ with $$\tilde{\mathcal{H}}=\frac{|\tilde{\Pi}|^{2}}{2 \varepsilon_{0}}+\frac{\varepsilon_{0} c^{2} k^{2}}{2}|\tilde{A}|^{2}.$$
+With this, the Hamiltonian is $H=\int d^{3} k \cdot \tilde{\mathcal{H}}(k)$ with 
+$$\tilde{\mathcal{H}}=\frac{|\tilde{\Pi}|^{2}}{2 \varepsilon_{0}}+\frac{\varepsilon_{0} c^{2} k^{2}}{2}|\tilde{A}|^{2}.$$
 The first part is the electric part of the electromagnetic field, while the second part contains the magnetic part. This Hamiltonian is there very similar to the harmonic oscillator: $\frac{p^{2}}{2 m}+\frac{k^{2} x^{2}}{2}.$ To tidy up, new operators are introduced: 
 $$a_{\sigma_{k}}(k)=\sqrt{\frac{1}{2 \hbar w}}\left(w \varepsilon_{0} \tilde{A}_{\sigma_{k}}+i \tilde{\pi}_{\sigma_{k}}\right),$$
 satisfying the commutation relation $\left[a_{\sigma_{k}}(k), a_{\sigma_{k^{\prime}}}^{\dagger}\left(k^{\prime}\right)\right]=\delta_{\sigma_{k} \sigma_{k^{\prime}}} \delta\left(k-k^{\prime}\right)$. 
@@ -58,6 +64,7 @@ The Hamiltonian is then
 $$H=\sum_{k, \sigma_{k}} \hbar w_{k}\left(a_{k, \sigma_{k}}^{\dagger} a_{k, \sigma_{k}}+\frac{1}{2}\right),$$
 which is an infinite collection of harmonic oscillators. The constant of $+1/2$ can be omitted. Then, the ground state, denoted as $|0\rangle$, satisfies $a_{k, \sigma_{k}}|0\rangle=0$ by definition.
 
+---
 ## 1.1 Quantum States of Light
 
 By focusing on a single field mode, we can replace the general operator $a_{k_{1} \sigma_{k}}$ with $a_{c}$. This then simplifies the Hamiltonian to 
@@ -65,7 +72,8 @@ $$H=\hbar w_{c} a_{c}^{\dagger} a_{c}.$$
 The operators satisfy $\left[a_{c} a_{c}^{\dagger}\right]=1$. The eigenstates are found to be
 $$\left|n_{c}\right\rangle=\sqrt{\frac{1}{n!}}\left(a_{c}^{\dagger}\right)^{n}|0\rangle,$$
 where each state has an energy $E_{n}=\hbar w_{c} n$. The spectrum is harmonic for all values of $\left(k, \sigma_{k}\right)$, which is a direct consequence of linearity of the Maxwell equations.
-Interestingly, we have that  $$\langle n| \vec{E}(r)|n\rangle=0 \quad \forall n,$$
+Interestingly, we have that  
+$$\langle n| \vec{E}(r)|n\rangle=0 \quad \forall n,$$
 however zero-results are uncommon in reality: We are rarely dealing with fields in an eigenstate. We may define a new state, the coherent state:
 $$|\alpha\rangle=e^{-|\alpha|^{2} / 2} \sum_{n} \frac{\alpha^{n}}{\sqrt{n!}}|n\rangle.$$
 The ground state is the one associated with $\alpha=0$. The coherent state has the main properties:
@@ -75,8 +83,10 @@ The ground state is the one associated with $\alpha=0$. The coherent state has t
 
 We may now split the electric field into a positive and negative frequency term:
 $$E(r, t)=E^{(+)}(r, t)+E^{(-)}(r, t),$$
-where  $$E^{(+)}=\sqrt{\frac{\hbar \omega_{c}}{2 \varepsilon_{0} L^{3}}} \cdot a_{c} \cdot e^{i(k r-\omega t)}=\left(E^{(-)}\right)^{\dagger}.$$
+where  
+$$E^{(+)}=\sqrt{\frac{\hbar \omega_{c}}{2 \varepsilon_{0} L^{3}}} \cdot a_{c} \cdot e^{i(k r-\omega t)}=\left(E^{(-)}\right)^{\dagger}.$$
 
+---
 ## 1.2 Phase-Space Representation
 
 Further, it is useful to split the electric field into a field term in z-direction, and another in transverse direction:
@@ -103,6 +113,7 @@ Then, if $|\psi\rangle$ is a classical state, the Wigner function is semi-positi
 
 >[!DANGER] Work in progress from here on...
 
+---
 ## 1.3 Generation of squeezed states non-linear optics
 Since the uncertainity relation requires $\Delta a_{Q} \cdot \Delta a_{P} \geqslant \frac{1}{4}$, we can squeeze the state in one direction: $\Delta a_{Q}<\Delta a_{p}$
 We now consider two modes $\omega_{b}$ and $\omega_{c}$ :
@@ -131,6 +142,7 @@ $$
 2) $\left.N(t)=\left\langle a_{c}^{\dagger} a_{c}\right\rangle=\left\langle b^{\dagger} b\right\rangle=\left\langle\left(a_{Q}(t)-i a_{p}(t)\right)\left(a_{Q}(t)+i a_{p}(t)\right)\right\rangle=\sinh ^{2}(2 x \beta t)\right\rangle 0$
 III) Since $\Delta a_{Q}^{2}=\left\langle a_{Q}^{2}\right\rangle-\left\langle Q_{Q}\right\rangle^{2}=\frac{1}{4} e^{4 \times \beta+} \Rightarrow \Delta a_{Q} \cdot \Delta a_{p}=\frac{1}{4}$ Still minimal uncertainity state.
 
+---
 ## 1.4 Atom-field interactions
 Consider charged particle interacting with quantized field in coulomb gauge:
 
@@ -186,6 +198,7 @@ In the LWA limit and $E(r) \approx E(0)+\left.\vec{r} \cdot \vec{\nabla} \vec{E}
 where the first term is the electric-dipole term. Note $r=0$ is position of emitter.
 Note further, $\frac{\text { magn. dipole }}{\text { elechic dipole }} \approx \frac{\alpha}{2}$ so $M D \ll E D \quad M D$ and $E Q$ only important if ED transitions are not allowed by symmetry.
 
+---
 ## 1.5 Taynes-Cummings model
 We can now write $H=H_{\text {emitter }}+\sum_{k, \sigma_{k}} \hbar w_{k} a_{k}^{\dagger} a_{k}-\vec{d} \vec{E}(0, t)$ which is valid in the LWA limit.
 For states such as $1 s, 2 s, 2 p \ldots \quad \sqrt{\left\langle r^{2}\right\rangle} \approx 1 \AA<\lambda_{i j} \approx 2 n m$, this is a good approximation.
@@ -229,9 +242,11 @@ $$
 
 If $g_{c} \sqrt{n} \sim \omega_{\text {eg, }}$ the RWA would not be valid and we consider another transition: $\left|g_{1} 1\right\rangle \leftrightarrow\left|f_{1} 0\right\rangle$
 
+---
 # 2 Jaynes-Cummings Model: Cavity QED
 $g_{c}$ is usually $\sim 10 \mathrm{MHz}, w_{\text {eg }} \sim 300 T H z \sim w_{c}, M_{\text {eg }} \sim e\langle r\rangle$ eg $\sim 10^{-2 g}$. We want $l \geqslant\langle r\rangle_{\text {eg }} \Rightarrow \frac{g_{c}}{w_{c}}=\sqrt{\alpha} \Leftrightarrow g_{c}\left\langle w_{c}\right.$ as expected.
 
+---
 ## 2.1 Vacuum Rabi oscillations
 Assume $|\psi(0)\rangle=|e, n\rangle$ and $\omega_{e g}=\omega_{c}$, then $\mathcal{H}_{\text {int }}^{\text {inter. }}=\hbar g_{c}\left(\sigma_{\text {eg }} a_{c}+\sigma_{g e} a_{c}^{\dagger}\right)$is relevant.
 In RWA only states within excitation manifolds couple: $|e, n\rangle \longleftrightarrow|g, n+1\rangle \quad$ (without $R W A_{1}|g, n\rangle \leftrightarrow|e, n+1\rangle$ )
@@ -251,6 +266,8 @@ If we were to set $|\Psi(0)\rangle=|e, \alpha\rangle, P_{e}(t)=\sum_{n}\left|c_{
 Collaps time $t_{c 0 l}$ can be estimated by $t_{c 01} \cdot g\left(\sqrt{\bar{n}+\frac{\Delta n}{2}}-\sqrt{n-\frac{\Delta n}{2}}\right)=\pi$ when $\left\langle\sigma_{e e}\right\rangle \approx \frac{1}{2}$
 For coherent fields, $\bar{n}=\Delta n$, here we get $t_{c o 1} \approx \frac{2 \pi}{g_{c}}$ which is independant of the photon number.
 The oscillatory behavior reoccurs when the different terms are $2 \pi$ out of phase: $g_{c}(\sqrt{\bar{n}+1}-\sqrt{\bar{n}}) t_{\text {rev }}=2 \pi \Rightarrow t_{\text {rev }}=\frac{4 \pi}{g_{e}} \sqrt{n}$ 
+
+---
 ## 2.2 Dressed states
 $$
 \begin{align*}
@@ -339,6 +356,7 @@ $$
 
 Anharmonic
 
+---
 ## 2.3 Dispersive Jaynes-Cummings
 For a single emitter in cavity with $\Delta w=w_{0 g}-\omega_{c} \gg g_{c} \sqrt{n}$, the spectrum is
 ![](https://cdn.mathpix.com/cropped/2025_01_19_965791fe7c92864a8cd2g-08.jpg?height=1009&width=1152&top_left_y=4096&top_left_x=4778)
@@ -356,10 +374,14 @@ Measurement conserves photon number instead of using absorption.
 $\cong$ Cavity induced $A C$-stark shift:
 ![](https://cdn.mathpix.com/cropped/2025_01_19_965791fe7c92864a8cd2g-08.jpg?height=787&width=4070&top_left_y=7237&top_left_x=1947)
 emitter sees AC-staik shift, field seen stake dependant detuning
+
+---
 ## 2.4 Cavity $A C$-Stark shift
 In the heisenberg picture: $i \hbar \frac{d \sigma_{e g}}{d t}=\left[H_{1} \sigma_{e g}\right] \Rightarrow \sigma_{e g}(t)=\sigma_{e g}(0) \cdot e^{-i \frac{g_{c}^{2}}{\Delta \omega} \tau_{\text {transit }} \cdot a_{c}^{\dagger} a_{c}}$
 Similarly, $a_{c}(t)=a_{c}(0) \cdot \exp \left(-i \frac{q_{c}^{2}}{\Delta w}\left(\sigma_{e e}-\sigma_{g g}\right)\right)$
 $\Rightarrow$ Atomic phase contains information about photon number $\Rightarrow$ Quantum non-demolition measurement QND
+
+---
 ## 2.5 "Extensions" of the Jaynes-Cummings model
 
 1) $N$ identical 2-level atoms coupled to single mode: Tavis-Cummings
@@ -404,6 +426,7 @@ Natoms: $2^{N}$-dim. Hilbert space
 For one atom, $g_{c} \ll \omega_{c}=\omega_{e g}$, however for $N$ atoms $g_{c} \sqrt{N} \sim \omega_{e g} \triangleq$ Ultra-stivong coupling.
 So RWA is no longer valid and the 2-elevel approximation neither.
 
+---
 ## 2.6 Spontaneous emission
 $$
 \begin{align*}
@@ -456,6 +479,7 @@ Note that effective hamiltonian $\mathcal{H}_{e f f}=\left(\hbar \omega_{e g}-\h
 Important observations: 1) Unitary Schrödinges equation ends in exponential decay. The decay rate $\Gamma$ is correct, but We cun't just use emitter wavefunction that discards field degrees of freedom.
 11) Not just $\omega_{e g}=\omega_{k}$ are responsible for spontaneous emission, but vather the presence of large bandwidth of modes ensures validity of Markov's approximation.
 
+---
 ## 2.7 Density operator
 Since emitter becomes correlated with reservoir $|\psi(t)\rangle \neq\left|\varphi_{\text {atom }}\right\rangle\left|\phi_{\text {rad.f.eld }}\right\rangle$, we can't use $|\psi(t)\rangle=\alpha|e\rangle+\beta|g\rangle$.
 Our information is incomplete, so we need the density operator formalism.
@@ -472,6 +496,7 @@ Properties of density operator:
 
 Note that $\rho(t)$ is hermitian. The thermal state $\rho_{T}=\sum_{n} \frac{\bar{n}^{n}}{(n+1)^{n+1}}|n\rangle\langle n|$ maximizes entropy.
 
+---
 ## 2.8 Master equation
 We want expand derivation of spontaneous emission and get time evolution for reduced $P_{s}$.
 
@@ -500,6 +525,7 @@ Consider $\left\langle\dot{\sigma}_{e e}\right\rangle=\operatorname{Tr}\left[\si
 Similarly $\left\langle\dot{\sigma}_{g g}\right\rangle=\Gamma_{\text {eg }}\left\langle\sigma_{g g}\right\rangle$ population increase due to spontaneous emission $V$
 The coherences decay exponentially: $\left\langle\dot{\sigma}_{\text {eg }}\right\rangle=-\frac{\Gamma}{2}\left\langle\sigma_{\text {eg }}\right\rangle$
 
+---
 ## 2.9 Purcell effect
 Consider photon loss due to imperfect mirror at rate $\mathrm{K}_{c}$ :
 ![](https://cdn.mathpix.com/cropped/2025_01_19_965791fe7c92864a8cd2g-13.jpg?height=946&width=2338&top_left_y=307&top_left_x=3022)

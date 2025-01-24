@@ -1,8 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-23T15:23:27.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-24T10:47:44.000+01:00"}
 ---
 
-These notes are following mainly along [Plasmonics: Fundamentals and Applications](https://link.springer.com/book/10.1007/0-387-37825-1)and [Plasmonics: From Basics to Advanced Topics](https://link.springer.com/book/10.1007/978-3-642-28079-5).
+These notes primarily follow [Plasmonics: Fundamentals and Applications](https://link.springer.com/book/10.1007/0-387-37825-1) and [Plasmonics: From Basics to Advanced Topics](https://link.springer.com/book/10.1007/978-3-642-28079-5). My interest in this subject stems from its relevance to my current research, which we explore in the [Attoline](https://ulp.ethz.ch/research/attoline.html).
+
+**Table of Contents**
+
+- [[Notes/Plasmonics#1 Fundamentals of Plasmonics\|1 Fundamentals of Plasmonics]]
 
 ---
 
@@ -15,6 +19,8 @@ Roughly speaking, the field of plasmonics is 100 years old, yet it remains an ac
 4. The wide range of applications, from solar cells to high-resolution microscopy, drug design, and more.
 
 # 1 Fundamentals of Plasmonics
+
+---
 ## 1.1 Electromagnetics of Metals [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=24&selection=2,0,2,26|•]]
 
 ### 1.1.1 Introduction
@@ -330,6 +336,7 @@ $$
 
 where an additional factor $1 / 2$ is included due to an implicit assumption of harmonic time dependence of the oscillating fields.
 
+---
 ## 1.2 Surface Plasmon Polaritons at Metal/Insulator Interfaces [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=39&selection=2,0,3,20|•]]
 
 ### 1.2.1 The Wave Equation
@@ -473,6 +480,7 @@ Large propagation constants can be achieved even for excitations well below $\om
 
 Note that this discussion was limited to the fundamental bound modes. In IMI structures, there are leaky modes, while in MIM structures, oscillatory modes can exist. Additionally, the coupling between SPPs at the core/cladding interface changes significantly if $\varepsilon_2 \neq \varepsilon_3$, prohibiting phase matching.
 
+---
 ## 1.3 Excitation of Surface Plasmon Polaritons at Planar Interfaces [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=56&selection=2,0,3,31|•]]
 
 Surface plasmon polaritons propagating at the flat interface between a conductor and a dielectric are essentially two-dimensional electromagnetic waves. Confinement is achieved since the propagation constant is greater than the wave vector in the dielectric, $\beta > k$, leading to decay on both sides of the interface. Therefore, excitation by three-dimensional light beams is not possible unless special techniques for phase-matching are employed. Alternatively, different geometries may be used.
@@ -543,7 +551,7 @@ As shown earlier, the second image (s-polarisation) has no trace since there are
 
 >[!DANGER] Work in Progress from here on...
 
-
+---
 ## 1.4 Imaging Surface Plasmon Polariton Propagation [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=70&selection=2,0,3,21&color=important|•]]
 
 
@@ -555,10 +563,14 @@ As shown earlier, the second image (s-polarisation) has no trace since there are
 
 
 
->[!DANGER] From another book
 
 
+>[!info] This content is from the second book mentioned in the beginning of this document. However, after working through it, I realised that I do not like the writing style and structure at all, so I switched to the first book, which is the content thus far.
+
+---
 # 2 Surface Plasmon Polaritons on Metallic Surfaces
+
+---
 ## 2.1 Wood's Anomalies
 [[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=53&selection=1,0,1,26|•]]
 

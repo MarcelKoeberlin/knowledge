@@ -1,8 +1,13 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Ultrafast Laser Physics","permalink":"/notes/ultrafast-laser-physics/","updated":"2025-01-23T21:18:49.942+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Ultrafast Laser Physics","permalink":"/notes/ultrafast-laser-physics/","updated":"2025-01-24T10:29:22.000+01:00"}
 ---
 
-For my notes of 'ultra-fast laser physics' 2023, taught by Prof. Gallmann, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/lecture-notes). The pdf might load for quite a while, since its 182 MBs of size. At the same time, I am working on transcoding these notes to the markdown format used on this website. However this is a quite intense process, so it might take some weeks for it to appear here below. However, be assured that the quality will be even higher!
+For my notes of 'ultra-fast laser physics' 2023, taught by Prof. Gallmann, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/lecture-notes). The pdf might load for quite a while, since its 182 MBs of size. At the same time, I am working on converting these notes to the markdown format used on this website. However this is a quite intense process, so it might take some weeks for it to appear here below. However, be assured that the quality will be even higher!
+
+**Table of Contents**
+
+- [[Notes/Ultrafast Laser Physics#1 Linear Pulse Propagation\|1 Linear Pulse Propagation]]
+- [[Notes/Ultrafast Laser Physics#2 Dispersion Compensation\|2 Dispersion Compensation]]
 
 ---
 # 1 Linear Pulse Propagation
@@ -25,6 +30,7 @@ The Kramers-Kronig relation allows the refractive index $n(\lambda)$ to be deter
 
 Using $v_p(\lambda) = \frac{c}{n(\lambda)}$, we see that blue light travels more slowly than red light, causing the light pulse to spread over time.
 
+---
 ## 1.1 Helmholtz Equation
 
 Starting with the wave equation for a homogeneous dielectric material without free charges or currents:
@@ -40,6 +46,7 @@ $$
 \tilde{E}(z, \omega) = \tilde{E}_0^{\dagger} e^{-i k_n(\omega) z} + \text{h.c.}
 $$
 
+---
 ## 1.2 Linear System Theory
 
 For a more in-depth discussion, see [[Notes/Signals and Systems\|Signals and Systems]]. 
@@ -62,6 +69,7 @@ P_{\text{out}} = \left|\tilde{E}_{\text{out}}\right|^2 = |\tilde{h}(\omega)|^2 \
 $$
 If $\tilde{h}(\omega) = e^{i k_n(\omega) z}$ (a pure phase factor for $k_n \in \mathbb{R}$), the spectrum is unchanged, $S(\omega) = 1$, and $P_{\text{in}} = P_{\text{out}}$. Thus, a non-absorbing linear medium cannot alter the power spectrum but only broadens the pulse in the time domain.
 
+---
 ## 1.3 Laser Pulse
 
 A general light pulse can be expressed as:
@@ -84,6 +92,7 @@ $$
 $$
 Constant phase yields the shortest rms pulse duration $\tau_{\text{rms}}$.
 
+---
 ## 1.4 Optical Dispersion
 
 Positive (normal) dispersion:
@@ -96,6 +105,7 @@ $$
 $$
 Most materials exhibit positive dispersion in the visible spectrum but negative dispersion for larger $\lambda$. Around $\lambda \sim 1-2 \mu m$, there is typically no dispersion.
 
+---
 ## 1.5 Slowly-Varying Approximation
 
 Decomposing the electric field:
@@ -168,10 +178,12 @@ $$
 $$
 for $z > L_D$.
 
+---
 # 2 Dispersion Compensation
 
 As mentioned earlier, most materials exhibit positive dispersion in the visible range, known as 'normal' dispersion. However, in many cases, it is desirable for a pulse to avoid experiencing this dispersion. To achieve this, we need negative dispersion, which typically requires clever optical design. In other words, we must find a way to make blue light propagate faster than red.
 
+---
 ## 2.1 Prism Pairs (Refraction)
 
 A common method for dispersion compensation involves using prism pairs. To minimize reflection losses, the angle of incidence is set to the Brewster angle, such that:
@@ -188,6 +200,7 @@ where $P = P\left(\beta\left(n(\lambda)\right)\right)$. Further, we find:
 $$\frac{d^2 \phi_P}{d \lambda^2} \sim \frac{d^2 P}{d \lambda^2} \approx -8 \cdot \left(\frac{d n}{d \lambda}\right)^2 L < 0 \quad \text{for} \quad \beta \approx 0,$$
 indicating negative group delay dispersion (GDD). The term $\frac{d n}{d \lambda}$ is independent of the material. By vertically moving the second prism, the GDD can be adjusted. However, increasing negative dispersion also increases the horizon wavelength $\lambda_h$, causing more wavelengths $\lambda < \lambda_h$ to be lost. Thus, there is a trade-off between negative dispersion and spectral coverage.
 
+---
 ## 2.2 Grating Compressor (Diffraction)
 
 Grating compressors are another widely used method for dispersion compensation. This setup requires at least two diffraction gratings. The angular dispersion is:
@@ -202,6 +215,7 @@ This results in:
 $$\frac{d^2 \phi}{d \omega} < 0 \quad \text{and} \quad \frac{d^2 \phi}{d \omega} \sim L_g.$$
 Grating compressors produce significantly more negative dispersion than prism pairs, achieving dispersions in the $(\text{ps})^2$ range compared to $(\text{fs})^2$. However, they also generate higher-order dispersion, creating a trade-off between magnitude of negative dispersion and higher-order effects.
 
+---
 ## 2.3 Grating-Based Stretcher/Compressor
 
 Combining gratings with lenses effectively implements a Fourier transform and provides another approach to dispersion compensation:
@@ -210,10 +224,12 @@ Combining gratings with lenses effectively implements a Fourier transform and pr
 
 When $L = f$, the system is called a 4-f system and introduces no dispersion. Despite this, a 4-f system is useful for modifying each wavelength independently, enabling the implementation of an arbitrary transfer function $\tilde{h}(\omega)$. An example is the [[Notes/Ultrafast Laser Physics#2.5 Spatial Light Modulator\|spatial light modulator]].
 
+---
 ## 2.4 Chirped Pulse Amplification
 
 Chirped pulse amplification (short: **CPA**) involves temporally stretching a short laser pulse using dispersion, amplifying it, and then compressing it back to its original duration. This prevents damage to optical components during amplification while maintaining high peak power after recompression.
 
+---
 ## 2.5 Spatial Light Modulator
 
 A spatial light modulator (SLM) is equivalent to a 4-f system and allows pulse shaping over a broad frequency range. A liquid crystal SLM operates by controlling polar molecules with voltage, leveraging their birefringence to tune the refractive index along the $x$-direction for each molecule. This enables precise pulse shaping:
@@ -231,16 +247,19 @@ where $\Delta \omega_{\text{avg}}$ is the average bandwidth per pixel.
 
 To mitigate pixelation, deformable mirror SLMs can be used, although they can only adjust the phase. Phase-shaping is generally prioritized, as it conveys more information than amplitude. SLMs are also effective for fine-tuning dispersion compensation and addressing higher-order dispersion.
 
+---
 ## 2.6 Fabry-Perot Interferometer
 
 The Fabry-Perot interferometer consists of two highly reflective mirrors separated by a distance $d$, with small transmission coefficients. Due to Fresnel reflection at the interfaces, the light undergoes multiple reflections, leading to interference effects. This creates transmission fringes in the $r_{FP}(\lambda)$ diagram. At specific wavelengths corresponding to resonant conditions, we observe full transmission. These resonances occur when the round-trip phase is an integer multiple of $2\pi$, ensuring constructive interference.
 
+---
 ## 2.7 Gires-Tournois Interferometer
 
 A Gires-Tournois Interferometer (GTI) also uses two mirrors to form a Fabry-Perot cavity. However, the key difference lies in the introduction of a wavelength-dependent phase shift caused by multibeam interference. Neglecting material dispersion, we have $|R_{GTI}| = 1$ and $R_{GTI} = e^{i 2 \phi_{GTI}}$, where $\phi_{GTI}$ depends strongly on frequency. The phase shift is given by:
 $$\varphi = k_n \cdot z = n k d = \frac{\omega t_0}{2},$$
 where $t_0$ is the round-trip time. The group delay dispersion (GDD) is proportional to $d^2$, while the bandwidth scales inversely with $d$. This creates a trade-off: higher GDD corresponds to a narrower bandwidth. The GDD is periodic in wavelength, making GTIs particularly useful in specific applications requiring precise dispersion control.
 
+---
 ## 2.8 Bragg Mirrors
 
 Bragg mirrors consist of alternating layers of materials with high and low refractive indices. These layers create constructive interference at the Bragg wavelength $\lambda_B$ and within the stopband, resulting in nearly complete reflectivity. For constructive interference, the optical thickness of each layer satisfies:
@@ -249,22 +268,26 @@ where $d_l$ and $d_h$ are the thicknesses of the low and high refractive index l
 $$\frac{\Delta \omega}{\omega_B} = \frac{4}{\pi} \arcsin(r).$$
 Within the stopband, the reflected pulse experiences a linear phase shift, ensuring no second-order dispersion. Thus, pulses are reflected without distortion. Outside the stopband, GDD is present, requiring dispersion compensation for short pulses over broad spectral ranges.
 
+---
 ## 2.9 Chirped Mirrors
 
 Chirped mirrors are a variation of Bragg mirrors in which the layer thicknesses gradually change, creating a chirped structure. This design introduces wavelength-dependent penetration depths, allowing controlled GDD over a broader spectral region. Red wavelengths travel deeper into the mirror due to the changing Bragg wavelength, which scales with the optical thickness $d \cdot n$. Chirped mirrors expand the high-reflectance region but exhibit low GDD values, making them suitable for pulses with durations $\tau_p < 10 \, \text{fs}$. However, abrupt refractive index changes between layers can cause dispersion oscillations, limiting their performance.
 
+---
 ## 2.10 Double-Chirped Mirrors
 
 To mitigate the GDD oscillations in standard chirped mirrors, double-chirped mirrors incorporate an impedance-matching strategy. This involves gradually increasing the reflectivity by chirping both the Bragg wavelength and the ratio of the high- and low-index layer thicknesses. The condition:
 $$n_h d_h \gg d_l n_l$$
 ensures effective impedance matching. An anti-reflection (AR) coating is applied to the first interface to minimize initial reflections. However, the AR coating requires extremely low reflectivity below $10^{-4}$, which limits the bandwidth, especially on the blue side of the spectrum.
 
+---
 ## 2.11 Backside-Coated Chirped Mirror
 
 Backside-coated chirped mirrors improve impedance matching by ensuring that the substrate's refractive index equals that of the first layer:
 $$n_{\text{sub}} = n_1.$$
 The AR coating is then used solely to reduce substrate losses. This design achieves a broader bandwidth and reduced dispersion oscillations but introduces more positive dispersion due to the substrate. To counteract this, additional layers are added, increasing the complexity of the design. A significant challenge is maintaining spatial coherence, which may require further impedance-matching measures. Additionally, layer deposition errors can reintroduce unwanted dispersion oscillations.
 
+---
 ## 2.12 Acousto-Optic Programmable Dispersive Filter or "Dazzler"
 
 The Dazzler is a compact and versatile device for dispersion compensation. It uses an acoustic wave in a birefringent material to create a dynamic transmission grating. The acoustic wave, which travels much slower than light, induces phase matching for specific frequencies, enabling efficient diffraction from the fast to the slow axis. The polarization of the input beam determines its propagation axis, and phase matching is governed by:
@@ -274,6 +297,7 @@ $$\begin{array}{l}
 \end{array}$$
 Here, the subscripts $o$ and $e$ refer to the fast and slow axes, respectively. By shaping the acoustic wave, arbitrary GDD profiles can be achieved.
 
+---
 ## 2.13 White-Light Interferometry
 
 White-light interferometry measures dispersion by comparing the sample arm to a reference arm with known dispersion properties. The output signal is:
@@ -286,6 +310,8 @@ To calibrate the path length, a helium-neon laser with a long coherence length i
 
 
 >[!DANGER] Work in progress from here on...
+
+---
 # 3 Non-linear pulse propagation
 The optical kerr-effect is $n(I)=n+n_2 I$ in lowest order and $n_2 \sim 10^{-16} \frac{\mathrm{~cm}^2}{\mathrm{~W}}$.
 
@@ -307,6 +333,7 @@ A gaussian pulse remains gaussian in time, while its spectrum broadens. Then, sp
 
 Negative GDD can compensate linear chirp in the center of SPM-broadened pulse.
 
+---
 ## 3.1 Fiber grating pulse compressor
 
 Then the grating pair provides negative dispersion to compress the new frequency components in time.
@@ -320,6 +347,7 @@ For $z=z_{\text {opt }}$, the output is a short pulse with high intensity.
 
 For short pulses and high average power at the same time, one can combine the laser with a non-linear compression scheme. This will increase the peak power, thus a large mode area fiber is $\uparrow$ fiber with air pockets needed, as otherwise the material is damaged quickly.
 
+---
 ## 3.2 Non-linear pulse compression
 Generally, we use SPM to spectrally broaden the pulse, while a grating or compressor does the dispersion compensation. If we reach high powers, a large mode area with single-mode operation is needed.
 
@@ -347,6 +375,8 @@ Hollow-core fiber \\
 Non-linear optics can create frequencies, but also destroy them. We can use this to clean pulses, by using
 non-linear birefringence with $n_e=n_e(I)$ and $n_0=n_0(I)$. So, the polarization rotation at the out pat
 will be intensity-independant. The input polarization is different from the birefringent principal axis.
+
+---
 ## 3.3 Self-focussing
 
 The Kerr-effect causes the laser beam to produce a focussing lens effect.
@@ -354,6 +384,7 @@ The variation of the refractive index corresponds to a lens with focus strength 
 we defined $\Delta n_p=n_2 I_p$ and $w$ is the beam radius.
 Defining the $B$-integral as $B=\frac{2 \pi}{\lambda} \int_0^l n_2 I(z) d z$, material damage through self-focussing is prevented if $B<3-5$.
 
+---
 ## 3.4 Filamentation
 
 While the Kerr effect increases the refractive index, self-induced ionization decreases it.
@@ -368,6 +399,8 @@ The high intensity broadens the spectrum via SPM, causing white light to be emit
 laser white. This is robust to beam pointing fluctuations at the output, but not at the output.
 
 Filamentation allows to compress pulses, even in the few cycle regime.
+
+---
 ## 3.5 Solitons
 
 The effects of SPM and negative GDD cancancle out, creating a pulse that can propagate T since normally $n_2$.
@@ -381,6 +414,7 @@ The spectral domain is not broadened, but the spectral phase changes.
 
 SDM without GDD causes a broadening or narrowing in frequency.
 
+---
 ## 3.6 Non-linear Schrodinger equation
 
 Expanding the dispersion as $k_n(\omega) \approx k_n\left(\omega_0\right)+k_n^{\prime} \cdot \Delta w+\frac{1}{2} k_n^{\prime \prime} \cdot \Delta \omega$ which we plug into the slowly varying envelope
@@ -419,6 +453,8 @@ the energy of a fundamental soliton.
 After a distance $\frac{z_0}{2}$, a bandwidth-limited pulse becomes a second-order soliton with minimal pulse duration. After the whole period $z_0$, it retrieves its original form.
 
 A soliton pulse compressor is achieved by choosing the fiber length as $\frac{z_0}{2}$.
+
+---
 ## 3.7 Optical communication with solitons
 
 In conventional linear transmission, the signal needs to be completely regenerated every $50-100 \mathrm{~km}$, due
@@ -437,6 +473,8 @@ To fix this, filters can be used to predefine the carrier frequency and pull it 
 However, some narrowband noise will be amplified more than the actual soliton. This can be fixed again by using the robustness of the solitons: The filter sweeps the center frequency along the communication fiber slowly, thus not amplifying narrowband noise.
 
 Tsuch that soliton can adapt.
+
+---
 ## 3.8 Periodic pertubations of solitons
 Within a laser, a soliton pulse is repeatedly perturbed through amplification and output coupler.
 The NSE is modified: $\partial_2 A\left(z, t^{\prime}\right)=i \frac{k_n^{\prime \prime}}{2} \partial_t^2 A\left(z, t^{\prime}\right)$-ikn, $\mid A\left(z,\left.t^{\prime}\right|^2 A\left(z, t^{\prime}\right)+i \varepsilon \sum_n \delta\left(z-n z_a\right) A\left(z, t^{\prime}\right)\right.$ with $\varepsilon \ll 1$.
@@ -447,6 +485,7 @@ Thus, dispersion quickly broadens the pertubation in time. At resonance, $\tilde
 This is prevented if $\left|\tilde{u}\left(z_1 w\right)\right|<\left|\tilde{A}_s(z, \omega)\right| \Leftrightarrow z_a \ll 8 z_0$, so that the perturbation can be treated as continous.
 Since $z_0 \sim \tau^2$, the pertubation period should be small for shout pulses. Longer pulses mean lower bitrate.
 
+---
 ## 3.9 Delayed non-linear pulses
 The kerr non-linearity comes from the electronic contribution with nearly instantaneous (<ifs)
 response time. Another contribution is from the lattice, where phonous can se excited. This contributes
@@ -458,6 +497,7 @@ We only care about optical phonons and the Raman effect. The Raman gain maximum 
 
 This allows to shift the (solition) wavelength to higher wavelength due to the splitting of the photon into a Stokes photon plus phonon.
 
+---
 ## 3.10 Generalized non-linear Schrodinger equation
 For ultrashort pulses with $\tau_p \approx 100 f s$, higher-order dispersion and non-linear effects need to be considered.
 
@@ -467,11 +507,14 @@ The Raman term originates from the delayed Raman response and causes a self-freq
 
 Together with self-steepening, these two effects lead to an asymmetry in the SPM broadened spechum.
 
+---
 ## 3.11 Self-steepening
 It is a higher-order non-linear effect resulting from an intensity-dependant group velocity $V_g=V_g(I)$.
 
 Then, the peak moves at lower speed than the wings, eventually causing a shock for an instantaneous intensity drop, e.g infinite slope. However, this does not occur in reality, as a steep pulse implies a more broadband pulse, thus dispersion prevents it.
 power
+
+---
 ## 3.12 Saturable gain and absorber
 For an ideal 2-level, the non linear gain coefficient of the amplitude is $g=\frac{g_0}{1+\frac{I}{I_{s a t}, 2}}$ with the saturation intensity $I_{\text {sat ,L }}=\frac{h f}{\sigma \tau_L}$ and the small signal gain $g_0$.
 
@@ -487,6 +530,8 @@ We have $\sigma_A=\sigma_L=\sigma$ or $I_{S a l, A}=I_{\text {Sati }}$ if both a
 The absorption of a semiconductor after a short pulse has saturated the transition of valence to conduction band:
 
 In the idealized system with homogeneous absorption saturation, we use the absorption equation $\frac{d I}{d z}=-2 \alpha(I) I(z)$ and integrate it.
+
+---
 # 4 Second-order non-linear effects
 In non-linear optics, the polarization is $P_i=\varepsilon_0 \chi_{i j}^{(1)} E_j+\underbrace{\varepsilon_0 \chi_{i j k}^{(2)} E_j E_k+\ldots}_h$
 We have $E_{\text {out }}(t)=E_{\text {in }}(t) \underbrace{e^{-\delta I(t)}}_{\text {SPA }} \underbrace{e^{-i k_k L_k}}_{\text {linear }}$ where $I=|E|^2$ so that SPM is a third-order non-linearity.

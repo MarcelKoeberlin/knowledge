@@ -1,8 +1,12 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","updated":"2025-01-23T17:46:31.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","updated":"2025-01-24T10:26:55.000+01:00"}
 ---
 
 For my notes of 'solid-state theory' 2023, taught by Prof. Siegrist, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/notes2023). The pdf might load for quite a while, since its 35 MBs of size. I am currently in the process of transcoding my handwritten (!) notes to the markdown format used on this website. This is a quite intense process so it will take a few weeks. However, it should be noted that the notes of Prof. Sigrist are already extremely high quality, so is it really necessary? Not really, but its damn cool.
+
+**Table of Contents**
+
+- [[Notes/Solid-State Theory#1 Electrons in the Periodic Crystal\|1 Electrons in the Periodic Crystal]]
 
 ---
 
@@ -21,16 +25,18 @@ A key objective in solid state physics is characterizing a system’s ground sta
 These principles, along with the study of emergent behaviour and excitations, form the foundation of solid state physics, linking its theoretical depth to practical applications.
 
 
-# 1 Electrons in the Periodic Crystal [[Masters/2. Semester/Solid State Theory/Script.pdf#page=8&selection=2,0,4,10|•]]
+# 1 Electrons in the Periodic Crystal 
+[[Masters/2. Semester/Solid State Theory/Script.pdf#page=8&selection=2,0,4,10|•]]
 
 One defining characteristic of many solids is the regular arrangement of their atoms, forming a crystal. Electrons in such crystals experience a periodic potential, originating from the lattice of ions and the mean interaction with other electrons:
 
-![Attachments/Notes/Solid-State Theory/IMG-0123172917.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/IMG-0123172917.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=5&rect=207,412,394,513|•]]
+![Attachments/Notes/Solid-State Theory/IMG-0124102606.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/IMG-0124102606.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=5&rect=207,412,394,513|•]]
 
 The spectrum of these delocalized electronic states—solutions to the Schrödinger equation—forms energy bands separated by gaps of "forbidden" energies. Two limiting approaches help to understand this band formation:
 1. **Nearly-free electron approximation**: A weak periodic potential breaks up the continuous spectrum into bands.
 2. **Tight-binding approximation**: Independent atomic states overlap as atoms form a lattice, creating delocalized bands from discrete atomic energy levels.
 
+---
 ## 1.1 Symmetries of Crystals [[Masters/2. Semester/Solid State Theory/Script.pdf#page=8&selection=34,0,36,22|•]]
 ### 1.1.1 Space Groups of Crystals
 
@@ -44,7 +50,7 @@ $$
 
 where $\boldsymbol{n} = (n_{1}, n_{2}, n_{3})$ and $n_i \in \mathbb{Z}$. For example, in a 2D square lattice:
 
-![Attachments/Notes/Solid-State Theory/IMG-0123172917-1.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/IMG-0123172917-1.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=9&rect=154,451,440,629|•]]
+![Attachments/Notes/Solid-State Theory/IMG-0124102606-1.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/IMG-0124102606-1.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=9&rect=154,451,440,629|•]]
 
 Here, $\boldsymbol{a}_{1}$ and $\boldsymbol{a}_{2}$ are primitive lattice vectors, and $\boldsymbol{R} = 2\boldsymbol{a}_{1} + \boldsymbol{a}_{2}$ is a lattice vector. The shaded area is the **Wigner-Seitz cell**, a unit cell formed by bisecting lines connecting neighboring lattice points.
 
@@ -142,6 +148,7 @@ $$
 
 where the integral runs over the unit cell of the periodic lattice with volume $\Omega_{\mathrm{UC}}$. The **first Brillouin zone** is defined as the Wigner-Seitz cell of the reciprocal lattice.
 
+---
 ## 1.2 Bloch's Theorem and Bloch Functions [[Masters/2. Semester/Solid State Theory/Script.pdf#page=11&selection=134,0,136,35|•]]
 
 Consider a Hamiltonian $\mathcal{H}$ of electrons invariant under lattice translations $\{E \mid \boldsymbol{a}\}$, introduced by a periodic potential. This implies that the translation operator $\widehat{T}_{\boldsymbol{a}}$ commutes with the Hamiltonian:
@@ -202,6 +209,7 @@ $$
 
 where $\widehat{\boldsymbol{p}} e^{i\boldsymbol{k} \cdot \boldsymbol{r}} u_{\boldsymbol{k}}(\boldsymbol{r}) = e^{i\boldsymbol{k} \cdot \boldsymbol{r}} (\widehat{\boldsymbol{p}} + \hbar\boldsymbol{k}) u_{\boldsymbol{k}}(\boldsymbol{r})$.
 
+---
 ## 1.3 Nearly Free Electron Approximation [[Masters/2. Semester/Solid State Theory/Script.pdf#page=12&selection=370,0,372,34|•]]
 
 The nearly free electron approximation starts from the limit of free electrons, assuming the periodic potential $V(\boldsymbol{r})$ is weak and can be treated perturbatively. The periodic potential is expanded as:
@@ -271,7 +279,7 @@ $$
 
 This modifies the dispersion relation, yielding an effective mass $m^{*} > m$, as shown in the figure:
 
-![[Attachments/Notes/Solid-State Theory/IMG-0123172002.webp\|700]][[Masters/2. Semester/Solid State Theory/Script.pdf#page=14&rect=178,569,419,753|•]]
+![Attachments/Notes/Solid-State Theory/IMG-0124102606-2.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/IMG-0124102606-2.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=14&rect=176,569,421,754|•]]
 
 The $\boldsymbol{k} \cdot \boldsymbol{p}$ approximation describes this expansion near symmetry points. The next energy level at $k = 0$ results from two crossing parabolas centered at $G_{\pm} = \pm 2\pi/a = \pm\tilde{G}$. Restricting to these components, the eigenvalue problem simplifies to:
 
@@ -307,7 +315,7 @@ $$
 
 These states correspond to bonding and antibonding states under parity $x \to -x$. Similar band gaps occur at the Brillouin zone boundary ($k = \pm\pi/a$). The energy spectrum is periodic, satisfying $\epsilon_{k + G} = \epsilon_{k}$ and $\epsilon_{-k} = \epsilon_{+k}$ due to parity and time-reversal symmetry.
 
-
+---
 ## 1.4 Tight-Binding Approximation [[Masters/2. Semester/Solid State Theory/Script.pdf#page=16&selection=0,0,2,27|•]]
 
 The tight-binding approximation starts from the atomic limit, considering a lattice of well-separated atoms where the overlap between the outermost electronic orbitals is small. In this scenario, electronic states are well-approximated by localized atomic orbitals $\phi_{n}(\boldsymbol{r})$. These orbitals are solutions to the atomic Hamiltonian:
@@ -324,7 +332,7 @@ $$
 
 and $V_{a}(\boldsymbol{r})$ is the rotationally symmetric atomic potential. The potential landscape is depicted below, showing (a) the discrete spectrum of a single atomic Coulomb potential and (b) the periodic potential arising from a regular lattice:
 
-![[Attachments/Notes/Solid-State Theory/IMG-0123172002-1.webp\|700]][[Masters/2. Semester/Solid State Theory/Script.pdf#page=16&rect=97,261,506,395|•]]
+![Attachments/Notes/Solid-State Theory/IMG-0124102606-3.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/IMG-0124102606-3.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=16&rect=98,261,509,397|•]]
 
 At low energies, electrons remain localized near atomic sites, but at higher energies, wavefunctions extend further and can delocalize to form itinerant states, leading to band formation.
 
@@ -488,6 +496,7 @@ $$
 where $\hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k} s}=\hat{n}_{\boldsymbol{k} s}$ constitutes the number operator for electrons. The band energy is the same as obtained above from the tight-binding approach. The Hamiltonian (1.83) will be used later for the Hubbard model where a real-space formulation is helpful.
 The real-space formulation of the kinetic energy allows also for the introduction of disorder, nonperiodicity which can be most straightforwardly implemented by site dependent potentials $\epsilon_{0} \rightarrow$ $\epsilon_{0 i}$ and to spatially (bond) dependent hopping matrix elements $t_{i j}=t\left(\boldsymbol{R}_{i}, \boldsymbol{R}_{j}\right) \neq t\left(\boldsymbol{R}_{i}-\boldsymbol{R}_{j}\right)$.
 
+---
 ## 1.5 Symmetry properties of the band structure
 
 The symmetry properties of crystals are a helpful tool for the analysis of their band structure. They emerge from the symmetry group (space and point group) of the crystal lattice. Consider the action $\widehat{S}_{\{g \mid a\}}$ of an element $\{g \mid \boldsymbol{a}\}$ of the space group on a Bloch wave function $\psi_{\boldsymbol{k}}(\boldsymbol{r})^{6}$
@@ -1127,6 +1136,7 @@ $$
 
 This means that the two states are completely hybridized at the point of degeneracy $(k=0)$ while shift $k$ sufficiently far away from this point, the wave function are reduce to the original states $|k \pm \tilde{G}\rangle$. Thus, the opening of the band gap at $k=0$ is an effect of hybridization. The analysis can be done equivalently for every degeneracy point in $k$. In our one-dimensional system this are always point of degeneracy 2 unlike in higher dimensional lattices.
 
+---
 # 2 Semiconductors
 
 The technological relevance of semiconductors can hardly be overstated. In this chapter, we review some of their basic properties. Regarding the electric conductivity, semiconductors are placed in between metals and insulators. Normal metals are good conductors at all temperatures, and the conductivity usually increases with decreasing temperature. On the other hand, for semiconductors and insulators the conductivity decreases upon cooling (see Figure 2.1).
