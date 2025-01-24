@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Quantum Optics","permalink":"/notes/quantum-optics/","updated":"2025-01-24T14:37:52.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Quantum Optics","permalink":"/notes/quantum-optics/","updated":"2025-01-24T18:25:05.000+01:00"}
 ---
 
 Quantum optics lies at the intersection of quantum mechanics and the behavior of light, offering profound insights into the quantum nature of our universe. This script explores key topics such as the quantization of the electromagnetic field, the Jaynes-Cummings Hamiltonian, coherence, and cavity optomechanics. These concepts not only deepen our understanding of light-matter interactions but also underpin transformative technologies like quantum communication and precision measurement. By providing a concise introduction to these topics, this work aims to inspire further exploration of this fascinating and impactful field.
