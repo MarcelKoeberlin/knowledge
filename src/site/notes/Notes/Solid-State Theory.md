@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","updated":"2025-01-25T22:48:02.179+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","updated":"2025-01-25T22:48:49.621+01:00"}
 ---
 
 For my notes of 'solid-state theory' 2023, taught by Prof. Sigrist, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/notes2023). The pdf might load for quite a while, since its 35 MBs of size. However, it should be noted that the notes of Prof. Sigrist are already extremely high quality, so is it really necessary? Not really, but its damn cool. I spent a bit of time trying to convert the pdf to markdown and latex, and mainly implementing notations seamlessly.
@@ -24,7 +24,7 @@ This field primarily examines phenomena at room temperature or below, correspond
 
 At its core, solid state physics revolves around the Coulomb interaction, where electrons interact with each other and with ions. Microscopic formulations of these interactions often operate at energy scales too high to directly explain low-energy phenomena. Thus, reduced or effective theories are critical to understanding the "emergent physics" that governs condensed matter systems.
 
-One central goal of solid state physics is characterizing a system’s ground state. However, measurable properties often arise from excited states, making the concept of 'elementary excitations' essential. Here, the ground state functions as an effective vacuum, with excitations treated as particles within this framework. According to P. W. Anderson, two fundamental principles underlie the field:
+One central goal of solid state physics is characterising a system’s ground state. However, measurable properties often arise from excited states, making the concept of 'elementary excitations' essential. Here, the ground state functions as an effective vacuum, with excitations treated as particles within this framework. According to P. W. Anderson, two fundamental principles underlie the field:
 
 1. **Adiabatic Continuity**: Complex systems can often be replaced by simpler models with equivalent low-energy properties, as they can be smoothly transformed into one another without altering qualitative behaviour. For example, Landau's Fermi liquid theory demonstrates how strongly interacting electrons at low energies behave like non-interacting Fermions with renormalised parameters.
 
@@ -637,7 +637,7 @@ $$
 \end{aligned}
 \end{align*}
 $$
-the latter is found to be an eigenfunction of $\widehat{T}_{\boldsymbol{a}^{\prime}}$ with eigenvalue $e^{-i(g \boldsymbol{k}) \cdot \boldsymbol{a}^{\prime}}$. Remember, that, according to the Bloch theorem, we chose a basis $\left\{\psi_{\boldsymbol{k}}\right\}$ diagonalizing both $\widehat{T}_{\boldsymbol{a}}$ and $\mathcal{H}_{0}$. Thus, apart from a phase factor, the action of a symmetry transformation $\{g \mid \boldsymbol{a}\}$ on the wave function corresponds to a rotation from $\boldsymbol{k}$ to $g \boldsymbol{k}$.
+the latter is found to be an eigenfunction of $\widehat{T}_{\boldsymbol{a}^{\prime}}$ with eigenvalue $e^{-i(g \boldsymbol{k}) \cdot \boldsymbol{a}^{\prime}}$. Remember, that, according to the Bloch theorem, we chose a basis $\left\{\psi_{\boldsymbol{k}}\right\}$ diagonalising both $\widehat{T}_{\boldsymbol{a}}$ and $\mathcal{H}_{0}$. Thus, apart from a phase factor, the action of a symmetry transformation $\{g \mid \boldsymbol{a}\}$ on the wave function corresponds to a rotation from $\boldsymbol{k}$ to $g \boldsymbol{k}$.
 $$
 \begin{align*}
 \widehat{S}_{\{g \mid \boldsymbol{a}\}} \psi_{\boldsymbol{k}}(\boldsymbol{r})=\lambda_{\{g \mid \boldsymbol{a}\}} \psi_{g \boldsymbol{k}}(\boldsymbol{r})
@@ -752,7 +752,7 @@ The electronic structure is also responsible for the cohesive forces necessary f
 
 **Molecular crystals** are formed from atoms or molecules with closed-shell atomic structures such as the noble gases He , Ne etc. which become solid under pressure. Here the van der Waals forces generate the binding interactions.
 
-**Ionic crystals** combine different atoms, A and B, where A has a small ionisation energy while $B$ has a large electron affinity. Thus, electrons are transferred from A to B giving a positively charged $\mathrm{A}^{+}$and a negatively charge $B^{-}$. In a regular (alternating) lattice the energy gained through Coulomb interaction can overcome the energy expense for the charge transfer stabilizing the crystal. A famous example is NaCl where one electron leaves Na ( $[\mathrm{Ne}] 3 s$ ) and is added to $\mathrm{Cl}\left([\mathrm{Ne}] 3 s^{2} 3 p^{5}\right)$ as to bring both atoms to closed-shell electronic configuration.
+**Ionic crystals** combine different atoms, A and B, where A has a small ionisation energy while $B$ has a large electron affinity. Thus, electrons are transferred from A to B giving a positively charged $\mathrm{A}^{+}$and a negatively charge $B^{-}$. In a regular (alternating) lattice the energy gained through Coulomb interaction can overcome the energy expense for the charge transfer stabilising the crystal. A famous example is NaCl where one electron leaves Na ( $[\mathrm{Ne}] 3 s$ ) and is added to $\mathrm{Cl}\left([\mathrm{Ne}] 3 s^{2} 3 p^{5}\right)$ as to bring both atoms to closed-shell electronic configuration.
 
 **Covalent-bonded crystals** form through chemical binding, like in the case of the $\mathrm{H}_{2}$, where neighboring atoms share electrons through the large overlap of the electron orbital wavefunction. Insulators like diamond C or semiconductors like Si or GaAs are important examples of this type as we will discuss later. Note that electrons of covalent bonds are localised between the atoms.
 
@@ -2543,7 +2543,7 @@ E_{\text {tot }}\left(u_{0}\right)=2 \sum_{0 \leq k<Q} E_{k-}+\frac{\lambda L Q^
 \end{align*}
 $$
 
-where all electronic states of the lower band ( $E_{k-}$ ) are occupied and all states of the upper band $\left(E_{k+}\right)$ are empty. The amplitude $u_{0}$ of the modulation is found by minimizing $E_{\text {tot }}$ with respect to $u_{0}$ :
+where all electronic states of the lower band ( $E_{k-}$ ) are occupied and all states of the upper band $\left(E_{k+}\right)$ are empty. The amplitude $u_{0}$ of the modulation is found by minimising $E_{\text {tot }}$ with respect to $u_{0}$ :
 $$
 \begin{align*}
 \begin{aligned}
@@ -4627,7 +4627,7 @@ $$
 
 The time scale $\tau\left(\epsilon_{\boldsymbol{k}}\right)$ is called relaxation time and gives the characteristic time within which the system relaxes to equilibrium.
 
-Consider the simplest case of a system at constant temperature subject to a small uniform electric field $\boldsymbol{E}(t)$. With $f(\boldsymbol{k}, \boldsymbol{r}, t)=f_{0}(\boldsymbol{k}, \boldsymbol{r}, t)+\delta f(\boldsymbol{k}, \boldsymbol{r}, t)$, we can calculate the Fourier-transform of Boltzmann equation (6.17) in relaxation-time approximation and find, after linearizing in $\delta f$,
+Consider the simplest case of a system at constant temperature subject to a small uniform electric field $\boldsymbol{E}(t)$. With $f(\boldsymbol{k}, \boldsymbol{r}, t)=f_{0}(\boldsymbol{k}, \boldsymbol{r}, t)+\delta f(\boldsymbol{k}, \boldsymbol{r}, t)$, we can calculate the Fourier-transform of Boltzmann equation (6.17) in relaxation-time approximation and find, after linearising in $\delta f$,
 $$
 \begin{align*}
 -i \omega \delta f(\boldsymbol{k}, \omega)-\frac{e \boldsymbol{E}(\omega)}{\hbar} \nabla_{\boldsymbol{k}} f_{0}(\boldsymbol{k})=-\frac{\delta f(\boldsymbol{k}, \omega)}{\tau\left(\epsilon_{\boldsymbol{k}}\right)}
@@ -4640,7 +4640,7 @@ f(\boldsymbol{k}, t)=\int_{-\infty}^{+\infty} \frac{d \omega}{2 \pi} f(\boldsymb
 \end{align*}
 $$
 
-In order to come to this expression, we used that $f(\boldsymbol{k}, \boldsymbol{r}, t)=f(\boldsymbol{k}, t)$ for $E=E(t)$ are spacially uniform, and assumed for linearizing equation (6.24) that $\delta f \propto|\boldsymbol{E}|$. Thus, the equation (6.24) is consistent to linear order in $|\boldsymbol{E}|$ and can be easily solved as
+In order to come to this expression, we used that $f(\boldsymbol{k}, \boldsymbol{r}, t)=f(\boldsymbol{k}, t)$ for $E=E(t)$ are spacially uniform, and assumed for linearising equation (6.24) that $\delta f \propto|\boldsymbol{E}|$. Thus, the equation (6.24) is consistent to linear order in $|\boldsymbol{E}|$ and can be easily solved as
 $$
 \begin{align*}
 \delta f(\boldsymbol{k}, \omega)=\frac{e \tau \boldsymbol{E}(\omega)}{\hbar(1-i \omega \tau)} \nabla_{\boldsymbol{k}} f_{0}(\boldsymbol{k})=\frac{e \tau \boldsymbol{E}(\omega)}{\hbar(1-i \omega \tau)} \frac{\partial f_{0}(\epsilon)}{\partial \epsilon} \nabla_{\boldsymbol{k}} \epsilon_{\boldsymbol{k}}
@@ -7860,7 +7860,7 @@ $$
 \langle\widehat{\Psi}(\boldsymbol{r})\rangle=\psi_{0}(\boldsymbol{r}),
 \end{align*}
 $$
-which does not vanish for the condensed state. Note, however, $\left\langle\hat{a}_{\boldsymbol{k}}\right\rangle=0$, if $\boldsymbol{k} \neq 0$. The finite value of $\left\langle\hat{a}_{0}\right\rangle$ requires states of different number of particles in the $\boldsymbol{k}=0$ state for the matrix elements making up this mean value. This is an element of spontaneous symmetry breaking. The condensate can be considered as a reservoir with on average $N_{0}$ particles ( $N_{0} \gg 1$ ), to which we can add or from which we can remove particles without changing the properties of the system. The coherent state satisfies this condition. We also can define an order parameter characterizing the condensate, the condensate wavefunction,
+which does not vanish for the condensed state. Note, however, $\left\langle\hat{a}_{\boldsymbol{k}}\right\rangle=0$, if $\boldsymbol{k} \neq 0$. The finite value of $\left\langle\hat{a}_{0}\right\rangle$ requires states of different number of particles in the $\boldsymbol{k}=0$ state for the matrix elements making up this mean value. This is an element of spontaneous symmetry breaking. The condensate can be considered as a reservoir with on average $N_{0}$ particles ( $N_{0} \gg 1$ ), to which we can add or from which we can remove particles without changing the properties of the system. The coherent state satisfies this condition. We also can define an order parameter characterising the condensate, the condensate wavefunction,
 $$
 \begin{align*}
 \psi_{0}(\boldsymbol{r})=\left|\psi_{0}(\boldsymbol{r})\right| e^{i \phi(\boldsymbol{r})}=\sqrt{n_{0}} e^{i \phi} .
