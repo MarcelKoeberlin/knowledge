@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","updated":"2025-01-25T22:49:58.735+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","updated":"2025-01-25T22:56:14.506+01:00"}
 ---
 
 For my notes of 'solid-state theory' 2023, taught by Prof. Sigrist, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/notes2023). The pdf might load for quite a while, since its 35 MBs of size. However, it should be noted that the notes of Prof. Sigrist are already extremely high quality, so is it really necessary? Not really, but its damn cool. I spent a bit of time trying to convert the pdf to markdown and latex, and mainly implementing notations seamlessly. All credit to Prof. Sigrist for this great script!
@@ -1623,14 +1623,16 @@ $$
 where we used the Sommerfeld expansion (see next paragraph) assuming $T \ll T_{F}=\epsilon_{F} / k_{B}.$
 
 **Sommerfeld expansion**: In the limit $k_{B} T \ll \epsilon_{F}$ the derivative $\partial f(E) / \partial E$ is well concentrated around $E=\mu$. We consider
-    $$
-    \begin{align*}
-    \begin{gathered}
-    \int_{-\infty}^{+\infty} d E g(E)\left(-\frac{\partial f(E)}{\partial E}\right)=\int_{-\infty}^{+\infty} d E\left\{g(\mu)+(E-\mu) g^{\prime}(\mu)+\frac{(E-\mu)^{2}}{2} g^{\prime \prime}(\mu)+\cdots\right\}\left(-\frac{\partial f(E)}{\partial E}\right) \\
-    =g(\mu)+\frac{g^{\prime \prime}(\mu)}{2} \int_{-\infty}^{+\infty} d E(E-\mu)^{2}\left(-\frac{\partial f(E)}{\partial E}\right)+\cdots=g(\mu)+\frac{\pi^{2}}{6} g^{\prime \prime}(\mu)\left(k_{B} T\right)^{2}+\cdots
-    \end{gathered}
-    \end{align*}
-    $$
+
+$$
+\begin{aligned}
+\int_{-\infty}^{+\infty} d E \, g(E) \left( -\frac{\partial f(E)}{\partial E} \right) 
+&= \int_{-\infty}^{+\infty} d E \, \left\{ g(\mu) + (E - \mu) g^{\prime}(\mu) + \frac{(E - \mu)^{2}}{2} g^{\prime \prime}(\mu) + \cdots \right\} \left( -\frac{\partial f(E)}{\partial E} \right) \\
+&= g(\mu) + \frac{g^{\prime \prime}(\mu)}{2} \int_{-\infty}^{+\infty} d E \, (E - \mu)^{2} \left( -\frac{\partial f(E)}{\partial E} \right) + \cdots \\
+&= g(\mu) + \frac{\pi^{2}}{6} g^{\prime \prime}(\mu) \left( k_{B} T \right)^{2} + \cdots.
+\end{aligned}
+$$
+
 and analogous
 $$
 \begin{align*}
@@ -4292,16 +4294,19 @@ $$
 
 In principle, $\tilde{U}$ depends on the wave vectors $\boldsymbol{k}$ and $\boldsymbol{k}^{\prime}$. However, when the wave vectors are restricted to the Fermi surface $\left(|\boldsymbol{k}|=\left|\boldsymbol{k}^{\prime}\right|=k_{F}\right)$, and if the range of the interaction $\ell$ is small compared to the mean electron spacing, i.e., $k_{F} \ell \ll 1,$ this dependency may be neglected.
 We should be careful with our choice of a contact interaction, since it would lead to a divergence in the large- $q$ range. A cutoff for $q$ of order $Q_{c} \sim \ell^{-1}$ would regularise the integral which is dominated by the large- $q$ part. Thus we may use the following expansion,
-    $$
-    \begin{align*}
-    \begin{aligned}
-    \frac{1}{\Omega} \sum_{\boldsymbol{q}} \frac{1}{\epsilon_{\boldsymbol{k}}+\epsilon_{\boldsymbol{k}^{\prime}}-\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}^{\prime}-\boldsymbol{q}}} & =\frac{1}{(2 \pi)^{3} \hbar^{2}} \int_{0}^{Q_{c}} d q q^{2} \int d \Omega_{q} \frac{m}{\left(\boldsymbol{k}^{\prime}-\boldsymbol{k}\right) \cdot \boldsymbol{q}-\boldsymbol{q}^{2}} \\
-    & =\frac{m}{(2 \pi)^{2} \hbar^{2}} \int d q q \int_{-1}^{+1} \frac{d \cos \theta}{K \cos \theta-q}=\frac{m}{(2 \pi)^{2} \hbar^{2}} \int_{0}^{Q_{c}} d q q \ln \left|\frac{q-K}{q+K}\right| \\
-    & =-\frac{m}{(2 \pi)^{2} \hbar^{2}}\left(Q_{c}+\frac{K^{2}-Q_{c}^{2}}{2 K} \ln \left|\frac{Q_{c}-K}{Q_{c}+K}\right|\right) \\
-    & \approx-\frac{2 m Q_{c}}{(2 \pi)^{2} \hbar^{2}}\left(1-\frac{K^{2}}{Q_{c}^{2}}+O\left(\frac{K^{4}}{Q_{c}^{4}}\right)\right)=-N\left(\epsilon_{F}\right) \frac{Q_{c}}{2 k_{F}}\left(1-\frac{K^{2}}{Q_{c}^{2}}+O\left(\frac{K^{4}}{Q_{c}^{4}}\right)\right)
-    \end{aligned}
-    \end{align*}
-    $$
+
+$$
+\begin{aligned}
+\frac{1}{\Omega} \sum_{\boldsymbol{q}} \frac{1}{\epsilon_{\boldsymbol{k}}+\epsilon_{\boldsymbol{k}^{\prime}}-\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}^{\prime}-\boldsymbol{q}}} 
+&= \frac{1}{(2 \pi)^{3} \hbar^{2}} \int_{0}^{Q_{c}} d q \, q^{2} \int d \Omega_{q} \frac{m}{\left(\boldsymbol{k}^{\prime}-\boldsymbol{k}\right) \cdot \boldsymbol{q} - \boldsymbol{q}^{2}} \\
+&= \frac{m}{(2 \pi)^{2} \hbar^{2}} \int d q \, q \int_{-1}^{+1} \frac{d \cos \theta}{K \cos \theta - q} \\
+&= \frac{m}{(2 \pi)^{2} \hbar^{2}} \int_{0}^{Q_{c}} d q \, q \ln \left| \frac{q-K}{q+K} \right| \\
+&= -\frac{m}{(2 \pi)^{2} \hbar^{2}} \left( Q_{c} + \frac{K^{2} - Q_{c}^{2}}{2 K} \ln \left| \frac{Q_{c} - K}{Q_{c} + K} \right| \right) \\
+&\approx -\frac{2 m Q_{c}}{(2 \pi)^{2} \hbar^{2}} \left( 1 - \frac{K^{2}}{Q_{c}^{2}} + O\left(\frac{K^{4}}{Q_{c}^{4}}\right) \right) \\
+&= -N(\epsilon_{F}) \frac{Q_{c}}{2 k_{F}} \left( 1 - \frac{K^{2}}{Q_{c}^{2}} + O\left(\frac{K^{4}}{Q_{c}^{4}}\right) \right).
+\end{aligned}
+$$
+
 where we use $K=\left|\boldsymbol{k}^{\prime}-\boldsymbol{k}\right| \leq 2 k_{F} \ll Q_{c}$. From this we conclude that the momentum dependence of $\tilde{U}$ is indeed weak.
 Since the term quartic in $n_{\boldsymbol{k}}$ vanishes due to symmetry, the remaining contribution to $E^{(2)}$ is cubic in $n_{\boldsymbol{k}}$ and reads
 $$
