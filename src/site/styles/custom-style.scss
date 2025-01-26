@@ -51,14 +51,74 @@ body {
     }
   }
 
+  h1,
+  .markdown-rendered h1,
+  .HyperMD-header-1,
+  .HyperMD-list-line .cm-header-1 {
+    font-variant: var(--h1-variant);
+    letter-spacing: -0.015em;
+    line-height: var(--h1-line-height);
+    font-size: var(--h1-size);
+    color: var(--h1-color);
+    font-weight: var(--h1-weight);
+    font-style: var(--h1-style);
+    font-family: var(--h1-font);
+    background: linear-gradient(to right,#ff3c00, #ffd700);
+    background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,0);
+  }
+
+
+
+
   h2 {
     font-size: 1.5em !important;
     /* 30px/16=1.875em */
   }
 
+  h2, .markdown-rendered h2, .HyperMD-header-2, .HyperMD-list-line .cm-header-2 {
+    font-variant: var(--h2-variant);
+    letter-spacing: -0.015em;
+    line-height: var(--h2-line-height);
+    font-size: var(--h2-size);
+    color: var(--h2-color);
+    font-weight: var(--h2-weight);
+    font-style: var(--h2-style);
+    font-family: var(--h2-font);
+    background: linear-gradient(to right,#ff00cb,#4b9aff,#04e7ff);
+      background-clip: border-box;
+    background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+  }
+
+
+
   h3 {
     font-size: 1.17em !important;
   }
+
+  h3, .markdown-rendered h3, .HyperMD-header-3, .HyperMD-list-line .cm-header-3 {
+    font-variant: var(--h3-variant);
+    letter-spacing: -0.015em;
+    line-height: var(--h3-line-height);
+    font-size: var(--h3-size);
+    color: var(--h3-color);
+    font-weight: var(--h3-weight);
+    font-style: var(--h3-style);
+    font-family: var(--h3-font);
+    background: linear-gradient(to right,#38ff00,#ffef04,#ffb402);
+      background-clip: border-box;
+    background-clip: border-box;
+    background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+  }
+
 
   h4 {
     font-size: 1em !important;
