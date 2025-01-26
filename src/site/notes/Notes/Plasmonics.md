@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-26T17:24:49.423+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-26T17:26:44.136+01:00"}
 ---
 
 These notes primarily follow [Plasmonics: Fundamentals and Applications](https://link.springer.com/book/10.1007/0-387-37825-1) and [Plasmonics: From Basics to Advanced Topics](https://link.springer.com/book/10.1007/978-3-642-28079-5). My interest in this subject stems from its relevance to my current research, which we explore in the [Attoline](https://ulp.ethz.ch/research/attoline.html).
@@ -36,7 +36,7 @@ In this low-frequency regime, the _perfect conductor approximation_ of infinite 
 
 [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=25&selection=58,0,59,34|•]]
 
-These dispersive properties can be described by a complex dielectric function $\varepsilon(\omega)$, which forms the basis of all phenomena discussed in this text. 
+These dispersive properties can be described by a complex dielectric function $\varepsilon(\omega)$, which forms publihthe basis of all phenomena discussed in this text. 
 
 As a starting point, recall Maxwell's equations of macroscopic electromagnetism:
 $$
