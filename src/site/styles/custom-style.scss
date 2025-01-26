@@ -99,24 +99,63 @@ body {
   }
 
   .toc {
-    @media (max-width: 1490px) {
-      display: block !important;
-    }
-  }
+    margin-top: 5px;
+    //padding: 15px;
+    //border: 1px solid var(--background-modifier-border);
+    //border-radius: 5px;
+    //background-color: var(--background-primary);
+    box-shadow: none;
+}
+.toc-title-container {
+  margin-bottom: 10px;
+}
 
+.toc-title {
+  font-weight: bold;
+  font-size: 1rem;
+  //color: var(--text-accent);
+  color: var(--h1-color);
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 5px;
+}
+
+
+.sidebar-container {
+  &>div:not(.graph) {
+    //position: fixed;
+    max-height: 600px;
+    left: 100px;
+    top: 80px;
+    right: 200px;
+    width: 340px; /* Adjust as needed */
+    overflow-y: auto;
+    
+  }}
+
+.toc-container {
+  overflow-y: auto;
+  font-size: 18px;
+  //padding: 5px;
+  max-height: 300px; /* Adjust to your preference */
+}
+
+
+@media (max-width: 768px) {
   .sidebar-container {
-    &>div:not(.graph) {
-      width: 320px;
-      max-height: 365px;
-      overflow-y: auto;
-    }
-
-    @media (max-width: 1490px) {
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-between;
-    }
+      width: 100%; /* Take full width on smaller screens */
+      right: 0;
+      transform: none; /* No left shift */
+      border-radius: 0;
   }
+
+  .toc, .backlinks {
+      margin: 0;
+      padding: 10px;
+      border: none;
+      box-shadow: none;
+  }
+}
+
 
   nav.filetree-sidebar {
     top: 85px;
@@ -125,7 +164,7 @@ body {
     height: calc(100% - 160px);
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow-x: hidden;
 
     .search-button {
@@ -142,7 +181,7 @@ body {
     }
 
     .notelink {
-      border-radius: 10px;
+      border-radius: 5px;
       padding: 5px 0 5px 8px;
 
       a::before {
@@ -292,7 +331,7 @@ body {
   .fnote {
     display: none;
     background-color: var(--background-primary);
-    border: 1px solid var(--text-accent);
+    //border: 1px solid var(--text-accent);
     position: fixed;
     bottom: 10px;
     left: 0;
@@ -309,7 +348,7 @@ body {
       background-color: var(--text-accent);
       padding: 2px 5px;
       color: white;
-      border-radius: 4px;
+      border-radius: 5px;
       text-decoration: none;
       font-size: 0.7em;
       margin-top: -3px;
@@ -333,7 +372,7 @@ body {
     right: 10px;
     left: 10px;
     width: calc(100% - 20px);
-    border-radius: 10px;
+    border-radius: 5px;
     border: var(--cards-border-width) solid var(--background-modifier-border);
     z-index: 99999;
 
@@ -356,7 +395,7 @@ body {
     }
 
     .search-button {
-      border-radius: 10px;
+      border-radius: 5px;
 
       @media (max-width: 800px) {
         margin-right: 10px;
@@ -572,6 +611,16 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
 }
 
 .sidebar {
+
+  position: fixed;
+  top: 75px;
+  right: 50px;
+  height: 100%;
+  min-width: 25px;
+  display: flex;
+  z-index: 3;
+  max-width: 700px;
+
   .toc-container {
     max-height: unset;
 
@@ -581,12 +630,35 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
   }
 
   .backlinks {
-    flex: unset;
+    margin-top: 50px;
+    padding: 10px;
+    //border-top: 1px solid var(--background-modifier-border);
+    font-size: 18px;
+    color: var(--text-muted);
+    box-shadow: none;
+    
+}
+.backlink-list {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
 
-    @media (max-width: 1400px) {
-      order: 3;
-    }
-  }
+.backlink-card {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.backlink-card a {
+  color: var(--text-accent);
+  text-decoration: none;
+}
+
+.backlink-card a:hover {
+  text-decoration: underline;
+}
 }
 
 .tool-links {
@@ -595,7 +667,7 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
   width: 100%;
   height: 100px;
   font-size: 2rem;
-  border-radius: 10px;
+  border-radius: 5px;
   border: var(--cards-border-width) solid var(--background-modifier-border);
   background-color: var(--background-secondary);
 
