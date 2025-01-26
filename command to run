@@ -1,0 +1,4 @@
+netlify build
+npm audit fix
+netlify deploy
+netlify deploy --prod
