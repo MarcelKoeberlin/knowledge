@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-26T17:26:44.136+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/","updated":"2025-01-26T19:46:05.385+01:00"}
 ---
 
 These notes primarily follow [Plasmonics: Fundamentals and Applications](https://link.springer.com/book/10.1007/0-387-37825-1) and [Plasmonics: From Basics to Advanced Topics](https://link.springer.com/book/10.1007/978-3-642-28079-5). My interest in this subject stems from its relevance to my current research, which we explore in the [Attoline](https://ulp.ethz.ch/research/attoline.html).
@@ -24,7 +24,6 @@ Roughly speaking, the field of plasmonics is 100 years old, yet it remains an ac
 
 ---
 # 1 Electromagnetics of Metals 
-
 [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=24&selection=2,0,2,26|•]]
 
 The interaction of metals with electromagnetic waves can be understood in a classical framework based on Maxwell's equations. This holds true even for metallic nanostructures down to sizes on the order of a few nanometres, without the need to resort to quantum mechanics. This is because the high density of free carriers results in narrow spacings of the electron energy levels compared to the thermal excitation energy $k_B T$ at room temperature. It is well known that most metals are highly reflective up to some frequency in the visible range. They are thus traditionally used as cladding layers for constructing waveguides and resonators at microwave and far-infrared frequencies.
@@ -33,10 +32,9 @@ In this low-frequency regime, the _perfect conductor approximation_ of infinite 
 
 ---
 ## 1.1 Maxwell's Equation of Macroscopic Electromagnetism 
-
 [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=25&selection=58,0,59,34|•]]
 
-These dispersive properties can be described by a complex dielectric function $\varepsilon(\omega)$, which forms publihthe basis of all phenomena discussed in this text. 
+These dispersive properties can be described by a complex dielectric function $\varepsilon(\omega)$, which forms publish the basis of all phenomena discussed in this text. 
 
 As a starting point, recall Maxwell's equations of macroscopic electromagnetism:
 $$
@@ -157,7 +155,8 @@ $$
 Therefore, the imaginary part $\varepsilon_2$ of the dielectric function determines the amount of absorption inside the medium. For $|\varepsilon_1| \gg |\varepsilon_2|$, the real part $n$ of the refractive index, which quantifies the lowering of the phase velocity of the propagating waves due to the polarisation of the material, is mainly determined by $\varepsilon_1$. The real part of $\sigma$ determines the amount of absorption, while the imaginary part contributes to $\varepsilon_1$ and therefore to the amount of polarisation.
 
 ---
-## 1.2 Travelling-Wave Solution [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=29&selection=145,0,146,44|•]]
+## 1.2 Travelling-Wave Solution 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=29&selection=145,0,146,44|•]]
 
 Lastly, let us consider travelling-wave solutions of Maxwell’s equations in the absence of external stimuli. We can differentiate two cases, depending on the polarisation direction of the electric field vector:
 
@@ -174,7 +173,8 @@ Lastly, let us consider travelling-wave solutions of Maxwell’s equations in th
 This signifies that longitudinal collective oscillations can only occur at frequencies corresponding to zeros of $\varepsilon(\omega)$.
 
 ---
-## 1.3 The Dielectric Function of the Free Electron Gas [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=30&selection=12,0,12,47|•]]
+## 1.3 The Dielectric Function of the Free Electron Gas 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=30&selection=12,0,12,47|•]]
 
 Over a wide frequency range, the optical properties of metals can be explained by a plasma model, where a gas of free electrons of number density $n$ moves against a fixed background of positive ion cores. For alkali metals, this range extends up to the ultraviolet, while for noble metals, interband transitions occur at visible frequencies. In the plasma model, details of the lattice potential and electron-electron interactions are not considered. Instead, one assumes that some aspects of the band structure are incorporated into the effective optical mass $m$ of each electron. 
 
@@ -280,7 +280,8 @@ $$
 recovering the general result. The dielectric function of the free electron gas is thus also referred to as the **Drude model** of the optical response of metals.
 
 ---
-## 1.4 The Dispersion of the Free Electron Gas and Volume Plasmons [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&selection=41,0,42,8|•]]
+## 1.4 The Dispersion of the Free Electron Gas and Volume Plasmons 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&selection=41,0,42,8|•]]
 
 Let us discuss the transparency regime $\omega > \omega_p$ of the free electron gas model. The dispersion of the [[Notes/Plasmonics#1.1.3 Travelling-Wave Solution\|travelling waves]] is:
 
@@ -307,7 +308,8 @@ $$
 $$
 
 ---
-## 1.5 Real Metals and Interband Transitions [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&selection=53,0,53,37|•]]
+## 1.5 Real Metals and Interband Transitions 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&selection=53,0,53,37|•]]
 
 As already mentioned, the dielectric function of the Drude model adequately describes the optical response of metals only for photons below the transition energy between electronic bands. For some noble metals, interband effects already occur around $1 \, \text{eV}$ ($\lambda \approx 1 \, \mu \mathrm{m}$), for example, for silver:
 ![Attachments/Notes/Plasmonics/IMG-0126164735362.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0126164735362.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&rect=51,99,394,215|•]]
@@ -315,7 +317,8 @@ As already mentioned, the dielectric function of the Drude model adequately desc
 The red dots are experimentally obtained results, while the line is a fit of the Drude model. Clearly, the model is not adequate to describe either the real or imaginary part of the dielectric function at high frequencies, and in the case of gold, its validity already breaks down close to the visible range.
 
 ---
-## 1.6 The Energy of the Electromagnetic Field in Metals [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=37&selection=80,0,82,49|•]]
+## 1.6 The Energy of the Electromagnetic Field in Metals 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=37&selection=80,0,82,49|•]]
 
 For a linear medium with no dispersion or losses, the total energy density of the electromagnetic field can be written as:
 
@@ -383,7 +386,8 @@ where the complex parameter $\beta = k_x$ is called the propagation constant, de
 2. The second set are the transverse electric (TE or s) modes, where only $H_x$, $H_z$, and $E_y$ are non-zero.
 
 ---
-## 2.2 Surface Plasmon Polaritons at a Single Interface [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=43&selection=4,0,6,46|•]]
+## 2.2 Surface Plasmon Polaritons at a Single Interface 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=43&selection=4,0,6,46|•]]
 
 The simplest geometry sustaining SPPs is that of a single, flat interface between a dielectric, non-absorbing half-space ($z > 0$) with positive real dielectric constant $\varepsilon_2$ and an adjacent conducting half-space ($z < 0$) described via a dielectric function $\varepsilon(\omega)$. The requirement of metallic character implies that $\mathfrak{Re}(\varepsilon(\omega)) < 0$, which is fulfilled at frequencies below the bulk plasmon frequency $\omega_p$. We seek propagating wave solutions confined to the interface, i.e., with evanescent decay in the perpendicular $z$-direction.
 
@@ -445,7 +449,8 @@ The next figure shows the dispersion relation of SPPs propagating at a silver/ai
 There is generally a characteristic trade-off between localization and loss in plasmonics. Field confinement below the diffraction limit of half the wavelength in the dielectric can be achieved close to $\omega_{\text{sp}}$. In the metal itself, the field falls off over distances on the order of $20 \, \text{nm}$ over a wide frequency range.
 
 ---
-## 2.3 Multilayer Systems [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=48&selection=7,0,9,18|•]]
+## 2.3 Multilayer Systems 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=48&selection=7,0,9,18|•]]
 
 Let us now turn our attention to systems consisting of alternating conducting and dielectric thin films. Each single interface can sustain bound SPPs. When the separation between adjacent interfaces is comparable to or smaller than the decay length $\hat{z} = 1 / |k_z|$ of the interface mode, interaction between SPPs gives rise to coupled modes. 
 
@@ -501,7 +506,8 @@ Note that this discussion was limited to the fundamental bound modes. In IMI str
 Surface plasmon polaritons propagating at the flat interface between a conductor and a dielectric are essentially two-dimensional electromagnetic waves. Confinement is achieved since the propagation constant is greater than the wave vector in the dielectric, $\beta > k$, leading to decay on both sides of the interface. Therefore, excitation by three-dimensional light beams is not possible unless special techniques for phase-matching are employed. Alternatively, different geometries may be used.
 
 ---
-## 3.1 Prism Coupling [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=59&selection=22,0,24,14|•]]
+## 3.1 Prism Coupling 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=59&selection=22,0,24,14|•]]
 
 The projection along the interface of the momentum $k_x = k \sin\theta$ is smaller than the SPP propagation constant $\beta$ even at grazing incidence, prohibiting phase-matching. However, phase-matching can still be achieved in a three-layer system with different dielectric constants. Consider one of the materials to be air ($\varepsilon = 1$), such that the beam being reflected at the insulator-metal interface has an in-plane momentum of $k_x = k\sqrt{\varepsilon}\sin\theta$. The insulator in this case would be a prism. Two configurations are possible:
 
@@ -526,7 +532,8 @@ $$
 $$
 
 ---
-## 3.2 Grating Coupling [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=61&selection=149,0,151,16|•]]
+## 3.2 Grating Coupling 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=61&selection=149,0,151,16|•]]
 
 Phase-matching can also be achieved by patterning the metal surface with a shallow grating of grooves or holes with lattice constant $a$. In the simple one-dimensional grating of grooves, phase-matching occurs whenever the condition:
 
@@ -549,7 +556,8 @@ $$
 with the momentum components $\Delta k_x$ provided by scattering, can also be fulfilled.
 
 ---
-## 3.3 Excitation Using Highly Focused Optical Beams [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=64&selection=39,0,41,45|•]]
+## 3.3 Excitation Using Highly Focused Optical Beams 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=64&selection=39,0,41,45|•]]
 
 Another approach uses a microscopic objective of high numerical aperture, which ensures a large angular spread of the focused excitation beam, including angles $\theta > \theta_c$ greater than the critical angle of total internal reflection at a glass/air interface:
 
@@ -574,7 +582,8 @@ As shown earlier, the second image (s-polarisation) has no trace since there are
 While the successful excitation of surface plasmon polaritons (SPPs) using optical techniques can be deduced from a decrease in reflectivity, visualizing the propagation of SPPs away from their excitation region is highly desirable. This visualization allows the determination of the propagation length $L$ and provides insights into the out-of-plane confinement, enabling the assessment of $\hat{z}$, the extent to which the fields penetrate into the dielectric side of the interface.
 
 ---
-## 4.1 Near-Field Microscopy [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=70&selection=43,0,45,21|•]]
+## 4.1 Near-Field Microscopy 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=70&selection=43,0,45,21|•]]
 
 Using near-field optical microscopy in collection mode, also called photon scanning tunneling microscopy, allows for the investigation of SPP propagation with sub-wavelength resolution. A sharp tip is brought close to the surface under study. The tip collects photons by coupling the near field above the surface to propagating modes inside a tapered optical fiber. The resolution of this technique is limited by the size of the tip's aperture, which can reach dimensions of only 50 nm or even less. To study the confinement and propagation of SPPs using this scheme, the tip has to be brought within a distance $\hat{z}$ of the surface. For silver and gold films, this typically requires a gap of about 100 nm.
 
@@ -585,14 +594,16 @@ To avoid interference with the detection scheme, optical excitation of SPPs usua
 ![Attachments/Notes/Plasmonics/IMG-0126164738074.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0126164738074.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=72&rect=101,507,344,612|•]]
 
 ---
-## 4.2 Fluorescence Imaging [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=74&selection=4,0,6,20|•]]
+## 4.2 Fluorescence Imaging 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=74&selection=4,0,6,20|•]]
 
 Instead of locally collecting the optical near field of SPPs using an apertured fiber tip, emitters such as quantum dots can be directly placed in the tail of the SPP field. If the frequency of the propagating SPP lies within the spectral absorption range of the emitter, excitation via SPPs is possible. The intensity of the emitted fluorescence radiation is proportional to the local field intensity at the emitter's position. Therefore, SPP propagation can be mapped by coating the surface with a dielectric film doped with emitters. An example of this is shown for (a) a silver nanoparticle and (b) a silver nanowire.
 
 ![Attachments/Notes/Plasmonics/IMG-0126164738255.webp|700](/img/user/Attachments/Notes/Plasmonics/IMG-0126164738255.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=75&rect=127,127,311,349|•]]
 
 ---
-## 4.3 Leakage Radiation [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=76&selection=4,0,6,17|•]]
+## 4.3 Leakage Radiation 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=76&selection=4,0,6,17|•]]
 
 The dispersion curve of SPPs excited at the metal/air interface lies outside the light cone, and the mode does not suffer radiation loss into the air region—assuming a perfectly flat interface with negligible roughness. However, energy can be lost into a supporting substrate with a higher index $n_s$, which occurs at all points on the dispersion curve that lie to the left of the substrate's light line $k_s = n_s\omega/c$. This condition ensures leakage radiation of the SPP into the substrate:
 $$
@@ -609,7 +620,8 @@ Apart from observing SPP propagation, this technique can also directly visualize
 For light of varying frequencies, the resulting wave vector can be determined by computing the SPP angle of leakage radiation. This allows access to the complex dispersion relation of a structured metal surface.
 
 ---
-## 4.4 Scattered Light Imaging [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=79&selection=63,0,65,23|•]]
+## 4.4 Scattered Light Imaging 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=79&selection=63,0,65,23|•]]
 
 The propagation of SPPs at a metal/air interface can often be imaged by collecting the light lost to radiation due to scattering at random surface protrusions. Scattering at these surface irregularities allows SPPs with wave vector $\beta$ larger than $k_0$ to acquire a momentum component $\Delta k_x$, which can lower $\beta$ into the air light cone region, leading to coupling to the radiation continuum and thus photon emission. For increasingly flat films with good surface quality, the amount of scattering is reduced, making detailed determinations, such as the propagation length, more difficult. This technique also enables the determination of the dispersion relation of SPPs on modulated surfaces.
 
@@ -620,7 +632,8 @@ The propagation of SPPs at a metal/air interface can often be imaged by collecti
 The second fundamental excitation in plasmonics is the so-called localized surface plasmons. In contrast to the propagating SPPs already discussed, these are non-propagating excitations of the conduction electrons coupled to the electromagnetic field.
 
 ---
-## 5.1 Normal Modes of Sub-Wavelength Metal Particles [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=83&selection=10,0,12,46|•]]
+## 5.1 Normal Modes of Sub-Wavelength Metal Particles 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=83&selection=10,0,12,46|•]]
 
 The interaction of a particle of size $d$ with light of wavelength $\lambda$ can be analyzed using the simple _quasi-static approximation_, provided that $d \ll \lambda$. In this case, the phase of the field is practically constant over the particle volume, reducing the problem to the interaction of a particle with an electrostatic field. The harmonic time dependence can then be added to the solution once the field distributions are known. 
 
@@ -703,7 +716,8 @@ spheroidal nanoparticles exhibit two spectrally separated plasmon resonances, co
 
 
 ---
-## 5.2 Beyond the Quasi-Static Approximation and Plasmon Lifetime [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=90&selection=49,0,52,8|•]]
+## 5.2 Beyond the Quasi-Static Approximation and Plasmon Lifetime 
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=90&selection=49,0,52,8|•]]
 
 We now consider two regimes beyond the quasi-static approximation:
 1. Larger particles, where retardation effects become significant.
