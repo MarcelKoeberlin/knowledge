@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes","permalink":"/notes/","hide":"true","dgShowLocalGraph":true,"updated":"2025-01-25T23:01:04.726+01:00"}
+{"dg-publish":true,"dg-path":"Notes","permalink":"/notes/","hide":"true","dgShowLocalGraph":true,"updated":"2025-01-25T23:01:04.000+01:00"}
 ---
 
 This is the perfect place to start reading up on some topics:
