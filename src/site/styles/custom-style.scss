@@ -183,7 +183,7 @@ body {
 .sidebar-container {
   &>div:not(.graph) {
     //position: fixed;
-    max-height: 600px;
+    max-height: 450px;
     left: 100px;
     top: 80px;
     right: 200px;
@@ -674,12 +674,12 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
 
   position: fixed;
   top: 75px;
-  right: 20px;
+  right: 0px;
   height: 100%;
   min-width: 25px;
   display: flex;
   z-index: 3;
-  max-width: 700px;
+  max-width: 400px;
 
   .toc-container {
     max-height: unset;
@@ -739,4 +739,43 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
     align-items: center;
 
   }
+}
+
+@media (max-width: 1550px) {
+  .sidebar {
+    position: relative;
+    transform: none;
+    border-radius: 4px;
+    margin-top: 50px;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 0;
+    border-top: 2px solid var(--background-secondary);
+    justify-content: space-between;
+  }
+} 
+
+
+/* Sidebar styles */
+.sidebar.hidden {
+  display: none; /* Hides the sidebar */
+}
+
+/* Sidebar toggle button styles */
+#sidebar-toggle .svg-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+#sidebar-toggle .toggle-on {
+  display: inline;
+}
+
+#sidebar-toggle.hidden .toggle-on {
+  display: none;
+}
+
+#sidebar-toggle.hidden .toggle-off {
+  display: inline;
 }
