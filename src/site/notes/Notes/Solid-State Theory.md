@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","updated":"2025-01-26T19:54:43.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","updated":"2025-01-27T13:03:29.000+01:00"}
 ---
 
 For my notes of 'solid-state theory' 2023, taught by Prof. Sigrist, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/notes2023). The pdf might load for quite a while, since its 35 MBs of size. However, it should be noted that the notes of Prof. Sigrist are already extremely high quality, so is it really necessary? Not really, but its damn cool. I spent a bit of time trying to convert the pdf to markdown and latex, and mainly implementing notations seamlessly. All credit to Prof. Sigrist for this great script!
@@ -4792,10 +4792,7 @@ $$
 \end{align*}
 $$
 
-With this, the skin depth of a metal with the famous relation $\delta(\omega) \propto \omega^{-1 / 2}$ is reproduced within the relaxation time approximation of the Boltzmann equation. While length $\delta(\omega)$ is in the centimetre range for frequencies of the order of $10-100 \mathrm{~Hz}$, the Debye length $c / \omega_{p}$, is only of the order of $100 \text{ }\pu{Å}$ for $\hbar \omega_{p}=10 \mathrm{eV}$:
-
-![Attachments/Notes/Solid-State Theory/IMG-0126164742782.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/IMG-0126164742782.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=133&rect=143,581,449,758|•]]
-
+With this, the skin depth of a metal with the famous relation $\delta(\omega) \propto \omega^{-1 / 2}$ is reproduced within the relaxation time approximation of the Boltzmann equation. While length $\delta(\omega)$ is in the centimetre range for frequencies of the order of $10-100 \mathrm{~Hz}$, the Debye length $c / \omega_{p}$, is only of the order of $100 \text{ }\pu{Å}$ for $\hbar \omega_{p}=10 \mathrm{eV}$.
 **Relaxation regime** $\left(1 \ll \omega \bar{\tau} \ll \omega_{p} \bar{\tau}\right)$
 Here, we can expand the dielectric function (6.35) in $(\omega \bar{\tau})^{-1}$, yielding
 $$
