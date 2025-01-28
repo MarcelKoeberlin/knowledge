@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowLocalGraph":true,"updated":"2025-01-26T16:47:34.000+01:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowLocalGraph":true,"updated":"2025-01-28T17:35:46.000+01:00"}
 ---
 
 Hi there!
@@ -15,7 +15,7 @@ Welcome to my personal website—a space where I share everything I consider wor
 
 For efficient and stylus-free note-taking, I highly recommend [Obsidian](https://obsidian.md). It’s genuinely a game changer. To host this website for free, I use the Digital Garden plugin, which you can find [here](https://github.com/oleeskild/obsidian-digital-garden). You may notice the • symbol throughout the site. It’s used for my internal navigation within Obsidian (so that I know where an image/chapter is from) and can be ignored. This website exists on two pages, deployed from two different services: [Vercel](https://koeberlin.vercel.app/) and [Netlify](https://koeberlin.netlify.app/). Both pages are identical, but sometimes delayed with respect to each other by not more than one day.
 
-If you have any comments or suggestions, feel free contact me on [GitHub](https://github.com/MarcelKoeberlin) or [LinkedIn](https://www.linkedin.com/in/marcel-k%C3%B6berlin-776397244/).
+If you have any comments or suggestions, feel free contact me on [GitHub](https://github.com/MarcelKoeberlin) or [LinkedIn](https://www.linkedin.com/in/marcel-k%C3%B6berlin-776397244/), or via email, by using the button on the bottom right.
 
 **Marcel** 
 _23 January 2025_
