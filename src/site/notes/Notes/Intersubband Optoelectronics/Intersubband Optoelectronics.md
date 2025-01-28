@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Intersubband Optoelectronics","permalink":"/notes/intersubband-optoelectronics/","updated":"2025-01-28T17:35:46.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Intersubband Optoelectronics","permalink":"/notes/intersubband-optoelectronics/","updated":"2025-01-28T21:21:43.357+01:00"}
 ---
 
 This is by far my least favourite course that I ever took, so I only converted it to markdown, fixed the headers, and pasted images back in (still needs to be done). ChatGPT did the rest.. Seriously what the hell is this course...

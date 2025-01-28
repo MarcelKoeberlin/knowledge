@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/chapters/2-linear-time-invariant-systems/","hide":"true","updated":"2025-01-28T17:49:19.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/chapters/2-linear-time-invariant-systems/","hide":"true","updated":"2025-01-28T21:21:44.945+01:00"}
 ---
 
 Jump back to chapter selection: [[Notes/Signals and Systems/Signals and Systems\|Notes/Signals and Systems/Signals and Systems]]
@@ -61,11 +61,11 @@ LTI systems satisfy important properties:
 3. **Associativity**: $x * \left(h_1 * h_2\right) = \left(x * h_1\right) * h_2$.
 
 Distributivity can be depicted graphically:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162237105.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162237105.webp)
+![Attachments/Notes/Chapters/2 Linear Time-Invariant Systems/IMG-0128212144448.webp|900](/img/user/Attachments/Notes/Chapters/2%20Linear%20Time-Invariant%20Systems/IMG-0128212144448.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=136&rect=108,407,300,593|•]]
 
 Similarly, associativity can be depicted graphically:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162237240.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162237240.webp)
+![Attachments/Notes/Chapters/2 Linear Time-Invariant Systems/IMG-0128212144469.webp|900](/img/user/Attachments/Notes/Chapters/2%20Linear%20Time-Invariant%20Systems/IMG-0128212144469.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=139&rect=94,310,303,595|•]]
 
 ---
@@ -186,11 +186,11 @@ y[n] = b x[n] - a y[n-1].
 $$
 
 This equation requires three basic operations: addition, multiplication, and delay:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162237360.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162237360.webp)
+![Attachments/Notes/Chapters/2 Linear Time-Invariant Systems/IMG-0128212144586.webp|700](/img/user/Attachments/Notes/Chapters/2%20Linear%20Time-Invariant%20Systems/IMG-0128212144586.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=113,383,295,597|•]]
 
 The block diagram representation of this equation is:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162237480.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162237480.webp)
+![Attachments/Notes/Chapters/2 Linear Time-Invariant Systems/IMG-0128212144700.webp|700](/img/user/Attachments/Notes/Chapters/2%20Linear%20Time-Invariant%20Systems/IMG-0128212144700.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=138,279,302,373|•]]
 
 The feedback arises because the equation is recursive. The block diagram shows that memory is required for this system, corresponding to the delay operator.
@@ -208,7 +208,7 @@ $$
 y(t) = \int_{-\infty}^t \left( b x(\tau) - a y(\tau) \right) \, d\tau,
 $$
 assuming $y(-\infty) = 0$, allows for implementation using integrators:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162237593.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162237593.webp)
+![Attachments/Notes/Chapters/2 Linear Time-Invariant Systems/IMG-0128212144823.webp|700](/img/user/Attachments/Notes/Chapters/2%20Linear%20Time-Invariant%20Systems/IMG-0128212144823.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&rect=142,463,338,599|•]]
 
 The integrator is a memory element, as seen from:

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/5-landau-s-theory-of-fermi-liquids/","hide":"true","updated":"2025-01-28T21:19:22.340+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/5-landau-s-theory-of-fermi-liquids/","hide":"true","updated":"2025-01-28T21:21:48.318+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -43,7 +43,7 @@ $$
 
 We calculate the lifetime $\tau_{\boldsymbol{k}}$ of the initial state with momentum $\boldsymbol{k}$ using Fermi's golden rule, yielding the transition rate from the initial state of a filled Fermi sea and one particle with momentum $\boldsymbol{k}$ to a state with two electrons above the Fermi sea, with momenta $\boldsymbol{k}-\boldsymbol{q}$ and $\boldsymbol{k}^{\prime}+\boldsymbol{q}$, and a hole with $\boldsymbol{k}^{\prime}$:
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173523115.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173523115.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=110&rect=125,622,471,759|•]]
+![Attachments/Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids/IMG-0128212147699.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/5%20Landau's%20Theory%20of%20Fermi%20Liquids/IMG-0128212147699.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=110&rect=125,622,471,759|•]]
 
 Since neither the momenta $\boldsymbol{k}^{\prime}$ and $\boldsymbol{q}$, nor the spin of the created electron are fixed, a summation over the possible configuration has to be performed, leading to
 $$
@@ -73,7 +73,7 @@ S(\boldsymbol{q}, \omega) & =\frac{1}{(2 \pi)^{2}} \int_{k_{2}}^{k_{1}} d k_{\pe
 $$
 with $k_{1}^{2}=k_{F}^{2}-k_{\|, 0}^{2}$ and $k_{2}^{2}=k_{F}^{2}-\left(k_{\|, 0}+q\right)^{2}$, where $k_{\|, 0}=\left(2 m \omega-\hbar q^{2}\right) / 2 \hbar q$ is enforced by the delta function. 
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173523589.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173523589.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=111&rect=237,111,359,228|•]]
+![Attachments/Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids/IMG-0128212147791.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/5%20Landau's%20Theory%20of%20Fermi%20Liquids/IMG-0128212147791.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=111&rect=237,111,359,228|•]]
 
 The wave vectors $k_{2}$ and $k_{1}$ are the upper and lower limits of integration determined from the condition $n_{0, \boldsymbol{k}^{\prime}}(1-$ $\left.n_{0, \boldsymbol{k}^{\prime}+\boldsymbol{q}}\right)>0$ and can be obtained by simple geometric considerations. equation (5.8) follows immediately.
 
@@ -109,7 +109,7 @@ $$
 $$
 for $\boldsymbol{k}$ slightly above the Fermi surface. This implies that the state $|\boldsymbol{k} s\rangle$ occurs as a resonance of width $\hbar / \tau_{\boldsymbol{k}}$ and features a quasi-particle, which can be observed in the spectral function $A(E, \boldsymbol{k})$ as depicted here: 
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173524088.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173524088.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=112&rect=163,551,440,716|•]]
+![Attachments/Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids/IMG-0128212147903.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/5%20Landau's%20Theory%20of%20Fermi%20Liquids/IMG-0128212147903.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=112&rect=163,551,440,716|•]]
 
 The quasi-particle (coherent) part of the spectral function has a weight reduced from one (corresponding to the quasi-particle weight $Z_{\boldsymbol{k}}$ ). The remaining weight is shifted to higher energies as a so-called incoherent part (continuum without clear momentum-energy relation). The resonance becomes arbitrarily sharp as the Fermi surface is approached
 $$
@@ -138,7 +138,7 @@ n_{\sigma}^{(0)}(\boldsymbol{k})=\Theta\left(k_{F}-|\boldsymbol{k}|\right) .
 $$
 For a spherically symmetric electron system, the quasi-particle Fermi surface is a sphere with the same radius as the one for free electrons of the same density. For a general point group symmetry, the Fermi surface may be deformed by the interactions without changing the underlying symmetry. The volume enclosed by the Fermi surface is always conserved despite the deformation. Note that the distribution $n_{\sigma}^{(0)}(\boldsymbol{k})$ of the quasi-particles in the ground state and that $n_{0 \boldsymbol{k} \boldsymbol{s}}=\left\langle\widehat{c}_{\boldsymbol{k} \sigma}^{\dagger} \widehat{c}_{\boldsymbol{k} \sigma}\right\rangle$ of the real electrons in the ground state are not identical:
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173524672.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173524672.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=113&rect=149,609,446,745|•]]
+![Attachments/Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids/IMG-0128212147978.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/5%20Landau's%20Theory%20of%20Fermi%20Liquids/IMG-0128212147978.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=113&rect=149,609,446,745|•]]
 
 Interestingly, $n_{0 k s}$ is still discontinuous at the Fermi surface, but the height of the jump is, in general, smaller than unity. The modification of the electron distribution function from a step function to a "smoother" Fermi surface indicates the involvement of electron-hole excitations and the renormalisation of the electronic properties, which deplete the Fermi sea and populate the states above the Fermi level. The reduced jump in $n_{0 k s}$ is a measure for the quasi-particle weight at the Fermi surface, $Z_{\boldsymbol{k}_{F}}$, i.e. the amplitude of the corresponding free electron state in the quasi-particle state.
 In Landau's theory of Fermi liquids, the essential information on the low-energy physics of the system shall be contained in the deviation of the quasi-particle distribution $n_{\sigma}(\boldsymbol{k})$ from its ground state distribution $n_{\sigma}^{(0)}(\boldsymbol{k})$,
@@ -336,7 +336,7 @@ $$
 \end{align*}
 $$
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173525224.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173525224.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=117&rect=137,635,465,768|•]]
+![Attachments/Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids/IMG-0128212148053.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/5%20Landau's%20Theory%20of%20Fermi%20Liquids/IMG-0128212148053.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=117&rect=137,635,465,768|•]]
 
 Note that by symmetry, $\delta n_{\sigma}(\boldsymbol{k})=-\delta n_{-\sigma}(-\boldsymbol{k})$. Due to interactions, the renormalised gyromagnetic factor $\tilde{g}$ differs from the value of $g=2$ for free electrons. We focus on the second term, which can be expressed as
 $$
@@ -391,7 +391,7 @@ $$
 
 This function is strongly concentrated around the Fermi energy:
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173525695.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173525695.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=118&rect=208,492,387,637|•]]
+![Attachments/Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids/IMG-0128212148124.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/5%20Landau's%20Theory%20of%20Fermi%20Liquids/IMG-0128212148124.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=118&rect=208,492,387,637|•]]
 
 The current density can now be calculated, using the distribution function $n_{\sigma}(\boldsymbol{k})=n_{\sigma}^{(0)}(\boldsymbol{k})+$ $\delta n_{\sigma}(\boldsymbol{k})$. Within the Fermi liquid theory this yields,
 $$
@@ -732,7 +732,7 @@ $$
 
 This yields the modification of the distribution functions as shown here: 
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173526237.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173526237.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=125&rect=150,582,452,707|•]]
+![Attachments/Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids/IMG-0128212148189.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/5%20Landau's%20Theory%20of%20Fermi%20Liquids/IMG-0128212148189.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=125&rect=150,582,452,707|•]]
 
 It allows us also to determine the size of the discontinuity of the distribution function at the Fermi surface,
 $$
@@ -785,7 +785,7 @@ $$
 
 Here, $k_{ \pm}$are cutoff parameters of the order of the Fermi wave vector $k_{F}$. Apparently the quality of the perturbative calculation deteriorates as $k \rightarrow k_{F \pm}$, since we encounter a logarithmic divergence from both sides.
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173526784.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173526784.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=126&rect=163,438,437,583|•]]
+![Attachments/Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids/IMG-0128212148255.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/5%20Landau's%20Theory%20of%20Fermi%20Liquids/IMG-0128212148255.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=126&rect=163,438,437,583|•]]
 
 Indeed, a more elaborated approach shows that the distribution function is continuous at $k=k_{F}$ in one dimension, without any jump. Correspondingly, the quasi-particle weight vanishes and the elementary excitations cannot be described by Fermionic quasi-particles but rather by collective modes. Landau's Theory of Fermi liquids is inappropriate for such systems. This kind of behaviour, where the quasi-particle weight vanishes, can be described by the so-called bosonisation of Fermions in one dimension, a topic that is beyond the scope of these lectures. However, a result worth mentioning, shows that the Fermionic excitations in one dimensions decay into independent charge and spin excitations, the so-called spin-charge separation. This behaviour can be understood with the naive picture of a half-filled lattice with predominantly antiferromagnetic spin correlations. In this case both charge excitations (empty or doubly occupied lattice site) and spin excitations (two parallel neighbouring spins) represent different kinds of domain walls, and are free to move at different velocities.
 

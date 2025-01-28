@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-01-28T21:18:07.982+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-01-28T21:21:44.095+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -23,7 +23,7 @@ Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|ch
 
 One defining characteristic of many solids is the regular arrangement of their atoms, forming a crystal. Electrons in such crystals experience a periodic potential, originating from the lattice of ions and the mean interaction with other electrons:
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173453564.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173453564.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=5&rect=207,412,394,513|•]]
+![Attachments/Notes/Solid-State Theory/1 Electrons in the Periodic Crystal/IMG-0128212143154.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/1%20Electrons%20in%20the%20Periodic%20Crystal/IMG-0128212143154.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=5&rect=207,412,394,513|•]]
 
 The spectrum of these delocalised electronic states—solutions to the Schrödinger equation—forms energy bands separated by gaps of "forbidden" energies. Two limiting approaches help to understand this band formation:
 1. **Nearly-free electron approximation**: A weak periodic potential breaks up the continuous spectrum into bands.
@@ -44,7 +44,7 @@ $$
 
 where $\boldsymbol{n} = (n_{1}, n_{2}, n_{3})$ and $n_i \in \mathbb{Z}$. For example, in a 2D square lattice:
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173453734.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173453734.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=9&rect=154,451,440,629|•]]
+![Attachments/Notes/Solid-State Theory/1 Electrons in the Periodic Crystal/IMG-0128212143218.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/1%20Electrons%20in%20the%20Periodic%20Crystal/IMG-0128212143218.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=9&rect=154,451,440,629|•]]
 
 Here, $\boldsymbol{a}_{1}$ and $\boldsymbol{a}_{2}$ are primitive lattice vectors, and $\boldsymbol{R} = 2\boldsymbol{a}_{1} + \boldsymbol{a}_{2}$ is a lattice vector. The shaded area is the **Wigner-Seitz cell**, a unit cell formed by bisecting lines connecting neighboring lattice points.
 
@@ -276,7 +276,7 @@ $$
 
 This modifies the dispersion relation, yielding an effective mass $m^{*} > m$, as shown in the figure:
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173454176.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173454176.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=14&rect=176,569,421,754|•]]
+![Attachments/Notes/Solid-State Theory/1 Electrons in the Periodic Crystal/IMG-0128212143272.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/1%20Electrons%20in%20the%20Periodic%20Crystal/IMG-0128212143272.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=14&rect=176,569,421,754|•]]
 
 The $\boldsymbol{k} \cdot \boldsymbol{p}$ approximation describes this expansion near symmetry points. The next energy level at $k = 0$ results from two crossing parabolas centered at $G_{\pm} = \pm 2\pi/a = \pm\tilde{G}$. Restricting to these components, the eigenvalue problem simplifies to:
 
@@ -418,7 +418,7 @@ $$
 
 and $V_{a}(\boldsymbol{r})$ is the rotationally symmetric atomic potential. The potential landscape is depicted below, showing (a) the discrete spectrum of a single atomic Coulomb potential and (b) the periodic potential arising from a regular lattice:
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173454514.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173454514.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=16&rect=98,261,509,397|•]]
+![Attachments/Notes/Solid-State Theory/1 Electrons in the Periodic Crystal/IMG-0128212143384.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/1%20Electrons%20in%20the%20Periodic%20Crystal/IMG-0128212143384.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=16&rect=98,261,509,397|•]]
 
 At low energies, electrons remain localised near atomic sites, but at higher energies, wavefunctions extend further and can delocalise to form itinerant states, leading to band formation.
 
@@ -662,7 +662,7 @@ $$
 
 Consequently, there is a star-like structure of equivalent points $g \boldsymbol{k}$ with the same band energy ( $\rightarrow$ degeneracy) for each $\boldsymbol{k}$ in the Brillouin zone:
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173455257.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173455257.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=24&rect=127,512,464,652|•]]
+![Attachments/Notes/Solid-State Theory/1 Electrons in the Periodic Crystal/IMG-0128212143605.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/1%20Electrons%20in%20the%20Periodic%20Crystal/IMG-0128212143605.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=24&rect=127,512,464,652|•]]
 This call the 'star of k-points' in the Brillouin zone with degenerate band energies: Left panel: Star of k; Right panel: contour plot of a two dimensional band $\epsilon_k$ . The dots correspond to the star of  with degenerate energy values, demonstrating $\epsilon_{n,k}=\epsilon_{n,gk}$.
 
 For a general point $\boldsymbol{k}$ the number of equivalent points in the star equals the number of point group elements for this $\boldsymbol{k}$ (without inversion). If $\boldsymbol{k}$ lies on points or lines of higher symmetry, it is left invariant under a subgroup of the point group. Consequently, the number of beams of the star is smaller. The subgroup of the point group leaving $\boldsymbol{k}$ unchanged is called _little group_ of $\boldsymbol{k}$. If inversion is part of the point group, $-\boldsymbol{k}$ is always contained in the star of $\boldsymbol{k}$. In summary, we have the simple relations
@@ -723,7 +723,7 @@ $$
 with the lattice -momentum $k$ within the first Brillouin zone ( $-\frac{\pi}{a}<k<\frac{\pi}{a}$ ) and $n$ being an integer. On the real-space lattice an electron can take $2 N$ different states. Thus, for $k$ we find that $n$ should take the values, $n+N / 2=1,2, \ldots, N-1, N$. Note that $k=-\pi / a$ and $k=+\pi / a$ differ by a reciprocal lattice vector $G=2 \pi / a$ and are therefore identical. This provides the same number of states $(2 N)$, since per $k$ we have two spins:
 
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173455716.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173455716.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=27&rect=119,504,478,752|•]]
+![Attachments/Notes/Solid-State Theory/1 Electrons in the Periodic Crystal/IMG-0128212143668.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/1%20Electrons%20in%20the%20Periodic%20Crystal/IMG-0128212143668.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=27&rect=119,504,478,752|•]]
 
 We can fill these states with electrons following the Pauli exclusion principle.The figure shows the two typical situations: 
 1. $N$ electrons corresponding to half of the possible electrons which can be accommodated leading to a half-filled band, and 
@@ -741,7 +741,7 @@ In general, we make the distinction between different cases:
 - **If the number of electrons per unit cell is odd, the uppermost non-empty band is half filled**. Then the system is a metal, in which electrons can move and excitations with arbitrarily small energies are possible. The electrons remain mobile down to arbitrarily low temperatures. The standard example of a metal are the Alkali metals in the first column of the periodic table ( $\mathrm{Li}, \mathrm{Na}, \mathrm{K}, \mathrm{Rb}, \mathrm{Cs}$ ), as all of them have the configuration [noble gas] (ns)${ }^{1}$, i.e., one mobile electron per ion.
 - In general, band structures are more complex. Different bands need not to be separated by energy gaps, but can overlap instead. In particular, this happens, if different orbitals are involved in the structure of the bands. In these systems, bands can have any fractional filling (not just filled or half-filled). The earth alkaline metals are an example for this (second column of the periodic table, $\mathrm{Be}, \mathrm{Mg}, \mathrm{Ca}, \mathrm{Sr}, \mathrm{Ba}$ ), which are metallic despite having two $(n, s)$-electrons per unit cell. Systems, where two bands overlap at the Fermi energy but the overlap is small, are termed semi-metals. The extreme case, where valence and conduction band touch in isolated points so that there are no electrons at the Fermi energy and still the band gap is zero, is realised in graphene.
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173456185.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173456185.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=28&rect=74,552,528,760|•]]
+![Attachments/Notes/Solid-State Theory/1 Electrons in the Periodic Crystal/IMG-0128212143736.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/1%20Electrons%20in%20the%20Periodic%20Crystal/IMG-0128212143736.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=28&rect=74,552,528,760|•]]
 
 The electronic structure is also responsible for the cohesive forces necessary for the formation of a regular crystal. We may also classify materials according to relevant forces. We distinguish four major types of crystals:
 
@@ -811,7 +811,7 @@ x(t)=\frac{2}{e E} \cos \left(\frac{e E a t}{\hbar}\right) .
 $$
 
 This behaviour is called Bloch oscillation and means that the electron oscillates around its initial position rather than moving in one direction when subjected to a static electric field. This effect can only be observed under very special conditions where the probe is absolutely clean. The effect is easily destroyed by damping or scattering, but has been experimentally observed for accelerated caesium atoms:
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173456719.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173456719.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=31&rect=159,551,427,691|•]]
+![Attachments/Notes/Solid-State Theory/1 Electrons in the Periodic Crystal/IMG-0128212143798.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/1%20Electrons%20in%20the%20Periodic%20Crystal/IMG-0128212143798.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=31&rect=159,551,427,691|•]]
 
 ### 1.7.3 Current Densities
 
@@ -851,7 +851,7 @@ While the approximation of nearly free electrons gives a qualitative picture of 
 
 In order to overcome this weakness of the plane wave solution, we would have to superpose a very large number of plane waves, which is not an easy task to put into practice. Alternatively, we can divide the electronic states into the ones corresponding to filled low-lying energy states, which are concentrated around the ionic core (core states), and into extended (and more weakly modulated) states, which form the valence and conduction bands. The core electron states may be approximated by atomic orbitals of isolated atoms. For a metal such as aluminium (Al: $1 s^{2} 2 s^{2} 2 p^{6} 3 s^{2} 3 p$ ) the core electrons correspond to the $1 s$-, $2 s$-, and $2 p$-orbitals, whereas the $3 s$ and $3 p$-orbitals contribute dominantly to the extended states of the valence- and conduction bands. We will focus on the latter, as they determine the low-energy physics of the electrons. The core electrons are deeply bound and can be considered inert.
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173457243.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173457243.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=32&rect=170,222,426,375|•]]
+![Attachments/Notes/Solid-State Theory/1 Electrons in the Periodic Crystal/IMG-0128212143853.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/1%20Electrons%20in%20the%20Periodic%20Crystal/IMG-0128212143853.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=32&rect=170,222,426,375|•]]
 
 We introduce the core electron states as $\left|\phi_{j}\right\rangle$, with $\mathcal{H}\left|\phi_{j}\right\rangle=E_{j}\left|\phi_{j}\right\rangle$ where $\mathcal{H}$ is the Hamiltonian of the single atom. The remaining states have to be orthogonal to these core states, so that we make the Ansatz
 $$
@@ -890,7 +890,7 @@ $$
 
 This is an eigenvalue equation for the so-called pseudo-wave function (or pseudo-state) $\left|\chi_{n \boldsymbol{k}}\right\rangle$, instead of the Bloch state $\left|\psi_{n \boldsymbol{k}}\right\rangle$, where the modified potential $\widehat{V}_{\mathrm{ps}}=\widehat{V}+\widehat{V}^{\prime}$ is called pseudopotential. The attractive core potential $\widehat{V}=V(\widehat{\boldsymbol{r}})$ is always negative. On the other hand, $E_{n k}>E_{j}$, such that $\widehat{V}^{\prime}$ is positive. It follows that $\widehat{V}_{\mathrm{ps}}$ is weaker than both $\widehat{V}$ and $\widehat{V}^{\prime}$. An arbitrary number of core states $\sum_{j} a_{j}\left|\psi_{j}\right\rangle$ may be added to $\left|\chi_{n \boldsymbol{k}}\right\rangle$ without violating the orthogonality condition (1.126). Consequently, neither the pseudo-potential nor the pseudo-states are uniquely determined and may be optimised variationally with respect to the set $\left\{a_{j}\right\}$ in order to optimally reduce the spatial modulation of either the pseudo-potential or the wave-function.
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173457715.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173457715.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=33&rect=72,210,526,333|•]]
+![Attachments/Notes/Solid-State Theory/1 Electrons in the Periodic Crystal/IMG-0128212143906.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/1%20Electrons%20in%20the%20Periodic%20Crystal/IMG-0128212143906.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=33&rect=72,210,526,333|•]]
 
 If we are only interested in states inside a small energy window, the energy dependence of the pseudo-potential can be neglected, and $V_{\mathrm{ps}}$ may be approximated by a standard potential (see Figure 1.11). Such a simple Ansatz is exemplified by the atomic pseudo-potential, proposed by Ashcroft, Heine and Abarenkov (AHA). The potential of a single ion is assumed to be of the form
 $$
@@ -900,7 +900,7 @@ v_{\mathrm{ps}}(r)= \begin{cases}V_{0} & r<R_{c} \\ -\frac{Z_{\mathrm{ion}} e^{2
 $$
 where $Z_{\text {ion }}$ is the charge of the ionic core and $R_{c}$ its effective radius (determined by the core electrons). The constants $R_{c}$ and $V_{0}$ are chosen such that the energy levels of the outermost electrons are reproduced correctly for the single-atom calculations.
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173458163.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173458163.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=34&rect=156,585,439,756|•]]
+![Attachments/Notes/Solid-State Theory/1 Electrons in the Periodic Crystal/IMG-0128212143970.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/1%20Electrons%20in%20the%20Periodic%20Crystal/IMG-0128212143970.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=34&rect=156,585,439,756|•]]
 
  For example, the $1 s$ -, $2 s$-, and $2 p$-electrons of Na form the ionic core. $R_{c}$ and $V_{0}$ are adjusted such that the one-particle problem $\boldsymbol{p}^{2} / 2 m+v_{\mathrm{ps}}(r)$ leads to the correct ionisation energy of the $3 s$-electron. More flexible approaches allow for the incorporation of more experimental input into the pseudo-potential. The full pseudo-potential of the lattice can be constructed from the contribution of the individual atoms,
 $$
@@ -947,7 +947,7 @@ The form factor $F_{\alpha, \boldsymbol{G}}$ contains the information of the bas
 
 We now consider a method introduced by Slater in 1937. It is an extension of the so-called Wigner-Seitz cell method (1933) and consists of approximating the crystal potential by a socalled muffin-tin potential. The latter is a periodic potential, which is taken to be spherically symmetric and position dependent around each atom up to a distance $r_{s}$, and constant for larger distances. The spheres of radius $r_{s}$ are taken to be non-overlapping and are contained completely in the Wigner-Seitz cell:
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173458651.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173458651.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=35&rect=208,418,388,601|•]]
+![Attachments/Notes/Solid-State Theory/1 Electrons in the Periodic Crystal/IMG-0128212144032.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/1%20Electrons%20in%20the%20Periodic%20Crystal/IMG-0128212144032.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=35&rect=208,418,388,601|•]]
 
 The advantage of this decomposition is that the problem can be solved using a divide-andconquer strategy. Inside the muffin-tin radius we solve the spherically symmetric problem, while the solutions on the outside are given by plane waves; the remaining task is to match the solutions at the boundaries.
 The spherically symmetric problem for $|\boldsymbol{r}|<r_{s}$ is solved with the standard Ansatz

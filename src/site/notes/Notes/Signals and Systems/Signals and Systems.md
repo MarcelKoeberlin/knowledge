@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-28T17:54:06.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-28T21:21:47.593+01:00"}
 ---
 
 This note will mostly follow along the book [Signals and Systems - 2nd edition](https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574) by Alan V. Oppenheim and Alan S. Willsky. It is not supposed to be a simple summary, but instead a place where the main concepts are covered, without having to read through 987 pages again/yourself.
@@ -159,15 +159,15 @@ The unit impulse should be considered an idealization of an infinitely short pul
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=72&selection=144,0,150,7|•]]
 
 An important idea is the concept of interconnecting systems since many real systems are built as interconnections of several subsystems. By breaking down a system into its interconnection of simpler subsystems, it may be possible to synthesize complex systems out of simpler, basic building blocks. The most frequently encountered connections are the _series/cascade_ and _parallel_ types:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162236441.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162236441.webp)
+![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212147262.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128212147262.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=73&rect=88,274,456,600|•]]
 
 The symbol $\bigoplus$ denotes addition, so that the output of the parallel system is the sum of the outputs of systems 1 and 2. Another important type is the feedback interconnection:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162236611.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162236611.webp)
+![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212147339.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128212147339.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=54,505,325,597|•]]
 
 The output of system 1 is the input to system 2, while the output of system 2 is fed back and added to the external input to produce the actual input to system 1. These types of connections often arise in real systems. Consider figure (a) and note that it is equivalent to (b):
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162236747.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162236747.webp)
+![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212147432.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128212147432.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=79,82,323,316|•]]
 
 ---
@@ -191,7 +191,7 @@ $$
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=76&selection=165,0,173,7|•]]
 
 A system is said to be invertible if distinct inputs produce distinct outputs. An inverse system exists such that:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162236859.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162236859.webp)
+![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212147523.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128212147523.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&rect=106,565,359,612|•]]
 
 Invertibility is important in contexts like encoding and decoding systems, such as in communication or cryptography. For example, lossless coding requires that the encoder must be invertible.
@@ -208,7 +208,7 @@ $$
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&selection=55,0,59,9|•]]
 
 A system is stable if small inputs lead to bounded outputs. For example:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162236995.webp|400](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162236995.webp)
+![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212142478.webp|400](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128212142478.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&rect=188,46,306,245|•]]
 
 If the input is bounded, the output must also remain bounded.
@@ -291,11 +291,11 @@ LTI systems satisfy important properties:
 3. **Associativity**: $x * \left(h_1 * h_2\right) = \left(x * h_1\right) * h_2$.
 
 Distributivity can be depicted graphically:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162237105.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162237105.webp)
+![Attachments/Notes/Chapters/2 Linear Time-Invariant Systems/IMG-0128212144448.webp|900](/img/user/Attachments/Notes/Chapters/2%20Linear%20Time-Invariant%20Systems/IMG-0128212144448.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=136&rect=108,407,300,593|•]]
 
 Similarly, associativity can be depicted graphically:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162237240.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162237240.webp)
+![Attachments/Notes/Chapters/2 Linear Time-Invariant Systems/IMG-0128212144469.webp|900](/img/user/Attachments/Notes/Chapters/2%20Linear%20Time-Invariant%20Systems/IMG-0128212144469.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=139&rect=94,310,303,595|•]]
 
 ---
@@ -416,11 +416,11 @@ y[n] = b x[n] - a y[n-1].
 $$
 
 This equation requires three basic operations: addition, multiplication, and delay:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162237360.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162237360.webp)
+![Attachments/Notes/Chapters/2 Linear Time-Invariant Systems/IMG-0128212144586.webp|700](/img/user/Attachments/Notes/Chapters/2%20Linear%20Time-Invariant%20Systems/IMG-0128212144586.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=113,383,295,597|•]]
 
 The block diagram representation of this equation is:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162237480.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162237480.webp)
+![Attachments/Notes/Chapters/2 Linear Time-Invariant Systems/IMG-0128212144700.webp|700](/img/user/Attachments/Notes/Chapters/2%20Linear%20Time-Invariant%20Systems/IMG-0128212144700.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=138,279,302,373|•]]
 
 The feedback arises because the equation is recursive. The block diagram shows that memory is required for this system, corresponding to the delay operator.
@@ -438,7 +438,7 @@ $$
 y(t) = \int_{-\infty}^t \left( b x(\tau) - a y(\tau) \right) \, d\tau,
 $$
 assuming $y(-\infty) = 0$, allows for implementation using integrators:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162237593.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162237593.webp)
+![Attachments/Notes/Chapters/2 Linear Time-Invariant Systems/IMG-0128212144823.webp|700](/img/user/Attachments/Notes/Chapters/2%20Linear%20Time-Invariant%20Systems/IMG-0128212144823.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&rect=142,463,338,599|•]]
 
 The integrator is a memory element, as seen from:
@@ -750,9 +750,9 @@ Ideal filters in continuous and discrete time differ because discrete-time filte
 
 Visual examples of ideal filters:
 - Continuous-time low-pass, high-pass, and bandpass:
-  ![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162237720.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162237720.webp)
+  ![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212142517.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128212142517.webp)
 - Discrete-time low-pass, high-pass, and bandpass:
-  ![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162237843.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162237843.webp)
+  ![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212142563.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128212142563.webp)
 
 ---
 ## 3.9 Important Examples: Continuous-Time 
@@ -763,7 +763,7 @@ Visual examples of ideal filters:
 
 Electrical circuits are commonly used to implement continuous-time filtering operations. One of the simplest examples is the first-order RC circuit:
 
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162237943.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162237943.webp)
+![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212142608.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128212142608.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=271&rect=146,482,300,597|•]]
 
 In this circuit, the output signal can either be the capacitor voltage $v_c(t)$ or the resistor voltage. If we take the capacitor voltage as the output, the relationship between input and output is described by the differential equation:
@@ -777,7 +777,7 @@ H(i \omega) = \frac{1}{1 + RC \cdot i \omega}.
 $$
 
 The magnitude and phase of $H(i \omega)$ are as follows:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162238009.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162238009.webp)
+![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212142669.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128212142669.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&rect=104,317,440,603|•]]
 
 For $\omega \approx 0$, $|H(i\omega)| \approx 1$, indicating that low frequencies pass with minimal attenuation. For higher $\omega$, $|H(i\omega)|$ decreases, making this circuit a nonideal low-pass filter.
@@ -790,7 +790,7 @@ $$
 s(t) = \left[1 - e^{-t / RC}\right] u(t).
 $$
 
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162238074.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162238074.webp)
+![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212142755.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128212142755.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=273&rect=73,344,313,604|•]]
 
 There is a trade-off between frequency response and time-domain behavior. A larger $RC$ enhances low-pass filtering but results in slower step response.
@@ -810,7 +810,7 @@ G(i\omega) = \frac{i \omega RC}{1 + i \omega RC}.
 $$
 
 The magnitude and phase of $G(i\omega)$ are shown below:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162238140.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162238140.webp)
+![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212142852.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128212142852.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=274&rect=128,320,467,606|•]]
 
 The high-pass filter attenuates low frequencies and allows high frequencies to pass, particularly for $|\omega| \gg 1 / RC$.
@@ -839,11 +839,11 @@ H(e^{i\omega}) = \frac{1}{1 - a e^{-i\omega}}.
 $$
 
 For $a = 0.6$, the magnitude and phase of $H(e^{i\omega})$ are shown below:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162238192.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162238192.webp)
+![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212142933.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128212142933.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=124,371,345,631|•]]
 
 For $a = -0.6$, the magnitude and phase are as follows:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162238280.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162238280.webp)
+![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212143009.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128212143009.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=123,53,345,356|•]]
 
 - **Low-pass behavior**: For $a > 0$, the system acts as a low-pass filter.
@@ -875,7 +875,7 @@ H(e^{i\omega}) = \frac{1}{N + M + 1} e^{i \omega [(N - M) / 2]} \frac{\sin[\omeg
 $$
 
 The magnitude of $H(e^{i\omega})$ for $N + M + 1 = 33$ and $N + M + 1 = 65$ is shown:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162238381.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162238381.webp)
+![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212143080.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128212143080.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=279&rect=88,179,456,458|•]]
 
 ---
@@ -910,7 +910,7 @@ As $T \to \infty$, the square wave approaches a rectangular pulse, and the Fouri
 
 ### 4.1.2 Derivation
 For a finite-duration signal $x(t)$, we construct a periodic signal $\tilde{x}(t)$ where $x(t)$ is one period:
-![Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128162238477.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/Signals%20and%20Systems/IMG-0128162238477.webp)
+![Attachments/Notes/Chapters/4 Continuous-Time Fourier Transform/IMG-0128212144973.webp|700](/img/user/Attachments/Notes/Chapters/4%20Continuous-Time%20Fourier%20Transform/IMG-0128212144973.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=318&rect=123,434,423,595|•]]
 
 As $T \to \infty$, $\tilde{x}(t)$ becomes identical to $x(t)$. The Fourier series representation of $\tilde{x}(t)$ is:

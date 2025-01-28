@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/3-metals/","hide":"true","updated":"2025-01-28T21:19:02.810+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/3-metals/","hide":"true","updated":"2025-01-28T21:21:46.612+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -272,7 +272,7 @@ E_{\mathrm{ii}}=\left\langle\Psi_{0}\right| \mathcal{H}_{\mathrm{ii}}\left|\Psi_
 \end{align*}
 $$
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173507578.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173507578.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=62&rect=188,494,405,648|•]]
+![Attachments/Notes/Solid-State Theory/3 Metals/IMG-0128212145685.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/3%20Metals/IMG-0128212145685.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=62&rect=188,494,405,648|•]]
 
 It is easy to verify that the three contributions $E_{\text {Hartree }}, E_{\mathrm{ei}}$, and $E_{\mathrm{ii}}$ compensate each other to exactly zero. Note that these three terms are the only ones that would arise in a classical electrostatic calculation, implying that the stability of metals relies purely on quantum effect. The remaining terms are the kinetic energy and the Fock term. The latter is negative and reads
 $$
@@ -302,7 +302,7 @@ $$
 
 The length $d$ is the average radius of the volume occupied by one electron. Minimising the energy per electron with respect to $n$ is equivalent to minimise it with respect to $r_{s}$, yielding $r_{s, \text { min }}=4.83, d \approx 2.5 \text{ }\pu{Å}$ and a density of $n_{0} \approx 1.5 \times 10^{24} \mathrm{~cm}^{-3}$. This corresponds to a lattice constant of $a=(4 \pi / 3)^{1 / 3} d \approx 4 \text{ }\pu{Å}$. This estimate is roughly in agreement with the lattice constants of the Alkali metals: $r_{s, \mathrm{Li}}=3.22, r_{s, \mathrm{Na}}=3.96, r_{s, \mathrm{~K}}=4.86$. Note that in metals the delocalised electrons are responsible for the cohesion of the positive background yielding a stable solid.
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173508176.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173508176.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=63&rect=186,614,407,752|•]]
+![Attachments/Notes/Solid-State Theory/3 Metals/IMG-0128212145784.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/3%20Metals/IMG-0128212145784.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=63&rect=186,614,407,752|•]]
 
 The good agreement of this simple estimate with the experimental values is due to the fact that the Alkali metals have only one valence electron in an s-orbital that is delocalised, whereas the the core electrons are in a noble gas configuration and, thus, relatively inert. In the variational approach outlined above correlation effects among the electrons due to the Coulomb repulsion have been neglected. In particular, electrons can be expected to 'avoid' each other not just because of the Pauli principle, but also as a result of the repulsive interaction. However, for the problem under consideration the correlation corrections turn out to be small for $r_{s} \sim r_{s, \min }$ :
 $$
@@ -498,7 +498,7 @@ This response function $\chi(\boldsymbol{q}, \omega)$ contains also effects of e
 
 The most simple excitation in a metal is the electron-hole excitation which resembles in some way the one discussed for the semiconductor. Neglecting the Coulomb interaction we remove an electron from an occupied state and place it into a state which is unoccupied:
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173509330.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173509330.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=67&rect=155,199,440,319|•]]
+![Attachments/Notes/Solid-State Theory/3 Metals/IMG-0128212145862.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/3%20Metals/IMG-0128212145862.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=67&rect=155,199,440,319|•]]
 
 Since the ground-state $\left|\Psi_{0}\right\rangle$ is the filled Fermi sea, we remove the electron with an energy $\epsilon_{k} \leq \epsilon_{F}$ $\left(|\boldsymbol{k}| \leq k_{F}\right)$ and place into an energy state outside the Fermi sea, $\epsilon_{\boldsymbol{k}+\boldsymbol{q}}>\epsilon_{F}$. Thus, the excited state is given by
 $$
@@ -515,7 +515,7 @@ $$
 
 Also here we find a continuum of electron-hole excitation spectrum in the energy-momentum plane - sketched in Figure 3.4. In contrast to semiconductors electron-hole excitations are possible to arbitrarily low energies. The possible momentum transfer is dictated by the geometry of the Fermi sea. For $E_{\boldsymbol{k}, \boldsymbol{q}} \rightarrow 0$ the momentum transfer ranges from $q \approx 0$ to $q \approx 2 k_{F}$ as the electron has to be removed just below and be place just above the Fermi energy. For increasing the excitation energy this momentum range is gradually shift as depicted as the blue area:
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173510021.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173510021.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=68&rect=182,609,407,756|•]]
+![Attachments/Notes/Solid-State Theory/3 Metals/IMG-0128212145951.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/3%20Metals/IMG-0128212145951.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=68&rect=182,609,407,756|•]]
 
 Interestingly $|\boldsymbol{k}+\boldsymbol{q}, s ; \boldsymbol{k}, s\rangle$ can be generated through the operator $\widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s}^{\dagger}$ which also couples to the external potential which we used the derive the linear response theory. The linear response function is actually built upon the properties of electron-hole excitation. Indeed $\chi(\boldsymbol{q}, \omega)$ contains information about the excitation spectrum. Without Coulomb it is sufficient to consider $\chi_{0}(\boldsymbol{q}, \omega)$, the Lindhard function.
 We may separate $\chi_{0}$ into its real and imaginary part, $\chi_{0}(\boldsymbol{q}, \omega)=\chi_{0}^{\prime}(\boldsymbol{q}, \omega)+i \chi_{0}^{\prime \prime}(\boldsymbol{q}, \omega)$. Using the relation
@@ -620,7 +620,7 @@ $$
 
 Classically, the plasma resonance can therefore be thought as an oscillation of the whole electron gas cloud on top of a positively charged background.
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173510629.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173510629.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=70&rect=178,552,414,664|•]]
+![Attachments/Notes/Solid-State Theory/3 Metals/IMG-0128212146036.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/3%20Metals/IMG-0128212146036.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=70&rect=178,552,414,664|•]]
 
 ### 3.2.4 Screening
 
@@ -710,7 +710,7 @@ $$
 $$
 where we used $1 / \epsilon(\boldsymbol{q}) \rightarrow 0$ for $\boldsymbol{q} \rightarrow 0$. The charge displacement corresponds to the exact opposite amount of charge of of the point charge. Thus we find a perfect compensation which corresponds to perfect screening.
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173511832.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173511832.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=72&rect=177,218,419,405|•]]
+![Attachments/Notes/Solid-State Theory/3 Metals/IMG-0128212146125.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/3%20Metals/IMG-0128212146125.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=72&rect=177,218,419,405|•]]
 
 **Dielectric function in various dimensions**
 
@@ -722,7 +722,7 @@ $$
 $$
 where $s=q / k_{F}$. Interestingly $\chi_{0}(q, 0)$ has a singularity at $q=2 k_{F}$ in all dimensions:
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173512549.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173512549.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=73&rect=159,563,432,754|•]]
+![Attachments/Notes/Solid-State Theory/3 Metals/IMG-0128212146226.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/3%20Metals/IMG-0128212146226.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=73&rect=159,563,432,754|•]]
 
 The singularity becomes weaker as the dimensionality is increased. In one dimension, there is a logarithmic divergence, in two dimensions there is a kink, and in three dimensions only the derivative diverges. Later we will see that these singularities may lead to instabilities of the metallic state, in particular for the one-dimensional case.
 
@@ -880,7 +880,7 @@ $$
 $$
 in the limit $k \rightarrow 2 k_{F}$. This behaviour is called the Kohn anomaly and results from the interaction between electrons and phonons. This effect is not contained in the previous elastic medium model that neglected ion-electron interactions.
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173513094.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173513094.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=78&rect=170,214,422,400|•]]
+![Attachments/Notes/Solid-State Theory/3 Metals/IMG-0128212146296.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/3%20Metals/IMG-0128212146296.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=78&rect=170,214,422,400|•]]
 
 ### 3.3.3 Peierls Instability in one Dimension
 
@@ -1029,7 +1029,7 @@ $$
 $$
 at $k= \pm k_{F}$, i.e. at the Fermi energy. The gap is associated with a lowering of the energy of the electron states in the lower band in the vicinity of the Fermi energy. For this reason this kind of instability is called a Fermi surface instability. Due to the gap the metal has turned into a semiconductor with a finite energy gap for all electron-hole excitations. 
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173513650.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173513650.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=80&rect=166,168,432,290|•]]
+![Attachments/Notes/Solid-State Theory/3 Metals/IMG-0128212146372.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/3%20Metals/IMG-0128212146372.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=80&rect=166,168,432,290|•]]
 
 The modulation of the electron density follows the charge modulation due to the ionic lattice deformation, which can be seen by expressing the wave function of the electronic states,
 $$
@@ -1150,7 +1150,7 @@ $$
 
 This interaction corresponds to the matrix element for a scattering process of two electrons with momentum exchange $\boldsymbol{q}$ and energy exchange $\omega$. The phonon frequency $\omega_{\boldsymbol{q}}$ is always less than the Debye frequency $\omega_{D}$. Hence the effect of the phonons is almost irrelevant for energy exchanges $\omega$ that are much larger than $\omega_{D}$. The time scale for such energies would be too short for the slow ions to move and influence the interaction. Interestingly, the repulsive bare Coulomb potential is renormalised to an interaction with an attractive channel for $\omega<\omega_{D}$ because of overcompensation by the ions. This aspect of the electron-phonon interaction is most important for superconductivity.
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173514146.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173514146.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=82&rect=207,253,394,385|•]]
+![Attachments/Notes/Solid-State Theory/3 Metals/IMG-0128212146448.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/3%20Metals/IMG-0128212146448.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=82&rect=207,253,394,385|•]]
 
 ---
 ## 3.4 Appendix: Linear Response Theory
@@ -1395,7 +1395,7 @@ $$
 $$
 Separating this equation into real and imaginary part yields the Kramers-Kronig relation.
 
-![Attachments/Notes/Solid-State Theory/Solid-State Theory/IMG-0128173514656.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/Solid-State%20Theory/IMG-0128173514656.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=87&rect=213,172,390,293|•]]
+![Attachments/Notes/Solid-State Theory/3 Metals/IMG-0128212146540.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/3%20Metals/IMG-0128212146540.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=87&rect=213,172,390,293|•]]
 
 ### 3.4.4 Fluctuation-Dissipation Theorem
 
