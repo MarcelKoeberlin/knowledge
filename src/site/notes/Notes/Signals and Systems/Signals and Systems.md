@@ -1,8 +1,6 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-28T17:35:46.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","updated":"2025-01-28T17:54:06.000+01:00"}
 ---
-
-Signals and Systems
 
 This note will mostly follow along the book [Signals and Systems - 2nd edition](https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574) by Alan V. Oppenheim and Alan S. Willsky. It is not supposed to be a simple summary, but instead a place where the main concepts are covered, without having to read through 987 pages again/yourself.
 
@@ -20,8 +18,6 @@ It didn’t take long for me to realise this was a fascinating topic, and I star
 
 ---
 # 1 Signals and Systems 
-
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=32&selection=2,0,6,7|•]]
 
 ## 1.1 Continuous-Time and Discrete-Time Signals 
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=32&selection=69,0,79,7|•]]
