@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/1-signals-and-systems/","hide":"true","updated":"2025-01-28T21:55:48.102+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/1-signals-and-systems/","hide":"true","updated":"2025-01-28T22:07:03.533+01:00"}
 ---
 
-Jump back to chapter selection: [[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]].
+Jump back to [[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]].
 
 ---
 **Table of Contents**
@@ -210,7 +210,7 @@ $$
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&selection=55,0,59,9|•]]
 
 A system is stable if small inputs lead to bounded outputs. For example:
-![Attachments/Notes/Signals and Systems/1 Signals and Systems/IMG-0128215548086.webp|400](/img/user/Attachments/Notes/Signals%20and%20Systems/1%20Signals%20and%20Systems/IMG-0128215548086.webp)
+![[Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212142478.webp\|400]]
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&rect=188,46,306,245|•]]
 
 If the input is bounded, the output must also remain bounded.

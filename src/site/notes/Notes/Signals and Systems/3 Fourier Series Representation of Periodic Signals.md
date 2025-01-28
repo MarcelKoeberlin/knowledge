@@ -1,9 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/3-fourier-series-representation-of-periodic-signals/","hide":"true","updated":"2025-01-28T21:55:58.842+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/3-fourier-series-representation-of-periodic-signals/","hide":"true","updated":"2025-01-28T22:07:07.887+01:00"}
 ---
 
-Jump back to chapter selection: [[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]].
-
+Jump back to [[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]].
 ---
 **Table of Contents**
 
