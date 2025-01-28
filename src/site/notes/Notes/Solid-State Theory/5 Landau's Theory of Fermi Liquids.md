@@ -1,9 +1,18 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/5-landau-s-theory-of-fermi-liquids/","hide":"true","updated":"2025-01-28T21:21:48.318+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/5-landau-s-theory-of-fermi-liquids/","hide":"true","updated":"2025-01-28T21:29:06.397+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
 
+---
+**Table of Contents**
+
+- [[Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids#5 Landau's Theory of Fermi Liquids\|5 Landau's Theory of Fermi Liquids]]
+	- [[Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids#5 Landau's Theory of Fermi Liquids\|5.1 Lifetime of Quasi-Particles]]
+	- [[Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids#5 Landau's Theory of Fermi Liquids\|5.2 Phenomenological Theory of Fermi Liquids]]
+	- [[Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids#5 Landau's Theory of Fermi Liquids\|5.3 Microscopic Considerations]]
+
+---
 # 5 Landau's Theory of Fermi Liquids
 [[Masters/2. Semester/Solid State Theory/Script.pdf#page=109&selection=2,0,2,32|•]]
 

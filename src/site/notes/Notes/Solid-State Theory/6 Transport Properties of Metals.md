@@ -1,9 +1,23 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/6-transport-properties-of-metals/","hide":"true","updated":"2025-01-28T21:21:49.080+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/6-transport-properties-of-metals/","hide":"true","updated":"2025-01-28T21:29:00.561+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
 
+---
+**Table of Contents**
+
+- [[Notes/Solid-State Theory/6 Transport Properties of Metals#6 Transport Properties of Metals\|6 Transport Properties of Metals]]
+	- [[Notes/Solid-State Theory/6 Transport Properties of Metals#6 Transport Properties of Metals\|6.1 Electrical Conductivity]]
+	- [[Notes/Solid-State Theory/6 Transport Properties of Metals#6 Transport Properties of Metals\|6.2 Transport Equations and Relaxation Time]]
+	- [[Notes/Solid-State Theory/6 Transport Properties of Metals#6 Transport Properties of Metals\|6.3 Impurity Scattering]]
+	- [[Notes/Solid-State Theory/6 Transport Properties of Metals#6 Transport Properties of Metals\|6.4 Electron-Phonon Scattering]]
+	- [[Notes/Solid-State Theory/6 Transport Properties of Metals#6 Transport Properties of Metals\|6.5 Electron-Electron Scattering]]
+	- [[Notes/Solid-State Theory/6 Transport Properties of Metals#6 Transport Properties of Metals\|6.6 Matthiessen's Rule and the Ioffe-Regel Limit]]
+	- [[Notes/Solid-State Theory/6 Transport Properties of Metals#6 Transport Properties of Metals\|6.7 General Transport Coefficients]]
+	- [[Notes/Solid-State Theory/6 Transport Properties of Metals#6 Transport Properties of Metals\|6.8 Anderson Localisation in One-Dimensional Systems]]
+
+---
 # 6 Transport Properties of Metals
 [[Masters/2. Semester/Solid State Theory/Script.pdf#page=127&selection=2,0,2,30|•]]
 

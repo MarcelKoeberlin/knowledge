@@ -1,9 +1,18 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/8-magnetism-of-localised-moments/","hide":"true","updated":"2025-01-28T21:21:50.079+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/8-magnetism-of-localised-moments/","hide":"true","updated":"2025-01-28T21:28:48.698+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
 
+---
+**Table of Contents**
+
+- [[Notes/Solid-State Theory/8 Magnetism of Localised Moments#8 Magnetism of Localised Moments\|8 Magnetism of Localised Moments]]
+	- [[Notes/Solid-State Theory/8 Magnetism of Localised Moments#8 Magnetism of Localised Moments\|8.1 Mott Transition]]
+	- [[Notes/Solid-State Theory/8 Magnetism of Localised Moments#8 Magnetism of Localised Moments\|8.2 The Mott Insulator as a Quantum Spin System]]
+	- [[Notes/Solid-State Theory/8 Magnetism of Localised Moments#8 Magnetism of Localised Moments\|8.3 Collective Modes - Spin Wave Excitations]]
+
+---
 # 8 Magnetism of Localised Moments
 [[Masters/2. Semester/Solid State Theory/Script.pdf#page=172&selection=2,0,2,30|•]]
 

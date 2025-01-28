@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-01-28T21:26:05.168+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-01-28T21:29:28.428+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -7,15 +7,15 @@ Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|ch
 ---
 **Table of Contents**
 
-- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1 Electrons in the Periodic Crystal]]
-	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.1 Symmetries of Crystals]]
-	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.2 Bloch's Theorem and Bloch Functions]]
-	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.3 Nearly Free Electron Approximation]]
-	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.4 Tight-Binding Approximation]]
-	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.5 Symmetry Properties of the Band Structure]]
-	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.6 Band-Filling and Materials Properties]]
-	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.7 Dynamics of Band Electrons - Semiclassical Approach]]
-	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.8 Approximative Band Structure Calcuations]]
+[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1 Electrons in the Periodic Crystal]]
+	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.1 Symmetries of Crystals]]
+	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.2 Bloch's Theorem and Bloch Functions]]
+	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.3 Nearly Free Electron Approximation]]
+	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.4 Tight-Binding Approximation]]
+	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.5 Symmetry Properties of the Band Structure]]
+	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.6 Band-Filling and Materials Properties]]
+	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.7 Dynamics of Band Electrons - Semiclassical Approach]]
+	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.8 Approximative Band Structure Calcuations]]
 
 ---
 # 1 Electrons in the Periodic Crystal 

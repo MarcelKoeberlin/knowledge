@@ -1,9 +1,20 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/2-semiconductors/","hide":"true","updated":"2025-01-28T21:21:45.672+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/2-semiconductors/","hide":"true","updated":"2025-01-28T21:29:22.886+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
 
+---
+**Table of Contents**
+
+- [[Notes/Solid-State Theory/2 Semiconductors#2 Semiconductors\|2 Semiconductors]]
+	- [[Notes/Solid-State Theory/2 Semiconductors#2 Semiconductors\|2.1 The Band Structure of the Elements in Group IV]]
+	- [[Notes/Solid-State Theory/2 Semiconductors#2 Semiconductors\|2.2 Elementary Excitations in Semiconductors]]
+	- [[Notes/Solid-State Theory/2 Semiconductors#2 Semiconductors\|2.3 Doping Semiconductors]]
+	- [[Notes/Solid-State Theory/2 Semiconductors#2 Semiconductors\|2.4 Semiconductor Devices]]
+	- [[Notes/Solid-State Theory/2 Semiconductors#2 Semiconductors\|2.5 1 pn-Contacts]]
+
+---
 # 2 Semiconductors 
 [[Masters/2. Semester/Solid State Theory/Script.pdf#page=40&selection=2,0,2,14|•]]
 
