@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowLocalGraph":true,"dgShowToc":"false","updated":"2025-01-28T22:15:25.320+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowLocalGraph":true,"dgShowInlineTitle":"true","dgShowToc":"false","updated":"2025-01-28T23:40:02.571+01:00"}
 ---
 
 This note will mostly follow along the book [Signals and Systems - 2nd edition](https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574) by Alan V. Oppenheim and Alan S. Willsky. It is not supposed to be a simple summary, but instead a place where the main concepts are covered, without having to read through 987 pages again/yourself.
