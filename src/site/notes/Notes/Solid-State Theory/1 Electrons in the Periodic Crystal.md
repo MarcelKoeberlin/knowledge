@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-01-28T21:29:28.428+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-01-28T21:30:48.958+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -7,15 +7,15 @@ Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|ch
 ---
 **Table of Contents**
 
-[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1 Electrons in the Periodic Crystal]]
-	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.1 Symmetries of Crystals]]
-	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.2 Bloch's Theorem and Bloch Functions]]
-	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.3 Nearly Free Electron Approximation]]
-	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.4 Tight-Binding Approximation]]
-	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.5 Symmetry Properties of the Band Structure]]
-	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.6 Band-Filling and Materials Properties]]
-	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.7 Dynamics of Band Electrons - Semiclassical Approach]]
-	[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.8 Approximative Band Structure Calcuations]]
+- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1 Electrons in the Periodic Crystal]]
+	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.1 Symmetries of Crystals]]
+	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.2 Bloch's Theorem and Bloch Functions]]
+	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.3 Nearly Free Electron Approximation]]
+	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.4 Tight-Binding Approximation]]
+	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.5 Symmetry Properties of the Band Structure]]
+	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.6 Band-Filling and Materials Properties]]
+	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.7 Dynamics of Band Electrons - Semiclassical Approach]]
+	- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1 Electrons in the Periodic Crystal\|1.8 Approximative Band Structure Calculations]]
 
 ---
 # 1 Electrons in the Periodic Crystal 
@@ -842,7 +842,7 @@ $$
 This suggests that the current density comes either from electrons in filled states with charge $-e$ or from 'holes', missing electrons carrying positive charge and sitting in the unoccupied electronic states. In band theory, both descriptions are equivalent. However, it is usually easier to work with holes, if a band is almost filled, and with electrons if the filling of an energy band is small.
 
 ---
-## 1.8 Approximative Band Structure Calcuations
+## 1.8 Approximative Band Structure Calculations
 [[Masters/2. Semester/Solid State Theory/Script.pdf#page=32&selection=10,0,12,50|•]]
 
 While the approximation of nearly free electrons gives a qualitative picture of the band structure, it rests on the assumption that the periodic potential is weak, and, thus, may be treated as a small perturbation. Only few states connected with different reciprocal lattice vectors are sufficient within this approximation. However, in reality the ionic potential is strong compared to the electrons' kinetic energy. This leads to strong modulations of the wave function around the ions, which is not well described by slightly perturbed plane waves.
