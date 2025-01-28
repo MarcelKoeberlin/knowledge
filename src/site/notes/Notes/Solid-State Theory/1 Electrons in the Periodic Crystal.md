@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-01-28T21:21:44.095+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-01-28T21:26:05.168+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].

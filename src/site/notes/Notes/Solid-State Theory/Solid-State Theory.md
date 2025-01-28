@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","updated":"2025-01-28T21:19:49.252+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","updated":"2025-01-28T21:25:02.111+01:00"}
 ---
 
 For my notes of 'solid-state theory' 2023, taught by Prof. Sigrist, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/notes2023). The pdf might load for quite a while, since its 35 MBs of size. However, it should be noted that the notes of Prof. Sigrist are already extremely high quality, so is it really necessary? Not really, but its damn cool. I spent a bit of time trying to convert the pdf to markdown and latex, and mainly implementing notations seamlessly. All credit to Prof. Sigrist for this great script!
@@ -7,7 +7,6 @@ For my notes of 'solid-state theory' 2023, taught by Prof. Sigrist, please visit
 [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|#Table of Contents]]
 
 ---
-
 Solid state physics, also known as condensed matter physics, investigates the properties of materials and systems with many degrees of freedom. As the largest subfield of physics, it bridges fundamental scientific questions and technological applications, underpinning modern industrialised civilisation.
 
 This field primarily examines phenomena at room temperature or below, corresponding to energy scales much smaller than one Hartree ($e^2 / a_B$). Key length scales include the system size (sample size) and the spatial extent of electronic wave functions. This contrasts with high-energy physics, which seeks to probe unknown high-energy theories using the standard model as a phenomenological framework. In solid state physics, the starting point is a well-defined "high-energy" Hamiltonian, with the challenge being to describe low-energy properties through effective, phenomenological theories.
@@ -34,3 +33,5 @@ These principles, combined with the study of emergent behaviour and excitations,
 - [[Notes/Solid-State Theory/7 Magnetism in Metals\|7 Magnetism in Metals]]
 - [[Notes/Solid-State Theory/8 Magnetism of Localised Moments\|8 Magnetism of Localised Moments]]
 - [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation\|9 Identical Quantum Particles - Formalism of Second Quantisation]]
+
+---
