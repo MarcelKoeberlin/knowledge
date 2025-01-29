@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/7-short-wavelength-quantum-cascade-laser/","hide":"true","updated":"2025-01-28T22:37:57.070+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/7-short-wavelength-quantum-cascade-laser/","hide":"true","updated":"2025-01-29T20:54:43.781+01:00"}
 ---
 
 Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].
@@ -7,10 +7,9 @@ Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#T
 ---
 **Table of Contents**
 
-- [[Notes/Intersubband Optoelectronics/7 Short Wavelength Quantum Cascade Laser#7 Short Wavelength Quantum Cascade Laser\|7 Short Wavelength Quantum Cascade Laser]]
-	- [[Notes/Intersubband Optoelectronics/7 Short Wavelength Quantum Cascade Laser#7 Short Wavelength Quantum Cascade Laser\|7.1 High-Energy Tuning Requirements]]
-	- [[Notes/Intersubband Optoelectronics/7 Short Wavelength Quantum Cascade Laser#7 Short Wavelength Quantum Cascade Laser\|7.2 Strain]]
-	- [[Notes/Intersubband Optoelectronics/7 Short Wavelength Quantum Cascade Laser#7 Short Wavelength Quantum Cascade Laser\|7.3 Summary]]
+- [[Notes/Intersubband Optoelectronics/7 Short Wavelength Quantum Cascade Laser#7.1 High-Energy Tuning Requirements\|7.1 High-Energy Tuning Requirements]]
+- [[Notes/Intersubband Optoelectronics/7 Short Wavelength Quantum Cascade Laser#7.2 Strain\|7.2 Strain]]
+- [[Notes/Intersubband Optoelectronics/7 Short Wavelength Quantum Cascade Laser#7.3 Summary\|7.3 Summary]]
 
 ---
 # 7 Short Wavelength Quantum Cascade Laser

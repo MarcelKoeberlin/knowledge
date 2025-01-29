@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/5-detectors/","hide":"true","updated":"2025-01-28T22:38:32.860+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/5-detectors/","hide":"true","updated":"2025-01-29T20:54:11.128+01:00"}
 ---
 
 Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].
@@ -7,20 +7,19 @@ Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#T
 ---
 **Table of Contents**
 
-- [[Notes/Intersubband Optoelectronics/5 Detectors#5 Detectors\|5 Detectors]]
-	- [[Notes/Intersubband Optoelectronics/5 Detectors#5 Detectors\|5.1 Noise]]
-	- [[Notes/Intersubband Optoelectronics/5 Detectors#5 Detectors\|5.2 Black-Body Radiation]]
-	- [[Notes/Intersubband Optoelectronics/5 Detectors#5 Detectors\|5.3 Bolometer]]
-	- [[Notes/Intersubband Optoelectronics/5 Detectors#5 Detectors\|5.4 Photoconductors]]
-	- [[Notes/Intersubband Optoelectronics/5 Detectors#5 Detectors\|5.5 Pneumatic Detector: Golay Cell]]
-	- [[Notes/Intersubband Optoelectronics/5 Detectors#5 Detectors\|5.6 Electro-Optic Sampling]]
-	- [[Notes/Intersubband Optoelectronics/5 Detectors#5 Detectors\|5.7 Grating Spectrometer]]
-	- [[Notes/Intersubband Optoelectronics/5 Detectors#5 Detectors\|5.8 FTIR (Fourier Transform Infrared)]]
-	- [[Notes/Intersubband Optoelectronics/5 Detectors#5 Detectors\|5.9 Lock-In Amplifier]]
-	- [[Notes/Intersubband Optoelectronics/5 Detectors#5 Detectors\|5.10 Quantum Well Infrared Photodetector (QWIP)]]
-	- [[Notes/Intersubband Optoelectronics/5 Detectors#5 Detectors\|5.11 The Blip Condition]]
-	- [[Notes/Intersubband Optoelectronics/5 Detectors#5 Detectors\|5.12 Two-Photon QWIP]]
-	- [[Notes/Intersubband Optoelectronics/5 Detectors#5 Detectors\|5.13 Quantum Cascade Detector (QCD)]]
+- [[Notes/Intersubband Optoelectronics/5 Detectors#5.1 Noise\|5.1 Noise]]
+- [[Notes/Intersubband Optoelectronics/5 Detectors#5.2 Black-Body Radiation\|5.2 Black-Body Radiation]]
+- [[Notes/Intersubband Optoelectronics/5 Detectors#5.3 Bolometer\|5.3 Bolometer]]
+- [[Notes/Intersubband Optoelectronics/5 Detectors#5.4 Photoconductors\|5.4 Photoconductors]]
+- [[Notes/Intersubband Optoelectronics/5 Detectors#5.5 Pneumatic Detector: Golay Cell\|5.5 Pneumatic Detector: Golay Cell]]
+- [[Notes/Intersubband Optoelectronics/5 Detectors#5.6 Electro-Optic Sampling\|5.6 Electro-Optic Sampling]]
+- [[Notes/Intersubband Optoelectronics/5 Detectors#5.7 Grating Spectrometer\|5.7 Grating Spectrometer]]
+- [[Notes/Intersubband Optoelectronics/5 Detectors#5.8 FTIR (Fourier Transform Infrared)\|5.8 FTIR (Fourier Transform Infrared)]]
+- [[Notes/Intersubband Optoelectronics/5 Detectors#5.9 Lock-In Amplifier\|5.9 Lock-In Amplifier]]
+- [[Notes/Intersubband Optoelectronics/5 Detectors#5.10 Quantum Well Infrared Photodetector (QWIP)\|5.10 Quantum Well Infrared Photodetector (QWIP)]]
+- [[Notes/Intersubband Optoelectronics/5 Detectors#5.11 The Blip Condition\|5.11 The Blip Condition]]
+- [[Notes/Intersubband Optoelectronics/5 Detectors#5.12 Two-Photon QWIP\|5.12 Two-Photon QWIP]]
+- [[Notes/Intersubband Optoelectronics/5 Detectors#5.13 Quantum Cascade Detector (QCD)\|5.13 Quantum Cascade Detector (QCD)]]
 
 ---
 # 5 Detectors

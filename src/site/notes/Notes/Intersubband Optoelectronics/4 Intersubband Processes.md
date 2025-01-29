@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/4-intersubband-processes/","hide":"true","updated":"2025-01-28T22:38:44.140+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/4-intersubband-processes/","hide":"true","updated":"2025-01-29T20:53:03.354+01:00"}
 ---
 
 Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].
@@ -7,8 +7,7 @@ Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#T
 ---
 **Table of Contents**
 
-- [[Notes/Intersubband Optoelectronics/4 Intersubband Processes#4 Intersubband Processes\|4 Intersubband Processes]]
-	- [[Notes/Intersubband Optoelectronics/4 Intersubband Processes#4 Intersubband Processes\|4.2 Measuring the Lifetime]]
+- [[Notes/Intersubband Optoelectronics/4 Intersubband Processes#4.2 Measuring the Lifetime\|4.2 Measuring the Lifetime]]
 
 ---
 # 4 Intersubband Processes

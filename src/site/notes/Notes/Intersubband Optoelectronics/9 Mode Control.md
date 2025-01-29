@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/9-mode-control/","hide":"true","updated":"2025-01-28T22:37:28.397+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/9-mode-control/","hide":"true","updated":"2025-01-29T20:55:13.801+01:00"}
 ---
 
 Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].
@@ -7,16 +7,15 @@ Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#T
 ---
 **Table of Contents**
 
-- [[Notes/Intersubband Optoelectronics/9 Mode Control#9 Mode Control\|9 Mode Control]]
-	- [[Notes/Intersubband Optoelectronics/9 Mode Control#9 Mode Control\|9.1 Single Mode: Distributed Feedback (DFB) Cavity]]
-	- [[Notes/Intersubband Optoelectronics/9 Mode Control#9 Mode Control\|9.2 Fabrication Geometries]]
-	- [[Notes/Intersubband Optoelectronics/9 Mode Control#9 Mode Control\|9.3 THz Mode Control]]
-	- [[Notes/Intersubband Optoelectronics/9 Mode Control#9 Mode Control\|9.4 Third-Order Gratings]]
-	- [[Notes/Intersubband Optoelectronics/9 Mode Control#9 Mode Control\|9.5 Microcavities and Lasers]]
-	- [[Notes/Intersubband Optoelectronics/9 Mode Control#9 Mode Control\|9.6 Metamaterials]]
-	- [[Notes/Intersubband Optoelectronics/9 Mode Control#9 Mode Control\|9.7 Sub-Wavelength Laser Oscillator]]
-	- [[Notes/Intersubband Optoelectronics/9 Mode Control#9 Mode Control\|9.8 External Cavity]]
-	- [[Notes/Intersubband Optoelectronics/9 Mode Control#9 Mode Control\|9.9 Summary]]
+- [[Notes/Intersubband Optoelectronics/9 Mode Control#9.1 Single Mode: Distributed Feedback (DFB) Cavity\|9.1 Single Mode: Distributed Feedback (DFB) Cavity]]
+- [[Notes/Intersubband Optoelectronics/9 Mode Control#9.2 Fabrication Geometries\|9.2 Fabrication Geometries]]
+- [[Notes/Intersubband Optoelectronics/9 Mode Control#9.3 THz Mode Control\|9.3 THz Mode Control]]
+- [[Notes/Intersubband Optoelectronics/9 Mode Control#9.4 Third-Order Gratings\|9.4 Third-Order Gratings]]
+- [[Notes/Intersubband Optoelectronics/9 Mode Control#9.5 Microcavities and Lasers\|9.5 Microcavities and Lasers]]
+- [[Notes/Intersubband Optoelectronics/9 Mode Control#9.6 Metamaterials\|9.6 Metamaterials]]
+- [[Notes/Intersubband Optoelectronics/9 Mode Control#9.7 Sub-Wavelength Laser Oscillator\|9.7 Sub-Wavelength Laser Oscillator]]
+- [[Notes/Intersubband Optoelectronics/9 Mode Control#9.8 External Cavity\|9.8 External Cavity]]
+- [[Notes/Intersubband Optoelectronics/9 Mode Control#9.9 Summary\|9.9 Summary]]
 
 ---
 # 9 Mode Control

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/1-intersubband-transitions/","hide":"true","updated":"2025-01-29T20:46:34.018+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/1-intersubband-transitions/","hide":"true","updated":"2025-01-29T20:52:06.545+01:00"}
 ---
 
 Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].
@@ -7,18 +7,12 @@ Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#T
 ---
 **Table of Contents**
 
-**Table of Contents**
-
-- [[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1 Intersubband Transitions\|1 Intersubband Transitions]]
-	- [[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1 Intersubband Transitions\|1.1 Semi-classical Approach and Effective Mass Approximation]]
-	- [[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1 Intersubband Transitions\|1.2 Bloch Theorem]]
-	- [[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1 Intersubband Transitions\|1.3 Phonons]]
-	- [[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1 Intersubband Transitions\|1.4 Quantum Well]]
-	- [[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1 Intersubband Transitions\|1.5 Artificial Superlattice]]
-	- [[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1 Intersubband Transitions\|1.6 Bloch Oscillation]]
-
-[[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1.2 Bloch Theorem\|Bloch theorem]]
-[[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1.4 Quantum Well\|#1.4 Quantum Well]]
+- [[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1.1 Semi-classical Approach and Effective Mass Approximation\|1.1 Semi-classical Approach and Effective Mass Approximation]]
+- [[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1.2 Bloch Theorem\|1.2 Bloch Theorem]]
+- [[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1.3 Phonons\|1.3 Phonons]]
+- [[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1.4 Quantum Well\|1.4 Quantum Well]]
+- [[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1.5 Artificial Superlattice\|1.5 Artificial Superlattice]]
+- [[Notes/Intersubband Optoelectronics/1 Intersubband Transitions#1.6 Bloch Oscillation\|1.6 Bloch Oscillation]]
 
 ---
 # 1 Intersubband Transitions

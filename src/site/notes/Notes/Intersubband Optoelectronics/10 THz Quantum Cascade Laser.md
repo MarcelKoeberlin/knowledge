@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/10-t-hz-quantum-cascade-laser/","hide":"true","updated":"2025-01-28T22:37:16.737+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/10-t-hz-quantum-cascade-laser/","hide":"true","updated":"2025-01-29T20:55:32.919+01:00"}
 ---
 
 Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].
@@ -7,16 +7,15 @@ Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#T
 ---
 **Table of Contents**
 
-- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10 THz Quantum Cascade Laser\|10 THz Quantum Cascade Laser]]
-	- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10 THz Quantum Cascade Laser\|10.1 Resonant Tunneling Extraction]]
-	- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10 THz Quantum Cascade Laser\|10.2 Double Resonance]]
-	- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10 THz Quantum Cascade Laser\|10.3 Principal Design Strategies]]
-	- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10 THz Quantum Cascade Laser\|10.4 Two Quantum Well Design]]
-	- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10 THz Quantum Cascade Laser\|10.5 Long Wavelength QCL]]
-	- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10 THz Quantum Cascade Laser\|10.6 Linewidth]]
-	- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10 THz Quantum Cascade Laser\|10.7 Difference Frequency Generation (DFG)]]
-	- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10 THz Quantum Cascade Laser\|10.8 Magnetic Confinement / Magneto-Spectroscopy]]
-	- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10 THz Quantum Cascade Laser\|10.9 Summary]]
+- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10.1 Resonant Tunneling Extraction\|10.1 Resonant Tunneling Extraction]]
+- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10.2 Double Resonance\|10.2 Double Resonance]]
+- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10.3 Principal Design Strategies\|10.3 Principal Design Strategies]]
+- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10.4 Two Quantum Well Design\|10.4 Two Quantum Well Design]]
+- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10.5 Long Wavelength QCL\|10.5 Long Wavelength QCL]]
+- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10.6 Linewidth\|10.6 Linewidth]]
+- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10.7 Difference Frequency Generation (DFG)\|10.7 Difference Frequency Generation (DFG)]]
+- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10.8 Magnetic Confinement / Magneto-Spectroscopy\|10.8 Magnetic Confinement / Magneto-Spectroscopy]]
+- [[Notes/Intersubband Optoelectronics/10 THz Quantum Cascade Laser#10.9 Summary\|10.9 Summary]]
 
 ---
 # 10 THz Quantum Cascade Laser

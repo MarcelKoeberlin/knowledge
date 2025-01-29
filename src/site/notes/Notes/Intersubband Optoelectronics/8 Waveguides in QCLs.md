@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/8-waveguides-in-qc-ls/","hide":"true","updated":"2025-01-28T22:37:40.350+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/8-waveguides-in-qc-ls/","hide":"true","updated":"2025-01-29T20:54:59.346+01:00"}
 ---
 
 Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].
@@ -7,12 +7,11 @@ Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#T
 ---
 **Table of Contents**
 
-- [[Notes/Intersubband Optoelectronics/8 Waveguides in QCLs#8 Waveguides in QCLs\|8 Waveguides in QCLs]]
-	- [[Notes/Intersubband Optoelectronics/8 Waveguides in QCLs#8 Waveguides in QCLs\|8.1 Dielectric Slab Waveguide]]
-	- [[Notes/Intersubband Optoelectronics/8 Waveguides in QCLs#8 Waveguides in QCLs\|8.2 Interface Plasmons]]
-	- [[Notes/Intersubband Optoelectronics/8 Waveguides in QCLs#8 Waveguides in QCLs\|8.3 THz Waveguides: Surface Plasmons]]
-	- [[Notes/Intersubband Optoelectronics/8 Waveguides in QCLs#8 Waveguides in QCLs\|8.4 Double-Metal Waveguide]]
-	- [[Notes/Intersubband Optoelectronics/8 Waveguides in QCLs#8 Waveguides in QCLs\|8.5 Summary]]
+- [[Notes/Intersubband Optoelectronics/8 Waveguides in QCLs#8.1 Dielectric Slab Waveguide\|8.1 Dielectric Slab Waveguide]]
+- [[Notes/Intersubband Optoelectronics/8 Waveguides in QCLs#8.2 Interface Plasmons\|8.2 Interface Plasmons]]
+- [[Notes/Intersubband Optoelectronics/8 Waveguides in QCLs#8.3 THz Waveguides: Surface Plasmons\|8.3 THz Waveguides: Surface Plasmons]]
+- [[Notes/Intersubband Optoelectronics/8 Waveguides in QCLs#8.4 Double-Metal Waveguide\|8.4 Double-Metal Waveguide]]
+- [[Notes/Intersubband Optoelectronics/8 Waveguides in QCLs#8.5 Summary\|8.5 Summary]]
 
 ---
 # 8 Waveguides in QCLs

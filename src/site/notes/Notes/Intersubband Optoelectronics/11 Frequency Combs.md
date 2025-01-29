@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/11-frequency-combs/","hide":"true","updated":"2025-01-28T22:37:01.754+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/11-frequency-combs/","hide":"true","updated":"2025-01-29T20:55:50.813+01:00"}
 ---
 
 Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].
@@ -7,10 +7,9 @@ Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#T
 ---
 **Table of Contents**
 
-- [[Notes/Intersubband Optoelectronics/11 Frequency Combs#11 Frequency Combs\|11 Frequency Combs]]
-	- [[Notes/Intersubband Optoelectronics/11 Frequency Combs#11 Frequency Combs\|11.2 Mode-Locking]]
-	- [[Notes/Intersubband Optoelectronics/11 Frequency Combs#11 Frequency Combs\|11.3 Dual-Comb Spectroscopy]]
-	- [[Notes/Intersubband Optoelectronics/11 Frequency Combs#11 Frequency Combs\|11.4 Summary]]
+- [[Notes/Intersubband Optoelectronics/11 Frequency Combs#11.2 Mode-Locking\|11.2 Mode-Locking]]
+- [[Notes/Intersubband Optoelectronics/11 Frequency Combs#11.3 Dual-Comb Spectroscopy\|11.3 Dual-Comb Spectroscopy]]
+- [[Notes/Intersubband Optoelectronics/11 Frequency Combs#11.4 Summary\|11.4 Summary]]
 
 ---
 # 11 Frequency Combs

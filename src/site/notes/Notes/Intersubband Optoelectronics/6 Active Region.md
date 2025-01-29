@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/6-active-region/","hide":"true","updated":"2025-01-28T22:38:17.325+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/6-active-region/","hide":"true","updated":"2025-01-29T20:54:33.683+01:00"}
 ---
 
 Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].
@@ -7,19 +7,18 @@ Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#T
 ---
 **Table of Contents**
 
-- [[Notes/Intersubband Optoelectronics/6 Active Region#6 Active Region\|6 Active Region]]
-	- [[Notes/Intersubband Optoelectronics/6 Active Region#6 Active Region\|6.1 Optimization and Lifetime Engineering]]
-	- [[Notes/Intersubband Optoelectronics/6 Active Region#6 Active Region\|6.2 Phase Space]]
-	- [[Notes/Intersubband Optoelectronics/6 Active Region#6 Active Region\|6.3 Escape Time, Bragg Reflection, and Upper Level Confinement]]
-	- [[Notes/Intersubband Optoelectronics/6 Active Region#6 Active Region\|6.4 Three Quantum Well Design]]
-	- [[Notes/Intersubband Optoelectronics/6 Active Region#6 Active Region\|6.5 Double Phonon Resonance]]
-	- [[Notes/Intersubband Optoelectronics/6 Active Region#6 Active Region\|6.6 Bound-to-Continuum Active Region: Chirped Superlattice]]
-	- [[Notes/Intersubband Optoelectronics/6 Active Region#6 Active Region\|6.7 Dependence on $N_p$]]
-	- [[Notes/Intersubband Optoelectronics/6 Active Region#6 Active Region\|6.8 Dependence on Temperature]]
-	- [[Notes/Intersubband Optoelectronics/6 Active Region#6 Active Region\|6.9 Backfilling]]
-	- [[Notes/Intersubband Optoelectronics/6 Active Region#6 Active Region\|6.10 Continuous Wave (CW) Operation]]
-	- [[Notes/Intersubband Optoelectronics/6 Active Region#6 Active Region\|6.11 Doping]]
-	- [[Notes/Intersubband Optoelectronics/6 Active Region#6 Active Region\|6.12 Wallplug Efficiency]]
+- [[Notes/Intersubband Optoelectronics/6 Active Region#6.1 Optimization and Lifetime Engineering\|6.1 Optimization and Lifetime Engineering]]
+- [[Notes/Intersubband Optoelectronics/6 Active Region#6.2 Phase Space\|6.2 Phase Space]]
+- [[Notes/Intersubband Optoelectronics/6 Active Region#6.3 Escape Time, Bragg Reflection, and Upper Level Confinement\|6.3 Escape Time, Bragg Reflection, and Upper Level Confinement]]
+- [[Notes/Intersubband Optoelectronics/6 Active Region#6.4 Three Quantum Well Design\|6.4 Three Quantum Well Design]]
+- [[Notes/Intersubband Optoelectronics/6 Active Region#6.5 Double Phonon Resonance\|6.5 Double Phonon Resonance]]
+- [[Notes/Intersubband Optoelectronics/6 Active Region#6.6 Bound-to-Continuum Active Region: Chirped Superlattice\|6.6 Bound-to-Continuum Active Region: Chirped Superlattice]]
+- [[Notes/Intersubband Optoelectronics/6 Active Region#6.7 Dependence on $N_p$\|6.7 Dependence on $N_p$]]
+- [[Notes/Intersubband Optoelectronics/6 Active Region#6.8 Dependence on Temperature\|6.8 Dependence on Temperature]]
+- [[Notes/Intersubband Optoelectronics/6 Active Region#6.9 Backfilling\|6.9 Backfilling]]
+- [[Notes/Intersubband Optoelectronics/6 Active Region#6.10 Continuous Wave (CW) Operation\|6.10 Continuous Wave (CW) Operation]]
+- [[Notes/Intersubband Optoelectronics/6 Active Region#6.11 Doping\|6.11 Doping]]
+- [[Notes/Intersubband Optoelectronics/6 Active Region#6.12 Wallplug Efficiency\|6.12 Wallplug Efficiency]]
 
 ---
 # 6 Active Region

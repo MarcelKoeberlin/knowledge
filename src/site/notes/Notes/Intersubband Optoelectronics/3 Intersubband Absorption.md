@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/3-intersubband-absorption/","hide":"true","updated":"2025-01-28T22:38:56.074+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/3-intersubband-absorption/","hide":"true","updated":"2025-01-29T20:52:48.340+01:00"}
 ---
 
 Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].
@@ -7,11 +7,10 @@ Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#T
 ---
 **Table of Contents**
 
-- [[Notes/Intersubband Optoelectronics/3 Intersubband Absorption#3 Intersubband Absorption\|3 Intersubband Absorption]]
-	- [[Notes/Intersubband Optoelectronics/3 Intersubband Absorption#3 Intersubband Absorption\|3.1 Selection Rules]]
-	- [[Notes/Intersubband Optoelectronics/3 Intersubband Absorption#3 Intersubband Absorption\|3.2 Sum Rule]]
-	- [[Notes/Intersubband Optoelectronics/3 Intersubband Absorption#3 Intersubband Absorption\|3.3 Depolarization Shift]]
-	- [[Notes/Intersubband Optoelectronics/3 Intersubband Absorption#3 Intersubband Absorption\|3.4 Absorption Linewidth]]
+- [[Notes/Intersubband Optoelectronics/3 Intersubband Absorption#3.1 Selection Rules\|3.1 Selection Rules]]
+- [[Notes/Intersubband Optoelectronics/3 Intersubband Absorption#3.2 Sum Rule\|3.2 Sum Rule]]
+- [[Notes/Intersubband Optoelectronics/3 Intersubband Absorption#3.3 Depolarization Shift\|3.3 Depolarization Shift]]
+- [[Notes/Intersubband Optoelectronics/3 Intersubband Absorption#3.4 Absorption Linewidth\|3.4 Absorption Linewidth]]
 
 ---
 # 3 Intersubband Absorption
