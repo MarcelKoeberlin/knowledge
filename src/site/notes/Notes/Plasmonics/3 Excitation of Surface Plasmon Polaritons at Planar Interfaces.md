@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/3-excitation-of-surface-plasmon-polaritons-at-planar-interfaces/","hide":"true","updated":"2025-01-28T22:09:03.533+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/3-excitation-of-surface-plasmon-polaritons-at-planar-interfaces/","hide":"true","updated":"2025-01-29T20:57:06.987+01:00"}
 ---
 
 Jump back to [[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]].
@@ -7,10 +7,9 @@ Jump back to [[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]
 ---
 **Table of Contents**
 
-- [[Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces#3 Excitation of Surface Plasmon Polaritons at Planar Interfaces\|3 Excitation of Surface Plasmon Polaritons at Planar Interfaces]]
-	- [[Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces#3 Excitation of Surface Plasmon Polaritons at Planar Interfaces\|3.1 Prism Coupling]]
-	- [[Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces#3 Excitation of Surface Plasmon Polaritons at Planar Interfaces\|3.2 Grating Coupling]]
-	- [[Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces#3 Excitation of Surface Plasmon Polaritons at Planar Interfaces\|3.3 Excitation Using Highly Focused Optical Beams]]
+- [[Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces#3.1 Prism Coupling\|3.1 Prism Coupling]]
+- [[Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces#3.2 Grating Coupling\|3.2 Grating Coupling]]
+- [[Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces#3.3 Excitation Using Highly Focused Optical Beams\|3.3 Excitation Using Highly Focused Optical Beams]]
 
 ---
 # 3 Excitation of Surface Plasmon Polaritons at Planar Interfaces 

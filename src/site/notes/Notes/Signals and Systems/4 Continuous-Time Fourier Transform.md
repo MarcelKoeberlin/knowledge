@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/4-continuous-time-fourier-transform/","hide":"true","updated":"2025-01-28T22:07:09.190+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/4-continuous-time-fourier-transform/","hide":"true","updated":"2025-01-29T20:59:07.161+01:00"}
 ---
 
 Jump back to [[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]].
@@ -7,12 +7,11 @@ Jump back to [[Notes/Signals and Systems/Signals and Systems#Table of Contents\|
 ---
 **Table of Contents**
 
-- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4 Continuous-Time Fourier Transform\|4 Continuous-Time Fourier Transform]]
-	- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4 Continuous-Time Fourier Transform\|4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform]]
-	- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4 Continuous-Time Fourier Transform\|4.2 Convergence of Fourier Transforms]]
-	- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4 Continuous-Time Fourier Transform\|4.3 Properties of the Continuous-Time Fourier Transform]]
-	- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4 Continuous-Time Fourier Transform\|4.4 Basic Fourier Transform Pairs]]
-	- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4 Continuous-Time Fourier Transform\|4.5 Systems Characterised by Linear Constant-Coefficient Differential Equations]]
+- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform\|4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform]]
+- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.2 Convergence of Fourier Transforms\|4.2 Convergence of Fourier Transforms]]
+- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.3 Properties of the Continuous-Time Fourier Transform\|4.3 Properties of the Continuous-Time Fourier Transform]]
+- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.4 Basic Fourier Transform Pairs\|4.4 Basic Fourier Transform Pairs]]
+- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.5 Systems Characterised by Linear Constant-Coefficient Differential Equations\|4.5 Systems Characterised by Linear Constant-Coefficient Differential Equations]]
 
 ---
 # 4 Continuous-Time Fourier Transform

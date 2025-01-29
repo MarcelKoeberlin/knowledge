@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/7-magnetism-in-metals/","hide":"true","updated":"2025-01-28T21:28:53.457+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/7-magnetism-in-metals/","hide":"true","updated":"2025-01-29T21:00:42.799+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -7,10 +7,9 @@ Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|ch
 ---
 **Table of Contents**
 
-- [[Notes/Solid-State Theory/7 Magnetism in Metals#7 Magnetism in Metals\|7 Magnetism in Metals]]
-	- [[Notes/Solid-State Theory/7 Magnetism in Metals#7 Magnetism in Metals\|7.1 Stoner Instability]]
-	- [[Notes/Solid-State Theory/7 Magnetism in Metals#7 Magnetism in Metals\|7.2 General Spin Susceptibility and Magnetic Instabilities]]
-	- [[Notes/Solid-State Theory/7 Magnetism in Metals#7 Magnetism in Metals\|7.3 Stoner Excitations]]
+- [[Notes/Solid-State Theory/7 Magnetism in Metals#7.1 Stoner Instability\|7.1 Stoner Instability]]
+- [[Notes/Solid-State Theory/7 Magnetism in Metals#7.2 General Spin Susceptibility and Magnetic Instabilities\|7.2 General Spin Susceptibility and Magnetic Instabilities]]
+- [[Notes/Solid-State Theory/7 Magnetism in Metals#7.3 Stoner Excitations\|7.3 Stoner Excitations]]
 
 ---
 # 7 Magnetism in Metals

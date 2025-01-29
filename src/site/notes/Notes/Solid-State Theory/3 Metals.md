@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/3-metals/","hide":"true","updated":"2025-01-28T21:29:17.841+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/3-metals/","hide":"true","updated":"2025-01-29T20:59:38.905+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -7,11 +7,10 @@ Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|ch
 ---
 **Table of Contents**
 
-- [[Notes/Solid-State Theory/3 Metals#3 Metals\|3 Metals]]
-	- [[Notes/Solid-State Theory/3 Metals#3 Metals\|3.1 The Jellium Model of the Metallic State]]
-	- [[Notes/Solid-State Theory/3 Metals#3 Metals\|3.2 Charge Excitations and the Dielectric Function]]
-	- [[Notes/Solid-State Theory/3 Metals#3 Metals\|3.3 Lattice Vibrations - Phonons]]
-	- [[Notes/Solid-State Theory/3 Metals#3 Metals\|3.4 Appendix: Linear Response Theory]]
+- [[Notes/Solid-State Theory/3 Metals#3.1 The Jellium Model of the Metallic State\|3.1 The Jellium Model of the Metallic State]]
+- [[Notes/Solid-State Theory/3 Metals#3.2 Charge Excitations and the Dielectric Function\|3.2 Charge Excitations and the Dielectric Function]]
+- [[Notes/Solid-State Theory/3 Metals#3.3 Lattice Vibrations - Phonons\|3.3 Lattice Vibrations - Phonons]]
+- [[Notes/Solid-State Theory/3 Metals#3.4 Appendix: Linear Response Theory\|3.4 Appendix: Linear Response Theory]]
 
 ---
 # 3 Metals 

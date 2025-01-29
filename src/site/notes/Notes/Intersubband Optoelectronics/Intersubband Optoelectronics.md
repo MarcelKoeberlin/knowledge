@@ -1,12 +1,14 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Intersubband Optoelectronics","permalink":"/notes/intersubband-optoelectronics/","dgShowLocalGraph":true,"dgShowInlineTitle":"true","dgShowToc":"false","updated":"2025-01-28T23:40:22.488+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Intersubband Optoelectronics","permalink":"/notes/intersubband-optoelectronics/","dgShowLocalGraph":true,"dgShowInlineTitle":"true","dgShowToc":"false","updated":"2025-01-29T21:18:28.290+01:00"}
 ---
 
-This is by far my least favourite course that I ever took, so I only converted it to markdown, fixed the headers, and pasted images back in (still needs to be done). ChatGPT did the rest.. Seriously what the hell is this course...
+These notes were an attempt to follow the lecture 'Intersubband Optoelectronics' taught by Prof. Scalari in the fall semester of 2023/24. The lecture mainly followed the corresponding book [Quantum Cascade Lasers](https://www.amazon.com/Quantum-Cascade-Lasers-J%C3%A9r%C3%B4me-Faist/dp/0198528248)from that same research group. 
+
+[[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|Table of Contents]]
 
 ---
-
-Foreword
+Intersubband transitions lie at the heart of some of very exciting developments in semiconductor optoelectronics. These transitions, occurring between conduction subbands in carefully engineered quantum wells, enable the detection and emission of mid-IR and terahertz waves. In particular, the quantum cascade laser with its precise and clever band-structure engineering.
+The first half will not explicitly mention the quantum cascade laser yet, but will develop important concepts that are relevant in a wide range of physics. The second half is then mainly about the quantum cascade laser and its engineering and fine-tuning. This part will build a lot on what is learned in the first half.
 
 ---
 

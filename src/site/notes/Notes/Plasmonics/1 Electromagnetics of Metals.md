@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/1-electromagnetics-of-metals/","hide":"true","updated":"2025-01-28T22:09:13.856+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/1-electromagnetics-of-metals/","hide":"true","updated":"2025-01-29T20:56:44.814+01:00"}
 ---
 
 Jump back to [[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]].
@@ -7,13 +7,12 @@ Jump back to [[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]
 ---
 **Table of Contents**
 
-- [[Notes/Plasmonics/1 Electromagnetics of Metals#1 Electromagnetics of Metals\|1 Electromagnetics of Metals]]
-	- [[Notes/Plasmonics/1 Electromagnetics of Metals#1 Electromagnetics of Metals\|1.1 Maxwell's Equation of Macroscopic Electromagnetism]]
-	- [[Notes/Plasmonics/1 Electromagnetics of Metals#1 Electromagnetics of Metals\|1.2 Travelling-Wave Solution]]
-	- [[Notes/Plasmonics/1 Electromagnetics of Metals#1 Electromagnetics of Metals\|1.3 The Dielectric Function of the Free Electron Gas]]
-	- [[Notes/Plasmonics/1 Electromagnetics of Metals#1 Electromagnetics of Metals\|1.4 The Dispersion of the Free Electron Gas and Volume Plasmons]]
-	- [[Notes/Plasmonics/1 Electromagnetics of Metals#1 Electromagnetics of Metals\|1.5 Real Metals and Interband Transitions]]
-	- [[Notes/Plasmonics/1 Electromagnetics of Metals#1 Electromagnetics of Metals\|1.6 The Energy of the Electromagnetic Field in Metals]]
+- [[Notes/Plasmonics/1 Electromagnetics of Metals#1.1 Maxwell's Equation of Macroscopic Electromagnetism\|1.1 Maxwell's Equation of Macroscopic Electromagnetism]]
+- [[Notes/Plasmonics/1 Electromagnetics of Metals#1.2 Travelling-Wave Solution\|1.2 Travelling-Wave Solution]]
+- [[Notes/Plasmonics/1 Electromagnetics of Metals#1.3 The Dielectric Function of the Free Electron Gas\|1.3 The Dielectric Function of the Free Electron Gas]]
+- [[Notes/Plasmonics/1 Electromagnetics of Metals#1.4 The Dispersion of the Free Electron Gas and Volume Plasmons\|1.4 The Dispersion of the Free Electron Gas and Volume Plasmons]]
+- [[Notes/Plasmonics/1 Electromagnetics of Metals#1.5 Real Metals and Interband Transitions\|1.5 Real Metals and Interband Transitions]]
+- [[Notes/Plasmonics/1 Electromagnetics of Metals#1.6 The Energy of the Electromagnetic Field in Metals\|1.6 The Energy of the Electromagnetic Field in Metals]]
 
 ---
 # 1 Electromagnetics of Metals 

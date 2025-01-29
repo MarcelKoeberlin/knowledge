@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/4-imaging-surface-plasmon-polariton-propagation/","hide":"true","updated":"2025-01-28T22:08:38.846+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/4-imaging-surface-plasmon-polariton-propagation/","hide":"true","updated":"2025-01-29T20:57:20.114+01:00"}
 ---
 
 Jump back to [[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]].
@@ -7,11 +7,10 @@ Jump back to [[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]
 ---
 **Table of Contents**
 
-- [[Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation#4 Imaging Surface Plasmon Polariton Propagation\|4 Imaging Surface Plasmon Polariton Propagation]]
-	- [[Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation#4 Imaging Surface Plasmon Polariton Propagation\|4.1 Near-Field Microscopy]]
-	- [[Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation#4 Imaging Surface Plasmon Polariton Propagation\|4.2 Fluorescence Imaging]]
-	- [[Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation#4 Imaging Surface Plasmon Polariton Propagation\|4.3 Leakage Radiation]]
-	- [[Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation#4 Imaging Surface Plasmon Polariton Propagation\|4.4 Scattered Light Imaging]]
+- [[Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation#4.1 Near-Field Microscopy\|4.1 Near-Field Microscopy]]
+- [[Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation#4.2 Fluorescence Imaging\|4.2 Fluorescence Imaging]]
+- [[Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation#4.3 Leakage Radiation\|4.3 Leakage Radiation]]
+- [[Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation#4.4 Scattered Light Imaging\|4.4 Scattered Light Imaging]]
 
 ---
 # 4 Imaging Surface Plasmon Polariton Propagation 

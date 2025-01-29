@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/9-identical-quantum-particles-formalism-of-second-quantisation/","hide":"true","updated":"2025-01-28T21:28:37.481+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/9-identical-quantum-particles-formalism-of-second-quantisation/","hide":"true","updated":"2025-01-29T21:00:54.213+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -7,14 +7,13 @@ Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|ch
 ---
 **Table of Contents**
 
-- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9 Identical Quantum Particles - Formalism of Second Quantisation\|9 Identical Quantum Particles - Formalism of Second Quantisation]]
-	- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9 Identical Quantum Particles - Formalism of Second Quantisation\|9.1 Many-Body Wave Functions and Particle Statistics]]
-	- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9 Identical Quantum Particles - Formalism of Second Quantisation\|9.2 Independent, Indistinguishable Particles]]
-	- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9 Identical Quantum Particles - Formalism of Second Quantisation\|9.3 Second Quantisation Formalism]]
-	- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9 Identical Quantum Particles - Formalism of Second Quantisation\|9.4 Observables in Second Quantisation]]
-	- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9 Identical Quantum Particles - Formalism of Second Quantisation\|9.5 Equation of Motion]]
-	- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9 Identical Quantum Particles - Formalism of Second Quantisation\|9.6 Correlation Functions]]
-	- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9 Identical Quantum Particles - Formalism of Second Quantisation\|9.7 Selected Applications]]
+- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.1 Many-Body Wave Functions and Particle Statistics\|9.1 Many-Body Wave Functions and Particle Statistics]]
+- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.2 Independent, Indistinguishable Particles\|9.2 Independent, Indistinguishable Particles]]
+- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.3 Second Quantisation Formalism\|9.3 Second Quantisation Formalism]]
+- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.4 Observables in Second Quantisation\|9.4 Observables in Second Quantisation]]
+- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.5 Equation of Motion\|9.5 Equation of Motion]]
+- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.6 Correlation Functions\|9.6 Correlation Functions]]
+- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.7 Selected Applications\|9.7 Selected Applications]]
 
 ---
 # 9 Identical Quantum Particles - Formalism of Second Quantisation
