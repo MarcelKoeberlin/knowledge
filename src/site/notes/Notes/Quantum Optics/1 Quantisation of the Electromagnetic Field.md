@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/quantum-optics/1-quantisation-of-the-electromagnetic-field/","hide":"true","updated":"2025-01-30T21:09:00.728+01:00"}
+{"dg-publish":true,"permalink":"/notes/quantum-optics/1-quantisation-of-the-electromagnetic-field/","hide":"true","updated":"2025-01-30T23:32:34.600+01:00"}
 ---
 
 Jump back to [[Notes/Quantum Optics/Quantum Optics#Table of Contents\|chapter selection]].
@@ -83,17 +83,15 @@ $$
 $$
 The effect is that we can now divide the electric field equation into two parts:
 1. The part parallel to $\textbf{k}$: 
-
 	$$
 	\tilde{\mathbf{E}}_{\text {perp }}=-\frac{\partial \tilde{\mathbf{A}}}{\partial t}
 	$$
-
 
 2. The part perpendicular to $\textbf{k}$: 
 
-	$$
-	\tilde{\mathbf{E}}_{\text {perp }}=-\frac{\partial \tilde{\mathbf{A}}}{\partial t}
-	$$
+$$
+\tilde{\mathbf{E}}_{\text {perp }}=-\frac{\partial \tilde{\mathbf{A}}}{\partial t}
+$$
 
 Both these results are general meaning that they hold in the presence of charges too. Consider as well the first equation of the Maxwell equations in the presence of a charge density: 
 
@@ -118,12 +116,12 @@ L(\mathbf{r})=\frac{\varepsilon_0}{2} \int \mathrm{~d}^3 r\left[\dot{A}^2(\mathb
 $$
 A few noteworthy things on this form of the Lagrangian:
 - The Lagrangian depends on a single field variable $\textbf{r}$ and also its time-derivative. However, unlike the Lagrangian of a particle, determining $L(\mathbf{r})$ requires the value of $\mathbf{A}(\mathbf{r})$ for all $\mathbf{r}$.
-- Although we would like to form generalized co-ordinates, the different vector components of $\mathbf{A}$ are not linearly independent, since $\nabla \cdot \mathbf{A}=0$. The components of $\mathbf{A}$ span a two-dimensional vector space - these are the perpendicular components of the vector potential from above.
+- Although we would like to form generalised co-ordinates, the different vector components of $\mathbf{A}$ are not linearly independent, since $\nabla \cdot \mathbf{A}=0$. The components of $\mathbf{A}$ span a two-dimensional vector space - these are the perpendicular components of the vector potential from above.
 
 The first problem is readily solved by considering instead the expression in reciprocal space:
 
 $$
-L=\int d^3 k \tilde{L}(\mathbf{k}),
+L=\int d^3 k \cdot\tilde{L}(\mathbf{k}),
 $$
 where we then find
 $$
@@ -132,10 +130,10 @@ $$
 & =\frac{\varepsilon_0}{2}\left[\dot{\mathbf{A}}^*(\mathbf{k}) \cdot \dot{\mathbf{A}}(\mathbf{k})-c^2 k^2 \tilde{\mathbf{A}}^*(\mathbf{k}) \cdot \tilde{\mathbf{A}}(\mathbf{k})\right].
 \end{aligned}
 $$
-The Coulomb gauge implies that $\mathbf{k} \cdot \tilde{\mathbf{A}}=0$, which constrains $\tilde{\mathbf{A}}$ to lie in a plane perpendicular to $\mathbf{k}$. This forms the 2 -D polarization basis with 2 independent elements for each $k$, such that we can write the Lagrangian as a sum of terms including only scalar variables
+The Coulomb gauge implies that $\mathbf{k} \cdot \tilde{\mathbf{A}}=0$, which constrains $\tilde{\mathbf{A}}$ to lie in a plane perpendicular to $\mathbf{k}$. This forms the 2-D polarisation basis with 2 independent elements for each $k$, such that we can write the Lagrangian as a sum of terms including only scalar variables
 
 $$
-\frac{\varepsilon_0}{2} \sum_{\sigma_{\mathbf{k}}=1,2}\left[\dot{\tilde{A}}_{\sigma_{\mathbf{k}}}^{\star}(\mathbf{k}) \dot{\tilde{A}}_{\sigma_{\mathbf{k}}}(\mathbf{k})-c^2 k^2 \tilde{A}_{\sigma_{\mathbf{k}}}^{\star}(\mathbf{k}) \tilde{A}_{\sigma_{\mathbf{k}}}(\mathbf{k})\right].
+\tilde{L}(k)=\frac{\varepsilon_0}{2} \sum_{\sigma_{\mathbf{k}}=1,2}\left[\dot{\tilde{A}}_{\sigma_{\mathbf{k}}}^{\star}(\mathbf{k}) \dot{\tilde{A}}_{\sigma_{\mathbf{k}}}(\mathbf{k})-c^2 k^2 \tilde{A}_{\sigma_{\mathbf{k}}}^{\star}(\mathbf{k}) \tilde{A}_{\sigma_{\mathbf{k}}}(\mathbf{k})\right].
 $$
 Now is the point to remember the constraints on $\tilde{A}$ and $\tilde{A}^*$, which means that these are not independent. However, since $\tilde{A}^*(\mathbf{k})=\tilde{A}(-\mathbf{k})$, it is possible to treat these independently by only integrating over positive $\mathbf{k}$. Such an integral is indicated with a $f$ symbol, such that the Lagrangian becomes
 
@@ -146,8 +144,7 @@ We can see that we may form generalised coordinates for each $\tilde{A}_{\sigma_
 
 $$
 \begin{aligned}
-\Pi_{\sigma_k}(\mathbf{k}) \equiv\left(\frac{\partial \tilde{L}}{\partial \dot{\tilde{A}}_{\sigma_{\mathbf{k}}}(\mathbf{k})}\right)^* & =\varepsilon_0 \dot{\tilde{A}}_{\sigma_{\mathbf{k}}}(\mathbf{k}) \\
-& =-\varepsilon_0 \tilde{E}_{\sigma_{\mathbf{k}}}(\mathbf{k})
+\Pi_{\sigma_k}(\mathbf{k}) \equiv\left(\frac{\partial \tilde{L}}{\partial \dot{\tilde{A}}_{\sigma_{\mathbf{k}}}(\mathbf{k})}\right)^* & =\varepsilon_0 \dot{\tilde{A}}_{\sigma_{\mathbf{k}}}(\mathbf{k}) =-\varepsilon_0 \tilde{E}_{\sigma_{\mathbf{k}}}(\mathbf{k}).
 \end{aligned}
 $$
 We can also form the Hamiltonian in the usual way from Lagrangian mechanics, again using a reciprocal space definition
