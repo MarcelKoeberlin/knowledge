@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/quantum-optics/2-quantum-states-of-the-field/","hide":"true","updated":"2025-01-30T21:08:55.116+01:00"}
+{"dg-publish":true,"permalink":"/notes/quantum-optics/2-quantum-states-of-the-field/","hide":"true","updated":"2025-01-30T23:44:43.172+01:00"}
 ---
 
 Jump back to [[Notes/Quantum Optics/Quantum Optics#Table of Contents\|chapter selection]].
@@ -299,11 +299,7 @@ $$
 $$
 This is not surprising, since it is a squeezed vacuum state. Similarly, the field variance is
 $$
-(\Delta \hat{E}(\chi))^2=\left\langle(\hat{X} \cos (\chi)+\hat{Y} \sin (\chi))^2\right\rangle=\frac{1}{4}\left(e^{2 s} \sin
-{ #2}
-\left(\chi-\frac{\theta}{2}\right)+e^{-2 s} \cos
-{ #2}
-\left(\chi-\frac{\theta}{2}\right)\right) .
+(\Delta \hat{E}(\chi))^2=\left\langle(\hat{X} \cos (\chi)+\hat{Y} \sin (\chi))^2\right\rangle=\frac{1}{4}\left(e^{2 s} \sin^2\left(\chi-\frac{\theta}{2}\right)+e^{-2 s} \cos^2\left(\chi-\frac{\theta}{2}\right)\right) .
 $$
 This means that the fluctuations are 'modulated' as a function of the phase angle. 
 
@@ -333,20 +329,12 @@ $$
 The uncertainties on $(\Delta \hat{X})^2$ and $(\Delta \hat{Y})^2$ are the same as for the vacuum state
 
 $$
-(\Delta \hat{X})^2=\frac{1}{4}\left(e^{2 s} \sin
-{ #2}
-\left(\frac{\theta}{2}\right)+e^{-2 s} \cos
-{ #2}
-\left(\frac{\theta}{2}\right)\right).
+(\Delta \hat{X})^2=\frac{1}{4}\left(e^{2 s} \sin^2\left(\frac{\theta}{2}\right)+e^{-2 s} \cos^2\left(\frac{\theta}{2}\right)\right).
 $$
 Therefore, the noise measured for a specific phase angle $\chi$ is
 
 $$
-(\Delta \hat{E}(\chi))^2=\frac{1}{4}\left(e^{2 s} \sin
-{ #2}
-\left(\chi-\frac{\theta}{2}\right)+e^{-2 s} \cos
-{ #2}
-\left(\chi-\frac{\theta}{2}\right)\right),
+(\Delta \hat{E}(\chi))^2=\frac{1}{4}\left(e^{2 s} \sin^2\left(\chi-\frac{\theta}{2}\right)+e^{-2 s} \cos^2\left(\chi-\frac{\theta}{2}\right)\right),
 $$
 while the expectation value is
 
@@ -356,13 +344,7 @@ $$
 The signal over noise is then
 
 $$
-\mathrm{SNR}=\frac{S^2}{N}=\frac{\langle\alpha, \xi| \hat{E}(\chi)|\alpha, \xi\rangle^2}{\langle\alpha, \xi| \Delta \hat{E}(\chi)|\alpha, \xi\rangle^2}=\frac{4|\alpha|^2 \cos
-{ #2}
-(\chi-\varphi)}{e^{2 s} \sin
-{ #2}
-\left(\chi-\frac{\theta}{2}\right)+e^{-2 s} \cos
-{ #2}
-\left(\chi-\frac{\theta}{2}\right)}.
+\mathrm{SNR}=\frac{S^2}{N}=\frac{\langle\alpha, \xi| \hat{E}(\chi)|\alpha, \xi\rangle^2}{\langle\alpha, \xi| \Delta \hat{E}(\chi)|\alpha, \xi\rangle^2}=\frac{4|\alpha|^2 \cos^2(\chi-\varphi)}{e^{2 s} \sin^2\left(\chi-\frac{\theta}{2}\right)+e^{-2 s} \cos^2\left(\chi-\frac{\theta}{2}\right)}.
 $$
 The maximum of the SNR is reached for $\chi=\varphi=\frac{\theta}{2}$ and yields
 
@@ -372,9 +354,7 @@ $$
 The average number of photons in that state is
 
 $$
-\langle\alpha, \xi| \hat{n}|\alpha, \xi\rangle=|\alpha|^2+\sinh
-{ #2}
-(s)
+\langle\alpha, \xi| \hat{n}|\alpha, \xi\rangle=|\alpha|^2+\sinh^2(s)
 $$
 and follows from the additive properties of the displacement and squeeze operator. For states with large relative photon numbers $\left(|\alpha| \gg e^s\right)$ we have the uncertainty for the photon number $\left(\varphi=\frac{\theta}{2}\right)$
 
