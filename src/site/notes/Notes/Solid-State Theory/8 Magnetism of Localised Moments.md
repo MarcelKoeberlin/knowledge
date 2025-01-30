@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/8-magnetism-of-localised-moments/","hide":"true","updated":"2025-01-28T21:28:48.698+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/8-magnetism-of-localised-moments/","hide":"true","updated":"2025-01-30T21:10:18.555+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -20,7 +20,7 @@ Up to now, we have mostly assumed that the interaction between electrons leads t
 
 However, in this chapter, we will consider situations, were it is less clear whether we should describe the electrons in momentum or in real space. The problem becomes obvious with the following Gedanken experiment: We look at a regular lattice of H -atoms. The lattice constant should be large enough such that the atoms can be considered to be independent for now. In the ground state, each H -atom contains exactly one electron in the $1 s$-state, which is the only atomic orbital we consider at the moment. The transfer of one electron to another atom would cost the relatively high energy of $E\left(H^{+}\right)+E\left(H^{-}\right)-2 E(H) \sim 15 \mathrm{eV}$, since it corresponds to an ionisation. Therefore, the electrons remain localised on the individual H -atoms and the description of the electron states is obviously best done in real space. The reduction of the lattice constant will gradually increase the overlap of the electron wave functions of neighboring atoms. In analogy to the $\mathrm{H}_{2}$ molecule, the electrons can now extend on neighboring atoms, but the cost in energy remains that of an "ionisation". Thus, transfer processes are only possible virtually, there are not yet itinerant electrons in the sense of a metal.
 
-![Attachments/Notes/Solid-State Theory/8 Magnetism of Localised Moments/IMG-0128212149540.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/8%20Magnetism%20of%20Localised%20Moments/IMG-0128212149540.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=172&rect=158,151,437,286|•]]
+![Attachments/Notes/Solid-State Theory/8 Magnetism of Localised Moments/IMG-0130114738884.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/8%20Magnetism%20of%20Localised%20Moments/IMG-0130114738884.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=172&rect=158,151,437,286|•]]
 
 On the other hand, we know the example of the alkali metals, which release their outermost ns-electron into an extended Bloch state and build a metallic (half-filled) band. This would actually work well for the H -atoms for sufficiently small lattice constant too. In nature, this can only be induced by enormous pressures metallic hydrogen probably exists in the centres of the large gas planets Jupiter and Saturn due to the gravitational pressure. Obviously, a transition between the two limiting behaviours should exist. This metal-insulator transition, which occurs, if the gain of kinetic energy surpasses the energy costs for the charge transfer. The insulating side is known as a Mott insulator.
 While the obviously metallic state is reliably described by the band picture and can be sufficiently well approximated by the previously discussed methods, this point of view becomes obsolete when approaching the metal-insulator transition. According to band theory, a half-filled band must produce a metal, which definitely turns wrong when entering the insulating side of the transition. Unfortunately, no well controlled approximation for the description of this metal-insulator transition exists, since there are no small parameters for a perturbation theory.
@@ -50,7 +50,7 @@ $$
 $$
 where the spin configuration $\left\{s_{i}\right\}$ can be chosen arbitrarily. We will deal with the lifting of this degeneracy later. The first excited states feature one lattice site without electron and one doubly occupied site. This state has energy  and its degeneracy is even higher, i.e., . Even higher excited states correspond to more empty and doubly occupied sites. The system is an insulator and the density of states is shown here:
 
-![Attachments/Notes/Solid-State Theory/8 Magnetism of Localised Moments/IMG-0128212149624.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/8%20Magnetism%20of%20Localised%20Moments/IMG-0128212149624.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=174&rect=159,201,440,399|•]]
+![Attachments/Notes/Solid-State Theory/8 Magnetism of Localised Moments/IMG-0130114738951.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/8%20Magnetism%20of%20Localised%20Moments/IMG-0130114738951.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=174&rect=159,201,440,399|•]]
 
 **Metallic band limit**: We set $U=0$. The electrons are independent and move freely via hopping processes. The band energy is found through a Fourier transform of the Hamiltonian. With
 $$
@@ -91,7 +91,7 @@ $$
 
 Even though ignoring the spin configurations here is a daring approximation, we obtain a qualitatively good picture of the situation. Note that the motion of an empty site (holon) or doubly occupied site (doublon) is not independent of the spin configuration which is altered through moving these objects. As a consequence, the holon/doublon motion is not entirely free leading to a reduction of the band width. Therefore the band width seen in the next figure is smaller than 2D, in general. One notices that, with increasing $|t|$, the two energy sectors approach each other, until they finally overlap. In the left panel the holon-doublon excitation spectrum is depicted by two bands, the lower and upper Hubbard bands, where the holon is a hole in the lower and the doublon a particle in the upper Hubbard band:
 
-![Attachments/Notes/Solid-State Theory/8 Magnetism of Localised Moments/IMG-0128212149654.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/8%20Magnetism%20of%20Localised%20Moments/IMG-0128212149654.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=175&rect=160,499,439,553|•]]
+![Attachments/Notes/Solid-State Theory/8 Magnetism of Localised Moments/IMG-0130114739018.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/8%20Magnetism%20of%20Localised%20Moments/IMG-0130114739018.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=175&rect=160,499,439,553|•]]
 
 The excitation gap is the gap between the two bands and we may interpret this system as an insulator, called a Mott insulator. (Note, however, that this band structure depends strongly on the correlation effects (e.g. spin correlation) and is not rigid as the band structure of a semiconductor.) The band overlap (closing of the gap) indicates a transition, after which a perturbative treatment is definitely inapplicable. This is, in fact, the metal-insulator transition.
 
@@ -233,7 +233,7 @@ $$
 
 With this, the jump in the distribution at the Fermi energy is equal to $g_{t}$, which, as previously, corresponds to the quasi-particle weight:
 
-![Attachments/Notes/Solid-State Theory/8 Magnetism of Localised Moments/IMG-0128212149952.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/8%20Magnetism%20of%20Localised%20Moments/IMG-0128212149952.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=178&rect=160,488,436,650|•]]
+![Attachments/Notes/Solid-State Theory/8 Magnetism of Localised Moments/IMG-0130114739068.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/8%20Magnetism%20of%20Localised%20Moments/IMG-0130114739068.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=178&rect=160,488,436,650|•]]
 
 For $U \rightarrow U_{c}$ it vanishes, i.e., the quasi-particles cease to exist for $U=U_{c}$. Without going into the details of the calculation, we provide a few Fermi liquid parameters. It is easy to see that the effective mass
 $$
@@ -292,7 +292,7 @@ $$
 $$
 where, in the last two cases, the resulting states have an energy higher by $U$ and lie outside the ground state sector. Thus, it becomes clear that we have to proceed to second order perturbation, where the states of higher energy will appear only virtually:
 
-![Attachments/Notes/Solid-State Theory/8 Magnetism of Localised Moments/IMG-0128212149987.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/8%20Magnetism%20of%20Localised%20Moments/IMG-0128212149987.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=179&rect=160,317,437,418|•]]
+![Attachments/Notes/Solid-State Theory/8 Magnetism of Localised Moments/IMG-0130114739141.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/8%20Magnetism%20of%20Localised%20Moments/IMG-0130114739141.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=179&rect=160,317,437,418|•]]
 We obtain the matrix elements
 $$
 \begin{align*}
@@ -404,7 +404,7 @@ m(T)= \begin{cases}0, & T>T_{N} \\ \frac{\hbar}{2} \sqrt{3\left(T_{N} / T-1\righ
 \end{align*}
 $$
 
-![Attachments/Notes/Solid-State Theory/8 Magnetism of Localised Moments/IMG-0128212150019.webp](/img/user/Attachments/Notes/Solid-State%20Theory/8%20Magnetism%20of%20Localised%20Moments/IMG-0128212150019.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=182&rect=149,631,438,768|•]]
+![Attachments/Notes/Solid-State Theory/8 Magnetism of Localised Moments/IMG-0130114739203.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/8%20Magnetism%20of%20Localised%20Moments/IMG-0130114739203.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=182&rect=149,631,438,768|•]]
 
 ---
 ## 8.3 Collective Modes - Spin Wave Excitations
@@ -523,7 +523,7 @@ $$
 $$
 where the sign depends on the sublattice. The zero-point fluctuations of these bosons yield quantum fluctuations, which reduce the moment $m$ from its mean field value. In a one-dimensional spin chain these fluctuations are strong enough to suppress antiferromagnetically order even for the ground state. The fact that the spectrum starts at zero has to do with the infinite degeneracy of the ground state. The ordered moments can be turned into any direction globally. This property is known under the name Goldstone theorem, which tells that each ordered state that results from a spontaneous breaking of a continuous symmetry has collective excitations with arbitrary small (positive) energies. The linear spectrum is normal for collective excitations of this kind; the quadratic spectrum of the ferromagnet has to do with the fact that the state breaks time-inversion symmetry.
 
-![Attachments/Notes/Solid-State Theory/8 Magnetism of Localised Moments/IMG-0128212150048.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/8%20Magnetism%20of%20Localised%20Moments/IMG-0128212150048.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=184&rect=206,625,384,764|•]]
+![Attachments/Notes/Solid-State Theory/8 Magnetism of Localised Moments/IMG-0130114739235.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/8%20Magnetism%20of%20Localised%20Moments/IMG-0130114739235.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=184&rect=206,625,384,764|•]]
 
 These spin excitations show the difference between a band and a Mott insulator very clearly. While in the band insulator both charge and spin excitations have an energy gap and are inert, the Mott insulator has only gapped charge excitation. However, the spin degrees of freedom for a low-energy sector which can even form gapless excitations as shown just above.
 
