@@ -25,17 +25,14 @@
 <script>
     function setThemeIcon(theme) {
         const themeSwitch = document.getElementById('theme-switch');
-        themeSwitch.classList.remove('light', 'dark'); // Remove old theme classes
-        themeSwitch.classList.add(theme); // Add the new theme class
+        themeSwitch.classList.remove('light', 'dark');
+        themeSwitch.classList.add(theme);
     }
 
     function applyTheme(theme) {
-        document.body.classList.remove('theme-light', 'theme-dark'); // Remove old theme classes
-        if (theme === 'dark') {
-            document.body.classList.add('theme-dark');
-        } else if (theme === 'light') {
-            document.body.classList.add('theme-light');
-        }
+        document.body.classList.remove('theme-light', 'theme-dark');
+        document.body.classList.add(`theme-${theme}`);
+        document.documentElement.setAttribute('data-theme', theme);
     }
 
     function setTheme(theme, updateIcon = true) {
@@ -43,22 +40,29 @@
             setThemeIcon(theme);
         }
         applyTheme(theme);
-
-        // Save theme to localStorage
         window.localStorage.setItem('site-theme', theme);
         window.theme = theme;
+        utterancesTheme(); // Call after changing theme
     }
 
-    // Initialize theme on page load
-    const savedTheme = window.localStorage.getItem('site-theme') || 'dark'; // Default to dark
-    setTheme(savedTheme);
+    function utterancesTheme() {
+        const iframe = document.querySelector('.utterances-frame');
+        if (iframe) {
+            const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'gruvbox-dark' : 'github-light';
+            iframe.contentWindow.postMessage({ type: 'set-theme', theme: theme }, 'https://utteranc.es');
+        }
+    }
 
-    // Handle theme switch click
     document.getElementById('theme-switch').addEventListener('click', () => {
         const newTheme = window.theme === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme, true);
+        setTheme(newTheme);
     });
+
+    // Initialize theme on page load
+    const savedTheme = window.localStorage.getItem('site-theme') || 'dark';
+    setTheme(savedTheme);
 </script>
+
 
 <style>
 #theme-switch .svg-icon {

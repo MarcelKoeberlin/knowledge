@@ -1,13 +1,13 @@
 body.theme-dark {
   --text-accent: #006f8b;
-  --text-accent-hover: #0084a5;
+  --text-accent-hover: #ff8f00;
   --interactive-accent: #006f8b;
   --h1-color: var(--interactive-accent);
 }
 
 body.theme-light {
   --text-accent: #004d61;
-  --text-accent-hover: #006f8b;
+  --text-accent-hover: #ff3c00;
   --interactive-accent: #004d61;
   --h1-color: var(--interactive-accent);
 }
@@ -939,3 +939,4 @@ h1,
 #link-graph {
   border-radius:5px 5px 5px 5px;
 }
+
