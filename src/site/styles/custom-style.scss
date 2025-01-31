@@ -63,7 +63,7 @@ body {
     font-weight: var(--h1-weight);
     font-style: var(--h1-style);
     font-family: var(--h1-font);
-    background: linear-gradient(to right,#ff3c00, #ffd700);
+    background: linear-gradient(to right,#ff3c00, #ff8f00);
     background-clip: border-box;
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -87,9 +87,8 @@ body {
     font-weight: var(--h2-weight);
     font-style: var(--h2-style);
     font-family: var(--h2-font);
-    background: linear-gradient(to right,#ff00cb,#4b9aff,#04e7ff);
+    background: linear-gradient(to right,#ff00cb,#4b9aff);
       background-clip: border-box;
-    background-clip: border-box;
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0,0,0,0);
@@ -110,7 +109,7 @@ body {
     font-weight: var(--h3-weight);
     font-style: var(--h3-style);
     font-family: var(--h3-font);
-    background: linear-gradient(to right,#38ff00,#ffef04,#ffb402);
+    background: linear-gradient(to right,#6f53d5, #48a8cd);
       background-clip: border-box;
     background-clip: border-box;
     background-clip: border-box;
@@ -175,8 +174,12 @@ body {
   font-size: 1rem;
   //color: var(--text-accent);
   color: var(--h1-color);
-  border-bottom: 1px solid var(--background-modifier-border);
   padding-bottom: 5px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  background-clip: border-box;
+  background: linear-gradient(to right,#ff3c00, #ff8f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,0);
 }
 
 
@@ -673,13 +676,13 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
 .sidebar {
 
   position: fixed;
-  top: 75px;
-  right: 0px;
+  top: 100px;
+  right: 50px;
   height: 100%;
   min-width: 25px;
   display: flex;
   z-index: 3;
-  max-width: 400px;
+  max-width: 350px;
 
   .toc-container {
     max-height: unset;
@@ -696,6 +699,11 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
     font-size: 18px;
     color: var(--text-muted);
     box-shadow: none;
+    background: linear-gradient(to right,#ff00cb,#4b9aff);
+    background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);
     
 }
 .backlink-list {
