@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes","permalink":"/notes/","hide":"true","dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-01-30T21:34:25.742+01:00"}
+{"dg-publish":true,"dg-path":"Notes","permalink":"/notes/","hide":"true","dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-01-31T22:38:05.071+01:00"}
 ---
 
 This is the perfect place to start reading up on some topics:
@@ -13,6 +13,6 @@ This is the perfect place to start reading up on some topics:
 | [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics\|Intersubband Optoelectronics]] | ✅ (except images)        |     |
 | [[Notes/Solid-State Theory/Solid-State Theory\|Solid-State Theory]]                               | ✅ (some issues in Ch. 8) |     |
 | [[Notes/Microelectronic Circuits/Microelectronic Circuits\|Microelectronic Circuits]]             | ❌ not started yet        |     |
-| [[Notes/Attosecond Physics/Attosecond Physics\|Attosecond Physics]]                               | ❌ not started yet        |     |
+| [[Notes/Attosecond Physics/Attosecond Physics\|Attosecond Physics]]                               | Chapter 1/?              |     |
 
 You may also use the graph on the right to select your next topic.
