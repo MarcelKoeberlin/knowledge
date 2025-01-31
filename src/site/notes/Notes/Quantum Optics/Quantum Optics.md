@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Quantum Optics","permalink":"/notes/quantum-optics/","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-01-30T21:53:13.109+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Quantum Optics","permalink":"/notes/quantum-optics/","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-01-31T21:58:34.505+01:00"}
 ---
 
 This content follows mainly the lecture notes from Prof. Home as taught in the fall semester of 2020/21, but also includes some elements Prof. Imamoglu's course taught in the fall semester of 2022/23.

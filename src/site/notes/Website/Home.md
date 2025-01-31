@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-01-30T21:29:27.683+01:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-01-31T21:11:57.076+01:00"}
 ---
 
 Hi there!
@@ -7,7 +7,7 @@ Hi there!
 Welcome to my personal website—a space where I share everything I consider worth publishing. This site serves as a "knowledge vault," also known as a "digital garden."
 
 > [!TIP] Don't know where to start?
-> How about reading up on some physics? Click [[Website/Notes\|here]], or use the graph on the right to select your next read!
+> How about reading up on some physics? Click [[Website/Notes\|here]], or use the graph on the left to select your next read!
 
 This website began with the simple, though admittedly overkill, idea of having experimental step-by-step lab procedures readily available, eliminating the need for printed copies or bringing my laptop/tablet to the lab each time.  It started with a single document detailing procedures like laser system shutdown or specific measurement techniques. I never anticipated this project evolving into what it has become, let alone turning into a hobby.
 
@@ -22,6 +22,10 @@ Since not all the courses I've taken align with my current research in the [Atto
 **Marcel**
 _30 January 2025_
 
+---
+
 *You may notice the • symbol throughout the site. It’s used for my internal navigation and can be ignored. This website exists on two pages, deployed from two different services: [Vercel](https://koeberlin.vercel.app/) and [Netlify.](https://koeberlin.netlify.app/)Both pages are identical, but sometimes delayed with respect to each other by no more than one day.*
 
 *If you have any comments or suggestions, feel free to contact me on [GitHub,](https://github.com/MarcelKoeberlin) [LinkedIn,](https://www.linkedin.com/in/marcel-k%C3%B6berlin-776397244/)or via email using the button on the bottom right.*
+
+---

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Intersubband Optoelectronics","permalink":"/notes/intersubband-optoelectronics/","dgShowLocalGraph":true,"dgShowInlineTitle":"true","dgShowToc":"false","updated":"2025-01-29T21:18:28.290+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Intersubband Optoelectronics","permalink":"/notes/intersubband-optoelectronics/","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-01-31T21:58:53.343+01:00"}
 ---
 
 These notes were an attempt to follow the lecture 'Intersubband Optoelectronics' taught by Prof. Scalari in the fall semester of 2023/24. The lecture mainly followed the corresponding book [Quantum Cascade Lasers](https://www.amazon.com/Quantum-Cascade-Lasers-J%C3%A9r%C3%B4me-Faist/dp/0198528248)from that same research group. 
