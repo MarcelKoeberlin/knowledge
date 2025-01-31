@@ -150,6 +150,9 @@ body {
 
   .graph {
     flex: unset !important;
+    .graph-title-container {
+      justify-content: flex-start;
+    }
     .graph-title {
       background: linear-gradient(to right,#ff3c00, #ff8f00);
       background-clip: border-box;
@@ -165,11 +168,12 @@ body {
 
   .toc {
     margin-top: 5px;
-    //padding: 15px;
+    padding: 0px;
     //border: 1px solid var(--background-modifier-border);
     //border-radius: 5px;
     //background-color: var(--background-primary);
     box-shadow: none;
+
 }
 .toc-title-container {
   margin-bottom: 10px;
@@ -186,6 +190,21 @@ body {
   background: linear-gradient(to right,#ff3c00, #ff8f00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(0,0,0,0);
+  font: inherit;
+}
+
+.content {
+  max-width: 40%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 90px;
+  position: relative;
+  left: 0%;
+
+  @media (max-width: 800px) {
+      margin-top: 75px;
+  }
 }
 
 
@@ -194,12 +213,16 @@ body {
     //position: fixed;
     max-height: 450px;
     left: 100px;
-    top: 80px;
+    //top: 80px;
     right: 200px;
     width: 400px; /* Adjust as needed */
     overflow-y: auto;
     
-  }}
+  }
+  display: inline-table;
+  position: relative;
+  right:30px; 
+}
 
 .toc-container {
   overflow-y: auto;
@@ -356,7 +379,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 5px;
+    //gap: 5px;
 
     .svg-icon,
     i {
@@ -476,6 +499,8 @@ body {
       -webkit-text-fill-color: rgba(0,0,0,0);
       color: #004d61;
       border-block-width: 2px;
+      min-width: 200px;
+      width: 10%; 
 
       @media (max-width: 800px) {
         margin-right: 10px;
@@ -690,52 +715,87 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
   position: fixed;
 }
 
+#graph-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  position: absolute;
+  top: 115%;
+  cursor: pointer;
+  right: 0px;
+  left: 10px;
+  color: var(--text-accent);
+  z-index: 9;
+  background: linear-gradient(to right,#ff3c00, #ff8f00);
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,0);
+  font: inherit;
+}
+
 .sidebar {
 
   position: fixed;
   top: 100px;
-  right: 50px;
+  //right: 50px;
+  left: 3%;
   height: 100%;
-  min-width: 25px;
+  //min-width: 25px;
   display: flex;
   z-index: 3;
-  max-width: 350px;
+  max-width: 10%;
+  .backlink-card {
+    margin-bottom: 10px;
+  display: table-header-group;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  background: linear-gradient(to right,#ff3c00, #ff8f00);
+    background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,0);
+  color: #ff3c00;
+  }
+  
+  .graph-fs {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 70%;
+    width: calc(100vmin - 100px);
+    min-height: 350px;
+    min-width: 350px;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: block;
+    background-color: var(--background-secondary);
+    border: 1px solid var(--text-accent);
+    border-radius: 5px;
+    padding-top: 5px;
 
+    #link-graph {
+        width: 100%;
+        height: 100%;
+    }
+
+    #graph-controls {
+        margin-top: 10px;
+    }
+
+    .graph-title {
+        display: none;
+    }
+  } 
   .toc-container {
     max-height: unset;
 
     @media (max-width: 1400px) {
       max-height: 320px;
     }
-    .graph-fs {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      height: 70%;
-      width: calc(100vmin - 100px);
-      min-height: 350px;
-      min-width: 350px;
-      transform: translate(-50%, -50%);
-      z-index: 9999;
-      display: block;
-      background-color: var(--background-secondary);
-      border: 1px solid var(--text-accent);
-      border-radius: 5px;
-      padding-top: 5px;
 
-      #link-graph {
-          width: 100%;
-          height: 100%;
-      }
-
-      #graph-controls {
-          margin-top: 10px;
-      }
-
-      .graph-title {
-          display: none;
-      }
-  }
   }
 
   .backlinks {
@@ -745,34 +805,49 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
     font-size: 18px;
     color: var(--text-muted);
     box-shadow: none;
-    background: linear-gradient(to right,#ff00cb,#4b9aff);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(0,0,0,0);
-    
+
+    .backlink-title {
+      margin: 4px 0;
+      font-size: 18px !important;
+      color: var(--h6-color);
+      background: linear-gradient(to right,#ff00cb,#4b9aff);
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: rgba(0,0,0,0);
+    }
+
+
+
 }
 .backlink-list {
   margin-top: 10px;
   list-style: none;
   padding: 0;
   border-left: unset;
+  font: small-caption;
+  font-style: oblique;
+  .markdown-preview-view {
+    font-size: 50px;
+    font-family: var(--font-text);
+    line-height: var(--line-height-normal);
+    width: 100%;
+    height: 100%;
+    padding: var(--file-margins);
+    position: relative;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    color: var(--text-normal);
+    user-select: text;
+    -webkit-user-select: text;
+  }
 
 }
 
 .backlink-card {
   margin-bottom: 10px;
-  display: flex;
+  display: table-header-group;  
   align-items: center;
   gap: 5px;
-}
-
-.backlink-card a {
-  color: var(--text-accent);
-  text-decoration: none;
-}
-
-.backlink-card a:hover {
-  text-decoration: underline;
 }
 }
 
@@ -849,4 +924,17 @@ h1,
   font-family: var(--h1-font);
   font: inherit;
   
+}
+
+/* In custom-style.scss */
+#tooltip-wrapper {
+  display: none !important; /* Hide the tooltip */
+}
+
+.backlinks .internal-link { /* Ensure links in backlinks are clickable */
+  pointer-events: auto;
+}
+
+#link-graph {
+  border-radius:5px 5px 5px 5px;
 }
