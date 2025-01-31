@@ -65,9 +65,8 @@ body {
     font-family: var(--h1-font);
     background: linear-gradient(to right,#ff3c00, #ff8f00);
     background-clip: border-box;
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(0,0,0,0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);
   }
 
 
@@ -150,7 +149,13 @@ body {
 
   .graph {
     flex: unset !important;
-
+    .graph-title {
+      background: linear-gradient(to right,#ff3c00, #ff8f00);
+      background-clip: border-box;
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: rgba(0,0,0,0);
+    }
     @media (max-width: 1490px) {
       display: block !important;
       order: 3;
@@ -431,13 +436,17 @@ body {
   }
 
   nav.navbar {
-    top: 10px;
+    //top: 10px;
     right: 10px;
     left: 10px;
     width: calc(100% - 20px);
-    border-radius: 5px;
+    border-radius: 2px;
     border: var(--cards-border-width) solid var(--background-modifier-border);
     z-index: 99999;
+
+.search-text {
+  display: none;
+}
 
     .navbar-inner {
       h1::before {
@@ -459,6 +468,12 @@ body {
 
     .search-button {
       border-radius: 5px;
+      background: linear-gradient(to right,#ff3c00, #ff8f00);
+      background-clip: border-box;
+      -webkit-background-clip: border-box;
+      -webkit-text-fill-color: rgba(0,0,0,0);
+      color: #004d61;
+      border-block-width: 2px;
 
       @media (max-width: 800px) {
         margin-right: 10px;
@@ -690,6 +705,12 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
     @media (max-width: 1400px) {
       max-height: 320px;
     }
+  .graph-fs {
+    top: 50%;
+    height: 70%;
+
+
+  }
   }
 
   .backlinks {
@@ -700,7 +721,6 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
     color: var(--text-muted);
     box-shadow: none;
     background: linear-gradient(to right,#ff00cb,#4b9aff);
-    background-clip: border-box;
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0,0,0,0);
