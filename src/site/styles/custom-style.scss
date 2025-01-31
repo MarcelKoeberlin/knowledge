@@ -202,10 +202,6 @@ body {
   margin-top: 90px;
   position: relative;
   left: 0%;
-
-  @media (max-width: 800px) {
-      margin-top: 75px;
-  }
 }
 
 
@@ -241,7 +237,10 @@ body {
       transform: none; /* No left shift */
       border-radius: 0;
   }
-
+.content {
+  max-width: 90%;
+  min-width: 5%;
+}
   .toc, .backlinks {
       margin: 0;
       padding: 10px;
@@ -505,6 +504,8 @@ body {
 
       @media (max-width: 800px) {
         margin-right: 10px;
+        width: 20%;
+        min-width: 60px;
       }
     }
   }
