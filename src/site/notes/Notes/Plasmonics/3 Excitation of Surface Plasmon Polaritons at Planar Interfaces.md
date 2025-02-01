@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/3-excitation-of-surface-plasmon-polaritons-at-planar-interfaces/","hide":"true","updated":"2025-01-29T20:57:06.987+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/3-excitation-of-surface-plasmon-polaritons-at-planar-interfaces/","hide":"true","updated":"2025-02-01T21:15:20.060+01:00"}
 ---
 
 Jump back to [[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]].
@@ -23,11 +23,11 @@ Surface plasmon polaritons propagating at the flat interface between a conductor
 
 The projection along the interface of the momentum $k_x = k \sin\theta$ is smaller than the SPP propagation constant $\beta$ even at grazing incidence, prohibiting phase-matching. However, phase-matching can still be achieved in a three-layer system with different dielectric constants. Consider one of the materials to be air ($\varepsilon = 1$), such that the beam being reflected at the insulator-metal interface has an in-plane momentum of $k_x = k\sqrt{\varepsilon}\sin\theta$. The insulator in this case would be a prism. Two configurations are possible:
 
-![Attachments/Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces/IMG-0128220903289.webp|700](/img/user/Attachments/Notes/Plasmonics/3%20Excitation%20of%20Surface%20Plasmon%20Polaritons%20at%20Planar%20Interfaces/IMG-0128220903289.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=59&rect=89,106,346,186|•]]
+![Attachments/Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces/IMG-0201211519902.webp|700](/img/user/Attachments/Notes/Plasmonics/3%20Excitation%20of%20Surface%20Plasmon%20Polaritons%20at%20Planar%20Interfaces/IMG-0201211519902.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=59&rect=89,106,346,186|•]]
 
 This momentum is sufficient to excite SPPs at the interface between the metal and the lower-index dielectric, air in this case. In this way, SPPs propagating between the light lines of air and the higher-index dielectric (prism) can be excited. This excitation manifests as a minimum in the reflected beam intensity. Note that this phase-matching is impossible at the prism/metal interface since the respective SPP dispersion lies outside the prism light cone (there is no crossing of the curves):
 
-![Attachments/Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces/IMG-0128220903331.webp|700](/img/user/Attachments/Notes/Plasmonics/3%20Excitation%20of%20Surface%20Plasmon%20Polaritons%20at%20Planar%20Interfaces/IMG-0128220903331.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=60&rect=111,470,332,616|•]]
+![Attachments/Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces/IMG-0201211519936.webp|700](/img/user/Attachments/Notes/Plasmonics/3%20Excitation%20of%20Surface%20Plasmon%20Polaritons%20at%20Planar%20Interfaces/IMG-0201211519936.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=60&rect=111,470,332,616|•]]
 
 This coupling scheme is also known as **attenuated total internal reflection** and involves tunneling of the fields of the excitation beam to the metal/air interface. The two configurations are called the **Kretschmann method** (left) and the **Otto configuration** (right). 
 
@@ -55,7 +55,7 @@ $$
 
 is fulfilled, where $g = 2\pi/a$ is the reciprocal grating vector, and $\nu = 1, 2, 3, \dots$. The excitation of SPPs is again indicated by a reflection minimum.
 
-![Attachments/Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces/IMG-0128220903382.webp|700](/img/user/Attachments/Notes/Plasmonics/3%20Excitation%20of%20Surface%20Plasmon%20Polaritons%20at%20Planar%20Interfaces/IMG-0128220903382.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=61&rect=126,88,310,221|•]]
+![Attachments/Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces/IMG-0201211519967.webp|700](/img/user/Attachments/Notes/Plasmonics/3%20Excitation%20of%20Surface%20Plasmon%20Polaritons%20at%20Planar%20Interfaces/IMG-0201211519967.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=61&rect=126,88,310,221|•]]
 
 The reverse process is also possible: SPPs propagating along a surface modulated with a grating can couple to light and radiate. The grating need not be milled directly into the metal surface; it can also consist of dielectric material. By designing the grating shape, the propagation direction can be influenced, and even focusing can be achieved.
 
@@ -73,7 +73,7 @@ with the momentum components $\Delta k_x$ provided by scattering, can also be fu
 
 Another approach uses a microscopic objective of high numerical aperture, which ensures a large angular spread of the focused excitation beam, including angles $\theta > \theta_c$ greater than the critical angle of total internal reflection at a glass/air interface:
 
-![Attachments/Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces/IMG-0128220903459.webp|500](/img/user/Attachments/Notes/Plasmonics/3%20Excitation%20of%20Surface%20Plasmon%20Polaritons%20at%20Planar%20Interfaces/IMG-0128220903459.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=64&rect=112,117,331,239|•]]
+![Attachments/Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces/IMG-0201211519998.webp|500](/img/user/Attachments/Notes/Plasmonics/3%20Excitation%20of%20Surface%20Plasmon%20Polaritons%20at%20Planar%20Interfaces/IMG-0201211519998.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=64&rect=112,117,331,239|•]]
 
 In this way, wave vectors $k_x = \beta$ are available for phase-matching for SPPs at the metal/air interface at the corresponding angle:
 
@@ -83,7 +83,7 @@ $$
 
 The excited SPPs will radiate back into the glass substrate as leakage radiation at an angle $\theta_{\text{SPP}} > \theta_c$. The traced path of the excited SPPs for s- and p-polarisation is shown below:
 
-![Attachments/Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces/IMG-0128220903512.webp|500](/img/user/Attachments/Notes/Plasmonics/3%20Excitation%20of%20Surface%20Plasmon%20Polaritons%20at%20Planar%20Interfaces/IMG-0128220903512.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=65&rect=143,528,291,613|•]]
+![Attachments/Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces/IMG-0201211520028.webp|500](/img/user/Attachments/Notes/Plasmonics/3%20Excitation%20of%20Surface%20Plasmon%20Polaritons%20at%20Planar%20Interfaces/IMG-0201211520028.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=65&rect=143,528,291,613|•]]
 
 As shown earlier, the second image (s-polarisation) has no trace since there are no surface plasmon polaritons for this polarisation.
 

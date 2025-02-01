@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/1-electromagnetics-of-metals/","hide":"true","updated":"2025-01-29T20:56:44.814+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/1-electromagnetics-of-metals/","hide":"true","updated":"2025-02-01T21:15:19.653+01:00"}
 ---
 
 Jump back to [[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]].
@@ -255,7 +255,7 @@ $$
 
 Comparing this description to the measured dielectric function of gold shows that the applicability of the free-electron model in the visible spectrum breaks down due to interband transitions:
 
-![Attachments/Notes/Plasmonics/1 Electromagnetics of Metals/IMG-0128220913721.webp|700](/img/user/Attachments/Notes/Plasmonics/1%20Electromagnetics%20of%20Metals/IMG-0128220913721.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=33&rect=46,494,390,614|•]]
+![Attachments/Notes/Plasmonics/1 Electromagnetics of Metals/IMG-0201211519487.webp|700](/img/user/Attachments/Notes/Plasmonics/1%20Electromagnetics%20of%20Metals/IMG-0201211519487.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=33&rect=46,494,390,614|•]]
 
 The dielectric function of the free electron plasma is closely related to the classical Drude model for the AC conductivity $\sigma(\omega)$ of metals:
 
@@ -282,12 +282,12 @@ $$
 $$
 
 This relation is plotted here:
-![Attachments/Notes/Plasmonics/1 Electromagnetics of Metals/IMG-0128220913758.webp|700](/img/user/Attachments/Notes/Plasmonics/1%20Electromagnetics%20of%20Metals/IMG-0128220913758.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&rect=115,101,334,248|•]]
+![Attachments/Notes/Plasmonics/1 Electromagnetics of Metals/IMG-0201211519553.webp|700](/img/user/Attachments/Notes/Plasmonics/1%20Electromagnetics%20of%20Metals/IMG-0201211519553.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&rect=115,101,334,248|•]]
 
 For frequencies below the plasma frequency, the propagation of transverse electromagnetic waves is forbidden inside the metal plasma. For larger frequencies, however, the plasma supports transverse waves propagating with a group velocity $v_g = d\omega/dK < c$. Noting that $\varepsilon(K=0, \omega_p) = 0$, the excitation must correspond to a collective longitudinal mode. At the plasma frequency, the electric field is a pure depolarisation field.
 
 The physical significance of this excitation at the plasma frequency can be understood by considering the collective longitudinal oscillation of the conduction electron gas against the fixed positive background of the ion core in a plasma slab:
-![Attachments/Notes/Plasmonics/1 Electromagnetics of Metals/IMG-0128220913791.webp|700](/img/user/Attachments/Notes/Plasmonics/1%20Electromagnetics%20of%20Metals/IMG-0128220913791.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=35&rect=103,535,333,620|•]]
+![Attachments/Notes/Plasmonics/1 Electromagnetics of Metals/IMG-0201211519585.webp|700](/img/user/Attachments/Notes/Plasmonics/1%20Electromagnetics%20of%20Metals/IMG-0201211519585.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=35&rect=103,535,333,620|•]]
 
 A collective displacement of the electron cloud leads to a surface charge density at the slab boundaries. This establishes a homogeneous electric field inside the slab. Therefore, the displaced electrons experience a restoring force, and the plasma frequency is the natural frequency of a free oscillation of the electron sea. This assumes all electrons move in phase, meaning the plasma frequency corresponds to the oscillation frequency in the long-wavelength limit where $K = 0$. 
 
@@ -304,7 +304,7 @@ $$
 [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&selection=53,0,53,37|•]]
 
 As already mentioned, the dielectric function of the Drude model adequately describes the optical response of metals only for photons below the transition energy between electronic bands. For some noble metals, interband effects already occur around $1 \, \text{eV}$ ($\lambda \approx 1 \, \mu \mathrm{m}$), for example, for silver:
-![Attachments/Notes/Plasmonics/1 Electromagnetics of Metals/IMG-0128220913833.webp|700](/img/user/Attachments/Notes/Plasmonics/1%20Electromagnetics%20of%20Metals/IMG-0128220913833.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&rect=51,99,394,215|•]]
+![Attachments/Notes/Plasmonics/1 Electromagnetics of Metals/IMG-0201211519623.webp|700](/img/user/Attachments/Notes/Plasmonics/1%20Electromagnetics%20of%20Metals/IMG-0201211519623.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&rect=51,99,394,215|•]]
 
 The red dots are experimentally obtained results, while the line is a fit of the Drude model. Clearly, the model is not adequate to describe either the real or imaginary part of the dielectric function at high frequencies, and in the case of gold, its validity already breaks down close to the visible range.
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/1-signals-and-systems/","hide":"true","updated":"2025-01-29T20:58:34.647+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/1-signals-and-systems/","hide":"true","updated":"2025-02-01T21:15:20.612+01:00"}
 ---
 
 Jump back to [[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]].
@@ -160,15 +160,15 @@ The unit impulse should be considered an idealization of an infinitely short pul
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=72&selection=144,0,150,7|•]]
 
 An important idea is the concept of interconnecting systems since many real systems are built as interconnections of several subsystems. By breaking down a system into its interconnection of simpler subsystems, it may be possible to synthesize complex systems out of simpler, basic building blocks. The most frequently encountered connections are the _series/cascade_ and _parallel_ types:
-![Attachments/Notes/Signals and Systems/1 Signals and Systems/IMG-0128215547941.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/1%20Signals%20and%20Systems/IMG-0128215547941.webp)
+![Attachments/Notes/Signals and Systems/1 Signals and Systems/IMG-0201211520478.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/1%20Signals%20and%20Systems/IMG-0201211520478.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=73&rect=88,274,456,600|•]]
 
 The symbol $\bigoplus$ denotes addition, so that the output of the parallel system is the sum of the outputs of systems 1 and 2. Another important type is the feedback interconnection:
-![Attachments/Notes/Signals and Systems/1 Signals and Systems/IMG-0128215547975.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/1%20Signals%20and%20Systems/IMG-0128215547975.webp)
+![Attachments/Notes/Signals and Systems/1 Signals and Systems/IMG-0201211520513.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/1%20Signals%20and%20Systems/IMG-0201211520513.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=54,505,325,597|•]]
 
 The output of system 1 is the input to system 2, while the output of system 2 is fed back and added to the external input to produce the actual input to system 1. These types of connections often arise in real systems. Consider figure (a) and note that it is equivalent to (b):
-![Attachments/Notes/Signals and Systems/1 Signals and Systems/IMG-0128215548001.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/1%20Signals%20and%20Systems/IMG-0128215548001.webp)
+![Attachments/Notes/Signals and Systems/1 Signals and Systems/IMG-0201211520551.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/1%20Signals%20and%20Systems/IMG-0201211520551.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=79,82,323,316|•]]
 
 ---
@@ -192,7 +192,7 @@ $$
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=76&selection=165,0,173,7|•]]
 
 A system is said to be invertible if distinct inputs produce distinct outputs. An inverse system exists such that:
-![Attachments/Notes/Signals and Systems/1 Signals and Systems/IMG-0128215548030.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/1%20Signals%20and%20Systems/IMG-0128215548030.webp)
+![Attachments/Notes/Signals and Systems/1 Signals and Systems/IMG-0201211520587.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/1%20Signals%20and%20Systems/IMG-0201211520587.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&rect=106,565,359,612|•]]
 
 Invertibility is important in contexts like encoding and decoding systems, such as in communication or cryptography. For example, lossless coding requires that the encoder must be invertible.

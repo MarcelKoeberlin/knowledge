@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/3-fourier-series-representation-of-periodic-signals/","hide":"true","updated":"2025-01-29T20:58:54.506+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/3-fourier-series-representation-of-periodic-signals/","hide":"true","updated":"2025-02-01T21:15:21.189+01:00"}
 ---
 
 Jump back to [[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]].
@@ -408,9 +408,9 @@ Ideal filters in continuous and discrete time differ because discrete-time filte
 
 Visual examples of ideal filters:
 - Continuous-time low-pass, high-pass, and bandpass:
-  ![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0128215558551.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0128215558551.webp)
+  ![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0201211520803.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0201211520803.webp)
 - Discrete-time low-pass, high-pass, and bandpass:
-  ![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0128215558578.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0128215558578.webp)
+  ![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0201211520841.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0201211520841.webp)
 
 ---
 ## 3.9 Important Examples: Continuous-Time 
@@ -421,7 +421,7 @@ Visual examples of ideal filters:
 
 Electrical circuits are commonly used to implement continuous-time filtering operations. One of the simplest examples is the first-order RC circuit:
 
-![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0128215558611.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0128215558611.webp)
+![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0201211520887.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0201211520887.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=271&rect=146,482,300,597|•]]
 
 In this circuit, the output signal can either be the capacitor voltage $v_c(t)$ or the resistor voltage. If we take the capacitor voltage as the output, the relationship between input and output is described by the differential equation:
@@ -435,7 +435,7 @@ H(i \omega) = \frac{1}{1 + RC \cdot i \omega}.
 $$
 
 The magnitude and phase of $H(i \omega)$ are as follows:
-![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0128215558660.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0128215558660.webp)
+![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0201211520932.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0201211520932.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&rect=104,317,440,603|•]]
 
 For $\omega \approx 0$, $|H(i\omega)| \approx 1$, indicating that low frequencies pass with minimal attenuation. For higher $\omega$, $|H(i\omega)|$ decreases, making this circuit a nonideal low-pass filter.
@@ -448,7 +448,7 @@ $$
 s(t) = \left[1 - e^{-t / RC}\right] u(t).
 $$
 
-![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0128215558690.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0128215558690.webp)
+![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0201211520973.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0201211520973.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=273&rect=73,344,313,604|•]]
 
 There is a trade-off between frequency response and time-domain behavior. A larger $RC$ enhances low-pass filtering but results in slower step response.
@@ -468,7 +468,7 @@ G(i\omega) = \frac{i \omega RC}{1 + i \omega RC}.
 $$
 
 The magnitude and phase of $G(i\omega)$ are shown below:
-![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0128215558721.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0128215558721.webp)
+![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0201211521017.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0201211521017.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=274&rect=128,320,467,606|•]]
 
 The high-pass filter attenuates low frequencies and allows high frequencies to pass, particularly for $|\omega| \gg 1 / RC$.
@@ -497,11 +497,11 @@ H(e^{i\omega}) = \frac{1}{1 - a e^{-i\omega}}.
 $$
 
 For $a = 0.6$, the magnitude and phase of $H(e^{i\omega})$ are shown below:
-![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0128215558754.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0128215558754.webp)
+![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0201211521067.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0201211521067.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=124,371,345,631|•]]
 
 For $a = -0.6$, the magnitude and phase are as follows:
-![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0128215558790.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0128215558790.webp)
+![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0201211521111.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0201211521111.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=123,53,345,356|•]]
 
 - **Low-pass behavior**: For $a > 0$, the system acts as a low-pass filter.
@@ -533,7 +533,7 @@ H(e^{i\omega}) = \frac{1}{N + M + 1} e^{i \omega [(N - M) / 2]} \frac{\sin[\omeg
 $$
 
 The magnitude of $H(e^{i\omega})$ for $N + M + 1 = 33$ and $N + M + 1 = 65$ is shown:
-![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0128215558817.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0128215558817.webp)
+![Attachments/Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals/IMG-0201211521154.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/3%20Fourier%20Series%20Representation%20of%20Periodic%20Signals/IMG-0201211521154.webp)
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=279&rect=88,179,456,458|•]]
 
 ---

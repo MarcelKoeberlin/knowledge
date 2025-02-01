@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-01-31T22:08:20.495+01:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-02-01T21:15:18.867+01:00"}
 ---
 
 Jump back to [[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]].
@@ -17,11 +17,11 @@ Jump back to [[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|ch
 
 The fundamental principle of high-harmonic generation (**HHG**) is straightforward:
 
-![Attachments/Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation/IMG-0131215944315.webp|700](/img/user/Attachments/Notes/Attosecond%20Physics/1%20Fundamentals%20of%20High-Order%20Harmonic%20Generation/IMG-0131215944315.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=213&rect=151,538,286,640|•]]
+![Attachments/Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation/IMG-0201211518682.webp|700](/img/user/Attachments/Notes/Attosecond%20Physics/1%20Fundamentals%20of%20High-Order%20Harmonic%20Generation/IMG-0201211518682.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=213&rect=151,538,286,640|•]]
 
 An intense laser beam is focused into a gas jet or gas cell, typically at pressures ranging from a few millibars to a few bar, with peak intensities on the order of $10^{14}$ W/cm$^2$. When this intensity is sufficiently high, HHG occurs along the beam propagation axis. A filter is used to block the co-propagating, intense infrared driving laser (as HHG is not very efficient). The recorded harmonic spectrum schematically resembles the following:
 
-![Attachments/Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation/IMG-0131215944383.webp|700](/img/user/Attachments/Notes/Attosecond%20Physics/1%20Fundamentals%20of%20High-Order%20Harmonic%20Generation/IMG-0131215944383.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=213&rect=301,540,435,636|•]]
+![Attachments/Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation/IMG-0201211518718.webp|700](/img/user/Attachments/Notes/Attosecond%20Physics/1%20Fundamentals%20of%20High-Order%20Harmonic%20Generation/IMG-0201211518718.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=213&rect=301,540,435,636|•]]
 
 At low harmonics, the yield decreases rapidly. Beyond this, the spectrum forms a broad plateau, which extends to a cutoff energy approximately given by:
 
@@ -37,7 +37,7 @@ where $U_p = \frac{e^2 E_0^2}{4m_e\omega_0^2}$ is the ponderomotive energy, and 
 
 Surprisingly, HHG can be understood using a simple, semi-classical three-step model, where the only non-classical aspect is the tunneling ionisation:
 
-![Attachments/Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation/IMG-0131215944454.webp|700](/img/user/Attachments/Notes/Attosecond%20Physics/1%20Fundamentals%20of%20High-Order%20Harmonic%20Generation/IMG-0131215944454.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=581&rect=358,67,501,519|•]]
+![Attachments/Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation/IMG-0201211518748.webp|700](/img/user/Attachments/Notes/Attosecond%20Physics/1%20Fundamentals%20of%20High-Order%20Harmonic%20Generation/IMG-0201211518748.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=581&rect=358,67,501,519|•]]
 
 4. An intense laser field distorts the atomic potential, allowing an electron to tunnel ionise.
 5. The freed electron is accelerated by the oscillating laser field, gaining kinetic energy.
@@ -51,7 +51,7 @@ $$
 
 Assuming $\hbar\omega = I_p + E_k$, this model predicts two distinct classes of trajectories—long and short. These trajectories yield the same recombination energy but have different excursion times:
 
-![Attachments/Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation/IMG-0131215944516.webp|700](/img/user/Attachments/Notes/Attosecond%20Physics/1%20Fundamentals%20of%20High-Order%20Harmonic%20Generation/IMG-0131215944516.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=580&rect=147,48,480,410|•]]
+![Attachments/Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation/IMG-0201211518779.webp|700](/img/user/Attachments/Notes/Attosecond%20Physics/1%20Fundamentals%20of%20High-Order%20Harmonic%20Generation/IMG-0201211518779.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=580&rect=147,48,480,410|•]]
 
 The black and red curves represent long and short trajectories, respectively, while the lower figure illustrates the motion amplitude.
 
@@ -99,7 +99,7 @@ However, harmonics from long trajectories generally suffer from poor phase match
 
 Since HHG is a coherent nonlinear process, phase matching is essential for efficient harmonic emission. If phase matching is achieved, harmonic intensity grows quadratically with the number of atoms:
 
-![Attachments/Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation/IMG-0131215944587.webp|700](/img/user/Attachments/Notes/Attosecond%20Physics/1%20Fundamentals%20of%20High-Order%20Harmonic%20Generation/IMG-0131215944587.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=583&rect=379,78,504,381|•]]
+![Attachments/Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation/IMG-0201211518809.webp|700](/img/user/Attachments/Notes/Attosecond%20Physics/1%20Fundamentals%20of%20High-Order%20Harmonic%20Generation/IMG-0201211518809.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=583&rect=379,78,504,381|•]]
 
 The harmonic field $E_q(r, z, t)$ and polarisation $P_q(r, z, t)$ can be expressed as:
 
@@ -137,7 +137,7 @@ $$
 
 where $W^{\prime}(\omega)$ is the **macroscopic wave packet** (**MWP**), distinguishing it from the single-atom response, and $d(\omega)$ is the photo-recombination transition dipole moment of a single atom. This assumption has been tested, for example, by evaluating the MWP in a hydrogen-like system.
 
-![Attachments/Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation/IMG-0131215944692.webp|700](/img/user/Attachments/Notes/Attosecond%20Physics/1%20Fundamentals%20of%20High-Order%20Harmonic%20Generation/IMG-0131215944692.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=236&rect=122,367,484,640|•]]
+![Attachments/Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation/IMG-0201211518840.webp|700](/img/user/Attachments/Notes/Attosecond%20Physics/1%20Fundamentals%20of%20High-Order%20Harmonic%20Generation/IMG-0201211518840.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=236&rect=122,367,484,640|•]]
 
 The MWP is primarily determined by the laser parameters and focusing conditions, and it is generally considered independent of the target gas. This is evident in (a) and (b), where reducing the peak intensity does not significantly alter the agreement. Furthermore, even in cases with poor phase matching, as seen in (c), the agreement holds. Panels (d) and (e) show similar results for Xe and Ne targets, reinforcing that if the equation is valid and the MWP depends only on the laser, the modulus square of the atomic transition dipole can be extracted.
 
