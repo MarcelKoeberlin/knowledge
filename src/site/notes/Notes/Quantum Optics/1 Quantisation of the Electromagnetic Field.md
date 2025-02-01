@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/quantum-optics/1-quantisation-of-the-electromagnetic-field/","hide":"true","updated":"2025-01-30T23:32:34.600+01:00"}
+{"dg-publish":true,"permalink":"/notes/quantum-optics/1-quantisation-of-the-electromagnetic-field/","hide":"true","updated":"2025-02-01T14:54:27.687+01:00"}
 ---
 
 Jump back to [[Notes/Quantum Optics/Quantum Optics#Table of Contents\|chapter selection]].
@@ -83,15 +83,9 @@ $$
 $$
 The effect is that we can now divide the electric field equation into two parts:
 1. The part parallel to $\textbf{k}$: 
-	$$
-	\tilde{\mathbf{E}}_{\text {perp }}=-\frac{\partial \tilde{\mathbf{A}}}{\partial t}
-	$$
-
+	$$ \tilde{\mathbf{E}}_{\text {perp }}=-\frac{\partial \tilde{\mathbf{A}}}{\partial t} $$
 2. The part perpendicular to $\textbf{k}$: 
-
-$$
-\tilde{\mathbf{E}}_{\text {perp }}=-\frac{\partial \tilde{\mathbf{A}}}{\partial t}
-$$
+	$$ \tilde{\mathbf{E}}_{\text {perp }}=-\frac{\partial \tilde{\mathbf{A}}}{\partial t} $$
 
 Both these results are general meaning that they hold in the presence of charges too. Consider as well the first equation of the Maxwell equations in the presence of a charge density: 
 
