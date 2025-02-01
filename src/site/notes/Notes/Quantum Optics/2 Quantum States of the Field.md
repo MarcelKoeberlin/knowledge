@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/quantum-optics/2-quantum-states-of-the-field/","hide":"true","updated":"2025-01-30T23:44:43.172+01:00"}
+{"dg-publish":true,"permalink":"/notes/quantum-optics/2-quantum-states-of-the-field/","hide":"true","updated":"2025-02-01T15:01:35.103+01:00"}
 ---
 
 Jump back to [[Notes/Quantum Optics/Quantum Optics#Table of Contents\|chapter selection]].
@@ -128,23 +128,13 @@ $$
 The introduction of the coherent state to optical fields is one of the starting points of quantum optics. They have a number of useful and important properties:
 
 - Normalisation:
-	$$
-	\langle\alpha \mid \alpha\rangle=e^{-|\alpha|^2} \sum_{n=0}^{\infty} \frac{\alpha^{* n} \alpha^n}{n!}=1
-	$$
-- They are an overcomplete set, e.g. they span the whole Hilbert space, but are not orthogonal
-	
-	$$
-	\langle\alpha \mid \beta\rangle=e^{-\frac{1}{2}|\alpha|^2-\frac{1}{2}|\beta|^2+\alpha^* \beta} \Rightarrow|\langle\alpha \mid \beta\rangle|^2=e^{-|\alpha-\beta|^2}.
-	$$
+	$$ \langle\alpha \mid \alpha\rangle=e^{-|\alpha|^2} \sum_{n=0}^{\infty} \frac{\alpha^{* n} \alpha^n}{n!}=1 $$
+- They are an overcomplete set, e.g. they span the whole Hilbert space, but are not orthogonal 
+	$$ \langle\alpha \mid \beta\rangle=e^{-\frac{1}{2}|\alpha|^2-\frac{1}{2}|\beta|^2+\alpha^* \beta} \Rightarrow|\langle\alpha \mid \beta\rangle|^2=e^{-|\alpha-\beta|^2}. $$
 - They are eigenstates of the annihilation operator:
-
-	$$
-	\hat{a}|\alpha\rangle=e^{-\frac{1}{2}|\alpha|^2} \sum_{n=1}^{\infty} \frac{\alpha^n}{\sqrt{(n-1)!}}|n-1\rangle=\alpha|\alpha\rangle.
-	$$
+	$$ \hat{a}|\alpha\rangle=e^{-\frac{1}{2}|\alpha|^2} \sum_{n=1}^{\infty} \frac{\alpha^n}{\sqrt{(n-1)!}}|n-1\rangle=\alpha|\alpha\rangle. $$
 - They are left eigenstates of the creation operator
-	$$
-	(\hat{a}|\alpha\rangle)^{\dagger}=\langle\alpha| \hat{a}^{\dagger}=\langle\alpha| \alpha^*.
-	$$
+	$$ (\hat{a}|\alpha\rangle)^{\dagger}=\langle\alpha| \hat{a}^{\dagger}=\langle\alpha| \alpha^*. $$
 
 With these properties at hand, we may find a number of relevant statistical quantities. Assuming we have the ability to measure the photon number, we obtain for the mean 
 
@@ -195,7 +185,7 @@ $$
 
 ### 2.3.1 The Husimi-Q Function
 
-As we have seen, the coherent state is a minimum uncertainty state which have their mean at a particular value of  and . This provides a means of plotting states which is called the Husimi-Q function, often shortened to Q function. This is defined for a pure state  as
+As we have seen, the coherent state is a minimum uncertainty state which have their mean at a particular value of $X$ and $Y$. This provides a means of plotting states which is called the Husimi-Q function, often shortened to Q function. This is defined for a pure state  as
 
 $$
 Q(|\Psi\rangle\langle\Psi|, \beta)=\frac{1}{\pi}|\langle\beta \mid \Psi\rangle|^2,
