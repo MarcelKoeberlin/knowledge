@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/9-identical-quantum-particles-formalism-of-second-quantisation/","hide":"true","updated":"2025-01-29T21:00:54.213+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/9-identical-quantum-particles-formalism-of-second-quantisation/","hide":"true","updated":"2025-02-01T15:04:23.602+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -630,41 +630,41 @@ $$
 In order to evaluate the mean value $\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q} s^{\prime}}^{\dagger} \widehat{\boldsymbol{q}}_{\boldsymbol{q}^{\prime} s^{\prime}} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle$ we use the same technique as presented as earlier. Evaluation of $\left\langle\widehat{a}_{\boldsymbol{k s}}^{\dagger} \widehat{\boldsymbol{q}}_{s^{\prime}}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s^{\prime}} \widehat{\boldsymbol{k}}_{\boldsymbol{k}^{\prime} s}\right\rangle$: We separate the task into two cases:
 1. $s=s\prime$ 
 
-	$$
-	\begin{align*}
-	\begin{aligned}
-	\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle 
-	&= \frac{1}{Z} \operatorname{tr}\left[e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{\boldsymbol{q}}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right] \\
-	&= \frac{1}{Z} \operatorname{tr}\left[e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{k} s}^{\dagger} e^{\beta \mathcal{H}^{\prime}} e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right] \\
-	&= \frac{e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}}{Z} \operatorname{tr}\left[e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s} \widehat{a}_{\boldsymbol{k} s}^{\dagger}\right] \\
-	&= \frac{e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}}{Z} \operatorname{tr}\left[e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s}\left(\delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}-\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right)\right] \\
-	&= \frac{e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}}{Z} \operatorname{tr}\left[e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s}\right] \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}} \\
-	&\quad - \frac{e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}}{Z} \operatorname{tr}\left[e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right] \\
-	&= e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle \delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}} \\
-	&\quad - \frac{e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}}{Z} \operatorname{tr}\left[e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{q} s}^{\dagger}\left(\delta_{\boldsymbol{q}^{\prime}, \boldsymbol{k}}-\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s}\right) \widehat{a}_{\boldsymbol{k}^{\prime} s}\right] \\
-	&= e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle\left(\delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}-\delta_{\boldsymbol{q}^{\prime}, \boldsymbol{k}} \delta_{\boldsymbol{q}, \boldsymbol{k}^{\prime}}\right) \\
-	&\quad + e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle.
-	\end{aligned}
-	\end{align*}
-	$$
-	From this we find
-	$$
-	\begin{align*}
-	\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle=\frac{1}{e^{\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}+1}\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle\left(\delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}-\delta_{\boldsymbol{q}^{\prime}, \boldsymbol{k}} \delta_{\boldsymbol{q}, \boldsymbol{k}^{\prime}}\right)=\left\langle\widehat{n}_{\boldsymbol{k}, s}\right\rangle\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle\left(\delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}-\delta_{\boldsymbol{q}^{\prime}, \boldsymbol{k}} \delta_{\boldsymbol{q}, \boldsymbol{k}^{\prime}}\right) .
-	\end{align*}
-	$$
-2.  $s \neq s^{\prime}$ :
-	$$
-	\begin{align*}
-	\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime}}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s^{\prime}} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle=e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}\left\{\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle \delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}+\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime}}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s^{\prime}} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle\right\}
-	\end{align*}
-	$$
-	analogous to case (1), such that
-	$$
-	\begin{align*}
-	\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q} s^{\prime}}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s^{\prime}} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle=\left\langle\widehat{n}_{\boldsymbol{k}, s}\right\rangle\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle \delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}.
-	\end{align*}
-	$$
+$$
+\begin{align*}
+\begin{aligned}
+\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle 
+&= \frac{1}{Z} \operatorname{tr}\left[e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{\boldsymbol{q}}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right] \\
+&= \frac{1}{Z} \operatorname{tr}\left[e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{k} s}^{\dagger} e^{\beta \mathcal{H}^{\prime}} e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right] \\
+&= \frac{e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}}{Z} \operatorname{tr}\left[e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s} \widehat{a}_{\boldsymbol{k} s}^{\dagger}\right] \\
+&= \frac{e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}}{Z} \operatorname{tr}\left[e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s}\left(\delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}-\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right)\right] \\
+&= \frac{e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}}{Z} \operatorname{tr}\left[e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s}\right] \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}} \\
+&\quad - \frac{e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}}{Z} \operatorname{tr}\left[e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right] \\
+&= e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle \delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}} \\
+&\quad - \frac{e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}}{Z} \operatorname{tr}\left[e^{-\beta \mathcal{H}^{\prime}} \widehat{a}_{\boldsymbol{q} s}^{\dagger}\left(\delta_{\boldsymbol{q}^{\prime}, \boldsymbol{k}}-\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s}\right) \widehat{a}_{\boldsymbol{k}^{\prime} s}\right] \\
+&= e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle\left(\delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}-\delta_{\boldsymbol{q}^{\prime}, \boldsymbol{k}} \delta_{\boldsymbol{q}, \boldsymbol{k}^{\prime}}\right) \\
+&\quad + e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle.
+\end{aligned}
+\end{align*}
+$$
+From this we find
+$$
+\begin{align*}
+\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle=\frac{1}{e^{\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}+1}\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle\left(\delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}-\delta_{\boldsymbol{q}^{\prime}, \boldsymbol{k}} \delta_{\boldsymbol{q}, \boldsymbol{k}^{\prime}}\right)=\left\langle\widehat{n}_{\boldsymbol{k}, s}\right\rangle\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle\left(\delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}-\delta_{\boldsymbol{q}^{\prime}, \boldsymbol{k}} \delta_{\boldsymbol{q}, \boldsymbol{k}^{\prime}}\right) .
+\end{align*}
+$$
+2. $s \neq s^{\prime}$ :
+$$
+\begin{align*}
+\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime}}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s^{\prime}} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle=e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}\left\{\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle \delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}+\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime}}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s^{\prime}} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle\right\}
+\end{align*}
+$$
+analogous to case (1), such that
+$$
+\begin{align*}
+\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q} s^{\prime}}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s^{\prime}} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle=\left\langle\widehat{n}_{\boldsymbol{k}, s}\right\rangle\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle \delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}.
+\end{align*}
+$$
 
 From this it follows straightforwardly for $s=s^{\prime}$,
 $$
@@ -679,7 +679,7 @@ g_{s s}\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)= \begin{cases}1-\left
 \end{align*}
 $$
 
-![Attachments/Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation/IMG-0128212150091.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/9%20Identical%20Quantum%20Particles%20-%20Formalism%20of%20Second%20Quantisation/IMG-0128212150091.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=195&rect=90,606,503,754|•]]
+![Attachments/Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation/IMG-0201150232344.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/9%20Identical%20Quantum%20Particles%20-%20Formalism%20of%20Second%20Quantisation/IMG-0201150232344.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=195&rect=90,606,503,754|•]]
 
 The case of $s \neq s^{\prime}$ leads to $g_{s s^{\prime}}(\boldsymbol{r})=1$, i.e. there is no correlation between $s=1 / 2$-Fermions of opposite spin. The probability to find another Fermion around the position of a Fermion at $\boldsymbol{r}$ corresponds to
 $$
@@ -758,7 +758,7 @@ $$
 
 The probability of finding two Bosons at the same position is twice as large as for long distances:
 
-![Attachments/Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation/IMG-0128212150119.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/9%20Identical%20Quantum%20Particles%20-%20Formalism%20of%20Second%20Quantisation/IMG-0128212150119.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=197&rect=178,579,403,749|•]]
+![Attachments/Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation/IMG-0201150232449.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/9%20Identical%20Quantum%20Particles%20-%20Formalism%20of%20Second%20Quantisation/IMG-0201150232449.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=197&rect=178,579,403,749|•]]
 
 Thus, in contrast to Fermions, Bosons like to cluster together.
 The radius of bunching of the Bosons in the limit $T \gg T_{c}$ is of order $\lambda$ and shrinks with increasing $T$ (classical limit).
@@ -906,7 +906,7 @@ $$
 
 The single-particle correlation function decays exponentially for large distances:
 
-![Attachments/Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation/IMG-0128212150156.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/9%20Identical%20Quantum%20Particles%20-%20Formalism%20of%20Second%20Quantisation/IMG-0128212150156.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=199&rect=186,393,410,532|•]]
+![Attachments/Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation/IMG-0201150232566.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/9%20Identical%20Quantum%20Particles%20-%20Formalism%20of%20Second%20Quantisation/IMG-0201150232566.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=199&rect=186,393,410,532|•]]
 
 This behaviour is valid for $T>T_{c}$ where $\mu<0$. For $T<T_{c}$ the chemical potential lies at the lowest single-particle state, i.e. $\mu=0$ for free Bosons, such that $k_{0}=0$. For the long-distance behaviour we conclude that the correlation function goes to zero like $|\boldsymbol{R}|^{-1}$. However, this is not true, since our integral approach neglects the macroscopic occupation of the $\boldsymbol{k}=0$ state. Thus, we should use
 $$
