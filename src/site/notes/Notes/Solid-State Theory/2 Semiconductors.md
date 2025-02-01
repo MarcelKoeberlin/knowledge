@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/2-semiconductors/","hide":"true","updated":"2025-01-29T20:59:31.071+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/2-semiconductors/","hide":"true","updated":"2025-02-01T15:11:40.021+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -511,47 +511,47 @@ The arguably most important application of semiconductors is the transistor, an 
 
 The voltage between the Si semiconductor and the metal electrode is called gate voltage $U_{G}$. The insulating $\mathrm{SiO}_{2}$ layer ensures that no currents flow between the electrode and the semiconductor when a gate voltage is applied. The switchable currents in the MOSFET flow between the source and the drain which are heavily n-doped semiconductor regions. Depending on the applied gate voltage $U_{G}$ three different regimes can be realised:
 
-1. $U_{G}=0$
-	Essentially no current flows, as the conduction band of the p-doped semiconductor is empty. The doping states (acceptor levels) are occupied by thermal excitations. 
+- $U_{G}=0$
+Essentially no current flows, as the conduction band of the p-doped semiconductor is empty. The doping states (acceptor levels) are occupied by thermal excitations. 
 
-2. $0<\frac{e U_{G}}{E_{g}}<1$
-	In this case, the energy of the Si bands is lowered, such that in a narrow region within the p-doped Si the acceptor levels drops below the chemical potential and the states are filled with electrons (or, equivalently, holes are removed). This depletion layer has the extension $d$ measured from the $\mathrm{Si}-\mathrm{SiO}_{2}$ interface. The negative charge of the acceptors leads to a position-dependent potential $\Phi(z)$, where $z$ is the distance from the boundary between $\mathrm{SiO}_{2}$ and Si . This potential $\Phi(z)$ satisfies the simple one-dimensional Poisson equation
-	$$
-	\begin{align*}
-	\frac{d^{2}}{d z^{2}} \Phi(z)=\frac{4 \pi \rho(z)}{\varepsilon}
-	\end{align*}
-	$$
-	where the charge density originates in the occupied acceptor levels,
-	$$
-	\begin{align*}
-	\rho(z)=\left\{\begin{aligned}
-	-e n_{A}, & z<d, \\
-	0, & z>d,
-	\end{aligned}\right.
-	\end{align*}
-	$$
-	and $n_{A}$ is the density of acceptors. The boundary conditions are given by
-	$$
-	\begin{align*}
-	\Phi(z=0)=U_{G} \quad \text { and } \quad \Phi(z=d)=0 .
-	\end{align*}
-	$$
-	
-	The solution for $0 \leq z \leq d$ then reads
-	$$
-	\begin{align*}
-	\Phi(z)=\frac{2 \pi e n_{A}}{\varepsilon}(z-d)^{2}, \quad \text { with } \quad d^{2}=\frac{\varepsilon U_{G}}{2 \pi e n_{A}} .
-	\end{align*}
-	$$
-	
-	The thickness of the depletion layer increases with increasing gate voltage $d^{2} \propto U_{G}$.
+- $0<\frac{e U_{G}}{E_{g}}<1$
+In this case, the energy of the Si bands is lowered, such that in a narrow region within the p-doped Si the acceptor levels drops below the chemical potential and the states are filled with electrons (or, equivalently, holes are removed). This depletion layer has the extension $d$ measured from the $\mathrm{Si}-\mathrm{SiO}_{2}$ interface. The negative charge of the acceptors leads to a position-dependent potential $\Phi(z)$, where $z$ is the distance from the boundary between $\mathrm{SiO}_{2}$ and Si . This potential $\Phi(z)$ satisfies the simple one-dimensional Poisson equation
+$$
+\begin{align*}
+\frac{d^{2}}{d z^{2}} \Phi(z)=\frac{4 \pi \rho(z)}{\varepsilon}
+\end{align*}
+$$
+where the charge density originates in the occupied acceptor levels,
+$$
+\begin{align*}
+\rho(z)=\left\{\begin{aligned}
+-e n_{A}, & z<d, \\
+0, & z>d,
+\end{aligned}\right.
+\end{align*}
+$$
+and $n_{A}$ is the density of acceptors. The boundary conditions are given by
+$$
+\begin{align*}
+\Phi(z=0)=U_{G} \quad \text { and } \quad \Phi(z=d)=0 .
+\end{align*}
+$$
 
-3. $1<\frac{e U_{G}}{E_{g}}$
+The solution for $0 \leq z \leq d$ then reads
+$$
+\begin{align*}
+\Phi(z)=\frac{2 \pi e n_{A}}{\varepsilon}(z-d)^{2}, \quad \text { with } \quad d^{2}=\frac{\varepsilon U_{G}}{2 \pi e n_{A}} .
+\end{align*}
+$$
 
-	When the applied gate voltage is sufficiently large, a so-called inversion layer is created:
-	
-	![Attachments/Notes/Solid-State Theory/2 Semiconductors/IMG-0128212145616.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/2%20Semiconductors/IMG-0128212145616.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=55&rect=81,481,515,641|•]]
- 
-	 Close to the boundary, the conduction band is bent down so that its lower edge lies below the chemical potential. The electrons accumulating in this inversion layer providing carriers connecting the n -type source and drain electrodes and producing a large, nearly metallic, current between source and drain. Conduction band electrons accumulating in the inversion layer behave like a two-dimensional electron gas. In such a system, the quantum Hall effect (QHE), which is characterised by highly unusual charge transport properties in the presence of a large magnetic field, can occur.
+The thickness of the depletion layer increases with increasing gate voltage $d^{2} \propto U_{G}$.
+
+- $1<\frac{e U_{G}}{E_{g}}$
+
+When the applied gate voltage is sufficiently large, a so-called inversion layer is created:
+
+![Attachments/Notes/Solid-State Theory/2 Semiconductors/IMG-0128212145616.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/2%20Semiconductors/IMG-0128212145616.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=55&rect=81,481,515,641|•]]
+
+ Close to the boundary, the conduction band is bent down so that its lower edge lies below the chemical potential. The electrons accumulating in this inversion layer providing carriers connecting the n -type source and drain electrodes and producing a large, nearly metallic, current between source and drain. Conduction band electrons accumulating in the inversion layer behave like a two-dimensional electron gas. In such a system, the quantum Hall effect (QHE), which is characterised by highly unusual charge transport properties in the presence of a large magnetic field, can occur.
 
 ---
