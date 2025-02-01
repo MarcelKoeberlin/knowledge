@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/2-semiconductors/","hide":"true","updated":"2025-02-01T21:15:22.744+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/2-semiconductors/","hide":"true","updated":"2025-02-01T22:12:02.676+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -19,7 +19,7 @@ Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|ch
 
 The technological relevance of semiconductors can hardly be overstated. In this chapter, we review some of their basic properties. Regarding the electric conductivity, semiconductors are placed in between metals and insulators. Normal metals are good conductors at all temperatures, and the conductivity usually increases with decreasing temperature. On the other hand, for semiconductors and insulators the conductivity decreases upon cooling
 
-![Attachments/Notes/Solid-State Theory/2 Semiconductors/IMG-0201211521880.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/2%20Semiconductors/IMG-0201211521880.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=40&rect=158,339,447,501|•]]
+![[Attachments/Notes/Solid-State Theory/2 Semiconductors/IMG-0201211521880.webp#invert|700]][[Masters/2. Semester/Solid State Theory/Script.pdf#page=40&rect=158,339,447,501|•]]
 
 We will see that the conductivity may be written in the Drude form as
 $$
