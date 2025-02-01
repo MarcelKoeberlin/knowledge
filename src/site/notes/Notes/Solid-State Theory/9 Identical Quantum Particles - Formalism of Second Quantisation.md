@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/9-identical-quantum-particles-formalism-of-second-quantisation/","hide":"true","updated":"2025-02-01T15:04:23.602+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/9-identical-quantum-particles-formalism-of-second-quantisation/","hide":"true","updated":"2025-02-01T15:07:10.311+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -628,7 +628,7 @@ $$
 $$
 
 In order to evaluate the mean value $\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q} s^{\prime}}^{\dagger} \widehat{\boldsymbol{q}}_{\boldsymbol{q}^{\prime} s^{\prime}} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle$ we use the same technique as presented as earlier. Evaluation of $\left\langle\widehat{a}_{\boldsymbol{k s}}^{\dagger} \widehat{\boldsymbol{q}}_{s^{\prime}}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s^{\prime}} \widehat{\boldsymbol{k}}_{\boldsymbol{k}^{\prime} s}\right\rangle$: We separate the task into two cases:
-1. $s=s\prime$ 
+- $s=s\prime$ 
 
 $$
 \begin{align*}
@@ -653,7 +653,7 @@ $$
 \left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle=\frac{1}{e^{\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}+1}\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle\left(\delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}-\delta_{\boldsymbol{q}^{\prime}, \boldsymbol{k}} \delta_{\boldsymbol{q}, \boldsymbol{k}^{\prime}}\right)=\left\langle\widehat{n}_{\boldsymbol{k}, s}\right\rangle\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle\left(\delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}-\delta_{\boldsymbol{q}^{\prime}, \boldsymbol{k}} \delta_{\boldsymbol{q}, \boldsymbol{k}^{\prime}}\right) .
 \end{align*}
 $$
-2. $s \neq s^{\prime}$ :
+- $s \neq s^{\prime}$ :
 $$
 \begin{align*}
 \left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime}}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s^{\prime}} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle=e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}\left\{\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle \delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}+\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime}}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s^{\prime}} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle\right\}

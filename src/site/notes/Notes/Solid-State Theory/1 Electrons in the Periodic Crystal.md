@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-01-29T20:59:23.251+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-02-01T15:08:29.754+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -771,21 +771,10 @@ We introduce the rules of the semi-classical motion of electrons with applied el
 
 - The band index of an electron is conserved, i.e., there are no transitions between the bands.
 - The equations of motion read
-	$$
-	\begin{align*}
-	\begin{aligned}
-	\dot{\boldsymbol{r}} & =\boldsymbol{v}_{n}(\boldsymbol{k})=\frac{\partial \epsilon_{n \boldsymbol{k}}}{\partial \hbar \boldsymbol{k}}, \\
-	\hbar \dot{\boldsymbol{k}} & =-e \boldsymbol{E}(\boldsymbol{r}, t)-\frac{e}{c} \boldsymbol{v}_{n}(\boldsymbol{k}) \times \boldsymbol{H}(\boldsymbol{r}, t) .
-	\end{aligned}
-	\end{align*}
-	$$
+	$$	\begin{align*} \begin{aligned} 	\dot{\boldsymbol{r}} & =\boldsymbol{v}_{n}(\boldsymbol{k})=\frac{\partial \epsilon_{n \boldsymbol{k}}}{\partial \hbar \boldsymbol{k}}, \\	\hbar \dot{\boldsymbol{k}} & =-e \boldsymbol{E}(\boldsymbol{r}, t)-\frac{e}{c} \boldsymbol{v}_{n}(\boldsymbol{k}) \times \boldsymbol{H}(\boldsymbol{r}, t) .\end{aligned} \end{align*}$$
 - All electronic states have a wave vector that lies in the first Brillouin zone, as $\boldsymbol{k}$ and $\boldsymbol{k}+\boldsymbol{G}$ label the same state for all reciprocal lattice vectors $\boldsymbol{G}$.
 - In thermal equilibrium, the electron density per spin in the $n$-th band in the volume element $d^{3} k /(2 \pi)^{3}$ around $\boldsymbol{k}$ is given by
-	$$
-	\begin{align*}
-	n_{F}\left[\epsilon_{n}(\boldsymbol{k})\right]=\frac{1}{e^{\left[\epsilon_{n}(\boldsymbol{k})-\mu\right] / k_{B} T}+1} .
-	\end{align*}
-	$$
+	$$	\begin{align*}	n_{F}\left[\epsilon_{n}(\boldsymbol{k})\right]=\frac{1}{e^{\left[\epsilon_{n}(\boldsymbol{k})-\mu\right] / k_{B} T}+1} .	\end{align*}	$$
 	Each state of given $\boldsymbol{k}$ and spin can be occupied only once (Pauli principle).
 
 Note that $\hbar \boldsymbol{k}$ is not the momentum of the electron, but the so-called lattice momentum or lattice momentum in the Bloch theory of bands. It is connected with the eigenvalue of the translation operator on the state. Consequently, the right-hand side of the equation (1.112) is not the force that acts on the electron, as the forces exerted by the periodic lattice potential is not included. The latter effect is contained implicitly through the form of the band energy $\epsilon(\boldsymbol{k})$, which governs the first equation. ${ }^{11}$
