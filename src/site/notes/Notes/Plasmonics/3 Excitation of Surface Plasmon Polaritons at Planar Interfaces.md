@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/3-excitation-of-surface-plasmon-polaritons-at-planar-interfaces/","hide":"true","updated":"2025-02-02T13:45:59.042+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/3-excitation-of-surface-plasmon-polaritons-at-planar-interfaces/","hide":"true","updated":"2025-02-02T15:34:11.542+01:00"}
 ---
 
 Jump back to [[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]].
@@ -27,7 +27,7 @@ The projection along the interface of the momentum $k_x = k \sin\theta$ is small
 
 This momentum is sufficient to excite SPPs at the interface between the metal and the lower-index dielectric, air in this case. In this way, SPPs propagating between the light lines of air and the higher-index dielectric (prism) can be excited. This excitation manifests as a minimum in the reflected beam intensity. Note that this phase-matching is impossible at the prism/metal interface since the respective SPP dispersion lies outside the prism light cone (there is no crossing of the curves):
 
-![Attachments/Plasmonics - Fundamentals and Applications 12.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2012.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=60&rect=111,470,333,611|•]]
+![[Attachments/Plasmonics - Fundamentals and Applications 12.webp#invert|700]][[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=60&rect=111,470,333,611|•]]
 
 This coupling scheme is also known as **attenuated total internal reflection** and involves tunnelling of the fields of the excitation beam to the metal/air interface. The two configurations are called the **Kretschmann method** (left) and the **Otto configuration** (right). 
 
