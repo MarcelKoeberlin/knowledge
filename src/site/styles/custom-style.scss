@@ -941,3 +941,30 @@ h1,
   border-radius:5px 5px 5px 5px;
 }
 
+.theme-light img {   
+  mix-blend-mode: darken;
+
+}  
+
+.theme-dark img {     
+  //filter:invert(1) hue-rotate(180deg);   
+  //mix-blend-mode: lighten 
+
+  mix-blend-mode: screen;
+  filter: invert(1) hue-rotate(180deg);
+}
+
+body .cm-s-obsidian picture img {
+  width: 60%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+/* If the image width is less than 571px, set width to 400px */
+@media (max-width: 666px) {
+  body .cm-s-obsidian picture img {
+    width: 400px;
+  }
+}
