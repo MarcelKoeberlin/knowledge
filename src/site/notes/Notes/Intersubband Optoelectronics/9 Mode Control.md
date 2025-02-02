@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/9-mode-control/","hide":"true","updated":"2025-01-29T20:55:13.801+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/9-mode-control/","hide":"true","updated":"2025-02-02T13:45:59.113+01:00"}
 ---
 
 Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].

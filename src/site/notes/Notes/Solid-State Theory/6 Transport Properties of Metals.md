@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/6-transport-properties-of-metals/","hide":"true","updated":"2025-02-01T21:15:25.991+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/6-transport-properties-of-metals/","hide":"true","updated":"2025-02-02T13:46:08.331+01:00"}
 ---
 
-Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
+fJump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
 
 ---
 **Table of Contents**
@@ -337,8 +337,8 @@ $$
 
 We find $\kappa(\omega) \gg n(\omega) \gg 1$, which implies a large reflectivity of metals in this frequency range as well. Note that visible frequencies are part of this regime:
 
-![Attachments/Notes/Solid-State Theory/6 Transport Properties of Metals/IMG-0201211525369.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/6%20Transport%20Properties%20of%20Metals/IMG-0201211525369.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=134&rect=184,476,413,756|•]]
-![Attachments/Notes/Solid-State Theory/6 Transport Properties of Metals/IMG-0201211525438.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/6%20Transport%20Properties%20of%20Metals/IMG-0201211525438.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=135&rect=184,597,412,758|•]]
+![Attachments/Script 59.webp|700](/img/user/Attachments/Script%2059.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=134&rect=191,483,396,743|•]]
+![Attachments/Script 60.webp|700](/img/user/Attachments/Script%2060.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=135&rect=197,601,392,750|•]]
 
 The frequency dependence of the penetration depth becomes weak, and its magnitude is approximately given by the Debye length, $\delta \sim c / \omega_{p}$.
 
@@ -597,7 +597,7 @@ $$
 $$
 where $g(\boldsymbol{q})=\tilde{V}_{\boldsymbol{q}}|\boldsymbol{q}| \sqrt{2 \hbar / \rho_{0} \omega_{\boldsymbol{q}}}$. Each of these four terms describes one of the single phonon scattering processes depicted here:
 
-![Attachments/Notes/Solid-State Theory/6 Transport Properties of Metals/IMG-0201211525491.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/6%20Transport%20Properties%20of%20Metals/IMG-0201211525491.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=139&rect=136,417,457,486|•]]
+![Attachments/Script 61.webp|700](/img/user/Attachments/Script%2061.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=139&rect=141,420,456,487|•]]
 
 The collision integral leads to a complicated integro-differential equation, whose solution is tedious and would involve the solution of the non-equilibrium phonon-problem as well. Instead of a full rigorous calculation including the non-equilibrium redistribution of phonons, we will consider the behaviour in various temperature regimes by an approximate treatment of the phonons. The characteristic temperature of phonons, the Debye temperature $\Theta_{D} \ll T_{F}$, is much smaller than the Fermi temperature. Hence, the phonon energy is unimportant for the energy conservation, $\epsilon_{\boldsymbol{k}^{\prime}=\boldsymbol{k}+\boldsymbol{q}} \approx \epsilon_{\boldsymbol{k}}$. Therefore we are allowed to impose momentum conservation $\epsilon_{\boldsymbol{k}+\boldsymbol{q}}=\epsilon_{\boldsymbol{k}}$ and consider the lattice distortion as being essentially static, in the sense of an adiabatic Born-Oppenheimer approximation. The approximate collision integral then reads
 $$
@@ -627,8 +627,7 @@ $$
 $$
 where $\lambda$ is a dimensionless electron-phonon coupling constant. In usual metals $\lambda<1$. As in the case of defect scattering, the relaxation time depends only weakly on the electron energy. But, unlike previously, the direct temperature dependence enters via the dependence on temperature of the phonon occupation $N\left(\omega_{\boldsymbol{q}}\right)$.
 
-![Attachments/Notes/Solid-State Theory/6 Transport Properties of Metals/IMG-0201211525548.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/6%20Transport%20Properties%20of%20Metals/IMG-0201211525548.webp)
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=140&rect=214,379,369,539|•]]
+![Attachments/Script 62.webp|700](/img/user/Attachments/Script%2062.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=140&rect=218,384,372,534|•]]
 
 In order to perform the integration in equation (6.90), we have to re-express $\delta\left(\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}\right)$ by writing
 $$
@@ -744,7 +743,7 @@ $$
 $$
 which connects different Brillouin zones, as shown here:
 
-![Attachments/Notes/Solid-State Theory/6 Transport Properties of Metals/IMG-0201211525627.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/6%20Transport%20Properties%20of%20Metals/IMG-0201211525627.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=143&rect=172,540,426,755|•]]
+![Attachments/Script 63.webp|700](/img/user/Attachments/Script%2063.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=143&rect=173,541,419,749|•]]
 
 In this way momentum can be transferred to the lattice. Still the conditions are constraint by the fact that all electron momenta lie on the Fermi surface. Such processes are termed Umklapp scattering and play an important role in electron-phonon scattering as well.
 
@@ -849,7 +848,7 @@ $$
 \end{align*}
 $$
 
-![Attachments/Notes/Solid-State Theory/6 Transport Properties of Metals/IMG-0201211525695.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/6%20Transport%20Properties%20of%20Metals/IMG-0201211525695.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=145&rect=104,205,495,413|•]]
+![Attachments/Script 64.webp|700](/img/user/Attachments/Script%2064.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=145&rect=108,208,492,407|•]]
 
 In the relaxation time approximation for the collision integral, we obtain the solution
 $$
@@ -996,7 +995,7 @@ Q=-\frac{\pi^{2}}{2} \frac{k_{B}^{2} T}{e \epsilon_{F}}=-\frac{\pi^{2}}{2} \frac
 $$
 which for $T_{F}(N a, K) \approx 3 \times 10^{4} K$ leads to $Q=-14 n V K^{-1} \times T[K]$. A comparison with experiments shows that the order of magnitude works reasonably well for Na and K. However, for Li and Cs even the sign is different. Differences occur through phonon effects, such as the so-called phonon drag which we have neglected here:
 
-![Attachments/Notes/Solid-State Theory/6 Transport Properties of Metals/IMG-0201211525755.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/6%20Transport%20Properties%20of%20Metals/IMG-0201211525755.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=148&rect=164,195,427,543|•]]
+![Attachments/Script 65.webp|700](/img/user/Attachments/Script%2065.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=148&rect=167,196,427,536|•]]
 
 In the following, we consider two different types of thermoelectric effects.
 
@@ -1019,7 +1018,7 @@ The resulting voltage $V$ appears between the two ends of a second metal $A$, wh
 
 The second phenomenon, termed Peltier effect, emerges in a system kept at the same temperature everywhere. Here, an electric current $J_{e}$ between the two contacts of the metal $A$ induces a heat current in the bi-metallic system, such that heat is transferred from one reservoir (top) to another (bottom):
 
-![Attachments/Notes/Solid-State Theory/6 Transport Properties of Metals/IMG-0201211525820.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/6%20Transport%20Properties%20of%20Metals/IMG-0201211525820.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=149&rect=124,582,468,758|•]]
+![Attachments/Script 66.webp|700](/img/user/Attachments/Script%2066.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=149&rect=131,587,465,750|•]]
 
 This follows from the equations (6.129) and (6.130) by assuming $\nabla T=0$, where
 $$
@@ -1056,7 +1055,7 @@ Transport in one spatial dimension is very special, since there are only two dif
 
 The transmission and reflection at an arbitrary potential with finite support in one dimension can be described by a transfer matrix $T$.
 
-![Attachments/Notes/Solid-State Theory/6 Transport Properties of Metals/IMG-0201211525886.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/6%20Transport%20Properties%20of%20Metals/IMG-0201211525886.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=150&rect=146,354,451,456|•]]
+![Attachments/Script 67.webp|700](/img/user/Attachments/Script%2067.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=150&rect=152,355,447,451|•]]
 
 In this situation, a suitable choice for a basis of the electron states is the set of plane waves $\left\{e^{ \pm i k x}\right\}$ (cf. Figure 6.10) moving in the positive (negative) $x$-direction with wave vector $+k$ $(-k)$. Only plane waves with the same $|k|$ on the left $\left(I_{1}\right)$ and right $\left(I_{2}\right)$ side of the scatterer are interconnected. Therefore, we write
 $$
@@ -1175,7 +1174,7 @@ The Klitzing constant $R_{K}=h / e^{2} \approx 25.8 k \Omega$ is a resistance qu
 
 We consider now two spatially separated scattering potentials, represented by $\hat{T}_{1}$ and $\hat{T}_{2}$ each determined by $r_{1}, t_{1}$ and $r_{2}, t_{2}$ respectively:
 
-![Attachments/Notes/Solid-State Theory/6 Transport Properties of Metals/IMG-0201211525943.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/6%20Transport%20Properties%20of%20Metals/IMG-0201211525943.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=152&rect=123,330,482,381|•]]
+![Attachments/Script 68.webp|700](/img/user/Attachments/Script%2068.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=152&rect=127,331,474,379|•]]
 
 The particles are multiply scattered at these potentials in a unknown manner, but the global result can again be expressed via a simple transfer matrix $\hat{T}=\hat{T}_{1} \hat{T}_{2}$, given by the matrix multiplication of each transfer matrix. All previously found properties remain valid for the new matrix $\hat{T}$, given by
 $$

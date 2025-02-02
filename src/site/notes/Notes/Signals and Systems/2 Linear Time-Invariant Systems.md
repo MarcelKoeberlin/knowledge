@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/2-linear-time-invariant-systems/","hide":"true","updated":"2025-02-01T21:15:20.795+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/2-linear-time-invariant-systems/","hide":"true","updated":"2025-02-02T13:45:59.079+01:00"}
 ---
 
 Jump back to [[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]].
@@ -71,12 +71,12 @@ LTI systems satisfy important properties:
 3. **Associativity**: $x * \left(h_1 * h_2\right) = \left(x * h_1\right) * h_2$.
 
 Distributivity can be depicted graphically:
-![Attachments/Notes/Signals and Systems/2 Linear Time-Invariant Systems/IMG-0201211520624.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/2%20Linear%20Time-Invariant%20Systems/IMG-0201211520624.webp)
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=136&rect=108,407,300,593|•]]
+
+![Attachments/Oppenheim,Willsky_Signals and Systems 5.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%205.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=136&rect=111,405,296,597|•]]
 
 Similarly, associativity can be depicted graphically:
-![Attachments/Notes/Signals and Systems/2 Linear Time-Invariant Systems/IMG-0201211520659.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/2%20Linear%20Time-Invariant%20Systems/IMG-0201211520659.webp)
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=139&rect=94,310,303,595|•]]
+
+![Attachments/Oppenheim,Willsky_Signals and Systems 6.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%206.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=139&rect=94,309,303,594|•]]
 
 ---
 ## 2.3 Basic Properties
@@ -196,12 +196,12 @@ y[n] = b x[n] - a y[n-1].
 $$
 
 This equation requires three basic operations: addition, multiplication, and delay:
-![Attachments/Notes/Signals and Systems/2 Linear Time-Invariant Systems/IMG-0201211520695.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/2%20Linear%20Time-Invariant%20Systems/IMG-0201211520695.webp)
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=113,383,295,597|•]]
+
+![Attachments/Oppenheim,Willsky_Signals and Systems 7.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%207.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=113,384,295,595|•]]
 
 The block diagram representation of this equation is:
-![Attachments/Notes/Signals and Systems/2 Linear Time-Invariant Systems/IMG-0201211520731.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/2%20Linear%20Time-Invariant%20Systems/IMG-0201211520731.webp)
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=138,279,302,373|•]]
+
+![Attachments/Oppenheim,Willsky_Signals and Systems 8.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%208.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=137,274,302,372|•]]
 
 The feedback arises because the equation is recursive. The block diagram shows that memory is required for this system, corresponding to the delay operator.
 
@@ -218,8 +218,8 @@ $$
 y(t) = \int_{-\infty}^t \left( b x(\tau) - a y(\tau) \right) \, d\tau,
 $$
 assuming $y(-\infty) = 0$, allows for implementation using integrators:
-![Attachments/Notes/Signals and Systems/2 Linear Time-Invariant Systems/IMG-0201211520767.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/2%20Linear%20Time-Invariant%20Systems/IMG-0201211520767.webp)
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&rect=142,463,338,599|•]]
+
+![Attachments/Oppenheim,Willsky_Signals and Systems 9.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%209.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&rect=141,459,334,594|•]]
 
 The integrator is a memory element, as seen from:
 $$

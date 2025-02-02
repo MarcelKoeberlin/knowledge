@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/9-identical-quantum-particles-formalism-of-second-quantisation/","hide":"true","updated":"2025-02-01T21:15:26.865+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/9-identical-quantum-particles-formalism-of-second-quantisation/","hide":"true","updated":"2025-02-02T13:45:59.062+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -679,7 +679,7 @@ g_{s s}\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)= \begin{cases}1-\left
 \end{align*}
 $$
 
-![Attachments/Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation/IMG-0201211526697.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/9%20Identical%20Quantum%20Particles%20-%20Formalism%20of%20Second%20Quantisation/IMG-0201211526697.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=195&rect=90,606,503,754|•]]
+![Attachments/Script 83.webp|700](/img/user/Attachments/Script%2083.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=195&rect=95,608,503,745|•]]
 
 The case of $s \neq s^{\prime}$ leads to $g_{s s^{\prime}}(\boldsymbol{r})=1$, i.e. there is no correlation between $s=1 / 2$-Fermions of opposite spin. The probability to find another Fermion around the position of a Fermion at $\boldsymbol{r}$ corresponds to
 $$
@@ -758,7 +758,7 @@ $$
 
 The probability of finding two Bosons at the same position is twice as large as for long distances:
 
-![Attachments/Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation/IMG-0201211526751.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/9%20Identical%20Quantum%20Particles%20-%20Formalism%20of%20Second%20Quantisation/IMG-0201211526751.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=197&rect=178,579,403,749|•]]
+![Attachments/Script 84.webp|700](/img/user/Attachments/Script%2084.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=197&rect=183,579,402,749|•]]
 
 Thus, in contrast to Fermions, Bosons like to cluster together.
 The radius of bunching of the Bosons in the limit $T \gg T_{c}$ is of order $\lambda$ and shrinks with increasing $T$ (classical limit).
@@ -906,7 +906,7 @@ $$
 
 The single-particle correlation function decays exponentially for large distances:
 
-![Attachments/Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation/IMG-0201211526806.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/9%20Identical%20Quantum%20Particles%20-%20Formalism%20of%20Second%20Quantisation/IMG-0201211526806.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=199&rect=186,393,410,532|•]]
+![Attachments/Script 85.webp|700](/img/user/Attachments/Script%2085.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=199&rect=190,392,410,531|•]]
 
 This behaviour is valid for $T>T_{c}$ where $\mu<0$. For $T<T_{c}$ the chemical potential lies at the lowest single-particle state, i.e. $\mu=0$ for free Bosons, such that $k_{0}=0$. For the long-distance behaviour we conclude that the correlation function goes to zero like $|\boldsymbol{R}|^{-1}$. However, this is not true, since our integral approach neglects the macroscopic occupation of the $\boldsymbol{k}=0$ state. Thus, we should use
 $$

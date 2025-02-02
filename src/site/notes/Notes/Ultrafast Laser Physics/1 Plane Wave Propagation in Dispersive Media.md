@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/1-plane-wave-propagation-in-dispersive-media/","hide":"true","updated":"2025-02-01T21:15:27.130+01:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/1-plane-wave-propagation-in-dispersive-media/","hide":"true","updated":"2025-02-02T13:45:59.070+01:00"}
 ---
 
 Jump back to [[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]].
@@ -156,14 +156,16 @@ where $\mathbf{E}_0^{+}=\left|\mathbf{E}_0^{+}\right| \mathrm{e}^{\mathrm{i} \va
 $$ 
 T=\frac{2\pi}{\omega}=1/f.$$
 The next figure shows a plane wave for a constant position as function of time (left), and for a constant time as a function of position:
-![Attachments/Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media/IMG-0201211526883.webp|700](/img/user/Attachments/Notes/Ultrafast%20Laser%20Physics/1%20Plane%20Wave%20Propagation%20in%20Dispersive%20Media/IMG-0201211526883.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=27&rect=57,116,384,219|•]]
+
+![Attachments/UltraFastLasers_Keller.webp|700](/img/user/Attachments/UltraFastLasers_Keller.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=27&rect=55,104,383,221|•]]
 
 The period is in time domain the $T$, and the wavelength $\lambda$ in real space vacuum, where the optical frequency does not change. This is a direct consequence of the Maxwell equations, however is not proven here. The speed of light changes in a dispersive medium from $c$ to $c_n$. The same way, the wavelength in vacuum changes:
 $$
 \lambda \longrightarrow\lambda_n=c_nT=\frac{\lambda}{n}.
 $$
 This is schematically shown in the next figure:
-![Attachments/Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media/IMG-0201211526921.webp|700](/img/user/Attachments/Notes/Ultrafast%20Laser%20Physics/1%20Plane%20Wave%20Propagation%20in%20Dispersive%20Media/IMG-0201211526921.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=28&rect=219,513,389,604|•]]
+
+![Attachments/UltraFastLasers_Keller 1.webp|700](/img/user/Attachments/UltraFastLasers_Keller%201.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=28&rect=232,514,382,606|•]]
 
 Note that nothing prevents us from adopting a complex notation for the solution of the wave equation. It is often much easier to work with the complex notation (assuming $\phi=90^\circ$):
 $$
@@ -192,7 +194,7 @@ $$
 $$
 This wave is called a transverse electromagnetic (TEM) wave, because both electric and magnetic field are perpendicular to the wave vector. For a plane harmonic wave, the fields are in phase:
 
-![Attachments/Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media/IMG-0201211526963.webp|700](/img/user/Attachments/Notes/Ultrafast%20Laser%20Physics/1%20Plane%20Wave%20Propagation%20in%20Dispersive%20Media/IMG-0201211526963.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=31&rect=104,146,336,260|•]]
+![Attachments/UltraFastLasers_Keller 2.webp|700](/img/user/Attachments/UltraFastLasers_Keller%202.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=31&rect=103,144,336,259|•]]
 
 Further, they imply that
 
@@ -232,7 +234,7 @@ E_2 \mathrm{e}^{\mathrm{i} \Delta \varphi} \\
 $$
 A special case is for no phase difference, in this case we retrieve a linearly polarised plane wave with polarisation direction in xy-direction. Another special case is for the of $\pm\pi/2$ phase difference. In that case, the wave is called circularly polarised (figure c), where the polarisation vector moves around a circle with frequency $\omega$: 
 
-![Attachments/Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media/IMG-0201211527010.webp|700](/img/user/Attachments/Notes/Ultrafast%20Laser%20Physics/1%20Plane%20Wave%20Propagation%20in%20Dispersive%20Media/IMG-0201211527010.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=34&rect=55,177,383,607|•]]
+![Attachments/UltraFastLasers_Keller 3.webp|700](/img/user/Attachments/UltraFastLasers_Keller%203.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=34&rect=56,292,383,604|•]]
 
 ## 1.6 Energy Density, Poynting Vector, and Intensity
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=35&selection=124,0,126,46|•]]
@@ -261,7 +263,7 @@ For the special case of a monochromatic plane wave, we find
 
 The fact that the refractive index is frequency dependent implies that the wave vector $k_n=\omega/cn(\omega)$ is no longer directly proportional to the frequency as it is in vacuum. This frequency dependence is called dispersion. It is very important to know $n(\omega)$, as can be seen in some examples:
 
-![Attachments/Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media/IMG-0201211527054.webp|700](/img/user/Attachments/Notes/Ultrafast%20Laser%20Physics/1%20Plane%20Wave%20Propagation%20in%20Dispersive%20Media/IMG-0201211527054.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=36&rect=54,104,383,186|•]]
+![Attachments/UltraFastLasers_Keller 4.webp|700](/img/user/Attachments/UltraFastLasers_Keller%204.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=36&rect=57,103,382,184|•]]
 
 ---
 ## 1.8 Sellmeier Equation in the Visible and Near-Infrared
@@ -269,7 +271,7 @@ The fact that the refractive index is frequency dependent implies that the wave 
 
 In many cases, we will discuss transparent dielectric materials, so with negligible absorption. Glass, for example, is transparent in the visible spectrum, but absorbs in the UV and IR spectral regions. The range in which a material is transparent is called the spectral window, and usually materials exhibit normal/positive dispersion $\frac{d^2n}{d\omega^2}>0$ in this region:
 
-![Attachments/Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media/IMG-0201211527092.webp|700](/img/user/Attachments/Notes/Ultrafast%20Laser%20Physics/1%20Plane%20Wave%20Propagation%20in%20Dispersive%20Media/IMG-0201211527092.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=38&rect=134,149,303,343|•]]
+![Attachments/UltraFastLasers_Keller 5.webp|700](/img/user/Attachments/UltraFastLasers_Keller%205.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=38&rect=136,147,303,340|•]]
 
 Far away from absorption, the dispersion may be described by the Sellmeier equations. In this region, the frequency dependent absorption coefficient $\alpha(\omega)$ can be replaced by an infinitely sharp absorption line at $\omega_0$ given by a delta function. We need to use the Kramers-Kronig relations:
 $$

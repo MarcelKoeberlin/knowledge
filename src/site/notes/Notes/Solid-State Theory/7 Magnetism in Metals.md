@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/7-magnetism-in-metals/","hide":"true","updated":"2025-02-01T21:15:26.380+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/7-magnetism-in-metals/","hide":"true","updated":"2025-02-02T13:45:59.054+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -166,7 +166,7 @@ $$
 
 With this, $a=1$ corresponds to a critical value.
 
-![Attachments/Notes/Solid-State Theory/7 Magnetism in Metals/IMG-0201211526005.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/7%20Magnetism%20in%20Metals/IMG-0201211526005.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=158&rect=122,190,464,341|•]]
+![Attachments/Script 69.webp|700](/img/user/Attachments/Script%2069.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=158&rect=122,189,470,341|•]]
 
 Here, this condition corresponds to
 $$
@@ -194,15 +194,14 @@ m(U)=\frac{1}{\Lambda_{2}\left(\epsilon_{F}\right)}\left(\frac{U_{c}}{U}\right)^
 $$
 for $U>U_{c}$ and $m=0$ for $U<U_{c}$. The density of states as an internal parameter can, for example, be changed by applying a pressure. By reducing the lattice constant, pressure may facilitate the motion of the conduction electrons and increase the Fermi velocity. Consequently, the density of states is reduced:
 
-![Attachments/Notes/Solid-State Theory/7 Magnetism in Metals/IMG-0201211526073.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/7%20Magnetism%20in%20Metals/IMG-0201211526073.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=159&rect=117,252,468,400|•]]
-
+![Attachments/Script 70.webp|700](/img/user/Attachments/Script%2070.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=159&rect=120,253,466,397|•]]
 Indeed, pressure is able to destroy ferromagnetism in weakly ferromagnetic materials as $\mathrm{ZrZn}_{2}, \mathrm{MnSi}$, and $\mathrm{UGe}_{2}$. In other materials, the Curie temperature is high enough, such that the technologically applicable pressure is insufficient to suppress magnetism. It is, however, possible, that pressure leads to other transitions, such as structural phase transitions, that eventually destroy magnetism. This is seen in iron (Fe), where a pressure of about 12 GPa induces a transition from magnetic iron with body-centred crystal (bcc) structure to a nonmagnetic, hexagonal close packed (hcp) structure:
 
-![Attachments/Notes/Solid-State Theory/7 Magnetism in Metals/IMG-0201211526131.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/7%20Magnetism%20in%20Metals/IMG-0201211526131.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=160&rect=100,602,483,752|•]]
+![Attachments/Script 71.webp|700](/img/user/Attachments/Script%2071.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=160&rect=101,601,485,750|•]]
 
 While this structural transition is a quantum phase transition as well, it appears as a discontinuous, first order transition. Note that the Stoner instability is a simplification of the quantum phase transition. In most cases, a discontinuous phase transition originates in the band structure or in fluctuation effects, which were ignored here. In some cases, pressure can also induce an increase in $N\left(\epsilon_{F}\right)$, for example in metals with multiple bands, where compression leads to a redistribution of charge. One example is the ruthenate $\mathrm{Sr}_{3} \mathrm{Ru}_{2} \mathrm{O}_{7}$ for which uniaxial pressure along the $z$-axis leads to magnetism. Finally, let us turn to the question, why Cu , being a direct neighbour of Ni in the 3d-row of the periodic table, is not ferromagnetic, even though both elemental metals share the same fcc crystal structure. The answer is given by the Stoner criterion $U N\left(\epsilon_{F}\right)=2$. While the conduction electrons at the Fermi level of Ni have 3d-character and belong to a narrow band with a large density of states, the Fermi energy of Cu is situated in the broad 4 s -band and constitutes a much smaller density of states:
 
-![Attachments/Notes/Solid-State Theory/7 Magnetism in Metals/IMG-0201211526185.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/7%20Magnetism%20in%20Metals/IMG-0201211526185.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=160&rect=187,257,406,434|•]]
+![Attachments/Script 72.webp|700](/img/user/Attachments/Script%2072.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=160&rect=189,260,403,430|•]]
 
 With this, the Cu conduction electrons are much less localised and feature a weaker tendency towards ferromagnetic order.
 
@@ -480,7 +479,7 @@ R_{0}=\frac{\overline{\chi_{0}(\boldsymbol{q})}}{\chi_{0}(\boldsymbol{q}=0)}=\ln
 $$
 with $\eta=\epsilon_{F} / D$ where $-D<\epsilon_{F}<+D$. For both small and large band fillings $\left(\epsilon_{F}\right.$ close to the band edges), the tendency towards ferromagnetism dominates, whereas when $\epsilon_{F}$ lies in the centre of the band, the susceptibility $\chi_{0}(\boldsymbol{q})$ is not maximal at $\boldsymbol{q}=0$ anymore, and magnetic ordering with a well-defined finite $\boldsymbol{q}=\boldsymbol{Q}$ becomes more probable.
 
-![Attachments/Notes/Solid-State Theory/7 Magnetism in Metals/IMG-0201211526235.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/7%20Magnetism%20in%20Metals/IMG-0201211526235.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=165&rect=188,597,401,754|•]]
+![Attachments/Script 73.webp|700](/img/user/Attachments/Script%2073.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=165&rect=191,597,399,756|•]]
 
 ### 7.2.3 Influence of the Band Structure
 
@@ -539,7 +538,7 @@ $$
 $$
 with $\delta \rho \ll \rho_{0}$. The spin density state frequently appear in low-dimensional systems like organic conductors, or in transition metals such as chromium (Cr) for example. In all cases, nesting plays an important role:
 
-![Attachments/Notes/Solid-State Theory/7 Magnetism in Metals/IMG-0201211526281.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/7%20Magnetism%20in%20Metals/IMG-0201211526281.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=167&rect=109,505,481,638|•]]
+![Attachments/Script 74.webp|700](/img/user/Attachments/Script%2074.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=167&rect=113,507,483,638|•]]
 
 In quasi-one-dimensional electron systems, a main direction of motion dominates over two other directions with weak dispersion. In this case, the nesting condition is very probable to be fulfilled, as it is schematically shown in the centre panel of the figure above. Chromium is a three-dimensional metal, where nesting occurs between a electron-like Fermi surface around the $\Gamma$-point and a hole-like Fermi surface at the Brillouin zone boundary ($H$-point). These Fermi surfaces originate in different bands (right panel in Figure 7.6). Chromium has a cubic body centred crystal structure, where the $H$-point at ( $\pi / a, 0,0$ ) leads to the nesting vector $\boldsymbol{Q}_{x} \|(1,0,0)$ and equivalent vectors in $y$ - and $z$-direction, which are incommensurable with the lattice.
 
@@ -585,7 +584,7 @@ $$
 
 We have to ensures that an electron with $(\boldsymbol{k}, \uparrow)$ is available to be removed, and that the state $(\boldsymbol{k}+\boldsymbol{q}, \downarrow)$ is unoccupied. The independent electron-hole part of the spectrum constitutes a continuum of excitations and is depicted by the shaded region:
 
-![Attachments/Notes/Solid-State Theory/7 Magnetism in Metals/IMG-0201211526336.webp|700](/img/user/Attachments/Notes/Solid-State%20Theory/7%20Magnetism%20in%20Metals/IMG-0201211526336.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=170&rect=182,389,402,550|•]]
+![Attachments/Script 75.webp|700](/img/user/Attachments/Script%2075.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=170&rect=186,390,407,548|•]]
 
 Note that the spin splitting of the spectrum opens a window in the low-energy low-momentum transfer sector of the excitations.
 The excitation energy of $\left|\psi_{\boldsymbol{q}}\right\rangle$ can be obtained by solving the following Schrödinger equation

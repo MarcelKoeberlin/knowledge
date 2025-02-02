@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/5-detectors/","hide":"true","updated":"2025-01-29T20:54:11.128+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/5-detectors/","hide":"true","updated":"2025-02-02T13:45:59.116+01:00"}
 ---
 
 Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].

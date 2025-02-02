@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/4-continuous-time-fourier-transform/","hide":"true","updated":"2025-02-01T21:15:21.233+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/4-continuous-time-fourier-transform/","hide":"true","updated":"2025-02-02T13:45:59.077+01:00"}
 ---
 
 Jump back to [[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]].
@@ -44,8 +44,8 @@ As $T \to \infty$, the square wave approaches a rectangular pulse, and the Fouri
 
 ### 4.1.2 Derivation
 For a finite-duration signal $x(t)$, we construct a periodic signal $\tilde{x}(t)$ where $x(t)$ is one period:
-![Attachments/Notes/Signals and Systems/4 Continuous-Time Fourier Transform/IMG-0201211521203.webp|700](/img/user/Attachments/Notes/Signals%20and%20Systems/4%20Continuous-Time%20Fourier%20Transform/IMG-0201211521203.webp)
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=318&rect=123,434,423,595|•]]
+
+![Attachments/Oppenheim,Willsky_Signals and Systems 19.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2019.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=318&rect=120,433,420,596|•]]
 
 As $T \to \infty$, $\tilde{x}(t)$ becomes identical to $x(t)$. The Fourier series representation of $\tilde{x}(t)$ is:
 $$

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/1-signals-and-systems/","hide":"true","updated":"2025-02-01T21:15:20.612+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/1-signals-and-systems/","hide":"true","updated":"2025-02-02T13:45:59.084+01:00"}
 ---
 
 Jump back to [[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]].
@@ -160,16 +160,16 @@ The unit impulse should be considered an idealization of an infinitely short pul
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=72&selection=144,0,150,7|•]]
 
 An important idea is the concept of interconnecting systems since many real systems are built as interconnections of several subsystems. By breaking down a system into its interconnection of simpler subsystems, it may be possible to synthesize complex systems out of simpler, basic building blocks. The most frequently encountered connections are the _series/cascade_ and _parallel_ types:
-![Attachments/Notes/Signals and Systems/1 Signals and Systems/IMG-0201211520478.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/1%20Signals%20and%20Systems/IMG-0201211520478.webp)
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=73&rect=88,274,456,600|•]]
+
+![Attachments/Oppenheim,Willsky_Signals and Systems.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=73&rect=87,275,458,599|•]]
 
 The symbol $\bigoplus$ denotes addition, so that the output of the parallel system is the sum of the outputs of systems 1 and 2. Another important type is the feedback interconnection:
-![Attachments/Notes/Signals and Systems/1 Signals and Systems/IMG-0201211520513.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/1%20Signals%20and%20Systems/IMG-0201211520513.webp)
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=54,505,325,597|•]]
+
+![Attachments/Oppenheim,Willsky_Signals and Systems 1.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%201.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=52,506,327,597|•]]
 
 The output of system 1 is the input to system 2, while the output of system 2 is fed back and added to the external input to produce the actual input to system 1. These types of connections often arise in real systems. Consider figure (a) and note that it is equivalent to (b):
-![Attachments/Notes/Signals and Systems/1 Signals and Systems/IMG-0201211520551.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/1%20Signals%20and%20Systems/IMG-0201211520551.webp)
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=79,82,323,316|•]]
+
+![Attachments/Oppenheim,Willsky_Signals and Systems 2.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%202.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=90,84,325,315|•]]
 
 ---
 ## 1.9 Basic Properties
@@ -192,8 +192,8 @@ $$
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=76&selection=165,0,173,7|•]]
 
 A system is said to be invertible if distinct inputs produce distinct outputs. An inverse system exists such that:
-![Attachments/Notes/Signals and Systems/1 Signals and Systems/IMG-0201211520587.webp|900](/img/user/Attachments/Notes/Signals%20and%20Systems/1%20Signals%20and%20Systems/IMG-0201211520587.webp)
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&rect=106,565,359,612|•]]
+
+![Attachments/Oppenheim,Willsky_Signals and Systems 3.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%203.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&rect=104,566,358,606|•]]
 
 Invertibility is important in contexts like encoding and decoding systems, such as in communication or cryptography. For example, lossless coding requires that the encoder must be invertible.
 
@@ -209,8 +209,8 @@ $$
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&selection=55,0,59,9|•]]
 
 A system is stable if small inputs lead to bounded outputs. For example:
-![[Attachments/Notes/Signals and Systems/Signals and Systems/IMG-0128212142478.webp\|400]]
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&rect=188,46,306,245|•]]
+
+![Attachments/Oppenheim,Willsky_Signals and Systems 4.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%204.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&rect=191,46,305,240|•]]
 
 If the input is bounded, the output must also remain bounded.
 

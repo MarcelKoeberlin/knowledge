@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/4-imaging-surface-plasmon-polariton-propagation/","hide":"true","updated":"2025-02-01T21:15:20.220+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/4-imaging-surface-plasmon-polariton-propagation/","hide":"true","updated":"2025-02-02T13:45:59.041+01:00"}
 ---
 
 Jump back to [[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]].
@@ -24,11 +24,11 @@ While the successful excitation of surface plasmon polaritons (SPPs) using optic
 
 Using near-field optical microscopy in collection mode, also called photon scanning tunneling microscopy, allows for the investigation of SPP propagation with sub-wavelength resolution. A sharp tip is brought close to the surface under study. The tip collects photons by coupling the near field above the surface to propagating modes inside a tapered optical fiber. The resolution of this technique is limited by the size of the tip's aperture, which can reach dimensions of only 50 nm or even less. To study the confinement and propagation of SPPs using this scheme, the tip has to be brought within a distance $\hat{z}$ of the surface. For silver and gold films, this typically requires a gap of about 100 nm.
 
-![Attachments/Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation/IMG-0201211520065.webp|700](/img/user/Attachments/Notes/Plasmonics/4%20Imaging%20Surface%20Plasmon%20Polariton%20Propagation/IMG-0201211520065.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=71&rect=141,119,291,249|•]]
+![Attachments/Plasmonics - Fundamentals and Applications 16.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2016.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=71&rect=142,120,291,249|•]]
 
 To avoid interference with the detection scheme, optical excitation of SPPs usually takes place via prism coupling or tightly focused beams. In figure (a), the near-field image of the uncoated prism face is shown, and in (b), the image at an angle greater than the critical angle is presented. The exponentially decaying tail is due to SPP propagation away from the excitation region.
 
-![Attachments/Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation/IMG-0201211520096.webp|700](/img/user/Attachments/Notes/Plasmonics/4%20Imaging%20Surface%20Plasmon%20Polariton%20Propagation/IMG-0201211520096.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=72&rect=101,507,344,612|•]]
+![Attachments/Plasmonics - Fundamentals and Applications 17.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2017.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=72&rect=94,505,340,613|•]]
 
 ---
 ## 4.2 Fluorescence Imaging 
@@ -36,7 +36,8 @@ To avoid interference with the detection scheme, optical excitation of SPPs usua
 
 Instead of locally collecting the optical near field of SPPs using an apertured fiber tip, emitters such as quantum dots can be directly placed in the tail of the SPP field. If the frequency of the propagating SPP lies within the spectral absorption range of the emitter, excitation via SPPs is possible. The intensity of the emitted fluorescence radiation is proportional to the local field intensity at the emitter's position. Therefore, SPP propagation can be mapped by coating the surface with a dielectric film doped with emitters. An example of this is shown for (a) a silver nanoparticle and (b) a silver nanowire.
 
-![Attachments/Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation/IMG-0201211520128.webp|700](/img/user/Attachments/Notes/Plasmonics/4%20Imaging%20Surface%20Plasmon%20Polariton%20Propagation/IMG-0201211520128.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=75&rect=127,127,311,349|•]]
+![Attachments/Plasmonics - Fundamentals and Applications 18.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2018.webp)
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=75&rect=128,131,310,347|•]]
 
 ---
 ## 4.3 Leakage Radiation 
@@ -48,11 +49,11 @@ k_0b < \beta < k_0n_s
 $$
 This provides a second loss channel, in addition to the inherent absorptive losses.
 
-![Attachments/Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation/IMG-0201211520159.webp|700](/img/user/Attachments/Notes/Plasmonics/4%20Imaging%20Surface%20Plasmon%20Polariton%20Propagation/IMG-0201211520159.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=76&rect=111,111,332,257|•]]
+![Attachments/Plasmonics - Fundamentals and Applications 19.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2019.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=76&rect=114,109,332,253|•]]
 
 Apart from observing SPP propagation, this technique can also directly visualize the SPP dispersion relation. The SPPs at the air interface were excited by a focused light beam, using scattering from random surface roughness for phase-matching. Leakage radiation into the silica substrate was imaged using a CCD camera. Image (a) shows a flat film where the radiation is emitted within a cone at the surface plasmon angle $\theta_{SPP}$, defined by $n_sk_0\sin\theta_{SPP} = \beta$, which intersects the plane of the CCD in a circular pattern.
 
-![Attachments/Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation/IMG-0201211520193.webp|700](/img/user/Attachments/Notes/Plasmonics/4%20Imaging%20Surface%20Plasmon%20Polariton%20Propagation/IMG-0201211520193.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=78&rect=93,131,353,336|•]]
+![Attachments/Plasmonics - Fundamentals and Applications 20.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2020.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=78&rect=93,130,350,330|•]]
 
 For light of varying frequencies, the resulting wave vector can be determined by computing the SPP angle of leakage radiation. This allows access to the complex dispersion relation of a structured metal surface.
 

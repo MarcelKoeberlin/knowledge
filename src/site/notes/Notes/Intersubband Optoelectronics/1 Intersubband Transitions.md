@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/1-intersubband-transitions/","hide":"true","updated":"2025-01-29T20:52:06.545+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/1-intersubband-transitions/","hide":"true","updated":"2025-02-02T13:45:59.106+01:00"}
 ---
 
 Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].
