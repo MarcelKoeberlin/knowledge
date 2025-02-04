@@ -43,7 +43,7 @@ body {
 
   h1 {
     font-size: 2em !important;
-
+    margin: 0px !important;
     /* 40px/16=2.5em */
     img {
       height: 32px;
@@ -199,7 +199,7 @@ body {
   margin: auto;
   font-size: 18px;
   line-height: 1.5;
-  margin-top: 90px;
+  margin-top: 0px;
   position: relative;
   left: 0%;
 }
@@ -218,7 +218,6 @@ body {
   }
   display: inline-table;
   position: relative;
-  right:30px; 
 }
 
 .toc-container {
@@ -230,7 +229,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .sidebar-container {
       width: 100%; /* Take full width on smaller screens */
       right: 0;
@@ -240,6 +239,7 @@ body {
 .content {
   max-width: 90%;
   min-width: 5%;
+  top: 60px;
 }
   .toc, .backlinks {
       margin: 0;
@@ -372,13 +372,14 @@ body {
   #floating-control {
     position: fixed;
     color: var(--link-color);
-    bottom: 1vmax;
-    right: 1vmax;
+    bottom: 5px;
+    right: 20px;
     font-size: 24px;
     z-index: 999999;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    font-size: medium;
     //gap: 5px;
 
     .svg-icon,
@@ -461,13 +462,20 @@ body {
   }
 
   nav.navbar {
-    //top: 10px;
-    right: 10px;
-    left: 10px;
-    width: calc(100% - 20px);
-    border-radius: 2px;
-    border: var(--cards-border-width) solid var(--background-modifier-border);
-    z-index: 99999;
+        right: 10px;
+      left: 10px;
+      width: 100%;
+      border-radius: 2px;
+      border: var(--cards-border-width) solid var(--background-modifier-border);
+      z-index: 99999;
+      @media (max-width:700px) {
+          height: 60px;
+          right: 0px;
+          left: 0px;
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+  
 
 .search-text {
   display: none;
@@ -484,6 +492,7 @@ body {
         background-image: url(/img/logo.svg);
         margin-right: 5px;
         background-position: bottom;
+        margin-top: 5px;
       }
 
       span {
@@ -492,16 +501,30 @@ body {
     }
 
     .search-button {
+      position: fixed;
       border-radius: 5px;
-      background: linear-gradient(to right,#ff3c00, #ff8f00);
+      background: linear-gradient(to right, #ff3c00, #ff8f00);
       background-clip: border-box;
       -webkit-background-clip: border-box;
-      -webkit-text-fill-color: rgba(0,0,0,0);
+      margin-top: 10px;
+      margin-right: 20px;
+      -webkit-text-fill-color: rgba(0, 0, 0, 0);
       color: #004d61;
       border-block-width: 2px;
       min-width: 200px;
-      width: 10%; 
-
+      width: 10%;
+      top: 0px;
+      right: 0px;
+    
+      /* Flexbox to center the icon */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      .search-icon {
+        font-size: 1.5rem; /* Adjust size if needed */
+      }
+    
       @media (max-width: 800px) {
         margin-right: 10px;
         width: 20%;
@@ -742,7 +765,7 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
   position: fixed;
   top: 100px;
   //right: 50px;
-  left: 3%;
+  left: 20px;
   height: 100%;
   //min-width: 25px;
   display: flex;
@@ -968,3 +991,18 @@ body .cm-s-obsidian picture img {
     width: 400px;
   }
 }
+
+.navbar{
+  .navbar-inner {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    //left: 0px;
+    top: 0px;
+    position: fixed;
+    left: 0px;
+
+  }
+}
+
+
