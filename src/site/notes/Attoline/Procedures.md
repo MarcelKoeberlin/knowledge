@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-02-04T18:42:13.000+01:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-02-05T18:22:11.000+01:00"}
 ---
 
 # 1 High-Harmonic Generation
@@ -65,54 +65,94 @@ Overlap is done without filter and without gas: You compare both red pulses.
 4. Maximize interference with motion controller: 'Move relative position'
 5. Write down the position
 # 4 Measuring STRA
-6. Lift toroidal mirror
-7. Insert filter
-8. Turn shutter controller off
-9. Open gas to HHG
-10. STRA: Set position before zero
-11. Turn shutter on, and check if something happens with the counts
-12. Start
-13. Shutter settings: SPSS * steps > 100
+1. Lift toroidal mirror
+2. Insert filter
+3. Turn shutter controller off
+4. Open gas to HHG
+5. STRA: Set position before zero
+6. Turn shutter on, and check if something happens with the counts
+7. Start
+8. Shutter settings: SPSS * steps > 100
 
 # 5 RABBITT
-14. Set delay piezo to 'RABBITT' (standard setting is 'Nadja')
-15. Turn off gauge below table corner, CH2
-16. Pump the tubes and check pressure on right display -> 'target gas' should go down
-17. Target gas should be around 1500
-18. Open everything on the left side of target window (thin tube, behind power meter)
-19. Set manometer to 295
-20. Turn on preamp current
-21. Turn on FASTcomtec sockets
-22. Overlap them [[Attoline/Procedures#3.1 Spatial overlap\|spatially]] and [[Attoline/Procedures#3.2 Temporal overlap\|temporally]]
-23. Open gas TOF at bottle
-24. Open gas before and after manometer
-25. Set manometer to 295
-26. Drive in nozzle to line
-27. Measure IR power and set with 1AB to roughly 1 mW
-28. Insert 100 nm filter
-29. Turn on trigger (below intralux)
-30. Start MCS6A program
-31. Start Attoline, set device to FAST and do 3000 accumulation
-32. Let XUV pass, open shutter (doesn't matter if it saturates)
-33. Ramp up MCP (high voltage on) voltage slowly with right knob, expect counts over 1.95 V
-34. Go to roughly 2000, and do not go above 2.1 V
-35. Optimise by moving nozzle
+1. Set delay piezo to 'RABBITT' (standard setting is 'Nadja')
+2. Turn off gauge below table corner, CH2
+3. Pump the tubes and check pressure on right display -> 'target gas' should go down
+4. Target gas should be around 1500
+5. Open everything on the left side of target window (thin tube, behind power meter)
+6. Set manometer to 295
+7. Turn on preamp current
+8. Turn on FASTcomtec sockets
+9. Overlap them [[Attoline/Procedures#3.1 Spatial overlap\|spatially]] and [[Attoline/Procedures#3.2 Temporal overlap\|temporally]]
+10. Open gas TOF at bottle
+11. Open gas before and after manometer
+12. Set manometer to 295
+13. Drive in nozzle to line
+14. Measure IR power and set with 1AB to roughly 1 mW
+15. Insert 100 nm filter
+16. Turn on trigger (below intralux)
+17. Start MCS6A program
+18. Start Attoline, set device to FAST and do 3000 accumulation
+19. Let XUV pass, open shutter (doesn't matter if it saturates)
+20. Ramp up MCP (high voltage on) voltage slowly with right knob, expect counts over 1.95 V
+21. Go to roughly 2000, and do not go above 2.1 V
+22. Optimise by moving nozzle
 	1. If the counts are too high, then the metal is in the beam
-36. Settings:
+23. Settings:
 	2. 100 steps, 2 delta (fs steps), 0 start (0 V)
-37. Open IR with electronic shutter controller
-38. Voltage might need to be readjusted after measurement
-39. As soon as we see pulse, set it from start to (start + steps * delta)
+24. Open IR with electronic shutter controller
+25. Voltage might need to be readjusted after measurement
+26. As soon as we see pulse, set it from start to (start + steps * delta)
 # 6 10-Pass Alignment
-40. Connect photodiode to oscilloscope
-41. Use insertable mirror to align pass by pass (actually pass 2,4, 8 and 10)
-42. 
+1. Connect photodiode to oscilloscope
+2. Use insertable mirror to align pass by pass (actually pass 2,4, 8 and 10)
+3. 
 bla bla
 
 # 7 Venting the Back Part
-43. Close two black valves
-44. Move out filter in front of camera
-45. Close the valves to the turbos
-46. Shut down 'cross chamber' and 'surface' (both on right side of pressure reader, 2 out of 5)
-47. Turn of camera
-48. Start grafana (ulp), and on right monitor 'sent to API'
+1. Close two black valves
+2. Move out filter in front of camera
+3. Close the valves to the turbos
+4. Shut down 'cross chamber' and 'surface' (both on right side of pressure reader, 2 out of 5)
+5. Turn off camera
+6. Start grafana (ulp), and on right monitor 'sent to API'
+
+
+# 8 Laser shut-down
+In E8;
+1. Turn off beam stabilisation 3
+2. Measure the power
+3. Block seeding
+4. Turn off the crystal chiller, temperature will slowly raise
+5. Wait for $T=250^\circ$ and ramp down Evo voltage from 17.9 V to 7 V. Turn off.
+6. Turn of Evo 30 (black box)
+7. Ramp down the Pockel's cell
+8. Turn off the Dazzler
+9. Turn off beam stabilisation 2 and 1
+10. Turn off crystal chiller heating
+
+In E6.2:
+1. Turn off the chiller 
+2. Turn off the balistic thingy, by turning the thing
+
+# 9 Generation Chamber
+## 9.1 Purging Chamber
+
+1. Block beam in ==E8==
+2. Move out all filters
+3. Close black valves before and after the manipulation chamber, and after the glass hub
+4. Close the valves to the Pre-vac of the turbo pumps to be switched off
+5. Ensure the shutter chiller is turned off
+6. Shut down the four turbo pumps labelled 'Front Unit'
+7. Remove KF on second camber to prevent over-pressure
+8. Open the nitrogen valve on the wall to approximately 0.8 bar
+9. After the turbos spun down, pen the nitrogen valve at first chamber to start purging
+10. Wait until the KF be easily removed, which usually happens when the focusing chamber pressure is around 7E+2 mbar
+11. Close the nitrogen at first chamber and wall
+## 9.2 Venting chamber
+1. Close all other valves to the Pre-vac
+2. Open the valves between vented chambers and Pre-vac
+3. Wait until pressures around 3E-1 mbar to switch on the turbo pumps
+4. After the turbos have spun up, and pressure is around E-4/E-5 mbar, open all Pre-vac valves
+5. Rotate filters back
+

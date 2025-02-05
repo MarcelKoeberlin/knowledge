@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Plasmonics","permalink":"/notes/plasmonics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-02-02T13:45:59.036+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Plasmonics","permalink":"/notes/plasmonics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-02-05T13:55:54.000+01:00"}
 ---
 
 These notes primarily follow [Plasmonics: Fundamentals and Applications](https://link.springer.com/book/10.1007/0-387-37825-1) and [Plasmonics: From Basics to Advanced Topics](https://link.springer.com/book/10.1007/978-3-642-28079-5). My interest in this subject stems from its relevance to my current research, which we explore in the [Attoline](https://ulp.ethz.ch/research/attoline.html).
@@ -8,12 +8,12 @@ These notes primarily follow [Plasmonics: Fundamentals and Applications](https:/
 
 ---
 
-Plasmonics forms a major part of the field of _nanophotonics_, which explores how electromagnetic fields can be confined over dimensions on the order of or smaller than the wavelength. It is based on interaction processes between electromagnetic radiation and conduction electrons at metallic interfaces or in small metallic nanostructures, leading to an enhanced optical near field of sub-wavelength dimensions. Research in this area demonstrates how unexpected behavior can occur when discontinuities or sub-wavelength structures are imposed. This field is firmly grounded in **classical** physics.
+Plasmonics forms a major part of the field of _nanophotonics_, which explores how electromagnetic fields can be confined over dimensions on the order of or smaller than the wavelength. It is based on interaction processes between electromagnetic radiation and conduction electrons at metallic interfaces or in small metallic nanostructures, leading to an enhanced optical near field of sub-wavelength dimensions. Research in this area demonstrates how unexpected behaviour can occur when discontinuities or sub-wavelength structures are imposed. This field is firmly grounded in ==classical== physics.
 
 Roughly speaking, the field of plasmonics is 100 years old, yet it remains an active area of research. Four elements underlie current research in plasmonics:
 1. The ready availability of state-of-the-art fabrication methods, particularly for implementing nanostructures.
-2. The wealth of high-sensitivity optical characterization techniques.
-3. The rapid advancement in computing power and speed, allowing for powerful numerical modeling tools.
+2. The wealth of high-sensitivity optical characterisation techniques.
+3. The rapid advancement in computing power and speed, allowing for powerful numerical modelling tools.
 4. The wide range of applications, from solar cells to high-resolution microscopy, drug design, and more.
 
 ---

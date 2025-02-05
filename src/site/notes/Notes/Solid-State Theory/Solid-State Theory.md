@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-02-02T13:45:59.052+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-02-02T13:45:59.000+01:00"}
 ---
 
 These notes follow the lecture 'Solid-State Theory' taught by Prof. Sigrist in the spring semester of 2023. For the original version of my notes, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/notes2023). However, since the script handed out my Prof. Sigrist is of impressive quality, I decided to convert them to markdown (as used on this website) and implement annotations and footnotes seamlessly. All credit goes to Prof. Sigrist.

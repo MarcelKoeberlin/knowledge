@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/6-transport-properties-of-metals/","hide":"true","updated":"2025-02-02T13:46:08.331+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/6-transport-properties-of-metals/","hide":"true","updated":"2025-02-02T13:46:08.000+01:00"}
 ---
 
 fJump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].

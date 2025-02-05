@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/10-t-hz-quantum-cascade-laser/","hide":"true","updated":"2025-02-02T13:45:59.120+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/10-t-hz-quantum-cascade-laser/","hide":"true","updated":"2025-02-02T13:45:59.000+01:00"}
 ---
 
 Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].

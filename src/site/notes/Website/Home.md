@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-02-04T21:49:00.971+01:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-02-05T19:12:10.000+01:00"}
 ---
 
 Hi there!
@@ -23,7 +23,6 @@ It might sound strange, but I soon discovered that, while the physics is interes
 _30 January 2025_
 
 ---
-
 *You may notice the • symbol throughout the site. It’s used for my internal navigation and can be ignored. This website exists on two pages, deployed from two different services: [Vercel](https://koeberlin.vercel.app/) and [Netlify.](https://koeberlin.netlify.app/)Both pages are identical, but sometimes delayed with respect to each other by no more than one day.*
 
 *If you have any comments or suggestions, feel free to contact me on [GitHub,](https://github.com/MarcelKoeberlin) [LinkedIn,](https://www.linkedin.com/in/marcel-k%C3%B6berlin-776397244/)or via email using the button on the bottom right.*
