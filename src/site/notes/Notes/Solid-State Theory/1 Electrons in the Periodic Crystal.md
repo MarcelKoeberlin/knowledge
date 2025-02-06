@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-02-02T13:45:59.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-02-05T19:13:07.000+01:00"}
 ---
 
 Jump back to [[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]].
@@ -80,7 +80,7 @@ The space group $\mathcal{R}$ satisfies the properties of a group:
 3. **Inverse Element**: For every $\{g \mid \boldsymbol{a}\} \in \mathcal{R}$, there exists an inverse:
 
    $$
-   \{g \mid \boldsymbol{a}\}^{-1} = \{g^{-1} \mid -g^{-1}\boldsymbol{a}\}, \quad \text{such that} \quad \{g \mid \boldsymbol{a}\}^{-1}\{g \mid \boldsymbol{a}\} = \{E \mid \mathbf{0}\}.
+   \{g \mid \boldsymbol{a}\}^{-1} = \{g^{-1} \mid -g^{-1}\boldsymbol{a}\} \implies \{g \mid \boldsymbol{a}\}^{-1}\{g \mid \boldsymbol{a}\} = \{E \mid \mathbf{0}\}.
    $$
 
 In general, space group elements do not commute (non-Abelian group):

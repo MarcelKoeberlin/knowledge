@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Attosecond Physics","permalink":"/notes/attosecond-physics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-02-02T13:45:59.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Attosecond Physics","permalink":"/notes/attosecond-physics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-02-02T13:45:59.099+01:00"}
 ---
 
 These notes serve as an introduction to the exciting field of attosecond physics, primarily following [Attosecond and Strong-Field Physics](https://www.cambridge.org/core/books/attosecond-and-strongfield-physics/B75E906A3C0AFE97902F0500312816B3) and [Attosecond Physics: Attosecond Measurements and Control of Physical Systems](https://link.springer.com/book/10.1007/978-3-642-37623-8). While these books offer extensive theoretical and mathematical insights, they can be dense and abstract. In contrast, these notes emphasise an intuitive understanding of the underlying physics. Key formulas are included, but lengthy derivations are omitted to maintain conceptual clarity. However, mathematical details will be provided when they enhance understanding.
