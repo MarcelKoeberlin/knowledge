@@ -896,7 +896,7 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
   }
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1350px) {
   .sidebar {
     position: relative;
     transform: none;
@@ -978,7 +978,7 @@ h1,
 }
 
 body .cm-s-obsidian picture img {
-  width: 60%;
+  width: 65%;
   height: auto;
   max-width: 100%;
   display: block;
@@ -986,7 +986,7 @@ body .cm-s-obsidian picture img {
 }
 
 /* If the image width is less than 571px, set width to 400px */
-@media (max-width: 666px) {
+@media (max-width: 615px) {
   body .cm-s-obsidian picture img {
     width: 400px;
   }
