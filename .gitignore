@@ -11,3 +11,4 @@ src/site/styles/_theme.*.css
 .cache
 _site/
 **/.DS_Store
+src/site/notes/Attoline/Procedures (1).md
