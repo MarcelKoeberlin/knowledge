@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-02-07T10:57:49.914+01:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-02-07T11:44:00.000+01:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -13,15 +13,15 @@ Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|
 
 ---
 # 1 Fundamentals of High-Order Harmonic Generation
-[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=212&selection=2,0,3,10|•]]
+[[Reading/Books/Attosecond Physics/No file.pdf#page=212&selection=2,0,3,10|•]]
 
 The fundamental principle of high-harmonic generation (**HHG**) is straightforward:
 
-![Attachments/Attosecond and Strong-Field Physics Principles and Applications.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=213&rect=151,538,288,635|•]]
+![Attachments/Attosecond and Strong-Field Physics Principles and Applications.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications.webp)[[Reading/Books/Attosecond Physics/No file.pdf#page=213&rect=151,538,288,635|•]]
 
 An intense laser beam is focused into a gas jet or gas cell, typically at pressures ranging from a few millibars to a few bar, with peak intensities on the order of $10^{14}$ W/cm$^2$. When this intensity is sufficiently high, HHG occurs along the beam propagation axis. A filter is used to block the co-propagating, intense infrared driving laser (as HHG is not very efficient). The recorded harmonic spectrum schematically resembles the following:
 
-![Attachments/Attosecond and Strong-Field Physics Principles and Applications 1.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications%201.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=213&rect=302,543,431,635|•]]
+![Attachments/Attosecond and Strong-Field Physics Principles and Applications 1.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications%201.webp)[[Reading/Books/Attosecond Physics/No file.pdf#page=213&rect=302,543,431,635|•]]
 
 At low harmonics, the yield decreases rapidly. Beyond this, the spectrum forms a broad plateau, which extends to a cutoff energy approximately given by:
 
@@ -56,7 +56,7 @@ Assuming $\hbar\omega = I_p + E_k$, this model predicts two distinct classes of 
 The black and red curves represent long and short trajectories, respectively, while the lower figure illustrates the motion amplitude.
 
 ### 1.1.1 Odd-Harmonic Spectrum
-[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=218&selection=54,0,54,25|•]]
+[[Reading/Books/Attosecond Physics/No file.pdf#page=218&selection=54,0,54,25|•]]
 
 The discrete nature of the HHG spectrum arises from atomic symmetry. 
 
@@ -81,7 +81,7 @@ $$
 Thus, HHG driven by a monochromatic laser field produces only odd harmonics.
 
 ### 1.1.2 Wavelength Scaling of HHG
-[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=221&selection=8,0,8,25|•]]
+[[Reading/Books/Attosecond Physics/No file.pdf#page=221&selection=8,0,8,25|•]]
 
 The HHG cutoff energy scales with $U_p$, which is proportional to $\lambda^2$. Using mid-infrared lasers extends the harmonic spectrum to hundreds of electron volts, potentially covering the water window or reaching the kiloelectron-volt regime.
 
@@ -95,7 +95,7 @@ However, harmonics from long trajectories generally suffer from poor phase match
 
 ---
 ## 1.2 Phase Matching and Propagation of HHG in the Gas Medium
-[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=225&selection=14,0,14,59|•]]
+[[Reading/Books/Attosecond Physics/No file.pdf#page=225&selection=14,0,14,59|•]]
 
 Since HHG is a coherent nonlinear process, phase matching is essential for efficient harmonic emission. If phase matching is achieved, harmonic intensity grows quadratically with the number of atoms:
 
@@ -127,7 +127,7 @@ where $L_{\text{coh}} = \pi / \Delta k_q$ is the coherence length. While increas
 
 ---
 ## 1.3 Dependence of HHG Spectra on Macroscopic Conditions
-[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=235&selection=4,0,4,55|•]]
+[[Reading/Books/Attosecond Physics/No file.pdf#page=235&selection=4,0,4,55|•]]
 
 High-harmonic generation has become a valuable tool for extracting structural information about atoms and molecules. It is often assumed that experimental HHG spectra are perfectly phase-matched, allowing the modulus square of the single-photon atomic transition dipole to be retrieved from experimental data. After propagation through the gas medium, the HHG spectra can be expressed as:
 
@@ -137,7 +137,7 @@ $$
 
 where $W^{\prime}(\omega)$ is the **macroscopic wave packet** (**MWP**), distinguishing it from the single-atom response, and $d(\omega)$ is the photo-recombination transition dipole moment of a single atom. This assumption has been tested, for example, by evaluating the MWP in a hydrogen-like system.
 
-![Attachments/Attosecond and Strong-Field Physics Principles and Applications 2.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications%202.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=236&rect=124,365,487,638|•]]
+![Attachments/Attosecond and Strong-Field Physics Principles and Applications 2.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications%202.webp)[[Reading/Books/Attosecond Physics/No file.pdf#page=236&rect=124,365,487,638|•]]
 
 The MWP is primarily determined by the laser parameters and focusing conditions, and it is generally considered independent of the target gas. This is evident in (a) and (b), where reducing the peak intensity does not significantly alter the agreement. Furthermore, even in cases with poor phase matching, as seen in (c), the agreement holds. Panels (d) and (e) show similar results for Xe and Ne targets, reinforcing that if the equation is valid and the MWP depends only on the laser, the modulus square of the atomic transition dipole can be extracted.
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/2-linear-pulse-propagation/","hide":"true","updated":"2025-02-07T10:57:49.111+01:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/2-linear-pulse-propagation/","hide":"true","updated":"2025-02-07T12:03:52.000+01:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -7,10 +7,10 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 **Table of Contents**
 
-- [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#Wave Equation in the Spectral Domain: Helmholtz Equation\|Wave Equation in the Spectral Domain: Helmholtz Equation]]
-- [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#Linear vs Nonlinear Wave Propagation\|Linear vs Nonlinear Wave Propagation]]
-- [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#Ultrafast Pulses\|Ultrafast Pulses]]
-- [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#Linear pulse Propagation in a Dispersive Material\|Linear pulse Propagation in a Dispersive Material]]
+- [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.1 Wave Equation in the Spectral Domain: Helmholtz Equation\|2.1 Wave Equation in the Spectral Domain: Helmholtz Equation]]
+- [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.2 Linear vs Nonlinear Wave Propagation\|2.2 Linear vs Nonlinear Wave Propagation]]
+- [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.3 Ultrafast Pulses\|2.3 Ultrafast Pulses]]
+- [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.4 Linear pulse Propagation in a Dispersive Material\|2.4 Linear pulse Propagation in a Dispersive Material]]
 
 ---
 # 2 Linear Pulse Propagation
@@ -32,7 +32,7 @@ Today we can generate pulses as short as a few femtoseconds in the visible and n
 It is good practice to remember those orders of magnitude!
 
 ---
-## Wave Equation in the Spectral Domain: Helmholtz Equation
+## 2.1 Wave Equation in the Spectral Domain: Helmholtz Equation
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=48&selection=29,0,32,8|•]]
 
 We know that every function can be expanded in terms of a complete set of orthogonal functions. An example of this are the Fourier series and Fourier integral. A Fourier transform decomposes any arbitrary function of time into its harmonic frequency components. The inverse Fourier transform does the opposite, and decomposes an arbitrary function of time as a superposition of harmonic functions of time with different frequencies:
@@ -105,7 +105,7 @@ $$
 which is analogous to the time-independent Schrödinger equation for a free particle. Hence, the discussion on laser pulse propagation also applies to any quantum mechanical wave packet. 
 
 ---
-## Linear vs Nonlinear Wave Propagation
+## 2.2 Linear vs Nonlinear Wave Propagation
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=52&selection=80,0,82,40|•]]
 
 In linear optics, the wave equation is linear meaning that the electric and magnetic fields and their derivatives only appear to first order. Therefore, the superposition principle is valid, such that linear combinations of solutions $E_i$ and $H_i$ are solutions as well:
@@ -120,7 +120,7 @@ I_{\mathrm{tot}} \neq \sum_i I_i,
 $$
 since $\left(E_1+E_2\right)^2 \neq E_1^2+E_2^2$. However, it will hold even for intensities if the EM fields do not satisfy the conditions for interference, for example when they are polarised perpendicular to each other, or when two waves are fully incoherent.
 
-### Linear System Theory
+### 2.2.1 Linear System Theory
 
 The book covers this topic only very briefly, since it is not of highest importance in this field. However, I invite you to read my notes on [[Notes/Signals and Systems/Signals and Systems\|Signals and Systems]], which also covers this topic in detail. 
 
@@ -180,7 +180,7 @@ $$
 in a dispersive medium. Thus, the pulse power spectrum never changes during linear propagation in a dispersive medium. It is important to remember that this is in contrast to nonlinear pulse propagation. Therefore, if the optical spectrum of a laser pulse changes in the lab, we know that there must be some non-linearity in our system. 
 
 ---
-## Ultrafast Pulses
+## 2.3 Ultrafast Pulses
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=55&selection=76,0,78,16|•]]
 
 A coherent light pulse forms a photon wave packet, and can be described by a superposition of plane waves with different frequencies and phases at a fixed position in space. The shortest pulse for a given spectrum is obtained for a constant phase (see later). For a pulse observed at fixed position, we find
@@ -212,7 +212,7 @@ is called the pulse envelope:
 
 ![Attachments/UltraFastLasers_Keller 10.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2010.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=57&rect=186,510,386,604|•]]
 
-### Time-Bandwidth Product
+### 2.3.1 Time-Bandwidth Product
 
 The laser pulse duration $\tau_{\mathrm{p}}$ in laser physics is typically defined by the full width at half maximum (FWHM) of the time-dependent pulse intensity. Analogously, the laser pulse spectral width $\Delta f_{\mathrm{p}}$ in laser physics is normally defined by the FWHM of the spectral intensity. Next, some values of the time-bandwidth products $\Delta f_{\mathrm{p}} \times \tau_{\mathrm{p}}$ are summarised for some common pulse shapes:
 
@@ -263,7 +263,7 @@ $$
 \frac{\Delta \nu_{\mathrm{p}}}{v}=\frac{\Delta \lambda_{\mathrm{p}}}{\lambda}.
 $$
 
-### Shortest Pulse Duration
+### 2.3.2 Shortest Pulse Duration
 
 
 
@@ -278,12 +278,12 @@ $$
 whence $\langle t\rangle$ corresponds to the 'centre of gravity' of the temporal pulse profile. It can be shown that, for a given power spectrum $|\tilde{E}(\omega)|^2$, the shortest rms pulse duration is obtained with a linear spectral phase $\varphi(\omega)$. In this case, the spectral phase $\varphi(\omega)$ only consists of a constant and a linear term.
 
 ---
-## Linear pulse Propagation in a Dispersive Material
+## 2.4 Linear pulse Propagation in a Dispersive Material
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=62&selection=187,0,189,49|•]]
 
 Before beginning this chapter, it is important to clarify that linear pulse propagation means that no intensity-dependent material properties are considered, however the refractive index can have any nonlinear frequency dependence. 
 
-### Slowly-Varying-Envelope Approximation
+### 2.4.1 Slowly-Varying-Envelope Approximation
 
 To examine the propagation of a pulse, it is useful to first separate the fast oscillation of the complex electric field, and the dynamics of the fields' envelope $A(t)$:
 $$
@@ -308,7 +308,7 @@ $$
 \tilde{A}(z, \Delta \omega)=\tilde{A}(0, \Delta \omega) \mathrm{e}^{-\mathrm{i} \Delta k_n z}=\tilde{A}(0, \Delta \omega) \mathrm{e}^{-\mathrm{i}\left[k_n\left(\omega_0+\Delta \omega\right)-k_n\left(\omega_0\right)\right] z}.
 $$
 
-### First and Second Order Dispersion
+### 2.4.2 First and Second Order Dispersion
 
 As stated before, an optical pulse is a superposition of monochromatic plane waves, where each part of the spectrum has its own phase velocity. This leads to phase shifts between individual spectral components during propagation. Note that pulse broadening is caused by the dispersion of the group velocity and not of the phase velocity, which will be shown in the following.
 The shorter a pulse, the broader its spectrum, and the stronger the effects of dispersion become. Assuming that $\Delta\omega\ll \omega_0$, we may expand the wave number up to second order around the carrier frequency:
@@ -318,7 +318,7 @@ k_n(\omega) \approx k_n\left(\omega_0\right)+k_n^{\prime} \Delta \omega+\frac{1}
 $$
 This is satisfied in the optical region even for ultrashort pulses. We call $k^\prime_n=dk_n/d\omega$ the first order dispersion, and $k^{\prime\prime}_n=d^2k_n/d\omega^2$ the second order dispersion. 
 
-### Phase Velocity and Group Velocity
+### 2.4.3 Phase Velocity and Group Velocity
 
 For a Gaussian pulse, linear pulse propagation can be solved analytically up to second order, due to the fact that the Fourier transform of a Gaussian is Gaussian. This allows us to find the phase velocity as
 
@@ -339,7 +339,7 @@ $$
 T_{\mathrm{g}} \equiv \frac{z}{v_{\mathrm{g}}}=k_n^{\prime} z.
 $$
 
-### Pulse Broadening
+### 2.4.4 Pulse Broadening
 
 A pulse is **temporally** broadened by propagation through a dispersive medium. Note that we know that it can not be spectrally broadened in a linear system. 
 
@@ -416,7 +416,7 @@ $$
 \end{gathered}
 $$
 
-### Can a Pulse Propagate Faster than the Speed of Light in Vacuum?
+### 2.4.5 Can a Pulse Propagate Faster than the Speed of Light in Vacuum?
 
 The proof is skipped, but the group velocity can in fact be faster than the speed of light in vacuum. However, this is no contradiction with the theory of relativity. No information can be transmitted with superluminal velocity: Since a Gaussian pulse is analytical, the information about that Gaussian pulse already exists at all times everywhere in space, and it can already be completely reconstructed everywhere in space by Taylor series expansion. During propagation, only the pulse maximum is shifted. 
 It is useful to calculate a group index as 
@@ -428,7 +428,7 @@ $$
 v_g(\omega)\equiv\frac{c}{n_g}.
 $$
 
-### Higher Order Dispersion
+### 2.4.6 Higher Order Dispersion
 
 While pulses with a length of 10-30 fs can be generated straightforwardly, increasing difficulties arise for shorter durations. Therefore, knowledge of higher order dispersion becomes more important. To characterise higher order dispersion, it can be useful to introduce the dispersion lengths:
 $$
