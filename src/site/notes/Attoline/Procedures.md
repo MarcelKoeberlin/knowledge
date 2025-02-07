@@ -1,158 +1,207 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-02-05T18:22:11.000+01:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-02-07T10:45:09.000+01:00"}
 ---
 
+# Laser Startup
+E6.2:
+- Switch on the chiller of the Evo30, check coolant level and temperature ($23 ^\circ$)
+- Close the gas ballast valve on the scroll pump connected to the Ti:Sa chamber in the amplifier
+
+E8:
+- Block the seed
+- Check that the two chillers of Element2 and rainbow have enough coolant and the right temperature ($19^\circ$)
+- Room temperature should be around $22^\circ$
+- Check Ti:Sa chamber pressure with the sensor on the ground. Should not be above $\text{5.2e-2}$ mbar
+- Flip the Evo30 key
+- Configure Q-Switch settings of Evo30 (on shitty laptop) to external trigger. Turn on at low current (below 9.4 A)
+- Turn on crystal chamber heating
+- Turn on the Ti:Sa amplifier chiller
+- Wait until the temperature on the ACU decreases. Start automatic startup of Element2
+- Gradually ramp up the Evo30 current as the temperature decreases. It should equilibrate around $193$ K.
+- Pressure of chamber should not rise about $\text{9e-2}$ mbar
+- After the Element2 started up, open the shutter
+- check that the f-2f beating signal is around 104 MHz and at -30 dBm
+	- If necessary, use the CEP4 incoupling mirrors to improve the signal
+	- Move wedges by choosing 'pico motors' in the Element2 software to centre beat signal. left button shifts signal to higher frequencies
+	- Delta value on control electronics should decrease as well
+- Wait for some time (~30 minutes) before stabilisation of the beat signal
+- Turn on slow loop, then the RF power amp at the CEP4 control module
+> [!DANGER] Do not check the AOFS signal when the RF amp is on, otherwise damage is done	
+
+- Align the XY1 and XY2 mirrors on the diodes QD1 and QD2. Enable stabilisation
+- Switch on the Pockels cell, turn the Dazzler on and load appropriate settings
+	- Dazzler power should be below 5%. 
+	- A software restart will fix most errors and re-initialising communication with PORT7
+- Measure the seed power before coupling into the amplifier (check that the photodiode does not measure above 0.3 V)
+- Seed the amplifier for one hour after turning on the Evo30.
+- Measure power at amplifier output, should be around 2 W
+	- Else, improve alignment or increase Dazzler power 
+	- Do not align too much if amplifier is already warmed up
+- Check pointing on monitor and on QD3. Realign the XY3 mirror if necessary.
+- Turn on XY3 beam stabilisation
+- Make sure not more than 1.26 W are sent to E6
+
+---
 # 1 High-Harmonic Generation
+- Insert beamblock 1 and 2
+- Close iris
+- Put beamblock after fibre
+- Turn on beam stabilization and realign if necessary, using either focussing mirror or the two (piezo) mirrors right before the fibre
+- Open iris
+- check if mode looks good
+- Close shutter
+- Remove beamblock
+- Insert 600 nm filter, use bottom right monitor
+- Close gas bottle and HHG valve
+- Fully open the pressure preregulator
+- Open 'pump' valves and start pump
+- After a minute (see pressure on right display), stop pump and close pump values
+- Fully close pressure preregulator
+- Open HHG gas
+- Set pressure preregulator (something like 60)
+- Open both vacuum valves (?)
+- Turn on camera, its power supply is behind it
+- Start software in LabView
+- Move up the mirror
+- Let HHG gas enter
+- Open Shutter
+- If there are counts, optimize them a little
+- Let the system warm up: 
+	- Close gas to vacuum chamber, to not waste gas
+	- Close shutter
 
-1. Insert beamblock 1 and 2
-2. Close iris
-3. Put beamblock after fibre
-4. Turn on beam stabilization and realign if necessary, using either focussing mirror or the two (piezo) mirrors right before the fibre
-5. Open iris
-6. check if mode looks good
-7. Close shutter
-8. Remove beamblock
-9. Insert 600 nm filter, use bottom right monitor
-10. Close gas bottle and HHG valve
-11. Fully open the pressure preregulator
-12. Open 'pump' valves and start pump
-13. After a minute (see pressure on right display), stop pump and close pump values
-14. Fully close pressure preregulator
-15. Open HHG gas
-16. Set pressure preregulator (something like 60)
-17. Open both vacuum valves (?)
-18. Turn on camera, its power supply is behind it
-19. Start software in LabView
-20. Move up the mirror
-21. Let HHG gas enter
-22. Open Shutter
-23. If there are counts, optimize them a little
-24. Let the system warm up: 
-	1. Close gas to vacuum chamber, to not waste gas
-	2. Close shutter
-
+---
 # 2 ATAS
-1. Insert sample
-2. Open chamber with crank
-3. Start VAB program COM3 position, set COM port, 'online'
-4. Check counts while inserting
-5. Turn on light in chamber
-6. Start camera on TinkPad
-7. Turn on stepper and control (?)
-8. Lower end of sample holder at $z\approx 34$ 
-9. Start STRA program 
-	1. >[!TIP] Doesn't work? Turn trigger on
-10. Set proper exposure
-11. Optimize x, y, z position
-12. Overlap them [[Attoline/Procedures#3.1 Spatial overlap\|spatially]] and [[Attoline/Procedures#3.2 Temporal overlap\|temporally]].
-13. Tune to specific power with IRIS pump / IR
-14. > [!WARNING] Turn on the shutter chiller
+- Insert sample
+- Open chamber with crank
+- Start VAB program COM3 position, set COM port, 'online'
+- Check counts while inserting
+- Turn on light in chamber
+- Start camera on TinkPad
+- Turn on stepper and control (?)
+- Lower end of sample holder at $z\approx 34$ 
+- Start STRA program 
+> [!TIP] Doesn't work? Turn trigger on
+- Set proper exposure
+- Optimise x, y, z position
+- Overlap them [[Attoline/Procedures#3.1 Spatial overlap\|spatially]] and [[Attoline/Procedures#3.2 Temporal overlap\|temporally]].
+- Tune to specific power with IRIS pump / IR
+> [!WARNING] Turn on the shutter chiller
 
+---
 # 3 Overlap
-Overlap is done without filter and without gas: You compare both red pulses. 
+- Overlap is done without filter and without gas: You compare both red pulses. 
 ## 3.1 Spatial Overlap
-1. Align to camera, place _cross_ with mouse
-2. Close the shutter, main point will vanish
-3. Turn on electornic shutter controller
-4. Align probe on _cross_ with controller 2AB (don't be confused with the reflection!)
-5. Optimize shape with 3AB
-6. Repeat 4. and 5. until shape and position is good
-7. Open shutter
+- Align to camera, place _cross_ with mouse
+- Close the shutter, main point will vanish
+- Turn on electornic shutter controller
+- Align probe on _cross_ with controller 2AB (don't be confused with the reflection!)
+- Optimize shape with 3AB
+- Repeat 4. and 5. until shape and position is good
+- Open shutter
 ## 3.2 Temporal Overlap
-1. Use ThinkPad and look at interferogram
-2. Set piezo to 5 V (preset 'reset')
-3. Maximize signal with the mirror before the 'wheel', but after the beam splitter
-4. Maximize interference with motion controller: 'Move relative position'
-5. Write down the position
+- Use ThinkPad and look at interferogram
+- Set piezo to 5 V (preset 'reset')
+- Maximize signal with the mirror before the 'wheel', but after the beam splitter
+- Maximize interference with motion controller: 'Move relative position'
+- Write down the position
+
+---
 # 4 Measuring STRA
-1. Lift toroidal mirror
-2. Insert filter
-3. Turn shutter controller off
-4. Open gas to HHG
-5. STRA: Set position before zero
-6. Turn shutter on, and check if something happens with the counts
-7. Start
-8. Shutter settings: SPSS * steps > 100
+- Lift toroidal mirror
+- Insert filter
+- Turn shutter controller off
+- Open gas to HHG
+- STRA: Set position before zero
+- Turn shutter on, and check if something happens with the counts
+- Start
+- Shutter settings: SPSS * steps > 100
 
+---
 # 5 RABBITT
-1. Set delay piezo to 'RABBITT' (standard setting is 'Nadja')
-2. Turn off gauge below table corner, CH2
-3. Pump the tubes and check pressure on right display -> 'target gas' should go down
-4. Target gas should be around 1500
-5. Open everything on the left side of target window (thin tube, behind power meter)
-6. Set manometer to 295
-7. Turn on preamp current
-8. Turn on FASTcomtec sockets
-9. Overlap them [[Attoline/Procedures#3.1 Spatial overlap\|spatially]] and [[Attoline/Procedures#3.2 Temporal overlap\|temporally]]
-10. Open gas TOF at bottle
-11. Open gas before and after manometer
-12. Set manometer to 295
-13. Drive in nozzle to line
-14. Measure IR power and set with 1AB to roughly 1 mW
-15. Insert 100 nm filter
-16. Turn on trigger (below intralux)
-17. Start MCS6A program
-18. Start Attoline, set device to FAST and do 3000 accumulation
-19. Let XUV pass, open shutter (doesn't matter if it saturates)
-20. Ramp up MCP (high voltage on) voltage slowly with right knob, expect counts over 1.95 V
-21. Go to roughly 2000, and do not go above 2.1 V
-22. Optimise by moving nozzle
-	1. If the counts are too high, then the metal is in the beam
-23. Settings:
-	2. 100 steps, 2 delta (fs steps), 0 start (0 V)
-24. Open IR with electronic shutter controller
-25. Voltage might need to be readjusted after measurement
-26. As soon as we see pulse, set it from start to (start + steps * delta)
+- Set delay piezo to 'RABBITT' (standard setting is 'Nadja')
+- Turn off gauge below table corner, CH2
+- Pump the tubes and check pressure on right display -> 'target gas' should go down
+- Target gas should be around 1500
+- Open everything on the left side of target window (thin tube, behind power meter)
+- Set manometer to 295
+- Turn on pre-amp current
+- Turn on FASTcomtec sockets
+- Overlap them [[Attoline/Procedures#3.1 Spatial overlap\|spatially]] and [[Attoline/Procedures#3.2 Temporal overlap\|temporally]]
+- Open gas TOF at bottle
+- Open gas before and after manometer
+- Set manometer to 295
+- Drive in nozzle to line
+- Measure IR power and set with 1AB to roughly 1 mW
+- Insert 100 nm filter
+- Turn on trigger (below intralux)
+- Start MCS6A program
+- Start Attoline, set device to FAST and do 3000 accumulation
+- Let XUV pass, open shutter (doesn't matter if it saturates)
+- Ramp up MCP (high voltage on) voltage slowly with right knob, expect counts over 1.95 V
+- Go to roughly 2000, and do not go above 2.1 V
+- Optimise by moving nozzle
+	- If the counts are too high, then the metal is in the beam
+- Settings:
+	- 100 steps, 2 delta (fs steps), 0 start (0 V)
+- Open IR with electronic shutter controller
+- Voltage might need to be readjusted after measurement
+- As soon as we see pulse, set it from start to (start + steps * delta)
+
+---
 # 6 10-Pass Alignment
-1. Connect photodiode to oscilloscope
-2. Use insertable mirror to align pass by pass (actually pass 2,4, 8 and 10)
-3. 
-bla bla
+- Connect photodiode to oscilloscope
+- Use insertable mirror to align pass by pass (actually pass 2,4, 8 and 10)
+- 
+- bla bla
 
+---
 # 7 Venting the Back Part
-1. Close two black valves
-2. Move out filter in front of camera
-3. Close the valves to the turbos
-4. Shut down 'cross chamber' and 'surface' (both on right side of pressure reader, 2 out of 5)
-5. Turn off camera
-6. Start grafana (ulp), and on right monitor 'sent to API'
+- Close two black valves
+- Move out filter in front of camera
+- Close the valves to the turbos
+- Shut down 'cross chamber' and 'surface' (both on right side of pressure reader, 2 out of 5)
+- Turn off camera
+- Start grafana (ulp), and on right monitor 'sent to API'
 
-
+---
 # 8 Laser shut-down
 In E8;
-1. Turn off beam stabilisation 3
-2. Measure the power
-3. Block seeding
-4. Turn off the crystal chiller, temperature will slowly raise
-5. Wait for $T=250^\circ$ and ramp down Evo voltage from 17.9 V to 7 V. Turn off.
-6. Turn of Evo 30 (black box)
-7. Ramp down the Pockel's cell
-8. Turn off the Dazzler
-9. Turn off beam stabilisation 2 and 1
-10. Turn off crystal chiller heating
+- Turn off beam stabilisation 3
+- Measure the power
+- Block seeding
+- Turn off the crystal chiller, temperature will slowly raise
+- Wait for $T=250^\circ$ and ramp down Evo voltage from 17.9 V to 7 V. Turn off.
+- Turn of Evo 30 (black box)
+- Ramp down the Pockel's cell
+- Turn off the Dazzler
+- Turn off beam stabilisation 2 and 1
+- Turn off crystal chiller heating
 
 In E6.2:
-1. Turn off the chiller 
-2. Turn off the balistic thingy, by turning the thing
+- Turn off the chiller 
+- Turn off the balistic thingy, by turning the thing
 
+---
 # 9 Generation Chamber
 ## 9.1 Purging Chamber
 
-1. Block beam in ==E8==
-2. Move out all filters
-3. Close black valves before and after the manipulation chamber, and after the glass hub
-4. Close the valves to the Pre-vac of the turbo pumps to be switched off
-5. Ensure the shutter chiller is turned off
-6. Shut down the four turbo pumps labelled 'Front Unit'
-7. Remove KF on second camber to prevent over-pressure
-8. Open the nitrogen valve on the wall to approximately 0.8 bar
-9. After the turbos spun down, pen the nitrogen valve at first chamber to start purging
-10. Wait until the KF be easily removed, which usually happens when the focusing chamber pressure is around 7E+2 mbar
-11. Close the nitrogen at first chamber and wall
+- Block beam in ==E8==
+- Move out all filters
+- Close black valves before and after the manipulation chamber, and after the glass hub
+- Close the valves to the Pre-vac of the turbo pumps to be switched off
+- Ensure the shutter chiller is turned off
+- Shut down the four turbo pumps labelled 'Front Unit'
+- Remove KF on second camber to prevent over-pressure
+- Open the nitrogen valve on the wall to approximately 0.8 bar
+- After the turbos spun down, pen the nitrogen valve at first chamber to start purging
+- Wait until the KF be easily removed, which usually happens when the focusing chamber pressure is around 7E+2 mbar
+- Close the nitrogen at first chamber and wall
 ## 9.2 Venting chamber
-1. Close all other valves to the Pre-vac
-2. Open the valves between vented chambers and Pre-vac
-3. Wait until pressures around 3E-1 mbar to switch on the turbo pumps
-4. After the turbos have spun up, and pressure is around E-4/E-5 mbar, open all Pre-vac valves
-5. Rotate filters back
+- Close all other valves to the Pre-vac
+- Open the valves between vented chambers and Pre-vac
+- Wait until pressures around 3E-1 mbar to switch on the turbo pumps
+- After the turbos have spun up, and pressure is around E-4/E-5 mbar, open all Pre-vac valves
+- Rotate filters back
 
+---
