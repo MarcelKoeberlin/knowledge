@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-02-07T10:45:09.000+01:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-02-07T10:45:21.000+01:00"}
 ---
 
-# Laser Startup
+# 1 Laser Startup
 E6.2:
 - Switch on the chiller of the Evo30, check coolant level and temperature ($23 ^\circ$)
 - Close the gas ballast valve on the scroll pump connected to the Ti:Sa chamber in the amplifier
@@ -42,7 +42,7 @@ E8:
 - Make sure not more than 1.26 W are sent to E6
 
 ---
-# 1 High-Harmonic Generation
+# 2 High-Harmonic Generation
 - Insert beamblock 1 and 2
 - Close iris
 - Put beamblock after fibre
@@ -71,7 +71,7 @@ E8:
 	- Close shutter
 
 ---
-# 2 ATAS
+# 3 ATAS
 - Insert sample
 - Open chamber with crank
 - Start VAB program COM3 position, set COM port, 'online'
@@ -89,9 +89,9 @@ E8:
 > [!WARNING] Turn on the shutter chiller
 
 ---
-# 3 Overlap
+# 4 Overlap
 - Overlap is done without filter and without gas: You compare both red pulses. 
-## 3.1 Spatial Overlap
+## 4.1 Spatial Overlap
 - Align to camera, place _cross_ with mouse
 - Close the shutter, main point will vanish
 - Turn on electornic shutter controller
@@ -99,7 +99,7 @@ E8:
 - Optimize shape with 3AB
 - Repeat 4. and 5. until shape and position is good
 - Open shutter
-## 3.2 Temporal Overlap
+## 4.2 Temporal Overlap
 - Use ThinkPad and look at interferogram
 - Set piezo to 5 V (preset 'reset')
 - Maximize signal with the mirror before the 'wheel', but after the beam splitter
@@ -107,7 +107,7 @@ E8:
 - Write down the position
 
 ---
-# 4 Measuring STRA
+# 5 Measuring STRA
 - Lift toroidal mirror
 - Insert filter
 - Turn shutter controller off
@@ -118,7 +118,7 @@ E8:
 - Shutter settings: SPSS * steps > 100
 
 ---
-# 5 RABBITT
+# 6 RABBITT
 - Set delay piezo to 'RABBITT' (standard setting is 'Nadja')
 - Turn off gauge below table corner, CH2
 - Pump the tubes and check pressure on right display -> 'target gas' should go down
@@ -149,14 +149,14 @@ E8:
 - As soon as we see pulse, set it from start to (start + steps * delta)
 
 ---
-# 6 10-Pass Alignment
+# 7 10-Pass Alignment
 - Connect photodiode to oscilloscope
 - Use insertable mirror to align pass by pass (actually pass 2,4, 8 and 10)
 - 
 - bla bla
 
 ---
-# 7 Venting the Back Part
+# 8 Venting the Back Part
 - Close two black valves
 - Move out filter in front of camera
 - Close the valves to the turbos
@@ -165,7 +165,7 @@ E8:
 - Start grafana (ulp), and on right monitor 'sent to API'
 
 ---
-# 8 Laser shut-down
+# 9 Laser shut-down
 In E8;
 - Turn off beam stabilisation 3
 - Measure the power
@@ -183,8 +183,8 @@ In E6.2:
 - Turn off the balistic thingy, by turning the thing
 
 ---
-# 9 Generation Chamber
-## 9.1 Purging Chamber
+# 10 Generation Chamber
+## 10.1 Purging Chamber
 
 - Block beam in ==E8==
 - Move out all filters
@@ -197,7 +197,7 @@ In E6.2:
 - After the turbos spun down, pen the nitrogen valve at first chamber to start purging
 - Wait until the KF be easily removed, which usually happens when the focusing chamber pressure is around 7E+2 mbar
 - Close the nitrogen at first chamber and wall
-## 9.2 Venting chamber
+## 10.2 Venting chamber
 - Close all other valves to the Pre-vac
 - Open the valves between vented chambers and Pre-vac
 - Wait until pressures around 3E-1 mbar to switch on the turbo pumps
