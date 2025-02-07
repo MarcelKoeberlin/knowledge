@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-02-02T13:45:59.081+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-02-07T10:58:53.000+01:00"}
 ---
 
 These notes will mostly follow along the book [Signals and Systems - 2nd edition](https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574) by Alan V. Oppenheim and Alan S. Willsky. 
 
-[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|Table of Contents]]
+==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|Table of Contents]]==
 
 ---
 While working on my master’s thesis and trying to figure out how to perform accurate noise measurements, I discovered that signal processing is about much more than just Fourier transforming your measured signal. This realisation hit me when we were using a highly sensitive oscilloscope to measure laser noise. After Fourier transforming the data—which was time-consuming and computationally intensive—we noticed something surprising: the noise trace was _still_ too noisy.

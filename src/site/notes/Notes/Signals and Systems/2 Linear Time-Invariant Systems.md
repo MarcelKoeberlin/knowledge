@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/2-linear-time-invariant-systems/","hide":"true","updated":"2025-02-02T13:45:59.079+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/2-linear-time-invariant-systems/","hide":"true","updated":"2025-02-07T10:57:49.748+01:00"}
 ---
 
-Jump back to [[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]].
+Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**

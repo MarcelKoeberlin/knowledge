@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/3-excitation-of-surface-plasmon-polaritons-at-planar-interfaces/","hide":"true","updated":"2025-02-02T15:34:11.542+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/3-excitation-of-surface-plasmon-polaritons-at-planar-interfaces/","hide":"true","updated":"2025-02-07T10:57:49.837+01:00"}
 ---
 
-Jump back to [[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]].
+Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**

@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/2-linear-pulse-propagation/","hide":"true","updated":"2025-02-06T21:09:49.063+01:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/2-linear-pulse-propagation/","hide":"true","updated":"2025-02-07T10:57:49.111+01:00"}
 ---
 
-Jump back to [[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]].
+Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
@@ -81,7 +81,7 @@ and use the relation for the second-order derivate, to transform the equation to
 $$
 \frac{\partial^2 \tilde{E}(z, \omega)}{\partial z^2}+\frac{\omega^2}{c^2} \tilde{E}(z, \omega)=-\mu_0 \omega^2 \tilde{P}(z, \omega).
 $$
-We consider propagation along the z-axis.It then follows that 
+We consider propagation along the z-axis. It then follows that 
 
 $$
 \tilde{P}(z, \omega)=\chi(\omega) \varepsilon_0 \tilde{E}(z, \omega)=[\varepsilon(\omega)-1] \varepsilon_0 \tilde{E}(z, \omega),
@@ -218,12 +218,12 @@ The laser pulse duration $\tau_{\mathrm{p}}$ in laser physics is typically defin
 
 |                                       |                                $I(t)(x \equiv t / \tau)$                                 | $\tau_{\mathrm{p}} / \tau$ | $\Delta f_{\mathrm{p}} \times \tau_{\mathrm{p}}$ |
 | :-----------------------------------: | :--------------------------------------------------------------------------------------: | :------------------------: | :----------------------------------------------: |
-|             **Gaussian**              |                                 $I(t)=\mathrm{e}^{-x^2}$                                 |      $2 \sqrt{\ln 2}$      |                      0.4413                      |
-| **Hyperbolic secant (soliton pulse)** |                              $I(t)=\operatorname{sech}^2 x$                              |           1.7627           |                      0.3148                      |
-|             **Rectangle**             | $I(t)=\left\{\begin{array}{l}1,\|t\| \leq \tau / 2 \\0,\|t\|>\tau / 2\end{array}\right.$ |             1              |                      0.8859                      |
-|             **Parabolic**             |       $I(t)= \begin{cases}1-x^2, & \|t\| \leq \tau \\ 0, & \|t\|>\tau\end{cases}$        |         $\sqrt{2}$         |                      0.7276                      |
-|            **Lorentzian**             |                                  $I(t)=\frac{1}{1+x^2}$                                  |             2              |                      0.2206                      |
-|   **Symmetric two-sided exponent**    |                               $I(t)=\mathrm{e}^{-2\|x\|}$                                |          $\ln 2$           |                      0.1420                      |
+|             **Gaussian**              |                                 $I(t)=\mathrm{e}^{-x^2}$                                 |      $2 \sqrt{\ln 2}$      |                     $0.4413$                     |
+| **Hyperbolic secant (soliton pulse)** |                              $I(t)=\operatorname{sech}^2 x$                              |          $1.7627$          |                     $0.3148$                     |
+|             **Rectangle**             | $I(t)=\left\{\begin{array}{l}1,\|t\| \leq \tau / 2 \\0,\|t\|>\tau / 2\end{array}\right.$ |             1              |                     $0.8859$                     |
+|             **Parabolic**             |       $I(t)= \begin{cases}1-x^2, & \|t\| \leq \tau \\ 0, & \|t\|>\tau\end{cases}$        |         $\sqrt{2}$         |                     $0.7276$                     |
+|            **Lorentzian**             |                                  $I(t)=\frac{1}{1+x^2}$                                  |            $2$             |                     $0.2206$                     |
+|   **Symmetric two-sided exponent**    |                               $I(t)=\mathrm{e}^{-2\|x\|}$                                |          $\ln 2$           |                     $0.1420$                     |
 
 We consider explicitly a _chirped_ Gaussian pulse:
 $$

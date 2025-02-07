@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/2-surface-plasmon-polaritons-at-metal-insulator-interfaces/","hide":"true","updated":"2025-02-02T13:45:59.037+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/2-surface-plasmon-polaritons-at-metal-insulator-interfaces/","hide":"true","updated":"2025-02-07T10:57:49.847+01:00"}
 ---
 
-Jump back to [[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]].
+Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**

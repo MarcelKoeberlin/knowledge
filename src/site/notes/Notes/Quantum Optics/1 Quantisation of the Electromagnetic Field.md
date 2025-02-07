@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/notes/quantum-optics/1-quantisation-of-the-electromagnetic-field/","hide":"true","updated":"2025-02-02T13:45:59.047+01:00"}
+{"dg-publish":true,"permalink":"/notes/quantum-optics/1-quantisation-of-the-electromagnetic-field/","hide":"true","updated":"2025-02-07T10:57:49.785+01:00"}
 ---
 
-Jump back to [[Notes/Quantum Optics/Quantum Optics#Table of Contents\|chapter selection]].
+Jump back to ==[[Notes/Quantum Optics/Quantum Optics#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**

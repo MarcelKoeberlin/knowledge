@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/11-frequency-combs/","hide":"true","updated":"2025-02-02T13:45:59.115+01:00"}
+{"dg-publish":true,"permalink":"/notes/intersubband-optoelectronics/11-frequency-combs/","hide":"true","updated":"2025-02-07T10:57:49.185+01:00"}
 ---
 
-Jump back to [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]].
+Jump back to ==[[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
