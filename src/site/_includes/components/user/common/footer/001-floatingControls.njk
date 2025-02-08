@@ -4,7 +4,7 @@
         <i class="svg-icon toggle-on" icon-name="eye" aria-hidden="true"></i>
         <i class="svg-icon toggle-off" icon-name="eye-closed" aria-hidden="true"></i>
     </span>
-        <span id="theme-switch" class="dark">
+    <span id="theme-switch" class="dark">
         <i class="svg-icon light" icon-name="sun" aria-hidden="true"></i>
         <i class="svg-icon dark" icon-name="moon" aria-hidden="true"></i>
     </span>
@@ -35,6 +35,22 @@
         document.documentElement.setAttribute('data-theme', theme);
     }
 
+    function changeGiscusTheme() {
+        const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'gruvbox_dark' : 'gruvbox_light';
+
+        function sendMessage(message) {
+            const iframe = document.querySelector('iframe.giscus-frame');
+            if (!iframe) return;
+            iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+
+        sendMessage({
+            setConfig: {
+                theme: theme
+            }
+        });
+    }
+
     function setTheme(theme, updateIcon = true) {
         if (updateIcon) {
             setThemeIcon(theme);
@@ -42,15 +58,9 @@
         applyTheme(theme);
         window.localStorage.setItem('site-theme', theme);
         window.theme = theme;
-        utterancesTheme(); // Call after changing theme
-    }
-
-    function utterancesTheme() {
-        const iframe = document.querySelector('.utterances-frame');
-        if (iframe) {
-            const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'gruvbox-dark' : 'github-light';
-            iframe.contentWindow.postMessage({ type: 'set-theme', theme: theme }, 'https://utteranc.es');
-        }
+        
+        // Update Giscus comments theme
+        changeGiscusTheme();
     }
 
     document.getElementById('theme-switch').addEventListener('click', () => {
@@ -62,7 +72,6 @@
     const savedTheme = window.localStorage.getItem('site-theme') || 'dark';
     setTheme(savedTheme);
 </script>
-
 
 <style>
 #theme-switch .svg-icon {
@@ -77,7 +86,6 @@
     display: inline;
 }
 </style>
-
 
 <script>
     // Handle Sidebar Toggle
