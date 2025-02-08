@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/8-magnetism-of-localised-moments/","hide":"true","updated":"2025-02-07T10:57:49.099+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/8-magnetism-of-localised-moments/","hide":"true","updated":"2025-02-08T20:24:05.962+01:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -251,8 +251,8 @@ where $t=1 / 2 m$ and the density of states $N\left(\epsilon_{F}\right)^{*}=N\le
 $$
 \begin{align*}
 \begin{aligned}
-& F_{0}^{a}=-\frac{U N\left(\epsilon_{F}\right)}{4} \frac{2 U_{c}+U}{\left(U+U_{c}\right)^{2}} U_{c}, \quad \Rightarrow \quad \chi=\frac{\mu_{B}^{2} N\left(\epsilon_{F}\right)^{*}}{1+F_{0}^{a}} \\
-& F_{0}^{s}=\frac{U N\left(\epsilon_{F}\right)}{4} \frac{2 U_{C}-U}{\left(U-U_{c}\right)^{2}} U_{c}, \quad \Rightarrow \quad \kappa=\frac{N\left(\epsilon_{F}\right)^{*}}{n^{2}\left(1+F_{0}^{s}\right)} .
+& F_{0}^{a}=-\frac{U N\left(\epsilon_{F}\right)}{4} \frac{2 U_{c}+U}{\left(U+U_{c}\right)^{2}} U_{c} \implies \chi=\frac{\mu_{B}^{2} N\left(\epsilon_{F}\right)^{*}}{1+F_{0}^{a}} \\
+& F_{0}^{s}=\frac{U N\left(\epsilon_{F}\right)}{4} \frac{2 U_{C}-U}{\left(U-U_{c}\right)^{2}} U_{c} \implies \kappa=\frac{N\left(\epsilon_{F}\right)^{*}}{n^{2}\left(1+F_{0}^{s}\right)} .
 \end{aligned}
 \end{align*}
 $$
@@ -368,7 +368,7 @@ $$
 The free energy per spin is consequently given by
 $$
 \begin{align*}
-F(m, T)=-\frac{1}{N} k_{B} T \ln Z=J z \frac{m^{2}}{2}-k_{B} T \ln (2 \cosh (\beta J z m \hbar / 2))
+F(m, T)&=-\frac{1}{N} k_{B} T \ln Z\\&=J z \frac{m^{2}}{2}-k_{B} T \ln (2 \cosh (\beta J z m \hbar / 2))
 \end{align*}
 $$
 

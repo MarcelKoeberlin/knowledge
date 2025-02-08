@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/5-landau-s-theory-of-fermi-liquids/","hide":"true","updated":"2025-02-07T10:57:49.078+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/5-landau-s-theory-of-fermi-liquids/","hide":"true","updated":"2025-02-08T20:16:12.455+01:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -268,7 +268,7 @@ $$
 where $p$ is the uniform hydrostatic pressure. The indices $T, N$ mean, that the temperature $T$ and the particle number $N$ are kept fixed. We consider the response of the Fermi liquid upon application of uniform pressure $p$. The shift of the bare quasi-particle energies is given by
 $$
 \begin{align*}
-\delta \epsilon_{\sigma}(\boldsymbol{k})=\frac{\partial \epsilon_{\sigma}(\boldsymbol{k})}{\partial p} \delta p=\frac{\partial \epsilon(\boldsymbol{k})}{\partial \boldsymbol{k}} \cdot \frac{\partial \boldsymbol{k}}{\partial \Omega} \frac{\partial \Omega}{\partial p} \delta p=\frac{\kappa^{(0)}}{3} \hbar \boldsymbol{v}_{\boldsymbol{k}} \cdot \boldsymbol{k} \delta p=\gamma_{\boldsymbol{k}} \kappa^{(0)} \delta p
+\delta \epsilon_{\sigma}(\boldsymbol{k})&=\frac{\partial \epsilon_{\sigma}(\boldsymbol{k})}{\partial p} \delta p=\frac{\partial \epsilon(\boldsymbol{k})}{\partial \boldsymbol{k}} \cdot \frac{\partial \boldsymbol{k}}{\partial \Omega} \frac{\partial \Omega}{\partial p} \delta p\\&=\frac{\kappa^{(0)}}{3} \hbar \boldsymbol{v}_{\boldsymbol{k}} \cdot \boldsymbol{k} \delta p=\gamma_{\boldsymbol{k}} \kappa^{(0)} \delta p
 \end{align*}
 $$
 
@@ -277,7 +277,7 @@ with $n=N / \Omega$.
 We use the fact that
 $$
 \begin{align*}
-\boldsymbol{k}=\frac{2 \pi}{L} \boldsymbol{n}=\frac{2 \pi \boldsymbol{n}}{\Omega^{1 / 3}} \Rightarrow \frac{\partial \boldsymbol{k}}{\partial \Omega}=-\frac{1}{3 \Omega} \frac{2 \pi \boldsymbol{n}}{\Omega^{1 / 3}}=-\frac{\boldsymbol{k}}{3 \Omega}
+&\boldsymbol{k}=\frac{2 \pi}{L} \boldsymbol{n}=\frac{2 \pi \boldsymbol{n}}{\Omega^{1 / 3}} \\\implies & \frac{\partial \boldsymbol{k}}{\partial \Omega}=-\frac{1}{3 \Omega} \frac{2 \pi \boldsymbol{n}}{\Omega^{1 / 3}}=-\frac{\boldsymbol{k}}{3 \Omega}
 \end{align*}
 $$
 and denote $\gamma_{\boldsymbol{k}}=\hbar \boldsymbol{v}_{\boldsymbol{k}} \cdot \boldsymbol{k} / 3=2 \epsilon_{\sigma}(\boldsymbol{k}) / 3$ and $\kappa^{(0)}$ is the unrenormalised compressibility derived below. Analogously we introduce the shift of the renormalised quasi-particle energies with the renormalised compressibility $\kappa$,
@@ -294,7 +294,7 @@ $$
 Changes are concentrated on the Fermi surface such that we can replace $\gamma_{k}=2 \epsilon_{F} / 3$ so that
 $$
 \begin{align*}
-\kappa=\kappa^{(0)}-\kappa N\left(\epsilon_{F}\right) \int \frac{d \Omega_{\hat{k}^{\prime}}}{4 \pi} f^{s}\left(\hat{k}, \hat{k}^{\prime}\right)=\kappa^{(0)}-\kappa F_{0}^{s}
+\kappa&=\kappa^{(0)}-\kappa N\left(\epsilon_{F}\right) \int \frac{d \Omega_{\hat{k}^{\prime}}}{4 \pi} f^{s}\left(\hat{k}, \hat{k}^{\prime}\right)\\&=\kappa^{(0)}-\kappa F_{0}^{s}
 \end{align*}
 $$
 
@@ -308,7 +308,7 @@ $$
 Now we determine $\kappa^{(0)}$ from the volume dependence of the energy
 $$
 \begin{align*}
-E^{(0)}=\sum_{\boldsymbol{k}, \sigma} \epsilon_{\sigma}(\boldsymbol{k})=\frac{3}{5} N \epsilon_{F}=\frac{3}{5} N \frac{\hbar^{2} k_{F}^{2}}{2 m^{*}}=\frac{3}{10} \frac{\hbar^{2} N}{m^{*}}\left(3 \pi^{2} \frac{N}{\Omega}\right)^{2 / 3} .
+E^{(0)}&=\sum_{\boldsymbol{k}, \sigma} \epsilon_{\sigma}(\boldsymbol{k})=\frac{3}{5} N \epsilon_{F}\\&=\frac{3}{5} N \frac{\hbar^{2} k_{F}^{2}}{2 m^{*}}=\frac{3}{10} \frac{\hbar^{2} N}{m^{*}}\left(3 \pi^{2} \frac{N}{\Omega}\right)^{2 / 3} .
 \end{align*}
 $$
 
@@ -359,7 +359,7 @@ $$
 We derive
 $$
 \begin{align*}
-\tilde{g}=g-\tilde{g} N\left(\epsilon_{F}\right) \int \frac{d \Omega_{\hat{k}^{\prime}}}{4 \pi} f^{a}\left(\hat{k}, \hat{k}^{\prime}\right)=g-\tilde{g} F_{0}^{a}
+\tilde{g}&=g-\tilde{g} N\left(\epsilon_{F}\right) \int \frac{d \Omega_{\hat{k}^{\prime}}}{4 \pi} f^{a}\left(\hat{k}, \hat{k}^{\prime}\right)\\&=g-\tilde{g} F_{0}^{a}
 \end{align*}
 $$
 or equivalently
@@ -423,14 +423,14 @@ $$
 \begin{aligned}
 \boldsymbol{j}_{\boldsymbol{q}} & =\frac{1}{\Omega} \sum_{\boldsymbol{k}, \sigma} \frac{\hbar \boldsymbol{k}}{m^{*}} n_{\sigma}(\boldsymbol{k})+\frac{1}{\Omega^{2}} \sum_{\boldsymbol{k}, \sigma} \sum_{\boldsymbol{k}^{\prime}, \sigma^{\prime}}\left[n_{\sigma}^{(0)}(\boldsymbol{k})+\delta n_{\sigma}(\boldsymbol{k})\right] \frac{1}{\hbar} \boldsymbol{\nabla}_{\boldsymbol{k}} f_{\sigma \sigma^{\prime}}\left(\boldsymbol{k}, \boldsymbol{k}^{\prime}\right) \delta n_{\sigma}\left(\boldsymbol{k}^{\prime}\right) \\
 & =\frac{1}{\Omega} \sum_{\boldsymbol{k}, \sigma} \frac{\hbar \boldsymbol{k}}{m^{*}} \delta n_{\sigma}(\boldsymbol{k})-\frac{1}{\Omega^{2}} \sum_{\boldsymbol{k}, \sigma} \sum_{\boldsymbol{k}^{\prime}, \sigma^{\prime}} \frac{1}{\hbar}\left[\boldsymbol{\nabla}_{\boldsymbol{k}} n_{\sigma}^{(0)}(\boldsymbol{k})\right] f_{\sigma \sigma^{\prime}}\left(\boldsymbol{k}, \boldsymbol{k}^{\prime}\right) \delta n_{\sigma}\left(\boldsymbol{k}^{\prime}\right)+O\left(q^{2}\right) \\
-& =\frac{1}{\Omega} \sum_{\boldsymbol{k}, \sigma} \frac{\hbar \boldsymbol{k}}{m^{*}} \delta n_{\sigma}(\boldsymbol{k})+\frac{1}{\Omega^{2}} \sum_{\boldsymbol{k}, \sigma} \sum_{\boldsymbol{k}^{\prime}, \sigma^{\prime}} f_{\sigma \sigma^{\prime}}\left(\boldsymbol{k}, \boldsymbol{k}^{\prime}\right) \delta\left(\epsilon_{\sigma}\left(\boldsymbol{k}^{\prime}\right)-\epsilon_{F}\right) \frac{\hbar \boldsymbol{k}^{\prime}}{m^{*}} \delta n_{\sigma}(\boldsymbol{k})+O\left(q^{2}\right)=\boldsymbol{j}_{1}+\boldsymbol{j}_{2} .
+& =\frac{1}{\Omega} \sum_{\boldsymbol{k}, \sigma} \frac{\hbar \boldsymbol{k}}{m^{*}} \delta n_{\sigma}(\boldsymbol{k})+\frac{1}{\Omega^{2}} \sum_{\boldsymbol{k}, \sigma} \sum_{\boldsymbol{k}^{\prime}, \sigma^{\prime}} f_{\sigma \sigma^{\prime}}\left(\boldsymbol{k}, \boldsymbol{k}^{\prime}\right) \delta\left(\epsilon_{\sigma}\left(\boldsymbol{k}^{\prime}\right)-\epsilon_{F}\right) \frac{\hbar \boldsymbol{k}^{\prime}}{m^{*}} \delta n_{\sigma}(\boldsymbol{k})+O\left(q^{2}\right)\\&=\boldsymbol{j}_{1}+\boldsymbol{j}_{2} .
 \end{aligned}
 \end{align*}
 $$
 where, for the second line, we performed an integration by parts and neglect terms quadratic in $\delta n$ and, in the third line, used $f_{\sigma \sigma^{\prime}}\left(\boldsymbol{k}, \boldsymbol{k}^{\prime}\right)=f_{\sigma^{\prime} \sigma}\left(\boldsymbol{k}^{\prime}, \boldsymbol{k}\right)$ and
 $$
 \begin{align*}
-\nabla_{\boldsymbol{k}} n_{\sigma}^{(0)}(\boldsymbol{k})=\frac{\partial n_{\sigma}^{(0)}(\boldsymbol{k})}{\partial \epsilon_{\sigma}(\boldsymbol{k})} \nabla_{\boldsymbol{k}} \epsilon_{\sigma}(\boldsymbol{k})=-\delta\left(\epsilon_{\sigma}(\boldsymbol{k})-\epsilon_{F}\right) \nabla_{\boldsymbol{k}} \epsilon_{\sigma}(\boldsymbol{k})=-\delta\left(\epsilon_{\sigma}(\boldsymbol{k})-\epsilon_{F}\right) \frac{\hbar^{2} \boldsymbol{k}}{m^{*}} .
+\nabla_{\boldsymbol{k}} n_{\sigma}^{(0)}(\boldsymbol{k})&=\frac{\partial n_{\sigma}^{(0)}(\boldsymbol{k})}{\partial \epsilon_{\sigma}(\boldsymbol{k})} \nabla_{\boldsymbol{k}} \epsilon_{\sigma}(\boldsymbol{k})\\&=-\delta\left(\epsilon_{\sigma}(\boldsymbol{k})-\epsilon_{F}\right) \nabla_{\boldsymbol{k}} \epsilon_{\sigma}(\boldsymbol{k})=-\delta\left(\epsilon_{\sigma}(\boldsymbol{k})-\epsilon_{F}\right) \frac{\hbar^{2} \boldsymbol{k}}{m^{*}} .
 \end{align*}
 $$
 
@@ -451,7 +451,7 @@ $$
 which with $\hat{k}=\boldsymbol{k} / k_{F}$ then leads to
 $$
 \begin{align*}
-\frac{1}{m}=\frac{1}{m^{*}}+N\left(\epsilon_{F}\right) \int \frac{d \Omega_{\hat{k}^{\prime}}}{4 \pi} f^{s}\left(\hat{k}, \hat{k}^{\prime}\right) \frac{\hat{k} \cdot \hat{k}^{\prime}}{m^{*}}=\frac{1}{m^{*}}+\frac{1}{m^{*}} \int \frac{d \Omega_{\hat{k}^{\prime}}}{4 \pi} \underbrace{N\left(\epsilon_{F}\right) f^{s}\left(\hat{k}, \hat{k}^{\prime}\right)}_{\sum_{l=0}^{\infty} F_{l}^{s} P_{l}\left(\cos \theta_{k^{\prime}}\right)} \underbrace{\cos \theta_{k^{\prime}}}_{P_{1}\left(\cos \theta_{k^{\prime}}\right)}
+\frac{1}{m}&=\frac{1}{m^{*}}+N\left(\epsilon_{F}\right) \int \frac{d \Omega_{\hat{k}^{\prime}}}{4 \pi} f^{s}\left(\hat{k}, \hat{k}^{\prime}\right) \frac{\hat{k} \cdot \hat{k}^{\prime}}{m^{*}}\\&=\frac{1}{m^{*}}+\frac{1}{m^{*}} \int \frac{d \Omega_{\hat{k}^{\prime}}}{4 \pi} \underbrace{N\left(\epsilon_{F}\right) f^{s}\left(\hat{k}, \hat{k}^{\prime}\right)}_{\sum_{l=0}^{\infty} F_{l}^{s} P_{l}\left(\cos \theta_{k^{\prime}}\right)} \underbrace{\cos \theta_{k^{\prime}}}_{P_{1}\left(\cos \theta_{k^{\prime}}\right)}
 \end{align*}
 $$
 or by using the orthogonality of the Legendre polynomials,
@@ -460,7 +460,7 @@ $$
 \frac{m^{*}}{m}=1+\frac{1}{3} F_{1}^{s}
 \end{align*}
 $$
-where $1 / 3=1 /(2 l+1)$ for $l=1$ originates from the orthogonality relation of Legendrepolynomials, as shown above. Therefore, the relation (5.69) has to couple $m^{*}$ to $F_{1}^{s}$ in order for Landau's theory of Fermi liquids to be self-consistent. Generally, we find that $F_{1}^{s}>0$ so that quasi-particles in a Fermi liquid are effectively heavier than bare electrons.
+where $1 / 3=1 /(2 l+1)$ for $l=1$ originates from the orthogonality relation of Legendre polynomials, as shown above. Therefore, the relation (5.69) has to couple $m^{*}$ to $F_{1}^{s}$ in order for Landau's theory of Fermi liquids to be self-consistent. Generally, we find that $F_{1}^{s}>0$ so that quasi-particles in a Fermi liquid are effectively heavier than bare electrons.
 
 ### 5.2.5 Stability of the Fermi Liquid
 
@@ -509,14 +509,14 @@ $$
 where we assume that $\lambda_{\sigma}(\boldsymbol{k})=Y_{l, m}\left(\theta_{\hat{k}}, \phi_{\hat{k}}\right)=(-1)^{m} Y_{l,-m}^{*}\left(\theta_{\hat{k}}, \phi_{\hat{k}}\right)$ without spin dependence. Then we can write
 $$
 \begin{align*}
-\delta \tilde{\epsilon}_{\sigma}(\boldsymbol{k})=\delta \epsilon_{\sigma}(\boldsymbol{k})+\frac{1}{\Omega} \sum_{k^{\prime}, \sigma^{\prime}} f_{\sigma \sigma^{\prime}}\left(\hat{k}, \hat{k}^{\prime}\right) \delta n_{\sigma^{\prime}}\left(\boldsymbol{k}^{\prime}\right)=\delta \epsilon_{\sigma}(\boldsymbol{k})+\frac{1}{\Omega} \sum_{k^{\prime}, \sigma^{\prime}} f_{\sigma \sigma^{\prime}}\left(\hat{k}, \hat{k}^{\prime}\right) \frac{\partial n_{\sigma^{\prime}}}{\partial \tilde{\epsilon}_{\sigma^{\prime}}\left(\boldsymbol{k}^{\prime}\right)} \delta \tilde{\epsilon}_{\sigma^{\prime}}\left(\boldsymbol{k}^{\prime}\right)
+\delta \tilde{\epsilon}_{\sigma}(\boldsymbol{k})&=\delta \epsilon_{\sigma}(\boldsymbol{k})+\frac{1}{\Omega} \sum_{k^{\prime}, \sigma^{\prime}} f_{\sigma \sigma^{\prime}}\left(\hat{k}, \hat{k}^{\prime}\right) \delta n_{\sigma^{\prime}}\left(\boldsymbol{k}^{\prime}\right)\\&=\delta \epsilon_{\sigma}(\boldsymbol{k})+\frac{1}{\Omega} \sum_{k^{\prime}, \sigma^{\prime}} f_{\sigma \sigma^{\prime}}\left(\hat{k}, \hat{k}^{\prime}\right) \frac{\partial n_{\sigma^{\prime}}}{\partial \tilde{\epsilon}_{\sigma^{\prime}}\left(\boldsymbol{k}^{\prime}\right)} \delta \tilde{\epsilon}_{\sigma^{\prime}}\left(\boldsymbol{k}^{\prime}\right)
 \end{align*}
 $$
 
 In the last step we take for $\delta n_{\sigma^{\prime}}\left(\boldsymbol{k}^{\prime}\right)$ the self-consistent value taking the feedback of the quasi-particle coupling into account. We now use the relation
 $$
 \begin{align*}
-f^{s, a}\left(\hat{k}, \hat{k}^{\prime}\right)=\sum_{l^{\prime}=0}^{\infty} f_{l}^{s, a} P_{l^{\prime}}\left(\hat{k} \cdot \hat{k}^{\prime}\right)=4 \pi \sum_{l^{\prime}=0}^{\infty} \frac{f_{l^{\prime}}^{s, a}}{2 l^{\prime}+1} \sum_{m^{\prime}=-l^{\prime}}^{+l^{\prime}} Y_{l^{\prime} m^{\prime}}\left(\theta_{\hat{k}}, \phi_{\hat{k}}\right) Y_{l^{\prime} m^{\prime}}^{*}\left(\theta_{\hat{k}^{\prime}}, \phi_{\hat{k}^{\prime}}\right)
+f^{s, a}\left(\hat{k}, \hat{k}^{\prime}\right)&=\sum_{l^{\prime}=0}^{\infty} f_{l}^{s, a} P_{l^{\prime}}\left(\hat{k} \cdot \hat{k}^{\prime}\right)\\&=4 \pi \sum_{l^{\prime}=0}^{\infty} \frac{f_{l^{\prime}}^{s, a}}{2 l^{\prime}+1} \sum_{m^{\prime}=-l^{\prime}}^{+l^{\prime}} Y_{l^{\prime} m^{\prime}}\left(\theta_{\hat{k}}, \phi_{\hat{k}}\right) Y_{l^{\prime} m^{\prime}}^{*}\left(\theta_{\hat{k}^{\prime}}, \phi_{\hat{k}^{\prime}}\right)
 \end{align*}
 $$
 
@@ -530,7 +530,7 @@ $$
 which leads straightforwardly to
 $$
 \begin{align*}
-\tilde{\alpha}=\alpha-\tilde{\alpha} \frac{F_{l}^{s}}{2 l+1} \quad \Rightarrow \quad \tilde{\alpha}=\frac{\alpha}{1+\frac{F_{l}^{s}}{2 l+1}}
+\tilde{\alpha}=\alpha-\tilde{\alpha} \frac{F_{l}^{s}}{2 l+1} \implies \tilde{\alpha}=\frac{\alpha}{1+\frac{F_{l}^{s}}{2 l+1}}
 \end{align*}
 $$
 
@@ -538,7 +538,7 @@ Now the polarisation is calculated which we may define as
 $$
 \begin{align*}
 \begin{aligned}
-P & =\frac{1}{\Omega} \sum_{\boldsymbol{k}, \sigma} \alpha \lambda_{\sigma}(\boldsymbol{k})^{*} \delta n_{\sigma}(\boldsymbol{k})=\frac{1}{\Omega} \sum_{\boldsymbol{k}, \sigma} \alpha \lambda_{\sigma}(\boldsymbol{k})^{*} \frac{\partial n_{\sigma}}{\partial \tilde{\epsilon}_{\sigma}(\boldsymbol{k})} \delta \tilde{\epsilon}_{\sigma}(\boldsymbol{k})=\frac{1}{\Omega} \sum_{\boldsymbol{k}, \sigma} \alpha \delta\left(\epsilon_{\sigma}(\boldsymbol{k})-\epsilon_{F}\right) \tilde{\alpha}|\lambda(\boldsymbol{k})|^{2} F \\
+P & =\frac{1}{\Omega} \sum_{\boldsymbol{k}, \sigma} \alpha \lambda_{\sigma}(\boldsymbol{k})^{*} \delta n_{\sigma}(\boldsymbol{k})=\frac{1}{\Omega} \sum_{\boldsymbol{k}, \sigma} \alpha \lambda_{\sigma}(\boldsymbol{k})^{*} \frac{\partial n_{\sigma}}{\partial \tilde{\epsilon}_{\sigma}(\boldsymbol{k})} \delta \tilde{\epsilon}_{\sigma}(\boldsymbol{k})\\&=\frac{1}{\Omega} \sum_{\boldsymbol{k}, \sigma} \alpha \delta\left(\epsilon_{\sigma}(\boldsymbol{k})-\epsilon_{F}\right) \tilde{\alpha}|\lambda(\boldsymbol{k})|^{2} F \\
 & =\alpha \tilde{\alpha} N\left(\epsilon_{F}\right) F \int \frac{d \Omega_{\boldsymbol{k}}}{4 \pi}|\lambda(\boldsymbol{k})|^{2}=\frac{\alpha \tilde{\alpha} N\left(\epsilon_{F}\right) F}{4 \pi}
 \end{aligned}
 \end{align*}
@@ -655,7 +655,7 @@ and an analogous expression is found for $\epsilon_{\downarrow}(\boldsymbol{k})$
 $$
 \begin{align}
 \begin{gathered}
-& \frac{\tilde{U}^{2}}{\Omega^{2}} \sum_{\boldsymbol{k}^{\prime}, \boldsymbol{q}} n_{\boldsymbol{k}+\boldsymbol{q} \uparrow} \frac{n_{\boldsymbol{k}^{\prime}-\boldsymbol{q} \downarrow}-n_{\boldsymbol{k}^{\prime} \downarrow}}{\epsilon_{\boldsymbol{k}}+\epsilon_{\boldsymbol{k}^{\prime}}-\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}^{\prime}-\boldsymbol{q}}}\\  &\stackrel{\stackrel{\boldsymbol{k}+\boldsymbol{q}\rightarrow \boldsymbol{k}_{F}^{\prime}} {\longrightarrow}}{ } \frac{1}{\Omega} \sum_{\boldsymbol{k}_{F}^{\prime}} n_{\boldsymbol{k}_{F}^{\prime} \uparrow} \frac{\tilde{U}^{2}}{\Omega} \left.\sum_{\boldsymbol{k}^{\prime}} \frac{n_{\boldsymbol{k}^{\prime}-\boldsymbol{q} \downarrow}^{(0)}-n_{\boldsymbol{k}^{\prime} \downarrow}^{(0)}}{\epsilon_{\boldsymbol{k}^{\prime}}-\epsilon_{\boldsymbol{k}^{\prime}-\boldsymbol{q}}}\right|_{\boldsymbol{q}=\boldsymbol{k}_{F}^{\prime}-\boldsymbol{k}_{F}} \\
+&\frac{\tilde{U}^{2}}{\Omega^{2}} \sum_{\boldsymbol{k}^{\prime}, \boldsymbol{q}} n_{\boldsymbol{k}+\boldsymbol{q} \uparrow} \frac{n_{\boldsymbol{k}^{\prime}-\boldsymbol{q} \downarrow}-n_{\boldsymbol{k}^{\prime} \downarrow}}{\epsilon_{\boldsymbol{k}}+\epsilon_{\boldsymbol{k}^{\prime}}-\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}^{\prime}-\boldsymbol{q}}}\\  \stackrel{\stackrel{\boldsymbol{k}+\boldsymbol{q}\rightarrow \boldsymbol{k}_{F}^{\prime}} {\longrightarrow}}{ }& \frac{1}{\Omega} \sum_{\boldsymbol{k}_{F}^{\prime}} n_{\boldsymbol{k}_{F}^{\prime} \uparrow} \frac{\tilde{U}^{2}}{\Omega} \left.\sum_{\boldsymbol{k}^{\prime}} \frac{n_{\boldsymbol{k}^{\prime}-\boldsymbol{q} \downarrow}^{(0)}-n_{\boldsymbol{k}^{\prime} \downarrow}^{(0)}}{\epsilon_{\boldsymbol{k}^{\prime}}-\epsilon_{\boldsymbol{k}^{\prime}-\boldsymbol{q}}}\right|_{\boldsymbol{q}=\boldsymbol{k}_{F}^{\prime}-\boldsymbol{k}_{F}} \\
 &=-\frac{1}{\Omega} \sum_{\boldsymbol{k}_{F}^{\prime}} n_{\boldsymbol{k}_{F}^{\prime} \uparrow} \frac{\tilde{U}^{2}}{2} \chi_{0}\left(\boldsymbol{k}_{F}^{\prime}-\boldsymbol{k}_{F}\right),
 \end{gathered}
 \end{align}
@@ -670,7 +670,7 @@ $$
 The other couplings are obtained in a similar way, resulting in
 $$
 \begin{align*}
-f_{\uparrow \downarrow}\left(\boldsymbol{k}_{F}, \boldsymbol{k}_{F}^{\prime}\right)=f_{\downarrow \uparrow}\left(\boldsymbol{k}_{F}, \boldsymbol{k}_{F}^{\prime}\right)=\tilde{U}-\frac{\tilde{U}^{2}}{2}\left[2 \tilde{\chi}_{0}\left(\boldsymbol{k}_{F}+\boldsymbol{k}_{F}^{\prime}\right)-\chi_{0}\left(\boldsymbol{k}_{F}-\boldsymbol{k}_{F}^{\prime}\right)\right],
+f_{\uparrow \downarrow}\left(\boldsymbol{k}_{F}, \boldsymbol{k}_{F}^{\prime}\right)&=f_{\downarrow \uparrow}\left(\boldsymbol{k}_{F}, \boldsymbol{k}_{F}^{\prime}\right)\\&=\tilde{U}-\frac{\tilde{U}^{2}}{2}\left[2 \tilde{\chi}_{0}\left(\boldsymbol{k}_{F}+\boldsymbol{k}_{F}^{\prime}\right)-\chi_{0}\left(\boldsymbol{k}_{F}-\boldsymbol{k}_{F}^{\prime}\right)\right],
 \end{align*}
 $$
 where the function $\tilde{\chi}_{0}(\boldsymbol{q})$ is defined as
@@ -690,7 +690,7 @@ f_{\sigma \sigma^{\prime}}(\theta)=\frac{\tilde{U}}{2} & {\left[\left(1+\frac{\t
 \end{align*}
 $$
 
-Finally, we are in the position to determine the most important Landau parameters by matching the expressions (5.102) and (5.103) to the parametrisation (5.105),
+Finally, we are in the position to determine the most important Landau parameters by matching the expressions (5.102) and (5.103) to the parametrisation,
 $$
 \begin{align*}
 \begin{aligned}

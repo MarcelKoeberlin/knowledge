@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/7-magnetism-in-metals/","hide":"true","updated":"2025-02-07T10:57:49.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/7-magnetism-in-metals/","hide":"true","updated":"2025-02-08T20:22:20.568+01:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -153,10 +153,13 @@ $$
 where
 $$
 \begin{align*}
-\Lambda_{1}^{2}\left(\epsilon_{F}\right)=\left(\frac{N^{\prime}\left(\epsilon_{F}\right)}{N\left(\epsilon_{F}\right)}\right)^{2}-\frac{N^{\prime \prime}\left(\epsilon_{F}\right)}{N\left(\epsilon_{F}\right)}, \quad \text { and } \quad \Lambda_{2}^{2}\left(\epsilon_{F}\right)=\frac{1}{2}\left(\frac{N^{\prime}\left(\epsilon_{F}\right)}{N\left(\epsilon_{F}\right)}\right)^{2}-\frac{N^{\prime \prime}\left(\epsilon_{F}\right)}{3!N\left(\epsilon_{F}\right)}
+\Lambda_{1}^{2}\left(\epsilon_{F}\right)=\left(\frac{N^{\prime}\left(\epsilon_{F}\right)}{N\left(\epsilon_{F}\right)}\right)^{2}-\frac{N^{\prime \prime}\left(\epsilon_{F}\right)}{N\left(\epsilon_{F}\right)}, 
 \end{align*}
 $$
-
+and
+$$
+\Lambda_{2}^{2}\left(\epsilon_{F}\right)=\frac{1}{2}\left(\frac{N^{\prime}\left(\epsilon_{F}\right)}{N\left(\epsilon_{F}\right)}\right)^{2}-\frac{N^{\prime \prime}\left(\epsilon_{F}\right)}{3!N\left(\epsilon_{F}\right)}.
+$$
 The structure is $m=a m+b m^{3}$, where $b$ is assumed to be negative. Thus, two types of solutions emerge
 $$
 \begin{align*}
@@ -246,7 +249,7 @@ $$
 We see, that the denominator of the susceptibility $\chi(T)$ vanishes exactly when the Stoner instability criterion for finite temperatures is fulfilled. Thus, for $U N\left(\epsilon_{F}\right)>2$ the susceptibility
 $$
 \begin{align*}
-\chi(T) \approx \frac{\chi_{0}\left(T_{C}\right)}{\left(\frac{U N\left(\epsilon_{F}\right)}{2}-1\right)\left(\frac{T^{2}}{T_{C}^{2}}-1\right)}=\frac{\chi_{0}\left(T_{C}\right)}{\frac{U N\left(\epsilon_{F}\right) \pi^{2}}{12} \Lambda_{1}^{2}\left(\epsilon_{F}\right) k_{B}^{2}\left(T^{2}-T_{C}^{2}\right)}
+\chi(T) &\approx \frac{\chi_{0}\left(T_{C}\right)}{\left(\frac{U N\left(\epsilon_{F}\right)}{2}-1\right)\left(\frac{T^{2}}{T_{C}^{2}}-1\right)}\\&=\frac{\chi_{0}\left(T_{C}\right)}{\frac{U N\left(\epsilon_{F}\right) \pi^{2}}{12} \Lambda_{1}^{2}\left(\epsilon_{F}\right) k_{B}^{2}\left(T^{2}-T_{C}^{2}\right)}
 \end{align*}
 $$
 diverging at $T_{c}$  indicates the instability. Note that for $T \rightarrow T_{C}$ from the paramagnetic side, the susceptibility diverges as $\chi(T) \propto\left|T_{C}-T\right|^{-1}$ corresponding to the mean field behaviour, since the mean field critical exponent $\gamma$ for the susceptibility takes the value $\gamma=1$.
@@ -498,7 +501,7 @@ $$
 where $\tilde{f}(\xi)=f\left(\xi+\epsilon_{F}\right)=f(\epsilon)=\left[\exp \left(\xi / k_{B} T\right)+1\right]^{-1}$ and $f$ is the Fermi-Dirac distribution. Under the further assumption that $\xi_{k}$ is weakly angle dependent, we find
 $$
 \begin{align*}
-\chi_{0}(\boldsymbol{Q} ; T)=\mu_{B}^{2} \int \frac{d^{3} k}{(2 \pi)^{3}} \frac{\tanh \left(\xi_{\boldsymbol{k}} / 2 k_{B} T\right)}{\xi_{k}}=\frac{\mu_{B}^{2}}{2} \int d \xi N\left(\xi+\epsilon_{F}\right) \frac{\tanh \left(\xi / 2 k_{B} T\right)}{\xi} .
+\chi_{0}(\boldsymbol{Q} ; T)&=\mu_{B}^{2} \int \frac{d^{3} k}{(2 \pi)^{3}} \frac{\tanh \left(\xi_{\boldsymbol{k}} / 2 k_{B} T\right)}{\xi_{k}}\\&=\frac{\mu_{B}^{2}}{2} \int d \xi N\left(\xi+\epsilon_{F}\right) \frac{\tanh \left(\xi / 2 k_{B} T\right)}{\xi} .
 \end{align*}
 $$
 
@@ -507,7 +510,7 @@ $$
 \begin{align*}
 \begin{aligned}
 \chi_{0}(\boldsymbol{Q} ; T) & \approx \mu_{B}^{2} N\left(\epsilon_{F}\right) \int_{0}^{\epsilon_{0}} d \xi \frac{\tanh \left(\xi / 2 k_{B} T\right)}{\xi} \\
-& =\mu_{B}^{2} N\left(\epsilon_{F}\right)\left(\ln \left(\frac{\epsilon_{0}}{2 k_{B} T}\right)+\ln \left(\frac{4 e^{\gamma}}{\pi}\right)\right) \approx \mu_{B}^{2} N\left(\epsilon_{F}\right) \ln \left(\frac{1.14 \epsilon_{0}}{2 k_{B} T}\right),
+& =\mu_{B}^{2} N\left(\epsilon_{F}\right)\left(\ln \left(\frac{\epsilon_{0}}{2 k_{B} T}\right)+\ln \left(\frac{4 e^{\gamma}}{\pi}\right)\right) \\&\approx \mu_{B}^{2} N\left(\epsilon_{F}\right) \ln \left(\frac{1.14 \epsilon_{0}}{2 k_{B} T}\right),
 \end{aligned}
 \end{align*}
 $$
@@ -605,7 +608,7 @@ $$
 \begin{align*}
 \begin{aligned}
 \hbar \omega_{\boldsymbol{q}}\left|\psi_{\boldsymbol{q}}\right\rangle=\left(\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\right. & \left.\epsilon_{\boldsymbol{k}}\right)\left|\psi_{\boldsymbol{q}}\right\rangle \\
-& +\frac{U}{\Omega} \sum_{\boldsymbol{k}} f_{\boldsymbol{k}} \sum_{\boldsymbol{k}^{\prime}, \boldsymbol{q}^{\prime}}\left\{\widehat{c}_{\boldsymbol{k}^{\prime}+\boldsymbol{q}^{\prime} \uparrow}^{\dagger} \widehat{c}_{\boldsymbol{k}^{\prime} \uparrow} \widehat{c}_{\boldsymbol{k}+\boldsymbol{q}-\boldsymbol{q}^{\prime} \downarrow}^{\dagger} \widehat{c}_{\boldsymbol{k} \uparrow}-\widehat{c}_{\boldsymbol{k}+\boldsymbol{q} \downarrow}^{\dagger} \widehat{c}_{\boldsymbol{k}-\boldsymbol{q}^{\prime} \uparrow} \widehat{c}_{\boldsymbol{k}^{\prime}-\boldsymbol{q}^{\prime} \downarrow}^{\dagger} \widehat{c}_{\boldsymbol{k}^{\prime} \downarrow}\right\}\left|\psi_{g}\right\rangle .
++& \frac{U}{\Omega} \sum_{\boldsymbol{k}} f_{\boldsymbol{k}} \sum_{\boldsymbol{k}^{\prime}, \boldsymbol{q}^{\prime}}\left\{\widehat{c}_{\boldsymbol{k}^{\prime}+\boldsymbol{q}^{\prime} \uparrow}^{\dagger} \widehat{c}_{\boldsymbol{k}^{\prime} \uparrow} \widehat{c}_{\boldsymbol{k}+\boldsymbol{q}-\boldsymbol{q}^{\prime} \downarrow}^{\dagger} \widehat{c}_{\boldsymbol{k} \uparrow}-\widehat{c}_{\boldsymbol{k}+\boldsymbol{q} \downarrow}^{\dagger} \widehat{c}_{\boldsymbol{k}-\boldsymbol{q}^{\prime} \uparrow} \widehat{c}_{\boldsymbol{k}^{\prime}-\boldsymbol{q}^{\prime} \downarrow}^{\dagger} \widehat{c}_{\boldsymbol{k}^{\prime} \downarrow}\right\}\left|\psi_{g}\right\rangle .
 \end{aligned}
 \end{align*}
 $$

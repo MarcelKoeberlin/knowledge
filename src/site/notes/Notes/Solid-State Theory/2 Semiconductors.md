@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/2-semiconductors/","hide":"true","updated":"2025-02-07T10:57:49.034+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/2-semiconductors/","hide":"true","updated":"2025-02-08T19:56:19.624+01:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -122,14 +122,19 @@ n=\sum_{k \in \mathrm{BZ}} \sum_{s} 1=2 \int_{\mathrm{BZ}} \frac{d^{3} k}{(2 \pi
 \end{align*}
 $$
 
-The density of electrons in the conduction and valence band for small finite temperatue are given by
+The density of electrons in the conduction and valence band for small finite temperature are given by
 $$
 \begin{align*}
 \begin{aligned}
-& n_{C}=2 \int_{\mathrm{BZ}} \frac{d^{3} k}{(2 \pi)^{3}} n_{F}\left(\epsilon_{C, \boldsymbol{k}}\right)=\int_{\mathrm{BZ}} \frac{d^{3} k}{4 \pi^{3}} \frac{1}{e^{\beta\left(\epsilon_{C, \boldsymbol{k}}-\mu\right)}+1} \approx \int_{\mathrm{BZ}} \frac{d^{3} k}{4 \pi^{3}} e^{-\beta\left(\epsilon_{C, \boldsymbol{k}}-\mu\right)}=\frac{e^{\beta\left(\mu-E_{g}\right)}}{4 \pi^{3}}\left(\frac{2 \pi m_{C} k_{B} T}{\hbar^{2}}\right)^{3 / 2}, \\
-& n-n_{V}=\int_{\mathrm{BZ}} \frac{d^{3} k}{4 \pi^{3}}\left(1-n_{F}\left(\epsilon_{V, \boldsymbol{k}}\right)\right)=\int_{\mathrm{BZ}} \frac{d^{3} k}{4 \pi^{3}} \frac{1}{e^{-\beta\left(\epsilon_{V, \boldsymbol{k}}-\mu\right)}+1} \approx \int_{\mathrm{BZ}} \frac{d^{3} k}{4 \pi^{3}} e^{\beta\left(\epsilon_{V, \boldsymbol{k}}-\mu\right)}=\frac{e^{-\beta \mu}}{4 \pi^{3}}\left(\frac{2 \pi m_{V} k_{B} T}{\hbar^{2}}\right)^{3 / 2}
+n_{C}&=2 \int_{\mathrm{BZ}} \frac{d^{3} k}{(2 \pi)^{3}} n_{F}\left(\epsilon_{C, \boldsymbol{k}}\right)=\int_{\mathrm{BZ}} \frac{d^{3} k}{4 \pi^{3}} \frac{1}{e^{\beta\left(\epsilon_{C, \boldsymbol{k}}-\mu\right)}+1} \\ &\approx \int_{\mathrm{BZ}} \frac{d^{3} k}{4 \pi^{3}} e^{-\beta\left(\epsilon_{C, \boldsymbol{k}}-\mu\right)}=\frac{e^{\beta\left(\mu-E_{g}\right)}}{4 \pi^{3}}\left(\frac{2 \pi m_{C} k_{B} T}{\hbar^{2}}\right)^{3 / 2}, \\
 \end{aligned}
 \end{align*}
+$$
+and
+$$
+\begin{align}
+n-n_{V}&=\int_{\mathrm{BZ}} \frac{d^{3} k}{4 \pi^{3}}\left(1-n_{F}\left(\epsilon_{V, \boldsymbol{k}}\right)\right)=\int_{\mathrm{BZ}} \frac{d^{3} k}{4 \pi^{3}} \frac{1}{e^{-\beta\left(\epsilon_{V, \boldsymbol{k}}-\mu\right)}+1} \\& \approx \int_{\mathrm{BZ}} \frac{d^{3} k}{4 \pi^{3}} e^{\beta\left(\epsilon_{V, \boldsymbol{k}}-\mu\right)}=\frac{e^{-\beta \mu}}{4 \pi^{3}}\left(\frac{2 \pi m_{V} k_{B} T}{\hbar^{2}}\right)^{3 / 2}
+\end{align}
 $$
 
 Here we assumed that both $\mu$ and $E_{g}-\mu$ are much larger than $k_{B} T\left(\beta=1 / k_{B} T\right)$. Now we see that electron count gives $n_{C}+n_{V}=n$ such that we can set the two lines of the above equation equal to obtain for the chemical potential,
@@ -168,7 +173,7 @@ $$
 we may combine Eqs.(2.13) and (2.14) to obtain the excitation energy only, $E_{\boldsymbol{k}, \boldsymbol{q}, s s^{\prime}}=E-E_{0}$ through the commutator. The excitation energy can be obtained by
 $$
 \begin{align*}
-E_{\boldsymbol{k}, \boldsymbol{q}, s s^{\prime}}\left|\boldsymbol{k}+\boldsymbol{q}, s ; \boldsymbol{k}, s^{\prime}\right\rangle=\left[\mathcal{H}, \widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s s^{\prime}}\right]\left|\Phi_{0}\right\rangle=\mathcal{H}\left|\boldsymbol{k}+\boldsymbol{q}, s ; \boldsymbol{k}, s^{\prime}\right\rangle-\underbrace{\widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s s^{\prime}} \mathcal{H}\left|\Phi_{0}\right\rangle}_{E_{0}\left|\boldsymbol{k}+\boldsymbol{q}, s ; \boldsymbol{k}, s^{\prime}\right\rangle},
+E_{\boldsymbol{k}, \boldsymbol{q}, s s^{\prime}}\left|\boldsymbol{k}+\boldsymbol{q}, s ; \boldsymbol{k}, s^{\prime}\right\rangle & =\left[\mathcal{H}, \widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s s^{\prime}}\right]\left|\Phi_{0}\right\rangle\\&=\mathcal{H}\left|\boldsymbol{k}+\boldsymbol{q}, s ; \boldsymbol{k}, s^{\prime}\right\rangle-\underbrace{\widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s s^{\prime}} \mathcal{H}\left|\Phi_{0}\right\rangle}_{E_{0}\left|\boldsymbol{k}+\boldsymbol{q}, s ; \boldsymbol{k}, s^{\prime}\right\rangle},
 \end{align*}
 $$
 such that,

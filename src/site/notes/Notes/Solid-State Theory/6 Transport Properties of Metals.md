@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/6-transport-properties-of-metals/","hide":"true","updated":"2025-02-07T10:57:49.045+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/6-transport-properties-of-metals/","hide":"true","updated":"2025-02-08T20:20:13.257+01:00"}
 ---
 
 fJump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -192,8 +192,12 @@ $$
 with
 $$
 \begin{align*}
-f(\boldsymbol{k}, t)=\int_{-\infty}^{+\infty} \frac{d \omega}{2 \pi} f(\boldsymbol{k}, \omega) e^{-i \omega t} \quad \text { and } \quad \boldsymbol{E}(\boldsymbol{k}, t)=\int_{-\infty}^{+\infty} \frac{d \omega}{2 \pi} \boldsymbol{E}(\boldsymbol{k}, \omega) e^{-i \omega t}
+f(\boldsymbol{k}, t)=\int_{-\infty}^{+\infty} \frac{d \omega}{2 \pi} f(\boldsymbol{k}, \omega) e^{-i \omega t} 
 \end{align*}
+$$
+and
+$$
+\boldsymbol{E}(\boldsymbol{k}, t)=\int_{-\infty}^{+\infty} \frac{d \omega}{2 \pi} \boldsymbol{E}(\boldsymbol{k}, \omega) e^{-i \omega t}.
 $$
 
 In order to come to this expression, we used that $f(\boldsymbol{k}, \boldsymbol{r}, t)=f(\boldsymbol{k}, t)$ for $E=E(t)$ are spacially uniform, and assumed for linearising equation (6.24) that $\delta f \propto|\boldsymbol{E}|$. Thus, the equation (6.24) is consistent to linear order in $|\boldsymbol{E}|$ and can be easily solved as
@@ -206,7 +210,7 @@ $$
 This result leads straightforwardly to the quasi-particle current $\boldsymbol{j}(\omega)$,
 $$
 \begin{align*}
-\boldsymbol{j}(\omega)=-2 e \int \frac{d^{3} k}{(2 \pi)^{3}} \boldsymbol{v}_{\boldsymbol{k}} f(\boldsymbol{k}, \omega)=-\frac{e^{2}}{4 \pi^{3}} \int d^{3} k \frac{\tau\left(\epsilon_{\boldsymbol{k}}\right)\left[\boldsymbol{E}(\omega) \cdot \boldsymbol{v}_{\boldsymbol{k}}\right] \boldsymbol{v}_{\boldsymbol{k}}}{1-i \omega \tau\left(\epsilon_{\boldsymbol{k}}\right)} \frac{\partial f_{0}\left(\epsilon_{\boldsymbol{k}}\right)}{\partial \epsilon_{\boldsymbol{k}}}
+\boldsymbol{j}(\omega)&=-2 e \int \frac{d^{3} k}{(2 \pi)^{3}} \boldsymbol{v}_{\boldsymbol{k}} f(\boldsymbol{k}, \omega)\\&=-\frac{e^{2}}{4 \pi^{3}} \int d^{3} k \frac{\tau\left(\epsilon_{\boldsymbol{k}}\right)\left[\boldsymbol{E}(\omega) \cdot \boldsymbol{v}_{\boldsymbol{k}}\right] \boldsymbol{v}_{\boldsymbol{k}}}{1-i \omega \tau\left(\epsilon_{\boldsymbol{k}}\right)} \frac{\partial f_{0}\left(\epsilon_{\boldsymbol{k}}\right)}{\partial \epsilon_{\boldsymbol{k}}}
 \end{align*}
 $$
 
@@ -246,7 +250,7 @@ Since the function $\partial f_{0} / \partial \epsilon$ is strongly peaked aroun
 If the relaxation time $\tau$ depends only weakly on energy, we can simply calculate the optical conductivity at finite frequency,
 $$
 \begin{align*}
-\sigma(\omega)=\frac{\omega_{p}^{2}}{4 \pi} \frac{\bar{\tau}}{1-i \omega \bar{\tau}}=\frac{\omega_{p}^{2}}{4 \pi}\left(\frac{\bar{\tau}}{1+\omega^{2} \bar{\tau}^{2}}+\frac{\bar{\tau}^{2} \omega}{1+\omega^{2} \bar{\tau}^{2}}\right)=\sigma_{1}+i \sigma_{2} .
+\sigma(\omega)&=\frac{\omega_{p}^{2}}{4 \pi} \frac{\bar{\tau}}{1-i \omega \bar{\tau}}=\frac{\omega_{p}^{2}}{4 \pi}\left(\frac{\bar{\tau}}{1+\omega^{2} \bar{\tau}^{2}}+\frac{\bar{\tau}^{2} \omega}{1+\omega^{2} \bar{\tau}^{2}}\right)\\&=\sigma_{1}+i \sigma_{2} .
 \end{align*}
 $$
 
@@ -588,10 +592,10 @@ need to be calculated. In analogy to the discussion on electromagnetic radiation
 $$
 \begin{align*}
 \begin{aligned}
-& \left(\frac{\partial f}{\partial t}\right)_{\text {coll }}=-\frac{2 \pi}{\hbar} \sum_{\boldsymbol{q}}|g(\boldsymbol{q})|^{2}\left[\left[f(\boldsymbol{k})(1-f(\boldsymbol{k}+\boldsymbol{q}))\left(N_{-\boldsymbol{q}}+1\right)\right.\right. \\
-& \left.-f(\boldsymbol{k}+\boldsymbol{q})(1-f(\boldsymbol{k})) N_{-\boldsymbol{q}}\right] \delta\left(\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}+\hbar \omega_{-\boldsymbol{q}}\right) \\
-& -\left[f(\boldsymbol{k}+\boldsymbol{q})(1-f(\boldsymbol{k}))\left(N_{\boldsymbol{q}}+1\right)\right. \\
-& \left.\left.-f(\boldsymbol{k})(1-f(\boldsymbol{k}+\boldsymbol{q})) N_{\boldsymbol{q}}\right] \delta\left(\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}-\hbar \omega_{\boldsymbol{q}}\right)\right],
+\left(\frac{\partial f}{\partial t}\right)_{\text {coll }}=&-\frac{2 \pi}{\hbar} \sum_{\boldsymbol{q}}|g(\boldsymbol{q})|^{2}\left[\left[f(\boldsymbol{k})(1-f(\boldsymbol{k}+\boldsymbol{q}))\left(N_{-\boldsymbol{q}}+1\right)\right.\right. \\
+-& \left.f(\boldsymbol{k}+\boldsymbol{q})(1-f(\boldsymbol{k})) N_{-\boldsymbol{q}}\right] \delta\left(\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}+\hbar \omega_{-\boldsymbol{q}}\right) \\
+ -&\left[f(\boldsymbol{k}+\boldsymbol{q})(1-f(\boldsymbol{k}))\left(N_{\boldsymbol{q}}+1\right)\right. \\
+-& \left.\left.f(\boldsymbol{k})(1-f(\boldsymbol{k}+\boldsymbol{q})) N_{\boldsymbol{q}}\right] \delta\left(\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}-\hbar \omega_{\boldsymbol{q}}\right)\right],
 \end{aligned}
 \end{align*}
 $$
@@ -632,7 +636,7 @@ where $\lambda$ is a dimensionless electron-phonon coupling constant. In usual m
 In order to perform the integration in equation (6.90), we have to re-express $\delta\left(\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}\right)$ by writing
 $$
 \begin{align*}
-\delta\left(\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}\right)=\delta\left(\frac{\hbar^{2}}{2 m}\left(q^{2}-2 k_{F} q \cos \gamma\right)\right)=\frac{m}{\hbar^{2} k_{F} q} \delta\left(\frac{q}{2 k_{F}}-\cos \gamma\right)
+\delta\left(\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}\right)&=\delta\left(\frac{\hbar^{2}}{2 m}\left(q^{2}-2 k_{F} q \cos \gamma\right)\right)\\&=\frac{m}{\hbar^{2} k_{F} q} \delta\left(\frac{q}{2 k_{F}}-\cos \gamma\right)
 \end{align*}
 $$
 where $\gamma$ is defined in Figure 6.5. From there, we also see that $2 \gamma+\theta=\pi$, and thus, find the relation
@@ -710,7 +714,7 @@ Restricting to the small temperature limit, we determine $\bar{\tau}$ by
 $$
 \begin{align*}
 \begin{aligned}
-\bar{\tau} & =-\int d \epsilon \tau(\epsilon) \partial f_{0} / \partial \epsilon=\int_{-\infty}^{+\infty} d E \frac{\tau(E)}{4 k_{B} T \cosh ^{2}\left(E / 2 k_{B} T\right)} \approx \int_{-\infty}^{+\infty} d E \frac{1}{4 k_{B} T \cosh ^{2}\left(E / 2 k_{B} T\right)}\left\{\tau_{0}-\frac{\tau_{0}^{2}}{\tau_{e}} \frac{E^{2}}{\epsilon_{F}^{2}}\right\} \\
+\bar{\tau} & =-\int d \epsilon \tau(\epsilon) \partial f_{0} / \partial \epsilon=\int_{-\infty}^{+\infty} d E \frac{\tau(E)}{4 k_{B} T \cosh ^{2}\left(E / 2 k_{B} T\right)} \\&\approx \int_{-\infty}^{+\infty} d E \frac{1}{4 k_{B} T \cosh ^{2}\left(E / 2 k_{B} T\right)}\left\{\tau_{0}-\frac{\tau_{0}^{2}}{\tau_{e}} \frac{E^{2}}{\epsilon_{F}^{2}}\right\} \\
 & =\tau_{0}-\frac{\pi^{2}}{3} \frac{\tau_{0}^{2}}{\tau_{e}}\left(\frac{k_{B} T}{\epsilon_{F}}\right)^{2}
 \end{aligned}
 \end{align*}
@@ -1157,7 +1161,7 @@ $$
 produces the wished relation. Here, $\frac{d n}{d E} d E$ is the number of states per unit length in the energy interval $[E, E+d E]$ and we find
 $$
 \begin{align*}
-\frac{d n}{d E}=\frac{1}{L} \sum_{k, s} \delta\left(E-\frac{\hbar^{2} k^{2}}{2 m}\right)=2 \int \frac{d k}{2 \pi} \delta\left(E-\frac{\hbar^{2} k^{2}}{2 m}\right)=\frac{1}{\pi \hbar v(E)}
+\frac{d n}{d E}&=\frac{1}{L} \sum_{k, s} \delta\left(E-\frac{\hbar^{2} k^{2}}{2 m}\right)\\&=2 \int \frac{d k}{2 \pi} \delta\left(E-\frac{\hbar^{2} k^{2}}{2 m}\right)=\frac{1}{\pi \hbar v(E)}
 \end{align*}
 $$
 

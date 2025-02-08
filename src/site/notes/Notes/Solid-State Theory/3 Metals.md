@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/3-metals/","hide":"true","updated":"2025-02-07T10:57:49.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/3-metals/","hide":"true","updated":"2025-02-08T20:08:56.633+01:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -75,7 +75,7 @@ and the density of states
 $$
 \begin{align*}
 \begin{aligned}
-N(E) & =\frac{1}{\Omega} \sum_{\boldsymbol{k}, s} \delta\left(E-\epsilon_{\boldsymbol{k}}\right)=2 \int \frac{d^{3} k}{(2 \pi)^{3}} \delta\left(E-\frac{\hbar^{2} \boldsymbol{k}^{2}}{2 m}\right)=\frac{1}{4 \pi^{3}} \int d \Omega_{\boldsymbol{k}} d k k^{2} \frac{m}{\hbar^{2} k} \delta\left(k-\frac{\sqrt{2 m E}}{\hbar}\right) \\
+N(E) & =\frac{1}{\Omega} \sum_{\boldsymbol{k}, s} \delta\left(E-\epsilon_{\boldsymbol{k}}\right)=2 \int \frac{d^{3} k}{(2 \pi)^{3}} \delta\left(E-\frac{\hbar^{2} \boldsymbol{k}^{2}}{2 m}\right)\\&=\frac{1}{4 \pi^{3}} \int d \Omega_{\boldsymbol{k}} d k k^{2} \frac{m}{\hbar^{2} k} \delta\left(k-\frac{\sqrt{2 m E}}{\hbar}\right) \\
 & =\frac{1}{2 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{3 / 2} E^{1 / 2}=\frac{3}{2} \frac{n}{\epsilon_{F}}\left(\frac{E}{\epsilon_{F}}\right)^{1 / 2}
 \end{aligned}
 \end{align*}
@@ -83,7 +83,7 @@ $$
 for $E>0$. We first address the temperature dependence of the chemical potential up second power in $T$ for fixed electron density $n$, by using the equation
 $$
 \begin{align*}
-n=\frac{1}{\Omega} \sum_{\boldsymbol{k}, s} f\left(\epsilon_{\boldsymbol{k}}\right)=\int_{0}^{+\infty} d E f(E) N(E)=\int_{0}^{\mu} d E N(E)+\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2} N^{\prime}(\mu)+\cdots
+n&=\frac{1}{\Omega} \sum_{\boldsymbol{k}, s} f\left(\epsilon_{\boldsymbol{k}}\right)=\int_{0}^{+\infty} d E f(E) N(E)\\&=\int_{0}^{\mu} d E N(E)+\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2} N^{\prime}(\mu)+\cdots
 \end{align*}
 $$
 where we used the Sommerfeld expansion (see next paragraph) assuming $T \ll T_{F}=\epsilon_{F} / k_{B}.$
@@ -109,7 +109,7 @@ $$
 With the definition
 $$
 \begin{align*}
-g(E)=\int_{-\infty}^{E} d E^{\prime} \Gamma\left(E^{\prime}\right) \Rightarrow \int_{-\infty}^{+\infty} d E \Gamma(E) f(E)=\int_{-\infty}^{\mu} d E \Gamma(E)+\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2} \Gamma^{\prime}(\mu)+\cdots
+g(E)=\int_{-\infty}^{E} d E^{\prime} \Gamma\left(E^{\prime}\right) &\implies  \int_{-\infty}^{+\infty} d E \Gamma(E) f(E)\\&=\int_{-\infty}^{\mu} d E \Gamma(E)+\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2} \Gamma^{\prime}(\mu)+\cdots
 \end{align*}
 $$
 
@@ -132,14 +132,14 @@ leading to
 
 $$
 \begin{align*}
-n \approx n+\left(\mu-\epsilon_{F}\right) N\left(\epsilon_{F}\right)+\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2} N^{\prime}\left(\epsilon_{F}\right) \quad \Rightarrow \quad \mu(T)=\epsilon_{F}-\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2} \frac{N^{\prime}\left(\epsilon_{F}\right)}{N\left(\epsilon_{F}\right)}+\cdots
+n &\approx n+\left(\mu-\epsilon_{F}\right) N\left(\epsilon_{F}\right)+\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2} N^{\prime}\left(\epsilon_{F}\right)  \\ &\implies  \mu(T)=\epsilon_{F}-\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2} \frac{N^{\prime}\left(\epsilon_{F}\right)}{N\left(\epsilon_{F}\right)}+\cdots
 \end{align*}
 $$
 with $N^{\prime}\left(\epsilon_{F}\right) / N\left(\epsilon_{F}\right)=1 / 2 \epsilon_{F}$. Now we also determine the internal energy density,
 $$
 \begin{align*}
 \begin{aligned}
-u(T) & =\frac{U(T)}{\Omega}=\int_{0}^{\infty} d E E N(E) f(E) \approx \int_{0}^{\mu} d E E N(E)+\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2}\left\{\mu N^{\prime}(\mu)+N(\mu)\right\} \\
+u(T) & =\frac{U(T)}{\Omega}=\int_{0}^{\infty} d E E N(E) f(E) \\ &\approx \int_{0}^{\mu} d E E N(E)+\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2}\left\{\mu N^{\prime}(\mu)+N(\mu)\right\} \\
 & \approx \int_{0}^{\epsilon_{F}} d E E N(E)+\epsilon_{F} \underbrace{\left\{\left(\mu-\epsilon_{F}\right) N\left(\epsilon_{F}\right)+\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2} N^{\prime}\left(\epsilon_{F}\right)\right\}}_{=0}+\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2} N\left(\epsilon_{F}\right) \\
 & =u_{0}+\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2} N\left(\epsilon_{F}\right).
 \end{aligned}
@@ -157,7 +157,7 @@ $$
 \begin{align*}
 \begin{aligned}
 M & =\mu_{B}\left(n_{+}-n_{-}\right)=\frac{\mu_{B}}{2}\left\{\int_{0}^{\infty} d E N(E) f\left(E-\mu_{B} H\right)-\int_{0}^{\infty} d E N(E) f\left(E+\mu_{B} H\right)\right\} \\
-& \approx \frac{\mu_{B}}{2} \int_{0}^{\infty} d E N(E)\left(-\frac{\partial f(E)}{\partial E}\right) 2 \mu_{B} H \approx \mu_{B}^{2} H N\left(\epsilon_{F}\right) \int_{0}^{\infty} d E\left(-\frac{\partial f(E)}{\partial E}\right)=\mu_{B}^{2} H N\left(\epsilon_{F}\right) .
+& \approx \frac{\mu_{B}}{2} \int_{0}^{\infty} d E N(E)\left(-\frac{\partial f(E)}{\partial E}\right) 2 \mu_{B} H \\ &\approx \mu_{B}^{2} H N\left(\epsilon_{F}\right) \int_{0}^{\infty} d E\left(-\frac{\partial f(E)}{\partial E}\right)=\mu_{B}^{2} H N\left(\epsilon_{F}\right) .
 \end{aligned}
 \end{align*}
 $$
@@ -173,7 +173,7 @@ This is the Pauli paramagnetic susceptibility which is to lowest order temperatu
 The temperature dependence of the $\chi_{p}$ can be found by going beyond the lowest order approximation:
 $$
 \begin{align*}
-M \approx \mu_{B}^{2} H \int_{0}^{\infty} d E N(E)\left(-\frac{\partial f(E)}{\partial E}\right)=\mu_{B}^{2} H\left\{N(\mu)+\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2} N^{\prime \prime}(\mu)\right\}
+M &\approx \mu_{B}^{2} H \int_{0}^{\infty} d E N(E)\left(-\frac{\partial f(E)}{\partial E}\right)\\&=\mu_{B}^{2} H\left\{N(\mu)+\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2} N^{\prime \prime}(\mu)\right\}
 \end{align*}
 $$
 We then write
@@ -185,7 +185,7 @@ $$
 which leads to
 $$
 \begin{align*}
-M \approx \mu_{B}^{2} H N\left(\epsilon_{F}\right)\left[1-\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2}\left\{\left(\frac{N^{\prime}\left(\epsilon_{F}\right)}{N\left(\epsilon_{F}\right)}\right)^{2}-\frac{N^{\prime \prime}\left(\epsilon_{F}\right)}{N\left(\epsilon_{F}\right)}\right\}\right]=\chi_{p}(T) H,
+M &\approx \mu_{B}^{2} H N\left(\epsilon_{F}\right)\left[1-\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2}\left\{\left(\frac{N^{\prime}\left(\epsilon_{F}\right)}{N\left(\epsilon_{F}\right)}\right)^{2}-\frac{N^{\prime \prime}\left(\epsilon_{F}\right)}{N\left(\epsilon_{F}\right)}\right\}\right]\\&=\chi_{p}(T) H,
 \end{align*}
 $$
 and defines the temperature dependent spin susceptibility, which depends on details of the density of states.
@@ -245,7 +245,7 @@ $$
 \begin{align*}
 \begin{aligned}
 E_{\mathrm{ee}} & =\frac{1}{2} \int d^{3} r d^{3} r^{\prime} \frac{e^{2}}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|} \sum_{s, s^{\prime}}\left\langle\Psi_{0}\right| \widehat{\Psi}_{s}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}_{s^{\prime}}^{\dagger}\left(\boldsymbol{r}^{\prime}\right) \widehat{\Psi}_{s^{\prime}}\left(\boldsymbol{r}^{\prime}\right) \widehat{\Psi}_{s}(\boldsymbol{r})\left|\Psi_{0}\right\rangle \\
-& =\frac{1}{2} \int d^{3} r d^{3} r^{\prime} \frac{e^{2}}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|}\left(n^{2}-G\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)\right)=E_{\text {Hartree }}+E_{\text {Fock }} .
+& =\frac{1}{2} \int d^{3} r d^{3} r^{\prime} \frac{e^{2}}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|}\left(n^{2}-G\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)\right)\\ &=E_{\text {Hartree }}+E_{\text {Fock }} .
 \end{aligned}
 \end{align*}
 $$
@@ -287,7 +287,7 @@ $$
 It is easy to verify that the three contributions $E_{\text {Hartree }}, E_{\mathrm{ei}}$, and $E_{\mathrm{ii}}$ compensate each other to exactly zero. Note that these three terms are the only ones that would arise in a classical electrostatic calculation, implying that the stability of metals relies purely on quantum effect. The remaining terms are the kinetic energy and the Fock term. The latter is negative and reads
 $$
 \begin{align*}
-E_{\mathrm{Fock}}=-\Omega \frac{9 n^{2}}{4} \int d^{3} r \frac{e^{2}}{|\boldsymbol{r}|}\left(\frac{\sin k_{F}|\boldsymbol{r}|-k_{F}|\boldsymbol{r}| \cos k_{F}|\boldsymbol{r}|}{\left(k_{F}|\boldsymbol{r}|\right)^{3}}\right)^{2}=-N \frac{3 e^{2}}{4 \pi} k_{F} .
+E_{\mathrm{Fock}}&=-\Omega \frac{9 n^{2}}{4} \int d^{3} r \frac{e^{2}}{|\boldsymbol{r}|}\left(\frac{\sin k_{F}|\boldsymbol{r}|-k_{F}|\boldsymbol{r}| \cos k_{F}|\boldsymbol{r}|}{\left(k_{F}|\boldsymbol{r}|\right)^{3}}\right)^{2}\\&=-N \frac{3 e^{2}}{4 \pi} k_{F} .
 \end{align*}
 $$
 
@@ -346,7 +346,7 @@ As mentioned earlier, the semiconductor acts as a dielectric medium and its scre
 We will now investigate the response of an electron gas to a time- and position-dependent weak external potential $V_{a}(\boldsymbol{r}, t)$ in more detail based on the equation of motion. We introduce the Hamiltonian
 $$
 \begin{align*}
-\mathcal{H}=\mathcal{H}_{\text {kin }}+\mathcal{H}_{V}=\mathcal{H}_{0}+\mathcal{H}_{V} \sum_{\boldsymbol{k}, s} \epsilon_{\boldsymbol{k}} \widehat{c}_{\boldsymbol{k} s}^{\dagger} \widehat{c}_{\boldsymbol{k} s}+\sum_{s} \int d^{3} r V_{a}(\boldsymbol{r}, t) \widehat{\Psi}_{s}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}_{s}(\boldsymbol{r})
+\mathcal{H}&=\mathcal{H}_{\text {kin }}+\mathcal{H}_{V}=\mathcal{H}_{0}+\mathcal{H}_{V} \\ &=\sum_{\boldsymbol{k}, s} \epsilon_{\boldsymbol{k}} \widehat{c}_{\boldsymbol{k} s}^{\dagger} \widehat{c}_{\boldsymbol{k} s}+\sum_{s} \int d^{3} r V_{a}(\boldsymbol{r}, t) \widehat{\Psi}_{s}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}_{s}(\boldsymbol{r})
 \end{align*}
 $$
 where the second term is considered as a small perturbation to our system described by a timeindependent Hamiltonian, $\mathcal{H}_{0}=\mathcal{H}_{\text {kin }}$ whose properties we know exactly. In a first step we consider the linear response of the system to the external potential. On this level we restrict ourself to one Fourier component in the spatial and time dependence of the potential,
@@ -365,13 +365,13 @@ $$
 Using equations (3.28) and (3.29) we obtain for the density operator in momentum space,
 $$
 \begin{align*}
-\widehat{\rho}_{\boldsymbol{q}}=\sum_{s} \int d^{3} r \widehat{\Psi}_{s}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}_{s}(\boldsymbol{r}) e^{-i \boldsymbol{q} \cdot \boldsymbol{r}}=\sum_{\boldsymbol{k}, s} \widehat{c}_{\boldsymbol{k} s}^{\dagger} \widehat{c}_{\boldsymbol{k}+\boldsymbol{q} s}=\sum_{\boldsymbol{k}, s} \widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s},
+\widehat{\rho}_{\boldsymbol{q}}&=\sum_{s} \int d^{3} r \widehat{\Psi}_{s}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}_{s}(\boldsymbol{r}) e^{-i \boldsymbol{q} \cdot \boldsymbol{r}}\\&=\sum_{\boldsymbol{k}, s} \widehat{c}_{\boldsymbol{k} s}^{\dagger} \widehat{c}_{\boldsymbol{k}+\boldsymbol{q} s}=\sum_{\boldsymbol{k}, s} \widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s},
 \end{align*}
 $$
 where we define $\widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s}=\widehat{c}_{\boldsymbol{k} s} \widehat{c}_{\boldsymbol{k}+\boldsymbol{q} s}$. The perturbation term $\mathcal{H}_{V}$ now reads
 $$
 \begin{align*}
-\mathcal{H}_{V}=\sum_{s} \int d^{3} r V_{a}(\boldsymbol{r}, t) \widehat{\Psi}_{s}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}_{s}(\boldsymbol{r})=\widehat{\rho}_{\boldsymbol{q}}^{\dagger} V_{a}(\boldsymbol{q}, \omega) e^{-i \omega t} e^{\eta t}=\sum_{\boldsymbol{k}, s} \widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s}^{\dagger} V_{a}(\boldsymbol{q}, \omega) e^{-i \omega t} e^{\eta t} .
+\mathcal{H}_{V}&=\sum_{s} \int d^{3} r V_{a}(\boldsymbol{r}, t) \widehat{\Psi}_{s}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}_{s}(\boldsymbol{r})\\ &=\widehat{\rho}_{\boldsymbol{q}}^{\dagger} V_{a}(\boldsymbol{q}, \omega) e^{-i \omega t} e^{\eta t}=\sum_{\boldsymbol{k}, s} \widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s}^{\dagger} V_{a}(\boldsymbol{q}, \omega) e^{-i \omega t} e^{\eta t} .
 \end{align*}
 $$
 
@@ -398,7 +398,7 @@ $$
 where $n_{0 \boldsymbol{k}, s}=\left\langle\widehat{c}_{\boldsymbol{k} s} \widehat{c}_{\boldsymbol{c} s}\right\rangle_{0}$. Note that we take here the approximation that for the limit $V_{a} \rightarrow 0$ we keep only terms linear $V_{a}$, such that $n_{0 k, s}$ is independent of $V_{a}$ and thus of time, while $\left\langle\widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s}\right\rangle_{0}$ is proportional to $V_{a}$. This leads then consistently to
 $$
 \begin{align*}
-\delta n_{\text {ind }}(\boldsymbol{q}, \omega)=\frac{1}{\Omega} \sum_{\boldsymbol{k}, s}\left\langle\widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s}\right\rangle_{0}(\omega)=\frac{1}{\Omega} \sum_{\boldsymbol{k}, s} \frac{n_{0 \boldsymbol{k}+\boldsymbol{q}, s}-n_{0 \boldsymbol{k}, s}}{\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}-\hbar \omega-i \hbar \eta} V_{a}(\boldsymbol{q}, \omega) .
+\delta n_{\text {ind }}(\boldsymbol{q}, \omega)&=\frac{1}{\Omega} \sum_{\boldsymbol{k}, s}\left\langle\widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s}\right\rangle_{0}(\omega)\\&=\frac{1}{\Omega} \sum_{\boldsymbol{k}, s} \frac{n_{0 \boldsymbol{k}+\boldsymbol{q}, s}-n_{0 \boldsymbol{k}, s}}{\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}-\hbar \omega-i \hbar \eta} V_{a}(\boldsymbol{q}, \omega) .
 \end{align*}
 $$
 With this, we define the dynamical linear response function as
@@ -419,7 +419,7 @@ The adiabatic switching on of the perturbation has mathematically the nice regul
 As a simple example we consider here a metal at $T=0$ exposed to a uniform static potential, which corresponds simply to a shift of the chemical potential: $V_{a}(\boldsymbol{r}, t)=-\delta \mu$. Thus, we use $\omega=0$ and take in the Lindhard function the limit $\boldsymbol{q} \rightarrow 0$. Using Bernoulli-l'Hôpital for the $\boldsymbol{q}$-limit we find
 $$
 \begin{align*}
-\chi_{0}(\boldsymbol{q} \rightarrow 0,0) \rightarrow \frac{1}{\Omega} \sum_{\boldsymbol{k}, s} \frac{\boldsymbol{q} \cdot \boldsymbol{\nabla}_{\boldsymbol{k}} \epsilon_{\boldsymbol{k}} \frac{\partial n_{0}(\epsilon)}{\partial \epsilon}}{\boldsymbol{q} \cdot \nabla_{\boldsymbol{k}} \epsilon_{\boldsymbol{k}}}=\frac{1}{\Omega} \sum_{\boldsymbol{k}, s} \frac{\partial f\left(\epsilon_{\boldsymbol{k}}\right)}{\partial \epsilon_{\boldsymbol{k}}}=-\frac{1}{\Omega} \sum_{\boldsymbol{k}, s} \delta\left(\epsilon_{\boldsymbol{k}}-\epsilon_{F}\right)=-\frac{N\left(\epsilon_{F}\right)}{\Omega} .
+\chi_{0}(\boldsymbol{q} \rightarrow 0,0) &\rightarrow \frac{1}{\Omega} \sum_{\boldsymbol{k}, s} \frac{\boldsymbol{q} \cdot \boldsymbol{\nabla}_{\boldsymbol{k}} \epsilon_{\boldsymbol{k}} \frac{\partial n_{0}(\epsilon)}{\partial \epsilon}}{\boldsymbol{q} \cdot \nabla_{\boldsymbol{k}} \epsilon_{\boldsymbol{k}}}\\&=\frac{1}{\Omega} \sum_{\boldsymbol{k}, s} \frac{\partial f\left(\epsilon_{\boldsymbol{k}}\right)}{\partial \epsilon_{\boldsymbol{k}}}=-\frac{1}{\Omega} \sum_{\boldsymbol{k}, s} \delta\left(\epsilon_{\boldsymbol{k}}-\epsilon_{F}\right)=-\frac{N\left(\epsilon_{F}\right)}{\Omega} .
 \end{align*}
 $$
 
@@ -675,7 +675,7 @@ $$
 Noticeably the dielectric function varies little for small $\boldsymbol{q} \ll k_{F}$. At $q= \pm 2 k_{F}$ there is, however, a logarithmic singularity. This is a consequence of the sharpness of the Fermi surface in $k$-space. Consider the induced charge of a point charge at the origin: $e n_{a}(r)=e n_{a 0} \delta(\boldsymbol{r})$ which is Fourier transformed is $n_{a}(\boldsymbol{q})=n_{a 0} .{ }^{10}$
 $$
 \begin{align*}
-\delta n(\boldsymbol{r})=\int \frac{d^{3} q}{(2 \pi)^{3}}\left\{\frac{1}{\varepsilon(q)}-1\right\} n_{a}(\boldsymbol{q}) e^{i \boldsymbol{q} \cdot \boldsymbol{r}}=-\frac{1}{r} \int_{0}^{\infty} g(q) n_{a}(\boldsymbol{q}) \sin q r d q
+\delta n(\boldsymbol{r})&=\int \frac{d^{3} q}{(2 \pi)^{3}}\left\{\frac{1}{\varepsilon(q)}-1\right\} n_{a}(\boldsymbol{q}) e^{i \boldsymbol{q} \cdot \boldsymbol{r}}\\ &=-\frac{1}{r} \int_{0}^{\infty} g(q) n_{a}(\boldsymbol{q}) \sin q r d q
 \end{align*}
 $$
 with
@@ -715,7 +715,7 @@ $$
 with a cutoff $\Lambda \rightarrow \infty$. The induced charge distribution exhibits so-called Friedel oscillations. Finally we may ask what is the total electron charge displaced around the point charge en $n_{a 0} \delta(\boldsymbol{r})$. We integrate over $\boldsymbol{r}$:
 $$
 \begin{align*}
-\delta Q=e \delta n=e \int d^{3} r \delta n(\boldsymbol{r})=\lim _{\boldsymbol{q} \rightarrow 0}\left\{\frac{1}{\varepsilon(q)}-1\right\} n_{a}(\boldsymbol{q})=-e n_{a 0}
+\delta Q&=e \delta n=e \int d^{3} r \delta n(\boldsymbol{r})\\&=\lim _{\boldsymbol{q} \rightarrow 0}\left\{\frac{1}{\varepsilon(q)}-1\right\} n_{a}(\boldsymbol{q})=-e n_{a 0}
 \end{align*}
 $$
 where we used $1 / \epsilon(\boldsymbol{q}) \rightarrow 0$ for $\boldsymbol{q} \rightarrow 0$. The charge displacement corresponds to the exact opposite amount of charge of of the point charge. Thus we find a perfect compensation which corresponds to perfect screening.
@@ -964,7 +964,7 @@ $$
 where the virtual states $|n\rangle$ are electron-hole excitations of the filled Fermi sea. This term gives a correction to the elastic term in (3.148). In other words, the elastic modulus $\lambda$ and, thus, the phonon frequency $\omega_{q}{ }^{2}=q^{2} \lambda / \rho_{0}=c_{s}^{2} q^{2}$ is renormalised according to
 $$
 \begin{align*}
-\left(\omega_{q}^{\mathrm{ren}}\right)^{2} \approx \omega_{q}^{2}+\frac{n_{0}^{2}\left|\tilde{V}_{q}\right|^{2} q^{2}}{4 \rho_{0}} \chi_{0}(q, 0)=\omega_{q}^{2}-\frac{n_{0}^{2}\left|\tilde{V}_{q}\right|^{2} m q}{4 \pi \rho_{0} \hbar^{2}} \ln \left|\frac{q+2 k_{F}}{q-2 k_{F}}\right|
+\left(\omega_{q}^{\mathrm{ren}}\right)^{2} &\approx \omega_{q}^{2}+\frac{n_{0}^{2}\left|\tilde{V}_{q}\right|^{2} q^{2}}{4 \rho_{0}} \chi_{0}(q, 0)\\&=\omega_{q}^{2}-\frac{n_{0}^{2}\left|\tilde{V}_{q}\right|^{2} m q}{4 \pi \rho_{0} \hbar^{2}} \ln \left|\frac{q+2 k_{F}}{q-2 k_{F}}\right|
 \end{align*}
 $$
 From the behaviour for $q \rightarrow 0$ we infer that the velocity of sound is renormalised. However, a much more drastic modification occurs at $q=2 k_{F}$. Here the phonon spectrum is 'softened', i.e. the frequency vanishes and even becomes negative. The latter effect is an artifact of the perturbation theory. This hints at an instability triggered by the Bose-Einstein condensation of phonons with a wave vector of . This coherent superposition  of many phonons corresponds classically to a static periodic deformation of the ionic background with wave vector . The unphysical behaviour of the frequency  indicates that in the vicinity of , the current problem can not be treated with the help of perturbation theory around the uniform state.
@@ -1031,7 +1031,7 @@ $$
 u_{0}=\frac{\hbar^{2} k_{F}}{m n \tilde{V}_{Q}} \exp \left[-\frac{\hbar^{2} k_{F} \pi \lambda}{4 m n^{2} \tilde{V}_{Q}^{2}}\right]=\frac{2}{k_{F}} \frac{\epsilon_{F}}{n \tilde{V}_{Q}} e^{-1 / N\left(\epsilon_{F}\right) g}
 \end{align*}
 $$
-where $\epsilon_{F}=\hbar^{2} k_{F}^{2} / 2 m$ is the Fermi energy and $N\left(\epsilon_{F}\right)=2 m / \pi \hbar^{2} k_{F}$ is the density of states at the Fermi energy in the one-dimensional system. We introduced the coupling constant $g=2 n^{2} \tilde{V}_{Q}^{2} / \lambda$ that describes the phonon-induced effective electron-electron interaction. The coupling is the stronger the more polarizable (softer) ionic background, i.e. when the elastic modulus $\lambda$ is small. Note that the static displacement $u_{0}$ depends exponentially on the coupling and on the density of states. The underlying reason for this so-called Peierls instability to happen lies in the opening of an energy gap,
+where $\epsilon_{F}=\hbar^{2} k_{F}^{2} / 2 m$ is the Fermi energy and $N\left(\epsilon_{F}\right)=2 m / \pi \hbar^{2} k_{F}$ is the density of states at the Fermi energy in the one-dimensional system. We introduced the coupling constant $g=2 n^{2} \tilde{V}_{Q}^{2} / \lambda$ that describes the phonon-induced effective electron-electron interaction. The coupling is the stronger the more polarisable (softer) ionic background, i.e. when the elastic modulus $\lambda$ is small. Note that the static displacement $u_{0}$ depends exponentially on the coupling and on the density of states. The underlying reason for this so-called Peierls instability to happen lies in the opening of an energy gap,
 $$
 \begin{align*}
 \Delta E=E_{k_{F}}^{+}-E_{k_{F}}^{-}=2|\Delta|=8 \epsilon_{F} \exp \left(-\frac{1}{N\left(\epsilon_{F}\right) g}\right)
@@ -1223,7 +1223,7 @@ $$
 We turn to the interaction representation (time-dependent perturbation theory),
 $$
 \begin{align*}
-\delta \widehat{\rho}(t)=e^{-i \mathcal{H} 0 t / \hbar} \widehat{y}(t) e^{i \mathcal{H}_{0} t / \hbar} \quad \Rightarrow \quad i \hbar \frac{\partial}{\partial t} \delta \widehat{\rho}=-\left[\delta \widehat{\rho}, \mathcal{H}_{0}\right]+e^{-i \mathcal{H}_{0} t / \hbar}\left\{i \hbar \frac{\partial \widehat{y}(t)}{\partial t}\right\} e^{i \mathcal{H}_{0} t / \hbar}
+\delta \widehat{\rho}(t)&=e^{-i \mathcal{H} 0 t / \hbar} \widehat{y}(t) e^{i \mathcal{H}_{0} t / \hbar} \\ &\implies  i \hbar \frac{\partial}{\partial t} \delta \widehat{\rho}=-\left[\delta \widehat{\rho}, \mathcal{H}_{0}\right]+e^{-i \mathcal{H}_{0} t / \hbar}\left\{i \hbar \frac{\partial \widehat{y}(t)}{\partial t}\right\} e^{i \mathcal{H}_{0} t / \hbar}
 \end{align*}
 $$
 
@@ -1308,7 +1308,7 @@ After the integration over time in (3.206) we obtain
 $$
 \begin{align*}
 \begin{aligned}
-\chi(\boldsymbol{q}, \omega) & \left.=\frac{1}{\Omega} \sum_{n, n^{\prime}} \frac{e^{-\beta \epsilon_{n}}}{Z}\left|\langle n| \widehat{B}_{\boldsymbol{q}}\right| n^{\prime}\right\rangle\left.\right|^{2}\left\{\frac{1}{\hbar \omega-\epsilon_{n^{\prime}}+\epsilon_{n}+i \hbar \eta}-\frac{1}{\hbar \omega-\epsilon_{n}+\epsilon_{n^{\prime}}+i \hbar \eta}\right\} \\
+\chi(\boldsymbol{q}, \omega) & =\frac{1}{\Omega} \sum_{n, n^{\prime}} \frac{e^{-\beta \epsilon_{n}}}{Z}|\langle n| \widehat{B}_{\boldsymbol{q}}| n^{\prime}\rangle\left.\right|^{2}\left\{\frac{1}{\hbar \omega-\epsilon_{n^{\prime}}+\epsilon_{n}+i \hbar \eta}-\frac{1}{\hbar \omega-\epsilon_{n}+\epsilon_{n^{\prime}}+i \hbar \eta}\right\} \\
 & =\int_{0}^{\infty} d \omega^{\prime} S\left(\boldsymbol{q}, \omega^{\prime}\right)\left\{\frac{1}{\omega-\omega^{\prime}+i \eta}-\frac{1}{\omega+\omega^{\prime}+i \eta}\right\} .
 \end{aligned}
 \end{align*}
@@ -1317,7 +1317,7 @@ $$
 In the last line we write the response function in a spectral form with $S(\boldsymbol{q}, \omega)$ as the spectral function,
 $$
 \begin{align*}
-\left.S(\boldsymbol{q}, \omega)=\frac{1}{\Omega} \sum_{n, n^{\prime}} \frac{e^{-\beta \epsilon_{n}}}{Z}\left|\langle n| \widehat{B}_{\boldsymbol{q}}\right| n^{\prime}\right\rangle\left.\right|^{2} \delta\left(\hbar \omega-\epsilon_{n^{\prime}}+\epsilon_{n}\right)
+S(\boldsymbol{q}, \omega)=\frac{1}{\Omega} \sum_{n, n^{\prime}} \frac{e^{-\beta \epsilon_{n}}}{Z}|\langle n| \widehat{B}_{\boldsymbol{q}}| n^{\prime}\rangle\left.\right|^{2} \delta\left(\hbar \omega-\epsilon_{n^{\prime}}+\epsilon_{n}\right)
 \end{align*}
 $$
 
@@ -1361,7 +1361,7 @@ $$
 The second term can be rewritten by substitution $\boldsymbol{k} \rightarrow \boldsymbol{k}-\boldsymbol{q}$ and in a next step switch the sign of $\boldsymbol{q}$ which leaves the result invariant, as our system has inversion symmetry. This leas then to
 $$
 \begin{align*}
-\chi(\boldsymbol{q}, \omega)=\frac{1}{\Omega} \sum_{\boldsymbol{k}} \frac{n_{0 \boldsymbol{k}}\left(1-n_{0 \boldsymbol{k}+\boldsymbol{q}}\right)-n_{0 \boldsymbol{k}+\boldsymbol{q}}\left(1-n_{0 \boldsymbol{k}}\right)}{\hbar \omega-\epsilon_{\boldsymbol{k}+\boldsymbol{q}}+\epsilon_{\boldsymbol{k}}+i \hbar \eta}=\frac{1}{\Omega} \sum_{\boldsymbol{k}} \frac{n_{0 \boldsymbol{k}+\boldsymbol{q}}-n_{0 \boldsymbol{k}}}{\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}-\hbar \omega-i \hbar \eta},
+\chi(\boldsymbol{q}, \omega)&=\frac{1}{\Omega} \sum_{\boldsymbol{k}} \frac{n_{0 \boldsymbol{k}}\left(1-n_{0 \boldsymbol{k}+\boldsymbol{q}}\right)-n_{0 \boldsymbol{k}+\boldsymbol{q}}\left(1-n_{0 \boldsymbol{k}}\right)}{\hbar \omega-\epsilon_{\boldsymbol{k}+\boldsymbol{q}}+\epsilon_{\boldsymbol{k}}+i \hbar \eta}\\&=\frac{1}{\Omega} \sum_{\boldsymbol{k}} \frac{n_{0 \boldsymbol{k}+\boldsymbol{q}}-n_{0 \boldsymbol{k}}}{\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}-\hbar \omega-i \hbar \eta},
 \end{align*}
 $$
 which is the Lindhard function up to a factor $1 / \Omega$. Note that the response functions we formulated by the Kubo formula are extensive, while the definition we have used for the Lindhard function previously.
@@ -1398,8 +1398,8 @@ Note to the Kramers-Kronig relation: This relation results from the analytic str
 $$
 \begin{align*}
 \begin{aligned}
-& \oint_{C} d \omega^{\prime} \frac{\chi\left(\boldsymbol{q}, \omega^{\prime}\right)}{\omega-\omega^{\prime}-i \eta^{\prime}}=0 \\
-& \quad \Rightarrow \quad \int_{-\infty}^{+\infty} d \omega^{\prime} \chi\left(\boldsymbol{q}, \omega^{\prime}\right) \mathcal{P} \frac{1}{\omega-\omega^{\prime}}+i \pi \chi(\boldsymbol{q}, \omega)=0 .
+&\oint_{C} d \omega^{\prime} \frac{\chi\left(\boldsymbol{q}, \omega^{\prime}\right)}{\omega-\omega^{\prime}-i \eta^{\prime}}=0 \\
+\implies & \int_{-\infty}^{+\infty} d \omega^{\prime} \chi\left(\boldsymbol{q}, \omega^{\prime}\right) \mathcal{P} \frac{1}{\omega-\omega^{\prime}}+i \pi \chi(\boldsymbol{q}, \omega)=0 .
 \end{aligned}
 \end{align*}
 $$
@@ -1412,16 +1412,16 @@ Separating this equation into real and imaginary part yields the Kramers-Kronig 
 First we consider the aspect of dissipation incorporated in the response function. For this purpose we ignore for simplicity the spatial dependence and consider a perturbative part of the Hamiltonian which only depends on time.
 $$
 \begin{align*}
-\mathcal{H}^{\prime}=\int d^{3} r \widehat{B}(\boldsymbol{r}) \phi(\boldsymbol{r}, t) \quad \Rightarrow \quad\langle\widehat{B}(\boldsymbol{r})\rangle(t)=\int_{0}^{\infty} d t^{\prime} \int d^{3} r^{\prime} \chi\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}, t-t^{\prime}\right) \phi\left(\boldsymbol{r}, t^{\prime}\right)
+&\mathcal{H}^{\prime}=\int d^{3} r \widehat{B}(\boldsymbol{r}) \phi(\boldsymbol{r}, t) \\ \implies &\langle\widehat{B}(\boldsymbol{r})\rangle(t)=\int_{0}^{\infty} d t^{\prime} \int d^{3} r^{\prime} \chi\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}, t-t^{\prime}\right) \phi\left(\boldsymbol{r}, t^{\prime}\right)
 \end{align*}
 $$
 with $\widehat{B}=\widehat{B}^{\dagger}$. We assume now a monochromatic external field,
 $$
 \begin{align*}
 \begin{aligned}
-\phi(\boldsymbol{r}, t)=\frac{1}{2}\left(\phi_{0}(\boldsymbol{r}) e^{-i \omega t}\right. & \left.+\phi_{0}(\boldsymbol{r})^{*} e^{i \omega t}\right) \\
-\Rightarrow \quad\langle\widehat{B}(\boldsymbol{r})\rangle(t) & =\int_{0}^{\infty} d t^{\prime} \int d^{3} r^{\prime} \chi\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}, t-t^{\prime}\right) \frac{1}{2}\left(\phi_{0}\left(\boldsymbol{r}^{\prime}\right) e^{-i \omega t^{\prime}}+\phi_{0}\left(\boldsymbol{r}^{\prime}\right)^{*} e^{i \omega t^{\prime}}\right) \\
-& =\frac{1}{2} \int d^{3} r^{\prime}\left\{\chi\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}, \omega\right)^{*} \phi_{0} e^{-i \omega t}+\chi\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}, \omega\right) \phi_{0}^{*} e^{i \omega t}\right\} .
+\phi(\boldsymbol{r}, t)&=\frac{1}{2}\left(\phi_{0}(\boldsymbol{r}) e^{-i \omega t}\right.  \left.+\phi_{0}(\boldsymbol{r})^{*} e^{i \omega t}\right) \\
+\implies \langle\widehat{B}(\boldsymbol{r})\rangle(t)  &=\int_{0}^{\infty} d t^{\prime} \int d^{3} r^{\prime} \chi\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}, t-t^{\prime}\right) \frac{1}{2}\left(\phi_{0}\left(\boldsymbol{r}^{\prime}\right) e^{-i \omega t^{\prime}}+\phi_{0}\left(\boldsymbol{r}^{\prime}\right)^{*} e^{i \omega t^{\prime}}\right) \\
+ &=\frac{1}{2} \int d^{3} r^{\prime}\left\{\chi\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}, \omega\right)^{*} \phi_{0} e^{-i \omega t}+\chi\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}, \omega\right) \phi_{0}^{*} e^{i \omega t}\right\} .
 \end{aligned}
 \end{align*}
 $$
@@ -1434,7 +1434,7 @@ $$
 \frac{d E}{d t}= & \left\langle\frac{\partial}{\partial t} \mathcal{H}\right\rangle=\int d^{r}\langle\widehat{B}(\boldsymbol{r})\rangle(t) \frac{\partial \phi(\boldsymbol{r}, t)}{\partial t} \\
 = & \frac{1}{2} \int d^{3} r d^{3} r^{\prime} \frac{\partial \phi(\boldsymbol{r}, t)}{\partial t}\left\{\chi\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}, \omega\right)^{*} \phi_{0} e^{-i \omega t}+\chi\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}, \omega\right) \phi_{0}^{*} e^{i \omega t}\right\} \\
 = & \frac{1}{2} \int d^{3} r d^{3} r^{\prime} i \omega\left\{\phi_{0}(\boldsymbol{r}) e^{-i \omega t}+\phi_{0}(\boldsymbol{r})^{*} e^{i \omega t}\right\}\left\{\chi\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}, \omega\right)^{*} \phi_{0} e^{-i \omega t}+\chi\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}, \omega\right) \phi_{0}^{*} e^{i \omega t}\right\} \\
-& \Rightarrow \frac{\overline{d E}}{d t}=\frac{\omega}{2} \iint d^{3} r d^{3} r^{\prime} \phi_{0}(\boldsymbol{r})^{*} \chi^{\prime \prime}(\boldsymbol{r}-\boldsymbol{r}, \omega) \phi_{0}\left(\boldsymbol{r}^{\prime}\right)=\sum_{\boldsymbol{q}} \frac{\omega}{2} \chi^{\prime \prime}(\boldsymbol{q}, \omega)|\phi(\boldsymbol{q}, \omega)|^{2}<0
+ \implies &\frac{\overline{d E}}{d t}=\frac{\omega}{2} \iint d^{3} r d^{3} r^{\prime} \phi_{0}(\boldsymbol{r})^{*} \chi^{\prime \prime}(\boldsymbol{r}-\boldsymbol{r}, \omega) \phi_{0}\left(\boldsymbol{r}^{\prime}\right)=\sum_{\boldsymbol{q}} \frac{\omega}{2} \chi^{\prime \prime}(\boldsymbol{q}, \omega)|\phi(\boldsymbol{q}, \omega)|^{2}<0
 \end{aligned}
 \end{align*}
 $$
@@ -1494,7 +1494,7 @@ This is valid, if $\chi^{\prime \prime}(\boldsymbol{q}, \omega)$ essentially van
 **Static response function**: We consider a system with
 $$
 \begin{align*}
-\mathcal{H}=\mathcal{H}_{0}+\mathcal{H}^{\prime}=\mathcal{H}_{0}+\int d^{3} r h(\boldsymbol{r}) \widehat{B}(\boldsymbol{r})=\mathcal{H}_{0}+\frac{1}{V} \sum_{\boldsymbol{q}} h_{-q} \widehat{B}_{\boldsymbol{q}}=\mathcal{H}_{0}+\sum_{\boldsymbol{q}} H_{-\boldsymbol{q}} \widehat{B}_{\boldsymbol{q}}
+\mathcal{H}&=\mathcal{H}_{0}+\mathcal{H}^{\prime}=\mathcal{H}_{0}+\int d^{3} r h(\boldsymbol{r}) \widehat{B}(\boldsymbol{r})\\&=\mathcal{H}_{0}+\frac{1}{V} \sum_{\boldsymbol{q}} h_{-q} \widehat{B}_{\boldsymbol{q}}=\mathcal{H}_{0}+\sum_{\boldsymbol{q}} H_{-\boldsymbol{q}} \widehat{B}_{\boldsymbol{q}}
 \end{align*}
 $$
 
@@ -1508,14 +1508,14 @@ $$
 with $\widehat{\rho}=\exp [\beta(F-\mathcal{H})]$ and $\left\langle\widehat{B}_{\boldsymbol{q}}\right\rangle=0$ for $H_{\boldsymbol{q}}=0$. The static response function is obtain from
 $$
 \begin{align*}
-\chi(\boldsymbol{q})=\left.\frac{\partial\left\langle\widehat{B}_{\boldsymbol{q}}\right\rangle}{\partial H_{\boldsymbol{q}}}\right|_{H_{\boldsymbol{q}}=0}=\left.\operatorname{tr}\left\{\widehat{B}_{\boldsymbol{q}} \frac{\partial}{\partial H_{\boldsymbol{q}}} e^{\beta(F-\mathcal{H})}\right\}\right|_{H_{\boldsymbol{q}}=0}=\left.\operatorname{tr}\left\{\widehat{B}_{\boldsymbol{q}} \beta\left(\left\langle\widehat{B}_{-\boldsymbol{q}}\right\rangle-\widehat{B}_{-\boldsymbol{q}}\right) \widehat{\rho}\right\}\right|_{H_{\boldsymbol{q}}=0}=-\beta\left\langle\widehat{B}_{\boldsymbol{q}} \widehat{B}_{\boldsymbol{q}}^{\dagger}\right\rangle
+\chi(\boldsymbol{q})&=\left.\frac{\partial\left\langle\widehat{B}_{\boldsymbol{q}}\right\rangle}{\partial H_{\boldsymbol{q}}}\right|_{H_{\boldsymbol{q}}=0}=\left.\operatorname{tr}\left\{\widehat{B}_{\boldsymbol{q}} \frac{\partial}{\partial H_{\boldsymbol{q}}} e^{\beta(F-\mathcal{H})}\right\}\right|_{H_{\boldsymbol{q}}=0}\\&=\left.\operatorname{tr}\left\{\widehat{B}_{\boldsymbol{q}} \beta\left(\left\langle\widehat{B}_{-\boldsymbol{q}}\right\rangle-\widehat{B}_{-\boldsymbol{q}}\right) \widehat{\rho}\right\}\right|_{H_{\boldsymbol{q}}=0}=-\beta\left\langle\widehat{B}_{\boldsymbol{q}} \widehat{B}_{\boldsymbol{q}}^{\dagger}\right\rangle
 \end{align*}
 $$
 which is the classical form of the fluctuation dissipation theorem for spatially modulated perturbative fields.
 For a uniform field we find
 $$
 \begin{align*}
-\int d^{3} r d^{3} r^{\prime}\left\langle\widehat{B}(\boldsymbol{r}, t=0) \widehat{B}^{\dagger}\left(\boldsymbol{r}^{\prime}, t=0\right)\right\rangle=\left\langle\widehat{B}_{\boldsymbol{q}=0} \widehat{B}_{\boldsymbol{q}}^{\dagger}\right\rangle=-k_{B} T \chi(\boldsymbol{q}=0)=-k_{B} T \chi
+&\int d^{3} r d^{3} r^{\prime}\left\langle\widehat{B}(\boldsymbol{r}, t=0) \widehat{B}^{\dagger}\left(\boldsymbol{r}^{\prime}, t=0\right)\right\rangle\\=&\left\langle\widehat{B}_{\boldsymbol{q}=0} \widehat{B}_{\boldsymbol{q}}^{\dagger}\right\rangle=-k_{B} T \chi(\boldsymbol{q}=0)=-k_{B} T \chi
 \end{align*}
 $$
 i.e. the static uniform susceptibility is related to the integration of the equal-time correlation function as we had used previously several times. Note the minus sign results from the sign of coupling to the external field.

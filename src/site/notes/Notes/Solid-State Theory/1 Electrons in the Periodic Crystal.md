@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-02-07T10:57:49.025+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-02-08T19:54:05.963+01:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -79,8 +79,8 @@ The space group $\mathcal{R}$ satisfies the properties of a group:
 
 3. **Inverse Element**: For every $\{g \mid \boldsymbol{a}\} \in \mathcal{R}$, there exists an inverse:
 
-   $$
-   \{g \mid \boldsymbol{a}\}^{-1} = \{g^{-1} \mid -g^{-1}\boldsymbol{a}\} \implies \{g \mid \boldsymbol{a}\}^{-1}\{g \mid \boldsymbol{a}\} = \{E \mid \mathbf{0}\}.
+   $$\begin{align}
+   &\{g \mid \boldsymbol{a}\}^{-1} = \{g^{-1} \mid -g^{-1}\boldsymbol{a}\} \\ \implies & \{g \mid \boldsymbol{a}\}^{-1}\{g \mid \boldsymbol{a}\} = \{E \mid \mathbf{0}\}.\end{align}
    $$
 
 In general, space group elements do not commute (non-Abelian group):
@@ -323,7 +323,7 @@ $$
 The periodic potential $\widehat{V}$ has the property
 $$
 \begin{align*}
-\widehat{V}|k\rangle=\sum_{k^{\prime}}\left|k^{\prime}\right\rangle\left\langle k^{\prime}\right| \widehat{V}|k\rangle=\sum_{G}|k+G\rangle\langle k+G| \widehat{V}|k\rangle=\sum_{G} V_{G}|k+G\rangle
+& \widehat{V}|k\rangle=\sum_{k^{\prime}}\left|k^{\prime}\right\rangle\left\langle k^{\prime}\right| \widehat{V}|k\rangle\\ =&\sum_{G}|k+G\rangle\langle k+G| \widehat{V}|k\rangle=\sum_{G} V_{G}|k+G\rangle
 \end{align*}
 $$
 where we use that $\left\langle k^{\prime}\right| \widehat{V}|k\rangle$ is only non-vanishing, if $k-k^{\prime}=G$ a reciprocal lattice vector. We now approximate the eigenstates and eigenenergies. We notice that for given $k$ the relevant subspace of the Hilbert-space is $\{|k+G\rangle\}$ including all $G$. Thus the Bloch states can be written as
@@ -336,26 +336,26 @@ $$
 First we consider the situation around $k \approx$ for the lowest energy state. Within perturbation theory we obtain
 $$
 \begin{align*}
-\left|\psi_{k}\right\rangle \approx|k\rangle-\sum_{G \neq 0}|k-G\rangle \frac{\langle k-G| \widehat{V}|k\rangle}{\epsilon_{k-G}^{(0)}-\epsilon_{k}^{(0)}}=|k\rangle-\sum_{G \neq 0} \frac{V_{-G}}{\epsilon_{k-G}^{(0)}-\epsilon_{k}^{(0)}}|k-G\rangle
+\left|\psi_{k}\right\rangle & \approx|k\rangle-\sum_{G \neq 0}|k-G\rangle \frac{\langle k-G| \widehat{V}|k\rangle}{\epsilon_{k-G}^{(0)}-\epsilon_{k}^{(0)}}\\&=|k\rangle-\sum_{G \neq 0} \frac{V_{-G}}{\epsilon_{k-G}^{(0)}-\epsilon_{k}^{(0)}}|k-G\rangle
 \end{align*}
 $$
 and the energy is given by
 $$
 \begin{align*}
-\epsilon_{k} \approx \epsilon_{k}^{(0)}+\langle k| \widehat{V}|k\rangle-\sum_{G \neq 0} \frac{|\langle k-G| \widehat{V}| k\rangle\left.\right|^{2}}{\epsilon_{k-G}^{(0)}-\epsilon_{k}^{(0)}}=\epsilon_{k}^{(0)}+V_{0}-\sum_{G \neq 0} \frac{\left|V_{-G}\right|^{2}}{\epsilon_{k-G}^{(0)}-\epsilon_{k}^{(0)}} .
+\epsilon_{k} &\approx \epsilon_{k}^{(0)}+\langle k| \widehat{V}|k\rangle-\sum_{G \neq 0} \frac{|\langle k-G| \widehat{V}| k\rangle\left.\right|^{2}}{\epsilon_{k-G}^{(0)}-\epsilon_{k}^{(0)}}\\ &=\epsilon_{k}^{(0)}+V_{0}-\sum_{G \neq 0} \frac{\left|V_{-G}\right|^{2}}{\epsilon_{k-G}^{(0)}-\epsilon_{k}^{(0)}} .
 \end{align*}
 $$
 
 Note that the definitions of $V_{G}$ and $c_{G}$ are in line with those used in Sect.1.3. For the potential,
 $$
 \begin{align*}
-V(x)=\langle x| \widehat{V}|x\rangle=\sum_{k, k^{\prime}}\left\langle x \mid k^{\prime}\right\rangle \underbrace{\left\langle k^{\prime}\right| \widehat{V}|k\rangle}_{V_{G} \delta_{k^{\prime}, k+G}}\langle k \mid x\rangle=\sum_{k, G} V_{G}\langle x \mid k+G\rangle\langle k \mid x\rangle=\sum_{G} V_{G} e^{i G x}
+V(x)&=\langle x| \widehat{V}|x\rangle=\sum_{k, k^{\prime}}\left\langle x \mid k^{\prime}\right\rangle \underbrace{\left\langle k^{\prime}\right| \widehat{V}|k\rangle}_{V_{G} \delta_{k^{\prime}, k+G}}\langle k \mid x\rangle\\ &=\sum_{k, G} V_{G}\langle x \mid k+G\rangle\langle k \mid x\rangle=\sum_{G} V_{G} e^{i G x}
 \end{align*}
 $$
 where we use $\langle x \mid k\rangle=\frac{1}{\sqrt{L}} e^{i k x}$ with $L$ the length of the system. Note that $\frac{1}{L} \sum_{k} 1=1$. For the Bloch function we find,
 $$
 \begin{align*}
-\psi_{k}(x)=\left\langle x \mid \psi_{k}\right\rangle=\sum_{G} c_{G}\langle x \mid k-G\rangle=\frac{1}{\sqrt{L}} e^{i k x} \sum_{G} c_{G} e^{-i G x}=\frac{1}{\sqrt{L}} e^{i k x} u_{k}(x) .
+\psi_{k}(x)&=\left\langle x \mid \psi_{k}\right\rangle=\sum_{G} c_{G}\langle x \mid k-G\rangle\\ &=\frac{1}{\sqrt{L}} e^{i k x} \sum_{G} c_{G} e^{-i G x}=\frac{1}{\sqrt{L}} e^{i k x} u_{k}(x) .
 \end{align*}
 $$
 
@@ -380,13 +380,19 @@ $$
 is an eigenvalue equation with
 $$
 \begin{align*}
-E_{k, \pm}=\frac{1}{2}\left[\epsilon_{k+\tilde{G}}^{(0)}+\epsilon_{k-\tilde{G}}^{(0)} \pm \sqrt{\left(\epsilon_{k+\tilde{G}}^{(0)}-\epsilon_{k-\tilde{G}}^{(0)}\right)^{2}+4\left|V_{2 \tilde{G}}\right|^{2}}\right] \approx \frac{\hbar^{2} \tilde{G}^{2}}{2 m} \pm\left|V_{2 \tilde{G}}\right|+\frac{\hbar^{2} k^{2}}{2 m_{ \pm}^{*}}
+E_{k, \pm}&=\frac{1}{2}\left[\epsilon_{k+\tilde{G}}^{(0)}+\epsilon_{k-\tilde{G}}^{(0)} \pm \sqrt{\left(\epsilon_{k+\tilde{G}}^{(0)}-\epsilon_{k-\tilde{G}}^{(0)}\right)^{2}+4\left|V_{2 \tilde{G}}\right|^{2}}\right] \\ &\approx \frac{\hbar^{2} \tilde{G}^{2}}{2 m} \pm\left|V_{2 \tilde{G}}\right|+\frac{\hbar^{2} k^{2}}{2 m_{ \pm}^{*}}
 \end{align*}
 $$
 with an effective mass $m_{ \pm}^{*}.$ The eigenstate is given by
 $$
 \begin{align*}
-c_{+\tilde{G}}^{( \pm)}(k)=\frac{-V_{2 \tilde{G}}}{\sqrt{\left(\epsilon_{k+\tilde{G}}^{(0)}-E_{k, \pm}\right)^{2}+\left|V_{2 \tilde{G}}\right|^{2}}} \quad \text { and } \quad c_{-\tilde{G}}^{( \pm)}(k)=\frac{\epsilon_{k+\tilde{G}}^{(0)}-E_{k, \pm}}{\sqrt{\left(\epsilon_{k+\tilde{G}}^{(0)}-E_{k, \pm}\right)^{2}+\left|V_{2 \tilde{G}}\right|^{2}}} .
+c_{+\tilde{G}}^{( \pm)}(k)=\frac{-V_{2 \tilde{G}}}{\sqrt{\left(\epsilon_{k+\tilde{G}}^{(0)}-E_{k, \pm}\right)^{2}+\left|V_{2 \tilde{G}}\right|^{2}}}
+\end{align*}
+$$
+and
+$$
+\begin{align*}
+\quad c_{-\tilde{G}}^{( \pm)}(k)=\frac{\epsilon_{k+\tilde{G}}^{(0)}-E_{k, \pm}}{\sqrt{\left(\epsilon_{k+\tilde{G}}^{(0)}-E_{k, \pm}\right)^{2}+\left|V_{2 \tilde{G}}\right|^{2}}} .
 \end{align*}
 $$
 
@@ -497,9 +503,10 @@ The tight-binding approach is particularly effective for systems where atomic or
 
 An alternative approach to the tight-binding approximation is through Wannier functions, which are defined as the Fourier transform of the Bloch wave functions:
 $$
-\psi_{\boldsymbol{k}}(\boldsymbol{r}) = \frac{1}{\sqrt{N}} \sum_{\boldsymbol{R}} e^{i \boldsymbol{k} \cdot \boldsymbol{R}} w(\boldsymbol{r}-\boldsymbol{R}),
-\quad
-w(\boldsymbol{r}-\boldsymbol{R}) = \frac{1}{\sqrt{N}} \sum_{\boldsymbol{k}} e^{-i \boldsymbol{k} \cdot \boldsymbol{R}} \psi_{\boldsymbol{k}}(\boldsymbol{r}),
+\begin{align}
+\psi_{\boldsymbol{k}}(\boldsymbol{r}) & = \frac{1}{\sqrt{N}} \sum_{\boldsymbol{R}} e^{i \boldsymbol{k} \cdot \boldsymbol{R}} w(\boldsymbol{r}-\boldsymbol{R}),\\
+w(\boldsymbol{r}-\boldsymbol{R})& = \frac{1}{\sqrt{N}} \sum_{\boldsymbol{k}} e^{-i \boldsymbol{k} \cdot \boldsymbol{R}} \psi_{\boldsymbol{k}}(\boldsymbol{r}),
+\end{align}
 $$
 where the Wannier function $w(\boldsymbol{r}-\boldsymbol{R})$ is localised at the real-space lattice site $\boldsymbol{R}$. However, the Wannier function is not uniquely defined due to "gauge freedom," which allows multiplication of the Bloch function by an arbitrary phase factor:
 $$
@@ -522,9 +529,10 @@ $$
 $$
 where translational invariance is applied. Defining:
 $$
-\epsilon_{0} = \int d^{3} r \, w^{*}(\boldsymbol{r}) \mathcal{H} w(\boldsymbol{r}),
-\quad
-t(\boldsymbol{R}) = \int d^{3} r \, w^{*}(\boldsymbol{r}-\boldsymbol{R}) \mathcal{H} w(\boldsymbol{r}),
+\begin{align}
+\epsilon_{0} &= \int d^{3} r \, w^{*}(\boldsymbol{r}) \mathcal{H} w(\boldsymbol{r}),\\ 
+t(\boldsymbol{R}) &= \int d^{3} r \, w^{*}(\boldsymbol{r}-\boldsymbol{R}) \mathcal{H} w(\boldsymbol{r}),
+\end{align}
 $$
 the band energy becomes:
 $$
@@ -575,7 +583,7 @@ $$
 where $\hat{a}_{\boldsymbol{k} s}^{\dagger}\left(\hat{a}_{\boldsymbol{k} s}\right)$ creates (annihilates) an electron in the Bloch state with lattice momentum $\boldsymbol{k}$ and spin $s$. This leads to
 $$
 \begin{align*}
-\mathcal{H}=\sum_{\boldsymbol{k}, \boldsymbol{k}^{\prime}, s}\left\{\frac{1}{N} \sum_{i} \epsilon_{0} e^{i\left(\boldsymbol{k}-\boldsymbol{k}^{\prime}\right) \cdot \boldsymbol{R}_{i}}+\frac{1}{N} \sum_{i, j} t_{i j} e^{i \boldsymbol{k} \cdot \boldsymbol{R}_{j}-i \boldsymbol{k}^{\prime} \cdot \boldsymbol{R}_{i}}\right\} \hat{a}_{\boldsymbol{k}^{\prime} s}^{\dagger} \hat{a}_{\boldsymbol{k} s}=\sum_{\boldsymbol{k}, s} \epsilon_{\boldsymbol{k}} \hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k} s}
+\mathcal{H}&=\sum_{\boldsymbol{k}, \boldsymbol{k}^{\prime}, s}\left\{\frac{1}{N} \sum_{i} \epsilon_{0} e^{i\left(\boldsymbol{k}-\boldsymbol{k}^{\prime}\right) \cdot \boldsymbol{R}_{i}}+\frac{1}{N} \sum_{i, j} t_{i j} e^{i \boldsymbol{k} \cdot \boldsymbol{R}_{j}-i \boldsymbol{k}^{\prime} \cdot \boldsymbol{R}_{i}}\right\} \hat{a}_{\boldsymbol{k}^{\prime} s}^{\dagger} \hat{a}_{\boldsymbol{k} s}\\&=\sum_{\boldsymbol{k}, s} \epsilon_{\boldsymbol{k}} \hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k} s}
 \end{align*}
 $$
 where $\hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k} s}=\hat{n}_{\boldsymbol{k} s}$ constitutes the number operator for electrons. The band energy is the same as obtained above from the tight-binding approach. The Hamiltonian (1.83) will be used later for the Hubbard model where a real-space formulation is helpful.
@@ -614,8 +622,7 @@ The same holds for pure translations. Note also that this definition has also im
 $$
 \begin{align*}
 \begin{aligned}
-\widehat{S}_{\left\{g_{1} \mid \boldsymbol{a}_{1}\right\}} \widehat{S}_{\left\{g_{2} \mid \boldsymbol{a}_{2}\right\}} \psi_{\boldsymbol{k}}(\boldsymbol{r}) & =\langle\boldsymbol{r}| \widehat{S}_{\left\{g_{1} \mid \boldsymbol{a}_{1}\right\}} \widehat{S}_{\left\{g_{2} \mid \boldsymbol{a}_{2}\right\}}\left|\psi_{\boldsymbol{k}}\right\rangle=\left\langle\left\{g_{1} \mid \boldsymbol{a}_{1}\right\}^{-1} \boldsymbol{r}\right| \widehat{S}_{\left\{g_{2} \mid \boldsymbol{a}_{2}\right\}}\left|\psi_{\boldsymbol{k}}\right\rangle \\
-& =\left\langle\left\{g_{2} \mid \boldsymbol{a}_{2}\right\}^{-1}\left\{g_{1} \mid \boldsymbol{a}_{1}\right\}^{-1} \boldsymbol{r} \mid \psi_{\boldsymbol{k}}\right\rangle=\psi_{\boldsymbol{k}}\left(\left\{g_{2} \mid \boldsymbol{a}_{2}\right\}^{-1}\left\{g_{1} \mid \boldsymbol{a}_{1}\right\}^{-1} \boldsymbol{r}\right)
+\widehat{S}_{\left\{g_{1} \mid \boldsymbol{a}_{1}\right\}} \widehat{S}_{\left\{g_{2} \mid \boldsymbol{a}_{2}\right\}} \psi_{\boldsymbol{k}}(\boldsymbol{r}) & =\langle\boldsymbol{r}| \widehat{S}_{\left\{g_{1} \mid \boldsymbol{a}_{1}\right\}} \widehat{S}_{\left\{g_{2} \mid \boldsymbol{a}_{2}\right\}}\left|\psi_{\boldsymbol{k}}\right\rangle\\&=\left\langle\left\{g_{1} \mid \boldsymbol{a}_{1}\right\}^{-1} \boldsymbol{r}| \widehat{S}_{\left\{g_{2} \mid \boldsymbol{a}_{2}\right\}}|\psi_{\boldsymbol{k}}\right\rangle  =\left\langle\left\{g_{2} \mid \boldsymbol{a}_{2}\right\}^{-1}\left\{g_{1} \mid \boldsymbol{a}_{1}\right\}^{-1} \boldsymbol{r} \mid \psi_{\boldsymbol{k}}\right\rangle\\&=\psi_{\boldsymbol{k}}\left(\left\{g_{2} \mid \boldsymbol{a}_{2}\right\}^{-1}\left\{g_{1} \mid \boldsymbol{a}_{1}\right\}^{-1} \boldsymbol{r}\right)
 \end{aligned}
 \end{align*}
 $$
@@ -717,7 +724,7 @@ $$
 Now we request
 $$
 \begin{align*}
-e^{i R_{j} k}=e^{i\left(R_{j}+L\right) k} \quad \Rightarrow \quad L k=N a k=2 \pi n \quad \Rightarrow \quad k=\frac{2 \pi}{L} n=\frac{2 \pi}{a} \frac{n}{N}
+& e^{i R_{j} k}=e^{i\left(R_{j}+L\right) k}  \\ \implies&  L k=N a k=2 \pi n  \\ \implies&  k=\frac{2 \pi}{L} n=\frac{2 \pi}{a} \frac{n}{N}
 \end{align*}
 $$
 with the lattice -momentum $k$ within the first Brillouin zone ( $-\frac{\pi}{a}<k<\frac{\pi}{a}$ ) and $n$ being an integer. On the real-space lattice an electron can take $2 N$ different states. Thus, for $k$ we find that $n$ should take the values, $n+N / 2=1,2, \ldots, N-1, N$. Note that $k=-\pi / a$ and $k=+\pi / a$ differ by a reciprocal lattice vector $G=2 \pi / a$ and are therefore identical. This provides the same number of states $(2 N)$, since per $k$ we have two spins:
@@ -784,9 +791,9 @@ The fact that the band energy is a periodic function of $\boldsymbol{k}$ leads t
 $$
 \begin{align*}
 \begin{aligned}
-& & \hbar \dot{k} & =-e E \\
-\Rightarrow & & k & =-\frac{e E t}{\hbar} \\
-\Rightarrow & & \dot{x} & =-\frac{2 a}{\hbar} \sin \left(\frac{e E a t}{\hbar}\right),
+&  \hbar \dot{k}  =-e E \\
+\implies  &  k =-\frac{e E t}{\hbar} \\
+\implies  & \dot{x}  =-\frac{2 a}{\hbar} \sin \left(\frac{e E a t}{\hbar}\right),
 \end{aligned}
 \end{align*}
 $$
@@ -872,7 +879,7 @@ $$
 We introduce the integral operator in real space $\widehat{V}^{\prime}=\sum_{j}\left(E_{n \boldsymbol{k}}-E_{j}\right)\left|\phi_{j}\right\rangle\left\langle\phi_{j}\right|$, describing a non-local and energy-dependent potential. With this operator we can rewrite the eigenvalue equation in the form
 $$
 \begin{align*}
-\left(\mathcal{H}+\widehat{V}^{\prime}\right)\left|\chi_{n, \boldsymbol{k}}\right\rangle=\left(\mathcal{H}_{0}+\widehat{V}+\widehat{V}^{\prime}\right)\left|\chi_{n, \boldsymbol{k}}\right\rangle=\left(\mathcal{H}+\widehat{V}_{\mathrm{ps}}\right)\left|\chi_{n, \boldsymbol{k}}\right\rangle=E_{n \boldsymbol{k}}\left|\chi_{n \boldsymbol{k}}\right\rangle
+\left(\mathcal{H}+\widehat{V}^{\prime}\right)\left|\chi_{n, \boldsymbol{k}}\right\rangle&=\left(\mathcal{H}_{0}+\widehat{V}+\widehat{V}^{\prime}\right)\left|\chi_{n, \boldsymbol{k}}\right\rangle\\&=\left(\mathcal{H}+\widehat{V}_{\mathrm{ps}}\right)\left|\chi_{n, \boldsymbol{k}}\right\rangle=E_{n \boldsymbol{k}}\left|\chi_{n \boldsymbol{k}}\right\rangle
 \end{align*}
 $$
 
@@ -880,7 +887,7 @@ This is an eigenvalue equation for the so-called pseudo-wave function (or pseudo
 
 ![Attachments/Script 9.webp|700](/img/user/Attachments/Script%209.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=33&rect=71,209,525,335|•]]
 
-If we are only interested in states inside a small energy window, the energy dependence of the pseudo-potential can be neglected, and $V_{\mathrm{ps}}$ may be approximated by a standard potential (see Figure 1.11). Such a simple Ansatz is exemplified by the atomic pseudo-potential, proposed by Ashcroft, Heine and Abarenkov (AHA). The potential of a single ion is assumed to be of the form
+If we are only interested in states inside a small energy window, the energy dependence of the pseudo-potential can be neglected, and $V_{\mathrm{ps}}$ may be approximated by a standard potential. Such a simple Ansatz is exemplified by the atomic pseudo-potential, proposed by Ashcroft, Heine and Abarenkov (AHA). The potential of a single ion is assumed to be of the form
 $$
 \begin{align*}
 v_{\mathrm{ps}}(r)= \begin{cases}V_{0} & r<R_{c} \\ -\frac{Z_{\mathrm{ion}} e^{2}}{r} & r>R_{c}\end{cases}
@@ -907,8 +914,7 @@ For the AHA form, this is given by
 $$
 \begin{align*}
 \begin{aligned}
-& V_{\mathrm{ps}, \boldsymbol{G}}=-\frac{4 \pi Z_{\mathrm{ion}} e^{2}}{G^{2}}\left(\cos \left(G R_{c}\right)\right. \\
-&\left.+\frac{V_{0}}{Z_{\mathrm{ion}} e^{2} G}\left(\left(R_{c}^{2} G^{2}-2\right) \cos \left(G R_{c}\right)+2-2 R_{c} G \sin \left(G R_{c}\right)\right)\right) .
+V_{\mathrm{ps}, \boldsymbol{G}}&=-\frac{4 \pi Z_{\mathrm{ion}} e^{2}}{G^{2}}\left(\cos \left(G R_{c}\right)\right. \\  &+ \frac{V_{0}}{Z_{\mathrm{ion}} e^{2} G}\left(\left(R_{c}^{2} G^{2}-2) \cos \left(G R_{c}\right)+2-2 R_{c} G \sin \left(G R_{c}\right)\right)\right) .
 \end{aligned}
 \end{align*}
 $$

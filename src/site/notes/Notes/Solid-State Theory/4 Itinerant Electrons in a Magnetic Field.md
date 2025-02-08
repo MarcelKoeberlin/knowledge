@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/4-itinerant-electrons-in-a-magnetic-field/","hide":"true","updated":"2025-02-07T10:57:49.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/4-itinerant-electrons-in-a-magnetic-field/","hide":"true","updated":"2025-02-08T20:10:21.106+01:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -169,7 +169,7 @@ $$
 where integrated over time. Thus, we find
 $$
 \begin{align*}
-\oint_{P_{n}} \boldsymbol{p} \cdot d \boldsymbol{r}=-\frac{e}{c} \oint_{P_{n}}\{\boldsymbol{r} \times \boldsymbol{B}+\boldsymbol{A}\} \cdot d \boldsymbol{r}=-\frac{e}{c} \Phi_{n}+\underbrace{\frac{e}{c} \boldsymbol{B} \cdot \oint_{P_{n}}}_{=2 e B_{\perp} S_{n} / c=2 e \Phi_{n} / c} \boldsymbol{r} \times d \boldsymbol{r}=h(n+\gamma),
+\oint_{P_{n}} \boldsymbol{p} \cdot d \boldsymbol{r}&=-\frac{e}{c} \oint_{P_{n}}\{\boldsymbol{r} \times \boldsymbol{B}+\boldsymbol{A}\} \cdot d \boldsymbol{r}\\&=-\frac{e}{c} \Phi_{n}+\underbrace{\frac{e}{c} \boldsymbol{B} \cdot \oint_{P_{n}}}_{=2 e B_{\perp} S_{n} / c=2 e \Phi_{n} / c} \boldsymbol{r} \times d \boldsymbol{r}=h(n+\gamma),
 \end{align*}
 $$
 where $S_{n}$ is the area encircled by the path $P_{n}$ and $\Phi_{n}=B_{\perp} S_{n}$ the magnetic flux threading. With this we find
@@ -182,7 +182,7 @@ $$
 Analogous to the real space also in reciprocal space the path of the electron encircles an area, $A_{n}$. The relation between $S_{n}$ can be derived from $\hbar \boldsymbol{k}=e(\boldsymbol{r} \times \boldsymbol{B}) / c$ using
 $$
 \begin{align*}
-|d \boldsymbol{r}|=\frac{\Phi_{0}}{2 \pi B_{\perp}}|d \boldsymbol{k}| \quad \Rightarrow \quad S_{n}=\left(\frac{\Phi_{0}}{2 \pi B_{\perp}}\right)^{2} A_{n}
+|d \boldsymbol{r}|=\frac{\Phi_{0}}{2 \pi B_{\perp}}|d \boldsymbol{k}| \implies S_{n}=\left(\frac{\Phi_{0}}{2 \pi B_{\perp}}\right)^{2} A_{n}
 \end{align*}
 $$
 
@@ -341,7 +341,7 @@ $$
 and from this, we determine the current density,
 $$
 \begin{align*}
-j_{x}=-e n_{0} v_{x}\left(k_{x}\right)=-e n_{0} \frac{c E_{y}}{B}=\frac{e \nu}{2 \pi \ell^{2}} \frac{c E_{y}}{B}=\nu \frac{e^{2}}{h} E_{y}=\sigma_{H} E_{y}
+j_{x}&=-e n_{0} v_{x}\left(k_{x}\right)=-e n_{0} \frac{c E_{y}}{B}=\frac{e \nu}{2 \pi \ell^{2}} \frac{c E_{y}}{B}\\&=\nu \frac{e^{2}}{h} E_{y}=\sigma_{H} E_{y}
 \end{align*}
 $$
 where $-\nu=n_{0} 2 \pi \ell^{2}=N_{0} / N_{\text {deg }}$ corresponds to the filling of the (lowest) Landau level (maximally $N_{\text {deg }}$ electrons can be placed into each Landau level per spin). Note that $\nu^{-1}=B / n_{0} \Phi_{0}$ where $\Phi_{0}=h c / e$ represents the flux quantum, i.e. $\nu^{-1} \propto B$ is the number of flux quanta $\Phi_{0}$ per electron. The Hall conductivity is then identical to the result (4.37) derived previously based on the quasi-classical approximation. There is a linear relation between the Hall conductivity $\sigma_{H}$ and the index $\nu \propto B^{-1}$.
@@ -529,7 +529,7 @@ $$
 where we sum over all occupied states and each state labelled by $k_{x}$ (determining the corresponding centre $y_{0}$ ) extends over the whole length $L_{x}$ of the Hall element. Thus, the density is given by $1 / L_{x}$. The wave vector is quantised according to the periodic boundary conditions; $k_{x}=2 \pi n_{x} / L_{x}$ with $n_{x} \in \mathbb{Z}$. The velocity $v_{x}$ is given by equation (4.44). Thus, we have
 $$
 \begin{align*}
-I=-\frac{e}{2 \pi \hbar} \int_{\text {occupied }} d k_{x} \frac{d E_{n}\left(k_{x}\right)}{d k_{x}}=-\frac{e}{h} \int_{\text {occupied }} d y_{0} \frac{d E_{n}}{d y_{0}}=-\frac{e}{h}\left(\mu-E_{n}^{(0)}\right)
+I&=-\frac{e}{2 \pi \hbar} \int_{\text {occupied }} d k_{x} \frac{d E_{n}\left(k_{x}\right)}{d k_{x}}\\&=-\frac{e}{h} \int_{\text {occupied }} d y_{0} \frac{d E_{n}}{d y_{0}}=-\frac{e}{h}\left(\mu-E_{n}^{(0)}\right)
 \end{align*}
 $$
 where $y_{0}=k_{x} \ell^{2}$ is the transversal position of the wave function and $\mu$ is the chemical potential. Sufficiently far away from the boundary $E_{n}$ is independent of $y_{0}$ and approaches the value $E_{n}^{(0)}=\hbar \omega_{c}(1 / 2+n)$ of a translationally invariant electron gas.
