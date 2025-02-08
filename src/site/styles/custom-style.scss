@@ -983,14 +983,11 @@ body .cm-s-obsidian picture img {
   max-width: 100%;
   display: block;
   margin: auto;
-}
-
-/* If the image width is less than 571px, set width to 400px */
-@media (max-width: 615px) {
-  body .cm-s-obsidian picture img {
-    width: 400px;
+  @media (max-width: 1250px) { 
+    width: 90%;
   }
 }
+
 
 .navbar{
   .navbar-inner {
@@ -1005,4 +1002,13 @@ body .cm-s-obsidian picture img {
   }
 }
 
-
+img {
+  width: 65%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  @media (max-width: 1250px) { 
+    width: 90%;
+  }
+}
