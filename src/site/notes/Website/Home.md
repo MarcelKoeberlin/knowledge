@@ -1,12 +1,12 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-02-09T22:07:54.225+01:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-02-09T22:20:33.420+01:00"}
 ---
 
 Hi there!
 
 Welcome to my personal website—a space where I share everything I consider worth publishing. This site serves as a "knowledge vault," also known as a "digital garden."
 
-> [!info] Don't know where to start?
+> [!question] Don't know where to start?
 > How about reading up on some physics? Click ==[[Website/Notes\|here]]==, or use the graph on the left to select your next read!
 
 This website began with the simple, though admittedly overkill, idea of having experimental step-by-step lab procedures readily available, eliminating the need for printed copies or bringing my laptop/tablet to the lab each time.  It started with a single document detailing procedures like laser system shutdown or specific measurement techniques. I never anticipated this project evolving into what it has become, let alone turning into a hobby.
