@@ -1,13 +1,13 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-02-05T19:12:10.000+01:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-02-09T22:07:25.221+01:00"}
 ---
 
 Hi there!
 
 Welcome to my personal website—a space where I share everything I consider worth publishing. This site serves as a "knowledge vault," also known as a "digital garden."
 
-> [!TIP] Don't know where to start?
-> How about reading up on some physics? Click [[Website/Notes\|here]], or use the graph on the left to select your next read!
+> [!info] Don't know where to start?
+> How about reading up on some physics? Click ==[[Website/Notes\|here]]==, or use the graph on the left to select your next read!
 
 This website began with the simple, though admittedly overkill, idea of having experimental step-by-step lab procedures readily available, eliminating the need for printed copies or bringing my laptop/tablet to the lab each time.  It started with a single document detailing procedures like laser system shutdown or specific measurement techniques. I never anticipated this project evolving into what it has become, let alone turning into a hobby.
 
@@ -20,7 +20,6 @@ It might sound strange, but I soon discovered that, while the physics is interes
 **For those who skipped ahead, I hope this website and its content are useful to you!** If so, I'd be delighted to receive feedback on the content, questions, or the website itself! :)
 
 **Marcel**
-_30 January 2025_
 
 ---
 *You may notice the • symbol throughout the site. It’s used for my internal navigation and can be ignored. This website exists on two pages, deployed from two different services: [Vercel](https://koeberlin.vercel.app/) and [Netlify.](https://koeberlin.netlify.app/)Both pages are identical, but sometimes delayed with respect to each other by no more than one day.*

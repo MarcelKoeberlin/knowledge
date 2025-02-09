@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/4-continuous-time-fourier-transform/","hide":"true","updated":"2025-02-07T10:57:49.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/4-continuous-time-fourier-transform/","hide":"true","updated":"2025-02-09T20:28:02.289+01:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -132,7 +132,33 @@ Several useful properties of the continuous-time Fourier transform:
 |  **Even-Odd Decomposition for Real Signals**  |  $\begin{aligned} & x_e(t) = \mathcal{E}\{x(t)\} \\ & x_o(t) = \mathcal{O}\{x(t)\} \end{aligned}$   |                                                 $\begin{aligned} & \mathfrak{Re}\{X(i \omega)\} \\ & i \mathfrak{Im}\{X(i \omega)\} \end{aligned}$                                                  |
 | **Parseval's Relation for Aperiodic Signals** | $\int_{-\infty}^\infty dt\cdot x(t)^2 = \frac{1}{2\pi} \int_{-\infty}^\infty X(i \omega)^2 d\omega$ |                                                                                                                                                                                                     |
 
-Parseval's theorem states that total energy can be expressed as energy over time integrated across all time or as energy per frequency integrated across all frequencies. Consequently, $|X(i \omega)|^2$ is often referred to as the **energy-density spectrum**.
+---
+### Parseval's Relation
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=343&selection=12,0,16,8|•]]
+
+If $x(t)$ and $X(j \omega)$ are a Fourier transform pair, then
+$$
+\int_{-\infty}^{+\infty}|x(t)|^2 d t=\frac{1}{2 \pi} \int_{-\infty}^{+\infty}|X(j \omega)|^2 d \omega.
+$$
+This expression, referred to as Parseval's relation, follows from direct application of the Fourier transform. Specifically,
+
+$$
+\begin{aligned}
+\int_{-\infty}^{+\infty}|x(t)|^2 d t & =\int_{-\infty}^{+\infty} x(t) x^*(t) d t \\
+& =\int_{-\infty}^{+\infty} x(t)\left[\frac{1}{2 \pi} \int_{-\infty}^{+\infty} X^*(j \omega) e^{-j \omega t} d \omega\right] d t
+\end{aligned}
+$$
+Reversing the order of integration gives
+
+$$
+\int_{-\infty}^{+\infty}|x(t)|^2 d t=\frac{1}{2 \pi} \int_{-\infty}^{+\infty} X^*(j \omega)\left[\int_{-\infty}^{+\infty} x(t) e^{-j \omega t} d t\right] d \omega
+$$
+The bracketed term is simply the Fourier transform of $x(t)$:
+
+$$
+\int_{-\infty}^{+\infty}|x(t)|^2 d t=\frac{1}{2 \pi} \int_{-\infty}^{+\infty}|X(j \omega)|^2 d \omega
+$$
+The term on the left-hand side is the total energy in the signal $x(t)$. Parseval's relation says that this total energy may be determined either by computing the energy per unit time $\left(|x(t)|^2\right.$ ) and integrating over all time, or by computing the energy per unit frequency $\left(|X(j \omega)|^2 / 2 \pi\right)$ and integrating over all frequencies. For this reason, $|X(j \omega)|^2$ is often referred to as the _energy-density spectrum_ of the signal $x(t)$. Note that Parseval's relation for finite-energy signals is the direct counterpart of Parseval's relation for periodic signals, which states that the average power of a periodic signal equals the sum of the average powers of its individual harmonic components, which in turn are equal to the squared magnitudes of the Fourier series coefficients.
 
 ---
 ## 4.4 Basic Fourier Transform Pairs 

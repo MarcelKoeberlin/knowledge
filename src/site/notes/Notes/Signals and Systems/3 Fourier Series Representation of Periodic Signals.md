@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/3-fourier-series-representation-of-periodic-signals/","hide":"true","updated":"2025-02-07T10:57:49.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/3-fourier-series-representation-of-periodic-signals/","hide":"true","updated":"2025-02-09T20:27:29.373+01:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -321,24 +321,40 @@ Signals satisfying the Dirichlet conditions have Fourier series representations.
 
 Below is a table summarising several useful properties of the continuous-time Fourier series:
 
-|                  Property                  |                                          Periodic Signal                                           |                                                    Fourier Series Coefficients                                                    |
-| :----------------------------------------: | :------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: |
-|                                            |          $x(t)$ periodic with period $T$ and fundamental frequency $\omega_0 = 2 \pi / T$          |                                                               $a_k$                                                               |
-|               **Linearity**                |                                         $A x(t) + B y(t)$                                          |                                                          $A a_k + B b_k$                                                          |
-|             **Time Shifting**              |                                            $x(t - t_0)$                                            |                                    $a_k e^{-i k \omega_0 t_0} = a_k e^{-i k (2 \pi / T) t_0}$                                     |
-|           **Frequency Shifting**           |                                     $e^{j M \omega_0 t} x(t)$                                      |                                                             $a_{k-M}$                                                             |
-|              **Conjugation**               |                                              $x^*(t)$                                              |                                                            $a_{-k}^*$                                                             |
-|             **Time Reversal**              |                                              $x(-t)$                                               |                                                             $a_{-k}$                                                              |
-|              **Time Scaling**              |                         $x(\alpha t)$ (periodic with period $T / \alpha$)                          |                                                               $a_k$                                                               |
-|          **Periodic Convolution**          |                               $\int_T x(\tau) y(t - \tau) \, d\tau$                                |                                                            $T a_k b_k$                                                            |
-|             **Multiplication**             |                                            $x(t) y(t)$                                             |                                              $\sum_{l = -\infty}^\infty a_l b_{k-l}$                                              |
-|            **Differentiation**             |                                        $\frac{d x(t)}{dt}$                                         |                                           $i k \omega_0 a_k = i k \frac{2 \pi}{T} a_k$                                            |
-|              **Integration**               |               $\int_{-\infty}^t x(t) \, dt$ (finite and periodic only if $a_0 = 0$)                |                                   $\frac{1}{i k \omega_0} a_k = \frac{1}{i k (2 \pi / T)} a_k$                                    |
+|                  Property                  |                                          Periodic Signal                                           |                                            Fourier Series Coefficients                                            |
+| :----------------------------------------: | :------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
+|                                            |          $x(t)$ periodic with period $T$ and fundamental frequency $\omega_0 = 2 \pi / T$          |                                                       $a_k$                                                       |
+|               **Linearity**                |                                         $A x(t) + B y(t)$                                          |                                                  $A a_k + B b_k$                                                  |
+|             **Time Shifting**              |                                            $x(t - t_0)$                                            |                            $a_k e^{-i k \omega_0 t_0} = a_k e^{-i k (2 \pi / T) t_0}$                             |
+|           **Frequency Shifting**           |                                     $e^{j M \omega_0 t} x(t)$                                      |                                                     $a_{k-M}$                                                     |
+|              **Conjugation**               |                                              $x^*(t)$                                              |                                                    $a_{-k}^*$                                                     |
+|             **Time Reversal**              |                                              $x(-t)$                                               |                                                     $a_{-k}$                                                      |
+|              **Time Scaling**              |                         $x(\alpha t)$ (periodic with period $T / \alpha$)                          |                                                       $a_k$                                                       |
+|          **Periodic Convolution**          |                               $\int_T x(\tau) y(t - \tau) \, d\tau$                                |                                                    $T a_k b_k$                                                    |
+|             **Multiplication**             |                                            $x(t) y(t)$                                             |                                      $\sum_{l = -\infty}^\infty a_l b_{k-l}$                                      |
+|            **Differentiation**             |                                        $\frac{d x(t)}{dt}$                                         |                                   $i k \omega_0 a_k = i k \frac{2 \pi}{T} a_k$                                    |
+|              **Integration**               |               $\int_{-\infty}^t x(t) \, dt$ (finite and periodic only if $a_0 = 0$)                |                           $\frac{1}{i k \omega_0} a_k = \frac{1}{i k (2 \pi / T)} a_k$                            |
 |  **Conjugate Symmetry for Real Signals**   |                                            $x(t)$ real                                             | $a_k = a_{-k}^*, \mathfrak{Re}\{a_k\} = \mathfrak{Re}\{a_{-k}\}, \mathfrak{Im}\{a_k\} = -\mathfrak{Im}\{a_{-k}\}$ |
-|         **Real and Even Signals**          |                                        $x(t)$ real and even                                        |                                                        $a_k$ real and even                                                        |
-|          **Real and Odd Signals**          |                                        $x(t)$ real and odd                                         |                                                  $a_k$ purely imaginary and odd                                                   |
-| **Even-Odd Decomposition of Real Signals** | $x(t) = x_e(t) + x_o(t)$, where $x_e(t) = \frac{x(t) + x(-t)}{2}, x_o(t) = \frac{x(t) - x(-t)}{2}$ |                             $\mathfrak{Re}\{a_k\}$ for even, $i \mathfrak{Im}\{a_k\}$ for odd                             |
-|          **Parseval's Relation**           |              $\frac{1}{T} \int_T dt\cdot\| x(t)\|^2=\sum_{k=-\infty}^\infty\|a_k\|^2$              |                                                                                                                                   |
+|         **Real and Even Signals**          |                                        $x(t)$ real and even                                        |                                                $a_k$ real and even                                                |
+|          **Real and Odd Signals**          |                                        $x(t)$ real and odd                                         |                                          $a_k$ purely imaginary and odd                                           |
+| **Even-Odd Decomposition of Real Signals** | $x(t) = x_e(t) + x_o(t)$, where $x_e(t) = \frac{x(t) + x(-t)}{2}, x_o(t) = \frac{x(t) - x(-t)}{2}$ |                         $\mathfrak{Re}\{a_k\}$ for even, $i \mathfrak{Im}\{a_k\}$ for odd                         |
+|          **Parseval's Relation**           |              $\frac{1}{T} \int_T dt\cdot\| x(t)\|^2=\sum_{k=-\infty}^\infty\|a_k\|^2$              |                                                                                                                   |
+
+---
+### Parseval's Relation for Continuous-Time Periodic Signals
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=236&selection=147,1,155,7|•]]
+
+Parseval's relation for continuous-time periodic signals is
+$$
+\frac{1}{T} \int_T|x(t)|^2 d t=\sum_{k=-\infty}^{+\infty}\left|a_k\right|^2,
+$$
+where the $a_k$ are the Fourier series coefficients of $x(t)$ and $T$ is the period of the signal.
+Note that the left-hand side is the average power (e.g. energy per unit time) in one period of the periodic signal $x(t)$. Also,
+
+$$
+\frac{1}{T} \int_T\left|a_k e^{j k \omega_0 t}\right|^2 d t=\frac{1}{T} \int_T\left|a_k\right|^2 d t=\left|a_k\right|^2,
+$$
+so that $\left|a_k\right|^2$ is the average power in the $k$-th harmonic component of $x(t)$. Thus, what Parseval's relation states is that the total average power in a periodic signal equals the sum of the average powers in all of its harmonic components.
 
 ---
 ## 3.5 Fourier Series Representation of Discrete-Time Periodic Signals 

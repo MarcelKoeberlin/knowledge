@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-02-07T10:58:53.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-02-09T21:53:39.577+01:00"}
 ---
 
 These notes will mostly follow along the book [Signals and Systems - 2nd edition](https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574) by Alan V. Oppenheim and Alan S. Willsky. 
@@ -7,9 +7,11 @@ These notes will mostly follow along the book [Signals and Systems - 2nd edition
 ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|Table of Contents]]==
 
 ---
-While working on my master’s thesis and trying to figure out how to perform accurate noise measurements, I discovered that signal processing is about much more than just Fourier transforming your measured signal. This realisation hit me when we were using a highly sensitive oscilloscope to measure laser noise. After Fourier transforming the data—which was time-consuming and computationally intensive—we noticed something surprising: the noise trace was _still_ too noisy.
-Naturally, my first instinct was to Google "how to make noisy data smooth." I quickly learned there are countless ways to tackle this problem. However, I also realised how important it is in signal processing to truly understand _where_ and _how_ the data was obtained in the first place, and how you process it. Sure, applying a moving average might smooth the trace, but should I do that in the time domain or the frequency domain? And what if the issue isn’t the processing at all—what if my measurement setup itself isn’t suited to the task? How could that even be possible when I’m using the best and fastest oscilloscope on the market?
-It didn’t take long for me to realise this was a fascinating topic, and I started reading more about it in my free time.
+The concepts of signals and systems arise in a wide variety of fields. Although their physical nature is widely different for their respective application in different fields, they have two basic things in common: 
+1. The signals, which are functions of independent variables, contain information about the behaviour or nature of some phenomenon.
+2. The systems respond to particular signals by producing other signals or some desired behaviour. 
+
+There are countless examples of signals, for example Voltage and currents as functions of time in an electrical circuit. The history of this field extends back over many centuries, and although most of this work was motivated by specific applications, many of these ideas have proven to be of central importance to problem is a far larger variety of contexts than those for which they were originally intended.
 
 ---
 # Table of Contents
@@ -17,5 +19,6 @@ It didn’t take long for me to realise this was a fascinating topic, and I star
 - [[Notes/Signals and Systems/2 Linear Time-Invariant Systems\|2 Linear Time-Invariant Systems]]
 - [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals\|3 Fourier Series Representation of Periodic Signals]]
 - [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform\|4 Continuous-Time Fourier Transform]]
+- [[Notes/Signals and Systems/5 Discrete-Time Fourier Transform\|5 Discrete-Time Fourier Transform]]
 
 ---
