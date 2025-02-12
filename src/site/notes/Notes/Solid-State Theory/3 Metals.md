@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/3-metals/","hide":"true","updated":"2025-02-08T20:08:56.633+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/3-metals/","hide":"true","updated":"2025-02-08T20:08:56.000+01:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.

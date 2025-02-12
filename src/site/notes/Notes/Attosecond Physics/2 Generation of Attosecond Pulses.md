@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/2-generation-of-attosecond-pulses/","hide":"true","updated":"2025-02-07T12:05:21.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/2-generation-of-attosecond-pulses/","hide":"true","updated":"2025-02-12T10:53:56.000+01:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -18,7 +18,7 @@ Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|
 
 ---
 # 2 Generation of Single Attosecond Pulses
-[[Reading/Books/Attosecond Physics/No file.pdf#page=304&selection=2,0,3,20|•]] [[Reading/Books/Attosecond Physics/No file.pdf#page=318&selection=20,0,20,22|•]]
+[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=304&selection=2,0,3,20|•]] [[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=318&selection=20,0,20,22|•]]
 
 High-order harmonics were first observed around 1987 and 1988. However, it took nearly a decade before the first attosecond pulses were reported. In 2001, both the first attosecond pulse train (APT) and the first single attosecond pulse (SAP) were demonstrated. It was already known that high-order harmonics exhibit a flat plateau in their spectra, and theoretical models indicated that these harmonics possess nearly constant phases. This led to the speculation that the superposition of such harmonics could produce a train of attosecond pulses. 
 
@@ -29,7 +29,7 @@ Although each burst in an APT has a sub-femtosecond duration, the overall pulse 
 ---
 
 ## 2.1 Attosecond Pulse Trains
-[[Reading/Books/Attosecond Physics/No file.pdf#page=304&selection=29,0,29,8|•]]
+[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=304&selection=29,0,29,8|•]]
 
 The harmonic spectrum produced during high-harmonic generation (HHG) consists of a series of narrow peaks separated by twice the frequency of the driving laser field. When a long pulse drives the HHG process, only odd harmonics are generated due to symmetry considerations. However, measuring the harmonic spectrum reveals only the magnitudes of these harmonics, leaving their relative phases inaccessible. These phases are crucial for reconstructing the temporal profile of the pulse.
 
@@ -61,7 +61,7 @@ which applies to harmonics centred around $\Omega = 2q\omega$. When a synthesise
 
 Consider the experimental setup used for the generation and characterisation of attosecond pulse trains:
 
-![Attachments/Attosecond and Strong-Field Physics Principles and Applications 3.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications%203.webp)[[Reading/Books/Attosecond Physics/No file.pdf#page=306&rect=123,407,483,637|•]]
+![Attachments/Attosecond and Strong-Field Physics Principles and Applications 3.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications%203.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=306&rect=123,407,483,637|•]]
 
 In this setup:
 9. High-order harmonics are generated using argon as the target gas.
