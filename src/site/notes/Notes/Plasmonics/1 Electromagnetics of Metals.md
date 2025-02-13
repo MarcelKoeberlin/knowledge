@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/1-electromagnetics-of-metals/","hide":"true","updated":"2025-02-07T10:57:49.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/1-electromagnetics-of-metals/","hide":"true","updated":"2025-02-13T18:10:10.000+01:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -26,7 +26,7 @@ In this low-frequency regime, the _perfect conductor approximation_ of infinite 
 ## 1.1 Maxwell's Equation of Macroscopic Electromagnetism 
 [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=25&selection=58,0,59,34|•]]
 
-These dispersive properties can be described by a complex dielectric function $\varepsilon(\omega)$, which forms publish the basis of all phenomena discussed in this text. 
+These dispersive properties can be described by a complex dielectric function $\varepsilon(\omega)$, which forms the basis of all phenomena discussed.
 
 As a starting point, recall Maxwell's equations of macroscopic electromagnetism:
 $$
@@ -62,7 +62,7 @@ $$
 \mathbf{J}_{\text{tot}} = \mathbf{J}_{\text{ext}} + \mathbf{J}.
 $$
 
-The four macroscopic fields are further linked via the polarisation $\mathbf{P}$ and magnetization $\mathbf{M}$:
+The four macroscopic fields are further linked via the polarisation $\mathbf{P}$ and magnetisation $\mathbf{M}$:
 $$
 \mathbf{D} = \varepsilon_0 \mathbf{E} + \mathbf{P},
 $$
@@ -81,12 +81,11 @@ $$
 \mathbf{J} = \frac{\partial \mathbf{P}}{\partial t}.
 $$
 
-The great advantage of this approach is that the macroscopic electric field includes all polarisation effects: in other words, both the external and induced fields are absorbed into it. This can be shown by inserting (1.2a) into (1.1a), leading to:
+The great advantage of this approach is that the macroscopic electric field includes all polarisation effects: in other words, both the external and induced fields are absorbed into it:
 
 $$
 \nabla \cdot \mathbf{E} = \frac{\rho_{\text{tot}}}{\varepsilon_0}.
 $$
-
 Limiting ourselves to linear, isotropic, and nonmagnetic media, one can define the constitutive relations:
 $$
 \mathbf{D} = \varepsilon_0 \varepsilon \mathbf{E},
@@ -102,7 +101,6 @@ $$
 \mathbf{P} = \varepsilon_0 \chi \mathbf{E} && \text{with} && \varepsilon = 1 + \chi.
 \end{align}
 $$
-
 The last important constitutive linear relationship to mention is that between the internal current density $\mathbf{J}$ and the electric field $\mathbf{E}$, defined via the conductivity $\sigma$ as:
 
 $$
@@ -110,25 +108,19 @@ $$
 $$
 
 It should be noted that the linear relations for $\mathbf{D}$ and $\mathbf{J}$ are only correct for linear media that do not exhibit temporal or spatial dispersion. The fundamental relation between relative permittivity (from now on called the dielectric function) and conductivity is:
-
 $$
 \varepsilon(k, \omega) = 1 + \frac{i\sigma(k, \omega)}{\varepsilon_0 \omega},
 $$
-
-for a given wave vector $k$. If the wavelength $\lambda$ is significantly longer than all characteristic dimensions (such as the unit cell size or the mean free path of the electrons), and considering the interaction of light with metals, this equation can be simplified to the limit of a spatially local response:
-
+for a given wave vector $k$. If the wavelength $\lambda$ is significantly longer than all characteristic dimensions (such as the unit cell size or the mean free path of the electrons), and considering the interaction of light with metals, this equation can be simplified to the limit of a spatially local response, $\varepsilon(k = 0, \omega) = \varepsilon(\omega).$ In general, 
 $$
-\varepsilon(k = 0, \omega) = \varepsilon(\omega).
-$$
-
-In general, $\varepsilon(\omega) = \varepsilon_1(\omega) + i \varepsilon_2(\omega)$ and $\sigma(\omega) = \sigma_1(\omega) + i \sigma_2(\omega)$ are complex-valued functions of angular frequency $\omega$. At optical frequencies, $\varepsilon$ can be experimentally determined, for example, via reflectivity studies and the determination of the complex refractive index $\tilde{n}(\omega) = n(\omega) + i \kappa(\omega)$ of the medium, defined as:
-
+\varepsilon(\omega) = \varepsilon_1(\omega) + i \varepsilon_2(\omega),$$
+and 
+$$\sigma(\omega) = \sigma_1(\omega) + i \sigma_2(\omega)$$
+are complex-valued functions of angular frequency $\omega$. At optical frequencies, $\varepsilon$ can be experimentally determined, for example, via reflectivity studies and the determination of the complex refractive index $\tilde{n}(\omega) = n(\omega) + i \kappa(\omega)$ of the medium, defined as:
 $$
 \tilde{n} = \sqrt{\varepsilon}.
 $$
-
 Explicitly, this leads to the components of the dielectric function:
-
 $$
 \begin{align}
 \varepsilon_1 = n^2 - \kappa^2, &&
@@ -137,8 +129,7 @@ n^2 = \frac{\varepsilon_1}{2} + \frac{1}{2} \sqrt{\varepsilon_1^2 + \varepsilon_
 \kappa = \frac{\varepsilon_2}{2n}.
 \end{align}
 $$
-
-$\kappa$ is called the extinction coefficient and determines the optical absorption of electromagnetic waves propagating through the medium. It is linked to the absorption coefficient $\alpha$ of Beer’s law (describing the exponential attenuation of the intensity of a beam propagating through the medium via $I(x) = I_0 e^{-\alpha x}$) by the relation:
+Here, $\kappa$ is called the extinction coefficient and determines the optical absorption of electromagnetic waves propagating through the medium. It is linked to the absorption coefficient $\alpha$ of Beer’s law (describing the exponential attenuation of the intensity of a beam propagating through the medium via $I(x) = I_0 e^{-\alpha x}$) by the relation:
 
 $$
 \alpha(\omega) = \frac{2\kappa(\omega)\omega}{c}.
@@ -148,21 +139,30 @@ Therefore, the imaginary part $\varepsilon_2$ of the dielectric function determi
 
 ---
 ## 1.2 Travelling-Wave Solution 
-[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=29&selection=145,0,146,44|•]]
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=29&selection=145,0,146,44|•]] [[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=122&selection=16,0,16,41|•]]
 
-Lastly, let us consider travelling-wave solutions of Maxwell’s equations in the absence of external stimuli. We can differentiate two cases, depending on the polarisation direction of the electric field vector:
+When studying the propagation of wave in vacuum, the focus is always on transverse waves, as longitudinal solutions do not exist . This is no longer the case in a medium. Plasmons are longitudinal solutions of the Maxwell equations. By considering the propagation of of coupled mechanical and electromagnetic waves, the electromagnetic solution has an electric parallel to the wavevector. More generally, this solution is a longitudinal solution with
+$$
+\nabla\times\mathbf{E}=0. 
+$$
+Therefore, such an equation is fully described by 
+$$
+\nabla\cdot\mathbf{D}=0.
+$$
+Let us examine the existence of a longitudinal solution of Maxwells equation without invoking a specific model of the medium. We will only assume, as always, a linear, homogeneous and isotropic medium, such that we can use the dielectric function:
+$$
+\mathbf{D}(\mathbf{k},\omega)=\varepsilon(\mathbf{k},\omega)\mathbf{E}(\mathbf{k},\omega).
+$$
+Note that the frequency dependence of the dielectric function is called dispersion, while its dependence on the wavevector is called spatial dispersion. By considering the relation in real space, and invoking the zero divergence of the displacement field, we find that we can differentiate two cases:
+
+- **Longitudinal waves**: Seeking a non-zero longitudinal electric field, we impose $\mathbf{k}\cdot\mathbf{E}(\mathbf{k},\omega)\neq 0.$ This then leads to 
+	$$  \varepsilon(\mathbf{K}, \omega) = 0,$$
+	which can be further simplified to $\varepsilon(\omega)=0$ for a local medium. This signifies that longitudinal collective oscillations can only occur at frequencies corresponding to zeros of $\varepsilon(\omega)$. Indeed, one such solution is $\omega=\omega_p$ in the case of a non-lossy Drude model. Keep in mind, neglecting the $\mathbf{k}$-dependence is usually a good approximation, however the Drude model is valid only for $k\ll\omega_p/k_F.$ 
 
 - **Transverse waves**, $\mathbf{K} \cdot \mathbf{E} = 0$, resulting in the generic dispersion relation:
-  $$
-  K^2 = \varepsilon(\mathbf{K}, \omega) \frac{\omega^2}{c^2}.
-  $$
+	$$  K^2 = \varepsilon(\mathbf{K}, \omega) \frac{\omega^2}{c^2}.$$
 
-- **Longitudinal waves**:
-  $$
-  \varepsilon(\mathbf{K}, \omega) = 0,
-  $$
 
-This signifies that longitudinal collective oscillations can only occur at frequencies corresponding to zeros of $\varepsilon(\omega)$.
 
 ---
 ## 1.3 The Dielectric Function of the Free Electron Gas 
@@ -177,7 +177,7 @@ The equation of motion for an electron in the plasma sea subject to an external 
 $$
 m\ddot{x} + m\gamma\dot{x} = -e\mathbf{E}.
 $$
-
+f
 Assuming a harmonic time dependence $\mathbf{E}(t) = \mathbf{E}_0 e^{-i\omega t}$ of the driving field, a particular solution describing the oscillation of the electron is $x(t) = x_0 e^{-i\omega t}$. The complex amplitude $x_0$ incorporates any phase shifts between the driving field and the response via:
 
 $$
@@ -247,7 +247,7 @@ Using $\sigma$ instead of $\varepsilon$ for describing the dielectric response o
 
 **At higher frequencies** ($1 \leq \omega\tau \leq \omega_p \tau$), the complex refractive index becomes predominantly imaginary, resulting in a reflection coefficient $R \approx 1$, and $\sigma$ acquires a more complex character, blurring the boundary between free and bound charges.
 
-For noble metals such as silver, gold, and copper, an extension to the free-electron model is required in the region $\omega > \omega_p$. Here, the response is dominated by free $s$ electrons, while the filled $d$ band near the Fermi surface contributes to a highly polarized environment. This residual polarisation due to the positive ion core background is described by adding the term $P_\infty = \varepsilon_0(\varepsilon_\infty - 1)\mathbf{E}$, where $\mathbf{P}$ represents only the polarisation due to free electrons. This effect is characterized by a dielectric constant $\varepsilon_\infty$ (usually $1 \leq \varepsilon_\infty \leq 10$), and the dielectric function becomes:
+For noble metals such as silver, gold, and copper, an extension to the free-electron model is required in the region $\omega > \omega_p$. Here, the response is dominated by free $s$ electrons, while the filled $d$ band near the Fermi surface contributes to a highly polarised environment. This residual polarisation due to the positive ion core background is described by adding the term $P_\infty = \varepsilon_0(\varepsilon_\infty - 1)\mathbf{E}$, where $\mathbf{P}$ represents only the polarisation due to free electrons. This effect is characterised by a dielectric constant $\varepsilon_\infty$ (usually $1 \leq \varepsilon_\infty \leq 10$), and the dielectric function becomes:
 
 $$
 \varepsilon(\omega) = \varepsilon_\infty - \frac{\omega_p^2}{\omega^2 + i\gamma \omega}.
@@ -275,12 +275,11 @@ recovering the general result. The dielectric function of the free electron gas 
 ## 1.4 The Dispersion of the Free Electron Gas and Volume Plasmons 
 [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&selection=41,0,42,8|•]]
 
-Let us discuss the transparency regime $\omega > \omega_p$ of the free electron gas model. The dispersion of the [[Notes/Plasmonics/1 Electromagnetics of Metals#1.1.3 Travelling-Wave Solution\|travelling waves]] is:
+Let us discuss the transparency regime $\omega > \omega_p$ of the free electron gas model. The dispersion of the [[Notes/Plasmonics/1 Electromagnetics of Metals#1.2 Travelling-Wave Solution\|travelling waves]] is:
 
 $$
 \omega^2 = \omega_p^2 + K^2c^2.
 $$
-
 This relation is plotted here:
 
 ![Attachments/Plasmonics - Fundamentals and Applications 1.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%201.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&rect=113,102,332,248|•]]
@@ -293,7 +292,7 @@ The physical significance of this excitation at the plasma frequency can be unde
 
 A collective displacement of the electron cloud leads to a surface charge density at the slab boundaries. This establishes a homogeneous electric field inside the slab. Therefore, the displaced electrons experience a restoring force, and the plasma frequency is the natural frequency of a free oscillation of the electron sea. This assumes all electrons move in phase, meaning the plasma frequency corresponds to the oscillation frequency in the long-wavelength limit where $K = 0$. 
 
-The quanta of these charge oscillations are called volume plasmons, to distinguish them from surface and localized plasmons. Due to the longitudinal nature of the excitation, volume plasmons do not couple to transverse electromagnetic waves and can only be excited by particle impact. Another consequence of this is that their decay occurs only via energy transfer to single electrons, a process known as Landau damping.
+The quanta of these charge oscillations are called volume plasmons, to distinguish them from surface and localised plasmons. Due to the longitudinal nature of the excitation, volume plasmons do not couple to transverse electromagnetic waves and can only be excited by particle impact. Another consequence of this is that their decay occurs only via energy transfer to single electrons, a process known as Landau damping.
 
 In addition to the in-phase oscillation at $\omega_p$, there exists a whole class of longitudinal oscillations at higher frequencies with finite wave vectors, for which $\varepsilon(K,\omega) = 0$ is fulfilled:
 

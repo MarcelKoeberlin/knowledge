@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/3-metals/","hide":"true","updated":"2025-02-08T20:08:56.633+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/3-metals/","hide":"true","updated":"2025-02-13T16:21:03.000+01:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -349,20 +349,19 @@ $$
 \mathcal{H}&=\mathcal{H}_{\text {kin }}+\mathcal{H}_{V}=\mathcal{H}_{0}+\mathcal{H}_{V} \\ &=\sum_{\boldsymbol{k}, s} \epsilon_{\boldsymbol{k}} \widehat{c}_{\boldsymbol{k} s}^{\dagger} \widehat{c}_{\boldsymbol{k} s}+\sum_{s} \int d^{3} r V_{a}(\boldsymbol{r}, t) \widehat{\Psi}_{s}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}_{s}(\boldsymbol{r})
 \end{align*}
 $$
-where the second term is considered as a small perturbation to our system described by a timeindependent Hamiltonian, $\mathcal{H}_{0}=\mathcal{H}_{\text {kin }}$ whose properties we know exactly. In a first step we consider the linear response of the system to the external potential. On this level we restrict ourself to one Fourier component in the spatial and time dependence of the potential,
+where the second term is considered as a small perturbation to our system described by a time-independent Hamiltonian, $\mathcal{H}_{0}=\mathcal{H}_{\text {kin }}$ whose properties we know exactly. In a first step we consider the linear response of the system to the external potential. On this level we restrict ourselves to one Fourier component in the spatial and time dependence of the potential,
 $$
 \begin{align*}
 V_{a}(\boldsymbol{r}, t)=V_{a}(\boldsymbol{q}, \omega) e^{i \boldsymbol{q} \cdot \boldsymbol{r}-i \omega t} e^{\eta t}
 \end{align*}
 $$
-where $\eta \rightarrow 0_{+}$includes the adiabatic switching on of the potential. To linear response this potential induces a small modulation of the electron density of the form $n_{\text {ind }}(\boldsymbol{r}, t)=n_{0}+$ $\delta n_{\text {ind }}(\boldsymbol{r}, t)$ with
+where $\eta \rightarrow 0_{+}$includes the adiabatic switching on of the potential. To linear response (order), this potential induces a small modulation of the electron density of the form $n_{\text {ind }}(\boldsymbol{r}, t)=n_{0}+$ $\delta n_{\text {ind }}(\boldsymbol{r}, t)$ with
 $$
 \begin{align*}
 \delta n_{\mathrm{ind}}(\boldsymbol{r}, t)=\delta n_{\mathrm{ind}}(\boldsymbol{q}, \omega) e^{i \boldsymbol{q} \cdot \boldsymbol{r}-i \omega t} e^{\eta t} .
 \end{align*}
 $$
-
-Using equations (3.28) and (3.29) we obtain for the density operator in momentum space,
+We obtain for the density operator in momentum space,
 $$
 \begin{align*}
 \widehat{\rho}_{\boldsymbol{q}}&=\sum_{s} \int d^{3} r \widehat{\Psi}_{s}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}_{s}(\boldsymbol{r}) e^{-i \boldsymbol{q} \cdot \boldsymbol{r}}\\&=\sum_{\boldsymbol{k}, s} \widehat{c}_{\boldsymbol{k} s}^{\dagger} \widehat{c}_{\boldsymbol{k}+\boldsymbol{q} s}=\sum_{\boldsymbol{k}, s} \widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s},
@@ -414,7 +413,7 @@ $$
 \end{align*}
 $$
 
-The adiabatic switching on of the perturbation has mathematically the nice regularisation feature that $\chi_{0}(\boldsymbol{r}, t)$ is causal, i.e. $\chi_{0}(\boldsymbol{r}, t)=0$ for $t<0$. The potential $V_{a}$ can only influence the response into the future.Note, that for $n_{0 k, s}$ we can use the Fermi-Dirac distribution function $f\left(\epsilon_{\boldsymbol{k}}\right)$ for spin-independent densities.
+The adiabatic switching on of the perturbation has mathematically the nice regularisation feature that $\chi_{0}(\boldsymbol{r}, t)$ is causal, i.e. $\chi_{0}(\boldsymbol{r}, t)=0$ for $t<0$. The potential $V_{a}$ can only influence the response into the future. Note, that for $n_{0 k, s}$ we can use the Fermi-Dirac distribution function $f\left(\epsilon_{\boldsymbol{k}}\right)$ for spin-independent densities.
 
 As a simple example we consider here a metal at $T=0$ exposed to a uniform static potential, which corresponds simply to a shift of the chemical potential: $V_{a}(\boldsymbol{r}, t)=-\delta \mu$. Thus, we use $\omega=0$ and take in the Lindhard function the limit $\boldsymbol{q} \rightarrow 0$. Using Bernoulli-l'Hôpital for the $\boldsymbol{q}$-limit we find
 $$
@@ -468,15 +467,12 @@ V(\boldsymbol{q}, \omega) & =V_{a}(\boldsymbol{q}, \omega)+V_{\delta n}(\boldsym
 \end{aligned}
 \end{align*}
 $$
-
 where
-
 $$
 \begin{align*}
 \delta n(\boldsymbol{q}, \omega)=\chi_{0}(\boldsymbol{q}, \omega) V(\boldsymbol{q}, \omega) .
 \end{align*}
 $$
-
 The relation between $V$ and $V_{a}$ may then be written as
 $$
 \begin{align*}
@@ -534,21 +530,20 @@ $$
 \lim _{\eta \rightarrow 0_{+}} \frac{1}{z-i \eta}=\mathcal{P}\left(\frac{1}{z}\right)+i \pi \delta(z)
 \end{align*}
 $$
-where the Cauchy principal value $\mathcal{P}$ of the first term has to be taken, we separate the Lindhard function (3.63) into
+where the Cauchy principal value $\mathcal{P}$ of the first term has to be taken, we separate the Lindhard function into
 $$
 \begin{align*}
 \begin{aligned}
-\chi_{0}^{\prime}(\boldsymbol{q}, \omega) & =\frac{1}{\Omega} \sum_{\boldsymbol{k}, s} \mathcal{P}\left(\frac{n_{0, \boldsymbol{k}+\boldsymbol{q}}-n_{0, \boldsymbol{k}}}{\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}-\hbar \omega}\right) \\
-\chi_{0}^{\prime \prime}(\boldsymbol{q}, \omega) & =\frac{\pi}{\Omega} \sum_{\boldsymbol{k}, s}\left(n_{0, \boldsymbol{k}+\boldsymbol{q}}-n_{0, \boldsymbol{k}}\right) \delta\left(\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}-\hbar \omega\right)
+\chi_{0}^{\prime}(\boldsymbol{q}, \omega) & =\frac{1}{\Omega} \sum_{\boldsymbol{k}, s} \mathcal{P}\left(\frac{n_{0, \boldsymbol{k}+\boldsymbol{q}}-n_{0, \boldsymbol{k}}}{\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}-\hbar \omega}\right) \quad\text{and}\\
+\chi_{0}^{\prime \prime}(\boldsymbol{q}, \omega) & =\frac{\pi}{\Omega} \sum_{\boldsymbol{k}, s}\left(n_{0, \boldsymbol{k}+\boldsymbol{q}}-n_{0, \boldsymbol{k}}\right) \delta\left(\epsilon_{\boldsymbol{k}+\boldsymbol{q}}-\epsilon_{\boldsymbol{k}}-\hbar \omega\right).
 \end{aligned}
 \end{align*}
 $$
-
-The real part will be important later in the context of instabilities of metals. The excitation spectrum is visible in the imaginary part which relates to the absorption of energy by the electrons subject to a time-dependent external perturbation (see Appendix 3.4). Note that $\chi_{0}^{\prime \prime}(\boldsymbol{q}, \omega)$ corresponds to Fermi's golden rule of time-dependent perturbation theory, i.e. the transition rate from the ground state to an excited state of energy $\hbar \omega$ and momentum $\boldsymbol{q}$ for a perturbation. The sum over $\boldsymbol{k}$ yields the density of possible electron-hole excitations with the given excitation energy.
+The real part will be important later in the context of instabilities of metals. The excitation spectrum is visible in the imaginary part which relates to the absorption of energy by the electrons subject to a time-dependent external perturbation. Note that $\chi_{0}^{\prime \prime}(\boldsymbol{q}, \omega)$ corresponds to Fermi's golden rule of time-dependent perturbation theory, i.e. the transition rate from the ground state to an excited state of energy $\hbar \omega$ and momentum $\boldsymbol{q}$ for a perturbation. The sum over $\boldsymbol{k}$ yields the density of possible electron-hole excitations with the given excitation energy.
 
 ### 3.2.3 Collective Excitation
 
-Similar to semiconductor also for metals the Coulomb interaction yields a further type of excitation which, however, cannot be described by a simple superposition of electron-hole excitations, unlike in the case of excitons. Here the renormalised response function $\chi(\boldsymbol{q}, \omega),$ including the Coulomb interaction, serves as a means to uncover collective excitations beyond the level of independent electrons. It is the long-range nature of the Coulomb interaction which is responsible for the so-called plasma resonance which appears at rather high energies for small momenta $\boldsymbol{q}$. We analyze $\chi(\boldsymbol{q}, \omega)$ in the small $\boldsymbol{q}$-limit, i.e. $|\boldsymbol{q}| \ll k_{F}$ where we expand $\chi_{0}(\boldsymbol{q}, \omega)$ in $\boldsymbol{q}$, starting with
+Similar to semiconductor also for metals the Coulomb interaction yields a further type of excitation which, however, cannot be described by a simple superposition of electron-hole excitations, unlike in the case of excitons. Here the renormalised response function $\chi(\boldsymbol{q}, \omega),$ including the Coulomb interaction, serves as a means to uncover collective excitations beyond the level of independent electrons. It is the long-range nature of the Coulomb interaction which is responsible for the so-called plasma resonance which appears at rather high energies for small momenta $\boldsymbol{q}$. We analyse $\chi(\boldsymbol{q}, \omega)$ in the small $\boldsymbol{q}$-limit, i.e. $|\boldsymbol{q}| \ll k_{F}$ where we expand $\chi_{0}(\boldsymbol{q}, \omega)$ in $\boldsymbol{q}$, starting with
 $$
 \begin{align*}
 \begin{aligned}
