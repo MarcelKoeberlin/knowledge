@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-02-16T20:49:39.425+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-02-16T20:49:50.382+01:00"}
 ---
 
-Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
+Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.C
 
 ---
 **Table of Contents**
