@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/3-excitation-of-surface-plasmon-polaritons-at-planar-interfaces/","hide":"true","updated":"2025-02-07T12:44:45.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/3-excitation-of-surface-plasmon-polaritons-at-planar-interfaces/","hide":"true","updated":"2025-02-14T10:34:28.000+01:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -34,7 +34,7 @@ This coupling scheme is also known as **attenuated total internal reflection** a
 SPPs excited via phase-matching with $\beta = k\sqrt{\varepsilon}\sin\theta$ are inherently leaky waves, meaning they lose energy not only due to absorption in the metal but also due to leakage radiation in the prism. The minimum in reflected intensity is due to destructive interference between this leakage radiation and the reflected part of the excitation beam. This minimum can be zero for an optimal metal film thickness. This is the case when the damping due to leakage equals the damping due to absorption (critical coupling):
 
 $$
-\Gamma_{\text{LR}} = \Gamma_{\text{abs}} = \mathfrak{Im}(\beta_0),
+\Gamma_{\text{LR}} = \Gamma_{\text{abs}} = \mathfrak{Im}\left[\beta_0\right],
 $$
 
 where:
