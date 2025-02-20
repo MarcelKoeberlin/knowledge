@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-02-07T10:45:21.000+01:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-02-20T17:21:08.000+01:00"}
 ---
 
 # 1 Laser Startup
@@ -184,7 +184,13 @@ In E6.2:
 
 ---
 # 10 Generation Chamber
-## 10.1 Purging Chamber
+## 10.1 Venting chamber
+- Close all other valves to the Pre-vac
+- Open the valves between vented chambers and Pre-vac
+- Wait until pressures around 3E-1 mbar to switch on the turbo pumps
+- After the turbos have spun up, and pressure is around E-4/E-5 mbar, open all Pre-vac valves
+- Rotate filters back
+## 10.2 Purging Chamber
 
 - Block beam in ==E8==
 - Move out all filters
@@ -193,15 +199,10 @@ In E6.2:
 - Ensure the shutter chiller is turned off
 - Shut down the four turbo pumps labelled 'Front Unit'
 - Remove KF on second camber to prevent over-pressure
-- Open the nitrogen valve on the wall to approximately 0.8 bar
-- After the turbos spun down, pen the nitrogen valve at first chamber to start purging
+- Open the nitrogen valve on the wall to approximately 0.6 bar (red line)
+- After the turbos spun down, open the nitrogen valve at first chamber to start purging
 - Wait until the KF be easily removed, which usually happens when the focusing chamber pressure is around 7E+2 mbar
 - Close the nitrogen at first chamber and wall
-## 10.2 Venting chamber
-- Close all other valves to the Pre-vac
-- Open the valves between vented chambers and Pre-vac
-- Wait until pressures around 3E-1 mbar to switch on the turbo pumps
-- After the turbos have spun up, and pressure is around E-4/E-5 mbar, open all Pre-vac valves
-- Rotate filters back
+
 
 ---

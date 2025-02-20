@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/3-characterisation-of-attosecond-pulses/","hide":"true","updated":"2025-02-12T17:16:22.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/3-characterisation-of-attosecond-pulses/","hide":"true","updated":"2025-02-20T17:21:48.000+01:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -7,21 +7,22 @@ Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|
 ---
 **Table of Contents**
 
-[[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.1 RABBITT: Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions\|3.1 RABBITT: Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions]]
-[[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.2 Attosecond Pulse Characterisation: FROG-CRAB\|3.2 Attosecond Pulse Characterisation: FROG-CRAB]]
-[[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.3 Control of Amplitude and Phase of an APT\|3.3 Control of Amplitude and Phase of an APT]]
-[[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.4 Temporal Information Extracted from Attosecond Pulse Train (APT) Photoionisation Experiments\|3.4 Temporal Information Extracted from Attosecond Pulse Train (APT) Photoionisation Experiments]]
-[[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.5 PROBE and PROBD\|3.5 PROBE and PROBD]]
+- [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.1 Characterisation of Ultrashort Pulses\|3.1 Characterisation of Ultrashort Pulses]]
+- [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.2 RABBITT: Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions\|3.2 RABBITT: Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions]]
+- [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.3 Attosecond Pulse Characterisation: FROG-CRAB\|3.3 Attosecond Pulse Characterisation: FROG-CRAB]]
+- [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.4 Control of Amplitude and Phase of an APT\|3.4 Control of Amplitude and Phase of an APT]]
+- [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.5 Temporal Information Extracted from Attosecond Pulse Train (APT) Photoionisation Experiments\|3.5 Temporal Information Extracted from Attosecond Pulse Train (APT) Photoionisation Experiments]]
+- [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.6 PROBE and PROBD\|3.6 PROBE and PROBD]]
 
 ---
 # 3 Characterisation and Control of Attosecond Pulses
 Before diving into the characterisation of attosecond pulses, the characterisation of ultrashort pulses needs to be discussed first.
 
 ---
-## Characterisation of Ultrashort Pulses
+## 3.1 Characterisation of Ultrashort Pulses
 [[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=103&selection=28,0,28,43|•]]
 
-### Autocorrelation
+### 3.1.1 Autocorrelation
 The duration of short pulses can be easily estimated using autocorrelation. A pulse is split into two replicas with relative delay. Both replicas are focused inside a second-hamonic generation (SHG) crystal. Then, the SHG signal is
 $$
 S(\tau)\sim\int^\infty_{-\infty}I(t)I(t-\tau)dt.
@@ -31,7 +32,7 @@ $$
 \tilde{E}(\omega)=|\tilde{E}(\omega)|e^{i\Phi(\omega)}.$$
 Then the electric field as function of time, $E(t)$, can be obtained via a Fourier transform. The absolute value $|\tilde{E}(\omega)|$, can be measured with a spectrometer. Then, the remaining task is to measure $\Phi(\omega).$ Note that the next two methods, FROG and SPIDER, are also discussed in my [[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]] notes, however in more detail and from a different perspective. 
 
-### FROG: Frequency-Resolved Optical Gating
+### 3.1.2 FROG: Frequency-Resolved Optical Gating
 The most widely used FROG implementation is that of the SHG-FROG. The signal then reads
 $$
 S(\omega, \tau)=\left|\int_{-\infty}^{\infty} E(t) E(t-\tau) e^{i \omega t} d t\right|^2.
@@ -46,9 +47,10 @@ The next figure shows the generated 2D signal, or FROG trace:
 
 To retrieve the phase, an iterative algorithm is used. The sampling covers both time (x-axis) and frequency (y-axis). Since the signal is slowly-varying , the retrieval is sensitive to noise and the detector uniformity. 
 
-### SPIDER: Spectral Phase Interferometry for Direct Electric-Field Reconstruction
+### 3.1.3 SPIDER: Spectral Phase Interferometry for Direct Electric-Field Reconstruction
 
-Another method is SPIDER, based on the spectral interference between a pulse and its replica, but shifted in time and frequency. The interference between $\tilde{E}(\omega)$ and a delayed $\tilde{E}(\omega+\omega^\prime)$ is $$
+Another method is SPIDER, based on the spectral interference between a pulse and its replica, but shifted in time and frequency. The interference between $\tilde{E}(\omega)$ and a delayed $\tilde{E}(\omega+\omega^\prime)$ is 
+$$
 \begin{aligned}
 I(\omega, \tau)= & \left|\bar{E}(\omega)+\bar{E}(\omega-\omega^\prime) e^{i \omega \tau}\right|^2 \\
 = & |\bar{E}(\omega)|^2+|\bar{E}(\omega-\omega^\prime)|^2+2|\bar{E}(\omega)||\bar{E}(\omega-\omega^\prime)| \\ &\cdot \cos \left(\Phi(\omega)-\Phi(\omega-\omega^\prime)-\omega \tau\right) .
@@ -67,7 +69,7 @@ This directly gives the spectral distance between $\omega$ and $\omega+\omega^\p
 
 ![Attachments/Attosecond and Strong-Field Physics Principles and Applications 8.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications%208.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=104&rect=190,83,440,199|•]]
 
-## 3.1 RABBITT: Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions
+## 3.2 RABBITT: Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions
 [[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=306&selection=16,0,16,49|•]]
 
 The RABBITT (Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions) method enables the determination of the spectral phase of an attosecond pulse train by retrieving the phase difference between neighbouring harmonics. Consider XUV harmonics combined with a delayed multi-cycle IR field to ionise target atoms. The intensity of the XUV harmonics is sufficiently low to prevent nonlinear effects, allowing ionisation to occur primarily through single-photon absorption.
@@ -92,8 +94,8 @@ when ionisation occurs in the presence of the IR field:
 
 The figure shows the photoelectron spectra of argon ionised by (a) XUV harmonics only, while (b) and (c) depict the spectra with both XUV harmonics and an IR field. The time delay between the XUV and IR pulses increases from (b) to (c), causing significant changes in the sideband amplitudes. The intensity of the sideband signals varies as a function of the time delay $t_d$. This variation can be understood using a two-path interference model, where the sideband signal $S_{2q}$ results from the interference between:
 
-6. An electron ionised by the $(2q - 1)\omega$ harmonic, followed by the absorption of one IR photon.
-7. An electron ionised by the $(2q + 1)\omega$ harmonic, followed by the emission of one IR photon.
+1. An electron ionised by the $(2q - 1)\omega$ harmonic, followed by the absorption of one IR photon.
+2. An electron ionised by the $(2q + 1)\omega$ harmonic, followed by the emission of one IR photon.
 
 The total sideband signal can be mathematically expressed as:
 
@@ -120,7 +122,7 @@ The RABBITT method is sensitive to the chirp of both the IR and XUV pulses, maki
 ![Attachments/Lecture 6.webp|700](/img/user/Attachments/Lecture%206.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=610&rect=98,47,477,793|•]]
 
 ---
-## 3.2 Attosecond Pulse Characterisation: FROG-CRAB
+## 3.3 Attosecond Pulse Characterisation: FROG-CRAB
 [[Reading/Books/Attosecond Physics/Attosecond Physics Attosecond Measurements and Control.pdf#page=81&selection=14,0,30,67|•]] [[Reading/Books/Attosecond Physics/Attosecond Physics Attosecond Measurements and Control.pdf#page=81&selection=12,0,12,36|•]] [[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=326&selection=34,0,34,26|•]] [[Reading/Books/Attosecond Physics/Attosecond Physics Attosecond Measurements and Control.pdf#page=81&selection=12,0,12,36|•]]
 Attosecond science relies on characterising single attosecond pulses. While the spectral amplitude, $U(\omega)$, can be measured directly, determining the pulse duration requires retrieving the spectral phase, $\Phi(\omega)$. This is because the temporal profile of the SAP (Strong Attosecond Pulse) depends on both the spectral amplitude and phase, as described by:
 
@@ -138,17 +140,17 @@ Here, $I(t)$ represents the temporal intensity profile (from which the pulse dur
 
 Traditional methods for characterising femtosecond pulses (like autocorrelation, SPIDER, and FROG) cannot be directly applied to attosecond pulses. This is due to the lack of suitable nonlinear materials in the XUV range and the low photon flux of SAPs. Instead, attosecond pulse characterisation often utilises the interaction of the AP with a time-delayed infrared field. Photo-electrons, generated by the XUV pulse, act as a "replica" of the XUV pulse, and the IR field imprints phase information onto the photo-electron spectrum.
 
-### 3.2.1 Attosecond Streaking and the Strong-Field Approximation
+### 3.3.1 Attosecond Streaking and the Strong-Field Approximation
 
 The core of this characterisation method is attosecond streaking.  The process begins with an XUV pulse ionising atoms, creating a photo-electron wavepacket. A time-delayed IR field then interacts with this wavepacket, modifying the final momentum of the emitted electrons. By systematically varying the delay between the XUV and IR pulses, a streaking spectrogram (a 2D plot of photo-electron yield as a function of energy and delay) is generated. This spectrogram contains valuable information about both the XUV and IR pulses.
 
 A quantum mechanical description of attosecond streaking typically employs the strong-field approximation (SFA).  The SFA relies on several key approximations:
 
-8.  **Single Active Electron Approximation:** The atom is treated as if it has only one electron that participates in the ionisation process.  This neglects the complexities of multi-electron ionisation.
+1.  **Single Active Electron Approximation:** The atom is treated as if it has only one electron that participates in the ionisation process.  This neglects the complexities of multi-electron ionisation.
 
-9.  **Strong Field Approximation (SFA) itself:**  The influence of the atomic Coulomb potential on the photo-electron in the continuum is neglected.  The photo-electron is treated as a free particle moving solely under the influence of the strong IR field.
+2.  **Strong Field Approximation (SFA) itself:**  The influence of the atomic Coulomb potential on the photo-electron in the continuum is neglected.  The photo-electron is treated as a free particle moving solely under the influence of the strong IR field.
 
-10.  **Ground State and Continuum Consideration:** The influence of other bound states of the atom on the ionisation process is neglected.  Only transitions from the ground state to the continuum are considered.
+3.  **Ground State and Continuum Consideration:** The influence of other bound states of the atom on the ionisation process is neglected.  Only transitions from the ground state to the continuum are considered.
 
 Within the SFA, the transition amplitude for photoionisation, considering the interaction with both the XUV and IR fields, can be expressed as:
 
@@ -207,7 +209,7 @@ Despite these advantages, FROG-CRAB also has limitations. Accurate reconstructio
 
 ---
 
-## 3.3 Control of Amplitude and Phase of an APT
+## 3.4 Control of Amplitude and Phase of an APT
 [[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=309&selection=53,0,53,46|•]]
 
 The RABBITT method, discussed in the previous chapter, determines the spectral phase of each frequency component of an attosecond pulse train (APT). To achieve transform-limited (TL) attosecond pulses, the spectral phase of each harmonic must be adjusted so that all harmonics are emitted simultaneously. Neglecting the atomic phase, we can rewrite the relevant equation as:
@@ -229,7 +231,7 @@ The positive chirp in the emitted attosecond bursts primarily originates from th
 
 ---
 
-## 3.4 Temporal Information Extracted from Attosecond Pulse Train (APT) Photoionisation Experiments
+## 3.5 Temporal Information Extracted from Attosecond Pulse Train (APT) Photoionisation Experiments
 [[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=310&selection=132,0,133,11|•]]
 
 In characterising attosecond pulse trains with the RABBITT method, the atomic phase, denoted as $\Delta\varphi^{\text{atomic}}$, is typically calculated theoretically and often considered negligible due to its small magnitude. However, in certain cases, extracting the atomic phase directly from measurements is desirable. For this purpose, we define the intrinsic atomic delay as:
@@ -257,7 +259,7 @@ where $\tau^{(1)}$ represents the delay associated with the electronic wave pack
 It is important to note that the RABBITT method relies on second-order perturbation theory, necessitating low laser intensities to avoid higher-order contributions to the sidebands. Moreover, the derived equations are strictly valid when the ionised electron originates from an s-state, where one XUV photon promotes the electron to an intermediate p partial wave. In cases where the electron originates from a p subshell, intermediate partial waves can be either s or d, leading to interference between quantum paths ($p \to s \to p$ and $p \to d \to p$). This interference results in more complex atomic delay dynamics that must be considered in such scenarios.
 
 ---
-## 3.5 PROBE and PROBD
+## 3.6 PROBE and PROBD
 [[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=332&selection=156,0,156,49|•]]
 
 While FROG-CRAB is the most widely used technique to characterise single attosecond pulses (SAPs), it has two notable limitations:
@@ -266,7 +268,7 @@ While FROG-CRAB is the most widely used technique to characterise single attosec
 
 In this section, two new methods are introduced that address these limitations. They remain effective for broadband light pulses and improve the accuracy of FROG-CRAB for narrowband pulses.
 
-### 3.5.1 PROBD
+### 3.6.1 PROBD
 
 PROBD stands for *Phase Retrieval of Broadband Pulses*. The starting equation for the streaking spectrogram in PROBD is the same as in FROG-CRAB, based on the Strong-Field Approximation (SFA):
 
@@ -298,7 +300,7 @@ The following example illustrates an XUV pulse with a duration of 52 as, a centr
 
 This example clearly demonstrates that the CMA used in FROG-CRAB is inadequate for broadband XUV pulses.
 
-### 3.5.2 PROOF
+### 3.6.2 PROOF
 
 PROOF (*Phase Retrieval by Omega Oscillation Filtering*) is a generalisation of the RABBITT technique for SAPs. It is applicable when the IR intensity is sufficiently weak to allow the use of second-order perturbation theory for modelling the streaking trace.
 
