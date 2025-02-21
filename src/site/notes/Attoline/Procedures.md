@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-02-20T17:21:08.000+01:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-02-21T11:14:50.000+01:00"}
 ---
 
 # 1 Laser Startup
@@ -84,7 +84,7 @@ E8:
 > [!TIP] Doesn't work? Turn trigger on
 - Set proper exposure
 - Optimise x, y, z position
-- Overlap them [[Attoline/Procedures#3.1 Spatial overlap\|spatially]] and [[Attoline/Procedures#3.2 Temporal overlap\|temporally]].
+- Overlap them [[Attoline/Procedures#4.1 Spatial Overlap\|spatially]] and [[Attoline/Procedures#4.2 Temporal Overlap\|temporally]].
 - Tune to specific power with IRIS pump / IR
 > [!WARNING] Turn on the shutter chiller
 
