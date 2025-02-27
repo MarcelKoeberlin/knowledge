@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/1-signals-and-systems/","hide":"true","updated":"2025-02-07T10:57:49.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/1-signals-and-systems/","hide":"true","updated":"2025-02-27T16:28:26.000+01:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -200,7 +200,7 @@ Invertibility is important in contexts like encoding and decoding systems, such 
 ### 1.9.3 Causality 
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&selection=205,0,209,9|•]]
 
-A system is causal if the output at time $t$ depends only on values of the input at the present time or in the past. A system is nonanticipative if it does not depend on future input values. Examples of non-causal systems:
+A system is causal if the output at time $t$ depends only on values of the input at the present time or in the past. A system is non-anticipative if the output does not depend on future input values. Examples of non-causal systems:
 $$
 y[n] = x[n] - x[n+1], \quad y(t) = x(t+1).
 $$

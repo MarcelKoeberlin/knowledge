@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-02-21T11:14:50.000+01:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-02-24T14:36:05.000+01:00"}
 ---
 
 # 1 Laser Startup
@@ -180,7 +180,7 @@ In E8;
 
 In E6.2:
 - Turn off the chiller 
-- Turn off the balistic thingy, by turning the thing
+- Turn off the ballistic thingy, by turning the thing
 
 ---
 # 10 Generation Chamber
@@ -203,6 +203,9 @@ In E6.2:
 - After the turbos spun down, open the nitrogen valve at first chamber to start purging
 - Wait until the KF be easily removed, which usually happens when the focusing chamber pressure is around 7E+2 mbar
 - Close the nitrogen at first chamber and wall
-
+# SPIDER
+- Outcouple probe (HHG arm) beam with mirror
+- Use two mirrors to send through black tunnel
+- 
 
 ---

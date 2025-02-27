@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-02-17T18:23:16.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-02-27T16:26:21.000+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -57,7 +57,6 @@ $$
 \nabla \times \mathbf{B} &= \mu_0 \left( \mathbf{j} + \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t} \right),
 \end{aligned}
 $$
-
 where $\mathbf{j}$ is the current density and $\rho$ is the charge density. However, determining these microscopic quantities exactly would require knowledge of every individual electron and nucleus, which is impractical. 
 
 To circumvent this, we introduce two macroscopic fields: the electric displacement field $\mathbf{D}$ and the magnetic field $\mathbf{H}$. These quantities result from an effective "averaging" over the medium, which is justified since atomic-scale structures are typically on the order of nanometres, whereas the relevant electromagnetic wavelengths are on the order of hundreds of nanometres.
@@ -70,17 +69,9 @@ $$
 \mathbf{H} &= \frac{1}{\mu_0} \mathbf{B} - \mathbf{M},
 \end{aligned}
 $$
+where $\mathbf{P}$ is the electric polarisation density, and $\mathbf{M}$ is the magnetisation density. These definitions allow us to describe the response of the medium without explicitly tracking individual charges. In a dielectric medium, the polarisation is the macroscopic sum of the electric dipole moments induced by the electric field. The magnetisation is defined analogously. Both the displacement field and the magnetic field are often referred to as _auxiliary fields_. The polarisation and magnetisation are related to the electric field and magnetic flux through material-dependent relations. In free space, both polarisation $\mathbf{P}$ and magnetisation $\mathbf{M}$ are zero. 
 
-where $\mathbf{P}$ is the electric polarisation density, and $\mathbf{M}$ is the magnetisation density. These definitions allow us to describe the response of the medium without explicitly tracking individual charges. In a dielectric medium, the polarisation is the macroscopic sum of the electric dipole moments induced by the electric field. The magnetisation is defined analogously. Both the displacement field and the magnetic field are often referred to as _auxiliary fields_. The polarisation and magnetisation are related to the electric field and magnetic flux through material-dependent relations. In free space, where both polarisation and magnetisation are absent, we recover the simpler forms:
-
-$$
-\begin{aligned}
-\mathbf{D} &= \varepsilon_0 \mathbf{E}, \\
-\mathbf{H} &= \frac{1}{\mu_0} \mathbf{B}.
-\end{aligned}
-$$
-
-In most cases, we assume that the relations between these fields are linear, meaning they can be described solely by the dielectric function $\varepsilon(\mathbf{r},t)$ and the permeability $\mu(\mathbf{r},t)$. Furthermore, in many practical problems, it is sufficient to solve for the electric field alone. This is because, in the non-relativistic regime, the force exerted by the magnetic component is much weaker than that of the electric component. This assumption is further justified by the fact that most materials relevant to optics are non-magnetic. However, one must always keep in mind the presence of the magnetic field.
+In this course, we will be mainly concerned about isotropic media, meaning that the corresponding fields point in the same direction, which in turn implies that the dielectric function $\varepsilon(\mathbf{r},t)$ and the permeability $\mu(\mathbf{r},t)$ are scalars. Furthermore, in many practical problems, it is sufficient to solve for the electric field alone. This is because in the non-relativistic regime, the force exerted by the magnetic component is much weaker than that of the electric component. This assumption is further justified by the fact that most materials relevant to optics are non-magnetic. However, one must always keep in mind the presence of the magnetic field.
 
 ---
 ## 1.3 The Material Equations
@@ -106,13 +97,10 @@ we define the polarisation density via
 $$
 \rho_b = -\nabla \cdot \mathbf{P},
 $$
-
 which allows us to rewrite the equation as
-
 $$
 \nabla \cdot \mathbf{D} = \rho_f.
 $$
-
 At this point, we have successfully removed explicit dependence on the bound charges, such as immobile core electrons or localised valence electrons. A similar approach applies to the magnetic field. We define the magnetisation density as
 
 $$
@@ -159,7 +147,7 @@ $$
 The electric dipole moment is defined as  
 
 $$
-\mathbf{p}_R = \int\left(\mathbf{r}^{\prime}-\mathbf{R}\right) \rho\left(\mathbf{r}^{\prime}\right) d^3 r^{\prime},
+\mathfrak{Re}\left[\mathbf{P}\right] = \int\left(\mathbf{r}^{\prime}-\mathbf{R}\right) \rho\left(\mathbf{r}^{\prime}\right) d^3 r^{\prime},
 $$  
 
 while the magnetic dipole moment is  
@@ -177,7 +165,7 @@ $$
 while the total polarisation and total magnetisation are  
 
 $$
-\mathbf{P} = \frac{\mathbf{p}_R}{V} \quad \text{and} \quad \mathbf{M} = \frac{\mathbf{m}_R}{V}.
+\mathbf{P} = \frac{\mathfrak{Re}\left[\mathbf{P}\right]}{V} \quad \text{and} \quad \mathbf{M} = \frac{\mathbf{m}_R}{V}.
 $$  
 
 The macroscopic Maxwell equations reduce to their microscopic counterparts if the free charge and current densities are uniform within each cube and if the bound charge and current densities arise only at the boundaries between adjacent cubes. This approximation is valid as long as the fields do not vary significantly over each individual cube.  
@@ -192,7 +180,7 @@ To proceed further, we require knowledge of the polarisation and magnetisation. 
 
 4. **No dispersion:** $\mathbf{P}$ and $\mathbf{M}$ depend only on the immediate values of $\mathbf{E}$ and $\mathbf{B}$, eliminating any time integrals. This assumption is valid only for optically transparent materials far from absorption resonances. However, in reality, this is a poor approximation and will be refined later.  
 
-5. **Linearity:** $\mathbf{P}$ and $\mathbf{M}$ are linear in $\mathbf{E}$ and $\mathbf{B}$.  
+5. **Linearity:** $\mathbf{P}$ and $\mathbf{M}$ are linear in $\mathbf{E}$ and $\mathbf{B}$. Note that this is the definition of linear optics.
 
 6. **Isotropy:** $\mathbf{P}$ and $\mathbf{M}$ align with $\mathbf{E}$ and $\mathbf{B}$, either in the same or opposite direction. This implies that the corresponding tensors are identity matrices scaled by a scalar. Since this assumption is violated in crystalline materials, it will be corrected later.  
 
@@ -226,12 +214,12 @@ $$
 $$
 where $\chi$ is the dielectric susceptibility, and $\chi_m$ is the magnetic susceptibility. With these, the dielectric constant and electric permeability can be defined as 
 $$
-\varepsilon=1+\chi\quad\text{and}\quad \mu=1+\chi_m.
+\varepsilon_r=1+\chi\quad\text{and}\quad \mu_R=1+\chi_m.
 $$
 Therefore, we can write the displacement and magnetic field as 
 $$
 \begin{aligned}
-\mathbf{D}=\varepsilon_0 \varepsilon \mathbf{E} \quad\text{and}\quad \mathbf{B}=\mu_0 \mu \mathbf{H}.
+\mathbf{D}= \varepsilon \mathbf{E} \quad\text{and}\quad \mathbf{B}=\mu \mathbf{H}.
 \end{aligned}
 $$
 In this course, and in optics in general, we generally deal with non-magnetisable media. Therefore, we may assume the magnetisation is zero, e.g. that $\mathbf{M}=0.$ This is equivalent to $\mu=1.$ 
@@ -243,12 +231,12 @@ In this course, and in optics in general, we generally deal with non-magnetisabl
 To finally be able to describe the propagation of light, we want to relate the time-derivative of each field to its spatial derivative. We do this for the simplest case discussed before: We assume a homogeneous, isotropic, dispersionless medium, with no free currents or charges. Note, that in principal the Maxwell equations are enough to describe the propagation of light, however a much more simple form exists for our needs. 
 Consider the macroscopic curl equation in vacuum:
 $$
-\nabla \times E=-\frac{\partial \mathbf{B}}{\partial t}.
+\nabla \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}.
 $$
 Apply the curl operator on both sides to obtain
 
 $$
-\nabla \times(\nabla \times E)=-\frac{\partial(\nabla \times \mathbf{B})}{\partial t}.
+\nabla \times(\nabla \times \mathbf{E})=-\frac{\partial(\nabla \times \mathbf{B})}{\partial t}.
 $$
 The vector identity used now is
 $$
@@ -256,9 +244,9 @@ $$
 $$
 which yields (done for both electric and magnetic field)
 $$
-\nabla^2 \mathbf{E}=\varepsilon_0 \mu_0 \varepsilon \mu \frac{\partial^2 \mathbf{E}}{\partial t^2}\quad\text{and}\quad\nabla^2 \mathbf{H}=\varepsilon_0 \mu_0 \varepsilon \mu \frac{\partial^2 \mathbf{H}}{\partial t^2}.
+\nabla^2 \mathbf{E}= \varepsilon \mu \frac{\partial^2 \mathbf{E}}{\partial t^2}\quad\text{and}\quad\nabla^2 \mathbf{H}=\varepsilon \mu \frac{\partial^2 \mathbf{H}}{\partial t^2}.
 $$
-We used that $\nabla\cdot\mathbf{E}=0$ and that $\mathbf{\nabla} \times \mathbf{H}=\mathbf{j}_f+\frac{\partial \mathbf{D}}{\partial t},$ and similarly for the magnetic field. Both equations have the form of generic linear wave equations, with wave velocity, or phase velocity, $v_p=1 / \sqrt{\varepsilon_0 \mu_0 \varepsilon \mu}$. The speed of light $c$ in vacuum is thus given by
+We used that $\nabla\cdot\mathbf{D}=\rho_f=0$ and that $\mathbf{\nabla} \times \mathbf{H}=\mathbf{j}_f+\frac{\partial \mathbf{D}}{\partial t},$ and similarly for the magnetic field. Both equations have the form of generic linear wave equations, with wave velocity, or phase velocity, $v_p=1 / \sqrt{\varepsilon \mu}$. The speed of light $c$ in vacuum is thus given by
 
 $$
 c=\frac{1}{\sqrt{\varepsilon_0 \mu_0}}.
@@ -290,7 +278,7 @@ k=\frac{2 \pi}{\lambda}.
 $$
 We can see that the wave equation is linear (since derivatives are linear), and thus also the superposition of any solution is a solution again. Since this wave equation is a product of our assumptions, this might not generally hold. In fact, the plane waves form a complete basis for all possible solutions, but this is not shown here. Due to the fact that the divergence of the displacement field is zero, $\mathbf{E}$ and $\mathbf{k}$ stand perpendicular to each other, e.g.
 $$
-\nabla \cdot \mathbf{D}=\varepsilon_0 \varepsilon \nabla \cdot \mathbf{E}=-\varepsilon_0 \varepsilon \mathbf{E}_0 \cdot \mathbf{k} \sin (\omega t-\mathbf{k} \cdot \mathbf{r}+\phi)=0 \implies \mathbf{E}_0\cdot\mathbf{k}=0.
+\nabla \cdot \mathbf{D}= \varepsilon \nabla \cdot \mathbf{E}=- \varepsilon \mathbf{E}_0 \cdot \mathbf{k} \sin (\omega t-\mathbf{k} \cdot \mathbf{r}+\phi)=0 \implies \mathbf{E}_0\cdot\mathbf{k}=0.
 $$
 Similarly for the magnetic field, we obtain 
 $$
@@ -304,12 +292,12 @@ Therefore, the electric field is perpendicular to the wavevector, and both stand
 
 ![Attachments/01_Introduction_and_theoretical_foundation.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation.webp)[[Teaching/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=26&rect=370,191,795,456|•]]
 
-Sometimes, it is also written as $\mathbf{H}_0=\sqrt{\frac{\epsilon_0 \epsilon}{\mu_0 \mu}} \hat{\mathbf{k}} \times \mathbf{E}_0=\frac{1}{Z} \hat{\mathbf{k}} \times \mathbf{E}_0,$ where $Z_0=\sqrt{\frac{\mu_0}{\epsilon_0}}=377 \Omega$ is the optical impedance in vacuum, and then $Z=Z_0/n$ is the optical impedance. It is a measure of the amplitude ratio between electric and magnetic field in an electromagnetic wave. 
+Sometimes, it is also written as $\mathbf{H}_0=\sqrt{\epsilon/\mu} \cdot\hat{\mathbf{k}} \times \mathbf{E}_0=\frac{1}{Z} \hat{\mathbf{k}} \times \mathbf{E}_0,$ where $Z_0=\sqrt{\mu_0/\epsilon_0}=377 \Omega$ is the optical impedance in vacuum, and then $Z=Z_0/n$ is the optical impedance. It is a measure of the amplitude ratio between electric and magnetic field in an electromagnetic wave. 
 Because the electric and magnetic field stand orthogonal to each other, these waves are also called transverse electro-magnetic waves, or simply TEM waves. Very often, it is more convenient to stick to complex notation:
 $$
 \mathbf{E}(\mathbf{r}, t)=\tilde{\mathbf{E}}_0 e^{i(\omega t-\mathbf{k} \cdot \mathbf{r})}+h . c .
 $$
-In this case, the tilde has absorbed the factor of $1/2.$ We will often drop the 'hermitian conjugate', and it is understood that it is still there. However careful to not forget it, especially when calculating quantities depending nonlinearly on the fields, such as the Poynting vector (see later).
+In this case, the tilde has absorbed the factor of $1/2.$ We will often drop the 'hermitian conjugate', and it is understood that it is still there. However careful to not forget it, especially when calculating quantities depending nonlinearly on the fields, such as the [[Teaching/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.8 Poynting Vector and Poynting's Theorem\|poynting vector]].
 
 ---
 ## 1.7 Polarisation
@@ -356,10 +344,9 @@ $$
 
 Light carries energy. The quantity quantifying the flow of electromagnetic power is called the Poynting vector
 $$
-\mathbf{S}=\mathbf{E}_r\times \mathbf{H}_r.
+\mathbf{S}=\mathfrak{Re}\left[\mathbf{E}\right]\times \mathfrak{Re}\left[\mathbf{H}\right],
 $$
-
-Therefore, the energy flow is orthogonal to both the electric and magnetic field. We use the real fields, since the product of fields occurs. Otherwise, we would obtain non-physical solutions. By applying the divergence operator on both sides, we find an important theorem. The Poynting theorem states that the rate of energy transfer per unit volume from a region of space equals the rate of work done of the charge distribution in the region, plus the energy flux leaving that region (see proof at end of sub-chapter). In math, this means
+with its units being Watts per metres squared, e.g. W/m$^2.$ Note that we do not use the complex notation here, since energy is a real, measurable quantity. The complex notation used before is ultimately only a mathematical tool, but the physical fields are the real parts. Therefore, the energy flow is orthogonal to both the electric and magnetic field. By applying the divergence operator on both sides, we find the Poynting theorem, which states that the rate of energy transfer per unit volume from a region of space equals the rate of work done of the charge distribution in the region, plus the energy flux leaving that region (see proof at end of sub-chapter). We can express this as
 $$
 \nabla \cdot \mathbf{S}+\frac{\partial u}{\partial t}=-\mathbf{j}_{\mathbf{f}} \cdot \mathbf{E},
 $$
@@ -374,16 +361,18 @@ To gain some intuition, consider that the sign of the divergence of the Poynting
 
 **Proof of Poynting's Theorem:**
 
-In the first step, we multiply both curl equations by $\mathbf{E}_r$ and $\mathbf{H}_r:$
+In the first step, we multiply both curl equations by $\mathfrak{Re}\left[\mathbf{E}\right]$ and $\mathfrak{Re}\left[\mathbf{H}\right]:$
 $$
 \begin{aligned}
-& \mathbf{H}_r \cdot \nabla \times \mathbf{E}_r+\mu_0 \mathbf{H}_r \cdot \frac{\partial}{\partial t} \mathbf{H}_r=0 \\
-& \mathbf{E}_r \cdot \nabla \times \mathbf{H}_r-\varepsilon_0 \mathbf{E}_r \cdot \frac{\partial}{\partial t} \mathbf{E}_r=\mathbf{E}_r \cdot\left(\mathbf{j}_r+\frac{\partial}{\partial t} \mathbf{P}_r\right)
+& \mathfrak{Re}\left[\mathbf{H}\right]\cdot \nabla \times \mathfrak{Re}\left[\mathbf{E}\right]+\mu\mathfrak{Re}\left[\mathbf{H}\right]\cdot \frac{\partial}{\partial t} \mathfrak{Re}\left[\mathbf{H}\right]=0 \\
+& \mathfrak{Re}\left[\mathbf{E}\right]\cdot \nabla \times \mathfrak{Re}\left[\mathbf{H}\right]-\varepsilon \mathfrak{Re}\left[\mathbf{E}\right]\cdot \frac{\partial}{\partial t} \mathfrak{Re}\left[\mathbf{E}\right]=\mathfrak{Re}\left[\mathbf{E}\right]\cdot\left(\mathfrak{Re}\left[\mathbf{j}\right]+\frac{\partial}{\partial t} \mathfrak{Re}\left[\mathbf{P}\right]\right)
 \end{aligned}
 $$
 Subtracting both equations from each other, we obtain:
 $$
-\mathbf{H}_r \cdot \nabla \times \mathbf{E}_r-\mathbf{E}_r \cdot \nabla \times \mathbf{H}_r+\varepsilon_0 \mathbf{E}_r \cdot \frac{\partial}{\partial t} \mathbf{E}_r+\mu_0 \mathbf{H}_r \cdot \frac{\partial}{\partial t} \mathbf{H}_r=-\mathbf{E}_r \cdot\left(\mathbf{j}_r+\frac{\partial}{\partial t} \mathbf{P}_r\right).
+\begin{align}
+&\mathfrak{Re}\left[\mathbf{H}\right]\cdot \nabla \times \mathfrak{Re}\left[\mathbf{E}\right]-\mathfrak{Re}\left[\mathbf{E}\right]\cdot \nabla \times \mathfrak{Re}\left[\mathbf{H}\right]+\varepsilon\mathfrak{Re}\left[\mathbf{E}\right]\cdot \frac{\partial}{\partial t} \mathfrak{Re}\left[\mathbf{E}\right]+\mu\mathfrak{Re}\left[\mathbf{H}\right]\cdot \frac{\partial}{\partial t} \mathfrak{Re}\left[\mathbf{H}\right]\\=&-\mathfrak{Re}\left[\mathbf{E}\right]\cdot\left(\mathfrak{Re}\left[\mathbf{j}\right]+\frac{\partial}{\partial t} \mathfrak{Re}\left[\mathbf{P}\right]\right).
+\end{align}
 $$
 This expression is simplified to the Poynting theorem using
 $$
@@ -409,7 +398,7 @@ This is depicted in the next figure. The left box-like behaviour is captured by 
 Let us next explicitly calculate the instantaneous Poynting vector for such pulses:
 $$
 \begin{aligned}
-\mathbf{S}(\mathbf{r}, t) & =\mathbf{E}_r \times \mathbf{H}_r \\
+\mathbf{S}(\mathbf{r}, t) & =\mathfrak{Re}\left[\mathbf{E}\right]\times \mathfrak{Re}\left[\mathbf{H}\right]\\
 & =\frac{1}{4}\left[\widetilde{\mathbf{E}}(\mathbf{r}, t) \times \widetilde{\mathbf{H}}^*(\mathbf{r}, t)+\widetilde{\mathbf{E}}^*(\mathbf{r}, t) \times \widetilde{\mathbf{H}}(\mathbf{r}, t)\right] \\
 & +\frac{1}{4}\left[\widetilde{\mathbf{E}}(\mathbf{r}, t) \times \widetilde{\mathbf{H}}(\mathbf{r}, t) e^{-2 i \omega_0 t}+\widetilde{\mathbf{E}}^*(\mathbf{r}, t) \times \widetilde{\mathbf{H}}^*(\mathbf{r}, t) e^{2 i \omega_0 t}\right] \\
 & =\underbrace{\frac{1}{2} \mathfrak{Re}\left[\widetilde{\mathbf{E}}(\mathbf{r}, t) \times \widetilde{\mathbf{H}}^*(\mathbf{r}, t)\right]}_{\text {Slow }}+\underbrace{\frac{1}{2} \mathfrak{Re}[\widetilde{\mathbf{E}}(\mathbf{r}, t) \times \widetilde{\mathbf{H}}(\mathbf{r}, t)] \cos \left(2 \omega_0 t\right)}_{\text {Fast }} \\
