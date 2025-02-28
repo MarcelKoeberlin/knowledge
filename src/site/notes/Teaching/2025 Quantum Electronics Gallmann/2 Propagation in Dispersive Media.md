@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-02-28T18:11:59.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-02-28T18:15:41.000+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,10 +7,14 @@ Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#
 ---
 **Table of Contents**
 
-1. [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|2.1 Origin of Dispersion]]
-2. [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.2 Kramers-Kronig Relations\|2.2 Kramers-Kronig Relations]]
-3. [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.3 Equations in Frequency Domain\|2.3 Equations in Frequency Domain]]
-4. [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.4 Helmholtz Equation\|2.4 Helmholtz Equation]]
+- [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|2.1 Origin of Dispersion]]
+- [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.2 Kramers-Kronig Relations\|2.2 Kramers-Kronig Relations]]
+- [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.3 Equations in Frequency Domain\|2.3 Equations in Frequency Domain]]
+- [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.4 Helmholtz Equation\|2.4 Helmholtz Equation]]
+- [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.5 Refractive Index in Dispersive Media\|2.5 Refractive Index in Dispersive Media]]
+- [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.6 Light Pulses\|2.6 Light Pulses]]
+- [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.7 Time-Bandwidth Product of Wavepackets\|2.7 Time-Bandwidth Product of Wavepackets]]
+- [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.8 Phase, Group and Front Velocity\|2.8 Phase, Group and Front Velocity]]
 
 ---
 # 2 Propagation in Dispersive Media
@@ -264,7 +268,8 @@ $$
 \end{aligned}
 $$
 
-Next, assume again no free currents, and by using the harmonic ansatz for both electric and magnetic field allows us to obtain:$$
+Next, assume again no free currents, and by using the harmonic ansatz for both electric and magnetic field allows us to obtain:
+$$
 \nabla^2 \mathbf{E}+\mu_0 \mu_r \varepsilon_0 \omega^2 \mathbf{E}=-\mu_0 \mu_r \varepsilon_0 \chi^{(1)} \omega^2 \mathbf{E},
 $$
 from which follows
