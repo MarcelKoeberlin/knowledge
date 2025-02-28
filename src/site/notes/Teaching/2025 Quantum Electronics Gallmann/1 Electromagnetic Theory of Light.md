@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-02-28T11:05:28.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-02-28T13:49:01.000+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -116,13 +116,13 @@ $$
 $$
 As before, we have eliminated explicit dependence on the bound currents, leaving only free (macroscopic) current densities. An example of bound currents includes current loops arising from intrinsic spin or orbital angular momentum. We therefore can summarise the ==microscopic Maxwell equations in vacuum==, and the ==macroscopic Maxwell equations in a medium==:
 
-| Microscopic Maxwell's equations                                                                              | Macroscopic Maxwell's equations                                                         | Name                       | Auxiliary relations                                                                     |
-| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------- |
-| $\mathbf{\nabla} \cdot \mathbf{E}=\frac{\rho}{\epsilon_0}$                                                   | $\mathbf{\nabla} \cdot \mathbf{D}=\rho_f$                                               | Gauss' Law                 | $\mathbf{D}=\epsilon_0 \mathbf{E}+\mathbf{P}$                                           |
-| $\mathbf{\nabla} \cdot \mathbf{B}=0$                                                                         | $\mathbf{\nabla} \cdot \mathbf{B}=0$                                                    | Gauss' Law for Magnetism   | $\rho_b=-\nabla \cdot \mathbf{P}$                                                       |
-| $\mathbf{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$                                  | $\mathbf{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$             | Faraday's Law of Induction | $\mathbf{H}=\frac{1}{\mu_0} \mathbf{B}-\mathbf{M}$                                      |
-| $\nabla \times \mathbf{B}=\mu_0\left(\mathbf{J}+\varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}\right)$ | $\mathbf{\nabla} \times \mathbf{H}=\mathbf{j}_f+\frac{\partial \mathbf{D}}{\partial t}$ | Ampère-Maxwell Law         | $\mathbf{\nabla} \times \mathbf{M}=\mathbf{j}_b-\frac{\partial \mathbf{P}}{\partial t}$ |
-|                                                                                                              |                                                                                         |                            |                                                                                         |
+| Microscopic Maxwell's equations                                                                              | Macroscopic Maxwell's equations                                                         | Name                       |
+| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- | -------------------------- |
+| $\mathbf{\nabla} \cdot \mathbf{E}=\frac{\rho}{\epsilon_0}$                                                   | $\mathbf{\nabla} \cdot \mathbf{D}=\rho_f$                                               | Gauss' Law                 |
+| $\mathbf{\nabla} \cdot \mathbf{B}=0$                                                                         | $\mathbf{\nabla} \cdot \mathbf{B}=0$                                                    | Gauss' Law for Magnetism   |
+| $\mathbf{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$                                  | $\mathbf{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$             | Faraday's Law of Induction |
+| $\nabla \times \mathbf{B}=\mu_0\left(\mathbf{J}+\varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}\right)$ | $\mathbf{\nabla} \times \mathbf{H}=\mathbf{j}_f+\frac{\partial \mathbf{D}}{\partial t}$ | Ampère-Maxwell Law         |
+|                                                                                                              |                                                                                         |                            |
 Summarising, the auxiliary relations are given by 
 $$
 \begin{aligned}
