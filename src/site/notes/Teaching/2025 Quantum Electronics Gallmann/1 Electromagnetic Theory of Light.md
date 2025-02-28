@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-02-27T16:26:21.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-02-28T11:05:28.000+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -51,15 +51,20 @@ To describe electromagnetic waves in a medium, we need a framework that accounts
 
 $$
 \begin{aligned}
-\nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0}, \\
-\nabla \cdot \mathbf{B} &= 0, \\
-\nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t}, \\
-\nabla \times \mathbf{B} &= \mu_0 \left( \mathbf{j} + \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t} \right),
+1)&&\nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0}, \\
+2)&&\nabla \cdot \mathbf{B} &= 0, \\
+3)&&\nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t}, \\
+4)&&\nabla \times \mathbf{B} &= \mu_0 \left( \mathbf{j} + \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t} \right),
 \end{aligned}
 $$
-where $\mathbf{j}$ is the current density and $\rho$ is the charge density. However, determining these microscopic quantities exactly would require knowledge of every individual electron and nucleus, which is impractical. 
+where $\mathbf{j}$ is the current density and $\rho$ is the charge density. It is worth giving a meaning to each equation:
 
-To circumvent this, we introduce two macroscopic fields: the electric displacement field $\mathbf{D}$ and the magnetic field $\mathbf{H}$. These quantities result from an effective "averaging" over the medium, which is justified since atomic-scale structures are typically on the order of nanometres, whereas the relevant electromagnetic wavelengths are on the order of hundreds of nanometres.
+1. Gauss' Law: The electric field originates from charges. Positive charges act as sources, and negative charges act as sinks. The flux of $\mathbf{E}$ through a closed surface is proportional to the enclosed charge.
+2. Gauss' Law for Magnetism: There are no magnetic monopoles; magnetic field lines always form closed loops. This distinguishes magnetic fields from electric fields, which can have isolated point sources (charges).
+3. Faraday's Law of Induction: A time-dependent magnetic field creates a circulating electric field. This principle underlies electromagnetic induction, which is the basis of electrical generators, transformers, and inductors.
+4. Ampère-Maxwell Law: Magnetic fields are produced both by electric currents and by changing electric fields. The latter is known as displacement current and allows electromagnetic waves to propagate even in the absence of actual charge flow.
+
+While these equations describe the fundamental behaviour of electric and magnetic fields, solving them exactly in a material would require tracking every individual charge, which is impractical. Instead, we often work with **macroscopic** versions of Maxwell’s equations, which incorporate material response. To circumvent this, we introduce two auxiliary fields: the electric displacement field $\mathbf{D}$ and the magnetic field $\mathbf{H}$. These quantities result from an effective "averaging" over the medium, which is justified since atomic-scale structures are typically on the order of nanometres, whereas the relevant electromagnetic wavelengths are on the order of hundreds of nanometres.
 
 The macroscopic fields are defined as:
 
@@ -102,30 +107,28 @@ $$
 \nabla \cdot \mathbf{D} = \rho_f.
 $$
 At this point, we have successfully removed explicit dependence on the bound charges, such as immobile core electrons or localised valence electrons. A similar approach applies to the magnetic field. We define the magnetisation density as
-
 $$
 \nabla \times \mathbf{M} = \mathbf{j}_b - \frac{\partial \mathbf{P}}{\partial t},
 $$
-
 which leads to
-
 $$
 \nabla \times \mathbf{H} = \mathbf{j}_f + \varepsilon_0 \frac{\partial \mathbf{D}}{\partial t}.
 $$
-
 As before, we have eliminated explicit dependence on the bound currents, leaving only free (macroscopic) current densities. An example of bound currents includes current loops arising from intrinsic spin or orbital angular momentum. We therefore can summarise the ==microscopic Maxwell equations in vacuum==, and the ==macroscopic Maxwell equations in a medium==:
 
-| Microscopic Maxwell's equations in vacuum                                                   | Macroscopic Maxwell's equations in a medium                                             | Auxiliary relations                                                                     |
-| ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| $\mathbf{\nabla} \cdot \mathbf{E}=0$                                                        | $\mathbf{\nabla} \cdot \mathbf{D}=\rho_f$                                               | $\mathbf{D}=\epsilon_0 \mathbf{E}+\mathbf{P}$                                           |
-| $\mathbf{\nabla} \cdot \mathbf{B}=0$                                                        | $\mathbf{\nabla} \cdot \mathbf{B}=0$                                                    | $\rho_b=-\nabla \cdot \mathbf{P}$                                                       |
-| $\mathbf{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$                 | $\mathbf{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$             | $\mathbf{H}=\frac{1}{\mu_0} \mathbf{B}-\mathbf{M}$                                      |
-| $\mathbf{\nabla} \times \mathbf{B}=\epsilon_0 \mu_0 \frac{\partial \mathbf{E}}{\partial t}$ | $\mathbf{\nabla} \times \mathbf{H}=\mathbf{j}_f+\frac{\partial \mathbf{D}}{\partial t}$ | $\mathbf{\nabla} \times \mathbf{M}=\mathbf{j}_b-\frac{\partial \mathbf{P}}{\partial t}$ |
-
-The bound current density is given by  
-
+| Microscopic Maxwell's equations                                                                              | Macroscopic Maxwell's equations                                                         | Name                       | Auxiliary relations                                                                     |
+| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------- |
+| $\mathbf{\nabla} \cdot \mathbf{E}=\frac{\rho}{\epsilon_0}$                                                   | $\mathbf{\nabla} \cdot \mathbf{D}=\rho_f$                                               | Gauss' Law                 | $\mathbf{D}=\epsilon_0 \mathbf{E}+\mathbf{P}$                                           |
+| $\mathbf{\nabla} \cdot \mathbf{B}=0$                                                                         | $\mathbf{\nabla} \cdot \mathbf{B}=0$                                                    | Gauss' Law for Magnetism   | $\rho_b=-\nabla \cdot \mathbf{P}$                                                       |
+| $\mathbf{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$                                  | $\mathbf{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$             | Faraday's Law of Induction | $\mathbf{H}=\frac{1}{\mu_0} \mathbf{B}-\mathbf{M}$                                      |
+| $\nabla \times \mathbf{B}=\mu_0\left(\mathbf{J}+\varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}\right)$ | $\mathbf{\nabla} \times \mathbf{H}=\mathbf{j}_f+\frac{\partial \mathbf{D}}{\partial t}$ | Ampère-Maxwell Law         | $\mathbf{\nabla} \times \mathbf{M}=\mathbf{j}_b-\frac{\partial \mathbf{P}}{\partial t}$ |
+|                                                                                                              |                                                                                         |                            |                                                                                         |
+Summarising, the auxiliary relations are given by 
 $$
-\mathbf{j}_{\mathrm{b}}(\mathbf{r}, t) = \frac{\partial \mathbf{P}(\mathbf{r}, t)}{\partial t}.
+\begin{aligned}
+& \mathbf{D}=\epsilon_0 \mathbf{E}+\mathbf{P} \quad & \text{and}&\quad & \mathbf{H}&=\frac{1}{\mu_0} \mathbf{B}-\mathbf{M},\\
+& \rho_b=-\nabla \cdot \mathbf{P}\quad &\text{and}&\quad & \nabla \times \mathbf{M}&=\mathbf{j}_b-\frac{\partial \mathbf{P}}{\partial t}.
+\end{aligned}
 $$
 
 ---
