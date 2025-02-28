@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-02-28T18:08:08.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-02-28T18:11:59.000+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -10,6 +10,7 @@ Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#
 1. [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|2.1 Origin of Dispersion]]
 2. [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.2 Kramers-Kronig Relations\|2.2 Kramers-Kronig Relations]]
 3. [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.3 Equations in Frequency Domain\|2.3 Equations in Frequency Domain]]
+4. [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.4 Helmholtz Equation\|2.4 Helmholtz Equation]]
 
 ---
 # 2 Propagation in Dispersive Media
@@ -219,7 +220,8 @@ $$
 &\mathbf{D}(t)=\varepsilon_0 \mathbf{E}(t)+\mathbf{P}(t),\\
 &\mathbf{B}(t)=\mu_0[\mathbf{H}(t)+\mathbf{M}(t)].
 \end{align}
-$$Fourier transforming both equations results in
+$$
+Fourier transforming both equations results in
 $$
 \begin{align}
 &\mathbf{D}(\omega)=\varepsilon(\omega) \mathbf{E}(\omega),\\
@@ -295,6 +297,7 @@ $$
 \mathbf{E}(\mathbf{r}, t)=\tilde{\mathbf{E}}_0 e^{i\left(\omega_1 t-\mathbf{k}^{\prime}\left(\omega_1\right) \cdot \mathbf{r}\right)} e^{\mathbf{k}^{\prime \prime}\left(\omega_1\right) \cdot \mathbf{r}}.
 $$
 Therefore it becomes evident that the real part of the wavevector corresponds to an oscillating phase factor, whereas the imaginary part leads to a decay of the wave amplitude. This causes a loss of the energy carried by the wave as it moves through the medium. Since the imaginary part of the refractive index is negative, we have that 
+
 $$
 \mathbf{k}^\prime \parallel -\mathbf{k}^{\prime\prime},
 $$  
