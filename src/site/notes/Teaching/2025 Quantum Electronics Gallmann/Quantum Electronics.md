@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Quantum Electronics","permalink":"/notes/quantum-electronics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-02-16T20:51:43.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Quantum Electronics","permalink":"/notes/quantum-electronics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-02-28T18:02:53.000+01:00"}
 ---
 
 These notes follow along the lecture 'Quantum Electronics' taught by Prof. Gallmann in 2025, as well as the book [Fundamentals of Photonics](https://onlinelibrary.wiley.com/doi/book/10.1002/0471213748). This course is covered because I have to teach it. It can be seen as the introduction to [[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]].
@@ -19,5 +19,6 @@ We will primarily work with wavelengths in the visible and infrared range, spann
 # Table of Contents
 
 - [[Teaching/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light\|1 Electromagnetic Theory of Light]]
+- [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media\|2 Propagation in Dispersive Media]]
 
 ---
