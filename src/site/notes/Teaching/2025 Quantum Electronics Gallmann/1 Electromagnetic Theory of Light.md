@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-02-28T14:00:00.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-03-04T14:33:53.000+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -310,36 +310,31 @@ Taking the k-vector to point into the z-direction, linear polarisation means tha
 $$
 \mathbf{E}(\mathbf{r}, t)=E_0(\hat{\mathbf{x}} \cos \theta+\hat{\mathbf{y}} \sin \theta) \cos (\omega t-k z).
 $$
-Graphically:
-
-![Attachments/01_Introduction_and_theoretical_foundation 1.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation%201.webp)[[Teaching/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=53&rect=81,103,208,230|•]]
-
 The underlying physics comes from the dipole moments defined as $\mathbf{p}=q\mathbf{L},$ where $q$ is a charge and $\mathbf{L}$ is the vector separating the two charges of a dipole. Then, the polarisation $\mathbf{P}$ is the sum over all dipole moments in a volume $V.$ If there are $N$ dipoles per unit volume, and $\mathbf{p}$ is the average dipole moment, we obtain:
 $$
 \mathbf{P}=\frac{\sum_i \mathbf{p}_i}{V}=N \mathbf{p}.
 $$
-Polarisation is important in the interaction of light with matter: The amount of reflected light of a surface depends on  it, and also the amount of light absorbed. This is even more general - Light scattering is polarisation dependent. This also holds for the refractive index. However, light does not have to be polarised, it can also be elliptically polarised, an equal superposition of $E_x$ and $E_y$ with $\phi\neq0$:
+Polarisation is important in the interaction of light with matter: The amount of reflected light of a surface depends on  it, and also the amount of light absorbed. This is even more general - Light scattering is polarisation dependent. This also holds for the refractive index. However, light does not have to be polarised, it can also be elliptically polarised, where the projection onto the x-y plane moves elliptically.
 
-![Attachments/01_Introduction_and_theoretical_foundation 3.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation%203.webp)[[Teaching/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=55&rect=46,256,802,462|•]]
+This can be best shown graphically. In the following figures ([source](https://www.edmundoptics.com/knowledge-center/application-notes/optics/introduction-to-polarization/)), a wave oscillates (red) into the z-direction. The projections onto the x- and y-axis are in green, respectively blue. 
 
-Some more examples:
+Linear polarisation - the total electric field moves along a straight line on the x-y plane:
 
-![Attachments/01_Introduction_and_theoretical_foundation 4.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation%204.webp)[[Teaching/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=56&rect=24,97,818,465|•]]
+![Attachments/linear.gif|700](/img/user/Attachments/linear.gif)
 
-A so-called polariser lets only the project along a certain angle pass through. Namely, consider the electric field
+Elliptical polarisation - the total electric field moves along an elliptic line on the x-y plane:
+![Attachments/elliptical.gif|700](/img/user/Attachments/elliptical.gif)
+
+Circular polarisation - the total electric field moves along a circle on the x-y plane:
+![Attachments/circular.gif|700](/img/user/Attachments/circular.gif)
+
+It becomes clear, that circular polarisation is just a special case of elliptic polarisation. That is, the x- and y-amplitudes are equal (e.g. $E_x=E_y$), and the phase difference is $\pm\frac{\pi}{2}$. The case of positive phase difference is, in this context, called right-hand circular polarised, while the negative phase difference is called left-hand polarised. A so-called polariser lets only the project along a certain angle pass (a vector $\hat{\mathbf{e}}$) through. Namely, consider the electric field
+
+For a given input electric field $\mathbf{E}_{in}$, the output field can be calculated as 
 $$
-\begin{aligned}
-&\mathbf{E}_{in}(\mathbf{r}, t)=\frac{1}{2} E_0\left(\hat{\mathbf{x}}+\hat{\mathbf{y}} e^{i \phi}\right) e^{i(\omega t-k z)}+h . c ,
-\end{aligned}
+\mathbf{E}_{out}=\left(\hat{\mathbf{e}}\cdot \mathbf{E}_{in}\right)\hat{\mathbf{e}}\quad\text{where}\quad\hat{\mathbf{e}}=\cos\theta\cdot\hat{\mathbf{x}}+\sin\theta\cdot\hat{\mathbf{y}}.
 $$
-such that the output of the polariser turned to the angle $\theta$ is
-$$
-\mathbf{E}_{\text {out }}=\left[\mathbf{E}_{\text {in }} \cdot(\hat{\mathbf{x}} \cos \theta+\hat{\mathbf{y}} \sin \theta)\right](\hat{\mathbf{x}} \cos \theta+\hat{\mathbf{y}} \sin \theta).
-$$
-
-![Attachments/01_Introduction_and_theoretical_foundation 5.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation%205.webp)[[Teaching/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=58&rect=58,303,372,459|•]]
-
-![Attachments/01_Introduction_and_theoretical_foundation 6.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation%206.webp)[[Teaching/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=58&rect=432,289,738,449|•]]
+Here, $\theta$ is the angle of the polariser's axis to the coordinate axis. 
 
 ---
 ## 1.8 Poynting Vector and Poynting's Theorem

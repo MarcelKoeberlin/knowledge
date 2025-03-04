@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-02-09T21:53:39.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-03-02T12:39:40.000+01:00"}
 ---
 
-These notes will mostly follow along the book [Signals and Systems - 2nd edition](https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574) by Alan V. Oppenheim and Alan S. Willsky. 
+These notes will mostly follow along the book [Signals and Systems - 2nd edition](https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574) by A. Oppenheim and A. Willsky, and [Discrete-Time Signal Processing](https://www.amazon.com/Discrete-Time-Signal-Processing-3rd-Prentice-Hall/dp/0131988425) by A. Oppenheim and R. Schafter.
 
 ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|Table of Contents]]==
 

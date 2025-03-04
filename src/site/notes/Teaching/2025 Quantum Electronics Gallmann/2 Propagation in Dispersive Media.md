@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-03-04T14:15:08.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-03-04T14:39:23.000+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -15,9 +15,6 @@ Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#
 - [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.6 Light Pulses\|2.6 Light Pulses]]
 - [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.7 Time-Bandwidth Product of Wavepackets\|2.7 Time-Bandwidth Product of Wavepackets]]
 - [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.8 Phase, Group and Front Velocity\|2.8 Phase, Group and Front Velocity]]
-
-![Attachments/intro-polarization-fig-3a-new 1.gif](/img/user/Attachments/intro-polarization-fig-3a-new%201.gif)
-
 
 ---
 # 2 Propagation in Dispersive Media
@@ -47,7 +44,7 @@ $$
 \mathbf{M}(\omega) & =\chi_m(\omega) \mathbf{H}(\omega).
 \end{aligned}
 $$
-These quantities are in general complex. The form of these two quantities has the same form as in [[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2 Linear Time-Invariant Systems\|linear systems theory]]: The response $(\mathbf{P}$ and $\mathbf{M})$ is a convolution of an input signal ($\mathbf{E}$ and $\mathbf{H}$) with a transfer/impulse response (the susceptibilities). We are finally at a point, where we can define dispersion properly: ==Dispersion means that the response function depends on frequency. ==
+These quantities are in general complex. The form of these two quantities has the same form as in [[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2 Linear Time-Invariant Systems\|linear systems theory]]: The response $(\mathbf{P}$ and $\mathbf{M})$ is a convolution of an input signal ($\mathbf{E}$ and $\mathbf{H}$) with a transfer/impulse response (the susceptibilities). We are finally at a point, where we can define dispersion properly: ==Dispersion means that the response function depends on frequency.==
 
 To understand the meaning of a complex susceptibility, consider applying an electric field $\mathbf{E}(t)=\mathbf{E}_0 \cos \left(\omega_0 t\right)$ to a medium. The Fourier transform is readily obtained as
 $$
@@ -71,7 +68,7 @@ $$
 \end{aligned}
 $$
 where we used that the time-domain susceptibility is real, $\chi\left(-\omega_0\right)=\chi\left(\omega_0\right)^*.$ 
-Therefore, we can see that $\left|\chi_0(\omega)\right|=\frac{P_0}{\varepsilon_0E_0}$ gives the amplitude of the polarisation density response, whereas the complex phase of $\chi\left(\omega_0\right)$ gives a phase shift in time. This is shown in the next figure:
+Therefore, we can see that $\left|\chi(\omega_0)\right|=\frac{P_0}{\varepsilon_0E_0}$ gives the amplitude of the polarisation density response, whereas the complex phase of $\chi\left(\omega_0\right)$ gives a phase shift in time. This is shown in the next figure:
 
 ![Attachments/01_Introduction_and_theoretical_foundation 9.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation%209.webp)[[Teaching/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=75&rect=583,279,814,476|•]]
 
@@ -337,7 +334,7 @@ Again, let us stress that the frequency-dependence of the refractive index is in
 
 ![Attachments/01_Introduction_and_theoretical_foundation 14.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation%2014.webp)[[Teaching/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=113&rect=342,151,752,471|•]]
 
-For most optically transparent media (meaning that they have low attenuation), the strongest electronic resonances lie at higher energies, corresponding to $\omega\ll\omega_0.$ Further assuming weak damping makes the imaginary part of the susceptibility become very small, while its real part approaches $\chi_0. Since $\frac{\operatorname{d}\chi}{\operatorname{d}\omega}>0,$ and $n(\omega)=\sqrt{1+\chi(\omega)},$ this implies that the refractive index exhibits 'normal' dispersion, e.g.
+For most optically transparent media (meaning that they have low attenuation), the strongest electronic resonances lie at higher energies, corresponding to $\omega\ll\omega_0.$ Further assuming weak damping makes the imaginary part of the susceptibility become very small, while its real part approaches $\chi_0$. Since $\frac{\operatorname{d}\chi}{\operatorname{d}\omega}>0,$ and $n(\omega)=\sqrt{1+\chi(\omega)},$ this implies that the refractive index exhibits 'normal' dispersion, e.g.
  $$
  \begin{align}
  \text{Normal dispersion:}\quad&\frac{\operatorname{d}n}{\operatorname{d}\omega}>0,\\
