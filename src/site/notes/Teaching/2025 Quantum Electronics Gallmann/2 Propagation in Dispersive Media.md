@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-02-28T18:15:41.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-03-04T14:15:08.000+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -15,6 +15,9 @@ Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#
 - [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.6 Light Pulses\|2.6 Light Pulses]]
 - [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.7 Time-Bandwidth Product of Wavepackets\|2.7 Time-Bandwidth Product of Wavepackets]]
 - [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.8 Phase, Group and Front Velocity\|2.8 Phase, Group and Front Velocity]]
+
+![Attachments/intro-polarization-fig-3a-new 1.gif](/img/user/Attachments/intro-polarization-fig-3a-new%201.gif)
+
 
 ---
 # 2 Propagation in Dispersive Media
@@ -437,7 +440,16 @@ To really bring home the effect of a chirp, consider the difference between an u
 
 ![Attachments/01_Introduction_and_theoretical_foundation 21.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation%2021.webp)[[Teaching/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=132&rect=400,240,774,496|•]]
 
-We can see that the pulse duration (FWHM) of the blue pulse is shorter than that of the orange pulse. 
+We can see that the pulse duration (FWHM) of the blue pulse is shorter than that of the orange pulse. If a chirp is positive, the 'red' part of the spectrum is faster than the 'blue' faster, while for negative chirp, 'blue' comes before 'red'. This depends on the sign of the GVD. 
+Usually, dispersion is defined as
+$$
+D=-\frac{1}{v_g^2} \frac{d v_g}{d \lambda_0}=-\frac{\lambda_0}{c} \frac{d^2 n^{\prime}}{d \lambda_0^2},
+$$
+with its dimensions being time over distance squared. Often, the units ps/nm/km are used in telecommunications, where optical fibres can be kilometres long. The duration of the broadened pulse can then be obtained via
+$$
+\tau \approx \sqrt{\Delta t^2+\left(D \Delta \lambda_0 \Delta z\right)^2},
+$$
+where $\Delta t$ is the initial duration, $\Delta \lambda_0$ is the bandwidth expressed in wavelengths (and units of nm) and $\Delta z$ is the propagation distance, expressed in km.
 
 ---
 ## 2.8 Phase, Group and Front Velocity
