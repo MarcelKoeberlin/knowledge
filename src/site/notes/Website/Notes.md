@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes","permalink":"/notes/","hide":"true","dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-02-28T18:16:15.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes","permalink":"/notes/","hide":"true","dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-03-09T20:48:21.333+01:00"}
 ---
 
 This is the perfect place to start reading up on some topics:
@@ -15,6 +15,6 @@ This is the perfect place to start reading up on some topics:
 | [[Notes/Microelectronic Circuits/Microelectronic Circuits\|Microelectronic Circuits]]             | ❌ not started yet  |     |
 | [[Notes/Attosecond Physics/Attosecond Physics\|Attosecond Physics]]                               | Chapter 3/?        |     |
 | Quantum Information Theory                                                                        | ❌ not started yet  |     |
-| [[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics\|Quantum Electronics]]           | Chapter 2/?        |     |
+| [[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics\|Quantum Electronics]]           | Chapter 3/?        |     |
 
 You may also use the graph on the left to select your next topic.
