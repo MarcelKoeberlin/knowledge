@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-03-04T14:39:23.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-03-04T16:53:29.000+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -30,10 +30,10 @@ $$
 $$
 Intuitively, consider that the electric fields creates a polarisation by inducing an oscillation of the bound electrons in the atoms of the medium, collectively producing the polarisation density. A time delay between cause and effect comes from the finite response time of the atoms. In other words, they can not react infinitely fast to sudden changes in the fields.
 
-With our prior assumption, we were able to drop the integral. This is no longer the case, hence we must use:
+With our prior assumption, we were able to drop the integral. This is no longer the case, hence we use
 $$
 \begin{aligned}
-\mathbf{P}(t) & =\int_{-\infty}^{\infty} \varepsilon_0 \chi\left(t-t^{\prime}\right) \mathbf{E}\left(t^{\prime}\right) d t^{\prime} \\
+\mathbf{P}(t) & =\int_{-\infty}^{\infty} \varepsilon_0 \chi\left(t-t^{\prime}\right) \mathbf{E}\left(t^{\prime}\right) d t^{\prime}, \\
 \mathbf{M}(t) & =\int_{-\infty}^{\infty} \chi_m\left(t-t^{\prime}\right) \mathbf{H}\left(t^{\prime}\right) d t^{\prime}.
 \end{aligned}
 $$
@@ -402,6 +402,12 @@ $$
 n_g \equiv c / v_g=c \frac{d k^{\prime}}{d \omega}=n^{\prime}+\omega \frac{d n^{\prime}}{d \omega}=n^{\prime}-\lambda_0 \frac{d n^{\prime}}{d \lambda_0}.
 $$
 The group velocity in this form is also valid for many frequency components, as long as the group velocity does not change much over the spectral bandwidth of the pulse (e.g. all frequency components have similar 'speed'). Small deviations away from this ideal condition lead to pulse broadening. For transparent optical materials, the group velocity is usually smaller than the phase velocity. 
+
+Lastly, consider the following figure:
+
+![Attachments/Wave_group.gif|700](/img/user/Attachments/Wave_group.gif)
+
+In this figure, the green points represent the group velocity, while red represents the phase velocity. Note, we defined the group velocity as the speed of the envelope maximum, but the figure is valid as well to show the difference, since it assumes no pulse broadening. 
 
 ---
 ## 2.7 Time-Bandwidth Product of Wavepackets

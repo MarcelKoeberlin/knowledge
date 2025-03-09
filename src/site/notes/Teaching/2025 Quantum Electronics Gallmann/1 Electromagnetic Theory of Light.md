@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-03-04T14:33:53.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-03-09T18:55:24.445+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -376,6 +376,12 @@ This expression is simplified to the Poynting theorem using
 $$
 \mathbf{A} \cdot \nabla \times \mathbf{B}-\mathbf{B} \cdot \nabla \times \mathbf{A}=\nabla \cdot\left(\mathbf{B} \times \mathbf{A}\right).
 $$
+
+Lastly an animation to illustrate the electromagnetic wave and its Poynting vector in vacuum:
+
+![Attachments/vacuum.gif|700](/img/user/Attachments/vacuum.gif)
+![Attachments/poyntingvacuum.png|700](/img/user/Attachments/poyntingvacuum.png)
+
 
 ---
 ## 1.9 Timescales
