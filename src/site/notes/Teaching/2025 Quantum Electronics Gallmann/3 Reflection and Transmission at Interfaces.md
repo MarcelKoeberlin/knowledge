@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/3-reflection-and-transmission-at-interfaces/","hide":"true","updated":"2025-03-09T20:46:52.211+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/3-reflection-and-transmission-at-interfaces/","hide":"true","updated":"2025-03-09T20:52:08.310+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -164,38 +164,22 @@ n_1 \cos \theta_2=n_2 \cos \theta_1.
 $$
 We assume that $n_1$ and $n_2$ are both real, such that we obtain
 $$
-\cos
-{ #2}
- \theta_2=\left(\frac{n_2 \cos \theta_1}{n_1}\right)^2.
+\cos^2 \theta_2=\left(\frac{n_2 \cos \theta_1}{n_1}\right)^2.
 $$
 Using Snell's law results in:
 
 $$
-\sin
-{ #2}
- \theta_2=\left(\frac{n_1 \sin \theta_1}{n_2}\right)^2.
+\sin^2 \theta_2=\left(\frac{n_1 \sin \theta_1}{n_2}\right)^2.
 $$
 Adding the last two relations yields
 
 $$
-\sin
-{ #2}
- \theta_2+\cos
-{ #2}
- \theta_2=1=\sin
-{ #2}
- \theta_1+\cos
-{ #2}
- \theta_1=\left(\frac{n_1 \sin \theta_1}{n_2}\right)^2+\left(\frac{n_2 \cos \theta_1}{n_1}\right)^2,
+\sin^2 \theta_2+\cos^2 \theta_2=1=\sin^2 \theta_1+\cos^2 \theta_1=\left(\frac{n_1 \sin \theta_1}{n_2}\right)^2+\left(\frac{n_2 \cos \theta_1}{n_1}\right)^2,
 $$
 which then can be written
 $$
 \begin{gathered}
-\left(\frac{n_1^2-n_2^2}{n_2^2}\right) \sin
-{ #2}
- \theta_1=\left(\frac{n_1^2-n_2^2}{n_1^2}\right) \cos
-{ #2}
- \theta_1 .
+\left(\frac{n_1^2-n_2^2}{n_2^2}\right) \sin^2 \theta_1=\left(\frac{n_1^2-n_2^2}{n_1^2}\right) \cos^2 \theta_1 .
 \end{gathered}
 $$
 Then, we finally obtain
@@ -245,11 +229,7 @@ Before considering this concept, let us first clarify what _internal_ refers to:
 
 Therefore, we are in the case of $n_1>n_2,$ such that the wave hits an interface to an optically less dense medium. Then, we can find that
 $$
-\cos \theta_2=\sqrt{1-\sin
-{ #2}
- \theta_2}=\sqrt{1-\frac{n_1^2}{n_2^2} \sin
-{ #2}
- \theta_1}
+\cos \theta_2=\sqrt{1-\sin^2 \theta_2}=\sqrt{1-\frac{n_1^2}{n_2^2} \sin^2 \theta_1}
 $$
 becomes purely imaginary for angles larger than the critical angle:
 $$
@@ -281,9 +261,7 @@ must hold. Since $\cos\theta_2$ is purely imaginary, the real part of $\mathbf{k
 We find the transmitted wave to be $\vec{E}^{(2)} e^{i\left(\omega t-k_x x-k_y y\right)} e^{-\gamma z}$, with the associated field attenuation factor
 $$
 \begin{aligned}
-& \gamma=-i 2 \pi n_2 \cos \theta_2 / \lambda_v=\frac{2 \pi}{\lambda_v} \sqrt{n_1^2 \sin
-{ #2}
- \theta_1-n_2^2}.
+& \gamma=-i 2 \pi n_2 \cos \theta_2 / \lambda_v=\frac{2 \pi}{\lambda_v} \sqrt{n_1^2 \sin^2 \theta_1-n_2^2}.
 \end{aligned}
 $$
 
