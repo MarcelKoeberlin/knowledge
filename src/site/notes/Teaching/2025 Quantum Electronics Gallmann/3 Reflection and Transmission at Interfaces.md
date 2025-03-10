@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/3-reflection-and-transmission-at-interfaces/","hide":"true","updated":"2025-03-09T20:52:08.310+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/3-reflection-and-transmission-at-interfaces/","hide":"true","updated":"2025-03-10T10:50:54.000+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -287,7 +287,7 @@ This effect can be used for sensing, the most prominent of them being the finger
 
 ![Attachments/01_Introduction_and_theoretical_foundation 30.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation%2030.webp)[[Teaching/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=200&rect=197,169,638,455|•]]
 
-They may also be used for polarisation manipulation in the form of a Fresnel rhomb, which transform linearly polarised light into circularly polarised light. For linearly polarised light, both components are in phase. After one reflection at the appropriate angle, the p-polarised light experiences an $1/8$-cycle phase shift relative to the s-component. After two such reflections, the initially linearly polarised light becomes elliptically polarised. For initial equal magnitude of both electric field components, it becomes circularly polarised. 
+They may also be used for polarisation manipulation in the form of a Fresnel rhomb, which transform linearly polarised light into circularly polarised light. For linearly polarised light, both components are in phase. After one reflection at the appropriate angle (these are 50.2 and 53.3 degrees for $n=1.5$), the p-polarised light experiences a $\pi/4$ phase shift relative to the s-component. After two such reflections, the initially linearly polarised light becomes elliptically polarised. For initial equal magnitude of both electric field components, it becomes circularly polarised, since the total **relative** phase shift between p- and s-component is 90 degrees, or $\pi/2.$  
 
 ![Attachments/01_Introduction_and_theoretical_foundation 31.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation%2031.webp)[[Teaching/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=202&rect=55,124,363,479|•]]
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Quantum Electronics","permalink":"/notes/quantum-electronics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-03-09T20:47:07.846+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Quantum Electronics","permalink":"/notes/quantum-electronics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-03-09T20:47:07.000+01:00"}
 ---
 
 These notes follow along the lecture 'Quantum Electronics' taught by Prof. Gallmann in 2025, as well as the book [Fundamentals of Photonics](https://onlinelibrary.wiley.com/doi/book/10.1002/0471213748). This course is covered because I have to teach it. It can be seen as the introduction to [[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]]. Many excellent gifs have been taken from [Maxwell2D](https://www.met.reading.ac.uk/clouds/maxwell/) unless specified otherwise. 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/9-identical-quantum-particles-formalism-of-second-quantisation/","hide":"true","updated":"2025-02-08T20:38:10.339+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/9-identical-quantum-particles-formalism-of-second-quantisation/","hide":"true","updated":"2025-02-07T10:57:49.000+01:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -272,7 +272,7 @@ Removing now one particle yields
 $$
 \begin{align*}
 \begin{aligned}
-\hat{a}_{2}|1,1,1,1\rangle & =\hat{a}_{2}\left[\hat{a}_{4}^{\dagger} \hat{a}_{3}^{\dagger} \hat{a}_{2}^{\dagger} \hat{a}_{1}^{\dagger}\right]|0\rangle=\hat{a}_{4}^{\dagger} \hat{a}_{3}^{\dagger} \hat{a}_{2} \hat{a}_{2}^{\dagger} \hat{a}_{1}^{\dagger}|0\rangle\\&=\hat{a}_{4}^{\dagger} \hat{a}_{3}^{\dagger}\left(1-\hat{a}_{2}^{\dagger} \hat{a}_{2}\right) \hat{a}_{1}^{\dagger}|0\rangle \\
+\hat{a}_{2}|1,1,1,1\rangle & =\hat{a}_{2}\left[\hat{a}_{4}^{\dagger} \hat{a}_{3}^{\dagger} \hat{a}_{2}^{\dagger} \hat{a}_{1}^{\dagger}\right]|0\rangle=\hat{a}_{4}^{\dagger} \hat{a}_{3}^{\dagger} \hat{a}_{2} \hat{a}_{2}^{\dagger} \hat{a}_{1}^{\dagger}|0\rangle=\hat{a}_{4}^{\dagger} \hat{a}_{3}^{\dagger}\left(1-\hat{a}_{2}^{\dagger} \hat{a}_{2}\right) \hat{a}_{1}^{\dagger}|0\rangle \\
 & =\hat{a}_{4}^{\dagger} \hat{a}_{3}^{\dagger} \hat{a}_{1}^{\dagger}|0\rangle=|1,0,1,1\rangle
 \end{aligned}
 \end{align*}
@@ -281,7 +281,7 @@ and now analogously
 $$
 \begin{align*}
 \begin{aligned}
-\hat{a}_{3}|1,1,1,1\rangle & =\hat{a}_{3}\left[\hat{a}_{4}^{\dagger} \hat{a}_{3}^{\dagger} \hat{a}_{2}^{\dagger} \hat{a}_{1}^{\dagger}\right]|0\rangle=-\hat{a}_{4}^{\dagger} \hat{a}_{3} \hat{a}_{3}^{\dagger} \hat{a}_{2}^{\dagger} \hat{a}_{1}^{\dagger}|0\rangle\\&=-\hat{a}_{4}^{\dagger}\left(1-\hat{a}_{3}^{\dagger} \hat{a}_{3}\right) \hat{a}_{2}^{\dagger} \hat{a}_{1}^{\dagger}|0\rangle \\
+\hat{a}_{3}|1,1,1,1\rangle & =\hat{a}_{3}\left[\hat{a}_{4}^{\dagger} \hat{a}_{3}^{\dagger} \hat{a}_{2}^{\dagger} \hat{a}_{1}^{\dagger}\right]|0\rangle=-\hat{a}_{4}^{\dagger} \hat{a}_{3} \hat{a}_{3}^{\dagger} \hat{a}_{2}^{\dagger} \hat{a}_{1}^{\dagger}|0\rangle=-\hat{a}_{4}^{\dagger}\left(1-\hat{a}_{3}^{\dagger} \hat{a}_{3}\right) \hat{a}_{2}^{\dagger} \hat{a}_{1}^{\dagger}|0\rangle \\
 & =-\hat{a}_{4}^{\dagger} \hat{a}_{2}^{\dagger} \hat{a}_{1}^{\dagger}|0\rangle=-|1,1,0,1\rangle
 \end{aligned}
 \end{align*}
@@ -327,25 +327,21 @@ $$
 The field operators also satisfy (anti-)commuation relations,
 $$
 \begin{align*}
-&\widehat{\Psi}_{s}(\boldsymbol{r}) \widehat{\Psi}_{s^{\prime}}^{\dagger}\left(\boldsymbol{r}^{\prime}\right) \mp \widehat{\Psi}_{s^{\prime}}^{\dagger}\left(\boldsymbol{r}^{\prime}\right) \widehat{\Psi}_{s}(\boldsymbol{r})\\=&\frac{1}{V} \sum_{\boldsymbol{k}, \boldsymbol{k}^{\prime}} e^{i \boldsymbol{k} \cdot \boldsymbol{r}-i \boldsymbol{k}^{\prime} \cdot \boldsymbol{r}^{\prime}} \underbrace{\left(\hat{a}_{\boldsymbol{k} s} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger} \mp \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger} \hat{a}_{\boldsymbol{k} s}\right)}_{=\delta_{\boldsymbol{k} \boldsymbol{k}^{\prime}} \delta_{s s^{\prime}}}=\delta\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right) \delta_{s s^{\prime}}
+\widehat{\Psi}_{s}(\boldsymbol{r}) \widehat{\Psi}_{s^{\prime}}^{\dagger}\left(\boldsymbol{r}^{\prime}\right) \mp \widehat{\Psi}_{s^{\prime}}^{\dagger}\left(\boldsymbol{r}^{\prime}\right) \widehat{\Psi}_{s}(\boldsymbol{r})=\frac{1}{V} \sum_{\boldsymbol{k}, \boldsymbol{k}^{\prime}} e^{i \boldsymbol{k} \cdot \boldsymbol{r}-i \boldsymbol{k}^{\prime} \cdot \boldsymbol{r}^{\prime}} \underbrace{\left(\hat{a}_{\boldsymbol{k} s} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger} \mp \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger} \hat{a}_{\boldsymbol{k} s}\right)}_{=\delta_{\boldsymbol{k} \boldsymbol{k}^{\prime}} \delta_{s s^{\prime}}}=\delta\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right) \delta_{s s^{\prime}}
 \end{align*}
 $$
 and analogously
 $$
 \begin{align*}
-\widehat{\Psi}_{s}(\boldsymbol{r}) \widehat{\Psi}_{s^{\prime}}\left(\boldsymbol{r}^{\prime}\right) \mp \widehat{\Psi}_{s^{\prime}}\left(\boldsymbol{r}^{\prime}\right) \widehat{\Psi}_{s}(\boldsymbol{r})=0 
+\widehat{\Psi}_{s}(\boldsymbol{r}) \widehat{\Psi}_{s^{\prime}}\left(\boldsymbol{r}^{\prime}\right) \mp \widehat{\Psi}_{s^{\prime}}\left(\boldsymbol{r}^{\prime}\right) \widehat{\Psi}_{s}(\boldsymbol{r})=0 \quad \text { and } \quad \widehat{\Psi}_{s}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}_{s^{\prime}}^{\dagger}\left(\boldsymbol{r}^{\prime}\right) \mp \widehat{\Psi}_{s^{\prime}}^{\dagger}\left(\boldsymbol{r}^{\prime}\right) \widehat{\Psi}_{s}^{\dagger}(\boldsymbol{r})=0
 \end{align*}
-$$
-and 
-$$
-\widehat{\Psi}_{s}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}_{s^{\prime}}^{\dagger}\left(\boldsymbol{r}^{\prime}\right) \mp \widehat{\Psi}_{s^{\prime}}^{\dagger}\left(\boldsymbol{r}^{\prime}\right) \widehat{\Psi}_{s}^{\dagger}(\boldsymbol{r})=0.
 $$
 for Bosons ( - ) and Fermions ( + ). Taking these relations it becomes also clear that
 $$
 \begin{align*}
 \begin{aligned}
 \left\langle\boldsymbol{r}^{\prime}, s^{\prime} \mid \boldsymbol{r}, s\right\rangle & =\langle 0| \widehat{\Psi}_{s^{\prime}}\left(\boldsymbol{r}^{\prime}\right) \widehat{\Psi}_{s}(\boldsymbol{r})^{\dagger}|0\rangle \\
-& =\langle 0| \delta\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right) \delta_{s s^{\prime}}|0\rangle \mp \underbrace{\langle 0| \widehat{\Psi}_{s}(\boldsymbol{r})^{\dagger} \widehat{\Psi}_{s^{\prime}}\left(\boldsymbol{r}^{\prime}\right)|0\rangle}_{=0}\\&=\delta\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right) \delta_{s s^{\prime}}
+& =\langle 0| \delta\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right) \delta_{s s^{\prime}}|0\rangle \mp \underbrace{\langle 0| \widehat{\Psi}_{s}(\boldsymbol{r})^{\dagger} \widehat{\Psi}_{s^{\prime}}\left(\boldsymbol{r}^{\prime}\right)|0\rangle}_{=0}=\delta\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right) \delta_{s s^{\prime}}
 \end{aligned}
 \end{align*}
 $$
@@ -548,8 +544,8 @@ where we use the Hamiltonian $\mathcal{H}^{\prime}=\mathcal{H}-\mu \widehat{N}$.
 $$
 \begin{align*}
 \begin{aligned}
-\operatorname{tr}\left\{e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k}}^{\dagger} \hat{a}_{\boldsymbol{k}}\right\} & =\operatorname{tr}\left\{e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k}}^{\dagger} e^{\beta \mathcal{H}^{\prime}} e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k}}\right\}\\&=e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)} \operatorname{tr}\left\{\hat{a}_{\boldsymbol{k}}^{\dagger} e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k}}\right\} \\
-& =e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)} \operatorname{tr}\left\{e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k}} \hat{a}_{\boldsymbol{k}}^{\dagger}\right\}\\&=e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)} \operatorname{tr}\left\{e^{-\beta \mathcal{H}^{\prime}}\left[1 \pm \hat{a}_{\boldsymbol{k}}^{\dagger} \hat{a}_{\boldsymbol{k}}\right]\right\}
+\operatorname{tr}\left\{e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k}}^{\dagger} \hat{a}_{\boldsymbol{k}}\right\} & =\operatorname{tr}\left\{e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k}}^{\dagger} e^{\beta \mathcal{H}^{\prime}} e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k}}\right\}=e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)} \operatorname{tr}\left\{\hat{a}_{\boldsymbol{k}}^{\dagger} e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k}}\right\} \\
+& =e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)} \operatorname{tr}\left\{e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k}} \hat{a}_{\boldsymbol{k}}^{\dagger}\right\}=e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)} \operatorname{tr}\left\{e^{-\beta \mathcal{H}^{\prime}}\left[1 \pm \hat{a}_{\boldsymbol{k}}^{\dagger} \hat{a}_{\boldsymbol{k}}\right]\right\}
 \end{aligned}
 \end{align*}
 $$
@@ -593,7 +589,7 @@ At $T=0$ we obtain
 $$
 \begin{align*}
 \begin{aligned}
-\frac{n}{2} g_{s}\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right) & =\int_{|\boldsymbol{k}| \leq k_{F}} \frac{d^{3} k}{(2 \pi)^{3}} e^{-i \boldsymbol{k} \cdot\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)}\\&=\frac{1}{(2 \pi)^{2}} \int_{0}^{k_{F}} d k k^{2} \int_{-1}^{+1} d \cos \theta e^{i k\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right| \cos \theta} \\
+\frac{n}{2} g_{s}\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right) & =\int_{|\boldsymbol{k}| \leq k_{F}} \frac{d^{3} k}{(2 \pi)^{3}} e^{-i \boldsymbol{k} \cdot\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)}=\frac{1}{(2 \pi)^{2}} \int_{0}^{k_{F}} d k k^{2} \int_{-1}^{+1} d \cos \theta e^{i k\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right| \cos \theta} \\
 & =\frac{1}{2 \pi^{2}\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|} \int_{0}^{k_{F}} d k k \sin \left(k\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|\right)=\left.\frac{3 n}{2} \frac{\sin x-x \cos x}{x^{3}}\right|_{x=k_{F}\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|}
 \end{aligned}
 \end{align*}
@@ -654,7 +650,7 @@ $$
 From this we find
 $$
 \begin{align*}
-\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle&=\frac{1}{e^{\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}+1}\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle\left(\delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}-\delta_{\boldsymbol{q}^{\prime}, \boldsymbol{k}} \delta_{\boldsymbol{q}, \boldsymbol{k}^{\prime}}\right)\\&=\left\langle\widehat{n}_{\boldsymbol{k}, s}\right\rangle\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle\left(\delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}-\delta_{\boldsymbol{q}^{\prime}, \boldsymbol{k}} \delta_{\boldsymbol{q}, \boldsymbol{k}^{\prime}}\right) .
+\left\langle\widehat{a}_{\boldsymbol{k} s}^{\dagger} \widehat{a}_{\boldsymbol{q} s}^{\dagger} \widehat{a}_{\boldsymbol{q}^{\prime} s} \widehat{a}_{\boldsymbol{k}^{\prime} s}\right\rangle=\frac{1}{e^{\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}+1}\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle\left(\delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}-\delta_{\boldsymbol{q}^{\prime}, \boldsymbol{k}} \delta_{\boldsymbol{q}, \boldsymbol{k}^{\prime}}\right)=\left\langle\widehat{n}_{\boldsymbol{k}, s}\right\rangle\left\langle\widehat{n}_{\boldsymbol{q}, s}\right\rangle\left(\delta_{\boldsymbol{q}, \boldsymbol{q}^{\prime}} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}-\delta_{\boldsymbol{q}^{\prime}, \boldsymbol{k}} \delta_{\boldsymbol{q}, \boldsymbol{k}^{\prime}}\right) .
 \end{align*}
 $$
 - $s \neq s^{\prime}$ :
@@ -673,7 +669,7 @@ $$
 From this it follows straightforwardly for $s=s^{\prime}$,
 $$
 \begin{align*}
-\left(\frac{n}{2}\right)^{2} g_{s s}\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)&=\frac{1}{V^{2}} \sum_{\boldsymbol{k}, \boldsymbol{q}}\left(1-e^{-i(\boldsymbol{k}-\boldsymbol{q}) \cdot\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)}\right)\left\langle\widehat{n}_{\boldsymbol{k} s}\right\rangle\left\langle\widehat{n}_{\boldsymbol{q} s}\right\rangle\\&=\left(\frac{n}{2}\right)^{2}\left[1-g_{s}\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)^{2}\right]
+\left(\frac{n}{2}\right)^{2} g_{s s}\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)=\frac{1}{V^{2}} \sum_{\boldsymbol{k}, \boldsymbol{q}}\left(1-e^{-i(\boldsymbol{k}-\boldsymbol{q}) \cdot\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)}\right)\left\langle\widehat{n}_{\boldsymbol{k} s}\right\rangle\left\langle\widehat{n}_{\boldsymbol{q} s}\right\rangle=\left(\frac{n}{2}\right)^{2}\left[1-g_{s}\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)^{2}\right]
 \end{align*}
 $$
 and we can write,
@@ -696,7 +692,7 @@ The density depletion around such a Fermion is then,
 $$
 \begin{align*}
 \begin{aligned}
-n \int d^{3} r(g(\boldsymbol{r})-1) & =-\frac{n}{2} \int d^{3} r\left\{g_{s}(\boldsymbol{r})\right\}^{2}\\&=-\frac{2}{n} \int d^{3} r \frac{1}{V^{2}} \sum_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}\left\langle\widehat{n}_{\boldsymbol{k} s}\right\rangle\left\langle\widehat{n}_{\boldsymbol{k}^{\prime} s}\right\rangle e^{i\left(\boldsymbol{k}-\boldsymbol{k}^{\prime}\right) \cdot \boldsymbol{r}} \\
+n \int d^{3} r(g(\boldsymbol{r})-1) & =-\frac{n}{2} \int d^{3} r\left\{g_{s}(\boldsymbol{r})\right\}^{2}=-\frac{2}{n} \int d^{3} r \frac{1}{V^{2}} \sum_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}\left\langle\widehat{n}_{\boldsymbol{k} s}\right\rangle\left\langle\widehat{n}_{\boldsymbol{k}^{\prime} s}\right\rangle e^{i\left(\boldsymbol{k}-\boldsymbol{k}^{\prime}\right) \cdot \boldsymbol{r}} \\
 & =-\frac{2}{n V} \sum_{\boldsymbol{k}}\left\langle\widehat{n}_{\boldsymbol{k} s}\right\rangle^{2}= \begin{cases}-1 & T=0, \\
 -\frac{\lambda^{3} n}{2^{5 / 2}} & T \gg T_{F} .\end{cases}
 \end{aligned}
@@ -709,10 +705,10 @@ which means that the exchange hole expels one Fermion such that each Fermion "de
 Analogous to the Fermions we consider first the single-particle correlation function for $s=0$ Bosons,
 $$
 \begin{align*}
-g_{1}\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)&=\left\langle\widehat{\Psi}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}\left(\boldsymbol{r}^{\prime}\right)\right\rangle=\frac{1}{V} \sum_{\boldsymbol{k}, \boldsymbol{k}^{\prime}} e^{-i \boldsymbol{k} \cdot \boldsymbol{r}+i \boldsymbol{k}^{\prime} \cdot \boldsymbol{r}^{\prime}}\left\langle\widehat{a}_{\boldsymbol{k}}^{\dagger} \widehat{a}_{\boldsymbol{k}^{\prime}}\right\rangle\\&=\frac{1}{V} \sum_{\boldsymbol{k}}\left\langle\widehat{n}_{\boldsymbol{k}}\right\rangle e^{-i \boldsymbol{k} \cdot\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)},
+g_{1}\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)=\left\langle\widehat{\Psi}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}\left(\boldsymbol{r}^{\prime}\right)\right\rangle=\frac{1}{V} \sum_{\boldsymbol{k}, \boldsymbol{k}^{\prime}} e^{-i \boldsymbol{k} \cdot \boldsymbol{r}+i \boldsymbol{k}^{\prime} \cdot \boldsymbol{r}^{\prime}}\left\langle\widehat{a}_{\boldsymbol{k}}^{\dagger} \widehat{a}_{\boldsymbol{k}^{\prime}}\right\rangle=\frac{1}{V} \sum_{\boldsymbol{k}}\left\langle\widehat{n}_{\boldsymbol{k}}\right\rangle e^{-i \boldsymbol{k} \cdot\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)},
 \end{align*}
 $$
-which in the limit $\boldsymbol{r}^{\prime} \rightarrow \boldsymbol{r}$ approaches the constant density $n$ and vanishes at very large distances. For $T=0$ we consider the groundstate, the Bose-Einstein condensate, $\left\langle\widehat{n}_{\boldsymbol{k}}\right\rangle=N \delta_{\boldsymbol{k}, 0}$ and for $T \gg T_{c}$ we use the classical distribution where $T_{c}$ is the critical temperature for Bose-Einstein condensation.
+which in the limit $\boldsymbol{r}^{\prime} \rightarrow \boldsymbol{r}$ approaches the constant density $n$ and vanishes at very large distances. For $T=0$ we consider the groundstate, the Bose-Einstein condenstate, $\left\langle\widehat{n}_{\boldsymbol{k}}\right\rangle=N \delta_{\boldsymbol{k}, 0}$ and for $T \gg T_{c}$ we use the classical distribution where $T_{c}$ is the critical temperature for Bose-Einstein condensation.
 $$
 \begin{align*}
 g_{1}\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)= \begin{cases}n & T=0, \\ n e^{-\pi\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right) / \lambda^{2}} & T \gg T_{c} .\end{cases}
@@ -784,7 +780,7 @@ $$
 where
 $$
 \begin{align*}
-\hat{M}_{z}&=\frac{g \mu_{B}}{\hbar} \int d^{3} r \widehat{S}_{z}(\boldsymbol{r})=\mu_{B} \sum_{\boldsymbol{k}} \sum_{s s^{\prime}} \hat{a}_{\boldsymbol{k} s}^{\dagger} \sigma_{s s^{\prime}}^{z} \hat{\boldsymbol{a}}_{\boldsymbol{k} s^{\prime}}\\&=\mu_{B} \sum_{\boldsymbol{k}, \boldsymbol{s}} s \hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k} s}
+\hat{M}_{z}=\frac{g \mu_{B}}{\hbar} \int d^{3} r \widehat{S}_{z}(\boldsymbol{r})=\mu_{B} \sum_{\boldsymbol{k}} \sum_{s s^{\prime}} \hat{a}_{\boldsymbol{k} s}^{\dagger} \sigma_{s s^{\prime}}^{z} \hat{\boldsymbol{a}}_{\boldsymbol{k} s^{\prime}}=\mu_{B} \sum_{\boldsymbol{k}, \boldsymbol{s}} s \hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k} s}
 \end{align*}
 $$
 using Sect.9.4. Moreover, $g=2$ and $s= \pm 1$. First we calculate the magnetisation in zero magnetic field,
@@ -804,9 +800,9 @@ which we determine like in Sect.9.6.1,
 $$
 \begin{align*}
 \begin{aligned}
-\left\langle\hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k} s} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}\right\rangle &=\frac{1}{Z} \operatorname{tr}\left\{e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k} s} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}\right\}\\&=\frac{e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}}{Z} \operatorname{tr}\left\{e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k} s} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}} \hat{a}_{\boldsymbol{k} s}^{\dagger}\right\} \\
+& \left\langle\hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k} s} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}\right\rangle=\frac{1}{Z} \operatorname{tr}\left\{e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k} s} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}\right\}=\frac{e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}}{Z} \operatorname{tr}\left\{e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k} s} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}} \hat{a}_{\boldsymbol{k} s}^{\dagger}\right\} \\
 & =\frac{e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}}{Z}\left[\operatorname{tr}\left\{e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k} \boldsymbol{s}} \hat{a}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger}\right\} \delta_{\boldsymbol{k} \boldsymbol{k}^{\prime}} \delta_{s s^{\prime}}+\operatorname{tr}\left\{e^{-\beta \mathcal{H}^{\prime}} \hat{a}_{\boldsymbol{k} \boldsymbol{s}} \hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k}^{\prime} \boldsymbol{s}^{\prime}}^{\dagger} \hat{\boldsymbol{k}}_{\boldsymbol{k}^{\prime} \boldsymbol{s}^{\prime}}\right\}\right] \\
-& =e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}\left\{\left(1-\left\langle\hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k} s}\right\rangle\right) \delta_{\boldsymbol{k} \boldsymbol{k}^{\prime}} \delta_{s s^{\prime}}+\left\langle\hat{a}_{\boldsymbol{k}^{\prime} \boldsymbol{s}^{\prime}}^{\dagger} \hat{a}_{\boldsymbol{k}^{\prime} \boldsymbol{s}^{\prime}}\right\rangle\right\}\\-&e^{-\beta\left(\epsilon_{\boldsymbol{k}} - \mu\right)}\left\langle\hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k} s} \hat{a}_{\boldsymbol{k}^{\prime} \boldsymbol{s}^{\prime}}^{\dagger} \hat{\boldsymbol{k}}_{\boldsymbol{\boldsymbol { k } ^ { \prime } \boldsymbol { s } ^ { \prime }}}\right\rangle
+& =e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}\left\{\left(1-\left\langle\hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k} s}\right\rangle\right) \delta_{\boldsymbol{k} \boldsymbol{k}^{\prime}} \delta_{s s^{\prime}}+\left\langle\hat{a}_{\boldsymbol{k}^{\prime} \boldsymbol{s}^{\prime}}^{\dagger} \hat{a}_{\boldsymbol{k}^{\prime} \boldsymbol{s}^{\prime}}\right\rangle\right\}-e^{-\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}\left\langle\hat{a}_{\boldsymbol{k} s}^{\dagger} \hat{a}_{\boldsymbol{k} s} \hat{a}_{\boldsymbol{k}^{\prime} \boldsymbol{s}^{\prime}}^{\dagger} \hat{\boldsymbol{k}}_{\boldsymbol{\boldsymbol { k } ^ { \prime } \boldsymbol { s } ^ { \prime }}}\right\rangle
 \end{aligned}
 \end{align*}
 $$
@@ -820,13 +816,13 @@ $$
 We now insert this result and obtain
 $$
 \begin{align*}
-\left\langle\hat{M}_{z}^{2}\right\rangle&=2 \mu_{B}^{2} \sum_{\boldsymbol{k}}\left\langle\widehat{n}_{\boldsymbol{k} s}\right\rangle\left(1-\left\langle\widehat{n}_{\boldsymbol{k} s}\right\rangle\right)\\&=2 \mu_{B}^{2} \sum_{\boldsymbol{k}} \frac{1}{4 \cosh ^{2}\left(\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right) / 2\right)},
+\left\langle\hat{M}_{z}^{2}\right\rangle=2 \mu_{B}^{2} \sum_{\boldsymbol{k}}\left\langle\widehat{n}_{\boldsymbol{k} s}\right\rangle\left(1-\left\langle\widehat{n}_{\boldsymbol{k} s}\right\rangle\right)=2 \mu_{B}^{2} \sum_{\boldsymbol{k}} \frac{1}{4 \cosh ^{2}\left(\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right) / 2\right)},
 \end{align*}
 $$
 where the second term cancels due to the spin summation. In the low-temperature limit this is confined to a narrow region $\left(\sim k_{B} T\right)$ around the Fermi energy, such that we approximate
 $$
 \begin{align*}
-\left\langle\hat{M}_{z}^{2}\right\rangle& \approx \mu_{B}^{2} V \int_{-\infty}^{+\infty} d \epsilon N\left(\epsilon_{F}\right) \frac{1}{4 \cosh ^{2}(\beta \epsilon / 2)}\\&=V \mu_{B}^{2} k_{B} T N\left(\epsilon_{F}\right),
+\left\langle\hat{M}_{z}^{2}\right\rangle \approx \mu_{B}^{2} V \int_{-\infty}^{+\infty} d \epsilon N\left(\epsilon_{F}\right) \frac{1}{4 \cosh ^{2}(\beta \epsilon / 2)}=V \mu_{B}^{2} k_{B} T N\left(\epsilon_{F}\right),
 \end{align*}
 $$
 where the density of states is defined as
@@ -850,11 +846,7 @@ n_{\boldsymbol{k} s}=\frac{n \lambda^{3}}{2} e^{-k^{2} \lambda^{2} / 4 \pi}
 \end{align*}
 $$
 with $\lambda$ as the thermal wavelength. Inserting, we obtain
-$$
-\begin{align}
-\left\langle\hat{M}_{z}^{2}\right\rangle&=2 \mu_{B}^{2} V \int \frac{d^{3} k}{(2 \pi)^{3}} n_{\boldsymbol{k} s}\left(1-n_{\boldsymbol{k} s}\right)\\&=2 \mu_{B}^{2} V \int \frac{d^{3} k}{(2 \pi)^{3}}\left\{\frac{n \lambda^{3}}{2} e^{-k^{2} \lambda^{2} / 4 \pi}-\frac{n^{2} \lambda^{6}}{4} e^{-k^{2} \lambda^{2} / 2 \pi}\right\}\\&=\mu_{B}^{2} V n\left(1-\frac{\lambda^{3} n}{2^{5 / 2}}\right),
-\end{align}
-$$
+$\left\langle\hat{M}_{z}^{2}\right\rangle=2 \mu_{B}^{2} V \int \frac{d^{3} k}{(2 \pi)^{3}} n_{\boldsymbol{k} s}\left(1-n_{\boldsymbol{k} s}\right)=2 \mu_{B}^{2} V \int \frac{d^{3} k}{(2 \pi)^{3}}\left\{\frac{n \lambda^{3}}{2} e^{-k^{2} \lambda^{2} / 4 \pi}-\frac{n^{2} \lambda^{6}}{4} e^{-k^{2} \lambda^{2} / 2 \pi}\right\}=\mu_{B}^{2} V n\left(1-\frac{\lambda^{3} n}{2^{5 / 2}}\right),$
 which leads to the susceptibility found earlier.
 $$
 \begin{align*}
@@ -869,7 +861,7 @@ The factor $1-n_{\boldsymbol{k} s}$ introduces the quantum correction in the sec
 Our aim here is to characterise the Bose-Einstein condensate further beyond what we did in the last chapter. Here, we consider the concepts of both the off-diagonal long-range order and the order parameter for the condensate. We start with the discussion of the single-particle correlation function for a homogeneous gas of spin-0 Bosons in more detail than in Sect.9.6.2,
 $$
 \begin{align*}
-g\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)&=\left\langle\widehat{\Psi}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}\left(\boldsymbol{r}^{\prime}\right)\right\rangle\\&=\frac{1}{V} \sum_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}\left\langle\hat{a}_{\boldsymbol{k}}^{\dagger} \hat{a}_{\boldsymbol{k}^{\prime}}\right\rangle e^{i\left(\boldsymbol{k}^{\prime} \cdot \boldsymbol{r}^{\prime}-\boldsymbol{k} \cdot \boldsymbol{r}\right)}\\&=\frac{1}{V} \sum_{\boldsymbol{k}}\left\langle\hat{n}_{\boldsymbol{k}}\right\rangle e^{-i \boldsymbol{k} \cdot\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)},
+g\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)=\left\langle\widehat{\Psi}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}\left(\boldsymbol{r}^{\prime}\right)\right\rangle=\frac{1}{V} \sum_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}\left\langle\hat{a}_{\boldsymbol{k}}^{\dagger} \hat{a}_{\boldsymbol{k}^{\prime}}\right\rangle e^{i\left(\boldsymbol{k}^{\prime} \cdot \boldsymbol{r}^{\prime}-\boldsymbol{k} \cdot \boldsymbol{r}\right)}=\frac{1}{V} \sum_{\boldsymbol{k}}\left\langle\hat{n}_{\boldsymbol{k}}\right\rangle e^{-i \boldsymbol{k} \cdot\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)},
 \end{align*}
 $$
 where $\left\langle\hat{n}_{\boldsymbol{k}}\right\rangle$ is the Bose-Einstein distribution. For independent free Bosons we may write
@@ -881,7 +873,7 @@ $$
 with $\epsilon_{\boldsymbol{k}}=\hbar^{2} \boldsymbol{k}^{2} / 2 m$ and $\boldsymbol{R}=\boldsymbol{r}-\boldsymbol{r}^{\prime}$. Let us look at the two limits $\boldsymbol{R} \rightarrow 0$ and $\boldsymbol{R} \rightarrow \infty$. For the first limit we may expand
 $$
 \begin{align*}
-g(\boldsymbol{R})&=\frac{1}{V} \sum_{\boldsymbol{k}} \frac{1-i \boldsymbol{k} \cdot \boldsymbol{R}-(\boldsymbol{k} \cdot \boldsymbol{R})^{2} / 2+\cdots}{e^{\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}-1}\\&=n-\frac{\boldsymbol{R}^{2}}{6}\left\langle\boldsymbol{k}^{2}\right\rangle+\cdots,
+g(\boldsymbol{R})=\frac{1}{V} \sum_{\boldsymbol{k}} \frac{1-i \boldsymbol{k} \cdot \boldsymbol{R}-(\boldsymbol{k} \cdot \boldsymbol{R})^{2} / 2+\cdots}{e^{\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}-1}=n-\frac{\boldsymbol{R}^{2}}{6}\left\langle\boldsymbol{k}^{2}\right\rangle+\cdots,
 \end{align*}
 $$
 where $n=N / V$ is the particle density and
@@ -894,7 +886,7 @@ $$
 where $U$ is the internal energy of the Bose gas. We used the average for an isotropic momentum distribution function $\left\langle\widehat{n}_{\boldsymbol{k}}\right\rangle$ :
 $$
 \begin{align*}
-\left\langle(\boldsymbol{R} \cdot \boldsymbol{k})^{2}\right\rangle&=\sum_{j=x, y, z} R_{j}^{2}\left\langle k_{j}^{2}\right\rangle=\frac{\left\langle\boldsymbol{k}^{2}\right\rangle}{3}\left(R_{x}^{2}+R_{y}^{2}+R_{z}^{2}\right)\\&=\frac{\left\langle\boldsymbol{k}^{2}\right\rangle}{3} \boldsymbol{R}^{2}
+\left\langle(\boldsymbol{R} \cdot \boldsymbol{k})^{2}\right\rangle=\sum_{j=x, y, z} R_{j}^{2}\left\langle k_{j}^{2}\right\rangle=\frac{\left\langle\boldsymbol{k}^{2}\right\rangle}{3}\left(R_{x}^{2}+R_{y}^{2}+R_{z}^{2}\right)=\frac{\left\langle\boldsymbol{k}^{2}\right\rangle}{3} \boldsymbol{R}^{2}
 \end{align*}
 $$
 because $\left\langle k_{x}^{2}\right\rangle=\left\langle k_{y}^{2}\right\rangle=\left\langle k_{z}^{2}\right\rangle=\left\langle\boldsymbol{k}^{2}\right\rangle / 3$ and $\left\langle k_{x} k_{y}\right\rangle=\left\langle k_{y} k_{z}\right\rangle=\left\langle k_{z} k_{x}\right\rangle=0$.
@@ -902,13 +894,13 @@ because $\left\langle k_{x}^{2}\right\rangle=\left\langle k_{y}^{2}\right\rangle
 The correlation falls off quadratically for finite, but small $\boldsymbol{R}(|\boldsymbol{R}| \ll \lambda)$. Note that the in the $T \rightarrow 0$ limit the correlation function does not drop in agreement. For the long-distance limit we note that only the small wave vectors contribute to the $\boldsymbol{k}$-sum so that we may expand the integrand in the following way $\left(\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right) \ll 1\right)$,
 $$
 \begin{align*}
-g(\boldsymbol{R}) &\approx \int \frac{d^{3} k}{(2 \pi)^{3}} \frac{e^{-i \boldsymbol{k} \cdot \boldsymbol{R}}}{\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}\\&=\frac{2 m k_{B} T}{\hbar^{2}} \int \frac{d^{3} k}{(2 \pi)^{3}} \frac{e^{-i \boldsymbol{k} \cdot \boldsymbol{R}}}{\boldsymbol{k}^{2}+k_{0}^{2}}
+g(\boldsymbol{R}) \approx \int \frac{d^{3} k}{(2 \pi)^{3}} \frac{e^{-i \boldsymbol{k} \cdot \boldsymbol{R}}}{\beta\left(\epsilon_{\boldsymbol{k}}-\mu\right)}=\frac{2 m k_{B} T}{\hbar^{2}} \int \frac{d^{3} k}{(2 \pi)^{3}} \frac{e^{-i \boldsymbol{k} \cdot \boldsymbol{R}}}{\boldsymbol{k}^{2}+k_{0}^{2}}
 \end{align*}
 $$
 where $k_{0}^{2}=-\frac{2 m \mu}{\hbar^{2}}>0$. This form we know from the Yukawa potential,
 $$
 \begin{align*}
-g(\boldsymbol{R}) &\approx \frac{m k_{B} T}{(2 \pi)^{4} \hbar^{2}} \frac{e^{-k_{0}|\boldsymbol{R}|}}{|\boldsymbol{R}|}\\&=\frac{e^{-k_{0}|\boldsymbol{R}|}}{(2 \pi)^{3} \lambda^{2}|\boldsymbol{R}|}
+g(\boldsymbol{R}) \approx \frac{m k_{B} T}{(2 \pi)^{4} \hbar^{2}} \frac{e^{-k_{0}|\boldsymbol{R}|}}{|\boldsymbol{R}|}=\frac{e^{-k_{0}|\boldsymbol{R}|}}{(2 \pi)^{3} \lambda^{2}|\boldsymbol{R}|}
 \end{align*}
 $$
 
@@ -936,7 +928,7 @@ The correlation function approaches a finite value on long distances in the pres
 We consider this now from the view point of the field operator for free Bosons,
 $$
 \begin{align*}
-\widehat{\Psi}(\boldsymbol{r})&=\frac{1}{\sqrt{V}} \sum_{\boldsymbol{k}} \hat{a}_{\boldsymbol{k}} e^{i \boldsymbol{k} \cdot \boldsymbol{r}}\\&=\frac{\hat{a}_{0}}{\sqrt{V}}+\frac{1}{\sqrt{V}} \sum_{\boldsymbol{k} \neq 0} \hat{a}_{\boldsymbol{k}} e^{i \boldsymbol{k} \cdot \boldsymbol{r}}
+\widehat{\Psi}(\boldsymbol{r})=\frac{1}{\sqrt{V}} \sum_{\boldsymbol{k}} \hat{a}_{\boldsymbol{k}} e^{i \boldsymbol{k} \cdot \boldsymbol{r}}=\frac{\hat{a}_{0}}{\sqrt{V}}+\frac{1}{\sqrt{V}} \sum_{\boldsymbol{k} \neq 0} \hat{a}_{\boldsymbol{k}} e^{i \boldsymbol{k} \cdot \boldsymbol{r}}
 \end{align*}
 $$
 
@@ -965,13 +957,13 @@ $$
 with $\hat{a}_{\nu}\left|N_{\nu}\right\rangle=\sqrt{N_{\nu}}\left|N_{\nu}-1\right\rangle$. The expectation value for $\hat{n}_{\nu}=\hat{a}_{\nu}^{\dagger} \hat{a}_{\nu}$ is
 $$
 \begin{align*}
-\left\langle\hat{n}_{\nu}\right\rangle&=\left\langle\Psi_{\alpha}\right| \hat{a}_{\nu}^{\dagger} \hat{a}_{\nu}\left|\Psi_{\alpha}\right\rangle=\left\langle\Psi_{\alpha}\right| \alpha^{*} \alpha\left|\Psi_{\alpha}\right\rangle\\&=\alpha^{*} \alpha=|\alpha|^{2}
+\left\langle\hat{n}_{\nu}\right\rangle=\left\langle\Psi_{\alpha}\right| \hat{a}_{\nu}^{\dagger} \hat{a}_{\nu}\left|\Psi_{\alpha}\right\rangle=\left\langle\Psi_{\alpha}\right| \alpha^{*} \alpha\left|\Psi_{\alpha}\right\rangle=\alpha^{*} \alpha=|\alpha|^{2}
 \end{align*}
 $$
 and the variance is
 $$
 \begin{align*}
-\left\langle\hat{n}_{\nu}^{2}\right\rangle-\left\langle\hat{n}_{\nu}\right\rangle^{2}&=\left\langle\hat{a}_{\nu}^{\dagger} \hat{a}_{\nu} \hat{a}_{\nu}^{\dagger} \hat{a}_{\nu}\right\rangle-|\alpha|^{4}\\&=\left\langle\hat{a}_{\nu}^{\dagger} \hat{a}_{\nu}\right\rangle+\left\langle\hat{a}_{\nu}^{\dagger} \hat{a}_{\nu}^{\dagger} \hat{a}_{\nu} \hat{a}_{\nu}\right\rangle-|\alpha|^{4}\\&=|\alpha|^{2}+|\alpha|^{4}-|\alpha|^{4}=|\alpha|^{2}
+\left\langle\hat{n}_{\nu}^{2}\right\rangle-\left\langle\hat{n}_{\nu}\right\rangle^{2}=\left\langle\hat{a}_{\nu}^{\dagger} \hat{a}_{\nu} \hat{a}_{\nu}^{\dagger} \hat{a}_{\nu}\right\rangle-|\alpha|^{4}=\left\langle\hat{a}_{\nu}^{\dagger} \hat{a}_{\nu}\right\rangle+\left\langle\hat{a}_{\nu}^{\dagger} \hat{a}_{\nu}^{\dagger} \hat{a}_{\nu} \hat{a}_{\nu}\right\rangle-|\alpha|^{4}=|\alpha|^{2}+|\alpha|^{4}-|\alpha|^{4}=|\alpha|^{2}
 \end{align*}
 $$
 such that
@@ -1049,8 +1041,8 @@ for large $N_{0}$. On the other hand, projecting into the phase representation,
 $$
 \begin{align*}
 \begin{aligned}
-\Psi_{\phi} & =\left\langle\phi \mid \Psi_{\alpha}\right\rangle=\sum_{N=0}^{\infty}\langle\phi \mid N\rangle\left\langle N \mid \Psi_{\alpha}\right\rangle\\&=\frac{e^{-|\alpha|^{2} / 2}}{\sqrt{2 \pi}} \sum_{N=0}^{\infty} \frac{\alpha^{N} e^{-i \phi N}}{\sqrt{N!}} \\
-& \approx \frac{1}{\sqrt{2 \pi}} \int_{0}^{\infty} d N \frac{e^{-\left(N-N_{0}\right)^{2} / 4 N_{0}}}{\left(2 \pi N_{0}\right)^{1 / 4}} e^{-i N\left(\phi-\phi_{0}\right)}\\&=\left(\frac{N_{0}}{2 \pi}\right)^{1 / 4} e^{-\left(\phi-\phi_{0}\right)^{2} N_{0} / 4}
+\Psi_{\phi} & =\left\langle\phi \mid \Psi_{\alpha}\right\rangle=\sum_{N=0}^{\infty}\langle\phi \mid N\rangle\left\langle N \mid \Psi_{\alpha}\right\rangle=\frac{e^{-|\alpha|^{2} / 2}}{\sqrt{2 \pi}} \sum_{N=0}^{\infty} \frac{\alpha^{N} e^{-i \phi N}}{\sqrt{N!}} \\
+& \approx \frac{1}{\sqrt{2 \pi}} \int_{0}^{\infty} d N \frac{e^{-\left(N-N_{0}\right)^{2} / 4 N_{0}}}{\left(2 \pi N_{0}\right)^{1 / 4}} e^{-i N\left(\phi-\phi_{0}\right)}=\left(\frac{N_{0}}{2 \pi}\right)^{1 / 4} e^{-\left(\phi-\phi_{0}\right)^{2} N_{0} / 4}
 \end{aligned}
 \end{align*}
 $$
@@ -1067,7 +1059,7 @@ $$
 \left.\begin{array}{l}
 \Delta \phi^{2}=\left\langle\Psi_{\alpha}\right|\left(\widehat{\phi}-\phi_{0}\right)^{2}\left|\Psi_{\alpha}\right\rangle=\frac{1}{N_{0}} \\
 \Delta N^{2}=\left\langle\Psi_{\alpha}\right|\left(\widehat{N}-N_{0}\right)^{2}\left|\Psi_{\alpha}\right\rangle=N_{0}
-\end{array}\right\} \implies \Delta N \Delta \phi=1
+\end{array}\right\} \quad \Rightarrow \quad \Delta N \Delta \phi=1
 \end{align*}
 $$
 compatible with a commutation relation of the form $[\widehat{N}, \widehat{\phi}]=i$.
@@ -1077,12 +1069,8 @@ compatible with a commutation relation of the form $[\widehat{N}, \widehat{\phi}
 We consider here vibrations of an elastic media using a simplified model of longitudinal waves only. As in Sect.?? we describe deformation of the elastic medium by means of the displacement field $\boldsymbol{u}(\boldsymbol{r}, t)$. The kinetic and elastic energy are then given by
 $$
 \begin{align*}
-E_{\text {kin }}=\frac{\rho_{m}}{2} \int d^{3} r\left(\frac{\partial \boldsymbol{u}(\boldsymbol{r}, t)}{\partial t}\right)^{2} 
+E_{\text {kin }}=\frac{\rho_{m}}{2} \int d^{3} r\left(\frac{\partial \boldsymbol{u}(\boldsymbol{r}, t)}{\partial t}\right)^{2} \quad \text { and } \quad E_{\text {el }}=\frac{\lambda_{e}}{2} \int d^{3} r(\boldsymbol{\nabla} \cdot \boldsymbol{u}(\boldsymbol{r}, t))^{2},
 \end{align*}
-$$
-and
-$$
-E_{\text {el }}=\frac{\lambda_{e}}{2} \int d^{3} r(\boldsymbol{\nabla} \cdot \boldsymbol{u}(\boldsymbol{r}, t))^{2}.
 $$
 where $\rho_{m}$ is the mass density of the medium and $\lambda_{e}$ denotes the elastic modulus. Note that we use a simplified elastic term which involves density fluctuations only, corresponding to $\boldsymbol{\nabla} \cdot \boldsymbol{u}$, and ignores the contributions of shear distortion. This two energies are now combined to the Lagrange functional $L[\boldsymbol{u}]=E_{\text {kin }}-E_{\text {el }}$, whose variation with respect to $\boldsymbol{u}(\boldsymbol{r}, t)$ yields the wave equation,
 $$
@@ -1111,12 +1099,8 @@ $$
 which we express in a symmetrised form, for future convenience. Now we introduce new variables
 $$
 \begin{align*}
-Q_{k}=\sqrt{\rho_{m}}\left(q_{k}+q_{k}^{*}\right),
+Q_{k}=\sqrt{\rho_{m}}\left(q_{k}+q_{k}^{*}\right) \quad \text { and } \quad P_{k}=\frac{d}{d t} Q_{k}=-i \omega_{k} \sqrt{\rho_{m}}\left(q_{k}-q_{k}^{*}\right)
 \end{align*}
-$$
-and
-$$
-P_{k}=\frac{d}{d t} Q_{k}=-i \omega_{k} \sqrt{\rho_{m}}\left(q_{k}-q_{k}^{*}\right),
 $$
 leading to the energy
 $$
@@ -1124,6 +1108,7 @@ $$
 E=\frac{1}{2} \sum_{k}\left(P_{\boldsymbol{k}}^{2}+\omega_{\boldsymbol{k}}^{2} Q_{\boldsymbol{k}}^{2}\right) .
 \end{align*}
 $$
+
 This corresponds to a set of independent harmonic oscillators labelled by the wave vectors $\boldsymbol{k}$, as we have seen in Sect.??. We now turn to the step of canonical quantisation replacing the variables $\left(P_{k}, Q_{k}\right) \rightarrow\left(\widehat{P}_{\boldsymbol{k}}, \widehat{Q}_{k}\right)$ which satisfy the standard commutation relation,
 $$
 \begin{align*}
@@ -1131,23 +1116,23 @@ $$
 \end{align*}
 $$
 
-This can be re-expressed in terms of lowering and raising operators,
+This can be reexpressed in terms of lowering and raising operators,
 $$
 \begin{align*}
-\hat{b}_{k}&=\frac{1}{\sqrt{2 \hbar \omega_{k}}}\left(\omega_{k} \widehat{Q}_{k}+i \widehat{P}_{k}\right), \\ \hat{b}_{k}^{\dagger}&=\frac{1}{\sqrt{2 \hbar \omega_{k}}}\left(\omega_{k} \widehat{Q}_{k}-i \widehat{P}_{k}\right)
+\hat{b}_{k}=\frac{1}{\sqrt{2 \hbar \omega_{k}}}\left(\omega_{k} \widehat{Q}_{k}+i \widehat{P}_{k}\right), \quad \hat{b}_{k}^{\dagger}=\frac{1}{\sqrt{2 \hbar \omega_{k}}}\left(\omega_{k} \widehat{Q}_{k}-i \widehat{P}_{k}\right)
 \end{align*}
 $$
 which obey the following commutation relations,
 $$
 \begin{align*}
-\left[\hat{b}_{\boldsymbol{k}}, \hat{b}_{\boldsymbol{k}^{\prime}}^{\dagger}\right]&=\delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}, \\\quad\left[\hat{b}_{\boldsymbol{k}}, \hat{b}_{\boldsymbol{k}^{\prime}}\right]&=\left[\hat{b}_{\boldsymbol{k}}^{\dagger}, \hat{b}_{\boldsymbol{k}^{\prime}}^{\dagger}\right]=0 .
+\left[\hat{b}_{\boldsymbol{k}}, \hat{b}_{\boldsymbol{k}^{\prime}}^{\dagger}\right]=\delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}, \quad\left[\hat{b}_{\boldsymbol{k}}, \hat{b}_{\boldsymbol{k}^{\prime}}\right]=\left[\hat{b}_{\boldsymbol{k}}^{\dagger}, \hat{b}_{\boldsymbol{k}^{\prime}}^{\dagger}\right]=0 .
 \end{align*}
 $$
 
 Therefore $\hat{b}_{\boldsymbol{k}}^{\dagger}$ and $\hat{b}_{\boldsymbol{k}}$ can be viewed as creation and annihilation operators, respectively, for bosonic particles, called phonons. The Hamiltonian can be now written as
 $$
 \begin{align*}
-\mathcal{H}&=\sum_{\boldsymbol{k}} \hbar \omega_{\boldsymbol{k}}\left(\hat{b}_{\boldsymbol{k}}^{\dagger} \hat{b}_{\boldsymbol{k}}+\frac{1}{2}\right)\\&=\sum_{\boldsymbol{k}} \hbar \omega_{\boldsymbol{k}}\left(\hat{n}_{\boldsymbol{k}}+\frac{1}{2}\right)
+\mathcal{H}=\sum_{\boldsymbol{k}} \hbar \omega_{\boldsymbol{k}}\left(\hat{b}_{\boldsymbol{k}}^{\dagger} \hat{b}_{\boldsymbol{k}}+\frac{1}{2}\right)=\sum_{\boldsymbol{k}} \hbar \omega_{\boldsymbol{k}}\left(\hat{n}_{\boldsymbol{k}}+\frac{1}{2}\right)
 \end{align*}
 $$
 whose eigenstates are given in the occupation number representation, $\left|n_{\boldsymbol{k}_{1}}, n_{\boldsymbol{k}_{2}}, \ldots\right\rangle$.
@@ -1174,7 +1159,7 @@ $$
 Note that
 $$
 \begin{align*}
-\left\langle\hat{b}_{\boldsymbol{k}}^{\dagger} \hat{b}_{\boldsymbol{k}^{\prime}}\right\rangle&=\left\langle\hat{n}_{\boldsymbol{k}}\right\rangle \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}, \\ \left\langle\hat{b}_{\boldsymbol{k}^{\prime}} \hat{b}_{\boldsymbol{k}^{\prime}}^{\dagger}\right\rangle&=\left\{1+\left\langle\hat{n}_{\boldsymbol{k}}\right\rangle\right\} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}},\left\langle\hat{b}_{\boldsymbol{k}}^{\dagger} \hat{b}_{\boldsymbol{k}^{\prime}}^{\dagger}\right\rangle=\left\langle\hat{b}_{\boldsymbol{k}} \hat{b}_{\boldsymbol{k}^{\prime}}\right\rangle=0,
+\left\langle\hat{b}_{\boldsymbol{k}}^{\dagger} \hat{b}_{\boldsymbol{k}^{\prime}}\right\rangle=\left\langle\hat{n}_{\boldsymbol{k}}\right\rangle \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}, \quad\left\langle\hat{b}_{\boldsymbol{k}^{\prime}} \hat{b}_{\boldsymbol{k}^{\prime}}^{\dagger}\right\rangle=\left\{1+\left\langle\hat{n}_{\boldsymbol{k}}\right\rangle\right\} \delta_{\boldsymbol{k}, \boldsymbol{k}^{\prime}},\left\langle\hat{b}_{\boldsymbol{k}}^{\dagger} \hat{b}_{\boldsymbol{k}^{\prime}}^{\dagger}\right\rangle=\left\langle\hat{b}_{\boldsymbol{k}} \hat{b}_{\boldsymbol{k}^{\prime}}\right\rangle=0,
 \end{align*}
 $$
 such that
@@ -1186,10 +1171,10 @@ $$
 
 **Melting:**
 
-Instead of calculating the correlation function $\boldsymbol{r} \neq \boldsymbol{r}^{\prime}$ we now analyse the local (onsite) fluctuation, i.e $\boldsymbol{r}=\boldsymbol{r}^{\prime}$,
+Instead of calculating the correlation function $\boldsymbol{r} \neq \boldsymbol{r}^{\prime}$ we now analyze the local (onsite) fluctuation, i.e $\boldsymbol{r}=\boldsymbol{r}^{\prime}$,
 $$
 \begin{align*}
-\left\langle\boldsymbol{u}(\boldsymbol{r})^{2}\right\rangle&=\frac{\hbar}{2 \rho_{m} V} \sum_{\boldsymbol{k}} \frac{1}{\omega_{\boldsymbol{k}}}\left\{\left(1+2\left\langle\hat{n}_{\boldsymbol{k}}\right\rangle\right)\right\}\\&=\frac{\hbar}{2 \rho_{m} V} \sum_{\boldsymbol{k}} \frac{1}{\omega_{\boldsymbol{k}}} \operatorname{coth}\left(\frac{\beta \hbar \omega_{\boldsymbol{k}}}{2}\right)
+\left\langle\boldsymbol{u}(\boldsymbol{r})^{2}\right\rangle=\frac{\hbar}{2 \rho_{m} V} \sum_{\boldsymbol{k}} \frac{1}{\omega_{\boldsymbol{k}}}\left\{\left(1+2\left\langle\hat{n}_{\boldsymbol{k}}\right\rangle\right)\right\}=\frac{\hbar}{2 \rho_{m} V} \sum_{\boldsymbol{k}} \frac{1}{\omega_{\boldsymbol{k}}} \operatorname{coth}\left(\frac{\beta \hbar \omega_{\boldsymbol{k}}}{2}\right)
 \end{align*}
 $$
 
@@ -1200,17 +1185,17 @@ $$
 \end{align*}
 $$
 which are at high (low) temperature thermal (quantum) fluctuations. As $\boldsymbol{u}$ denotes the deviation of the position of an atom from its equilibrium position, we can apply Lindemann's criterion for melting of the systems. We introduce the lattice constant $a$ with $k_{D} \approx \pi / a$. If $\left\langle\boldsymbol{u}^{2}\right\rangle$ is a sizeable fraction of $a^{2}$ then a crystal would melt. Thus we define the Lindemann number $L_{m}$ with the
-condition that the lattice is stable for $\left\langle\boldsymbol{u}^{2}\right\rangle<L_{m}^{2} a^{2}$. Thus we obtain a melting temperate $T_{m}$ with
+condition that the lattice is stable for $\left\langle\boldsymbol{u}^{2}\right\rangle<L_{m}^{2} a^{2}$. Thus we obtain a melting temperture $T_{m}$ with
 $$
 \begin{align*}
-L_{m}^{2}&=\frac{\left\langle\boldsymbol{u}^{2}\right\rangle}{a^{2}}=\frac{k_{B} T_{m}}{2 \pi \lambda_{e} a^{3}} \\ \implies &k_{B} T_{m}=2 \pi \lambda_{e} a^{3} L_{m}^{2}=2 \pi \rho_{m} a^{3} c_{l}^{2} L_{m}^{2}=2 \pi M_{i} c_{l}^{2} L_{m}^{2}
+L_{m}^{2}=\frac{\left\langle\boldsymbol{u}^{2}\right\rangle}{a^{2}}=\frac{k_{B} T_{m}}{2 \pi \lambda_{e} a^{3}} \quad \Rightarrow \quad k_{B} T_{m}=2 \pi \lambda_{e} a^{3} L_{m}^{2}=2 \pi \rho_{m} a^{3} c_{l}^{2} L_{m}^{2}=2 \pi M_{i} c_{l}^{2} L_{m}^{2}
 \end{align*}
 $$
 where $M_{i}=\rho_{m} a^{3}$ is the atomic mass per unit cell. Note that usually $L_{m} \approx 0.1$ give a reasonable estimate for $T_{m}$.
 At sufficiently low temperature we can also observe quantum melting which occurs due to quantum fluctuations, the zero-point motion of the atoms in a lattice. We consider $T \ll \Theta_{D}$ and fix the temperature,
 $$
 \begin{align*}
-L_{m}^{2}=\frac{k_{B} \Theta_{D}}{8 \pi a^{3} \lambda_{e}}=\frac{\hbar}{8 a^{4} \rho_{m} a^{4} c_{l}} \implies c_{l m}=\frac{\hbar}{8 \rho_{m} a^{4} L_{m}^{2}}
+L_{m}^{2}=\frac{k_{B} \Theta_{D}}{8 \pi a^{3} \lambda_{e}}=\frac{\hbar}{8 a^{4} \rho_{m} a^{4} c_{l}} \quad \Rightarrow \quad c_{l m}=\frac{\hbar}{8 \rho_{m} a^{4} L_{m}^{2}}
 \end{align*}
 $$
 which defines a critical value for the sound velocity, $c_{l m}$, which here is temperature independent. For $c_{l}>c_{l m}$ the fluctuations are small enough that lattice stable, because it stiff enough, while for $c_{l}<c_{l m}$ the lattice is "soft" such that the zero-point motion destroys the lattice. We will see in Chapt.?? that the ${ }^{4}$ He shows such a quantum melting transition at very low temperature under pressure (pressure increases elastic constant and sound velocity), where the solid phase is stable at high pressure and turns into a liquid under decreasing the pressure.
