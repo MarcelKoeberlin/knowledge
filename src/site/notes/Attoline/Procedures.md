@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-02-24T14:36:05.000+01:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-03-14T11:01:40.000+01:00"}
 ---
 
 # 1 Laser Startup
@@ -13,28 +13,33 @@ E8:
 - Room temperature should be around $22^\circ$
 - Check Ti:Sa chamber pressure with the sensor on the ground. Should not be above $\text{5.2e-2}$ mbar
 - Flip the Evo30 key
-- Configure Q-Switch settings of Evo30 (on shitty laptop) to external trigger. Turn on at low current (below 9.4 A)
+- Configure Q-Switch settings of Evo30 (on shitty laptop) to external trigger. 
+- Turn on (hold RUN button, 'laser active' must be green) at low current (below 9.4 A)
 - Turn on crystal chamber heating
-- Turn on the Ti:Sa amplifier chiller
+- Turn on the Ti:Sa amplifier chiller. If you turn this one off (to restart the process for example), you must wait 30 minutes before turning it on again.
 - Wait until the temperature on the ACU decreases. Start automatic startup of Element2
-- Gradually ramp up the Evo30 current as the temperature decreases. It should equilibrate around $193$ K.
+- Gradually ramp up the Evo30 current to 17.9 V as the temperature decreases. It should equilibrate around $193$ K.
 - Pressure of chamber should not rise about $\text{9e-2}$ mbar
 - After the Element2 started up, open the shutter
-- check that the f-2f beating signal is around 104 MHz and at -30 dBm
-	- If necessary, use the CEP4 incoupling mirrors to improve the signal
-	- Move wedges by choosing 'pico motors' in the Element2 software to centre beat signal. left button shifts signal to higher frequencies
-	- Delta value on control electronics should decrease as well
-- Wait for some time (~30 minutes) before stabilisation of the beat signal
-- Turn on slow loop, then the RF power amp at the CEP4 control module
+- If the CEP stabilisation is used:
+	- check that the f-2f beating signal is around 104 MHz and at -30 dBm
+		- If necessary, use the CEP4 incoupling mirrors to improve the signal
+		- Move wedges by choosing 'pico motors' in the Element2 software to centre beat signal. left button shifts signal to higher frequencies
+		- Delta value on control electronics should decrease as well
+	- Wait for some time (~30 minutes) before stabilisation of the beat signal
+	- Turn on slow loop, then the RF power amp at the CEP4 control module
 > [!DANGER] Do not check the AOFS signal when the RF amp is on, otherwise damage is done	
 
 - Align the XY1 and XY2 mirrors on the diodes QD1 and QD2. Enable stabilisation
 - Switch on the Pockels cell, turn the Dazzler on and load appropriate settings
 	- Dazzler power should be below 5%. 
-	- A software restart will fix most errors and re-initialising communication with PORT7
+	- Dazzler uses PORT7 (but has ugly name with 7 in it)
+	- Calibration must be set to external	
+	- A software restart will fix most errors and re-initialising communication with PORT7 
 - Measure the seed power before coupling into the amplifier (check that the photodiode does not measure above 0.3 V)
-- Seed the amplifier for one hour after turning on the Evo30.
-- Measure power at amplifier output, should be around 2 W
+- Remove beam block, and seed the amplifier 
+- Quickly check output power, should be around 1.7 - 1.9 W
+- Leave the crystal seeded for one hour before continuing, power will have increased to roughly 2 W
 	- Else, improve alignment or increase Dazzler power 
 	- Do not align too much if amplifier is already warmed up
 - Check pointing on monitor and on QD3. Realign the XY3 mirror if necessary.
