@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/2-surface-plasmon-polaritons-at-metal-insulator-interfaces/","hide":"true","updated":"2025-02-13T17:30:56.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/2-surface-plasmon-polaritons-at-metal-insulator-interfaces/","hide":"true","updated":"2025-03-14T18:24:13.000+01:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -68,14 +68,23 @@ $$
 \mathfrak{Re}(\varepsilon_1) < 0 \quad \text{if} \quad \varepsilon_2 > 0.
 $$
 
-Surface waves exist only at interfaces between materials with opposite signs of the real part of their dielectric permittivities, i.e., between a conductor and an insulator. We then arrive at the dispersion relation of surface plasmon polaritons (SPPs) propagating at the interface between the two half-spaces:
+Surface waves exist only at interfaces between materials with opposite signs of the real part of their dielectric permittivities, i.e., between a conductor and an insulator. One time-harmonic solution to the Maxwell equations is then
+$$
+\mathbf{E}(\omega)=A\left(\hat{\mathbf{x}}-\frac{k_x}{k_z} \hat{\mathbf{z}}\right) \exp \left[i\left(k_z z+k_x x\right)\right]
+$$
+with the surface plasmon polariton (SPP) dispersion relation
 
 $$
-\beta = k_0 \sqrt{\frac{\varepsilon_1 \varepsilon_2}{\varepsilon_1 + \varepsilon_2}}.
+k_x(\omega) \equiv k_{\mathrm{SPP}}(\omega)=\beta=\frac{\omega}{c} \sqrt{\frac{\varepsilon_2 \varepsilon_1(\omega)}{\varepsilon_2+\varepsilon_1(\omega)}}.
 $$
-
-This expression is valid for both real and complex $\varepsilon_1$, i.e., for conductors without and with attenuation. Note that $k_0 = \omega / c$.
-
+This expression is valid for both real and complex $\varepsilon_1$, i.e., for conductors without and with attenuation. Note that $k_0 = \omega / c$. Further, we have
+$$
+k_z(\omega) =
+\begin{cases} 
+\frac{\omega}{c} \sqrt{ \frac{\varepsilon_2}{\varepsilon_2 + \varepsilon_1(\omega)} } &\text{for}\quad z > 0 \\[10pt]
+\frac{\omega}{c} \sqrt{  \frac{\varepsilon_1(\omega)}{\varepsilon_2 + \varepsilon_1(\omega)} } & \text{for}\quad z < 0.
+\end{cases}
+$$
 For **TE modes**, continuity of $E_y$ and $H_x$ at the interface leads to the condition (where $E_y, H_x, H_z \sim A_1$):
 
 $$
