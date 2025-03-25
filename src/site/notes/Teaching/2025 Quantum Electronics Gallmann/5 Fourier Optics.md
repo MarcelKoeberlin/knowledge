@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/5-fourier-optics/","hide":"true","updated":"2025-03-25T09:26:09.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/5-fourier-optics/","hide":"true","updated":"2025-03-25T11:02:43.000+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -48,7 +48,7 @@ where $U(\mathbf{r})$ is a scalar function of space. Its magnitude is identical 
 $$
 \nabla^2 U+k^2 U=0,
 $$
-with $k=n\omega/c$ being the usual wave number. The intensity is then obtained as $I(\mathbf{r})=\frac{1}{2 Z}|U(\mathbf{r})|^2.$ For the previously discussed [[Teaching/2025 Quantum Electronics Gallmann/5 Fourier Optics#Plane Waves and the Helmholtz Equation\|monochromatic plane waves]], $U(\mathbf{r})$ is independent of $\mathbf{r}.$ However, the Helmholtz equation allows us to extend this to cases where the intensity is not uniform in space. For this, we define the notion of a _wavefront_: The wavefront of a wave that solves the Helmholtz equation is a surface of constant complex phase. That is, if $\phi(r)=\arg [U(r)]$, a wavefront is a 2-D surface on which $\phi(r)$ is constant.
+with $k=n\omega/c$ being the usual wave number. The intensity is then obtained as $I(\mathbf{r})=\frac{1}{2 Z}|U(\mathbf{r})|^2.$ For the previously discussed [[Teaching/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.4 Helmholtz Equation\|monochromatic plane waves]], $|U(\mathbf{r})|$ is independent of $\mathbf{r}.$ However, the Helmholtz equation allows us to extend this to cases where the intensity is not uniform in space. For this, we define the notion of a _wavefront_: The wavefront of a wave that solves the Helmholtz equation is a surface of constant complex phase. That is, if $\phi(r)=\arg [U(r)]$, a wavefront is a 2-D surface on which $\phi(r)$ is constant.
 
 ![Attachments/02_Fundamental_phenomena 8.webp|700](/img/user/Attachments/02_Fundamental_phenomena%208.webp)[[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=64&rect=58,155,415,458|•]]
 
