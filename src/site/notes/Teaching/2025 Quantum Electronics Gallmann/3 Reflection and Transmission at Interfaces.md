@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/3-reflection-and-transmission-at-interfaces/","hide":"true","updated":"2025-03-10T10:50:54.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/3-reflection-and-transmission-at-interfaces/","hide":"true","updated":"2025-03-18T16:41:16.000+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -138,7 +138,8 @@ $$
 Note that the phase of $r_{s,p}$ and $t_{s,p}$ represent phase shifts experienced at the interface. 'Phase retardation' is defined as the difference between phase shifts of $s$ and $p$ components. It causes a change in the polarisation state of the reflected and transmitted fields if the incident field is neither fully a TE or TM wave. The next two figures show the magnitude and phase of the reflection coefficient as function of the incident angle, in the case that light hits an optically denser medium (external reflection) for both s- and p-polarised light:
 
 ![Attachments/01_Introduction_and_theoretical_foundation 34.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation%2034.webp)
-![Attachments/01_Introduction_and_theoretical_foundation 35.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation%2035.webp)[[Teaching/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=163&rect=213,131,587,264|•]]
+![Attachments/01_Introduction_and_theoretical_foundation 36.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation%2036.webp)[[Teaching/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=164&rect=207,132,579,275|•]]
+
 Consider the next plot, which shows the power reflectance, transmittance and phase retardation at a glass/air interface. Glass has the higher refractive index. There is a large discrepancy between the case for s- and p-polarised light.
 
 ![Attachments/QE_script 7.webp|700](/img/user/Attachments/QE_script%207.webp)[[Teaching/2025 Quantum Electronics Gallmann/QE_script.pdf#page=66&rect=72,154,527,349|•]]

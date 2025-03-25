@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/2-linear-pulse-propagation/","hide":"true","updated":"2025-02-07T12:03:52.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/2-linear-pulse-propagation/","hide":"true","updated":"2025-03-23T18:50:01.000+01:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
