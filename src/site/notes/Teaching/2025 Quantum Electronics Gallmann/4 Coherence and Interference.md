@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/4-coherence-and-interference/","hide":"true","updated":"2025-03-20T18:04:07.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/4-coherence-and-interference/","hide":"true","updated":"2025-03-25T10:39:02.000+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -226,9 +226,7 @@ $$
 Considering the phase change during reflection, we can calculate the power transmittance as 
 $$
 \begin{aligned}
-& T_{F P}=\left|t_{F P}\right|^2=\frac{\left|t_{12} t_{23}\right|^2}{\left|1-r_{23} r_{21} e^{i 2 \phi}\right|^2}=\frac{T_{\mathrm{FPmax}}}{1+\left(\frac{2 F}{\pi}\right)^2 \sin
-{ #2}
- \phi_r},
+& T_{F P}=\left|t_{F P}\right|^2=\frac{\left|t_{12} t_{23}\right|^2}{\left|1-r_{23} r_{21} e^{i 2 \phi}\right|^2}=\frac{T_{\mathrm{FPmax}}}{1+\left(\frac{2 F}{\pi}\right)^2 \sin^2 \phi_r},
 \end{aligned}
 $$
 where 
@@ -245,9 +243,7 @@ which relates the spectral width and the free-spectral range:
 
 Finally, the transmission as function of frequency is
 $$
-T_{\mathrm{FP}}(f)=\frac{T_{\mathrm{FPmax}}}{1+\left(\frac{2 F}{\pi}\right)^2 \sin
-{ #2}
-\left(\pi \frac{f}{f_F}\right)}.
+T_{\mathrm{FP}}(f)=\frac{T_{\mathrm{FPmax}}}{1+\left(\frac{2 F}{\pi}\right)^2 \sin^2\left(\pi \frac{f}{f_F}\right)}.
 $$
 The free spectral range is determined by the optical path length of the Fabry-Pérot cavity, whereas the finesse is determined by the interface reflectivity. 
 
