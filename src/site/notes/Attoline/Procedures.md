@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-03-26T18:39:14.000+01:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-03-26T18:39:23.000+01:00"}
 ---
 
 # 1 Laser Startup
@@ -221,7 +221,7 @@ In E6.2:
 - Using the 'Kurbel' to separate the top from the bottom
 - Turn off the turbo labelled 'turbo manipulation chamber'
 - Wait for it to spin down (~45 - 60 minutes)
-- In the mean-time
+- In the mean-time:
 	- Prepare new copper ring
 	- Prepare tools to remove the screws
 	- Get aluminium foil ready
