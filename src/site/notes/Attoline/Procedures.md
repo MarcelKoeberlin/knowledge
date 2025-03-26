@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-03-14T11:01:40.000+01:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-03-26T18:39:14.000+01:00"}
 ---
 
 # 1 Laser Startup
@@ -189,28 +189,48 @@ In E6.2:
 
 ---
 # 10 Generation Chamber
-## 10.1 Venting chamber
-- Close all other valves to the Pre-vac
-- Open the valves between vented chambers and Pre-vac
-- Wait until pressures around 3E-1 mbar to switch on the turbo pumps
-- After the turbos have spun up, and pressure is around E-4/E-5 mbar, open all Pre-vac valves
-- Rotate filters back
-## 10.2 Purging Chamber
-
-- Block beam in ==E8==
-- Move out all filters
-- Close black valves before and after the manipulation chamber, and after the glass hub
-- Close the valves to the Pre-vac of the turbo pumps to be switched off
-- Ensure the shutter chiller is turned off
-- Shut down the four turbo pumps labelled 'Front Unit'
-- Remove KF on second camber to prevent over-pressure
-- Open the nitrogen valve on the wall to approximately 0.6 bar (red line)
-- After the turbos spun down, open the nitrogen valve at first chamber to start purging
-- Wait until the KF be easily removed, which usually happens when the focusing chamber pressure is around 7E+2 mbar
-- Close the nitrogen at first chamber and wall
-# SPIDER
+## 10.1 Venting (any) chamber
+- Separate chamber to vent from others by closing black valves 
+- Close the pre-vac that leads to the chamber to vent
+- Venting the generation chamber:
+	- Block beam in ==E8==
+	- Move out all filters
+	- Ensure that the shutter chiller is off
+	- Shut down the four turbo pumps labelled 'Front Unit'
+	- Remove KF on second camber to prevent over-pressure
+	- Open the nitrogen valve on the wall to approximately 0.6 bar (red line)
+	- After the turbos spun down, open the nitrogen valve at first chamber to start purging
+	- Wait until the KF be easily removed, which usually happens when the focusing chamber pressure is around 7E+2 mbar
+	- Close the nitrogen at first chamber and wall
+- Shut down the turbo pumps that are still connected to the chamber to vent
+- After turbo has spun down to almost 0 Hz, flush with nitrogen if possible (open at wall, 0.6 bar)
+- Open the chamber
+## 10.2 Purging (any) chamber
+- Close all pre-vacs expect the one to purge
+- Wait until pressures around 3e-1 mbar to switch on the turbo pumps
+- After the turbos have spun up, and pressure is around 1e-4/1e-5 mbar, open all other pre-vacs
+- In generation chamber: Rotate filters back
+# 11 SPIDER
 - Outcouple probe (HHG arm) beam with mirror
 - Use two mirrors to send through black tunnel
-- 
+- Follow introductory manual step-by-step
+# 12 Swapping Samples
+- Close prevac to upper turbo labelled 'turbo manipulation chamber'
+- On Stepper motor controller, set drives to 'on' and use Joystick
+- Drive sample to top position, using z-direction
+- Using the 'Kurbel' to separate the top from the bottom
+- Turn off the turbo labelled 'turbo manipulation chamber'
+- Wait for it to spin down (~45 - 60 minutes)
+- In the mean-time
+	- Prepare new copper ring
+	- Prepare tools to remove the screws
+	- Get aluminium foil ready
+- Open the nitrogen when it spun down to 0 Hz
+- Wear globes, a robe and hair cover
+- Remove screws
+- Within the chamber, loosen the bottom two screws with hand underneath (do not fully remove screws)
+- Swap the sample
+- Close the window with new copper ring and screws
+- [[Attoline/Procedures#10.2 Purging (any) chamber\|Purge]] the chamber
 
 ---
