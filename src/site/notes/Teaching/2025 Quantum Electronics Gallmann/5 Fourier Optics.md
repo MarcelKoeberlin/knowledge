@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/5-fourier-optics/","hide":"true","updated":"2025-03-25T11:02:43.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/5-fourier-optics/","hide":"true","updated":"2025-03-25T11:30:00.000+01:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -147,7 +147,7 @@ h(x, y)  =h_0 e^{-i k \frac{x^2+y^2}{2 z}} \quad\text{with}\quad
 h_0  =\frac{i k}{2 \pi z} e^{-i k z}.
 \end{aligned}
 $$
-Why is this useful? Because we are copnsidering [[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.1 The Convolution Sum\|linear systems]] (or [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.2.1 Linear System Theory\|here]]), and therefore knowing the output to the impulse (the impulse reponse) ==is enough to know the output to any input!== Specifically, the connection is made through 
+Why is this useful? Because we are considering [[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.1 The Convolution Sum\|linear systems]] (or [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.2.1 Linear System Theory\|here]]), and therefore knowing the output to the impulse (the impulse reponse) ==is enough to know the output to any input!== Specifically, the connection is made through 
 
 $$
 \begin{aligned}
@@ -161,7 +161,7 @@ U(x, y, z)=\frac{i k}{2 \pi z} e^{-i k z} \int_{-\infty}^{\infty} \int_{-\infty}
 $$
 
 The general steps to find the electric field and intensity at any point $(x,y,z)$ for given input are the following:
-1. Find the 2D Fourier transform $V(k_x,k_y,0)$ of $U(x,y,0).
+1. Find the 2D Fourier transform $V(k_x,k_y,0)$ of $U(x,y,0)$.
 2. Multiply by the transfer function $H(k_x,k_y)$ to obtain $V(k_x,k_y,k_z)$.
 3. Apply the inverse Fourier transform to obtain $U(x,y,z).$
 
