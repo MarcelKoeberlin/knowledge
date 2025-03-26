@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-03-26T18:42:36.000+01:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-03-26T18:43:08.000+01:00"}
 ---
 
 # 1 Laser Startup
@@ -191,7 +191,7 @@ In E6.2:
 	- Remove KF on second camber to prevent over-pressure
 	- Open the nitrogen valve on the wall to approximately 0.6 bar (red line)
 	- After the turbos spun down, open the nitrogen valve at first chamber to start purging
-	- Wait until the KF be easily removed, which usually happens when the focusing chamber pressure is around 7E+2 mbar
+	- Wait until the KF be easily removed, which usually happens when the focusing chamber pressure is around 7e+2 mbar
 	- Close the nitrogen at first chamber and wall
 - Venting the back part:
 	- Move out filter in front of camera
