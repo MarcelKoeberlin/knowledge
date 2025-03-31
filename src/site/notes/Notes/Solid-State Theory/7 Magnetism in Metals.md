@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/7-magnetism-in-metals/","hide":"true","updated":"2025-02-08T20:22:20.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/7-magnetism-in-metals/","hide":"true","updated":"2025-02-08T20:22:20.568+01:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.

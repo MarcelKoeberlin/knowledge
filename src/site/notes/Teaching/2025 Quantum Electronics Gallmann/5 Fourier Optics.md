@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/5-fourier-optics/","hide":"true","updated":"2025-03-25T11:30:00.000+01:00"}
+{"dg-publish":true,"permalink":"/teaching/2025-quantum-electronics-gallmann/5-fourier-optics/","hide":"true","updated":"2025-03-31T19:27:17.745+02:00"}
 ---
 
 Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -13,6 +13,9 @@ Jump back to ==[[Teaching/2025 Quantum Electronics Gallmann/Quantum Electronics#
 - [[Teaching/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.4 The Fraunhofer Limit: Far Field\|5.4 The Fraunhofer Limit: Far Field]]
 - [[Teaching/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.5 Diffraction Patterns -  Amplitude Modulation\|5.5 Diffraction Patterns -  Amplitude Modulation]]
 - [[Teaching/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.6 Fourier Optics with a Lens\|5.6 Fourier Optics with a Lens]]
+- [[Teaching/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.7 Holography\|5.7 Holography]]
+- [[Teaching/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.8 Paraxial Ray Optics\|5.8 Paraxial Ray Optics]]
+- [[Teaching/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.9 Gaussian Beam Optics\|5.9 Gaussian Beam Optics]]
 
 ---
 # 5 Fourier Optics
@@ -248,13 +251,310 @@ with $r=\sqrt{x^2+y^2}.$ The resulting pattern, which is also called 'Airy disk'
 ## 5.6 Fourier Optics with a Lens
 [[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=104&selection=0,0,0,29|•]] 
 
-Consider a lens with focal length $f$. Generally, lenses map a direction (specified by angles $\theta_x$ and $\theta_y$) to a position ($\theta_xf$, $\theta_yf$). 
+Consider a lens with focal length $f$. Then, one can show that 
+$$
+U(x, y, f)=\left(\frac{2 \pi f}{k}\right)^2 h_0 F\left(k_x, k_y\right) e^{-i \frac{f}{2 k}\left(k_x^2+k_y^2\right)} \delta\left(x-x_0\right) \delta\left(y-y_0\right).
+$$
+This means that all this type of 'mask' focuses all light to a point 
+$$
+\left(x_0, y_0\right)=(\theta_xf,\theta_yf)=\left(f k_x / k, f k_y / k\right),
+$$
+where $f$ is the distance away from the lens. This is the defining property of a lens. 
 
 ![Attachments/02_Fundamental_phenomena 19.webp|700](/img/user/Attachments/02_Fundamental_phenomena%2019.webp)[[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=104&rect=391,338,704,489|•]]
 
-Note that a lens is not an amplitude mask anymore, but a phase mask. 
+Note that a lens is not an amplitude mask (like an aperture) anymore, but a phase mask. Considering that the wave propagates a distance $f$ through free space before the lens, the output is then 
+$$
+U(x, y, 2 f)=\frac{i}{\lambda f} e^{-2 i k f} V(k x / f, k y / f, 0),
+$$
+which implies that the lens simply takes the Fourier transform of the input. This is similar to what happens in the [[Teaching/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.4 The Fraunhofer Limit Far Field\|Fraunhofer limit]], .e.g since propagation to the focal plane of a lens is similar to propagation to the far-field. However, with a lens, we need only satisfy the conditions for the Fresnel approximation. These properties of a lens are very useful, for example by using two lenses: The first performs a Fourier transform, while the second lens applies the inverse Fourier transform.
 
->[!info]
->to be continued
+![Attachments/02_Fundamental_phenomena 20.webp|700](/img/user/Attachments/02_Fundamental_phenomena%2020.webp)[[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=105&rect=108,241,741,463|•]]
+
+Then, in the Fourier plane, one can place an amplitude mask to filter out particular spatial frequencies to modify the image. This is useful in image processing. The transfer function of such a system is 
+$$
+H\left(k_x, k_y\right)=p\left(\lambda f k_x, \lambda f k_y\right),
+$$
+where $p(x,y)$ is the transparency in the Fourier plane (the mask). Consider the following image as an example. A normal spherical aperture implements a low-pass filter. Therefore, slow variation in the brightness of the image are blurred out. On the other hand, taking the inverse of a spherical aperture, we obtain a high-pass filter. Only quick variation in brightness are let through, such that for example the Hair appears white. However, the mans skin has only slow variations in brightness, such that there no signal passes through. The skin appears dark.
+
+![Attachments/02_Fundamental_phenomena 21.webp|700](/img/user/Attachments/02_Fundamental_phenomena%2021.webp)[[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=109&rect=127,96,687,483|•]]
+
+Also more exotic shapes are possible. The Fresnel zone plate can be shown to implements a focusing lens of focal length $f$. In contrast to a lens, it uses diffraction!
+
+![Attachments/02_Fundamental_phenomena 22.webp|700](/img/user/Attachments/02_Fundamental_phenomena%2022.webp)[[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=110&rect=80,138,284,344|•]]
+
+Its transparency is described through 
+
+$$
+t(x, y)= \begin{cases}1, & \text { for } \cos \left(\pi \frac{x^2+y^2}{\lambda f}\right)>0 \\ 0, & \text { otherwise }.\end{cases}
+$$
+
+![Attachments/02_Fundamental_phenomena 23.webp|700](/img/user/Attachments/02_Fundamental_phenomena%2023.webp)[[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=114&rect=128,157,687,477|•]]
+
+The concentric rings are known as Fresnel zones. Light diffracts around the opaque zones, and their spacing is such that the diffracted light constructively interferes at the desired focus. The same zone plate will focus light of different wavelengths to different foci, meaning that one can filter out unwanted wavelengths. 
+
+---
+## 5.7 Holography
+[[Teaching/2025 Quantum Electronics Gallmann/QE_script.pdf#page=111&selection=4,0,6,10|•]] [[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=121&selection=0,20,0,20|•]]
+
+Holograms are objects, usually thin films, that encode in formation required to reconstruct the optical wave from an object, including its amplitude and phase. In principle, this is easy: We implement $t(x,y)$ on a thin film equal to $U(x,y,0).$ Then in the next step, we illuminate the back of the film with a plane wave to reconstruct the light from the object. However, this is not so easy, since all optical detectors are sensitive only to optical intensity, but not to phase. However, phase generally contains more information than amplitude. This is done by interfering a _reference wave_ $U_r$ with the _object wave_ $U_0.$  
+
+![Attachments/QE_script 17.webp|700](/img/user/Attachments/QE_script%2017.webp)[[Teaching/2025 Quantum Electronics Gallmann/QE_script.pdf#page=112&rect=134,547,244,674|•]]
+
+If they overlap at $z=0,$ the intensity pattern of the resulting interference on a film is 
+$$
+\begin{aligned}
+t & \propto\left|U_0+U_r\right|^2=\left|U_r\right|^2+\left|U_0\right|^2+U_r^* U_0+U_r U_0^* \\
+& =I_r+I_0+U_r^* U_0+U_r U_0^* \\
+& =I_r+I_0+2 \sqrt{I_r I_0} \cos \left[\arg \left(U_r\right)-\arg \left(U_0\right)\right].
+\end{aligned}
+$$
+Therefore, the film now contains information on the phase. Illuminating the film now with the reference wave again, we obtain
+$$
+U=t U_r \propto U_r I_r+U_r I_0+I_r U_0+U_r^2 U_0^*.
+$$
+Assuming the reference wave to be a uniform plane wave moving along the $z$-axis, we obtain 
+$$
+U(x, y) \propto I_r+I_0(x, y)+\sqrt{I_r} U_0(x, y)+\sqrt{I_r} U_0^*(x, y),
+$$
+where the important term is the third one. It contains the reconstructed complex wave form the object. The trick is now to find a way to separate these waves. This is usually obtain by a large angular separation between reference and object wave:
+
+![Attachments/QE_script 18.webp|700](/img/user/Attachments/QE_script%2018.webp)[[Teaching/2025 Quantum Electronics Gallmann/QE_script.pdf#page=112&rect=298,545,474,682|•]]
+
+Note that the second term is called _ambiguity wave._ The reference and ambiguity wave both move in $z$-direction, such that they are automatically discarded. The conjugate wave moves as the mirror image of the object wave, so it can be discarded by only looking at the range of angles where the object wave disappears. From the prior discussion, it should be clear that this requires using high-coherence, monochromatic light sources, both for creation and reconstruction. Since this is not always possible, variations are possible, volume and rainbow holography can be used. In the prior, the 'film' now has a significant depth, such that the volume diffraction pattern acts as a wavelength filter and white light can be used to reconstruct the hologram. The latter usually appears on credit cards for anti-counterfeit measures. It is constructed as a transmission hologram but with a narrow horizontal slit placed between object and film plane. If reconstructed with a monochromatic light of same frequency as the original reference, the reconstructed wave looks like seeing the object through a slit. 
+
+Generally, we differentiate two types of hologram:
+- Reflection hologram: Recording material is placed such that reference and object beam approach the film from two opposite sides. The interference fringes are usually parallel to the surface of the recording medium. Reconstruction requires both object and reference beam to lie on the same side. 
+- Transmission hologram: Reference and object beam approach the film from the same side. The interference fringes are generally perpendicular to the surfaces of the recording material. Reconstruction requires reference and object beam to lie on opposite sides.
+
+An example of a transmission hologram is shown in the next figure ([source](http://hyperphysics.phy-astr.gsu.edu/hbase/optmod/holog2.html#c3)).
+
+![Attachments/Pasted image 20250331170450.png|700](/img/user/Attachments/Pasted%20image%2020250331170450.png)
+![Attachments/Pasted image 20250331170456.png|700](/img/user/Attachments/Pasted%20image%2020250331170456.png)
+
+Lastly note that in ordinary photography, only the intensity distribution is stored on a 2D film, such that all phase information is lost. Thus, not 3D information is contained within it. 
+
+---
+## 5.8 Paraxial Ray Optics
+[[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=140&selection=0,0,0,10|•]] [[Teaching/2025 Quantum Electronics Gallmann/QE_script.pdf#page=113&selection=40,0,42,19|•]]
+
+Often, it is not necessary to do a full Fourier treatment of simple optical elements, and it suffices to use the ray approximation. This is especially true when effects of diffraction can be neglected, for example when all apertures or beam sizes are much larger than the wavelength of the light. We call the normal to a wavefront a _ray,_ and we will be working in the paraxial approximation, e.g. all rays form small angles with the respect to the $z$-axis. 
+A single ray is described as a 2D vector consisting of radial distance $r$ and $\theta$ the angle to that axis. We will also assume beams with cylindrical symmetry around the $z$-axis. For example, it is easy to see that a converging lens with focal lens $f$ implements
+$$
+\binom{r}{\theta} \rightarrow\binom{r}{\theta-r / f},
+$$
+where we used $\sin\theta\approx \theta.$ 
+
+![Attachments/QE_script 19.webp|700](/img/user/Attachments/QE_script%2019.webp)[[Teaching/2025 Quantum Electronics Gallmann/QE_script.pdf#page=114&rect=158,560,443,685|•]]
+
+This result is more general: In general, we can relate input $(r_1,\theta_1)$ and output $(r_2,\theta_2)$ through a matrix, called the ABCD- or ray-transfer matrix
+$$
+\left[\begin{array}{l}
+r_2 \\
+\theta_2
+\end{array}\right]=\left[\begin{array}{ll}
+A & B \\
+C & D
+\end{array}\right]\left[\begin{array}{l}
+r_1 \\
+\theta_1
+\end{array}\right].
+$$
+For the lens we find
+$$
+\binom{r_2}{\theta_2}=\left(\begin{array}{cc}
+1 & 0 \\
+-1 / f & 1
+\end{array}\right)\binom{r_1}{\theta_1}.
+$$
+Similarly, for propagation through a homogeneous medium of length $d,$ we find
+$$
+\binom{r}{\theta} \rightarrow\binom{r^{\prime}}{\theta^{\prime}}=\binom{r+d \theta}{\theta},
+$$
+such that the ray-transfer matrix is
+$$
+M=\left(\begin{array}{ll}
+1 & d \\
+0 & 1
+\end{array}\right).
+$$
+For a planar interface between homogeneous media, we obtain
+$$
+M=\left(\begin{array}{cc}
+1 & 0 \\
+0 & n_1 / n_2
+\end{array}\right),
+$$
+and the effect of a spherical mirror with concave radius of curvature $R$ is
+$$
+M=\left(\begin{array}{cc}
+1 & 0 \\
+-2 / R & 1
+\end{array}\right).
+$$
+
+The advantage is now that we can easily model the ray through an optical system. For example, consider the propagation through a homogeneous medium of length $a$, followed by passing a lens of focal length $f$, followed by another propagation through $b$ of a homogeneous medium:
+
+![Attachments/02_Fundamental_phenomena 24.webp|700](/img/user/Attachments/02_Fundamental_phenomena%2024.webp)[[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=147&rect=273,247,622,383|•]]
+
+Then, the matrix relating input and output is the ABCD matrix
+$$
+\binom{r^{\prime}}{\theta^{\prime}}=\left(\begin{array}{ll}
+1 & b \\
+0 & 1
+\end{array}\right)\left(\begin{array}{cc}
+1 & 0 \\
+-1 / f & 1
+\end{array}\right)\left(\begin{array}{ll}
+1 & a \\
+0 & 1
+\end{array}\right)\binom{r}{\theta}.
+$$
+
+---
+## 5.9 Gaussian Beam Optics
+[[Teaching/2025 Quantum Electronics Gallmann/QE_script.pdf#page=115&selection=4,0,6,20|•]] [[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=148&selection=0,0,0,14|•]]
+
+Let us once again change the topic. We return to the treatment of beams. This will later be relevant when discussing laser cavities. A Gaussian beam with waist at $z=0$ is described by
+
+$$
+U(\mathbf{r})=A_0 \frac{W_0}{W(z)} e^{-\frac{\rho^2}{W^2(z)}} e^{-i k z-i k \frac{\rho^2}{2 R(z)}-i \zeta(z)}
+$$
+
+with beam parameters
+
+$$
+\begin{aligned}
+&\text{Beam Radius:}&W(z) & =W_0 \sqrt{1+\left(\frac{z}{z_0}\right)^2}, \\
+&\text{Radius of Curvature:}&R(z) & =z\left[1+\left(\frac{z_0}{z}\right)^2\right], \\
+&\text{Gouy Phase}&\zeta(z) & =-\arctan \frac{z}{z_0}, \\
+&\text{Beam Waist:}&W_0 & =\sqrt{\frac{\lambda z_0}{\pi}}, \\
+&\text{Half-Angle of Divergence:}&\theta_0 & =\frac{\lambda}{\pi W_0}.
+\end{aligned}
+$$
+Those are explained more in the following subchapters.
+### 5.9.1 Gaussian Beams as Solution to the Helmholtz Equation
+
+This form is also found when considering a beam as
+$$
+U(\mathbf{r})=A(\mathbf{r}) e^{-i k z},
+$$
+with $A$ slowly changing in $\mathbf{r}$ over the length of one wavelenght. Then, the Helmholtz equation 
+$$
+\nabla^2 U+k^2 U=0
+$$
+can be transformed into the _Paraxial Helmholtz_ equation
+$$
+\nabla_T^2 A-i 2 k \frac{\partial A}{\partial z}=0,
+$$
+where we use that $\frac{\partial^2}{\partial z^2} A\rightarrow 0.$ A general solution has the form 
+$$
+A(\mathbf{r})=\frac{A_1}{q(z)} e^{-i k\left(x^2+y^2\right) / 2 q(z)}\quad\text{with}\quad q(z)=z+i z_0.
+$$
+
+We call $W(z)$ the beam radius, as it tells us the radial distance where the intensity falls off to $1/e^2$ of its maximum value in that plane. Twice the beam radius is also sometimes called the spot size. The projection of a Gaussian beam onto (for example) the $x$- and $z$-axis looks like
+
+![Attachments/02_Fundamental_phenomena 25.webp|700](/img/user/Attachments/02_Fundamental_phenomena%2025.webp)[[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=153&rect=108,178,437,435|•]]
+
+Here, the minimal beam radius (waist) $W_0$ is at a distance $z=100.$ From the form of the Gaussian beam, it becomes apparent that most of the beam power is concentrated in a small around the beam axis. Then, the intensity distribution in any transverse plane is a circular symmetric Gaussian function, with its centre being the beam axis. The width of that function $W(z)$ has its minimum $W_0$ at the beam waist $z=100.$ From there, the radius increases in both directions. Wavefronts are approximately planar near the beam waist, but gradually curve and become approximately spherical far from the waist. For a fixed $z_0,$ the waist becomes smaller the shorter the wavelength $\lambda$ is. 
+
+### 5.9.2 Rayleigh Length
+
+The Rayleigh range is defined as $z_0$ and it is the distance over which the beam gets twice as big in area compared to the waist:
+
+![Attachments/02_Fundamental_phenomena 26.webp|700](/img/user/Attachments/02_Fundamental_phenomena%2026.webp)[[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=155&rect=183,254,683,443|•]]
+
+Then we deduce the following behaviour:
+- For fixed beam waist $W_0:$ The shorter the wavelength, the longer the depth of focus $2z_0.$
+- For fixed wavelength $\lambda:$ The larger the beam waist, the longer the depth of focus.
+
+### 5.9.3 Beam Divergence
+
+Next up, we may want a measure of how **quick** the beam width increases. This leads to the notion of beam divergence :
+
+![Attachments/02_Fundamental_phenomena 27.webp|700](/img/user/Attachments/02_Fundamental_phenomena%2027.webp)[[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=157&rect=180,260,668,427|•]]
+
+Again, we deduce the following behaviour:
+- For fixed beam waist $W_0:$ The shorter the wavelength, the smaller the divergence.
+- For fixed wavelength $\lambda:$ The larger the beam waist, the smaller the divergence.
+
+### 5.9.4 Wavefront of Gaussian Beams
+
+In the Fresnel approximation, a Gaussian beam becomes spherical in the limit that $R\rightarrow\infty,$ e.g. it approaches that of a spherical wave emitted on axis at $z=0.$
+
+![Attachments/02_Fundamental_phenomena 28.webp|700](/img/user/Attachments/02_Fundamental_phenomena%2028.webp)[[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=158&rect=161,207,655,416|•]]
+
+Here, $R(z)$ is the radius of the wavefront curvature:
+$$
+R(z)=z\left[1+\left(\frac{z_0}{z}\right)^2\right]
+$$
+
+### 5.9.5 Gouy Phase
+
+The term $\zeta(z)$ is the Gouy phase ([source](https://www.rp-photonics.com/gouy_phase_shift.html)):
+
+![Attachments/Pasted image 20250331190810.png|700](/img/user/Attachments/Pasted%20image%2020250331190810.png)
+
+Further, the limits are
+$$
+\begin{aligned}
+z \rightarrow-\infty & \Longrightarrow \zeta(z) \rightarrow-\pi / 2 \\
+z \rightarrow \infty & \Longrightarrow \zeta(z) \rightarrow \pi / 2.
+\end{aligned}
+$$
+The Gouy phase is a phase retardation of the Gaussian beam relative to a plane wave at points on the beam axis, with zero retardation at the waist. It is necessary since the phase front of a Gaussian beam transition from a spherical front a minus infinity to a plane at the waist, and back to a spherical phase front but with opposite curvature at plus infinity. It becomes obvious that this phase shift is significant only around the waist of the beam. 
+
+### 5.9.6 Shifting the Gaussian Beam
+
+We may also define the Gaussian beam with its waist at $z=z_w,$ rather than $z=0.$ Then, we must simply shift all formulas by $-z_w.$ This makes the treatment of some optical elements simpler. Consider a thin lens at $z=0.$ We can show that
+$$
+\frac{1}{R^{\prime}}=\frac{1}{R}-\frac{1}{f}
+$$
+and 
+$$
+W(0)=W^{\prime}(0),
+$$
+such that the intensity profile at $z=0$ is unchanged. 
+
+![Attachments/02_Fundamental_phenomena 30.webp|700](/img/user/Attachments/02_Fundamental_phenomena%2030.webp)[[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=164&rect=554,133,828,281|•]]
+
+Summarised, we can show that the effect of a thin lens on a Gaussian beam are:
+- New Rayleigh range: $z_0^{\prime}=M^2 z_0$.
+- New waist radius: $W_0^{\prime}=M W_0$.
+- Magnification: $M=\left|\frac{f}{\sqrt{\left(z_w+f\right)^2+z_0^2}}\right|$.
+- New position of the waist: $\left(z_w^{\prime}-f\right)=-M^2\left(z_w+f\right)$.
+
+We can see that the Waist increases by a factor $M,$ while the Rayleigh range increases by $M^2.$ 
+
+### 5.9.7 ABCD Law for Gaussian Beams
+
+As before, we are lucky that the ray-transfer matrix formalism can still be used, although slightly adjusted. The idea is the following: Instead of relying on $r$ and $\theta$, we introduce a new parameter - the q-parameter - which contains information about the Rayleigh length and the waist position:
+
+$$
+q(z)=\left(z-z_w\right)+i z_0 \iff \frac{1}{q(z)}=\frac{1}{R(z)}-i \frac{\lambda}{\pi W^2(z)}.
+$$
+Similar to before, we wonder, how does the q-parameter change through an optical system described by a given ray-transfer matrix?
+
+![Attachments/02_Fundamental_phenomena 31.webp|700](/img/user/Attachments/02_Fundamental_phenomena%2031.webp)[[Teaching/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=169&rect=187,240,646,394|•]]
+
+It can be shown that, for a linear, cylindrically symmetric paraxial beam, the q-parameter transform as
+$$
+q_2=\frac{A q_1+B}{C q_1+D}.
+$$
+We are lucky again, because it turns out that we can use the same matrices as described for [[Teaching/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.8 Paraxial Ray Optics\|ray optics]]! For example, for propagation through free space of length $d$, the q-parameter changes as $q\rightarrow q+d.$ For a thin lens of focal length $f,$ the parameter changes as
+$$
+q_2=\frac{q_1}{1-q_1 / f}.
+$$
+Similar to before, passing two consecutive optical elements simply means that we multiply the two ray-transfer matrices. The connection between ray optics and the Gaussian beam is no coincidence: Considering the limit $\lambda\rightarrow 0,$ we find that $q(z)=R$ simply describes the curvature of the wavefront. Then, in the paraxial approximation, we find $R=r/\theta,$ or $q=r/\theta.$ Thus, we have that
+$$
+q^{\prime}=\frac{r^{\prime}}{\theta^{\prime}}=\frac{A r+B \theta}{C r+D \theta},
+$$
+which is the same as before:
+$$
+\binom{r^{\prime}}{\theta^{\prime}}=\left(\begin{array}{ll}
+A & B \\
+C & D
+\end{array}\right)\binom{r}{\theta}=\binom{A r+B \theta}{C r+D \theta}.
+$$
 
 ---
