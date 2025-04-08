@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/8-magnetism-of-localised-moments/","hide":"true","updated":"2025-02-08T20:24:05.962+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/8-magnetism-of-localised-moments/","hide":"true","updated":"2025-04-05T17:25:08.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -14,13 +14,13 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 
 ---
 # 8 Magnetism of Localised Moments
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=172&selection=2,0,2,30|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=172&selection=2,0,2,30|•]]
 
 Up to now, we have mostly assumed that the interaction between electrons leads to secondary effects. This was, essentially, the message of the Fermi liquid theory, the standard model of condensed matter physics. There, the interactions of course renormalise the properties of a metal, but their description is still possible by using a language of nearly independent Fermionic quasi-particles with a few modifications. Even in connection with the magnetism of itinerant electrons, where interactions proved to be crucial, the description in terms of extended Bloch states. Many properties were determined by the band structure of the electrons in the lattice, i.e., the electrons were preferably described in $k$-space.
 
 However, in this chapter, we will consider situations, were it is less clear whether we should describe the electrons in momentum or in real space. The problem becomes obvious with the following Gedanken experiment: We look at a regular lattice of H -atoms. The lattice constant should be large enough such that the atoms can be considered to be independent for now. In the ground state, each H -atom contains exactly one electron in the $1 s$-state, which is the only atomic orbital we consider at the moment. The transfer of one electron to another atom would cost the relatively high energy of $E\left(H^{+}\right)+E\left(H^{-}\right)-2 E(H) \sim 15 \mathrm{eV}$, since it corresponds to an ionisation. Therefore, the electrons remain localised on the individual H -atoms and the description of the electron states is obviously best done in real space. The reduction of the lattice constant will gradually increase the overlap of the electron wave functions of neighboring atoms. In analogy to the $\mathrm{H}_{2}$ molecule, the electrons can now extend on neighboring atoms, but the cost in energy remains that of an "ionisation". Thus, transfer processes are only possible virtually, there are not yet itinerant electrons in the sense of a metal.
 
-![Attachments/Script 76.webp|700](/img/user/Attachments/Script%2076.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=170&rect=188,391,406,546|•]]
+![Attachments/Script 76.webp|700](/img/user/Attachments/Script%2076.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=170&rect=188,391,406,546|•]]
 
 On the other hand, we know the example of the alkali metals, which release their outermost ns-electron into an extended Bloch state and build a metallic (half-filled) band. This would actually work well for the H -atoms for sufficiently small lattice constant too. In nature, this can only be induced by enormous pressures metallic hydrogen probably exists in the centres of the large gas planets Jupiter and Saturn due to the gravitational pressure. Obviously, a transition between the two limiting behaviours should exist. This metal-insulator transition, which occurs, if the gain of kinetic energy surpasses the energy costs for the charge transfer. The insulating side is known as a Mott insulator.
 While the obviously metallic state is reliably described by the band picture and can be sufficiently well approximated by the previously discussed methods, this point of view becomes obsolete when approaching the metal-insulator transition. According to band theory, a half-filled band must produce a metal, which definitely turns wrong when entering the insulating side of the transition. Unfortunately, no well controlled approximation for the description of this metal-insulator transition exists, since there are no small parameters for a perturbation theory.
@@ -28,7 +28,7 @@ Another important aspect is the fact, that in a standard Mott insulator each ato
 
 ---
 ## 8.1 Mott Transition
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=173&selection=33,0,35,15|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=173&selection=33,0,35,15|•]]
 
 First, we investigate the metal-insulator transition. Its description is difficult, since it does not constitute a transition between an ordered and a disordered state in the usual sense. We will, however, use some simple considerations which will allow us to gain some insight into the behaviour of such systems.
 
@@ -50,7 +50,7 @@ $$
 $$
 where the spin configuration $\left\{s_{i}\right\}$ can be chosen arbitrarily. We will deal with the lifting of this degeneracy later. The first excited states feature one lattice site without electron and one doubly occupied site. This state has energy  and its degeneracy is even higher, i.e., . Even higher excited states correspond to more empty and doubly occupied sites. The system is an insulator and the density of states is shown here:
 
-![Attachments/Script 77.webp|700](/img/user/Attachments/Script%2077.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=174&rect=166,200,438,396|•]]
+![Attachments/Script 77.webp|700](/img/user/Attachments/Script%2077.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=174&rect=166,200,438,396|•]]
 
 **Metallic band limit**: We set $U=0$. The electrons are independent and move freely via hopping processes. The band energy is found through a Fourier transform of the Hamiltonian. With
 $$
@@ -91,7 +91,7 @@ $$
 
 Even though ignoring the spin configurations here is a daring approximation, we obtain a qualitatively good picture of the situation. Note that the motion of an empty site (holon) or doubly occupied site (doublon) is not independent of the spin configuration which is altered through moving these objects. As a consequence, the holon/doublon motion is not entirely free leading to a reduction of the band width. Therefore the band width seen in the next figure is smaller than 2D, in general. One notices that, with increasing $|t|$, the two energy sectors approach each other, until they finally overlap. In the left panel the holon-doublon excitation spectrum is depicted by two bands, the lower and upper Hubbard bands, where the holon is a hole in the lower and the doublon a particle in the upper Hubbard band:
 
-![Attachments/Script 78.webp|700](/img/user/Attachments/Script%2078.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=175&rect=161,503,438,551|•]]
+![Attachments/Script 78.webp|700](/img/user/Attachments/Script%2078.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=175&rect=161,503,438,551|•]]
 
 The excitation gap is the gap between the two bands and we may interpret this system as an insulator, called a Mott insulator. (Note, however, that this band structure depends strongly on the correlation effects (e.g. spin correlation) and is not rigid as the band structure of a semiconductor.) The band overlap (closing of the gap) indicates a transition, after which a perturbative treatment is definitely inapplicable. This is, in fact, the metal-insulator transition.
 
@@ -233,7 +233,7 @@ $$
 
 With this, the jump in the distribution at the Fermi energy is equal to $g_{t}$, which, as previously, corresponds to the quasi-particle weight:
 
-![Attachments/Script 79.webp|700](/img/user/Attachments/Script%2079.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=178&rect=161,492,436,651|•]]
+![Attachments/Script 79.webp|700](/img/user/Attachments/Script%2079.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=178&rect=161,492,436,651|•]]
 
 For $U \rightarrow U_{c}$ it vanishes, i.e., the quasi-particles cease to exist for $U=U_{c}$. Without going into the details of the calculation, we provide a few Fermi liquid parameters. It is easy to see that the effective mass
 $$
@@ -275,7 +275,7 @@ The deviation from single occupation vanishes with $d$, i.e., with the approach 
 
 ---
 ## 8.2 The Mott Insulator as a Quantum Spin System
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=179&selection=0,0,2,43|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=179&selection=0,0,2,43|•]]
 
 One of the most important characteristics of the Mott insulator is the presence of spin degrees of freedom after the freezing of the charge. This is one of the most profound features distinguishing a Mott insulator from a band insulator. In our simple discussion, we have seen that the atomic limit of the Mott insulator provides us with a highly degenerate ground state, where a spin- $1 / 2$ degree of freedom is present on each lattice site. We lift this degeneracy by taking into account the kinetic energy term $\mathcal{H}_{\text {kin }}(t \ll U)$. In this way new physics appears on a low-energy scale, which can be described by an effective spin Hamiltonian. Prominent examples for such spin systems are transition-metal oxides like the cuprates $\mathrm{La}_{2} \mathrm{CuO}_{4}, \mathrm{SrCu}_{2} \mathrm{O}_{3}$ or vanadates $\mathrm{CaV}_{4} \mathrm{O}_{9}$, $\mathrm{NaV}_{2} \mathrm{O}_{5}$.
 
@@ -292,7 +292,7 @@ $$
 $$
 where, in the last two cases, the resulting states have an energy higher by $U$ and lie outside the ground state sector. Thus, it becomes clear that we have to proceed to second order perturbation, where the states of higher energy will appear only virtually:
 
-![Attachments/Script 80.webp|700](/img/user/Attachments/Script%2080.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=179&rect=162,320,437,418|•]]
+![Attachments/Script 80.webp|700](/img/user/Attachments/Script%2080.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=179&rect=162,320,437,418|•]]
 
 We obtain the matrix elements
 $$
@@ -405,11 +405,11 @@ m(T)= \begin{cases}0, & T>T_{N} \\ \frac{\hbar}{2} \sqrt{3\left(T_{N} / T-1\righ
 \end{align*}
 $$
 
-![Attachments/Script 81.webp|700](/img/user/Attachments/Script%2081.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=182&rect=156,635,436,759|•]]
+![Attachments/Script 81.webp|700](/img/user/Attachments/Script%2081.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=182&rect=156,635,436,759|•]]
 
 ---
 ## 8.3 Collective Modes - Spin Wave Excitations
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=182&selection=23,0,25,40|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=182&selection=23,0,25,40|•]]
 
 Besides its favourable properties, the mean field approximation also has a number of insufficiencies. Quantum and some part of thermal fluctuations are neglected, and the insight into the low-energy excitations remains vague. As a matter of fact, as in the case of the ferromagnet, collective excitations exist here. In order to investigate these, we write the Heisenberg model in its spin components, i.e.,
 $$
@@ -524,7 +524,7 @@ $$
 $$
 where the sign depends on the sublattice. The zero-point fluctuations of these bosons yield quantum fluctuations, which reduce the moment $m$ from its mean field value. In a one-dimensional spin chain these fluctuations are strong enough to suppress antiferromagnetically order even for the ground state. The fact that the spectrum starts at zero has to do with the infinite degeneracy of the ground state. The ordered moments can be turned into any direction globally. This property is known under the name Goldstone theorem, which tells that each ordered state that results from a spontaneous breaking of a continuous symmetry has collective excitations with arbitrary small (positive) energies. The linear spectrum is normal for collective excitations of this kind; the quadratic spectrum of the ferromagnet has to do with the fact that the state breaks time-inversion symmetry.
 
-![Attachments/Script 82.webp|700](/img/user/Attachments/Script%2082.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=184&rect=211,626,389,759|•]]
+![Attachments/Script 82.webp|700](/img/user/Attachments/Script%2082.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=184&rect=211,626,389,759|•]]
 
 These spin excitations show the difference between a band and a Mott insulator very clearly. While in the band insulator both charge and spin excitations have an energy gap and are inert, the Mott insulator has only gapped charge excitation. However, the spin degrees of freedom for a low-energy sector which can even form gapless excitations as shown just above.
 

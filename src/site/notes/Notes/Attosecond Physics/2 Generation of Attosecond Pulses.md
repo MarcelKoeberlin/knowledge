@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/2-generation-of-attosecond-pulses/","hide":"true","updated":"2025-02-12T10:53:56.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/2-generation-of-attosecond-pulses/","hide":"true","updated":"2025-04-08T14:43:20.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -64,13 +64,13 @@ Consider the experimental setup used for the generation and characterisation of 
 ![Attachments/Attosecond and Strong-Field Physics Principles and Applications 3.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications%203.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=306&rect=123,407,483,637|•]]
 
 In this setup:
-9. High-order harmonics are generated using argon as the target gas.
-10. An aperture blocks the divergent IR beam, allowing the IR and XUV harmonics to co-propagate along the same beam axis.
-11. A mirror deflects the combined beam into a secondary gas target to generate photo-electrons.
-12. The resulting photo-electron spectra are measured as a function of the delay between the IR and XUV pulses.
+- High-order harmonics are generated using argon as the target gas.
+- An aperture blocks the divergent IR beam, allowing the IR and XUV harmonics to co-propagate along the same beam axis.
+- A mirror deflects the combined beam into a secondary gas target to generate photo-electrons.
+- The resulting photo-electron spectra are measured as a function of the delay between the IR and XUV pulses.
 
 The two-dimensional electron spectra obtained from these measurements are known as *spectrograms* or *streaking traces*, which provide valuable information about the temporal structure of the attosecond pulses.
-
+	
 ---
 ## 2.2 Amplitude Gating
 [[Reading/Books/Attosecond Physics/Attosecond Physics Attosecond Measurements and Control.pdf#page=59&selection=53,0,76,0|•]]
@@ -130,12 +130,12 @@ Interference polarisation gating (IPG) is a more complex but also more efficient
 ![Attachments/Attosecond Physics Attosecond Measurements and Control 2.webp|700](/img/user/Attachments/Attosecond%20Physics%20Attosecond%20Measurements%20and%20Control%202.webp)[[Reading/Books/Attosecond Physics/Attosecond Physics Attosecond Measurements and Control.pdf#page=64&rect=53,464,203,611|•]]
 
 In this setup:
-13. A linearly polarised pulse is split into two beams, which are directed into a double Michelson interferometer.
-14. In the first interferometer, a constructive interference maximum is created at the pulse center by adjusting the delay between its arms.
-15. The second interferometer introduces a delay that results in destructive interference at the pulse center. 
-16. A half-wave plate in the second beam rotates its polarisation to be perpendicular to the first beam.
+- A linearly polarised pulse is split into two beams, which are directed into a double Michelson interferometer.
+- In the first interferometer, a constructive interference maximum is created at the pulse center by adjusting the delay between its arms.
+- The second interferometer introduces a delay that results in destructive interference at the pulse center. 
+- A half-wave plate in the second beam rotates its polarisation to be perpendicular to the first beam.
 
-When the two beams are recombined, the resulting synthesised pulse is linearly polarised at its center and elliptically polarised at the leading and trailing edges. This configuration forms an effective polarisation gate, allowing for precise control over the HHG process. Although the IPG technique requires meticulous alignment of the interferometer, it offers greater flexibility in manipulating the driving fields and enables the use of longer driving pulses.
+When the two beams are recombined, the resulting synthesised pulse is linearly polarised at its centre and elliptically polarised at the leading and trailing edges. This configuration forms an effective polarisation gate, allowing for precise control over the HHG process. Although the IPG technique requires meticulous alignment of the interferometer, it offers greater flexibility in manipulating the driving fields and enables the use of longer driving pulses.
 
 A limitation of the IPG method is its sensitivity to the CEP of the driving pulse. As shown in the figure below, the supercontinuum generated during HHG depends strongly on CEP stability. Therefore, CEP-stabilised pulses are essential for producing isolated attosecond pulses (IAPs).
 
@@ -210,13 +210,13 @@ If the wavefront rotation within one half-cycle of the driving laser is larger t
 
 One of the most well-known configurations for spatial gating is the **Attosecond Lighthouse** setup:
 
-![Attachments/Lecture 3.webp|700](/img/user/Attachments/Lecture%203.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=599&rect=292,355,426,796|•]]
+![Attachments/Lecture 3.webp|700](/img/user/Attachments/Lecture%203.webp)[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=599&rect=292,355,426,796|•]]
 
 In the Attosecond Lighthouse configuration, the pulse-front tilt causes each attosecond burst to be emitted at a distinct angle, effectively creating a "lighthouse" effect where different pulses are directed in different spatial directions.
 
 Alternatively, spatial gating can be implemented using **non-collinear optical gating**, where the driving pulses are arranged at an angle relative to each other. This configuration also achieves spatial separation of attosecond bursts but relies on non-collinear beam geometry:
 
-![Attachments/Lecture 4.webp|700](/img/user/Attachments/Lecture%204.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=599&rect=39,379,264,694|•]]
+![Attachments/Lecture 4.webp|700](/img/user/Attachments/Lecture%204.webp)[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=599&rect=39,379,264,694|•]]
 
 Both methods exploit spatial separation to isolate SAPs, offering an effective approach to attosecond pulse generation without relying solely on temporal gating techniques. However, precise control of the pulse-front tilt or non-collinear angles is essential for optimal performance.
 

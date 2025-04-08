@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-02-08T19:54:05.963+01:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-04-05T17:25:08.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -18,11 +18,11 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 
 ---
 # 1 Electrons in the Periodic Crystal 
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=8&selection=2,0,4,10|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=8&selection=2,0,4,10|•]]
 
 One defining characteristic of many solids is the regular arrangement of their atoms, forming a crystal. Electrons in such crystals experience a periodic potential, originating from the lattice of ions and the mean interaction with other electrons:
 
-![Attachments/Script.webp|700](/img/user/Attachments/Script.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=5&rect=207,410,390,523|•]]
+![Attachments/Script.webp|700](/img/user/Attachments/Script.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=5&rect=207,410,390,523|•]]
 
 The spectrum of these delocalised electronic states—solutions to the Schrödinger equation—forms energy bands separated by gaps of "forbidden" energies. Two limiting approaches help to understand this band formation:
 1. **Nearly-free electron approximation**: A weak periodic potential breaks up the continuous spectrum into bands.
@@ -30,7 +30,7 @@ The spectrum of these delocalised electronic states—solutions to the Schrödin
 
 ---
 ## 1.1 Symmetries of Crystals
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=8&selection=34,0,36,22|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=8&selection=34,0,36,22|•]]
 ### 1.1.1 Space Groups of Crystals
 
 Most solids are built from a repeating lattice of atoms, with the smallest repeating unit known as the unit cell. The symmetries of a crystal are described by its **space group** $\mathcal{R}$, a collection of symmetry operations—translations, rotations, inversions, and combinations—that leave the crystal invariant. In three dimensions, there are 230 unique space groups.
@@ -43,7 +43,7 @@ $$
 
 where $\boldsymbol{n} = (n_{1}, n_{2}, n_{3})$ and $n_i \in \mathbb{Z}$. For example, in a 2D square lattice:
 
-![Attachments/Script 1.webp|700](/img/user/Attachments/Script%201.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=9&rect=150,455,441,628|•]]
+![Attachments/Script 1.webp|700](/img/user/Attachments/Script%201.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=9&rect=150,455,441,628|•]]
 
 Here, $\boldsymbol{a}_{1}$ and $\boldsymbol{a}_{2}$ are primitive lattice vectors, and $\boldsymbol{R} = 2\boldsymbol{a}_{1} + \boldsymbol{a}_{2}$ is a lattice vector. The shaded area is the **Wigner-Seitz cell**, a unit cell formed by bisecting lines connecting neighboring lattice points.
 
@@ -99,7 +99,7 @@ $$
 $$
 
 ### 1.1.4 Reciprocal Lattice
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=10&selection=338,0,340,18|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=10&selection=338,0,340,18|•]]
 
 The reciprocal lattice is a periodic lattice with its own translation symmetry, defined by a basic set of vectors $\{\boldsymbol{b}_{i}\}$. Any reciprocal lattice vector can be expressed as:
 
@@ -144,7 +144,7 @@ where the integral runs over the unit cell of the periodic lattice with volume $
 
 ---
 ## 1.2 Bloch's Theorem and Bloch Functions
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=11&selection=134,0,136,35|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=11&selection=134,0,136,35|•]]
 
 Consider a Hamiltonian $\mathcal{H}$ of electrons invariant under lattice translations $\{E \mid \boldsymbol{a}\}$, introduced by a periodic potential. This implies that the translation operator $\widehat{T}_{\boldsymbol{a}}$ commutes with the Hamiltonian:
 
@@ -206,7 +206,7 @@ where $\widehat{\boldsymbol{p}} e^{i\boldsymbol{k} \cdot \boldsymbol{r}} u_{\bol
 
 ---
 ## 1.3 Nearly Free Electron Approximation
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=12&selection=370,0,372,34|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=12&selection=370,0,372,34|•]]
 
 The nearly free electron approximation starts from the limit of free electrons, assuming the periodic potential $V(\boldsymbol{r})$ is weak and can be treated perturbatively. The periodic potential is expanded as:
 
@@ -275,7 +275,7 @@ $$
 
 This modifies the dispersion relation, yielding an effective mass $m^{*} > m$, as shown in the figure:
 
-![Attachments/Script 2.webp|700](/img/user/Attachments/Script%202.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=14&rect=186,570,417,756|•]]
+![Attachments/Script 2.webp|700](/img/user/Attachments/Script%202.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=14&rect=186,570,417,756|•]]
 
 The $\boldsymbol{k} \cdot \boldsymbol{p}$ approximation describes this expansion near symmetry points. The next energy level at $k = 0$ results from two crossing parabolas centered at $G_{\pm} = \pm 2\pi/a = \pm\tilde{G}$. Restricting to these components, the eigenvalue problem simplifies to:
 
@@ -407,7 +407,7 @@ This means that the two states are completely hybridised at the point of degener
 
 ---
 ## 1.4 Tight-Binding Approximation
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=16&selection=0,0,2,27|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=16&selection=0,0,2,27|•]]
 
 The tight-binding approximation starts from the atomic limit, considering a lattice of well-separated atoms where the overlap between the outermost electronic orbitals is small. In this scenario, electronic states are well-approximated by localised atomic orbitals $\phi_{n}(\boldsymbol{r})$. These orbitals are solutions to the atomic Hamiltonian:
 
@@ -423,7 +423,7 @@ $$
 
 and $V_{a}(\boldsymbol{r})$ is the rotationally symmetric atomic potential. The potential landscape is depicted below, showing (a) the discrete spectrum of a single atomic Coulomb potential and (b) the periodic potential arising from a regular lattice:
 
-![Attachments/Script 3.webp|700](/img/user/Attachments/Script%203.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=16&rect=98,261,499,399|•]]
+![Attachments/Script 3.webp|700](/img/user/Attachments/Script%203.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=16&rect=98,261,499,399|•]]
 
 At low energies, electrons remain localised near atomic sites, but at higher energies, wavefunctions extend further and can delocalise to form itinerant states, leading to band formation.
 
@@ -440,7 +440,7 @@ $$
 $$
 
 ### 1.4.1 Linear Combination of Atomic Orbitals (LCAO)
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=16&selection=203,0,205,44|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=16&selection=203,0,205,44|•]]
 
 Extended Bloch states can be approximated by a linear combination of atomic orbitals:
 
@@ -499,7 +499,7 @@ $$
 The tight-binding approach is particularly effective for systems where atomic orbitals are tightly localised, such as 3d orbitals in transition metals (e.g., Mn, Fe, Co) or transition metal oxides. For elements like alkali metals with delocalised s-orbitals, this approximation is less suitable. _Explicit calculation of s and p orbitals skipped._
 
 ### 1.4.3 Wannier Functions
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=21&selection=82,0,84,17|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=21&selection=82,0,84,17|•]]
 
 An alternative approach to the tight-binding approximation is through Wannier functions, which are defined as the Fourier transform of the Bloch wave functions:
 $$
@@ -557,7 +557,7 @@ $$
 where $t_{\tilde{n}^{\prime} \tilde{n}}(\boldsymbol{R})$ represents the hopping amplitudes. This approach works well for systems with well-localised orbitals.
 
 ### 1.4.4 Tight Binding Model in Second Quantisation Formulation
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=22&selection=192,0,194,54|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=22&selection=192,0,194,54|•]]
 
 The tight-binding formulation of band electrons can also be implemented very easily in second quantisation language and provides a rather intuitive interpretation. For simplicity we restrict ourselves to the single-orbital case and define the following Fermionic operators,
 $$
@@ -591,7 +591,7 @@ The real-space formulation of the kinetic energy allows also for the introductio
 
 ---
 ## 1.5 Symmetry Properties of the Band Structure
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=23&selection=0,0,2,41|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=23&selection=0,0,2,41|•]]
 
 The symmetry properties of crystals are a helpful tool for the analysis of their band structure. They emerge from the symmetry group (space and point group) of the crystal lattice. Consider the action $\widehat{S}_{\{g \mid a\}}$ of an element $\{g \mid \boldsymbol{a}\}$ of the space group on a Bloch wave function $\psi_{\boldsymbol{k}}(\boldsymbol{r})$
 $$
@@ -668,7 +668,7 @@ $$
 
 Consequently, there is a star-like structure of equivalent points $g \boldsymbol{k}$ with the same band energy ( $\rightarrow$ degeneracy) for each $\boldsymbol{k}$ in the Brillouin zone:
 
-![Attachments/Script 4.webp|700](/img/user/Attachments/Script%204.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=24&rect=128,507,470,654|•]]
+![Attachments/Script 4.webp|700](/img/user/Attachments/Script%204.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=24&rect=128,507,470,654|•]]
 
 This call the 'star of k-points' in the Brillouin zone with degenerate band energies: Left panel: Star of k; Right panel: contour plot of a two dimensional band $\epsilon_k$ . The dots correspond to the star of  with degenerate energy values, demonstrating $\epsilon_{n,k}=\epsilon_{n,gk}$.
 
@@ -696,7 +696,7 @@ where $M_{\gamma^{\prime}, \gamma}(g)$ is a $d \times d$-matrix corresponding to
 
 ---
 ## 1.6 Band-Filling and Materials Properties
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=25&selection=423,0,425,36|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=25&selection=423,0,425,36|•]]
 
 Due to the Fermionic character of electrons each of the band states $|n, \boldsymbol{k}, s\rangle$ can be occupied with one electron taking also the spin quantum number into account with spin $s=\uparrow$ and $\downarrow$ (Pauli exclusion principle). The count of electrons has profound implications on the properties of materials. Here we would like to look at the most simple classification of materials based on independent electrons.
 
@@ -729,7 +729,7 @@ $$
 $$
 with the lattice -momentum $k$ within the first Brillouin zone ( $-\frac{\pi}{a}<k<\frac{\pi}{a}$ ) and $n$ being an integer. On the real-space lattice an electron can take $2 N$ different states. Thus, for $k$ we find that $n$ should take the values, $n+N / 2=1,2, \ldots, N-1, N$. Note that $k=-\pi / a$ and $k=+\pi / a$ differ by a reciprocal lattice vector $G=2 \pi / a$ and are therefore identical. This provides the same number of states $(2 N)$, since per $k$ we have two spins:
 
-![Attachments/Script 5.webp|700](/img/user/Attachments/Script%205.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=27&rect=120,505,479,750|•]]
+![Attachments/Script 5.webp|700](/img/user/Attachments/Script%205.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=27&rect=120,505,479,750|•]]
 
 We can fill these states with electrons following the Pauli exclusion principle.The figure shows the two typical situations: 
 1. $N$ electrons corresponding to half of the possible electrons which can be accommodated leading to a half-filled band, and 
@@ -747,7 +747,7 @@ In general, we make the distinction between different cases:
 - **If the number of electrons per unit cell is odd, the uppermost non-empty band is half filled**. Then the system is a metal, in which electrons can move and excitations with arbitrarily small energies are possible. The electrons remain mobile down to arbitrarily low temperatures. The standard example of a metal are the Alkali metals in the first column of the periodic table ( $\mathrm{Li}, \mathrm{Na}, \mathrm{K}, \mathrm{Rb}, \mathrm{Cs}$ ), as all of them have the configuration [noble gas] (ns)${ }^{1}$, i.e., one mobile electron per ion.
 - In general, band structures are more complex. Different bands need not to be separated by energy gaps, but can overlap instead. In particular, this happens, if different orbitals are involved in the structure of the bands. In these systems, bands can have any fractional filling (not just filled or half-filled). The earth alkaline metals are an example for this (second column of the periodic table, $\mathrm{Be}, \mathrm{Mg}, \mathrm{Ca}, \mathrm{Sr}, \mathrm{Ba}$ ), which are metallic despite having two $(n, s)$-electrons per unit cell. Systems, where two bands overlap at the Fermi energy but the overlap is small, are termed semi-metals. The extreme case, where valence and conduction band touch in isolated points so that there are no electrons at the Fermi energy and still the band gap is zero, is realised in graphene.
 
-![Attachments/Script 6.webp|700](/img/user/Attachments/Script%206.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=28&rect=78,552,529,756|•]]
+![Attachments/Script 6.webp|700](/img/user/Attachments/Script%206.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=28&rect=78,552,529,756|•]]
 The electronic structure is also responsible for the cohesive forces necessary for the formation of a regular crystal. We may also classify materials according to relevant forces. We distinguish four major types of crystals:
 
 **Molecular crystals** are formed from atoms or molecules with closed-shell atomic structures such as the noble gases He , Ne etc. which become solid under pressure. Here the van der Waals forces generate the binding interactions.
@@ -761,7 +761,7 @@ involve aspects of covalent or molecular bonding through overlapping but more lo
 
 ---
 ## 1.7 Dynamics of Band Electrons - Semiclassical Approach
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=29&selection=3,0,5,51|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=29&selection=3,0,5,51|•]]
 
 In quantum mechanics, the Ehrenfest theorem shows that the expectation values of the position and momentum operators obey equations similar to the equation of motion in Newtonian mechanics. An analogous formulation holds for electrons in a periodic potential, where we assume that the electron may be described as a wave packet of the form
 $$
@@ -806,7 +806,7 @@ $$
 
 This behaviour is called Bloch oscillation and means that the electron oscillates around its initial position rather than moving in one direction when subjected to a static electric field. This effect can only be observed under very special conditions where the probe is absolutely clean. The effect is easily destroyed by damping or scattering, but has been experimentally observed for accelerated caesium atoms:
 
-![Attachments/Script 7.webp|700](/img/user/Attachments/Script%207.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=31&rect=160,549,435,691|•]]
+![Attachments/Script 7.webp|700](/img/user/Attachments/Script%207.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=31&rect=160,549,435,691|•]]
 
 ### 1.7.3 Current Densities
 
@@ -838,7 +838,7 @@ This suggests that the current density comes either from electrons in filled sta
 
 ---
 ## 1.8 Approximative Band Structure Calculations
-[[Masters/2. Semester/Solid State Theory/Script.pdf#page=32&selection=10,0,12,50|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=32&selection=10,0,12,50|•]]
 
 While the approximation of nearly free electrons gives a qualitative picture of the band structure, it rests on the assumption that the periodic potential is weak, and, thus, may be treated as a small perturbation. Only few states connected with different reciprocal lattice vectors are sufficient within this approximation. However, in reality the ionic potential is strong compared to the electrons' kinetic energy. This leads to strong modulations of the wave function around the ions, which is not well described by slightly perturbed plane waves.
 
@@ -846,7 +846,7 @@ While the approximation of nearly free electrons gives a qualitative picture of 
 
 In order to overcome this weakness of the plane wave solution, we would have to superpose a very large number of plane waves, which is not an easy task to put into practice. Alternatively, we can divide the electronic states into the ones corresponding to filled low-lying energy states, which are concentrated around the ionic core (core states), and into extended (and more weakly modulated) states, which form the valence and conduction bands. The core electron states may be approximated by atomic orbitals of isolated atoms. For a metal such as aluminium (Al: $1 s^{2} 2 s^{2} 2 p^{6} 3 s^{2} 3 p$ ) the core electrons correspond to the $1 s$-, $2 s$-, and $2 p$-orbitals, whereas the $3 s$ and $3 p$-orbitals contribute dominantly to the extended states of the valence- and conduction bands. We will focus on the latter, as they determine the low-energy physics of the electrons. The core electrons are deeply bound and can be considered inert.
 
-![Attachments/Script 8.webp|700](/img/user/Attachments/Script%208.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=32&rect=173,220,429,358|•]]
+![Attachments/Script 8.webp|700](/img/user/Attachments/Script%208.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=32&rect=173,220,429,358|•]]
 
 We introduce the core electron states as $\left|\phi_{j}\right\rangle$, with $\mathcal{H}\left|\phi_{j}\right\rangle=E_{j}\left|\phi_{j}\right\rangle$ where $\mathcal{H}$ is the Hamiltonian of the single atom. The remaining states have to be orthogonal to these core states, so that we make the Ansatz
 $$
@@ -885,7 +885,7 @@ $$
 
 This is an eigenvalue equation for the so-called pseudo-wave function (or pseudo-state) $\left|\chi_{n \boldsymbol{k}}\right\rangle$, instead of the Bloch state $\left|\psi_{n \boldsymbol{k}}\right\rangle$, where the modified potential $\widehat{V}_{\mathrm{ps}}=\widehat{V}+\widehat{V}^{\prime}$ is called pseudopotential. The attractive core potential $\widehat{V}=V(\widehat{\boldsymbol{r}})$ is always negative. On the other hand, $E_{n k}>E_{j}$, such that $\widehat{V}^{\prime}$ is positive. It follows that $\widehat{V}_{\mathrm{ps}}$ is weaker than both $\widehat{V}$ and $\widehat{V}^{\prime}$. An arbitrary number of core states $\sum_{j} a_{j}\left|\psi_{j}\right\rangle$ may be added to $\left|\chi_{n \boldsymbol{k}}\right\rangle$ without violating the orthogonality condition (1.126). Consequently, neither the pseudo-potential nor the pseudo-states are uniquely determined and may be optimised variationally with respect to the set $\left\{a_{j}\right\}$ in order to optimally reduce the spatial modulation of either the pseudo-potential or the wave-function.
 
-![Attachments/Script 9.webp|700](/img/user/Attachments/Script%209.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=33&rect=71,209,525,335|•]]
+![Attachments/Script 9.webp|700](/img/user/Attachments/Script%209.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=33&rect=71,209,525,335|•]]
 
 If we are only interested in states inside a small energy window, the energy dependence of the pseudo-potential can be neglected, and $V_{\mathrm{ps}}$ may be approximated by a standard potential. Such a simple Ansatz is exemplified by the atomic pseudo-potential, proposed by Ashcroft, Heine and Abarenkov (AHA). The potential of a single ion is assumed to be of the form
 $$
@@ -895,7 +895,7 @@ v_{\mathrm{ps}}(r)= \begin{cases}V_{0} & r<R_{c} \\ -\frac{Z_{\mathrm{ion}} e^{2
 $$
 where $Z_{\text {ion }}$ is the charge of the ionic core and $R_{c}$ its effective radius (determined by the core electrons). The constants $R_{c}$ and $V_{0}$ are chosen such that the energy levels of the outermost electrons are reproduced correctly for the single-atom calculations.
 
-![Attachments/Script 10.webp|700](/img/user/Attachments/Script%2010.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=34&rect=156,588,388,756|•]]
+![Attachments/Script 10.webp|700](/img/user/Attachments/Script%2010.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=34&rect=156,588,388,756|•]]
 
  For example, the $1 s$ -, $2 s$-, and $2 p$-electrons of Na form the ionic core. $R_{c}$ and $V_{0}$ are adjusted such that the one-particle problem $\boldsymbol{p}^{2} / 2 m+v_{\mathrm{ps}}(r)$ leads to the correct ionisation energy of the $3 s$-electron. More flexible approaches allow for the incorporation of more experimental input into the pseudo-potential. The full pseudo-potential of the lattice can be constructed from the contribution of the individual atoms,
 $$
@@ -941,7 +941,7 @@ The form factor $F_{\alpha, \boldsymbol{G}}$ contains the information of the bas
 
 We now consider a method introduced by Slater in 1937. It is an extension of the so-called Wigner-Seitz cell method (1933) and consists of approximating the crystal potential by a socalled muffin-tin potential. The latter is a periodic potential, which is taken to be spherically symmetric and position dependent around each atom up to a distance $r_{s}$, and constant for larger distances. The spheres of radius $r_{s}$ are taken to be non-overlapping and are contained completely in the Wigner-Seitz cell:
 
-![Attachments/Script 11.webp|700](/img/user/Attachments/Script%2011.webp)[[Masters/2. Semester/Solid State Theory/Script.pdf#page=35&rect=207,419,386,601|•]]
+![Attachments/Script 11.webp|700](/img/user/Attachments/Script%2011.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=35&rect=207,419,386,601|•]]
 
 The advantage of this decomposition is that the problem can be solved using a divide-andconquer strategy. Inside the muffin-tin radius we solve the spherically symmetric problem, while the solutions on the outside are given by plane waves; the remaining task is to match the solutions at the boundaries.
 The spherically symmetric problem for $|\boldsymbol{r}|<r_{s}$ is solved with the standard Ansatz

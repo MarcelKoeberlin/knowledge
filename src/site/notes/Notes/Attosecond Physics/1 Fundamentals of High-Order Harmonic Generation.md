@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-02-12T10:53:56.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-04-05T17:25:10.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -33,11 +33,11 @@ where $U_p = \frac{e^2 E_0^2}{4m_e\omega_0^2}$ is the ponderomotive energy, and 
 
 ---
 ## 1.1 Simple Man's Model
-[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=580&selection=29,0,31,5|•]]
+[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=580&selection=29,0,31,5|•]]
 
 Surprisingly, HHG can be understood using a simple, semi-classical three-step model, where the only non-classical aspect is the tunnelling ionisation:
 
-![Attachments/Lecture.webp|700](/img/user/Attachments/Lecture.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=581&rect=359,67,500,517|•]]
+![Attachments/Lecture.webp|700](/img/user/Attachments/Lecture.webp)[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=581&rect=359,67,500,517|•]]
 
 An intense laser field distorts the atomic potential, allowing an electron to tunnel ionise.
 The freed electron is accelerated by the oscillating laser field, gaining kinetic energy.
@@ -51,7 +51,7 @@ $$
 
 Assuming $\hbar\omega = I_p + E_k$, this model predicts two distinct classes of trajectories—long and short. These trajectories yield the same recombination energy but have different excursion times:
 
-![Attachments/Lecture 1.webp|700](/img/user/Attachments/Lecture%201.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=580&rect=142,44,486,414|•]]
+![Attachments/Lecture 1.webp|700](/img/user/Attachments/Lecture%201.webp)[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=580&rect=142,44,486,414|•]]
 
 The black and red curves represent long and short trajectories, respectively, while the lower figure illustrates the motion amplitude.
 
@@ -99,7 +99,7 @@ However, harmonics from long trajectories generally suffer from poor phase match
 
 Since HHG is a coherent nonlinear process, phase matching is essential for efficient harmonic emission. If phase matching is achieved, harmonic intensity grows quadratically with the number of atoms:
 
-![Attachments/Lecture 2.webp|700](/img/user/Attachments/Lecture%202.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=583&rect=377,76,502,367|•]]
+![Attachments/Lecture 2.webp|700](/img/user/Attachments/Lecture%202.webp)[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=583&rect=377,76,502,367|•]]
 
 The harmonic field $E_q(r, z, t)$ and polarisation $P_q(r, z, t)$ can be expressed as:
 

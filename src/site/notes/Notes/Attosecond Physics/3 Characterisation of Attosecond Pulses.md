@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/3-characterisation-of-attosecond-pulses/","hide":"true","updated":"2025-02-20T17:21:48.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/3-characterisation-of-attosecond-pulses/","hide":"true","updated":"2025-04-07T11:50:31.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -119,7 +119,7 @@ $$
 
 The RABBITT method is sensitive to the chirp of both the IR and XUV pulses, making it a powerful tool for characterising the temporal properties of attosecond pulse trains.
 
-![Attachments/Lecture 6.webp|700](/img/user/Attachments/Lecture%206.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=610&rect=98,47,477,793|•]]
+![Attachments/Lecture 6.webp|700](/img/user/Attachments/Lecture%206.webp)[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=610&rect=98,47,477,793|•]]
 
 ---
 ## 3.3 Attosecond Pulse Characterisation: FROG-CRAB
@@ -205,7 +205,7 @@ Another significant benefit of FROG-CRAB is that the retrieval process yields no
 
 Despite these advantages, FROG-CRAB also has limitations. Accurate reconstruction can be challenging, particularly when dealing with extremely short pulses (sub-100-as durations) or when the XUV pulse contains complex temporal structures, such as a residual satellite pulse, where a weaker pulse closely following the main pulse. In these situations, the approximations underlying the FROG-CRAB retrieval may break down, leading to inaccuracies in the reconstructed pulse profiles. Furthermore, the FROG-CRAB technique, like other streaking-based methods, is sensitive to both XUV and IR chirp:
 
-![Attachments/Lecture 5.webp|700](/img/user/Attachments/Lecture%205.webp)[[Masters/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=602&rect=36,148,478,713|•]]
+![Attachments/Lecture 5.webp|700](/img/user/Attachments/Lecture%205.webp)[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=602&rect=36,148,478,713|•]]
 
 ---
 
@@ -350,5 +350,21 @@ where the spectral phase of the XUV pulse is embedded within $A(E)$ and $\Psi(E)
 From the experimental spectrogram, the FSI term can be isolated by filtering the data to extract the frequency component at $\omega$. This approach forms the basis of the PROOF method.
 
 Since PROOF requires weak IR fields (intensities below $10^{12}$ W/cm²), the relatively small streaking signal-to-noise ratio can introduce uncertainties in the retrieved phase of the SAP. Nevertheless, PROOF provides an effective method for phase retrieval in weak-field conditions, expanding the capabilities of attosecond metrology.
+
+## Equivalence of RABBITT and Streaking Delays in Attosecond-Time Resolved Photoemission
+[[Reading/Papers/Attosecond/Equivalence of RABBITT and Streaking Delays.pdf#page=1&selection=4,0,6,30|•]] 
+
+This follows ["Equivalence of RABBITT and Streaking Delays in Attosecond-Time-Resolved Photoemission Spectroscopy at Solid Surfaces"](https://doi.org/10.3390/app9030592). This chapter serves as a recap of the two most common characterisation techniques, RABBITT and attosecond streaking, but more importantly as a comparison of the two. The first and most obvious difference is that in RABBITT, an APT excites photoelectrons, while streaking spectroscopy excites with an SAP. However, in both cases, the time delay between the XUV and IR is varied to obtain an energy- and time-resolved spectrogram. 
+
+In the streaking experiment, excitation with a single-attosecond pulse leads to a broad excitation-energy distribution in the order of several eV due to the time-bandwidth product (1a). On the other hand in RABBITT, the femtosecond envelope of the APT resulted in a highly modulation distribution that exhibits rather narrow spectral features (1b). Because of HHG, these spectral features are separated by twice the fundamental photon energy $\omega.$ In both cases, the generated continuum electron wave packet propagates outwards towards the surface. If this packet was excited by an APT, a train of electron pulses moves towards the surface. If the packet has been excited by an SAP, a single electron wave packet travels to the surface. 
+
+![Attachments/Equivalence of RABBITT and Streaking Delays.webp|700](/img/user/Attachments/Equivalence%20of%20RABBITT%20and%20Streaking%20Delays.webp)[[Reading/Papers/Attosecond/Equivalence of RABBITT and Streaking Delays.pdf#page=2&rect=127,157,469,390|•]]
+
+As soon as the photoelectron leaves the surface, it starts interacting with the IR pulse. In the case of a single electron wave packet, the energy distribution accumulates a shift determined by the IR vector potential. This results in a streaking spectrogram (see upper right panel). In the figure, the white solid line indicates the delay between the streaking trace and zero IR-XUV pulse delay. In the case of excitation by an APT, as is the case in RABBITT, at each half cycle of the IR field, a photoelectron wave packet is emitted. 
+
+
+
+
+
 
 ---

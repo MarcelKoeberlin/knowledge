@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/quantum-optics/1-quantisation-of-the-electromagnetic-field/","hide":"true","updated":"2025-02-07T10:57:49.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/quantum-optics/1-quantisation-of-the-electromagnetic-field/","hide":"true","updated":"2025-04-05T17:25:07.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Quantum Optics/Quantum Optics#Table of Contents\|chapter selection]]==.
@@ -14,10 +14,10 @@ Jump back to ==[[Notes/Quantum Optics/Quantum Optics#Table of Contents\|chapter 
 
 ---
 # 1 Quantisation of the Electromagnetic Field
-[[Masters/1. Semester/Quantum Optics/QO_Home.pdf#page=9&selection=2,0,2,30|•]]
+[[Courses/1. Semester/Quantum Optics/QO_Home.pdf#page=9&selection=2,0,2,30|•]]
 
 ## 1.1 Maxwell Equations
-[[Masters/1. Semester/Quantum Optics/QO_Home.pdf#page=9&selection=2,0,2,30|•]]
+[[Courses/1. Semester/Quantum Optics/QO_Home.pdf#page=9&selection=2,0,2,30|•]]
 
 The starting point for any discussion about optics is by starting with the classical Maxwell equations. This is not different in the field of Quantum Optics, where it is even more important to have a basic understanding of the process of quantisation. It is simple to outline three tasks that we have to fulfil in order to successfully quantise the electromagnetic field:
 1. We need to identify the independent generalised coordinates,
@@ -58,7 +58,7 @@ The really important point that is worth stressing, is that these are local in k
 
 ---
 ## 1.2 Coulomb Gauge
-[[Masters/1. Semester/Quantum Optics/QO_Home.pdf#page=10&selection=123,0,125,13|•]]
+[[Courses/1. Semester/Quantum Optics/QO_Home.pdf#page=10&selection=123,0,125,13|•]]
 
 The structure of the Maxwell equations is such that the electric and magnetic field can always be derived from the vector and scalar potentials:
 
@@ -96,7 +96,7 @@ Therefore, there exists a relation between the parallel component of the Fourier
 
 ---
 ## 1.3 Canonical Quantisation
-[[Masters/1. Semester/Quantum Optics/QO_Home.pdf#page=11&selection=57,0,59,22|•]]
+[[Courses/1. Semester/Quantum Optics/QO_Home.pdf#page=11&selection=57,0,59,22|•]]
 
 The next step towards the quantisation of the electromagnetic field is 'finding' a suitable Lagrangian $L$. Here, we will choose it such that the Euler-Lagrange equations give the free-field Maxwell equations:
 
@@ -165,7 +165,7 @@ which implies that the transverse vector potential and the electric field of a s
 
 ---
 ## 1.4 Diagonalisation of the Hamiltonian
-[[Masters/1. Semester/Quantum Optics/QO_Home.pdf#page=13&selection=6,0,8,34|•]]
+[[Courses/1. Semester/Quantum Optics/QO_Home.pdf#page=13&selection=6,0,8,34|•]]
 
 To diagonalise the Hamiltonian, we introduce the normal variables
 $$

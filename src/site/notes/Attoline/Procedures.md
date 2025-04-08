@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-03-26T18:43:08.000+01:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-04-05T17:34:42.000+02:00"}
 ---
 
 # 1 Laser Startup
@@ -24,10 +24,11 @@ E8:
 - If the CEP stabilisation is used:
 	- check that the f-2f beating signal is around 104 MHz and at -30 dBm
 		- If necessary, use the CEP4 incoupling mirrors to improve the signal
-		- Move wedges by choosing 'pico motors' in the Element2 software to centre beat signal. left button shifts signal to higher frequencies
-		- Delta value on control electronics should decrease as well
+		- Moving **wedges** in Element2 software shifts the peak to centre, such that it is around $-30$ dB.
+		- Delta value on CEP box should decrease.
 	- Wait for some time (~30 minutes) before stabilisation of the beat signal
-	- Turn on slow loop, then the RF power amp at the CEP4 control module
+- Manual modelock: Press 'state 2' in Element2 software to stabilise to 630 mW.
+- Turn on slow loop, then the RF power amp at the CEP4 control module
 > [!DANGER] Do not check the AOFS signal when the RF amp is on, otherwise damage is done	
 
 - Align the XY1 and XY2 mirrors on the diodes QD1 and QD2. Enable stabilisation
@@ -82,7 +83,7 @@ E8:
 - Start VAB program COM3 position, set COM port, 'online'
 - Check counts while inserting
 - Turn on light in chamber
-- Start camera on TinkPad
+- Start camera on ThinkPad
 - Turn on stepper and control (?)
 - Lower end of sample holder at $z\approx 34$ 
 - Start STRA program 
