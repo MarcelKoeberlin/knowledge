@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/courses/2025-quantum-electronics-gallmann/7-optical-resonators/","hide":"true","updated":"2025-04-08T16:58:24.000+02:00"}
+{"dg-publish":true,"permalink":"/courses/2025-quantum-electronics-gallmann/7-optical-resonators/","hide":"true","updated":"2025-04-08T17:15:32.000+02:00"}
 ---
 
 Jump back to ==[[Courses/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -194,11 +194,7 @@ U&=U_0+r U_0 e^{i \Delta \phi}+r^2 U_0 e^{2 i \Delta \phi}+\ldots=U_0 \sum_j\lef
 $$
 In the last step we simply used the geometric series. The intensity is the electric field squared which may be rewritten as 
 $$
-I=\frac{I_{\max }}{1+(2 \mathcal{F} / \pi)^2 \sin
-{ #2}
-(\Delta \phi / 2)}=\frac{I_{\max }}{1+(2 \mathcal{F} / \pi)^2 \sin
-{ #2}
-\left(\pi \nu / \nu_F-\Delta \zeta\right)},
+I=\frac{I_{\max }}{1+(2 \mathcal{F} / \pi)^2 \sin^2(\Delta \phi / 2)}=\frac{I_{\max }}{1+(2 \mathcal{F} / \pi)^2 \sin^2\left(\pi \nu / \nu_F-\Delta \zeta\right)},
 $$
 where the maximum intensity and the finesse is
 $$

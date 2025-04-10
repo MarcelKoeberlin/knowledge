@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/3-characterisation-of-attosecond-pulses/","hide":"true","updated":"2025-04-07T11:50:31.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/3-characterisation-of-attosecond-pulses/","hide":"true","updated":"2025-04-09T18:31:39.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -74,7 +74,7 @@ This directly gives the spectral distance between $\omega$ and $\omega+\omega^\p
 
 The RABBITT (Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions) method enables the determination of the spectral phase of an attosecond pulse train by retrieving the phase difference between neighbouring harmonics. Consider XUV harmonics combined with a delayed multi-cycle IR field to ionise target atoms. The intensity of the XUV harmonics is sufficiently low to prevent nonlinear effects, allowing ionisation to occur primarily through single-photon absorption.
 
-In the absence of the IR field, the photoelectron spectrum consists of peaks at:
+In the absence of the IR field, the photo-electron spectrum consists of peaks at:
 
 $$
 E = (2q + 1)\omega - I_p,
@@ -92,7 +92,7 @@ when ionisation occurs in the presence of the IR field:
 
 ![Attachments/Attosecond and Strong-Field Physics Principles and Applications 4.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications%204.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=307&rect=184,341,404,636|•]]
 
-The figure shows the photoelectron spectra of argon ionised by (a) XUV harmonics only, while (b) and (c) depict the spectra with both XUV harmonics and an IR field. The time delay between the XUV and IR pulses increases from (b) to (c), causing significant changes in the sideband amplitudes. The intensity of the sideband signals varies as a function of the time delay $t_d$. This variation can be understood using a two-path interference model, where the sideband signal $S_{2q}$ results from the interference between:
+The figure shows the photo-electron spectra of argon ionised by (a) XUV harmonics only, while (b) and (c) depict the spectra with both XUV harmonics and an IR field. The time delay between the XUV and IR pulses increases from (b) to (c), causing significant changes in the sideband amplitudes. The intensity of the sideband signals varies as a function of the time delay $t_d$. This variation can be understood using a two-path interference model, where the sideband signal $S_{2q}$ results from the interference between:
 
 1. An electron ionised by the $(2q - 1)\omega$ harmonic, followed by the absorption of one IR photon.
 2. An electron ionised by the $(2q + 1)\omega$ harmonic, followed by the emission of one IR photon.
@@ -109,7 +109,12 @@ Here:
 - $A_{2q}$ and $B_{2q}$ are constants representing DC terms.
 - The summation accounts for all possible two-photon ionisation channels.
 
-As evident from the equation, the $S_{2q}$ signal oscillates at a frequency of $2\omega$ as a function of the XUV-IR delay $t_d$. This highlights that a simple photon/particle picture is insufficient to fully describe the process. The atomic phase $\Delta \varphi_{2q}^{\text{atomic}}$ is generally small compared to the harmonic phase.
+As evident from the equation, the $S_{2q}$ signal oscillates at a frequency of $2\omega$ as a function of the XUV-IR delay $t_d$. This highlights that a simple photon/particle picture is insufficient to fully describe the process. Further, the sideband intensity depends on the relative phase between both quantum paths. The atomic phase $\Delta \varphi_{2q}^{\text{atomic}}$ is generally small compared to the harmonic phase.
+
+We can see that the side band oscillations are shifted with respect to the maximum of the XUV pulse by a RABBITT delay $\tau_\text{RABBITT}.$ It can not be stressed enough: Since the oscillation is determined by the relative phase between two quantum pathways, a quantum property, RABBITT spectrograms cannot be interpreted within a classical picture. However, it can still be shown that the RABBITT delay reveals the photo-emission time. That is, the time the photo-electron to interact with the IR pulse after its creation. In a solid, it would correspond to the time it takes for the electron to be emitted until it reaches the surface of the solid. It turns out, the RABBITT delay is the same in solids as in attosecond streaking experiments ([source](https://www.mdpi.com/2076-3417/9/3/592)). 
+
+![Attachments/Equivalence of RABBITT and Streaking Delays 1.webp|700](/img/user/Attachments/Equivalence%20of%20RABBITT%20and%20Streaking%20Delays%201.webp) [[Reading/Papers/Attosecond/Equivalence of RABBITT and Streaking Delays.pdf#page=2&rect=132,162,466,275|•]]
+
 
 By fitting the oscillations of the measured sideband intensity as a function of time delay to the equation above, the phase difference between adjacent odd harmonics can be extracted:
 
@@ -142,7 +147,16 @@ Traditional methods for characterising femtosecond pulses (like autocorrelation,
 
 ### 3.3.1 Attosecond Streaking and the Strong-Field Approximation
 
-The core of this characterisation method is attosecond streaking.  The process begins with an XUV pulse ionising atoms, creating a photo-electron wavepacket. A time-delayed IR field then interacts with this wavepacket, modifying the final momentum of the emitted electrons. By systematically varying the delay between the XUV and IR pulses, a streaking spectrogram (a 2D plot of photo-electron yield as a function of energy and delay) is generated. This spectrogram contains valuable information about both the XUV and IR pulses.
+The core of this characterisation method is attosecond streaking.  The process begins with a single attosecond pulse ionising atoms, creating a photo-electron wavepacket. A time-delayed IR field then interacts with this wavepacket, modifying the final momentum of the emitted electrons. By systematically varying the delay between the XUV and IR pulses, a streaking spectrogram (a 2D plot of photo-electron yield as a function of energy and delay) is generated. This spectrogram contains valuable information about both the XUV and IR pulses:
+
+![Attachments/Equivalence of RABBITT and Streaking Delays 2.webp|700](/img/user/Attachments/Equivalence%20of%20RABBITT%20and%20Streaking%20Delays%202.webp)[[Reading/Papers/Attosecond/Equivalence of RABBITT and Streaking Delays.pdf#page=2&rect=131,273,466,388|•]]
+
+Note that there is an important difference to the [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.2 RABBITT Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions\|RABBITT]] technique: 
+- The IR fields used in RABBITT experiments are weak, such that the field property is less important than the particle property.
+- RABBITT employs attosecond pulse trains, such that the spectrum has multiple peaks instead of a continuous spectrum.
+- In both RABBITT and streaking, there is a photo-emission delay associated with the process from photo-emission until interaction with the IR field. It can be [shown](https://www.mdpi.com/2076-3417/9/3/592), that both delays are equal in solids and gases. 
+- Streaking can be understood and explained in a simple classical picture, whereas RABBITT requires a quantum mechanical treatment due to the interference of multiple quantum pathways.
+- However, it is not obvious how you can compare the two delays, since the kinetic energies within the material in RABBITT are at the $(n-1)\text{-th}$ and $(n+1)\text{-th}$, while in the streaking experiment, the electrons have their energy centred around the $(n)\text{-th}$ harmonic.
 
 A quantum mechanical description of attosecond streaking typically employs the strong-field approximation (SFA).  The SFA relies on several key approximations:
 
@@ -152,12 +166,11 @@ A quantum mechanical description of attosecond streaking typically employs the s
 
 3.  **Ground State and Continuum Consideration:** The influence of other bound states of the atom on the ionisation process is neglected.  Only transitions from the ground state to the continuum are considered.
 
-Within the SFA, the transition amplitude for photoionisation, considering the interaction with both the XUV and IR fields, can be expressed as:
+Within the SFA, the transition amplitude for photo-ionisation, considering the interaction with both the XUV and IR fields, can be expressed as:
 
 $$
 a_{\mathbf{v}}(\tau) = -i \int_{-\infty}^{\infty} dt \, e^{i \phi(t)} \mathbf{d}_{\mathbf{p}(t)} \mathbf{E}_X(t - \tau) e^{i(W + I_p)t}
 $$
-
 where:
 
 *   $\tau$ is the temporal delay between the XUV and IR pulses.
@@ -351,19 +364,19 @@ From the experimental spectrogram, the FSI term can be isolated by filtering the
 
 Since PROOF requires weak IR fields (intensities below $10^{12}$ W/cm²), the relatively small streaking signal-to-noise ratio can introduce uncertainties in the retrieved phase of the SAP. Nevertheless, PROOF provides an effective method for phase retrieval in weak-field conditions, expanding the capabilities of attosecond metrology.
 
-## Equivalence of RABBITT and Streaking Delays in Attosecond-Time Resolved Photoemission
-[[Reading/Papers/Attosecond/Equivalence of RABBITT and Streaking Delays.pdf#page=1&selection=4,0,6,30|•]] 
+---
+## From RABBITT to Streaking Regime
 
-This follows ["Equivalence of RABBITT and Streaking Delays in Attosecond-Time-Resolved Photoemission Spectroscopy at Solid Surfaces"](https://doi.org/10.3390/app9030592). This chapter serves as a recap of the two most common characterisation techniques, RABBITT and attosecond streaking, but more importantly as a comparison of the two. The first and most obvious difference is that in RABBITT, an APT excites photoelectrons, while streaking spectroscopy excites with an SAP. However, in both cases, the time delay between the XUV and IR is varied to obtain an energy- and time-resolved spectrogram. 
+The transition from the conditions of a RABBITT to a streaking experiment in a simplified solid-surface system can be demonstrated by successively reducing the XUV pulse duration, implying a broadening of the corresponding XUV excitation spectrum. This is shown in the following figure: 
 
-In the streaking experiment, excitation with a single-attosecond pulse leads to a broad excitation-energy distribution in the order of several eV due to the time-bandwidth product (1a). On the other hand in RABBITT, the femtosecond envelope of the APT resulted in a highly modulation distribution that exhibits rather narrow spectral features (1b). Because of HHG, these spectral features are separated by twice the fundamental photon energy $\omega.$ In both cases, the generated continuum electron wave packet propagates outwards towards the surface. If this packet was excited by an APT, a train of electron pulses moves towards the surface. If the packet has been excited by an SAP, a single electron wave packet travels to the surface. 
+![Attachments/Equivalence of RABBITT and Streaking Delays 3.webp|700](/img/user/Attachments/Equivalence%20of%20RABBITT%20and%20Streaking%20Delays%203.webp)[[Reading/Papers/Attosecond/Equivalence of RABBITT and Streaking Delays.pdf#page=7&rect=197,214,402,389|•]]
 
-![Attachments/Equivalence of RABBITT and Streaking Delays.webp|700](/img/user/Attachments/Equivalence%20of%20RABBITT%20and%20Streaking%20Delays.webp)[[Reading/Papers/Attosecond/Equivalence of RABBITT and Streaking Delays.pdf#page=2&rect=127,157,469,390|•]]
+The solid line represents the normalised intensity of the XUV excitation pulses corresponding to the spectra in the next figure. The dashed line is the pulse train envelope. 
 
-As soon as the photoelectron leaves the surface, it starts interacting with the IR pulse. In the case of a single electron wave packet, the energy distribution accumulates a shift determined by the IR vector potential. This results in a streaking spectrogram (see upper right panel). In the figure, the white solid line indicates the delay between the streaking trace and zero IR-XUV pulse delay. In the case of excitation by an APT, as is the case in RABBITT, at each half cycle of the IR field, a photoelectron wave packet is emitted. 
+![Attachments/Equivalence of RABBITT and Streaking Delays 4.webp|700](/img/user/Attachments/Equivalence%20of%20RABBITT%20and%20Streaking%20Delays%204.webp) [[Reading/Papers/Attosecond/Equivalence of RABBITT and Streaking Delays.pdf#page=8&rect=91,435,509,754|•]]
 
-
-
+- In the 'pure' RABBITT experiment with (a) and 6.7 fs FWHM pulse duration, the spectrum consists of two spectral lines at the 59th and 61st harmonic order. 
+- In the 'pure' streaking experiment reduced pulse duration of the APT envelope, fewer and fewer subpulses of the APT interfere with each other. Therefore, the spectral features becomes broader. In (b) and (c) with reduced pulse duration, the sidebands become very weak and the main attosecond pulse is strongly pronounced. 
 
 
 
