@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-04-05T17:34:42.000+02:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-04-25T12:27:28.000+02:00"}
 ---
 
 # 1 Laser Startup
@@ -21,13 +21,14 @@ E8:
 - Gradually ramp up the Evo30 current to 17.9 V as the temperature decreases. It should equilibrate around $193$ K.
 - Pressure of chamber should not rise about $\text{9e-2}$ mbar
 - After the Element2 started up, open the shutter
+> [!Info] See [[Attoline/Procedures#2 Modelocking and Element 2 Alignment\|#2 Modelocking and Element 2 Alignment]] if automatic startup fails.
+
 - If the CEP stabilisation is used:
 	- check that the f-2f beating signal is around 104 MHz and at -30 dBm
 		- If necessary, use the CEP4 incoupling mirrors to improve the signal
 		- Moving **wedges** in Element2 software shifts the peak to centre, such that it is around $-30$ dB.
 		- Delta value on CEP box should decrease.
 	- Wait for some time (~30 minutes) before stabilisation of the beat signal
-- Manual modelock: Press 'state 2' in Element2 software to stabilise to 630 mW.
 - Turn on slow loop, then the RF power amp at the CEP4 control module
 > [!DANGER] Do not check the AOFS signal when the RF amp is on, otherwise damage is done	
 
@@ -37,6 +38,7 @@ E8:
 	- Dazzler uses PORT7 (but has ugly name with 7 in it)
 	- Calibration must be set to external	
 	- A software restart will fix most errors and re-initialising communication with PORT7 
+	- If you get the 'digital lock failed' error, the trigger for the Dazzler is not good enough. Take output from the diode on the left of the 'QD Mon2' and plug it into an Oscilloscope. Align with the mirror in front of it to roughly 330 mV.
 - Measure the seed power before coupling into the amplifier (check that the photodiode does not measure above 0.3 V)
 - Remove beam block, and seed the amplifier 
 - Quickly check output power, should be around 1.7 - 1.9 W
@@ -48,7 +50,20 @@ E8:
 - Make sure not more than 1.26 W are sent to E6
 
 ---
-# 2 High-Harmonic Generation
+# 2 Modelocking and Element 2 Alignment
+- Place a powermeter (PM) in front of the Element 2
+- Align output coupler and end mirror in software to maximum CW power
+- By eye, check the mode on the PM and scan through stability range (steps of 100 should be sufficient).
+	- For each stability range step, click on the button that tries to modelock around 10 times.
+	- Check by eye, where the mode is jumping or getting brighter (or the spectrum changes).
+	- Try to find the step where the most drastic changes happen and also the most often.
+	- At that position, adjust the wedge until you can modelock.
+- To adjust the FWHM: Larger wedge insertion makes the FWHM smaller/spectrum narrower.
+- If wedge has been moved a lot, re-adjust the OC, then the EM. Especially the x-axis is sensitive to wedge movement. 
+- Press 'state 2' in Element2 software to stabilise to 630 mW.
+
+---
+# 3 High-Harmonic Generation
 - Insert beamblock 1 and 2
 - Close iris
 - Put beamblock after fibre
@@ -77,7 +92,7 @@ E8:
 	- Close shutter
 
 ---
-# 3 ATAS
+# 4 ATAS
 - Insert sample
 - Open chamber with crank
 - Start VAB program COM3 position, set COM port, 'online'
@@ -90,14 +105,14 @@ E8:
 > [!TIP] Doesn't work? Turn trigger on
 - Set proper exposure
 - Optimise x, y, z position
-- Overlap them [[Attoline/Procedures#4.1 Spatial Overlap\|spatially]] and [[Attoline/Procedures#4.2 Temporal Overlap\|temporally]].
+- Overlap them [[Attoline/Procedures#5.1 Spatial Overlap\|spatially]] and [[Attoline/Procedures#5.2 Temporal Overlap\|temporally]].
 - Tune to specific power with IRIS pump / IR
 > [!WARNING] Turn on the shutter chiller
 
 ---
-# 4 Overlap
+# 5 Overlap
 - Overlap is done without filter and without gas: You compare both red pulses. 
-## 4.1 Spatial Overlap
+## 5.1 Spatial Overlap
 - Align to camera, place _cross_ with mouse
 - Close the shutter, main point will vanish
 - Turn on electornic shutter controller
@@ -105,7 +120,7 @@ E8:
 - Optimize shape with 3AB
 - Repeat 4. and 5. until shape and position is good
 - Open shutter
-## 4.2 Temporal Overlap
+## 5.2 Temporal Overlap
 - Use ThinkPad and look at interferogram
 - Set piezo to 5 V (preset 'reset')
 - Maximize signal with the mirror before the 'wheel', but after the beam splitter
@@ -113,7 +128,7 @@ E8:
 - Write down the position
 
 ---
-# 5 Measuring STRA
+# 6 Measuring STRA
 - Lift toroidal mirror
 - Insert filter
 - Turn shutter controller off
@@ -124,7 +139,7 @@ E8:
 - Shutter settings: SPSS * steps > 100
 
 ---
-# 6 RABBITT
+# 7 RABBITT
 - Set delay piezo to 'RABBITT' (standard setting is 'Nadja')
 - Turn off gauge below table corner, CH2
 - Pump the tubes and check pressure on right display -> 'target gas' should go down
@@ -133,7 +148,7 @@ E8:
 - Set manometer to 295
 - Turn on pre-amp current
 - Turn on FASTcomtec sockets
-- Overlap them [[Attoline/Procedures#4.1 Spatial Overlap\|spatially]] and [[Attoline/Procedures#4.2 Temporal Overlap\|temporally]]
+- Overlap them [[Attoline/Procedures#5.1 Spatial Overlap\|spatially]] and [[Attoline/Procedures#5.2 Temporal Overlap\|temporally]]
 - Open gas TOF at bottle
 - Open gas before and after manometer
 - Set manometer to 295
@@ -155,14 +170,14 @@ E8:
 - As soon as we see pulse, set it from start to (start + steps * delta)
 
 ---
-# 7 10-Pass Alignment
+# 8 10-Pass Alignment
 - Connect photodiode to oscilloscope
 - Use insertable mirror to align pass by pass (actually pass 2,4, 8 and 10)
 - 
 - bla bla
 
 ---
-# 8 Laser shut-down
+# 9 Laser shut-down
 In E8;
 - Turn off beam stabilisation 3
 - Measure the power
@@ -180,8 +195,8 @@ In E6.2:
 - Turn off the ballistic thingy, by turning the thing
 
 ---
-# 9 Venting and Purgings Chambers
-## 9.1 Venting (any) chamber
+# 10 Venting and Purgings Chambers
+## 10.1 Venting (any) chamber
 - Separate chamber to vent from others by closing black valves 
 - Close the pre-vac that leads to the chamber to vent
 - Venting the generation chamber:
@@ -201,16 +216,16 @@ In E6.2:
 - Shut down the turbo pumps that are still connected to the chamber to vent
 - After turbo has spun down to almost 0 Hz, flush with nitrogen if possible (open at wall, 0.6 bar)
 - Open the chamber
-## 9.2 Purging (any) chamber
+## 10.2 Purging (any) chamber
 - Close all pre-vacs expect the one to purge
 - Wait until pressures around 3e-1 mbar to switch on the turbo pumps
 - After the turbos have spun up, and pressure is around 1e-4/1e-5 mbar, open all other pre-vacs
 - In generation chamber: Rotate filters back
-# 10 SPIDER
+# 11 SPIDER
 - Outcouple probe (HHG arm) beam with mirror
 - Use two mirrors to send through black tunnel
 - Follow introductory manual step-by-step
-# 11 Swapping Samples
+# 12 Swapping Samples
 - Close prevac to upper turbo labelled 'turbo manipulation chamber'
 - On Stepper motor controller, set drives to 'on' and use Joystick
 - Drive sample to top position, using z-direction
@@ -227,6 +242,6 @@ In E6.2:
 - Within the chamber, loosen the bottom two screws with hand underneath (do not fully remove screws)
 - Swap the sample
 - Close the window with new copper ring and screws
-- [[Attoline/Procedures#9.2 Purging (any) chamber\|Purge]] the chamber
+- [[Attoline/Procedures#10.2 Purging (any) chamber\|Purge]] the chamber
 
 ---
