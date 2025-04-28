@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/courses/2025-quantum-electronics-gallmann/8-laser-fundamentals/","hide":"true","updated":"2025-04-28T18:52:34.143+02:00"}
+{"dg-publish":true,"permalink":"/courses/2025-quantum-electronics-gallmann/8-laser-fundamentals/","hide":"true","updated":"2025-04-28T18:56:41.129+02:00"}
 ---
 
-Jump back to ==[[Courses/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
+CJump back to ==[[Courses/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
@@ -242,9 +242,18 @@ We will consider the following notations:
 
 As mentioned, the shown two-levels are not from an ideal system with only two levels available, but two specific levels in a multiple-level system. One can show that ==population inversion is not possible in a two-level system.== This is a very important result, and holds even in an ideal two-level system. By increasing the pumping rate $R_2\rightarrow\infty,$ there is an equilibrium between absorption and emission such that population inversion is not possible. This can be intuitively understood as follows: By increasing the pumping rate, it will be more and more favourable for electrons to be in the excited state. However, we must not forget that an increasing pumping rate increases both the absorption rate, and the stimulated emission rate. Thus, when the ground state population approaches the excited state population, these two rates also approach each other. The chance then becomes equal for an electron to absorb a photon, or for another excited electron to emit a photon by stimulated emission. 
 
-A simpler, standard argument clearly shows why population inversion is impossible in a *pure* two-level system, where pumping occurs directly from level 1 to level 2, and emission occurs from level 2 back to level 1 using the same transition. In steady-state, the total rate of atoms transitioning upwards must equal the total rate of atoms transitioning downwards. The upward rate is driven by absorption (pump): $W_{12} N_1$. The downward rates are spontaneous emission, $A_{21} N_2$, and stimulated emission, $W_{21} N_2$. The steady-state rate balance equation is therefore: $$ W_{12} N_1 = A_{21} N_2 + W_{21} N_2 $$ Here, $W_{12}$ and $W_{21}$ are the absorption and stimulated emission rates per atom, respectively, induced by the resonant light field. $A_{21}$ is the spontaneous emission rate. Since both absorption and stimulated emission are driven by the same resonant light field (intensity $\rho$), the rates per atom are equal: $W_{12} = W_{21}$. Let's denote this common induced rate coefficient as $W_i$. Substituting this into the balance equation gives: $$ W_i N_1 = A_{21} N_2 + W_i N_2 $$ Rearranging the terms to isolate the populations: $$ W_i N_1 - W_i N_2 = A_{21} N_2 $$
+A simpler, standard argument clearly shows why population inversion is impossible in a *pure* two-level system, where pumping occurs directly from level 1 to level 2, and emission occurs from level 2 back to level 1 using the same transition. In steady-state, the total rate of atoms transitioning upwards must equal the total rate of atoms transitioning downwards. The upward rate is driven by absorption (pump): $W_{12} N_1$. The downward rates are spontaneous emission, $A_{21} N_2$, and stimulated emission, $W_{21} N_2$. The steady-state rate balance equation is therefore: 
+$$ W_{12} N_1 = A_{21} N_2 + W_{21} N_2 $$
+Here, $W_{12}$ and $W_{21}$ are the absorption and stimulated emission rates per atom, respectively, induced by the resonant light field. $A_{21}$ is the spontaneous emission rate. Since both absorption and stimulated emission are driven by the same resonant light field (intensity $\rho$), the rates per atom are equal: $W_{12} = W_{21}$. Let's denote this common induced rate coefficient as $W_i$. Substituting this into the balance equation gives: 
+$$ W_i N_1 = A_{21} N_2 + W_i N_2 $$
+Rearranging the terms to isolate the populations: 
+$$ W_i N_1 - W_i N_2 = A_{21} N_2 $$
+
 and
-$$ W_i (N_1 - N_2) = A_{21} N_2. $$ Since the rates $W_i$ and $A_{21}$, and the population $N_2$ must be non-negative ($W_i \ge 0$, $A_{21} > 0$, $N_2 \ge 0$), the right-hand side ($A_{21} N_2$) is non-negative. Therefore: $$ N_1 - N_2 = \frac{A_{21}}{W_i} N_2 \ge 0 $$This inequality clearly shows that $N_1 \ge N_2$. Population inversion, which requires $N_2 > N_1$, is fundamentally impossible in such a system. Even with extremely strong pumping ($W_i \to \infty$), the ratio $A_{21}/W_i \to 0$, leading to the limiting case where the populations equalise ($N_1 \approx N_2$), but the upper state population never exceeds the lower state population.
+$$ W_i (N_1 - N_2) = A_{21} N_2. $$
+Since the rates $W_i$ and $A_{21}$, and the population $N_2$ must be non-negative ($W_i \ge 0$, $A_{21} > 0$, $N_2 \ge 0$), the right-hand side ($A_{21} N_2$) is non-negative. Therefore: 
+$$ N_1 - N_2 = \frac{A_{21}}{W_i} N_2 \ge 0 $$
+This inequality clearly shows that $N_1 \ge N_2$. Population inversion, which requires $N_2 > N_1$, is fundamentally impossible in such a system. Even with extremely strong pumping ($W_i \to \infty$), the ratio $A_{21}/W_i \to 0$, leading to the limiting case where the populations equalise ($N_1 \approx N_2$), but the upper state population never exceeds the lower state population.
 
 The last quantity introduced is the small signal gain, which is the maximum gain at maximum inversion, e.g. in the limit of no photons within the cavity: $\gamma_0(f)=N_0\sigma(f).$ 
 
