@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-04-05T17:25:10.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-04-05T17:25:10.518+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.

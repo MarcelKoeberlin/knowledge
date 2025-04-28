@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/1-electromagnetics-of-metals/","hide":"true","updated":"2025-04-05T17:29:41.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/1-electromagnetics-of-metals/","hide":"true","updated":"2025-04-05T17:29:41.994+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.

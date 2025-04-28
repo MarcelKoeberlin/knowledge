@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/courses/2025-quantum-electronics-gallmann/5-fourier-optics/","hide":"true","updated":"2025-04-06T18:47:21.000+02:00"}
+{"dg-publish":true,"permalink":"/courses/2025-quantum-electronics-gallmann/5-fourier-optics/","hide":"true","updated":"2025-04-06T18:47:21.033+02:00"}
 ---
 
 Jump back to ==[[Courses/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.

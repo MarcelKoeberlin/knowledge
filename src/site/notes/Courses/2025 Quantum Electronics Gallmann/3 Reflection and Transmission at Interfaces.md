@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/courses/2025-quantum-electronics-gallmann/3-reflection-and-transmission-at-interfaces/","hide":"true","updated":"2025-04-05T17:29:45.000+02:00"}
+{"dg-publish":true,"permalink":"/courses/2025-quantum-electronics-gallmann/3-reflection-and-transmission-at-interfaces/","hide":"true","updated":"2025-04-05T17:29:45.416+02:00"}
 ---
 
 Jump back to ==[[Courses/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
