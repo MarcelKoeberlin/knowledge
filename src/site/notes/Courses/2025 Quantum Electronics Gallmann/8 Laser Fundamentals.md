@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/courses/2025-quantum-electronics-gallmann/8-laser-fundamentals/","hide":"true","updated":"2025-04-28T18:56:41.129+02:00"}
+{"dg-publish":true,"permalink":"/courses/2025-quantum-electronics-gallmann/8-laser-fundamentals/","hide":"true","updated":"2025-04-28T19:00:34.074+02:00"}
 ---
 
 CJump back to ==[[Courses/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -42,7 +42,7 @@ In the following, we will assume that all these processes are instantaneous:
 
 - a) Spontaneous emission: This process is independent on the presence of other photons. An excited electron may jump down to the ground state, thus releasing a photon with energy $hf$. The probability of this process is $P^\text{sp}_{21}$.
 - b) Absorption: An incoming photon of energy $hf$ is absorbed by an electron in the ground state, such that it is now in an excited state. The probability of this process is $P^\text{abs}_{12}\sim n$, since we will assume these processes to be independent. The number of incoming photon is denoted $n$.
-- c) Stimulated emission: An incoming photon with energy $hf$ interacts with an electron in the excited state. The result is the emission of another photon with energy $hf$, such that there are two ==identical/indistinguishable== photons. This property is critical: The created photon has exactly the same properties as the incoming photon - frequency, phase, direction, and polarisation are identical. As is the case for absorption, the probability of stimulated emission is denoted $P^\text{stim}_{21}\sim n,$ and is assumed to be proportional to the number of incoming photons.
+- c) Stimulated emission: An incoming photon with energy $hf$ interacts with an electron in the excited state. The result is the emission of another photon with energy $hf$, such that there are two **identical/indistinguishable** photons. This property is critical: The created photon has exactly the same properties as the incoming photon - frequency, phase, direction, and polarisation are identical. As is the case for absorption, the probability of stimulated emission is denoted $P^\text{stim}_{21}\sim n,$ and is assumed to be proportional to the number of incoming photons.
 
 From these points it should be clear that the probabilities for absorption and stimulated emission are **not** constant, but dependent on $n,$ the number of incoming photons with the right energy $hf.$ 
 
@@ -118,7 +118,7 @@ Thus, we simplify the notation to $A=A_{21}$ and $B=B_{12}=B_{21}.$ The Einstein
 $$
 B=\frac{\lambda^3}{8 \pi h} A=\frac{\lambda^3}{8 \pi h t_{s p}}.
 $$
-This allows relating both probabilities for absorption and stimulated emission to the probability for spontaneous emission. The derivation also shows that there is a symmetry between stimulated emission and absorption. We can see that stimulated emission is crucial to make the thermal equilibrium condition agree with Planck's radiation law and without it, the derivation of Planck’s law would not close. Another point worth mentioning is that the derivation assumed thermal equilibrium between atoms and photons, however ==these relations are universal!== Further, $A$ and $B$ depend on the type of atom and transition, but also on the geometry of the resonator. However, this last point only becomes relevant once the resonator dimensions become comparable to the wavelength of the transition. 
+This allows relating both probabilities for absorption and stimulated emission to the probability for spontaneous emission. The derivation also shows that there is a symmetry between stimulated emission and absorption. We can see that stimulated emission is crucial to make the thermal equilibrium condition agree with Planck's radiation law and without it, the derivation of Planck’s law would not close. Another point worth mentioning is that the derivation assumed thermal equilibrium between atoms and photons, however **these relations are universal!** Further, $A$ and $B$ depend on the type of atom and transition, but also on the geometry of the resonator. However, this last point only becomes relevant once the resonator dimensions become comparable to the wavelength of the transition. 
 
 ### 8.2.1 Transition Width
 
@@ -438,7 +438,7 @@ Then for $n_s\rightarrow0,$ the small signal gain coefficient is
 $$
 \gamma_0=N_0\sigma=R_p\tau_2\sigma,
 $$
-which implies that for increasing photon number, the gain is reduced. We call this ==saturation== and say the gain is saturated. Another way write the gain is 
+which implies that for increasing photon number, the gain is reduced. We call this _saturation_ and say the gain is saturated. Another way write the gain is 
 $$
 \gamma=\frac{\gamma_0}{1+I / I_{\mathrm{sat}}}=\frac{\gamma_0}{1+\phi / \phi_{\mathrm{s}}},
 $$
