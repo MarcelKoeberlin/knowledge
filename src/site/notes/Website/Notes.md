@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes","permalink":"/notes/","hide":"true","dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-04-09T15:57:24.000+02:00"}
+{"dg-publish":true,"dg-path":"Notes","permalink":"/notes/","hide":"true","dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-04-28T18:52:52.133+02:00"}
 ---
 
 This is the perfect place to start reading up on some topics:
@@ -12,7 +12,7 @@ This is the perfect place to start reading up on some topics:
 | [[Notes/Plasmonics/Plasmonics\|Plasmonics]]                                                       | Chapter 5/17       |
 | [[Notes/Solid-State Theory/Solid-State Theory\|Solid-State Theory]]                               | ✅                  |
 | [[Notes/Attosecond Physics/Attosecond Physics\|Attosecond Physics]]                               | Chapter 3/?        |
-| [[Courses/2025 Quantum Electronics Gallmann/Quantum Electronics\|Quantum Electronics]]            | Chapter 7/?        |
+| [[Courses/2025 Quantum Electronics Gallmann/Quantum Electronics\|Quantum Electronics]]            | Chapter 8/?        |
 | Quantum Information Theory                                                                        | ❌ not started yet  |
 | Microelectronic Circuits                                                                          | ❌ not started yet  |
 | [[Notes/Intersubband Optoelectronics/Intersubband Optoelectronics\|Intersubband Optoelectronics]] | ✅ (images missing) |
