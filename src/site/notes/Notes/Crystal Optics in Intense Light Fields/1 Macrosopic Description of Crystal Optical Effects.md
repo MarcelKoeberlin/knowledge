@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/1-macrosopic-description-of-crystal-optical-effects/","hide":"true","updated":"2025-05-14T20:33:41.745+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/1-macrosopic-description-of-crystal-optical-effects/","hide":"true","updated":"2025-05-14T21:06:36.054+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -350,7 +350,7 @@ This set of equation has only one solution, which is $\varepsilon_{31}=\varepsil
 
 To acquire the relations between the tensor components, one has to follow these steps:
 1. **Determine the symmetry group of the system using Birss, tables 3 and 6:** Considering the triangular lattice from above, we find the symmetry operations
-$$\hat{O} \in\left\{1, \overline{2}_{z}, 3\left(2_{x}\right), 3\left(2_{y}\right), \pm 3_{z}, \pm \overline{6}_{z}\right\} \equiv \overline{6} m 2$$
+	$$\hat{O} \in\left\{1, \overline{2}_{z}, 3\left(2_{x}\right), 3\left(2_{y}\right), \pm 3_{z}, \pm \overline{6}_{z}\right\} \equiv \overline{6} m 2$$
 	where the last equality denotes the corresponding symmetry group. In this example, time reversal was neglected.
 2. **Determine the tensor type:** The dielectric tensor $\varepsilon_{i j}$ is a rank-2 $\left(\mathrm{g}, \mathrm{p}, \mathrm{i}\right)$ tensor.
 3. **Determine the type of the set for the tensor components with Birss, tables 4 and 7:** $\left(\mathrm{g}, \mathrm{p}, \mathrm{i}\right)$ with symmetry $\overline{6} m 2 \Rightarrow P_{m}$, where $m$ denotes the rank. Therefore we find $P_{2}.$
