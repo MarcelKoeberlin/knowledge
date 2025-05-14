@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2025-05-14T20:59:04.914+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2025-05-14T21:08:26.282+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -97,12 +97,8 @@ M_\mathrm{L}^{\varphi} & =R(\varphi) M_\mathrm{L}^0 R^{-1}(\varphi) \\
 -\sin \varphi & \cos \varphi
 \end{array}\right) \\
 & =\left(\begin{array}{cc}
-\cos
-{ #2}
- \varphi & \sin \varphi \cos \varphi \\
-\sin \varphi \cos \varphi & \sin
-{ #2}
- \varphi
+\cos^2 \varphi & \sin \varphi \cos \varphi \\
+\sin \varphi \cos \varphi & \sin^2 \varphi
 \end{array}\right)=\frac{1}{2}\left(\begin{array}{cc}
 1+\cos 2 \varphi & \sin 2 \varphi \\
 \sin 2 \varphi & 1-\cos 2 \varphi
