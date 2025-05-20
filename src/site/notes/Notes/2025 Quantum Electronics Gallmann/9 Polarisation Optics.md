@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/9-polarisation-optics/","hide":"true","updated":"2025-05-19T11:43:50.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/9-polarisation-optics/","hide":"true","updated":"2025-05-20T15:15:40.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -208,7 +208,7 @@ $$
 \end{array}\right).
 \end{gathered}
 $$
-Usually, symmetries allow for relationships between these 9 numbers, reducing the number of free parameters: ==Tensors of material properties must follow the same symmetries as the materials they describes,== see the [[Notes/Crystal Optics in Intense Light Fields/1 Macrosopic Description of Crystal Optical Effects#Symmetry Principles\|von Neumann principle]]. 
+Usually, symmetries allow for relationships between these 9 numbers, reducing the number of free parameters: ==Tensors of material properties must follow the same symmetries as the materials they describes,== see the [[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#Symmetry Principles\|von Neumann principle]]. 
 For our purposes, we will assume that $\epsilon_{jk}$ and $\mu_{jk}$ are real and symmetric, $\epsilon_{jk}=\epsilon_{kj}$ respectively $\mu_{j k}=\mu_{k j}$, which is true for most non-absorbing, non-magnetic materials. An important exception are so-called optically active materials, which will be discussed later. One way to visualise the dielectric tensor in the real, symmetric case, is to consider the electric energy density:
 
 $$
@@ -437,7 +437,7 @@ where $B$ is the projection of the magnetic field along the propagation directio
 
 ![Attachments/05_Devices_and_applications 23.webp|700](/img/user/Attachments/05_Devices_and_applications%2023.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=58&rect=409,93,810,484|•]]
 
-A linear polarised beam will be rotated in a specific direction, but reflection back will rotate it even further into that direction. As a result, the polarisation has been rotated by twice the angle compared to a single pass. This rather surprising result is a consequence of the symmetry properties of the magnetic field on time-reversal. Specifically, the magnetic field is an [[Notes/Crystal Optics in Intense Light Fields/1 Macrosopic Description of Crystal Optical Effects#1.3.2 Parity Transformations\|c-type tensor]]: It flips sign upon time inversion. This particular property is used in optical isolators, prevention propagation in one direction, while allowing the opposite direction. 
+A linear polarised beam will be rotated in a specific direction, but reflection back will rotate it even further into that direction. As a result, the polarisation has been rotated by twice the angle compared to a single pass. This rather surprising result is a consequence of the symmetry properties of the magnetic field on time-reversal. Specifically, the magnetic field is an [[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.3.2 Parity Transformations\|c-type tensor]]: It flips sign upon time inversion. This particular property is used in optical isolators, prevention propagation in one direction, while allowing the opposite direction. 
 
 ---
 ## 9.6 Electro-Optics
@@ -452,6 +452,6 @@ $$
 + \sum_l \underbrace{r_{jkl} E_l^{(0)}}_{\substack{\text{Pockels effect} \\ \Delta n \propto \vec{E}_0}} 
 + \sum_{lm} \underbrace{s_{jklm} E_l^{(0)} E_m^{(0)}}_{\substack{\text{Kerr effect} \\ \Delta n \propto \vec{E}_0^2}}
 $$
-The tensors are called electro-optic coefficients, and individual elements can often by related to each by [[Notes/Crystal Optics in Intense Light Fields/1 Macrosopic Description of Crystal Optical Effects#1.1 Symmetry Principles\|symmetries]]. We will not go into more detail here, but note that these effects can be applied to give rapid control over refractive indices for polarisation devices or phase modulators.
+The tensors are called electro-optic coefficients, and individual elements can often by related to each by [[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.1 Symmetry Principles\|symmetries]]. We will not go into more detail here, but note that these effects can be applied to give rapid control over refractive indices for polarisation devices or phase modulators.
 
 ---

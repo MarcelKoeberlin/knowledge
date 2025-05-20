@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/3-magneto-optics/","hide":"true","updated":"2025-05-20T14:42:14.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/3-magneto-optics/","hide":"true","updated":"2025-05-20T17:14:45.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -107,7 +107,7 @@ where the Verdet constant $\mathcal{V}$ describes the proportionality between th
 
 If we include the effects of absorption, all parameters ($\varepsilon,$ $g$ and $Q$), where generally, the real part relates to the stored energy, while the imaginary part accounts for material losses. Considering the specific Faraday rotation $\phi_{F}$ as a complex parameter introduces ellipticity
 $$
-\phi_{F}=\underbrace{\phi_{F}}_{\text {rotation of lin. pol. }}+\underbrace{i \Psi_{F}}_{\text {ellipticity }}=-\frac{\omega n_{0}}{2 c}\left(Q^{\prime}+i Q^{\prime \prime}\right).
+\tilde{\phi}_{F}=\underbrace{\phi_{F}}_{\text {rotation of lin. pol. }}+\underbrace{i \Psi_{F}}_{\text {ellipticity }}=-\frac{\omega n_{0}}{2 c}\left(Q^{\prime}+i Q^{\prime \prime}\right).
 $$
 
 ### 3.1.2 Voigt Effect
@@ -127,7 +127,7 @@ For all three geometries, symmetry considerations allow to investigate the trans
 
 - Polar MOKE: The magnetisation is parallel to the normal vector of the surface of reflection $\mathbf{M} \| \hat{n}$. Mirroring on $\mathcal{P}$ inverts the magnetisation, since magnetisation is the result of a circular current and mirroring on a surface inverts the direction of the current, and thus is not a symmetry operation. Therefore, energy transfer between s- and p-polarised light is allowed. 
 - Longitudinal MOKE: The magnetisation lies in the plane of reflection and is parallel to the plane of incidence $\mathbf{M} \perp \hat{n}, \mathbf{M} \| \mathcal{P}$. Again, mirroring is not a symmetry operation,  thus energy transfer between s- and p-polarised light is allowed.
-- Transverse MOKE: The magnetisation lies in the plane of reflection and is orthogonal to the plane of incidence $\mathbf{M} \perp \hat{n}, \mathbf{M} \perp \mathcal{P}$. Now, mirroring on $\mathcal{P}$ does **not** invert the magnetisation. It is therefore a symmetry operation, which must reflect in the physical results (see [[Notes/Crystal Optics in Intense Light Fields/1 Macrosopic Description of Crystal Optical Effects#1.1 Symmetry Principles\|von Neumann principle]]). The polarisation states are not mixed in transverse MOKE.
+- Transverse MOKE: The magnetisation lies in the plane of reflection and is orthogonal to the plane of incidence $\mathbf{M} \perp \hat{n}, \mathbf{M} \perp \mathcal{P}$. Now, mirroring on $\mathcal{P}$ does **not** invert the magnetisation. It is therefore a symmetry operation, which must reflect in the physical results (see [[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.1 Symmetry Principles\|von Neumann principle]]). The polarisation states are not mixed in transverse MOKE.
 
 The magneto-optic Kerr effect is mostly observed in ferromagnetic metals. These usually have a large refractive index $n_2$ compared to the environment $n_1$. Calling the ratio $\eta=n_2/n_1,$ we find  
 
