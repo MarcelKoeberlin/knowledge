@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Crystal Optics in Intense Light Fields","permalink":"/notes/crystal-optics-in-intense-light-fields/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-05-14T20:22:27.938+02:00"}
+{"dg-publish":true,"dg-path":"Notes/Crystal Optics in Intense Light Fields","permalink":"/notes/crystal-optics-in-intense-light-fields/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-05-19T11:26:17.000+02:00"}
 ---
 
 These notes accompany the lecture 'Crystal Optics in Intense Light Fields' taught by Prof. Fiebig in 2025. I chose to cover this course because it provides a solid fundamental basis for my PhD work. The material is primarily based on the _unofficial_ notes from 2015 (as Prof. Fiebig refers to them), combined with his current lecture slides, though the order has been slightly adjusted. All content is written in my own words.
@@ -21,10 +21,12 @@ Throughout, the goal is to build an understanding of how symmetry and light toge
 # Table of Contents
 - [[Notes/Crystal Optics in Intense Light Fields/1 Macrosopic Description of Crystal Optical Effects\|1 Macrosopic Description of Crystal Optical Effects]]
 - [[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion\|2 Light Polarisation and Dispersion]]
-- [[Notes/Crystal Optics in Intense Light Fields/3 Magnetooptics\|3 Magnetooptics]]
+- [[Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics\|3 Magneto-Optics]]
+- [[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction\|4 Light-Matter Interaction]]
+- [[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics\|5 Nonlinear Optics]]
+-  [[Notes/Crystal Optics in Intense Light Fields/6 Experimental Methods of Nonlinear Optics\|6 Experimental Methods of Nonlinear Optics]]
+
 -  [[Notes/Crystal Optics in Intense Light Fields/4 Change of Optical Properties under External Influences\|4 Change of Optical Properties under External Influences]]
 - [[Notes/Crystal Optics in Intense Light Fields/5 Crystal Optics without external Fields\|5 Crystal Optics without external Fields]]
-- [[Notes/Crystal Optics in Intense Light Fields/6 Nonlinear Optics\|6 Nonlinear Optics]]
-- [[Notes/Crystal Optics in Intense Light Fields/7 Experimental Methods of Nonlinear Optics\|7 Experimental Methods of Nonlinear Optics]]
 
 ---

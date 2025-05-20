@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2025-05-14T21:08:26.282+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2025-05-15T09:55:25.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -39,7 +39,7 @@ $$
 
 In the Jones vector formalism, the Jones vector (or polarisation) is defined as
 $$
-\mathbf{E}_{0} \sim=\binom{a_x e^{i \phi_x}}{a_y e^{i \phi_y}}=e^{i \phi_x}\binom{a_x}{a_y e^{i \delta}} \equiv \mathbf{J},
+\mathbf{E}_{0} =\binom{a_x e^{i \phi_x}}{a_y e^{i \phi_y}}=e^{i \phi_x}\binom{a_x}{a_y e^{i \delta}} \equiv \mathbf{J},
 $$
 such that it becomes clear that the polarisation only depends on the phase delay, not on the phases absolute value. This vector completely specifies the polarisation state of the light field at a particular point in space. 
 

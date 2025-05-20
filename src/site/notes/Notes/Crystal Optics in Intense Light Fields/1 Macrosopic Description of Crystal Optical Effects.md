@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/1-macrosopic-description-of-crystal-optical-effects/","hide":"true","updated":"2025-05-14T21:06:36.054+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/1-macrosopic-description-of-crystal-optical-effects/","hide":"true","updated":"2025-05-14T21:12:47.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -357,7 +357,7 @@ To acquire the relations between the tensor components, one has to follow these 
 4. **Look up the components in Birss, table 4:**
 	$$P_{2} \rightarrow \varepsilon_{x x}=\varepsilon_{y y} \quad \varepsilon_{z z}, \varepsilon_{i j}=0 \text { for } i \neq j$$
 
-	At this point one has to be careful with the abbreviated notation, as $x z(2)$ means $x z, z x$ and not $x z=z x$ !
+	At this point one has to be careful with the abbreviated notation, as $x z(2)$ means $x z, z x$ and not $x z=z x!$ 
 5. **Reassign the axes, if they are not the same as in Birss:** If we had chosen the $x$-axis to be vertical on the triangular lattice instead of the $z$-axis, then this reassignment would look like
 	$$z \rightarrow x, x \rightarrow y, y \rightarrow z \Rightarrow P_{2}^{\text {reassign }}: \varepsilon_{y y}=\varepsilon_{z z} \quad \varepsilon_{x x}, \varepsilon_{i j}=0 \text { for } i \neq j$$
 
@@ -365,7 +365,7 @@ To acquire the relations between the tensor components, one has to follow these 
 ## 1.6 Beyond Group Theory
 [[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=17&selection=192,0,192,23|•]]
 
-So far, we only looked at the symmetry and the related operations of a system. From now on, we will also include the physics of the system. Additional restrictions to the tensor components arise, resulting from physics. This is called 'particularization'.
+So far, we only looked at the symmetry and the related operations of a system. From now on, we will also include the physics of the system. Additional restrictions to the tensor components arise, resulting from physics. This is called 'particularisation'.
 
 As an example consider second harmonic generation (SHG):
 $$
