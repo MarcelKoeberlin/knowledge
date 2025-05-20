@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/4-light-matter-interaction/","hide":"true","updated":"2025-05-20T18:18:45.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/4-light-matter-interaction/","hide":"true","updated":"2025-05-20T18:25:01.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -298,7 +298,8 @@ We have used the fact that the polarisation does not change as a result of a var
 $$
 \tilde{\Phi}_F=\Phi_F+i \Psi_F=-\frac{\omega n}{2 c} Q=-\frac{\omega g}{2 c n}.
 $$
-The parameter $g$ accounts for the difference in polarisability between left-hand and right-hand circularly polarised. We replace it with the earlier derived form, where this difference in polarisability is shifted into the polarisability parameter $$
+The parameter $g$ accounts for the difference in polarisability between left-hand and right-hand circularly polarised. We replace it with the earlier derived form, where this difference in polarisability is shifted into the polarisability parameter
+$$
 \alpha\left(\sigma_{+}\right)-\alpha\left(\sigma_{-}\right)=(\alpha+\delta \alpha)-(\alpha-\delta \alpha)=2 \delta \alpha.
 $$
 The polarisability for circular polarisability is further related to the electric dipole in numerator of the equation of $\chi_{ij}(\omega)$ ([[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction#4.3.1 Microscopy for Linear Optics\|here]]). We may write 
