@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-05-04T20:59:26.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-05-22T10:59:05.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -44,7 +44,7 @@ $$
 \mathbf{M}(\omega) & =\chi_m(\omega) \mathbf{H}(\omega).
 \end{aligned}
 $$
-These quantities are in general complex. The form of these two quantities has the same form as in [[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2 Linear Time-Invariant Systems\|linear systems theory]]: The response $(\mathbf{P}$ and $\mathbf{M})$ is a convolution of an input signal ($\mathbf{E}$ and $\mathbf{H}$) with a transfer/impulse response (the susceptibilities). We are finally at a point, where we can define dispersion properly: ==Dispersion means that the response function depends on frequency.==
+These quantities are in general complex. The form of these two quantities has the same form as in [[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2 Linear Time-Invariant Systems\|linear systems theory]]: The response $(\mathbf{P}$ and $\mathbf{M})$ is a convolution of an input signal ($\mathbf{E}$ and $\mathbf{H}$) with a transfer/impulse response (the susceptibilities). We are finally at a point, where we can define dispersion properly: **Dispersion means that the response function depends on frequency.**
 
 To understand the meaning of a complex susceptibility, consider applying an electric field $\mathbf{E}(t)=\mathbf{E}_0 \cos \left(\omega_0 t\right)$ to a medium. The Fourier transform is readily obtained as
 $$
@@ -153,7 +153,7 @@ Therefore, we obtain
 $$
 \chi=-\frac{\omega_p^2}{\omega^2-i \gamma \omega},
 $$
-where $\omega_p=\sqrt{N e^2 / m \varepsilon_0}$ is the ==plasma frequency== and $N$ is the carrier concentration. We further find that 
+where $\omega_p=\sqrt{N e^2 / m \varepsilon_0}$ is the **plasma frequency** and $N$ is the carrier concentration. We further find that 
 $$
 \begin{align}
 &\mathfrak{Re}\left[\chi\right]=\chi^{\prime}=-\frac{\omega_p^2}{\omega^2+\gamma^2},\\ &\mathfrak{Im}\left[\chi\right]=\chi^{\prime \prime}=-\frac{\omega_p^2 \gamma}{\omega\left(\omega^2+\gamma^2\right)}.
@@ -343,11 +343,11 @@ For most optically transparent media (meaning that they have low attenuation), t
  $$
 
 On the resonance, the dispersion is anomalous, but returns back to normal at higher frequencies.
-In practice, interpolation formulas are used to find the real part of the refractive index at any given frequencies. The imaginary part is often ignored, since optically transparent materials have small absorption, and thus $\mathfrak{Im}\left[n\right]$ is small. The most well known of these formulas is the ==Sellmeier equation==:
+In practice, interpolation formulas are used to find the real part of the refractive index at any given frequencies. The imaginary part is often ignored, since optically transparent materials have small absorption, and thus $\mathfrak{Im}\left[n\right]$ is small. The most well known of these formulas is the **Sellmeier equation**:
 $$
 n^2\left(\lambda_0\right)=1+\sum_j \frac{B_j \lambda_0^2}{\lambda_0^2-C_j},
 $$
-where the **vacuum** wavelength $\lambda_0=c/f$ is in units of micrometre. Usually two or three terms in the sum are considered. The similarity of the Sellmeier equation with the collection of Lorentz oscillator is due to the assumption in its derivation, that the resonances are delta functions, which is typically a good approximation far from these resonances. The coefficients $B_j$ and $C_j$ can then be understood as the strength of the resonance and the square of the resonance wavelength. 
+where the vacuum wavelength $\lambda_0=c/f$ is in units of micrometre. Usually two or three terms in the sum are considered. The similarity of the Sellmeier equation with the collection of Lorentz oscillator is due to the assumption in its derivation, that the resonances are delta functions, which is typically a good approximation far from these resonances. The coefficients $B_j$ and $C_j$ can then be understood as the strength of the resonance and the square of the resonance wavelength. 
 
 Lastly, note that the Sellmeier equation severely lacks accuracy in the XUV range (short wavelengths) where the refractive index in any case is around 1. Therefore, these small deviations are denoted with 
 $$
@@ -435,10 +435,9 @@ Consider a transform-limited (therefore unchirped) Gaussian pulse:
 
 ![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 19.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2019.webp)
 
-The next figure shows a chirped Gaussian pulse:
+The next figure shows a chirped Gaussian pulse, where by definition, $\Delta t\cdot\Delta \nu>\text{TBP}:$ 
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 20.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2020.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=132&rect=53,232,317,460|•]]
-
+![Attachments/01_Introduction_and_theoretical_foundation.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=132&rect=60,259,314,436|•]]
 To really bring home the effect of a chirp, consider the difference between an unchirped (blue), and a chirped (orange) light pulse:
 
 ![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 21.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2021.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=132&rect=400,240,774,496|•]]

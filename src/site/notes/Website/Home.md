@@ -1,10 +1,12 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-05-22T10:40:20.000+02:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-05-22T10:46:14.000+02:00"}
 ---
 
 Hi there!
 
 Welcome to my personal website—a space where I share everything I consider worth publishing. This site serves as a "knowledge vault," also known as a "digital garden." This is the perfect place to start reading up on some topics:
+$\mathfrak{MARCEL, marcel, Marcel}$
+$\mathcal{MARCEL, marcel}$
 
 | Notes                                                                                                                           | Progress           |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-05-04T20:59:25.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-05-22T10:54:08.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -114,7 +114,7 @@ which leads to
 $$
 \nabla \times \mathbf{H} = \mathbf{j}_f + \varepsilon_0 \frac{\partial \mathbf{D}}{\partial t}.
 $$
-As before, we have eliminated explicit dependence on the bound currents, leaving only free (macroscopic) current densities. An example of bound currents includes current loops arising from intrinsic spin or orbital angular momentum. We therefore can summarise the ==microscopic Maxwell equations in vacuum==, and the ==macroscopic Maxwell equations in a medium==:
+As before, we have eliminated explicit dependence on the bound currents, leaving only free (macroscopic) current densities. An example of bound currents includes current loops arising from intrinsic spin or orbital angular momentum. We therefore can summarise the microscopic Maxwell equations in vacuum, and the macroscopic Maxwell equations in a medium:
 
 | Name                       | Microscopic Maxwell's equations                                                                              | Macroscopic Maxwell's equations                                                         |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
@@ -122,8 +122,8 @@ As before, we have eliminated explicit dependence on the bound currents, leaving
 | Gauss' Law for Magnetism   | $\mathbf{\nabla} \cdot \mathbf{B}=0$                                                                         | $\mathbf{\nabla} \cdot \mathbf{B}=0$                                                    |
 | Faraday's Law of Induction | $\mathbf{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$                                  | $\mathbf{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$             |
 | Ampère-Maxwell Law         | $\nabla \times \mathbf{B}=\mu_0\left(\mathbf{J}+\varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}\right)$ | $\mathbf{\nabla} \times \mathbf{H}=\mathbf{j}_f+\frac{\partial \mathbf{D}}{\partial t}$ |
-|                            |                                                                                                              |                                                                                         |
-Summarising, the auxiliary relations are given by 
+
+Additionally, the auxiliary relations are given by 
 $$
 \begin{aligned}
 & \mathbf{D}=\epsilon_0 \mathbf{E}+\mathbf{P} \quad & \text{and}&\quad & \mathbf{H}&=\frac{1}{\mu_0} \mathbf{B}-\mathbf{M},\\
@@ -151,26 +151,22 @@ The electric dipole moment is defined as
 
 $$
 \mathfrak{Re}\left[\mathbf{P}\right] = \int\left(\mathbf{r}^{\prime}-\mathbf{R}\right) \rho\left(\mathbf{r}^{\prime}\right) d^3 r^{\prime},
-$$  
-
+$$
 while the magnetic dipole moment is  
 
 $$
 \mathbf{m}_R = \frac{1}{2} \int\left(\mathbf{r}^{\prime}-\mathbf{R}\right) \times \mathbf{j}\left(\mathbf{r}^{\prime}\right) d^3 r^{\prime}.
 $$  
-
 The integrals are carried out over a macroscopic volume $V$ at position $\mathbf{R}$, leading to macroscopic quantities. The free charge and free current densities are then given by  
 
 $$
 \rho_f = \frac{q_R}{V} \quad \text{and} \quad \mathbf{j}_f = \frac{\mathbf{i}_R}{V},
-$$  
-
+$$
 while the total polarisation and total magnetisation are  
 
 $$
 \mathbf{P} = \frac{\mathfrak{Re}\left[\mathbf{P}\right]}{V} \quad \text{and} \quad \mathbf{M} = \frac{\mathbf{m}_R}{V}.
-$$  
-
+$$ 
 The macroscopic Maxwell equations reduce to their microscopic counterparts if the free charge and current densities are uniform within each cube and if the bound charge and current densities arise only at the boundaries between adjacent cubes. This approximation is valid as long as the fields do not vary significantly over each individual cube.  
 
 To proceed further, we require knowledge of the polarisation and magnetisation. Thus, we introduce six (!) approximations:  
@@ -180,7 +176,6 @@ To proceed further, we require knowledge of the polarisation and magnetisation. 
 2. **Locality:** $\mathbf{P}$ and $\mathbf{M}$ depend on the local values of $\mathbf{E}$ and $\mathbf{B}$, meaning that bound charges and currents do not move significantly relative to the scale over which the fields change. This corresponds to the long-wavelength approximation.  
 
 3. **Homogeneity:** The functional dependence of $\mathbf{P}$ and $\mathbf{M}$ on $\mathbf{E}$ and $\mathbf{B}$, respectively, does not vary with position in the medium, implying that the medium is optically homogeneous. The explicit time dependence is irrelevant.  
-
 4. **No dispersion:** $\mathbf{P}$ and $\mathbf{M}$ depend only on the immediate values of $\mathbf{E}$ and $\mathbf{B}$, eliminating any time integrals. This assumption is valid only for optically transparent materials far from absorption resonances. However, in reality, this is a poor approximation and will be refined later.  
 
 5. **Linearity:** $\mathbf{P}$ and $\mathbf{M}$ are linear in $\mathbf{E}$ and $\mathbf{B}$. Note that this is the definition of linear optics.
@@ -259,7 +254,7 @@ The refractive index is defined as
 $$
 n=\frac{c}{v_p}=\sqrt{\mu \varepsilon}=\sqrt{1+\chi}
 $$
-and describes how much the medium slows the phase of velocity of light compared to the propagation of light. Note, the last step assumes a non-magnetic medium ($\mu=1$).  Therefore, the ==wave equation== is 
+and describes how much the medium slows the phase of velocity of light compared to the propagation of light. Note, the last step assumes a non-magnetic medium ($\mu=1$).  Therefore, the **wave equation** is 
 $$
 \nabla^2 \mathbf{E}=\frac{1}{v_p^2} \frac{\partial^2 \mathbf{E}}{\partial t^2}.
 $$
@@ -362,8 +357,8 @@ To gain some intuition, consider that the sign of the divergence of the Poynting
 In the first step, we multiply both curl equations by $\mathfrak{Re}\left[\mathbf{E}\right]$ and $\mathfrak{Re}\left[\mathbf{H}\right]:$
 $$
 \begin{aligned}
-& \mathfrak{Re}\left[\mathbf{H}\right]\cdot \nabla \times \mathfrak{Re}\left[\mathbf{E}\right]+\mu\mathfrak{Re}\left[\mathbf{H}\right]\cdot \frac{\partial}{\partial t} \mathfrak{Re}\left[\mathbf{H}\right]=0 \\
-& \mathfrak{Re}\left[\mathbf{E}\right]\cdot \nabla \times \mathfrak{Re}\left[\mathbf{H}\right]-\varepsilon \mathfrak{Re}\left[\mathbf{E}\right]\cdot \frac{\partial}{\partial t} \mathfrak{Re}\left[\mathbf{E}\right]=\mathfrak{Re}\left[\mathbf{E}\right]\cdot\left(\mathfrak{Re}\left[\mathbf{j}\right]+\frac{\partial}{\partial t} \mathfrak{Re}\left[\mathbf{P}\right]\right)
+& \mathfrak{Re}\left[\mathbf{H}\right]\cdot \nabla \times \mathfrak{Re}\left[\mathbf{E}\right]+\mu\mathfrak{Re}\left[\mathbf{H}\right]\cdot \frac{\partial}{\partial t} \mathfrak{Re}\left[\mathbf{H}\right]=0\quad\text{and} \\
+& \mathfrak{Re}\left[\mathbf{E}\right]\cdot \nabla \times \mathfrak{Re}\left[\mathbf{H}\right]-\varepsilon \mathfrak{Re}\left[\mathbf{E}\right]\cdot \frac{\partial}{\partial t} \mathfrak{Re}\left[\mathbf{E}\right]=\mathfrak{Re}\left[\mathbf{E}\right]\cdot\left(\mathfrak{Re}\left[\mathbf{j}\right]+\frac{\partial}{\partial t} \mathfrak{Re}\left[\mathbf{P}\right]\right).
 \end{aligned}
 $$
 Subtracting both equations from each other, we obtain:
@@ -402,10 +397,10 @@ This is depicted in the next figure. The left box-like behaviour is captured by 
 Let us next explicitly calculate the instantaneous Poynting vector for such pulses:
 $$
 \begin{aligned}
-\mathbf{S}(\mathbf{r}, t) & =\mathfrak{Re}\left[\mathbf{E}\right]\times \mathfrak{Re}\left[\mathbf{H}\right]\\
-& =\frac{1}{4}\left[\widetilde{\mathbf{E}}(\mathbf{r}, t) \times \widetilde{\mathbf{H}}^*(\mathbf{r}, t)+\widetilde{\mathbf{E}}^*(\mathbf{r}, t) \times \widetilde{\mathbf{H}}(\mathbf{r}, t)\right] \\
+\mathbf{S}(\mathbf{r}, t)  =&\mathfrak{Re}\left[\mathbf{E}\right]\times \mathfrak{Re}\left[\mathbf{H}\right]\\
+ =&\frac{1}{4}\left[\widetilde{\mathbf{E}}(\mathbf{r}, t) \times \widetilde{\mathbf{H}}^*(\mathbf{r}, t)+\widetilde{\mathbf{E}}^*(\mathbf{r}, t) \times \widetilde{\mathbf{H}}(\mathbf{r}, t)\right] \\
 & +\frac{1}{4}\left[\widetilde{\mathbf{E}}(\mathbf{r}, t) \times \widetilde{\mathbf{H}}(\mathbf{r}, t) e^{-2 i \omega_0 t}+\widetilde{\mathbf{E}}^*(\mathbf{r}, t) \times \widetilde{\mathbf{H}}^*(\mathbf{r}, t) e^{2 i \omega_0 t}\right] \\
-& =\underbrace{\frac{1}{2} \mathfrak{Re}\left[\widetilde{\mathbf{E}}(\mathbf{r}, t) \times \widetilde{\mathbf{H}}^*(\mathbf{r}, t)\right]}_{\text {Slow }}+\underbrace{\frac{1}{2} \mathfrak{Re}[\widetilde{\mathbf{E}}(\mathbf{r}, t) \times \widetilde{\mathbf{H}}(\mathbf{r}, t)] \cos \left(2 \omega_0 t\right)}_{\text {Fast }} \\
+=&\underbrace{\frac{1}{2} \mathfrak{Re}\left[\widetilde{\mathbf{E}}(\mathbf{r}, t) \times \widetilde{\mathbf{H}}^*(\mathbf{r}, t)\right]}_{\text {Slow }}+\underbrace{\frac{1}{2} \mathfrak{Re}[\widetilde{\mathbf{E}}(\mathbf{r}, t) \times \widetilde{\mathbf{H}}(\mathbf{r}, t)] \cos \left(2 \omega_0 t\right)}_{\text {Fast }} \\
 & +\underbrace{\frac{1}{2} \mathfrak{Im}\left[\widetilde{\mathbf{E}}^*(\mathbf{r}, t) \times \widetilde{\mathbf{H}}^*(\mathbf{r}, t)\right] \sin \left(2 \omega_0 t\right)}_{\text {Fast }} .
 \end{aligned}
 $$
