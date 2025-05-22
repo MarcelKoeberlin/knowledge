@@ -1,14 +1,29 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-02-09T22:20:33.000+01:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-05-22T10:40:20.000+02:00"}
 ---
 
 Hi there!
 
-Welcome to my personal website—a space where I share everything I consider worth publishing. This site serves as a "knowledge vault," also known as a "digital garden."
+Welcome to my personal website—a space where I share everything I consider worth publishing. This site serves as a "knowledge vault," also known as a "digital garden." This is the perfect place to start reading up on some topics:
 
-> [!question] Don't know where to start?
-> How about reading up on some physics? Click ==[[Website/Notes\|here]]==, or use the graph on the left to select your next read!
+| Notes                                                                                                                           | Progress           |
+| ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Notes/Attosecond Physics/Attosecond Physics\|Attosecond Physics]]                                                             | ✅                  |
+| [[Notes/Plasmonics/Plasmonics\|Plasmonics]]                                                                                     | ✅                  |
+| [[Notes/Solid-State Theory/Solid-State Theory\|Solid-State Theory]]                                                             | ✅                  |
+| [[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics\|Quantum Electronics]]                                            | Chapter 10/?       |
+| [[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields\|Crystal Optics in Intense Light Fields]] | Chapter 4/7        |
+| [[Notes/Signals and Systems/Signals and Systems\|Signals and Systems]]                                                          | Chapter 5/11       |
+| [[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]]                                              | Chapter 4/13       |
+| [[Notes/Quantum Optics/Quantum Optics\|Quantum Optics]]                                                                         | Chapter 2/13       |
 
+
+You may also use the graph on the left to select your next topic. Zoom out to see it on the left sidebar, otherwise it is at the bottom. Currently hidden or planned: 
+- Intersubband Optoelectronics: Quality of notes really bad, 
+- Quantum Information Theory: Content is there, but needs formatting. Potentially way too much work for a course that is now not relevant to me anymore. 
+- Microelectronic Circuits: Maybe I'll start this one once I have time.
+
+---
 This website began with the simple, though admittedly overkill, idea of having experimental step-by-step lab procedures readily available, eliminating the need for printed copies or bringing my laptop/tablet to the lab each time.  It started with a single document detailing procedures like laser system shutdown or specific measurement techniques. I never anticipated this project evolving into what it has become, let alone turning into a hobby.
 
 I've never been a fan of studying for exams using the "official" lecture notes, even if they were well-written. I held my own notes to a high standard, initially ensuring they were sufficient for me to pass the exam.  Over time, this standard rose, and even some of my friends began using them.  Upon arriving at ETH, I was pleased to discover the [VMP](https://exams.vmp.ethz.ch/) website, hosting old exam protocols and lecture notes. I decided to upload my own notes there, hoping they might be useful to someone someday.

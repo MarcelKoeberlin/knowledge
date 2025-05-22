@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes","permalink":"/notes/","hide":"true","dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-05-22T10:33:05.000+02:00"}
+{"dg-publish":true,"dg-path":"Notes","permalink":"/notes/","hide":"true","dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-05-22T10:39:23.000+02:00"}
 ---
 
 This is the perfect place to start reading up on some topics:
@@ -16,5 +16,7 @@ This is the perfect place to start reading up on some topics:
 | [[Notes/Quantum Optics/Quantum Optics\|Quantum Optics]]                                                                         | Chapter 2/13       |
 
 
-You may also use the graph on the left to select your next topic. Zoom out to see it on the left sidebar, otherwise it is at the bottom. 
-Currently hidden or planned: Intersubband Optoelectronics (quality of notes really bad), Quantum Information Theory (content is there, but needs formatting. Potentially way too much work for a course that is now not relevant to me anymore.) and Microelectronic Circuits (maybe I'll start this one once I have time).
+You may also use the graph on the left to select your next topic. Zoom out to see it on the left sidebar, otherwise it is at the bottom. Currently hidden or planned: 
+- Intersubband Optoelectronics: Quality of notes really bad, 
+- Quantum Information Theory: Content is there, but needs formatting. Potentially way too much work for a course that is now not relevant to me anymore. 
+- Microelectronic Circuits: Maybe I'll start this one once I have time.
