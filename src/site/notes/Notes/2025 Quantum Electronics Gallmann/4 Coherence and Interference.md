@@ -44,11 +44,11 @@ As we can see, the beam passes through the slits and produces an interference pa
 **Incoherent Light**
 On the other hand, consider the same experiment with spatially incoherent light, so light with finite spectral bandwidth and finite spatial extent, over three timescales:
 
-![[simulation-incoherent-femtoseconds.gif\|700]]
+![simulation-incoherent-femtoseconds.gif|700](/img/user/Attachments/simulation-incoherent-femtoseconds.gif)
 
-![[simulation-incoherent-picoseconds.gif\|700]]
+![simulation-incoherent-picoseconds.gif|700](/img/user/Attachments/simulation-incoherent-picoseconds.gif)
 
-![[simulation-incoherent-microseconds.gif\|700]]
+![simulation-incoherent-microseconds.gif|700](/img/user/Attachments/simulation-incoherent-microseconds.gif)
 
 We can see that the interference pattern fluctuates on the picosecond timescale. As we will see later, this is not by chance, but its coherence time $\tau$ can be estimated as
 $$
