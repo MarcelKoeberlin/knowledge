@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/10-waveguides/","hide":"true","updated":"2025-05-25T21:44:47.403+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/10-waveguides/","hide":"true","updated":"2025-05-25T21:53:12.110+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -173,20 +173,12 @@ $$
 $$
 Similarly to before, we aim to find those modes and spatial profiles that can be confined. There is however one important difference: For total internal reflection, the phase shift of the reflected beam is not $\pi,$ but a value depending on the angle $\theta$ due to the presence of an evanescent wave inside the outer dielectric. The reason is that the transverse field must not need to have a mode exactly at the interface. For TE modes with electric field along x, the phase shift $\phi_r$ is determined by 
 $$
-\tan \frac{\phi_r}{2}=\sqrt{\frac{\sin
-{ #2}
- \theta_c}{\sin
-{ #2}
- \theta}-1}.
+\tan \frac{\phi_r}{2}=\sqrt{\frac{\sin^2 \theta_c}{\sin^2 \theta}-1}.
 $$
 
 A wave trapped within the waveguide experiences this phase shift twice before tracing its path. Applying this extra shift yields the relation
 $$
-\tan \left(\pi \frac{d}{\lambda} \sin \theta-m \frac{\pi}{2}\right)=\sqrt{\frac{\sin
-{ #2}
- \theta_c}{\sin
-{ #2}
- \theta}-1},
+\tan \left(\pi \frac{d}{\lambda} \sin \theta-m \frac{\pi}{2}\right)=\sqrt{\frac{\sin^2 \theta_c}{\sin^2 \theta}-1},
 $$
 which is an equation difficult to treat analitically. Instead, we solve it graphically, where LHS and RHS stand for left- and right-hand side, respectively:
 
