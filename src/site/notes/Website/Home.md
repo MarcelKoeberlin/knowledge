@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-05-25T12:12:17.245+02:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-05-25T19:06:22.310+02:00"}
 ---
 
 Hi there!
@@ -11,8 +11,8 @@ Welcome to my personal website—a space where I share everything I consider wor
 | **[[Notes/Attosecond Physics/Attosecond Physics\|Attosecond Physics]]**                                                             | ✅            |
 | **[[Notes/Plasmonics/Plasmonics\|Plasmonics]]**                                                                                     | ✅            |
 | **[[Notes/Solid-State Theory/Solid-State Theory\|Solid-State Theory]]**                                                             | ✅            |
-| **[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics\|Quantum Electronics]]**                                            | Chapter 10/? |
-| **[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields\|Crystal Optics in Intense Light Fields]]** | Chapter 4/7  |
+| **[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics\|Quantum Electronics]]**                                            | ✅            |
+| **[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields\|Crystal Optics in Intense Light Fields]]** | Chapter 5/7  |
 | **[[Notes/Signals and Systems/Signals and Systems\|Signals and Systems]]**                                                          | Chapter 5/11 |
 | **[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]]**                                              | Chapter 4/13 |
 | **[[Notes/Quantum Optics/Quantum Optics\|Quantum Optics]]**                                                                         | Chapter 2/13 |

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-04-05T17:25:10.518+02:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-05-25T18:47:40.905+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -15,7 +15,7 @@ Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|
 # 1 Fundamentals of High-Order Harmonic Generation
 [[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=212&selection=2,0,3,10|•]]
 
-The fundamental principle of high-harmonic generation (**HHG**) is straightforward:
+The fundamental principle of high-harmonic generation (HHG) is straightforward:
 
 ![Attachments/Attosecond and Strong-Field Physics Principles and Applications.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=213&rect=151,538,288,635|•]]
 
@@ -135,7 +135,7 @@ $$
 S_h(\omega) \propto \omega^4\left|W^{\prime}(\omega)\right|^2 |d(\omega)|^2,
 $$
 
-where $W^{\prime}(\omega)$ is the **macroscopic wave packet** (**MWP**), distinguishing it from the single-atom response, and $d(\omega)$ is the photo-recombination transition dipole moment of a single atom. This assumption has been tested, for example, by evaluating the MWP in a hydrogen-like system.
+where $W^{\prime}(\omega)$ is the macroscopic wave packet (MWP), distinguishing it from the single-atom response, and $d(\omega)$ is the photo-recombination transition dipole moment of a single atom. This assumption has been tested, for example, by evaluating the MWP in a hydrogen-like system.
 
 ![Attachments/Attosecond and Strong-Field Physics Principles and Applications 2.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications%202.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=236&rect=124,365,487,638|•]]
 
