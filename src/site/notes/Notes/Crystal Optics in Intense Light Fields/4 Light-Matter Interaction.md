@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/4-light-matter-interaction/","hide":"true","updated":"2025-05-21T11:20:11.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/4-light-matter-interaction/","hide":"true","updated":"2025-05-25T10:25:14.892+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -151,10 +151,10 @@ $$
 \begin{aligned}
 \langle f| \hat{\mathrm{H}}_{\text {int }}|g\rangle & \sim\langle f|(\hat{\mathbf{e}} \mathbf{p})(\mathbf{k} \mathbf{r})|g\rangle \\
 & \sim \frac{1}{2}\langle f|(\mathbf{k} \times \hat{\mathbf{e}}) \underbrace{(\mathbf{r} \times \mathbf{p})}_{=\mathbf{L}}-m \omega(\mathbf{k} \mathbf{r})(\hat{\mathbf{e}} \mathbf{p})|g\rangle \\
-& \sim \frac{1}{2} \underbrace{\langle f| \mathbf{L}|g\rangle \hat{\mathrm{H}}}_{\text {magn. dipole }}-\frac{1}{2} m \omega \hat{\mathbf{e}}_{j} k_{i} \underbrace{\langle f| r_{i} r_{j}|g\rangle}_{\text {el. quadrupole }}.
+& \sim \frac{1}{2} \underbrace{\langle f| \mathbf{L}|g\rangle \hat{\mathrm{h}}}_{\text {magn. dipole }}-\frac{1}{2} m \omega \hat{\mathbf{e}}_{j} k_{i} \underbrace{\langle f| r_{i} r_{j}|g\rangle}_{\text {el. quadrupole }}.
 \end{aligned}
 $$
-Here, we introduced the angular momentum $\mathbf{L}.$ The unit vector $\hat{\mathrm{H}}$ points in the direction of the magnetic field $\mathrm{H}$. As we can see, this now includes the magnetic dipole (an orbiting electron causes a magnetisation $\mathbf{M}$), and the electric quadrupole. 
+Here, we introduced the angular momentum $\mathbf{L}.$ The unit vector $\hat{\mathrm{h}}$ points in the direction of the magnetic field $\mathbf{H}$. As we can see, this now includes the magnetic dipole (an orbiting electron causes a magnetisation $\mathbf{M}$), and the electric quadrupole. 
 
 With the correct factors, and including spin, we find: 
 - The electric dipole (ED) originates from the zeroth order of the multipole expansion with
@@ -399,11 +399,11 @@ Lastly, we present the most important interaction terms contributing to the Hami
 ![Attachments/Script (Unofficial) 4.webp|700](/img/user/Attachments/Script%20(Unofficial)%204.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=65&rect=67,633,471,765|•]]
 
 Note that there are even more contributions as listed below, but that depends on the system under investigation.
-- $\mathrm{H}_{\mathbf{0}}:$ Hamiltonian of non-interacting particles.
-- $\mathrm{H}_{\mathrm{ee}^{\prime}}:$ Contributions from electrostatic interactions and Hund's coupling $\left({ }^{2 S+1} L\right).$
-- $\mathrm{H}_{\mathbf{S O}} \sim \lambda \mathbf{S} \mathbf{L}:$ Contributions from spin-orbit coupling according to $\mathbf{J}=\mathbf{L}+\mathbf{S}$.
-- $\mathrm{H}_{\mathbf{C F}}:$ Crystal field splitting contributions. The ion in the crystal field of its environment (ligands).
-- $\mathrm{H}_{\mathbf{E X}}:$ Exchange interactions according to $\sum_{i j} I_{i j} S_{i} S_{j}$.
-- $\mathrm{H}_{\text{Zee}}:$ Zeeman interactions with $\mu_{b}(\mathbf{L}+2 \mathbf{S}) \mathrm{H}.$
+- $\hat{\mathrm{H}}_{\mathbf{0}}:$ Hamiltonian of non-interacting particles.
+- $\hat{\mathrm{H}}_{\mathrm{ee}^{\prime}}:$ Contributions from electrostatic interactions and Hund's coupling $\left({ }^{2 S+1} L\right).$
+- $\hat{\mathrm{H}}_{\mathbf{S O}} \sim \lambda \mathbf{S} \mathbf{L}:$ Contributions from spin-orbit coupling according to $\mathbf{J}=\mathbf{L}+\mathbf{S}$.
+- $\hat{\mathrm{H}}_{\mathbf{C F}}:$ Crystal field splitting contributions. The ion in the crystal field of its environment (ligands).
+- $\hat{\mathrm{H}}_{\mathbf{E X}}:$ Exchange interactions according to $\sum_{i j} I_{i j} S_{i} S_{j}$.
+- $\hat{\mathrm{H}}_{\text{Zee}}:$ Zeeman interactions with $\mu_{b}(\mathbf{L}+2 \mathbf{S}) \mathbf{H}.$
 
 ---

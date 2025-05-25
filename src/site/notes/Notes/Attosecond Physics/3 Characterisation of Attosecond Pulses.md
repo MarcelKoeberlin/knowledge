@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/3-characterisation-of-attosecond-pulses/","hide":"true","updated":"2025-04-09T18:31:39.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/3-characterisation-of-attosecond-pulses/","hide":"true","updated":"2025-05-22T11:31:25.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -13,6 +13,7 @@ Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|
 - [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.4 Control of Amplitude and Phase of an APT\|3.4 Control of Amplitude and Phase of an APT]]
 - [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.5 Temporal Information Extracted from Attosecond Pulse Train (APT) Photoionisation Experiments\|3.5 Temporal Information Extracted from Attosecond Pulse Train (APT) Photoionisation Experiments]]
 - [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.6 PROBE and PROBD\|3.6 PROBE and PROBD]]
+- [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.7 From RABBITT to Streaking Regime\|From RABBITT to Streaking Regime]]
 
 ---
 # 3 Characterisation and Control of Attosecond Pulses
@@ -365,8 +366,9 @@ From the experimental spectrogram, the FSI term can be isolated by filtering the
 Since PROOF requires weak IR fields (intensities below $10^{12}$ W/cm²), the relatively small streaking signal-to-noise ratio can introduce uncertainties in the retrieved phase of the SAP. Nevertheless, PROOF provides an effective method for phase retrieval in weak-field conditions, expanding the capabilities of attosecond metrology.
 
 ---
-## From RABBITT to Streaking Regime
+## 3.7 From RABBITT to Streaking Regime
 
+This discussion comes from the paper ''Equivalence of RABBITT and Streaking Delays'.
 The transition from the conditions of a RABBITT to a streaking experiment in a simplified solid-surface system can be demonstrated by successively reducing the XUV pulse duration, implying a broadening of the corresponding XUV excitation spectrum. This is shown in the following figure: 
 
 ![Attachments/Equivalence of RABBITT and Streaking Delays 3.webp|700](/img/user/Attachments/Equivalence%20of%20RABBITT%20and%20Streaking%20Delays%203.webp)[[Reading/Papers/Attosecond/Equivalence of RABBITT and Streaking Delays.pdf#page=7&rect=197,214,402,389|•]]
