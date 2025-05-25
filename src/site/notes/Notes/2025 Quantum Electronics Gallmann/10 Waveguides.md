@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/10-waveguides/","hide":"true","updated":"2025-05-25T21:42:25.930+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/10-waveguides/","hide":"true","updated":"2025-05-25T21:44:47.403+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -128,9 +128,9 @@ Thus, for each mode number, there exists a TE- and a TM-polarised version.
 
 Another way to write the propagation constant is
 $$
-\beta_m=k \cos \theta_m=\frac{n \omega}{c} \sqrt{1-m^2 \frac{\omega_c^2}{\omega^2}},
+\beta_m=k \cos \theta_m=\frac{n \omega_c}{c} \sqrt{1-m^2 \frac{\omega_c^2}{\omega^2}},
 $$
-written in terms of the angular frequency $\omega=2\pi f_c.$ This is known as the dispersion relation. This is shown in the next figure.
+written in terms of the cutoff frequency $\omega_c=2\pi f_c.$ This is known as the dispersion relation. This is shown in the next figure.
 
 ![Attachments/QE_script 7.webp|700](/img/user/Attachments/QE_script%207.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=234&rect=77,426,529,589|•]]
 
