@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/10-waveguides/","hide":"true","updated":"2025-05-25T21:53:12.110+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/10-waveguides/","hide":"true","updated":"2025-05-26T10:47:57.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -15,7 +15,7 @@ Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Tab
 # 10 Waveguides
 [[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=69&selection=0,0,0,10|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=227&selection=0,0,0,10|•]]
 
-Waveguides are devices that transmit, and guide, light and other electromagnetic radiation along a prescribed path. In contrast to traditional free-space optics, this occurs inside a material, and waveguides have the advantage of alignments robustness. They further have the ability to circumvent obstructions, especially compared to optical fibres. They are used in telecommunication over long distances, but also in biomedical applications where light is to be brought into or taken from difficult-to-access places. They are the key component of 'integrated optics'. Waveguides come in many different forms, as the following figure shows:
+Waveguides are devices that transmit and guide light and other electromagnetic radiation along a prescribed path. In contrast to traditional free-space optics, this occurs inside a material, and waveguides have the advantage of alignments robustness. They further have the ability to circumvent obstructions, especially compared to optical fibres. They are used in telecommunication over long distances, but also in biomedical applications where light is to be brought into or taken from difficult-to-access places. They are the key component of 'integrated optics'. Waveguides come in many different forms, as the following figure shows:
 
 ![Attachments/QE_script 2.webp|700](/img/user/Attachments/QE_script%202.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=227&rect=122,180,479,303|•]]
 
@@ -282,16 +282,17 @@ Then it is clear that a large NA corresponds to a wider acceptance cone. This is
 By solving the Helmholtz equation in cylindrical coordinates, we can find that the solutions in a fibre with core radius $a$ behave as
 $$
 \begin{aligned}
-u(r) &= \left\{\begin{array}{lll}
-J_l\left(k_T r\right), & r<\text {(a, core)} & k_T^2=n_1^2 k_0^2-\beta^2 \\
-K_l(\gamma r), & r>\text {(a, cladding) } & \gamma^2=\beta^2-n_2^2 k_0^2
+u(r) &\sim \left\{\begin{array}{lll}
+J_l\left(k_T r\right), & r<\text {(a, core)} \\
+K_l(\gamma r), & r>\text {(a, cladding)}
 \end{array}\right.\\
-&\propto\left\{\begin{array}{lll}
+&=\left\{\begin{array}{lll}
 \text{Bessel function of first kind} \\
 \text{Modified Bessel function of second kind.}
 \end{array}\right.
 \end{aligned}
 $$
+Here, $k_T^2=n_1^2 k_0^2-\beta^2$ and $\gamma^2=\beta^2-n_2^2 k_0^2.$ 
 This is shown in the following figure:
 
 ![Attachments/05_Devices_and_applications 38.webp|700](/img/user/Attachments/05_Devices_and_applications%2038.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=125&rect=184,92,662,259|•]]
