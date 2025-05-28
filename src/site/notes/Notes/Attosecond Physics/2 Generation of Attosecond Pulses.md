@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/2-generation-of-attosecond-pulses/","hide":"true","updated":"2025-04-30T17:57:36.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/2-generation-of-attosecond-pulses/","hide":"true","updated":"2025-05-28T09:38:21.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -49,7 +49,7 @@ where $N$ is the number of harmonics included in the summation. This expression 
 
 It is important to note that a TL pulse does not require all harmonic components to have the same phase. Instead, it requires that the phase difference $\Delta \varphi$ between consecutive harmonics is constant. In other words, the emission time $t^e$ must be independent of the harmonic frequency.
 
-Interestingly, the regular pulsed structure of $I(t)$ is not significantly affected by variations in the amplitudes of different harmonics. This behaviour is analogous to that of a [[Notes/Ultrafast Laser Physics/7 Modelocking#7 Modelocking\|mode-locked laser]]. If the emission time varies with harmonic frequency, the pulse becomes *chirped*, resulting in a longer duration than that of the TL pulse.
+Interestingly, the regular pulsed structure of $I(t)$ is not significantly affected by variations in the amplitudes of different harmonics. This behaviour is analogous to that of a [[Notes/Ultrafast Laser Physics/7 Q-Switching#7 Modelocking\|mode-locked laser]]. If the emission time varies with harmonic frequency, the pulse becomes *chirped*, resulting in a longer duration than that of the TL pulse.
 
 Due to the uncertainty principle, it is impossible to define an "instant" associated with a specific XUV frequency $\Omega$. The emission time is defined as the group delay of the pulse:
 

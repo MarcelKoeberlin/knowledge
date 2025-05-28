@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-05-22T10:54:01.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-05-26T11:02:03.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -39,9 +39,9 @@ $$
 \end{aligned}
 $$
 
-Here, $\varepsilon_0$ is the permittivity of free space, and $\mu_0$ is the permeability of free space. These equations describe how the electric field $\mathbf{E}$ and the magnetic field $\mathbf{B}$ evolve in time and space, with both fields being functions of position and time, i.e., $\mathbf{E}(\mathbf{r},t)$ and $\mathbf{B}(\mathbf{r},t)$. 
+Here, $\varepsilon_0$ is the permittivity of free space, and $\mu_0$ is the permeability of free space. These equations describe how the electric field $\mathbf{E}$ and the magnetic field $\mathbf{B}$ evolve in time and space, with both fields being functions of position and time, so that $\mathbf{E}(\mathbf{r},t)$ and $\mathbf{B}(\mathbf{r},t)$. 
 
-A key property of Maxwell's equations is their linearity: any linear combination of solutions remains a valid solution. These equations have been experimentally confirmed for over a century and are fundamental to classical electrodynamics.
+A key property of Maxwell's equations is their linearity: any linear combination of solutions remains a valid solution. This has important implications as we will see later. These equations have been experimentally confirmed for over a century and are fundamental to classical electrodynamics.
 
 ---
 ## 1.2 Maxwell's Equations in a Medium

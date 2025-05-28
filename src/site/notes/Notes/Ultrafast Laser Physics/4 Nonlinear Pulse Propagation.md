@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/4-nonlinear-pulse-propagation/","hide":"true","updated":"2025-02-12T22:08:49.450+01:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/4-nonlinear-pulse-propagation/","hide":"true","updated":"2025-05-28T09:46:12.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -7,9 +7,9 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 **Table of Contents**
 
-- [[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.1 Kerr Effect and Self-Phase Modulation (SPM)\|4.1 Kerr Effect and Self-Phase Modulation (SPM)]]
+- [[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.1 Kerr Effect and Self-Phase Modulation\|4.1 Kerr Effect and Self-Phase Modulation]]
 - [[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.2 Self-Focusing and Filamentation\|4.2 Self-Focusing and Filamentation]]
-- [[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.3 Solitons - Nonlinear Schrödinger Equation (NSE)\|4.3 Solitons - Nonlinear Schrödinger Equation (NSE)]]
+- [[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.3 Solitons - Nonlinear Schrödinger Equation\|4.3 Solitons - Nonlinear Schrödinger Equation]]
 - [[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.4 Self-Steepening\|4.4 Self-Steepening]]
 - [[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.5 Nonlinear Propagation in a Saturable Absorber or Saturable Amplifier\|4.5 Nonlinear Propagation in a Saturable Absorber or Saturable Amplifier]]
 
@@ -19,7 +19,7 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 This chapter discusses nonlinear pulse propagation as far as it is relevant to ultrafast lasers.
 
 ---
-## 4.1 Kerr Effect and Self-Phase Modulation (SPM)
+## 4.1 Kerr Effect and Self-Phase Modulation
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=150&selection=8,0,10,27|•]]
 
 The intensity-dependent refractive index is given by  
@@ -83,9 +83,11 @@ After spectral broadening of a transform-limited pulse (in a medium with positiv
 ## 4.2 Self-Focusing and Filamentation
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=168&selection=12,0,14,42|•]]
 
+**Self-Focusing**
+
 Due to the Kerr effect, a laser beam induces a focusing lens effect:
 
-![Attachments/UltraFastLasers_Keller 46.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2046.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=168&rect=186,64,387,234|•]]
+![Attachments/UltraFastLasers_Keller 56.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2056.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=168&rect=185,64,386,223|•]]
 
 For a sufficiently thin Kerr medium of length $L_{\mathrm{K}}$, the beam radius $w$ can be assumed constant, and the beam profile can be approximated as  
 $$
@@ -120,16 +122,16 @@ where $n_0=n(\lambda_0)$ with $\lambda_0$ being the central wavelength.
 In gases, before beam collapse occurs, the intensity increases to a level where multi-photon ionisation takes place. Beam collapse is therefore prevented by multi-photon absorption and the defocusing effect of the plasma.  
 
 ---
-## 4.3 Solitons - Nonlinear Schrödinger Equation (NSE)
+## 4.3 Solitons - Nonlinear Schrödinger Equation
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=173&selection=6,0,8,8|•]]
 
-A wave packet propagating through a linear medium will disperse, as discussed in [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation\|chapter 2]]. This is a linear effect. However, if the propagation velocity of the wave in the medium also depends on the intensity, these two effects may cancel each other out for certain pulse shapes known as solitons. The propagation of **optical** solitons is described by the NSE.  
+A wave packet propagating through a linear medium will disperse, as was discussed in [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation\|chapter 2]]. This is a linear effect. However, if the propagation velocity of the wave in the medium also depends on the intensity, these two effects may cancel each other out for certain pulse shapes known as solitons. The propagation of optical solitons is described by the _nonlinear Schrödinger equation_ (NSE).  
 
 Solitons are extremely important (as will become evident multiple times in these notes) for the generation and propagation of ultrashort electromagnetic pulses. Consequently, they have been extensively studied for applications in optical communication, laser physics, and quantum optics.  
 
 Solitons are pulses for which the effects of SPM and negative group-delay dispersion (GDD) cancel: A pulse can propagate without broadening in a dispersive medium. If the system dynamics also allow for soliton collisions, these pulses remain unchanged except for position and phase shifts. Due to these collision properties, solitons exhibit some particle-like characteristics.  
 
-### **Derivation**  
+### 4.3.1 Derivation  
 
 First, consider the equation of motion for the envelope $\tilde{A}(z,\Delta\omega)$ in a dispersive medium within the slowly-varying envelope approximation:  
 $$
@@ -204,7 +206,7 @@ $$
 $$
 Because we assumed that the nonlinear refractive index $n_2$ is not frequency-dependent, we can simply add the effect of the intensity-dependent refractive index in the temporal domain. This means that the variation of $n_2$ depends instantaneously on the intensity of the pulse envelope. Note also that higher than second order terms are neglected in this equation. 
 
-### 4.3.1 Solution of the NSE: The Fundamental Soliton
+### 4.3.2 Solution of the NSE: The Fundamental Soliton
 
 1. $\mathbf{k}_n^{\prime \prime} \neq 0$ and $\mathbf{n}_2=0:$ GDD but no SPM. This reduces the problem to linear pulse propagation, such that an originally bandwidth-limited pulse is temporally broadened for positive as well as negative GDD, while the spectral width does not change. However, the phase of the spectrum changes.
 2. $\mathbf{k}_{n}^{\prime \prime}=0$ and $\mathbf{n}_{\mathbf{2}} \neq 0:$ No GDD but SPM. A bandwidth-limited pulse will propagate with unchanged intensity in the time domain, but its spectrum will be broadened through SPM.
@@ -249,7 +251,7 @@ Because both the dispersion and SPM parameter scale with the length of the mater
 The fact that higher-order terms are neglected means that the GDD does not depend on the choice of the carrier frequency. Only the group velocity, with which the pulse propagates, depends on the carrier frequency. Thus, for negative GDD, a solution with a higher carrier frequency moves faster, such that a blue soliton is faster than a red soliton. 
 This property allows two solitons to collide, by placing a low carrier frequency soliton in front of a high carrier frequency soliton. Both pulses emerge undamaged from the collision, however we can see that the faster pulse is shifted ahead temporally by the interaction. It can also be shown that the respective phases of the pulses change during the collision. 
 
-### 4.3.2 Solution of the NSE: Higher-Order Solitons
+### 4.3.3 Solution of the NSE: Higher-Order Solitons
 
 Additional solutions to the NSE include higher-order solitons, which are wave fields composed of multiple fundamental solitons. The superposition of two solitary pulses results in a second-order soliton; however, this is not a simple linear superposition of two first-order solitons. Unlike the fundamental soliton, a higher-order soliton undergoes periodic changes in both the temporal and spectral domains during propagation:
 
@@ -263,10 +265,10 @@ $$
 
 After half of the soliton period, an initially bandwidth-limited pulse evolves into a second-order soliton with a minimal pulse duration and small shoulders. The pulse then regains its original shape after a full soliton period. Therefore, if the fibre length is chosen to be exactly half of this period, it effectively functions as a simple soliton pulse compressor. Over a longer propagation distance, the portion of the initial pulse energy not utilised in the soliton manifests as a weak continuous background radiation, known as the continuum.  
 
-### 4.3.3 Optical Communication with Solitons
+### 4.3.4 Optical Communication with Solitons
 Skipped for now [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=183&selection=41,0,43,35|•]]
 
-### 4.3.4 Periodic Perturbations of Solitons
+### 4.3.5 Periodic Perturbations of Solitons
 
 Periodic perturbations of solitons are significant not only in optical communications but also in short-pulsed lasers. In optical communication, solitons require periodic amplification after propagating a certain distance, causing fluctuations in the average power. Similarly, in lasers, soliton pulses experience repeated perturbations due to gain and loss mechanisms (as discussed in later chapters).
 

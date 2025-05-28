@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/9-polarisation-optics/","hide":"true","updated":"2025-05-25T21:53:55.303+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/9-polarisation-optics/","hide":"true","updated":"2025-05-27T13:41:24.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -76,7 +76,7 @@ S_2 & =2 a_x a_y \cos \phi, \\
 S_3 & =2 a_x a_y \sin \phi.
 \end{aligned}
 $$
-They are not independent, as they fulfil $S_0^2=S_1^2+S_2^2+S_3^2.$ Then, the Stokes parameter are equivalent to the Poincaré sphere, but additionally including the amplitude of the field.
+They are not independent, as they fulfil $S_0^2\geq S_1^2+S_2^2+S_3^2.$ Then, the Stokes parameter are equivalent to the Poincaré sphere, but additionally including the amplitude of the field.
 
 ---
 ## 9.2 Jones Vector Formalism

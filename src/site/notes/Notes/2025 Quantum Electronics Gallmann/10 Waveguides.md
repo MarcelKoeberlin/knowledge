@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/10-waveguides/","hide":"true","updated":"2025-05-26T10:47:57.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/10-waveguides/","hide":"true","updated":"2025-05-27T13:39:50.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -15,25 +15,25 @@ Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Tab
 # 10 Waveguides
 [[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=69&selection=0,0,0,10|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=227&selection=0,0,0,10|•]]
 
-Waveguides are devices that transmit and guide light and other electromagnetic radiation along a prescribed path. In contrast to traditional free-space optics, this occurs inside a material, and waveguides have the advantage of alignments robustness. They further have the ability to circumvent obstructions, especially compared to optical fibres. They are used in telecommunication over long distances, but also in biomedical applications where light is to be brought into or taken from difficult-to-access places. They are the key component of 'integrated optics'. Waveguides come in many different forms, as the following figure shows:
+Waveguides are devices that transmit and guide light and other electromagnetic radiation along a prescribed path. In contrast to traditional free-space optics, this occurs inside a material, and waveguides have the advantage of alignments robustness. They furthercompared have the ability to circumvent obstructions, especially in the case of optical fibres. They are used in telecommunication over long distances, but also in biomedical applications where light is to be brought into or taken from difficult-to-access places. They are the key component of 'integrated optics'. Waveguides come in many different forms, as the following figure shows:
 
 ![Attachments/QE_script 2.webp|700](/img/user/Attachments/QE_script%202.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=227&rect=122,180,479,303|•]]
 
-The difference between the two colours is their refractive index. The figure shows from a to c, a slab waveguide, a strip waveguide, and an optical fibre. 
+The difference between the two colours is their refractive index. The figure shows from a to c, a slab waveguide, a strip waveguide, and an [[Notes/2025 Quantum Electronics Gallmann/10 Waveguides#10.3 Optical Fibres\|optical fibre]]. 
 
 ---
 ## 10.1 Planar Mirror Waveguide
 [[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=70&selection=0,23,0,23|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=228&selection=4,0,6,36|•]]
 
-The following figure shows a planar-mirror waveguide, consisting of two highly reflective mirrors placed a distance $d$ apart. This is of course a rather impractical device to construct. Instead, dielectric waveguides are used, but these will be discussed later. 
+The following figure shows a planar-mirror waveguide, consisting of two highly reflective mirrors placed a distance $d$ apart. This is of course a rather impractical device to construct. Instead, [[Notes/2025 Quantum Electronics Gallmann/10 Waveguides#10.2 Planar Dielectric Waveguide\|dielectric waveguides]] are used, as discussed later. 
 
 ![Attachments/QE_script 3.webp|700](/img/user/Attachments/QE_script%203.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=228&rect=143,434,445,560|•]]
 
-One way to treat electromagnetic radiation within this planar-mirror waveguide is by using optics. We can identify modes of the waveguides as waves that self-consistently (so constructively) interfere after a single reflection from each mirror, as shown in the next figure:
+One way to treat electromagnetic radiation within this planar-mirror waveguide is by using ray optics. We can identify modes of the waveguides as waves that self-consistently (so constructively) interfere after a single reflection from each mirror, as shown in the next figure:
 
 ![Attachments/QE_script 4.webp|700](/img/user/Attachments/QE_script%204.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=229&rect=67,540,533,688|•]]
 
-This imposes conditions on the wavelength and the angle $\theta$ of the wavevector with respect to the mirror planes. We require that the difference in phases acquired from A to B (see figure) compared to the phase acquired from A to C has to be an integer multiple of $2\pi.$ Considering this geometry, we obtain 
+This imposes conditions on the wavelength and the angle $\theta$ of the wavevector with respect to the mirror planes. We require that the difference in phases acquired from A to B (see figure), compared to the phase acquired from A to C, has to be an integer multiple of $2\pi.$ Considering this geometry, we obtain 
 $$
 \frac{2\pi}{\lambda}2d\sin\theta=2\pi m\quad \text{with}\quad m\in\mathbb{Z}.
 $$
@@ -45,7 +45,7 @@ Therefore it is clear that only a discrete set of angles can fulfil the conditio
 $$
 k_y=|\mathbf{k}|\sin\theta\implies k_{y,m}=m\frac{\pi}{d}.
 $$
-The only nonzero component of the wavevector is in z-direction, and we call this the propagation constant $\beta=k=|\mathbf{k}|\sin\theta.$ Since the magnitude of the wavevector is fixed, only a finite number of indices $m$ exist that allow for a real-valued propagation constant:
+The only nonzero component of the wavevector is in z-direction, and we call this the propagation constant $\beta=k_z=|\mathbf{k}|\sin\theta.$ Since the magnitude of the wavevector is fixed, only a finite number of indices $m$ exist that allow for a real-valued propagation constant:
 
 $$
 \beta_m^2=k^2-\frac{m^2 \pi^2}{d^2}.
@@ -80,11 +80,13 @@ which implies $E_1=\pm E_2,$ and the sign depends on the value of $m:$ For odd $
 
 Now, we readily investigate the electric field profile of the light for a given mode inside the waveguide. This leads to 
 $$
-E_{\text{tot}} =\mathfrak{Re}\left[e^{i(\omega t-\beta z)} E_1\left(e^{-i m \pi y / d} \pm e^{i m \pi y / d}\right)\right]=
+\begin{align}
+E_{\text{tot}} &=\mathfrak{Re}\left[e^{i(\omega t-\beta z)} E_1\left(e^{-i m \pi y / d} \pm e^{i m \pi y / d}\right)\right]\\&=
 \begin{cases}\text{m odd:} &
 \mathfrak{Re}\left[\, 2 E_1 e^{i(\omega t - \beta z)} \cos\left( \dfrac{m \pi y}{d} \right) \, \right]  \\[1em]\text{m even:} &
-\mathfrak{Re}\left[\, -2i E_1 e^{i(\omega t - \beta z)} \sin\left( \dfrac{m \pi y}{d} \right) \, \right] 
+\mathfrak{Re}\left[\, -2i E_1 e^{i(\omega t - \beta z)} \sin\left( \dfrac{m \pi y}{d} \right) \, \right] .
 \end{cases}
+\end{align}
 $$
 Therefore, the electric field amplitude as a function of $y$ differs with each mode, while the amplitude is independent on $z.$ This is shown in the following figure:
 
@@ -110,16 +112,16 @@ For $m$ odd:
 
 $$
 \begin{aligned}
-E_{\mathrm{tot}, y}^{\mathrm{odd}} & =\mathfrak{Re}\left[2 E_1 e^{i\left(\omega t-\beta_m z\right)} \cos \left(\frac{m \pi y}{d}\right) \cot \theta_m\right] \\
-E_{\mathrm{tot}, z}^{\mathrm{odd}} & =\mathfrak{Re}\left[2 E_1 e^{i\left(\omega t-\beta_m z\right)} \cos \left(\frac{m \pi y}{d}\right)\right]
+E_{\mathrm{tot}, y}^{\mathrm{odd}} & =\mathfrak{Re}\left[2 E_1 e^{i\left(\omega t-\beta_m z\right)} \cos \left(\frac{m \pi y}{d}\right) \cot \theta_m\right], \\
+E_{\mathrm{tot}, z}^{\mathrm{odd}} & =\mathfrak{Re}\left[2 E_1 e^{i\left(\omega t-\beta_m z\right)} \cos \left(\frac{m \pi y}{d}\right)\right].
 \end{aligned}
 $$
 For $m$ even:
 
 $$
 \begin{aligned}
-& E_{\mathrm{tot}, y}^{\mathrm{even}}=\mathfrak{Re}\left[-2 i E_1 e^{i\left(\omega t-\beta_m z\right)} \sin \left(\frac{m \pi y}{d}\right) \cot \theta_m\right] \\
-& E_{\mathrm{tot}, z}^{\mathrm{even}}=\mathfrak{Re}\left[-2 i E_1 e^{i\left(\omega t-\beta_m z\right)} \sin \left(\frac{m \pi y}{d}\right)\right]
+& E_{\mathrm{tot}, y}^{\mathrm{even}}=\mathfrak{Re}\left[-2 i E_1 e^{i\left(\omega t-\beta_m z\right)} \sin \left(\frac{m \pi y}{d}\right) \cot \theta_m\right],\\
+& E_{\mathrm{tot}, z}^{\mathrm{even}}=\mathfrak{Re}\left[-2 i E_1 e^{i\left(\omega t-\beta_m z\right)} \sin \left(\frac{m \pi y}{d}\right)\right].
 \end{aligned}
 $$
 Thus, for each mode number, there exists a TE- and a TM-polarised version. 
@@ -128,7 +130,7 @@ Thus, for each mode number, there exists a TE- and a TM-polarised version.
 
 Another way to write the propagation constant is
 $$
-\beta_m=k \cos \theta_m=\frac{n \omega_c}{c} \sqrt{1-m^2 \frac{\omega_c^2}{\omega^2}},
+\beta_m=k \cos \theta_m=\frac{n \omega}{c} \sqrt{1-m^2 \frac{\omega_c^2}{\omega^2}},
 $$
 written in terms of the cutoff frequency $\omega_c=2\pi f_c.$ This is known as the dispersion relation. This is shown in the next figure.
 
@@ -198,6 +200,10 @@ defining the maximum frequency for a single allowed mode. TM modes obtain identi
 
 There are now two light lines, defined by the core and the surrounding cladding. The dispersion curves for guided modes are always between these two light lines, implying that the effect refractive index must be between $n_1$ and $n_2.$ This can also be understood intuitively: It must be larger than $n_2$ (the cladding) to make total internal reflection possible, but it must be smaller than $n_1$ (the core), since that is the value it would reach for free-space propagation in that medium. However, it approaches the core index for better confinement, but approaches the cladding index for weaker confinement (or a decrease in frequency).
 
+From the dispersion relation, we may again calculate the group velocity $v_g=\frac{\partial \omega}{\partial \beta}:$
+
+![Attachments/QE_script 15.webp|700](/img/user/Attachments/QE_script%2015.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=236&rect=317,501,528,683|•]]
+
 As already mentioned, the waveguide structure does not use perfectly reflecting mirrors, which is why there will be evanescent tails spreading into the cladding, see figure (a). The propagation constant in that region is imaginary. This interesting effect allows coupling fields from different waveguides together by bringing them sufficiently close to each other:
 
 ![Attachments/QE_script 11.webp|700](/img/user/Attachments/QE_script%2011.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=237&rect=71,225,513,374|•]]
@@ -222,8 +228,7 @@ A useful concept is that of the numerical aperture, defined as
 $$
 \mathrm{NA}=n_{\text {out }} \sin \theta_{\text {out }},
 $$
-where $n_{\text {out }}$ and $\theta_{\text {out }}$ are the index of refraction and angle with respect to the waveguide planes in the medium outside the waveguide. For the planar dielectric
-waveguide, we have 
+where $n_{\text {out }}$ and $\theta_{\text {out }}$ are the index of refraction and angle with respect to the waveguide planes in the medium outside the waveguide. For the planar dielectric waveguide, we have 
 $$
 \mathrm{NA}=\sqrt{n_1^2-n_2^2}.
 $$
@@ -249,7 +254,7 @@ Optical fibres are an important class of waveguides, since they are essential fo
 
 ![Attachments/05_Devices_and_applications 33.webp|700](/img/user/Attachments/05_Devices_and_applications%2033.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=120&rect=55,147,762,451|•]]
 
-They represent a cylindrical version of a dielectric planar waveguide, where the core is of higher refractive index than the cladding. Generally, the difference in refractive index is very small, but enough to achieve low-loss waveguiding: For example, often amorphous $n_\ce{SiO2}=1.46$ and germanium $n_\ce{Ge}=1.44$ is used to dope the core, such that the refractive index difference is only $10^{-2}.$  
+They represent a cylindrical version of a dielectric planar waveguide, where the core is of higher refractive index than the cladding. Generally, the difference in refractive index is very small, but enough to achieve low-loss waveguiding: For example, often silica ($n_\ce{SiO2}=1.44$) is used in combination with germanium-doped silica ($n_\text{doped}=1.46$)  to increase the index compared to the core slightly. Then, the refractive index difference is only $10^{-2}.$  
 
 The principle of operating is very similar to that of the planar waveguide: At small angles, light is totally internally reflected along the core-cladding interface, confining the wave inside the core. The number of modes varies with the diameter of the core. The smaller the core, the fewer modes are supported within the fibre. Some fibres are made to support only a single mode, hence their name _single-mode fibres_. Other with multiple are called _multi-mode fibres_. The output of a single-mode fibre is in very good approximation Gaussian, such that the fibre itself helps cleaning up the beam spatial profile that would distort the beam in free-space. On the other hand, multi-mode fibres do not guarantee such good quality, but they naturally behave as low-pass filter, cutting off unwanted frequencies:
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/3-magneto-optics/","hide":"true","updated":"2025-05-20T17:14:45.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/3-magneto-optics/","hide":"true","updated":"2025-05-27T15:52:04.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -14,12 +14,12 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 
 All effects discussed up to now only include an electric field and are based on the interaction with the electric dipole moment of the particles or molecules. In a simplified manner, the dipole moments within the material may be understood to have an excited and a ground state. The electric field allows effects to take place between these two levels.
 
-However, due to the orbital momentum, each charged particle inhibits an intrinsic magnetic moment. Without an external magnetic field the energy levels of particles with the same dipole moment but different magnetic moments are degenerate, meaning one is not able to separate these two levels. Application of a magnetic field $\mathbf{H}$ resolves the degeneracy. The interaction between the magnetic field and the magnetic dipole moments causes splitting of the formerly degenerate states. This is the so called Zeeman effect. The Zeeman splitting of the excited energy levels in matter generally modifies the optical properties of the material.
+However, due to the orbital momentum, each charged particle possesses an intrinsic magnetic moment. Without an external magnetic field the energy levels of particles with the same dipole moment but different magnetic moments are degenerate, meaning one is not able to separate these two levels. Application of a magnetic field $\mathbf{H}$ resolves the degeneracy. The interaction between the magnetic field and the magnetic dipole moments causes splitting of the formerly degenerate states. This is the so called Zeeman effect. The Zeeman splitting of the excited energy levels in matter generally modifies the optical properties of the material.
 
-magneto-optic effects were first discovered in 1845 when Micheal Faraday observed the rotation of the polarisation of light in a glass sample exposed to strong magnetic fields. With this experiment he proved that light and magnetism are two closely related physical phenomena. There are two major geometries under which magneto-optic effects are investigated:
+magneto-optic effects were first discovered in 1845 when Michael Faraday observed the rotation of the polarisation of light in a glass sample exposed to strong magnetic fields. With this experiment he proved that light and magnetism are two closely related physical phenomena. There are two major geometries under which magneto-optic effects are investigated:
 
 - Faraday Geometry: The wave vector is parallel to the applied magnetic field, $\mathbf{k} \| \mathbf{H}$.
-- Voigt Geometry: The magnetic is perpendicular to the wave vector, $\mathbf{k} \perp \mathbf{H}$.
+- Voigt Geometry: The magnetic field is perpendicular to the wave vector, $\mathbf{k} \perp \mathbf{H}$.
 
 ---
 ## 3.1 Survey of Magneto-Optic Effects
@@ -27,7 +27,7 @@ magneto-optic effects were first discovered in 1845 when Micheal Faraday observe
 
 In analogy to effects introduced by intrinsic strain or by an electric field, there are magnetically introduced linear and circular effects which lead to birefringence or dichroism. The description of these effects is based on the harmonic oscillator model. The equation of motion of an electron in an electric potential is most generally written
 $$
-\ddot{\mathbf{r}}+G \mathbf{r}=\frac{\mathbf{F}(\mathbf{r}, t)}{m}=-\frac{e}{m}(\mathbf{E}(\mathbf{r}, t)+\mathbf{v} \times \mathbf{B}(\mathbf{r}, t)),
+\ddot{\mathbf{r}}+\frac{G}{m} \mathbf{r}=\frac{\mathbf{F}(\mathbf{r}, t)}{m}=-\frac{e}{m}(\mathbf{E}(\mathbf{r}, t)+\mathbf{v} \times \mathbf{B}(\mathbf{r}, t)),
 $$
 where we assume that the external force applied to the oscillator is the Lorentz force. For further analysis, we assume that the magnetic field is applied in the $z$-direction, and that the electrons oscillate with the same frequency as the electric field:
 $$
@@ -38,14 +38,14 @@ We can then write the polarisation as
 $$
 \mathbf{P}(\mathbf{r})=N q \mathbf{r}=-N e \mathbf{r} \implies \mathbf{r}=-\frac{\mathbf{P}(\mathbf{r})}{N e}.
 $$
-We then again Fourier transform the equation, such that we can subsitute
+We then again Fourier transform the equation, such that we can substitute
 $$
-\ddot{r} \implies-\omega^{2} \mathbf{r} \quad \mathbf{v}=\dot{\mathbf{r}} \implies-i \omega r.
+\ddot{r} \implies-\omega^{2} \mathbf{r} \quad\text{and}\quad \mathbf{v}=\dot{\mathbf{r}} \implies-i \omega \mathbf{r}.
 $$
 We end up with the following equation:
 $$
 \left(\begin{array}{ccc}
--\omega^{2} m+g & i \omega e B_{z} & 0 \\
+-\omega^{2} m+G & i \omega e B_{z} & 0 \\
 -i \omega e B_{z} & -\omega^{2} m+G & 0 \\
 0 & 0 & -\omega^{2} m+G
 \end{array}\right)\left(\begin{array}{l}
@@ -77,7 +77,7 @@ i \omega \omega_{C} & \omega_{0}^{2}-\omega^{2} & 0 \\
 $$
 with
 - $\omega_{0}^{2}=\frac{G}{m}$ is the resonance frequency of an electron in the Coulomb potential.
-- $\omega_{C}=\mu_{0} \frac{e H}{m}$ is the cyclotron frequency. This can be understood as the frequency of the circular current of the electron generating the magnetic field.
+- $\omega_{C}=\frac{e B}{m}$ is the cyclotron frequency. This can be understood as the frequency of the circular current of the electron generating the magnetic field.
 - $\Omega_{p}^{2}=\frac{N e^{2}}{\varepsilon_{0} m}$ is the plasma frequency of the resonating electron gas.
 
 By separating $\varepsilon_{i j}(\omega)$ into the dielectric tensor and a rotation tensor it simplifies to
@@ -92,7 +92,7 @@ i g & 0 & 0 \\
 0 & 0 & 0
 \end{array}\right)}_{\text {rotation }},
 $$
-where $g$ is called the gyrotropic factor, which describes a rotation introduces by the Lorentz force, so the circular motion of electrons. It is non-zero for magnetised materials, and follows $g\sim\omega_c\sim|\mathbf{H}|.$ The same way, $\varepsilon_2$ depends on the cyclotron frequency, and thus on the magnetic field. The dielectric tensor is uniaxial $\varepsilon_{1} \neq \varepsilon_{2}$ and shows optical activity $g \neq 0$ due to the applied magnetic field. We thus rotate the plane of linear polarisation by an angle $\theta\sim|\mathbf{H}|.$ The magneto-optical Voigt parameter, sometimes referred to as the relative rotation, is defined as 
+where $g$ is called the gyrotropic factor, which describes a rotation introduced by the Lorentz force, so the circular motion of electrons. It is non-zero for magnetised materials, and follows $g\sim\omega_c\sim|\mathbf{B}|.$ The same way, $\varepsilon_1$ depends on the cyclotron frequency. However, $\varepsilon_2=1+\frac{\Omega_p^2}{\omega_0^2-\omega^2}$ does not depend on the cyclotron frequency, and thus not on the magnetic field. The dielectric tensor is uniaxial $\varepsilon_{1} \neq \varepsilon_{2}$ and shows optical activity $g \neq 0$ due to the applied magnetic field. We thus rotate the plane of linear polarisation by an angle $\theta\sim|\mathbf{H}|.$ The magneto-optical Voigt parameter, sometimes referred to as the relative rotation, is defined as 
 $$
 Q=g/\varepsilon_1.
 $$
@@ -105,20 +105,21 @@ $$
 $$
 where the Verdet constant $\mathcal{V}$ describes the proportionality between the strength of the magnetic field and the angle of rotation. The Verdet constant for glass is approximately $\mathcal{V}_{\text {Glass }} \approx 1^{\circ} / \mathrm{cmT}$, while for cadmium manganese telluride $\left(\mathrm{Cd}_{0.95} \mathrm{Mn}_{0.05} \mathrm{Te}\right)$ it is $\mathcal{V} \approx 10^{3 \ldots 4} / \mathrm{cmT}$.
 
-If we include the effects of absorption, all parameters ($\varepsilon,$ $g$ and $Q$), where generally, the real part relates to the stored energy, while the imaginary part accounts for material losses. Considering the specific Faraday rotation $\phi_{F}$ as a complex parameter introduces ellipticity
+If we include the effects of absorption, all parameters ($\varepsilon,$ $g$ and $Q$) considered have to be complex. In general, the real part relates to the stored energy, while the imaginary part accounts for material losses. Considering the specific Faraday rotation $\phi_{F}$ as a complex parameter introduces ellipticity
 $$
-\tilde{\phi}_{F}=\underbrace{\phi_{F}}_{\text {rotation of lin. pol. }}+\underbrace{i \Psi_{F}}_{\text {ellipticity }}=-\frac{\omega n_{0}}{2 c}\left(Q^{\prime}+i Q^{\prime \prime}\right).
+\tilde{\phi}_{F}=\underbrace{\phi_{F}}_{\text {rotation of lin. pol. }}+\underbrace{i \Psi_{F}}_{\text {ellipticity }}=-\frac{\omega n_{0}}{2 c}\left(Q^{\prime}+i Q^{\prime \prime}\right),
 $$
+where $n_0$ is the refractive index in the absence of the magnetic field.
 
 ### 3.1.2 Voigt Effect
 
-The Voigt effect is a magneto-optic effect similar to the Faraday effect. However, the geometry is now chosen such that the magnetic is perpendicular to the beam path $\mathbf{H} \perp \mathbf{k}$ as the following figure shows:
+The Voigt effect is a magneto-optic effect similar to the Faraday effect. However, the geometry is now chosen such that the magnetic field is perpendicular to the beam path $\mathbf{H} \perp \mathbf{k}$ as the following figure shows:
 
 ![Attachments/Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics/Script (Unofficial) 2.webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/3%20Magneto-Optics/Script%20(Unofficial)%202.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=52&rect=239,675,412,758|•]]
 
 The result is not a rotation of the polarisation but linear birefringence (dichroism). The Voigt effect scales quadratically with the magnetic field $\sim H^{2}$.
 
-### 3.1.3 magneto-optic Kerr Effect
+### 3.1.3 Magneto-Optic Kerr Effect
 
 The magneto-optic Kerr effect (MOKE) describes the rotation of polarisation and ellipticity by reflection of a magnetised surface. As this effect takes place in reflection, it corresponds to a fixed value and is independent on propagation length. The angle of rotation is linearly related of the magnetic field $\mathbf{H}$ and the magnetisation $\mathbf{M}.$ The angle of rotation is usually lower than $0.1^\circ.$ Three different geometries exist:
 

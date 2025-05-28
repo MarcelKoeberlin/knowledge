@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/4-light-matter-interaction/","hide":"true","updated":"2025-05-25T10:25:14.892+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/4-light-matter-interaction/","hide":"true","updated":"2025-05-27T15:30:22.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -9,7 +9,7 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 
 - [[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction#4.1 Describing the Light Field\|4.1 Describing the Light Field]]
 - [[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction#4.2 Multipole Expansion of the Light Field\|4.2 Multipole Expansion of the Light Field]]
-- [[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction#4.3 Microscopic Approach to Magneto-0ptics\|4.3 Microscopic Approach to Magneto-Optics]]
+- [[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction#4.3 Microscopic Approach to Magneto-Optics\|4.3 Microscopic Approach to Magneto-Optics]]
 
 ---
 # 4 Light Matter Interaction
@@ -32,29 +32,19 @@ $$
 $$
 This interaction term mixes the $|n\rangle$ states, creating new eigenstates. This mixing, or energy correction, is parameterised by
 $$
-\int \Phi_{n}^{*}(\mathbf{r}) \hat{\mathrm{H}}_\text{int} \Phi_{n^{\prime}}(\mathbf{r}) \mathrm{d}^{3} \mathbf{r} \equiv\langle n| \hat{\mathrm{H}}_\text{int}\left|n^{\prime}\right\rangle \neq \delta_{n, n^{\prime}}.
+\int \Phi_{n}^{*}(\mathbf{r}) \hat{\mathrm{H}}_\text{int} \Phi_{n^{\prime}}(\mathbf{r}) \mathrm{d}^{3} \mathbf{r} \equiv\langle n| \hat{\mathrm{H}}_\text{int}\left|n^{\prime}\right\rangle \quad\text{generally non-diagonal}.
 $$
 Now, the transition $|g\rangle \implies|f\rangle$ becomes evidently possible. 
 
 ## 4.1 Describing the Light Field
 
-So far, all the physics was treated classically, such that perturbations lead to forces, which lead to equations of motions. One such example is the treatment gravitational motions, where the equation of motion is fully determined by the underlying force:
+So far, all the physics was treated classically, such that perturbations lead to forces, which lead to equations of motions.We will continue the description in terms of generalised space and momentum coordinates, so we use Lagrangian mechanics. This approach reflects the formal nature of classical mechanics, while anticipating quantum mechanics. The general formalism then allows to write without loss of generality
 $$
-\begin{aligned}
-&\text{Force:}&\mathbf{F}(\mathbf{r})&=-\frac{G}{r^{2}} \mathbf{r} \\ \implies&\text{Equation of Motion:} & m \ddot{\mathbf{r}}+\frac{G}{r^{2}}&=0.
-\end{aligned}
+\dot{r}_{i}=\frac{\partial \hat{\mathrm{H}}}{\partial p_{i}} \quad\text{and}\quad \dot{p}_{i}=-\frac{\partial \hat{\mathrm{H}}}{\partial r_{i}},
 $$
-We will continue the description in terms of generalised space and momentum coordinates, so we use Lagrangian mechanics. This approach reflects the formal nature of classical mechanics, while anticipating quantum mechanics. Continuing the example, the Hamiltonian contains terms for kinetic and potential energy in the form
-$$
-\hat{\mathrm{H}}=\hat{\mathrm{H}}_\text{kin}+V(\mathbf{r})=\frac{\mathbf{p}^{2}}{2 m}-\frac{G}{r^{2}} \mathbf{r},
-$$
-where the gravitational potential has been used. The general formalism then allows to write without loss of generality
-$$
-\dot{r}_{i}=\frac{\partial \hat{\mathrm{H}}}{\partial p_{i}}=\frac{\mathbf{p}}{m} \quad\text{and}\quad \dot{p}_{i}=-\frac{\partial \hat{\mathrm{H}}}{\partial r_{i}}=-\frac{G}{r^2},
-$$
-for $i=x,y,z\ldots$ This then allows to derive the equation of motion seen earlier. Note that the potential term is not universal, as a constant term may be added without changing the physics. The potential therefore requires a gauge, typically chosen with respect to the infinity limit, so $\lim\limits_{r \rightarrow \infty} V(\mathbf{r})=0 \implies V_{0}=0$. 
+for $i=x,y,z\ldots$ This then allows to derive the equation of motion seen earlier. Note that the potential term in $\hat{\mathrm{H}}=\hat{\mathrm{H}}_\text{kin}+\hat{\mathrm{V}}(\mathbf{r})$ is not universal, as a constant term may be added without changing the physics. The potential therefore requires a gauge, typically chosen with respect to the infinity limit, so $\lim\limits_{r \rightarrow \infty} V(\mathbf{r})=0 \implies V_{0}=0$. 
 
-Let us go back to the description of charged particles moving in an electromagnetic field. The _educated_ guess that we make (for a derivation without guessing, see [[Notes/Quantum Optics/Quantum Optics\|Quantum Optics]]) for the Hamiltonian is 
+Let us consider now charged particles moving in an electromagnetic field. The _educated_ guess that we make (for a derivation without guessing, see [[Notes/Quantum Optics/Quantum Optics\|Quantum Optics]]) for the Hamiltonian is 
 $$
 \hat{\mathrm{H}}=\frac{(\mathbf{p}-e \mathbf{A})^{2}}{2 m}+e \Phi,
 $$
@@ -63,7 +53,7 @@ $$
 \begin{aligned}
  \mathbf{B}=&\mathbf{\nabla} \times \mathbf{A} &\text{and}\quad&
  \mathbf{E}&=&-\mathbf{\nabla} \Phi-\frac{\partial \mathbf{A}}{\partial t}, \\
- \implies  \mathbf{\nabla} \mathbf{B}=&\mathbf{\nabla}(\mathbf{\nabla} \times \mathbf{A})=0 &\text{and}\quad&\mathbf{\nabla} \times \mathbf{E}&=&-\frac{\partial}{\partial t} \mathbf{B}.
+ \implies  \mathbf{\nabla}\cdot \mathbf{B}=&\mathbf{\nabla}\cdot(\mathbf{\nabla} \times \mathbf{A})=0 &\text{and}\quad&\mathbf{\nabla} \times \mathbf{E}&=&-\frac{\partial}{\partial t} \mathbf{B}.
 \end{aligned}
 $$
 As before, the potentials are defined up to a constant. A specific transformation that does not change the physics is 
@@ -88,7 +78,7 @@ m \ddot{r}_{i} & =\dot{p}_{i}-e \frac{\partial A_{i}}{\partial t}-e \sum_{j} \do
 $$
 Taking a careful look at this equation shows that we arrive at the equation of motion for a charged particle in an electromagnetic field, therefore being exposed to the Lorentz force:
 $$
-m \ddot{\mathbf{r}}_{i}=e \mathbf{E}+e(\dot{\mathbf{r}} \times \mathbf{B}).
+m \ddot{\mathbf{r}}=e \mathbf{E}+e(\dot{\mathbf{r}} \times \mathbf{B}).
 $$
 Therefore, the educated guess was legitimate. It gives rise to the so called 'minimal substitution':
 $$
@@ -102,7 +92,7 @@ $$
    &= \sum_{\text{cryst. electrons}} 
       \left[
         \underbrace{\frac{\mathbf{p}^{2}}{2 m} + e \Phi}_{\text{matter}} +
-        \underbrace{\frac{e^{2}}{2 m} \mathbf{A}^{2} - \frac{e}{m} \mathbf{p} \cdot \mathbf{A}}_{\text{light-matter interaction}}
+        \underbrace{\frac{e^{2}}{2 m} \mathbf{A}^{2} - \frac{e}{m} \mathbf{A} \cdot \mathbf{p}}_{\text{light-matter interaction}}
       \right]
       + 
       \underbrace{\frac{\varepsilon_{0}}{2} \int \left( \mathbf{E}^{2} + c^{2} \mathbf{B}^{2} \right) \, \mathrm{d}^{3} r}_{\text{EM-field energy}}.
@@ -111,11 +101,11 @@ $$
 
 ## 4.2 Multipole Expansion of the Light Field
 
-The complete analysis of the Hamiltonian is quite tedious, and there exist less complex approaches that still arrive at meaning results. In this course, we are in any way only interested in the light-matter-interaction term. Furthermore, we will neglect any terms depending $\mathbf{A}^2,$ as generally $\mathcal{O}[A] \gg \mathcal{O}\left[A^{2}\right].$ Therefore, the term that we will be analysing is just
+The complete analysis of the Hamiltonian is quite tedious, and there exist less complex approaches that still arrive at meaningful results. In this course, we are in any way only interested in the light-matter-interaction term. Furthermore, we will neglect any terms depending $\mathbf{A}^2,$ as generally $\mathcal{O}[A] \gg \mathcal{O}\left[A^{2}\right].$ Therefore, the term that we will be analysing is just
 $$
 \hat{\mathrm{H}}_{\text{int}}=-\frac{e}{m} \mathbf{p} \mathbf{A}.
 $$
-This is a decent approximation for 'reasonable' strengths of the electric and magnetic fields. We will describe the electromagnetic field potential by a plane wave in a single mode $\omega_k.$ Without loss of generality, we will also omit the time dependence, such that we use
+This is a decent approximation for 'reasonable' strengths of the electric and magnetic fields. We will describe the electromagnetic field potential by a plane wave in a single mode $\omega_\mathbf{k}.$ Without loss of generality, we will also omit the time dependence, such that we use
 
 $$
 \mathbf{A}=A_{0} \hat{\mathbf{e}} e^{i \mathbf{k} \mathbf{r}}.
@@ -135,13 +125,13 @@ where $a$ is the lattice constant and $\lambda$ the wavelength of the light. Thi
 $$
 e^{i \mathbf{k} \mathbf{r}}=1+i \mathbf{k} \mathbf{r}+\ldots.
 $$
-As starting point, we will only consider the **zeroth order** term, which is simply $e^{i \mathbf{k r}}=1+i \mathbf{k r}.$ With this, the matrix element of the interaction Hamiltonian becomes
+As starting point, we will only consider the **zeroth order** term, which is simply $e^{i \mathbf{k r}}\approx1.$ With this, the matrix element of the interaction Hamiltonian becomes
 
 $$
 \begin{aligned}
 \langle f| \hat{\mathrm{H}}_{\text {int }}|g\rangle & \sim\langle f| \hat{\mathbf{e}} \mathbf{p}|g\rangle \\
 & \sim\langle f|[\hat{\mathrm{H}}_0, \mathbf{r}| | g\rangle \hat{\mathbf{e}} \\
-& \sim \underbrace{\langle f| \mathbf{r}|g\rangle}_{\text {eleectric dipole }} \hat{\mathbf{e}} \omega_{f g} .
+& \sim \underbrace{\langle f| \mathbf{r}|g\rangle}_{\text {electric dipole }} \hat{\mathbf{e}} \omega_{f g} .
 \end{aligned}
 $$
 Therefore, the zeroth order term corresponds to the electric dipole. The unit vector $\hat{\mathbf{e}}$ points in the direction of the electric field , and $\omega_{f g}$ is the energy difference between the final and ground state. The electric dipole may be understood as an electron extended over $\mathbf{r}$ which leads to the electric dipole moment $e \mathbf{r}$.
@@ -149,8 +139,8 @@ Therefore, the zeroth order term corresponds to the electric dipole. The unit ve
 Lets us now consider only the **first order** term. Then, we are interested in the $i\mathbf{k}\mathbf{r}$ term within the expansion of $e^{i \mathbf{k} \mathbf{r}}.$ Therefore, we find the matrix element to be 
 $$
 \begin{aligned}
-\langle f| \hat{\mathrm{H}}_{\text {int }}|g\rangle & \sim\langle f|(\hat{\mathbf{e}} \mathbf{p})(\mathbf{k} \mathbf{r})|g\rangle \\
-& \sim \frac{1}{2}\langle f|(\mathbf{k} \times \hat{\mathbf{e}}) \underbrace{(\mathbf{r} \times \mathbf{p})}_{=\mathbf{L}}-m \omega(\mathbf{k} \mathbf{r})(\hat{\mathbf{e}} \mathbf{p})|g\rangle \\
+\langle f| \hat{\mathrm{H}}_{\text {int }}|g\rangle & \sim\langle f|(\hat{\mathbf{e}}\cdot \mathbf{p})(i\mathbf{k} \cdot\mathbf{r})|g\rangle \\
+& \sim \frac{1}{2}\langle f|(\mathbf{k} \times \hat{\mathbf{e}}) \underbrace{(\mathbf{r} \times \mathbf{p})}_{=\mathbf{L}}-m \omega(\mathbf{k} \cdot\mathbf{r})(\hat{\mathbf{e}}\cdot \mathbf{p})|g\rangle \\
 & \sim \frac{1}{2} \underbrace{\langle f| \mathbf{L}|g\rangle \hat{\mathrm{h}}}_{\text {magn. dipole }}-\frac{1}{2} m \omega \hat{\mathbf{e}}_{j} k_{i} \underbrace{\langle f| r_{i} r_{j}|g\rangle}_{\text {el. quadrupole }}.
 \end{aligned}
 $$
@@ -158,16 +148,16 @@ Here, we introduced the angular momentum $\mathbf{L}.$ The unit vector $\hat{\ma
 
 With the correct factors, and including spin, we find: 
 - The electric dipole (ED) originates from the zeroth order of the multipole expansion with
-	$$\hat{\mathrm{H}}_\text{int}^{(0)}=\hat{\mathrm{H}}_{\mathrm{ED}}=e \mathbf{E} \mathbf{r}.$$
+	$$\hat{\mathrm{H}}_\text{int}^{(0)}=\hat{\mathrm{H}}_{\mathrm{ED}}=-e \mathbf{E}\cdot \mathbf{r}.$$
 - The magnetic dipole (MD) originates from the first order of the multipole expansion. Including not only orbital angular momentum but also spin, its interaction Hamiltonian is
-	$$\hat{\mathrm{H}}_\text{int}^{(1)}=\hat{\mathrm{H}}_{\mathrm{MD}}=\frac{e \hbar}{2 m}(\mathbf{L}+2 \mathbf{S}) \mathrm{H}.$$
+	$$\hat{\mathrm{H}}_\text{int}^{(1)}=\hat{\mathrm{H}}_{\mathrm{MD}}=\frac{e \hbar}{2 m}(\mathbf{L}+2\mathbf{S}) \cdot\mathbf{H}=-\boldsymbol{\mu}\cdot\mathbf{H}.$$
 - The electric quadrupole (EQ) originates from the same order as the magnetic dipole. The interaction is governed by
-	$$\hat{\mathrm{H}}_\text{int}^{(1)}=\hat{\mathrm{H}}_{\mathrm{EQ}}=\frac{e}{2 i}(\mathbf{k} \mathbf{r})(\mathbf{E} \mathbf{r}).$$
+	$$\hat{\mathrm{H}}_\text{int}^{(1)}=\hat{\mathrm{H}}_{\mathrm{EQ}}=-\frac{ie}{2}(\mathbf{k}\cdot \mathbf{r})(\mathbf{E} \cdot\mathbf{r}).$$
 
 The 'light fields' in this treatment are then $\mathbf{E}$ and $\mathbf{H},$ while the matter fields are $\mathbf{P}$ (ED), $\mathbf{M}$ (MD) and $\mathbf{-\nabla Q}$ (EQ). Note that both electric quadrupole and magnetic dipole come from the same order in the expansion!
 
 ---
-## 4.3 Microscopic Approach to Magneto-0ptics
+## 4.3 Microscopic Approach to Magneto-Optics
 [[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=57&selection=305,0,305,41|•]]
 
 In the [[Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics#3.1 Survey of Magneto-Optic Effects\|earlier chapter]], we have already investigated magneto-optic effects based on the model of the harmonic oscillators. With this rather simple approach, we arrived at the dielectric tensor:
@@ -183,10 +173,10 @@ i g & 0 & 0 \\
 \end{array}\right).
 $$
 However, we have not answered the question about the tensor components yet. Specifically, how do we determine $g?$ This is the part where a microscopic approach is required. The harmonic oscillator approach from earlier already allows guessing that resonances are the dominant factors in determining the factors. However, the microscopic mechanics are usually derived using quantum mechanical perturbation theory. An intuitive understanding is however possible, but we must separate three cases first:
-1. For **small light intensities**, first order perturbation theory is used, such that only single light matter interactions are considered that give rise to linear optics.This approach is fairly similar to before, and allows writing the light matter interaction as 
+1. For **small light intensities**, first order perturbation theory is used, such that only single light matter interactions are considered that give rise to linear optics. This approach is fairly similar to before, and allows writing the light matter interaction as 
 	$$\sim\langle f| \hat{\mathrm{H}}_\text{int}|g\rangle.$$
 
-2. **Intense light fields** require using higher order perturbation theory. Including the second and third order gives rise to multiple light matter interactions, with the result being nonlinear effects like frequency conversion or second harmonic generation (see later). Mathematically such an interaction states as a sequence of single interaction
+2. **Intense light fields** require using higher order perturbation theory. Including the second and third order gives rise to multiple light matter interactions, with the result being nonlinear effects like frequency conversion or second harmonic generation (see later). Mathematically such an interaction takes the form of a sequence
 	$$\sim\left\langle n_{1}\right| \hat{\mathrm{H}}_{\text {int }}\left|n_{2}\right\rangle\left\langle n_{2}\right| \hat{\mathrm{H}}_{\text {int }}\left|n_{3}\right\rangle\langle\ldots\rangle .$$
 3. For **very intense light fields**, the perturbative expansion breaks down and gives rise to a new field of nonlinear optics, which includes for example [[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation#1 Fundamentals of High-Order Harmonic Generation\|high harmonic generation]].
 
@@ -208,7 +198,7 @@ We have not derived this equation, and yet its form is intuitive:
 - $\left(r_{i}\right)_{g n} \equiv\langle g| r_{i}|n\rangle$ are the corresponding first order perturbation electric dipole-type relaxations. 
 - $\omega_{n g}-\omega=\frac{1}{\hbar}\left|E_{n}-E_{g}\right|-\omega$ denotes the frequency mismatch, and thus the energy mismatch between the two states $|n\rangle$ and $|g\rangle$ and the light field providing the excitation.
 
-For a real excitation with a certain population density at $|n\rangle$ after the excitation, energy conservation requires $\omega_{n g}-\omega=0,$ and thus prohibits such transitions. On the other hand a virtual excitation does not change the population density in $|n\rangle$. This can be understood as an electron getting excited into to $|n\rangle$ for an unmeasurably short and immediately falling back into $|g\rangle$. This energy mismatch is allowed within the uncertainty principle $\Delta E \Delta t \leq \hbar.$
+For a real excitation with a certain population density at $|n\rangle$ after the excitation, energy conservation requires $\omega_{n g}-\omega=0,$ and thus prohibits such transitions. On the other hand a virtual excitation does not change the population density in $|n\rangle$. This can be understood as an electron getting excited into $|n\rangle$ for an unmeasurably short and immediately falling back into $|g\rangle$. This energy mismatch is allowed within the uncertainty principle $\Delta E \Delta t \leq \hbar.$
 
 We can visually interpret both terms in the equation:
 
@@ -228,7 +218,7 @@ This inequality is caused by depolarisation fields. We know that we can describe
 $$
 \begin{array}{lll}
 \text { macroscopically: } & \mathbf{P}=\varepsilon_{0} \chi \mathbf{E} \quad\text{with}\quad \varepsilon=1+\chi, \\
-\text { microscopilcally: } & \mathbf{P}=\varepsilon_{0} N \alpha \mathbf{E}_{\mathrm{loc}} &
+\text { microscopically: } & \mathbf{P}=\varepsilon_{0} N \alpha \mathbf{E}_{\mathrm{loc}} &
 \end{array}
 $$
 
@@ -274,7 +264,7 @@ $$
 
 ### 4.3.3 Microscopy of the Faraday Effect
 
-We will now build a connection between the microscopy of linear optics and the Faraday effect. We have already [[Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics#3.1.1 The Faraday Effect\|seen]] that the Faraday effect is explained on the macroscopic scale using the harmonic oscillator model. We will see, that on that it is explained based on the electric dipole at the microscopic scale. 
+We will now build a connection between the microscopy of linear optics and the Faraday effect. We have already [[Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics#3.1.1 The Faraday Effect\|seen]] that the Faraday effect is explained on the macroscopic scale using the harmonic oscillator model. We will see that it is explained based on the electric dipole at the microscopic scale. 
 
 Recall that for the Faraday effect, the normal modes of the fundamental dielectric equation
 $$
@@ -331,7 +321,7 @@ $$
 \left( \left|r_{+}\right|^2 - \left|r_{-}\right|^2 \right) \rho_g^{(0)}
 \end{aligned}
 $$
-The real part of this equation if further rewritten using the oscillator strength
+The real part of this equation is further rewritten using the oscillator strength
 $$
 f_{ \pm}\left(\omega_{n g}\right) \equiv f_{ \pm}=\frac{1}{4 \pi} \frac{m \omega_{n g}}{\hbar}\left|r_{ \pm}\right|^2,
 $$
@@ -341,7 +331,7 @@ $$
 $$
 we may rewrite the real part (linear rotation) as
 $$
-\Re\left(\tilde{\Phi}_F\right)=\Phi_F=\frac{\pi N e^2 L}{m c n} \sum_{n \neq g} \frac{f_{+}-f_{-}}{\omega_{n g}} \varphi\left(\omega, \omega_{n g}\right) \rho_{n g}^{(0)}.
+\Re\left(\tilde{\Phi}_F\right)=\Phi_F=\frac{\pi N e^2 L}{m c n} \sum_{n \neq g} \frac{f_{+}-f_{-}}{\omega_{n g}} \varphi\left(\omega, \omega_{n g}\right) \rho_{g}^{(0)}.
 $$
 We will discuss two special cases, naming them depending on the type of magnetised material they are mostly found in.
 
@@ -367,7 +357,7 @@ This expression is symmetric around $\omega_0,$ and its maximum value is around 
 $$
 \Phi_{F, \max }^{(d m)}=\Phi_F^{(d m)}\left(\omega=\omega_0\right)=\frac{\pi N e^2 \Delta f_0 L}{4 m c n \Gamma_0}.
 $$
-With realistic values, we obtain $\Phi_{F, \max }^{(d m)} \lesssim 10^{6} \frac{\mathrm{deg}}{\mathrm{cmT}}$. The chemical compound $\mathrm{Bi}_{2.2} \mathrm{Gd}_{0.8} \mathrm{Fe}_{5} \mathrm{O}_{12}$ introduces $7 \cdot 10^{5} \frac{\mathrm{deg}}{\mathrm{cm}}$ at 370 nm and 300 K .
+With realistic values, we obtain $\Phi_{F, \max }^{(d m)} \lesssim 10^{6} \frac{\mathrm{deg}}{\mathrm{cm}}$. The chemical compound $\mathrm{Bi}_{2.2} \mathrm{Gd}_{0.8} \mathrm{Fe}_{5} \mathrm{O}_{12}$ introduces $7 \cdot 10^{5} \frac{\mathrm{deg}}{\mathrm{cm}}$ at 370 nm and 300 K .
 
 **Paramagnetic type:** We base our analysis on similar assumptions as the diamagnetic type. The state configuration is shown in the following:
 
@@ -377,7 +367,7 @@ The splitting is considered to be even smaller than in the diamagnetic type, suc
 - Symmetric splitting: $\omega_{g_{ \pm} n}=\omega_{0}.$
 - Small splitting: $f_{+} \simeq f_{-} \equiv f_{0}.$
 - Same spontaneous relaxation rate: $\Gamma_{n g}=\Gamma_{0} \quad \forall \Gamma_{n g}.$
-- Split ground state: $\rho_{+}^{(0)}-\rho_{+}^{(0)} \sim m(T)=\frac{M(T)}{M(0)}.$ 
+- Split ground state: $\rho_{+}^{(0)}-\rho_{-}^{(0)} \sim m(T)=\frac{M(T)}{M(0)}.$ 
 
 Similarly the expression for the angle of rotation is found
 $$ \begin{aligned} \Phi_{F}^{(p m)} & =\frac{\pi N e^{2} L}{m c n}\left(\frac{\rho_{+}^{(0)}}{\omega_{0}} f_{0} \varphi\left(\omega, \omega_{0}\right)-\frac{\rho_{-}^{(0)}}{\omega_{0}} f_{0} \varphi\left(\omega, \omega_{0}\right)\right) \\ & =\frac{\pi N e^{2} L f_{0}}{m c n} \underbrace{\varphi\left(\omega, \omega_{0}\right)}_{\substack{\text{antisymmetric} \\ \text{around } \omega=\omega_{0}}} m(T) . \end{aligned} $$
@@ -401,9 +391,9 @@ Lastly, we present the most important interaction terms contributing to the Hami
 Note that there are even more contributions as listed below, but that depends on the system under investigation.
 - $\hat{\mathrm{H}}_{\mathbf{0}}:$ Hamiltonian of non-interacting particles.
 - $\hat{\mathrm{H}}_{\mathrm{ee}^{\prime}}:$ Contributions from electrostatic interactions and Hund's coupling $\left({ }^{2 S+1} L\right).$
-- $\hat{\mathrm{H}}_{\mathbf{S O}} \sim \lambda \mathbf{S} \mathbf{L}:$ Contributions from spin-orbit coupling according to $\mathbf{J}=\mathbf{L}+\mathbf{S}$.
-- $\hat{\mathrm{H}}_{\mathbf{C F}}:$ Crystal field splitting contributions. The ion in the crystal field of its environment (ligands).
-- $\hat{\mathrm{H}}_{\mathbf{E X}}:$ Exchange interactions according to $\sum_{i j} I_{i j} S_{i} S_{j}$.
-- $\hat{\mathrm{H}}_{\text{Zee}}:$ Zeeman interactions with $\mu_{b}(\mathbf{L}+2 \mathbf{S}) \mathbf{H}.$
+- $\hat{\mathrm{H}}_{\text{SO}} \sim \lambda \mathbf{S} \cdot\mathbf{L}:$ Contributions from spin-orbit coupling according to $\mathbf{J}=\mathbf{L}+\mathbf{S}$.
+- $\hat{\mathrm{H}}_{\text{CF}}:$ Crystal field splitting contributions. The ion in the crystal field of its environment (ligands).
+- $\hat{\mathrm{H}}_{\mathbf{E X}}:$ Exchange interactions according to $\sum_{i j} I_{i j} \mathbf{S}_{i} \cdot\mathbf{S}_{j}$.
+- $\hat{\mathrm{H}}_{\text{Zee}}:$ Zeeman interactions with $\mu_{b}(\mathbf{L}+2 \mathbf{S}) \cdot\mathbf{H}.$
 
 ---

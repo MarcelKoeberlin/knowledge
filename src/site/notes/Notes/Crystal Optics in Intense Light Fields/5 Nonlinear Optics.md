@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/5-nonlinear-optics/","hide":"true","updated":"2025-05-25T19:06:05.541+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/5-nonlinear-optics/","hide":"true","updated":"2025-05-27T10:54:12.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -180,15 +180,12 @@ The whole process of analysing the magnetically introduced SHG in $\mathrm{Cr}_{
 
 Space and time reversal symmetry is broken but the combined operation of space and time reversal remains a symmetry operation.
 
-|                                                |           i-type           |       |       |                           |     |          c-type           |                           |                           |                           |
-| :--------------------------------------------: | :------------------------: | :---: | :---: | :-----------------------: | :-: | :-----------------------: | :-----------------------: | :-----------------------: | :-----------------------: |
-|                                                |            even            |       |  odd  |                           |     |           even            |                           |            odd            |                           |
-|                                                |           polar            | axial | polar |           axial           |     |           polar           |           axial           |           polar           |           axial           |
-|   Paramagnetic $\overline{3} m\underline{1}$   | $\mathrm{~L}_{\mathrm{m}}$ |   -   |   -   | $\mathrm{L}_{\mathrm{n}}$ |     | $\mathrm{L}_{\mathrm{m}}$ |             -             |             -             | $\mathrm{L}_{\mathrm{n}}$ |
-| Antiferromagnetic $\underline{\overline{3} m}$ | $\mathrm{~L}_{\mathrm{m}}$ |   -   |   -   | $\mathrm{L}_{\mathrm{n}}$ |     |             -             | $\mathrm{L}_{\mathrm{m}}$ | $\mathrm{L}_{\mathrm{n}}$ |             -             |
-|                    SHG-type                    |             EQ             |   -   |   -   |            MD             |     |             -             |             ?             |            ED             |             -             |
+![Attachments/Pasted image 20250527105339.png|700](/img/user/Attachments/Pasted%20image%2020250527105339.png)
+_I am not sure about the field with '?'..._
 
 The source term contains electric and magnetic dipole and quadrupole contributions. As discussed, the tensors $\chi_{\mathrm{NL}}^{e}, \chi_{\mathrm{NL}}^{m}$ and $\chi_{\mathrm{NL}}^{q}$ relate the dipole and quadrupole moments to the incident fields. Using Birss symmetry and magnetism, the number of independent tensor components can be easily determined. The symmetry group of antiferromagnetic $\mathrm{Cr}_{2} \mathrm{O}_{3}$ ($\underline{\overline{3} m}$) allows polar c-type and axial i-type contributions of odd rank as well as polar i-type and axial c-type contributions of even rank. 
+
+
 
 ### 5.3.2 Calculation of Multipole and Source Terms
 
