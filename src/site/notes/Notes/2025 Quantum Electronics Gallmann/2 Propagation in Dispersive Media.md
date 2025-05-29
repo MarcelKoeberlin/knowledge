@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-05-29T18:28:39.919+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-05-29T20:27:02.540+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -357,7 +357,7 @@ Lastly, consider the following figure illustrating phase and group velocities:
 
 ![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/Wave_group.gif|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/Wave_group.gif)
 
-In this animation, the green points represent points moving at the group velocity (envelope speed), while red points might represent points moving at the phase velocity (carrier wave speed). The figure illustrates how these two velocities can differ in a dispersive medium.
+In this animation, the green points represent points moving at the group velocity (envelope speed), while red points represent points moving at the phase velocity (carrier wave speed). The figure illustrates how these two velocities can differ in a dispersive medium.
 
 ---
 ## 2.7 Time-Bandwidth Product of Wavepackets

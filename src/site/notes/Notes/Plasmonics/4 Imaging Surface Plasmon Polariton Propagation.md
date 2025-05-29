@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/4-imaging-surface-plasmon-polariton-propagation/","hide":"true","updated":"2025-05-29T17:19:03.441+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/4-imaging-surface-plasmon-polariton-propagation/","hide":"true","updated":"2025-05-29T20:26:40.258+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -30,7 +30,7 @@ To effectively study the confinement and propagation of SPPs using this scheme, 
 
 The figure illustrates the PSTM setup where a fibre tip scans the surface to map the SPP field intensity.
 
-To avoid the excitation light directly interfering with the detection scheme, optical excitation of SPPs is usually performed using prism coupling (for instance, Kretschmann configuration) or tightly focused beams from the substrate side. The figures below illustrate PSTM imaging: figure (a) might show a control scan, for example, the near-field image of the uncoated prism face where no SPPs are excited or a region away from SPP excitation, while (b) shows an image where SPPs are excited (for example, on a metal film on the prism, at an angle of incidence greater than the critical angle for total internal reflection). The exponentially decaying intensity pattern observed in (b) as the tip moves away from the SPP excitation line is characteristic of SPP propagation and damping.
+To avoid the excitation light directly interfering with the detection scheme, optical excitation of SPPs is usually performed using prism coupling (for instance, Kretschmann configuration) or tightly focused beams from the substrate side. The figures below illustrate PSTM imaging: figure (a) shows a control scan, for example, the near-field image of the uncoated prism face where no SPPs are excited or a region away from SPP excitation, while (b) shows an image where SPPs are excited (for example, on a metal film on the prism, at an angle of incidence greater than the critical angle for total internal reflection). The exponentially decaying intensity pattern observed in (b) as the tip moves away from the SPP excitation line is characteristic of SPP propagation and damping.
 
 ![Attachments/Plasmonics - Fundamentals and Applications 17.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2017.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=72&rect=94,505,340,613|•]]
 
@@ -63,7 +63,7 @@ The figure illustrates the SPP dispersion curve relative to the light lines of t
 
 Apart from being a loss mechanism, leakage radiation microscopy can be used to image SPP propagation and even to directly map parts of the SPP dispersion relation. In a typical setup, SPPs are excited at the metal/superstrate (for example, metal/air) interface, for instance, by a focused light beam using surface roughness or a local scatterer for phase-matching. The leakage radiation emitted into the substrate (such as glass) is then collected by a microscope objective and imaged onto a CCD camera.
 
-Image (a) below might show a real-space image where SPPs are launched from a point and propagate outwards, with their paths visualised by the leakage radiation. Image (b) could be a Fourier-plane (or back-focal-plane) image. For a flat film, if SPPs are excited over a range of in-plane directions, the leakage radiation is emitted into the substrate within a cone at a specific angle $\theta_{\text{SPP}}$ relative to the interface normal. This angle is defined by the phase-matching condition $n_s k_0 \sin\theta_{\text{SPP}} = \mathfrak{Re}\left[\beta\right]$. This cone intersects the detection plane (for instance, a CCD in the Fourier plane of the objective) as a ring pattern.
+Image (a) below shows a real-space image where SPPs are launched from a point and propagate outwards, with their paths visualised by the leakage radiation. Image (b) could be a Fourier-plane (or back-focal-plane) image. For a flat film, if SPPs are excited over a range of in-plane directions, the leakage radiation is emitted into the substrate within a cone at a specific angle $\theta_{\text{SPP}}$ relative to the interface normal. This angle is defined by the phase-matching condition $n_s k_0 \sin\theta_{\text{SPP}} = \mathfrak{Re}\left[\beta\right]$. This cone intersects the detection plane (for instance, a CCD in the Fourier plane of the objective) as a ring pattern.
 
 ![Attachments/Plasmonics - Fundamentals and Applications 20.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2020.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=78&rect=93,130,350,330|•]]
 
