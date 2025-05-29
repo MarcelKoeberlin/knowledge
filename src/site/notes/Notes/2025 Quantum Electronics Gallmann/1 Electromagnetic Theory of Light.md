@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-05-26T11:02:03.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-05-29T16:27:12.360+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -325,9 +325,9 @@ Circular polarisation - the total electric field moves along a circle on the x-y
 
 It becomes clear, that circular polarisation is just a special case of elliptic polarisation. That is, the x- and y-amplitudes are equal (e.g. $E_x=E_y$), and the phase difference is $\pm\frac{\pi}{2}$. The case of positive phase difference is, in this context, called right-hand circular polarised, while the negative phase difference is called left-hand polarised. A so-called polariser lets only the project along a certain angle pass (a vector $\hat{\mathbf{e}}$) through. Namely, consider the electric field
 
-For a given input electric field $\mathbf{E}_{in}$, the output field can be calculated as 
+For a given input electric field $\mathbf{E}_\text{in}$, the output field can be calculated as 
 $$
-\mathbf{E}_{out}=\left(\hat{\mathbf{e}}\cdot \mathbf{E}_{in}\right)\hat{\mathbf{e}}\quad\text{where}\quad\hat{\mathbf{e}}=\cos\theta\cdot\hat{\mathbf{x}}+\sin\theta\cdot\hat{\mathbf{y}}.
+\mathbf{E}_\text{out}=\left(\hat{\mathbf{e}}\cdot \mathbf{E}_\text{in}\right)\hat{\mathbf{e}}\quad\text{where}\quad\hat{\mathbf{e}}=\cos\theta\cdot\hat{\mathbf{x}}+\sin\theta\cdot\hat{\mathbf{y}}.
 $$
 Here, $\theta$ is the angle of the polariser's axis to the coordinate axis. 
 
