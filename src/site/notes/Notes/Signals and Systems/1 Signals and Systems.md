@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/1-signals-and-systems/","hide":"true","updated":"2025-02-27T16:28:26.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/1-signals-and-systems/","hide":"true","updated":"2025-05-29T14:27:40.502+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -86,7 +86,7 @@ A very important class of signals encountered frequently is periodic signals. Th
 $$
 x(t) = x(t + T),
 $$
-for all values of $t$. In other words, a periodic signal is unchanged by a time shift $T$. Then, the signal $x(t)$ is periodic with period $T$. 
+for all values of $t$. In other words, a periodic signal is unchanged by a time shift $T$. Then, the signal $x(t)$ is periodic with period $T$. The fundamental period $T_0$ is defined as the smallest positive value of $T$ for which the periodicity condition holds. 
 
 ---
 ## 1.5 Even and Odd Signals 
@@ -111,7 +111,7 @@ Consider the continuous-time complex exponential signal of the form $x(t) = C \c
    2. $\mathfrak{Re}(\alpha) > 0$: $x(t)$ is sinusoidal multiplied by an exponentially increasing envelope, or
    3. $\mathfrak{Re}(\alpha) < 0$: $x(t)$ is sinusoidal multiplied by an exponentially decaying envelope.
 
-The discussions from [[Notes/Signals and Systems/1 Signals and Systems#1.3 Transformations\|#1.3 Transformations]] to [[Notes/Signals and Systems/1 Signals and Systems#1.6 Exponential signals\|#1.6 Exponential signals]] are exactly analogous in the case of a discrete-time signal and will not be repeated. Note that this is the last notice about this occurrence.
+The discussions from [[Notes/Signals and Systems/1 Signals and Systems#1.3 Transformations\|#1.3 Transformations]] to [[Notes/Signals and Systems/1 Signals and Systems#1.6 Exponential signals\|#1.6 Exponential signals]] are exactly analogous in the case of a discrete-time signal and will not be repeated. The only difference is for the periodicity of a discrete-time exponential: A discrete-time complex exponential $x[n]=e^{j \omega_0 n}$ is periodic if and only if its frequency $\omega_0$ is a rational multiple of $2 \pi$, so $\omega_0 /(2 \pi)=k / N$ for integers $k$ and $N.$ This means $\omega_0 N=2 \pi k$ must hold for some integer $N,$ the period.
 
 ---
 ## 1.7 Unit Impulse and Unit Step 
@@ -208,24 +208,19 @@ $$
 ### 1.9.4 Stability 
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&selection=55,0,59,9|•]]
 
-A system is stable if small inputs lead to bounded outputs. For example:
+A system is stable in the Bounded-Input, Bounded-Output (BIBO) sense if every bounded input produces a bounded output. For example, consider the case of a pendulum (stable) vs an inverted pendulum (unstable):
 
 ![Attachments/Oppenheim,Willsky_Signals and Systems 4.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%204.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&rect=191,46,305,240|•]]
 
-If the input is bounded, the output must also remain bounded.
 
 ### 1.9.5 Time Invariance 
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=81&selection=204,0,206,15|•]]
 
-A system is time-invariant if its behavior and characteristics are fixed over time. Formally:
-$$
-x[n] \to y[n] \Leftrightarrow x[n-n_0] \to y[n-n_0].
-$$
-
+A system is time-invariant if, for any input $x[n]$ that produces an output $y[n]$, a time-shifted input $x_d[n]=x\left[n-n_0\right]$ produces the time-shifted output $y_d[n]=y\left[n-n_0\right]$ for any arbitrary time shift $n_0.$
 ### 1.9.6 Linearity 
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=84&selection=70,0,74,9|•]]
 
-A linear system fulfills:
+A linear system fulfils:
 1. Additivity: $x_1 + x_2 \to y_1 + y_2$,
 2. Homogeneity: $\alpha x_1 \to \alpha y_1$.
 

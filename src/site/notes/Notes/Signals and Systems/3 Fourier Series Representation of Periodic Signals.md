@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/3-fourier-series-representation-of-periodic-signals/","hide":"true","updated":"2025-02-09T20:27:29.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/3-fourier-series-representation-of-periodic-signals/","hide":"true","updated":"2025-05-29T15:00:09.307+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -7,9 +7,6 @@ Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents
 ---
 **Table of Contents**
 
-- [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.1 The Response of LTI Systems to Complex Exponentials\|3.1 The Response of LTI Systems to Complex Exponentials]]
-- [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.2 Fourier Series Representation of Continuous-Time Periodic Signals\|3.2 Fourier Series Representation of Continuous-Time Periodic Signals]]
-- [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.3 Convergence of the Fourier Series\|3.3 Convergence of the Fourier Series]]
 - [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.1 The Response of LTI Systems to Complex Exponentials\|3.1 The Response of LTI Systems to Complex Exponentials]]
 - [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.2 Fourier Series Representation of Continuous-Time Periodic Signals\|3.2 Fourier Series Representation of Continuous-Time Periodic Signals]]
 - [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.3 Convergence of the Fourier Series\|3.3 Convergence of the Fourier Series]]
@@ -162,153 +159,10 @@ $$
 
 ### 3.3.2 Convergence Conditions
 For periodic signals, Fourier series convergence is guaranteed if:
-1. **Finite power**:# 3 Fourier Series Representation of Periodic Signals
-
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=208&selection=6,0,16,7|•]]
-
-The representation and analysis of LTI systems through the convolution sum are based on representing signals as linear combinations of shifted impulses. This chapter explores an alternative representation for signals and LTI systems.
-
----
-## 3.1 The Response of LTI Systems to Complex Exponentials 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=213&selection=58,0,72,12|•]]
-
-In the study of LTI systems, it is advantageous to represent signals as linear combinations of basic signals with the following two properties:
-1. The set of basic signals can construct a broad and useful class of signals.
-2. The response of an LTI system to each signal is simple enough to provide a convenient representation for the system's response to any signal constructed as a linear combination of the basic signals.
-
-Fourier analysis is significant because it fulfills these properties using complex exponential signals in both continuous and discrete time. The response of an LTI system to a complex exponential input is the same complex exponential with only a change in amplitude:
-$$
-\begin{aligned}
-\text{Continuous time: } & e^{st} \longrightarrow H(s)e^{st}, \\
-\text{Discrete time: } & z^n \longrightarrow H(z)z^n,
-\end{aligned}
-$$
-where $H(s)$ or $H(z)$ is a complex amplitude factor. A signal $x \longrightarrow a \cdot x$ is called an **eigenfunction** of the system, and the (complex) constant $a$ is called the **eigenvalue**.
-
-### 3.1.1 Continuous-Time Proof
-Complex exponentials are eigenfunctions of any LTI system. For example:
-$$
-y(t) = \int_{-\infty}^\infty h(\tau) x(t-\tau) \, d\tau = \int_{-\infty}^\infty h(\tau) e^{s(t-\tau)} \, d\tau.
-$$
-Rewriting:
-$$
-y(t) = e^{st} \int_{-\infty}^\infty h(\tau) e^{-s\tau} \, d\tau = H(s)e^{st},
-$$
-assuming the integral converges. Hence, $y(t)$ is a scaled version of $e^{st}$.
-
-### 3.1.2 Discrete-Time Proof
-Similarly, for discrete-time systems, let the input be:
-$$
-x[n] = z^n,
-$$
-where $z$ is a complex number. The output is:
-$$
-y[n] = \sum_{k=-\infty}^\infty h[k] x[n-k] = \sum_{k=-\infty}^\infty h[k] z^{n-k}.
-$$
-Rewriting:
-$$
-y[n] = z^n \sum_{k=-\infty}^\infty h[k] z^{-k} = H(z)z^n,
-$$
-where:
-$$
-H(z) = \sum_{k=-\infty}^\infty h[k] z^{-k}.
-$$
-
-Thus, complex exponentials are eigenfunctions of discrete-time LTI systems.
-
-### 3.1.3 Decomposition of Signals
-To analyze LTI systems, a general signal can be decomposed into eigenfunctions:
-$$
-x(t) = \sum_n a_n e^{s_nt}.
-$$
-Using the eigenfunction and superposition properties:
-$$
-y(t) = \sum_n a_n H(s_n)e^{s_nt}.
-$$
-
-Both in continuous and discrete time, if the input is a linear combination of complex exponentials, the output is also a linear combination of the same complex exponential signals.
-
----
-## 3.2 Fourier Series Representation of Continuous-Time Periodic Signals 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=217&selection=120,0,132,7|•]]
-
-For a periodic signal $x(t)$ with period $T$, it can be represented as a linear combination of harmonically related complex exponentials:
-$$
-x(t) = \sum_{k=-\infty}^\infty a_k e^{i k \frac{2\pi}{T}t}.
-$$
-This is the **Fourier series representation**.
-
-### 3.2.1 Real Signals
-If $x(t)$ is real, $a_k^* = a_{-k}$, allowing:
-$$
-x(t) = a_0 + \sum_{k=1}^\infty \left( a_k e^{i k \omega_0 t} + a_k^* e^{-i k \omega_0 t} \right),
-$$
-where $\omega_0 = \frac{2\pi}{T}$. Rewriting:
-$$
-x(t) = a_0 + 2 \sum_{k=1}^\infty A_k \cos(k\omega_0 t + \theta_k),
-$$
-with $a_k = A_k e^{i \theta_k}$.
-
-Alternatively, using $a_k = B_k + i C_k$:
-$$
-x(t) = a_0 + 2 \sum_{k=1}^\infty \left( B_k \cos(k\omega_0 t) - C_k \sin(k\omega_0 t) \right).
-$$
-
-### 3.2.2 Derivation of Fourier Coefficients
-Assuming $x(t)$ has a Fourier series representation, multiply both sides by $e^{-jn\omega_0t}$ and integrate:
-$$
-\int_0^T x(t)e^{-i n \omega_0 t} \, dt = \int_0^T \sum_k a_k e^{i(k-n)\omega_0 t} \, dt.
-$$
-Using orthogonality:
-$$
-\int_0^T e^{i(k-n)\omega_0 t} \, dt =
-\begin{cases}
-T, & k = n, \\
-0, & k \neq n.
-\end{cases}
-$$
-The Fourier coefficients are:
-$$
-a_k = \frac{1}{T} \int_0^T x(t) e^{-i k \omega_0 t} \, dt.
-$$
-
-The average value of $x(t)$ over one period is:
-$$
-a_0 = \frac{1}{T} \int_0^T x(t) \, dt.
-$$
-
----
-## 3.3 Convergence of the Fourier Series 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=226&selection=234,0,246,6|•]]
-
-Although Fourier claimed that any periodic signal could be represented by a Fourier series, this is only true for specific signal classes.
-
-### 3.3.1 Approximation and Error
-Approximating a periodic signal:
-$$
-x_N(t) = \sum_{k=-N}^N a_k e^{i k \omega_0 t}.
-$$
-The approximation error:
-$$
-e_N(t) = x(t) - x_N(t).
-$$
-The error energy is:
-$$
-E_N = \int_0^T |e_N(t)|^2 \, dt.
-$$
-Minimizing $E_N$ gives the Fourier coefficients:
-$$
-a_k = \frac{1}{T} \int_0^T x(t) e^{-i k \omega_0 t} \, dt.
-$$
-
-### 3.3.2 Convergence Conditions
-For periodic signals, Fourier series convergence is guaranteed if:
-1. **Finite power**:
-   $$
-   \int_0^T |x(t)|^2 \, dt < \infty.
-   $$
-2. **Bounded variation**: $x(t)$ has a finite number of maxima and minima in one period.
-3. **Finite discontinuities**: $x(t)$ has a finite number of discontinuities per period, and each discontinuity is finite.
+-  **Finite power over one period**:
+	$$\int_0^T |x(t)|^2 \, dt < \infty.$$
+-  **Bounded variation**: $x(t)$ has a finite number of maxima and minima in one period.
+- **Finite discontinuities**: $x(t)$ has a finite number of discontinuities per period, and each discontinuity is finite.
 
 At points of discontinuity, the Fourier series converges to the average value of the signal on either side of the discontinuity.
 
@@ -338,7 +192,7 @@ Below is a table summarising several useful properties of the continuous-time Fo
 |         **Real and Even Signals**          |                                        $x(t)$ real and even                                        |                                                $a_k$ real and even                                                |
 |          **Real and Odd Signals**          |                                        $x(t)$ real and odd                                         |                                          $a_k$ purely imaginary and odd                                           |
 | **Even-Odd Decomposition of Real Signals** | $x(t) = x_e(t) + x_o(t)$, where $x_e(t) = \frac{x(t) + x(-t)}{2}, x_o(t) = \frac{x(t) - x(-t)}{2}$ |                         $\mathfrak{Re}\{a_k\}$ for even, $i \mathfrak{Im}\{a_k\}$ for odd                         |
-|          **Parseval's Relation**           |              $\frac{1}{T} \int_T dt\cdot\| x(t)\|^2=\sum_{k=-\infty}^\infty\|a_k\|^2$              |                                                                                                                   |
+|          **Parseval's Relation**           |                 $\frac{1}{T} \int_T\| x(t)\|^2dt=\sum_{k=-\infty}^\infty\|a_k\|^2$                 |                                                                                                                   |
 
 ---
 ### Parseval's Relation for Continuous-Time Periodic Signals
@@ -374,20 +228,20 @@ The coefficients satisfy $a_k = a_{k+N}$ due to periodicity. This representation
 ## 3.6 Properties of the Discrete-Time Fourier Series 
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=252&selection=33,0,43,6|•]]
 
-|                Property                 |                          Periodic Signal                           |       Fourier Series Coefficients        |
-| :-------------------------------------: | :----------------------------------------------------------------: | :--------------------------------------: |
-|              **Linearity**              |                         $A x[n] + B y[n]$                          |             $A a_k + B b_k$              |
-|            **Time Shifting**            |                            $x[n - n_0]$                            |       $a_k e^{-i k \omega_0 n_0}$        |
-|         **Frequency Shifting**          |                     $e^{j M \omega_0 n} x[n]$                      |                $a_{k-M}$                 |
-|             **Conjugation**             |                              $x^*[n]$                              |                $a_{-k}^*$                |
-|            **Time Reversal**            |                              $x[-n]$                               |                 $a_{-k}$                 |
-|            **Time Scaling**             |                $x[mn]$ (if $n$ is divisible by $m$)                |            $\frac{1}{m} a_k$             |
-|        **Periodic Convolution**         |                  $\sum_{r=0}^{N-1} x[r] y[n - r]$                  |               $N a_k b_k$                |
-|           **Multiplication**            |                            $x[n] y[n]$                             |      $\sum_{l=0}^{N-1} a_l b_{k-l}$      |
-|          **First Difference**           |                          $x[n] - x[n-1]$                           | $\left(1 - e^{-i k \omega_0}\right) a_k$ |
-|             **Running Sum**             |    $\sum_{m=0}^n x[m]$ (finite and periodic only if $a_0 = 0$)     |  $\frac{1}{1 - e^{-i k \omega_0}} a_k$   |
-| **Conjugate Symmetry for Real Signals** |                            $x[n]$ real                             |             $a_k = a_{-k}^*$             |
-|         **Parseval's Relation**         | $\frac{1}{N} \sum_{n=0}^{N-1}\|x[n]\|^2=\sum_{k=0}^{N-1}\|a_k\|^2$ |                                          |
+|                Property                 |                                                                    Periodic Signal                                                                    |                           Fourier Series Coefficients                            |
+| :-------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+|              **Linearity**              |                                                                   $A x[n] + B y[n]$                                                                   |                                 $A a_k + B b_k$                                  |
+|            **Time Shifting**            |                                                                     $x[n - n_0]$                                                                      |                           $a_k e^{-i k \omega_0 n_0}$                            |
+|         **Frequency Shifting**          |                                                               $e^{j M \omega_0 n} x[n]$                                                               |                                    $a_{k-M}$                                     |
+|             **Conjugation**             |                                                                       $x^*[n]$                                                                        |                                    $a_{-k}^*$                                    |
+|            **Time Reversal**            |                                                                        $x[-n]$                                                                        |                                     $a_{-k}$                                     |
+|            **Time Scaling**             | $x_{(m)}[n]= \begin{cases}x[n / m], & \text { if } n \text { is a multiple of } m \\ 0, & \text { if } n \text { is not a multiple of } m\end{cases}$ | $\frac{1}{m} a_k\binom{\text { viewed as periodic }}{\text { with period } m N}$ |
+|        **Periodic Convolution**         |                                                           $\sum_{r=0}^{N-1} x[r] y[n - r]$                                                            |                                   $N a_k b_k$                                    |
+|           **Multiplication**            |                                                                      $x[n] y[n]$                                                                      |                          $\sum_{l=0}^{N-1} a_l b_{k-l}$                          |
+|          **First Difference**           |                                                                    $x[n] - x[n-1]$                                                                    |                     $\left(1 - e^{-i k \omega_0}\right) a_k$                     |
+|             **Running Sum**             |                                              $\sum_{m=0}^n x[m]$ (finite and periodic only if $a_0 = 0$)                                              |               $\frac{1}{1 - e^{-i k \omega_0}} a_k$ for $k\neq 0$                |
+| **Conjugate Symmetry for Real Signals** |                                                                      $x[n]$ real                                                                      |                                 $a_k = a_{-k}^*$                                 |
+|         **Parseval's Relation**         |                                          $\frac{1}{N} \sum_{n=0}^{N-1}\|x[n]\|^2=\sum_{k=0}^{N-1}\|a_k\|^2$                                           |                                                                                  |
 
 ---
 ## 3.7 Fourier Series and LTI Systems 
@@ -544,7 +398,7 @@ $$
 
 This equation represents a weighted average of $x[n]$ values, often used in moving-average filters. These filters smooth high-frequency variations, effectively acting as low-pass filters.
 
-For a moving-average filter of size $N + M + 1$, the frequency response is:
+For a moving-average filter of size $N + M + 1$ with uniform weights, the frequency response is:
 $$
 H(e^{i\omega}) = \frac{1}{N + M + 1} e^{i \omega [(N - M) / 2]} \frac{\sin[\omega (M + N + 1) / 2]}{\sin(\omega / 2)}.
 $$

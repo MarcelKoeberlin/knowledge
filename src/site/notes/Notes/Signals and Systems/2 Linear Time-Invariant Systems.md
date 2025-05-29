@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/2-linear-time-invariant-systems/","hide":"true","updated":"2025-02-07T10:57:49.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/2-linear-time-invariant-systems/","hide":"true","updated":"2025-05-29T14:42:49.747+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -18,9 +18,9 @@ Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents
 # 2 Linear Time-Invariant Systems
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=105&selection=2,0,6,7|•]]
 
-In [[Notes/Signals and Systems/1 Signals and Systems\|Chapter 1]] , a number of basic system properties have been discussed. Two of these, linearity and time invariance, play a fundamental role in signal and system analysis for two major reasons. First, many physical processes possess these properties and thus can be modeled as linear time-invariant (**LTI**) systems. In addition, LTI systems can be analyzed in considerable detail, providing both insight into their properties and a set of powerful tools that form the core of signal and system analysis.
+In [[Notes/Signals and Systems/1 Signals and Systems\|Chapter 1]] , a number of basic system properties have been discussed. Two of these, linearity and time invariance, play a fundamental role in signal and system analysis for two major reasons. First, many physical processes possess these properties and thus can be modelled as linear time-invariant (LTI) systems. In addition, LTI systems can be analysed in considerable detail, providing both insight into their properties and a set of powerful tools that form the core of signal and system analysis.
 
-One reason why LTI systems are of interest is that any such system possesses the [[Notes/Signals and Systems/2 Linear Time-Invariant Systems#1.14 Linearity\|superposition property]]. As a consequence, if we can represent the input to an LTI system in terms of a linear combination of a set of basic signals, we can then use superposition to compute the output of the system in terms of its responses to these basic signals. Unless stated otherwise, this chapter considers LTI systems.
+One reason why LTI systems are of interest is that any such system possesses the [[Notes/Signals and Systems/1 Signals and Systems#1.9.6 Linearity\|superposition principle]]. As a consequence, if we can represent the input to an LTI system in terms of a linear combination of a set of basic signals, we can then use superposition to compute the output of the system in terms of its responses to these basic signals. Unless stated otherwise, this chapter considers LTI systems.
 
 ---
 ## 2.1 The Convolution Sum 
@@ -33,7 +33,7 @@ $$
 
 Because the sequence $\delta[n-k]$ is nonzero only for $k = n$, the summation on the right-hand side "sifts" through the sequence of values $x[k]$ and preserves only the corresponding value at $k = n$. This property allows us to represent $x[n]$ as a superposition of scaled versions of a simple set of elementary functions.
 
-The property of time invariance tells us that the responses of a time-invariant system to time-shifted unit impulses are simply time-shifted versions of one another. Let $h_k[n]$ be the response of a linear system with input $\delta[n-k]$, i.e., $\delta[n-k] \rightarrow h_k[n]$. Then, it holds:
+The property of time invariance tells us that the responses of a time-invariant system to time-shifted unit impulses are simply time-shifted versions of one another. Let $h_k[n]$ be the response of a linear system with input $\delta[n-k]$, so $\delta[n-k] \rightarrow h_k[n]$. Then, it holds:
 $$
 y[n] = \sum_{k=-\infty}^\infty x[k] h_k[n],
 $$
@@ -82,11 +82,11 @@ Similarly, associativity can be depicted graphically:
 ## 2.3 Basic Properties
 
 ### 2.3.1 Memory
-If a discrete-time LTI system has an impulse response $h[n]$ that is not identically zero for $n \neq 0$, then the system has memory. For a continuous-time LTI system, the system is memoryless if $h(t) = 0$ for $t \neq 0$. Such a system has the form:
+If a discrete-time LTI system has an impulse response $h[n]$ that is not identically zero for $n \neq 0$, then the system has memory. For a continuous-time LTI system, the system is memory-less if $h(t) = 0$ for $t \neq 0$. Such a system has the form:
 $$
 y(t) = Kx(t),
 $$
-where $h(t) = K\delta(t)$. If $K = 1$, the system satisfies $x = x * \delta = y$ and becomes the identity system, which reduces to the sifting property.
+where $h(t) = K\delta(t)$. If $K = 1$, the sifting property $x(t)=x(t)*\delta(t)$ demonstrates that $\delta(t)$ is the system response of the identity system.
 
 ### 2.3.2 Invertibility
 If an LTI system is invertible, its inverse is also LTI. If:
@@ -121,18 +121,18 @@ $$
 $$
 
 ### 2.3.5 Unit Step Response of an LTI System
-Besides the impulse response, the step response is another basic but important signal. The step response is defined as:
+Besides the impulse response, another basic but important characterisation of an LTI system is the step response, defined as
 $$
 s[n] = \sum_{k=-\infty}^n h[k] = u[n] * h[n],
 $$
-or in continuous-time:
+or in continuous-time
 $$
 s(t) = \int_{-\infty}^t h(\tau) \, d\tau.
 $$
 
 Also note that:
 $$
-	h[n] = s[n] - s[n-1], \quad h(t) = \frac{ds(t)}{dt}.
+h[n] = s[n] - s[n-1], \quad h(t) = \frac{ds(t)}{dt}.
 $$
 
 ---
@@ -176,7 +176,7 @@ For $N = 0$, we have:
 $$
 y[n] = \sum_{k=0}^M \frac{b_k}{a_0} x[n-k],
 $$
-where the impulse response is $h[n] = \frac{b_k}{a_0}$ for $0 \leq n \leq M$. Such systems are non-recursive and have a finite impulse response (FIR). 
+where the impulse response is $h[n] = \frac{b_n}{a_0}$ for $0 \leq n \leq M,$ and $h[n]=0$ otherwise. Such systems are non-recursive and have a finite impulse response (FIR). 
 
 For $N \geq 1$, when the differential equation is recursive, the impulse response is infinite, and these systems are referred to as infinite impulse response (IIR) systems.
 
@@ -186,7 +186,7 @@ For $N \geq 1$, when the differential equation is recursive, the impulse respons
 
 Systems described by linear constant-coefficient differential equations can be represented using block diagrams, providing a visual understanding of their behavior. These diagrams are valuable for both analysis and implementation.
 
-Consider the causal system described by the first-order difference equation:
+Consider the causal system described by the first-order difference equation (assuming $a\neq0$):
 $$
 y[n] + a y[n-1] = b x[n],
 $$

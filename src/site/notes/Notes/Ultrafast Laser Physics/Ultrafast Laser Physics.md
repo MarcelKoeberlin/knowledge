@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Ultrafast Laser Physics","permalink":"/notes/ultrafast-laser-physics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-05-28T09:36:35.000+02:00"}
+{"dg-publish":true,"dg-path":"Notes/Ultrafast Laser Physics","permalink":"/notes/ultrafast-laser-physics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-05-29T09:59:14.570+02:00"}
 ---
 
-These notes follow along the excellent book [Ultrafast Lasers: A Comprehensive Introduction to Fundamental Principles with Practical Applications](https://link.springer.com/book/10.1007/978-3-030-82532-4) written by Prof. Keller. For my original notes on the lecture 'Ultrafast Laser Physics' taught by Prof. Gallmann in the fall semester of 2023/24, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/lecture-notes). The content of this lecture and book was imperative in my initial decision to pursue laser physics.
+ These notes follow along the excellent book [Ultrafast Lasers: A Comprehensive Introduction to Fundamental Principles with Practical Applications](https://link.springer.com/book/10.1007/978-3-030-82532-4) written by Prof. Keller. For my original notes on the lecture 'Ultrafast Laser Physics' taught by Prof. Gallmann in the fall semester of 2023/24, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/lecture-notes). The content of this lecture and book was imperative in my initial decision to pursue laser physics.
 
 ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|Table of Contents]]==
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/4-nonlinear-pulse-propagation/","hide":"true","updated":"2025-05-28T09:46:12.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/4-nonlinear-pulse-propagation/","hide":"true","updated":"2025-05-29T13:42:00.334+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -16,7 +16,7 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 # 4 Nonlinear Pulse Propagation
 
-This chapter discusses nonlinear pulse propagation as far as it is relevant to ultrafast lasers.
+This chapter discusses nonlinear pulse propagation as far as it is relevant to ultrafast lasers. For another perspective on nonlinear optics, especially with a focus on magnetism, please read [[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5 Nonlinear Optics\|here]].
 
 ---
 ## 4.1 Kerr Effect and Self-Phase Modulation
@@ -36,7 +36,7 @@ The nonlinear phase shift can be rewritten as
 $$
 \varphi_2(t) = -k n_2 I(t) L_{\mathrm{K}} = -k n_2 L_{\mathrm{K}} |A(t)|^2 \equiv -\delta |A(t)|^2,
 $$
-where $|A(t)|$ is the amplitude of the pulse envelope, normalised such that $|A(t)| = I(t)$, and $\delta$ is the self-phase modulation (SPM) coefficient, defined as  
+where $|A(t)|$ is the amplitude of the pulse envelope, normalised such that $|A(t)|^2 = I(t),$ and $\delta$ is the self-phase modulation (SPM) coefficient, defined as  
 $$
 \delta \equiv k n_2 L_{\mathrm{K}}.
 $$
@@ -77,7 +77,7 @@ Spectral broadening induced by SPM can be utilised to compress transform-limited
 
 ![Attachments/UltraFastLasers_Keller 45.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2045.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=154&rect=55,506,383,608|•]]
 
-After spectral broadening of a transform-limited pulse (in a medium with positive dispersion), a grating compressor can shorten the pulse in time (introducing negative dispersion). Note that SPM introduces a chirp that is only linear in the central region of the pulse. Only this part can be compensated by the grating compressor. The remaining energy, which cannot be compressed, results in a pulse width that is broader than the minimum expected from the spectral broadening ratio, and introduces longer wings in the pulse. This degrades the quality of the compressed pulse.
+Spectral broadening of a transform-limited pulse via SPM (typically in an optical fibre, which itself might exhibit dispersion) generates a chirp. If this chirp is predominantly positive, a subsequent element providing negative GDD, like a grating compressor, can shorten the pulse. Note that SPM introduces a chirp that is only linear in the central region of the pulse. Only this part can be compensated by the grating compressor. The remaining energy, which cannot be compressed, results in a pulse width that is broader than the minimum expected from the spectral broadening ratio, and introduces longer wings in the pulse. This degrades the quality of the compressed pulse.
 
 ---
 ## 4.2 Self-Focusing and Filamentation
@@ -116,10 +116,9 @@ Kerr focusing increases the local optical refractive index with pulse intensity,
 
 This is the basic mechanism for filament formation: Above a critical power, the Kerr effect becomes so strong that self-focusing dominates. This would cause the beam to collapse; however, as the peak intensity increases, multi-photon ionisation of the gas occurs, which counteracts the effective focusing lens induced by the Kerr effect. The free carriers (e.g. plasma) provide an effective defocusing lens. This leads to a balance, resulting in filamentation, where the beam maintains a narrow diameter. The high intensity broadens the spectrum via self-phase modulation (SPM) to such an extent that white light is emitted by the filaments, transforming an infrared laser into a 'white-light laser'. The critical power can be approximated as  
 $$
-P_{\mathrm{cr}}=\alpha \frac{\lambda_0^2}{4 \pi n_0 n_2}=1.896 \frac{\lambda_0^2}{4 \pi n_0 n_2},
+P_{\mathrm{cr}}=\alpha \frac{\lambda_0^2}{4 \pi n_0 n_2},
 $$
-where $n_0=n(\lambda_0)$ with $\lambda_0$ being the central wavelength.  
-In gases, before beam collapse occurs, the intensity increases to a level where multi-photon ionisation takes place. Beam collapse is therefore prevented by multi-photon absorption and the defocusing effect of the plasma.  
+where $n_0=n(\lambda_0)$ with $\lambda_0$ being the central wavelength, and $\alpha$ being a constant specific to the system. In gases, before beam collapse occurs, the intensity increases to a level where multi-photon ionisation takes place. Beam collapse is therefore prevented by multi-photon absorption and the defocusing effect of the plasma.  
 
 ---
 ## 4.3 Solitons - Nonlinear Schrödinger Equation
@@ -158,12 +157,11 @@ Thus, the temporal shift is determined by the group delay:
 $$
 T_{\mathrm{g}}=k_n^{\prime} L_{\mathrm{d}}=\frac{L_{\mathrm{d}}}{v_{\mathrm{g}}}.
 $$  
-
 For the second derivative $k_n^{\prime\prime}$, we consider the case where $k_n^{\prime \prime} \Delta \omega^2 L_{\mathrm{d}} \ll 1$, yielding  
 $$
 \begin{aligned} 
 A\left(L_{\mathrm{d}}, t\right) & \approx\left(1-k_n^{\prime} L_{\mathrm{d}} \frac{\partial}{\partial t}\right)\left(1+\frac{\mathrm{i}}{2} k_n^{\prime \prime} L_{\mathrm{d}} \frac{\partial^2}{\partial t^2}\right) A(0, t) \\  
-& \equiv\left(1-k_n^{\prime} L_{\mathrm{d}} \frac{\partial}{\partial t}\right)\left(1+\mathrm{i} D \frac{\partial^2}{\partial t^2}\right) A(0, t),
+& =\left(1-k_n^{\prime} L_{\mathrm{d}} \frac{\partial}{\partial t}\right)\left(1+\mathrm{i} D \frac{\partial^2}{\partial t^2}\right) A(0, t),
 \end{aligned}
 $$
 where the dispersion parameter is defined as  
@@ -172,7 +170,7 @@ D\equiv\frac{1}{2}k_n^{\prime\prime}L_d.
 $$
 It describes the curvature of the dispersion curve $n(\omega)$. The relation to GDD is given by  
 $$
-\text{GDD}=2D.
+\mathrm{GDD}=2D.
 $$
 Neglecting the first derivative, we obtain:  
 $$
@@ -208,10 +206,10 @@ Because we assumed that the nonlinear refractive index $n_2$ is not frequency-de
 
 ### 4.3.2 Solution of the NSE: The Fundamental Soliton
 
-1. $\mathbf{k}_n^{\prime \prime} \neq 0$ and $\mathbf{n}_2=0:$ GDD but no SPM. This reduces the problem to linear pulse propagation, such that an originally bandwidth-limited pulse is temporally broadened for positive as well as negative GDD, while the spectral width does not change. However, the phase of the spectrum changes.
-2. $\mathbf{k}_{n}^{\prime \prime}=0$ and $\mathbf{n}_{\mathbf{2}} \neq 0:$ No GDD but SPM. A bandwidth-limited pulse will propagate with unchanged intensity in the time domain, but its spectrum will be broadened through SPM.
-3. $\mathbf{k}_{n}^{\prime \prime}>0$ and $\mathbf{n}_2>0:$ Positive GDD and positive SPM. Positive SPM will produce a spectral broadening that generates lower frequencies (red) in the leading edge, and higher frequencies (blue) in the trailing edge of the pulse (red before blue). Positive dispersion makes red faster than blue, meaning that red components in the pulse travels with higher group velocity than the blue components. Therefore, red components at the leading edge will shift even further ahead, while blue components at the trailing edge will be delayed even further. Thus, an originally bandwidth-broadened pulse will be strongly broadened.
-4. $\mathbf{k}_n^{\prime \prime}<0$ and $\mathbf{n}_2>0:$ Negative GDD and positive SPM. The negative dispersion will reduce and ideally even compensate for the chirp produced by SPM. This means that a balance between SPM and GDD can cause a situation in which a pulse can propagate unchanged in the temporal and spectral domain: A soliton forms.
+1. $\mathbf{k}_n^{\prime \prime} \neq 0$ and $n_2=0:$ GDD but no SPM. This reduces the problem to linear pulse propagation, such that an originally bandwidth-limited pulse is temporally broadened for positive as well as negative GDD, while the spectral width does not change. However, the phase of the spectrum changes.
+2. $\mathbf{k}_{n}^{\prime \prime}=0$ and $n_{\mathbf{2}} \neq 0:$ No GDD but SPM. A bandwidth-limited pulse will propagate with unchanged intensity in the time domain, but its spectrum will be broadened through SPM.
+3. $\mathbf{k}_{n}^{\prime \prime}>0$ and $n_2>0:$ Positive GDD and positive SPM. Positive SPM will produce a spectral broadening that generates lower frequencies (red) in the leading edge, and higher frequencies (blue) in the trailing edge of the pulse (red before blue). Positive dispersion makes red faster than blue, meaning that red components in the pulse travels with higher group velocity than the blue components. Therefore, red components at the leading edge will shift even further ahead, while blue components at the trailing edge will be delayed even further. Thus, an originally bandwidth-limited (or unchirped) pulse will be strongly broadened.
+4. $\mathbf{k}_n^{\prime \prime}<0$ and $n_2>0:$ Negative GDD and positive SPM. The negative dispersion will reduce and ideally even compensate for the chirp produced by SPM. This means that a balance between SPM and GDD can cause a situation in which a pulse can propagate unchanged in the temporal and spectral domain: A soliton forms.
 
 These cases are shown in the next four figures, where the last figure shows the propagation of a soliton: 
 
@@ -246,7 +244,7 @@ The pulse duration of a soliton can be calculated as
 $$ 
 \tau_p\sim\frac{|k_n^{\prime\prime}|}{kn_2F_p}.
 $$
-Because both the dispersion and SPM parameter scale with the length of the material. the pulse duration becomes independent on the material length. This again means that the solution pulse duration is independent of the material length, and is not broadened during propagation through a dispersive material. 
+Because both the dispersion and SPM parameter scale with the length of the material, the pulse duration becomes independent on the material length. This again means that the solution pulse duration is independent of the material length, and is not broadened during propagation through a dispersive material. 
 
 The fact that higher-order terms are neglected means that the GDD does not depend on the choice of the carrier frequency. Only the group velocity, with which the pulse propagates, depends on the carrier frequency. Thus, for negative GDD, a solution with a higher carrier frequency moves faster, such that a blue soliton is faster than a red soliton. 
 This property allows two solitons to collide, by placing a low carrier frequency soliton in front of a high carrier frequency soliton. Both pulses emerge undamaged from the collision, however we can see that the faster pulse is shifted ahead temporally by the interaction. It can also be shown that the respective phases of the pulses change during the collision. 
@@ -290,7 +288,7 @@ $$
 A\left(z, t^{\prime}\right)=A_{\mathrm{s}}\left(z, t^{\prime}\right)+u\left(z, t^{\prime}\right),
 $$
 
-where $A_s$ is the unperturbed $\operatorname{sech}^2$ soliton. It can be shown that the solution takes the form:
+where $A_s$ is the unperturbed sech-amplitude soliton. It can be shown that the solution takes the form:
 
 $$
 \tilde{u}(z, \omega)=\sum_{m=-\infty}^{\infty} \frac{\frac{1}{z_{\mathrm{a}}} \xi A_0 \pi \tau \operatorname{sech}\left(\frac{\pi}{2} \tau \omega\right)}{m k_{\mathrm{a}}-\frac{\left|k_n^{\prime \prime}\right|}{2}\left(\frac{1}{\tau^2}+\omega^2\right)} \mathrm{e}^{\mathrm{i}\left(m k_{\mathrm{a}}-\left|k_n^{\prime \prime}\right| / 2 \tau^2\right) z}.
@@ -304,7 +302,7 @@ $$
 |\tilde{u}(z, \omega)| \ll\left|\tilde{A}_{\mathrm{s}}(z, \omega)\right| \Longleftrightarrow z_{\mathrm{a}} \ll 8 z_0.
 $$
 
-This implies that if the periodic perturbations are spaced with a period $z_{\mathrm{a}} \ll 8 z_0$, no resonance effects will occur, and the perturbation can be treated as continuous. Since $z_0 \propto \tau^2$, shorter pulses require correspondingly shorter perturbation periods.  
+This implies that if the periodic perturbations are spaced with a period $z_{\mathrm{a}} \ll 8 z_0$, no resonance effects will occur, and the perturbation can be treated as continuous. Since $z_0 \sim \tau^2$, shorter pulses require correspondingly shorter perturbation periods.  
 
 ---
 ## 4.4 Self-Steepening
@@ -338,15 +336,15 @@ A critical shock distance is associated with this effect. For a 1 ps pulse, this
 ## 4.5 Nonlinear Propagation in a Saturable Absorber or Saturable Amplifier
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=197&selection=67,0,70,18|•]]
 
-For now, this chapter is somewhat isolated, but later it will become clear that the concepts discussed here are fundamental for understanding subsequent chapters, particularly passive mode-locking.
+For now, this section is somewhat isolated, but later it will become clear that the concepts discussed here are fundamental for understanding subsequent chapters, particularly [[Notes/Ultrafast Laser Physics/8 Passive Modelocking\|passive modelocking]].
 
 Let us consider a homogeneously broadened solid-state laser medium, which can be described by a two-level atomic system. The rate equations for such a system yield a saturable gain. The nonlinear gain coefficient for the amplitude is given by
 $$
-g=\frac{g_0}{1+I/I_{sat}},
+g=\frac{g_0}{1+I/I_\text{sat}},
 $$
-where $g_0$ is the small-signal gain, and $I_{sat}$ is the saturation intensity:
+where $g_0=(N_2-N_1)\sigma$ is the small-signal gain, and $I_\text{sat}$ is the saturation intensity:
 $$
-I_{sat}=\frac{\hbar\omega}{\sigma\tau_L}.
+I_\text{sat}=\frac{\hbar\omega}{\sigma\tau_L}.
 $$
 Here, $\sigma$ is the gain cross-section, and $\tau_L$ is the excited-state lifetime of the atoms. The gain cross-section is related to the amplitude gain coefficient per unit length by $g(z)=N/V \cdot \sigma$.
 
@@ -354,15 +352,15 @@ Here, $\sigma$ is the gain cross-section, and $\tau_L$ is the excited-state life
 
 All non-inverted atoms contribute in the form of a saturable absorber, a material whose absorption decreases with increasing light intensity. While many materials exhibit this behaviour, it is typically only significant at very high optical intensities. For laser pulse generation, we require saturable absorbers that exhibit this effect at intensities typical within laser cavities. The key parameters of such a material are:
 
-5. The wavelength range over which it absorbs.
-6. The dynamic response time, i.e. how fast it recovers.
-7. The saturation intensity and fluence, i.e. the intensity or pulse energy required for saturation.
+1. The wavelength range over which it absorbs.
+2. The dynamic response time, i.e. how fast it recovers.
+3. The saturation intensity and fluence, i.e. the intensity or pulse energy required for saturation.
 
 ![Attachments/UltraFastLasers_Keller 54.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2054.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=198&rect=128,482,312,608|•]]
 
 For the simplest case of a two-level atomic system, the amplitude absorption coefficient is given by
 $$
-\alpha=\frac{\alpha_0}{1+I/I_{sat}}.
+\alpha=\frac{\alpha_0}{1+I/I_\text{sat}}.
 $$
 Here, $\alpha_0$ is the unsaturated absorption coefficient, also referred to as the small-signal absorption coefficient for the amplitude. This equation makes it evident that a saturable absorber exhibits high absorption at low light intensities but low absorption at high light intensities. When the absorber is exposed to sufficiently high intensity, it is said to be saturated. Since the stimulated transition probabilities between states 1 and 2 are identical in both directions, the saturation intensity of an absorber is the same as that of an amplifier based on the same material.
 
@@ -380,6 +378,6 @@ This behaviour is illustrated in the following figure:
 
 ![Attachments/UltraFastLasers_Keller 55.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2055.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=202&rect=201,494,386,605|•]]
 
-If absorption or amplification were purely linear, such that $\alpha$ and $g$ were independent of intensity, then the pulse shape would remain unchanged during propagation, provided that the absorber or amplifier bandwidth was much broader than the spectral width of the pulse. However, since we are considering nonlinear effects, the pulse shape does change. For example, in a saturable amplifier, the leading edge of a pulse will experience greater gain saturation than the trailing edge, resulting in asymmetric amplification. This effect will be explored in greater detail later. In addition to modifying the pulse envelope, nonlinear propagation also affects the spectrum. Through the Kramers-Kronig relations, any intensity-dependent absorption or amplification is accompanied by an intensity-dependent refractive index.
+If absorption or amplification were purely linear, such that $\alpha$ and $g$ were independent of intensity, then the pulse shape would remain unchanged during propagation, provided that the absorber or amplifier bandwidth was much broader than the spectral width of the pulse. However, since we are considering nonlinear effects, the pulse shape does change. For example, in a saturable amplifier, the leading edge of a pulse experiences high, unsaturated gain. As it propagates, it depletes the stored energy, thus saturating the gain. Consequently, the trailing edge of the pulse experiences significantly less gain. This leads to asymmetric amplification, often shifting the pulse peak forward and steepening its leading edge. This effect will be explored in greater detail later. In addition to modifying the pulse envelope, nonlinear propagation also affects the spectrum. Through the [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.2 Kramers-Kronig Relations\|Kramers-Kronig relations]], any intensity-dependent absorption or amplification is accompanied by an intensity-dependent refractive index.
 
 ---
