@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/2-surface-plasmon-polaritons-at-metal-insulator-interfaces/","hide":"true","updated":"2025-03-14T18:24:13.000+01:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/2-surface-plasmon-polaritons-at-metal-insulator-interfaces/","hide":"true","updated":"2025-05-29T17:07:00.705+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -12,174 +12,157 @@ Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selectio
 - [[Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces#2.3 Multilayer Systems\|2.3 Multilayer Systems]]
 
 ---
-# 2 Surface Plasmon Polaritons at Metal-Insulator Interfaces 
+# 2 Surface Plasmon Polaritons at Metal-Insulator Interfaces
 [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=39&selection=2,0,3,20|•]]
 
 ## 2.1 The Wave Equation
 
-When an electromagnetic wave propagates in a material medium, the field polarises the medium and therefore excites a mechanical movement of charges. It follows that field and charges are coupled, and we call this coupled excitation a _polariton_. In the case of a metal, the field can couple to a longitudinal charge density wave that can be viewed as an acoustic wave in the electron gas. The resulting polariton is called _plasmon polariton_. 
-Surface plasmon polaritons are electromagnetic excitations propagating at the interface between a dielectric and a conductor, confined in the perpendicular direction. These electromagnetic surface waves arise via the coupling of the electromagnetic fields to oscillations of the conductor’s electron plasma. To investigate the physical properties of surface plasmon polaritons (SPPs), we apply Maxwell’s equations to the flat interface between a conductor and a dielectric. 
+When an electromagnetic wave propagates in a material medium, the field polarises the medium and therefore excites a mechanical movement of charges. It follows that field and charges are coupled, and we call this coupled excitation a _polariton_. In the case of a metal, the field can couple to a longitudinal charge density wave that can be viewed as an acoustic wave in the electron gas. The resulting polariton is called a _plasmon polariton_.
+Surface plasmon polaritons (SPPs) are electromagnetic excitations propagating at the interface between a dielectric and a conductor, confined in the perpendicular direction. These electromagnetic surface waves arise via the coupling of the electromagnetic fields to oscillations of the conductor’s electron plasma. To investigate the physical properties of SPPs, we apply Maxwell’s equations to the flat interface between a conductor and a dielectric.
 
-Considering the absence of external charge and current densities, and further assuming a negligible variation of the dielectric profile $\varepsilon = \varepsilon(r)$, we find the central equation of electromagnetic wave theory:
-
+Considering the absence of external charge and current densities ($\rho_f=0, \mathbf{J}_f=0$), and further assuming a negligible variation of the permeability (using $\mu_0$ for non-magnetic media), the wave equation for the electric field in a medium with dielectric function $\varepsilon_r(\mathbf{r},\omega)$ (which we will denote as $\varepsilon(\mathbf{r},\omega)$ for simplicity, remembering it's the relative permittivity) can be derived from Maxwell's curl equations:
+$$
+\nabla \times (\nabla \times \mathbf{E}) + \frac{1}{c^2} \frac{\partial^2 (\varepsilon \mathbf{E})}{\partial t^2} = 0.
+$$
+For a homogeneous medium where $\varepsilon$ is not a function of position, and using $\nabla \times (\nabla \times \mathbf{E}) = \nabla(\nabla \cdot \mathbf{E}) - \nabla^2 \mathbf{E}$, and $\nabla \cdot (\varepsilon \mathbf{E}) = \varepsilon \nabla \cdot \mathbf{E} = 0$ (assuming homogeneous $\varepsilon$ and no free charges leading to $\nabla \cdot \mathbf{E}=0$ for transverse waves, or that $\varepsilon$ is spatially constant for general case), this simplifies to:
 $$
 \nabla^2 \mathbf{E} - \frac{\varepsilon}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = 0.
 $$
 
-To cast this equation in a form suitable for describing confined propagating waves, we proceed in two steps. First, we assume in general a harmonic time dependence $\mathbf{E}(\mathbf{r}, t) = \mathbf{E}(\mathbf{r}) e^{-i \omega t}$ of the electric field, yielding:
+To cast this equation in a form suitable for describing confined propagating waves, we proceed in two steps. First, we assume a harmonic time dependence $\mathbf{E}(\mathbf{r}, t) = \mathbf{E}(\mathbf{r}) e^{-i \omega t}$ of the electric field, yielding:
 
 $$
-\nabla^2 \mathbf{E} + k_0^2 \varepsilon \mathbf{E} = 0,
+\nabla^2 \mathbf{E}(\mathbf{r}) + k_0^2 \varepsilon(\mathbf{r},\omega) \mathbf{E}(\mathbf{r}) = 0,
 $$
 
-where $k_0 = \frac{\omega}{c}$ is the wave vector of the propagating wave in vacuum. This equation is known as the Helmholtz equation.
+where $k_0 = \frac{\omega}{c}$ is the wave number of the propagating wave in vacuum. This equation is known as the Helmholtz equation.
 
-Next, we define the propagation geometry. We assume for simplicity a one-dimensional problem, such that $\varepsilon$ depends only on one spatial coordinate. Specifically, the waves propagate along the $x$-direction of a Cartesian coordinate system, showing no spatial variation in the perpendicular, in-plane $y$-direction; therefore $\varepsilon = \varepsilon(z)$:
+Next, we define the propagation geometry. We assume for simplicity a one-dimensional problem for the dielectric profile, such that $\varepsilon$ depends only on one spatial coordinate, $z$. Specifically, the waves propagate along the $x$-direction of a Cartesian coordinate system and show no spatial variation in the perpendicular, in-plane $y$-direction ($\partial/\partial y = 0$); therefore $\varepsilon = \varepsilon(z)$:
 
 ![Attachments/Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces/Plasmonics - Fundamentals and Applications 4.webp|700](/img/user/Attachments/Notes/Plasmonics/2%20Surface%20Plasmon%20Polaritons%20at%20Metal-Insulator%20Interfaces/Plasmonics%20-%20Fundamentals%20and%20Applications%204.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=40&rect=114,111,346,193|•]]
 
-Applied to electromagnetic surface problems, the plane $z=0$ coincides with the interface sustaining the propagating waves. The desired form of the wave equation is then:
+Applied to electromagnetic surface problems, the plane $z=0$ coincides with the interface sustaining the propagating waves. We look for solutions of the form $\mathbf{E}(x, y, z) = \mathbf{E}(z) e^{i \beta x}$. Substituting this into the Helmholtz equation, and noting that $\partial^2/\partial x^2 \rightarrow -\beta^2$ and $\partial^2/\partial y^2 \rightarrow 0$, we obtain:
 
 $$
-\frac{\partial^2 \mathbf{E}(z)}{\partial z^2} + \left(k_0^2 \varepsilon - \beta^2\right) \mathbf{E} = 0,
+\frac{\partial^2 \mathbf{E}(z)}{\partial z^2} + \left(k_0^2 \varepsilon(z) - \beta^2\right) \mathbf{E}(z) = 0,
 $$
 
-where the complex parameter $\beta = k_x$ is called the propagation constant, derived from $\mathbf{E}(x, y, z) = \mathbf{E}(z) e^{i \beta x}$. This equation serves as the starting point for the general analysis of guided electromagnetic modes in waveguides. To use the wave equation for determining the spatial field profile and dispersion of propagating waves, we need explicit expressions for the different field components of $\mathbf{E}$ and $\mathbf{H}$. Using the curl equations, it can be shown that this system allows two sets of self-consistent solutions with different polarisation properties of the propagating waves:
-1. The first set are the transverse magnetic (TM or p) modes, where only $E_x$, $E_z$, and $H_y$ are non-zero. 
-2. The second set are the transverse electric (TE or s) modes, where only $H_x$, $H_z$, and $E_y$ are non-zero.
+where the complex parameter $\beta = k_x$ is called the propagation constant. This equation serves as the starting point for the general analysis of guided electromagnetic modes. To use this wave equation for determining the spatial field profile and dispersion of propagating waves, we need explicit expressions for the different field components of $\mathbf{E}$ and $\mathbf{H}$. Using Maxwell's curl equations, it can be shown that this system allows two sets of self-consistent solutions with different polarisation properties of the propagating waves:
+1. The first set are the transverse magnetic (TM or p) modes, for which $H_x = H_z = E_y = 0$, so only $E_x$, $E_z$, and $H_y$ are non-zero.
+2. The second set are the transverse electric (TE or s) modes, for which $E_x = E_z = H_y = 0$, so only $H_x$, $H_z$, and $E_y$ are non-zero.
 
 ---
-## 2.2 Surface Plasmon Polaritons at a Single Interface 
+## 2.2 Surface Plasmon Polaritons at a Single Interface
 [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=43&selection=4,0,6,46|•]] [[Reading/Papers/Plasmonics/Theory of surface plasmons and surface-plasmon.pdf#page=9&selection=74,0,74,48|•]]
 
-The simplest geometry sustaining SPPs is that of a single, flat interface between a dielectric, non-absorbing half-space ($z > 0$) with positive real dielectric constant $\varepsilon_2$ and an adjacent conducting half-space ($z < 0$) described via a dielectric function $\varepsilon(\omega)$. The requirement of metallic character implies that $\mathfrak{Re}(\varepsilon(\omega)) < 0$, which is fulfilled at frequencies below the bulk plasmon frequency $\omega_p$. We seek propagating wave solutions confined to the interface, i.e., with evanescent decay in the perpendicular $z$-direction.
+The simplest geometry sustaining SPPs is that of a single, flat interface at $z=0$ between a dielectric, non-absorbing half-space ($z > 0$) with a positive real dielectric constant $\varepsilon_2$, and an adjacent conducting half-space ($z < 0$) described by a complex dielectric function $\varepsilon_1(\omega)$. The requirement of metallic character implies that $\mathfrak{Re}\{\varepsilon_1(\omega)\} < 0$, which is fulfilled at frequencies below the bulk plasma frequency $\omega_p$. We seek propagating wave solutions confined to the interface, so those with evanescent decay in the perpendicular $z$-direction.
 
 ![Attachments/Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces/Plasmonics - Fundamentals and Applications 5.webp|700](/img/user/Attachments/Notes/Plasmonics/2%20Surface%20Plasmon%20Polaritons%20at%20Metal-Insulator%20Interfaces/Plasmonics%20-%20Fundamentals%20and%20Applications%205.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=43&rect=111,97,331,206|•]]
 
-For **TM modes**, the equation
+Let the fields in medium $j$ (where $j=1$ for $z<0$ and $j=2$ for $z>0$) vary as $e^{i(\beta x - \omega t)}$. For confinement, the fields must decay away from the interface. We define decay constants $\kappa_j$ such that $\operatorname{Re}\{\kappa_j\} > 0$:
+- For $z<0$ (metal, medium 1): $\mathbf{E}_1(z) = \mathbf{E}_{01} e^{\kappa_1 z}$
+- For $z>0$ (dielectric, medium 2): $\mathbf{E}_2(z) = \mathbf{E}_{02} e^{-\kappa_2 z}$
 
+The decay constants $\kappa_j$ (often denoted $k_{zj}$ in other contexts, but chosen here as real positive for pure decay) are related to the propagation constant $\beta$ and the material properties by:
 $$
-\frac{k_2}{k_1} = -\frac{\varepsilon_2}{\varepsilon_1}
-$$
-
-must hold by continuity of the parallel components $H_y$ and $\varepsilon_i E_z$ at the interface. This is known as the ==**surface-plasmon condition**==. Note that from the boundary condition, it also follows continuity of the 2D wave vector. Confinement to the surface demands:
-
-$$
-\mathfrak{Re}(\varepsilon_1) < 0 \quad \text{if} \quad \varepsilon_2 > 0.
+\kappa_j^2 = \beta^2 - k_0^2 \varepsilon_j(\omega).
 $$
 
-Surface waves exist only at interfaces between materials with opposite signs of the real part of their dielectric permittivities, i.e., between a conductor and an insulator. One time-harmonic solution to the Maxwell equations is then
+For **TM modes** (components $E_x, E_z, H_y$), applying boundary conditions (continuity of tangential $E_x$ and tangential $H_y$) at $z=0$ leads to the dispersion relation for SPPs. Equivalently, continuity of $E_x$ and $D_z = \varepsilon_0 \varepsilon_j E_z$ can be used. The condition derived from these is:
 $$
-\mathbf{E}(\omega)=A\left(\hat{\mathbf{x}}-\frac{k_x}{k_z} \hat{\mathbf{z}}\right) \exp \left[i\left(k_z z+k_x x\right)\right]
+\frac{\kappa_1}{\varepsilon_1(\omega)} + \frac{\kappa_2}{\varepsilon_2} = 0.
 $$
-with the surface plasmon polariton (SPP) dispersion relation
+This is known as the ==surface-plasmon condition==. Since $\kappa_1$ and $\kappa_2$ must both be positive real numbers for a bound surface wave, this condition can only be satisfied if $\varepsilon_1(\omega)$ and $\varepsilon_2$ have opposite signs. Typically, $\varepsilon_2 > 0$ (dielectric), so we require $\mathfrak{Re}\{\varepsilon_1(\omega)\} < -\varepsilon_2 \frac{\kappa_1}{\kappa_2} < 0$. For a simple interface, this generally means $\mathfrak{Re}\{\varepsilon_1(\omega)\} < 0$.
+Surface waves exist only at interfaces between materials with opposite signs of the real part of their dielectric permittivities (so conductor and insulator).
 
+The SPP dispersion relation, expressing the in-plane propagation constant $\beta$ (often denoted $k_x$ or $k_{\text{SPP}}$) as a function of frequency, is found by substituting $\kappa_j^2 = \beta^2 - k_0^2 \varepsilon_j$ into the surface-plasmon condition:
 $$
-k_x(\omega) \equiv k_{\mathrm{SPP}}(\omega)=\beta=\frac{\omega}{c} \sqrt{\frac{\varepsilon_2 \varepsilon_1(\omega)}{\varepsilon_2+\varepsilon_1(\omega)}}.
+\beta(\omega) \equiv k_{\mathrm{SPP}}(\omega) = \frac{\omega}{c} \sqrt{\frac{\varepsilon_1(\omega) \varepsilon_2}{\varepsilon_1(\omega) + \varepsilon_2}}.
 $$
-This expression is valid for both real and complex $\varepsilon_1$, i.e., for conductors without and with attenuation. Note that $k_0 = \omega / c$. Further, we have
+This expression is valid for both real and complex $\varepsilon_1(\omega)$. The decay constants are then:
 $$
-k_z(\omega) =
-\begin{cases} 
-\frac{\omega}{c} \sqrt{ \frac{\varepsilon_2}{\varepsilon_2 + \varepsilon_1(\omega)} } &\text{for}\quad z > 0 \\[10pt]
-\frac{\omega}{c} \sqrt{  \frac{\varepsilon_1(\omega)}{\varepsilon_2 + \varepsilon_1(\omega)} } & \text{for}\quad z < 0.
-\end{cases}
+\kappa_1(\omega) = \frac{\omega}{c} \sqrt{\frac{-\varepsilon_1(\omega)^2}{\varepsilon_1(\omega) + \varepsilon_2}} \quad \text{and} \quad \kappa_2(\omega) = \frac{\omega}{c} \sqrt{\frac{-\varepsilon_2^2}{\varepsilon_1(\omega) + \varepsilon_2}}.
 $$
-For **TE modes**, continuity of $E_y$ and $H_x$ at the interface leads to the condition (where $E_y, H_x, H_z \sim A_1$):
+For these to represent decaying fields, $\mathfrak{Re}\{\kappa_1\} > 0$ and $\mathfrak{Re}\{\kappa_2\} > 0$ must hold.
 
+For **TE modes** (components $E_y, H_x, H_z$), continuity of $E_y$ and $H_x$ at the interface leads to the condition:
 $$
-A_1 (k_1 + k_2) = 0.
+\kappa_1 + \kappa_2 = 0.
 $$
+Since confinement to the surface requires $\mathfrak{Re}\{\kappa_1\} > 0$ and $\mathfrak{Re}\{\kappa_2\} > 0$, this condition cannot be satisfied unless the fields are identically zero. **Thus, no surface modes exist for TE polarisation at a simple planar interface between isotropic media. Surface plasmon polaritons only exist for TM polarisation.**
 
-Since confinement to the surface requires $\mathfrak{Re}(k_1) > 0$ and $\mathfrak{Re}(k_2) > 0$, this condition is only fulfilled if $A_1 = 0$, so that also $A_2 = A_1 = 0$. **Thus, no surface modes exist for TE polarisation. Surface plasmon polaritons only exist for TM polarisation.** Another way to see this is the following: Consider that the Lorentz force is given by
-$$
-\mathbf{F}=q\left(\mathbf{E}+\mathbf{v}\times\mathbf{B}\right).
-$$
-As becomes clear, the electric field $\mathbf{E}$ directly exerts a force on charges, causing them to oscillate. On the other hand, the magnetic field $\mathbf{B}$ only affects moving charges perpendicular to the charges velocity. Therefore, the magnetic field does not directly induce charge density oscillations. This then makes clear that the electric field must have a normal component of the electric field, since only then can it cause a charge oscillation. We are looking for a travelling wave with the magnetic field parallel to the surface - hence p-polarised light. 
+A qualitative argument for this is based on the Lorentz force $\mathbf{F}=q\left(\mathbf{E}+\mathbf{v}\times\mathbf{B}\right)$. The electric field $\mathbf{E}$ directly exerts a force on charges, causing them to oscillate. The magnetic field $\mathbf{B}$ only affects moving charges perpendicular to their velocity. For a surface charge oscillation (charges moving predominantly in the plane, creating out-of-plane density variations), an electric field component normal to the surface is necessary to drive this charge accumulation. This normal electric field component is characteristic of TM waves, not TE waves (where $\mathbf{E}$ is purely tangential to the interface and perpendicular to the propagation direction).
 
-The figure shows plots of the SPPs' dispersion relation for a metal with negligible damping described by the real Drude dielectric function for an interface between air ($\varepsilon_2 = 1$) and fused silica ($\varepsilon_2 = 2.25$). Due to their bound nature, the SPP excitations correspond to the part of the dispersion curves lying to the right of the respective light lines of air and silica. Radiation into the metal occurs in the transparency regime $\omega > \omega_p$ as mentioned earlier. Between the regime of bound and radiative modes, a frequency gap region with purely imaginary $\beta$ prohibiting propagation exists. The dashed line shows the imaginary part of $\beta$, while the solid line shows its real part.
+The figure below shows plots of the SPP dispersion relation for a metal (for example silver) with negligible damping (real Drude dielectric function $\varepsilon_1(\omega) = 1 - \omega_p^2/\omega^2$) interfaced with air ($\varepsilon_2 = 1$) and, for comparison, with fused silica ($\varepsilon_2 = 2.25$). Due to their bound nature, the SPP excitations correspond to the part of the dispersion curves lying to the right of the respective light lines ($\beta = k_0\sqrt{\varepsilon_2}$) of the dielectric media. Radiation into the metal occurs in its transparency regime $\omega > \omega_p$. Between the regime of bound and radiative modes, a frequency gap region with purely imaginary $\beta$ (prohibiting propagation) can exist for some parameter ranges (not typically for the simple Drude/dielectric interface).
 
 ![Attachments/Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces/Plasmonics - Fundamentals and Applications 6.webp|700](/img/user/Attachments/Notes/Plasmonics/2%20Surface%20Plasmon%20Polaritons%20at%20Metal-Insulator%20Interfaces/Plasmonics%20-%20Fundamentals%20and%20Applications%206.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=45&rect=76,418,370,614|•]]
+*(Caption Note: The dashed line in such plots typically shows the imaginary part of $\beta$ when damping is included, while the solid line shows its real part. The description above refers to an ideal, non-damped case first.)*
 
-**For small wave vectors**, corresponding to [[Notes/Plasmonics/6 Electromagnetic Surface Modes at Low Frequencies#Surface Plasmon Polaritons at THz Frequencies\|low frequencies]] (mid-IR or lower), the SPP propagation constant is close to $k_0$ at the light line, and the wavelengths extend over many wavelengths into the dielectric space. In this regime, SPPs acquire the nature of a grazing-incidence light field, also known as Sommerfeld-Zenneck waves. 
+**For small wave vectors** (low frequencies, so mid-IR or lower), the SPP propagation constant $\beta$ is close to $k_0\sqrt{\varepsilon_2}$ (the light line in the dielectric), and the fields extend many wavelengths into the dielectric. In this regime, SPPs acquire the nature of a grazing-incidence light field, also known as Sommerfeld-Zenneck waves.
 
-**For large wave vectors**, the frequency of the SPPs approaches the characteristic surface plasmon frequency:
-
+**For large wave vectors**, the frequency of the SPPs approaches the characteristic surface plasmon frequency $\omega_{\mathrm{sp}}$:
 $$
 \omega_{\mathrm{sp}} = \frac{\omega_{\mathrm{p}}}{\sqrt{1 + \varepsilon_2}}.
 $$
-Note that this is the solution to the equation $\varepsilon_1+\varepsilon_2=0.$ It is the ==**nonretarded surface-plasmon condition**==, e.g the surface-plasmon condition for $k_1=k_2=k$, and is valid as long as the phase velocity is much smaller than the speed of light. In the limit of negligible damping of the conduction electron oscillation, implying $\mathfrak{Im}\left(\varepsilon_1(\omega)\right) = 0$, the wave vector $\beta$ goes to infinity as the frequency approaches $\omega_{\mathrm{sp}}$, and the group velocity $v_{\mathrm{g}} \to 0$. The mode thus acquires an electrostatic character and is known as the ==**surface plasmon**==. This is because it can be obtained as a solution to the Laplace equation for a single interface geometry. It is wavelike in the $x$-direction and decays exponentially in the $z$-direction. We see that the surface plasmon is the limiting case of a SPP as $\beta\rightarrow\infty.$ 
+This is derived from the ==nonretarded surface-plasmon condition== $\varepsilon_1(\omega) + \varepsilon_2 = 0$, valid when the phase velocity $\omega/\beta$ is much smaller than $c/\sqrt{\varepsilon_2}$ (meaning $\beta \gg k_0\sqrt{\varepsilon_2}$). In the limit of negligible damping ($\mathfrak{Im}\{\varepsilon_1(\omega)\} \to 0$), the wave vector $\beta \to \infty$ as $\omega \to \omega_{\mathrm{sp}}$, and the group velocity $v_{\mathrm{g}} = d\omega/d\beta \to 0$. The mode then acquires an electrostatic character and is known as the ==surface plasmon==. It is a solution to Laplace's equation for the single interface geometry, wavelike in the $x$-direction and decaying exponentially in the $z$-direction. The surface plasmon is the limiting case of an SPP as $\beta\rightarrow\infty$.
 
-The above discussions have assumed an ideal conductor with no damping. Excitations of the conduction electrons in real metals, however, suffer from both free-electron and interband damping. Therefore, $\varepsilon_1(\omega)$ is complex, and the SPP propagation constant $\beta$ is also complex. The traveling SPPs are damped with an energy attenuation length, also called the propagation length, given by:
-
+The above discussions often assume an ideal conductor with no damping. Excitations of conduction electrons in real metals, however, suffer from damping (both free-electron scattering and interband transitions if applicable). Therefore, $\varepsilon_1(\omega)$ is complex, and the SPP propagation constant $\beta$ is also complex. The travelling SPPs are damped with a propagation length $L$ (energy attenuation length is $L/2$ if $L$ is defined for field amplitude) given by:
 $$
-L = \frac{1}{2 \cdot \mathfrak{Im}(\beta)},
+L = \frac{1}{2 \operatorname{Im}\{\beta\}},
 $$
+typically between $10 \, \mu \text{m}$ and $100 \, \mu \text{m}$ in the visible regime for noble metals.
 
-typically between $10 \, \mu \text{m}$ and $100 \, \mu \text{m}$ in the visible regime, depending on the metal/dielectric configuration.
-
-The next figure shows the dispersion relation of SPPs propagating at a silver/air and silver/silica interface. In comparison to the ideal case, the bound SPPs now approach a maximum, finite wave vector at the surface plasmon frequency of the system. This places a lower bound on both the wavelength $\lambda_{\text{sp}} = 2\pi / \mathfrak{Re}(\beta)$ of the surface plasmon and the amount of mode confinement perpendicular to the interface since the SPP fields in the dielectric fall off exponentially in $k_z$. The quasi-bound, leaky part of the dispersion between $\omega_p$ and $\omega_{\text{sp}}$ is now allowed compared to the case of an ideal conductor.
+The next figure shows the dispersion relation of SPPs propagating at a silver/air and silver/silica interface, including damping. In comparison to the ideal case, the bound SPPs now approach a maximum, finite wave vector near the surface plasmon frequency. This "bending back" of the dispersion curve places a lower bound on the SPP wavelength $\lambda_{\text{SPP}} = 2\pi / \operatorname{Re}\{\beta\}$ and limits the degree of mode confinement. The quasi-bound, leaky part of the dispersion (where SPPs can radiate into the dielectric if $\operatorname{Re}\{\beta\} < k_0\sqrt{\varepsilon_2}$) may also be considered.
 
 ![Attachments/Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces/Plasmonics - Fundamentals and Applications 7.webp|700](/img/user/Attachments/Notes/Plasmonics/2%20Surface%20Plasmon%20Polaritons%20at%20Metal-Insulator%20Interfaces/Plasmonics%20-%20Fundamentals%20and%20Applications%207.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=47&rect=78,421,367,609|•]]
 
-There is generally a characteristic trade-off between localisation and loss in plasmonics. Field confinement below the diffraction limit of half the wavelength in the dielectric can be achieved close to $\omega_{\text{sp}}$. In the metal itself, the field falls off over distances on the order of $20 \, \text{nm}$ over a wide frequency range.
+There is generally a characteristic trade-off between field localisation and propagation losses in plasmonics. Strong field confinement (small spatial extent perpendicular to the interface) is typically achieved near $\omega_{\mathrm{sp}}$, but this often coincides with higher losses (shorter propagation length $L$). In the metal itself, the field typically decays over distances on the order of the skin depth (roughly $20-50 \, \text{nm}$ for noble metals in the visible range).
 
-The next figure shows the spatial extension of the electromagnetic field associated with the surface-plasmon polariton:
+The spatial extension of the electromagnetic field associated with the surface-plasmon polariton is depicted below:
 
 ![Attachments/Theory of surface plasmons and surface-plasmon.webp|700](/img/user/Attachments/Theory%20of%20surface%20plasmons%20and%20surface-plasmon.webp)[[Reading/Papers/Plasmonics/Theory of surface plasmons and surface-plasmon.pdf#page=12&rect=152,670,408,750|•]]
 
-We obtain the surface-plasmon decay constant perpendicular to the surface:
-$$
-\kappa_i=k_0\sqrt\frac{-\varepsilon_i^2}{\varepsilon_1+\varepsilon_2}.
-$$
-Then, the attenuation length is the inverse of this decay constant. The attenuation length into the metal at long wavelengths $\beta\rightarrow0$ is given by the skin-depth. 
+The attenuation length into each medium $j$ (perpendicular to the surface) is $1/\operatorname{Re}\{\kappa_j\}$. For example, at frequencies far from $\omega_{sp}$ (long SPP wavelength limit, $\beta \approx k_0\sqrt{\varepsilon_2}$), the decay length into the dielectric can be very large, while the decay length into the metal is related to the skin depth.
 
 ---
-## 2.3 Multilayer Systems 
+## 2.3 Multilayer Systems
 [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=48&selection=7,0,9,18|•]]
 
-Let us now turn our attention to systems consisting of alternating conducting and dielectric thin films. Each single interface can sustain bound SPPs. When the separation between adjacent interfaces is comparable to or smaller than the decay length $\hat{z} = 1 / |k_z|$ of the interface mode, interaction between SPPs gives rise to coupled modes. 
+Let us now turn our attention to systems consisting of alternating conducting and dielectric thin films. Each single interface can sustain bound SPPs. When the separation between adjacent interfaces is comparable to or smaller than the decay length of the interface mode, interaction (coupling) between these SPPs gives rise to new coupled modes.
 
-Consider first a three-layer system:
-1. The insulator/metal/insulator (**IMI**) heterostructure: A thin metallic layer (I) is sandwiched between two (infinitely) thick dielectric claddings (II, III).
-2. The metal/insulator/metal (**MIM**) heterostructure: A thin dielectric core layer (I) is sandwiched between two metallic claddings (II, III).
+Consider first a three-layer system with a central layer of thickness $d$ (instead of $a$ for clarity):
+1. The insulator/metal/insulator (**IMI**) heterostructure: A thin metallic layer (medium 1, thickness $d$) is sandwiched between two (semi-infinitely thick) dielectric claddings (media 2 and 3).
+2. The metal/insulator/metal (**MIM**) heterostructure: A thin dielectric core layer (medium 1, thickness $d$) is sandwiched between two metallic claddings (media 2 and 3).
 
 ![Attachments/Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces/Plasmonics - Fundamentals and Applications 8.webp|700](/img/user/Attachments/Notes/Plasmonics/2%20Surface%20Plasmon%20Polaritons%20at%20Metal-Insulator%20Interfaces/Plasmonics%20-%20Fundamentals%20and%20Applications%208.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=48&rect=110,99,328,196|•]]
 
-We are only interested in the lowest-order bound modes and thus start with a general description of TM modes that are non-oscillatory in the $z$-direction normal to the interface. We demand that the fields decay exponentially in the claddings (II) and (III). Note that for $a \to \infty$, this problem reduces to the case of two uncoupled SPPs at the respective interface.
+We are interested in the lowest-order bound TM modes that are non-oscillatory (evanescent) in the $z$-direction normal to the interfaces within each layer and decay exponentially in the outer claddings. For $d \to \infty$, this problem reduces to two uncoupled SPPs at the respective interfaces.
 
-Now consider the sub- and superstrates (II) and (III) share the same dielectric response $\varepsilon_2 = \varepsilon_3$ and thus $k_2 = k_3$. For the dispersion relation, we find a pair of equations:
+Now consider the symmetric case where the claddings (media 2 and 3) share the same dielectric response, so $\varepsilon_2 = \varepsilon_3$, and thus $\kappa_2 = \kappa_3$. The dispersion relations for the coupled modes in such a symmetric three-layer structure (central layer $\varepsilon_1$, thickness $d$; claddings $\varepsilon_2$) are given by a pair of transcendental equations:
 
-$$
-\begin{aligned}
-\tanh k_1 a & = -\frac{k_2 \varepsilon_1}{k_1 \varepsilon_2}, &&
-\coth k_1 a = -\frac{k_1 \varepsilon_2}{k_2 \varepsilon_1}.
-\end{aligned}
-$$
+- For symmetric $H_y$ field profile; often termed antisymmetric or odd mode for $E_x$:
+	$$\tanh\left(\frac{\kappa_1 d}{2}\right) = -\frac{\kappa_2 \varepsilon_1}{\kappa_1 \varepsilon_2}$$
+- For antisymmetric $H_y$ field profile; often termed symmetric or even mode for $E_x$ or charge distribution): 
+	$$\coth\left(\frac{\kappa_1 d}{2}\right) = -\frac{\kappa_2 \varepsilon_1}{\kappa_1 \varepsilon_2}$$
 
-1. The first equation describes modes of odd vector parity: $E_x(z)$ is odd, while $H_y(z)$ and $E_z(z)$ are even functions.
-2. The second describes modes of even vector parity: $E_x(z)$ is even, while $H_y(z)$ and $E_z(z)$ are odd.
+Here $\kappa_1 = \sqrt{\beta^2 - k_0^2\varepsilon_1}$ and $\kappa_2 = \sqrt{\beta^2 - k_0^2\varepsilon_2}$. The parity refers to the symmetry of the dominant field component ($H_y$) or charge distribution with respect to the center of the middle layer. For example:
+1. The first equation (with $\tanh$) typically corresponds to modes where $H_y(z)$ is symmetric (even function) with respect to the center of layer 1, and $E_x(z)$ is antisymmetric (odd).
+2. The second equation (with $\coth$) typically corresponds to modes where $H_y(z)$ is antisymmetric (odd), and $E_x(z)$ is symmetric (even).
 
-For the **IMI geometry**, we have $\varepsilon_1 = \varepsilon(\omega)$ for the metal and $\varepsilon_2$ is positive and real for the insulating cladding. For example, consider the case of air/silver/air with two different thicknesses (50 nm in dashed black and 100 nm in dashed gray) of the silver film:
+For the **IMI geometry**, we have $\varepsilon_1 = \varepsilon_{\text{metal}}(\omega)$ for the metal film and $\varepsilon_2 > 0$ (real) for the insulating claddings. For example, consider the case of air/silver/air with two different thicknesses of the silver film:
 
 ![Attachments/Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces/Plasmonics - Fundamentals and Applications 9.webp|700](/img/user/Attachments/Notes/Plasmonics/2%20Surface%20Plasmon%20Polaritons%20at%20Metal-Insulator%20Interfaces/Plasmonics%20-%20Fundamentals%20and%20Applications%209.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=50&rect=91,119,345,290|•]]
 
-For simplicity, the dielectric function of silver is approximated as a Drude metal with negligible damping, meaning $\varepsilon(\omega)$ is real so that $\mathfrak{Im}\left[\beta\right] = 0$. As shown, the odd modes have frequencies $\omega_{+}$ higher than the respective frequencies for a single-interface SPP, while the even modes have lower frequencies $\omega_{-}$. For large wave vectors $\beta$, achievable only if $\mathfrak{Im}\left[\varepsilon(\omega)\right] = 0$, the limiting frequencies are
-$$
-\begin{aligned}
-\omega_{\pm} &= \frac{\omega_{\mathrm{p}}}{\sqrt{1 + \varepsilon_2}} \cdot\sqrt{1 \pm \frac{2 \varepsilon_2 e^{-2 \beta a}}{1 + \varepsilon_2}}.
-\end{aligned}
-$$
-Odd modes have the interesting property that as the metal film thickness decreases, the confinement of the coupled SPP to the metal film decreases, evolving into a plane wave supported by the homogeneous dielectric environment. For real, absorptive metals described by a complex $\varepsilon(\omega)$, this implies a drastically increased SPP propagation length. These are known as _long-ranging SPPs_ and will be discussed in a later chapter. Even modes exhibit the opposite behavior: their confinement to the metal increases with decreasing metal film thickness, resulting in reduced propagation length.
+For simplicity, if the dielectric function of silver is approximated as a Drude metal with negligible damping, $\varepsilon_1(\omega)$ is real, leading to $\operatorname{Im}\{\beta\} = 0$ for these bound modes. As shown in typical dispersion diagrams, the coupling of SPPs from the two interfaces of the metal film splits the original single-interface SPP dispersion into two branches: a lower-frequency (or lower-energy) symmetric mode (often denoted $\omega_-$ or $s_b$, corresponding to the $\tanh$ or $\coth$ solution depending on field component parity definition) and a higher-frequency (or higher-energy) antisymmetric mode ($\omega_+$ or $a_b$). For large wave vectors $\beta$, achievable with negligible damping, the limiting frequencies $\omega_{\pm}$ approach modified surface plasmon resonance frequencies influenced by the coupling and film thickness $d$.
+The mode corresponding to an antisymmetric $H_y$ profile (symmetric $E_x$) has the interesting property that as the metal film thickness $d$ decreases, its effective index can decrease, and its fields can extend further into the dielectric. For real, absorptive metals, this can lead to a significantly increased SPP propagation length for very thin films; these are known as _long-ranging SPPs_ (LRSPPs). The mode with symmetric $H_y$ (antisymmetric $E_x$) typically exhibits increased confinement to the metal as $d$ decreases, resulting in reduced propagation length (_short-ranging SPPs_).
 
-In the **MIM geometry**, the most interesting mode is the fundamental odd mode of the system, which does not exhibit a cut-off for vanishing core layer thickness:
+In the **MIM geometry** (metal/insulator/metal, so $\varepsilon_1$ is dielectric, $\varepsilon_2$ is metal), one of the most interesting modes is the fundamental TM mode (often symmetric $E_x$, antisymmetric $H_y$), which can guide light with very high confinement in a thin dielectric gap and does not exhibit a cut-off frequency for vanishing core layer thickness $d$:
 
 ![Attachments/Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces/Plasmonics - Fundamentals and Applications 10.webp|700](/img/user/Attachments/Notes/Plasmonics/2%20Surface%20Plasmon%20Polaritons%20at%20Metal-Insulator%20Interfaces/Plasmonics%20-%20Fundamentals%20and%20Applications%2010.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=52&rect=93,446,348,610|•]]
 
-The dielectric function was taken as a complex fit, so the propagation constant $\beta$ does not go to infinity as the surface plasmon frequency is approached. Instead, it folds back and eventually crosses the light line, similar to SPPs at single interfaces. 
+If the dielectric function of the metal is taken as complex (including damping), the propagation constant $\beta$ does not go to infinity as a non-retarded surface plasmon frequency is approached. Instead, it exhibits bending and loss features.
+Large propagation constants (and thus strong field confinement and short wavelengths) can be achieved for MIM gap SPPs even for excitation frequencies well below $\omega_{\mathrm{sp}}$ of a single interface, provided that the dielectric core is sufficiently thin. This indicates that strong localisation effects, typically associated with frequencies near $\omega_{\mathrm{sp}}$ for a single interface, can also be attained at lower frequencies (so infrared) in MIM structures.
 
-Large propagation constants can be achieved even for excitations well below $\omega_{\text{sp}}$, provided that the dielectric core is sufficiently thin. This indicates that localisation effects achievable near $\omega_{\text{sp}}$ for a single interface can also be attained for excitations in the infrared for MIM structures.
-
-Note that this discussion was limited to the fundamental bound modes. In IMI structures, there are leaky modes, while in MIM structures, oscillatory modes can exist. Additionally, the coupling between SPPs at the core/cladding interface changes significantly if $\varepsilon_2 \neq \varepsilon_3$, prohibiting phase matching.
+Note that this discussion has primarily focused on the fundamental bound modes. IMI structures can also support leaky (radiative) modes, while MIM structures can support higher-order guided modes if the dielectric core is thick enough. Additionally, if the cladding dielectrics are different ($\varepsilon_2 \neq \varepsilon_3$), the system becomes asymmetric, and the mode properties and dispersion relations change, generally prohibiting simple phase matching with external plane waves without specific coupling mechanisms.
 
 ---
