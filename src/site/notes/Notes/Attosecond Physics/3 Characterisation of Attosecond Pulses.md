@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/3-characterisation-of-attosecond-pulses/","hide":"true","updated":"2025-05-22T11:31:25.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/3-characterisation-of-attosecond-pulses/","hide":"true","updated":"2025-05-29T17:30:39.085+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -203,7 +203,7 @@ A crucial point to note is that while the phase term, $\phi(t)$, depends on the 
 
 **Streaking Trace and Pulse Reconstruction**
 
-As outlined in your provided text, by employing the central momentum approximation and assuming a slowly varying dipole matrix element, the expression for the streaking trace, $S(p, t_d)$, can be manipulated to resemble the form of a FROG trace:
+By employing the central momentum approximation and assuming a slowly varying dipole matrix element, the expression for the streaking trace, $S(p, t_d)$, can be manipulated to resemble the form of a FROG trace:
 
 $$
 S\left(E, t_d\right) \approx\left|\int_{-\infty}^{\infty} \chi\left(t-t_d\right) G(t) e^{i E t} d t\right|^2

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/5-localised-surface-plasmons/","hide":"true","updated":"2025-05-29T17:27:59.831+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/5-localised-surface-plasmons/","hide":"true","updated":"2025-05-29T18:15:47.049+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -150,7 +150,7 @@ Using the simple approximation of an array of interacting point dipoles, the dir
     - For incident light polarised transverse to the chain axis (upper part of figure), the dipoles are oriented side-by-side. The field from neighbouring dipoles tends to oppose the polarisation in a given particle, effectively increasing the restoring force and leading to a blue-shift of the collective plasmon resonance.
     - For incident light polarised longitudinally* along the chain axis (lower part of figure), the dipoles are oriented head-to-tail. The field from neighbouring dipoles tends to aid the polarisation in a given particle, effectively decreasing the restoring force and leading to a red-shift of the collective plasmon resonance.
 
-The next figure might show the plasmon resonance peak for a chain of closely spaced gold nanoparticles as a function of the interparticle spacing, illustrating these shifts. The dotted lines would show the $d^{-3}$ dependence expected from a point-dipole near-field coupling model.
+The next figure shows the plasmon resonance peak for a chain of closely spaced gold nanoparticles as a function of the interparticle spacing, illustrating these shifts. The dotted lines would show the $d^{-3}$ dependence expected from a point-dipole near-field coupling model.
 
 ![Attachments/Plasmonics - Fundamentals and Applications 21.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2021.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=100&rect=227,489,363,601|•]]
 
@@ -176,7 +176,7 @@ $$
 $$
 This condition differs from that of a metallic nanoparticle in a dielectric medium ($\mathfrak{Re}\left[\varepsilon(\omega)\right] = -2\varepsilon_m$).
 
-Metallic nanoshells, consisting of a dielectric core (e.g., silica, radius $r_1$) coated with a thin metallic shell (e.g., gold, outer radius $r_2$), offer more complex and tunable plasmon resonances. The interaction between the plasmon mode of the inner surface (void plasmon at the core/metal interface) and the outer surface (nanoparticle plasmon at the metal/surrounding medium interface) leads to hybridised plasmon modes. The resonance frequencies of these hybridised modes strongly depend on the ratio of the core radius to the shell thickness. This extra degree of freedom allows for significant tuning of the plasmon resonance, often into the near-infrared region of the spectrum, and can also lead to narrower plasmon linewidths compared to solid nanoparticles of similar overall size. These tunable properties make nanoshells promising for applications such as biomedical imaging, photothermal therapy, and refractive index sensing.
+Metallic nanoshells, consisting of a dielectric core (for example silica, radius $r_1$) coated with a thin metallic shell (for example gold, outer radius $r_2$), offer more complex and tunable plasmon resonances. The interaction between the plasmon mode of the inner surface (void plasmon at the core/metal interface) and the outer surface (nanoparticle plasmon at the metal/surrounding medium interface) leads to hybridised plasmon modes. The resonance frequencies of these hybridised modes strongly depend on the ratio of the core radius to the shell thickness. This extra degree of freedom allows for significant tuning of the plasmon resonance, often into the near-infrared region of the spectrum, and can also lead to narrower plasmon linewidths compared to solid nanoparticles of similar overall size. These tunable properties make nanoshells promising for applications such as biomedical imaging, photothermal therapy, and refractive index sensing.
 
 While the above examples are three-dimensional, essentially two-dimensional structures like holes or arrays of holes (nanovoids) in thin metallic films can also support localised plasmon modes, often related to Babinet's principle when compared to nanoparticle arrays.
 

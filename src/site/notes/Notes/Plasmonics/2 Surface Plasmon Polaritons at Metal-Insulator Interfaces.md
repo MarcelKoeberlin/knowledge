@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/2-surface-plasmon-polaritons-at-metal-insulator-interfaces/","hide":"true","updated":"2025-05-29T17:07:00.705+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/2-surface-plasmon-polaritons-at-metal-insulator-interfaces/","hide":"true","updated":"2025-05-29T18:08:06.585+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -96,7 +96,6 @@ A qualitative argument for this is based on the Lorentz force $\mathbf{F}=q\left
 The figure below shows plots of the SPP dispersion relation for a metal (for example silver) with negligible damping (real Drude dielectric function $\varepsilon_1(\omega) = 1 - \omega_p^2/\omega^2$) interfaced with air ($\varepsilon_2 = 1$) and, for comparison, with fused silica ($\varepsilon_2 = 2.25$). Due to their bound nature, the SPP excitations correspond to the part of the dispersion curves lying to the right of the respective light lines ($\beta = k_0\sqrt{\varepsilon_2}$) of the dielectric media. Radiation into the metal occurs in its transparency regime $\omega > \omega_p$. Between the regime of bound and radiative modes, a frequency gap region with purely imaginary $\beta$ (prohibiting propagation) can exist for some parameter ranges (not typically for the simple Drude/dielectric interface).
 
 ![Attachments/Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces/Plasmonics - Fundamentals and Applications 6.webp|700](/img/user/Attachments/Notes/Plasmonics/2%20Surface%20Plasmon%20Polaritons%20at%20Metal-Insulator%20Interfaces/Plasmonics%20-%20Fundamentals%20and%20Applications%206.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=45&rect=76,418,370,614|•]]
-*(Caption Note: The dashed line in such plots typically shows the imaginary part of $\beta$ when damping is included, while the solid line shows its real part. The description above refers to an ideal, non-damped case first.)*
 
 **For small wave vectors** (low frequencies, so mid-IR or lower), the SPP propagation constant $\beta$ is close to $k_0\sqrt{\varepsilon_2}$ (the light line in the dielectric), and the fields extend many wavelengths into the dielectric. In this regime, SPPs acquire the nature of a grazing-incidence light field, also known as Sommerfeld-Zenneck waves.
 
@@ -122,7 +121,7 @@ The spatial extension of the electromagnetic field associated with the surface-p
 
 ![Attachments/Theory of surface plasmons and surface-plasmon.webp|700](/img/user/Attachments/Theory%20of%20surface%20plasmons%20and%20surface-plasmon.webp)[[Reading/Papers/Plasmonics/Theory of surface plasmons and surface-plasmon.pdf#page=12&rect=152,670,408,750|•]]
 
-The attenuation length into each medium $j$ (perpendicular to the surface) is $1/\operatorname{Re}\{\kappa_j\}$. For example, at frequencies far from $\omega_{sp}$ (long SPP wavelength limit, $\beta \approx k_0\sqrt{\varepsilon_2}$), the decay length into the dielectric can be very large, while the decay length into the metal is related to the skin depth.
+The attenuation length into each medium $j$ (perpendicular to the surface) is $1/\operatorname{Re}\{\kappa_j\}.$ For example, at frequencies far from $\omega_{sp}$ (long SPP wavelength limit, $\beta \approx k_0\sqrt{\varepsilon_2}$), the decay length into the dielectric can be very large, while the decay length into the metal is related to the skin depth.
 
 ---
 ## 2.3 Multilayer Systems
@@ -130,7 +129,7 @@ The attenuation length into each medium $j$ (perpendicular to the surface) is $1
 
 Let us now turn our attention to systems consisting of alternating conducting and dielectric thin films. Each single interface can sustain bound SPPs. When the separation between adjacent interfaces is comparable to or smaller than the decay length of the interface mode, interaction (coupling) between these SPPs gives rise to new coupled modes.
 
-Consider first a three-layer system with a central layer of thickness $d$ (instead of $a$ for clarity):
+Consider first a three-layer system with a central layer of thickness $d$: 
 1. The insulator/metal/insulator (**IMI**) heterostructure: A thin metallic layer (medium 1, thickness $d$) is sandwiched between two (semi-infinitely thick) dielectric claddings (media 2 and 3).
 2. The metal/insulator/metal (**MIM**) heterostructure: A thin dielectric core layer (medium 1, thickness $d$) is sandwiched between two metallic claddings (media 2 and 3).
 
@@ -138,7 +137,7 @@ Consider first a three-layer system with a central layer of thickness $d$ (inste
 
 We are interested in the lowest-order bound TM modes that are non-oscillatory (evanescent) in the $z$-direction normal to the interfaces within each layer and decay exponentially in the outer claddings. For $d \to \infty$, this problem reduces to two uncoupled SPPs at the respective interfaces.
 
-Now consider the symmetric case where the claddings (media 2 and 3) share the same dielectric response, so $\varepsilon_2 = \varepsilon_3$, and thus $\kappa_2 = \kappa_3$. The dispersion relations for the coupled modes in such a symmetric three-layer structure (central layer $\varepsilon_1$, thickness $d$; claddings $\varepsilon_2$) are given by a pair of transcendental equations:
+Now consider the symmetric case where the claddings (media 2 and 3) share the same dielectric response, so $\varepsilon_2 = \varepsilon_3$, and thus $\kappa_2 = \kappa_3$. The dispersion relations for the coupled modes in such a symmetric three-layer structure (central layer $\varepsilon_1$, thickness $d,$ claddings $\varepsilon_2$) are given by a pair of transcendental equations:
 
 - For symmetric $H_y$ field profile; often termed antisymmetric or odd mode for $E_x$:
 	$$\tanh\left(\frac{\kappa_1 d}{2}\right) = -\frac{\kappa_2 \varepsilon_1}{\kappa_1 \varepsilon_2}$$
@@ -153,7 +152,7 @@ For the **IMI geometry**, we have $\varepsilon_1 = \varepsilon_{\text{metal}}(\o
 
 ![Attachments/Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces/Plasmonics - Fundamentals and Applications 9.webp|700](/img/user/Attachments/Notes/Plasmonics/2%20Surface%20Plasmon%20Polaritons%20at%20Metal-Insulator%20Interfaces/Plasmonics%20-%20Fundamentals%20and%20Applications%209.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=50&rect=91,119,345,290|•]]
 
-For simplicity, if the dielectric function of silver is approximated as a Drude metal with negligible damping, $\varepsilon_1(\omega)$ is real, leading to $\operatorname{Im}\{\beta\} = 0$ for these bound modes. As shown in typical dispersion diagrams, the coupling of SPPs from the two interfaces of the metal film splits the original single-interface SPP dispersion into two branches: a lower-frequency (or lower-energy) symmetric mode (often denoted $\omega_-$ or $s_b$, corresponding to the $\tanh$ or $\coth$ solution depending on field component parity definition) and a higher-frequency (or higher-energy) antisymmetric mode ($\omega_+$ or $a_b$). For large wave vectors $\beta$, achievable with negligible damping, the limiting frequencies $\omega_{\pm}$ approach modified surface plasmon resonance frequencies influenced by the coupling and film thickness $d$.
+For simplicity, if the dielectric function of silver is approximated as a Drude metal with negligible damping, $\varepsilon_1(\omega)$ is real, leading to $\operatorname{Im}\{\beta\} = 0$ for these bound modes. The coupling of SPPs from the two interfaces of the metal film splits the original single-interface SPP dispersion into two branches: a lower-frequency (or lower-energy) symmetric mode, and a higher-frequency (or higher-energy) antisymmetric mode. For large wave vectors $\beta$, achievable with negligible damping, the limiting frequencies $\omega_{\pm}$ approach modified surface plasmon resonance frequencies influenced by the coupling and film thickness $d$.
 The mode corresponding to an antisymmetric $H_y$ profile (symmetric $E_x$) has the interesting property that as the metal film thickness $d$ decreases, its effective index can decrease, and its fields can extend further into the dielectric. For real, absorptive metals, this can lead to a significantly increased SPP propagation length for very thin films; these are known as _long-ranging SPPs_ (LRSPPs). The mode with symmetric $H_y$ (antisymmetric $E_x$) typically exhibits increased confinement to the metal as $d$ decreases, resulting in reduced propagation length (_short-ranging SPPs_).
 
 In the **MIM geometry** (metal/insulator/metal, so $\varepsilon_1$ is dielectric, $\varepsilon_2$ is metal), one of the most interesting modes is the fundamental TM mode (often symmetric $E_x$, antisymmetric $H_y$), which can guide light with very high confinement in a thin dielectric gap and does not exhibit a cut-off frequency for vanishing core layer thickness $d$:
