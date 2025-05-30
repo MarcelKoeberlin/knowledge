@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/1-plane-wave-propagation-in-dispersive-media/","hide":"true","updated":"2025-05-28T10:45:25.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/1-plane-wave-propagation-in-dispersive-media/","hide":"true","updated":"2025-05-30T10:04:07.166+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -7,21 +7,21 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 **Table of Contents**
 
-- [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.1 Maxwell Equations\|1.1 Maxwell Equations]]
-- [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.2 Material Equations\|1.2 Material Equations]]
-- [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.3 Wave Equation with Refractive Index\|1.3 Wave Equation with Refractive Index]]
-- [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.4 TEM Wave and Impedance\|1.4 TEM Wave and Impedance]]
-- [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.5 Polarisation\|1.5 Polarisation]]
-- [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.6 Energy Density, Poynting Vector, and Intensity\|1.6 Energy Density, Poynting Vector, and Intensity]]
-- [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.7 Dispersion\|1.7 Dispersion]]
-- [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.8 Sellmeier Equation in the Visible and Near-Infrared\|1.8 Sellmeier Equation in the Visible and Near-Infrared]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.1 Maxwell Equations\|1.1 Maxwell Equations]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.2 Material Equations\|1.2 Material Equations]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.3 Wave Equation with Refractive Index\|1.3 Wave Equation with Refractive Index]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.4 TEM Wave and Impedance\|1.4 TEM Wave and Impedance]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.5 Polarisation\|1.5 Polarisation]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.6 Energy Density, Poynting Vector, and Intensity\|1.6 Energy Density, Poynting Vector, and Intensity]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.7 Dispersion\|1.7 Dispersion]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.8 Sellmeier Equation in the Visible and Near-Infrared\|1.8 Sellmeier Equation in the Visible and Near-Infrared]]
 
 ---
 # 1 Plane Wave Propagation in Dispersive Media
 
 We will now begin with the description of the simplest type of electromagnetic field: The plane wave, and we will consider its propagation in a dispersive medium. For that, we require the Maxwell equations. Note however, that we will not derive them, as it is assumed the reader is already somewhat familiar with them. The following two sections on the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.1 Maxwell Equations\|Maxwell equations]] and the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.2 Material Equations\|material equations]] are also treated in a similar way in my [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.2 Maxwell's Equations in a Medium\|quantum electronics notes]].
 ## 1.1 Maxwell Equations
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=21&selection=3,0,5,31|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=21&selection=3,0,5,31| ]]
 
 In this chapter, the Maxwell equations will be discussed in SI units, which is important because it incorporates the influence of bound charges and bound current into the displacement field $\mathbf{D}$ and the magnetising field $\mathbf{H}$. Then, the equations only depend on the free charge density $\rho_\text{f}$, and the free current density $\mathbf{j}_\text{f}$. Free could mean electrons in the conduction band of a metal or a semiconductor, in contrast to the core or bonding electrons. The Maxwell Equations in matter are then
 
