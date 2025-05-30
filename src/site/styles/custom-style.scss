@@ -1,5 +1,6 @@
 body.theme-dark {
   --text-accent: #006f8b;
+  --internal-link: #f13900;
   --text-accent-hover: #ff8f00;
   --interactive-accent: #006f8b;
   --h1-color: var(--interactive-accent);
@@ -7,10 +8,60 @@ body.theme-dark {
 
 body.theme-light {
   --text-accent: #004d61;
-  --text-accent-hover: #ff3c00;
+  --internal-link: #ff8f00;
+  --text-accent-hover: #f13900;
   --interactive-accent: #004d61;
   --h1-color: var(--interactive-accent);
 }
+
+.markdown-rendered .internal-link {
+  cursor: var(--cursor-link);
+  color: var(--internal-link);
+  /* position: relative; // Still potentially useful for more complex ::after positioning if needed */
+    text-decoration-line: none; /* Optional: Removes default underline if any */
+  /* Add a transition for smoother effect changes */
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.markdown-rendered .internal-link::after { /* Changed from ::before to ::after */
+  content: ""; /* Creates the pseudo-element */
+  display: inline-block; /* Allows setting dimensions and treats it like an inline element */
+  width: 0.25em;  /* Defines the width of the point (relative to font size) */
+  height: 0.25em; /* Defines the height of the point */
+  background-color: currentColor; /* Sets the point's color to the link's current text color */
+  border-radius: 50%; /* Makes the element circular */
+  //margin-left: 6px; /* Changed from margin-right to add space before the icon (now on the right) */
+  vertical-align: text-top; /* Aligns the point vertically with the middle of the text */
+}
+
+.markdown-rendered .internal-link:hover {
+  /* 1. Adjust Text Colour on Hover */
+  color: var(--text-accent-hover); /* Uses your theme's accent hover colour (which is orange) */
+  /* Or, specify a custom colour, for example, a slightly lighter orange: */
+  /* color: #ffaa33; */
+  /* Or, to keep it the same orange as the default state: */
+  /* color: #f13900; */
+
+  /* 2. Adjust Underline on Hover */
+  text-decoration-line: underline; /* Ensures an underline appears on hover */
+  
+  /* To change the underline style: */
+  text-decoration-style: double; /* Options: solid, wavy, dotted, dashed, double */
+  /* text-decoration-style: solid; */ /* For a standard solid underline */
+
+  /* To change the underline colour: */
+  text-decoration-color: var(--text-accent-hover); /* Matches the hover text colour */
+  /* Or, a custom colour for the underline: */
+  /* text-decoration-color: #006f8b; */ /* Example: your dark theme accent */
+
+  /* To remove the underline completely on hover: */
+  /* text-decoration-line: none; */
+  text-decoration-thickness: 1.3px;
+}
+
+
+
+
 
 body {
   --graph-main: var(--text-accent-hover);
@@ -290,16 +341,16 @@ body {
       display: none !important;
     }
 
-    h1::before {
-      content: " ";
-      display: block;
-      width: 100%;
-      height: 3em;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/logo.svg);
-      background-position: center;
-    }
+    //h1::before {
+     // content: " ";
+      //display: block;
+      //width: 100%;
+      //height: 3em;
+      //background-size: contain;
+      //background-repeat: no-repeat;
+      //background-image: url(/img/logo.svg);
+      //background-position: center;
+    //}
   }
 
   nav.toc {
@@ -371,9 +422,9 @@ body {
 
   #floating-control {
     position: fixed;
-    color: var(--link-color);
+    color: var(--text-accent-hover);
     bottom: 5px;
-    right: 20px;
+    right: 20px;  
     font-size: 24px;
     z-index: 999999;
     display: flex;
@@ -1013,3 +1064,67 @@ img {
   }
 }
 
+/* Add this new block to your SCSS to override hover effects on headers */
+.cm-s-obsidian > h1[id],
+.cm-s-obsidian > h2[id],
+.cm-s-obsidian > h3[id],
+.cm-s-obsidian > h4[id],
+.cm-s-obsidian > h5[id],
+.cm-s-obsidian > h6[id] {
+  cursor: auto; /* Resets cursor to default, so it doesn't look like a link */
+
+  &:hover {
+    border: none; /* Removes the dotted border on hover */
+    margin-left: 0; /* Resets the left margin expansion */
+    margin-right: 0; /* Resets the right margin expansion */
+    padding: 0; /* Resets the added padding */
+    /* If background changes or other effects appear, reset them here too, for example: */
+    /* background-color: transparent; */
+  }
+
+  &:hover::before {
+    content: none; /* Prevents the "Double-click to copy link" text from appearing */
+  }
+}
+
+body .cm-s-obsidian ol li::before {
+  counter-increment: foobar;
+  content: counter(foobar) ")";
+  font-size: unset;
+  position: absolute;
+  margin-left: -1.5rem;
+  font-family: "Karla";
+  font-variant-ligatures: common-ligatures;
+}
+
+ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
+  color: var(--internal-link);
+  font-size: unset;
+  font-family: "Karla";
+}
+
+.external-link {
+  background-position-y: 4px;
+  color: var(--internal-link);
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: var(--link-external-filter);
+  padding-right: 16px;
+  cursor: var(--cursor-link);
+  text-decoration-line: var(--link-external-decoration);
+  background-position: center right;
+  background-size: 13px;
+}
+
+
+.external-link::after {
+  content: "";
+  height: 0.25em;
+  width: 0.25em;
+  background: var(--internal-link);
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: -16px;
+  margin-left: 4px;
+}
