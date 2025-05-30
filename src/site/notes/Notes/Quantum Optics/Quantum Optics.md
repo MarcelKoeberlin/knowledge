@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Quantum Optics","permalink":"/notes/quantum-optics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-02-07T10:58:47.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Quantum Optics","permalink":"/notes/quantum-optics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-05-30T15:22:46.825+02:00"}
 ---
 
 This content follows mainly the lecture notes from Prof. Home as taught in the fall semester of 2020/21, but also includes some elements Prof. Imamoglu's course taught in the fall semester of 2022/23.
@@ -11,8 +11,8 @@ Quantum optics brings together two major areas of physics: the study of light an
 
 ---
 # Table of Contents
-- [[Notes/Quantum Optics/1 Quantisation of the Electromagnetic Field\|1 Quantisation of the Electromagnetic Field]]
-- [[Notes/Quantum Optics/2 Quantum States of the Field\|2 Quantum States of the Field]]
+[[Notes/Quantum Optics/1 Quantisation of the Electromagnetic Field\|1 Quantisation of the Electromagnetic Field]]
+[[Notes/Quantum Optics/2 Quantum States of the Field\|2 Quantum States of the Field]]
 
 ---
 

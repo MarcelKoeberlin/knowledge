@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/4-continuous-time-fourier-transform/","hide":"true","updated":"2025-05-29T15:00:04.169+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/4-continuous-time-fourier-transform/","hide":"true","updated":"2025-05-30T15:24:16.998+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -7,15 +7,15 @@ Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents
 ---
 **Table of Contents**
 
-- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform\|4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform]]
-- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.2 Convergence of Fourier Transforms\|4.2 Convergence of Fourier Transforms]]
-- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.3 Properties of the Continuous-Time Fourier Transform\|4.3 Properties of the Continuous-Time Fourier Transform]]
-- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.4 Basic Fourier Transform Pairs\|4.4 Basic Fourier Transform Pairs]]
-- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.5 Systems Characterised by Linear Constant-Coefficient Differential Equations\|4.5 Systems Characterised by Linear Constant-Coefficient Differential Equations]]
+[[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform\|4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform]]
+[[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.2 Convergence of Fourier Transforms\|4.2 Convergence of Fourier Transforms]]
+[[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.3 Properties of the Continuous-Time Fourier Transform\|4.3 Properties of the Continuous-Time Fourier Transform]]
+[[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.4 Basic Fourier Transform Pairs\|4.4 Basic Fourier Transform Pairs]]
+[[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.5 Systems Characterised by Linear Constant-Coefficient Differential Equations\|4.5 Systems Characterised by Linear Constant-Coefficient Differential Equations]]
 
 ---
 # 4 Continuous-Time Fourier Transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=315&selection=2,0,8,9|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=315&selection=2,0,8,9| ]]
 
 A large class of signals, including all finite-energy signals, can be represented as a linear combination of complex exponentials. For periodic signals, these building blocks are harmonically related. For aperiodic signals, the frequencies are infinitesimally close, and the representation takes the form of an integral rather than a sum. The resulting spectrum of coefficients is called the **Fourier transform**, and the synthesis integral used to reconstruct the signal is called the **inverse Fourier transform**.
 
@@ -23,7 +23,7 @@ The Fourier transform was one of Fourier's most significant contributions. He re
 
 ---
 ## 4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=316&selection=38,0,52,9|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=316&selection=38,0,52,9| ]]
 
 ### 4.1.1 Example: Square Wave
 Consider a square wave over one period $T$:
@@ -45,7 +45,7 @@ As $T \to \infty$, the square wave approaches a rectangular pulse, and the Fouri
 ### 4.1.2 Derivation
 For a finite-duration signal $x(t)$, we construct a periodic signal $\tilde{x}(t)$ where $x(t)$ is one period:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 19.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2019.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=318&rect=120,433,420,596|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 19.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2019.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=318&rect=120,433,420,596| ]]
 
 As $T \to \infty$, $\tilde{x}(t)$ becomes identical to $x(t)$. The Fourier series representation of $\tilde{x}(t)$ is:
 $$
@@ -79,7 +79,7 @@ Here, $X(i\omega)$ represents the **spectrum** of $x(t)$ and provides the inform
 
 ---
 ## 4.2 Convergence of Fourier Transforms 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=320&selection=148,0,154,18|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=320&selection=148,0,154,18| ]]
 
 Although the derivation assumed $x(t)$ has finite duration, it applies to a broad class of signals, including those of infinite duration. To ensure that the Fourier transform is valid, consider:
 $$
@@ -107,7 +107,7 @@ Periodic signals, which are neither absolutely nor square integrable over an inf
 
 ---
 ## 4.3 Properties of the Continuous-Time Fourier Transform 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=359&selection=16,0,34,5|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=359&selection=16,0,34,5| ]]
 
 Several useful properties of the continuous-time Fourier transform:
 
@@ -134,7 +134,7 @@ Several useful properties of the continuous-time Fourier transform:
 
 ---
 ### Parseval's Relation
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=343&selection=12,0,16,8|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=343&selection=12,0,16,8| ]]
 
 If $x(t)$ and $X(j \omega)$ are a Fourier transform pair, then
 $$
@@ -162,7 +162,7 @@ The term on the left-hand side is the total energy in the signal $x(t)$. Parseva
 
 ---
 ## 4.4 Basic Fourier Transform Pairs 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=360&selection=30,0,36,5|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=360&selection=30,0,36,5| ]]
 
 |                      Signal                      |                                  Fourier Transform                                   |          Fourier Series Coefficients (if periodic)           |
 | :----------------------------------------------: | :----------------------------------------------------------------------------------: | :----------------------------------------------------------: |
@@ -179,7 +179,7 @@ The term on the left-hand side is the total energy in the signal $x(t)$. Parseva
 
 ---
 ## 4.5 Systems Characterised by Linear Constant-Coefficient Differential Equations 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=361&selection=44,0,58,9|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=361&selection=44,0,58,9| ]]
 
 Continuous-time LTI systems described by linear constant-coefficient differential equations are widely used in practice. A general form of such equations is:
 $$

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/1-electromagnetics-of-metals/","hide":"true","updated":"2025-05-29T16:45:33.824+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/1-electromagnetics-of-metals/","hide":"true","updated":"2025-05-30T15:22:00.778+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -7,15 +7,15 @@ Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selectio
 ---
 **Table of Contents**
 
-- [[Notes/Plasmonics/1 Electromagnetics of Metals#1.1 Maxwell's Equation of Macroscopic Electromagnetism\|1.1 Maxwell's Equation of Macroscopic Electromagnetism]]
-- [[Notes/Plasmonics/1 Electromagnetics of Metals#1.2 Travelling-Wave Solution\|1.2 Travelling-Wave Solution]]
-- [[Notes/Plasmonics/1 Electromagnetics of Metals#1.3 The Dispersion of the Free Electron Gas and Volume Plasmons\|1.3 The Dispersion of the Free Electron Gas and Volume Plasmons]]
-- [[Notes/Plasmonics/1 Electromagnetics of Metals#1.4 Real Metals and Interband Transitions\|1.4 Real Metals and Interband Transitions]]
-- [[Notes/Plasmonics/1 Electromagnetics of Metals#1.5 The Energy of the Electromagnetic Field in Metals\|1.5 The Energy of the Electromagnetic Field in Metals]]
+[[Notes/Plasmonics/1 Electromagnetics of Metals#1.1 Maxwell's Equation of Macroscopic Electromagnetism\|1.1 Maxwell's Equation of Macroscopic Electromagnetism]]
+[[Notes/Plasmonics/1 Electromagnetics of Metals#1.2 Travelling-Wave Solution\|1.2 Travelling-Wave Solution]]
+[[Notes/Plasmonics/1 Electromagnetics of Metals#1.3 The Dispersion of the Free Electron Gas and Volume Plasmons\|1.3 The Dispersion of the Free Electron Gas and Volume Plasmons]]
+[[Notes/Plasmonics/1 Electromagnetics of Metals#1.4 Real Metals and Interband Transitions\|1.4 Real Metals and Interband Transitions]]
+[[Notes/Plasmonics/1 Electromagnetics of Metals#1.5 The Energy of the Electromagnetic Field in Metals\|1.5 The Energy of the Electromagnetic Field in Metals]]
 
 ---
 # 1 Electromagnetics of Metals 
-[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=24&selection=2,0,2,26|•]]
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=24&selection=2,0,2,26| ]]
 
 The interaction of metals with electromagnetic waves can be understood in a classical framework based on Maxwell's equations. This holds true even for metallic nanostructures down to sizes on the order of a few nanometres, without the need to resort to quantum mechanics. This is because the high density of free carriers results in narrow spacings of the electron energy levels compared to the thermal excitation energy $k_B T$ at room temperature. This explains why a classical models such as the Drude model or the Maxwell equations are sufficient. It is well known that most metals are highly reflective up to some frequency in the visible range. They are thus traditionally used as cladding layers for constructing waveguides and resonators at microwave and far-infrared frequencies.
 
@@ -23,7 +23,7 @@ In this low-frequency regime, the _perfect conductor approximation_ of infinite 
 
 ---
 ## 1.1 Maxwell's Equation of Macroscopic Electromagnetism 
-[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=25&selection=58,0,59,34|•]]
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=25&selection=58,0,59,34| ]]
 
 These dispersive properties can be described by a complex dielectric function $\varepsilon(\omega)$, which forms the basis of all phenomena discussed.
 
@@ -138,7 +138,7 @@ Therefore, the imaginary part $\varepsilon_2$ of the dielectric function determi
 
 ---
 ## 1.2 Travelling-Wave Solution 
-[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=29&selection=145,0,146,44|•]] [[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=122&selection=16,0,16,41|•]]
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=29&selection=145,0,146,44| ]] [[Reading/Books/Plasmonics/Plasmonics - From Basics to Advanced Topics.pdf#page=122&selection=16,0,16,41| ]]
 
 When studying the propagation of wave in vacuum, the focus is always on transverse waves, as longitudinal solutions do not exist . This is no longer the case in a medium. Plasmons are longitudinal solutions of the Maxwell equations. By considering the propagation of coupled mechanical and electromagnetic waves, the electromagnetic solution has an electric parallel to the wavevector. More generally, this solution is a longitudinal solution with
 $$
@@ -163,7 +163,7 @@ Note that the frequency dependence of the dielectric function is called dispersi
 
 ---
 ## 1.3 The Dispersion of the Free Electron Gas and Volume Plasmons 
-[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&selection=41,0,42,8|•]]
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&selection=41,0,42,8| ]]
 
 Let us discuss the transparency regime $\omega > \omega_p$ of the free electron gas model. For that, consider the [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.1.1 Drude-Lorentz model\|Lorentz-Drude model]]. The dispersion of the [[Notes/Plasmonics/1 Electromagnetics of Metals#1.2 Travelling-Wave Solution\|travelling waves]] is:
 
@@ -172,13 +172,13 @@ $$
 $$
 This relation is plotted here:
 
-![Attachments/Plasmonics - Fundamentals and Applications 1.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%201.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&rect=113,102,332,248|•]]
+![Attachments/Plasmonics - Fundamentals and Applications 1.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%201.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&rect=113,102,332,248| ]]
 
 For frequencies below the plasma frequency, the propagation of transverse electromagnetic waves is forbidden inside the metal plasma. For larger frequencies, however, the plasma supports transverse waves propagating with a group velocity $v_g = d\omega/dK < c$. Noting that $\varepsilon(K=0, \omega_p) = 0$, the excitation must correspond to a collective longitudinal mode. At the plasma frequency, the electric field is a pure depolarisation field.
 
 The physical significance of this excitation at the plasma frequency can be understood by considering the collective longitudinal oscillation of the conduction electron gas against the fixed positive background of the ion core in a plasma slab:
 
-![Attachments/Plasmonics - Fundamentals and Applications 2.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%202.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=35&rect=106,535,328,614|•]]
+![Attachments/Plasmonics - Fundamentals and Applications 2.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%202.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=35&rect=106,535,328,614| ]]
 
 A collective displacement of the electron cloud leads to a surface charge density at the slab boundaries. This establishes a homogeneous electric field inside the slab. Therefore, the displaced electrons experience a restoring force, and the plasma frequency is the natural frequency of a free oscillation of the electron sea. This assumes all electrons move in phase, meaning the plasma frequency corresponds to the oscillation frequency in the long-wavelength limit where $K = 0$. 
 
@@ -192,17 +192,17 @@ $$
 
 ---
 ## 1.4 Real Metals and Interband Transitions 
-[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&selection=53,0,53,37|•]]
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&selection=53,0,53,37| ]]
 
 As already mentioned, the dielectric function of the Drude model adequately describes the optical response of metals only for photons below the transition energy between electronic bands. For some noble metals, interband effects already occur around $1$ eV ($\lambda \approx 1 \, \mu \mathrm{m}$). In silver for example, the interband absorption edge is around $3.8$ eV:
 
-![Attachments/Plasmonics - Fundamentals and Applications 3.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%203.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&rect=52,99,394,215|•]]
+![Attachments/Plasmonics - Fundamentals and Applications 3.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%203.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=36&rect=52,99,394,215| ]]
 
 The red dots are experimentally obtained results, while the line is a fit of the Drude model. Clearly, the model is not adequate to describe either the real or imaginary part of the dielectric function at high frequencies, and in the case of gold, its validity already breaks down close to the visible range.
 
 ---
 ## 1.5 The Energy of the Electromagnetic Field in Metals
-[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=37&selection=80,0,82,49|•]]
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=37&selection=80,0,82,49| ]]
 
 For a linear medium with no dispersion or losses, the total energy density of the electromagnetic field can be written as:
 

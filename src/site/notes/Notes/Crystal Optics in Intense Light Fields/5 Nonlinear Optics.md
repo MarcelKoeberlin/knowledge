@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/5-nonlinear-optics/","hide":"true","updated":"2025-05-27T10:54:12.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/5-nonlinear-optics/","hide":"true","updated":"2025-05-30T15:20:04.727+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -14,7 +14,7 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 
 ---
 # 5 Nonlinear Optics
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Notes.pdf#page=39|•]] [[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=67&selection=0,0,0,18|•]]
+[[Notes/Crystal Optics in Intense Light Fields/PDFs/Notes.pdf#page=39| ]] [[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=67&selection=0,0,0,18| ]]
 
 Up so far, we have only treated linear effects. The term linear is with regards to the polarisation of the material depending linearly on the external electric field
 $$
@@ -50,7 +50,7 @@ Often however, the term 'nonlinear optics' refers to optical nonlinearities, so 
 
 ---
 ## 5.1 Microscopy for Nonlinear Optics
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=68&selection=47,0,47,35|•]] 
+[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=68&selection=47,0,47,35| ]] 
 
 When discussing [[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction#4.3.1 Microscopy for Linear Optics\|microscopy for linear optics]], we derived an expression for the linear susceptibility $\chi_{ij}(\omega),$ derived from perturbation theory and the density matrix formalism. Most importantly, it includes resonances with quantum harmonic oscillators. A similar equation may be derived for $\chi_{ijk}^{(2)}$ when including higher order terms in the perturbation theory. 
 
@@ -68,7 +68,7 @@ $$
 $$
 The **first two terms** describe _two photon sum-frequency generation_ (2P-SFG), which can be understood as the simultaneous absorption of two photons from the light fields $E_{j}\left(\omega_{1}\right)$ and $E_{k}\left(\omega_{2}\right),$ that generate a polarisation at the sum frequency (hence the name) $\omega_{s}=\omega_{1}+\omega_{2}$. This polarisation leads to the emission of a photon as $E_{i}\left(\omega_{s}\right)$. These two processes are shown in the following figure:
 
-![Attachments/Script (Unofficial) 6.webp|700](/img/user/Attachments/Script%20(Unofficial)%206.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=69&rect=88,664,307,759|•]]
+![Attachments/Script (Unofficial) 6.webp|700](/img/user/Attachments/Script%20(Unofficial)%206.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=69&rect=88,664,307,759| ]]
 
 The process makes use of an intermediate state with which $\omega_{1}$ respectively $\omega_{2}$ resonate. Although it is called an intermediate state and commonly drawn in between the ground and the excited state, the intermediate state is not restricted to lie in between these two. A special case of 2P-SFG is the configuration when $\omega_{1}=\omega_{2} \equiv \omega$. In this case, the two absorbed photons may originate from the same light field $E(\omega)$ and the emitted photon corresponds to the second harmonic of the incident frequency. This special configuration is referred to as second harmonic generation (SHG).
 
@@ -80,13 +80,13 @@ Note, that it is obsolete to also include the $\omega_{2}$ resonance with the in
 
 The **third term** as well as the five further terms denote a similar process to 2P-SFG.  Explicitly, these terms describe a two fold emission with a preceding absorption as depicted in the following figure. These terms are highly non resonant and therefore of smaller order of magnitude, than the first two terms.
 
-![Attachments/Script (Unofficial) 7.webp|700](/img/user/Attachments/Script%20(Unofficial)%207.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=69&rect=357,684,439,757|•]]
+![Attachments/Script (Unofficial) 7.webp|700](/img/user/Attachments/Script%20(Unofficial)%207.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=69&rect=357,684,439,757| ]]
 
 The equation for $\chi_{i j k}^{(2)}\left(\omega_{s}\right)$ contains even more terms, including large terms, if the conjugate waves $E^{*}(\omega) \sim e^{+i \omega t}$ are taken into account. An example is optical parametric oscillation with $\omega_{p} \rightarrow \omega_{s}+\omega_{i}$.
 
 Higher order terms in the perturbation theory lead to the presence of **third order processes**, where three photons take part in the absorption and emission transitions. A common process which is also experimentally used is the _three photon sum frequency generation_ (3P-SFG). Its theory is similar to  2P-SFG, and quite intuitively understandable: It is mostly used in the configurations where $\omega_{1}=\omega_{2}=\omega_{3} \equiv \omega:$ 
 
-![Attachments/Script (Unofficial) 8.webp|700](/img/user/Attachments/Script%20(Unofficial)%208.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=70&rect=189,680,275,756|•]]
+![Attachments/Script (Unofficial) 8.webp|700](/img/user/Attachments/Script%20(Unofficial)%208.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=70&rect=189,680,275,756| ]]
 
 This leads to the generation of a photon at the third harmonic of the incident light wave
 $$
@@ -96,7 +96,7 @@ It is therefore also referred to as third harmonic generation (THG).
 
 Another allowed process is called three photon difference-frequency generation (3P-DFG):
 
-![Attachments/Script (Unofficial) 9.webp|700](/img/user/Attachments/Script%20(Unofficial)%209.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=70&rect=363,678,460,760|•]]
+![Attachments/Script (Unofficial) 9.webp|700](/img/user/Attachments/Script%20(Unofficial)%209.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=70&rect=363,678,460,760| ]]
 
 The emitted photon is generated by the simultaneous absorption and emission, which in sum and difference leads to the correct resonance. Mathematically and for the special case, where the two absorbed photons are of the same frequency, this is expressed by
 $$
@@ -114,7 +114,7 @@ Typical values for $\chi^{(2)}$ lie around 1 to 100 pm/V. In linear optics, ofte
 
 ---
 ## 5.2 Wave Equation in Nonlinear Optics
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=70&selection=180,0,180,37|•]]
+[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=70&selection=180,0,180,37| ]]
 
 For the further discussion on SHG, we derive the wave equation in a nonlinear medium from the [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.3 The Material Equations\|Maxwell's equations]]:
 
@@ -154,7 +154,7 @@ Normally we have that $\mathbf{S}_\text{ED}\gg\mathbf{S}_\text{MD},\mathbf{S}_\t
 
 ---
 ## 5.3 Magnetic SHG in Chromium(III)-Oxide ($\ce{Cr2O3}$)
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=72&selection=2,0,3,19|•]]
+[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=72&selection=2,0,3,19| ]]
 
 This chapter will give a detailed analysis of the magnetically introduced second harmonic generation in $\ce{Cr2O3},$ based on the discussion on
 - R. R. Birss. Symmetry and Magnetism. North-Holland Pub. Co.. 2nd edition, 1964,
@@ -165,7 +165,7 @@ This chapter will give a detailed analysis of the magnetically introduced second
 
 Chromium(III)-oxide is a compound of a dark green colour with the chemical formula $\mathrm{Cr}_{2} \mathrm{O}_{3}$ which is widely used as a pigment in paints, inks or glasses having the same crystalline structure as corundum. It has a hexagonally close packed structure of oxide anions, with 2 out of 3 of the octahedral holes occupied by chromium. The optical axis of $\mathrm{Cr}_{2} \mathrm{O}_{3}$ corresponds to the trigonal axis. It is a classical antiferromagnet with the Neel temperature of $307.6$ K. Above the Néel temperature, antiferromagnetic media become paramagnetic. The temperature is high enough to destroy the macroscopic magnetic ordering. The spin structure is based on alternate up and down spins of the chromium ions, making two spin configurations possible:
 
-![Attachments/Script (Unofficial) 10.webp|700](/img/user/Attachments/Script%20(Unofficial)%2010.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=73&rect=281,587,426,732|•]]
+![Attachments/Script (Unofficial) 10.webp|700](/img/user/Attachments/Script%20(Unofficial)%2010.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=73&rect=281,587,426,732| ]]
 
 We call the left configuration the 'plus domain', and the right the 'minus domain'. It is famous for the discovery of the magneto-electric effect, and therefore behaves as
 
@@ -383,7 +383,7 @@ The experiment to investigate the antiferromagnetic domains in $\mathrm{Cr}_{2} 
 
 The following figure shows the sample with the polarisation altered from right circular polarised (a) to left circular polarised (b). The derived intensity relation is verified: There is a clear contrast between the domains, and altering the polarisation inverts the image.
 
-![Attachments/Script (Unofficial) 11.webp|700](/img/user/Attachments/Script%20(Unofficial)%2011.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=78&rect=201,342,454,629|•]]
+![Attachments/Script (Unofficial) 11.webp|700](/img/user/Attachments/Script%20(Unofficial)%2011.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=78&rect=201,342,454,629| ]]
 
 >[!Info]
 >Continue here
@@ -391,7 +391,7 @@ The following figure shows the sample with the polarisation altered from right c
 
 ---
 ## 5.4 Microscopic Mechanisms of Nonlinear Magneto-optical Processes
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=79&selection=2,0,3,9|•]]
+[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=79&selection=2,0,3,9| ]]
 
 The observations in the previous section of SHG in $\mathrm{Cr}_{2} \mathrm{O}_{3}$ require coupling of the light field and magnetism at a microscopic level. Explaining the nonreciprocal optical effects in $\mathrm{Cr}_{2} \mathrm{O}_{3}$ on a microscopic level is not trivial and requires the interplay of spin orbit coupling and a trigonal distortion in the lattice leading to a ligand field contribution. The model presented in this section was developed in 1995 by V. N. Muthukumar et al. [Muthukumar1995CrO].
 

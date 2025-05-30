@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2025-05-15T09:55:25.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2025-05-30T13:21:45.753+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -7,197 +7,135 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 **Table of Contents**
 
-- [[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion#2.1 Jones Vector Formalism\|2.1 Jones Vector Formalism]]
-- [[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion#2.2 Dispersion of Light in Matter\|2.2 Dispersion of Light in Matter]]
-- [[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion#2.3 Classes of Electronic Transitions\|2.3 Classes of Electronic Transitions]]
+[[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion#2.1 Jones Vector Formalism\|2.1 Jones Vector Formalism]]
+[[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion#2.2 Dispersion of Light in Matter\|2.2 Dispersion of Light in Matter]]
+[[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion#2.3 Classes of Electronic Transitions\|2.3 Classes of Electronic Transitions]]
 
 ---
 # 2 Light Polarisation and Dispersion
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=19&selection=0,20,0,20|•]]
+[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=19&selection=0,20,0,20| ]]
 
-Light is an electromagnetic wave. Unlike sound waves, which are longitudinal waves, light is therefore a transverse wave. This means that the direction of the field is perpendicular to the direction of propagation (the wavevector). This is covered in more detail in my notes on [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1 Electromagnetic Theory of Light\|quantum electronics]]. We start by treating the simplest electromagnetic wave, the plane wave:
+Light is an electromagnetic wave. Unlike sound waves, which are longitudinal, light is a transverse wave. This means that the direction of the electric (and magnetic) field oscillation is perpendicular to the direction of propagation (the wavevector $\mathbf{k}$). This is covered in more detail in my notes on [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1 Electromagnetic Theory of Light\|quantum electronics]]. We start by considering the simplest electromagnetic wave, the plane wave, described by its electric field:
 $$
-\mathbf{E}(\mathbf{r}, t)=\mathbf{E}_{0} e^{i(\omega t-\mathbf{k} \mathbf{r})}
+\mathbf{E}(\mathbf{r}, t)=\mathbf{E}_{0} e^{i(\omega t-\mathbf{k} \cdot \mathbf{r})}
 $$
-where $\mathbf{E}_{0}$ is orthogonal to $\mathbf{k},$ assuming propagation in an isotropic medium. The magnetic field is not relevant for now, since it is much weaker than the electric field in the medium that we consider. A very fundamental property of transverse waves is polarisation which here refers to the direction of oscillation of the electric field. There are several different ways how to describe the polarisation of light. First we will discuss the very fundamental Jones vector formalism. Later we will proceed to the more advanced Poincaré sphere formalism. This is also treated in [[Notes/2025 Quantum Electronics Gallmann/9 Polarisation Optics#9 Polarisation Optics\|polarisation optics]]. 
+where the complex amplitude vector $\mathbf{E}_{0}$ is orthogonal to $\mathbf{k}$ (so $\mathbf{E}_0 \cdot \mathbf{k} = 0$), assuming propagation in an isotropic medium. The magnetic field is also important but for describing polarisation, we primarily focus on the electric field vector. A fundamental property of transverse waves is polarisation, which refers to the orientation and evolution of the electric field vector in the plane perpendicular to the direction of propagation. There are several ways to describe the polarisation of light. First, we will discuss the Jones vector formalism. Later, reference will be made to the Poincaré sphere formalism. This topic is also treated in [[Notes/2025 Quantum Electronics Gallmann/9 Polarisation Optics#9 Polarisation Optics\|polarisation optics]].
 
-For a plane wave propagating along the $z$-axis, the wave equation in vector form is
-$$
-\mathbf{E}(\mathbf{r}, t)=\binom{a_{x} e^{i \phi_{x}}}{a_{y} e^{i \phi_{y}}} e^{i(\omega t-\mathbf{k} \mathbf{r})},
-$$
-where the $z$-component is equal to zero, and has therefore been omitted. The part of the wave oscillating along $x$ - and $y$-direction have individual amplitudes and phase factors. Defining the complex as phase $\varphi,$ and writing in terms of a phase delay $\delta=\phi_y-\phi_x,$ we may also write the individual components as
+For a plane wave propagating along the $z$-axis, the electric field vector has components only in the $x$ and $y$ directions: $\mathbf{E}(\mathbf{r}, t) = (E_x \hat{\mathbf{x}} + E_y \hat{\mathbf{y}}) e^{i(\omega t-kz)}$. The complex amplitudes of these components can be written as:
 $$
 \begin{aligned}
-& E_x=a_x \exp [i \varphi(\bar{v}, t)]\quad\text{and} \\
-& E_y=a_y \exp [i(\varphi(\bar{v}, t)-\delta)].
+& \mathcal{E}_x = a_{x} e^{i \phi_{x}} \\
+& \mathcal{E}_y = a_{y} e^{i \phi_{y}}
 \end{aligned}
 $$
+where $a_x, a_y$ are real amplitudes and $\phi_x, \phi_y$ are initial phases. The physical fields are $E_x(z,t) = a_x \cos(\omega t - kz + \phi_x)$ and $E_y(z,t) = a_y \cos(\omega t - kz + \phi_y)$. Defining a relative phase $\delta = \phi_y - \phi_x$, we can write the complex amplitudes (omitting the common propagation factor $e^{i(\omega t - kz)}$ and overall phase $e^{i\phi_x}$) as representing the state of polarisation.
 
 ---
 ## 2.1 Jones Vector Formalism
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=19&selection=51,0,51,26|•]]
+[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=19&selection=51,0,51,26| ]]
 
-In the Jones vector formalism, the Jones vector (or polarisation) is defined as
+In the Jones vector formalism, the polarisation state of a completely polarised light wave is described by a two-component complex vector, the Jones vector $\mathbf{J}$. Using the complex amplitudes of the $x$ and $y$ components of the electric field:
 $$
-\mathbf{E}_{0} =\binom{a_x e^{i \phi_x}}{a_y e^{i \phi_y}}=e^{i \phi_x}\binom{a_x}{a_y e^{i \delta}} \equiv \mathbf{J},
+\mathbf{J} = \begin{pmatrix} \mathcal{E}_x \\ \mathcal{E}_y \end{pmatrix} = \begin{pmatrix} a_x e^{i \phi_x} \\ a_y e^{i \phi_y} \end{pmatrix} = e^{i \phi_x} \begin{pmatrix} a_x \\ a_y e^{i \delta} \end{pmatrix},
 $$
-such that it becomes clear that the polarisation only depends on the phase delay, not on the phases absolute value. This vector completely specifies the polarisation state of the light field at a particular point in space. 
+where $\delta = \phi_y - \phi_x$ is the relative phase. It becomes clear that the polarisation state depends only on the relative amplitude $a_y/a_x$ and the relative phase $\delta$, not on the absolute overall phase $\phi_x$ or total intensity (unless normalised). This vector completely specifies the polarisation state.
 
-Two states of polarisation are orthogonal if, and only if there Jones vectors are orthogonal
+Two polarisation states represented by Jones vectors $\mathbf{J}_1$ and $\mathbf{J}_2$ are orthogonal if their inner product is zero:
 $$
-\left\langle\mathbf{J}_{1}, \mathbf{J}_{2}\right\rangle=\left(a_{1 x} e^{i \phi_{1 x}}\right)^*\left(a_{2 x} e^{i \phi_{2 x}}\right)+\left(a_{1 y} e^{i \phi_{1 y}}\right)^*\left(a_{2 y} e^{i \phi_{2 y}}\right)=0.
+\mathbf{J}_1^\dagger \mathbf{J}_2 = J_{1x}^* J_{2x} + J_{1y}^* J_{2y} = 0.
 $$
+This means $(a_{1x} e^{-i\phi_{1x}})(a_{2x} e^{i\phi_{2x}}) + (a_{1y} e^{-i\phi_{1y}})(a_{2y} e^{i\phi_{2y}}) = 0$.
+Two orthogonal Jones vectors form a basis for the polarisation space, such that any polarisation state can be described as a linear combination of these two basis vectors.
 
-Two orthogonal Jones vectors form a basis for the polarisation space, such that any polarisation state can be described as a superposition of the two base vectors.
+Some common basis vectors and examples of normalised Jones vectors are:
+- Linearly polarised light along the $x$-axis and $y$-axis:
+    $$\mathbf{J}_{x}=\begin{pmatrix} 1 \\ 0 \end{pmatrix} \quad \text{and} \quad \mathbf{J}_{y}=\begin{pmatrix} 0 \\ 1 \end{pmatrix}.$$
+- Left-circularly polarised (LCP) and right-circularly polarised (RCP) light (convention: looking towards the source, LCP E-field rotates counter-clockwise, RCP clockwise):
+    $$\mathbf{J}_{\text{LCP}}=\frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ i \end{pmatrix} \quad \text{and} \quad \mathbf{J}_{\text{RCP}}=\frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ -i \end{pmatrix}.$$
+    (Note: definitions of LCP/RCP can vary; here $E_y$ leads $E_x$ by $\pi/2$ for LCP, and lags for RCP).
 
-Some common base vectors and examples of orthonormal Jones vectors are:
+The Jones vector formalism is particularly useful because the action of deterministic optical devices or materials that alter the polarisation state of light can be described by $2 \times 2$ complex matrices, known as Jones matrices. If $\mathbf{J}_{\text{in}}$ is the input polarisation state, then the output state $\mathbf{J}_{\text{out}}$ after passing through an element with Jones matrix $\mathbf{M}$ is:
+$$
+\mathbf{J}_{\text{out}}=\mathbf{M} \mathbf{J}_{\text{in}} \quad \text{ with } \quad \mathbf{M}=\begin{pmatrix} M_{11} & M_{12} \\ M_{21} & M_{22} \end{pmatrix}.
+$$
+Each optical element is represented by its own Jones matrix. Some examples:
 
-
-- Linearly polarised light along the $x$ - and $y$-axis:
-	$$\mathbf{J}_{x}=\binom{1}{0} \quad \text{and}\quad\mathbf{J}_{y}=\binom{0}{1}.$$
-- Left- and right circular polarisation:
-	$$\mathbf{J}_{\sigma^{-}}=\frac{1}{\sqrt{2}}\binom{1}{-i} \quad \text{and}\quad\mathbf{J}_{\sigma^{+}}=\frac{1}{\sqrt{2}}\binom{1}{i}.$$
-
-The Jones vector formalism is fairly useful because actions of devices or materials that alter polarisation may be described by $2 \times 2$ matrices. If $\mathbf{J}_{1}$ is the input polarisation state, then the output state $\mathbf{J_{2}}$ can be written as
+**Linear polariser** passing light polarised along the $x$-axis:
 $$
-\mathbf{J}_{2}=M \mathbf{J}_{1} \quad \text { with } \quad M=\left(\begin{array}{ll}
-M_{11} & M_{12} \\
-M_{21} & M_{22}
-\end{array}\right),
+\mathbf{M}_{\text{LP,x}}=\begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}.
 $$
-where $M$ is a Jones Matrix. Each optical element is represented by its own Jones matrix. Some examples are:
-
-**Linear polarisers** (here in $x$-direction):
-$$
-M_{\mathrm{L}}^0=\left(\begin{array}{ll}
-1 & 0 \\
-0 & 0
-\end{array}\right)_x.
-$$
-**Polarisation rotators** rotate the polarisation of light by an angle $\varphi:$ 
-$$
-M_\mathrm{L}^\varphi=R(\varphi)M_\mathrm{L}^0R^{-1}(\varphi)\quad\text{with}\quad R(\varphi)=\left(\begin{array}{cc}
-\cos \varphi & -\sin \varphi \\
-\sin \varphi& \cos \varphi
-\end{array}\right).
-$$
-
-Then, explicitly, we have a linear polariser under an angle $\varphi:$
+A general **linear polariser** with its transmission axis at an angle $\varphi$ to the $x$-axis can be found by rotating this basic matrix. If $\mathbf{R}(\varphi) = \begin{pmatrix} \cos\varphi & -\sin\varphi \\ \sin\varphi & \cos\varphi \end{pmatrix}$ is the matrix for rotating the coordinate system by $-\varphi$ (or a vector by $+\varphi$), then a polariser whose transmission axis is along $x'$ (where $x'$ is rotated by $\varphi$ from $x$) is given by $\mathbf{M}_{\text{LP}}^{\varphi} = \mathbf{R}(\varphi) \mathbf{M}_{\text{LP,x}} \mathbf{R}(-\varphi)$:
 $$
 \begin{aligned}
-M_\mathrm{L}^{\varphi} & =R(\varphi) M_\mathrm{L}^0 R^{-1}(\varphi) \\
-& =\left(\begin{array}{cc}
-\cos \varphi & -\sin \varphi \\
-\sin \varphi & \cos \varphi
-\end{array}\right)\left(\begin{array}{ll}
-1 & 0 \\
-0 & 0
-\end{array}\right)\left(\begin{array}{cc}
-\cos \varphi & \sin \varphi \\
--\sin \varphi & \cos \varphi
-\end{array}\right) \\
-& =\left(\begin{array}{cc}
-\cos^2 \varphi & \sin \varphi \cos \varphi \\
-\sin \varphi \cos \varphi & \sin^2 \varphi
-\end{array}\right)=\frac{1}{2}\left(\begin{array}{cc}
-1+\cos 2 \varphi & \sin 2 \varphi \\
-\sin 2 \varphi & 1-\cos 2 \varphi
-\end{array}\right).
+\mathbf{M}_{\text{LP}}^{\varphi} & = \begin{pmatrix} \cos\varphi & -\sin\varphi \\ \sin\varphi & \cos\varphi \end{pmatrix} \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix} \begin{pmatrix} \cos\varphi & \sin\varphi \\ -\sin\varphi & \cos\varphi \end{pmatrix} \\
+& = \begin{pmatrix} \cos^2\varphi & \sin\varphi\cos\varphi \\ \sin\varphi\cos\varphi & \sin^2\varphi \end{pmatrix} = \frac{1}{2}\begin{pmatrix} 1+\cos(2\varphi) & \sin(2\varphi) \\ \sin(2\varphi) & 1-\cos(2\varphi) \end{pmatrix}.
 \end{aligned}
 $$
 
-This is general, using the rotation matrices, any element can be rotated. The effect of a rotated element on the light may differ significantly with the angle of rotation. 
+**Wave plates (retarders)** introduce a relative phase shift $\Gamma$ between two orthogonal linear polarisation components. If the $x$-axis is the fast axis (lower refractive index) and the $y$-axis is the slow axis (higher refractive index, thus experiencing more phase delay), the Jones matrix is:
+$$
+\mathbf{M}_{\text{WP}}(\Gamma)=\begin{pmatrix} 1 & 0 \\ 0 & e^{-i\Gamma} \end{pmatrix}.
+$$
+- A **half-wave plate** ($\lambda/2$ plate) introduces $\Gamma=\pi$:
+  $$\mathbf{M}_{\lambda/2}^0=\begin{pmatrix} 1 & 0 \\ 0 & e^{-i\pi} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}.$$
+- A **quarter-wave plate** ($\lambda/4$ plate) introduces $\Gamma=\pi/2$:
+  $$\mathbf{M}_{\lambda/4}^0=\begin{pmatrix} 1 & 0 \\ 0 & e^{-i\pi/2} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & -i \end{pmatrix}.$$
+If a half-wave plate is aligned with its fast axis along $x$ (so $\varphi=0^\circ$), incident x-polarised light $\begin{pmatrix}1\\0\end{pmatrix}$ remains unchanged:
+$$
+\mathbf{J}_{\text{out}} = \mathbf{M}_{\lambda/2}^0 \mathbf{J}_{\text{in}} = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}\begin{pmatrix} 1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1 \\ 0 \end{pmatrix}.
+$$
+However, if this half-wave plate is rotated such that its fast axis is at an angle of $45^{\circ}$ to the x-axis, its Jones matrix becomes $\mathbf{M}' = \mathbf{R}(45^\circ) \mathbf{M}_{\lambda/2}^0 \mathbf{R}(-45^\circ) = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$. Then, x-polarised input light is transformed to y-polarised light:
+$$
+\mathbf{J}_{\text{out}} = \mathbf{M}' \mathbf{J}_{\text{in}}=\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 1 \\ 0 \end{pmatrix}=\begin{pmatrix} 0 \\ 1 \end{pmatrix}.
+$$
+A key property of a half-wave plate is that if the input is linearly polarised and the HWP's fast axis is at an angle $\varphi$ to this input polarisation, the output polarisation is rotated by $2\varphi$. Thus, a HWP acts as a linear polarisation rotator.
 
-**Wave plate/retarders** delay one polarisation with respect to the other by a phase $\alpha.$ Consider that the x direction is the fast direction, and that the y-direction obtains a phase shift of $\alpha=\pi.$ This is called a half-wave plate ($\lambda/2$ wave plate). We then find that 
-$$
-M_{\lambda, 2}^0=\left(\begin{array}{cc}
-1 & 0 \\
-0 & -1
-\end{array}\right),
-$$
-
-such that a half wave plate introduces a phase shift of $180^{\circ}(\pi)$ between the two polarisations along its two principle axes. Similarly, if $\alpha=\pi/2,$ we call it a quarter-wave plate, and the phase shift introduced is $90^\circ(\pi/2):$ 
-$$
-M_{\lambda / 4}^0=\left(\begin{array}{cc}
-1 & 0 \\
-0 & -i
-\end{array}\right).
-$$
-
-If the wave plate is aligned to the $x$-axis, the light experiences no shift in polarisation:
-$$
-\implies \mathbf{J}_{2}=T \mathbf{J}_{1}=\left(\begin{array}{cc}
-1 & 0 \\
-0 & -1
-\end{array}\right)\binom{1}{0}=\binom{1}{0}.
-$$
-However, if the wave plate is rotated by an angle of $45^{\circ}$, then the polarisation state is flipped to $y$-polarised light:
-$$
-\begin{aligned}
-T^{\prime} & =R^{-1}\left(45^{\circ}\right) T R\left(45^{\circ}\right)=\left(\begin{array}{ll}
-0 & 1 \\
-1 & 0
-\end{array}\right) \\
-\implies \mathbf{J}_{2} & =T^{\prime} \mathbf{J}_{1}=\left(\begin{array}{ll}
-0 & 1 \\
-1 & 0
-\end{array}\right)\binom{1}{0}=\binom{0}{1}
-\end{aligned}
-$$
-
-A key property of a half-wave plate is the following: If the input is linearly polarised, and the half-wave plate's fast axis is at an angle $\varphi$ to this input polarisation, the output polarisation is rotated by $2\varphi.$ Then, the half-wave plate evidently also acts as a linear polarisation rotator. The general form of a wave retarder, where $x$ is the faster direction, is 
-$$
-T_{\mathrm{WR}}=\left(\begin{array}{cc}
-1 & 0 \\
-0 & e^{-i \alpha}
-\end{array}\right)_x.
-$$
 ---
 ## 2.2 Dispersion of Light in Matter
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=35&selection=33,0,33,14|•]]
+[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=35&selection=33,0,33,14| ]]
 
-We now slightly shift the topic to dispersion of light in matter. The amplitude and phase of an electromagnetic wave in a material is generally described as a function of wavelength. In the following, we will treat a crystal lattice as a collection of harmonic oscillators. This is called the **Lorentz model**. For more details on this approach, see this [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|chapter]]. Charge oscillations lead to a polarisation $P(\omega).$ The driving force in the following model is the electromagnetic light wave:
+We now slightly shift the topic to the dispersion of light in matter. The amplitude and phase response of an electromagnetic wave interacting with a material is generally a function of wavelength or frequency. We will treat a crystal lattice (or more generally, a dielectric material) as a collection of bound charges that can be modelled as harmonic oscillators. This is the **Lorentz model**. For more details on this approach, see [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|this chapter]]. These charge oscillations lead to a macroscopic polarisation $\mathbf{P}(\omega)$. The driving force in the following model is the electric field $\mathbf{E}$ of the light wave:
+$$
+\frac{\partial^2 P_x}{\partial t^2}+\Gamma \frac{\partial P_x}{\partial t}+\omega_0^2 P_x=\frac{N e^2}{m_e} E_x,
+$$
+where $P_x$ is one component of the polarisation density, $\Gamma$ is a damping constant, $\omega_0$ is the resonant angular frequency of the oscillators, $N$ is the number of oscillators per unit volume, $e$ is the elementary charge, $m_e$ is the effective mass of the oscillating charge, and $E_x$ is the $x$-component of the local electric field.
+By Fourier transforming (assuming $E_x(t) \leftrightarrow E_x(\omega)$, $P_x(t) \leftrightarrow P_x(\omega)$, and $\partial/\partial t \leftrightarrow i\omega$ for $e^{i\omega t}$ time dependence), we obtain:
+$$
+(-\omega^2 + i\Gamma\omega + \omega_0^2)P_x(\omega) = \frac{N e^2}{m_e} E_x(\omega).
+$$
+Using the definition $P_x(\omega)=\varepsilon_0\chi_e(\omega) E_x(\omega)$, where $\chi_e(\omega)$ is the complex electric susceptibility, we find:
+$$
+\chi_e(\omega) = \frac{N e^2}{\varepsilon_0 m_e} \frac{1}{\omega_0^2-\omega^2+i \Gamma \omega}.
+$$
+The relative permittivity (or dielectric function) is $\varepsilon_r(\omega) = 1 + \chi_e(\omega)$.
+In the case of multiple optical resonances (indexed by $j$) with different resonant frequencies $\omega_{0,j}$, damping constants $\Gamma_j$, and oscillator strengths $f_j \sim N_j q_j^2/m_j$, and including a background permittivity $\varepsilon_b$ to account for contributions from far-off resonances (such as higher-energy electronic transitions), the total dielectric function becomes:
+$$
+\varepsilon_r(\omega)=\varepsilon_b+\sum_j \frac{N_j q_j^2}{\varepsilon_0 m_j} \frac{1}{\omega_{0,j}^2-\omega^2+i \Gamma_j \omega}.
+$$
+Introducing the plasma frequency for each oscillator type as $\omega_{p,j}^2=\frac{N_j q_j^2}{\varepsilon_0 m_j}$, and neglecting damping ($\Gamma_j \approx 0$) for transparent regions far from resonance, we may write:
+$$
+\varepsilon_r(\omega) \approx \varepsilon_b + \sum_j \frac{\omega_{p,j}^2}{\omega_{0,j}^2-\omega^2} \quad (\text{Sellmeier-like form}).
+$$
+For a single resonance, this is $\varepsilon_r(\omega) = \varepsilon_b + \frac{\omega_p^2}{\omega_0^2-\omega^2}$. This can be rewritten in the Kurosawa form (if $\varepsilon_b$ represents $\varepsilon_\infty$, the high-frequency permittivity limit):
+$$
+\varepsilon_r(\omega) = \varepsilon_b \frac{\omega_L^2-\omega^2}{\omega_0^2-\omega^2}, \quad \text{with} \quad \omega_L^2=\omega_0^2+\frac{\omega_p^2}{\varepsilon_b}.
+$$
+Here, $\omega_0$ is the transverse resonance frequency ($\omega_{TO}$ or $\omega_\perp$) where $\varepsilon_r(\omega) \to \infty$ (for $\Gamma=0$), and $\omega_L$ is the longitudinal resonance frequency ($\omega_{LO}$ or $\omega_\parallel$) where $\varepsilon_r(\omega_L)=0$. This form is particularly relevant for describing the dispersion of optical phonons in ionic crystals or excitons in semiconductors. The Lyddane-Sachs-Teller (LST) relation connects these frequencies to the static ($\varepsilon_s = \varepsilon_r(0)$) and high-frequency ($\varepsilon_\infty = \varepsilon_b$) dielectric constants: $\frac{\varepsilon_s}{\varepsilon_\infty} = \frac{\omega_L^2}{\omega_0^2}$.
 
-$$
-\frac{\partial^2 P}{\partial t^2}+\Gamma \frac{\partial P}{\partial t}+\omega_0^2 P=\frac{N e^2}{m} E,
-$$
-where the $\Gamma-$term describes dampening, $\omega_0$ is the eigenfrequency of the (unperturbed) system, and $E$ is the driving light field. By Fourier transforming the equation to frequency space, introducing the electric dipole moment $p=qx,$ and rewriting the polarisation as $P=Nqx,$ we will immediately try the solution 
-$$
-P(\omega)=\varepsilon_0\chi E(\omega)\sim e^{i \omega t}\quad\text{with}\quad\chi=\varepsilon_r-1.
-$$
-Then, we can show that 
-$$
-P(\omega)=\frac{N q^2}{m} \frac{1}{\omega_0^2-\omega^2-i \Gamma \omega} E(\omega),\quad\text{such that}\quad\varepsilon(\omega)=1+\underbrace{\frac{N q^2}{\varepsilon_0 m} \frac{1}{\omega_0^2-\omega^2-i \Gamma \omega}}_{\chi(\omega)} .
-$$
-We call $\chi$ the complex susceptibility. In the case of more than just one optical excitation with eigenfrequencies $\omega_0^i\gg\omega_0$, we must adjust the dispersion relation:
-$$
-\varepsilon(\omega)=\varepsilon_b+\frac{N q^2}{\varepsilon_0 m} \frac{1}{\omega_0^2-\omega^2-i \Gamma \omega},
-$$
-where $\varepsilon_b$ takes into account contributions of other resonances far from $\omega_0.$ Introducing the plasma frequency $\omega_p^2=\frac{N q^2}{\varepsilon_0 m},$ and neglecting dampening $\Gamma\approx 0,$ we may also write 
-$$
-\varepsilon(\omega)=\underbrace{\varepsilon_b+\frac{\omega_p^2}{\omega_0^2-\omega^2}}_{\text {Sellmeyer}}=\underbrace{\frac{\omega_L^2-\omega^2}{\omega_0^2-\omega^2}}_{\text {Kurosawa}}\quad\text{with}\quad \omega_L^2=\omega_0^2+\frac{\omega_p^2}{\varepsilon_b} .
-$$
-This relation is shown in the following figure:
+The dispersion relation $k(\omega) = \omega\sqrt{\varepsilon_r(\omega)}/c$ exhibits characteristic features due to this resonant dielectric function:
 
-![Attachments/Script (Unofficial) 1.webp|700](/img/user/Attachments/Script%20(Unofficial)%201.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=37&rect=272,394,433,649|•]]
+![Attachments/Script (Unofficial) 1.webp|700](/img/user/Attachments/Script%20(Unofficial)%201.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=37&rect=272,394,433,649| ]]
+Figure shows uncoupled photon dispersion $k=\omega\sqrt{\varepsilon_\infty}/c$ and $k=\omega\sqrt{\varepsilon_s}/c$ as dashed lines, the transverse oscillator resonance at $\omega_\perp=\omega_0$, and the longitudinal mode at $\omega_\parallel=\omega_L$. The solid red curves are the upper and lower polariton branches.
 
-For $\omega\longrightarrow\omega_0$ there are resonances with $\varepsilon(\omega)\longrightarrow\infty$ and thus also the complex refractive index goes to infinity. The blue curve shows both the transversal (lower) and longitudinal (upper) mode. curve is $\varepsilon(\omega)$. The frequencies $\omega_\perp=\omega_0$ (where $\varepsilon \rightarrow \infty$ if $\Gamma=0$ ) and $\omega_\parallel$ (where $\varepsilon=0$ ) are characteristic frequencies of the transverse and longitudinal optical modes, respectively.The wavevector has the form 
-$$
-k^2=\frac{\omega^2}{c^2}\varepsilon_b(\omega)\quad\text{and}\quad k^2=\frac{\omega^2}{c^2}\varepsilon_b^\prime(\omega),
-$$
-for the two dotted lines showing the uncoupled dispersion for photon in the medium. The steeper line corresponds to the first equation, while the less steep curve is the second relation of $k.$ The Lyddane-Sachs-Teller relation allows to calculate the value of $\varepsilon_b^\prime:$ 
-$$
-\frac{\varepsilon_b}{\varepsilon_b^{\prime}}=\frac{\omega_e^2}{\omega_0^2}.
-$$
-When light interacts with matter, it induces a polarisation which allows the electromagnetic wave to interact with lattice excitations. Note that longitudinal polarisation is allowed in matter. Longitudinal and transversal polarisation are energetically separated and interact individually with the lattice excitation. We call this the **polariton**, a quasiparticle defined by the continuous conversion between light and matter excitation. In the figure, the horizontal line at $\omega_\parallel$ corresponds to an uncoupled longitudinal excitation, while $\omega_\perp=\omega_0$ corresponds to the uncoupled transversal excitation.
+When light interacts with such resonant matter, it induces a polarisation which couples to the electromagnetic wave. This coupled excitation of light and matter (such as an optical phonon or exciton) is called a **polariton**. In the figure, the horizontal line at $\omega_\parallel$ represents a purely longitudinal excitation (where $\varepsilon_r=0$), while the resonance at $\omega_\perp=\omega_0$ is for a transverse excitation. The interaction (coupling) leads to an avoided crossing behaviour, forming the upper and lower polariton branches.
 
 ---
-## 2.3 Classes of Electronic Transitions 
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=38&selection=2,0,2,39|•]]
+## 2.3 Classes of Electronic Transitions
+[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=38&selection=2,0,2,39| ]]
 
-To understand matter excitation and their corresponding energies, we introduce three major classes of electronic transitions relevant for crystal optics. All excitations lead to a splitting of the electronic states, thus allowing interactions with electromagnetic waves:
-- In **ionic crystals** (or semiconductors) with occupied p and s states, charge excitations between ions happen at energies of 1-10 eV. These crystal possess extended wave functions, such that the global field of crystal atoms splits the ionic wave functions. One such example is the charge transfer $\mathrm{O}^{2-}(2 \mathrm{p}) \rightarrow Z n^{2+}(4 s),$ which splits the $2 \mathrm{p}_{\mathrm{n}}$ and $2 \mathrm{p}_{\mathrm{x}, \mathrm{y}}$ levels.
-- **Transition metals** with $3\mathrm{d}^{0<\mathrm{n}<10}$ orbitals are the most common type of material of magnetic order. Their d-d transitions at $\leq$ 10 eV are the lowest. The wave functions are spatially confined, and the local field exerted by the nearest neighbours ('ligands') splits the d-states of the transition metal ion. One example is $\ce{Cr2O3}$ or $\ce{LaMnO3}.$ Note that the local symmetry of $\ce{Cr^3+}$ and $\ce{Mn^3+}$ is octahedral, hence different than the global crystal symmetry. This leads to a splitting of the ten (there are 5 d-orbitals, and we include electron spin) d-orbitals into 4 energetically higher $E_g$ states (high electron density, these orbitals point towards ligands), and 6 lower $T_{2g}$ states (low electron density, the orbitals point between ligands).  
-- In **rare earth compounds** with $4\mathrm{f}^{0<n<14}$ orbitals, the orbitals are so close to the nucleus that the atomic wave functions are only weakly perturbed by the ligand and crystal fields. There are groups of narrow lines all across the spectrum. 
+To understand the origin of different $\omega_{0,j}$ and oscillator strengths in the dielectric function of materials, we consider three major classes of electronic transitions relevant for crystal optics. These excitations lead to characteristic features in the optical spectra:
+- In **ionic crystals** (like NaCl) or covalent **semiconductors** (like Si, GaAs) with occupied valence (often p-like) and empty conduction (often s-like) bands, charge excitations correspond to interband transitions. These typically occur at energies of $1-10 \, \text{eV}$. These crystals have extended electronic wave functions (Bloch states), and the crystal field (periodic potential) determines the band structure. For example, in ZnO, transitions like $\mathrm{O}^{2-}(2\text{p}) \rightarrow \mathrm{Zn}^{2+}(4\text{s})$ contribute to the optical response.
+- **Transition metal compounds** (containing elements with partially filled d-shells, $3d^N, 4d^N, 5d^N$) are often magnetic or strongly correlated. Their optical spectra in the visible and near-UV are frequently dominated by d-d transitions, typically at energies $\lesssim 10 \, \text{eV}$. The d-electron wave functions are relatively localised. The local crystal field exerted by the nearest neighbour anions ('ligands') splits the d-orbital degeneracy. For instance, in an octahedral ligand field (common for $\text{Cr}^{3+}$ in $\text{Al}_2\text{O}_3$ (ruby) or $\text{Mn}^{3+}$ in $\text{LaMnO}_3$), the five d-orbitals split into a lower energy $t_{2g}$ set (three orbitals, with lobes pointing between ligands) and a higher energy $e_g$ set (two orbitals, with lobes pointing towards ligands).
+- In **rare earth compounds** (containing elements with partially filled 4f or 5f shells), the f-orbitals are very close to the nucleus, well-shielded by outer electrons. Consequently, the $f$-electron wave functions are only weakly perturbed by the ligand and crystal fields. This results in very sharp, atom-like absorption and emission lines corresponding to f-f transitions, which can occur across the UV, visible, and infrared spectrum.
 
 ---

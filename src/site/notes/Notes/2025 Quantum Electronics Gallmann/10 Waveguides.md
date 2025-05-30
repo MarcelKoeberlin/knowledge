@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/10-waveguides/","hide":"true","updated":"2025-05-27T13:39:50.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/10-waveguides/","hide":"true","updated":"2025-05-30T12:59:44.452+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,340 +7,277 @@ Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Tab
 ---
 **Table of Contents**
 
-- [[Notes/2025 Quantum Electronics Gallmann/10 Waveguides#10.1 Planar Mirror Waveguide\|10.1 Planar Mirror Waveguide]]
-- [[Notes/2025 Quantum Electronics Gallmann/10 Waveguides#10.2 Planar Dielectric Waveguide\|10.2 Planar Dielectric Waveguide]]
-- [[Notes/2025 Quantum Electronics Gallmann/10 Waveguides#10.3 Optical Fibres\|10.3 Optical Fibres]]
+[[Notes/2025 Quantum Electronics Gallmann/10 Waveguides#10.1 Planar Mirror Waveguide\|10.1 Planar Mirror Waveguide]]
+[[Notes/2025 Quantum Electronics Gallmann/10 Waveguides#10.2 Planar Dielectric Waveguide\|10.2 Planar Dielectric Waveguide]]
+[[Notes/2025 Quantum Electronics Gallmann/10 Waveguides#10.3 Optical Fibres\|10.3 Optical Fibres]]
 
 ---
 # 10 Waveguides
-[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=69&selection=0,0,0,10|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=227&selection=0,0,0,10|•]]
+[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=69&selection=0,0,0,10| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=227&selection=0,0,0,10| ]]
 
-Waveguides are devices that transmit and guide light and other electromagnetic radiation along a prescribed path. In contrast to traditional free-space optics, this occurs inside a material, and waveguides have the advantage of alignments robustness. They furthercompared have the ability to circumvent obstructions, especially in the case of optical fibres. They are used in telecommunication over long distances, but also in biomedical applications where light is to be brought into or taken from difficult-to-access places. They are the key component of 'integrated optics'. Waveguides come in many different forms, as the following figure shows:
+Waveguides are devices that transmit and guide light and other electromagnetic radiation along a prescribed path. In contrast to traditional free-space optics, this guidance occurs within or along a material structure. Waveguides offer the advantage of alignment robustness and, particularly in the case of optical fibres, the ability to circumvent obstructions. They are used extensively in telecommunication over long distances, and also in biomedical applications where light needs to be delivered to or collected from difficult-to-access places. Waveguides are key components of 'integrated optics'. They come in many different forms, as the following figure illustrates:
 
-![Attachments/QE_script 2.webp|700](/img/user/Attachments/QE_script%202.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=227&rect=122,180,479,303|•]]
+![Attachments/QE_script 2.webp|700](/img/user/Attachments/QE_script%202.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=227&rect=122,180,479,303| ]]
 
-The difference between the two colours is their refractive index. The figure shows from a to c, a slab waveguide, a strip waveguide, and an [[Notes/2025 Quantum Electronics Gallmann/10 Waveguides#10.3 Optical Fibres\|optical fibre]]. 
+The difference between the colours in the schematic typically represents different refractive indices. The figure shows, from (a) to (c): a slab waveguide, a strip (or channel) waveguide, and an [[Notes/2025 Quantum Electronics Gallmann/10 Waveguides#10.3 Optical Fibres\|optical fibre]].
 
 ---
 ## 10.1 Planar Mirror Waveguide
-[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=70&selection=0,23,0,23|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=228&selection=4,0,6,36|•]]
+[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=70&selection=0,23,0,23| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=228&selection=4,0,6,36| ]]
 
-The following figure shows a planar-mirror waveguide, consisting of two highly reflective mirrors placed a distance $d$ apart. This is of course a rather impractical device to construct. Instead, [[Notes/2025 Quantum Electronics Gallmann/10 Waveguides#10.2 Planar Dielectric Waveguide\|dielectric waveguides]] are used, as discussed later. 
+The following figure shows a planar mirror waveguide, consisting of two parallel, highly reflective (ideally perfect) mirrors placed a distance $d$ apart, with a medium of refractive index $n$ between them. While conceptually simple, this is a rather impractical device to construct perfectly. Instead, [[Notes/2025 Quantum Electronics Gallmann/10 Waveguides#10.2 Planar Dielectric Waveguide\|planar dielectric waveguides]] based on total internal reflection are commonly used, as discussed later.
 
-![Attachments/QE_script 3.webp|700](/img/user/Attachments/QE_script%203.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=228&rect=143,434,445,560|•]]
+![Attachments/QE_script 3.webp|700](/img/user/Attachments/QE_script%203.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=228&rect=143,434,445,560| ]]
 
-One way to treat electromagnetic radiation within this planar-mirror waveguide is by using ray optics. We can identify modes of the waveguides as waves that self-consistently (so constructively) interfere after a single reflection from each mirror, as shown in the next figure:
+One way to treat electromagnetic radiation within this planar mirror waveguide is by using a ray optics picture. We can identify guided modes as those waves that self-consistently interfere (that is, constructively interfere) after undergoing reflections from each mirror. Consider a plane wave bouncing between the mirrors, making an angle $\theta$ with the normal to the mirror surfaces (so it propagates at an angle $(90^\circ-\theta)$ with respect to the waveguide axis, say $z$).
 
-![Attachments/QE_script 4.webp|700](/img/user/Attachments/QE_script%204.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=229&rect=67,540,533,688|•]]
+![Attachments/QE_script 4.webp|700](/img/user/Attachments/QE_script%204.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=229&rect=67,540,533,688| ]]
 
-This imposes conditions on the wavelength and the angle $\theta$ of the wavevector with respect to the mirror planes. We require that the difference in phases acquired from A to B (see figure), compared to the phase acquired from A to C, has to be an integer multiple of $2\pi.$ Considering this geometry, we obtain 
+For constructive interference, the phase difference accumulated over one round trip in the transverse ($y$) direction must be an integer multiple of $2\pi$. Considering the path difference between points A and B on a wavefront after one reflection compared to A and C (virtual path), for a wave reflecting between two mirrors separated by $d$: the transverse round trip path difference is $2d\cos\theta$ (if $\theta$ is with surface normal). The phase condition is $k (2d\cos\theta) - 2\phi_R = 2m\pi$, where $\phi_R$ is phase shift on reflection ( $\pi$ for perfect conductor). This leads to $k_y d = m\pi$.
+More directly, considering the transverse wavevector component $k_y$: for a wave to be a standing wave in the $y$-direction between $y=0$ and $y=d$ (with field vanishing at boundaries), we need $k_y d = m\pi$, where $m$ is a positive integer ($m=1, 2, 3, \dots$).
+The wavevector components are $k_y = k \cos\theta = (n\omega/c)\cos\theta$ and the propagation constant along the waveguide axis (say, $z$) is $\beta = k_z = k \sin\theta = (n\omega/c)\sin\theta$.
+From $k_y = m\pi/d$, we have $(n\omega/c)\cos\theta_m = m\pi/d$.
+The propagation constant for mode $m$ is:
 $$
-\frac{2\pi}{\lambda}2d\sin\theta=2\pi m\quad \text{with}\quad m\in\mathbb{Z}.
+\beta_m = \sqrt{k^2 - k_{y,m}^2} = \sqrt{\left(\frac{n\omega}{c}\right)^2 - \left(\frac{m\pi}{d}\right)^2}.
 $$
-We index the allowed angle with $m,$ such that we obtain
-$$
-\sin\theta_m=m\frac{\lambda}{2d}.
-$$
-Therefore it is clear that only a discrete set of angles can fulfil the conditions required for constructive interference. An alternative way to view the same problem is to find the requirements for two plane waves to satisfy the boundary conditions for the plane mirror surfaces. Then, the discretisation of the allowed angles will also discretise the wavevector component in y-direction:
-$$
-k_y=|\mathbf{k}|\sin\theta\implies k_{y,m}=m\frac{\pi}{d}.
-$$
-The only nonzero component of the wavevector is in z-direction, and we call this the propagation constant $\beta=k_z=|\mathbf{k}|\sin\theta.$ Since the magnitude of the wavevector is fixed, only a finite number of indices $m$ exist that allow for a real-valued propagation constant:
+For $\beta_m$ to be real (propagating mode), we require $k^2 > (m\pi/d)^2$, or $\frac{n\omega}{c} > \frac{m\pi}{d}$. This limits the number of modes $m$ that can propagate for a given frequency $\omega$ and waveguide dimension $d$.
+Modes of higher order $m$ have a larger $k_y$, thus a larger angle $\theta_m$ with respect to the normal (smaller angle with the waveguide axis $z$). They undergo more reflections per unit length and their effective propagation velocity along $z$ is lower.
 
-$$
-\beta_m^2=k^2-\frac{m^2 \pi^2}{d^2}.
-$$
-Modes of higher order (so modes with larger $m$) form a more oblique angle with respect to the mirrors and thus propagate more slowly through the waveguide (meaning their group velocity along the waveguide axis is lower):
+![Attachments/QE_script 6.webp|700](/img/user/Attachments/QE_script%206.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=230&rect=122,546,491,683| ]]
 
-![Attachments/QE_script 6.webp|700](/img/user/Attachments/QE_script%206.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=230&rect=122,546,491,683|•]]
-
-Explicitly writing down the total field as superposition of the upward and downward propagating wave, we have at $y=d/2:$
-$$
-E_{t o t}=\mathfrak{Re}\left[e^{i \omega t}\left(E_1 e^{-i k_{1 y} d / 2-i k_{1 z} z}+E_2 e^{-i k_{2 y} d / 2-i k_{2 z} z}\right)\right].
-$$
-We require this to be zero for all times, and all values of $z,$ such that we find $k_{1,z}=k_{2,z}.$ Similarly, for the other mirror boundary at $y=-d/2$ we find together
-$$
-E_1 e^{-i k_{1 y} d / 2}=-E_2 e^{-i k_{2 y} d / 2}\quad\text{and}\quad E_1 e^{i k_{1 y} d / 2}=-E_2 e^{i k_{2 y} d / 2}.
-$$
-Division leads to 
-$$
-e^{i k_{1 y} d}=e^{i k_{2 y} d},
-$$
-and since both medium and frequency are the same for both waves, also $|\mathbf{k}|$ must be the same for both. This implies $k_{1,y}=\pm k_{2,y}.$ We want two different waves and pick the negative sign. We recover
-$$
-\sin \theta_m=m \frac{\lambda}{2 d}.
-$$
-For a relation between the fields, we find 
-$$
-E_1^2=E_2^2,
-$$
-which implies $E_1=\pm E_2,$ and the sign depends on the value of $m:$ For odd $m,$ we have $+$, while even $m$ leads to $-$.  
+Alternatively, considering a superposition of two plane waves with wavevectors $\mathbf{k}_1 = (k_x, k_y, \beta)$ and $\mathbf{k}_2 = (k_x, -k_y, \beta)$ (assuming 2D $y,z$ propagation for simplicity, $k_x=0$). The total field must satisfy boundary conditions, for instance, tangential $E$-field must be zero at perfect conductor surfaces $y=\pm d/2$.
+Let $E(y,z,t) = \mathfrak{Re}\left[E_1 e^{i(\omega t - k_y y - \beta z)} + E_2 e^{i(\omega t + k_y y - \beta z)}\right]$.
+Boundary conditions $E(y=\pm d/2) = 0$ for all $z,t$ lead to $E_1 e^{-ik_y d/2} + E_2 e^{ik_y d/2} = 0$ and $E_1 e^{ik_y d/2} + E_2 e^{-ik_y d/2} = 0$.
+These require either $E_1=-E_2$ and $\sin(k_y d/2)=0 \implies k_y d/2 = m'\pi \implies k_y = 2m'\pi/d$ (even modes for $E(y)$ about $y=0$),
+or $E_1=E_2$ and $\cos(k_y d/2)=0 \implies k_y d/2 = (m'-1/2)\pi \implies k_y = (2m'-1)\pi/d$ (odd modes for $E(y)$ about $y=0$).
+Combining these, $k_y = m\pi/d$ for $m=1,2,3,\dots$. 
 
 ### 10.1.1 TE Modes
 
-Now, we readily investigate the electric field profile of the light for a given mode inside the waveguide. This leads to 
+For Transverse Electric (TE) modes, the electric field is transverse to the direction of propagation $z$, so $E_z=0$. If we assume $\mathbf{E} = \hat{\mathbf{x}} E_x(y,z,t)$, then $E_x$ must satisfy the boundary conditions. The superposition results in field patterns:
 $$
-\begin{align}
-E_{\text{tot}} &=\mathfrak{Re}\left[e^{i(\omega t-\beta z)} E_1\left(e^{-i m \pi y / d} \pm e^{i m \pi y / d}\right)\right]\\&=
-\begin{cases}\text{m odd:} &
-\mathfrak{Re}\left[\, 2 E_1 e^{i(\omega t - \beta z)} \cos\left( \dfrac{m \pi y}{d} \right) \, \right]  \\[1em]\text{m even:} &
-\mathfrak{Re}\left[\, -2i E_1 e^{i(\omega t - \beta z)} \sin\left( \dfrac{m \pi y}{d} \right) \, \right] .
-\end{cases}
-\end{align}
+E_x(y,z,t) = \mathfrak{Re}\left[E_{m}^{(0)} f_m(y) e^{i(\omega t - \beta_m z)}\right],
 $$
-Therefore, the electric field amplitude as a function of $y$ differs with each mode, while the amplitude is independent on $z.$ This is shown in the following figure:
+where $f_m(y)$ are sine or cosine functions satisfying the boundary conditions:
+-   $f_m(y) = \sin(m\pi y/d)$ for $m=1,2,3,\dots$ (if boundaries at $y=0, d$)
+-   $f_m(y) = \cos(m\pi y/d)$ for odd $m=1,3,\dots$ (symmetric modes about $y=0$, boundaries at $\pm d/2$)
+-   $f_m(y) = \sin(m\pi y/d)$ for even $m=2,4,\dots$ (antisymmetric modes about $y=0$, boundaries at $\pm d/2$)
 
-![Attachments/QE_script 5.webp|700](/img/user/Attachments/QE_script%205.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=231&rect=138,538,470,693|•]]
+Odd modes ($m=1,3,5,...$): $E_x \sim \cos(m\pi y/d)$, non-zero intensity at centre.
+Even modes ($m=2,4,6,...$): $E_x \sim \sin(m\pi y/d)$, zero intensity (node) at centre.
+This is shown in the following figure (assuming $E_x$ component):
 
-Odd modes have a nonzero intensity in the centre, while even modes have a node there. The electric field points along the x-axis, which is why we call is transverse electric (TE) mode. The magnetic field has a nonzero z-component by construction of two superimposed TEM waves. The larger $m$ is, the smaller the propagation constant becomes, meaning that the phase fronts propagate slower. 
+![Attachments/QE_script 5.webp|700](/img/user/Attachments/QE_script%205.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=231&rect=138,538,470,693| ]]
 
-Planar mirror waveguides are only able to support a finite number of different modes. The number of modes $M$ is limited to 
+The associated magnetic field will have a non-zero $z$-component for these TE modes. The larger the mode number $m$, the smaller the propagation constant $\beta_m$ for a given $\omega$, meaning the phase fronts for that mode propagate more slowly along $z$.
+Planar mirror waveguides support a finite number of propagating modes $M$ for a given wavelength $\lambda = \lambda_0/n$:
 $$
-M=\left\lfloor \frac{2d}{\lambda}\right\rfloor.
+M=\left\lfloor \frac{2nd}{\lambda_0}\right\rfloor.
 $$
-Thus, for sufficiently thin waveguides, only a single mode can exist. However, below a minimum thickness of $d_{min}=\lambda/2,$ no mode can exist. Generally, we may also define a cutoff frequency
-$$
-f_c=\frac{c}{2nd},
-$$
-below which the waveguide will not work. 
+Thus, for a sufficiently thin waveguide ($d < \lambda_0/(2n)$), only a single mode ($m=1$, if allowed by geometry for TE/TM distinction) or no modes can propagate. Each mode $m$ has a cutoff frequency $\nu_{c,m} = m c/(2nd)$ (or wavelength $\lambda_{c,m} = 2nd/m$), below which ($\nu < \nu_{c,m}$ or $\lambda > \lambda_{c,m}$) that mode cannot propagate ($\beta_m$ becomes imaginary).
 
 ### 10.1.2 TM Modes
 
-Now consider fields where the magnetic field is oriented in the x-direction. This can be treated in a completely analogous manner as before. The mode spacing and number of modes will be exactly the same. What changes is solely the electric field profile:
-
-For $m$ odd:
-
+For Transverse Magnetic (TM) modes, the magnetic field is transverse to $z$ ($H_z=0$), so the electric field must have a $z$-component ($E_z \neq 0$). The boundary conditions for perfect conductors require tangential $\mathbf{E}$ to be zero and normal $\mathbf{B}$ to be zero. For TM modes, $H_x$ is the tangential component. The treatment is analogous to TE modes, leading to the same discretisation of $k_y$ and the same dispersion relation for $\beta_m$. The field profiles differ:
+For $m$ odd ($H_x \sim \cos(m\pi y/d)$ if origin at centre):
 $$
 \begin{aligned}
-E_{\mathrm{tot}, y}^{\mathrm{odd}} & =\mathfrak{Re}\left[2 E_1 e^{i\left(\omega t-\beta_m z\right)} \cos \left(\frac{m \pi y}{d}\right) \cot \theta_m\right], \\
-E_{\mathrm{tot}, z}^{\mathrm{odd}} & =\mathfrak{Re}\left[2 E_1 e^{i\left(\omega t-\beta_m z\right)} \cos \left(\frac{m \pi y}{d}\right)\right].
+E_y(y,z,t) & \sim \mathfrak{Re}\left[ \cos\left(\frac{m \pi y}{d}\right) e^{i(\omega t-\beta_m z)} \right], \\
+E_z(y,z,t) & \sim \mathfrak{Re}\left[ i \sin\left(\frac{m \pi y}{d}\right) e^{i(\omega t-\beta_m z)} \right].
 \end{aligned}
 $$
-For $m$ even:
-
+For $m$ even ($H_x \sim \sin(m\pi y/d)$ if origin at centre):
 $$
 \begin{aligned}
-& E_{\mathrm{tot}, y}^{\mathrm{even}}=\mathfrak{Re}\left[-2 i E_1 e^{i\left(\omega t-\beta_m z\right)} \sin \left(\frac{m \pi y}{d}\right) \cot \theta_m\right],\\
-& E_{\mathrm{tot}, z}^{\mathrm{even}}=\mathfrak{Re}\left[-2 i E_1 e^{i\left(\omega t-\beta_m z\right)} \sin \left(\frac{m \pi y}{d}\right)\right].
+E_y(y,z,t) & \sim \mathfrak{Re}\left[ \sin\left(\frac{m \pi y}{d}\right) e^{i(\omega t-\beta_m z)} \right], \\
+E_z(y,z,t) & \sim \mathfrak{Re}\left[ i \cos\left(\frac{m \pi y}{d}\right) e^{i(\omega t-\beta_m z)} \right].
 \end{aligned}
 $$
-Thus, for each mode number, there exists a TE- and a TM-polarised version. 
+The exact coefficients and signs depend on normalisation and specific field component definitions. Thus, for each mode number $m$, there generally exists both a TE and a TM-polarised version with the same propagation constant $\beta_m$ in this idealised structure.
 
 ### 10.1.3 Dispersion Relation
 
-Another way to write the propagation constant is
+The propagation constant $\beta_m$ can be written in terms of a cutoff frequency $\omega_{c,m} = m\pi c/(nd)$ for each mode $m$:
 $$
-\beta_m=k \cos \theta_m=\frac{n \omega}{c} \sqrt{1-m^2 \frac{\omega_c^2}{\omega^2}},
+\beta_m(\omega) = \frac{n\omega}{c} \sqrt{1-\left(\frac{\omega_{c,m}}{\omega}\right)^2} = \frac{1}{c}\sqrt{n^2\omega^2 - (m\pi c/d)^2}.
 $$
-written in terms of the cutoff frequency $\omega_c=2\pi f_c.$ This is known as the dispersion relation. This is shown in the next figure.
+This is the dispersion relation for the $m$-th mode. This is shown in the next figure ($\omega$ vs $\beta$):
 
-![Attachments/QE_script 7.webp|700](/img/user/Attachments/QE_script%207.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=234&rect=77,426,529,589|•]]
+![Attachments/QE_script 7.webp|700](/img/user/Attachments/QE_script%207.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=234&rect=77,426,529,589| ]]
 
-We can see in (b) that dispersion diagrams for different modes yield similar curves in the $\omega-\beta$ space. For a fixed $\beta,$ higher order modes require a higher frequency to have the same propagation constant. This is related to the light-confinement properties of the device: Shorter wavelengths are confined better than long ones, implying an increasing propagation constant as it becomes more difficult for light to escape the waveguide. For large values of $\omega$ or $\beta,$ the dispersion approaches light cone of free space, so $\omega\longrightarrow c/n\beta.$ This light line is nothing but the dispersion relation of plane waves in a homogeneous medium with a refractive index equal to that of the guiding region, called the _waveguide core_. If the dispersion was outside the light cone, then the propagation constant would become imaginary, such that the wave would be attenuated rather than propagate undisturbed. This kind of wave would be evanescent. Due to the perfect mirrors in our treatment, no evanescently decaying field is possible however, since they force a zero field at the boundary. However, in practice, these damped fields do exists outside the core. 
+We observe in (b) that dispersion diagrams for different modes $m$ yield similar curves in the $\omega-\beta$ space, each starting at its respective cutoff frequency $\omega_{c,m}$. For a fixed $\beta$, higher-order modes require a higher frequency to have the same propagation constant. For large values of $\omega$ (far above cutoff), $\beta_m \approx n\omega/c = nk_0$, approaching the "light line" of the material filling the waveguide core. This light line represents the dispersion relation of plane waves in a homogeneous medium with refractive index $n$. If $\beta_m$ were to fall outside this light cone (so $\beta_m > nk_0$), it would imply an imaginary transverse wavevector component even within the core, which is not typical for these guided modes. If $\omega < \omega_{c,m}$, $\beta_m$ becomes imaginary, meaning the mode is evanescent (non-propagating). Due to the perfect mirrors in our treatment, no evanescently decaying field is possible outside the mirrors (as fields are zero there), but modes below cutoff do not propagate.
 
-We can associate an effective refractive index $n_{eff}$ to the propagation constant. It is the refractive index that would give the same constant for a plane wave travelling in an equivalent homogeneous medium:
+An effective refractive index $n_{m, \text{eff}}$ can be associated with each mode:
 $$
-n_{m, e f f}=\frac{\beta_m}{k_0},
+n_{m, \text{eff}}(\omega) = \frac{\beta_m(\omega)}{k_0} = n \sqrt{1-\left(\frac{\omega_{c,m}}{\omega}\right)^2},
 $$
-where $k_0=\omega/c$ is the vacuum wavenumber. 
+where $k_0=\omega/c$ is the vacuum wave number.
 
 ### 10.1.4 Group and Phase Velocity
 
-The group velocity within a waveguide is the speed of a pulse of light propagating through the waveguide. Analogous to the case of a uniform medium, and assuming negligible dispersion in the waveguide core, we have
+The group velocity $v_{g,m}$ for mode $m$ is the speed of energy or information propagation for that mode:
 $$
-v_m=\frac{\mathrm{d}\omega}{\mathrm{d}\beta}=\frac{c \cos \theta_m}{n}=\frac{c}{n} \sqrt{1-m^2 \frac{\omega_c^2}{\omega^2}}.
+v_{g,m}=\frac{d\omega}{d\beta_m} = \frac{c}{n} \sqrt{1-\left(\frac{\omega_{c,m}}{\omega}\right)^2} = \frac{c}{n} \cos\theta_m,
 $$
-Geometrically, it can be understood as a pulse bouncing along the waveguide. The z-component of the pulse velocity is just the group velocity of the medium projected onto the z-axis. Then, we can understand that it makes sense for higher order modes to travel slower. The group velocity is then always smaller than $c$ and decreases with the mode number for fixed frequency. The phase velocity is
+where $\cos\theta_m = \beta_m / (nk_0)$ defines the angle of the constituent plane waves with the $z$-axis. Geometrically, it is the projection of the plane wave velocity $c/n$ onto the waveguide axis. The group velocity is always less than or equal to $c/n$ and decreases for higher mode numbers $m$ (at a fixed frequency) or as $\omega$ approaches $\omega_{c,m}$.
+The phase velocity for mode $m$ is:
 $$
-v_{p, m}=\frac{\omega}{\beta_m}=\frac{c}{n_{m, \mathrm{eff}}}.
+v_{p,m}=\frac{\omega}{\beta_m}=\frac{c}{n_{m, \text{eff}}}.
 $$
+Since $n_{m,eff} < n$, $v_{p,m} > c/n$.
 
 ### 10.1.5 Multimode Fields
 
-Generally, any field distribution that vanishes at the mirrors will be guided. All these contributions may be written as linear superposition of other modes. The modes are the solutions for which the intensity profile is independent of $z.$ The transverse field profile for an arbitrary guided waveform will evolve with propagation due to the different velocities of the underlying modes. 
+Generally, any field distribution that satisfies the boundary conditions (vanishes at the mirrors) will be guided. Such arbitrary fields can be expressed as a linear superposition of the allowed TE and TM modes. The transverse field profile of an arbitrary guided waveform will evolve with propagation distance $z$ due to the different phase velocities (and group velocities, leading to modal dispersion) of the underlying modes.
 
-![Attachments/05_Devices_and_applications 24.webp|700](/img/user/Attachments/05_Devices_and_applications%2024.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=86&rect=53,117,461,452|•]]
+![Attachments/05_Devices_and_applications 24.webp|700](/img/user/Attachments/05_Devices_and_applications%2024.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=86&rect=53,117,461,452| ]]
 
 ---
 ## 10.2 Planar Dielectric Waveguide
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=234&selection=44,0,46,27|•]] [[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=90&selection=0,27,0,27|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=234&selection=44,0,46,27| ]] [[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=90&selection=0,27,0,27| ]]
 
-As already mentioned, planar waveguides are practically implemented using two transparent dielectric materials with generally differing refractive indices $n_1>n_2,$ where $n_1$ is the core's refractive index:
+Planar waveguides are practically implemented using transparent dielectric materials with generally differing refractive indices. A common structure is a slab waveguide, consisting of a core layer with refractive index $n_1$ and thickness $d$, surrounded by cladding layers with a lower refractive index $n_2$ (i.e., $n_1>n_2$).
 
-![Attachments/05_Devices_and_applications 25.webp|700](/img/user/Attachments/05_Devices_and_applications%2025.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=90&rect=15,153,588,445|•]]
+![Attachments/05_Devices_and_applications 25.webp|700](/img/user/Attachments/05_Devices_and_applications%2025.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=90&rect=15,153,588,445| ]]
 
-The outer layer is called _cladding_. Rays with sufficiently small angles with respect to the planer interface will experience total internal reflection at the core-cladding interface, thus being confined to the core. As already shown [[Notes/2025 Quantum Electronics Gallmann/3 Reflection and Transmission at Interfaces#3.3 Total Internal Reflection\|earlier]], the critical angle with respect to the surface is
+Light is guided within the core by total internal reflection (TIR) at the core-cladding interfaces. Rays incident on the interface from within the core at an angle $\theta_1$ (with respect to the normal) greater than the critical angle $\theta_c = \arcsin(n_2/n_1)$ will be totally reflected.
+Similarly to the mirror waveguide, we seek self-consistent modes. However, an important difference is that upon total internal reflection, the reflected beam experiences a phase shift $\phi_r$ which is not simply $\pi$ (as for a perfect conductor) but depends on the angle of incidence $\theta_1$ and the polarisation (TE or TM). For TE modes, this phase shift is given by:
 $$
-\theta_c=\arccos\left(n_2 / n_1\right).
+\tan\left(\frac{\phi_r^{\text{TE}}}{2}\right) = -\frac{\sqrt{n_1^2\sin^2\theta_1 - n_2^2}}{n_1\cos\theta_1}.
 $$
-Similarly to before, we aim to find those modes and spatial profiles that can be confined. There is however one important difference: For total internal reflection, the phase shift of the reflected beam is not $\pi,$ but a value depending on the angle $\theta$ due to the presence of an evanescent wave inside the outer dielectric. The reason is that the transverse field must not need to have a mode exactly at the interface. For TE modes with electric field along x, the phase shift $\phi_r$ is determined by 
+A wave trapped within the waveguide core experiences this phase shift at each reflection. The condition for a guided mode is that the total phase change over a round trip in the transverse direction (including reflection phases) must be an integer multiple of $2\pi$. This leads to a transcendental equation for the allowed propagation angles $\theta_1$ (or transverse wave numbers $k_{y1} = n_1 k_0 \cos\theta_1$):
 $$
-\tan \frac{\phi_r}{2}=\sqrt{\frac{\sin^2 \theta_c}{\sin^2 \theta}-1}.
+2 k_{y1} d - 2\phi_r(\theta_1) = 2m\pi, \quad \text{or} \quad k_{y1}d - \phi_r(\theta_1) = m\pi, \quad m=0,1,2,\dots
 $$
+These equations are difficult to solve analytically and are typically solved graphically or numerically:
 
-A wave trapped within the waveguide experiences this phase shift twice before tracing its path. Applying this extra shift yields the relation
+![Attachments/05_Devices_and_applications 26.webp|700](/img/user/Attachments/05_Devices_and_applications%2026.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=94&rect=51,164,612,416| ]]
+
+There is a finite number $M$ of guided modes, limited by the condition that $\theta_1$ must be greater than $\theta_c$ for TIR. The approximate number of TE modes is:
 $$
-\tan \left(\pi \frac{d}{\lambda} \sin \theta-m \frac{\pi}{2}\right)=\sqrt{\frac{\sin^2 \theta_c}{\sin^2 \theta}-1},
+M \approx \left\lfloor \frac{2d}{\lambda_0}\sqrt{n_1^2-n_2^2} \right\rfloor + 1.
 $$
-which is an equation difficult to treat analitically. Instead, we solve it graphically, where LHS and RHS stand for left- and right-hand side, respectively:
+This leads to a cutoff condition for each mode. The fundamental mode (m=0 for TE, in symmetric slab) has no cutoff frequency if $d>0$. TM modes have similar, but slightly different, eigenvalue equations due to a different TIR phase shift.
+The dispersion diagram for a dielectric slab waveguide shows modes confined between the light line of the cladding ($k_0 n_2$) and the light line of the core ($k_0 n_1$):
 
-![Attachments/05_Devices_and_applications 26.webp|700](/img/user/Attachments/05_Devices_and_applications%2026.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=94&rect=51,164,612,416|•]]
+![Attachments/QE_script 8.webp|700](/img/user/Attachments/QE_script%208.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=236&rect=74,499,306,681| ]]
 
-There is a finite number $M$ of solutions, limited by the condition $\theta_m\leq\theta_c.$ The white circle in the bottom right are the solutions for a planar mirror surface. We find
-$$
-M=1+\left\lfloor\frac{\sin \theta_c}{\lambda / 2 d}\right\rfloor=1+\left\lfloor\frac{2 d}{\lambda_0} \sqrt{n_1^2-n_2^2}\right\rfloor .
-$$
-This leads to the cutoff frequency
-$$
-f_c=\frac{1}{\sqrt{n_1^2-n_2^2}} \frac{c}{2 d},
-$$
-defining the maximum frequency for a single allowed mode. TM modes obtain identical relations. The following figure shows the dispersion diagram for a dielectric slab waveguide and different TE modes:
+The effective refractive index $n_{\text{eff},m} = \beta_m/k_0$ for guided modes lies between $n_2 < n_{\text{eff},m} < n_1$. It must be larger than $n_2$ for TIR to occur, and smaller than $n_1$ as some field exists in the cladding.
+The group velocity $v_g = d\omega/d\beta$ can be calculated from the dispersion relation:
 
-![Attachments/QE_script 8.webp|700](/img/user/Attachments/QE_script%208.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=236&rect=74,499,306,681|•]]
+![Attachments/QE_script 15.webp|700](/img/user/Attachments/QE_script%2015.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=236&rect=317,501,528,683| ]]
 
-There are now two light lines, defined by the core and the surrounding cladding. The dispersion curves for guided modes are always between these two light lines, implying that the effect refractive index must be between $n_1$ and $n_2.$ This can also be understood intuitively: It must be larger than $n_2$ (the cladding) to make total internal reflection possible, but it must be smaller than $n_1$ (the core), since that is the value it would reach for free-space propagation in that medium. However, it approaches the core index for better confinement, but approaches the cladding index for weaker confinement (or a decrease in frequency).
+A key feature of dielectric waveguides is the presence of evanescent tails of the guided modes extending into the cladding region, even under TIR conditions. The field in the cladding decays exponentially with distance from the interface. This allows for _evanescent field coupling_ if another waveguide is brought sufficiently close:
 
-From the dispersion relation, we may again calculate the group velocity $v_g=\frac{\partial \omega}{\partial \beta}:$
+![Attachments/QE_script 11.webp|700](/img/user/Attachments/QE_script%2011.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=237&rect=71,225,513,374| ]]
 
-![Attachments/QE_script 15.webp|700](/img/user/Attachments/QE_script%2015.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=236&rect=317,501,528,683|•]]
+This coupling causes optical power to oscillate periodically between the two waveguides, forming the basis of directional couplers, which act as beamsplitters or power taps in integrated optics. Evanescently coupled waveguide arrays can also demonstrate coherence properties of light and are used in sensing applications, where changes in the cladding medium near the surface (such as binding of molecules) alter the effective index of the guided mode, leading to a measurable phase shift.
 
-As already mentioned, the waveguide structure does not use perfectly reflecting mirrors, which is why there will be evanescent tails spreading into the cladding, see figure (a). The propagation constant in that region is imaginary. This interesting effect allows coupling fields from different waveguides together by bringing them sufficiently close to each other:
-
-![Attachments/QE_script 11.webp|700](/img/user/Attachments/QE_script%2011.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=237&rect=71,225,513,374|•]]
-
-This is called _evanescent field coupling_, as figure (b) shows. The optical power then oscillates back and forth between the two waveguides:
-
-![Attachments/05_Devices_and_applications 29.webp|700](/img/user/Attachments/05_Devices_and_applications%2029.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=102&rect=340,147,724,290|•]]
-
-Waveguides can be implemented as directional couplers, and those can be used in interferometry. It essentially acts as a beamsplitter. Evanescently coupled waveguide arrays can also be used to show the coherence properties of light: Starting from a single waveguide, it is split into more and more waveguides that each interfere with each other. For incoherent light, there is no interference and the output intensity peaks at the centre waveguide. However, for coherent light, the interference pattern essentially shows up as a sampled version:
-
-![Attachments/05_Devices_and_applications 30.webp|700](/img/user/Attachments/05_Devices_and_applications%2030.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=107&rect=462,145,815,453|•]]
-
-Evanescent fields may also be used for sensing applications:
-
-![Attachments/05_Devices_and_applications 32.webp|700](/img/user/Attachments/05_Devices_and_applications%2032.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=114&rect=82,234,429,441|•]]
-
-Molecular targets are captured by receptor molecules at the waveguide surface. This modulates the waveguide mode effective index, observed as phase shift of the propagating optical mode.
+![Attachments/05_Devices_and_applications 29.webp|700](/img/user/Attachments/05_Devices_and_applications%2029.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=102&rect=340,147,724,290| ]]
+![Attachments/05_Devices_and_applications 30.webp|700](/img/user/Attachments/05_Devices_and_applications%2030.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=107&rect=462,145,815,453| ]]
+![Attachments/05_Devices_and_applications 32.webp|700](/img/user/Attachments/05_Devices_and_applications%2032.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=114&rect=82,234,429,441| ]]
 
 ### 10.2.1 Numerical Aperture
 
-A useful concept is that of the numerical aperture, defined as
+The numerical aperture (NA) is a measure of the light-gathering ability of an optical system, including waveguides. For a waveguide, it defines the maximum acceptance angle $\theta_{\text{acc}}$ for light incident from an external medium (refractive index $n_{\text{out}}$) to be coupled into guided modes:
 $$
-\mathrm{NA}=n_{\text {out }} \sin \theta_{\text {out }},
+\mathrm{NA} = n_{\text{out}} \sin\theta_{\text{acc}}.
 $$
-where $n_{\text {out }}$ and $\theta_{\text {out }}$ are the index of refraction and angle with respect to the waveguide planes in the medium outside the waveguide. For the planar dielectric waveguide, we have 
+For a planar dielectric slab waveguide with core index $n_1$ and cladding index $n_2$, the NA is given by:
 $$
 \mathrm{NA}=\sqrt{n_1^2-n_2^2}.
 $$
-The numerical aperture is important since it determines the input coupling efficiency of the waveguide. It can be seen as the set of angle defining a cone from which one can efficiently couple light into the waveguide mode. It also defines the cone into which light will diffract after being coupled out of the waveguide into free space. 
+This determines the cone of acceptance for efficient input coupling and also the divergence cone of light exiting the waveguide into free space.
 
-![Attachments/05_Devices_and_applications 27.webp|700](/img/user/Attachments/05_Devices_and_applications%2027.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=99&rect=216,334,499,435|•]]
+![Attachments/05_Devices_and_applications 27.webp|700](/img/user/Attachments/05_Devices_and_applications%2027.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=99&rect=216,334,499,435| ]]
 
 ### 10.2.2 Integrated Waveguides
 
-A rapidly growing field in photonics is that of _integrated optics_, with the aim of making integrated circuits that guide, convert and actively switch light signals on a small footprint, at low cost and with very high signal speeds. The following figure shows some examples:
+A rapidly growing field in photonics is _integrated optics_, aiming to create compact optical circuits on a chip that guide, modulate, switch, and process light signals. These are often based on dielectric strip or channel waveguides.
 
-![Attachments/QE_script 12.webp|700](/img/user/Attachments/QE_script%2012.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=238&rect=76,376,360,465|•]]
+![Attachments/QE_script 12.webp|700](/img/user/Attachments/QE_script%2012.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=238&rect=76,376,360,465| ]]
 
-The darker colour indicates the region of larger refractive index. Higher refractive index contrast allows for better mode confinement, allowing tighter bendings, such that more compact devices may be realised. The next image shows different modes that can be confined depending on the wavelength for a strip waveguide consisting of $\ce{Si}$ on $\mathrm{SiO_2}:$
+Higher refractive index contrast between the core and cladding allows for stronger mode confinement, enabling tighter bends and more compact device footprints. The image below shows different modes that can be confined in a strip waveguide made of Si on SiO$_2$, depending on wavelength and dimensions.
 
-![Attachments/05_Devices_and_applications 31.webp|700](/img/user/Attachments/05_Devices_and_applications%2031.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=113&rect=395,167,790,334|•]]
+![Attachments/05_Devices_and_applications 31.webp|700](/img/user/Attachments/05_Devices_and_applications%2031.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=113&rect=395,167,790,334| ]]
 
 ---
 ## 10.3 Optical Fibres
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=238&selection=35,0,37,14|•]] [[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=116&selection=0,0,0,14|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=238&selection=35,0,37,14| ]] [[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=116&selection=0,0,0,14| ]]
 
-Optical fibres are an important class of waveguides, since they are essential for telecommunication. Similar to electrical cables, they allow light to travel in a flexible structure. Most optical fibres are step-index fibres, where the refractive index changes abruptly some distance away from the optical axis:
+Optical fibres are a crucial class of cylindrical waveguides, essential for long-distance telecommunication and many other applications. Most common are step-index fibres, where a cylindrical core of higher refractive index $n_1$ is surrounded by a cladding of lower refractive index $n_2$.
 
-![Attachments/05_Devices_and_applications 33.webp|700](/img/user/Attachments/05_Devices_and_applications%2033.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=120&rect=55,147,762,451|•]]
+![Attachments/05_Devices_and_applications 33.webp|700](/img/user/Attachments/05_Devices_and_applications%2033.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=120&rect=55,147,762,451| ]]
 
-They represent a cylindrical version of a dielectric planar waveguide, where the core is of higher refractive index than the cladding. Generally, the difference in refractive index is very small, but enough to achieve low-loss waveguiding: For example, often silica ($n_\ce{SiO2}=1.44$) is used in combination with germanium-doped silica ($n_\text{doped}=1.46$)  to increase the index compared to the core slightly. Then, the refractive index difference is only $10^{-2}.$  
+The refractive index difference $(n_1-n_2)/n_1$ is typically very small (around 1% or less for standard telecommunication fibres) but sufficient for low-loss waveguiding via TIR. For instance, a silica ($n_{\text{SiO2}} \approx 1.44$) cladding might surround a germanium-doped silica core ($n_{\text{core}} \approx 1.46$).
+The guiding principle is total internal reflection at the core-cladding interface for rays incident at sufficiently grazing angles. The number of guided modes depends on the core diameter $2a$, the wavelength $\lambda_0$, and the NA.
+-   **Single-mode fibres (SMFs)** are designed with a small core diameter to support only the fundamental mode (typically $HE_{11}$) for a given wavelength.
+-   **Multi-mode fibres (MMFs)** have larger cores and support many modes.
+The output of an SMF is approximately Gaussian in its transverse profile, which is beneficial for beam quality. MMFs suffer from modal dispersion (different modes travel at different group velocities), which limits their bandwidth for long-distance communication.
 
-The principle of operating is very similar to that of the planar waveguide: At small angles, light is totally internally reflected along the core-cladding interface, confining the wave inside the core. The number of modes varies with the diameter of the core. The smaller the core, the fewer modes are supported within the fibre. Some fibres are made to support only a single mode, hence their name _single-mode fibres_. Other with multiple are called _multi-mode fibres_. The output of a single-mode fibre is in very good approximation Gaussian, such that the fibre itself helps cleaning up the beam spatial profile that would distort the beam in free-space. On the other hand, multi-mode fibres do not guarantee such good quality, but they naturally behave as low-pass filter, cutting off unwanted frequencies:
+![Attachments/05_Devices_and_applications 34.webp|700](/img/user/Attachments/05_Devices_and_applications%2034.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=121&rect=115,191,664,483| ]]
 
-![Attachments/05_Devices_and_applications 34.webp|700](/img/user/Attachments/05_Devices_and_applications%2034.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=121&rect=115,191,664,483|•]]
+The field distributions for the lowest-order modes in a step-index optical fibre are described by Bessel functions in the core and modified Bessel functions in the cladding. Under the weak guiding approximation ($\Delta = (n_1-n_2)/n_1 \ll 1$), these modes can be simplified to Linearly Polarised (LP) modes. For larger index contrast, one must distinguish between TE, TM, and hybrid (HE, EH) modes, the latter having both non-zero longitudinal $E_z$ and $H_z$ components.
 
-The following figure shows the field distributions for the first modes in a step-index optical fibre:
+![Attachments/QE_script 14.webp|700](/img/user/Attachments/QE_script%2014.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=240&rect=120,421,484,688| ]]
 
-![Attachments/QE_script 14.webp|700](/img/user/Attachments/QE_script%2014.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=240&rect=120,421,484,688|•]]
-
-The linearly polarised modes are obtained in the approximation of weak guiding, which is a good approximation for typically low refractive index contrast. However, in the case of large index contrast, one has to distinguish between TE, TM and hybrid modes - the latter being modes where both electric and magnetic fields have a non-zero longitudinal component. 
-
-One can show that a fibre is single-mode if the V parameter is
+A fibre is single-mode if the normalised frequency or V-parameter satisfies:
 $$
-V=\frac{2 \pi}{\lambda_0} a \mathrm{NA}<2.405
+V=\frac{2 \pi a}{\lambda_0} \mathrm{NA} < 2.405,
 $$
-upper bounded. Here, $a$ is the core radius. Therefore, a small core diameter and small NA help. Sufficiently long wavelengths help as well, however they are often dictated by the source of the light and application.
+where $a$ is the core radius and $\mathrm{NA} = \sqrt{n_1^2-n_2^2}$. Therefore, a small core diameter and small NA promote single-mode operation. Shorter wavelengths make single-mode operation more difficult for a given fibre.
 
-Analogous to the planar dielectric waveguide, light from the outside is only accepted if the angle with respect to the fibre axis $\theta_\text{out}$ satisfies
+Analogous to the planar dielectric waveguide, light from outside is accepted into the fibre if its angle of incidence $\theta_{\text{in}}$ (in the external medium of index $n_{\text{ext}}$) satisfies $n_{\text{ext}} \sin\theta_{\text{in}} < \mathrm{NA}$. The NA is typically $0.1$ to $0.25$ for standard fibres, corresponding to acceptance half-angles of $5^\circ$ to $15^\circ$ in air ($n_{\text{ext}}=1$).
+
+![Attachments/05_Devices_and_applications 36.webp|700](/img/user/Attachments/05_Devices_and_applications%2036.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=123&rect=48,211,780,457| ]]
+
+A large NA corresponds to a wider acceptance cone, making it easier to couple light into the fibre, but often implies higher potential for modal dispersion in MMFs or different guiding properties.
+
+![Attachments/05_Devices_and_applications 37.webp|700](/img/user/Attachments/05_Devices_and_applications%2037.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=124&rect=42,235,770,443| ]]
+
+The radial part of the field solutions $u(r)$ in a fibre with core radius $a$ behave as:
 $$
-n_{\text {out }} \sin \theta_{\text {out }}<\mathrm{NA}=\sqrt{n_1^2-n_2^2},
+u(r) \sim \begin{cases} J_l(k_T r), & r<a \text{ (core)} \\ K_l(\gamma r), & r>a \text{ (cladding)} \end{cases}
 $$
-where $n_{\text {out }}$ is the index of the outside material. The numerical aperture can then be used to estimate the input coupling efficiency. It is typically in the range of $0.1$ to $0.25,$ which corresponds to $5^{\circ}$ to $15^{\circ}$ in air. The following figure shows that only small angles are internally reflected, while others (partially) penetrate the core-cladding interface:
+where $J_l$ is a Bessel function of the first kind, $K_l$ is a modified Bessel function of the second kind (which decays for $r \to \infty$), $k_T^2=n_1^2 k_0^2-\beta^2$ (transverse wave number in core), and $\gamma^2=\beta^2-n_2^2 k_0^2$ (decay constant in cladding).
 
-![Attachments/05_Devices_and_applications 36.webp|700](/img/user/Attachments/05_Devices_and_applications%2036.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=123&rect=48,211,780,457|•]]
-
-Then it is clear that a large NA corresponds to a wider acceptance cone. This is of practical implications, since it makes coupling light into the fibre easier. The drawback is that they also generally have higher attenuation than the more standard, low NA fibres.
-
-![Attachments/05_Devices_and_applications 37.webp|700](/img/user/Attachments/05_Devices_and_applications%2037.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=124&rect=42,235,770,443|•]]
-
-By solving the Helmholtz equation in cylindrical coordinates, we can find that the solutions in a fibre with core radius $a$ behave as
-$$
-\begin{aligned}
-u(r) &\sim \left\{\begin{array}{lll}
-J_l\left(k_T r\right), & r<\text {(a, core)} \\
-K_l(\gamma r), & r>\text {(a, cladding)}
-\end{array}\right.\\
-&=\left\{\begin{array}{lll}
-\text{Bessel function of first kind} \\
-\text{Modified Bessel function of second kind.}
-\end{array}\right.
-\end{aligned}
-$$
-Here, $k_T^2=n_1^2 k_0^2-\beta^2$ and $\gamma^2=\beta^2-n_2^2 k_0^2.$ 
-This is shown in the following figure:
-
-![Attachments/05_Devices_and_applications 38.webp|700](/img/user/Attachments/05_Devices_and_applications%2038.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=125&rect=184,92,662,259|•]]
+![Attachments/05_Devices_and_applications 38.webp|700](/img/user/Attachments/05_Devices_and_applications%2038.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=125&rect=184,92,662,259| ]]
 
 ### 10.3.1 Graded-Index Fibres
 
-Another type of optical fibre are the graded-index fibres (GRIN), made of a material where the refractive index is varied continuously from a larger value in the centre along a parabolic path. They are more difficult to make, but have advantages such as smaller mode dispersion. This is due to the non-abrupt transition between the indices. It is this transition from core to cladding, that with appropriate choice of $n_1(r),$ the light never reach the interface, and all of the modes are guided:
+Another type of optical fibre is the graded-index fibre (GRIN fibre), where the refractive index of the core $n_1(r)$ varies continuously (typically parabolically) from a maximum value at the centre ($r=0$) to the value of the cladding index $n_2$ at the core-cladding boundary. GRIN fibres are more complex to manufacture but can significantly reduce modal dispersion compared to step-index MMFs. This is because rays (or modes) taking longer, more helical paths also travel through regions of lower average refractive index, thus increasing their speed, which can equalise travel times for different modes.
 
-![Attachments/05_Devices_and_applications 39.webp|700](/img/user/Attachments/05_Devices_and_applications%2039.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=130&rect=146,245,685,485|•]]
+![Attachments/05_Devices_and_applications 39.webp|700](/img/user/Attachments/05_Devices_and_applications%2039.webp)[[Notes/2025 Quantum Electronics Gallmann/05_Devices_and_applications.pdf#page=130&rect=146,245,685,485| ]]
 
-Although rays with greater inclination must travel farther, they travel faster such that the travel times are equal for all modes. Note that this effect of 'bending' the light can be seen when sending a laser into a sugar solution, effectively implementing a refractive index gradient. The index is larger at the bottom, and the beam bends downwards. 
-
-Usually, the cladding is not the out-most layer. There is always a so-called 'jacket' which serves as mechanical protection to the fibre. 
+Typically, optical fibres also include an outer protective coating or 'jacket' for mechanical strength and protection.
 
 ### 10.3.2 Fibre Losses
 
-Since telecommunication requires to transmit signals over distances of many thousand kilometres, it is crucial to keep fibre losses in mind. Typically, a constant instrinsic loss coefficient $\alpha$ is considered, measured in decibels per kilometres, $\mathrm{dB}/\mathrm{km}.$ The equation describing the optical power transmitted through a fibre is simply
+For telecommunication applications transmitting signals over many thousands of kilometres, minimising fibre losses is crucial. Typically, a constant intrinsic loss coefficient $\alpha$ (in units of, for instance, dB/km) is considered. The optical power $P(z)$ transmitted through a fibre of length $z$ is described by:
 $$
-\frac{d P}{d z}=-\alpha z \implies P(z)=P(0) \exp \left[-\int_0^z \alpha\left(z^{\prime}\right) d z^{\prime}\right]=P_0e^{-\alpha z}.
+\frac{dP}{dz}=-\alpha' P \implies P(z)=P(0) \exp(-\alpha' z),
 $$
-Clearly, the attenuation coefficient is frequency-dependent (dispersive). It captures multiple origins of losses:
-- Material losses: Absorption in the fibre material.
-- Rayleigh scattering: Microscopic fluctuations in the material density.
-- Waveguide imperfections / Mie scattering: Imperfections at the core-cladding interface, refractive index variations on a scale larger than the optical wavelength. 
-- Bending losses: Bending the waveguides increases losses, but is avoidable. 
-- Interface/Coupling losses: At connections or other optical elements.
-- Mode mismatch
-- Waveguide roughness
-- ...
+where $\alpha'$ is the linear attenuation coefficient (units of $\text{m}^{-1}$ or $\text{km}^{-1}$).
+The attenuation coefficient $\alpha'(\lambda_0)$ is frequency-dependent (dispersive) and arises from several sources:
+- Material absorption: Intrinsic absorption in the fibre material (such as silica), particularly from OH- ion impurities or UV/IR absorption tails.
+- Rayleigh scattering: Scattering from microscopic density fluctuations frozen into the glass structure, scaling as $1/\lambda_0^4$. This is dominant at shorter visible/near-IR wavelengths.
+- Waveguide imperfections / Mie scattering: Scattering from imperfections at the core-cladding interface or from larger-scale refractive index variations.
+- Bending losses: Radiative losses incurred when the fibre is bent too tightly.
+- Interface/Coupling losses: Losses at connections between fibres or to other optical elements.
 
-Since losses introduce an exponential power drop, decibels are a useful unit:
+Since losses often involve exponential power drop, decibel (dB) units are commonly used:
 $$
-\operatorname{Loss}[\mathrm{dB}]=-10 \log _{10} \frac{P_{\text {out }}}{P_{\text {in }}}.
+\text{Loss}[\text{dB}] = -10 \log_{10}\left(\frac{P_{\text{out}}}{P_{\text{in}}}\right) = \alpha_{\text{dB}} \cdot z,
 $$
-It is worth remembering that a factor of $1/2$ corresponds to $-3$ dB losses, while a factor of $1/10$ corresponds to $-10$ dB losses. Typically, power is also expressed in reference to $1$ mW of power. Then, the unit is dBm:
-
+where $\alpha_{\text{dB}}$ is the loss in dB/km. A factor of $1/2$ power loss corresponds to approximately $3 \, \text{dB}$ loss, while a factor of $1/10$ corresponds to $10 \, \text{dB}$ loss. Optical power is also often expressed in dBm, referenced to $1 \, \text{mW}$:
 $$
-\text { Power }[\mathrm{dBm}]=10 \log _{10} \frac{P[\mathrm{~mW}]}{1 \mathrm{~mW}}.
+\text{Power}[\text{dBm}]=10 \log_{10}\left(\frac{P[\text{mW}]}{1 \text{ mW}}\right).
 $$
-Logarithmic units have the advantage of turning multiplication and division of multiple elements into additions, respectively subtractions. 
+Logarithmic units simplify calculations for cascaded elements, turning multiplications into additions.
 
 ### 10.3.3 Polarisation-Maintaining Fibre
 
-To maintain the input polarisation throughout the fibre, a controlled optical anisotropy is introduced into the transverse fibre profile. This creates a well defined axis and corresponding polarisation eigenstates. Linear polarisation along a major axis will remain in this polarisation state during propagation. Usually, the slow axis is used, as it is somewhat more robust against perturbations. 
+Standard single-mode fibres can exhibit random birefringence due to imperfections or stress, leading to a change in the polarisation state of light as it propagates. To maintain a specific input polarisation state throughout the fibre, **Polarisation-Maintaining Fibres (PMFs)** are used. These fibres have a controlled, strong internal birefringence intentionally introduced into their structure, for instance by using an elliptical core or by incorporating stress-applying elements alongside the core. This creates two well-defined principal polarisation axes (fast and slow). Light linearly polarised along one of these principal axes will largely maintain its polarisation state during propagation. Usually, the slow axis is used for launching light as it can be more robust against minor external perturbations.
 
 ---

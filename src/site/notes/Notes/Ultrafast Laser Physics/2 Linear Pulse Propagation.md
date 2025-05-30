@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/2-linear-pulse-propagation/","hide":"true","updated":"2025-05-29T12:11:42.654+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/2-linear-pulse-propagation/","hide":"true","updated":"2025-05-30T12:20:01.287+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -7,432 +7,374 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 **Table of Contents**
 
-- [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.1 Wave Equation in the Spectral Domain: Helmholtz Equation\|2.1 Wave Equation in the Spectral Domain: Helmholtz Equation]]
-- [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.2 Linear vs Nonlinear Wave Propagation\|2.2 Linear vs Nonlinear Wave Propagation]]
-- [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.3 Ultrafast Pulses\|2.3 Ultrafast Pulses]]
-- [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.4 Linear pulse Propagation in a Dispersive Material\|2.4 Linear pulse Propagation in a Dispersive Material]]
+[[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.1 Wave Equation in the Spectral Domain: Helmholtz Equation\|2.1 Wave Equation in the Spectral Domain: Helmholtz Equation]]
+[[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.2 Linear vs Nonlinear Wave Propagation\|2.2 Linear vs Nonlinear Wave Propagation]]
+[[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.3 Ultrafast Pulses\|2.3 Ultrafast Pulses]]
+[[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.4 Linear pulse Propagation in a Dispersive Material\|2.4 Linear pulse Propagation in a Dispersive Material]]
 
 ---
 # 2 Linear Pulse Propagation
 
-In [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media\|Chapter 1]] we have seen that a monochromatic plane wave extends infinitely in space and time. To obtain a limited wave packet in time (a pulse), different plane waves with different wavelengths need to be overlapped:
+In [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media\|Chapter 1]] we have seen that a monochromatic plane wave extends infinitely in space and time. To obtain a limited wave packet in time (a pulse), different plane waves with different wavelengths need to be superposed:
 
-![Attachments/UltraFastLasers_Keller 6.webp|700](/img/user/Attachments/UltraFastLasers_Keller%206.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=46&rect=262,415,385,604|•]]
+![Attachments/UltraFastLasers_Keller 6.webp|700](/img/user/Attachments/UltraFastLasers_Keller%206.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=46&rect=262,415,385,604| ]]
 
-In the visible spectrum, different wavelengths correspond to different colours. This has important implications: A laser pulse can never be single-coloured, and must differ from the monochromatic light of a continuous-wave (CW) laser. The more frequency components a pulse contains, the broader its spectrum is (by definition) and the shorter the pulse **can** be. 
+In the visible spectrum, different wavelengths correspond to different colours. This has important implications: A laser pulse can never be single-coloured (monochromatic) and must differ from the monochromatic light of a continuous-wave (CW) laser. The more frequency components a pulse contains, the broader its spectrum is (by definition) and the shorter the pulse **can** be.
 
 Before diving deeper into this topic, it is important to recall some orders of magnitude:
 
-![Attachments/UltraFastLasers_Keller 7.webp|700](/img/user/Attachments/UltraFastLasers_Keller%207.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=46&rect=56,87,383,153|•]]
+![Attachments/UltraFastLasers_Keller 7.webp|700](/img/user/Attachments/UltraFastLasers_Keller%207.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=46&rect=56,87,383,153| ]]
 
-Our eyes can only distinguish movements on timescales longer/slower than about 100 ms. Mechanical shutters determining the exposure time in photography are limited to about 1 ms. Any movements occurring faster than that will smear out on the photo and will result in a blurry image. However, using strobe photography, it is possible to achieve exposure times as short as $1$  $\mu$s. With strobe photography, short light flashes started to become important for time resolved measurements. Lasers are relevant here because we can generate much shorter flashes of light with lasers than with electrically switched light bulbs. 
+Our eyes can only distinguish movements on timescales longer/slower than about $100 \, \text{ms}$. Mechanical shutters determining the exposure time in photography are limited to about $1 \, \text{ms}$. Any movements occurring faster than that will smear out on a photograph and will result in a blurry image. However, using strobe photography, it is possible to achieve exposure times as short as $1 \, \mu\text{s}$. With strobe photography, short light flashes started to become important for time-resolved measurements. Lasers are relevant here because we can generate much shorter flashes of light with lasers than with electrically switched light bulbs.
 
-Today we can generate pulses as short as a few femtoseconds in the visible and near-infrared wavelength regimes directly from a laser. This is much faster than any electronic switching speed. For example, in the nanosecond region, we find the typical computer switching elements and the fastest commercial microwave sampling scope have a time resolution of around a picosecond.
+Today we can generate pulses as short as a few femtoseconds in the visible and near-infrared wavelength regimes directly from a laser. This is much faster than any electronic switching speed. For instance, in the nanosecond region, we find typical computer switching elements, and the fastest commercial microwave sampling oscilloscopes have a time resolution of around one picosecond.
 
-It is good practice to remember those orders of magnitude!
+It is good practice to remember these orders of magnitude!
 
 ---
 ## 2.1 Wave Equation in the Spectral Domain: Helmholtz Equation
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=48&selection=29,0,32,8|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=48&selection=29,0,32,8| ]]
 
-We know that every function can be expanded in terms of a complete set of orthogonal functions. An example of this are the Fourier series and Fourier integral. A Fourier transform decomposes any arbitrary function of time into its harmonic frequency components. The inverse Fourier transform does the opposite, and decomposes an arbitrary function of time as a superposition of harmonic functions of time with different frequencies:
+We know that any function can be expanded in terms of a complete set of orthogonal functions. Examples of this are Fourier series and Fourier integrals. A Fourier transform decomposes an arbitrary function of time into its harmonic frequency components. The inverse Fourier transform does the opposite and constructs an arbitrary function of time as a superposition of harmonic functions of time with different frequencies:
 
-![Attachments/UltraFastLasers_Keller 8.webp|700](/img/user/Attachments/UltraFastLasers_Keller%208.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=48&rect=69,109,369,136|•]]
+![Attachments/UltraFastLasers_Keller 8.webp|700](/img/user/Attachments/UltraFastLasers_Keller%208.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=48&rect=69,109,369,136| ]]
 
-This is a powerful tool to describe ultrashort pulses, since the harmonic components have the physical meaning of plane waves with different frequencies. A light pulse is formed by a superposition of plane waves with different discrete frequencies at a fixed position in space:
+This is a powerful tool for describing ultrashort pulses, since the harmonic components have the physical meaning of plane waves with different frequencies. A light pulse can be formed by a superposition of plane waves with different (possibly discrete) frequencies at a fixed position in space:
 
-![Attachments/UltraFastLasers_Keller 9.webp|700](/img/user/Attachments/UltraFastLasers_Keller%209.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=49&rect=61,329,378,529|•]]
+![Attachments/UltraFastLasers_Keller 9.webp|700](/img/user/Attachments/UltraFastLasers_Keller%209.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=49&rect=61,329,378,529| ]]
 
-The more waves are overlapped, the shorter the pulse can be. Due to these discrete frequencies, the superposition is not just one pulse, but a periodic pulse train with period $T_{rep}=2\pi/\Delta\omega$, where $\Delta\omega$ is the constant frequency spacing of the example figure. 
+The more waves are superposed, the shorter the pulse can be. If these frequencies are discrete and equally spaced, the superposition is not just one pulse, but a periodic pulse train with period $T_{\text{rep}}=2\pi/\Delta\omega$, where $\Delta\omega$ is the constant frequency spacing in the example figure.
 
-We will follow the following convention for our Fourier transform $\mathcal{F}$ and its inverse $\mathcal{F}^{-1}$:
+We will follow this convention for our Fourier transform $\mathcal{F}$ and its inverse $\mathcal{F}^{-1}$:
 $$
 \begin{aligned}
-& E(z, \omega) \equiv \mathcal{F}\left[{E}(z, t)\right]=\int E(z, t)  e^{-{i} \omega t} {~d} t, \\
-& E(z, t)=\mathcal{F}^{-1}\left[{E}(z, \omega)\right]=\frac{1}{2 \pi} \int E(z, \omega)  e^{+{i} \omega t} {~d} \omega,
+& E(z, \omega) \equiv \mathcal{F}\left[E(z, t)\right]=\int_{-\infty}^{\infty} E(z, t) e^{-i \omega t} dt, \\
+& E(z, t)=\mathcal{F}^{-1}\left[E(z, \omega)\right]=\frac{1}{2 \pi} \int_{-\infty}^{\infty} E(z, \omega) e^{+i \omega t} d\omega,
 \end{aligned}
 $$
-where we write the complex scalar electric field of an electromagnetic plane wave as
+where we write the complex scalar electric field of an electromagnetic plane wave as:
 $$
-E(z, t)=E_0  e^{{i}(\omega t-k z)}.
+E(z, t)=E_0 e^{i(\omega t-k z)}.
 $$
-
-Regarding the constant $1/2\pi$, we have chosen an asymmetric Fourier transform, because we measure the spectrum of a laser pulse as a function of frequency $f$ and not the angular frequency $\omega$. Therefore, this factor will cancel out. We will in the following make use of some useful relations:
-
+Regarding the constant $1/(2\pi)$, we have chosen an asymmetric Fourier transform convention. This choice is common, particularly when relating spectra measured as a function of frequency $f$ to angular frequency $\omega$. We will subsequently make use of some useful operator correspondences derived from these definitions:
 $$
-\begin{aligned}
-&\mathcal{F}^{-1}\{{i} \omega E(z, \omega)\}=\frac{\partial}{\partial t} E(z, t),\quad\text{abbreviated as} \quad\omega \leftrightarrow-{i} \frac{\partial}{\partial t} .
-\end{aligned}
+\mathcal{F}^{-1}\left\{i \omega E(z, \omega)\right\}=\frac{\partial}{\partial t} E(z, t).
 $$
-
-For the higher derivatives, we have:
-
+This leads to the abbreviated correspondence: $\frac{\partial}{\partial t} \leftrightarrow i\omega$, or $\omega \leftrightarrow -i \frac{\partial}{\partial t}$ when moving from frequency domain to time domain operations. For higher derivatives, we have:
 $$
-\omega \Longleftrightarrow-{i} \frac{\partial}{\partial t}, \quad \omega^2 \Longleftrightarrow-\frac{\partial^2}{\partial t^2}=\left(-{i} \frac{\partial}{\partial t}\right)^2, \quad \omega^3 \Longleftrightarrow {i} \frac{\partial^3}{\partial t^3}=\left(-{i} \frac{\partial}{\partial t}\right)^3.
+\omega \Longleftrightarrow -i \frac{\partial}{\partial t}, \quad \omega^2 \Longleftrightarrow \left(-i \frac{\partial}{\partial t}\right)^2 = -\frac{\partial^2}{\partial t^2}, \quad \omega^3 \Longleftrightarrow \left(-i \frac{\partial}{\partial t}\right)^3 = i \frac{\partial^3}{\partial t^3}.
 $$
 
 **Derivation**
-We start with the wave equation
+We start with the wave equation including a polarisation term $\mathbf{P}$:
 $$
-\Delta \mathbf{E}-\frac{1}{c^2} \frac{\partial^2}{\partial t^2} \mathbf{E}=\mu_0 \frac{\partial^2}{\partial t^2} \mathbf{P},
+\nabla^2 \mathbf{E}-\frac{1}{c^2} \frac{\partial^2}{\partial t^2} \mathbf{E}=\mu_0 \frac{\partial^2}{\partial t^2} \mathbf{P}.
 $$
-in one dimension, and use the relation for the second-order derivative, to transform the equation to the spectral domain as 
-
+Considering propagation in one dimension ($z$) and using the relation for the second-order time derivative $\partial^2/\partial t^2 \leftrightarrow -\omega^2$, we transform the scalar version of this equation to the spectral domain as:
 $$
-\frac{\partial^2 E(z, \omega)}{\partial z^2}+\frac{\omega^2}{c^2} E(z, \omega)=-\mu_0 \omega^2 {P}(z, \omega).
+\frac{\partial^2 E(z, \omega)}{\partial z^2}+\frac{\omega^2}{c^2} E(z, \omega)=-\mu_0 \omega^2 P(z, \omega).
 $$
-We consider propagation along the z-axis. It then follows that 
-
+For a linear, isotropic medium, the polarisation in the frequency domain is $P(z, \omega)=\varepsilon_0 \chi(\omega) E(z, \omega)$. Using the relative permittivity $\varepsilon_r(\omega) = 1+\chi(\omega)$, we have $P(z, \omega)=\varepsilon_0 (\varepsilon_r(\omega)-1) E(z, \omega)$. Substituting this into the spectral wave equation and rearranging (using $c^2=1/(\varepsilon_0\mu_0)$) gives:
 $$
-{P}(z, \omega)=\chi(\omega) \varepsilon_0 E(z, \omega)=[\varepsilon_r(\omega)-1] \varepsilon_0 E(z, \omega),
+\frac{\partial^2 E(z, \omega)}{\partial z^2}+\frac{\omega^2}{c^2}\varepsilon_r(\omega) E(z, \omega)=0.
 $$
-
-and
-
+With the definition of the wave number in the medium $k_n(\omega)=\frac{\omega}{c} n(\omega)$ and $n(\omega)=\sqrt{\varepsilon_r(\omega)}$ (assuming non-magnetic media, $\mu_r=1$), we find the one-dimensional Helmholtz equation:
 $$
-k_n(\omega)=\frac{\omega}{c} n(\omega) .
+\frac{\partial^2 E(z, \omega)}{\partial z^2}+\left[k_n(\omega)\right]^2 E(z, \omega)=0.
 $$
-With this then, we find the one-dimensional Helmholtz equation
-
+This is the wave equation in the spectral domain for a dispersive linear medium with an arbitrary dispersion relation $n(\omega)$ (and $\mu_r=1$). It is easy to verify that its general solution is:
 $$
-\frac{\partial^2 E(z, \omega)}{\partial z^2}+\left[{k}_n(\omega)\right]^2 E(z, \omega)=0.
+E(z, \omega)=E_0^{+}(\omega) e^{-i k_n(\omega) z} + E_0^{-}(\omega) e^{+i k_n(\omega) z},
 $$
-It is the wave equation in the spectral domain for a dispersive linear medium with an arbitrary dispersion relation $n(\omega)$ and $\mu_r=1$. It is easy to verify that the solution is
-
-$$
-{E}(z, \omega)={E}_0^{+}(\omega)  e^{-{i} k_n(\omega) z}+{E}_0^{-}(\omega)  e^{{i} k_n(\omega) z},
-$$
-which is analogous to the time-independent Schrödinger equation for a free particle. Hence, the discussion on laser pulse propagation also applies to any quantum mechanical wave packet. 
+which is analogous to the time-independent Schrödinger equation for a free particle. Hence, the discussion on laser pulse propagation also applies to the propagation of quantum mechanical wave packets.
 
 ---
 ## 2.2 Linear vs Nonlinear Wave Propagation
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=52&selection=80,0,82,40|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=52&selection=80,0,82,40| ]]
 
-In linear optics, the wave equation is linear meaning that the electric and magnetic fields and their derivatives only appear to first order. Therefore, the superposition principle is valid, such that linear combinations of individual solutions $\mathbf{E}_i$ and $\mathbf{H}_i$ are solutions as well:
-
+In linear optics, the wave equation is linear, meaning that the electric and magnetic fields and their derivatives appear only to the first order. Therefore, the superposition principle is valid, such that linear combinations of individual solutions ($\mathbf{E}_i, \mathbf{H}_i$) are solutions as well:
 $$
-\mathbf{E}_{{tot}}=\sum_i a_i \mathbf{E}_i\quad\text{and} \quad \mathbf{H}_{{tot}}=\sum_i b_i \mathbf{H}_i.
+\mathbf{E}_{\text{total}}=\sum_i a_i \mathbf{E}_i\quad\text{and} \quad \mathbf{H}_{\text{total}}=\sum_i a_i \mathbf{H}_i.
 $$
-However note that usually $\mathbf{H}_i$ and $\mathbf{E}_i$ are uniquely related, such that $a_i=b_i.$ Furthermore, the superposition principle is not generally valid for intensities:
-
+(Here we assume $a_i=b_i$ as $\mathbf{E}_i$ and $\mathbf{H}_i$ for a given mode are uniquely related).
+Furthermore, the superposition principle is not generally valid for intensities:
 $$
-I_{{tot}} \neq \sum_i I_i,
+I_{\text{total}} \neq \sum_i I_i,
 $$
-since $\left(\mathbf{E}_1+\mathbf{E}_2\right)^2 \neq \mathbf{E}_1^2+\mathbf{E}_2^2$. However, it will hold even for intensities if the EM fields do not satisfy the conditions for interference, for example when they are polarised perpendicular to each other, or when two waves are fully incoherent.
+since, for instance, $|\mathbf{E}_1+\mathbf{E}_2|^2 \neq |\mathbf{E}_1|^2+|\mathbf{E}_2|^2$ if there is interference. However, it will hold even for intensities if the electromagnetic fields do not satisfy the conditions for interference, for instance when they are polarised perpendicular to each other, or when two waves are fully incoherent.
 
 ### 2.2.1 Linear System Theory
 
-The book covers this topic only very briefly, to the extent in which an understanding is required in this field. Therefore, I invite you to read my notes on [[Notes/Signals and Systems/Signals and Systems\|Signals and Systems]], which also covers this topic in detail. 
+This topic is covered briefly here to the extent required. For a more detailed treatment, I invite you to read my notes on [[Notes/Signals and Systems/Signals and Systems\|Signals and Systems]].
 
-In a linear system, we can directly connect the input signal to the output signal by considering their linearity,
+In a linear system, we can directly connect the input signal to the output signal by considering linearity:
 $$
-E_\text{in1} \xrightarrow{\text{linear system}} E_\text{out1}  \Longrightarrow a E_\text{in1}  \xrightarrow{\text{linear system}} a E_\text{out1},
+E_{\text{in}1} \xrightarrow{\text{linear system}} E_{\text{out}1} \quad \Longrightarrow \quad a E_{\text{in}1} \xrightarrow{\text{linear system}} a E_{\text{out}1},
 $$
-and the fact that the superposition principle is valid: 
-
+and the fact that the superposition principle is valid:
 $$
 \left.\begin{array}{l}
-E_{\text{in1}} \xrightarrow{\text{linear system}} E_\text{out1} \\
-E_\text{in2} \xrightarrow{\text{linear system}} E_\text{out2}\\
+E_{\text{in}1} \xrightarrow{\text{linear system}} E_{\text{out}1} \\
+E_{\text{in}2} \xrightarrow{\text{linear system}} E_{\text{out}2}
+\end{array}\right\} \quad \Longrightarrow \quad E_{\text{in}1}+E_{\text{in}2} \xrightarrow{\text{linear system}} E_{\text{out}1}+E_{\text{out}2}.
+$$
+Examples include dispersive media (for field propagation), photodetectors (relating photocurrent output to incoming light power input, a linear power relationship), lens systems (for field transformations), and linear filters acting on stochastic processes. However, one must be careful: a photodetector's current output is typically linearly related to the input *intensity* (power), not directly to the input electric field for general linear field-to-field system theory.
 
-\end{array}\right\} \quad \Longrightarrow E_{\text{in 1 }}+E_{\text{in 2 }} \xrightarrow{\text{ linear system }} E_{\text{out 1 }}+E_{\text{out } 2} .
+In a linear system, we define the impulse response $h(t)$: If the input is an infinitely short pulse $\delta(t)$ (the Dirac delta function, called an _impulse_ in system theory), the output is the function $h(t)$. Knowing $h(t)$ is sufficient to find the output for _any_ input $\mathbf{E}_{\text{in}}(t)$:
 $$
+\mathbf{E}_{\text{out}}(t)=\int_{-\infty}^{\infty} h(t^{\prime}) \mathbf{E}_{\text{in}}(t-t^{\prime}) dt^{\prime} \equiv (h * \mathbf{E}_{\text{in}})(t).
+$$
+The symbol $*$ abbreviates convolution. In the spectral domain, the dynamics of a linear system are described by its transfer function $H(\omega)$ (sometimes denoted $h(\omega)$), which is the Fourier transform of $h(t)$. The linear system response in the spectral domain is then given by simple multiplication:
+$$
+\mathbf{E}_{\text{out}}(\omega)=H(\omega) \mathbf{E}_{\text{in}}(\omega).
+$$
+The power spectral density $P_E(\omega)$ of a signal $\mathbf{E}(t)$ is given by:
+$$
+P_E(\omega) \equiv|\mathbf{E}(\omega)|^2.
+$$
+Thus, $P_{\text{in}}(\omega)=|\mathbf{E}_{\text{in}}(\omega)|^2$ and $P_{\text{out}}(\omega)=|\mathbf{E}_{\text{out}}(\omega)|^2$.
+Analogously, for the system, $S_H(\omega) \equiv|H(\omega)|^2$ is the squared magnitude of the transfer function.
+For a linear system, the relationship between input and output power spectra is:
+$$
+P_{\text{out}}(\omega)=S_H(\omega) P_{\text{in}}(\omega).
+$$
+From these considerations, it becomes clear why calculations in the spectral domain are often preferred: the complicated convolution in the time domain becomes a simple multiplication in the frequency domain.
 
-Examples are dispersive media, photodetectors relating  the photocurrent (output) to the incoming light power (input), lens systems and linear stochastic processes. However, be careful, a photodetectors intensity output is only linearly related to the intensity input, and not the electric field.
-
-In a linear system, we define the impulse response $h(t)$: If the output to an infinitely short pulse $\delta$ (called _impulse_ in system theory) produces as output the function $h(t)$, we have enough information to find the output for _any_ input:
-
+We can use the transfer function $H(\omega)= e^{-i k_0 L_d}$ (where $k_0=\omega/c$) for propagation over a distance $L_d$ in vacuum to find that the impulse response $h(t) = \delta(t - L_d/c)$. Then:
 $$
-\mathbf{E}_\text{out}(t)=\int h\left(t^{\prime}\right) \mathbf{E}_\text{in}\left(t-t^{\prime}\right) {d} t^{\prime} \equiv h(t) * \mathbf{E}_\text{in}(t).
+\mathbf{E}_{\text{out}}(t)=\int_{-\infty}^{\infty} \delta\left(t^{\prime}-\frac{L_d}{c}\right) \mathbf{E}_{\text{in}}\left(t-t^{\prime}\right) dt^{\prime}=\mathbf{E}_{\text{in}}\left(t-\frac{L_d}{c}\right).
 $$
-The symbol * abbreviates convolution. In the spectral domain, the dynamics of a linear system are described by the transfer function $h(\omega)$, which is the Fourier transform of $h(t)$. In the spectral domain, the linear system response is then given by a simple multiplication:
-
-$$
-\mathbf{E}_{\text{out }}(\omega)=h(\omega) \mathbf{E}_{\text{in }}(\omega)
-$$
-
-The power spectral  density $\mathbf{P}(\omega)$ of $\mathbf{E}(t)$ is given by
-
-$$
-{P}(\omega) \equiv|\mathbf{E}(\omega)|^2 \quad \Longrightarrow \quad {P}_{\text{in }}(\omega)=\left|\mathbf{E}_{\text{in }}(\omega)\right|^2\quad\text{and}\quad {P}_{\text{out }}(\omega)=\left|\mathbf{E}_{\text{out }}(\omega)\right|^2.
-$$
-Analogous for the power spectral density $S(\omega)$ of the impulse response $h(t)$:
-
-$$
-S(\omega) \equiv|h(\omega)|^2.
-$$
-For a linear system, the much easier relation in the spectral domain is valid once again:
-
-$$
-P_{\text{out }}(\omega)=S(\omega) P_{\text{in }}(\omega).
-$$
-From these considerations, it becomes clear why we want to calculate in the spectral domain. The complicated convolution in time domain becomes a simple multiplication in spectral domain. 
-
-We can use the system function $h(\omega)= e^{-i\omega L_d/c}$ in vacuum to find that 
-$$
-\mathbf{E}_\text{out}(t)=\int \delta\left(t^{\prime}-\frac{L_\text{d}}{c}\right) \mathbf{E}_\text{in}\left(t-t^{\prime}\right) {d} t^{\prime}=\mathbf{E}_\text{in}\left(t-\frac{L_\text{d}}{c}\right),
-$$
-which implies that an arbitrary pulse $\mathbf{E}_\text{in}$ can propagate in vacuum without changing its pulse shape. This is no longer the case in a dispersive material, because the impulse response $h(\omega)= e^{-i\omega n(\omega)L_d/c}$ no longer results in a Dirac delta function for $h(t)$.
-The last conclusion that we want to make about linear systems is that the power spectral density is unity,
-$$
-S(\omega)=\left|{e}^{-{i} k_n L_\text{d}}\right|^2=1,
-$$
-in a dispersive, **lossless** medium. Be careful about this statement only being true about lossless media, where the propagation constant is real. In case of lossy media, the propagation constant (wavevector) is imaginary such that this must not hold. This is explained more in the description of the [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.1.2 Drude Model\|Drude model]]. Thus, the shape of the pulse power spectrum never changes during linear propagation in a lossless, dispersive medium. It is important to remember that this is in contrast to nonlinear pulse propagation. Therefore, if the optical spectrum of a laser pulse changes in the lab, we know that there must be some non-linearity in our system. 
+This implies that an arbitrary pulse $\mathbf{E}_{\text{in}}(t)$ propagates in vacuum without changing its pulse shape, only experiencing a delay. This is no longer the case in a dispersive material, because the transfer function $H(\omega)= e^{-i k_n(\omega)L_d} = e^{-i \omega n(\omega)L_d/c}$ generally does not correspond to a simple time-shifted Dirac delta function for its impulse response $h(t)$ if $n(\omega)$ is not constant.
+A crucial conclusion for linear, **lossless** dispersive media is that $|H(\omega)|^2 = \left|e^{-i k_n(\omega) L_d}\right|^2=1$ (since $k_n(\omega)$ is real for lossless media). Thus, $S_H(\omega)=1$. This means the *shape* of the pulse power spectrum, $P_E(\omega)$, never changes during linear propagation in such a medium ($P_{\text{out}}(\omega) = P_{\text{in}}(\omega)$). This is in stark contrast to nonlinear pulse propagation. Therefore, if the optical spectrum of a laser pulse changes in an experiment, it indicates the presence of some nonlinearity in the system.
 
 ---
 ## 2.3 Ultrafast Pulses
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=55&selection=76,0,78,16|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=55&selection=76,0,78,16| ]]
 
-A coherent light pulse forms a photon wave packet, and can be described by a superposition of plane waves with different frequencies and phases at a fixed position in space. The shortest pulse for a given spectrum is obtained for a flat or linear phase (see [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.3.2 Shortest Pulse Duration\|here]]). For a pulse observed at fixed position, we find
+A coherent light pulse forms a wave packet of photons and can be described as a superposition of plane waves with different frequencies and phases at a fixed position in space. The shortest possible pulse duration for a given spectral amplitude distribution is obtained when the spectral phase is flat (constant) or linear with frequency (see [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.3.2 Shortest Pulse Duration\|section 2.3.2]]). For a pulse observed at a fixed position, we find its temporal profile via the inverse Fourier transform:
 $$
-\mathbf{E}(t)=\frac{1}{2 \pi} \int \mathbf{E}(\omega)  e^{{i} \omega t} {~d} \omega.
+\mathbf{E}(t)=\frac{1}{2 \pi} \int_{-\infty}^{\infty} \mathbf{E}(\omega) e^{i \omega t} d\omega.
 $$
-The spectrum typically has a finite width $\Delta \omega_0$ and centre frequency $\omega_0$, with typically $\omega_0 \gg \Delta \omega_0$ for pulse durations that are significantly longer than one optical period. The exact shape and phase of the spectrum determines the shape of the light pulse.
+The spectrum $\mathbf{E}(\omega)$ typically has a finite width $\Delta \omega_0$ (spectral bandwidth) centred around a carrier frequency $\omega_0$. For pulses significantly longer than one optical period ($T_0=2\pi/\omega_0$), we typically have $\omega_0 \gg \Delta \omega_0$. The exact shape and phase of $\mathbf{E}(\omega)$ determine the temporal shape of the light pulse $\mathbf{E}(t)$.
 
-It is useful to rewrite the prior equation, by replacing $\omega$ by $\omega_0+\Delta \omega$ and carrying out the integral over $\Delta \omega$ :
+It is often useful to rewrite the prior equation by separating the carrier frequency. Replacing $\omega$ with $\omega_0+\Delta\omega$ (where $\Delta\omega = \omega-\omega_0$ is the frequency offset from the carrier) and integrating over $\Delta\omega$:
+$$
+\mathbf{E}(t)=\frac{1}{2 \pi} \int_{-\infty}^{\infty} \mathbf{E}(\omega_0+\Delta\omega) e^{i(\omega_0+\Delta\omega) t} d\Delta\omega = \frac{1}{2 \pi} e^{i \omega_0 t} \int_{-\infty}^{\infty} \mathbf{A}_{\text{spec}}(\Delta\omega) e^{i \Delta\omega t} d\Delta\omega.
+$$
+Here, $\mathbf{A}_{\text{spec}}(\Delta\omega) = \mathbf{E}(\omega_0+\Delta\omega)$ is the frequency-shifted (baseband) spectrum. This implies that the time-domain field can be written as:
+$$
+\mathbf{E}(t)=\mathbf{A}(t) e^{i \omega_0 t},
+$$
+where
+$$
+\mathbf{A}(t)=\frac{1}{2 \pi} \int_{-\infty}^{\infty} \mathbf{A}_{\text{spec}}(\Delta\omega) e^{i \Delta\omega t} d\Delta\omega
+$$
+is called the complex **pulse envelope**. It describes the (generally slower) variation of the pulse's amplitude and phase relative to the fast carrier oscillation $e^{i\omega_0 t}$.
 
-$$
-\mathbf{E}(t)=\frac{1}{2 \pi} \int \mathbf{E}\left(\omega_0+\Delta \omega\right)  e^{{i}\left(\omega_0+\Delta \omega\right) t} {~d} \Delta \omega=\frac{1}{2 \pi}  e^{{i} \omega_0 t} \int \mathbf{A}(\Delta \omega)  e^{{i} \Delta \omega t} {~d} \Delta \omega .
-$$
-Then $\mathbf{A}(\Delta \omega)$ is the frequency-shifted spectrum:
-
-$$
-\mathbf{A}(\Delta \omega)=\mathbf{E}\left(\omega_0+\Delta \omega\right) \text{. }
-$$
-This then implies that 
-
-$$
-\mathbf{E}(t)=\mathbf{A}(t)  e^{{i} \omega_0 t},
-$$
-where 
-$$
-\mathbf{A}(t)=\frac{1}{2 \pi} \int \mathbf{A}(\Delta \omega)  e^{{i} \Delta \omega t} {~d} \Delta \omega
-$$
-is called the pulse envelope:
-
-![Attachments/UltraFastLasers_Keller 10.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2010.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=57&rect=186,510,386,604|•]]
+![Attachments/UltraFastLasers_Keller 10.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2010.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=57&rect=186,510,386,604| ]]
 
 ### 2.3.1 Time-Bandwidth Product
 
-The laser pulse duration $\tau_\text{p}$ in laser physics is typically defined by the full width at half maximum (FWHM) of the time-dependent pulse intensity. Analogously, the laser pulse spectral width $\Delta f_\text{p}$ in laser physics is normally defined by the FWHM of the spectral intensity. Next, some values of the time-bandwidth products $\Delta f_\text{p} \cdot \tau_\text{p}$ are summarised for some common pulse shapes:
+In laser physics, the laser pulse duration $\tau_p$ is typically defined as the Full Width at Half Maximum (FWHM) of the time-dependent pulse intensity $I(t) \sim |\mathbf{E}(t)|^2 = |\mathbf{A}(t)|^2$. Analogously, the laser pulse spectral width $\Delta f_p$ (or $\Delta\nu_p$) is normally defined as the FWHM of the spectral intensity (or power spectral density) $|\mathbf{E}(\omega)|^2$ (or $|\mathbf{E}(f)|^2$).
+The time-bandwidth product (TBP), $\Delta f_p \cdot \tau_p$, has a minimum theoretical value that depends on the pulse shape. Some values are summarised below:
 
-|                                       |                                $I(t)(x \equiv t / \tau)$                                 | $\tau_\text{p} / \tau$ | $\Delta f_\text{p} \times \tau_\text{p}$ |
-| :-----------------------------------: | :--------------------------------------------------------------------------------------: | :------------------------: | :----------------------------------------------: |
-|             **Gaussian**              |                                 $I(t)={e}^{-x^2}$                                 |      $2 \sqrt{\ln 2}$      |                     $0.4413$                     |
-| **Hyperbolic secant (soliton pulse)** |                              $I(t)=\operatorname{sech}^2 x$                              |          $1.7627$          |                     $0.3148$                     |
-|             **Rectangle**             | $I(t)=\left\{\begin{array}{l}1,\|t\| \leq \tau / 2 \\0,\|t\|>\tau / 2\end{array}\right.$ |             1              |                     $0.8859$                     |
-|             **Parabolic**             |       $I(t)= \begin{cases}1-x^2, & \|t\| \leq \tau \\ 0, & \|t\|>\tau\end{cases}$        |         $\sqrt{2}$         |                     $0.7276$                     |
-|            **Lorentzian**             |                                  $I(t)=\frac{1}{1+x^2}$                                  |            $2$             |                     $0.2206$                     |
-|   **Symmetric two-sided exponent**    |                               $I(t)={e}^{-2\|x\|}$                                |          $\ln 2$           |                     $0.1420$                     |
+|                                             | $I(t)$, where $x \equiv t / \tau_{\text{char}}$                                     | $\tau_{\mathrm{p}} / \tau_\text{char}$ | $\Delta f_{\mathrm{p}} \times \tau_{\mathrm{p}}$ |
+| :------------------------------------------ | :---------------------------------------------------------------------------------- | :------------------------------------- | :----------------------------------------------- |
+| Gaussian                                    | $I(t)=e^{-x^2}$                                                                     | $2 \sqrt{\ln 2}$                       | 0.4413                                           |
+| Hyperbolic secant ($\operatorname{sech}^2$) | $I(t)=\operatorname{sech}^2 x$                                                      | 1.7627                                 | 0.3148                                           |
+| Rectangle                                   | $I(t)=\begin{cases}1,&x\leq 1/2 \\0,&x>1/2\end{cases}$ (width $\tau_{\text{char}}$) | 1                                      | 0.8859                                           |
+| Parabolic                                   | $I(t)= \begin{cases}1-x^2, &x\leq 1 \\ 0, &x>1\end{cases}$                          | $\sqrt{2}$                             | 0.7276                                           |
+| Lorentzian                                  | $I(t)=\frac{1}{1+x^2}$                                                              | 2                                      | 0.2206                                           |
+| Symmetric two-sided exponential             | $I(t)=e^{-2\|x\|}$                                                                  | $\ln 2$                                | 0.1420                                           |
 
-We consider explicitly a _chirped_ Gaussian pulse:
+We consider explicitly a _chirped_ Gaussian pulse. Its complex envelope can be written as:
 $$
-\\E(t)=A(t) \exp \left({i} \omega_0 t\right)=\exp \left(-\Gamma t^2\right) \exp \left({i} \omega_0 t\right).
+A(t) = A_0 \exp\left(-\Gamma t^2\right),
 $$
-Here, $\omega_0$ is the centre angular frequency and $\Gamma$ is the complex Gauss parameter, defined by
+so $E(t) = A_0 \exp(-\Gamma t^2) \exp(i\omega_0 t)$. Here, $\omega_0$ is the centre angular frequency and $\Gamma$ is the complex Gaussian parameter, defined by:
+$$
+\Gamma \equiv \Gamma_r - i\Gamma_i,
+$$
+where $\Gamma_r > 0$. The real part $\Gamma_r$ determines the pulse duration, and the imaginary part $\Gamma_i$ determines the linear chirp of the Gaussian pulse. The electric field is $E(t) = A_0 \exp(-\Gamma_r t^2) \exp(i(\omega_0 t + \Gamma_i t^2))$.
+The next figure compares an unchirped pulse (top, $\Gamma_i=0$) and a chirped pulse (bottom, $\Gamma_i \neq 0$).
 
-$$
-\Gamma \equiv \Gamma_1-{i} \Gamma_2.
-$$
-The real part $\Gamma_1$ determines the pulse length, and the imaginary part $\Gamma_2$ determines the chirp of the Gaussian pulse. The next figure compares an unchirped (top) and chirped (bottom) pulse:
+![Attachments/UltraFastLasers_Keller 11.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2011.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=59&rect=175,370,386,604| ]]
 
-![Attachments/UltraFastLasers_Keller 11.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2011.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=59&rect=175,370,386,604|•]]
-
-If a pulse is chirped, its instantaneous frequency is time dependent. From the consideration before, we find the total phase to be 
-
+If a pulse is chirped, its instantaneous frequency is time-dependent. The total phase of the chirped Gaussian pulse is $\phi_{\text{total}}(t) = \omega_0 t+\Gamma_i t^2$. The instantaneous frequency is:
 $$
-\phi_{{tot}}(t) \equiv \omega_0 t+\Gamma_2 t^2,
+\omega(t) \equiv \frac{d\phi_{\text{total}}(t)}{dt}=\omega_0+2 \Gamma_i t.
 $$
-such that the instantaneous frequency is 
-
+This expression shows that the instantaneous frequency varies linearly with time if $\Gamma_i \neq 0$. The FWHM pulse duration $\tau_p$ is defined from the intensity $I(t) \sim |A(t)|^2 = |A_0|^2 \exp(-2\Gamma_r t^2)$. By setting $I(t_p/2) = I(0)/2$:
 $$
-\omega(t) \equiv \frac{{d} \phi_{{tot}}(t)}{{d} t}=\omega_0+2 \Gamma_2 t.
+\exp(-2\Gamma_r (t_p/2)^2) = 1/2 \implies -2\Gamma_r (t_p^2/4) = -\ln 2 \implies \tau_p^2 = \frac{4\ln 2}{2\Gamma_r}.
 $$
-From this expression we can see that the instantaneous frequency will only vary with time for $\Gamma_2 \neq 0$. The pulse length $\tau_\text{p}$ of the laser pulse is defined by the FWHM of the intensity $I(t)$ :
+So, the FWHM pulse duration $\tau_p$ is:
 $$
-I(t) \sim|E(t)|^2=\exp \left(-2 \Gamma_1 t^2\right)=\exp \left[-(4 \ln 2)\left(\frac{t}{\tau_\text{p}}\right)^2\right].
+\tau_p=\sqrt{\frac{2 \ln 2}{\Gamma_r}}.
 $$
-From this, we can find the pulse length $\tau_p$ as 
+A light pulse that achieves its minimal time-bandwidth product is called **time-bandwidth limited**, or simply **transform-limited**. For a given spectral amplitude distribution, a transform-limited pulse has the shortest possible pulse duration. Any additional non-linear spectral phase (chirp) results in a longer pulse duration for the same spectral width.
+If the spectrum is given as a function of wavelength $\lambda_0$ (centre) and spectral width $\Delta\lambda_p$, for all pulse shapes where the fractional bandwidth is small ($\Delta f_p \ll f_0$, or equivalently $\Delta\lambda_p \ll \lambda_0$), we find the relation:
 $$
-\tau_\text{p}=\sqrt{\frac{2 \ln 2}{\Gamma_1}}.
-$$
-
-A light pulse corresponding to its minimal time-bandwidth product is called time-bandwidth limited, or simply transform limited. For a given spectrum, a transform-limited pulse has the shortest possible pulse duration for a given spectral width and given pulse shape. Any additional chirp in the spectrum then results in a longer pulse duration. 
-If the spectrum is given as a function of wavelength, for all pulse shapes and if $\Delta f_\text{p} \ll f_0$, we find
-$$
-\frac{\Delta f_\text{p}}{f_0}=\frac{\Delta \lambda_\text{p}}{\lambda}.
+\frac{\Delta f_p}{f_0} \approx \frac{\Delta \lambda_p}{\lambda_0}.
 $$
 
 ### 2.3.2 Shortest Pulse Duration
 
-Continuous progress in the field of ultrashort pulse generation has led to pulse durations below $6$ fs in the visible and near-infrared spectral range. Such ultrashort pulse durations have been independently generated using different techniques. All these pulses exhibit broad and complex spectra which do not agree with an ideal pulse shape as discussed so far. In such cases it becomes increasingly questionable to simply specify the pulse duration by an FWHM value. A more appropriate pulse width measurement is given by an rms-pulse duration:
-
+Continuous progress in ultrashort pulse generation has led to pulse durations below $6 \, \text{fs}$ in the visible and near-infrared spectral range directly from lasers, and even shorter pulses via external compression techniques. Such ultrashort pulses often exhibit broad and complex spectra that do not conform to ideal pulse shapes. In such cases, specifying the pulse duration by a simple FWHM value can be insufficient or misleading. A more general pulse width measure is the root-mean-square (rms) pulse duration:
 $$
-\begin{align}
-\tau_\text{rms}^2=\left\langle(t-\langle t\rangle)^2\right\rangle&=\int_{-\infty}^{\infty}(t-\langle t\rangle)^2 I(t) dt \\
-& =\int_{-\infty}^{\infty}|(t-\langle t\rangle) E(t)|^2 dt.
-\end{align}
+\tau_{\text{rms}}^2 = \frac{\int_{-\infty}^{\infty}(t-\langle t\rangle)^2 I(t) dt}{\int_{-\infty}^{\infty} I(t) dt} = \frac{\int_{-\infty}^{\infty}(t-\langle t\rangle)^2 |E(t)|^2 dt}{\int_{-\infty}^{\infty} |E(t)|^2 dt} \\
 $$
-where $\langle t\rangle$ corresponds to the 'centre of gravity' of the temporal pulse profile. It can be shown that, for a given power spectrum $|{E}(\omega)|^2$, the shortest rms pulse duration is obtained with a flat or linear spectral phase $\varphi(\omega)$. In this case, the spectral phase $\varphi(\omega)$ only consists of a constant and a linear term.
+where
+$$
+\langle t\rangle = \frac{\int_{-\infty}^{\infty} t I(t) dt}{\int_{-\infty}^{\infty} I(t) dt}
+$$
+is the temporal centre of gravity. It can be shown that, for a given power spectrum $|E(\omega)|^2$, the shortest rms pulse duration is obtained when the spectral phase $\Phi(\omega)$ is flat (constant) or at most linear with frequency ($\Phi(\omega) = \phi_0 + \phi_1 \omega$). A linear spectral phase only corresponds to a constant time shift of the pulse without affecting its duration.
 
 ---
 ## 2.4 Linear pulse Propagation in a Dispersive Material
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=62&selection=187,0,189,49|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=62&selection=187,0,189,49| ]]
 
-Before beginning this chapter, it is important to clarify that linear pulse propagation means that no intensity-dependent material properties are considered, however the refractive index can have any nonlinear frequency dependence. 
+Before beginning this section, it is important to clarify that linear pulse propagation means that no intensity-dependent material properties (nonlinear optical effects like the [[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.1 Kerr Effect and Self-Phase Modulation\|Kerr effect]]) are considered. However, the refractive index $n(\omega)$ of the medium can have any arbitrary (potentially highly non-linear as a function of $\omega$) frequency dependence, leading to dispersion.
 
 ### 2.4.1 Slowly-Varying-Envelope Approximation
 
-To examine the propagation of a pulse, it is useful to first separate the fast oscillation of the complex electric field, and the dynamics of the fields' envelope $A(t)$:
+To examine the propagation of a pulse envelope $A(z,t)$ through a dispersive medium, it is useful to separate the fast optical carrier oscillation from the envelope dynamics. We write the electric field as:
 $$
-E(z, t)=A(z, t)  e^{{i}\left[\omega_0 t-k_n\left(\omega_0\right) z\right]}.
+E(z, t)=A(z, t) e^{i\left[\omega_0 t-k_n(\omega_0) z\right]}.
 $$
-The Fourier transforms ${E}(z, \omega)$ and $\mathbf{A}(z, \Delta \omega)$ satisfy the relation
-
+The Fourier transforms $E(z, \omega)$ and $A(z, \Delta\omega)$ (where $A(z,\Delta\omega)$ is the spectrum of $A(z,t)$ with respect to $t$, and $\Delta\omega = \omega-\omega_0$) satisfy the relation:
 $$
-E\left(z, \omega_0+\Delta \omega\right)=A(z, \Delta \omega)  e^{-{i} k_n\left(\omega_0\right) z},
+E(z, \omega_0+\Delta\omega)=A(z, \Delta\omega) e^{-i k_n(\omega_0) z}.
 $$
-where $\Delta \omega \equiv \omega-\omega_0.$ 
-Now we introduce the slowly-varying-envelope approximation (SVEA), which states that the envelope does not change much over the distance of a wavelength $\lambda_0/n$:
+Now we introduce the **slowly-varying-envelope approximation (SVEA)**. This approximation states that the pulse envelope $A(z,t)$ changes slowly in space (over a distance $z$) and time (over a period $1/\omega_0$) compared to the optical carrier. Specifically for spatial variation, it assumes the envelope does not change much over a distance of one wavelength $\lambda_0/n(\omega_0)$:
 $$
-\left|\frac{\partial^2 A}{\partial z^2}\right| \ll\left|k_n\left(\omega_0\right) \frac{\partial A}{\partial z}\right|.
+\left|\frac{\partial^2 A(z, \Delta\omega)}{\partial z^2}\right| \ll \left|2 k_n(\omega_0) \frac{\partial A(z, \Delta\omega)}{\partial z}\right|.
 $$
-With this and the wave equation in spectral domain, we find 
+With this, and starting from the Helmholtz equation for $E(z,\omega)$, one can derive a simpler first-order differential equation for the evolution of the envelope's spectrum $A(z,\Delta\omega)$:
 $$
-\frac{\partial}{\partial z} A(z, \Delta \omega)+{i} \Delta k_n A(z, \Delta \omega)=0.
+\frac{\partial}{\partial z} A(z, \Delta\omega)+i \Delta k_n(\Delta\omega) A(z, \Delta\omega)=0,
 $$
-The solution of this equation reads
+where $\Delta k_n(\Delta\omega) = k_n(\omega_0+\Delta\omega) - k_n(\omega_0)$. The solution to this equation is:
 $$
-A(z, \Delta \omega)=A(0, \Delta \omega)  e^{-{i} \Delta k_n z}=A(0, \Delta \omega)  e^{-{i}\left[k_n\left(\omega_0+\Delta \omega\right)-k_n\left(\omega_0\right)\right] z}.
+A(z, \Delta\omega)=A(0, \Delta\omega) e^{-i \Delta k_n(\Delta\omega) z}=A(0, \Delta\omega) e^{-i\left[k_n(\omega_0+\Delta\omega)-k_n(\omega_0)\right] z}.
 $$
+This equation shows that each spectral component $A(0,\Delta\omega)$ of the initial envelope accumulates a phase shift $e^{-i[k_n(\omega_0+\Delta\omega)-k_n(\omega_0)]z}$ as it propagates through the medium.
 
 ### 2.4.2 First and Second Order Dispersion
 
-As stated before, an optical pulse is a superposition of monochromatic plane waves, where each part of the spectrum has its own phase velocity. This leads to phase shifts between individual spectral components during propagation. Note that pulse broadening is caused by the dispersion of the group velocity and not of the phase velocity, which will be shown in the following.
-The shorter a pulse, the broader its spectrum, and the stronger the effects of dispersion become. Assuming that $\Delta\omega\ll \omega_0$, we may expand the wave number up to second order around the carrier frequency:
-
+As stated before, an optical pulse is a superposition of monochromatic plane waves, where each spectral component propagates with its own phase velocity $v_p(\omega) = \omega/k_n(\omega)$. This frequency-dependent phase velocity (dispersion) leads to relative phase shifts between individual spectral components during propagation. Pulse broadening and distortion are primarily caused by the dispersion of the group velocity, not directly by the phase velocity dispersion.
+The shorter a pulse (and thus the broader its spectrum $\Delta\omega$), the more pronounced the effects of dispersion become. Assuming the pulse bandwidth $\Delta\omega$ is small compared to the carrier frequency $\omega_0$ ($\Delta\omega \ll \omega_0$), we may expand the wave number $k_n(\omega)$ in a Taylor series around $\omega_0$:
 $$
-k_n(\omega) \approx k_n\left(\omega_0\right)+k_n^{\prime} \Delta \omega+\frac{1}{2} k_n^{\prime \prime} \Delta \omega^2.
+k_n(\omega) \approx k_n(\omega_0) + k_n^{\prime}(\omega_0)(\omega-\omega_0) + \frac{1}{2} k_n^{\prime \prime}(\omega_0)(\omega-\omega_0)^2 + \dots,
 $$
-This is satisfied in the optical region even for ultrashort pulses. We call $k^\prime_n=dk_n/d\omega$ the first order dispersion, and $k^{\prime\prime}_n=d^2k_n/d\omega^2$ the second order dispersion. 
+where $\Delta\omega = \omega-\omega_0$.
+$k_n^{\prime}(\omega_0) = \left.\frac{dk_n}{d\omega}\right|_{\omega_0}$ is the first-order dispersion coefficient (inverse group velocity).
+$k_n^{\prime \prime}(\omega_0) = \left.\frac{d^2k_n}{d\omega^2}\right|_{\omega_0}$ is the second-order dispersion coefficient, often called Group Velocity Dispersion (GVD) parameter.
+This expansion is typically valid in the optical region even for ultrashort pulses of several femtoseconds.
 
 ### 2.4.3 Phase Velocity and Group Velocity
 
-For a Gaussian pulse, linear pulse propagation can be solved analytically up to second order, due to the fact that the Fourier transform of a Gaussian is Gaussian. This allows us to find the phase velocity as
+For a Gaussian pulse, linear pulse propagation including up to second-order dispersion can often be solved analytically. The phase velocity is defined as:
+$$
+v_p(\omega_0) = \frac{\omega_0}{k_n(\omega_0)} = \frac{c}{n(\omega_0)}.
+$$
+The group velocity $v_g$ is defined as:
+$$
+v_g(\omega_0) = \left(\left.\frac{dk_n}{d\omega}\right|_{\omega_0}\right)^{-1} = \frac{1}{k_n^{\prime}(\omega_0)}.
+$$
+The phase velocity describes the propagation velocity of the carrier wave (surfaces of constant phase). The group velocity corresponds to the propagation velocity of the peak of the pulse envelope (under certain approximations).
 
-$$
-v_\text{p}\left(\omega_0\right) \equiv c_n=\left.\frac{\omega}{k_n}\right|_{\omega=\omega_0},
-$$
-and $v_\text{g}$ is the group velocity as
+![Attachments/UltraFastLasers_Keller 12.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2012.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=67&rect=234,504,385,605| ]]
 
+In vacuum, $n(\omega)=1$, so $k_n(\omega)=\omega/c$, $k_n'(\omega)=1/c$, $k_n''(\omega)=0$. Thus $v_p=c$ and $v_g=c$.
+The first-order dispersion $k_n'$ determines the overall temporal shift of the pulse, quantified by the group delay $T_g$ after propagating a distance $z$:
 $$
-v_\text{g}\left(\omega_0\right) \equiv \frac{1}{k_n^{\prime}\left(\omega_0\right)}=\frac{1}{\left.\frac{{~d} k_n}{{~d} \omega}\right|_{\omega=\omega_0}}=\left.\frac{{d} \omega}{{~d} k_n}\right|_{\omega=\omega_0}.
-$$
-The phase velocity describes the propagation velocity of the carrier wave with frequency $\omega_0$. The group velocity corresponds to the propagation velocity of the envelope of the pulse:
-
-![Attachments/UltraFastLasers_Keller 12.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2012.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=67&rect=234,504,385,605|•]]
-
-In vacuum, both velocities are equal. The first-order dispersion determines the temporal shift of the pulse and is called group delay, given by
-$$
-T_\text{g} \equiv \frac{z}{v_\text{g}}=k_n^{\prime} z.
+T_g(z) = k_n^{\prime} z = \frac{z}{v_g}.
 $$
 
 ### 2.4.4 Pulse Broadening
 
-A pulse is **temporally** broadened by propagation through a dispersive medium. Remember that a linear system can **not** spectrally broaden the pulse.
+A pulse is **temporally** broadened (or compressed, depending on initial chirp and dispersion sign) by propagation through a dispersive medium. Remember that a linear system can**not** spectrally broaden or narrow the pulse; $|E(z,\omega)|^2$ remains unchanged if the medium is lossless.
 
-![Attachments/UltraFastLasers_Keller 13.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2013.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=67&rect=60,125,378,191|•]]
+![Attachments/UltraFastLasers_Keller 13.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2013.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=67&rect=60,125,378,191| ]]
 
-This can also be seen by considering the FWHM pulse duration of a Gaussian pulse (derivation has been skipped):
+This temporal reshaping can be seen by considering the FWHM pulse duration of an initially unchirped Gaussian pulse with initial duration $\tau_p(0)$ and complex parameter $\Gamma(0) = \Gamma_r(0)$. After propagating a distance $L_d$, the pulse acquires chirp and its new complex parameter is $\Gamma(L_d)$. The duration becomes:
 $$
-\tau_\text{p}\left(L_\text{d}\right)=\sqrt{\frac{2 \ln 2}{\mathfrak{Re}\left[\Gamma\left(L_\text{d}\right)\right]}},
+\tau_p(L_d)=\sqrt{\frac{2 \ln 2}{\mathfrak{Re}\left[\Gamma(L_d)\right]}}.
 $$
-where it becomes clear that linear dispersion (the $k_n^\prime$ term) alone does not contribute to pulse broadening, but only causes a temporal shift (group delay). Only second and higher order dispersion may cause pulse broadening. We may also derive that 
+The first-order dispersion term ($k_n'$) only causes a temporal shift (group delay) and does not contribute to pulse broadening. Only second-order dispersion ($k_n''$, GVD) and higher-order dispersion terms cause changes in pulse duration and shape for an initially unchirped pulse.
+For an initially transform-limited Gaussian pulse of duration $\tau_p(0)$, after propagating a distance $L_d$ in a medium with GVD $k_n''$, the duration becomes:
 $$
-\frac{\tau_\text{p}\left(L_\text{d}\right)}{\tau_\text{p}(0)}=\sqrt{1+\frac{\left(4 \ln 2 k_n^{\prime \prime} L_\text{d}\right)^2}{\tau_\text{p}^4(0)}}=\sqrt{1+\left(\frac{4 \ln 2 \frac{{~d}^2 \phi}{{~d} \omega^2}}{\tau_\text{p}^2(0)}\right)^2},
+\frac{\tau_p(L_d)}{\tau_p(0)}=\sqrt{1+\left(\frac{k_n^{\prime \prime} L_d (4 \ln 2)}{\tau_p^2(0)}\right)^2} = \sqrt{1+\left(\frac{\text{GDD}}{\tau_p^2(0)/(2\ln 2)} \frac{2}{\tau_p(0)}\right)^2}.
 $$
-where $\phi=k_nL_d$ is the accumulated phase shift of a plane wave in a dispersive medium of thickness $L_d$. The shorter the original pulse, the more the pulse is stretched in time by the dispersive medium. The next figure shows the pulse broadening factor of Gaussian pulses for different initial pulse durations passing through a 1 cm thick fused quartz lens. 
+Here, GDD (Group Delay Dispersion) is $\frac{d^2\phi}{d\omega^2} = k_n'' L_d$. The formula shows that the shorter the original pulse $\tau_p(0)$ (meaning larger spectral bandwidth), the more it is stretched in time by a given amount of GDD. The next figure shows the pulse broadening factor for Gaussian pulses of different initial durations passing through a $1 \, \text{cm}$ thick fused silica lens.
 
-![Attachments/UltraFastLasers_Keller 14.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2014.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=68&rect=73,444,363,611|•]]
+![Attachments/UltraFastLasers_Keller 14.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2014.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=68&rect=73,444,363,611| ]]
 
 **Strong Pulse Broadening Approximation**
-
-The case of strong pulse broadening is given when
-
+The case of strong pulse broadening occurs when the second term under the square root is much larger than 1, which means the accumulated GDD is large compared to $\tau_p^2(0)/(4\ln 2)$. This is often stated as when the propagation distance $L_d$ is much greater than the "dispersion length" $L_D = \tau_p^2(0)/(4\ln 2|k_n''|)$. Equivalently:
 $$
-\frac{{d}^2 \phi}{{~d} \omega^2} \gg \tau_\text{p}^2(0)\quad\text{or equivalently}\quad \left|k_n^{\prime \prime}\right| \frac{L_d}{\tau_p^2(0)} \gg 1.
+|\text{GDD}| = |k_n^{\prime \prime}| L_d \gg \frac{\tau_p^2(0)}{4\ln 2}.
 $$
-This allows us to greatly simplify prior results. Assuming an unchirped initial pulse, we obtain:
-
+In this limit, assuming an unchirped initial Gaussian pulse of spectral FWHM $\Delta\omega_p = 4\ln 2 / \tau_p(0)$:
 $$
-\frac{{d}^2 \phi}{{~d} \omega^2} \gg \tau_\text{p}^2(0) \Longrightarrow \tau_\text{p}\left(L_\text{d}\right) \approx \frac{{d}^2 \phi}{{~d} \omega^2} \Delta \omega_\text{p}.
+\tau_p(L_d) \approx \frac{|k_n^{\prime \prime}| L_d (4 \ln 2)}{\tau_p(0)} = |\text{GDD}| \frac{4\ln 2}{\tau_p(0)} = |\text{GDD}| \Delta\omega_p.
 $$
+The effect of an unchirped pulse passing through a dispersive medium (with, say, positive $k_n''$) is schematically shown here:
 
-The effect of an unchirped pulse passing through a dispersive medium is schematically shown here:
+![Attachments/UltraFastLasers_Keller 15.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2015.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=71&rect=74,121,366,254| ]]
 
-![Attachments/UltraFastLasers_Keller 15.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2015.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=71&rect=74,121,366,254|•]]
-
-The pulse becomes longer and chirped, which means that the spectral components with longer wavelengths propagate faster than the shorter wavelength components:
+The pulse becomes longer and acquires a linear chirp. For positive $k_n''$ (normal dispersion in typical glass for visible light), higher frequencies (blue) travel slower than lower frequencies (red). An initially unchirped pulse develops a positive chirp (red leading blue).
 $$
-\lambda_1>\lambda_2 \implies v_\text{g}\left(\lambda_1\right)>v_\text{g}\left(\lambda_2\right) .
+\text{Normal dispersion (e.g. } k_n''>0): \quad v_g(\omega_{\text{blue}}) < v_g(\omega_{\text{red}}).
 $$
-The broadened pulse is chirped by the dispersion. However, as mentioned earlier already, it is important that the pulse spectrum does not change during propagation:
+The broadened pulse is chirped by the dispersion. However, as mentioned, the pulse power spectrum $|E(z,\omega)|^2$ does not change during linear propagation in a lossless medium:
 
-![Attachments/UltraFastLasers_Keller 16.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2016.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=72&rect=55,465,384,608|•]]
+![Attachments/UltraFastLasers_Keller 16.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2016.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=72&rect=55,465,384,608| ]]
 
-Linear dispersive pulse broadening only occurs for second and higher order dispersion. It is therefore not the frequency-dependent different in phase velocity but the group velocity that is relevant. 
+Linear dispersive pulse broadening (for initially unchirped pulses) arises from second-order and higher-order dispersion. It is therefore the frequency dependence of the group velocity (related to $k_n''$) that is primarily responsible for this broadening, not the frequency dependence of the phase velocity itself.
 
-This can be depicted as in the following figure. Consider in spectral and time domain that one can split a short pulse into longer sub-pulses with slightly shifted centre wavelengths. Superposition of the longer sub-pulses results in a shorter pulse, because the electric fields in the shoulders of the sub-pulse interfere destructively:
+This can be depicted as in the following figure. Consider that a short pulse can be thought of as a superposition of many longer sub-pulses, each with a slightly different centre wavelength/frequency. The superposition results in a short overall pulse because the electric fields in the wings of the sub-pulses interfere destructively:
 
-![Attachments/UltraFastLasers_Keller 17.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2017.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=73&rect=55,415,326,606|•]]
+![Attachments/UltraFastLasers_Keller 17.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2017.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=73&rect=55,415,326,606| ]]
 
-Now observe what happens when they pass through a dispersive medium:
+Now observe what happens when this collection of sub-pulses passes through a dispersive medium:
 
-![Attachments/UltraFastLasers_Keller 18.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2018.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=73&rect=54,111,386,302|•]]
+![Attachments/UltraFastLasers_Keller 18.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2018.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=73&rect=54,111,386,302| ]]
 
-Note, that in the spectral and time domain, the individual pulses have not broadened. Rather, the pulse broadening of the resultant pulse comes from the shifted wavelength of the sub-pulses in the time domain after dispersion. The different group delay then leads to pulse broadening.
+Note that, in this conceptual picture, the individual sub-pulses (if they were narrow enough in spectrum not to experience significant GVD themselves) do not broaden significantly. Rather, the broadening of the resultant overall pulse comes from the fact that these sub-pulses, with their slightly different centre frequencies, travel at different group velocities through the dispersive medium. This differential group delay causes them to spread out in time, leading to broadening of the total pulse.
 
-It is worth to know dispersion as a function of both frequency and wavelength:
+It is useful to know dispersion parameters as a function of both frequency $\omega$ and wavelength $\lambda$ (where $n' = dn/d\lambda$, $n''=d^2n/d\lambda^2$ etc.):
 
-| Dispersion parameter                                                           | Definition                                                                                         | Calculation from $n(\lambda)$                                                                                |
-| :----------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
-| Phase velocity $v_\text{p}$                                                    | $\omega / k_n$                                                                                     | $c_n=c / n$                                                                                                  |
-| Group velocity $v_\text{g}$                                                    | $\frac{{d} \omega}{{d} k_n}=\left(\frac{{d} k_n}{{~d} \omega}\right)^{-1}$                         | $\frac{c}{n} \frac{1}{1-\frac{n^{\prime}}{n} \lambda}$                                                       |
-| Group delay $T_\text{g}$ (first order dispersion)                              | $\frac{{d} \phi}{{d} \omega}=L_\text{d} \frac{{d} k_n}{{~d} \omega}=\frac{L_\text{d}}{v_\text{g}}$ | $\frac{n L_\text{d}}{c}\left(1-\frac{n^{\prime}}{n} \lambda\right)$                                          |
-| Group delay dispersion ${d} T_\text{g} / {d} \omega$ (second order dispersion) | $\frac{{d}^2 \phi}{{~d} \omega^2}$                                                                 | $\frac{\lambda^3 L_\text{d}}{2 \pi c^2 }n^{\prime \prime}[\text{fs}^2]$                                      |
-| $\frac{{d} T_\text{g}}{{d} \lambda}$                                           | ${d} \lambda=-\frac{\lambda^2}{2 \pi c} {~d} \omega$                                               | $-\frac{\lambda L_\text{d}}{c} n^{\prime \prime}[\text{fs} / \text{nm}]$                                     |
-| Third order dispersion                                                         | $\frac{{d}^3 \phi}{{~d} \omega^3}$                                                                 | $-\frac{\lambda^4 L_\text{d}}{4 \pi^2 c^3}\left(3 n^{\prime \prime}+\lambda n^{\prime \prime \prime}\right)$ |
+| Dispersion parameter                                       | Definition                                                                                                | Calculation from $n(\lambda)$                                                                                                |
+| :--------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| Phase velocity $v_p$                                       | $\omega / k_n(\omega)$                                                                                    | $c/n(\lambda)$                                                                                                               |
+| Group velocity $v_g$                                       | $(dk_n/d\omega)^{-1}$                                                                                     | $\frac{c}{n(\lambda) - \lambda n'(\lambda)}$                                                                                 |
+| Group delay $T_g$ (per unit length $L_d$)                  | $k_n' = dk_n/d\omega = 1/v_g$                                                                             | $\frac{1}{c}(n(\lambda) - \lambda n'(\lambda))$                                                                               |
+| GDD (Group Delay Dispersion, total over $L_d$)             | $k_n'' L_d = d^2(k_n L_d)/d\omega^2$                                                                      | $\frac{\lambda^3 L_d}{2\pi c^2} n''(\lambda)$ [units: $\text{fs}^2$]                                                        |
+| Dispersion parameter $D_\lambda$ (GDD per unit length and $\Delta\lambda$) | $\frac{1}{L_d}\frac{dT_g}{d\lambda} = -\frac{2\pi c}{\lambda^2} k_n''$                             | $-\frac{\lambda}{c} n''(\lambda)$ [units: $\text{ps/(nm km)}$ or $\text{fs/(nm cm)}$]                                     |
+| TOD (Third Order Dispersion, total over $L_d$)             | $k_n''' L_d = d^3(k_n L_d)/d\omega^3$                                                                     | $-\frac{\lambda^4 L_d}{(2\pi c)^2 c} (3n''(\lambda) + \lambda n'''(\lambda))$ [units: $\text{fs}^3$]                       |
 
-What may be confusing at first is that for GDD, different units are used depending on the application. 
-$$
-\begin{gathered}
-\text{GVD:}& \frac{d^2 k_n}{d \omega^2} &\\
-\text{GDD:}& \frac{\text{d} T_\text{g}}{\text{d} \omega}=\frac{\text{d}^2 \phi}{\text{d} \omega^2} &\left[\text{fs}^2\right], \\
-\text{GDD:}& \frac{\text{d} T_\text{g}}{\text{d} \lambda}&\left[\frac{\text{fs}}{\text{nm}}\right],
-\\\text{GDD:}&\frac{\text{d}^2 k_n}{\text{d} \omega^2} &\left[\frac{\text{ps}^2}{\text{km}}\right].
-\end{gathered}
-$$
+Different units and definitions for GVD/GDD are used depending on the application.
 
 ### 2.4.5 Can a Pulse Propagate Faster than the Speed of Light in Vacuum?
 
-The proof is skipped, but the group velocity can in fact be faster than the speed of light in vacuum. However, this is no contradiction with the theory of relativity. No information can be transmitted with superluminal velocity: Since a Gaussian pulse is analytical, the information about that Gaussian pulse already exists at all times everywhere in space, and it can already be completely reconstructed everywhere in space by Taylor series expansion. Note that is a strong simplification, as the actual solution to this problem is quite more complex than described here (see 'Sommerfeld-Brillouin precursor velocity'). During propagation, only the pulse maximum is shifted. It is useful to calculate a group index as 
+The proof is skipped, but the group velocity $v_g$ can, under certain conditions (such as near an absorption resonance in a region of anomalous dispersion), be greater than the speed of light in vacuum $c$, or even negative. However, this is not a contradiction with the theory of relativity. No information or energy can be transmitted with superluminal velocity.
+The argument that because a Gaussian pulse is analytical, its future is determined by its past, and thus its peak propagation does not represent signal velocity, is one perspective. More rigorously, the front velocity of any signal (the speed of its very first non-zero disturbance) cannot exceed $c$.
+It is useful to define the group index $n_g$:
 $$
-n_\text{g}=n+\omega \frac{{d} n}{{~d} \omega},
+n_g(\omega)=n(\omega)+\omega \frac{dn(\omega)}{d\omega} = n(\lambda) - \lambda \frac{dn(\lambda)}{d\lambda},
 $$
-which is defined as
-$$
-v_g(\omega)\equiv\frac{c}{n_g}.
-$$
+such that $v_g(\omega) = c/n_g(\omega)$.
 
 ### 2.4.6 Higher Order Dispersion
 
-While pulses with a length of 10-30 fs can be generated straightforwardly, increasing difficulties arise for shorter durations. Therefore, knowledge of higher order dispersion becomes more important. To characterise higher order dispersion, it can be useful to introduce the dispersion lengths:
+While pulses with durations of $10-30 \, \text{fs}$ can be generated relatively straightforwardly, increasing difficulties arise for generating and propagating even shorter durations. For such extremely short pulses (few-cycle or single-cycle), higher-order dispersion terms beyond GVD (like third-order dispersion, TOD, related to $k_n'''$) become more important. To characterise their relative importance, dispersion lengths can be introduced:
 $$
-L_D \equiv \frac{\tau^2}{\left|k_n^{\prime \prime}\right|}, \quad L_D^{\prime} \equiv \frac{\tau^3}{\left|k_n^{\prime \prime \prime}\right|},
+L_D = \frac{\tau_0^2}{|k_n''|}, \quad L_D^{\prime} = \frac{\tau_0^3}{|k_n'''|},
 $$
-where $k_n^{\prime \prime}=\partial^2 k_n / \partial \omega^2$ and $k_n^{\prime \prime \prime}=\partial^3 k_n / \partial \omega^3$. In most cases, third order dispersion is negligible compared to the second order, such that the higher order terms in the Taylor expansion in $k_n(\omega)$ can be neglected. Third order dispersion only plays a role if $L_D^{\prime} \leq L_D,$ or if $L_D^{\prime}$ becomes comparable to $L_D$. Similar arguments apply for even higher order dispersion. 
-For $z \gg L_D$ the following approximation is valid for a Gaussian pulse:
-
+where $\tau_0$ is a characteristic initial pulse duration (related to, but not necessarily equal to, $\tau_p(0)$ FWHM). Third-order dispersion significantly affects pulse propagation if $L_D'$ becomes comparable to or smaller than $L_D$, or comparable to the actual propagation length $z$. Similar arguments apply for even higher orders of dispersion.
+The formula for pulse broadening for $z \gg L_D$ that includes TOD,
 $$
 \frac{\tau_\text{p}(z)}{\tau_\text{p}(0)} \approx z \sqrt{1+\frac{1}{L_D^2}+\frac{1}{4 L_D^{\prime 2}}}.
 $$

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/3-dispersion-compensation/","hide":"true","updated":"2025-05-29T13:13:49.927+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/3-dispersion-compensation/","hide":"true","updated":"2025-05-30T12:19:43.115+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -7,247 +7,223 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 **Table of Contents**
 
-- [[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.1 Prism Compressor\|3.1 Prism Compressor]]
-- [[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.2 Grating Compressor and Pulse Shaper\|3.2 Grating Compressor and Pulse Shaper]]
-- [[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.3 Gires-Tournois Interferometer (GTI)\|3.3 Gires-Tournois Interferometer (GTI)]]
-- [[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.4 Mirrors with Controlled Phase Properties\|3.4 Mirrors with Controlled Phase Properties]]
-- [[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.5 Dazzlers\|3.5 Dazzlers]]
-- [[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.6 Dispersion Measurement\|3.6 Dispersion Measurement]]
+[[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.1 Prism Compressor\|3.1 Prism Compressor]]
+[[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.2 Grating Compressor and Pulse Shaper\|3.2 Grating Compressor and Pulse Shaper]]
+[[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.3 Gires-Tournois Interferometer (GTI)\|3.3 Gires-Tournois Interferometer (GTI)]]
+[[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.4 Mirrors with Controlled Phase Properties\|3.4 Mirrors with Controlled Phase Properties]]
+[[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.5 Dazzlers\|3.5 Dazzlers]]
+[[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.6 Dispersion Measurement\|3.6 Dispersion Measurement]]
 
 ---
 # 3 Dispersion Compensation
 
-Historically, those who first gained access to cutting-edge laser technology have often achieved groundbreaking results in science and technology, contributing crucially to several Nobel Prizes. Ultrashort pulses below $3$ fs have a very broad spectral bandwidth and experience strong dispersive broadening during propagation. In this case, we may use the approximation of [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.4.4 Pulse Broadening\|strong pulse-broadening]]:
+Historically, researchers who first gained access to cutting-edge laser technology have often achieved groundbreaking results in science and technology, contributing crucially to several Nobel Prizes. Ultrashort pulses, particularly those below a few tens of femtoseconds (and especially sub-$10$ fs pulses), possess a very broad spectral bandwidth. Consequently, they experience significant dispersive broadening during propagation through most optical materials. In such cases, we may use the approximation of [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.4.4 Pulse Broadening\|strong pulse-broadening]]:
 
+If the accumulated Group Delay Dispersion (GDD), $\frac{d^2 \Phi}{d \omega^2}$, is much larger than the square of the initial pulse duration, $\tau_{\mathrm{p}}^2(0)$ (scaled by appropriate numerical factors), so,
 $$
-\frac{\mathrm{d}^2 \Phi}{\mathrm{d} \omega^2} \gg \tau_{\mathrm{p}}^2(0) \Longrightarrow \tau_{\mathrm{p}}(L_{\mathrm{d}}) \approx \frac{\mathrm{d}^2 \Phi}{\mathrm{d} \omega^2} \Delta \omega_{\mathrm{p}}.
+\left|\frac{d^2 \Phi}{d \omega^2}\right| \gg \tau_{\mathrm{p}}^2(0), \quad \text{then} \quad \tau_{\mathrm{p}}(L_{\mathrm{d}}) \approx \left|\frac{d^2 \Phi}{d \omega^2}\right| \Delta \omega_{\mathrm{p}}.
 $$
+Here $\Delta\omega_p$ is the FWHM spectral bandwidth of the initial pulse.
 
-To estimate this strong broadening, consider a Gaussian bandwidth-limited pulse with a pulse duration of $5$ fs:
-
+To estimate this strong broadening, consider an initially transform-limited Gaussian pulse with a duration of $5$ fs:
+The time-bandwidth product is $\Delta \nu_{\mathrm{p}} \tau_{\mathrm{p}} \approx 0.4413$, so $\Delta f_p = 0.4413 / (5 \, \text{fs}) \approx 0.08826 \, \text{fs}^{-1}$.
+The angular frequency bandwidth is $\Delta \omega_{\mathrm{p}} = 2\pi \Delta f_p \approx 0.5545 \, \text{rad/fs}$.
+For fused quartz, the GVD parameter at $800 \, \text{nm}$ is approximately:
 $$
-\Delta \nu_{\mathrm{p}} \tau_{\mathrm{p}}=0.4413 \Longrightarrow \Delta \omega_{\mathrm{p}}=0.554 \text{ fs}^{-1}.
+k_n'' = \left.\frac{\partial^2 k_n}{\partial \omega^2}\right|_{800 \text{ nm}} \approx 36.1 \, \frac{\text{fs}^2}{\text{mm}}.
 $$
-
-Considering fused quartz, we find that
-
-$$
-\left.\frac{\partial^2 k_n}{\partial \omega^2}\right|_{800 \text{ nm}}=36.1 \frac{\text{fs}^2}{\text{mm}},
-$$
-
-implying that just 1 mm of fused quartz broadens a $5$ fs pulse to approximately $20$ fs. However, because the accumulation of dispersion (phase) is linear, this effect can be reversed by propagating through a 'material' that compensates for the corresponding dispersion: the shifted frequency components need to be shifted back by the correct time delay. However, most materials have positive dispersion in the transparent region. To avoid large losses, we must find other ways to obtain negative dispersion.
+The GDD for $1 \, \text{mm}$ of fused quartz is $\frac{d^2\Phi}{d\omega^2} = k_n'' \cdot (1 \, \text{mm}) = 36.1 \, \text{fs}^2$.
+This implies that just $1 \, \text{mm}$ of fused quartz broadens an initially $5 \, \text{fs}$ pulse to approximately $\tau_p(1\,\text{mm}) \approx (36.1 \, \text{fs}^2) \cdot (0.5545 \, \text{fs}^{-1}) \approx 20 \, \text{fs}$.
+However, because the accumulation of dispersion (spectral phase) is a linear process (in terms of field propagation through different elements), this effect can, in principle, be reversed or compensated by propagating the pulse through another optical system that introduces the opposite dispersion. The shifted frequency components need to be delayed appropriately to realign them in time. Most transparent optical materials exhibit positive GDD (normal dispersion) in the visible and near-infrared regions. To achieve net negative GDD for pulse compression, often required to compensate for positive material GDD, and to do so without incurring large losses, alternative methods are necessary.
 
 ---
 ## 3.1 Prism Compressor
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=96&selection=14,0,16,16|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=96&selection=14,0,16,16| ]]
 
-The prism compressor is a geometrical configuration that uses so-called 'geometric' or 'angular dispersion'. One usually uses a configuration consisting of two prism pairs:
+The prism compressor utilises the angular dispersion of refractive prisms. A common configuration consists of two pairs of prisms (four prisms in total), or a single pair with a retroreflector:
 
-![Attachments/UltraFastLasers_Keller 19.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2019.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=97&rect=112,443,323,523|•]]
+![Attachments/UltraFastLasers_Keller 19.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2019.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=97&rect=112,443,323,523| ]]
 
-After the first prism, different wavelengths travel in different directions. The blue part is refracted more strongly than the red part. After the second prism, these beams travel parallel again but are spatially separated in the transverse direction. This spatial separation can be reversed by retro-reflecting the beams or simply inserting a second prism pair. This configuration allows us to obtain negative dispersion, such that 'blue is faster than red'.
+After the first prism, different wavelength components of the pulse travel in slightly different directions due to the prism's material dispersion ($dn/d\lambda$). Typically, for normal dispersion, blue light (shorter wavelength) is refracted more strongly than red light (longer wavelength). After the second prism (oriented to reverse the angular dispersion of the first), these different wavelength components travel parallel to each other again but are spatially separated in the transverse direction. This spatial separation of colours means that different wavelengths will travel different path lengths to a reference plane. By arranging the prisms appropriately, the red components can be made to travel a longer optical path than the blue components. This configuration introduces negative GDD, such that 'blue is faster than red' in terms of group delay. The spatial separation can be reversed by a second identical pair of prisms (or by retro-reflecting the beam through the same pair), which also realigns the different wavelength components collinearly.
 
-The setup of the prism is chosen in such a way that Brewster's angle is achieved at incidence _and_ minimum deviation simultaneously. Brewster's angle reduces reflection losses of p-polarised light to a minimum. This imposes specific conditions on the prisms' refractive index and apex angle $\alpha.$ Minimum deviation requires a symmetric beampath, so that equal incidence angle $\theta_1$ and exit angle $\theta_2$. The total GDD can be adjusted continuously by vertically moving one of the prisms of the pair without shifting the beam:
+The prisms are often set up such that light enters and exits at Brewster's angle to minimise reflection losses for p-polarised light. For this to coincide with the condition of minimum deviation (where the ray path through the prism is symmetric), specific constraints are placed on the prism's refractive index and its apex angle $\alpha$. The total GDD introduced by a prism pair can be adjusted continuously by translating one of the prisms into or out of the beam path along an axis perpendicular to its base, without causing a net displacement or angular deviation of the output beam if done correctly with a pair.
 
-![Attachments/UltraFastLasers_Keller 21.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2021.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=98&rect=108,397,334,514|•]]
+![Attachments/UltraFastLasers_Keller 21.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2021.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=98&rect=108,397,334,514| ]]
 
-By moving the prism into the beam, positive dispersion is continuously added because the beam has to propagate through a longer stretch of material with positive dispersion. It can be shown that the negative dispersion is determined by the distance between the two prisms:
-
+By moving a prism into the beam (increasing the material path length), positive material dispersion is continuously added. It can be shown that the overall GDD from a pair of prisms separated by a distance $L$ (between apexes or corresponding faces) has two main contributions: one from the material dispersion of the prisms themselves (positive GDD) and one from the geometry of the path length differences for different wavelengths (angular dispersion contribution, which is negative GDD). The geometric contribution to the second derivative of the optical path length $P$ with respect to wavelength is approximately:
 $$
-\frac{\mathrm{d}^2 P}{\mathrm{d} \lambda^2}=-2\left(\frac{\partial \theta_2}{\partial n} \frac{\partial n}{\partial \lambda}\right)^2 L \approx-8\left(\frac{\mathrm{d} n}{\mathrm{d} \lambda}\right)^2 L<0,
+\left(\frac{d^2 P}{d\lambda^2}\right)_{\text{geom}} = -2L \left(\frac{dn}{d\lambda}\right)^2 \left(\frac{\partial \theta_{\text{exit}}}{\partial n}\right)^2 \approx - C \cdot L \left(\frac{dn}{d\lambda}\right)^2 < 0,
 $$
+where $C$ is a positive constant depending on the prism geometry and incidence angles (for minimum deviation and Brewster's angle, a common approximation is $C \approx 8$ if $L$ is apex-to-apex distance, but the exact factor varies). Thus, the **geometric contribution** to the GDD is negative and its magnitude increases with the prism separation $L$. It is independent of the sign of the material dispersion $dn/d\lambda$. However, the **total** GDD of the prism compressor is the sum of this negative geometric GDD and the positive material GDD from the path length through the prism material itself. To achieve net negative GDD, the geometric contribution must outweigh the material contribution.
+Additionally, such a configuration defines a horizon wavelength $\lambda_h$: wavelengths shorter than $\lambda_h$ may be refracted so strongly by the first prism that they miss the apex of the second prism and are lost.
 
-where $P$ is the optical path length through the compressor, while $L$ is the separation distance between the apexes of the prisms. Thus, the **geometric contribution** to the dispersion is negative, and in fact independent of the sign of the material dispersion. However, note that the **total** dispersion obviously depends on material dispersion. Then it becomes obvious that we require the geometric dispersion to outweigh the material dispersion to achieve a net-negative dispersion. Additionally, this configuration defines a horizon wavelength $\lambda_h$. It defines the shortest wavelength that can pass through the prism sequence without missing the second prism. Note that the derivation is rather tedious and no interesting physics is involved.
-One big advantage of prism compressors is that the dispersion can be adjusted continuously and without introducing a spatial offset of the beam after the prism pair:
+A significant advantage of prism compressors is that the GDD can be adjusted continuously, often by translating one prism, without introducing a significant spatial offset or angular deviation of the output beam if using a four-prism or two-prism-plus-reflector setup.
 
-![Attachments/UltraFastLasers_Keller 22.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2022.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=108&rect=169,497,387,609|•]]
+![Attachments/UltraFastLasers_Keller 22.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2022.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=108&rect=169,497,387,609| ]]
 
-Moving one of the prisms in the sequence 'downwards' (in the figure) adds a certain amount of positive material dispersion. In doing so, the distance between the prisms is also changed; however, this can usually be neglected because the separation is typically greater than 10 cm, and the prisms are only moved by millimetres. Next, consider the GDD of a fused silica prism pair:
+Moving one of the prisms in the sequence to increase the amount of glass the beam traverses adds positive material GDD. While this also slightly changes the effective separation $L$ between prisms, this change to the geometric GDD can often be neglected for small adjustments if the initial separation is large (typically tens of centimetres) and the prism translation is only a few millimetres.
+Next, consider the GDD of a fused silica prism pair as a function of wavelength:
 
-![Attachments/UltraFastLasers_Keller 23.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2023.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=110&rect=75,415,362,608|•]]
+![Attachments/UltraFastLasers_Keller 23.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2023.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=110&rect=75,415,362,608| ]]
 
-Any wavelength $\lambda < \lambda_h$ will not be refracted by the second prism and will be lost during propagation. The trade-off for larger insertion is shorter horizon wavelengths.
+Any wavelength $\lambda < \lambda_h$ will not pass through the second prism correctly and will be lost. There is a trade-off: larger insertion of prism material (for fine-tuning GDD towards more positive values) can lead to shorter horizon wavelengths.
 
-One can usually only compensate for one order of dispersion, for example the second order. For the generation of very short pulses, this limits the possible pulse length because the uncompensated higher-order dispersion contributes dominantly to pulse broadening.
+A prism pair is typically designed to compensate for second-order dispersion (GDD). However, it also introduces third-order dispersion (TOD) and higher-order terms, which may not match those of the material being compensated. For the generation of very short pulses (few-cycle regime), uncompensated higher-order dispersion can become a dominant factor limiting the achievable pulse duration.
 
 ---
 ## 3.2 Grating Compressor and Pulse Shaper
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=111&selection=37,0,39,47|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=111&selection=37,0,39,47| ]]
 
-Diffraction gratings also introduce angular dispersion. Consider the simplest grating configuration. The red wavelength part is more strongly diffracted than the blue wavelength part. Therefore, the path length for red light is made longer than for blue light, thus introducing negative second-order dispersion: again, blue is faster than red. The dispersion is easily tuned by changing the distance between the gratings.
+Diffraction gratings also introduce angular dispersion, separating different wavelength components spatially. Consider the simplest grating compressor configuration, typically involving two parallel gratings. When a pulse is incident on the first grating, its different wavelength components are diffracted at different angles according to the grating equation. For a positive diffraction order ($m>0$), longer wavelengths (red) are typically diffracted more strongly (at a larger angle) than shorter wavelengths (blue). By arranging a second grating parallel to the first, the path length for the red light component between the gratings can be made longer than that for blue light. This introduces negative second-order dispersion (negative GDD): again, blue effectively travels "faster" than red through the compressor in terms of group delay. The magnitude of this GDD is easily tuned by changing the perpendicular distance between the gratings.
 
-![Attachments/UltraFastLasers_Keller 24.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2024.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=112&rect=55,491,385,609|•]]
+![Attachments/UltraFastLasers_Keller 24.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2024.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=112&rect=55,491,385,609| ]]
 
-The angular dispersion in diffraction from gratings is
-
+The angular dispersion from a grating is given by the grating equation:
 $$
-\nu_{x, m}=m \frac{1}{\Lambda} \Longleftrightarrow \theta_{x, m} \approx m \frac{\lambda}{\Lambda},
+\sin\theta_m(\lambda) = \sin\theta_i + m \frac{\lambda}{\Lambda},
 $$
+where $\Lambda$ is the grating period (groove spacing), $\lambda$ is the wavelength, $m$ is the diffraction order (typically $m=-1$ is used in compressors to achieve high efficiency with blazed gratings), $\theta_i$ is the angle of incidence, and $\theta_m(\lambda)$ is the wavelength-dependent diffraction angle for order $m$. For small angles and normal incidence, $\theta_m \approx m\lambda/\Lambda$.
 
-where $\Lambda$ is the grating period, $\lambda$ the wavelength, $m$ the diffraction order, $\nu_{x, m}$ the spatial frequency, and $\theta_{x, m}$ the diffraction angle. The red wavelength part is more strongly diffracted than the blue wavelength part. Therefore, the path length for long wavelengths can be increased such that negative second-order dispersion is generated: again, blue is faster than red.
+When a short pulse with a tilted pulse front propagates through an angularly dispersive element like a grating, the pulse front itself (contour of constant peak intensity) can remain tilted or have its tilt modified. The phase fronts, however, are still perpendicular to the local wavevector of each spectral component.
 
-When a short pulse propagates through an angular-dispersive element, a tilt is also introduced in the pulse front. Therefore, the pulse front, rather than the phase front, is the contour of constant intensity at the peak of the pulse. Note that the phase front is still perpendicular to the pulse propagation direction.
+A grating compressor has an additional position-dependent phase contribution from the grating surface itself. For the first grating, if the incident beam is collimated and not spectrally dispersed, all frequency components see effectively the same grating structure, so this phase contribution is common and does not contribute to GDD. However, after the first grating, the beam is angularly dispersed. When these spectrally separated components hit the second grating at different positions, they can experience different phase shifts from the grating structure itself, which can influence the overall GDD. This can be understood using Huygens' principle: each point on an advancing wavefront is a source of secondary wavelets. The first-order diffracted wavefront results from constructive interference of wavelets from each grating groove, which occurs when the path difference between waves from adjacent grooves results in a $2\pi m$ phase shift relative to the phase evolution from the grating periodicity itself. This "grating phase" must be considered in a detailed phase analysis.
 
-A grating compressor has an additional position-dependent contribution to the phase; however, it can be neglected on the first grating because, here, the beams are not yet spectrally dispersed: all frequency components experience the same phase shift, which can thus be neglected regarding GDD. This situation is different for the second grating. Different Fourier components are now diffracted at different positions of the grating, which results in a position-dependent grating phase and, therefore, frequency-dependent phase, thereby influencing GDD. The easiest way to understand this is by considering Huygens' principle, which assumes that each point of an advancing wavefront is the centre of a fresh disturbance. All these waves interfere constructively. Next, we show the simplest case where the incoming wavefronts arrive parallel to the grating surface: the first-order wavefront results from constructive interference of all secondary waves coming from each grating line. We obtain constructive interference with a grating line distance that results in a $2\pi$-shifted secondary wavefront compared to the neighbouring grating lines. This grating phase must be taken into account when the two-grating configuration is evaluated in the phase picture:
+![Attachments/UltraFastLasers_Keller 25.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2025.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=113&rect=89,446,350,610| ]]
 
-![Attachments/UltraFastLasers_Keller 25.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2025.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=113&rect=89,446,350,610|•]]
+Grating compressors are often used in a near-Littrow configuration ($\theta_m \approx -\theta_i$), where the diffracted beam of a specific order (commonly $m=-1$) is sent back close to the incident direction. Blazed gratings are designed to maximise diffraction efficiency into a particular order for such configurations. Low diffraction loss is essential because in many practical compressor designs (like the Treacy compressor), the light is diffracted four times (two gratings, double pass, or four separate gratings) to obtain an output beam that is spatially coherent (all frequency components are collinear and have no residual spatial chirp or pulse front tilt):
 
-The incoming beam has an angle of incidence $\theta_i$ and is diffracted by the grating with a grating period $\Lambda$. The resulting reflected and diffracted beam of order $m$ is determined by the angle $\theta_m$:
+![Attachments/UltraFastLasers_Keller 27.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2027.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=115&rect=208,536,345,605| ]]
+(Two-grating, double-pass configuration)
 
+Alternatively, a four-grating configuration can be used:
+
+![Attachments/UltraFastLasers_Keller 26.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2026.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=115&rect=175,435,382,508| ]]
+(Four-grating transmissive or reflective configuration)
+
+For a parallel grating pair compressor (typically used in reflection, $m=-1$), the second-order dispersion (GDD) is given by:
 $$
-\sin \theta_m=m \frac{\lambda}{\Lambda}+\sin \theta_{\mathrm{i}}, \quad \text { where } m=0, \pm 1, \pm 2, \ldots
+\frac{d^2 \Phi}{d \omega^2}=-\frac{m^2 \lambda^3 L_g}{2 \pi c^2 \Lambda^2 \cos^3\theta_m},
 $$
-
-Grating compressors are usually used in a near-Littrow configuration, where the beam is diffracted back in the direction it came from. In this way, very efficient grating compressors can be made, and, in general, blazed gratings are optimised precisely for this case. Low diffraction loss is essential because the light has to be diffracted four times to obtain a wave-independent beam profile, so a spatially coherent beam:
-
-![Attachments/UltraFastLasers_Keller 27.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2027.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=115&rect=208,536,345,605|•]]
-
-Of course, we can also use it in a four-grating configuration:
-
-![Attachments/UltraFastLasers_Keller 26.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2026.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=115&rect=175,435,382,508|•]]
-
-One may derive that for the second-order dispersion:
-
+where $L_g$ is the perpendicular distance between the gratings (if in a double-pass configuration like Treacy, $L_g$ is effectively twice the path length between the gratings for a single pass). If the pulse has been positively chirped by propagating through a dispersive material, the negative GDD of the grating compressor can compress the pulse. The GDD is continuously adjustable by changing the grating separation $L_g$:
 $$
-\frac{\mathrm{d}^2 \Phi}{\mathrm{d} \omega^2}=-\frac{\lambda^3 L_{\mathrm{g}}}{\pi c^2 \Lambda^2}\left[1-\left(\frac{\lambda}{\Lambda}-\sin \theta_{\mathrm{i}}\right)^2\right]^{-3 / 2}.
+\frac{d^2 \Phi}{d \omega^2} \sim -L_g.
 $$
-
-If the pulse has originally been broadened by a dispersive material (positive GDD), the four-grating compressor can compress the pulse again. The dispersion can be adjusted continuously through the distance $L_g$ between the two parallel gratings:
-
-$$
-\frac{\mathrm{d}^2 \Phi}{\mathrm{d} \omega^2} \sim L_{\mathrm{g}}.
-$$
-
-Therefore, the GDD is negative for any grating separation $L_g.$
+Thus, the GDD is negative for any positive grating separation $L_g$.
 
 ### 3.2.1 Grating Stretcher
 
-Consider another grating configuration with two focusing elements, for example lenses of focal length $f$ placed a distance $L$ from the respective grating:
+A grating compressor configuration run in reverse, or a specifically designed grating setup involving a telescope (two lenses or curved mirrors), can produce positive GDD and act as a pulse stretcher. Consider a configuration with two gratings and two focusing elements (lenses of focal lengths $f_1, f_2$) forming a telescope, where $L$ is the distance between the gratings along the optical axis if the telescope were not present:
 
-![Attachments/UltraFastLasers_Keller 28.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2028.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=122&rect=89,102,349,213|•]]
+![Attachments/UltraFastLasers_Keller 28.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2028.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=122&rect=89,102,349,213| ]]
 
-When $L=f$, the configuration may be used as a pulse shaper. The GDD for the grating stretcher setup depicted in the figure is given by
-
+If the telescope is placed between the gratings, the GDD for such a grating stretcher setup can be approximated by:
 $$
-\frac{\mathrm{d}^2 \Phi}{\mathrm{d} \omega^2}=-\frac{m^2 \lambda^3 M^2 L_{\mathrm{eff}}}{2 \pi c^2 \Lambda^2}\left[1-\left(-m \frac{\lambda}{\Lambda}-\sin \theta_{\mathrm{i}}\right)^2\right]^{-3 / 2},
+\frac{d^2 \Phi}{d \omega^2}=+\frac{m^2 \lambda^3 L_{\text{eff}}}{2 \pi c^2 \Lambda^2 \cos^3\theta_m},
 $$
+where $L_{\text{eff}}$ is an effective length that depends on the telescope magnification $M=f_2/f_1$ (if $f_1$ is first lens, $f_2$ second) and the positions of the gratings relative to the focal planes of the telescope. The sign of the GDD can be flipped from negative (compressor-like) to positive (stretcher-like) by adjusting the telescope configuration. For example, in a Martinez stretcher using a telescope between two gratings, an effective positive $L_{\text{eff}}$ gives positive GDD.
 
-where $M=f_1/f_2$ is the angular magnification of the telescope, and $L_\text{eff}=L-2(f_1+f_2)$ is the corrected effective path length. With this length, we now have a parameter allowing us to flip the sign of the GDD. Negative GDD then requires $L_\text{eff}>0,$ which implies that $L>2(f_1+f_2)$. In practice, the magnification factor is chosen to be 1.
+When such a grating-telescope setup is arranged in a "4f" configuration (input at front focal plane of first lens, mask at common focal plane, output at back focal plane of second lens), it can be used as a **pulse shaper**.
 
-To understand how this can be used as a grating-based pulse stretcher, it is important to realise that a lens performs a Fourier transform of the incoming wave in the focal plane. This is a result of [[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.6 Fourier Optics with a Lens\|Fourier optics]]:
+![Attachments/UltraFastLasers_Keller 29.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2029.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=125&rect=90,436,348,608| ]]
 
-![Attachments/UltraFastLasers_Keller 29.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2029.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=125&rect=90,436,348,608|•]]
+The first grating and lens perform a spatial Fourier transform of the input pulse's spectrum, dispersing the different frequency components to different transverse positions in the focal plane between the two lenses. An amplitude and/or phase mask placed in this Fourier plane can then independently modify the amplitude and phase of each spectral component. The second lens and grating recombine the spectral components, performing an inverse Fourier transform to reconstruct the pulse in the time domain, now with its shape and phase modified by the mask.
 
-The grating introduces angular dispersion, such that every spectral component is diffracted into a fixed direction in space. A lens images each incoming plane wave with a specific angle of incidence to a fixed position in its focal plane separated by a distance $f$ from the lens. Therefore, each frequency component may be addressed individually with a special phase and amplitude mask in the focal plane of the lens:
+![Attachments/UltraFastLasers_Keller 30.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2030.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=126&rect=75,215,361,609| ]]
 
-![Attachments/UltraFastLasers_Keller 30.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2030.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=126&rect=75,215,361,609|•]]
-
-The figure shows:
-* a: Pulse shaper in $4f$ design. Does not affect the pulses passing through.
-* b: Pulse shaper with linear phase shift. Changes the transit time of the pulse but does not affect the pulse shape.
-* c: Pulse shaper with a quadratic phase shift, generating a pulse with positive chirp, e.g., red comes before blue.
-* d: Pulse shaper with a quadratic phase shift, generating a pulse with negative chirp, e.g., blue comes before red.
+The figure illustrates:
+* a: A symmetric $4f$ pulse shaper (zero path length difference between gratings and Fourier plane) ideally does not affect transform-limited pulses passing through if no mask is present (or a flat phase/unity amplitude mask).
+* b: A linear phase shift introduced by the mask (a prism or tilted glass plate in the Fourier plane) results in a temporal shift of the output pulse without affecting its shape.
+* c: A quadratic spectral phase shift (concave down) generates a pulse with positive chirp (lower frequencies arrive before higher frequencies).
+* d: An opposite quadratic spectral phase shift (concave up) generates a pulse with negative chirp (higher frequencies arrive before lower frequencies).
 
 ---
-
 ## 3.3 Gires-Tournois Interferometer (GTI)
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=128&selection=6,0,8,35|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=128&selection=6,0,8,35| ]]
 
-A Gires-Tournois etalon or interferometer is a non-absorbing reflector with two reflecting surfaces, one of which has very high, ideally 1, reflectivity. The two reflecting surfaces form a [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.6 Fabry-Pérot Interferometer - Etalon\|Fabry-Pérot interferometer]], which ideally reflects $100\%$ of the incoming light but introduces a wavelength-dependent phase shift due to multi-beam interference. Normally, we can neglect all material dispersion:
+A Gires-Tournois Interferometer (GTI), also known as a Gires-Tournois etalon, is an optical element designed to introduce a frequency-dependent phase shift upon reflection, while ideally having unity reflectivity across its operational bandwidth. It consists of two parallel reflecting surfaces: a front surface that is partially reflective and a back surface that has very high (ideally 100%) reflectivity. These two surfaces form a [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.6 Fabry-Pérot Interferometer - Etalon\|Fabry-Pérot cavity]]. Light incident on the GTI undergoes multiple reflections within the cavity.
 
-![Attachments/UltraFastLasers_Keller 31.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2031.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=128&rect=213,65,386,177|•]]
+![Attachments/UltraFastLasers_Keller 31.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2031.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=128&rect=213,65,386,177| ]]
 
-The full intensity is reflected if the left mirror has perfect reflectivity and there is no absorption in the GTI. Then, the GTI reflects everything and introduces no losses:
+If the GTI is lossless (no absorption in the cavity material or mirrors, and the back mirror is perfectly reflecting), its power reflectivity is $|R_{\text{GTI}}|^2=1$. The complex amplitude reflection coefficient is then $R_{\text{GTI}}(\omega) = e^{i\Phi_{\text{GTI}}(\omega)}$.
+The key feature is that the phase $\Phi_{\text{GTI}}(\omega)$ is a strongly non-linear function of frequency due to the resonant nature of the Fabry-Pérot structure. This strong frequency dependence of the phase leads to significant group delay dispersion (GDD). The material dispersion of the layer (of thickness $d$) itself can often be neglected if the layer is thin or an air gap is used, compared to the resonant phase effects. The single-pass phase accumulation inside the etalon (layer index $n$, thickness $d$, angle of incidence $\theta_t$ inside) is $\varphi(\omega) = n(\omega) (\omega/c) d \cos\theta_t$. The total reflected phase $\Phi_{\text{GTI}}(\omega)$ is a more complex function involving $\varphi(\omega)$ and the reflectivities of the front and back surfaces.
 
+The Fabry-Pérot structure generates a periodic variation of the group delay ($T_g = d\Phi_{\text{GTI}}/d\omega$) and GDD ($d^2\Phi_{\text{GTI}}/d\omega^2$) with frequency, exhibiting alternating regions of positive and negative GDD. Neglecting material dispersion, the magnitude of the GDD achievable scales approximately with $d^2$:
 $$
-|R_{\mathrm{GTI}}|=1, \quad \text{and}\quad R_{\mathrm{GTI}}=\exp (i \Phi_{\mathrm{GTI}}).
+\frac{d^2\Phi_{\text{GTI}}}{d\omega^2} \sim \pm d^2.
 $$
-
-The only parameter that changes is the phase $\Phi_\text{GTI}$, which becomes strongly frequency-dependent due to the Fabry-Pérot structure. This dependence is much stronger than the material dispersion of the layer thickness $d$, that is if no air gap is used, or of the substrate. Tuning the distance with piezo motors, the GTI can also be used to tune the dispersion. The single-pass phase accumulation inside the etalon is 
-
+However, there is a trade-off: the bandwidth over which a certain GDD value can be obtained decreases as the layer thickness $d$ (and thus the magnitude of GDD) increases:
 $$
-\varphi=nkd.
+\text{Effective Bandwidth of GDD feature} \sim \frac{1}{d}.
 $$
-Note that the total phase shift $\Phi_\text{GTI}$ is a more complex function involving $\varphi,$ as well as the mirror reflectivities. We can show that the Fabry-Pérot structure generates a wavelength-dependent periodic variation of the group delay and the second order dispersion with an alternating positive and negative GDD, see next figure. Neglecting material dispersion, we obtain that the GDD increases quadratically with the layer thickness $d,$
-$$
-\frac{\mathrm{d} T_{\mathrm{g}}}{\mathrm{d} \omega}=\frac{\mathrm{d}^2 \Phi_{\mathrm{GTI}}}{\mathrm{d} \omega^2}\sim d^2.
-$$
+For providing large negative dispersion, $d$ must be chosen sufficiently large, but this constricts the usable bandwidth so much that very short pulses (with broad spectra) cannot be fully compensated. Air-spaced GTIs, adjustable with piezo motors, are sometimes used, but typically not for pulses shorter than approximately $100 \, \text{fs}$ due to bandwidth limitations and the oscillatory nature of their GDD.
+The next figures compare the group delay and GDD for a GTI with $d=80 \, \mu\text{m}$:
 
-However, the trade-off is that the bandwidth of the GTI decreases with increasing layer thickness:
+![Attachments/UltraFastLasers_Keller 34.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2034.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=130&rect=223,523,382,608| ]]
 
-$$
-\text {Bandwidth of} \quad\frac{\mathrm{d} T_{\mathrm{g}}}{\mathrm{~d}\omega} \sim \frac{1}{d}.
-$$
+and for $d=2.25 \, \mu\text{m}$:
 
-For large negative dispersion, $d$ must be chosen sufficiently large, but this constricts the usable bandwidth so much that short pulses cannot be supported. Usually, air-spaced GTIs are not used for pulses shorter than approximately $100$ fs.
-The next two figures compare the group delay and GDD for $d=80$ $\mu$m:
-
-![Attachments/UltraFastLasers_Keller 34.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2034.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=130&rect=223,523,382,608|•]]
-
-and $d=2.25$ $\mu$m:
-
-![Attachments/UltraFastLasers_Keller 35.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2035.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=130&rect=223,398,383,483|•]]
+![Attachments/UltraFastLasers_Keller 35.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2035.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=130&rect=223,398,383,483| ]]
 
 ---
 ## 3.4 Mirrors with Controlled Phase Properties
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=132&selection=14,0,16,40|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=132&selection=14,0,16,40| ]]
 
 ### 3.4.1 Bragg Mirror
-A standard high-reflectance laser mirror is a Bragg mirror, consisting of a stack of quarter-wave ($\lambda/4$) layers with alternating high and low refractive index $n_H$ and $n_L$:
+A standard high-reflectance laser mirror is a Bragg mirror. It consists of a stack of alternating layers of high refractive index ($n_H$) and low refractive index ($n_L$) materials. Each layer typically has an optical thickness of a quarter-wavelength ($\lambda_B/4n_H$ or $\lambda_B/4n_L$) at the design centre wavelength $\lambda_B$.
 
-![Attachments/UltraFastLasers_Keller 36.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2036.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=132&rect=111,103,328,163|•]]
+![Attachments/UltraFastLasers_Keller 36.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2036.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=132&rect=111,103,328,163| ]]
 
-A Bragg mirror shows maximum reflectivity at the Bragg wavelength $\lambda_B$. Each individual layer has a thickness $\lambda_B/4$. This is shown as an example for a Bragg mirror with a Bragg wavelength of $630$ nm:
+A Bragg mirror exhibits maximum reflectivity over a spectral range called the stopband, centred around $\lambda_B$.
 
-![Attachments/UltraFastLasers_Keller 37.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2037.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=133&rect=194,475,385,605|•]]
+![Attachments/UltraFastLasers_Keller 37.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2037.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=133&rect=194,475,385,605| ]]
 
-The fractional width of the stopband (the high reflectance part) depends only on the index ratio between the high- and low-index material:
-
+The fractional width of the stopband $\Delta\omega/\omega_B$ depends on the refractive index contrast $r=(n_H-n_L)/(n_H+n_L)$:
 $$
-\frac{\Delta \omega}{\omega_{\mathrm{B}}}=\frac{4}{\pi} \arcsin r.
+\frac{\Delta \omega}{\omega_B}=\frac{4}{\pi} \arcsin\left|\frac{n_H-n_L}{n_H+n_L}\right|.
 $$
-
-Within the stopband, there is a linear phase shift and therefore no second-order dispersion, assuming an ideal, infinitely thick Bragg mirror at the very centre of its stopband. Thus, a pulse will be reflected without distortion within the stopband. This changes drastically as soon as the bandwidth of an ultrashort pulse extends beyond the stopband range.
+Within the centre of its stopband, an ideal, infinitely thick Bragg mirror introduces a spectral phase that is approximately linear with frequency. This implies a constant group delay and therefore nearly zero second-order dispersion (GDD). Thus, a pulse whose spectrum lies entirely within this central region would be reflected without significant temporal distortion. However, this changes drastically as the bandwidth of an ultrashort pulse approaches or extends beyond the edges of the stopband, or even within the stopband if the mirror is not ideal, where the phase response becomes non-linear, introducing GDD and higher-order dispersion.
 
 ### 3.4.2 Chirped Mirrors
-While the prism pair provides an easy way to compensate for some dispersion, the higher-order dispersion is a huge disadvantage, especially since it starts to become more important for ultrashort pulses. Chirped mirrors designed for negative dispersion overcome this limitation: The gradually increase the local Bragg wavelength with penetration depth. This allows longer wavelengths to penetrate deeper into the coating before being reflected. This increased path length for these longer wavelengths results in larger group delay for red light compared to blue light. Therefore, negative GDD is achieved, and additionally, the high-reflectance region is broadened. However, the total dispersion that can be obtained from one reflection is not very large, such that these mirrors are only used in the sub-$10$ fs regime in the near-IR.
+While prism pairs provide a convenient way to introduce adjustable GDD, their uncompensated higher-order dispersion can be a disadvantage, especially for very short pulses where a broad bandwidth needs to be managed. **Chirped mirrors** are designed to provide negative GDD over a broad bandwidth to overcome this limitation. In a chirped mirror, the optical thickness of the layers (or the local Bragg wavelength) is gradually varied (chirped) with penetration depth into the coating. This design allows longer wavelengths (redder components) to penetrate deeper into the mirror stack before being reflected, while shorter wavelengths (bluer components) are reflected from shallower layers. This increased path length for longer wavelengths results in a larger group delay for red light compared to blue light, effectively creating negative GDD. Additionally, this chirping of the layer thicknesses broadens the high-reflectance region of the mirror. However, the amount of GDD achievable from a single reflection on a chirped mirror is typically modest (tens to a few hundreds of $\text{fs}^2$), so multiple bounces are often required. These mirrors are crucial in generating and maintaining pulses in the sub-$10 \, \text{fs}$ regime in the visible and near-IR.
 
-Chirped mirrors have one important disadvantage: the dispersion shows unwanted oscillations. It turned out that these can be overcome by using a double-chirped mirror (DCM) setup. This is based on the fact that, in addition to the chirp of the local Bragg wavelength, the initial partial reflection at the beginning of the mirror has to be reduced to avoid the strong GDD-type oscillations. This can be solved with an impedance-matching approach, where a chirp in the thickness of the high-index layer slowly tapers the impedance and therefore reduces the partial reflection. This impedance matching is achieved by a second chirp, specifically in the ratio of the high- to low-index layer thicknesses (the duty cycle of the layers), which is superimposed on the primary chirp of the Bragg wavelength. Usually, an additional broadband anti-reflection (AR) coating resolves the impedance for the first interface coming from air into the chirped mirror structure:
+A common issue with early chirped mirrors was unwanted oscillations in their GDD response as a function of frequency. It was found that these oscillations can be significantly suppressed by using **double-chirped mirror (DCM)** designs. This approach involves not only chirping the Bragg wavelength (layer thicknesses) but also chirping the duty cycle of the high- and low-index layers (their relative thicknesses within a period). This second chirp acts as an impedance-matching mechanism, gradually tapering the effective refractive index from the incident medium to the bulk of the mirror stack and from the stack to the substrate, thereby reducing parasitic reflections from internal interfaces that cause the GDD oscillations. Often, an additional broadband anti-reflection (AR) coating is applied to the top surface of the mirror to minimise reflections at the air-mirror interface.
 
-![Attachments/UltraFastLasers_Keller 38.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2038.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=136&rect=91,419,347,608|•]]
+![Attachments/UltraFastLasers_Keller 38.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2038.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=136&rect=91,419,347,608| ]]
 
-The figure (a) shows a Bragg mirror, (b) shows a single-chirped mirror, and (c) shows a double-chirped mirror with an additional AR coating.
+The figure shows: (a) a standard Bragg mirror, (b) a single-chirped mirror (chirped layer thicknesses), and (c) a double-chirped mirror with an additional AR coating (chirped layer thicknesses and chirped duty cycle).
 
-![Attachments/UltraFastLasers_Keller 39.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2039.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=137&rect=112,135,327,237|•]]
+![Attachments/UltraFastLasers_Keller 39.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2039.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=137&rect=112,135,327,237| ]]
 
-A new disadvantage is that the AR coating needs to have a residual reflectivity below $10^{-4}$ over a broad range, limiting the bandwidth obtainable by a DCM. However, even for this new problem, a solution exists: when the residual reflection does not interfere with the multi-layer DCM stack, these restrictions are lifted. This is obtained by a wedged structure, where the front reflection from the substrate does not interfere with the rest of the mirror stack. The impedance matching from within the substrate into the DCM structure can be made perfect by choosing the refractive index of the substrate to be equal to the refractive index of the first layer. Then, the AR coating only needs to reduce the loss. This concept is called a back-side coated double-chirped mirror, or simply BASIC DCM:
+A further refinement to broaden the bandwidth and smooth the GDD of DCMs is the **back-side coated double-chirped mirror (BASIC DCM)**. The idea is to eliminate residual reflections from the front surface of the substrate by applying the mirror coating to the back side of a wedged substrate and having the light enter through the substrate. If the refractive index of the substrate matches that of the first layer of the DCM stack, internal impedance matching is improved. The AR coating is then applied to the front (entrance) surface of the wedged substrate. The wedge ensures that any residual reflection from this front surface is angularly separated from the main beam.
 
-![Attachments/UltraFastLasers_Keller 40.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2040.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=139&rect=169,67,385,122|•]]
+![Attachments/UltraFastLasers_Keller 40.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2040.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=139&rect=169,67,385,122| ]]
 
-Comparing the BASIC DCM to a standard DCM:
+Comparing a BASIC DCM to a standard front-side coated DCM:
 
-![Attachments/UltraFastLasers_Keller 41.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2041.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=140&rect=55,537,383,608|•]]
+![Attachments/UltraFastLasers_Keller 41.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2041.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=140&rect=55,537,383,608| ]]
 
-Clearly, the BASIC DCM extends the reflectivity bandwidth while keeping the residual dispersion oscillations low. However, this design comes at a cost: we introduce additional positive dispersion because the pulse has to propagate through the substrate. This can be compensated for with a higher number of reflections for the chirped mirrors. A more serious disadvantage is that the beam components experience angular dispersion introduced by the wavelength-dependent refraction at the wedged substrate. This requires another matched reflection.
+The BASIC DCM can achieve a broader reflectivity bandwidth while maintaining low residual dispersion oscillations. However, this design introduces additional positive material dispersion because the pulse propagates through the substrate material. This typically requires more bounces on chirped mirrors to compensate. A more significant practical challenge can be the angular dispersion introduced by the wavelength-dependent refraction at the entrance and exit faces of the wedged substrate, which may require careful management or an additional matched wedge for compensation.
 
-Currently, the main limitation in chirped mirror dispersion compensation is the fabrication of such mirrors. Layer deposition errors during fabrication are normally too large and introduce GDD oscillations again.
+Currently, a primary limitation in achieving ideal dispersion compensation with chirped mirrors lies in the precision of fabricating such complex multilayer structures. Small errors in layer deposition during fabrication can reintroduce unwanted GDD oscillations.
 
 ---
 ## 3.5 Dazzlers
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=143&selection=52,0,54,8|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=143&selection=52,0,54,8| ]]
 
-A 'dazzler' is just the name for acousto-optic programmable dispersive filters (AOPDFs). In contrast to both SLMs and deformable mirrors, the dazzler does not require high-quality optical elements. It is compact and easy to implement. Consider the following schematic:
+A 'Dazzler' is a commercial name for a type of Acousto-Optic Programmable Dispersive Filter (AOPDF). In contrast to spatial light modulators (SLMs) used in $4f$ pulse shapers or deformable mirrors, AOPDFs generally do not require high-quality external dispersive optical elements (like gratings or prisms for spectral separation) and can be relatively compact and easy to implement. Consider the following schematic:
 
-![Attachments/UltraFastLasers_Keller 42.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2042.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=144&rect=55,396,385,608|•]]
+![Attachments/UltraFastLasers_Keller 42.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2042.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=144&rect=55,396,385,608| ]]
 
-An acoustic wave is launched into an acousto-optic device, travelling at velocity $v_a$ along the $z$-axis. Two optical modes can only be coupled efficiently by acousto-optic interaction if the two optical modes (a fast ordinary axis and a slow extraordinary axis) and the acoustic waves are phase-matched. Since the acoustic wave launched is often a _chirped_ RF signal, the acoustic frequency varies along the crystal at any given time. Therefore, different optical frequencies phase-match at different positions $z$ along the crystal where local acoustic wavevector satisfies the phase-matching condition. At this position , part of the energy is diffracted into the slow extraordinary axis and subsequently travels on that mode. Since the velocities of these two modes are different, each frequency will experience a different time delay. This is usually accomplished by propagating both the acoustic wave and the optical pulse through a birefringent crystal, so a crystal with a direction-dependent refractive index.
+An acoustic wave, generated by a radio-frequency (RF) transducer, is launched into an acousto-optic crystal (such as TeO$_2$). The incident optical pulse co-propagates (or nearly co-propagates) with this acoustic wave, which travels at a much slower velocity $v_a$ along the crystal. The acoustic wave creates a travelling refractive index grating. Efficient coupling (diffraction) of the optical wave from an input polarisation mode to an output polarisation mode (for instance, from an ordinary to an extraordinary axis in a birefringent crystal) occurs via the acousto-optic interaction only when a phase-matching condition between the optical waves and the acoustic wave is met.
 
-Therefore, an almost arbitrary group-delay distribution can be created by properly choosing the spatial shape $\omega_a(z)$ of the acoustic wave.
+If the launched acoustic wave is a _chirped_ RF signal, the acoustic frequency $\Omega_a(z)$ varies along the crystal length $z$ at any given time $t$. Therefore, a specific optical frequency $\omega$ from the input pulse will only satisfy the phase-matching condition at a particular position $z(\omega)$ along the crystal where the local acoustic wavevector $K_a(z(\omega)) = \Omega_a(z(\omega))/v_a$ has the correct value. At this position, part of the energy of the optical frequency component $\omega$ is diffracted into the orthogonally polarised mode. Since these two optical modes (ordinary and extraordinary) have different propagation velocities (due to birefringence), each frequency component $\omega$ effectively travels a different optical path length before being diffracted and after diffraction, or experiences a different cumulative phase. The total delay experienced by each frequency component thus depends on the position $z(\omega)$ where it was diffracted, which is programmed by the shape of the acoustic waveform $\Omega_a(z)$.
+
+Therefore, an almost arbitrary group-delay distribution (and thus spectral phase) can be imposed on the optical pulse by appropriately shaping the acoustic waveform $S_a(t)$ (whose instantaneous frequency determines $\Omega_a(z)$ at a given time). This allows for fine control over the dispersion experienced by the pulse.
 
 ---
 ## 3.6 Dispersion Measurement
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=145&selection=9,0,11,23|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=145&selection=9,0,11,23| ]]
 
-Lastly, we want to discuss how to measure dispersion reliably. The standard way to measure GDD is via white-light interferometry. The output of a broadband light source is fed into the interferometer, typically of the Michelson type. The device under test (DUT) is placed in the sample arm, whereas the reference arm contains optics with known dispersion. The resulting interference pattern is monitored either with a photodiode or using spectral interferometry.
+Lastly, we briefly discuss methods to measure dispersion reliably. A standard technique for characterising the Group Delay Dispersion (GDD) of optical components or systems is **white-light interferometry**. The output of a broadband light source (a "white-light" source, such as a supercontinuum source or a femtosecond laser) is fed into an interferometer, typically of the Michelson type. The Device Under Test (DUT), whose dispersion is to be measured, is placed in one arm (the sample arm) of the interferometer. The other arm (the reference arm) contains optics with known or negligible dispersion, and often includes a variable delay line. The interference pattern formed by recombining the light from both arms is monitored. This can be done either by measuring the total intensity as a function of delay with a photodiode (yielding an interferogram, whose envelope width can be related to dispersion differences) or, more commonly and powerfully, by using spectral interferometry, where the spectrum of the interfering output is measured with a spectrometer for different (or a fixed) path length difference. From the spectral interferogram, the phase difference between the two arms as a function of frequency, $\Delta\Phi(\omega)$, can be extracted, and from this, the GDD of the DUT ($\frac{d^2\Delta\Phi(\omega)}{d\omega^2}$) can be determined.
 
 ---

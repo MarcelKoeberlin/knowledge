@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/3-metals/","hide":"true","updated":"2025-04-05T17:25:08.871+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/3-metals/","hide":"true","updated":"2025-05-30T15:24:46.588+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -7,20 +7,20 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 **Table of Contents**
 
-- [[Notes/Solid-State Theory/3 Metals#3.1 The Jellium Model of the Metallic State\|3.1 The Jellium Model of the Metallic State]]
-- [[Notes/Solid-State Theory/3 Metals#3.2 Charge Excitations and the Dielectric Function\|3.2 Charge Excitations and the Dielectric Function]]
-- [[Notes/Solid-State Theory/3 Metals#3.3 Lattice Vibrations - Phonons\|3.3 Lattice Vibrations - Phonons]]
-- [[Notes/Solid-State Theory/3 Metals#3.4 Appendix: Linear Response Theory\|3.4 Appendix: Linear Response Theory]]
+[[Notes/Solid-State Theory/3 Metals#3.1 The Jellium Model of the Metallic State\|3.1 The Jellium Model of the Metallic State]]
+[[Notes/Solid-State Theory/3 Metals#3.2 Charge Excitations and the Dielectric Function\|3.2 Charge Excitations and the Dielectric Function]]
+[[Notes/Solid-State Theory/3 Metals#3.3 Lattice Vibrations - Phonons\|3.3 Lattice Vibrations - Phonons]]
+[[Notes/Solid-State Theory/3 Metals#3.4 Appendix: Linear Response Theory\|3.4 Appendix: Linear Response Theory]]
 
 ---
 # 3 Metals 
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=57&selection=2,0,2,6|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=57&selection=2,0,2,6| ]]
 
 The electronic states in a periodic atomic lattice are extended and have an energy spectrum forming energy bands. In the ground state these energy states are filled successively starting at the bottom of the electronic spectrum until the number of electrons is exhausted. Metallic behaviour occurs whenever in this way a band is only partially filled. The fundamental difference that distinguishes metals from insulators and semiconductors is the absence of a gap for electron-hole excitations. In metals, the ground state can be excited at arbitrarily small energies which has profound phenomenological consequences.
 We will consider a basic model suitable for the description of simple metals like the Alkali metals $\mathrm{Li}, \mathrm{Na}$, or K , where the (atomic) electron configuration consists of closed shell cores and one single valence electron in an ns-orbital. Neglecting the core electrons (completely filled bands), we consider the valence electrons only and apply the approximation of nearly free electrons. The lowest band around the $\Gamma$-point is then half-filled. First, we will also neglect the influence of the periodic lattice potential and consider the problem of a free electron gas subject to mutual (repulsive) Coulomb interaction.
 
 ## 3.1 The Jellium Model of the Metallic State
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=57&selection=23,0,25,39|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=57&selection=23,0,25,39| ]]
 
 The Jellium model is the probably simplest possible model of a metal that is able to describe qualitative and to some extend even quantitative aspects of simple metals. The main simplification made is to replace the ionic lattice by a homogeneous positively charged background (Jellium). The uniform charge density $e n_{\text {ion }}$ is chosen such that the whole system - electrons and ionic background - is charge neutral, i.e. $n_{\text {ion }}=n$, where $n$ is the electron density. In this fully translational invariant system, the plane waves
 $$
@@ -282,7 +282,7 @@ E_{\mathrm{ii}}=\left\langle\Psi_{0}\right| \mathcal{H}_{\mathrm{ii}}\left|\Psi_
 \end{align*}
 $$
 
-![Attachments/Script 27.webp|700](/img/user/Attachments/Script%2027.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=62&rect=188,496,405,650|•]]
+![Attachments/Script 27.webp|700](/img/user/Attachments/Script%2027.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=62&rect=188,496,405,650| ]]
 
 It is easy to verify that the three contributions $E_{\text {Hartree }}, E_{\mathrm{ei}}$, and $E_{\mathrm{ii}}$ compensate each other to exactly zero. Note that these three terms are the only ones that would arise in a classical electrostatic calculation, implying that the stability of metals relies purely on quantum effect. The remaining terms are the kinetic energy and the Fock term. The latter is negative and reads
 $$
@@ -312,7 +312,7 @@ $$
 
 The length $d$ is the average radius of the volume occupied by one electron. Minimising the energy per electron with respect to $n$ is equivalent to minimise it with respect to $r_{s}$, yielding $r_{s, \text { min }}=4.83, d \approx 2.5 \text{ }\pu{Å}$ and a density of $n_{0} \approx 1.5 \times 10^{24} \mathrm{~cm}^{-3}$. This corresponds to a lattice constant of $a=(4 \pi / 3)^{1 / 3} d \approx 4 \text{ }\pu{Å}$. This estimate is roughly in agreement with the lattice constants of the Alkali metals: $r_{s, \mathrm{Li}}=3.22, r_{s, \mathrm{Na}}=3.96, r_{s, \mathrm{~K}}=4.86$. Note that in metals the delocalised electrons are responsible for the cohesion of the positive background yielding a stable solid.
 
-![Attachments/Script 28.webp|700](/img/user/Attachments/Script%2028.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=63&rect=186,616,406,752|•]]
+![Attachments/Script 28.webp|700](/img/user/Attachments/Script%2028.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=63&rect=186,616,406,752| ]]
 
 The good agreement of this simple estimate with the experimental values is due to the fact that the Alkali metals have only one valence electron in an s-orbital that is delocalised, whereas the the core electrons are in a noble gas configuration and, thus, relatively inert. In the variational approach outlined above correlation effects among the electrons due to the Coulomb repulsion have been neglected. In particular, electrons can be expected to 'avoid' each other not just because of the Pauli principle, but also as a result of the repulsive interaction. However, for the problem under consideration the correlation corrections turn out to be small for $r_{s} \sim r_{s, \min }$ :
 $$
@@ -324,7 +324,7 @@ which can be obtained from a more sophisticated quantum field theoretical analys
 
 ---
 ## 3.2 Charge Excitations and the Dielectric Function
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=63&selection=120,0,122,46|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=63&selection=120,0,122,46| ]]
 
 In analogy to semiconductors, the elementary excitations of metallic systems are the electron-hole excitations, which for metals, however, can have arbitrarily small energies. One particularly drastic consequence of this behaviour is the strong screening of the long-ranged Coulomb potential. As we will see, a negative test charge in a metal reduces the electron density in its vicinity, and the induced cloud of positive charges, relative to the uniform charge density, weaken the Coulomb potential as,
 $$
@@ -504,7 +504,7 @@ This response function $\chi(\boldsymbol{q}, \omega)$ contains also effects of e
 
 The most simple excitation in a metal is the electron-hole excitation which resembles in some way the one discussed for the semiconductor. Neglecting the Coulomb interaction we remove an electron from an occupied state and place it into a state which is unoccupied:
 
-![Attachments/Script 29.webp|700](/img/user/Attachments/Script%2029.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=67&rect=162,205,433,309|•]]
+![Attachments/Script 29.webp|700](/img/user/Attachments/Script%2029.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=67&rect=162,205,433,309| ]]
 
 Since the ground-state $\left|\Psi_{0}\right\rangle$ is the filled Fermi sea, we remove the electron with an energy $\epsilon_{k} \leq \epsilon_{F}$ $\left(|\boldsymbol{k}| \leq k_{F}\right)$ and place into an energy state outside the Fermi sea, $\epsilon_{\boldsymbol{k}+\boldsymbol{q}}>\epsilon_{F}$. Thus, the excited state is given by
 $$
@@ -521,7 +521,7 @@ $$
 
 Also here we find a continuum of electron-hole excitation spectrum in the energy-momentum plane - sketched in Figure 3.4. In contrast to semiconductors electron-hole excitations are possible to arbitrarily low energies. The possible momentum transfer is dictated by the geometry of the Fermi sea. For $E_{\boldsymbol{k}, \boldsymbol{q}} \rightarrow 0$ the momentum transfer ranges from $q \approx 0$ to $q \approx 2 k_{F}$ as the electron has to be removed just below and be place just above the Fermi energy. For increasing the excitation energy this momentum range is gradually shift as depicted as the blue area:
 
-![Attachments/Script 30.webp|700](/img/user/Attachments/Script%2030.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=68&rect=191,610,406,752|•]]
+![Attachments/Script 30.webp|700](/img/user/Attachments/Script%2030.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=68&rect=191,610,406,752| ]]
 
 Interestingly $|\boldsymbol{k}+\boldsymbol{q}, s ; \boldsymbol{k}, s\rangle$ can be generated through the operator $\widehat{\rho}_{\boldsymbol{k}, \boldsymbol{q}, s}^{\dagger}$ which also couples to the external potential which we used the derive the linear response theory. The linear response function is actually built upon the properties of electron-hole excitation. Indeed $\chi(\boldsymbol{q}, \omega)$ contains information about the excitation spectrum. Without Coulomb it is sufficient to consider $\chi_{0}(\boldsymbol{q}, \omega)$, the Lindhard function.
 We may separate $\chi_{0}$ into its real and imaginary part, $\chi_{0}(\boldsymbol{q}, \omega)=\chi_{0}^{\prime}(\boldsymbol{q}, \omega)+i \chi_{0}^{\prime \prime}(\boldsymbol{q}, \omega)$. Using the relation
@@ -625,7 +625,7 @@ $$
 
 Classically, the plasma resonance can therefore be thought as an oscillation of the whole electron gas cloud on top of a positively charged background.
 
-![Attachments/Script 31.webp|700](/img/user/Attachments/Script%2031.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=70&rect=183,552,412,662|•]]
+![Attachments/Script 31.webp|700](/img/user/Attachments/Script%2031.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=70&rect=183,552,412,662| ]]
 
 ### 3.2.4 Screening
 
@@ -715,7 +715,7 @@ $$
 $$
 where we used $1 / \epsilon(\boldsymbol{q}) \rightarrow 0$ for $\boldsymbol{q} \rightarrow 0$. The charge displacement corresponds to the exact opposite amount of charge of of the point charge. Thus we find a perfect compensation which corresponds to perfect screening.
 
-![Attachments/Script 32.webp|700](/img/user/Attachments/Script%2032.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=72&rect=179,222,415,403|•]]
+![Attachments/Script 32.webp|700](/img/user/Attachments/Script%2032.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=72&rect=179,222,415,403| ]]
 
 **Dielectric function in various dimensions**
 
@@ -727,13 +727,13 @@ $$
 $$
 where $s=q / k_{F}$. Interestingly $\chi_{0}(q, 0)$ has a singularity at $q=2 k_{F}$ in all dimensions:
 
-![Attachments/Script 33.webp|700](/img/user/Attachments/Script%2033.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=73&rect=159,561,431,750|•]]
+![Attachments/Script 33.webp|700](/img/user/Attachments/Script%2033.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=73&rect=159,561,431,750| ]]
 
 The singularity becomes weaker as the dimensionality is increased. In one dimension, there is a logarithmic divergence, in two dimensions there is a kink, and in three dimensions only the derivative diverges. Later we will see that these singularities may lead to instabilities of the metallic state, in particular for the one-dimensional case.
 
 ---
 ## 3.3 Lattice Vibrations - Phonons
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=73&selection=236,0,238,28|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=73&selection=236,0,238,28| ]]
 
 The atoms in a lattice of a solid are not immobile but vibrate around their equilibrium positions. We will describe this new degree of freedom by treating the lattice as a continuous elastic medium (Jellium with elastic modulus $\lambda$ ). This approximation is sufficient to obtain some essential features of the interaction between lattice vibrations and electrons. In particular, renormalised screening effects will be found. Our approach here is, however, limited to mono-atomic unit cells because the internal structure of a unit cell is neglected.
 
@@ -885,7 +885,7 @@ $$
 $$
 in the limit $k \rightarrow 2 k_{F}$. This behaviour is called the Kohn anomaly and results from the interaction between electrons and phonons. This effect is not contained in the previous elastic medium model that neglected ion-electron interactions.
 
-![Attachments/Script 34.webp|700](/img/user/Attachments/Script%2034.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=78&rect=176,213,422,396|•]]
+![Attachments/Script 34.webp|700](/img/user/Attachments/Script%2034.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=78&rect=176,213,422,396| ]]
 
 ### 3.3.3 Peierls Instability in one Dimension
 
@@ -1034,7 +1034,7 @@ $$
 $$
 at $k= \pm k_{F}$, i.e. at the Fermi energy. The gap is associated with a lowering of the energy of the electron states in the lower band in the vicinity of the Fermi energy. For this reason this kind of instability is called a Fermi surface instability. Due to the gap the metal has turned into a semiconductor with a finite energy gap for all electron-hole excitations. 
 
-![Attachments/Script 35.webp|700](/img/user/Attachments/Script%2035.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=80&rect=168,167,430,290|•]]
+![Attachments/Script 35.webp|700](/img/user/Attachments/Script%2035.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=80&rect=168,167,430,290| ]]
 
 The modulation of the electron density follows the charge modulation due to the ionic lattice deformation, which can be seen by expressing the wave function of the electronic states,
 $$
@@ -1155,11 +1155,11 @@ $$
 
 This interaction corresponds to the matrix element for a scattering process of two electrons with momentum exchange $\boldsymbol{q}$ and energy exchange $\omega$. The phonon frequency $\omega_{\boldsymbol{q}}$ is always less than the Debye frequency $\omega_{D}$. Hence the effect of the phonons is almost irrelevant for energy exchanges $\omega$ that are much larger than $\omega_{D}$. The time scale for such energies would be too short for the slow ions to move and influence the interaction. Interestingly, the repulsive bare Coulomb potential is renormalised to an interaction with an attractive channel for $\omega<\omega_{D}$ because of overcompensation by the ions. This aspect of the electron-phonon interaction is most important for superconductivity.
 
-![Attachments/Script 36.webp|700](/img/user/Attachments/Script%2036.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=82&rect=210,258,388,384|•]]
+![Attachments/Script 36.webp|700](/img/user/Attachments/Script%2036.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=82&rect=210,258,388,384| ]]
 
 ---
 ## 3.4 Appendix: Linear Response Theory
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=83&selection=40,0,42,32|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=83&selection=40,0,42,32| ]]
 
 Much information about a macroscopic system can be gained through the observation of its response to a small external perturbation. If the perturbation is sufficiently small we can consider the response of the system in lowest order, linear in the perturbing field. This is the approach pursued by the linear response theory.
 If we knew all stationary states of a macroscopic quantum system with many degrees of freedom we could calculate essentially any desired quantity. However, the full information of such system is hard to store and is also unnecessary in view of our real experimental interests. The linear response functions are an efficient way to provide in a condensed form some of the most important and relevant informations accessible in an experiment. The linear response function is one element of quantum field theory of solid state physics. We will introduce it here on an elementary level.
@@ -1400,7 +1400,7 @@ $$
 $$
 Separating this equation into real and imaginary part yields the Kramers-Kronig relation.
 
-![Attachments/Script 37.webp|700](/img/user/Attachments/Script%2037.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=87&rect=216,190,387,295|•]]
+![Attachments/Script 37.webp|700](/img/user/Attachments/Script%2037.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=87&rect=216,190,387,295| ]]
 
 ### 3.4.4 Fluctuation-Dissipation Theorem
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/1-plane-wave-propagation-in-dispersive-media/","hide":"true","updated":"2025-05-30T10:21:47.287+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/1-plane-wave-propagation-in-dispersive-media/","hide":"true","updated":"2025-05-30T11:42:31.492+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -19,11 +19,11 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 # 1 Plane Wave Propagation in Dispersive Media
 
-We will now begin with the description of the simplest type of electromagnetic field: The plane wave, and we will consider its propagation in a dispersive medium. For that, we require the Maxwell equations. Note however, that we will not derive them, as it is assumed the reader is already somewhat familiar with them. The following two sections on the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.1 Maxwell Equations\|Maxwell equations]] and the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.2 Material Equations\|material equations]] are also treated in a similar way in my [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.2 Maxwell's Equations in a Medium\|quantum electronics notes]].
+We will now begin with the description of the simplest type of electromagnetic field: the plane wave, and we will consider its propagation in a dispersive medium. For this, we require Maxwell's equations. Note however, that we will not derive them here, as it is assumed the reader is already somewhat familiar with them. The following two sections on the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.1 Maxwell Equations\|Maxwell equations]] and the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.2 Material Equations\|material equations]] are also treated in a similar way in my [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.2 Maxwell's Equations in a Medium\|quantum electronics notes]].
 ## 1.1 Maxwell Equations
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=21&selection=3,0,5,31| ]]
 
-In this chapter, the Maxwell equations will be discussed in SI units, which is important because it incorporates the influence of bound charges and bound current into the displacement field $\mathbf{D}$ and the magnetising field $\mathbf{H}$. Then, the equations only depend on the free charge density $\rho_\text{f}$, and the free current density $\mathbf{j}_\text{f}$. Free could mean electrons in the conduction band of a metal or a semiconductor, in contrast to the core or bonding electrons. The Maxwell Equations in matter are then
+In this chapter, Maxwell's equations will be discussed in SI units. This formulation is important because it incorporates the influence of bound charges and bound currents into the displacement field $\mathbf{D}$ and the magnetising field $\mathbf{H}$. Then, the source terms in the equations only depend on the free charge density $\rho_{\text{f}}$, and the free current density $\mathbf{j}_{\text{f}}$. Free charges/currents could, for instance, be electrons in the conduction band of a metal or a semiconductor, in contrast to the core or bonding electrons which are considered bound. The macroscopic Maxwell's Equations in matter are then:
 
 $$
 \begin{aligned}
@@ -38,235 +38,198 @@ $$
 ## 1.2 Material Equations
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=22&selection=6,0,8,18| ]]
 
-The material equations describe how bound charges behave under influence of an electromagnetic (EM) wave, driven by the Coulomb or Lorentz force. As long as the force is not too large, the response of each atom or molecule can be described by a harmonic oscillator, where a negative charge oscillates with respect to the positively charged core. Under the influence of an electron-magnetic wave, the electron is brought to forced oscillations induced by the incident EM wave. In the linear regime, the oscillating electron then emits radiation with the same frequency, but generally a different frequency-dependent phase. Therefore, a superposition of the incident wave and the phase-shifted wave emitted by the electrons is formed. In the visible and near-infrared spectrum, this superposition of waves propagates more slowly through a transparent medium than the original incident wave.
+The material equations describe how bound charges within a material respond to an electromagnetic (EM) wave, driven by the Coulomb or Lorentz force. As long as the applied fields are not excessively large, the response of each atom or molecule can often be modelled as a harmonic oscillator, where a negatively charged electron cloud oscillates with respect to the positively charged core. Under the influence of an electromagnetic wave, the electrons are set into forced oscillations induced by the incident EM wave. In the linear regime, these oscillating electrons then emit secondary radiation at the same frequency as the incident wave, but generally with a frequency-dependent phase difference. Therefore, the field propagating in the medium is a superposition of the incident wave and the phase-shifted waves emitted by the electrons. In the visible and near-infrared spectrum for transparent media, this superposition of waves typically propagates more slowly than the original incident wave would in vacuum.
 
-We will treat the medium as continuum, which is a good approximation as long the wavelength under consideration is long compared to atomic dimensions. The interaction of a material with bound electrons is described by the following material equations:
-
+We will treat the medium as a continuum, which is a good approximation as long as the wavelength under consideration is long compared to atomic dimensions. The interaction of a material containing bound electrons with an electric field is described by the material equation for the electric displacement $\mathbf{D}$:
 $$
 \mathbf{D}=\varepsilon_0 \mathbf{E}+\mathbf{P},
 $$
-where $\mathbf{P}$ is the induced electric polarisation of the material, caused by the deflection of the bound electrons relative to the lattice ion, satisfying
+where $\mathbf{P}$ is the induced electric polarisation of the material (electric dipole moment per unit volume), caused by the displacement of bound charges relative to their equilibrium positions. The polarisation is related to the bound charge density $\rho_{\mathrm{b}}$ via:
+$$
+\nabla\cdot \mathbf{P}=-\rho_{\mathrm{b}}.
+$$
+Using this and Gauss's law for $\mathbf{D}$ ($\nabla\cdot\mathbf{D}=\rho_{\text{f}}$), we can also write Gauss's law for $\mathbf{E}$ as:
+$$
+\nabla\cdot \mathbf{E}=\frac{\rho_{\text{total}}}{\varepsilon_0}\quad\text{with}\quad \rho_{\text{total}}=\rho_{\text{f}}+\rho_{\text{b}}.
+$$
+For small electric fields, as in linear optics, the instantaneous polarisation is often directly proportional to the applied electric field in non-dispersive media:
+$$
+\mathbf{P}(t)=\varepsilon_0 \chi_e \mathbf{E}(t),
+$$
+where $\chi_e$ is the electric susceptibility (a scalar for isotropic media). If $\chi_e$ is frequency dependent (i.e., the medium is dispersive), this simple proportionality is valid in the frequency domain:
+$$
+\mathbf{P}(\omega)=\varepsilon_0 \chi_e(\omega) \mathbf{E}(\omega).
+$$
+In this case, the polarisation $\mathbf{P}(\omega)$ and the electric field $\mathbf{E}(\omega)$ are generally not in phase, meaning that $\chi_e(\omega)$ is a complex quantity.
 
+The material equation for the magnetic field $\mathbf{H}$ is:
 $$
-\nabla\cdot \mathbf{P}=-\rho_{\mathrm{b}}
+\mathbf{H}=\frac{1}{\mu_0} \mathbf{B}-\mathbf{M},
 $$
-This allows obtaining the Maxwell equation
+with $\mathbf{M}$ being the induced magnetisation field of the material (magnetic dipole moment per unit volume). The total current density $\mathbf{j}_{\text{total}}=\mathbf{j}_{\text{f}} +\mathbf{j}_{\text{b}}$ is related to the microscopic Ampère-Maxwell law $\nabla\times \mathbf{B}=\mu_0\left(\mathbf{j}_{\text{total}}+\varepsilon_0 \frac{\partial}{\partial t} \mathbf{E}\right)$. The bound current density $\mathbf{j}_{\text{b}}$ can be expressed in terms of $\mathbf{P}$ and $\mathbf{M}$ as $\mathbf{j}_{\text{b}} = \partial\mathbf{P}/\partial t + \nabla\times\mathbf{M}$.
+For small fields in linear magnetic media, the magnetisation is proportional to the magnetic field $\mathbf{H}$:
 $$
-\nabla\cdot \mathbf{E}=\frac{\rho}{\epsilon_0}\quad\text{with}\quad \rho=\rho_\text{f}+\rho_\text{b}.
+\mathbf{M}=\chi_m \mathbf{H},
 $$
-Here, $\rho$ is the total charge density. For small electric fields, as in linear optics, the instantaneous polarisation is directly proportional to the applied electric field
-
-$$
-\mathbf{P}(t)=\chi \varepsilon_0 \mathbf{E}(t),
-$$
-where $\chi$ is the electric susceptibility. If $\chi$ is frequency dependent, the simple proportionality is only valid in the frequency domain, so that
-$$
-\mathbf{P}(\omega)=\chi(\omega) \varepsilon_0 \mathbf{E}(\omega)
-$$
-where the polarisation and the electric field are no longer in phase, such that $\chi$ takes on a complex value. 
-The material equation for the magnetic field is 
-$$
-\mathbf{H}=\frac{1}{\mu_0} \mathbf{B}-\mathbf{M}
-$$
-with $\mathbf{M}$ the induced magnetisation field of the material. Using Maxwell's equation
-
-$$
-\nabla\times \mathbf{B}=\mu_0\left(\mathbf{j}+\epsilon_0 \frac{\partial}{\partial t} \mathbf{E}\right)
-$$
-
-with the total current density $\mathbf{j}=\mathbf{j}_\text{f} +\mathbf{j}_\text{b}$, the magnetisation $\mathbf{M}$ is then given by
-
-$$
-\nabla \times\mathbf{M}=\mathbf{j}_{\text{b}}-\frac{\partial}{\partial t} \mathbf{P}
-$$
-For small fields, we can again assume that the magnetic polarisation is directly proportional to the applied magnetic field:
-
-$$
-\mathbf{M}=\chi_{\mathrm{m}} \frac{1}{\mu_0} \mathbf{B}
-$$
-where $\chi_{\mathrm{m}}$ is the magnetic susceptibility. In linear optics it is useful to introduce the dielectric constant $\epsilon$ and the magnetic permeability $\mu$. These are defined by
-
+where $\chi_m$ is the magnetic susceptibility. In linear optics, it is useful to introduce the relative permittivity $\varepsilon_r$ (dielectric constant) and the relative magnetic permeability $\mu_r$. These are defined by the constitutive relations:
 $$
 \begin{aligned}
-\mathbf{D} & =\varepsilon_0\varepsilon_r\mathbf{E}= \varepsilon \mathbf{E}, \\
-\mathbf{H} & =\frac{1}{\mu_0\mu_r}\mathbf{B}= \frac{1}{\mu} \mathbf{B}.
+\mathbf{D} & =\varepsilon_0\varepsilon_r\mathbf{E} = \varepsilon_{\text{abs}} \mathbf{E}, \\
+\mathbf{B} & =\mu_0\mu_r\mathbf{H} = \mu_{\text{abs}} \mathbf{H}.
 \end{aligned}
 $$
-This further implies that
+Here $\varepsilon_{\text{abs}}$ and $\mu_{\text{abs}}$ are the absolute permittivity and permeability of the medium. This implies:
 $$
 \begin{aligned}
-\chi & =\varepsilon_r-1,\\
-\chi_{\mathrm{m}} & =\mu_r-1.
+\chi_e & =\varepsilon_r-1,\\
+\chi_m & =\mu_r-1 \quad (\text{when } \mathbf{M}=\chi_m\mathbf{H}).
 \end{aligned}
 $$
-We additionally define a refractive index $n$ as
-
+We additionally define the refractive index $n$ as:
 $$
 n \equiv \sqrt{\varepsilon_r \mu_r}.
 $$
-For the remainder of these notes, we will consider dielectric materials, that is, materials that can be polarised by an applied electric field. Then, we may neglect magnetic interactions, since these interactions are much weaker than the electric interaction at optical frequencies. We do this mathematically by setting $\mu_r\approx 1.$ 
+For the remainder of these notes, we will primarily consider dielectric materials, that is, materials that can be polarised by an applied electric field but are generally non-magnetic at optical frequencies. Thus, we may neglect magnetic interactions by setting $\mu_r\approx 1$ (so $\chi_m \approx 0$ and $\mathbf{M} \approx 0$).
 
 ---
 ## 1.3 Wave Equation with Refractive Index
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=24&selection=56,0,58,35| ]]
 
-The wave equation in a material with bound electrons is a direct consequence of the Maxwell equations, where we additionally assume no free charges, such that
+The wave equation in a material with bound electrons is a direct consequence of Maxwell's equations. We assume no free charges ($\rho_{\text{f}}=0$) and no free currents ($\mathbf{j}_{\text{f}}=0$), so $\nabla\cdot\mathbf{D}=0$. The effect of the bound electrons is incorporated through the polarisation $\mathbf{P}$ (and thus through $\mathbf{D}=\varepsilon_0\mathbf{E}+\mathbf{P}$). For a homogeneous, isotropic, linear, non-magnetic medium, the wave equation for the electric field $\mathbf{E}$ can be written as:
 $$
-\nabla\cdot\textbf{D}=\rho_\text{f}=0.
+\nabla^2 \mathbf{E}-\frac{1}{c^2} \frac{\partial^2}{\partial t^2} \mathbf{E}=\mu_0 \frac{\partial^2}{\partial t^2} \mathbf{P},
 $$
-The effect of the bound electrons was already considered through $\textbf{D}.$ For a homogeneous material, the relative permittivity is constant in real space. We end up with the wave equation for a homogeneous (and isotropic, non-magnetic) dielectric material without free charges and electric currents:
+where $c$ is the speed of light in vacuum, given by:
 $$
-\Delta \mathbf{E}-\frac{1}{c^2} \frac{\partial^2}{\partial t^2} \mathbf{E}=\mu_0 \frac{\partial^2}{\partial t^2} \mathbf{P}
+c=\frac{1}{\sqrt{\varepsilon_0 \mu_0}} \approx 3 \times 10^8 \, \text{m s}^{-1}.
 $$
-where $c$ is the speed of light in vacuum given by
+This is the relevant wave equation for dielectric dispersive materials, for which the induced polarisation $\mathbf{P}(\omega) = \varepsilon_0 \chi_e(\omega) \mathbf{E}(\omega)$ depends on frequency, and the electric susceptibility $\chi_e(\omega)$ is complex. Without polarisation ($\mathbf{P}=0$), the equation reduces to the wave equation in vacuum, whose solutions are electromagnetic waves propagating at speed $c$.
+If the material is further assumed to be non-dispersive (so $\chi_e(\omega)=\chi_e$ is a constant, real value, and $\mathbf{P}(t) = \varepsilon_0\chi_e\mathbf{E}(t)$), we may simplify the wave equation. Using $\mathbf{D}=\varepsilon_0(1+\chi_e)\mathbf{E} = \varepsilon_0\varepsilon_r\mathbf{E}$, and for non-magnetic media $\mathbf{B}=\mu_0\mathbf{H}$, the wave equation becomes:
+$$
+\nabla^2 \mathbf{E}-\frac{\varepsilon_r}{c^2} \frac{\partial^2}{\partial t^2} \mathbf{E}=0, \quad \text{or} \quad \nabla^2 \mathbf{E}-\frac{1}{v_{\mathrm{p}}^2} \frac{\partial^2}{\partial t^2} \mathbf{E}=0.
+$$
+The solutions of this wave equation in such a linear, homogeneous, isotropic, non-dispersive dielectric medium are electromagnetic waves travelling with the phase velocity:
+$$
+v_\mathrm{p}=\frac{c}{\sqrt{\varepsilon_r}} = \frac{c}{n}.
+$$
+Here, $n=\sqrt{\varepsilon_r}$ is the refractive index (since $\mu_r=1$). The macroscopic change in the phase velocity of a plane EM wave in a material is thus given by its refractive index $n$, which is determined by the material’s atomic structure and its response to the EM field.
 
+Nonlinear optical processes, such as frequency doubling, may also be included as source terms in the wave equation. For high field intensities, the material response becomes nonlinear, primarily because the atomic binding potential is anharmonic. The nonlinear polarisation $\mathbf{P}_{\mathrm{NL}}$ in the perturbative regime is usually expanded in a Taylor series as a function of the field components $E_j, E_k, \dots$:
 $$
-c=\frac{1}{\sqrt{\varepsilon_0 \mu_0}}=3 \times 10^8 \frac{\mathrm{~m}}{\mathrm{~s}}.
+P_{i, \mathrm{NL}}=\varepsilon_0 \sum_{jk}\chi_{ijk}^{(2)} E_j E_k+\varepsilon_0 \sum_{jkl}\chi_{ijkl}^{(3)} E_j E_k E_l+\dots,
 $$
-This is the relevant wave equation for dielectric dispersive materials, for which the induced polarisation depends on frequency, and the electric susceptibility is complex. Without polarisation, the solution to the wave equation in vacuum is an electromagnetic wave propagating with the speed of light in vacuum. 
-If the material is further free of dispersion, such that $\chi(\omega)=\chi$, we may simplify it even further to
+through which the wave equation generalises to:
 $$
-\Delta \mathbf{E}-\frac{1}{v_{\mathrm{p}}^2} \frac{\partial^2}{\partial t^2} \mathbf{E}=0.
+\nabla^2 \mathbf{E}-\frac{1}{c^2} \frac{\partial^2}{\partial t^2} \mathbf{E}=\mu_0 \frac{\partial^2}{\partial t^2} (\mathbf{P}_{\mathrm{L}}+\mathbf{P}_{\mathrm{NL}}),
 $$
-The solutions of this wave equation in a linear dielectric medium with constant susceptibility are therefore electromagnetic waves travelling with the phase velocity
-$$
-v_\mathrm{p}=\frac{c}{n}\equiv c_n.
-$$
-
-The macroscopic change in the phase velocity of a plane EM wave in a material is given by the refractive index $n$, which is determined by the material’s atomic structure.
-Nonlinear optical processes such as frequency doubling may also be included in the source term of the wave equation: For high field intensities, the material equations become nonlinear because of the anharmonic binding potential. The nonlinear polarisation in the perturbation regime is usually expanded in a Taylor series as a function of the field $\mathbf{E}$:
-
-$$
-P_{i, \mathrm{NL}}=\varepsilon_0 \chi_{i j k}^{(2)} E_j E_k+\varepsilon_0 \chi_{i j k l}^{(3)} E_j E_k E_l+\varepsilon_0 \chi_{i j k l m}^{(4)} E_j E_k E_l E_m+\cdots,
-$$
-through which the wave equation generalises to
-
-$$
-\Delta \mathbf{E}-\frac{1}{c^2} \frac{\partial^2}{\partial t^2} \mathbf{E}=\mu_0 \frac{\partial^2}{\partial t^2} \mathbf{P}_{\mathrm{L}}+\mu_0 \frac{\partial^2}{\partial t^2} \mathbf{P}_{\mathrm{NL}}
-$$
-where $\mathbf{P}_L$ only contains the linear part of the polarisation. Similar wave equations may be obtained for the magnetic field, however they have the exact same form, e.g. replacing the electric with the magnetic field. Still, it is important to remember that both fields are necessary for the propagation of an electromagnetic wave. Nonlinear effects are discussed more in my notes on [[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5 Nonlinear Optics\|crystal optics]], but with more theoretical focus on the description.
+where $\mathbf{P}_L = \varepsilon_0 \chi_e^{(1)}\mathbf{E}$ contains only the linear part of the polarisation. Similar wave equations may be obtained for the magnetic field; however, they often take an analogous form. It is important to remember that both electric and magnetic fields are essential for the propagation of an electromagnetic wave. Nonlinear effects with more focus on magnetism are discussed more extensively in my notes on [[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5 Nonlinear Optics\|crystal optics]], with a greater theoretical focus on their description.
 
 ### 1.3.1 Solutions to the Wave Equation: The Plane Wave
 
-The plane monochromatic wave is an important special solution of the wave equation, and we will soon see that _every_ wave can be expanded in terms of them. Consider the real solution of a plane wave travelling in the positive $z$-direction
-
+The monochromatic plane wave is an important special solution of the linear wave equation. We will see that _any_ wave solution can be expressed as a superposition (integral) of such plane waves. Consider the real form of a plane wave travelling in the positive $z$-direction:
 $$
-\mathbf{E}(z, t)=\left|\mathbf{E}_0^{+}\right| \cos (\omega t-k z+\varphi),
+\mathbf{E}(z, t)=\left|\mathbf{E}_0^{+}\right| \cos(\omega t-k z+\varphi),
 $$
-where $\mathbf{E}_0^{+}=\left|\mathbf{E}_0^{+}\right| \mathrm{e}^{\mathrm{i} \varphi}$ is the complex amplitude. We use the plus sign here because the wave propagates in the positive $z$-direction. In the following we will very often omit the plus or minus sign for the amplitude. The period $T$ is defined through 
-$$ 
-T=\frac{2\pi}{\omega}=1/f.$$
-The next figure shows a plane wave for a constant position as function of time (left), and for a constant time as a function of position (right):
+where $\mathbf{E}_0^{+}=\left|\mathbf{E}_0^{+}\right| e^{i \varphi}$ is the complex amplitude vector (phasor) of the wave propagating in the $+z$ direction. In the following, we will often omit the superscript $+$ or $-$ for the amplitude if the direction is clear from context. The period $T$ is defined through:
+$$
+T=\frac{2\pi}{\omega}=\frac{1}{f}.
+$$
+The next figure shows a plane wave for a constant position as a function of time (left), and for a constant time as a function of position (right):
 
 ![Attachments/UltraFastLasers_Keller.webp|700](/img/user/Attachments/UltraFastLasers_Keller.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=27&rect=55,104,383,221| ]]
 
-The period in the time domain is $T$, and the wavelength $\lambda$ in real space vacuum, where the optical frequency does not change. This is a direct consequence of the Maxwell equations, however is not proven here. The speed of light changes in a dispersive medium from $c$ to $c_n$. The same way, the wavelength in vacuum changes:
+The period in the time domain is $T$. The wavelength in vacuum is $\lambda_0 = cT$. The optical frequency $f$ (or $\omega$) does not change when light enters a linear medium from vacuum. This is a direct consequence of the boundary conditions at the interface. Since the phase velocity changes in a dispersive medium from $c$ to $v_p = c/n$, the wavelength also changes:
 $$
-\lambda \longrightarrow\lambda_n=c_nT=\frac{\lambda}{n}.
+\lambda_n = v_p T = \frac{c}{n}T = \frac{\lambda_0}{n}.
 $$
 This is schematically shown in the next figure:
 
 ![Attachments/UltraFastLasers_Keller 1.webp|700](/img/user/Attachments/UltraFastLasers_Keller%201.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=28&rect=232,514,382,606| ]]
 
-Note that nothing prevents us from adopting a complex notation for the solution of the wave equation. It is often much easier to work with the complex notation:
+It is often much easier to work with the complex notation for the plane wave:
 $$
-\mathbf{E}(z, t)=\mathbf{E}_0^{+} \mathrm{e}^{\mathrm{i}(\omega t-k z)}.
+\mathbf{E}(z, t)=\tilde{\mathbf{E}}_0^{+} e^{i(\omega t-k z)},
 $$
-This comes from the fact that the wave equation is linear, and therefore any superposition of solutions is also a solution. However, both expressions are valid and equivalent. 
-Next, there is a summary for the relevant quantities and their behaviour in vacuum and in a dielectric medium:
+where $\tilde{\mathbf{E}}_0^{+}$ is the complex amplitude vector, including any initial phase. The physical field is understood to be the real part of this complex expression. This is permissible because the wave equation is linear, and therefore any superposition of solutions (including real and imaginary parts of a complex solution) is also a solution.
 
-|                | Vacuum                    | Dispersive medium                                          |
-| :------------- | :------------------------ | :--------------------------------------------------------- |
-| Frequency      | $f$                       | $f$                                                        |
-| Period         | $T=1 / f, \omega=2 \pi f$ | $T=1 / f, \omega=2 \pi f$                                  |
-| Phase Velocity | $v_{\mathrm{p}}=c$        | $v_{\mathrm{p}}=c_n=c / n$                                 |
-| Wavevector     | $k=\frac{\omega}{c}$      | $k_n=\frac{\omega}{v_{\mathrm{p}}}=\frac{\omega}{c} n=k n$ |
-| Wavevector     | $k=\frac{2 \pi}{\lambda}$ | $k_n=\frac{2 \pi}{\lambda_n}=k n$                          |
-| Wavelength     | $\lambda$                 | $\lambda_n=\frac{\lambda}{n}$                              |
+Next, there is a summary of relevant quantities and their behaviour in vacuum and in a dielectric medium (with refractive index $n$, assuming $\mu_r=1$):
+
+| Quantity       | Vacuum                    | Dispersive medium ($n(\omega)$)                                       |
+| :------------- | :------------------------ | :------------------------------------------------------------------- |
+| Frequency      | $f$                       | $f$                                                                  |
+| Period         | $T=1/f, \omega=2 \pi f$   | $T=1/f, \omega=2 \pi f$                                              |
+| Phase Velocity | $v_{\mathrm{p}}=c$        | $v_{\mathrm{p}}(\omega)=c/n(\omega) \equiv c_n(\omega)$              |
+| Wave number    | $k_0=\omega/c$            | $k(\omega)=n(\omega)\omega/c = n(\omega)k_0$                          |
+| Wave number    | $k_0=2 \pi/\lambda_0$     | $k(\omega)=2 \pi/\lambda_n(\omega) = n(\omega)2\pi/\lambda_0$          |
+| Wavelength     | $\lambda_0$               | $\lambda_n(\omega)=\lambda_0/n(\omega)$                              |
 
 ---
 ## 1.4 TEM Wave and Impedance
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=30&selection=197,0,199,22| ]]
 
-Very importantly, the Maxwell equations imply that
+Very importantly, for plane waves in isotropic media, Maxwell's equations imply that the field vectors and the wavevector are mutually orthogonal:
 $$
 \mathbf{E} \perp \mathbf{H}, \quad \mathbf{k} \perp \mathbf{E}, \quad \mathbf{k} \perp \mathbf{H}.
 $$
-This wave is called a transverse electromagnetic (TEM) wave, because both electric and magnetic field are perpendicular to the wave vector. For a plane harmonic wave, the fields are in phase:
+Such a wave is called a transverse electromagnetic (TEM) wave because both the electric and magnetic fields are transverse (perpendicular) to the direction of wave propagation $\mathbf{k}$. For a plane harmonic wave in a lossless medium, the fields $\mathbf{E}$ and $\mathbf{H}$ are in phase:
 
 ![Attachments/UltraFastLasers_Keller 2.webp|700](/img/user/Attachments/UltraFastLasers_Keller%202.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=31&rect=103,144,336,259| ]]
 
-Further, they imply that
-
-$$
-\mathbf{H}_0^{ \pm}= \pm \frac{1}{Z} \mathbf{E}_0^{ \pm},
-$$
-where $Z$ is the impedance, defined by
-
-- In vacuum: $\quad Z \equiv Z_0 \equiv \sqrt{\frac{\mu_0}{\varepsilon_0}} =\mu_0c,$
-- In a dispersive medium: $\quad Z \equiv \sqrt{\frac{\mu_0\mu_r}{\varepsilon_0\varepsilon_r }} = \frac{Z_0}{n}=\mu_0\mu_rc_n=\mu_0c_n.$
-
-Note that we assumed $\mu_r=1$ here. $Z_0$ is also called the characteristic vacuum impedance, and is a natural constant like the speed of light. 
+Further, their amplitudes are related by the wave impedance $Z$ of the medium. For a plane wave $\mathbf{E}(\mathbf{r},t) = \mathbf{E}_0 e^{i(\mathbf{k}\cdot\mathbf{r}-\omega t)}$, the magnetic field is $\mathbf{H}(\mathbf{r},t) = \frac{1}{Z} (\hat{\mathbf{k}} \times \mathbf{E}(\mathbf{r},t))$, where $\hat{\mathbf{k}}=\mathbf{k}/|\mathbf{k}|$. This means $|\mathbf{H}_0| = |\mathbf{E}_0|/Z$. The impedance $Z$ is defined by:
+- In vacuum: $\quad Z_0 \equiv \sqrt{\frac{\mu_0}{\varepsilon_0}} = \mu_0 c \approx 377 \, \Omega$.
+- In a non-magnetic ($\mu_r=1$) dispersive medium: $\quad Z(\omega) = \sqrt{\frac{\mu_0}{\varepsilon_0\varepsilon_r(\omega)}} = \frac{Z_0}{\sqrt{\varepsilon_r(\omega)}} = \frac{Z_0}{n(\omega)}$.
+If $n(\omega)$ is complex, $Z(\omega)$ will also be complex, implying a phase shift between $\mathbf{E}$ and $\mathbf{H}$ in lossy media.
 
 ---
 ## 1.5 Polarisation
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=33&selection=341,0,343,12| ]]
 
-So far, the electromagnetic wave discussed was linearly polarised, meaning that the electric field oscillates in one fixed direction, a likewise for the magnetic field. The direction in which the electric field oscillates is called the polarisation direction. Mathematically, a linearly polarised wave (figure a) in $x$-direction has the form
+So far, the electromagnetic wave discussed was implicitly linearly polarised, meaning that the electric field vector oscillates along one fixed direction in the plane perpendicular to $\mathbf{k}$. The direction in which the electric field oscillates is called the polarisation direction. Mathematically, a linearly polarised plane wave propagating along $z$ (figure a), polarised along the $x$-direction, has the form:
 $$
-\mathbf{E}=\left(\begin{array}{c}
-E_0 \\
-0 \\
-0
-\end{array}\right) \mathrm{e}^{\mathrm{i}\left(\omega t-k_n z\right)}.
+\mathbf{E}(z,t)=\hat{\mathbf{x}} E_0 e^{i(\omega t-k_n z)}.
 $$
-
-The superposition of two linearly polarised waves with a phase difference $\Delta\varphi$ and polarisation perpendicular to each other generally results in an elliptically polarised plane wave (figure b):
+The superposition of two linearly polarised waves with a phase difference $\Delta\varphi$ and orthogonal polarisation directions generally results in an elliptically polarised plane wave (figure b). For instance, if one component is along $\hat{\mathbf{x}}$ and the other along $\hat{\mathbf{y}}$:
 $$
-\mathbf{E}=\left(\begin{array}{c}
-E_1 \\
-E_2 \mathrm{e}^{\mathrm{i} \Delta \varphi} \\
-0
-\end{array}\right) \mathrm{e}^{\mathrm{i}\left(\omega t-k_n z\right)}.
+\mathbf{E}(z,t)=\left(\hat{\mathbf{x}} E_1 + \hat{\mathbf{y}} E_2 e^{i \Delta \varphi}\right) e^{i(\omega t-k_n z)}.
 $$
-A special case is for no phase difference, in this case we retrieve a linearly polarised plane wave with polarisation direction in $xy$-direction. Another special case is for the case of a $\pm\pi/2$ phase difference. In that case, the wave is called circularly polarised (figure c), where the polarisation vector moves around a circle with frequency $\omega$: 
+A special case is when $\Delta\varphi=0$ or $\Delta\varphi=\pi$; in this case, the wave remains linearly polarised, with its polarisation direction generally tilted in the $xy$-plane. Another special case occurs when $E_1=E_2$ and the phase difference is $\Delta\varphi = \pm\pi/2$. In that case, the wave is called circularly polarised (figure c), where the tip of the electric field vector traces out a circle in the $xy$-plane at frequency $\omega$.
 
 ![Attachments/UltraFastLasers_Keller 3.webp|700](/img/user/Attachments/UltraFastLasers_Keller%203.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=34&rect=56,292,383,604| ]]
 
 ## 1.6 Energy Density, Poynting Vector, and Intensity
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=35&selection=124,0,126,46| ]]
 
-For optically isotropic materials, both the Poynting vector and the wave number vector are perpendicular to the wave fronts. It is then easy to derive the following properties
+For optically isotropic materials, both the Poynting vector (direction of energy flow) and the wave vector $\mathbf{k}$ (direction of phase propagation) are parallel and perpendicular to the wavefronts for plane waves. The following energy-related quantities are important:
 
-- Energy density (instantaneous):
-	$$w = \frac{1}{2}(\mathbf{E} \cdot \mathbf{D} + \mathbf{H} \cdot \mathbf{B}) = \frac{1}{2} \varepsilon  \mathbf{E}^2 + \frac{1}{2} \mu  \mathbf{H}^2.$$
-- Poynting vector (instantaneous):
-	$$\mathbf{S} = \mathbf{E} \times \mathbf{H} \quad \text{(for real fields)}.$$
-- Poynting vector (averaged over time):
-	$$\overline{\mathbf{S}} = \frac{1}{2} \operatorname{Re}\left(\mathbf{E}_0 \times \mathbf{H}_0^*\right) \quad \text{(for complex fields)}.$$
+- Energy density (instantaneous, for linear media):
+    $$w(t) = \frac{1}{2}(\mathbf{E}(t) \cdot \mathbf{D}(t) + \mathbf{H}(t) \cdot \mathbf{B}(t)) = \frac{1}{2} \varepsilon_{\text{abs}} |\mathbf{E}(t)|^2 + \frac{1}{2} \mu_{\text{abs}} |\mathbf{H}(t)|^2.$$
+    (using real fields $\mathbf{E}(t), \mathbf{H}(t)$ and absolute permittivities/permeabilities).
+- Poynting vector (instantaneous, for real fields):
+    $$\mathbf{S}(t) = \mathbf{E}(t) \times \mathbf{H}(t).$$
+- Poynting vector (time-averaged, for complex field amplitudes $\tilde{\mathbf{E}}_0, \tilde{\mathbf{H}}_0$ such that physical field is $\mathfrak{Re}[\tilde{\mathbf{E}}_0 e^{i\omega t}]$):
+    $$\langle\mathbf{S}\rangle = \frac{1}{2} \mathfrak{Re}\left[\tilde{\mathbf{E}}_0 \times \tilde{\mathbf{H}}_0^*\right].$$
 - Intensity:
-	$$I = |\overline{\mathbf{S}}| = c_n \bar{w}.$$
+    $$I = |\langle\mathbf{S}\rangle|.$$
+	For a plane wave in an isotropic, lossless medium, $\langle w \rangle = \varepsilon_{\text{abs}} \langle |\mathbf{E}(t)|^2 \rangle$. The relation $I = v_p \langle w \rangle$ holds.
 
-
-For the special case of a monochromatic plane wave, we find with $\hat{\mathbf{k}}=\frac{\mathbf{k}}{|\mathbf{k}|}$:
-
-- Magnetic field:
-	$$\mathbf{H}(\mathbf{r}, t) = \frac{1}{Z}\left(\hat{\mathbf{k}} \times \mathbf{E}(\mathbf{r}, t)\right) .$$
-- Energy density (averaged over time):
-	$$\bar{w} = \frac{1}{2} \varepsilon \left|\mathbf{E}_0\right|^2.$$
+For the special case of a monochromatic plane wave $\mathbf{E}(\mathbf{r}, t)=\mathfrak{Re}\left[\tilde{\mathbf{E}}_0 e^{i(\mathbf{k} \cdot \mathbf{r}-\omega t)}\right]$:
+- Magnetic field (complex amplitude):
+    $$\tilde{\mathbf{H}}_0 = \frac{1}{Z}\left(\hat{\mathbf{k}} \times \tilde{\mathbf{E}}_0\right).$$
+- Energy density (time-averaged, assuming non-magnetic, lossless medium with real $n$ and $\varepsilon_r$):
+    $$\langle w \rangle = \frac{1}{2} \varepsilon_0 \varepsilon_r \frac{|\tilde{\mathbf{E}}_0|^2}{2} + \frac{1}{2} \mu_0 \frac{|\tilde{\mathbf{H}}_0|^2}{2} = \frac{1}{2} \varepsilon_0 \varepsilon_r \frac{|\tilde{\mathbf{E}}_0|^2}{2},$$
+    assuming that electric and magnetic energies are equal. 
 - Poynting vector (instantaneous):
-	$$\mathbf{S}(\mathbf{r}, t) = \frac{1}{Z} \mathbf{E}^2 \hat{\mathbf{k}}.$$
-- Poynting vector (averaged over time):
-	$$\overline{\mathbf{S}} = \frac{1}{2Z} \left|\mathbf{E}_0\right|^2 \hat{\mathbf{k}}.$$
+    $$\mathbf{S}(\mathbf{r}, t) = \frac{1}{Z} |\mathfrak{Re}\left[\tilde{\mathbf{E}}_0 e^{i(\mathbf{k} \cdot \mathbf{r}-\omega t)}\right]|^2 \hat{\mathbf{k}}.$$
+- Poynting vector (time-averaged):
+    $$\langle\mathbf{S}\rangle = \frac{1}{2Z} |\tilde{\mathbf{E}}_0|^2 \hat{\mathbf{k}}.$$
 - Intensity:
-	$$I = \frac{1}{2Z} \left|\mathbf{E}_0\right|^2 = \frac{1}{2} Z \left|\mathbf{H}_0\right|^2.$$
-
+    $$I = \frac{1}{2Z} |\tilde{\mathbf{E}}_0|^2 = \frac{1}{2} \sqrt{\frac{\varepsilon_0\varepsilon_r}{\mu_0\mu_r}} |\tilde{\mathbf{E}}_0|^2 = \frac{1}{2} c \varepsilon_0 n |\tilde{\mathbf{E}}_0|^2 \quad (\text{for } \mu_r=1).$$
 
 ---
 ## 1.7 Dispersion
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=36&selection=187,0,189,10| ]]
 
-The fact that the refractive index is frequency dependent implies that the wave vector $k_n=\omega n(\omega)/c$ is no longer directly proportional to the frequency as it is in vacuum. This frequency dependence is called dispersion. It is very important to know $n(\omega)$, as can be seen in some examples:
+The fact that the refractive index $n(\omega)$ is frequency dependent implies that the wave number $k(\omega)=n(\omega)\omega/c$ is no longer directly proportional to the frequency $\omega$, as it is in vacuum (where $k_0=\omega/c$). This frequency dependence of $n(\omega)$ (and thus of $k(\omega)$ and $v_p(\omega)$) is called **dispersion**. For more details, see [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|here]]. It is very important to know $n(\omega)$ to describe pulse propagation, as can be seen in examples of how different materials affect light:
 
 ![Attachments/UltraFastLasers_Keller 4.webp|700](/img/user/Attachments/UltraFastLasers_Keller%204.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=36&rect=57,103,382,184| ]]
 
@@ -274,29 +237,25 @@ The fact that the refractive index is frequency dependent implies that the wave 
 ## 1.8 Sellmeier Equation in the Visible and Near-Infrared
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=37&selection=86,0,88,51| ]]
 
-In many cases, we will discuss transparent dielectric materials, so with negligible absorption. Glass, for example, is transparent in the visible spectrum, but absorbs in the UV and IR spectral regions. The range in which a material is transparent is called the spectral window, and usually materials exhibit normal/positive dispersion $\frac{d^2n}{d\omega^2}>0$ in this region:
+In many cases, we will discuss transparent dielectric materials, meaning materials with negligible absorption in the spectral region of interest. Glass, for instance, is transparent in the visible spectrum but absorbs strongly in the ultraviolet (UV) and parts of the infrared (IR) spectral regions. The range in which a material is transparent is called its spectral window. Usually, within this window and away from absorption bands, materials exhibit **normal dispersion**, where the refractive index $n'(\omega) = \mathfrak{Re}\left[n(\omega)\right]$ increases with frequency ($\frac{dn'}{d\omega}>0$), or equivalently, decreases with wavelength ($\frac{dn'}{d\lambda_0}<0$).
 
 ![Attachments/UltraFastLasers_Keller 5.webp|700](/img/user/Attachments/UltraFastLasers_Keller%205.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=38&rect=136,147,303,340| ]]
 
-Far away from absorption, the dispersion may be described by the Sellmeier equations. In this region, the frequency dependent absorption coefficient $\alpha(\omega)$ can be replaced by an infinitely sharp absorption line at $\omega_0$ given by a delta function. We need to use the Kramers-Kronig relations:
+Far away from absorption resonances, the dispersion of the real part of the refractive index can often be accurately described by the Sellmeier equation. This equation can be derived from a classical oscillator model (like the Lorentz model) by considering the contributions of multiple absorption resonances at frequencies $\omega_j$. If these resonances are narrow, their contribution to the real part of the susceptibility $\chi_r(\omega)$ (and thus to $n^2(\omega) = 1+\chi_r(\omega)$ for non-magnetic media) can be approximated. The Kramers-Kronig relations connect the real part $\chi_r(\omega)$ and imaginary part $\chi_i(\omega)$ of the susceptibility:
 $$
-\chi_{\mathrm{r}}(\omega)=\frac{2}{\pi} \int_0^{\infty} \frac{\omega^{\prime} \chi_{\mathrm{i}}\left(\omega^{\prime}\right)}{\omega^{\prime 2}-\omega^2} \mathrm{~d} \omega^{\prime}\quad\text{and} \quad
-\chi_{\mathrm{i}}(\omega)=-\frac{2 \omega}{\pi} \mathcal{P} \int_0^{\infty} \frac{\chi_{\mathrm{r}}\left(\omega^{\prime}\right)}{\omega^{\prime 2}-\omega^2} \mathrm{~d} \omega^{\prime} .
+\chi_r(\omega)=\frac{1}{\pi}  \mathcal{P} \int_{-\infty}^{\infty} \frac{\chi_i(\omega')}{\omega'-\omega} d\omega' = \frac{2}{\pi}  \mathcal{P} \int_0^{\infty} \frac{\omega' \chi_i(\omega')}{\omega'^2-\omega^2} d\omega',
 $$
-The real part of the complex susceptibility $\chi_{\mathrm{r}}$ determines the refractive index and the imaginary part $\chi_i$ determines the absorption of the medium. This simplifies to 
 $$
-n^2=1+\frac{A \lambda^2}{\lambda^2-\lambda_0^2},
+\chi_i(\omega)=-\frac{1}{\pi}  \mathcal{P} \int_{-\infty}^{\infty} \frac{\chi_r(\omega')}{\omega'-\omega} d\omega' = -\frac{2\omega}{\pi}  \mathcal{P} \int_0^{\infty} \frac{\chi_r(\omega')}{\omega'^2-\omega^2} d\omega'.
 $$
-where $A$ is a constant. Extending this formalism to more absorption lines, the equation is modified by inserting
-
+Here, $\mathcal{P}$ denotes the Cauchy Principal Value. Assuming sharp absorption lines (delta functions for $\chi_i(\omega)$ at resonance frequencies $\omega_j$ or wavelengths $\lambda_j$), the Sellmeier equation for $n^2(\lambda_0)$ takes the form:
 $$
-\alpha(\omega)=\delta\left(\omega-\omega_1\right)+\delta\left(\omega-\omega_2\right)+\cdots
+n^2(\lambda_0)=1+\sum_j \frac{A_j \lambda_0^2}{\lambda_0^2-\lambda_j^2},
 $$
-
-Very often, we will therefore not have a single constant in the Sellmeier equation, but multiple, as is the case for fused silica:
+where $\lambda_0$ is the vacuum wavelength, $A_j$ are constants related to the strength and density of the $j$-th oscillator, and $\lambda_j$ are the resonance wavelengths. For fused silica, a common form is:
 $$
-n^2=1+\frac{A \lambda^2}{\lambda^2-\lambda_1^2}+\frac{B \lambda^2}{\lambda^2-\lambda_2^2}+\frac{C \lambda^2}{\lambda^2-\lambda_3^2}.
+n^2(\lambda_0)=1+\frac{B_1 \lambda_0^2}{\lambda_0^2-C_1}+\frac{B_2 \lambda_0^2}{\lambda_0^2-C_2}+\frac{B_3 \lambda_0^2}{\lambda_0^2-C_3},
 $$
-
+where $B_j$ and $C_j (= \lambda_j^2)$ are empirically determined Sellmeier coefficients.
 
 ---

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/3-fourier-series-representation-of-periodic-signals/","hide":"true","updated":"2025-05-29T15:00:09.307+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/3-fourier-series-representation-of-periodic-signals/","hide":"true","updated":"2025-05-30T15:24:11.575+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -7,26 +7,26 @@ Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents
 ---
 **Table of Contents**
 
-- [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.1 The Response of LTI Systems to Complex Exponentials\|3.1 The Response of LTI Systems to Complex Exponentials]]
-- [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.2 Fourier Series Representation of Continuous-Time Periodic Signals\|3.2 Fourier Series Representation of Continuous-Time Periodic Signals]]
-- [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.3 Convergence of the Fourier Series\|3.3 Convergence of the Fourier Series]]
-- [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.4 Properties of the Continuous-Time Fourier Series\|3.4 Properties of the Continuous-Time Fourier Series]]
-- [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.5 Fourier Series Representation of Discrete-Time Periodic Signals\|3.5 Fourier Series Representation of Discrete-Time Periodic Signals]]
-- [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.6 Properties of the Discrete-Time Fourier Series\|3.6 Properties of the Discrete-Time Fourier Series]]
-- [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.7 Fourier Series and LTI Systems\|3.7 Fourier Series and LTI Systems]]
-- [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.8 Filtering\|3.8 Filtering]]
-- [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.9 Important Examples: Continuous-Time\|3.9 Important Examples: Continuous-Time]]
-- [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.10 Important Examples: Discrete-Time Filters\|3.10 Important Examples: Discrete-Time Filters]]
+[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.1 The Response of LTI Systems to Complex Exponentials\|3.1 The Response of LTI Systems to Complex Exponentials]]
+[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.2 Fourier Series Representation of Continuous-Time Periodic Signals\|3.2 Fourier Series Representation of Continuous-Time Periodic Signals]]
+[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.3 Convergence of the Fourier Series\|3.3 Convergence of the Fourier Series]]
+[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.4 Properties of the Continuous-Time Fourier Series\|3.4 Properties of the Continuous-Time Fourier Series]]
+[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.5 Fourier Series Representation of Discrete-Time Periodic Signals\|3.5 Fourier Series Representation of Discrete-Time Periodic Signals]]
+[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.6 Properties of the Discrete-Time Fourier Series\|3.6 Properties of the Discrete-Time Fourier Series]]
+[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.7 Fourier Series and LTI Systems\|3.7 Fourier Series and LTI Systems]]
+[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.8 Filtering\|3.8 Filtering]]
+[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.9 Important Examples: Continuous-Time\|3.9 Important Examples: Continuous-Time]]
+[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.10 Important Examples: Discrete-Time Filters\|3.10 Important Examples: Discrete-Time Filters]]
 
 ---
 # 3 Fourier Series Representation of Periodic Signals
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=208&selection=6,0,16,7|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=208&selection=6,0,16,7| ]]
 
 The representation and analysis of LTI systems through the convolution sum are based on representing signals as linear combinations of shifted impulses. This chapter explores an alternative representation for signals and LTI systems.
 
 ---
 ## 3.1 The Response of LTI Systems to Complex Exponentials 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=213&selection=58,0,72,12|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=213&selection=58,0,72,12| ]]
 
 In the study of LTI systems, it is advantageous to represent signals as linear combinations of basic signals with the following two properties:
 1. The set of basic signals can construct a broad and useful class of signals.
@@ -86,7 +86,7 @@ Both in continuous and discrete time, if the input is a linear combination of co
 
 ---
 ## 3.2 Fourier Series Representation of Continuous-Time Periodic Signals 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=217&selection=120,0,132,7|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=217&selection=120,0,132,7| ]]
 
 For a periodic signal $x(t)$ with period $T$, it can be represented as a linear combination of harmonically related complex exponentials:
 $$
@@ -135,7 +135,7 @@ $$
 
 ---
 ## 3.3 Convergence of the Fourier Series 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=226&selection=234,0,246,6|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=226&selection=234,0,246,6| ]]
 
 Although Fourier claimed that any periodic signal could be represented by a Fourier series, this is only true for specific signal classes.
 
@@ -171,7 +171,7 @@ Signals satisfying the Dirichlet conditions have Fourier series representations.
 
 ---
 ## 3.4 Properties of the Continuous-Time Fourier Series 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=233&selection=18,0,28,6|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=233&selection=18,0,28,6| ]]
 
 Below is a table summarising several useful properties of the continuous-time Fourier series:
 
@@ -196,7 +196,7 @@ Below is a table summarising several useful properties of the continuous-time Fo
 
 ---
 ### Parseval's Relation for Continuous-Time Periodic Signals
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=236&selection=147,1,155,7|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=236&selection=147,1,155,7| ]]
 
 Parseval's relation for continuous-time periodic signals is
 $$
@@ -212,7 +212,7 @@ so that $\left|a_k\right|^2$ is the average power in the $k$-th harmonic compone
 
 ---
 ## 3.5 Fourier Series Representation of Discrete-Time Periodic Signals 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=242&selection=202,0,214,7|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=242&selection=202,0,214,7| ]]
 
 For discrete-time periodic signals $x[n]$ with period $N$ and fundamental frequency $\omega_0 = \frac{2 \pi}{N}$, the Fourier series representation is finite:
 $$
@@ -226,7 +226,7 @@ The coefficients satisfy $a_k = a_{k+N}$ due to periodicity. This representation
 
 ---
 ## 3.6 Properties of the Discrete-Time Fourier Series 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=252&selection=33,0,43,6|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=252&selection=33,0,43,6| ]]
 
 |                Property                 |                                                                    Periodic Signal                                                                    |                           Fourier Series Coefficients                            |
 | :-------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
@@ -245,7 +245,7 @@ The coefficients satisfy $a_k = a_{k+N}$ due to periodicity. This representation
 
 ---
 ## 3.7 Fourier Series and LTI Systems 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=257&selection=275,0,285,7|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=257&selection=275,0,285,7| ]]
 
 The response of an LTI system to a Fourier series input takes the form:
 $$
@@ -258,7 +258,7 @@ $$
 
 ---
 ## 3.8 Filtering 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=262&selection=148,0,150,9|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=262&selection=148,0,150,9| ]]
 
 Filtering modifies the frequency components of a signal. Common filters include:
 - **Low-pass filter**: Passes low frequencies near $\omega = 0$, attenuating higher frequencies.
@@ -279,22 +279,22 @@ Ideal filters in continuous and discrete time differ because discrete-time filte
 Visual examples of ideal filters:
 - Continuous-time high-pass and bandpass filter:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 18.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2018.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=269&rect=103,409,315,590|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 18.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2018.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=269&rect=103,409,315,590| ]]
   
 - Discrete-time low-pass, high-pass, and bandpass filter:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 17.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2017.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=269&rect=67,38,318,298|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 17.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2017.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=269&rect=67,38,318,298| ]]
   
 ---
 ## 3.9 Important Examples: Continuous-Time 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=270&selection=76,0,93,9|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=270&selection=76,0,93,9| ]]
 
 ### 3.9.1 Simple RC Low-Pass Filter 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=270&selection=148,0,156,6|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=270&selection=148,0,156,6| ]]
 
 Electrical circuits are commonly used to implement continuous-time filtering operations. One of the simplest examples is the first-order RC circuit:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 10.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2010.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=271&rect=149,482,297,597|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 10.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2010.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=271&rect=149,482,297,597| ]]
 
 In this circuit, the output signal can either be the capacitor voltage $v_c(t)$ or the resistor voltage. If we take the capacitor voltage as the output, the relationship between input and output is described by the differential equation:
 $$
@@ -308,7 +308,7 @@ $$
 
 The magnitude and phase of $H(i \omega)$ are as follows:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 11.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2011.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&rect=104,316,435,599|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 11.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2011.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&rect=104,316,435,599| ]]
 
 For $\omega \approx 0$, $|H(i\omega)| \approx 1$, indicating that low frequencies pass with minimal attenuation. For higher $\omega$, $|H(i\omega)|$ decreases, making this circuit a nonideal low-pass filter.
 
@@ -320,13 +320,13 @@ $$
 s(t) = \left[1 - e^{-t / RC}\right] u(t).
 $$
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 12.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2012.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=273&rect=74,342,309,601|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 12.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2012.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=273&rect=74,342,309,601| ]]
 
 There is a trade-off between frequency response and time-domain behavior. A larger $RC$ enhances low-pass filtering but results in slower step response.
 
 ---
 ### 3.9.2 Simple RC High-Pass Filter 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&selection=193,0,205,6|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=272&selection=193,0,205,6| ]]
 
 If we choose the resistor voltage $v_r(t)$ as the output, the relationship between input and output becomes:
 $$
@@ -340,7 +340,7 @@ $$
 
 The magnitude and phase of $G(i\omega)$ are shown below:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 13.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2013.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=274&rect=128,319,467,604|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 13.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2013.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=274&rect=128,319,467,604| ]]
 
 The high-pass filter attenuates low frequencies and allows high frequencies to pass, particularly for $|\omega| \gg 1 / RC$.
 
@@ -348,14 +348,14 @@ As with the low-pass filter, increasing $RC$ extends the passband to lower frequ
 
 ---
 ## 3.10 Important Examples: Discrete-Time Filters 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=275&selection=53,0,69,9|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=275&selection=53,0,69,9| ]]
 
 Discrete-time filters described by linear constant-coefficient difference equations are widely used in practice. These filters are categorized into:
 1. **Recursive filters** (IIR): Impulse responses of infinite length.
 2. **Non-recursive filters** (FIR): Impulse responses of finite length.
 
 ### 3.10.1 First-Order Recursive Discrete-Time Filters 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=275&selection=149,0,151,43|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=275&selection=149,0,151,43| ]]
 
 A first-order recursive discrete-time filter is described by:
 $$
@@ -369,11 +369,11 @@ $$
 
 For $a = 0.6$, the magnitude and phase of $H(e^{i\omega})$ are shown below:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 14.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2014.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=121,372,342,630|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 14.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2014.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=121,372,342,630| ]]
 
 For $a = -0.6$, the magnitude and phase are as follows:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 15.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2015.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=126,46,345,352|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 15.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2015.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=277&rect=126,46,345,352| ]]
 
 - **Low-pass behavior**: For $a > 0$, the system acts as a low-pass filter.
 - **High-pass behavior**: For $a < 0$, the system acts as a high-pass filter.
@@ -389,7 +389,7 @@ $$
 Higher-order recursive filters offer sharper filtering characteristics and more flexibility.
 
 ### 3.10.2 Non-Recursive Discrete-Time Filters 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=276&selection=230,0,234,34|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=276&selection=230,0,234,34| ]]
 
 A general non-recursive difference equation is:
 $$
@@ -405,6 +405,6 @@ $$
 
 The magnitude of $H(e^{i\omega})$ for $N + M + 1 = 33$ and $N + M + 1 = 65$ is shown:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 16.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2016.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=279&rect=89,179,455,466|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 16.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2016.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=279&rect=89,179,455,466| ]]
 
 ---

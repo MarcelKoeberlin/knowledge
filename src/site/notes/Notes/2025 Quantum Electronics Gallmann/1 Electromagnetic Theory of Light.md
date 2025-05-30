@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-05-29T17:47:19.855+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-05-30T12:40:06.516+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,26 +7,26 @@ Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Tab
 ---
 **Table of Contents**
 
-- [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.1 Microscopic Form of Maxwell's Equations in Vacuum\|1.1 Microscopic Form of Maxwell's Equations in Vacuum]]
-- [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.2 Maxwell's Equations in a Medium\|1.2 Maxwell's Equations in a Medium]]
-- [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.3 The Material Equations\|1.3 The Material Equations]]
-- [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.4 Macroscopic Approximation\|1.4 Macroscopic Approximation]]
-- [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.5 Wave Equation\|1.5 Wave Equation]]
-- [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.6 Solutions to the wave equation\|1.6 Solutions to the wave equation]]
-- [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.7 Polarisation\|1.7 Polarisation]]
-- [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.8 Poynting Vector and Poynting's Theorem\|1.8 Poynting Vector and Poynting's Theorem]]
-- [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.9 Timescales\|1.9 Timescales]]
-- [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.10 Momentum of Light\|1.10 Momentum of Light]]
+[[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.1 Microscopic Form of Maxwell's Equations in Vacuum\|1.1 Microscopic Form of Maxwell's Equations in Vacuum]]
+[[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.2 Maxwell's Equations in a Medium\|1.2 Maxwell's Equations in a Medium]]
+[[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.3 The Material Equations\|1.3 The Material Equations]]
+[[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.4 Macroscopic Approximation\|1.4 Macroscopic Approximation]]
+[[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.5 Wave Equation\|1.5 Wave Equation]]
+[[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.6 Solutions to the wave equation\|1.6 Solutions to the wave equation]]
+[[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.7 Polarisation\|1.7 Polarisation]]
+[[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.8 Poynting Vector and Poynting's Theorem\|1.8 Poynting Vector and Poynting's Theorem]]
+[[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.9 Timescales\|1.9 Timescales]]
+[[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.10 Momentum of Light\|1.10 Momentum of Light]]
 
 ---
 # 1 Electromagnetic Theory of Light
-[[Reading/Books/Lasers and Nonlinear Optics/Fundamentals of Photonics.pdf#page=422&selection=0,0,1,22|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/Fundamentals of Photonics.pdf#page=422&selection=0,0,1,22| ]]
 
 Light is an electromagnetic wave governed by the same theoretical principles that describe all forms of electromagnetic radiation. It consists of coupled oscillating electric and magnetic fields.
 
 ---
 ## 1.1 Microscopic Form of Maxwell's Equations in Vacuum
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=13&selection=12,0,15,3|•]] [[Reading/Books/Lasers and Nonlinear Optics/Fundamentals of Photonics.pdf#page=426&selection=35,0,35,35|•]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=26&selection=0,0,0,14|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=13&selection=12,0,15,3| ]] [[Reading/Books/Lasers and Nonlinear Optics/Fundamentals of Photonics.pdf#page=426&selection=35,0,35,35| ]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=26&selection=0,0,0,14| ]]
 
 We begin with the simplest case by considering the electric and magnetic fields in free space, meaning there are no charges or currents present. The governing equations are Maxwell's equations:
 
@@ -45,7 +45,7 @@ A key property of Maxwell's equations is their linearity: any linear combination
 
 ---
 ## 1.2 Maxwell's Equations in a Medium
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=14&selection=72,0,74,31|•]] [[Reading/Books/Lasers and Nonlinear Optics/Fundamentals of Photonics.pdf#page=428&selection=80,0,80,31|•]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=30&selection=0,45,0,45|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=14&selection=72,0,74,31| ]] [[Reading/Books/Lasers and Nonlinear Optics/Fundamentals of Photonics.pdf#page=428&selection=80,0,80,31| ]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=30&selection=0,45,0,45| ]]
 
 To describe electromagnetic waves in a medium, we need a framework that accounts for the charge densities and currents at the atomic scale. The microscopic form of Maxwell's equations in a medium is given by:
 
@@ -80,7 +80,7 @@ In this course, we will be mainly concerned with isotropic media, meaning that t
 
 ---
 ## 1.3 The Material Equations
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=16&selection=182,0,185,16|•]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=34&selection=0,0,0,31|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=16&selection=182,0,185,16| ]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=34&selection=0,0,0,31| ]]
 
 Solving Maxwell's equations in a medium requires explicit relationships, known as material or constitutive equations, which describe how the medium responds to the fields. As mentioned earlier, these relationships depend on the material properties. To establish the macroscopic Maxwell's equations, we begin by separating both the total charge density $\rho$ and the total current density $\mathbf{j}$ into _free_ and _bound_ contributions:
 
@@ -140,7 +140,7 @@ $$
 
 ---
 ## 1.4 Macroscopic Approximation
-[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=39&selection=0,0,0,25|•]]
+[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=39&selection=0,0,0,25| ]]
 
 The macroscopic quantities $\mathbf{P}$ and $\mathbf{M}$ (and thus $\mathbf{D}$ and $\mathbf{H}$) are obtained by averaging microscopic properties over physically infinitesimal volumes that are nevertheless large enough to contain many atoms or molecules. The total charge in a macroscopic volume $V$ at position $\mathbf{R}$ is
 $$
@@ -220,7 +220,7 @@ In optics, we generally deal with non-magnetic media, so $\mathbf{M} \approx 0$,
 
 ---
 ## 1.5 Wave Equation
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=22&selection=8,0,10,45|•]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=45&selection=0,0,0,17|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=22&selection=8,0,10,45| ]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=45&selection=0,0,0,17| ]]
 
 To describe the propagation of light, we seek an equation that relates the temporal evolution of the fields to their spatial variation. We derive this for the case of a homogeneous, isotropic, linear, and non-magnetic ($\mu_r=1$) medium, with no free charges ($\rho_f=0$) or free currents ($\mathbf{j}_f=0$), and initially assuming no dispersion (so $\varepsilon_r$ is constant).
 Consider the macroscopic curl equation (Faraday's Law):
@@ -257,7 +257,7 @@ $$
 $$
 
 ## 1.6 Solutions to the wave equation
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=23&selection=17,0,19,30|•]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=49&selection=0,0,0,11|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=23&selection=17,0,19,30| ]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=49&selection=0,0,0,11| ]]
 
 One fundamental solution of the wave equation is the monochromatic plane wave:
 $$
@@ -287,7 +287,7 @@ $$
 $$
 This implies that $\mathbf{B}_0$ is perpendicular to both $\mathbf{k}$ and $\mathbf{E}_0$. Therefore, for a plane wave in an isotropic medium, $\mathbf{E}$, $\mathbf{B}$, and $\mathbf{k}$ form a mutually orthogonal triad. This is illustrated in the next figure:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light/01_Introduction_and_theoretical_foundation.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/1%20Electromagnetic%20Theory%20of%20Light/01_Introduction_and_theoretical_foundation.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=26&rect=370,191,795,456|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light/01_Introduction_and_theoretical_foundation.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/1%20Electromagnetic%20Theory%20of%20Light/01_Introduction_and_theoretical_foundation.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=26&rect=370,191,795,456| ]]
 
 The relationship between the amplitudes can also be expressed using the wave impedance of the medium, $Z = \sqrt{\mu/\varepsilon} = \sqrt{\mu_0\mu_r/\varepsilon_0\varepsilon_r}$. For non-magnetic media ($\mu_r=1$), $Z = \sqrt{\mu_0/(\varepsilon_0\varepsilon_r)} = Z_0/n$, where $Z_0=\sqrt{\mu_0/\varepsilon_0} \approx 377 \, \Omega$ is the impedance of free space. Then $|\mathbf{E}_0| = Z |\mathbf{H}_0|$, and $\mathbf{H}_0 = \frac{1}{Z} (\hat{\mathbf{k}} \times \mathbf{E}_0)$, where $\hat{\mathbf{k}} = \mathbf{k}/k$.
 Because the electric and magnetic fields are orthogonal to the direction of propagation, these waves are also called transverse electro-magnetic (TEM) waves.
@@ -299,7 +299,7 @@ where $\tilde{\mathbf{E}}(\mathbf{r}) = \tilde{\mathbf{E}}_0 e^{i\mathbf{k}\cdot
 
 ---
 ## 1.7 Polarisation
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=24&selection=209,0,211,12|•]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=53&selection=0,0,0,12|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=24&selection=209,0,211,12| ]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=53&selection=0,0,0,12| ]]
 
 The polarisation of light describes the orientation of the electric field vector oscillation. For a plane wave propagating in the $z$-direction ($\mathbf{k} = k\hat{\mathbf{z}}$), the electric field vector $\mathbf{E}_0$ lies in the $x-y$ plane.
 Linear polarisation means that the electric field vector oscillates along a fixed straight line in the $x-y$ plane:
@@ -334,7 +334,7 @@ If $\hat{\mathbf{e}}=\cos\theta_p \cdot\hat{\mathbf{x}}+\sin\theta_p \cdot\hat{\
 
 ---
 ## 1.8 Poynting Vector and Poynting's Theorem
-[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=60&selection=0,23,0,23|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=28&selection=4,0,6,26|•]] [[Reading/Books/Lasers and Nonlinear Optics/Fundamentals of Photonics.pdf#page=430&selection=89,0,89,28|•]]
+[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=60&selection=0,23,0,23| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=28&selection=4,0,6,26| ]] [[Reading/Books/Lasers and Nonlinear Optics/Fundamentals of Photonics.pdf#page=430&selection=89,0,89,28| ]]
 
 Light carries energy. The quantity quantifying the rate and direction of electromagnetic energy flow per unit area is the Poynting vector $\mathbf{S}$, defined for instantaneous real fields as:
 $$
@@ -385,7 +385,7 @@ Lastly, an animation to illustrate the electromagnetic wave and its Poynting vec
 
 ---
 ## 1.9 Timescales
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=28&selection=57,0,57,53|•]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=62&selection=0,0,0,24|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=28&selection=57,0,57,53| ]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=62&selection=0,0,0,24| ]]
 
 If one optical cycle lasts roughly $T_0=2\pi/\omega_0$, for example $10 \, \text{fs}$ for visible light, and typical laser pulse durations are $T_{\text{pulse}}$ and measurement durations are $T_m$, then generally we have:
 $$
@@ -397,7 +397,7 @@ $$
 $$
 This is depicted in the next figure. The overall pulse shape (left box-like behaviour in the example) is captured by the slowly-varying envelope $\mathbf{A}(\mathbf{r},t),$ while the fast (second, right) oscillation is captured by the $e^{i\omega_0t}$ term:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light/01_Introduction_and_theoretical_foundation 8.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/1%20Electromagnetic%20Theory%20of%20Light/01_Introduction_and_theoretical_foundation%208.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=64&rect=375,159,832,274|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light/01_Introduction_and_theoretical_foundation 8.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/1%20Electromagnetic%20Theory%20of%20Light/01_Introduction_and_theoretical_foundation%208.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=64&rect=375,159,832,274| ]]
 
 Let us next explicitly calculate the instantaneous Poynting vector for such fields. If we define the complex envelopes $\widetilde{\mathbf{E}}(\mathbf{r},t)$ and $\widetilde{\mathbf{H}}(\mathbf{r},t)$ such that the physical fields are $\mathbf{E}_{\text{phys}} = \mathfrak{Re}\left[\widetilde{\mathbf{E}}(\mathbf{r},t)e^{i\omega_0t}\right]$ and $\mathbf{H}_{\text{phys}} = \mathfrak{Re}\left[\widetilde{\mathbf{H}}(\mathbf{r},t)e^{i\omega_0t}\right]$ (where $\widetilde{\mathbf{E}}$ and $\widetilde{\mathbf{H}}$ are the slowly varying complex amplitudes):
 $$
@@ -429,7 +429,7 @@ The intensity is therefore the magnitude of the time-averaged Poynting vector, a
 
 ---
 ## 1.10 Momentum of Light
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=30&selection=247,79,251,1|•]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=66&selection=0,0,0,17|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=30&selection=247,79,251,1| ]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=66&selection=0,0,0,17| ]]
 
 Light carries not only energy but also momentum. The momentum density of an electromagnetic field in a medium with refractive index $n$ is $\mathbf{g} = \mathbf{S}/v_p^2 = n^2\mathbf{S}/c^2$. The total momentum $\mathbf{p}_{\text{field}}$ contained in a volume is $\int_V \mathbf{g} dV$.
 When light is absorbed or reflected by an object, it exerts a force (radiation pressure) due to the transfer of momentum.

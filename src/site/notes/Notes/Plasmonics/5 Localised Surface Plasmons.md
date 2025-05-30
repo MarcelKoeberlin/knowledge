@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/5-localised-surface-plasmons/","hide":"true","updated":"2025-05-29T18:15:47.049+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/5-localised-surface-plasmons/","hide":"true","updated":"2025-05-30T15:22:15.902+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -7,27 +7,27 @@ Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selectio
 ---
 **Table of Contents**
 
-- [[Notes/Plasmonics/5 Localised Surface Plasmons#5.1 Normal Modes of Sub-Wavelength Metal Particles\|5.1 Normal Modes of Sub-Wavelength Metal Particles]]
-- [[Notes/Plasmonics/5 Localised Surface Plasmons#5.2 Beyond the Quasi-Static Approximation and Plasmon Lifetime\|5.2 Beyond the Quasi-Static Approximation and Plasmon Lifetime]]
-- [[Notes/Plasmonics/5 Localised Surface Plasmons#5.3 Coupling Between Localised Plasmons\|5.3 Coupling Between Localised Plasmons]]
-- [[Notes/Plasmonics/5 Localised Surface Plasmons#5.4 Void Plasmons and Metallic Nanoshells\|5.4 Void Plasmons and Metallic Nanoshells]]
-- [[Notes/Plasmonics/5 Localised Surface Plasmons#5.5 Localised Plasmons and Gain media\|5.5 Localised Plasmons and Gain media]]
+[[Notes/Plasmonics/5 Localised Surface Plasmons#5.1 Normal Modes of Sub-Wavelength Metal Particles\|5.1 Normal Modes of Sub-Wavelength Metal Particles]]
+[[Notes/Plasmonics/5 Localised Surface Plasmons#5.2 Beyond the Quasi-Static Approximation and Plasmon Lifetime\|5.2 Beyond the Quasi-Static Approximation and Plasmon Lifetime]]
+[[Notes/Plasmonics/5 Localised Surface Plasmons#5.3 Coupling Between Localised Plasmons\|5.3 Coupling Between Localised Plasmons]]
+[[Notes/Plasmonics/5 Localised Surface Plasmons#5.4 Void Plasmons and Metallic Nanoshells\|5.4 Void Plasmons and Metallic Nanoshells]]
+[[Notes/Plasmonics/5 Localised Surface Plasmons#5.5 Localised Plasmons and Gain media\|5.5 Localised Plasmons and Gain media]]
 
 ---
 # 5 Localised Surface Plasmons
-[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=82&selection=2,0,2,26|•]]
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=82&selection=2,0,2,26| ]]
 
 The second fundamental excitation in plasmonics is the so-called localised surface plasmon. In contrast to the propagating SPPs already discussed, these are non-propagating excitations of the conduction electrons coupled to the electromagnetic field, typically occurring in metallic nanoparticles or nanostructures significantly smaller than the wavelength of incident light.
 
 ---
 ## 5.1 Normal Modes of Sub-Wavelength Metal Particles
-[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=83&selection=10,0,12,46|•]]
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=83&selection=10,0,12,46| ]]
 
 The interaction of a particle of size $d$ with light of wavelength $\lambda$ can be analysed using the simple _quasi-static approximation_, provided that $d \ll \lambda$. In this case, the phase of the external electric field is practically constant over the particle volume, reducing the problem to the interaction of a particle with an essentially uniform electrostatic field. The harmonic time dependence can then be reintroduced to the solution once the spatial field distributions are known.
 
 Consider the most convenient geometry for analytical treatment: a homogeneous, isotropic sphere of radius $a$ located at the origin in a uniform, static electric field $\mathbf{E}_{\text{applied}} = E_0\hat{\mathbf{z}}$. The surrounding medium is isotropic and non-absorbing with a real dielectric constant $\varepsilon_m$. For simplicity at first, we assume that the dielectric response of the sphere material is described by a simple complex dielectric function $\varepsilon(\omega)$.
 
-![Attachments/Notes/Plasmonics/5 Localised Surface Plasmons/Plasmonics - Fundamentals and Applications 21.webp|700](/img/user/Attachments/Notes/Plasmonics/5%20Localised%20Surface%20Plasmons/Plasmonics%20-%20Fundamentals%20and%20Applications%2021.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=83&rect=107,91,328,188|•]]
+![Attachments/Notes/Plasmonics/5 Localised Surface Plasmons/Plasmonics - Fundamentals and Applications 21.webp|700](/img/user/Attachments/Notes/Plasmonics/5%20Localised%20Surface%20Plasmons/Plasmonics%20-%20Fundamentals%20and%20Applications%2021.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=83&rect=107,91,328,188| ]]
 
 In this electrostatic approach, the interest lies in solving Laplace's equation for the electric potential $\Phi$:
 $$
@@ -60,7 +60,7 @@ $$
 
 This expression for the complex polarisability of a small sphere is a central result. Assuming a Drude form for the dielectric response $\varepsilon(\omega)$ of a metal like silver, the magnitude and phase of $\alpha(\omega)$ exhibit resonant behaviour:
 
-![Attachments/Notes/Plasmonics/5 Localised Surface Plasmons/Plasmonics - Fundamentals and Applications 22.webp|700](/img/user/Attachments/Notes/Plasmonics/5%20Localised%20Surface%20Plasmons/Plasmonics%20-%20Fundamentals%20and%20Applications%2022.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=85&rect=47,109,391,223|•]]
+![Attachments/Notes/Plasmonics/5 Localised Surface Plasmons/Plasmonics - Fundamentals and Applications 22.webp|700](/img/user/Attachments/Notes/Plasmonics/5%20Localised%20Surface%20Plasmons/Plasmonics%20-%20Fundamentals%20and%20Applications%2022.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=85&rect=47,109,391,223| ]]
 
 The polarisability experiences a resonant enhancement when the denominator $|\varepsilon(\omega) + 2\varepsilon_m|$ is minimised. For a material with a slowly varying $\mathfrak{Im}\left[\varepsilon(\omega)\right]$ around the resonance, this condition approximately reduces to:
 $$
@@ -90,13 +90,13 @@ $$
 
 This is illustrated for a silver sphere:
 
-![Attachments/Notes/Plasmonics/5 Localised Surface Plasmons/Plasmonics - Fundamentals and Applications 23.webp|700](/img/user/Attachments/Notes/Plasmonics/5%20Localised%20Surface%20Plasmons/Plasmonics%20-%20Fundamentals%20and%20Applications%2023.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=88&rect=111,450,321,603|•]]
+![Attachments/Notes/Plasmonics/5 Localised Surface Plasmons/Plasmonics - Fundamentals and Applications 23.webp|700](/img/user/Attachments/Notes/Plasmonics/5%20Localised%20Surface%20Plasmons/Plasmonics%20-%20Fundamentals%20and%20Applications%2023.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=88&rect=111,450,321,603| ]]
 
 Despite assuming a spherical shape, this special case describes the basic physics of localised surface plasmon resonances well. For non-spherical particles, such as ellipsoids with semi-axes $a_x, a_y, a_z$, the depolarisation factors change, leading to different resonance conditions for electric fields aligned along different axes. For instance, spheroidal nanoparticles (two axes equal) exhibit two distinct plasmon resonances, corresponding to conduction electron oscillations along their major or minor axes. Oscillations along the longer axis typically exhibit significant red-shifts compared to a sphere of similar volume. A complete electrodynamic theory for the scattering and absorption of electromagnetic radiation by a sphere of arbitrary size relative to the wavelength is provided by _Mie Theory_.
 
 ---
 ## 5.2 Beyond the Quasi-Static Approximation and Plasmon Lifetime
-[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=90&selection=49,0,52,8|•]]
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=90&selection=49,0,52,8| ]]
 
 We now consider two regimes where the simple quasi-static approximation needs refinement:
 1. Larger particles, where retardation effects across the particle volume become significant.
@@ -114,7 +114,7 @@ To summarise, the plasmon resonance beyond the strict quasi-static regime is dam
 - **Non-radiative decay** due to absorption within the metal (Ohmic losses, creation of electron-hole pairs via intraband or interband excitations). This dominates for very small particles.
 - **Radiative decay** into photons (scattering). This becomes more significant and can dominate for larger particles (typically when $a$ is a few tens of nanometres or more).
 
-![Attachments/Notes/Plasmonics/5 Localised Surface Plasmons/Plasmonics - Fundamentals and Applications 24.webp|700](/img/user/Attachments/Notes/Plasmonics/5%20Localised%20Surface%20Plasmons/Plasmonics%20-%20Fundamentals%20and%20Applications%2024.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=91&rect=108,520,329,618|•]]
+![Attachments/Notes/Plasmonics/5 Localised Surface Plasmons/Plasmonics - Fundamentals and Applications 24.webp|700](/img/user/Attachments/Notes/Plasmonics/5%20Localised%20Surface%20Plasmons/Plasmonics%20-%20Fundamentals%20and%20Applications%2024.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=91&rect=108,520,329,618| ]]
 
 The homogeneous linewidth $\Gamma$ of the plasmon resonance is related to the total dephasing rate of the coherent electron oscillation. This dephasing time $T_2$ is given by:
 $$
@@ -134,7 +134,7 @@ For nanoparticles smaller than about 1 nm, quantum mechanical effects (quantum c
 
 ---
 ## 5.3 Coupling Between Localised Plasmons
-[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=97&selection=164,0,166,35|•]]
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=97&selection=164,0,166,35| ]]
 
 The localised plasmon resonance of a single metallic nanoparticle can be tuned by changing its shape, size, and dielectric environment. When multiple plasmonic nanoparticles are brought into close proximity, their localised plasmon modes can interact electromagnetically, leading to additional shifts in resonance frequencies and modifications of the field distributions. For small particles (radius $a$) with interparticle spacing $d$, these interactions can often be treated as an ensemble of interacting dipoles, especially if $a \ll d$. We will consider these effects for _ordered_ arrays of metal nanoparticles.
 
@@ -144,7 +144,7 @@ Two main regimes of interaction based on the interparticle spacing $d$ relative 
 
 We can intuitively understand why interparticle coupling leads to shifts in the spectral position of the plasmon resonance. Consider a linear chain of nanoparticles:
 
-![Attachments/Notes/Plasmonics/5 Localised Surface Plasmons/Plasmonics - Fundamentals and Applications 25.webp|700](/img/user/Attachments/Notes/Plasmonics/5%20Localised%20Surface%20Plasmons/Plasmonics%20-%20Fundamentals%20and%20Applications%2025.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=99&rect=116,464,312,620|•]]
+![Attachments/Notes/Plasmonics/5 Localised Surface Plasmons/Plasmonics - Fundamentals and Applications 25.webp|700](/img/user/Attachments/Notes/Plasmonics/5%20Localised%20Surface%20Plasmons/Plasmonics%20-%20Fundamentals%20and%20Applications%2025.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=99&rect=116,464,312,620| ]]
 
 Using the simple approximation of an array of interacting point dipoles, the direction of the resonance shifts for in-phase illumination (all dipoles oscillating with the same phase relative to the incident field) can be determined by considering the additional electric field experienced by each dipole due to the presence of its neighbours. This additional field modifies the restoring force acting on the oscillating electrons within each particle.
     - For incident light polarised transverse to the chain axis (upper part of figure), the dipoles are oriented side-by-side. The field from neighbouring dipoles tends to oppose the polarisation in a given particle, effectively increasing the restoring force and leading to a blue-shift of the collective plasmon resonance.
@@ -152,19 +152,19 @@ Using the simple approximation of an array of interacting point dipoles, the dir
 
 The next figure shows the plasmon resonance peak for a chain of closely spaced gold nanoparticles as a function of the interparticle spacing, illustrating these shifts. The dotted lines would show the $d^{-3}$ dependence expected from a point-dipole near-field coupling model.
 
-![Attachments/Plasmonics - Fundamentals and Applications 21.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2021.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=100&rect=227,489,363,601|•]]
+![Attachments/Plasmonics - Fundamentals and Applications 21.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2021.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=100&rect=227,489,363,601| ]]
 
 **Larger particle separations** ($d \gtrsim \lambda$ or comparable to $\lambda$): In this regime, far-field radiative coupling becomes dominant. The interaction involves scattered fields from one particle influencing the others. This interaction typically has a distance dependence of $d^{-1}$ (for dipole fields) and can be phase-retarded. Far-field coupling strongly influences the plasmon lineshape, affecting not only the resonance frequency but also the spectral width (damping). The change in spectral width is due to the modification of the radiative damping rate of the ensemble compared to isolated particles. For periodic arrays (gratings of nanoparticles), collective resonances (surface lattice resonances) can emerge due to the coherent superposition of scattered fields, leading to very narrow linewidths when the individual particle resonance coincides with a Rayleigh anomaly (diffraction edge).
 
-![Attachments/Plasmonics - Fundamentals and Applications 22.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2022.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=101&rect=44,134,196,247|•]]
+![Attachments/Plasmonics - Fundamentals and Applications 22.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2022.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=101&rect=44,134,196,247| ]]
 
 ---
 ## 5.4 Void Plasmons and Metallic Nanoshells
-[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=102&selection=10,0,12,37|•]]
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=102&selection=10,0,12,37| ]]
 
 Let us consider plasmon resonances in metallic structures containing dielectric inclusions (voids or cavities) of characteristic dimension $a \ll \lambda$. The simplest such structure is a spherical dielectric inclusion (void) of dielectric constant $\varepsilon_m$ embedded in a homogeneous metallic host described by the dielectric function $\varepsilon(\omega)$.
 
-![Attachments/Plasmonics - Fundamentals and Applications 23.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2023.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=102&rect=146,87,298,170|•]]
+![Attachments/Plasmonics - Fundamentals and Applications 23.webp|700](/img/user/Attachments/Plasmonics%20-%20Fundamentals%20and%20Applications%2023.webp)[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=102&rect=146,87,298,170| ]]
 
 Such a nanovoid can sustain an electromagnetic dipole resonance analogous to that in a metallic nanoparticle surrounded by a dielectric. The problem is mathematically equivalent to the nanoparticle case via a simple swap of $\varepsilon_m$ and $\varepsilon(\omega)$ in the polarisability formula, and an appropriate interpretation of the applied field and induced dipole. The effective polarisability describing the response of the void to an applied field $\mathbf{E}_{\text{applied}}$ (which would be uniform in the absence of the void) is:
 $$
@@ -182,7 +182,7 @@ While the above examples are three-dimensional, essentially two-dimensional stru
 
 ---
 ## 5.5 Localised Plasmons and Gain Media
-[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=104&selection=21,0,23,33|•]]
+[[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=104&selection=21,0,23,33| ]]
 
 Finally, let us briefly consider an emerging application area in plasmonics: the interaction of localised plasmon resonances with optical gain media. The primary motivations for combining plasmonic nanostructures with gain materials are twofold:
 1.  The significant local field enhancement provided by metallic nanostructures upon resonant plasmon excitation can increase the interaction of light with the gain medium, potentially leading to a reduction in the pumping threshold required to achieve population inversion and lasing (as in "spasers" or plasmon lasers).

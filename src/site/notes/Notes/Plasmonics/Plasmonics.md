@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Plasmonics","permalink":"/notes/plasmonics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-03-12T18:26:47.000+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Plasmonics","permalink":"/notes/plasmonics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-05-30T15:22:24.207+02:00"}
 ---
 
 These notes primarily follow [Plasmonics: Fundamentals and Applications](https://link.springer.com/book/10.1007/0-387-37825-1) and [Plasmonics: From Basics to Advanced Topics](https://link.springer.com/book/10.1007/978-3-642-28079-5). However, also some review papers are integrated, such as [Theory of surface plasmons and surface-plasmon polaritons](https://iopscience.iop.org/article/10.1088/0034-4885/70/1/R01)and [Theory and Modeling of Plasmonic Structures](https://pubs.acs.org/doi/full/10.1021/jp309664c). My interest in this subject stems from its relevance to my current research, which we explore in the [Attoline](https://ulp.ethz.ch/research/attoline.html).
@@ -18,11 +18,11 @@ Roughly speaking, the field of plasmonics is 100 years old, yet it remains an ac
 
 ---
 # Table of Contents
-- [[Notes/Plasmonics/1 Electromagnetics of Metals\|1 Electromagnetics of Metals]]
-- [[Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces\|2 Surface Plasmon Polaritons at Metal-Insulator Interfaces]]
-- [[Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces\|3 Excitation of Surface Plasmon Polaritons at Planar Interfaces]]
-- [[Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation\|4 Imaging Surface Plasmon Polariton Propagation]]
-- [[Notes/Plasmonics/5 Localised Surface Plasmons\|5 Localised Surface Plasmons]]
+[[Notes/Plasmonics/1 Electromagnetics of Metals\|1 Electromagnetics of Metals]]
+[[Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces\|2 Surface Plasmon Polaritons at Metal-Insulator Interfaces]]
+[[Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces\|3 Excitation of Surface Plasmon Polaritons at Planar Interfaces]]
+[[Notes/Plasmonics/4 Imaging Surface Plasmon Polariton Propagation\|4 Imaging Surface Plasmon Polariton Propagation]]
+[[Notes/Plasmonics/5 Localised Surface Plasmons\|5 Localised Surface Plasmons]]
 
 ---
 

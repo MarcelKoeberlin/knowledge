@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/7-optical-resonators/","hide":"true","updated":"2025-05-04T20:59:25.996+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/7-optical-resonators/","hide":"true","updated":"2025-05-30T12:38:47.403+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,223 +7,185 @@ Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Tab
 ---
 **Table of Contents**
 
-- [[Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators#7.1 Spherical Mirror Resonator\|7.1 Spherical Mirror Resonator]]
-- [[Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators#7.2 Resonance Frequencies\|7.2 Resonance Frequencies]]
-- [[Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators#7.3 Resonator Losses\|7.3 Resonator Losses]]
+[[Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators#7.1 Spherical Mirror Resonator\|7.1 Spherical Mirror Resonator]]
+[[Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators#7.2 Resonance Frequencies\|7.2 Resonance Frequencies]]
+[[Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators#7.3 Resonator Losses\|7.3 Resonator Losses]]
 
 ---
 # 7 Optical Resonators
-[[Notes/2025 Quantum Electronics Gallmann/03_Beams_and_resonators.pdf#page=28&selection=0,0,0,29|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=129&selection=1,0,1,18|•]] 
+[[Notes/2025 Quantum Electronics Gallmann/03_Beams_and_resonators.pdf#page=28&selection=0,0,0,29| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=129&selection=1,0,1,18| ]]
 
-An optical resonator, or cavity, is a device that confines and stores light, respectively in space and time. This is generally achieved by guiding the propagation of light along a path that self-reproduces periodically. One example of an optical resonator that we have already seen is the [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.6 Fabry-Pérot Interferometer - Etalon\|Fabry-Pérot cavity]]. 
+An optical resonator, or optical cavity, is a device designed to confine light, effectively storing electromagnetic energy within a defined volume for a certain duration. This is generally achieved by guiding the propagation of light along a path that self-reproduces after periodic round trips. One example of an optical resonator that we have already encountered is the [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.6 Fabry-Pérot Interferometer - Etalon\|Fabry-Pérot cavity]].
 
-Optical resonators only allows discrete frequencies of light to be confined and stored within, and we call these frequencies the _longitudinal modes_ of the resonator. Obviously then, there is also a _transversal mode_, but most resonators support only a specific spatial beam shape:
+Optical resonators only allow discrete frequencies of light to be sustained and stored within them; these specific frequencies correspond to the _longitudinal modes_ (or axial modes) of the resonator. Associated with these longitudinal modes are specific transverse intensity patterns, known as _transverse modes_. Most laser resonators are designed to support a specific fundamental transverse spatial beam shape, commonly a Gaussian beam:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/03_Beams_and_resonators 4.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/03_Beams_and_resonators%204.webp)[[Notes/2025 Quantum Electronics Gallmann/03_Beams_and_resonators.pdf#page=33&rect=119,115,736,440|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/03_Beams_and_resonators 4.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/03_Beams_and_resonators%204.webp)[[Notes/2025 Quantum Electronics Gallmann/03_Beams_and_resonators.pdf#page=33&rect=119,115,736,440| ]]
 
-A very important concept is that of the _optical mode_, which is in broad terms is a standing wave solution under given boundary conditions. They are therefore, eigensolutions of the wave equations under these boundary conditions. In the following chapters we will mostly focus on linear cavities, however ring resonators will also be mentioned, but note that their treatment is much more involved:
+A very important concept is that of an _optical mode_, which, in broad terms, is a self-consistent electromagnetic field configuration that reproduces itself after one round trip within the resonator (apart from a possible constant phase shift and amplitude reduction due to losses). Modes are therefore eigensolutions of the wave equation subject to the boundary conditions imposed by the resonator geometry. In the following sections, we will mostly focus on linear cavities (formed by two mirrors). Ring resonators, which employ three or more mirrors to form a closed loop path, will also be mentioned, but their detailed treatment is more involved:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/03_Beams_and_resonators 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/03_Beams_and_resonators%205.webp)[[Notes/2025 Quantum Electronics Gallmann/03_Beams_and_resonators.pdf#page=34&rect=71,156,612,450|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/03_Beams_and_resonators 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/03_Beams_and_resonators%205.webp)[[Notes/2025 Quantum Electronics Gallmann/03_Beams_and_resonators.pdf#page=34&rect=71,156,612,450| ]]
 
 ---
 ## 7.1 Spherical Mirror Resonator
-[[Notes/2025 Quantum Electronics Gallmann/03_Beams_and_resonators.pdf#page=35&selection=0,0,0,27|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=133&selection=45,0,47,27|•]]
+[[Notes/2025 Quantum Electronics Gallmann/03_Beams_and_resonators.pdf#page=35&selection=0,0,0,27| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=133&selection=45,0,47,27| ]]
 
-A spherical mirror resonator consists of two mirrors, of which both a spherical. As we will see later, this provides a much higher _stability_ to misalignment, in comparison to planar-mirror resonators. The following figure shows an example of a spherical mirror resonator with two concave mirrors:
+A spherical mirror resonator consists of two mirrors, both of which typically have spherically curved surfaces. As we will see later, this type of resonator generally offers much higher _stability_ against misalignment compared to planar-mirror resonators (which are a special case of spherical mirrors with infinite radius of curvature). The following figure shows an example of a spherical mirror resonator with two concave mirrors:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/QE_script 4.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/QE_script%204.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=134&rect=161,559,449,685|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/QE_script 4.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/QE_script%204.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=134&rect=161,559,449,685| ]]
 
-In this context, spherical means that the mirror has spherical shape with radius $R.$ The convention used here is that positive $R$ is a concave mirror, while negative $R$ is called convex mirror. Some sources use the flipped notation, which is something you should always be aware of. We are interested to answer the question "is the resonator stable?". 
+In this context, "spherical" means that the mirror surface is a segment of a sphere with a radius of curvature $R$. The convention used here is that a positive $R$ denotes a concave mirror (curved towards the cavity interior), while a negative $R$ denotes a convex mirror. Some sources use the opposite sign convention, which is something one should always be aware of. We are interested in answering the question: "Under what conditions is the resonator stable?"
 
-What does stability mean? From our definition of optical resonators, it simply means that the geometry of the resonator allows to confine a real beam of light indefinitely, ignored losses. A resonator is then called stable if a paraxial ray remains confined in the limit of infinite _round trips_. Alternatively, Gaussian beam analysis may be used. From our discussion on [[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.8 Paraxial Ray Optics\|paraxial ray optics]] and [[Notes/2025 Quantum Electronics Gallmann/6 Beam Types#6.1 Gaussian Beam Optics\|Gaussian beam optics]], it should however be clear that the approach is equivalent - both use the same ray-transfer matrices.
+What does stability mean in this context? For an optical resonator, stability implies that the geometry allows a light beam (specifically, a paraxial Gaussian beam) to be confined and to replicate its transverse profile after each round trip, ignoring losses for now. A resonator is called stable if a paraxial ray, initially close to and slightly inclined to the optical axis, remains confined near the axis after an infinite number of round trips. Alternatively, using Gaussian beam optics, a resonator is stable if it supports a self-consistent Gaussian beam mode whose parameters (waist size and position) are physically realisable. From our discussion on [[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.8 Paraxial Ray Optics\|paraxial ray optics]] and [[Notes/2025 Quantum Electronics Gallmann/6 Beam Types#6.1 Gaussian Beam Optics\|Gaussian beam optics]], it should be clear that these two approaches (ray optics and Gaussian beam q-parameter transformation) are equivalent, as both use the same ABCD ray-transfer matrices.
 
-The ray-transfer matrix for one round-trip through the resonator is given by
+The ray-transfer matrix for one complete round trip through the resonator, starting just after mirror 1, propagating a distance $d$ to mirror 2, reflecting from mirror 2, propagating distance $d$ back to mirror 1, and reflecting from mirror 1, is given by the product:
 $$
-\begin{aligned}
-\left(\begin{array}{ll}
+\mathbf{M}_{\text{RT}} = \left(\begin{array}{ll}
 A & B \\
 C & D
-\end{array}\right)&=\left(\begin{array}{cc}
+\end{array}\right)=\left(\begin{array}{cc}
 1 & 0 \\
--\frac{2}{R_1} & 1
+-1/f_1 & 1
 \end{array}\right)\left(\begin{array}{cc}
 1 & d \\
 0 & 1
 \end{array}\right)\left(\begin{array}{cc}
 1 & 0 \\
--\frac{2}{R_2} & 1
+-1/f_2 & 1
 \end{array}\right)\left(\begin{array}{ll}
 1 & d \\
 0 & 1
-\end{array}\right) \\
-& =\left(\begin{array}{cc}
-1-\frac{2 d}{R_2} & 2 d\left(1-\frac{d}{R_2}\right) \\
-2\left(\frac{2 d}{R_1 R_2}-\frac{1}{R_1}-\frac{1}{R_2}\right) & \frac{4 d^2}{R_1 R_2}-\frac{4 d}{R_1}-\frac{2 d}{R_2}+1
 \end{array}\right),
-\end{aligned}
 $$
+where $f_i = R_i/2$ is the focal length of mirror $i$. Substituting $-1/f_i = -2/R_i$:
+$$
+\mathbf{M}_{\text{RT}} = \left(\begin{array}{cc}
+1-\frac{2 d}{R_2} & 2 d\left(1-\frac{d}{R_2}\right) \\
+-2\left(\frac{1}{R_1}+\frac{1}{R_2}-\frac{2 d}{R_1 R_2}\right) & \left(1-\frac{2d}{R_1}\right)\left(1-\frac{2d}{R_2}\right) - \frac{2d}{R_1}
+\end{array}\right).
+$$
+The condition for a stable resonator is that a Gaussian beam can replicate its complex q-parameter after one round trip: $q_2 = (Aq_1+B)/(Cq_1+D)$ must yield $q_2=q_1 \equiv q$. This leads to a quadratic equation for $q$: $Cq^2 + (D-A)q - B = 0$.
+For a physically meaningful Gaussian beam, $q$ must be complex ($q = (z-z_w) + iz_R$ with $z_R > 0$). This requires the discriminant of the quadratic equation for $q$ to be such that $q$ is complex, or more directly, the stability criterion derived from the ABCD matrix elements is:
+$$
+-1 < \frac{A+D}{2} < 1.
+$$
+Using the elements of $\mathbf{M}_{\text{RT}}$, $(A+D)/2 = 2(1-d/R_1)(1-d/R_2)-1 = 2g_1g_2-1$.
+The stability criterion then becomes $-1 < 2g_1g_2-1 < 1$, which simplifies to:
+$$
+0 < g_1 g_2 < 1,
+$$
+where $g_i = 1-d/R_i$ is the g-parameter for mirror $i$. Note that configurations where $g_1g_2=0$ or $g_1g_2=1$ are on the boundary of stability and are termed _conditionally stable_. In practice, these are difficult to achieve perfectly due to alignment tolerances and mirror imperfections. For instance, a Fabry-Pérot etalon with two perfectly plane mirrors ($R_1, R_2 \to \infty \implies g_1=g_2=1$) is conditionally stable; only an ideally collimated on-axis beam would be confined, which is unrealistic. Such cavities are less efficient at storing light over many round trips than truly stable cavities.
+The stability map shows regions of stability (blue) based on $g_1$ and $g_2$:
 
-where $d$ is the mirror separation, and $R_i$ is the mirror curvature of both mirrors. The condition for confinement can be translated that waist position and spot size remain exactly the same for one round-trip through the cavity. Then, they will also remain stationary after an infinite number of round trips. Therefore, the condition may be formulated as 
-$$
-q=\frac{Aq+B}{Cq+D}=\frac{(A-D) \pm \sqrt{D^2+A^2-2 A D+4 B C}}{2 C}.
-$$
-We assume $C\neq0,$ such that for $A, B, C, D$ real, we have
-$$
-q\quad\text{is complex}\iff\frac{D^2+A^2-2 A D+4 B C}{4 C^2}<0.
-$$
-The requirement for $q$ to not be real comes from the fact that $q=z-z_w+iz_0,$ and thus real $q$ would imply zero Rayleigh range $z_0$. Therefore, this would imply infinite divergence of the beam. No mirror would be big enough to confine the beam. The stability criterion may be rewritten as
-$$
-0<\left(1-\frac{d}{R_1}\right)\left(1-\frac{d}{R_2}\right)<1,
-$$
-or, as is more common,
-$$
-0<g_1 g_2<1,
-$$
-with $g=1-d/R.$ Note that it does not contain 'equal' since those cases are only conditionally stable. In reality, these cases can never be perfectly achieved, as we can never obtain perfect precision in producing these mirrors and getting the spacing right. For cavities where $g_1g_2$ approaches 0 or 1, we call it _conditionally stable_. The Fabry-Pérot etalon is an example of this: For two perfectly reflecting plane mirrors, it is obvious that only the on-axis component can be confined indefinitely. A real beam will never be perfect, making this only worse. However, this does not make the etalon useless, as it just means _eventually_ the light will escape, after many round-trips. They are thus less efficient in storing light than a truly stable cavity. 
-The next figure shows a stability map, where blue corresponds to stable configurations, while the boundary corresponds to conditionally stable:
+![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/QE_script 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/QE_script%205.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=136&rect=131,381,471,691| ]]
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/QE_script 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/QE_script%205.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=136&rect=131,381,471,691|•]]
+The dashed diagonal red line indicates symmetric configurations where $R_1=R_2$ (so $g_1=g_2$). Some typical stable configurations for spherical resonators are shown below:
 
-The dashed diagonal red line indicates symmetric configurations where $R_1=R_2.$ The next figure shows some more typical configurations for spherical resonators:
+![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/QE_script 6.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/QE_script%206.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=137&rect=79,602,530,693| ]]
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/QE_script 6.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/QE_script%206.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=137&rect=79,602,530,693|•]]
+A resonator is symmetric if $R_1=R_2$. A symmetric confocal resonator has $R_1=R_2=d$ (focal points of mirrors coincide at cavity centre). A symmetric concentric resonator has $R_1=R_2=d/2$ (centres of curvature coincide), which is conditionally stable ($g_1g_2=1$).
 
-We call a resonator symmetric if both mirrors have the same curvature $R_1=R_2.$ A resonator is called symmetric confocal, if additionally $R_1=d=R_2,$ such that the centre of the resonator is also the focal point (a concave mirror of radius $R$ focuses light to $R/2$ in front of itself). A symmetric concentric resonator has $R_1=R_2=d/2,$ making it conditionally stable. 
+A useful geometric stability test (attributed to Boyd and Kogelnik) relates to the overlap of the regions "covered" by each mirror as seen from the focal point of the other mirror. A more common statement is that a cavity is stable if the mirrors "see" each other through their focal points, meaning the focal point of one mirror lies within the cavity as seen from the other, and vice versa for certain configurations. 
 
-There is a useful geometric test based on ray optics to assess cavity stability:
-
-1. Let $M_i$ denote the focal point of mirror $i$.
-2. For each mirror, draw a straight line from $M_i$ to an arbitrary point $S_i$ on the surface of mirror $i$.
-3. Now compare the lines $\overline{M_1S_1}$ and $\overline{M_2S_2}$ under different cavity configurations.
-
-Then, we find that:
-If the lines $\overline{M_1S_1}$ and $\overline{M_2S_2}$ either fully coincide in some configuration, or never overlap at all, the cavity is unstable. In other words, partial and continuous overlap of these lines as the configuration changes indicates potential stability, while complete or no overlap suggests instability.
-
-Some examples are shown in the next figure. For the unstable ones, try to find two connections that fully overlap, or think why they can never overlap at all:
-
-![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/03_Beams_and_resonators 6.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/03_Beams_and_resonators%206.webp)[[Notes/2025 Quantum Electronics Gallmann/03_Beams_and_resonators.pdf#page=47&rect=378,114,814,459|•]]
-
-Consider again the derived stability equation from before. We can rewrite it in terms of $q$, such that it is solved by
+For a stable resonator, the self-consistent q-parameter implies that the wavefront curvature $R(z)$ of the Gaussian beam matches the curvature of the mirror at each mirror surface. For mirror 1 (the reference plane for the round trip), $1/R(z_1) = 1/R_1$. The q-parameter solution gives $1/R = (D-A)/(2B)$. The position of the beam waist $z_w$ (relative to mirror 1, say) and the Rayleigh range $z_R = \mathfrak{Im}\left[q\right]$ can also be determined:
 $$
-\frac{1}{R}=\frac{D-A}{2 B}=-\frac{1}{R_1}.
+z_{w1} = \mathfrak{Re}\left[q_1\right] = \frac{d(R_2-d)}{R_1+R_2-2d}, \quad (\text{distance of waist from mirror 1})
 $$
-Therefore, the curvature of the beam wavefront matches the curvature of the mirror. This makes sense considering that the beam must be self-replicating after each round-trip. The position of the waist is obtained as
 $$
-\mathfrak{Re}[q]=z-z_w=\frac{-d\left(d-R_2\right)}{2 d-R_1-R_2},
-$$
-where a negative number indicates the waist lies to the right of mirror $1.$ The Rayleigh length is obtained from the imaginary part: 
-$$
-z_0=\mathfrak{Im}[q]=\sqrt{\frac{-d\left(d-R_1\right)\left(d-R_2\right)\left(d-R_1-R_2\right)}{\left(2 d-R_1-R_2\right)^2}}.
+z_R^2 = (\mathfrak{Im}\left[q_1\right])^2 = \frac{d(R_1-d)(R_2-d)(R_1+R_2-d)}{(R_1+R_2-2d)^2}.
 $$
 
 ### 7.1.1 Symmetric Spherical Mirror Resonators
 
-Consider the important case of a symmetric resonator where $R_1=R_2\equiv R.$ The stability simply reduces to 
-$$
-0<\frac{d}{R}<2,
-$$
-and we additionally obtain
+Consider the important case of a symmetric resonator where $R_1=R_2 \equiv R$. The stability criterion $0<g_1g_2<1$ becomes $0<(1-d/R)^2<1$. Since $(1-d/R)^2 \ge 0$, this simplifies to $(1-d/R)^2 < 1$, which means $-1 < 1-d/R < 1$ (and $1-d/R \neq 0$). This implies $0 < d/R < 2$.
+For this symmetric case, the beam waist is at the centre of the cavity ($z_w = d/2$ from either mirror). We additionally obtain:
 $$
 \begin{gathered}
-z_0=\frac{d}{2} \sqrt{2 \frac{R}{d}-1} \\
-W_0^2=\frac{\lambda d}{2 \pi} \sqrt{2 \frac{R}{d}-1} \\
-W_1^2=W_2^2=\frac{\lambda d / \pi}{\sqrt{\frac{d}{R}\left(2-\frac{d}{R}\right)}}.
+z_R=\frac{d}{2} \sqrt{\frac{2R}{d}-1}, \\
+W_0^2=\frac{\lambda_0 d}{2 \pi n} \sqrt{\frac{2R}{d}-1}, \\
+W_1^2=W_2^2=W(d/2)^2 = W_0^2\left(1+\left(\frac{d/2}{z_R}\right)^2\right) = \frac{\lambda_0 d}{\pi n} \frac{R/d}{\sqrt{\frac{2R}{d}-1}}. 
 \end{gathered}
 $$
-Here, $W_i$ are the beam sizes on the respective mirror. The beam width is minimal on the mirror for the confocal case of $d=R.$ In this case, we have that 
+The beam radius is minimal ($W_0$) at the centre. It is largest on the mirrors for $d \to 0$ or $d \to 2R$. For the confocal case ($d=R$):
 $$
 \begin{gathered}
-z_0=d / 2 \\
-W_0=\sqrt{\lambda d / 2 \pi} \\
-W_1=W_2=\sqrt{2} W_0 .
+z_R=d/2 = R/2, \\
+W_0=\sqrt{\lambda_0 R / (2 \pi n)}, \\
+W_1=W_2=\sqrt{2} W_0 = \sqrt{\lambda_0 R / (\pi n)}.
 \end{gathered}
 $$
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/QE_script 7.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/QE_script%207.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=140&rect=105,517,503,680|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/QE_script 7.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/QE_script%207.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=140&rect=105,517,503,680| ]]
 
 ---
 ## 7.2 Resonance Frequencies
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=140&selection=47,0,49,21|•]] [[Notes/2025 Quantum Electronics Gallmann/03_Beams_and_resonators.pdf#page=57&selection=0,0,0,41|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=140&selection=47,0,49,21| ]] [[Notes/2025 Quantum Electronics Gallmann/03_Beams_and_resonators.pdf#page=57&selection=0,0,0,41| ]]
 
-So far, we only consider that the spatial envelope $A(r)$ must be self-replicating. However, this requirement extends to the full electric field, including the rapidly oscillating phase. Recall the phase of a Gaussian beam is 
+So far, we have considered the condition that the spatial envelope $A(\mathbf{r})$ of a Gaussian beam must be self-replicating after one round trip. This extends to the full electric field, including its rapidly oscillating phase. Recall the phase of a Gaussian beam (propagating along $z$, waist at $z_w=0$) is $\phi(x,y,z) = kz - \zeta(z) + k(x^2+y^2)/(2R(z))$, where $\zeta(z) = \arctan(z/z_R)$ is the Gouy phase.
+For a self-consistent mode, the total phase change accumulated by the beam over one complete round trip must be an integer multiple of $2\pi$.
+The phase change for propagation from mirror 1 (at $z_1$) to mirror 2 (at $z_2=z_1+d$) on-axis ($x=y=0$) is $\Delta\phi_{1 \to 2} = k(z_2-z_1) - (\zeta(z_2)-\zeta(z_1)) = kd - \Delta\zeta_{1\to 2}$.
+The round-trip phase change $\Delta\Phi_{\text{RT}}$ (from mirror 1, to mirror 2, back to mirror 1, without considering reflection phases at mirrors for now) is:
+$$
+\Delta\Phi_{\text{RT}} = 2kd - 2\Delta\zeta_{\text{round trip}},
+$$
+where $\Delta\zeta_{\text{round trip}} = (\zeta(z_2)-\zeta(z_1)) + (\zeta(z_1)-\zeta(z_2))_{\text{return path, can be complex}}$. More simply, $\Delta\zeta_{\text{round trip}}$ is the total accumulated Gouy phase shift over one round trip. For a stable cavity supporting Hermite-Gaussian modes $TEM_{l,m,q}$ or Laguerre-Gaussian modes $LG_{p,l,q}$, the resonance condition is:
+$$
+k(2d) - (l+m+1)_{\text{HG}} \Delta\zeta_0 = q 2\pi \quad \text{or} \quad k(2d) - (2p+|l|+1)_{\text{LG}} \Delta\zeta_0 = q 2\pi,
+$$
+where $q$ is the longitudinal mode integer, and $\Delta\zeta_0 = \zeta(z_2)-\zeta(z_1)$ is the single-pass Gouy phase difference between the mirrors (the values depend on waist position). 
 
+The resonance condition is $2kd - (N_t+1)\Delta\zeta_{\text{RT}} = 2\pi q$, where $N_t=l+m$ or $2p+|l|$ and $\Delta\zeta_{\text{RT}}$ is the round-trip Gouy phase.
+Assuming $k=2\pi f n/c$, the resonance frequencies $f_{q,l,m}$ are:
 $$
-\phi(x, y, z)=k z-\arctan\left(z / z_0\right)+\frac{k\left(x^2+y^2\right)}{2 R(z)}.
+f_{q,l,m} = \frac{c}{2nd} \left(q + (l+m+1)\frac{\Delta\zeta_{\text{RT}}}{2\pi}\right).
 $$
-
-Then, in the centre of mirror $1,$ respectively $2$ of the resonator, the phase is 
-$$
-\begin{align}
-&\phi\left(0,0, z_1\right)=k z_1-\arctan\left(z_1 / z_0\right)\quad\text{and}\\ &\phi\left(0,0, z_2\right)=k z_2-\arctan\left(z_2 / z_0\right).
-\end{align}
-$$
-The phase change propagating from mirror $1$ to mirror $2$ is 
-$$
-\Delta\phi=kd-\Delta\zeta,
-$$
-where 
-$$
-\Delta \zeta=\tan ^{-1}\left(z_2 / z_0\right)-\tan ^{-1}\left(z_1 / z_0\right).
-$$
-For one round-trip, we require 
-$$
-2 k d-2 \Delta \zeta=2 \pi m\quad m\in \mathbb{Z}.
-$$
-Therefore, the resonance frequencies $f_m$ are those satisfying 
-$$
-f_m=mf_F+\frac{\Delta\zeta}{\pi}f_F,
-$$
-with $f_F=c/2d.$ Since the wavefronts match the mirror curvature, this additionally ensures that the off-axis phase of the beam is self-replicating. The equation dictates that all allowed frequencies are equally spaced, depending only on the length of the oscillator (through $f_F$). The curvature of the mirrors has no effect but to shift the frequencies by a constant. 
+The free spectral range (FSR) for longitudinal modes ($l,m$ fixed) is $f_F = c/(2nd)$. The frequencies are approximately equally spaced by $f_F$, with a small shift dependent on the transverse mode orders $(l,m)$ due to the Gouy phase. This means different transverse modes generally have slightly different resonance frequencies.
 
 ---
 ## 7.3 Resonator Losses
-[[Notes/2025 Quantum Electronics Gallmann/03_Beams_and_resonators.pdf#page=62&selection=0,0,0,18|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=141&selection=110,0,112,14|•]]
+[[Notes/2025 Quantum Electronics Gallmann/03_Beams_and_resonators.pdf#page=62&selection=0,0,0,18| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=141&selection=110,0,112,14| ]]
 
-Up until now, we have treated resonators that are in a sense perfect, that is the mirrors involved have perfect reflectivity. Further, we neglected any diffraction losses. The prior effect is usually the more important one, and luckily, it actually relaxes some of the conditions for allowed modes. However note, that for an output coupler, imperfect reflectivity is actually desired.
+Up until now, we have treated resonators as perfect, implying, for instance, that mirrors have 100% reflectivity and there are no diffraction losses. In reality, losses are always present. Imperfect reflectivity is often the dominant loss mechanism and is, in fact, desired for one mirror to act as an output coupler. Losses broaden the resonance lines.
 
-Consider that an initial on-axis electric field of a Gaussian beam after the first mirror is given by $U_0.$ After $j$ round-trips, the field is 
+Consider an initial on-axis electric field amplitude $U_0$ inside the cavity just after a reference plane. After $j$ round trips, the field amplitude becomes:
 $$
-U_j=r^jU_0e^{ij\Delta\phi},
+U_j=r_{\text{RT}}^j U_0 e^{ij\Delta\Phi_{\text{RT}}},
 $$
-where $0<r<1$ is the loss factor per round-trip and $\Delta\phi$ is the round-trip phase change. Therefore, the total electric field $U$ is 
+where $r_{\text{RT}}$ is the net amplitude reflectivity per round trip ($0 < r_{\text{RT}} < 1$), and $\Delta\Phi_{\text{RT}}$ is the round-trip phase change (excluding the $2\pi q$ part). If the cavity is continuously excited (or contains a gain medium), the total stored electric field $U$ is the sum of contributions from all preceding round trips:
 $$
-\begin{align}
-U&=U_0+r U_0 e^{i \Delta \phi}+r^2 U_0 e^{2 i \Delta \phi}+\ldots=U_0 \sum_j\left(r e^{i \Delta \phi}\right)^j\\
-&=\frac{U_0}{1-r e^{i \Delta \phi}}.
-\end{align}
+U = U_0 + r_{\text{RT}} U_0 e^{i \Delta\Phi_{\text{RT}}} + r_{\text{RT}}^2 U_0 e^{i2 \Delta\Phi_{\text{RT}}}+\ldots = U_0 \sum_{j=0}^{\infty}\left(r_{\text{RT}} e^{i \Delta\Phi_{\text{RT}}}\right)^j.
 $$
-In the last step we simply used the geometric series. The intensity is the electric field squared which may be rewritten as 
+Using the formula for a geometric series, this sums to:
 $$
-I=\frac{I_{\max }}{1+(2 \mathcal{F} / \pi)^2 \sin^2(\Delta \phi / 2)}=\frac{I_{\max }}{1+(2 \mathcal{F} / \pi)^2 \sin^2\left(\pi \nu / \nu_F-\Delta \zeta\right)},
+U = \frac{U_0}{1-r_{\text{RT}} e^{i \Delta\Phi_{\text{RT}}}}.
 $$
-where the maximum intensity and the finesse is
+The intracavity intensity $I \sim |U|^2$. This can be rewritten (using $\Delta\Phi_{\text{RT}} \approx 2\pi (f/f_F) - \text{Gouy term}$) as the Airy function, similar to the [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.6 Fabry-Pérot Interferometer - Etalon\|Fabry-Pérot interferometer]] transmittance:
 $$
-I_{\max }=\frac{I_0}{(1-r)^2}
+I(f) = \frac{I_{\text{circ,max}}}{1+\left(\frac{2 \mathcal{F}}{\pi}\right)^2 \sin^2(\Delta\Phi_{\text{RT}}(f) / 2)},
 $$
-and
+where $I_{\text{circ,max}}=\frac{I_0}{(1-r_{\text{RT}})^2}$ (if $I_0$ is related to input power coupled in per round trip), and the **finesse** $\mathcal{F}$ is:
 $$
-\mathcal{F}=\frac{\pi \sqrt{r}}{1-r}.
+\mathcal{F}=\frac{\pi \sqrt{r_{\text{RT}}}}{1-r_{\text{RT}}}.
 $$
-This is of course very similar to the earlier discussed [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.6 Fabry-Pérot Interferometer - Etalon\|Fabry-Pérot interferometer]]. The next figure shows the normalised intensity of an optical resonator:
+The next figure shows the normalised intensity spectrum of an optical resonator:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/QE_script 4-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/QE_script%204-1.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=143&rect=91,438,509,675|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/7 Optical Resonators/QE_script 4-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/7%20Optical%20Resonators/QE_script%204-1.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=143&rect=91,438,509,675| ]]
 
-The finesse controls the sharpness of the lines, where increasing reflectivity makes the intensity converge to discrete allowed frequencies. The width of the lines is given by
+The finesse $\mathcal{F}$ controls the sharpness (linewidth) of the resonance peaks. Higher reflectivity $r_{\text{RT}}$ (lower loss) leads to higher finesse and sharper peaks. The Full Width at Half Maximum (FWHM) linewidth $\delta f$ of each resonance is related to the free spectral range $f_F$ and the finesse by:
 $$
 \delta f =\frac{f_F}{\mathcal{F}}.
 $$
-Often, losses in a resonator are characterised by an effective distributed loss coefficient $\alpha_r$ defined through
+Losses in a resonator can be characterised by an effective distributed loss coefficient $\alpha_{\text{loss}}$ per unit length. If $L_c$ is the round-trip path length, the round-trip power reflectivity $R_{\text{RT}} = r_{\text{RT}}^2$ might be modelled as $R_1 R_2 e^{-2\alpha_{\text{loss}}L_c}$ (where $R_1, R_2$ are mirror power reflectivities). 
+The finesse can then be expressed in terms of total round-trip losses. If round-trip power loss is small ($1-r_{\text{RT}}^2 \ll 1$), then $1-r_{\text{RT}} \approx (1-r_{\text{RT}}^2)/2$. For instance, if losses are primarily due to mirror transmission $T_m \approx 1-r_{\text{RT}}$, then $\mathcal{F} \approx \pi/T_m$ (for high $r_{\text{RT}}$).
+Then $\mathcal{F} \approx \pi(1-\alpha_r d/2)/(\alpha_r d) \approx \pi/(\alpha_r d)$. This factor depends on whether $d$ is single path or round trip in $\alpha_r d$.
+
+The **quality factor** $Q$ of a resonator mode is defined as $2\pi$ times the ratio of stored energy to energy lost per optical cycle of the mode frequency $f_q$:
 $$
-r^2=e^{-2\alpha_rd},
+Q = 2\pi f_q \frac{\text{Stored Energy}}{\text{Power Loss}} = \frac{f_q}{\delta f}.
 $$
-where distributed means that the losses may not solely come from imperfect mirrors, but from anywhere in the cavity. If all losses are evenly distributed over the beam path, we would retrieve the intensity attenuation coefficient of the light. The finesse may then be expressed
+Using $\delta f = f_F/\mathcal{F}$, we obtain:
 $$
-\mathcal{F}=\frac{\pi e^{-\alpha_r d / 2}}{1-e^{-\alpha_r d}}\approx\frac{\pi}{\alpha_rd},
+Q = \mathcal{F} \frac{f_q}{f_F}.
 $$
-for the usual case that $\alpha_rd\ll1.$ The finesse is roughly equal (within a factor of $2\pi$) to the amount of round-trips a beam can undergo before experiencing significant attenuation. Additionally, we may define a quality factor $Q$ as the ratio between stored energy and energy loss per cycle (times $2\pi$). Here, 'cycle' refers to the oscillation period of the optical field $1/\nu_0.$ Therefore, we obtain
-$$
-Q=\frac{2\pi\nu_0}{\alpha_rc}\approx\frac{\nu_0}{\nu_F}\mathcal{F}.
-$$
-Usually, the latter ratio is extremely large for optical resonators, such that the quality factor is much larger than the finesse.
+Since $f_q \approx q f_F$ (where $q$ is a large integer for optical frequencies), the ratio $f_q/f_F \approx q$ is typically very large. Thus, the quality factor $Q$ is generally much larger than the finesse $\mathcal{F}$ for optical resonators.
 
 ---

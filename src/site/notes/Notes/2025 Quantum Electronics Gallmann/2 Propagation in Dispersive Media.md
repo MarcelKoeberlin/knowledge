@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-05-29T20:27:02.540+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-05-30T12:40:11.943+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,18 +7,18 @@ Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Tab
 ---
 **Table of Contents**
 
-- [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|2.1 Origin of Dispersion]]
-- [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.2 Kramers-Kronig Relations\|2.2 Kramers-Kronig Relations]]
-- [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.3 Equations in Frequency Domain\|2.3 Equations in Frequency Domain]]
-- [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.4 Helmholtz Equation\|2.4 Helmholtz Equation]]
-- [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.5 Refractive Index in Dispersive Media\|2.5 Refractive Index in Dispersive Media]]
-- [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.6 Light Pulses\|2.6 Light Pulses]]
-- [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.7 Time-Bandwidth Product of Wavepackets\|2.7 Time-Bandwidth Product of Wavepackets]]
-- [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.8 Phase, Group and Front Velocity\|2.8 Phase, Group and Front Velocity]]
+[[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|2.1 Origin of Dispersion]]
+[[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.2 Kramers-Kronig Relations\|2.2 Kramers-Kronig Relations]]
+[[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.3 Equations in Frequency Domain\|2.3 Equations in Frequency Domain]]
+[[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.4 Helmholtz Equation\|2.4 Helmholtz Equation]]
+[[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.5 Refractive Index in Dispersive Media\|2.5 Refractive Index in Dispersive Media]]
+[[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.6 Light Pulses\|2.6 Light Pulses]]
+[[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.7 Time-Bandwidth Product of Wavepackets\|2.7 Time-Bandwidth Product of Wavepackets]]
+[[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.8 Phase, Group and Front Velocity\|2.8 Phase, Group and Front Velocity]]
 
 ---
 # 2 Propagation in Dispersive Media
-[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=71&selection=0,16,0,16|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=32&selection=1,0,1,31|•]]
+[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=71&selection=0,16,0,16| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=32&selection=1,0,1,31| ]]
 
 Thinking back to [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.4 Macroscopic Approximation\|approximation 4 in Chapter 1]], we assumed that the polarisation and magnetisation depend linearly on the instantaneous values of the electric and magnetic fields. However, as we noted, this is only true for slow changes in the fields with time and cannot be entirely true for rapidly oscillating fields. In other words, we assumed the system (material) to have no [[Notes/Signals and Systems/1 Signals and Systems#1.9.1 Memory\|memory]]. This assumption implies an absence of dispersion, as we will see soon. While it seems obvious that the polarisation and magnetisation cannot depend on _future_ field values ([[Notes/Signals and Systems/1 Signals and Systems#1.9.3 Causality\|causality]]), real materials do possess some limited memory of past fields:
 $$
@@ -70,7 +70,7 @@ $$
 $$
 Therefore, $|\chi_e(\omega_0)|$ relates the amplitude of the polarisation density response $P_0$ to the applied electric field amplitude $E_0$ (as $P_0 = \varepsilon_0 |\chi_e(\omega_0)| E_0$), while the phase of the complex $\chi_e(\omega_0)$ introduces a phase shift between the polarisation $\mathbf{P}(t)$ and the driving field $\mathbf{E}(t)$. This is shown in the next figure:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 9.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%209.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=75&rect=583,279,814,476|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 9.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%209.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=75&rect=583,279,814,476| ]]
 
 Similarly, for the magnetisation response to an applied magnetic field $\mathbf{H}(t) = \mathbf{H}_0 \cos(\omega_0 t)$:
 $$
@@ -78,13 +78,13 @@ $$
 $$
 This is shown in the next figure:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 10.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2010.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=76&rect=520,103,680,213|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 10.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2010.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=76&rect=520,103,680,213| ]]
 
 We will later see that the imaginary part of the susceptibility, $\mathfrak{Im}\left[\chi_e(\omega)\right]$, is related to absorption or gain of electromagnetic energy in the medium.
 
 ---
 ## 2.1 Origin of Dispersion
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=34&selection=125,0,127,30|•]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=78&selection=0,0,0,30|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=34&selection=125,0,127,30| ]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=78&selection=0,0,0,30| ]]
 
 ### 2.1.1 Drude-Lorentz model
 
@@ -118,7 +118,7 @@ $$
 $$
 Both functions are plotted in the next figure, assuming weak damping ($\gamma \ll \omega_0$):
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/QE_script.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/QE_script.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=36&rect=93,440,520,675|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/QE_script.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/QE_script.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=36&rect=93,440,520,675| ]]
 
 For high frequencies ($\omega \gg \omega_0$), the susceptibility $\chi_e'(\omega)$ becomes small and negative, approaching zero, while $\chi_e''(\omega)$ also approaches zero. The polarisation is out of phase with the electric field by nearly $\pi$ if $\chi_e' < 0$.
 At resonance ($\omega=\omega_0$), the real part $\chi_e'(\omega_0)=0$, and the susceptibility is purely imaginary: $\chi_e(\omega_0) = -i \chi_0 \frac{\omega_0}{\gamma}$ from the original formula or $i \chi_0 \frac{\omega_0}{\gamma}$ with the sign correction for $\chi_e''$. If $\chi_e'' > 0$, then $\chi_e(\omega_0) = i \chi_0 \frac{\omega_0}{\gamma}$. The polarisation is phase-shifted by $\pi/2$ relative to the electric field. The peak magnitude of $\chi_e''(\omega_0)$ is $Q\chi_0$, where $Q=\omega_0/\gamma$ is the quality factor of the resonator. It quantifies how much energy is stored in the resonator compared to the energy lost per oscillation cycle. Reducing the damping $\gamma$ makes the resonance peak narrower and higher.
@@ -168,7 +168,7 @@ r=\frac{\tilde{n}-1}{\tilde{n}+1} = \frac{(n^{\prime}-1)+i n^{\prime \prime}}{(n
 $$
 is the Fresnel reflection coefficient for normal incidence from vacuum onto a medium with complex refractive index $\tilde{n} = n' + in''$.
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/QE_script 1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/QE_script%201.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=40&rect=112,436,506,688|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/QE_script 1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/QE_script%201.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=40&rect=112,436,506,688| ]]
 
 To model silver, the fit is usually done using a combination:
 $$
@@ -178,13 +178,13 @@ where the Drude part accounts for free electrons and Lorentz oscillators account
 
 Lastly, let us discuss a simple implication of the plasma frequency. Consider gold, which has high reflectivity for wavelengths above approximately $500-600 \, \text{nm}$ (red/yellow light) but lower reflectivity (and increased absorption) for shorter wavelengths (green/blue light). This results in reflected white light appearing yellowish/golden, while transmitted light through a very thin gold film can appear bluish-green. This behaviour is related to its plasma frequency and interband transitions. For a thin film of gold, while some absorption occurs, the relation $A+R+T=1$ (Absorbance + Reflectance + Transmittance) holds.
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 11.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2011.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=95&rect=426,233,709,407|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 11.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2011.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=95&rect=426,233,709,407| ]]
 
 In this framework, the colour of metals can be understood by considering the effect of both the plasma frequency (Drude response) and interband transitions (Lorentz oscillators) on the spectral reflectivity.
 
 ---
 ## 2.2 Kramers-Kronig Relations
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=42&selection=173,0,175,28|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=42&selection=173,0,175,28| ]]
 
 From the previous section, we have seen that the frequency dependence of the refractive index (dispersion, related to $\chi_e'$) and absorption (related to $\chi_e''$) are interconnected. A dispersive material _must_ be absorptive over some frequency range, and _must_ exhibit a frequency-dependent absorption coefficient if it is dispersive. This general principle is mathematically captured by the Kramers-Kronig relations. Even with our very simplistic models for susceptibility, linear response theory has important implications regarding causality.
 
@@ -201,13 +201,13 @@ These relations are powerful: they allow the calculation of one part of the comp
 
 Consider sending light through a medium and detecting the transmitted intensity with a photodetector:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 12.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2012.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=98&rect=81,180,503,372|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 12.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2012.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=98&rect=81,180,503,372| ]]
 
 If the goal is to determine the complex susceptibility $\chi_e(\omega)$, one typically needs to measure both amplitude and phase changes upon interaction with the medium. A simple photodetector measures intensity, thereby losing phase information which is crucial for the real part of the refractive index (and thus $\chi_e'$). However, by carefully measuring the absorption spectrum (related to $\chi_e''$) as a function of frequency, the Kramers-Kronig relations can be used to reconstruct the dispersive part $\chi_e'$ (and thus the full complex refractive index).
 
 ---
 ## 2.3 Equations in Frequency Domain
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=43&selection=281,0,283,39|•]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=102&selection=0,36,0,36|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=43&selection=281,0,283,39| ]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=102&selection=0,36,0,36| ]]
 
 Consider again the macroscopic field relations in the time domain:
 $$
@@ -242,7 +242,7 @@ This means $\mathbf{P}(t) = \varepsilon_0 \hat{\chi}_e \mathbf{E}(t)$, an instan
 
 ---
 ## 2.4 Helmholtz Equation
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=50&selection=4,0,7,16|•]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=105&selection=0,18,0,17|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=50&selection=4,0,7,16| ]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=105&selection=0,18,0,17| ]]
 
 Let us start from Faraday's law in the frequency domain, $\nabla \times \mathbf{E}(\mathbf{r},\omega) = -i\omega \mathbf{B}(\mathbf{r},\omega)$, and apply the curl operator:
 $$
@@ -276,15 +276,15 @@ The wavelength in the medium is defined by the real part of the wavevector: $\la
 The phase velocity is given by $v_p(\omega) = \frac{\omega}{|\mathbf{k}'(\omega)|} = \frac{c}{n'(\omega)}$. It describes the speed at which surfaces of constant phase propagate.
 The time-averaged intensity of the wave is related to $|\tilde{\mathbf{E}}_0|^2 e^{-2\mathbf{k}''(\omega)\cdot\mathbf{r}}$. We define the intensity absorption coefficient as $\alpha(\omega) = 2|\mathbf{k}''(\omega)| = 2n''(\omega)\omega/c$. The intensity then decays as $I(z) = I_0 e^{-\alpha(\omega)z}$ (if propagating in $z$-direction). This is illustrated next:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 13.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2013.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=109&rect=49,105,354,479|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 13.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2013.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=109&rect=49,105,354,479| ]]
 
 ---
 ## 2.5 Refractive Index in Dispersive Media
-[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=112&selection=0,39,0,39|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=43&selection=281,1,283,39|•]]
+[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=112&selection=0,39,0,39| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=43&selection=281,1,283,39| ]]
 
 Again, let us stress that the frequency-dependence of the real part of the refractive index $n'(\omega)$ (dispersion) is inherently related via the Kramers-Kronig relations to the frequency-dependence of its imaginary part $n''(\omega)$ (absorption). If there is absorption ($n''(\omega) \neq 0$) at some frequencies, the refractive index $n'(\omega)$ must be dispersive (frequency-dependent) over all frequencies, and vice-versa. While absorption resonances ($\text{peaks in } n''(\omega)$) are often localised in frequency, the associated changes in the refractive index $n'(\omega)$ extend over a much broader frequency range. We have seen: If there is absorption _anywhere_ in the spectrum, the refractive index $n'(\omega)$ becomes dispersive _everywhere_. This is shown in the next figure for a material with three distinct absorption resonances:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 14.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2014.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=113&rect=342,151,752,471|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 14.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2014.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=113&rect=342,151,752,471| ]]
 
 For most optically transparent media (meaning they have low absorption in the visible range), the strongest electronic absorption resonances (corresponding to $\omega_0$ in the Lorentz model) typically lie in the ultraviolet. For frequencies $\omega$ in the visible range, we are often in the regime $\omega \ll \omega_0$. Assuming weak damping ($\gamma \ll \omega_0$), the imaginary part of the susceptibility $\chi_e''(\omega)$ (and thus $n''(\omega)$) becomes very small in this transparent region, while its real part $\chi_e'(\omega)$ typically increases with $\omega$. Since $n'(\omega) \approx \sqrt{1+\chi_e'(\omega)}$ (for $\chi_e'$ small or $(n')^2 \approx 1+\chi_e'$), this implies that the refractive index exhibits 'normal' dispersion:
 $$
@@ -304,15 +304,15 @@ Lastly, note that the Sellmeier equation typically lacks accuracy in the XUV (ex
 
 ---
 ## 2.6 Light Pulses
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=52&selection=135,0,140,5|•]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=120&selection=0,0,0,25|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=52&selection=135,0,140,5| ]] [[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=120&selection=0,0,0,25| ]]
 
 Let us consider an important example of a non-monochromatic wave: a light pulse. Light pulses, as opposed to continuous monochromatic plane waves, are finite in time duration and thus also have a finite spatial extent along the propagation direction. Here, we still treat them as infinitely extended transverse to the propagation direction, so as plane wave pulses. It is understood that a pulse can be represented as a superposition of plane waves of varying wavelengths or frequencies:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/QE_script 2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/QE_script%202.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=54&rect=144,439,478,671|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/QE_script 2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/QE_script%202.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=54&rect=144,439,478,671| ]]
 
 In this conceptual image, a 'red' (lower frequency) and a 'violet' (higher frequency) wave are superposed to get the resultant 'blue' wave (the pulse envelope). The colours are illustrative and not necessarily related to physical colours. It turns out that the more frequency components (waves with different frequencies) are added coherently, the 'narrower' in time the resulting pulse can become:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/QE_script 3.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/QE_script%203.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=55&rect=142,106,483,349|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/QE_script 3.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/QE_script%203.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=55&rect=142,106,483,349| ]]
 
 The general effect of superimposing multiple waves with frequencies $\omega_m = \omega_a + m\Delta\omega$ (where $m$ is an integer) is to produce constructive interference at times $t_p = p \cdot 2\pi/\Delta\omega$ (where $p$ is an integer) and destructive interference elsewhere, leading to a train of pulses. If many waves with a broad spectrum around a centre frequency $\omega_a$ are superposed, and if $\Delta\omega$ represents the approximate overall bandwidth, then a short pulse of duration $\sim 1/\Delta\omega$ can be formed.
 
@@ -361,7 +361,7 @@ In this animation, the green points represent points moving at the group velocit
 
 ---
 ## 2.7 Time-Bandwidth Product of Wavepackets
-[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=130&selection=0,0,0,27|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=57&selection=86,0,88,39|•]]
+[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=130&selection=0,0,0,27| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=57&selection=86,0,88,39| ]]
 
 A light pulse is formed by superimposing plane waves with different frequencies. In a continuous form, this superposition is described by the inverse Fourier transform:
 $$
@@ -372,7 +372,7 @@ We generally call $\mathbf{E}(\omega)$ the spectrum of the pulse, indicating the
 The electric field as a function of frequency, $\mathbf{E}(\omega)$, and the electric field as a function of time, $\mathbf{E}(t)$, are Fourier transform pairs. This mathematical relationship has an important implication: there is a fundamental limit to how short a pulse duration $\Delta t$ can be for a given spectral bandwidth $\Delta\omega$. This is quantified by the time-bandwidth product (TBP).
 Consider the next figure, showing the intensity profile in time, $|E(t)|^2$, and the spectral intensity, $|E(\omega)|^2$:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 18.webp](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2018.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=130&rect=156,187,762,346|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 18.webp](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2018.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=130&rect=156,187,762,346| ]]
 
 The Fourier transform uncertainty principle states that the product $\Delta t \cdot \Delta\omega$ (or $\Delta t \cdot \Delta f$) has a minimum possible value, which depends on the pulse shape (definitions of $\Delta t$ and $\Delta\omega$, such as Full Width at Half Maximum, also affect this value). We call this product the _time-bandwidth product_. Pulses that achieve this minimum are called _transform-limited pulses_. For such pulses, the spectral phase $\arg[\mathbf{E}(\omega)]$ is constant or, at most, linear in frequency across the pulse bandwidth.
 
@@ -384,10 +384,10 @@ Consider a transform-limited (therefore unchirped) Gaussian pulse:
 
 The next figure shows a chirped Gaussian pulse. By definition, its time-bandwidth product is greater than the minimum possible for a Gaussian shape: $\Delta t \cdot \Delta \nu > \text{TBP}_{\text{Gaussian}}$.
 
-![Attachments/01_Introduction_and_theoretical_foundation.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=132&rect=60,259,314,436|•]]
+![Attachments/01_Introduction_and_theoretical_foundation.webp|700](/img/user/Attachments/01_Introduction_and_theoretical_foundation.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=132&rect=60,259,314,436| ]]
 To illustrate the effect of a chirp, consider the difference between an unchirped (blue) and a chirped (orange) light pulse, both having the same spectral amplitude magnitude:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 21.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2021.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=132&rect=400,240,774,496|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media/01_Introduction_and_theoretical_foundation 21.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/2%20Propagation%20in%20Dispersive%20Media/01_Introduction_and_theoretical_foundation%2021.webp)[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=132&rect=400,240,774,496| ]]
 
 We can see that the pulse duration (FWHM) of the unchirped blue pulse is shorter than that of the chirped orange pulse. If a chirp is positive (up-chirp), lower frequencies precede higher frequencies in time. If a chirp is negative (down-chirp), higher frequencies precede lower frequencies. The type of chirp acquired by a pulse propagating through a dispersive medium depends on the sign of the group velocity dispersion (GVD) of the medium.
 Usually, GVD is quantified by the dispersion parameter $D_{\lambda}$:
@@ -402,7 +402,7 @@ This shows pulse broadening due to dispersion.
 
 ---
 ## 2.8 Phase, Group and Front Velocity
-[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=133&selection=0,0,0,33|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=58&selection=99,0,101,31|•]]
+[[Notes/2025 Quantum Electronics Gallmann/01_Introduction_and_theoretical_foundation.pdf#page=133&selection=0,0,0,33| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=58&selection=99,0,101,31| ]]
 
 It is known that the phase velocity $v_p = c/n'(\omega)$ can exceed the speed of light in vacuum $c$ (for $n'(\omega) < 1$), particularly for XUV light in materials or near absorption resonances in any spectral range. The group velocity $v_g = c/n_g(\omega)$ can also exceed $c$ (if $n_g(\omega) < 1$) or even become negative near a strong absorption line where $dn'/d\omega$ can be large and negative. However, these phenomena do not violate the principles of relativity, which state that no energy or information can be transmitted faster than $c$.
 

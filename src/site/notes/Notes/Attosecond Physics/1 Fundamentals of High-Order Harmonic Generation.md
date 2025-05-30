@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-05-29T20:27:32.921+02:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-05-30T15:19:41.211+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -7,23 +7,23 @@ Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|
 ---
 **Table of Contents**
 
-- [[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation#1.1 Simple Man's Model\|1.1 Simple Man's Model]]
-- [[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation#1.2 Phase Matching and Propagation of HHG in the Gas Medium\|1.2 Phase Matching and Propagation of HHG in the Gas Medium]]
-- [[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation#1.3 Dependence of HHG Spectra on Macroscopic Conditions\|1.3 Dependence of HHG Spectra on Macroscopic Conditions]]
+[[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation#1.1 Simple Man's Model\|1.1 Simple Man's Model]]
+[[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation#1.2 Phase Matching and Propagation of HHG in the Gas Medium\|1.2 Phase Matching and Propagation of HHG in the Gas Medium]]
+[[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation#1.3 Dependence of HHG Spectra on Macroscopic Conditions\|1.3 Dependence of HHG Spectra on Macroscopic Conditions]]
 
 ---
 # 1 Fundamentals of High-Order Harmonic Generation
-[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=212&selection=2,0,3,10|•]]
+[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=212&selection=2,0,3,10| ]]
 
 Harmonic generation is an important nonlinear process in optics. If incoming electromagnetic radiation oscillates at frequency $\omega$, its second harmonic has the frequency $2\omega$. Generalising, the $n$-th harmonic will then oscillate at $n\omega$, which is $n$ times the frequency of the _fundamental_ signal $\omega$. One simplified way to think about this is that $n$ photons, each of energy $\hbar\omega$, are absorbed in some nonlinear material, leading to the generation of a single photon of energy $n\hbar\omega$. This chapter focuses on high-order harmonic generation (HHG), which usually considers harmonics of order $n \gtrsim 20$.
 
 The fundamental principle of HHG is straightforward: an intense laser beam is focused into a gas jet or a gas cell, typically containing a noble gas at pressures ranging from a few millibars to a few bar. The peak intensities of the laser in the interaction region are on the order of $10^{14} \, \text{W/cm}^2$. This intensity is sufficiently high for HHG to occur, generating coherent radiation collinearly with the driving laser beam. A filter, often a thin metallic foil, is typically used after the generation medium to block the co-propagating, intense infrared driving laser. This is necessary to protect sensitive detectors (such as CCD cameras or XUV spectrometers) from the strong fundamental radiation, as HHG is a very inefficient process, with typical conversion efficiencies around $10^{-7}$ or lower. The following figure shows a schematic setup:
 
-![Attachments/Attosecond and Strong-Field Physics Principles and Applications.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=213&rect=151,538,288,635|•]]
+![Attachments/Attosecond and Strong-Field Physics Principles and Applications.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=213&rect=151,538,288,635| ]]
 
 The recorded harmonic spectrum schematically resembles the following:
 
-![Attachments/Attosecond and Strong-Field Physics Principles and Applications 1.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications%201.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=213&rect=302,543,431,635|•]]
+![Attachments/Attosecond and Strong-Field Physics Principles and Applications 1.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications%201.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=213&rect=302,543,431,635| ]]
 
 At low harmonic orders, the yield (intensity) of the harmonics decreases rapidly with increasing order. Beyond this initial drop, the spectrum forms a broad plateau where the intensity of successive harmonics remains relatively constant. This plateau extends to a characteristic cutoff energy, approximately given by:
 $$
@@ -33,11 +33,11 @@ where $U_p = \frac{e^2 E_0^2}{4m_e\omega_0^2}$ is the ponderomotive energy (the 
 
 ---
 ## 1.1 Simple Man's Model
-[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=580&selection=29,0,31,5|•]]
+[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=580&selection=29,0,31,5| ]]
 
 Surprisingly, the complex process of HHG can be largely understood using a simple, semi-classical three-step model, often called the "simple man's model" or "three-step model." The only explicitly non-classical aspect in this description is the initial ionisation step, which often involves quantum tunnelling:
 
-![Attachments/Lecture.webp|700](/img/user/Attachments/Lecture.webp)[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=581&rect=359,67,500,517|•]]
+![Attachments/Lecture.webp|700](/img/user/Attachments/Lecture.webp)[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=581&rect=359,67,500,517| ]]
 
 1.  **Ionisation:** An intense laser field significantly distorts the atomic Coulomb potential, lowering the potential barrier such that an outer-shell electron can escape the atom via tunnel-ionisation (or above-barrier ionisation if the field is strong enough). This step typically occurs near the peaks of the laser field.
 2.  **Acceleration:** The freed electron is then accelerated by the oscillating electric field of the laser, moving away from its parent ion and gaining kinetic energy. Its motion is treated classically.
@@ -49,12 +49,12 @@ $$
 $$
 Solving for $v(t)$ and then position $x(t)$, one can find the kinetic energy of the electron upon returning to the ion at time $t_r$. The maximum kinetic energy upon return corresponds to the $3.17 U_p$ term in the cutoff formula. The emitted photon energy is $\hbar\omega_{\text{harmonic}} = I_p + E_k(t_r)$. This model predicts that for a given harmonic energy, there are generally two main classes of electron trajectories—referred to as "long" and "short" trajectories—that yield the same recombination energy but differ in the electron's excursion time in the continuum and the phase of the emitted harmonic:
 
-![Attachments/Lecture 1.webp|700](/img/user/Attachments/Lecture%201.webp)[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=580&rect=142,44,486,414|•]]
+![Attachments/Lecture 1.webp|700](/img/user/Attachments/Lecture%201.webp)[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=580&rect=142,44,486,414| ]]
 
 The black and red curves represent these long and short trajectories, respectively. The lower figure illustrates the electron's displacement or velocity amplitude as a function of ionisation and recombination times.
 
 ### 1.1.1 Odd-Harmonic Spectrum
-[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=218&selection=54,0,54,25|•]]
+[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=218&selection=54,0,54,25| ]]
 
 The discrete nature of the HHG spectrum, specifically the appearance of only odd harmonics when driven by a laser field with inversion symmetry (like a single-colour sinusoidal field) and generated in a medium with inversion symmetry (like a noble gas atom), arises from the overall symmetry of the process.
 
@@ -82,7 +82,7 @@ $$
 Thus, HHG driven by a monochromatic laser field in an centrosymmetric medium produces predominantly odd harmonics of the fundamental frequency.
 
 ### 1.1.2 Wavelength Scaling of HHG
-[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=221&selection=8,0,8,25|•]]
+[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=221&selection=8,0,8,25| ]]
 
 The HHG cutoff energy $E_{\text{cut}} \approx I_p + 3.17 U_p$ scales with the ponderomotive energy $U_p$. Since $U_p \sim E_0^2/\omega_0^2 \sim I_L \lambda_0^2$ (where $I_L$ is the laser intensity and $\lambda_0$ its wavelength), using longer wavelength driving lasers can significantly extend the harmonic spectrum to higher photon energies. Mid-infrared lasers, for instance, can push the harmonic spectrum to hundreds of electronvolts (soft X-rays, potentially covering the "water window" between carbon and oxygen K-edges) or even approach the kiloelectronvolt regime.
 
@@ -95,11 +95,11 @@ However, harmonics from long trajectories often suffer from poorer phase-matchin
 
 ---
 ## 1.2 Phase Matching and Propagation of HHG in the Gas Medium
-[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=225&selection=14,0,14,59|•]]
+[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=225&selection=14,0,14,59| ]]
 
 Since HHG is a coherent nonlinear optical process, achieving constructive interference of the harmonic fields generated by different atoms throughout the interaction volume is crucial for efficient emission. This is known as phase matching. If phase matching is achieved (i.e., the generated harmonic fields add up in phase along the propagation direction), the harmonic intensity can grow quadratically with the number of coherently contributing atoms, or with the length of the interaction medium $L$ (for $L < L_{\text{abs}}, L_{\text{coh}}$): $I_q \sim N_{\text{atom}}^2 \sim L^2$.
 
-![Attachments/Lecture 2.webp|700](/img/user/Attachments/Lecture%202.webp)[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=583&rect=377,76,502,367|•]]
+![Attachments/Lecture 2.webp|700](/img/user/Attachments/Lecture%202.webp)[[Courses/3. Semester/Ultrafast Laser Physics/Lecture.pdf#page=583&rect=377,76,502,367| ]]
 
 The generated harmonic electric field $E_q(r, z, t)$ and the nonlinear polarisation $P_q(r, z, t)$ at the harmonic frequency $\omega_q = q\omega_0$ can be expressed as:
 $$
@@ -119,7 +119,7 @@ While increasing the gas medium length $L$ might seem to enhance yield, the gene
 
 ---
 ## 1.3 Dependence of HHG Spectra on Macroscopic Conditions
-[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=235&selection=4,0,4,55|•]]
+[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=235&selection=4,0,4,55| ]]
 
 High-order harmonic generation has become a valuable tool not only as a light source but also for extracting structural and dynamical information about the generating atoms and molecules (HHG spectroscopy). It is often assumed in such analyses that the experimental HHG spectra are generated under conditions close to perfect phase matching for all relevant harmonics. This would allow the modulus square of the single-atom (photo-)recombination transition dipole moment $|d(\omega)|^2$ to be retrieved from the measured harmonic spectral intensity $S_h(\omega)$. After propagation through the gas medium, the HHG spectral intensity can be expressed as:
 $$
@@ -127,7 +127,7 @@ S_h(\omega) \sim \omega^4 \cdot \left|W^{\prime}(\omega)\right|^2 \cdot |d(\omeg
 $$
 where $W^{\prime}(\omega)$ is the "macroscopic wave packet" (MWP) factor, which accounts for propagation and phase-matching effects, distinguishing the macroscopic yield from the single-atom response $d(\omega)$. The $\omega^4$ factor arises from the relationship between dipole acceleration and radiated power. This factorisation assumes that $W'(\omega)$ can be determined or cancels out in relative measurements.
 
-![Attachments/Attosecond and Strong-Field Physics Principles and Applications 2.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications%202.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=236&rect=124,365,487,638|•]]
+![Attachments/Attosecond and Strong-Field Physics Principles and Applications 2.webp|700](/img/user/Attachments/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications%202.webp)[[Reading/Books/Attosecond Physics/Attosecond and Strong-Field Physics Principles and Applications.pdf#page=236&rect=124,365,487,638| ]]
 
 The MWP is primarily determined by the driving laser parameters (wavelength, pulse duration, intensity, chirp) and focusing conditions (beam size, confocal parameter, focus position relative to gas jet). It is often considered to be largely independent of the target gas type under certain conditions. The figure panels (a) and (b) show that reducing the peak laser intensity does not significantly alter the agreement between the extracted $|d(\omega)|^2$ and theoretical calculations if the MWP is correctly accounted for or cancels. Furthermore, even in cases with imperfect phase matching, as perhaps illustrated in (c), the structural information in $|d(\omega)|^2$ might still be retrievable. Panels (d) and (e) showing similar results for different target gases like Xe and Ne would reinforce the idea that if the factorisation is valid and the MWP mainly depends on the laser and geometry, then the species-specific atomic transition dipole information can be extracted.
 

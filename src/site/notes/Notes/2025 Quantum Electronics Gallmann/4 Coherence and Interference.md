@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/4-coherence-and-interference/","hide":"true","updated":"2025-05-29T19:11:32.778+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/4-coherence-and-interference/","hide":"true","updated":"2025-05-30T12:40:21.611+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,17 +7,17 @@ Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Tab
 ---
 **Table of Contents**
 
-- [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.1 Young's Double Slit Experiment\|4.1 Young's Double Slit Experiment]]
-- [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.2 Coherence Function\|4.2 Coherence Function]]
-- [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.3 Coherence Time and Coherence Length\|4.3 Coherence Time and Coherence Length]]
-- [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.4 Wiener-Khinchin Theorem\|4.4 Wiener-Khinchin Theorem]]
-- [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.5 Interference\|4.5 Interference]]
-- [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.6 Fabry-Pérot Interferometer - Etalon\|4.6 Fabry-Pérot Interferometer - Etalon]]
-- [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.7 Matrix Methods for Multiple Surfaces\|4.7 Matrix Methods for Multiple Surfaces]]
+[[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.1 Young's Double Slit Experiment\|4.1 Young's Double Slit Experiment]]
+[[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.2 Coherence Function\|4.2 Coherence Function]]
+[[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.3 Coherence Time and Coherence Length\|4.3 Coherence Time and Coherence Length]]
+[[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.4 Wiener-Khinchin Theorem\|4.4 Wiener-Khinchin Theorem]]
+[[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.5 Interference\|4.5 Interference]]
+[[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.6 Fabry-Pérot Interferometer - Etalon\|4.6 Fabry-Pérot Interferometer - Etalon]]
+[[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.7 Matrix Methods for Multiple Surfaces\|4.7 Matrix Methods for Multiple Surfaces]]
 
 ---
 # 4 Coherence and Interference
-[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=2&selection=0,0,0,35|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=74&selection=1,0,1,24|•]]
+[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=2&selection=0,0,0,35| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=74&selection=1,0,1,24| ]]
 
 Coherence can be initially understood as the ability of light to exhibit interference phenomena. This will be our starting point, but as we will see, a more precise description is necessary. Additionally, interference, a concept perhaps already familiar, is the superposition of waves that results in a (quasi-)stationary intensity pattern, commonly referred to as a standing wave if the waves are counter-propagating. Fully stationary interference patterns require several conditions to be met by the superposing waves:
 - The waves must possess the same polarisation state.
@@ -28,11 +28,11 @@ The output of typical everyday light sources, such as incandescent bulbs, fluctu
 
 ---
 ## 4.1 Young's Double Slit Experiment
-[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=5&selection=0,0,0,30|•]]
+[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=5&selection=0,0,0,30| ]]
 
 Let us first consider the famous Young's double-slit experiment, where light from a source is diffracted by two narrow, parallel slits of the same width:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/02_Fundamental_phenomena.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/02_Fundamental_phenomena.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=5&rect=201,120,670,414|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/02_Fundamental_phenomena.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/02_Fundamental_phenomena.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=5&rect=201,120,670,414| ]]
 
 **Coherent light**
 First, the simulation is performed with coherent light, idealised as a Gaussian beam, which is a common approximation for the output of a single-mode laser. For now, consider this light as perfectly coherent because its bandwidth is effectively zero; that is to say, it is perfectly monochromatic light:
@@ -61,7 +61,7 @@ For typical parameters used in such simulations (for instance, $\lambda_0 = 800 
 
 ---
 ## 4.2 Coherence Function
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=74&selection=18,0,20,22|•]] [[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=12&selection=0,9,0,9|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=74&selection=18,0,20,22| ]] [[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=12&selection=0,9,0,9| ]]
 
 Let us define coherence—'the ability to interfere'—more precisely. To this end, we introduce the mutual (first-order) coherence function, which correlates an electric field $\mathbf{E}$ with itself at different positions and times:
 $$
@@ -106,7 +106,7 @@ Since $|g(\tau)|$ cannot exceed $1$, this represents maximum temporal coherence.
 
 In comparison, consider light composed of many such wave trains where the phases $\varphi_j$ are random and uncorrelated from one train to the next (a more realistic model for some types of partially coherent light). The ensemble average $\langle e^{i(\varphi_k-\varphi_j)} \rangle$ would be non-zero only if $j=k$. For a truly random (delta-correlated in time or "white noise" like) field, the coherence function approaches a delta function:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/QE_script 11.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/QE_script%2011.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=76&rect=97,173,507,310|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/QE_script 11.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/QE_script%2011.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=76&rect=97,173,507,310| ]]
 
 We find that, for such a highly random field,
 $$
@@ -116,7 +116,7 @@ Therefore, $g(\tau)$ is sharply peaked around $\tau=0$, being $1$ at zero time d
 
 ---
 ## 4.3 Coherence Time and Coherence Length
-[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=18&selection=0,35,0,35|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=75&selection=152,0,154,41|•]]
+[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=18&selection=0,35,0,35| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=75&selection=152,0,154,41| ]]
 
 The concept of coherence allows us to define a characteristic **coherence time** $\tau_c,$ which quantifies the temporal interval over which the field remains significantly correlated with itself. One common definition is:
 $$
@@ -135,7 +135,7 @@ where $c$ is the speed of light in vacuum. For unfiltered sunlight, $\tau_c$ is 
 
 ---
 ## 4.4 Wiener-Khinchin Theorem
-[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=19&selection=0,23,0,23|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=75&selection=154,17,154,41|•]]
+[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=19&selection=0,23,0,23| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=75&selection=154,17,154,41| ]]
 
 First, we define the Power Spectral Density (PSD), denoted $S(\omega)$, of a stationary random process $E(t)$. For a truncated version of the signal $E_T(t)$ (equal to $E(t)$ for $-T/2 \le t \le T/2$ and zero otherwise), let $V_T(\omega)$ be its Fourier transform:
 $$
@@ -163,16 +163,16 @@ Next, some examples of coherence properties for various light sources are shown:
 
 ---
 ## 4.5 Interference
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=79&selection=158,0,160,12|•]] [[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=21&selection=0,0,0,24|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=79&selection=158,0,160,12| ]] [[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=21&selection=0,0,0,24| ]]
 
 Naturally, the next question is how we measure temporal coherence properties. This is commonly done with interferometric setups. The most common one is the Michelson interferometer. The basic idea of all such two-beam interferometers is to split a light beam into two replicas, guide them along different optical paths (introducing a relative time delay), recombine them, and measure the intensity of the resulting superposed wave, for instance using a photodiode or bolometer. As stated, coherence is often described as the ability of light to interfere; therefore, it is natural to measure light's ability to interfere with a time-delayed version of itself.
 
 ### 4.5.1 (Michelson) Interferometer
-[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=21&selection=0,24,0,24|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=79&selection=158,0,160,12|•]]
+[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=21&selection=0,24,0,24| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=79&selection=158,0,160,12| ]]
 
 Consider the following Michelson interferometer setup, where incoming light is split into two replicas by a beam splitter. We assume no change in polarisation state occurs.
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/02_Fundamental_phenomena 2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/02_Fundamental_phenomena%202.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=21&rect=177,212,576,475|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/02_Fundamental_phenomena 2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/02_Fundamental_phenomena%202.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=21&rect=177,212,576,475| ]]
 
 The output electric field at the detector can be written as a superposition of the fields from the two arms:
 $$
@@ -204,7 +204,7 @@ $$
 where $\phi_{12}$ is the phase of $C_1^*C_2$.
 This setup allows precise measurement of optical path length differences via fringe counting, as used in gravitational wave detectors like LIGO, capable of detecting angstrom-scale changes in kilometre-long arm lengths. A slight modification allows measurement of the refractive index of a gas:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/02_Fundamental_phenomena 3.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/02_Fundamental_phenomena%203.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=27&rect=205,179,632,451|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/02_Fundamental_phenomena 3.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/02_Fundamental_phenomena%203.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=27&rect=205,179,632,451| ]]
 
 Assuming the gas cuvette has length $\Delta x$, the relative time delay introduced by the gas is related to its refractive index $n_{\text{gas}}$ compared to the reference path (perhaps air, $n_{\text{air}}$). If arm 2 contains the cuvette and arm 1 is reference:
 $$
@@ -216,11 +216,11 @@ Regarding the complex nature of $g(\tau)$: $S(\omega)$ must be real and non-nega
 
 ---
 ## 4.6 Fabry-Pérot Interferometer - Etalon
-[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=41&selection=0,44,0,44|•]]
+[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=41&selection=0,44,0,44| ]]
 
 Consider a thin film of material of refractive index $n_2$ and thickness $d$, surrounded by media with refractive indices $n_1$ (incident side) and $n_3$ (transmitting side). This forms a Fabry-Pérot etalon.
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/02_Fundamental_phenomena 4.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/02_Fundamental_phenomena%204.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=41&rect=12,203,452,471|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/02_Fundamental_phenomena 4.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/02_Fundamental_phenomena%204.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=41&rect=12,203,452,471| ]]
 
 Assume a plane light wave $E_0$ is incident from medium 1. It is multiply reflected and transmitted at the interfaces. Summing all transmitted partial waves (taking into account phase shifts from propagation and phase changes upon reflection), we find the total transmitted field $E_t$:
 $$
@@ -247,7 +247,7 @@ T_{\text{FP}}=\left|t_{\text{FP}}\right|^2=\frac{\left|t_{12} t_{23}\right|^2}{\
 $$
 where $T_{\mathrm{FPmax}}=\frac{|t_{12} t_{23}|^2}{(1-|r_{23} r_{21}|)^2}$ and $F=\frac{\pi \sqrt{|r_{12} r_{23}|}}{1-|r_{23} r_{21}|}$. The Finesse $F$ relates the free spectral range (FSR) to the resonance linewidth.
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/02_Fundamental_phenomena 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/02_Fundamental_phenomena%205.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=45&rect=19,205,527,471|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/02_Fundamental_phenomena 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/02_Fundamental_phenomena%205.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=45&rect=19,205,527,471| ]]
 
 The transmission as a function of optical frequency $f$ (where $2\phi = 2\pi f / f_{\text{FSR}}$, with $f_{\text{FSR}} = c/(2n_2 d \cos\theta_2)$ being the free spectral range):
 $$
@@ -257,15 +257,15 @@ The FSR is determined by the optical path length of the cavity, whereas the fine
 
 ---
 ## 4.7 Matrix Methods for Multiple Surfaces
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=87&selection=144,0,146,36|•]] [[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=48&selection=0,0,0,42|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=87&selection=144,0,146,36| ]] [[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=48&selection=0,0,0,42| ]]
 
 Consider an optical system composed of multiple elements or interfaces.
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/QE_script 12.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/QE_script%2012.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=88&rect=183,145,421,252|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/QE_script 12.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/QE_script%2012.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=88&rect=183,145,421,252| ]]
 
 Each box represents an optical element modifying the electric field amplitude and phase. We consider light propagating along a single axis and only one polarisation (s- or p-polarised light). The superscripts $(+)$ and $(-)$ indicate whether the wave propagates to the right or the left, respectively, at a reference plane.
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/QE_script 13.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/QE_script%2013.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=89&rect=184,619,427,684|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference/QE_script 13.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/4%20Coherence%20and%20Interference/QE_script%2013.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=89&rect=184,619,427,684| ]]
 
 At interface 1 (between medium 0 and 1, fields in medium 1 are $E_1^{(+)}, E_1^{(-)}$), we define a matrix relating fields on one side of an element/interface to the other. The transfer matrix (or ABCD matrix for a system) relates fields at the output plane (say, plane 2) to fields at the input plane (plane 1):
 $$

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/5-discrete-time-fourier-transform/","hide":"true","updated":"2025-05-29T15:32:54.709+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/5-discrete-time-fourier-transform/","hide":"true","updated":"2025-05-30T15:24:21.182+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -7,23 +7,23 @@ Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents
 ---
 **Table of Contents**
 
-- [[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.1 Represenation of Aperiodic Signals: The Discrete-Time Fourier Transform\|5.1 Represenation of Aperiodic Signals: The Discrete-Time Fourier Transform]]
-- [[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.2 The Fourier Transform for Periodic Signals\|5.2 The Fourier Transform for Periodic Signals]]
-- [[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.3 Properties of the Discrete-Time Fourier Transform\|5.3 Properties of the Discrete-Time Fourier Transform]]
-- [[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.4 Duality Between the Discrete-Time and Continuous-Time Fourier Transform\|5.4 Duality Between the Discrete-Time and Continuous-Time Fourier Transform]]
+[[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.1 Represenation of Aperiodic Signals: The Discrete-Time Fourier Transform\|5.1 Represenation of Aperiodic Signals: The Discrete-Time Fourier Transform]]
+[[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.2 The Fourier Transform for Periodic Signals\|5.2 The Fourier Transform for Periodic Signals]]
+[[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.3 Properties of the Discrete-Time Fourier Transform\|5.3 Properties of the Discrete-Time Fourier Transform]]
+[[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.4 Duality Between the Discrete-Time and Continuous-Time Fourier Transform\|5.4 Duality Between the Discrete-Time and Continuous-Time Fourier Transform]]
 
 ---
 # 5 Discrete-Time Fourier Transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=389&selection=2,0,8,9|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=389&selection=2,0,8,9| ]]
 
 ---
 ## 5.1 Representation of Aperiodic Signals: The Discrete-Time Fourier Transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=390&selection=24,0,40,9|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=390&selection=24,0,40,9| ]]
 
 Consider a general sequence $x[n]$ of finite duration, such that $x[n] = 0$ outside the range $[N_1, N_2]$. From this aperiodic signal, construct a periodic signal $\tilde{x}[n]$ for which the original $x[n]$ is one period:
 
 ![Attachments/Oppenheim,Willsky_Signals and Systems 20.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2020.webp)
-![Attachments/Oppenheim,Willsky_Signals and Systems 21.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2021.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=390&rect=141,92,456,171|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 21.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2021.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=390&rect=141,92,456,171| ]]
 
 As we increase the period $N$, the two signals remain identical over a longer interval. In the limit as $N \to \infty$, we obtain $\tilde{x}[n] = x[n]$ for all $n$. Using this representation and taking the limit, we derive
 
@@ -37,7 +37,7 @@ Compared to the [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform\
 
 A key consequence of this periodicity is that low-frequency signals correspond to values of $\omega$ near $0$ or $2\pi$, where the signal varies slowly. High-frequency signals correspond to values of $\omega$ near odd multiples of $\pi$, where the signal varies more rapidly. This behaviour is illustrated below:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 22.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2022.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=393&rect=90,213,452,508|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 22.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2022.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=393&rect=90,213,452,508| ]]
 
 ### 5.1.1 Convergence Issues of the Discrete-Time Fourier Transform
 
@@ -51,7 +51,7 @@ These conditions are analogous to those for the continuous-time Fourier transfor
 
 ---
 ## 5.2 The Fourier Transform for Periodic Signals
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=398&selection=160,0,170,7|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=398&selection=160,0,170,7| ]]
 
 As in the continuous-time case, the DTFT can be extended to periodic signals by interpreting the transform of a periodic sequence as an impulse train in the frequency domain. Consider
 
@@ -67,7 +67,7 @@ $$
 
 This is illustrated in the following figure:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 23.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2023.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=400&rect=47,401,342,491|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 23.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2023.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=400&rect=47,401,342,491| ]]
 
 Since any interval of length $2\pi$ contains exactly one impulse, we can write
 
@@ -91,7 +91,7 @@ which shows that the DTFT of a periodic signal consists of impulses positioned a
 
 ---
 ## 5.3 Properties of the Discrete-Time Fourier Transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=403&selection=94,0,106,9|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=403&selection=94,0,106,9| ]]
 
 Similar to the continuous-time Fourier transform, the DTFT satisfies several useful properties:
 
@@ -118,7 +118,7 @@ Similar to the continuous-time Fourier transform, the DTFT satisfies several use
 
 ---
 ### 5.3.1 Parseval's Relation
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=411&selection=152,0,156,8|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=411&selection=152,0,156,8| ]]
 
 For a signal $x[n]$ with Fourier transform $X(e^{i\omega})$, Parseval's relation states
 
@@ -130,10 +130,10 @@ This expresses the total energy of the signal in terms of its frequency-domain r
 
 ---
 ## 5.4 Duality Between the Discrete-Time and Continuous-Time Fourier Transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=426&selection=8,0,21,30|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=426&selection=8,0,21,30| ]]
 
 A notable duality exists involving the Discrete-Time Fourier Transform (DTFT) and the Continuous-Time Fourier Series (CTFS). Specifically, the mathematical form of the DTFT analysis equation (summation over discrete time yielding a continuous, periodic function of frequency) is analogous to the CTFS synthesis equation (summation over discrete frequencies yielding a continuous, periodic function of time), and vice-versa for their respective counterparts, when variables are appropriately interchanged.
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 24.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2024.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=427&rect=45,117,493,263|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 24.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2024.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=427&rect=45,117,493,263| ]]
 
 ---

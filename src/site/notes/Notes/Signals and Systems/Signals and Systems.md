@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-03-02T12:39:40.173+01:00"}
+{"dg-publish":true,"dg-path":"Notes/Signals and Systems","permalink":"/notes/signals-and-systems/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-05-30T15:24:29.453+02:00"}
 ---
 
 These notes will mostly follow along the book [Signals and Systems - 2nd edition](https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574) by A. Oppenheim and A. Willsky, and [Discrete-Time Signal Processing](https://www.amazon.com/Discrete-Time-Signal-Processing-3rd-Prentice-Hall/dp/0131988425) by A. Oppenheim and R. Schafter.
@@ -15,10 +15,10 @@ There are countless examples of signals, for example Voltage and currents as fun
 
 ---
 # Table of Contents
-- [[Notes/Signals and Systems/1 Signals and Systems\|1 Signals and Systems]]
-- [[Notes/Signals and Systems/2 Linear Time-Invariant Systems\|2 Linear Time-Invariant Systems]]
-- [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals\|3 Fourier Series Representation of Periodic Signals]]
-- [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform\|4 Continuous-Time Fourier Transform]]
-- [[Notes/Signals and Systems/5 Discrete-Time Fourier Transform\|5 Discrete-Time Fourier Transform]]
+[[Notes/Signals and Systems/1 Signals and Systems\|1 Signals and Systems]]
+[[Notes/Signals and Systems/2 Linear Time-Invariant Systems\|2 Linear Time-Invariant Systems]]
+[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals\|3 Fourier Series Representation of Periodic Signals]]
+[[Notes/Signals and Systems/4 Continuous-Time Fourier Transform\|4 Continuous-Time Fourier Transform]]
+[[Notes/Signals and Systems/5 Discrete-Time Fourier Transform\|5 Discrete-Time Fourier Transform]]
 
 ---

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/5-fourier-optics/","hide":"true","updated":"2025-05-29T19:42:29.206+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/5-fourier-optics/","hide":"true","updated":"2025-05-30T12:40:26.303+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,34 +7,34 @@ Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Tab
 ---
 **Table of Contents**
 
-- [[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.1 Plane Waves and the Helmholtz Equation\|5.1 Plane Waves and the Helmholtz Equation]]
-- [[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.2 Paraxial Approximation\|5.2 Paraxial Approximation]]
-- [[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.3 Fresnel Approximation\|5.3 Fresnel Approximation]]
-- [[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.4 The Fraunhofer Limit: Far Field\|5.4 The Fraunhofer Limit: Far Field]]
-- [[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.5 Diffraction Patterns -  Amplitude Modulation\|5.5 Diffraction Patterns -  Amplitude Modulation]]
-- [[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.6 Fourier Optics with a Lens\|5.6 Fourier Optics with a Lens]]
-- [[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.7 Holography\|5.7 Holography]]
-- [[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.8 Paraxial Ray Optics\|5.8 Paraxial Ray Optics]]
+[[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.1 Plane Waves and the Helmholtz Equation\|5.1 Plane Waves and the Helmholtz Equation]]
+[[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.2 Paraxial Approximation\|5.2 Paraxial Approximation]]
+[[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.3 Fresnel Approximation\|5.3 Fresnel Approximation]]
+[[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.4 The Fraunhofer Limit: Far Field\|5.4 The Fraunhofer Limit: Far Field]]
+[[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.5 Diffraction Patterns -  Amplitude Modulation\|5.5 Diffraction Patterns -  Amplitude Modulation]]
+[[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.6 Fourier Optics with a Lens\|5.6 Fourier Optics with a Lens]]
+[[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.7 Holography\|5.7 Holography]]
+[[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.8 Paraxial Ray Optics\|5.8 Paraxial Ray Optics]]
 
 ---
 # 5 Fourier Optics
-[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=58&selection=0,0,0,31|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=95&selection=1,0,1,14|•]]
+[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=58&selection=0,0,0,31| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=95&selection=1,0,1,14| ]]
 
 In this chapter, we will use a plane wave expansion of a monochromatic field to study light propagation through an optical system. The simplest of these systems is free space. It will soon become clear why this chapter is specifically titled 'Fourier' Optics.
 
 ---
 ## 5.1 Plane Waves and the Helmholtz Equation
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=95&selection=14,0,16,37|•]] [[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=59&selection=0,29,0,29|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=95&selection=14,0,16,37| ]] [[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=59&selection=0,29,0,29| ]]
 
 As we have seen previously, an arbitrary function may often be constructed from a sum or integral of harmonic functions (plane waves) of different frequencies and complex amplitudes. This principle extends to multiple dimensions: an arbitrary spatial function $f(x,y)$, representing for instance a field distribution in a plane, may be constructed as a superposition of harmonic functions with different spatial frequencies ($k_x, k_y$) and complex amplitudes:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 6.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%206.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=59&rect=275,173,777,314|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 6.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%206.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=59&rect=275,173,777,314| ]]
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/QE_script 14.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/QE_script%2014.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=95&rect=191,231,413,383|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/QE_script 14.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/QE_script%2014.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=95&rect=191,231,413,383| ]]
 
 In the figures above, we describe the optical wave with a scalar function $U(x,y,z)$, which could represent, for example, one Cartesian component of the electric field. The problem at hand is the following: We consider the transmission of an optical wave $U(x,y,z)$ through an optical system, which is assumed to be linear. The input field is defined in an initial plane, say $U(x,y,0)$, and we wish to find the field in an output plane, $U(x,y,z_d)$, after propagation through a distance $z_d$:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 7.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%207.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=61&rect=190,206,647,458|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 7.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%207.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=61&rect=190,206,647,458| ]]
 
 As described in more detail [[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2 Linear Time-Invariant Systems\|here]], a linear system is characterised by its impulse response or, equivalently, by its response to a harmonic function (its transfer function).
 
@@ -49,19 +49,19 @@ $$
 with $k=n\omega/c$ being the wave number in the medium. The time-averaged intensity is then obtained as $I(\mathbf{r})=\frac{1}{2 Z}|U(\mathbf{r})|^2$, where $Z$ is the impedance of the medium. For the previously discussed monochromatic plane waves, $|U(\mathbf{r})|$ is constant (independent of $\mathbf{r}$). However, the Helmholtz equation also describes beams where the intensity is not uniform in space, such as Gaussian beams.
 For such waves, we define the notion of a _wavefront_: a wavefront is a surface of constant phase. That is, if $\phi(\mathbf{r})=\arg[U(\mathbf{r})]$, a wavefront is a 2-D surface on which $\phi(\mathbf{r})$ is constant (modulo $2\pi$).
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 8.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%208.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=64&rect=58,155,415,458|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 8.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%208.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=64&rect=58,155,415,458| ]]
 
 We can see that the wavefronts change curvature upon propagation in a Gaussian beam. For a plane wave, the wavefronts are planes. As we may expect, these wavefronts bend when passing through optical components, such as lenses:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 9.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%209.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=65&rect=626,157,790,476|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 9.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%209.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=65&rect=626,157,790,476| ]]
 
 ---
 ## 5.2 Paraxial Approximation
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=96&selection=129,0,132,21|•]] [[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=67&selection=0,0,0,22|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=96&selection=129,0,132,21| ]] [[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=67&selection=0,0,0,22| ]]
 
 In the paraxial approximation, we assume that the light rays (normals to the wavefronts) form only small angles with the principal axis of propagation (conventionally the $z$-axis). Therefore, the transverse components of the wavevector, $k_x$ and $k_y$, which encode deviations from propagation straight along the $z$-axis, are assumed to be much smaller than the total wave number $k$. This approximation is valid for beams with small divergence angles, as is often the case for the output of a laser.
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 10.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2010.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=67&rect=486,254,723,483|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 10.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2010.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=67&rect=486,254,723,483| ]]
 
 For a field $U(x, y, z)$ at a fixed plane $z$, we can define its two-dimensional spatial Fourier transform $V(k_x, k_y, z)$ with respect to the transverse coordinates $x$ and $y$:
 $$
@@ -93,7 +93,7 @@ $$
 Thus, $V(k_x,k_y,z) = V(k_x,k_y,0)H(k_x,k_y,z)$. Note that $k_z$ depends on $k_x$ and $k_y$, so $H$ is not dependent on an independent $k_z$ variable but rather on $k_x, k_y, k,$ and $z$. This approach is valid for propagation in any homogeneous isotropic medium.
 Knowing $U(x,y,0)$ in an initial plane allows us to find its profile $U(x,y,z)$ in any other plane at a distance $z$:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 11.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2011.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=71&rect=212,190,624,398|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 11.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2011.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=71&rect=212,190,624,398| ]]
 
 The procedure is:
 1.  Calculate the 2D spatial Fourier transform $V(k_x, k_y, 0)$ of the input field $U(x,y,0)$.
@@ -104,7 +104,7 @@ It is important to remember that we are working with linear systems: harmonic co
 
 ---
 ## 5.3 Fresnel Approximation
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=97&selection=179,0,181,21|•]] [[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=72&selection=0,21,0,21|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=97&selection=179,0,181,21| ]] [[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=72&selection=0,21,0,21| ]]
 
 In the expression for the transfer function $H(k_x,k_y,z)$, the term $k_z = \sqrt{k^2-k_x^2-k_y^2}$ makes analytical inverse Fourier transformation difficult. In the paraxial approximation ($k_x^2+k_y^2 \ll k^2$), the angles $\theta_x \approx k_x / k$ and $\theta_y \approx k_y / k$ of the constituent plane waves with respect to the $z$-axis are small. We can then expand the phase of the transfer function, $k_z z$:
 $$
@@ -125,11 +125,11 @@ $$
 We can write $H_0 = e^{ikz}$, which is the phase accumulated by a plane wave propagating along $z$.
 The Fresnel approximation implies that we are observing the field at a distance $z$ that is large compared to the transverse extent of the source/aperture, but not so large that the wavefronts become essentially planar over the observation region (which leads to Fraunhofer diffraction).
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/QE_script 15.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/QE_script%2015.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=98&rect=204,607,387,684|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/QE_script 15.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/QE_script%2015.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=98&rect=204,607,387,684| ]]
 
 Considering the source of the wave to be spherical, the Fresnel approximation approximates these spherical wavefronts with parabolas:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 12.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2012.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=74&rect=55,170,513,302|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 12.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2012.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=74&rect=55,170,513,302| ]]
 
 The validity of the Fresnel approximation requires that the next term in the Taylor expansion of the phase, $kz \frac{1}{8}\left(\frac{k_x^2+k_y^2}{k^2}\right)^2$, must be much less than $\pi$. This is a stricter condition than just $k_x^2+k_y^2 \ll k^2$. It can be related to the Fresnel number $N_F = a^2/(\lambda z),$ where $a$ is a characteristic transverse dimension (of aperture or beam). 
 
@@ -160,11 +160,11 @@ The general steps to find the electric field $U(x,y,z)$ for a given input $U(x,y
 
 ---
 ## 5.4 The Fraunhofer Limit: Far Field
-[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=85&selection=0,0,0,13|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=101&selection=14,0,16,31|•]]
+[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=85&selection=0,0,0,13| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=101&selection=14,0,16,31| ]]
 
 The Fraunhofer approximation, or far-field diffraction, is a limit of the Fresnel approximation valid at sufficiently large distances $z$ from an aperture or object of characteristic transverse size $D_{obj}$. It requires the Fresnel conditions to be met, plus an even stronger condition.
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 14.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2014.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=85&rect=94,124,747,468|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 14.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2014.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=85&rect=94,124,747,468| ]]
 
 The condition for Fraunhofer diffraction is often expressed using the Fresnel number $N_F = D_{obj}^2/(\lambda z)$. The Fraunhofer regime applies when $z \gg D_{obj}^2/\lambda$, which means $N_F \ll 1$.
 If $D_{obs}$ is the size of the observation region (detector), then we also typically require $z \gg D_{obs}^2/\lambda$.
@@ -183,7 +183,7 @@ The Fraunhofer approximation essentially states that in the far field, the obser
 
 ---
 ## 5.5 Diffraction Patterns - Amplitude Modulation
-[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=91&selection=0,0,0,20|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=101&selection=169,0,171,32|•]]
+[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=91&selection=0,0,0,20| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=101&selection=169,0,171,32| ]]
 
 When an optical wave passes through an aperture or is otherwise spatially modulated in amplitude and/or phase, and then propagates some distance in free space, the resulting intensity distribution is called a diffraction pattern. From the discussion above, it should be clear that simply expecting the intensity pattern to be a geometric shadow of the aperture is an oversimplification, valid only in the limit of ray optics where the wave nature of light is ignored.
 Consider an aperture described by an aperture function $p(x,y)$ in the input plane $z=0$:
@@ -215,7 +215,7 @@ I_{\text{screen}}(x,y,d) = I_{\text{aperture}}\left(\frac{D_x D_y}{\lambda d}\ri
 $$
 This result is expected, as the Fourier transform of a rectangular function (top-hat) is a sinc function. The intensity pattern is shown next:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 17.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2017.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=92&rect=453,133,734,249|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 17.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2017.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=92&rect=453,133,734,249| ]]
 
 ### 5.5.2 Circular Aperture
 Consider a circular aperture of diameter $D$. The 2D Fourier transform of a circular aperture (circ function) is related to a Bessel function of the first kind, $J_1$:
@@ -230,11 +230,11 @@ I_{\text{screen}}(\rho_s, d) &= I_{\text{aperture}}\left(\frac{\pi D^2}{4\lambda
 $$
 This is the characteristic Airy disk pattern shown in the next figure.
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 18.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2018.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=92&rect=456,255,733,367|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 18.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2018.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=92&rect=456,255,733,367| ]]
 
 ---
 ## 5.6 Fourier Optics with a Lens
-[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=104&selection=0,0,0,29|•]]
+[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=104&selection=0,0,0,29| ]]
 
 A thin lens introduces a quadratic phase transformation to an incident wavefront. For a lens with focal length $f$, its phase transfer function is $t_L(x,y) = e^{-i\frac{k}{2f}(x^2+y^2)}$ (for a focusing lens, assuming it's thin and located at $z=0$).
 If an object $U_{in}(x_o,y_o)$ is placed at the front focal plane ($z=-f$) of a lens, the field at the back focal plane ($z=f$) $U_{BFP}(x_f,y_f)$ is proportional to the Fourier transform of $U_{in}$:
@@ -247,20 +247,20 @@ U(x_f, y_f, f) = \frac{e^{ikf}}{i\lambda f} e^{i\frac{k}{2f}(x_f^2+y_f^2)} \int_
 $$
 The integral is $V(k_x = kx_f/f, k_y = ky_f/f)$, where $V$ is the FT of $U(x_o,y_o,0^-)$ with the appropriate FT kernel sign. This demonstrates the Fourier transforming property of a lens. 
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 19.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2019.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=104&rect=391,338,704,489|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 19.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2019.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=104&rect=391,338,704,489| ]]
 
 A common configuration is a **2f system**, where an object is placed at distance $f$ before a lens, and the image (which is the Fourier transform) is observed at distance $f$ after the lens. If another identical lens is placed at $2f$, it performs an inverse Fourier transform, potentially forming an inverted image of the original object at $4f$ from the first object plane. This is a **4f system**:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 20.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2020.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=105&rect=108,241,741,463|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 20.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2020.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=105&rect=108,241,741,463| ]]
 
 In the Fourier plane (at $2f$ from the object, between the two lenses), one can place an amplitude or phase mask $P(x_F,y_F)$ to filter out or modify specific spatial frequency components of the object. Here $x_F, y_F$ are coordinates in the Fourier plane, related to spatial frequencies $k_x, k_y$ by $k_x \approx kx_F/f, k_y \approx ky_F/f$. The transfer function of such a spatial filtering system is effectively $H(k_x,k_y) \approx P(x_F=\lambda f k_x/(2\pi), y_F=\lambda f k_y/(2\pi))$.
 Consider the image example: A standard circular aperture in the Fourier plane acts as a low-pass filter, blurring the image by removing high spatial frequencies (sharp details). An opaque stop in the centre acts as a high-pass filter, enhancing edges and removing large-scale variations, making the man's skin appear dark while highlighting hair.
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 21.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2021.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=109&rect=127,96,687,483|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 21.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2021.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=109&rect=127,96,687,483| ]]
 
 A **Fresnel zone plate** is another optical element that can focus light, but it operates based on diffraction rather than refraction.
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 22.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2022.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=110&rect=80,138,284,344|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 22.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2022.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=110&rect=80,138,284,344| ]]
 
 Its transmission function $t(x,y)$ consists of concentric transparent and opaque zones:
 $$
@@ -268,13 +268,13 @@ t(x, y)= \begin{cases}1, & \text{for } \cos\left(\frac{\pi (x^2+y^2)}{\lambda f}
 $$
 for a binary zone plate designed for focal length $f$.
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 23.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2023.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=114&rect=128,157,687,477|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 23.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2023.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=114&rect=128,157,687,477| ]]
 
 The spacing of these Fresnel zones is such that light diffracted from the transparent zones interferes constructively at the desired focal point. Zone plates are inherently chromatic, focusing different wavelengths to different focal points.
 
 ---
 ## 5.7 Holography
-[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=111&selection=4,0,6,10|•]] [[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=121&selection=0,20,0,20|•]]
+[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=111&selection=4,0,6,10| ]] [[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=121&selection=0,20,0,20| ]]
 
 Holograms are recordings that encode the full optical wave from an object, including both its amplitude and phase information. In principle, if we could create a transparency $t(x,y)$ equal to the complex field $U(x,y,0)$ from an object, illuminating this transparency with a plane wave would reconstruct the object wave. However, optical detectors are sensitive only to intensity ($|U|^2$), not directly to phase. Holography overcomes this by interfering a reference wave $U_r$ with the object wave $U_o$.
 
@@ -302,7 +302,7 @@ If the reference wave $U_r$ is a uniform plane wave with amplitude $A_r$ (so $I_
 
 To separate these four waves spatially, a common technique is off-axis holography, where the reference wave $U_r$ and object wave $U_o$ are incident on the recording film at a significant angle to each other:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/QE_script 18.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/QE_script%2018.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=112&rect=298,545,474,682|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/QE_script 18.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/QE_script%2018.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=112&rect=298,545,474,682| ]]
 
 This angular separation ensures that upon reconstruction, the four terms propagate in different directions, allowing the desired $U_o$ term to be viewed without overlap from the others.
 Holography generally requires light sources with high temporal and spatial coherence (such as lasers) for both recording and reconstruction. Variations like volume holography (where interference fringes are recorded throughout the depth of a thick medium) and rainbow holography (which allows viewing in white light) address some of these limitations.
@@ -320,7 +320,7 @@ In ordinary photography, only the intensity distribution $|U_o|^2$ is recorded, 
 
 ---
 ## 5.8 Paraxial Ray Optics
-[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=140&selection=0,0,0,10|•]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=113&selection=40,0,42,19|•]]
+[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=140&selection=0,0,0,10| ]] [[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=113&selection=40,0,42,19| ]]
 
 Often, for analysing simple optical systems, a full wave-optical (Fourier) treatment is not necessary, and the simpler ray approximation (geometric optics) suffices. This is especially true when effects of diffraction can be neglected, for instance, when all apertures and beam sizes are much larger than the wavelength of light. We define a _ray_ as the local normal to a wavefront. We will work within the paraxial approximation, meaning all rays form small angles with respect to the optical axis (conventionally the $z$-axis).
 A single ray at a transverse plane can be described by a 2D vector, commonly its radial distance $r$ from the axis and its angle $\theta$ with respect to that axis (or $dr/dz$). We will assume systems with cylindrical symmetry around the $z$-axis for this ray description. For example, a thin converging lens with focal length $f$ transforms an incident ray $(r_1, \theta_1)$ to an output ray $(r_2, \theta_2)$ according to:
@@ -329,7 +329,7 @@ r_2 = r_1, \quad \theta_2 = \theta_1 - r_1/f,
 $$
 where we have used the small angle approximation $\tan\theta \approx \sin\theta \approx \theta$.
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/QE_script 19.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/QE_script%2019.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=114&rect=158,560,443,685|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/QE_script 19.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/QE_script%2019.webp)[[Notes/2025 Quantum Electronics Gallmann/QE_script.pdf#page=114&rect=158,560,443,685| ]]
 
 This transformation can be expressed using a matrix, called the ABCD matrix or ray-transfer matrix, which relates the output ray vector to the input ray vector:
 $$
@@ -354,7 +354,7 @@ $$
 
 The advantage of this matrix formalism is that the overall ray-transfer matrix for a cascade of optical elements is found by multiplying the individual matrices in the correct order (last element encountered by the ray first in the matrix product if input is on the right, or first element first if input is on the left, depending on how the output vector is written). For example, consider propagation through a medium of length $a$, followed by a lens of focal length $f$, then another propagation through length $b$:
 
-![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 24.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2024.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=147&rect=273,247,622,383|•]]
+![Attachments/Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics/02_Fundamental_phenomena 24.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics%20Gallmann/5%20Fourier%20Optics/02_Fundamental_phenomena%2024.webp)[[Notes/2025 Quantum Electronics Gallmann/02_Fundamental_phenomena.pdf#page=147&rect=273,247,622,383| ]]
 
 The matrix $\mathbf{M}_{\text{total}}$ relating the output ray $(r', \theta')$ to the input ray $(r, \theta)$ is:
 $$

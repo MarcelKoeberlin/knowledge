@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-05-29T20:54:38.470+02:00"}
+{"dg-publish":true,"dg-path":"Notes/Solid State Theory","permalink":"/notes/solid-state-theory/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-05-30T15:25:33.366+02:00"}
 ---
 
 These notes follow the lecture 'Solid-State Theory' taught by Prof. Sigrist in the spring semester of 2023. For the original version of my notes, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/notes2023). However, since the script handed out my Prof. Sigrist is of impressive quality, I decided to convert them to markdown (as used on this website) and implement annotations and footnotes seamlessly. All credit goes to Prof. Sigrist.
@@ -22,14 +22,14 @@ These principles, combined with the study of emergent behaviour and excitations,
 ---
 # Table of Contents
 
-- [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal\|1 Electrons in the Periodic Crystal]]
-- [[Notes/Solid-State Theory/2 Semiconductors\|2 Semiconductors]]
-- [[Notes/Solid-State Theory/3 Metals\|3 Metals]]
-- [[Notes/Solid-State Theory/4 Itinerant Electrons in a Magnetic Field\|4 Itinerant Electrons in a Magnetic Field]]
-- [[Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids\|5 Landau's Theory of Fermi Liquids]]
-- [[Notes/Solid-State Theory/6 Transport Properties of Metals\|6 Transport Properties of Metals]]
-- [[Notes/Solid-State Theory/7 Magnetism in Metals\|7 Magnetism in Metals]]
-- [[Notes/Solid-State Theory/8 Magnetism of Localised Moments\|8 Magnetism of Localised Moments]]
-- [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation\|9 Identical Quantum Particles - Formalism of Second Quantisation]]
+[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal\|1 Electrons in the Periodic Crystal]]
+[[Notes/Solid-State Theory/2 Semiconductors\|2 Semiconductors]]
+[[Notes/Solid-State Theory/3 Metals\|3 Metals]]
+[[Notes/Solid-State Theory/4 Itinerant Electrons in a Magnetic Field\|4 Itinerant Electrons in a Magnetic Field]]
+[[Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids\|5 Landau's Theory of Fermi Liquids]]
+[[Notes/Solid-State Theory/6 Transport Properties of Metals\|6 Transport Properties of Metals]]
+[[Notes/Solid-State Theory/7 Magnetism in Metals\|7 Magnetism in Metals]]
+[[Notes/Solid-State Theory/8 Magnetism of Localised Moments\|8 Magnetism of Localised Moments]]
+[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation\|9 Identical Quantum Particles - Formalism of Second Quantisation]]
 
 ---

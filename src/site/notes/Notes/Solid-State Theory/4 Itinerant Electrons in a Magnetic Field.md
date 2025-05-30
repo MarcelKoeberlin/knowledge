@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/4-itinerant-electrons-in-a-magnetic-field/","hide":"true","updated":"2025-04-05T17:25:08.875+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/4-itinerant-electrons-in-a-magnetic-field/","hide":"true","updated":"2025-05-30T15:24:51.238+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -7,17 +7,17 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 **Table of Contents**
 
-- [[Notes/Solid-State Theory/4 Itinerant Electrons in a Magnetic Field#4.1 The de Haas-van Alphen Effect\|4.1 The de Haas-van Alphen Effect]]
-- [[Notes/Solid-State Theory/4 Itinerant Electrons in a Magnetic Field#4.2 Quantum Hall Effect\|4.2 Quantum Hall Effect]]
+[[Notes/Solid-State Theory/4 Itinerant Electrons in a Magnetic Field#4.1 The de Haas-van Alphen Effect\|4.1 The de Haas-van Alphen Effect]]
+[[Notes/Solid-State Theory/4 Itinerant Electrons in a Magnetic Field#4.2 Quantum Hall Effect\|4.2 Quantum Hall Effect]]
 
 ---
 # 4 Itinerant Electrons in a Magnetic Field
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=90&selection=2,0,3,4|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=90&selection=2,0,3,4| ]]
 
 Electrons couple through their orbital motion and their spin to external magnetic fields. In this chapter we focus on the case of orbital coupling which can be also used as a diagnostic tool to observe the presence of a Fermi surface in a metallic system and to map out the Fermi surface topology. A further most intriguing feature of electrons moving in a magnetic field is the Quantum Hall effect of a two-dimensional electronic system. In both case the Landau levels with play an important role and will be introduced here in a first step.
 
 ## 4.1 The de Haas-van Alphen Effect
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=90&selection=16,0,18,28|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=90&selection=16,0,18,28| ]]
 
 The ground state of a metal is characterised by the existence of a discontinuity of the occupation number in momentum space - the Fermi surface. The de Haas-van Alphen experiment is one of the best methods to verify its existence and to determine the shape of a Fermi surface. It is based on the behaviour of electrons at low temperatures in a strong magnetic field.
 
@@ -101,7 +101,7 @@ $$
 
 The density of states for finite applied field is shown for one spin-component:
 
-![Attachments/Script 38.webp|700](/img/user/Attachments/Script%2038.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=92&rect=173,584,425,754|•]]
+![Attachments/Script 38.webp|700](/img/user/Attachments/Script%2038.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=92&rect=173,584,425,754| ]]
 
 ### 4.1.2 Oscillatory Behaviour of the Magnetisation
 
@@ -120,7 +120,7 @@ $$
 
 Here $\chi_{P}$ is the Pauli-spin susceptibility originating from the Zeeman-term and the second term $\chi_{L}=-\chi_{P} / 3$ is the diamagnetic Landau susceptibility which is due to induced orbital currents (the Landau levels). For sufficiently low temperatures, $k_{B} T<\mu_{B} B \sim \hbar \omega_{c}$, the magnetisation as a function of the applied field exhibits oscillatory behaviour:
 
-![Attachments/Script 39.webp|700](/img/user/Attachments/Script%2039.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=93&rect=74,592,503,742|•]]
+![Attachments/Script 39.webp|700](/img/user/Attachments/Script%2039.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=93&rect=74,592,503,742| ]]
 
 The dominant contribution comes from the summation with $\nu=1$. The oscillations are a consequence of the singularities in the density of states that influence the magnetic moment upon successively passing through the Fermi energy as the magnetic field is varied. The period in $1 / B$ of the oscillations of the term $\nu=1$ is easily found to be
 $$
@@ -195,7 +195,7 @@ $$
 
 All the possible paths if given quantum number $n$ form cylinder-like surfaces parallel to $\boldsymbol{k}_{\|}$in reciprocal space, with energies $E_{n, k_{\|}}$:
 
-![Attachments/Script 40.webp|700](/img/user/Attachments/Script%2040.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=95&rect=75,443,522,669|•]]
+![Attachments/Script 40.webp|700](/img/user/Attachments/Script%2040.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=95&rect=75,443,522,669| ]]
 
 Concentric tubes represent the quantised orbits in the reciprocal space corresponding to the areas $A_{n}$ embedded in the original Fermi surface which limits the height of the tubes, occupation along the $k_{\|}$-direction $\left(\boldsymbol{k}_{\|} \| \boldsymbol{B}\right)$. Left panel: 3-dimensional view of system with a simple Fermi surface. Right panel: cross section including $\boldsymbol{k}_{z}$. Extremal areas represent the band edges for the motion along $k_{\|}$(bottom: maximal $A$; and top: minimal $A$ ).
 
@@ -251,7 +251,7 @@ This means that one can improve the situation by going to high magnetic fields.
 
 ---
 ## 4.2 Quantum Hall Effect
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=95&selection=164,0,166,18|•]]
+[[Courses/2. Semester/Solid State Theory/Script.pdf#page=95&selection=164,0,166,18| ]]
 
 **Classical Hall Effect**
 
@@ -271,7 +271,7 @@ $$
 
 Consider the Hall geometry here:
 
-![Attachments/Script 41.webp|700](/img/user/Attachments/Script%2041.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=96&rect=171,222,416,367|•]]
+![Attachments/Script 41.webp|700](/img/user/Attachments/Script%2041.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=96&rect=171,222,416,367| ]]
 
 Further, consider the fixed current $\boldsymbol{j}=\left(j_{x}, 0,0\right)=\left(-n_{0} e v, 0,0\right)$ and magnetic field $\boldsymbol{B}=B_{z}$, the steady state condition (4.35) simplifies to
 $$
@@ -298,7 +298,7 @@ $$
 $$
 where $\nu_{n} \in \mathbb{Z}$. By now, the integer quantisation is so widely verified, that the von Klitzing constant (resistance quantum named after the discoverer of the Quantum Hall effect) $R_{K}=$ $h / e^{2}=25812.807 \Omega$ is used in resistance calibrations. In the field range where the transverse conductivity shows integer plateaus in $\nu \propto 1 / B$, the longitudinal conductivity $\sigma_{x x}$ vanishes and takes finite values only when $\sigma_{H}$ crossed over from one quantised value to the next:
 
-![Attachments/Script 42.webp|700](/img/user/Attachments/Script%2042.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=97&rect=174,225,418,472|•]]
+![Attachments/Script 42.webp|700](/img/user/Attachments/Script%2042.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=97&rect=174,225,418,472| ]]
 
 In 1982, Tsui, Störmer, and Gossard discovered an additional quantisation of $\sigma_{H}$, corresponding to certain rational multiples of $e^{2} / h$. Correspondingly, one now distinguishes between the integer quantum Hall effect (short: **IQHE**) and the fractional quantum Hall effect (short: **FQHE**). These discoveries marked the beginning of a whole new field in solid state physics that continues to produce interesting results.
 
@@ -369,7 +369,7 @@ $$
 $$
 where all values of $m \in \mathbb{N}_{0}$ correspond to the same energy $E_{n=0}=\hbar \omega_{c} / 2$. One easily verifies, that the wave functions $\left|\psi_{n=0, m}(r, \varphi)\right|$ are peaked on circles of radius $r_{m}=\sqrt{2 m} \ell$:
 
-![Attachments/Script 43.webp|700](/img/user/Attachments/Script%2043.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=99&rect=196,170,390,303|•]]
+![Attachments/Script 43.webp|700](/img/user/Attachments/Script%2043.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=99&rect=196,170,390,303| ]]
 
 Note that the magnetic flux threading such a circle is given by
 $$
@@ -421,13 +421,13 @@ i.e. the wave function adjusts itself to the potential landscape. It turns out t
 
 When the magnetic field is varied the filling $\nu=-n_{0} 2 \pi \ell^{2}$ of the Landau level is adjusted accordingly. While all states of a given level are degenerate in the transitionally invariant case, now, these states are spread over a certain energy range due to the disorder. In the quasi-classical approximation, these states correspond to equipotential trajectories that are either filled or empty depending on the strength of the magnetic field, i.e. they are either below or above the chemical potential. These considerations lead to an intuitive picture on localised (closed trajectories) and extended (percolating trajectories) states. We may consider the potential landscape like a real landscape where the the trajectories are contour lines. Assume that we fill now water into such a landscape. The trajectories of the particles is restricted to the shore line. For small filling, we find lakes whose shores are closed and correspond to contour lines. They correspond to closed electron trajectories and represent localised electronic states. At very high water level, only the large mountains of the potential landscape would reach out of the water, forming islands in the sea. The coastlines again represent closed trajectories corresponding to localised electronic states. At some intermediate filling, a boundary between the lake and the island topology, there is a water level at which the coast lines become arbitrarily long and percolate through the whole landscape. Only these contour lines correspond to extended (non-localised) electron states. From this picture we conclude that when a Landau level of a system subject to a random potential is gradually filled, first all occupied state are localised (low filling). At some special intermediate filling level, the extended states are filled and contribute to the current transport. At higher chemical potential (filling) the states would be localised again. In the following argument, going back to Robert B. Laughlin, the presence of filled extended states plays an important role.
 
-![Attachments/Script 44.webp|700](/img/user/Attachments/Script%2044.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=101&rect=212,583,386,757|•]]
+![Attachments/Script 44.webp|700](/img/user/Attachments/Script%2044.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=101&rect=212,583,386,757| ]]
 
 **Laughlin's gauge argument**
 
 We consider a long rectangular Hall element that is deformed into a so-called Corbino disc, i.e. a circular disc with a hole in the middle as shown here:
 
-![Attachments/Script 45.webp|700](/img/user/Attachments/Script%2045.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=102&rect=185,573,407,755|•]]
+![Attachments/Script 45.webp|700](/img/user/Attachments/Script%2045.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=102&rect=185,573,407,755| ]]
 
 The Hall element is threaded by a constant and uniform magnetic field $B$ along the $z$-axis. In addition we can introduce an arbitrary flux $\Phi$ through the hole without influencing the uniform field in the disc. This flux is irrelevant for all localised electron trajectories since only extended (percolating) trajectories wind around the hole of the disc and by doing so receive an Aharonov-Bohm phase. When the flux is increased adiabatically by $\delta \Phi$, the vector potential is changed according to
 $$
@@ -511,7 +511,7 @@ $$
 
 Here the prefactor is given by the large degeneracy of each Landau level.
 
-![Attachments/Script 46.webp|700](/img/user/Attachments/Script%2046.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=103&rect=105,325,489,548|•]]
+![Attachments/Script 46.webp|700](/img/user/Attachments/Script%2046.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=103&rect=105,325,489,548| ]]
 
 The figure shows in (a) the density of states for the two-dimensional electron gas in a magnetic field. The Landau levels are infinitely sharp and have all identical degeneracy. In (b), with disorder the previously sharp Landau levels broaden in energy. Many states form in the random potential landscape closed semi classical orbits which are, thus, localised. On the other hand, in the centre there are a few percolating extended semi classical orbitals. Note that the number of states in each broadened Landau level is still the same as the original degeneracy. With varying magnetic field the chemical potential (here green bar with finite width $k_{B} T$ indicating broadened Fermi-Dirac distribution) moves, such that states below are filled and states above are empty. If the green bare is in the localised region all $n$ lower Landau levels are completely filled and contribute $n e^{2} / h$ to the Hall conductance $\sigma_{x y}$ which is in a plateau. All extended states are either completely filled or empty such that the system is insulating, i.e. $\sigma_{x x}=0$. If the chemical potential lies at the extended states of a Landau level these are partially filled and act metallic. Because the Landau level is only partially filled, the $\sigma_{x y}$ lies between two plateaus. Note that the width of the step between to plateaus of $\sigma_{x y}$ depends on temperature and shrinks with lowering temperature.
 
@@ -535,7 +535,7 @@ $$
 where $y_{0}=k_{x} \ell^{2}$ is the transversal position of the wave function and $\mu$ is the chemical potential. Sufficiently far away from the boundary $E_{n}$ is independent of $y_{0}$ and approaches the value $E_{n}^{(0)}=\hbar \omega_{c}(1 / 2+n)$ of a translationally invariant electron gas.
 Now we consider the geometry of the Hall bar with two edges:
 
-![Attachments/Script 47.webp|700](/img/user/Attachments/Script%2047.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=105&rect=106,561,494,755|•]]
+![Attachments/Script 47.webp|700](/img/user/Attachments/Script%2047.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=105&rect=106,561,494,755| ]]
 
 The potential difference between the two opposing edges leads to a net current along the edge direction of the Hall bar,
 $$
@@ -575,7 +575,7 @@ In the following argument, we explain why the longitudinal resistivity $\rho_{x 
 
 Only two years after the discovery of the Integer Quantum Hall Effect, Störmer, Tsui and Gossard observed further series of plateaus of the Hall resistivity in a 2DEG with very high quality MOSFET inversion layers at low temperatures:
 
-![Attachments/Script 48.webp|700](/img/user/Attachments/Script%2048.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=106&rect=217,414,379,639|•]]
+![Attachments/Script 48.webp|700](/img/user/Attachments/Script%2048.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=106&rect=217,414,379,639| ]]
 
 The most pronounced of these plateaus is observed at a filling of $\nu=1 / 3\left(\sigma_{x y}=\nu e^{2} / h\right)$. Later, an entire hierarchy of plateaus at fractional values $\nu=\nu_{p, m}=p / m$ with $p, m \in \mathbb{N}$ has been discovered,
 $$
@@ -605,7 +605,7 @@ $$
 $$
 since $\Phi_{0}=2 \pi \hbar c / e$. This phase has to be unity since the Slater state $\Psi_{S}$ is odd under exchange of two electrons. 
 
-![Attachments/Script 49.webp|700](/img/user/Attachments/Script%2049.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=107&rect=190,651,434,741|•]]
+![Attachments/Script 49.webp|700](/img/user/Attachments/Script%2049.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=107&rect=190,651,434,741| ]]
 
 Therefore $m$ is restricted to odd integer values. This guarantees that the total wave function $\Psi_{1 / m}$ still changes sign when two electrons are exchanged.
 According to the Footnote 6 (see equation (4.45)), the case $\nu_{p, m}=1 / 3$ implies that there are three flux quanta $\Phi_{0}$ per electron. In order to understand the FQHE, one constructs so-called composite Fermions which do not interact with each other. Here, a composite Fermion consists of an electron that has two (in fact $m-1$ ) negative flux quanta attached to it. These objects may be considered as independent Fermions since the attached flux quanta compensate the Jastrow factor in equation 4.76 through factors of the type $\left(z_{i}-z_{j}\right)^{-(m-1)}$. The exchange of two such composite Fermions in two dimensions leads to an Aharanov-Bohm phase that is just opposed to that in equation (4.81). Due to the presence of the flux $-2 \Phi_{0}$ per electron, the composite Fermions are subject to an effective field composed of the external field and the attached flux quanta:
@@ -620,7 +620,7 @@ $$
 
 For an external field $B=3 n_{0} \Phi_{0}$, the expression in the brackets of equation (4.83) vanishes and the composite Fermions feel an effective field $B_{\text {eff }}=n_{0} \Phi_{0}$:
 
-![Attachments/Script 50.webp|700](/img/user/Attachments/Script%2050.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=108&rect=152,638,446,767|•]]
+![Attachments/Script 50.webp|700](/img/user/Attachments/Script%2050.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=108&rect=152,638,446,767| ]]
 
 Thus, these Fermions form an Integer Quantum Hall state with $\nu=1$ (for $B=3 n_{0} \Phi_{0}$ ), as discussed previously. This way of interpretation is applicable to other Fractional Quantum Hall states, too, since for $n$ filled Landau levels with composite Fermions consisting of an electron with an attached flux of $-2 k \Phi_{0}$, the effective field reads
 $$

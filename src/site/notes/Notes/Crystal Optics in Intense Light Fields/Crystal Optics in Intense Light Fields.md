@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Crystal Optics in Intense Light Fields","permalink":"/notes/crystal-optics-in-intense-light-fields/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-05-20T18:20:29.000+02:00"}
+{"dg-publish":true,"dg-path":"Notes/Crystal Optics in Intense Light Fields","permalink":"/notes/crystal-optics-in-intense-light-fields/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-05-30T12:53:44.986+02:00"}
 ---
 
 These notes accompany the lecture 'Crystal Optics in Intense Light Fields' taught by Prof. Fiebig in 2025. I chose to cover this course because it provides a solid fundamental basis for my PhD work. The material is primarily based on the _unofficial_ notes from 2015 (as Prof. Fiebig refers to them), combined with his current lecture slides, though the order has been slightly adjusted. All content is written in my own words.
@@ -19,9 +19,10 @@ Throughout, the goal is to build an understanding of how symmetry and light toge
 
 ---
 # Table of Contents
-- [[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects\|1 Macroscopic Description of Crystal Optical Effects]]
-- [[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion\|2 Light Polarisation and Dispersion]]
-- [[Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics\|3 Magneto-Optics]]
-- [[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction\|4 Light-Matter Interaction]]
-- [[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics\|5 Nonlinear Optics]]
+[[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects\|1 Macroscopic Description of Crystal Optical Effects]]
+[[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion\|2 Light Polarisation and Dispersion]]
+[[Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics\|3 Magneto-Optics]]
+[[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction\|4 Light-Matter Interaction]]
+[[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics\|5 Nonlinear Optics]]
+
 ---

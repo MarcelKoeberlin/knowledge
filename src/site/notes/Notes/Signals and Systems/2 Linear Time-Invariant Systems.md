@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/2-linear-time-invariant-systems/","hide":"true","updated":"2025-05-29T14:42:49.747+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/2-linear-time-invariant-systems/","hide":"true","updated":"2025-05-30T15:24:06.606+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -7,16 +7,16 @@ Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents
 ---
 **Table of Contents**
 
-- [[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.1 The Convolution Sum\|2.1 The Convolution Sum]]
-- [[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.2 Convolution Properties of LTI Systems\|2.2 Convolution Properties of LTI Systems]]
-- [[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.3 Basic Properties\|2.3 Basic Properties]]
-- [[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.4 Causal LTI Systems Described by Differential Equations\|2.4 Causal LTI Systems Described by Differential Equations]]
-- [[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.5 Block Diagram Representation\|2.5 Block Diagram Representation]]
-- [[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.6 Singularity Functions\|2.6 Singularity Functions]]
+[[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.1 The Convolution Sum\|2.1 The Convolution Sum]]
+[[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.2 Convolution Properties of LTI Systems\|2.2 Convolution Properties of LTI Systems]]
+[[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.3 Basic Properties\|2.3 Basic Properties]]
+[[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.4 Causal LTI Systems Described by Differential Equations\|2.4 Causal LTI Systems Described by Differential Equations]]
+[[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.5 Block Diagram Representation\|2.5 Block Diagram Representation]]
+[[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.6 Singularity Functions\|2.6 Singularity Functions]]
 
 ---
 # 2 Linear Time-Invariant Systems
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=105&selection=2,0,6,7|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=105&selection=2,0,6,7| ]]
 
 In [[Notes/Signals and Systems/1 Signals and Systems\|Chapter 1]] , a number of basic system properties have been discussed. Two of these, linearity and time invariance, play a fundamental role in signal and system analysis for two major reasons. First, many physical processes possess these properties and thus can be modelled as linear time-invariant (LTI) systems. In addition, LTI systems can be analysed in considerable detail, providing both insight into their properties and a set of powerful tools that form the core of signal and system analysis.
 
@@ -24,7 +24,7 @@ One reason why LTI systems are of interest is that any such system possesses the
 
 ---
 ## 2.1 The Convolution Sum 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=106&selection=76,0,86,3|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=106&selection=76,0,86,3| ]]
 
 The so-called sifting property of the discrete-time unit impulse is:
 $$
@@ -63,7 +63,7 @@ where $\delta(t) \rightarrow h(t)$. This is called the **convolution integral** 
 
 ---
 ## 2.2 Convolution Properties of LTI Systems 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=134&selection=16,0,26,7|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=134&selection=16,0,26,7| ]]
 
 LTI systems satisfy important properties:
 1. **Commutativity**: $x(t) * h(t) = h(t) * x(t)$,
@@ -72,11 +72,11 @@ LTI systems satisfy important properties:
 
 Distributivity can be depicted graphically:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 5.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%205.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=136&rect=111,405,296,597|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 5.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%205.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=136&rect=111,405,296,597| ]]
 
 Similarly, associativity can be depicted graphically:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 6.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%206.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=139&rect=94,309,303,594|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 6.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%206.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=139&rect=94,309,303,594| ]]
 
 ---
 ## 2.3 Basic Properties
@@ -137,7 +137,7 @@ $$
 
 ---
 ## 2.4 Causal LTI Systems Described by Differential Equations 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=147&selection=54,0,72,9|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=147&selection=54,0,72,9| ]]
 
 An important class of systems is described by a _linear constant-coefficient differential equation_. These equations provide an implicit specification of the system, describing a relationship between input and output rather than providing an explicit expression. To obtain an explicit expression, one must solve the differential equation. The condition of initial rest ensures that a system described by a linear constant-coefficient differential equation is time-invariant.
 
@@ -182,7 +182,7 @@ For $N \geq 1$, when the differential equation is recursive, the impulse respons
 
 ---
 ## 2.5 Block Diagram Representation 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=155&selection=17,0,38,9|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=155&selection=17,0,38,9| ]]
 
 Systems described by linear constant-coefficient differential equations can be represented using block diagrams, providing a visual understanding of their behavior. These diagrams are valuable for both analysis and implementation.
 
@@ -197,11 +197,11 @@ $$
 
 This equation requires three basic operations: addition, multiplication, and delay:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 7.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%207.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=113,384,295,595|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 7.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%207.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=113,384,295,595| ]]
 
 The block diagram representation of this equation is:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 8.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%208.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=137,274,302,372|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 8.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%208.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=156&rect=137,274,302,372| ]]
 
 The feedback arises because the equation is recursive. The block diagram shows that memory is required for this system, corresponding to the delay operator.
 
@@ -219,7 +219,7 @@ y(t) = \int_{-\infty}^t \left( b x(\tau) - a y(\tau) \right) \, d\tau,
 $$
 assuming $y(-\infty) = 0$, allows for implementation using integrators:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 9.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%209.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&rect=141,459,334,594|•]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 9.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%209.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&rect=141,459,334,594| ]]
 
 The integrator is a memory element, as seen from:
 $$
@@ -229,7 +229,7 @@ where $y(t_0)$ must be stored.
 
 ---
 ## 2.6 Singularity Functions 
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&selection=151,0,155,9|•]]
+[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=158&selection=151,0,155,9| ]]
 
 From the sifting property, the unit impulse is the impulse response of the identity system:
 $$
