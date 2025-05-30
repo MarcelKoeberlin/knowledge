@@ -1098,7 +1098,7 @@ body .cm-s-obsidian ol li::before {
 }
 
 ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
-  color: var(--internal-link);
+  color: var(--text-normal);
   font-size: unset;
   font-family: "Karla";
 }
@@ -1116,7 +1116,6 @@ ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
   background-size: 13px;
 }
 
-
 .external-link::after {
   content: "";
   height: 0.25em;
@@ -1127,4 +1126,8 @@ ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
   vertical-align: text-top;
   margin-right: -16px;
   margin-left: 4px;
+}
+
+::selection {
+  background-color: var(--text-muted);
 }
