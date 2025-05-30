@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/8-laser-fundamentals/","hide":"true","updated":"2025-05-30T12:46:55.334+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/8-laser-fundamentals/","hide":"true","updated":"2025-05-30T15:32:03.844+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -446,25 +446,25 @@ There are many types of lasers, with the ruby and Nd:glass lasers having already
 
 ![Attachments/04_Laser_fundamentals 8.webp|700](/img/user/Attachments/04_Laser_fundamentals%208.webp)[[Notes/2025 Quantum Electronics Gallmann/04_Laser_fundamentals.pdf#page=110&rect=158,176,662,460| ]]
 
-| Laser                 | Type            | Wavelength(s)                                       | Operation Mode | Output Power     | Applications                                                                                                                                                                      |
-| :-------------------- | :-------------- | :-------------------------------------------------- | :------------- | :--------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ArF, KrF, XeCl, XeF   | Gas (Excimer)   | $193\text{nm}, 248\text{nm}, 308\text{nm}, 353\text{nm}$ | Pulsed (ns)    | $\sim 10\text{W}$ (avg) | UV lithography, laser surgery (LASIK), laser annealing                                                                                                                              |
-| Nitrogen ($N_2$)        | Gas             | $337\text{nm}$                                      | Pulsed (ns)    | $\sim 100\text{mW}$ (avg) | Pumping dye lasers, measuring air pollution, scientific research                                                                                                                      |
-| Dye                   | Liquid          | $400-1000\text{nm}$ (tunable)                        | CW, Pulsed (ps-fs) | $\sim 1\text{W}$    | Spectroscopy, laser medicine, scientific research                                                                                                                                 |
-| GaN (diode)           | Semiconductor   | $ \sim 405\text{nm}, \sim 450\text{nm}$                | CW, Pulsed     | $\sim 50\text{mW}- \text{W}$s | Optical disc (Blu-ray) reading/recording, lighting, displays                                                                                                                      |
-| Argon-ion             | Gas (Ion)       | $488\text{nm}, 514.5\text{nm}$                         | CW             | $\sim 1-20\text{W}$   | Microscopy, retinal phototherapy, lithography, pumping other lasers                                                                                                               |
-| HeNe                  | Gas             | $632.8\text{nm}$                                    | CW             | $\sim 1-50\text{mW}$  | Interferometry, holography, barcode scanning, alignment                                                                                                                           |
-| AlGaInP, AlGaAs (diode)| Semiconductor | $630-980\text{nm}$                                  | CW, Pulsed     | mW - tens of W   | Optical disc (CD, DVD) reading/recording, laser pointers, solid-state laser pumping, materials processing, medical                                                                      |
-| Ti:sapphire           | Solid-state     | $650-1100\text{nm}$ (tunable)                        | CW, Pulsed (fs-ps) | $\sim 1-20\text{W}$   | Ultrafast spectroscopy, LIDAR, nonlinear frequency conversion, multiphoton microscopy, seeding high power amplifiers                                                              |
-| Yb:YAG                | Solid-state     | $1030\text{nm}$                                     | CW, Pulsed (ps-fs) | W - kW           | Materials processing (welding, cutting), optical refrigeration, LIDAR, pumping other lasers                                                                                       |
-| Yb-doped glass fibre  | Fibre           | $\sim 1030-1080\text{nm}$                            | CW, Pulsed (fs-ns) | W - multi-kW     | Materials processing, ultrashort pulse research, LIDAR, telecommunications                                                                                                        |
-| Nd:YAG                | Solid-state     | $1064\text{nm}$ (also $946, 1320\text{nm}$)             | CW, Pulsed (ns-ps) | W - multi-kW     | Materials processing, rangefinding, surgery, tattoo/hair removal, pumping other lasers                                                                                            |
-| Nd:glass              | Solid-state     | $\sim 1053-1064\text{nm}$                            | Pulsed (ns-ps) | High Energy (kJ-MJ) | Extremely high power/energy systems for laser fusion research (NIF, LMJ)                                                                                                          |
-| InGaAs(P) (diode)     | Semiconductor   | $900-2000\text{nm}$                                 | CW, Pulsed     | mW - W           | Telecommunications (fibre optics), solid-state laser pumping, materials processing, medical applications                                                                            |
-| Er-doped glass fibre  | Fibre           | $1530-1560\text{nm}$                                | CW, Pulsed     | mW - tens of W   | Optical amplifiers for telecommunications (EDFA), LIDAR, medical                                                                                                                  |
-| Tm:YAG, Ho:YAG        | Solid-state     | $\sim 1900-2100\text{nm}$                           | Pulsed ($\mu\text{s}, \text{ns}$), CW | W - tens of W    | Medical (tissue ablation, kidney stone removal, dentistry), LIDAR, atmospheric sensing                                                                                            |
-| $\text{Cr:ZnSe/ZnS}$  | Solid-state     | $2000-3000\text{nm}$ (tunable)                       | CW, Pulsed (fs-ps) | $\sim 1-10\text{W}$   | Mid-IR spectroscopy, medical applications, countermeasures, frequency metrology                                                                                                 |
-| $\text{CO}_2$          | Gas (Molecular) | $9.4\mu\text{m}, 10.6\mu\text{m}$                     | CW, Pulsed ($\mu\text{s}$) | W - multi-kW     | Materials processing (cutting, engraving, welding), surgery (CO2 laser scalpel), military applications                                                                          |
+| Laser                   | Type            | Wavelength(s)                                            | Operation Mode                        | Output Power                  |
+| :---------------------- | :-------------- | :------------------------------------------------------- | :------------------------------------ | :---------------------------- |
+| ArF, KrF, XeCl, XeF     | Gas (Excimer)   | $193\text{nm}, 248\text{nm}, 308\text{nm}, 353\text{nm}$ | Pulsed (ns)                           | $\sim 10\text{W}$ (avg)       |
+| Nitrogen ($N_2$)        | Gas             | $337\text{nm}$                                           | Pulsed (ns)                           | $\sim 100\text{mW}$ (avg)     |
+| Dye                     | Liquid          | $400-1000\text{nm}$ (tunable)                            | CW, Pulsed (ps-fs)                    | $\sim 1\text{W}$              |
+| GaN (diode)             | Semiconductor   | $\sim 405\text{nm}, \sim 450\text{nm}$                   | CW, Pulsed                            | $\sim 50\text{mW}- \text{W}$s |
+| Argon-ion               | Gas (Ion)       | $488\text{nm}, 514.5\text{nm}$                           | CW                                    | $\sim 1-20\text{W}$           |
+| HeNe                    | Gas             | $632.8\text{nm}$                                         | CW                                    | $\sim 1-50\text{mW}$          |
+| AlGaInP, AlGaAs (diode) | Semiconductor   | $630-980\text{nm}$                                       | CW, Pulsed                            | mW - tens of W                |
+| Ti:sapphire             | Solid-state     | $650-1100\text{nm}$ (tunable)                            | CW, Pulsed (fs-ps)                    | $\sim 1-20\text{W}$           |
+| Yb:YAG                  | Solid-state     | $1030\text{nm}$                                          | CW, Pulsed (ps-fs)                    | W - kW                        |
+| Yb-doped glass fibre    | Fibre           | $\sim 1030-1080\text{nm}$                                | CW, Pulsed (fs-ns)                    | W - multi-kW                  |
+| Nd:YAG                  | Solid-state     | $1064\text{nm}$ (also $946, 1320\text{nm}$)              | CW, Pulsed (ns-ps)                    | W - multi-kW                  |
+| Nd:glass                | Solid-state     | $\sim 1053-1064\text{nm}$                                | Pulsed (ns-ps)                        | High Energy (kJ-MJ)           |
+| InGaAs(P) (diode)       | Semiconductor   | $900-2000\text{nm}$                                      | CW, Pulsed                            | mW - W                        |
+| Er-doped glass fibre    | Fibre           | $1530-1560\text{nm}$                                     | CW, Pulsed                            | mW - tens of W                |
+| Tm:YAG, Ho:YAG          | Solid-state     | $\sim 1900-2100\text{nm}$                                | Pulsed ($\mu\text{s}, \text{ns}$), CW | W - tens of W                 |
+| $\text{Cr:ZnSe/ZnS}$    | Solid-state     | $2000-3000\text{nm}$ (tunable)                           | CW, Pulsed (fs-ps)                    | $\sim 1-10\text{W}$           |
+| $\text{CO}_2$           | Gas (Molecular) | $9.4\mu\text{m}, 10.6\mu\text{m}$                        | CW, Pulsed ($\mu\text{s}$)            | W - multi-kW                  |
 
 The following figure shows some laser gain bandwidths for common solid-state laser materials:
 
