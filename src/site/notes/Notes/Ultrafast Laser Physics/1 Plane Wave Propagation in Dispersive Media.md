@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/1-plane-wave-propagation-in-dispersive-media/","hide":"true","updated":"2025-05-30T10:16:52.808+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/1-plane-wave-propagation-in-dispersive-media/","hide":"true","updated":"2025-05-30T10:21:47.287+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -22,6 +22,7 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 We will now begin with the description of the simplest type of electromagnetic field: The plane wave, and we will consider its propagation in a dispersive medium. For that, we require the Maxwell equations. Note however, that we will not derive them, as it is assumed the reader is already somewhat familiar with them. The following two sections on the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.1 Maxwell Equations\|Maxwell equations]] and the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.2 Material Equations\|material equations]] are also treated in a similar way in my [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.2 Maxwell's Equations in a Medium\|quantum electronics notes]].
 ## 1.1 Maxwell Equations
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=21&selection=3,0,5,31| ]]
+
 In this chapter, the Maxwell equations will be discussed in SI units, which is important because it incorporates the influence of bound charges and bound current into the displacement field $\mathbf{D}$ and the magnetising field $\mathbf{H}$. Then, the equations only depend on the free charge density $\rho_\text{f}$, and the free current density $\mathbf{j}_\text{f}$. Free could mean electrons in the conduction band of a metal or a semiconductor, in contrast to the core or bonding electrons. The Maxwell Equations in matter are then
 
 $$
@@ -35,7 +36,7 @@ $$
 
 ---
 ## 1.2 Material Equations
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=22&selection=6,0,8,18|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=22&selection=6,0,8,18| ]]
 
 The material equations describe how bound charges behave under influence of an electromagnetic (EM) wave, driven by the Coulomb or Lorentz force. As long as the force is not too large, the response of each atom or molecule can be described by a harmonic oscillator, where a negative charge oscillates with respect to the positively charged core. Under the influence of an electron-magnetic wave, the electron is brought to forced oscillations induced by the incident EM wave. In the linear regime, the oscillating electron then emits radiation with the same frequency, but generally a different frequency-dependent phase. Therefore, a superposition of the incident wave and the phase-shifted wave emitted by the electrons is formed. In the visible and near-infrared spectrum, this superposition of waves propagates more slowly through a transparent medium than the original incident wave.
 
@@ -107,7 +108,7 @@ For the remainder of these notes, we will consider dielectric materials, that is
 
 ---
 ## 1.3 Wave Equation with Refractive Index
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=24&selection=56,0,58,35|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=24&selection=56,0,58,35| ]]
 
 The wave equation in a material with bound electrons is a direct consequence of the Maxwell equations, where we additionally assume no free charges, such that
 $$
@@ -157,7 +158,7 @@ $$
 T=\frac{2\pi}{\omega}=1/f.$$
 The next figure shows a plane wave for a constant position as function of time (left), and for a constant time as a function of position (right):
 
-![Attachments/UltraFastLasers_Keller.webp|700](/img/user/Attachments/UltraFastLasers_Keller.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=27&rect=55,104,383,221|•]]
+![Attachments/UltraFastLasers_Keller.webp|700](/img/user/Attachments/UltraFastLasers_Keller.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=27&rect=55,104,383,221| ]]
 
 The period in the time domain is $T$, and the wavelength $\lambda$ in real space vacuum, where the optical frequency does not change. This is a direct consequence of the Maxwell equations, however is not proven here. The speed of light changes in a dispersive medium from $c$ to $c_n$. The same way, the wavelength in vacuum changes:
 $$
@@ -165,7 +166,7 @@ $$
 $$
 This is schematically shown in the next figure:
 
-![Attachments/UltraFastLasers_Keller 1.webp|700](/img/user/Attachments/UltraFastLasers_Keller%201.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=28&rect=232,514,382,606|•]]
+![Attachments/UltraFastLasers_Keller 1.webp|700](/img/user/Attachments/UltraFastLasers_Keller%201.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=28&rect=232,514,382,606| ]]
 
 Note that nothing prevents us from adopting a complex notation for the solution of the wave equation. It is often much easier to work with the complex notation:
 $$
@@ -185,7 +186,7 @@ Next, there is a summary for the relevant quantities and their behaviour in vacu
 
 ---
 ## 1.4 TEM Wave and Impedance
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=30&selection=197,0,199,22|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=30&selection=197,0,199,22| ]]
 
 Very importantly, the Maxwell equations imply that
 $$
@@ -193,7 +194,7 @@ $$
 $$
 This wave is called a transverse electromagnetic (TEM) wave, because both electric and magnetic field are perpendicular to the wave vector. For a plane harmonic wave, the fields are in phase:
 
-![Attachments/UltraFastLasers_Keller 2.webp|700](/img/user/Attachments/UltraFastLasers_Keller%202.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=31&rect=103,144,336,259|•]]
+![Attachments/UltraFastLasers_Keller 2.webp|700](/img/user/Attachments/UltraFastLasers_Keller%202.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=31&rect=103,144,336,259| ]]
 
 Further, they imply that
 
@@ -209,7 +210,7 @@ Note that we assumed $\mu_r=1$ here. $Z_0$ is also called the characteristic vac
 
 ---
 ## 1.5 Polarisation
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=33&selection=341,0,343,12|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=33&selection=341,0,343,12| ]]
 
 So far, the electromagnetic wave discussed was linearly polarised, meaning that the electric field oscillates in one fixed direction, a likewise for the magnetic field. The direction in which the electric field oscillates is called the polarisation direction. Mathematically, a linearly polarised wave (figure a) in $x$-direction has the form
 $$
@@ -230,10 +231,10 @@ E_2 \mathrm{e}^{\mathrm{i} \Delta \varphi} \\
 $$
 A special case is for no phase difference, in this case we retrieve a linearly polarised plane wave with polarisation direction in $xy$-direction. Another special case is for the case of a $\pm\pi/2$ phase difference. In that case, the wave is called circularly polarised (figure c), where the polarisation vector moves around a circle with frequency $\omega$: 
 
-![Attachments/UltraFastLasers_Keller 3.webp|700](/img/user/Attachments/UltraFastLasers_Keller%203.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=34&rect=56,292,383,604|•]]
+![Attachments/UltraFastLasers_Keller 3.webp|700](/img/user/Attachments/UltraFastLasers_Keller%203.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=34&rect=56,292,383,604| ]]
 
 ## 1.6 Energy Density, Poynting Vector, and Intensity
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=35&selection=124,0,126,46|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=35&selection=124,0,126,46| ]]
 
 For optically isotropic materials, both the Poynting vector and the wave number vector are perpendicular to the wave fronts. It is then easy to derive the following properties
 
@@ -263,19 +264,19 @@ For the special case of a monochromatic plane wave, we find with $\hat{\mathbf{k
 
 ---
 ## 1.7 Dispersion
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=36&selection=187,0,189,10|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=36&selection=187,0,189,10| ]]
 
 The fact that the refractive index is frequency dependent implies that the wave vector $k_n=\omega n(\omega)/c$ is no longer directly proportional to the frequency as it is in vacuum. This frequency dependence is called dispersion. It is very important to know $n(\omega)$, as can be seen in some examples:
 
-![Attachments/UltraFastLasers_Keller 4.webp|700](/img/user/Attachments/UltraFastLasers_Keller%204.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=36&rect=57,103,382,184|•]]
+![Attachments/UltraFastLasers_Keller 4.webp|700](/img/user/Attachments/UltraFastLasers_Keller%204.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=36&rect=57,103,382,184| ]]
 
 ---
 ## 1.8 Sellmeier Equation in the Visible and Near-Infrared
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=37&selection=86,0,88,51|•]]
+[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=37&selection=86,0,88,51| ]]
 
 In many cases, we will discuss transparent dielectric materials, so with negligible absorption. Glass, for example, is transparent in the visible spectrum, but absorbs in the UV and IR spectral regions. The range in which a material is transparent is called the spectral window, and usually materials exhibit normal/positive dispersion $\frac{d^2n}{d\omega^2}>0$ in this region:
 
-![Attachments/UltraFastLasers_Keller 5.webp|700](/img/user/Attachments/UltraFastLasers_Keller%205.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=38&rect=136,147,303,340|•]]
+![Attachments/UltraFastLasers_Keller 5.webp|700](/img/user/Attachments/UltraFastLasers_Keller%205.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=38&rect=136,147,303,340| ]]
 
 Far away from absorption, the dispersion may be described by the Sellmeier equations. In this region, the frequency dependent absorption coefficient $\alpha(\omega)$ can be replaced by an infinitely sharp absorption line at $\omega_0$ given by a delta function. We need to use the Kramers-Kronig relations:
 $$
