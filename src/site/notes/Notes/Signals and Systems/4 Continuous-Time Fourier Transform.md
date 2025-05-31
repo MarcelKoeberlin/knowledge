@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/4-continuous-time-fourier-transform/","hide":"true","updated":"2025-05-30T20:30:17.687+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/4-continuous-time-fourier-transform/","hide":"true","updated":"2025-05-31T16:39:48.084+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -152,20 +152,20 @@ The term on the left-hand side, $\int_{-\infty}^{\infty}|x(t)|^2 dt$, is the tot
 ## 4.4 Basic Fourier Transform Pairs
 [[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=360&selection=30,0,36,5| ]]
 
-| Signal $x(t)$                                       |                            Fourier Transform $X(i\omega)$                            |                   Fourier Series Coefficients $a_k$ (if $x(t)$ is periodic with period $T=2\pi/\omega_0$)                    |
-| :-------------------------------------------------- | :----------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------: |
-| $\sum_{k=-\infty}^\infty a_k e^{ik \omega_0 t}$     |            $2\pi \sum_{k=-\infty}^\infty a_k \delta(\omega - k\omega_0)$             |                                                            $a_k$                                                             |
-| $e^{i\omega_0 t}$                                   |                           $2\pi \delta(\omega - \omega_0)$                           |                      $a_1 = 1$ (if $\omega_0$ is fundamental), $a_k = 0$ for $k\omega_0 \neq \omega_0$                       |
-| $\cos(\omega_0 t)$                                  |      $\pi \left[ \delta(\omega - \omega_0) + \delta(\omega + \omega_0) \right]$      |                                        $a_1 = a_{-1} = 1/2$, $a_k = 0$ for $k\neq 1$                                         |
-| $\sin(\omega_0 t)$                                  | $\frac{\pi}{i} \left[ \delta(\omega - \omega_0) - \delta(\omega + \omega_0) \right]$ |                                  $a_1 = 1/(2i), a_{-1} = -1/(2i)$, $a_k = 0$ for $k\neq 1$                                   |
-| $1$ (DC signal)                                     |                                $2\pi \delta(\omega)$                                 |                                             $a_0 = 1$, $a_k = 0$ for $k \neq 0$                                              |
-| Rectangular pulse: $x(t)=1$ for $                   |                                          t                                           | <T_1$, $0$ else$\frac{2\sin(\omega T_1)}{\omega} = 2T_1 \operatorname{sinc}\left(\frac{\omega T_1}{\pi}\right)$ Not periodic |
-| $\delta(t)$ (unit impulse)                          |                                         $1$                                          |                                                         Not periodic                                                         |
-| $u(t)$ (unit step)                                  |                       $\frac{1}{i\omega} + \pi \delta(\omega)$                       |                                                         Not periodic                                                         |
-| $\delta(t - t_0)$                                   |                                  $e^{-i\omega t_0}$                                  |                                                         Not periodic                                                         |
-| $e^{-at} u(t)$, $\mathfrak{Re}\left[a\right] > 0$   |                               $\frac{1}{a + i\omega}$                                |                                                         Not periodic                                                         |
-| $t e^{-at} u(t)$, $\mathfrak{Re}\left[a\right] > 0$ |                             $\frac{1}{(a + i\omega)^2}$                              |                                                         Not periodic                                                         |
-| Gaussian: $e^{-at^2}$, $a>0$                        |                      $\sqrt{\frac{\pi}{a}} e^{-\omega^2/(4a)}$                       |                                                         Not periodic                                                         |
+| Signal $x(t)$                                       |                                  Fourier Transform $X(i\omega)$                                  | Fourier Series Coefficients $a_k$ (if $x(t)$ is periodic with period $T=2\pi/\omega_0$) |
+| :-------------------------------------------------- | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
+| $\sum_{k=-\infty}^\infty a_k e^{ik \omega_0 t}$     |                  $2\pi \sum_{k=-\infty}^\infty a_k \delta(\omega - k\omega_0)$                   |                                          $a_k$                                          |
+| $e^{i\omega_0 t}$                                   |                                 $2\pi \delta(\omega - \omega_0)$                                 |    $a_1 = 1$ (if $\omega_0$ is fundamental), $a_k = 0$ for $k\omega_0 \neq \omega_0$    |
+| $\cos(\omega_0 t)$                                  |            $\pi \left[ \delta(\omega - \omega_0) + \delta(\omega + \omega_0) \right]$            |                      $a_1 = a_{-1} = 1/2$, $a_k = 0$ for $k\neq 1$                      |
+| $\sin(\omega_0 t)$                                  |       $\frac{\pi}{i} \left[ \delta(\omega - \omega_0) - \delta(\omega + \omega_0) \right]$       |                $a_1 = 1/(2i), a_{-1} = -1/(2i)$, $a_k = 0$ for $k\neq 1$                |
+| $1$ (DC signal)                                     |                                      $2\pi \delta(\omega)$                                       |                           $a_0 = 1$, $a_k = 0$ for $k \neq 0$                           |
+| Rectangular pulse: $x(t)=1$ for $t<T_1$, $0$ else   | $\frac{2\sin(\omega T_1)}{\omega} = 2T_1 \operatorname{sinc}\left(\frac{\omega T_1}{\pi}\right)$ |                                      Not periodic                                       |
+| $\delta(t)$ (unit impulse)                          |                                               $1$                                                |                                      Not periodic                                       |
+| $u(t)$ (unit step)                                  |                             $\frac{1}{i\omega} + \pi \delta(\omega)$                             |                                      Not periodic                                       |
+| $\delta(t - t_0)$                                   |                                        $e^{-i\omega t_0}$                                        |                                      Not periodic                                       |
+| $e^{-at} u(t)$, $\mathfrak{Re}\left[a\right] > 0$   |                                     $\frac{1}{a + i\omega}$                                      |                                      Not periodic                                       |
+| $t e^{-at} u(t)$, $\mathfrak{Re}\left[a\right] > 0$ |                                   $\frac{1}{(a + i\omega)^2}$                                    |                                      Not periodic                                       |
+| Gaussian: $e^{-at^2}$, $a>0$                        |                            $\sqrt{\frac{\pi}{a}} e^{-\omega^2/(4a)}$                             |                                      Not periodic                                       |
 
 Note: The specific Fourier Series coefficients for periodic signals depend on the choice of fundamental period $T=2\pi/\omega_0$. The sinc function used for the rectangular pulse is $\operatorname{sinc}(x) = \sin(\pi x)/(\pi x)$.
 

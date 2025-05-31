@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/9-identical-quantum-particles-formalism-of-second-quantisation/","hide":"true","updated":"2025-05-31T16:34:21.785+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/9-identical-quantum-particles-formalism-of-second-quantisation/","hide":"true","updated":"2025-05-31T16:39:02.582+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -844,7 +844,7 @@ $$
 $$
 
 For free fermions, $\frac{N(\epsilon_F)}{V} = \frac{3n}{2\epsilon_F}$ (where $n=N/V$ is total density). So, $\chi=\mu_B^2 \frac{3n}{2\epsilon_F}$.
-The Pauli susceptibility is independent of temperature, because only $ (N(\epsilon_F)/V) k_{B} T$ fermions per unit volume can be spin polarised (thermal softening of the Fermi sea). Thus, the factor $\left(k_{B} T\right)^{-1}$ in the fluctuation-dissipation formula is compensated.
+The Pauli susceptibility is independent of temperature, because only $(N(\epsilon_F)/V) k_{B} T$ fermions per unit volume can be spin polarised (thermal softening of the Fermi sea). Thus, the factor $\left(k_{B} T\right)^{-1}$ in the fluctuation-dissipation formula is compensated.
 The classical limit can be discussed using the Maxwell-Boltzmann distribution function,
 $$
 \begin{align*}
