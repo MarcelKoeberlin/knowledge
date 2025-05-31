@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-05-30T22:40:55.116+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-05-31T16:47:49.885+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -70,9 +70,7 @@ Here, $E$ is the identity element of $\mathcal{P}$. A **screw axis** combines a 
 The space group $\mathcal{R}$ satisfies the properties of a group:
 
 1. **Associativity**: For any two elements $\{g \mid \mathbf{a}\}, \{g^{\prime} \mid \mathbf{a}^{\prime}\} \in \mathcal{R}$:
-$$
-\{g \mid \mathbf{a}\}\{g^{\prime} \mid \mathbf{a}^{\prime}\} = \{gg^{\prime} \mid g\mathbf{a}^{\prime} + \mathbf{a}\}.
-$$
+	$$\{g \mid \mathbf{a}\}\{g^{\prime} \mid \mathbf{a}^{\prime}\} = \{gg^{\prime} \mid g\mathbf{a}^{\prime} + \mathbf{a}\}.$$
 
 2. **Identity Element**: The identity is $\{E \mid \mathbf{0}\}$.
 
