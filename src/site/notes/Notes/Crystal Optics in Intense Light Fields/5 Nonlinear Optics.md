@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/5-nonlinear-optics/","hide":"true","updated":"2025-05-30T15:20:04.727+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/5-nonlinear-optics/","hide":"true","updated":"2025-06-02T17:12:10.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -385,105 +385,80 @@ The following figure shows the sample with the polarisation altered from right c
 
 ![Attachments/Script (Unofficial) 11.webp|700](/img/user/Attachments/Script%20(Unofficial)%2011.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=78&rect=201,342,454,629| ]]
 
->[!Info]
->Continue here
-
-
 ---
 ## 5.4 Microscopic Mechanisms of Nonlinear Magneto-optical Processes
 [[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=79&selection=2,0,3,9| ]]
 
-The observations in the previous section of SHG in $\mathrm{Cr}_{2} \mathrm{O}_{3}$ require coupling of the light field and magnetism at a microscopic level. Explaining the nonreciprocal optical effects in $\mathrm{Cr}_{2} \mathrm{O}_{3}$ on a microscopic level is not trivial and requires the interplay of spin orbit coupling and a trigonal distortion in the lattice leading to a ligand field contribution. The model presented in this section was developed in 1995 by V. N. Muthukumar et al. [Muthukumar1995CrO].
+The observations of SHG in $\mathrm{Cr}_{2} \mathrm{O}_{3}$ discussed in the [[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5.3 Magnetic SHG in Chromium(III)-Oxide ($ ce{Cr2O3}$)\|previous section]] require coupling of the light field and magnetism at a microscopic level. Explaining the nonreciprocal optical effects in $\mathrm{Cr}_{2} \mathrm{O}_{3}$ on a microscopic level is not trivial and requires the interplay of spin-orbit coupling and a trigonal distortion in the crystal lattice, leading to a ligand field contribution.
 
-The outmost electrons of the $\mathrm{Cr}^{3+}$ ion occupy the $3 d$ orbital ${ }^{2}$. The crystal field due to the oxygen ions splits this five fold degenerate orbital into two levels: The triply degenerate lower $t_{2}$ level $\left(d_{x y}, d_{y z}, d_{z x}\right)$ and the doubly degenerate upper $e$ level $\left(d_{x^{2}-y^{2}}, d_{3 z^{2}-r^{2}}\right)$. The $t_{2}$ states are occupied in ground state, while the $e$ states are empty. SHG in $\mathrm{Cr}_{2} \mathrm{O}_{3}$ is triggered by the absorption of two photons by the $\mathrm{Cr}^{3+}$ ion. The ion is excited to a $\left(t_{2}\right)^{2} e$ configuration by two consecutive electric dipole transitions, corresponding to an $\mathbf{r} \cdot \mathbf{E}$ term in the Hamiltonian. A contribution to the electric susceptibility $\chi_{e}^{(2)}$ results from an electric dipole relaxation process. Accordingly a contribution to the magnetic susceptibility $\chi_{m}^{(2)}$ results from a magnetic dipole relaxation process, which corresponds to a $\mathbf{L} \cdot \mathbf{B}$ term in the Hamiltonian.
+The outermost electrons of the $\mathrm{Cr}^{3+}$ ion occupy the $3d$ orbitals. The crystal field due to the surrounding oxygen ions splits this five-fold degenerate $3d$ orbital into two sets of levels: the triply degenerate lower $t_{2g}$ levels (typically $d_{xy}, d_{yz}, d_{zx}$) and the doubly degenerate upper $e_g$ levels (typically $d_{x^2-y^2}, d_{z^2}$). In the ground state of $\mathrm{Cr}^{3+}$ in an octahedral environment, the $t_{2g}$ states are occupied by three electrons, and the $e_g$ states are empty. SHG in $\mathrm{Cr}_{2} \mathrm{O}_{3}$ can be triggered by the absorption of two photons by the $\mathrm{Cr}^{3+}$ ion. The ion can be excited, for instance, to a configuration like $(t_{2g})^2 e_g$ by two consecutive electric dipole transitions, corresponding to an $\mathbf{r} \cdot \mathbf{E}$ term in the interaction Hamiltonian. A contribution to the electric susceptibility $\chi_{e}^{(2)}$ results from an electric dipole relaxation process. Accordingly, a contribution to the magnetic susceptibility $\chi_{m}^{(2)}$ results from a magnetic dipole relaxation process, which corresponds to an $\mathbf{L} \cdot \mathbf{B}$ term in the Hamiltonian.
 
-Previously, the microscopic expression for the second order susceptibility tensor $\chi^{(2)}$, which is responsible for the electric dipole contribution to SHG , has been presented. The resonant contributions i.e. for the electric susceptibility may be written as
+Previously, the microscopic expression for the second-order susceptibility tensor $\chi^{(2)}$, responsible for the electric dipole contribution to SHG, has been presented. The resonant contributions, for instance to the electric susceptibility, may be written as:
 $$
-\chi_{e}^{(2)} \sim \sum_{i} \frac{\langle g| \mathbf{r}|f\rangle\langle f| \mathbf{r}|i\rangle\langle i| \mathbf{r}|g\rangle}{\left(\omega_{f}-\omega_{g}-2 \omega\right)\left(\omega_{i}-\omega_{g}-\omega\right)}
+\chi_{e}^{(2)} \sim \sum_{f,i} \frac{\langle g| e\mathbf{r}|f\rangle\langle f| e\mathbf{r}|i\rangle\langle i| e\mathbf{r}|g\rangle}{\left(E_{f}-E_{g}-2\hbar\omega\right)\left(E_{i}-E_{g}-\hbar\omega\right)} + \text{other permutations}
 $$
-where $\langle n| \mathbf{r}|m\rangle$ describes an electric dipole transition from state $m$ to $n$. The sum accounts for all intermediate state and resonance is given for the SHG conditions (i.e. $\omega_{f}-\omega_{g}=2 \omega$ and $\left.\omega_{i}-\omega_{g}=\omega_{f}-\omega_{i}=\omega\right)$. In the further analysis, the sum and the resonance denominator will be omitted for clarity and the electric $\mathbf{E}$ and magnetic field $\mathbf{B}$ will be set to unity.
+where $\langle n| e\mathbf{r}|m\rangle$ describes an electric dipole transition matrix element between state $|m\rangle$ and state $|n\rangle$ with energies $E_m$ and $E_n$ respectively. The sum is over all possible excited states $|f\rangle$ and intermediate states $|i\rangle$. Resonance occurs when the denominators approach zero, for example, $E_{f}-E_{g} \approx 2\hbar\omega$ or $E_{i}-E_{g} \approx \hbar\omega$. In the further analysis, the sum and the resonance denominators will often be omitted for clarity, and the electric field $\mathbf{E}$ and magnetic field $\mathbf{B}$ vectors may be implicitly assumed.
 
-For the sake of understanding the origin of the electric dipole transition, consider just two $d$ orbitals per $\mathrm{Cr}^{3+}$ ion for the above expression: the $d_{x y}$ orbital as ground state $|g\rangle$ and the $d_{x^{2}-y^{2}}$ orbital as the excited state $|f\rangle$. Therefore the SHG polarization is proportional to
+For understanding the origin of the electric dipole transition, consider a simplified model involving specific $d$ orbitals of a $\mathrm{Cr}^{3+}$ ion. For instance, let the ground state $|g\rangle$ be related to $d_{xy}$ orbitals and an excited state $|f\rangle$ be related to $d_{x^2-y^2}$ orbitals. The SHG polarisation would then involve terms like:
 $$
-\left\langle d_{x y}\right| \mathbf{r}\left|d_{x^{2}-y^{2}}\right\rangle\left\langle d_{x^{2}-y^{2}}\right| \mathbf{r}|i\rangle\langle i| \mathbf{r}\left|d_{x y}\right\rangle .
-$$
-
-Spin orbit coupling enables the light to couple to the magnetic field. The contribution to the interaction Hamiltionian is usually written as
-$$
-H_{S O}=\tilde{\lambda} \mathbf{L} \cdot \mathbf{S}
+\mathbf{P}(2\omega) \sim \langle g | e\mathbf{r} | f \rangle \langle f | e\mathbf{r} | i \rangle \langle i | e\mathbf{r} | g \rangle.
 $$
 
-\footnotetext{
-${ }^{2}$ electron configuration of $\mathrm{Cr}:[A r] 3 d^{5} 4 s^{1}$
-}
-where $\tilde{\lambda}$ is a proportionality factor. This contribution mixes the $t_{2}$ and $e$ states
-$$
-\tilde{\lambda}\left\langle d_{x y}\right| \mathbf{L} \cdot \mathbf{S}\left|d_{x^{2}-y^{2}}\right\rangle \sim \lambda\left\langle S_{z}\right\rangle
-$$
-where $\left\langle S_{z}\right\rangle=\left\langle m_{s}\right| S_{z}\left|m_{s}\right\rangle$ and $m_{s}$ is the spin quantum number of the state. Keep in mind, that in chromium the spins are aligned along the crystallographic $z$-axis and therefore $\mathbf{S}=S_{z} e_{z}$.
+Two crucial perturbations enable and modify these SHG processes:
 
-The ligand field contribution is a result of the environment of the chromium not being perfectly octahedral. The interaction Hamiltonian states as
-$$
-H_{C F}=\tilde{\eta}(x+y)
-$$
-where $\tilde{\eta}$ is another proportionality factor. The trigonal crystal field distortion, which breaks symmetry, mixes $3 d$ and $4 p$ orbitals, viz.
-$$
-\tilde{\eta}\left\langle p_{x}+p_{y}\right| x+y\left|d_{x y}\right\rangle \sim \eta
-$$
+1.  **Spin-orbit coupling** allows the light to couple to the magnetic state of the material. The contribution to the interaction Hamiltonian is usually written as:
+    $$H_{SO}=\tilde{\lambda} \mathbf{L} \cdot \mathbf{S}$$
+    where $\tilde{\lambda}$ is a proportionality factor (the spin-orbit coupling constant). This interaction mixes electronic states, for example, different $d$-orbitals like $t_{2g}$ and $e_g$ states. A matrix element for this mixing could be $\tilde{\lambda}\left\langle d_{xy}\right| \mathbf{L} \cdot \mathbf{S}\left|d_{x^{2}-y^{2}}\right\rangle \sim \lambda_{SO}\left\langle S_{z}\right\rangle$, where $\lambda_{SO}$ is related to $\tilde{\lambda}$ and $\langle S_z \rangle$ is the expectation value of the spin component along the quantisation axis (the $c$-axis in $\mathrm{Cr_2O_3}$, so $\mathbf{S} = S_z \mathbf{e}_z$).
 
-The spin orbit interaction and the trigonal distortion in the ligand field are treated as perturbations to the $3 d \mathrm{Cr}^{3+}$ states. The local eigenstates of the chromium ion may be written in first order perturbation theory as
-$$
-\begin{aligned}
-\left|\tilde{d}_{x y}\right\rangle & =\left|d_{x y}\right\rangle+\lambda\left\langle S_{z}\right\rangle\left|d_{x^{2}-y^{2}}\right\rangle+\eta^{\prime}\left|p_{x}+p_{y}\right\rangle \\
-\left|\tilde{d}_{x^{2}-y^{2}}\right\rangle & =\left|d_{x^{2}-y^{2}}\right\rangle-\lambda\left\langle S_{z}\right\rangle\left|d_{x y}\right\rangle+\eta\left|p_{x}+p_{y}\right\rangle
-\end{aligned}
-$$
+2.  **Ligand field contribution (trigonal distortion)**: The local environment of the $\mathrm{Cr}^{3+}$ ions in $\mathrm{Cr_2O_3}$ is not perfectly octahedral but exhibits a trigonal distortion. This distortion provides an additional term in the crystal field Hamiltonian, $H_{CF}$. This trigonal crystal field distortion breaks inversion symmetry locally and can mix orbitals of different parity, for instance, $3d$ and $4p$ orbitals of the $\mathrm{Cr}^{3+}$ ion. A matrix element for this mixing might be represented as $\left\langle p_{x}+p_{y}\right| H_{CF} \left|d_{x y}\right\rangle \sim \eta_{CF}$, where $\eta_{CF}$ characterises the strength of this parity-mixing interaction.
 
-These perturbed $d$-eigenfunctions are plugged into equation (6.9)
+The spin-orbit interaction and the trigonal distortion in the ligand field are treated as perturbations to the $3d$ states of the $\mathrm{Cr}^{3+}$ ion. The local eigenstates of the chromium ion may then be written in first-order perturbation theory. For example, a nominal $d_{xy}$ state becomes:
 $$
-\mathbf{P}(2 \omega) \sim\left\langle\tilde{d}_{x y}\right| \mathbf{r}\left|\tilde{d}_{x^{2}-y^{2}}\right\rangle\left\langle\tilde{d}_{x^{2}-y^{2}}\right| \mathbf{r}|i\rangle\langle i| \mathbf{r}\left|\tilde{d}_{x y}\right\rangle
+\left|\tilde{d}_{x y}\right\rangle \approx \left|d_{x y}\right\rangle + c_1 \lambda_{SO}\left\langle S_{z}\right\rangle\left|d_{x^{2}-y^{2}}\right\rangle + c_2 \eta_{CF}\left|p_{x}+p_{y}\right\rangle + \ldots
 $$
+and similarly for $\left|\tilde{d}_{x^{2}-y^{2}}\right\rangle$:
+$$
+\left|\tilde{d}_{x^{2}-y^{2}}\right\rangle \approx \left|d_{x^{2}-y^{2}}\right\rangle - c_1 \lambda_{SO}\left\langle S_{z}\right\rangle\left|d_{x y}\right\rangle + c_3 \eta_{CF}\left|p_{x}+p_{y}\right\rangle + \ldots
+$$
+where $c_1, c_2, c_3$ are coefficients derived from perturbation theory (involving energy denominators). For simplicity in the following, we will use generic coefficients $\lambda$ and $\eta$ to represent the effective strengths of these mixed-in components.
 
-Expansion in $\lambda$ and $\eta$ leads to four nonzero terms all of first order.
-- The $\sim \lambda^{0} \eta^{0}$ contribution describes the unperturbed system and vanishes because all $d$-orbitals have even parity $\left\langle\tilde{d}_{x y}\right| \mathbf{r}\left|\tilde{d}_{x^{2}-y^{2}}\right\rangle=0$.
-- The $\sim \lambda^{1} \eta^{0}$ term includes only spin orbit interaction. It vanishes in total analogy to the above due to the even parity of the $d$-orbitals.
-- The $\sim \lambda^{0} \eta^{1}$ states as
+These perturbed $d$-eigenfunctions are then used in the expression for the SHG polarisation, which, omitting the energy denominators and summation for brevity, is proportional to:
 $$
-\mathbf{P}_{01}(2 \omega) \sim \eta\left\langle d_{x y}\right| \mathbf{r}\left|p_{x}+p_{y}\right\rangle\left\langle\tilde{d}_{x^{2}+y^{2}}\right| \mathbf{r}|i\rangle\langle i| \mathbf{r}\left|d_{x y}\right\rangle
+\mathbf{P}(2 \omega) \sim \left\langle\tilde{g}\right| e\mathbf{r}\left|\tilde{f}\right\rangle\left\langle\tilde{f}\right| e\mathbf{r}\left|\tilde{i}\right\rangle\langle \tilde{i}| e\mathbf{r}\left|\tilde{g}\right\rangle
 $$
-and solely governs trigonal field distortion. In general this term in finite for every chromium site and proportional to $\eta$. The $p$-orbitals though inhibit odd parity leading to opposite signs of states at $\uparrow$ - compared to $\downarrow$-sites, i.e. $\left|p_{x}+p_{y}, \uparrow\right\rangle=$ $-\left|p_{x}+p_{y}, \downarrow\right\rangle$. The unit cell in $\mathrm{Cr}^{3+}$ contains 4 chromium ions of pairwise opposite spins. Therefore summing over a unit cell cancels out the $\sim \lambda^{0} \eta^{1}$ contribution
-$$
-\sum_{\uparrow \downarrow \uparrow \downarrow} \mathbf{P}_{01}(2 \omega)=0 .
-$$
-- The $\sim \lambda^{1} \eta^{1}$ contributions governs the interplay between spin orbit coupling and the trigonal field distortion. The corresponding mathematical expression states as
-$$
-\mathbf{P}_{11}(2 \omega) \sim \eta \lambda\left\langle S_{z}\right\rangle\left\langle d_{x^{2}-y^{2}}\right| \mathbf{r}\left|p_{x}+p_{y}\right\rangle\left\langle d_{x^{2}-y^{2}}\right| \mathbf{r}|i\rangle\langle i| \mathbf{r}\left|d_{x y}\right\rangle
-$$
-with $\left\langle S_{z}\right\rangle\left|p_{x}+p_{y}, \uparrow\right\rangle=-\left\langle S_{z}\right\rangle\left|p_{x}+p_{y}, \downarrow\right\rangle$. Summing again over the unit cell leads to a polarization proportional to
-$$
-\mathbf{P}(2 \omega) \sim \lambda \eta\langle l\rangle \tilde{\chi}_{e}^{(2)} \mathbf{E}(\omega) \mathbf{E}(\omega)
-$$
-where the electric field has been reintroduced. The antiferromagnetic order parameter $\left\langle l_{z}\right\rangle=\mathbf{S}_{1}-\mathbf{S}_{2}+\mathbf{S}_{3}-\mathbf{S}_{4}$ governs the spin parity and
-$$
-\tilde{\chi}_{e}^{(2)}=\sum_{i}\left\langle d_{x^{2}-y^{2}}\right| \mathbf{r}\left|p_{x}+p_{y}\right\rangle\left\langle d_{x^{2}-y^{2}}\right| \mathbf{r}|i\rangle\langle i| \mathbf{r}\left|d_{x y}\right\rangle .
-$$
+Expansion of $\mathbf{P}(2\omega)$ in powers of the perturbation strengths (represented by $\lambda$ for spin-orbit effects and $\eta$ for trigonal distortion/parity-mixing effects) yields several terms. The key contributions are:
 
-It is obvious that the interplay between spin orbit interaction and local symmetry breaking due to the trigonal field distortion is required to explain SHG in $\mathrm{Cr}^{3+}$. The observed effect transforms spatially like an electric dipole, is though of c-type due to the $l_{z}$ prefactor. Although, typically electric dipole contributions are of significantly higher order of magnitude, in this case the MD contributions (i-type) are of the same order of magnitude as the ED contributions (c-type). An estimate for the order may be expressed as
-$$
-\frac{\chi_{e}}{\chi_{m}} \simeq 4 \frac{\lambda_{0}}{a_{0}} \frac{\lambda}{\hbar\left(\omega_{e}-\omega_{t_{2}}\right)} \frac{\eta}{\hbar\left(\omega_{p}-\omega_{d}\right)} \Delta(T) \simeq 1.6
-$$
+-   The $\sim \lambda^{0} \eta^{0}$ contribution (unperturbed system): This term vanishes. If $|g\rangle, |f\rangle, |i\rangle$ are all pure $d$-orbitals, they have the same (even) parity. Electric dipole transitions $e\mathbf{r}$ require a change in parity. Thus, matrix elements like $\langle d|e\mathbf{r}|d \rangle$ are zero, making the entire three-product term zero.
+-   The $\sim \lambda^{1} \eta^{0}$ term (only spin-orbit interaction): Spin-orbit coupling primarily mixes states of the same parity (like $d$-orbitals with other $d$-orbitals). Therefore, even with spin-orbit mixing among $d$-states, the states retain definite (even) parity, and the electric dipole SHG process remains forbidden for the same reason as above. This term vanishes.
+-   The $\sim \lambda^{0} \eta^{1}$ term (only trigonal distortion): This term is proportional to $\eta$. The trigonal distortion mixes $p$-orbitals (odd parity) into the $d$-orbitals (even parity). This allows for non-zero electric dipole matrix elements like $\langle d|e\mathbf{r}|p\rangle$. A possible SHG contribution could be schematically:
+    $$
+    \mathbf{P}_{01}(2 \omega) \sim \eta \left\langle d_{xy}\right| e\mathbf{r}\left|p_{x}+p_{y}\right\rangle \left\langle d_{x^{2}-y^{2}}\right| e\mathbf{r}\left|i\right\rangle \langle i| e\mathbf{r}\left|d_{xy}\right\rangle
+    $$
+    This term can be locally non-zero at each $\mathrm{Cr}^{3+}$ site. However, in $\mathrm{Cr_2O_3}$, there are four $\mathrm{Cr}^{3+}$ ions per crystallographic unit cell, arranged in an antiferromagnetic structure with spins pointing along $\pm c$. The trigonal distortion (and thus the sign of the admixed $p$-orbitals) can have opposite signs for ions on different sublattices (related by inversion symmetry). If the contributions from these sites have opposite signs and equal magnitude, they cancel when summed over the unit cell: $\sum_{\mathrm{unit~cell}} \mathbf{P}_{01}(2 \omega) \approx 0$.
+-   The $\sim \lambda^{1} \eta^{1}$ contribution (interplay of spin-orbit coupling and trigonal distortion): This term is proportional to $\lambda\eta$. The corresponding mathematical expression involves both the spin-dependent mixing ($\lambda \langle S_z \rangle$) and the parity-breaking mixing ($\eta |p\rangle$):
+    $$
+    \mathbf{P}_{11}(2 \omega) \sim \eta \lambda \left\langle S_{z}\right\rangle \left\langle d_{x^{2}-y^{2}}\right| e\mathbf{r}\left|p_{x}+p_{y}\right\rangle \left\langle d_{x^{2}-y^{2}}\right| e\mathbf{r}\left|i\right\rangle \langle i| e\mathbf{r}\left|d_{xy}\right\rangle
+    $$
+    Crucially, $\langle S_z \rangle$ changes sign for ions on time-reversed sublattices (spin $\uparrow$ vs. spin $\downarrow$). If the effective sign of the $\eta$-related matrix elements also changes sign appropriately between these sublattices, the product $\langle S_z \rangle \times (\eta\text{-part})$ can have the *same* sign for all magnetic sublattices. Summing over the unit cell then leads to a net non-zero polarisation that is proportional to the antiferromagnetic order parameter $L_z = (S_1 - S_2 + S_3 - S_4)_z$:
+    $$
+    \mathbf{P}(2 \omega) \sim \lambda \eta \langle L_z \rangle \tilde{\chi}_{e, \text{eff}}^{(2)} \mathbf{E}(\omega) \mathbf{E}(\omega)
+    $$
+    where the electric field has been reintroduced, and $\tilde{\chi}_{e, \text{eff}}^{(2)}$ represents the purely electronic part of the susceptibility composed of the relevant matrix elements like $\left\langle d_{x^{2}-y^{2}}\right| e\mathbf{r}\left|p_{x}+p_{y}\right\rangle \ldots$.
 
-The meaning of the single terms and their approximate values are stated below.
-\begin{tabular}{|l|l|l|}
-\hline 4 & accounts for the four $\mathrm{Cr}^{3+}$ ions per unit cell & 4 \\
-\hline $\lambda_{0}$ & wavelength of emitted light & $5000 \AA$ \\
-\hline $a_{0}$ & the radius of the $\mathrm{Cr}^{3+}$ ion & $0.69 \AA$ \\
-\hline $\lambda$ & spin orbit interaction & $100 \mathrm{~cm}^{-1}$ \\
-\hline $\eta$ & trigonal field & $350 \mathrm{~cm}^{-1}$ \\
-\hline $\omega_{e}-\omega_{t_{2}}$ & octahedral $3 d$ band splitting & $8000 \mathrm{~cm}^{-1}$ \\
-\hline $\omega_{p}-\omega_{d}$ & $3 d$ level difference & $80^{\prime} 000 \mathrm{~cm}^{-1}$ \\
-\hline $\Delta(T)$ & antiferromagnetic order parameter & 1 \\
-\hline
-\end{tabular}
+It is clear that the interplay between spin-orbit interaction (coupling to magnetism) and local symmetry breaking due to the trigonal field distortion (allowing ED transitions) is required to explain this type of SHG in $\mathrm{Cr_2O_3}$. The observed effect generates an electric dipole polarisation $\mathbf{P}(2\omega)$, but because its existence is tied to the antiferromagnetic order parameter $\langle L_z \rangle$ (which is time-odd), this contribution to $\chi_e^{(2)}$ is c-type (it changes sign under time reversal). Although electric dipole contributions are typically much larger than magnetic dipole contributions, in this specific case, the c-type electric dipole SHG and i-type magnetic dipole SHG can be of comparable magnitude. An estimate for the ratio of the effective electric to magnetic susceptibilities is given by:
+$$
+\frac{\chi_{e}^{(2)}(\text{c-type})}{\chi_{m}^{(2)}(\text{i-type})} \simeq 4 \frac{\lambda_{light}}{a_{0}} \frac{\lambda_{SO}}{\hbar\left(\omega_{e_g}-\omega_{t_{2g}}\right)} \frac{\eta_{CF}}{\hbar\left(\omega_{p}-\omega_{d}\right)} \Delta(T) \simeq 1.6
+$$
+The factor of 4 accounts for the four $\mathrm{Cr}^{3+}$ ions per unit cell. The meanings of the other terms and their approximate values are stated below:
+
+| Symbol                      | Description                                   | Value                                      |
+| :-------------------------- | :-------------------------------------------- | :----------------------------------------- |
+| $\lambda_{light}$           | Wavelength of emitted light                   | $5000 \mathrm{~Å}$                         |
+| $a_0$                       | Ionic radius of $\mathrm{Cr}^{3+}$            | $0.69 \mathrm{~Å}$                         |
+| $\lambda_{SO}$              | Spin-orbit interaction energy                 | $100 \mathrm{~cm}^{-1}$                    |
+| $\eta_{CF}$                 | Trigonal crystal field interaction energy     | $350 \mathrm{~cm}^{-1}$                    |
+| $\omega_{e_g}-\omega_{t_{2g}}$ | Octahedral $3d$ orbital energy splitting   | $17^{\prime}000-20^{\prime}000 \mathrm{~cm}^{-1}$ (typical range for $10Dq$) |
+| $\omega_p-\omega_d$         | Energy difference between $4p$ and $3d$ states | $\sim 80^{\prime}000 \mathrm{~cm}^{-1}$    |
+| $\Delta(T)$                 | Normalised antiferromagnetic order parameter  | $\approx 1$ (for $T \ll T_N$)              |
 
 ---

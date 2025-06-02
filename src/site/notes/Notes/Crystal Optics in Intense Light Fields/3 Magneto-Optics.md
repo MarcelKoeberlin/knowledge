@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/3-magneto-optics/","hide":"true","updated":"2025-05-30T13:21:38.036+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/3-magneto-optics/","hide":"true","updated":"2025-06-01T18:58:28.000+02:00"}
 ---
 
-Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
+	 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/6-beam-types/","hide":"true","updated":"2025-05-30T12:34:18.326+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics-gallmann/6-beam-types/","hide":"true","updated":"2025-05-30T12:34:18.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics#Table of Contents\|chapter selection]]==.

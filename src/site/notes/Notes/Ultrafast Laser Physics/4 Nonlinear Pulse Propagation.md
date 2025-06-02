@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/4-nonlinear-pulse-propagation/","hide":"true","updated":"2025-05-30T12:26:38.589+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/4-nonlinear-pulse-propagation/","hide":"true","updated":"2025-05-30T12:26:38.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.

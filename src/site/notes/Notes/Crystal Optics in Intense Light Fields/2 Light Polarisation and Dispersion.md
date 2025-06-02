@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2025-05-30T13:21:45.753+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2025-05-30T13:21:45.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.

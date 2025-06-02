@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/4-light-matter-interaction/","hide":"true","updated":"2025-05-30T15:17:07.440+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/4-light-matter-interaction/","hide":"true","updated":"2025-06-02T15:52:06.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -79,7 +79,11 @@ m \ddot{r}_{i} & = q \sum_{j} \dot{r}_{j} \frac{\partial A_{j}}{\partial r_{i}} 
 & = q\left(-\frac{\partial \Phi}{\partial r_{i}}-\frac{\partial A_{i}}{\partial t}\right)+q \sum_{j} \dot{r}_{j}\left(\frac{\partial A_{j}}{\partial r_{i}}-\frac{\partial A_{i}}{\partial r_{j}}\right).
 \end{aligned}
 $$
-Recognising $E_i = -\frac{\partial\Phi}{\partial r_i} - \frac{\partial A_i}{\partial t}$ and $(\dot{\mathbf{r}}\times(\nabla\times\mathbf{A}))_i = \sum_j \dot{r}_j (\partial_i A_j - \partial_j A_i) = \sum_j \dot{r}_j (\partial A_j/\partial r_i - \partial A_i/\partial r_j)$ (using Levi-Civita notation for cross product), we arrive at the Lorentz force law:
+Recognising $E_i = -\frac{\partial\Phi}{\partial r_i} - \frac{\partial A_i}{\partial t}$ and
+$$
+(\dot{\mathbf{r}}\times(\nabla\times\mathbf{A}))_i = \sum_j \dot{r}_j (\partial_i A_j - \partial_j A_i) = \sum_j \dot{r}_j (\partial A_j/\partial r_i - \partial A_i/\partial r_j)
+$$
+using Levi-Civita notation for cross product, we arrive at the Lorentz force law:
 $$
 m \ddot{\mathbf{r}}=q \mathbf{E}+q(\dot{\mathbf{r}} \times \mathbf{B}).
 $$
@@ -87,8 +91,8 @@ Thus, the Hamiltonian form correctly describes the motion and implies the "minim
 Summing over all crystal electrons and adding the energy of the electromagnetic field itself yields the complete Hamiltonian function:
 $$
 \begin{aligned}
- H &= \sum_{\text{electrons}} \left[ \frac{(\mathbf{p}_k - q_k \mathbf{A}(\mathbf{r}_k,t))^{2}}{2 m_k} + q_k \Phi(\mathbf{r}_k,t) \right] + \frac{1}{2} \int \left( \varepsilon_0 \mathbf{E}^{2} + \frac{1}{\mu_0} \mathbf{B}^{2} \right) d^{3}r \\
-  &= \sum_{\text{electrons}} \left[ \underbrace{\left(\frac{\mathbf{p}_k^{2}}{2 m_k} + q_k \Phi\right)}_{\text{Matter } (\hat{H}_0)} + \underbrace{\left(-\frac{q_k}{m_k} \mathbf{A} \cdot \mathbf{p}_k + \frac{q_k^{2}}{2 m_k} \mathbf{A}^{2}\right)}_{\text{Light-Matter Interaction } (\hat{H}_{\text{int}})} \right] + \underbrace{\frac{1}{2} \int \left( \varepsilon_0 \mathbf{E}^{2} + \frac{1}{\mu_0} \mathbf{B}^{2} \right) d^{3}r}_{\text{EM Field Energy}}.
+ H =& \sum_{\text{electrons}} \left[ \frac{(\mathbf{p}_k - q_k \mathbf{A}(\mathbf{r}_k,t))^{2}}{2 m_k} + q_k \Phi(\mathbf{r}_k,t) \right] \\&+ \frac{1}{2} \int \left( \varepsilon_0 \mathbf{E}^{2} + \frac{1}{\mu_0} \mathbf{B}^{2} \right) d^{3}r \\
+  =& \sum_{\text{electrons}} \left[ \underbrace{\left(\frac{\mathbf{p}_k^{2}}{2 m_k} + q_k \Phi\right)}_{\text{Matter } (\hat{H}_0)} + \underbrace{\left(-\frac{q_k}{m_k} \mathbf{A} \cdot \mathbf{p}_k + \frac{q_k^{2}}{2 m_k} \mathbf{A}^{2}\right)}_{\text{Light-Matter Interaction } (\hat{H}_{\text{int}})} \right] \\&+ \underbrace{\frac{1}{2} \int \left( \varepsilon_0 \mathbf{E}^{2} + \frac{1}{\mu_0} \mathbf{B}^{2} \right) d^{3}r}_{\text{EM Field Energy}}.
 \end{aligned}
 $$
 (Assuming Coulomb gauge $\nabla\cdot\mathbf{A}=0$, so $\mathbf{A}\cdot\mathbf{p} = \mathbf{p}\cdot\mathbf{A}$).
@@ -126,14 +130,16 @@ $$
 $$
 The operator $(\hat{\mathbf{e}}\cdot \mathbf{p})(\mathbf{k}_L \cdot\mathbf{r})$ can be decomposed into terms corresponding to magnetic dipole (MD) and electric quadrupole (EQ) interactions:
 $$
-(\hat{\mathbf{e}}\cdot \mathbf{p})(\mathbf{k}_L \cdot\mathbf{r}) = \frac{1}{2} \left( (\hat{\mathbf{e}}\cdot \mathbf{p})(\mathbf{k}_L \cdot\mathbf{r}) - (\mathbf{k}_L \cdot \mathbf{p})(\hat{\mathbf{e}} \cdot\mathbf{r}) \right) + \frac{1}{2} \left( (\hat{\mathbf{e}}\cdot \mathbf{p})(\mathbf{k}_L \cdot\mathbf{r}) + (\mathbf{k}_L \cdot \mathbf{p})(\hat{\mathbf{e}} \cdot\mathbf{r}) \right).
+\begin{aligned}
+(\hat{\mathbf{e}}\cdot \mathbf{p})(\mathbf{k}_L \cdot\mathbf{r}) =& \frac{1}{2} \left( (\hat{\mathbf{e}}\cdot \mathbf{p})(\mathbf{k}_L \cdot\mathbf{r}) - (\mathbf{k}_L \cdot \mathbf{p})(\hat{\mathbf{e}} \cdot\mathbf{r}) \right) \\&+ \frac{1}{2} \left( (\hat{\mathbf{e}}\cdot \mathbf{p})(\mathbf{k}_L \cdot\mathbf{r}) + (\mathbf{k}_L \cdot \mathbf{p})(\hat{\mathbf{e}} \cdot\mathbf{r}) \right).
+\end{aligned}
 $$
 The first part (antisymmetric) is related to the magnetic dipole interaction $\sim (\mathbf{k}_L \times \hat{\mathbf{e}}) \cdot (\mathbf{r} \times \mathbf{p}) = (\mathbf{k}_L \times \hat{\mathbf{e}}) \cdot \mathbf{L}$. Since $\mathbf{B}_{\text{opt}} \sim \mathbf{k}_L \times \mathbf{E}_{\text{opt}} \sim \mathbf{k}_L \times \hat{\mathbf{e}}$, this term gives rise to $\hat{H}_{\text{MD}} = -\boldsymbol{\mu} \cdot \mathbf{B}_{\text{opt}}$.
 The second part (symmetric) is related to the electric quadrupole interaction $\hat{H}_{\text{EQ}} \sim -\sum_{ij} Q_{ij} \nabla_i E_j$.
 With correct factors and including electron spin $\mathbf{S}$, the interaction Hamiltonians are approximately:
-- Electric Dipole (ED) (zeroth order): $\hat{H}_{\text{ED}} = -(-e\mathbf{r}) \cdot \mathbf{E}_{\text{opt}} = -\mathbf{d} \cdot \mathbf{E}_{\text{opt}}$.
-- Magnetic Dipole (MD) (first order): Including orbital angular momentum $\mathbf{L}$ and spin $\mathbf{S}$ (with $g_s \approx 2$), the magnetic dipole moment is $\boldsymbol{\mu} = -\frac{e}{2m_e}(\mathbf{L}+2\mathbf{S})$. The interaction Hamiltonian is $\hat{H}_{\text{MD}} = -\boldsymbol{\mu} \cdot \mathbf{B}_{\text{opt}}$.
-- Electric Quadrupole (EQ) (first order): $\hat{H}_{\text{EQ}} = -\frac{1}{2} \sum_{ij} Q_{ij} \frac{\partial E_j}{\partial r_i}$, where $Q_{ij} = -e(r_i r_j - \frac{1}{3}\delta_{ij}r^2)$ is the electric quadrupole moment tensor. A simplified interaction form often used is $\hat{H}_{\text{EQ}} \sim -e (\mathbf{k}_L \cdot \mathbf{r})(\mathbf{E}_{\text{opt}} \cdot \mathbf{r})$.
+- **Electric Dipole (ED) (zeroth order)**: $\hat{H}_{\text{ED}} = -(-e\mathbf{r}) \cdot \mathbf{E}_{\text{opt}} = -\mathbf{d} \cdot \mathbf{E}_{\text{opt}}$.
+- **Magnetic Dipole (MD) (first order)**: Including orbital angular momentum $\mathbf{L}$ and spin $\mathbf{S}$ (with $g_s \approx 2$), the magnetic dipole moment is $\boldsymbol{\mu} = -\frac{e}{2m_e}(\mathbf{L}+2\mathbf{S})$. The interaction Hamiltonian is $\hat{H}_{\text{MD}} = -\boldsymbol{\mu} \cdot \mathbf{B}_{\text{opt}}$.
+- **Electric Quadrupole (EQ) (first order)**: $\hat{H}_{\text{EQ}} = -\frac{1}{2} \sum_{ij} Q_{ij} \frac{\partial E_j}{\partial r_i}$, where $Q_{ij} = -e(r_i r_j - \frac{1}{3}\delta_{ij}r^2)$ is the electric quadrupole moment tensor. A simplified interaction form often used is $\hat{H}_{\text{EQ}} \sim -e (\mathbf{k}_L \cdot \mathbf{r})(\mathbf{E}_{\text{opt}} \cdot \mathbf{r})$.
 
 The effective "light fields" in this multipole interaction picture are $\mathbf{E}_{\text{opt}}$ and $\mathbf{B}_{\text{opt}}$ (and field gradients for EQ), while the "matter moments" are the electric dipole $\mathbf{P}$ (from $\mathbf{d}$), magnetisation $\mathbf{M}$ (from $\boldsymbol{\mu}$), and electric quadrupole density $\mathbf{Q}$ (from $Q_{ij}$). Both magnetic dipole and electric quadrupole interactions arise from the first-order term in the $e^{i\mathbf{k}_L\cdot\mathbf{r}}$ expansion and are typically much weaker than electric dipole interactions at optical frequencies unless ED transitions are forbidden by selection rules.
 
@@ -156,7 +162,7 @@ We distinguish three regimes of light intensity for light-matter interaction:
 
 In linear optics, the induced polarisation $\mathbf{P}(\omega)$ is linearly related to the electric field $\mathbf{E}(\omega)$ via the electric susceptibility tensor $\boldsymbol{\chi}_e(\omega)$:
 $$
-P_i(\omega)=\varepsilon_0 \sum_j (\chi_e)_{ij}(\omega) E_j(\omega), \quad \text{with} \quad (\varepsilon_r)_{ij}(\omega)=\delta_{ij}+(\chi_e)_{ij}(\omega).
+P_i(\omega)=\varepsilon_0 \sum_j (\chi_e)_{ij}(\omega) E_j(\omega) \quad \text{with} \quad (\varepsilon_r)_{ij}(\omega)=\delta_{ij}+(\chi_e)_{ij}(\omega).
 $$
 (Nonlinear optics considers terms in $\mathbf{E}^2, \mathbf{E}^3$, etc.).
 A quantum mechanical expression for the linear susceptibility (derived from first-order time-dependent perturbation theory, considering electric dipole transitions) is:
@@ -230,7 +236,7 @@ where $L_{\text{LF}}$ is a Lorentz local field factor, such as $\left(\frac{n_0^
 The difference $\delta\alpha$ can be calculated from the quantum mechanical expression for $\chi_{ij}(\omega)$ by considering transitions allowed by $\sigma_+$ and $\sigma_-$ light (which have different selection rules for $\Delta m_J$) between Zeeman-split levels. The relevant part of the transition matrix elements will be $|(d_+)_{ng}|^2 - |(d_-)_{ng}|^2$, where $d_{\pm} = d_x \pm i d_y$ are dipole operators for circular polarisations.
 The complex Faraday rotation $\tilde{\Phi}_F$ can then be written as a sum over transitions:
 $$
-\tilde{\Phi}_F = \frac{N \omega L_{\text{LF}}}{4\varepsilon_0 \hbar cn_0} \sum_{n \neq g} (\rho_g^{(0)}-\rho_n^{(0)}) \left( \frac{|(d_+)_{gn}|^2 - |(d_-)_{gn}|^2}{\omega_{ng}-\omega-i\Gamma_{ng}} + \text{non-resonant term} \right).
+\tilde{\Phi}_F = \frac{N \omega L_{\text{LF}}}{4\varepsilon_0 \hbar cn_0} \sum_{n \neq g} (\rho_g^{(0)}-\rho_n^{(0)}) \left( \frac{|(d_+)_{gn}|^2 - |(d_-)_{gn}|^2}{\omega_{ng}-\omega-i\Gamma_{ng}} + \text{non-resonant} \right).
 $$
 This expression can be separated into real and imaginary parts. The real part ($\Phi_F'$), describing rotation, is often expressed using oscillator strengths $f_{\pm}$ for $\sigma_{\pm}$ transitions and a dispersive line shape function $\varphi_D(\omega, \omega_{ng})$:
 $$
