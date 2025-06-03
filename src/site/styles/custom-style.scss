@@ -1110,7 +1110,7 @@ body .cm-s-obsidian ol li::before {
 }
 
 ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
-  color: var(--text-normal);
+  color: var(--internal-link);
   font-size: unset;
   font-family: "Karla";
 }
