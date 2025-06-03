@@ -4,6 +4,7 @@ body.theme-dark {
   --text-accent-hover: #ff8f00;
   --interactive-accent: #006f8b;
   --h1-color: var(--interactive-accent);
+  --low-contrast: #4f1d0e;
 }
 
 body.theme-light {
@@ -12,6 +13,7 @@ body.theme-light {
   --text-accent-hover: #f13900;
   --interactive-accent: #004d61;
   --h1-color: var(--interactive-accent);
+  --low-contrast: #ffe0b8;
 }
 
 .markdown-rendered .internal-link {
@@ -64,7 +66,7 @@ body.theme-light {
 
 
 body {
-  --graph-main: var(--text-accent-hover);
+  --graph-main: var(--internal-link);
   --graph-muted: rgba(126, 126, 126, 0.5);
 
   .timestamps {
@@ -207,7 +209,6 @@ body {
     .graph-title {
       background: linear-gradient(to right,#ff3c00, #ff8f00);
       background-clip: border-box;
-      background-clip: border-box;
       -webkit-background-clip: text;
       -webkit-text-fill-color: rgba(0,0,0,0);
     }
@@ -233,7 +234,7 @@ body {
 .toc-title {
   font-weight: bold;
   font-size: 1rem;
-  //color: var(--text-accent);
+  //color: var(--text-accent-hover);
   color: var(--h1-color);
   padding-bottom: 5px;
   border-bottom: 1px solid var(--background-modifier-border);
@@ -392,7 +393,7 @@ body {
 
     &:hover {
       border: 1px dotted;
-      border-color: var(--text-accent);
+      border-color: var(--text-accent-hover);
       margin-left: -10px;
       margin-right: -10px;
       padding: 10px;
@@ -405,7 +406,7 @@ body {
       top: -1.55em;
       font-weight: normal;
       font-size: 12px;
-      color: var(--text-accent);
+      color: var(--text-accent-hover);
       font-variant: initial;
       letter-spacing: 0.24px;
       line-height: 14px;
@@ -414,7 +415,7 @@ body {
 
   .referred {
     border: 1px dashed;
-    border-color: var(--text-accent);
+    border-color: var(--text-accent-hover);
     padding: 10px;
     margin-left: -10px;
     margin-right: -10px;
@@ -476,7 +477,7 @@ body {
   .fnote {
     display: none;
     background-color: var(--background-primary);
-    //border: 1px solid var(--text-accent);
+    //border: 1px solid var(--text-accent-hover);
     position: fixed;
     bottom: 10px;
     left: 0;
@@ -490,7 +491,7 @@ body {
     line-height: 85%;
 
     .fnote-marker {
-      background-color: var(--text-accent);
+      background-color: var(--text-accent-hover);
       padding: 2px 5px;
       color: white;
       border-radius: 5px;
@@ -531,7 +532,6 @@ body {
 .search-text {
   display: none;
 }
-
     .navbar-inner {
       h1::before {
         content: " ";
@@ -802,13 +802,25 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
   cursor: pointer;
   right: 0px;
   left: 10px;
-  color: var(--text-accent);
+  color: var(--internal-link);
   z-index: 9;
   background: linear-gradient(to right,#ff3c00, #ff8f00);
     background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(0,0,0,0);
   font: inherit;
+}
+#graph-controls .depth-control #depth-display {
+  background-color: var(--internal-link);
+  color: #fff;
+  width: 1.3rem;
+  height: 1.3rem;
+  font-size: .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: .3rem;
+  border-radius: 50%;
 }
 
 .sidebar {
@@ -848,7 +860,7 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
     z-index: 9999;
     display: block;
     background-color: var(--background-secondary);
-    border: 1px solid var(--text-accent);
+    border: 1px solid var(--text-accent-hover);
     border-radius: 5px;
     padding-top: 5px;
 
@@ -1115,6 +1127,18 @@ ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
   background-position: center right;
   background-size: 13px;
 }
+.external-link:hover {
+  background-position-y: 4px;
+  color: var(--text-accent-hover);
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: var(--link-external-filter);
+  padding-right: 16px;
+  cursor: var(--cursor-link);
+  text-decoration-line: var(--link-external-decoration);
+  background-position: center right;
+  background-size: 13px;
+}
 
 .external-link::after {
   content: "";
@@ -1128,6 +1152,21 @@ ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
   margin-left: 4px;
 }
 
+
+
 ::selection {
   background-color: var(--text-muted);
+}
+
+a,
+.markdown-rendered .internal-link.is-unresolved{
+    color: var(--low-contrast);
+}
+
+a,
+.markdown-rendered .internal-link.is-unresolved:hover{
+    text-decoration-line: underline; 
+    text-decoration-style: solid; 
+    color: var(--low-contrast);
+    text-decoration-color: var(--low-contrast); /* Matches the hover text colour */
 }
