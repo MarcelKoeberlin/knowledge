@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-05-30T12:13:16.000+02:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-06-03T17:03:13.000+02:00"}
 ---
 
 Hi there!
@@ -33,8 +33,6 @@ I genuinely hope this website and its content are useful to you. If so, I'd be d
 **Marcel**
 
 ---
-_You might notice the   symbol throughout the site. It’s just for my internal navigation, so you can ignore it. This website actually exists on two pages, deployed from two different services: [Vercel](https://koeberlin.vercel.app/) and [Netlify](https://www.google.com/search?q=https://koeberlin.netlify.app/). Both pages are identical, but sometimes one might be delayed by no more than a day compared to the other._
-
-_If you have any comments or suggestions, please feel free to reach out to me on [GitHub](https://github.com/MarcelKoeberlin) ,[LinkedIn](https://www.google.com/search?q=https://www.linkedin.com/in/marcel-k%25C3%25B6berlin-776397244/), or via email using the button on the bottom right._
+_If you have any comments or suggestions, please feel free to reach out to me on [GitHub](https://github.com/MarcelKoeberlin) ,[LinkedIn](https://www.linkedin.com/in/marcel-k%25C3%25B6berlin-776397244/), or via email using the button on the bottom right._
 
 ---

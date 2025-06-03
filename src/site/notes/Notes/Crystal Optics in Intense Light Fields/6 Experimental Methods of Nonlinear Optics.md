@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/6-experimental-methods-of-nonlinear-optics/","hide":"true","updated":"2025-06-02T17:12:04.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/6-experimental-methods-of-nonlinear-optics/","hide":"true","updated":"2025-06-03T16:58:08.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -27,7 +27,7 @@ As already mentioned in the [[Notes/Crystal Optics in Intense Light Fields/5 Non
 ## 6.1 Lasers
 [[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=83&selection=3,0,3,10| ]]
 
-As becomes clear from the previous table, the laser is the clear winner for use in nonlinear effects. Additionally, it offers high [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.2 Coherence Function\|coherence]], a well-defined and narrow [[Notes/Intersubband Optoelectronics/3 Intersubband Absorption#3.4 Absorption Linewidth\|spectral band]], as well as a well-defined [[Notes/2025 Quantum Electronics Gallmann/8 Laser Fundamentals (marcels-thinkpad's conflicted copy 2025-05-05)#8.1 Fundamental Light-Matter Interaction\|polarisation state]]. These are important and desirable properties when designing an experiment. Two common light sources used in nonlinear optics are neodymium-doped yttrium aluminium garnet lasers (Nd:YAG laser) or titanium-sapphire lasers (Ti:Sa laser). Some output parameters are presented in the next table:
+As becomes clear from the previous table, the laser is the clear winner for use in nonlinear effects. Additionally, it offers high [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.2 Coherence Function\|coherence]], a well-defined and narrow [[Notes/2025 Quantum Electronics Gallmann/8 Laser Fundamentals#8.2.1 Transition Width\|spectral band]], as well as a well-defined [[Notes/2025 Quantum Electronics Gallmann/8 Laser Fundamentals#8.1 Fundamental Light-Matter Interaction\|polarisation state]]. These are important and desirable properties when designing an experiment. Two common light sources used in nonlinear optics are neodymium-doped yttrium aluminium garnet lasers (Nd:YAG laser) or titanium-sapphire lasers (Ti:Sa laser). Some output parameters are presented in the next table:
 
 | Laser  | $\lambda$          | $\Delta t$        | Repetition rate | Energy                | Application                             |
 | :----: | :----------------: | :---------------: | :-------------: | :-------------------: | :--------------------------------------: |
