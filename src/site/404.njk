@@ -13,113 +13,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         /* Ensure html and body take full height for background and centering */
-        html, body { /* Combined html and body for simplicity, ensure body also has 100% height */
-  height:100%;
-  margin:0;
-  padding:0;
-  font-family:sans-serif; /* Consider specifying your theme's font here */
-  overflow:hidden; /* Prevents scrollbars if elements are at edges */
-}
-
-body.page-404 {
-  background-image:url('https://w.wallhaven.cc/full/vm/wallhaven-vmeme3.png');
-  background-size: cover;
-  background-position:center;
-  background-repeat:no-repeat;
-  /* padding:20px; Padding might not be needed if elements are absolutely positioned from edges */
-  box-sizing:border-box;
-  position:relative; /* Crucial for absolute positioning of children */
-  /* display:flex; flex-direction:column; align-items:center; text-align:center; */
-  /* Flex properties on body are less relevant if main children are absolutely positioned */
-  /* text-align: center; can be useful if absolutely positioned elements have width and need internal text centering */
-  width: 100%; /* Ensure body takes full width */
-}
-
-.message-404 {
-    font-size: 100px; 
-    font-weight: bold;
-    color: white; /* Base color for the text, 'difference' will modify it */
-    margin: 0; 
-    animation: fadeInScale 3s ease-out forwards; /* Added forwards to keep final state */
-    position: absolute;  
-    top: 50%; /* For vertical centering */
-    left: 50%; /* For horizontal centering */
-    transform: translate(-50%, -50%); /* Centers the element based on its own size */
-    text-align: center; /* Center text if message-404 has a width */
-    width: 100%; /* Give it some width to prevent very long lines if text wraps */
-    */max-width: 1000px; /* Max width for large text */
-   
-    mix-blend-mode: difference; 
-}
-
-.link-404 {
-  position:absolute;
-  bottom: 40px; /* Increased space from bottom */
-  left: 50%; /* Added for proper horizontal centering */
-  transform:translateX(-50%);
-  text-align: center; /* Center the link if link-404 div has width */
-  */top: 0px;
-}
-
-.link-404 a {
-  font-size:50px;
-  text-decoration:none;
-  color: white;
-  color: difference; /* Base color, e.g., white or a light color. 'difference' will modify it. */
-  /* If you want a specific hue like aqua to interact with 'difference', set it here.
-     However, 'difference' with pure white often gives the clearest inversion. */
-
-  padding: 5px 15px; /* Added some padding for better appearance */
-  transition: opacity 0.3s ease; /* Transition opacity or other non-color props if color is dynamic */
-  display:inline-block;
-  
-  mix-blend-mode: difference; /* Apply blend mode to the link itself */
-}
-
-.link-404 a:hover {
-    opacity: 0.7; /* Example hover effect for blended elements */
-    mix-blend-mode: difference;
-}
-
-.font-bg { /* This was for an emoji, typically hidden if background image is used */
-  display:none;
-}
-
-@keyframes fadeInScale {
-  0% {
-    opacity:0;
-    transform:translate(-50%, -50%) scale(.8); /* Combined transforms */
-  }
-  100% {
-    opacity:1;
-    transform:translate(-50%, -50%) scale(1); /* Combined transforms */
-  }
-}
-
-
-/* Responsive adjustments */
-@media (max-width: 1540px) {
-    .message-404 {
-        font-size: 70px; /* Adjust font size */
-    }
-    .link-404 a {
-        font-size: 30px; /* Adjust font size */
-        bottom: 30px;
-    }
-}
-@media (max-width: 1075px) {  
-    .message-404 {
-        font-size: 50px; /* Adjust font size */
-    }
-    .link-404 a {
-        font-size: 24px; /* Adjust font size */
-        padding: 5px 10px;
-    }
-    .link-404 {
+        body,
+        html {
+        height:100%;
+        margin:0;
+        padding:0;
+        font-family:Karla;
+        overflow:hidden;
+        }
+        body.page-404 {
+        background-image:url('https://w.wallhaven.cc/full/vm/wallhaven-vmeme3.png');
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        box-sizing:border-box;
+        position:relative;
+        width:100%
+        }
+        .message-404 {
+        font-size:80px;
+        font-weight:1000;
+        font-family: Karla;
+        margin:0;
+        animation:fadeInScale 3s ease-out forwards;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        text-align:center;
+        width:100%;
+        mix-blend-mode:difference
+        }
+        .link-404 {
+        position:absolute;
         bottom: 20px;
-        width: 90%; /* Ensure link doesn't overflow on very small screens */
-    }
-}
+        left:50%;
+        transform:translateX(-50%);
+        text-align:center;
+        top:0;
+        }
+        .link-404 a {
+        text-decoration:none;
+        color: #ff8f00;
+        font-size: 30px;
+        padding:0px;
+        display:inline-block;
+        */mix-blend-mode: difference;
+        }
+        .link-404 a:hover {
+        color: #f13900;
+        }
+        .font-bg {
+        display:none
+        }
+        @keyframes fadeInScale {
+        0% {
+            opacity:0;
+            transform:translate(-50%,-50%) scale(.8)
+        }
+        100% {
+            opacity:1;
+            transform:translate(-50%,-50%) scale(1)
+        }
+        }
+
+        @media (max-width:1300px) {
+        .message-404 {
+            font-size:50px
+        }
+        .link-404 a {
+            font-size:24px;
+            padding:5px 10px
+        }
+        .link-404 {
+            bottom:20px;
+            width:90%
+        }
+        }
+
+        @media (max-width:780px) {
+        .message-404 {
+            font-size:20px
+        }
+        .link-404 a {
+            font-size:24px;
+            padding:5px 10px
+        }
+        .link-404 {
+            bottom:20px;
+            width:90%
+        }
+        }
         
     </style>
 </head>
