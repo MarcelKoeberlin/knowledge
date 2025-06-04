@@ -1141,9 +1141,7 @@ ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
 }
 
 
-.external-link::after {    
-  position: absolute;
-}
+
 
 
 ::selection {
@@ -1160,3 +1158,15 @@ ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
     color: var(--low-contrast);
     text-decoration-color: var(--low-contrast); /* Matches the hover text colour */
 } 
+
+.external-link::after {
+  content: "";
+  height: 1px;
+  width: 1px;
+  background: var(--background-primary);
+  margin-left: -6px;
+  margin-right: -12px;
+  display: inline-block;
+  vertical-align: top;
+  position: inherit;
+}
