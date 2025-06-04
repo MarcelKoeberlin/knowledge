@@ -1110,7 +1110,7 @@ body .cm-s-obsidian ol li::before {
 }
 
 ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
-  color: var(--internal-link);
+  color: var(--text-normal);
   font-size: unset;
   font-family: "Karla";
 }
@@ -1158,15 +1158,13 @@ ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
   background-color: var(--text-muted);
 }
 
-a,
 .markdown-rendered .internal-link.is-unresolved{
     color: var(--low-contrast);
 }
 
-a,
 .markdown-rendered .internal-link.is-unresolved:hover{
     text-decoration-line: underline; 
     text-decoration-style: solid; 
     color: var(--low-contrast);
     text-decoration-color: var(--low-contrast); /* Matches the hover text colour */
-}
+} 
