@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-06-04T14:31:19.978+02:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-06-04T14:49:38.665+02:00"}
 ---
 
 Hi there!
@@ -34,6 +34,6 @@ I genuinely hope this website and its content are useful to you. If so, I'd be d
 **Marcel**
 
 ---
-_If you have any comments or suggestions, please feel free to reach out to me on [GitHub](https://github.com/MarcelKoeberlin) ,[LinkedIn](https://www.linkedin.com/in/marcel-k%25C3%25B6berlin-776397244/), or via email using the button on the bottom right._
+_If you have any comments or suggestions, please feel free to reach out to me on [GitHub](https://github.com/MarcelKoeberlin) , [LinkedIn](https://www.linkedin.com/in/marcel-k%25C3%25B6berlin-776397244/), or via email using the button on the bottom right._
 
 ---
