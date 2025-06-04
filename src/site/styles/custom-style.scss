@@ -1140,18 +1140,10 @@ ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
   background-size: 13px;
 }
 
-//.external-link::after {
-  //content: "";
-  //height: 0.25em;
-  //width: 0.25em;
-  //background: var(--internal-link);
-  //border-radius: 50%;
-  //display: inline-block;
-  //vertical-align: text-top;
-  //margin-right: -16px;
-//  margin-left: 4px;
-//}
 
+.external-link::after {    
+  position: absolute;
+}
 
 
 ::selection {
