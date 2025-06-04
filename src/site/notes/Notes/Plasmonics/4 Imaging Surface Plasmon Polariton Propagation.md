@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/4-imaging-surface-plasmon-polariton-propagation/","hide":"true","updated":"2025-05-30T15:22:11.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/4-imaging-surface-plasmon-polariton-propagation/","hide":"true","updated":"2025-05-30T15:22:11.929+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-06-03T17:03:13.000+02:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-06-03T17:22:00.000+02:00"}
 ---
 
 Hi there!
@@ -12,10 +12,10 @@ Welcome to my personal website—a space where I share everything I consider wor
 | **[[Notes/Plasmonics/Plasmonics\|Plasmonics]]**                                                                                     | ✅            |
 | **[[Notes/Solid-State Theory/Solid-State Theory\|Solid-State Theory]]**                                                             | ✅            |
 | **[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics\|Quantum Electronics]]**                                            | ✅            |
-| **[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields\|Crystal Optics in Intense Light Fields]]** | Chapter 5/7  |
-| **[[Notes/Signals and Systems/Signals and Systems\|Signals and Systems]]**                                                          | Chapter 5/11 |
-| **[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]]**                                              | Chapter 4/13 |
-| **[[Notes/Quantum Optics/Quantum Optics\|Quantum Optics]]**                                                                         | Chapter 2/13 |
+| **[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields\|Crystal Optics in Intense Light Fields]]** | Chapter 6    |
+| **[[Notes/Signals and Systems/Signals and Systems\|Signals and Systems]]**                                                          | Chapter 5    |
+| **[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]]**                                              | Chapter 4    |
+| **[[Notes/Quantum Optics/Quantum Optics\|Quantum Optics]]**                                                                         | Chapter 2    |
 
 Here's a little peek at what's currently obsolete or planned for the future:
 

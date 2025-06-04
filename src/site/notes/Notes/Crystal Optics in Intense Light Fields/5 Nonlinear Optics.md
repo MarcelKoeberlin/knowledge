@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/5-nonlinear-optics/","hide":"true","updated":"2025-06-02T17:12:10.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/5-nonlinear-optics/","hide":"true","updated":"2025-06-03T17:32:17.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -7,10 +7,10 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 **Table of Contents**
 
-- [[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5.1 Microscopy for Nonlinear Optics\|5.1 Microscopy for Nonlinear Optics]]
-- [[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5.2 Wave Equation in Nonlinear Optics\|5.2 Wave Equation in Nonlinear Optics]]
-- [[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5.3 Magnetic SHG in Chromium(III)-Oxide ($\ce{Cr2O3}$)\|5.3 Magnetic SHG in Chromium(III)-Oxide]]
-- [[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5.4 Microscopic Mechanisms of Nonlinear Magneto-optical Processes\|5.4 Microscopic Mechanisms of Nonlinear Magneto-optical Processes]]
+[[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5.1 Microscopy for Nonlinear Optics\|5.1 Microscopy for Nonlinear Optics]]
+[[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5.2 Wave Equation in Nonlinear Optics\|5.2 Wave Equation in Nonlinear Optics]]
+[[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5.3 Magnetic SHG in Chromium(III)-Oxide ($\ce{Cr2O3}$)\|5.3 Magnetic SHG in Chromium(III)-Oxide]]
+[[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5.4 Microscopic Mechanisms of Nonlinear Magneto-optical Processes\|5.4 Microscopic Mechanisms of Nonlinear Magneto-optical Processes]]
 
 ---
 # 5 Nonlinear Optics

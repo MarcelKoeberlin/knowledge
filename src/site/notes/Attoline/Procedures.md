@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-05-30T10:21:28.000+02:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-05-30T10:21:28.035+02:00"}
 ---
 
 # 1 Laser Startup
