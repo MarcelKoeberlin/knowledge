@@ -75,7 +75,7 @@ body {
     font-size: 0.8em;
     color: var(--text-muted);
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
 
     div {
       display: flex;
@@ -541,9 +541,7 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url(/img/logo.svg);
-        margin-right: 5px;
         background-position: bottom;
-        margin-top: 5px;
       }
 
       span {
@@ -1170,3 +1168,7 @@ ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
   vertical-align: top;
   position: inherit;
 }
+
+  .markdown-rendered h1{
+    margin: 0px !important;
+  }
