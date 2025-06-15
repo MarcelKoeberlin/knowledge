@@ -1,8 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/braunwald-kloental-june-15-2025/","hide":"true","updated":"2025-06-15T21:06:27.534+02:00"}
+{"dg-publish":true,"permalink":"/braunwald-kloental-june-15-2025/","hide":"true","updated":"2025-06-15T21:24:48.914+02:00"}
 ---
 
 [[Website/Hikes\|Jump back to hike selection]].
+
+# Braunwald - Klöntal (June 15, 2025)
 
 | Stat              | Value                     |
 | ----------------- | ------------------------- |
