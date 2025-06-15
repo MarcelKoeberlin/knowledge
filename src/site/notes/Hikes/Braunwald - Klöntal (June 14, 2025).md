@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/hikes/braunwald-kloental-june-14-2025/","hide":"true","updated":"2025-06-15T22:11:07.826+02:00"}
+{"dg-publish":true,"permalink":"/hikes/braunwald-kloental-june-14-2025/","hide":"true","updated":"2025-06-15T22:14:01.425+02:00"}
 ---
 
 [[Website/Hikes\|Jump back to hike selection]].
@@ -28,6 +28,8 @@ Interactive map: [outdooractive](https://www.outdooractive.com/en/route/hiking-t
 ---
 These selected images are compressed. For best experience, view the website in light mode (see sun/moon icon on the bottom right after site has loaded). My first attempt at photography without my phone camera.
 
+![Attachments/Hikes/Braunwald - Klöntal (June 14, 2025)/IMG_2440.jpg](/img/user/Attachments/Hikes/Braunwald%20-%20Kl%C3%B6ntal%20(June%2014,%202025)/IMG_2440.jpg)
+
 ![Attachments/Hikes/Braunwald - Klöntal (June 14, 2025)/IMG_2616.jpg](/img/user/Attachments/Hikes/Braunwald%20-%20Kl%C3%B6ntal%20(June%2014,%202025)/IMG_2616.jpg)
 
 ![Attachments/Hikes/Braunwald - Klöntal (June 14, 2025)/IMG_2507.jpg](/img/user/Attachments/Hikes/Braunwald%20-%20Kl%C3%B6ntal%20(June%2014,%202025)/IMG_2507.jpg)
@@ -47,8 +49,6 @@ These selected images are compressed. For best experience, view the website in l
 ![Attachments/Hikes/Braunwald - Klöntal (June 14, 2025)/IMG_2565.jpg](/img/user/Attachments/Hikes/Braunwald%20-%20Kl%C3%B6ntal%20(June%2014,%202025)/IMG_2565.jpg)
 
 ![Attachments/Hikes/Braunwald - Klöntal (June 14, 2025)/IMG_2562.jpg](/img/user/Attachments/Hikes/Braunwald%20-%20Kl%C3%B6ntal%20(June%2014,%202025)/IMG_2562.jpg)
-
-![Attachments/Hikes/Braunwald - Klöntal (June 14, 2025)/IMG_2440.jpg](/img/user/Attachments/Hikes/Braunwald%20-%20Kl%C3%B6ntal%20(June%2014,%202025)/IMG_2440.jpg)
 
 ![Attachments/Hikes/Braunwald - Klöntal (June 14, 2025)/IMG_2468.jpg](/img/user/Attachments/Hikes/Braunwald%20-%20Kl%C3%B6ntal%20(June%2014,%202025)/IMG_2468.jpg)
 
