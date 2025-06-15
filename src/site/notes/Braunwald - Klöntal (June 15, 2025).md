@@ -1,9 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/braunwald-kloental-june-15-2025/","hide":"true","updated":"2025-06-15T21:26:34.198+02:00"}
+{"dg-publish":true,"permalink":"/braunwald-kloental-june-15-2025/","hide":"true","updated":"2025-06-15T21:31:08.741+02:00"}
 ---
 
 [[Website/Hikes\|Jump back to hike selection]].
 
+---
 # Braunwald - Klöntal (June 15, 2025)
 
 | Stat              | Value                     |
@@ -14,6 +15,8 @@
 | Lowest Point      | 853 m                     |
 | Ascent (up)       | 440 m                     |
 | Descent (down)    | 1512 m                    |
+| Country           | Switzerland               |
+| County            | Glarus, Schwyz            |
 | Images taken with | Canon EOS1300D + 18-55 mm |
 
 **Overview Map**
