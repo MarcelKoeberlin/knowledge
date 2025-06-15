@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/braunwald-kloental-june-15-2025/","hide":"true","updated":"2025-06-15T21:31:08.741+02:00"}
+{"dg-publish":true,"permalink":"/braunwald-kloental-june-15-2025/","hide":"true","updated":"2025-06-15T21:52:00.666+02:00"}
 ---
 
 [[Website/Hikes\|Jump back to hike selection]].
@@ -18,6 +18,8 @@
 | Country           | Switzerland               |
 | County            | Glarus, Schwyz            |
 | Images taken with | Canon EOS1300D + 18-55 mm |
+
+Interactive map: [outdooractive](https://www.outdooractive.com/en/route/hiking-trail/canton-of-glarus/braunwald-kloental/57076907/#dm=1)
 
 **Overview Map**
 
