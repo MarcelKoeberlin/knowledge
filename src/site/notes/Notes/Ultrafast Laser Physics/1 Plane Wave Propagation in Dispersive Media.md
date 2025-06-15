@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/1-plane-wave-propagation-in-dispersive-media/","hide":"true","updated":"2025-05-30T11:42:31.492+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/1-plane-wave-propagation-in-dispersive-media/","hide":"true","updated":"2025-06-04T15:33:55.628+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -19,7 +19,7 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 # 1 Plane Wave Propagation in Dispersive Media
 
-We will now begin with the description of the simplest type of electromagnetic field: the plane wave, and we will consider its propagation in a dispersive medium. For this, we require Maxwell's equations. Note however, that we will not derive them here, as it is assumed the reader is already somewhat familiar with them. The following two sections on the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.1 Maxwell Equations\|Maxwell equations]] and the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.2 Material Equations\|material equations]] are also treated in a similar way in my [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.2 Maxwell's Equations in a Medium\|quantum electronics notes]].
+We will now begin with the description of the simplest type of electromagnetic field: the plane wave, and we will consider its propagation in a dispersive medium. For this, we require Maxwell's equations. Note however, that we will not derive them here, as it is assumed the reader is already somewhat familiar with them. The following two sections on the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.1 Maxwell Equations\|Maxwell equations]] and the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.2 Material Equations\|material equations]] are also treated in a similar way in my [[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.2 Maxwell's Equations in a Medium\|quantum electronics notes]].
 ## 1.1 Maxwell Equations
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=21&selection=3,0,5,31| ]]
 
@@ -229,7 +229,7 @@ For the special case of a monochromatic plane wave $\mathbf{E}(\mathbf{r}, t)=\m
 ## 1.7 Dispersion
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=36&selection=187,0,189,10| ]]
 
-The fact that the refractive index $n(\omega)$ is frequency dependent implies that the wave number $k(\omega)=n(\omega)\omega/c$ is no longer directly proportional to the frequency $\omega$, as it is in vacuum (where $k_0=\omega/c$). This frequency dependence of $n(\omega)$ (and thus of $k(\omega)$ and $v_p(\omega)$) is called **dispersion**. For more details, see [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|here]]. It is very important to know $n(\omega)$ to describe pulse propagation, as can be seen in examples of how different materials affect light:
+The fact that the refractive index $n(\omega)$ is frequency dependent implies that the wave number $k(\omega)=n(\omega)\omega/c$ is no longer directly proportional to the frequency $\omega$, as it is in vacuum (where $k_0=\omega/c$). This frequency dependence of $n(\omega)$ (and thus of $k(\omega)$ and $v_p(\omega)$) is called **dispersion**. For more details, see [[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|here]]. It is very important to know $n(\omega)$ to describe pulse propagation, as can be seen in examples of how different materials affect light:
 
 ![Attachments/UltraFastLasers_Keller 4.webp|700](/img/user/Attachments/UltraFastLasers_Keller%204.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=36&rect=57,103,382,184| ]]
 

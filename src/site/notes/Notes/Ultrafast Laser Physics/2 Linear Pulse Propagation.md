@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/2-linear-pulse-propagation/","hide":"true","updated":"2025-05-30T12:20:01.287+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/2-linear-pulse-propagation/","hide":"true","updated":"2025-06-08T18:45:12.764+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -175,7 +175,7 @@ is called the complex **pulse envelope**. It describes the (generally slower) va
 
 ### 2.3.1 Time-Bandwidth Product
 
-In laser physics, the laser pulse duration $\tau_p$ is typically defined as the Full Width at Half Maximum (FWHM) of the time-dependent pulse intensity $I(t) \sim |\mathbf{E}(t)|^2 = |\mathbf{A}(t)|^2$. Analogously, the laser pulse spectral width $\Delta f_p$ (or $\Delta\nu_p$) is normally defined as the FWHM of the spectral intensity (or power spectral density) $|\mathbf{E}(\omega)|^2$ (or $|\mathbf{E}(f)|^2$).
+In laser physics, the laser pulse duration $\tau_p$ is typically defined as the Full Width at Half Maximum (FWHM) of the time-dependent pulse intensity $I(t) \sim |\mathbf{E}(t)|^2 = |\mathbf{A}(t)|^2$. Analogously, the laser pulse spectral width $\Delta f_p$ is normally defined as the FWHM of the spectral intensity (or power spectral density) $|\mathbf{E}(\omega)|^2$ (or $|\mathbf{E}(f)|^2$).
 The time-bandwidth product (TBP), $\Delta f_p \cdot \tau_p$, has a minimum theoretical value that depends on the pulse shape. Some values are summarised below:
 
 |                                             | $I(t)$, where $x \equiv t / \tau_{\text{char}}$                                     | $\tau_{\mathrm{p}} / \tau_\text{char}$ | $\Delta f_{\mathrm{p}} \times \tau_{\mathrm{p}}$ |

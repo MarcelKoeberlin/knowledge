@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/6-experimental-methods-of-nonlinear-optics/","hide":"true","updated":"2025-06-03T16:58:08.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/6-experimental-methods-of-nonlinear-optics/","hide":"true","updated":"2025-06-04T15:33:55.626+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -27,7 +27,7 @@ As already mentioned in the [[Notes/Crystal Optics in Intense Light Fields/5 Non
 ## 6.1 Lasers
 [[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=83&selection=3,0,3,10| ]]
 
-As becomes clear from the previous table, the laser is the clear winner for use in nonlinear effects. Additionally, it offers high [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.2 Coherence Function\|coherence]], a well-defined and narrow [[Notes/2025 Quantum Electronics Gallmann/8 Laser Fundamentals#8.2.1 Transition Width\|spectral band]], as well as a well-defined [[Notes/2025 Quantum Electronics Gallmann/8 Laser Fundamentals#8.1 Fundamental Light-Matter Interaction\|polarisation state]]. These are important and desirable properties when designing an experiment. Two common light sources used in nonlinear optics are neodymium-doped yttrium aluminium garnet lasers (Nd:YAG laser) or titanium-sapphire lasers (Ti:Sa laser). Some output parameters are presented in the next table:
+As becomes clear from the previous table, the laser is the clear winner for use in nonlinear effects. Additionally, it offers high [[Notes/2025 Quantum Electronics/4 Coherence and Interference#4.2 Coherence Function\|coherence]], a well-defined and narrow [[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.2.1 Transition Width\|spectral band]], as well as a well-defined [[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.1 Fundamental Light-Matter Interaction\|polarisation state]]. These are important and desirable properties when designing an experiment. Two common light sources used in nonlinear optics are neodymium-doped yttrium aluminium garnet lasers (Nd:YAG laser) or titanium-sapphire lasers (Ti:Sa laser). Some output parameters are presented in the next table:
 
 | Laser  | $\lambda$          | $\Delta t$        | Repetition rate | Energy                | Application                             |
 | :----: | :----------------: | :---------------: | :-------------: | :-------------------: | :--------------------------------------: |
@@ -58,7 +58,7 @@ n_{p} \omega_{p} & =n_{S} \omega_{S}+n_{I} \omega_{I}
 \end{cases}
 \end{aligned}
 $$
-Since the refractive indices change with the orientation of the crystal relative to the light propagation direction and polarisation ([[Notes/2025 Quantum Electronics Gallmann/9 Polarisation Optics#9.3 Anisotropic Materials\|birefringence]]), the crystal alignment is used for continuous frequency tuning.
+Since the refractive indices change with the orientation of the crystal relative to the light propagation direction and polarisation ([[Notes/2025 Quantum Electronics/9 Polarisation Optics#9.3 Anisotropic Materials\|birefringence]]), the crystal alignment is used for continuous frequency tuning.
 
 **Harmonic Generation**
 
@@ -82,7 +82,7 @@ Applying this operator to the polarisation then results in
 $$
 \hat{T} \mathbf{P}(2 \omega) \sim \hat{T} \chi_{\mathrm{NL}}^{e} \stackrel{!}{=}-\chi_{\mathrm{NL}}^{e} \sim-\mathbf{P}(2 \omega).
 $$
-This then reveals that the polarisation generated in the two domains differs by a phase of $-1=e^{i \pi}$. This corresponds to a $\pi$ phase shift in the polarisation vector. However, as already mentioned, this phase information is lost when measuring only the intensity. Thus, in order to resolve the different domains, it is not enough to extract the intensity information alone; one additionally has to measure the phase information. An interference measurement with a reference wave (such as in [[Notes/2025 Quantum Electronics Gallmann/5 Fourier Optics#5.7 Holography\|holography]]) allows the full information to be obtained:
+This then reveals that the polarisation generated in the two domains differs by a phase of $-1=e^{i \pi}$. This corresponds to a $\pi$ phase shift in the polarisation vector. However, as already mentioned, this phase information is lost when measuring only the intensity. Thus, in order to resolve the different domains, it is not enough to extract the intensity information alone; one additionally has to measure the phase information. An interference measurement with a reference wave (such as in [[Notes/2025 Quantum Electronics/5 Fourier Optics#5.7 Holography\|holography]]) allows the full information to be obtained:
 $$
 \begin{aligned}
 & I_{\mathrm{SHG}}^{\mathrm{total}}(\mathrm{domain}+) \sim\left|\mathbf{P}_{\mathrm{SHG}}^{+}(2 \omega)+\mathbf{P}_{\mathrm{ref}}(2 \omega)\right|^2=\left|\mathbf{P}_{+}+\mathbf{P}_{\mathrm{ref}}\right|^2,\\
@@ -107,7 +107,7 @@ Usually, the phase is continuously adjusted by a Soleil-Babinet compensator. The
 
 ![Attachments/Script (Unofficial) 13.webp|700](/img/user/Attachments/Script%20(Unofficial)%2013.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=86&rect=241,345,414,453| ]]
 
-As became clear, a phase-sensitive SHG measurement requires good interference. Therefore, divergence and propagation effects like beam broadening between the sample and reference crystal can lead to the loss of spatial coherence. Temporal coherence, indicated by the [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.3 Coherence Time and Coherence Length\|coherence time and length]], is related to the spectral width of the light. For a given spectral lineshape, the product of spectral width $\Delta f$ and coherence time $\tau_c$ is approximately constant. For instance, for a Gaussian spectrum, $\Delta f \cdot \tau_c \approx 0.441$ (using FWHM definitions).
+As became clear, a phase-sensitive SHG measurement requires good interference. Therefore, divergence and propagation effects like beam broadening between the sample and reference crystal can lead to the loss of spatial coherence. Temporal coherence, indicated by the [[Notes/2025 Quantum Electronics/4 Coherence and Interference#4.3 Coherence Time and Coherence Length\|coherence time and length]], is related to the spectral width of the light. For a given spectral lineshape, the product of spectral width $\Delta f$ and coherence time $\tau_c$ is approximately constant. For instance, for a Gaussian spectrum, $\Delta f \cdot \tau_c \approx 0.441$ (using FWHM definitions).
 
 The interference signal intensity can be written as
 $$

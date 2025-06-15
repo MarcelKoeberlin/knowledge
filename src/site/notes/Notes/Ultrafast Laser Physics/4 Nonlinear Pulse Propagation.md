@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/4-nonlinear-pulse-propagation/","hide":"true","updated":"2025-05-30T12:26:38.589+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/4-nonlinear-pulse-propagation/","hide":"true","updated":"2025-06-04T15:33:55.641+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -284,6 +284,6 @@ For $I_{\text{in}} \ll I_{\text{sat,abs}}$, this simplifies to Beer's Law: $T \a
 ![Attachments/UltraFastLasers_Keller 55.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2055.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=202&rect=201,494,386,605| ]]
 
 If absorption/amplification were purely linear ($\alpha, g$ independent of $I$), the pulse shape would remain unchanged (if bandwidth is sufficient). With nonlinear effects, the pulse shape changes. For instance, in a saturable amplifier, the leading edge of a pulse experiences high, unsaturated gain. As it propagates and amplifies, it depletes the stored energy (reduces population inversion), thus saturating the gain. Consequently, the trailing edge of the pulse experiences significantly less gain. This leads to asymmetric amplification, often shifting the pulse peak forward and steepening its leading edge. Conversely, a saturable absorber preferentially attenuates the lower-intensity wings of a pulse more than its high-intensity peak, which can lead to pulse shortening.
-These intensity-dependent changes in gain/absorption are also accompanied by intensity-dependent changes in the refractive index, via the [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.2 Kramers-Kronig Relations\|Kramers-Kronig relations]].
+These intensity-dependent changes in gain/absorption are also accompanied by intensity-dependent changes in the refractive index, via the [[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.2 Kramers-Kronig Relations\|Kramers-Kronig relations]].
 
 ---

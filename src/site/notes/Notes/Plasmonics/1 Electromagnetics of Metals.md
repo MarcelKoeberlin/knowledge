@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/1-electromagnetics-of-metals/","hide":"true","updated":"2025-05-30T15:22:00.778+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/1-electromagnetics-of-metals/","hide":"true","updated":"2025-06-04T15:33:55.626+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -165,7 +165,7 @@ Note that the frequency dependence of the dielectric function is called dispersi
 ## 1.3 The Dispersion of the Free Electron Gas and Volume Plasmons 
 [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&selection=41,0,42,8| ]]
 
-Let us discuss the transparency regime $\omega > \omega_p$ of the free electron gas model. For that, consider the [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.1.1 Drude-Lorentz model\|Lorentz-Drude model]]. The dispersion of the [[Notes/Plasmonics/1 Electromagnetics of Metals#1.2 Travelling-Wave Solution\|travelling waves]] is:
+Let us discuss the transparency regime $\omega > \omega_p$ of the free electron gas model. For that, consider the [[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.1.1 Drude-Lorentz model\|Lorentz-Drude model]]. The dispersion of the [[Notes/Plasmonics/1 Electromagnetics of Metals#1.2 Travelling-Wave Solution\|travelling waves]] is:
 
 $$
 \omega^2 = \omega_p^2 + K^2c^2.
@@ -210,7 +210,7 @@ $$
 u = \frac{1}{2} (\mathbf{E} \cdot \mathbf{D} + \mathbf{B} \cdot \mathbf{H}).
 $$
 
-This expression, together with the Poynting vector of energy flow $\mathbf{S} = \mathbf{E} \times \mathbf{H}$, enters into the conservation law ([[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.8 Poynting Vector and Poynting's Theorem\|Poynting's theorem]]):
+This expression, together with the Poynting vector of energy flow $\mathbf{S} = \mathbf{E} \times \mathbf{H}$, enters into the conservation law ([[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.8 Poynting Vector and Poynting's Theorem\|Poynting's theorem]]):
 
 $$
 \frac{\partial u}{\partial t} + \nabla \cdot \mathbf{S} = -\mathbf{J} \cdot \mathbf{E},

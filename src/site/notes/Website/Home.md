@@ -1,18 +1,18 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-06-04T14:49:38.665+02:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2025-06-15T21:05:38.157+02:00"}
 ---
 
 Hi there!
 
-Welcome to my personal website—a space where I share everything I consider worth publishing. This site serves as a "knowledge vault," also known as a "digital garden." This is the perfect place to start reading up on some topics:
+Welcome to my personal website—a space where I share everything I consider worth publishing. This site serves as a "knowledge vault", also known as a "digital garden." This is the perfect place to start reading up on some topics:
 
 | **Notes**                                                                                                                           | **Progress** |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ------------ |
 | **[[Notes/Attosecond Physics/Attosecond Physics\|Attosecond Physics]]**                                                             | ✅            |
 | **[[Notes/Plasmonics/Plasmonics\|Plasmonics]]**                                                                                     | ✅            |
 | **[[Notes/Solid-State Theory/Solid-State Theory\|Solid-State Theory]]**                                                             | ✅            |
-| **[[Notes/2025 Quantum Electronics Gallmann/Quantum Electronics\|Quantum Electronics]]**                                            | ✅            |
-| [[Notes/Master Thesis/Master Thesis\|Master Thesis]]                                                                                | ✅            |
+| **[[Notes/2025 Quantum Electronics/Quantum Electronics\|Quantum Electronics]]**                                                     | ✅            |
+| **[[Notes/Master Thesis/Master Thesis\|Master Thesis]]**                                                                            | ✅            |
 | **[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields\|Crystal Optics in Intense Light Fields]]** | Chapter 6    |
 | **[[Notes/Signals and Systems/Signals and Systems\|Signals and Systems]]**                                                          | Chapter 5    |
 | **[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]]**                                              | Chapter 4    |
@@ -37,3 +37,5 @@ I genuinely hope this website and its content are useful to you. If so, I'd be d
 _If you have any comments or suggestions, please feel free to reach out to me on [GitHub](https://github.com/MarcelKoeberlin) , [LinkedIn](https://www.linkedin.com/in/marcel-k%25C3%25B6berlin-776397244/), or via email using the button on the bottom right._
 
 ---
+
+[[Website/Hikes\|Hikes!]]

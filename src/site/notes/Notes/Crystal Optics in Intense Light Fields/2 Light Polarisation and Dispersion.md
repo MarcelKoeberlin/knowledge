@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2025-06-04T11:45:47.669+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2025-06-04T15:33:55.611+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -15,11 +15,11 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 # 2 Light Polarisation and Dispersion
 [[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=19&selection=0,20,0,20| ]]
 
-Light is an electromagnetic wave. Unlike sound waves, which are longitudinal, light is a transverse wave. This means that the direction of the electric (and magnetic) field oscillation is perpendicular to the direction of propagation (the wavevector $\mathbf{k}$). This is covered in more detail in my notes on [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1 Electromagnetic Theory of Light\|quantum electronics]]. We start by considering the simplest electromagnetic wave, the plane wave, described by its electric field:
+Light is an electromagnetic wave. Unlike sound waves, which are longitudinal, light is a transverse wave. This means that the direction of the electric (and magnetic) field oscillation is perpendicular to the direction of propagation (the wavevector $\mathbf{k}$). This is covered in more detail in my notes on [[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1 Electromagnetic Theory of Light\|quantum electronics]]. We start by considering the simplest electromagnetic wave, the plane wave, described by its electric field:
 $$
 \mathbf{E}(\mathbf{r}, t)=\mathbf{E}_{0} e^{i(\omega t-\mathbf{k} \cdot \mathbf{r})}
 $$
-where the complex amplitude vector $\mathbf{E}_{0}$ is orthogonal to $\mathbf{k}$ (so $\mathbf{E}_0 \cdot \mathbf{k} = 0$), assuming propagation in an isotropic medium. The magnetic field is also important but for describing polarisation, we primarily focus on the electric field vector. A fundamental property of transverse waves is polarisation, which refers to the orientation and evolution of the electric field vector in the plane perpendicular to the direction of propagation. There are several ways to describe the polarisation of light. First, we will discuss the Jones vector formalism. Later, reference will be made to the Poincaré sphere formalism. This topic is also treated in [[Notes/2025 Quantum Electronics Gallmann/9 Polarisation Optics#9 Polarisation Optics\|polarisation optics]].
+where the complex amplitude vector $\mathbf{E}_{0}$ is orthogonal to $\mathbf{k}$ (so $\mathbf{E}_0 \cdot \mathbf{k} = 0$), assuming propagation in an isotropic medium. The magnetic field is also important but for describing polarisation, we primarily focus on the electric field vector. A fundamental property of transverse waves is polarisation, which refers to the orientation and evolution of the electric field vector in the plane perpendicular to the direction of propagation. There are several ways to describe the polarisation of light. First, we will discuss the Jones vector formalism. Later, reference will be made to the Poincaré sphere formalism. This topic is also treated in [[Notes/2025 Quantum Electronics/9 Polarisation Optics#9 Polarisation Optics\|polarisation optics]].
 
 For a plane wave propagating along the $z$-axis, the electric field vector has components only in the $x$ and $y$ directions: $\mathbf{E}(\mathbf{r}, t) = (E_x \hat{\mathbf{x}} + E_y \hat{\mathbf{y}}) e^{i(\omega t-kz)}$. The complex amplitudes of these components can be written as:
 $$
@@ -94,7 +94,7 @@ A key property of a half-wave plate is that if the input is linearly polarised a
 ## 2.2 Dispersion of Light in Matter
 [[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=35&selection=33,0,33,14| ]]
 
-We now slightly shift the topic to the dispersion of light in matter. The amplitude and phase response of an electromagnetic wave interacting with a material is generally a function of wavelength or frequency. We will treat a crystal lattice (or more generally, a dielectric material) as a collection of bound charges that can be modelled as harmonic oscillators. This is the **Lorentz model**. For more details on this approach, see [[Notes/2025 Quantum Electronics Gallmann/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|this chapter]]. These charge oscillations lead to a macroscopic polarisation $\mathbf{P}(\omega)$. The driving force in the following model is the electric field $\mathbf{E}$ of the light wave:
+We now slightly shift the topic to the dispersion of light in matter. The amplitude and phase response of an electromagnetic wave interacting with a material is generally a function of wavelength or frequency. We will treat a crystal lattice (or more generally, a dielectric material) as a collection of bound charges that can be modelled as harmonic oscillators. This is the **Lorentz model**. For more details on this approach, see [[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|this chapter]]. These charge oscillations lead to a macroscopic polarisation $\mathbf{P}(\omega)$. The driving force in the following model is the electric field $\mathbf{E}$ of the light wave:
 $$
 \frac{\partial^2 P_x}{\partial t^2}+\Gamma \frac{\partial P_x}{\partial t}+\omega_0^2 P_x=\frac{N e^2}{m_e} E_x,
 $$

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/3-dispersion-compensation/","hide":"true","updated":"2025-05-30T12:19:43.115+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/3-dispersion-compensation/","hide":"true","updated":"2025-06-04T15:33:55.629+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -140,7 +140,7 @@ The figure illustrates:
 ## 3.3 Gires-Tournois Interferometer (GTI)
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=128&selection=6,0,8,35| ]]
 
-A Gires-Tournois Interferometer (GTI), also known as a Gires-Tournois etalon, is an optical element designed to introduce a frequency-dependent phase shift upon reflection, while ideally having unity reflectivity across its operational bandwidth. It consists of two parallel reflecting surfaces: a front surface that is partially reflective and a back surface that has very high (ideally 100%) reflectivity. These two surfaces form a [[Notes/2025 Quantum Electronics Gallmann/4 Coherence and Interference#4.6 Fabry-Pérot Interferometer - Etalon\|Fabry-Pérot cavity]]. Light incident on the GTI undergoes multiple reflections within the cavity.
+A Gires-Tournois Interferometer (GTI), also known as a Gires-Tournois etalon, is an optical element designed to introduce a frequency-dependent phase shift upon reflection, while ideally having unity reflectivity across its operational bandwidth. It consists of two parallel reflecting surfaces: a front surface that is partially reflective and a back surface that has very high (ideally 100%) reflectivity. These two surfaces form a [[Notes/2025 Quantum Electronics/4 Coherence and Interference#4.6 Fabry-Pérot Interferometer - Etalon\|Fabry-Pérot cavity]]. Light incident on the GTI undergoes multiple reflections within the cavity.
 
 ![Attachments/UltraFastLasers_Keller 31.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2031.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=128&rect=213,65,386,177| ]]
 

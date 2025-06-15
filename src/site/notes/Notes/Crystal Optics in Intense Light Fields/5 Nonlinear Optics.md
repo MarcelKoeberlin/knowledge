@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/5-nonlinear-optics/","hide":"true","updated":"2025-06-03T17:32:17.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/5-nonlinear-optics/","hide":"true","updated":"2025-06-04T15:33:55.624+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -116,7 +116,7 @@ Typical values for $\chi^{(2)}$ lie around 1 to 100 pm/V. In linear optics, ofte
 ## 5.2 Wave Equation in Nonlinear Optics
 [[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=70&selection=180,0,180,37| ]]
 
-For the further discussion on SHG, we derive the wave equation in a nonlinear medium from the [[Notes/2025 Quantum Electronics Gallmann/1 Electromagnetic Theory of Light#1.3 The Material Equations\|Maxwell's equations]]:
+For the further discussion on SHG, we derive the wave equation in a nonlinear medium from the [[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.3 The Material Equations\|Maxwell's equations]]:
 
 $$
 \begin{aligned}
