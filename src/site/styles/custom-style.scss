@@ -1059,7 +1059,7 @@ body .cm-s-obsidian picture img {
     top: 0px;
     position: fixed;
     left: 0px;
-
+    font-family: "Karla";
   }
 }
 
@@ -1137,10 +1137,6 @@ ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
   background-position: center right;
   background-size: 13px;
 }
-
-
-
-
 
 ::selection {
   background-color: var(--text-muted);
