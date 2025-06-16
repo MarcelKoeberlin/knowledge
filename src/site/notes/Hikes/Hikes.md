@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/hikes/hikes/","hide":"true","updated":"2025-06-16T14:16:47.000+02:00"}
+{"dg-publish":true,"permalink":"/hikes/hikes/","hide":"true","updated":"2025-06-16T17:13:17.000+02:00"}
 ---
 
 Sorted by date:
@@ -8,7 +8,7 @@ Sorted by date:
 
 ---
 Upcoming (walked variation depends on fitness that day): 
-- [[Hikes/Kerry Way, Part 1 - Killarney to Black Valley\|Kerry Way, Part 1 - Killarney to Black Valley]]
+- [[Hikes/Kerry Way Part 1 - Killarney to Black Valley\|Kerry Way Part 1 - Killarney to Black Valley]]
 - [[Hikes/Kerry Way, Part 2 - Black Valley to Glencar\|Kerry Way, Part 2 - Black Valley to Glencar]]
 - [[Hikes/Kerry Way, Part 3 - Glencar to Glenbeigh (short variant)\|Kerry Way, Part 3 - Glencar to Glenbeigh (short variant)]]
 - [[Hikes/Kerry Way, Part 3 - Glencar to Glenbeigh (long variant)\|Kerry Way, Part 3 - Glencar to Glenbeigh (long variant)]]
