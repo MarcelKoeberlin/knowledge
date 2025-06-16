@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/hikes/braunwald-kloental-june-14-2025/","hide":"true","updated":"2025-06-15T22:19:36.048+02:00"}
+{"dg-publish":true,"permalink":"/hikes/braunwald-kloental-june-14-2025/","hide":"true","updated":"2025-06-16T10:12:15.000+02:00"}
 ---
 
 [[Hikes/Hikes\|Jump back to hike selection]].
@@ -23,7 +23,7 @@ Interactive map: [outdooractive](https://www.outdooractive.com/en/route/hiking-t
 
 **Overview Map**
 
-![Attachments/Hikes/Braunwald - Klöntal (June 14, 2025)/GaiaGPS-2025-06-15T18_52_59-1.png|700](/img/user/Attachments/Hikes/Braunwald%20-%20Kl%C3%B6ntal%20(June%2014,%202025)/GaiaGPS-2025-06-15T18_52_59-1.png)
+![[Attachments/GaiaGPS-2025-06-16T08_09_02.pdf]]
 
 ---
 These selected images are compressed. For best experience, view the website in light mode (see sun/moon icon on the bottom right after site has loaded). My first attempt at photography without my phone camera.
