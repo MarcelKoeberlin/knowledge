@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/hikes/kerry-way-part-1-killarney-to-black-valley/","hide":"true","updated":"2025-06-16T17:13:17.000+02:00"}
+{"dg-publish":true,"permalink":"/hikes/kerry-way-part-1-killarney-to-black-valley/","hide":"true","updated":"2025-06-16T17:14:13.000+02:00"}
 ---
 
 [[Hikes/Hikes\|Jump back to hike selection]].
 
 ---
-# Kerry Way, Part 1 - Killarney to Black Valley
+# Kerry Way Part 1 - Killarney to Black Valley
  
 | Stat              | Value                                |
 | ----------------- | ------------------------------------ |
