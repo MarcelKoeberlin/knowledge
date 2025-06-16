@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-06-04T15:34:02.493+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-06-04T15:34:02.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.

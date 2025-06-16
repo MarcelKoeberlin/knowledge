@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/4-coherence-and-interference/","hide":"true","updated":"2025-06-04T15:34:01.614+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/4-coherence-and-interference/","hide":"true","updated":"2025-06-04T15:34:01.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.

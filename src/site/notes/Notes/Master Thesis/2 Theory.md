@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/master-thesis/2-theory/","hide":"true","updated":"2025-06-04T12:29:14.315+02:00"}
+{"dg-publish":true,"permalink":"/notes/master-thesis/2-theory/","hide":"true","updated":"2025-06-04T12:29:14.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.
