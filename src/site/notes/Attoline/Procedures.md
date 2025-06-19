@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-05-30T10:21:28.000+02:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-06-17T14:42:18.000+02:00"}
 ---
 
 # 1 Laser Startup
@@ -203,7 +203,7 @@ In E6.2:
 	- Block beam in ==E8==
 	- Move out all filters
 	- Ensure that the shutter chiller is off
-	- Shut down the four turbo pumps labelled 'Front Unit'
+	- Shut down the four (or five if the first chamber is vented as well) turbo pumps labelled 'Front Unit'
 	- Remove KF on second camber to prevent over-pressure
 	- Open the nitrogen valve on the wall to approximately 0.6 bar (red line)
 	- After the turbos spun down, open the nitrogen valve at first chamber to start purging
@@ -213,6 +213,10 @@ In E6.2:
 	- Move out filter in front of camera
 	- Shut down 'cross chamber' and 'surface' (both on right side of pressure reader, 2 out of 5)
 	- Turn off camera
+- Working with the laser within the chambers while vented:
+	- Block the beam before any chambers.
+	- Power of laser needs to be reduced to roughly $600$ mW in E8. 
+	- OD filters before photodiodes for beam stabilisation might need to be removed.
 - Shut down the turbo pumps that are still connected to the chamber to vent
 - After turbo has spun down to almost 0 Hz, flush with nitrogen if possible (open at wall, 0.6 bar)
 - Open the chamber
