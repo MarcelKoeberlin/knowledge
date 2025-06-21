@@ -1,10 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/hikes/","hide":"true","updated":"2025-06-19T22:07:22.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/hikes/","hide":"true","updated":"2025-06-21T17:29:41.000+02:00"}
 ---
 
 Jump back to [[Photography/Photography\|photography]]. 
 
 ---
+# Hikes
 Hikes sorted by date:
 
 [[Photography/Hikes/Braunwald - Klöntal (June 14, 2025)\|Braunwald - Klöntal (June 14, 2025)]]
