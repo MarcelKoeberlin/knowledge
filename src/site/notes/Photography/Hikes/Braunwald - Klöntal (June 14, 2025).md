@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/braunwald-kloental-june-14-2025/","hide":"true","updated":"2025-06-27T15:20:45.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/braunwald-kloental-june-14-2025/","hide":"true","updated":"2025-06-28T23:21:26.933+02:00"}
 ---
 
 Jump back to [[Photography/Hikes/Hikes\|hike selection]].
@@ -7,17 +7,17 @@ Jump back to [[Photography/Hikes/Hikes\|hike selection]].
 ---
 # Braunwald - Klöntal (June 14, 2025)
 
-| Stat              | Value                     |
-| ----------------- | ------------------------- |
-| Distance          | 17.9 km                   |
-| Time              | 6h30 (including breaks)   |
-| Highest Point     | 2246 m                    |
-| Lowest Point      | 853 m                     |
-| Ascent (up)       | 440 m                     |
-| Descent (down)    | 1512 m                    |
-| Country           | Switzerland               |
-| County            | Glarus, Schwyz            |
-| Images taken with | Canon EOS1300D + 18-55 mm |
+| Stat              | Value                                      |
+| ----------------- | ------------------------------------------ |
+| Distance          | 17.9 km                                    |
+| Time              | 6h30 (including breaks)                    |
+| Highest Point     | 2246 m                                     |
+| Lowest Point      | 853 m                                      |
+| Ascent (up)       | 440 m                                      |
+| Descent (down)    | 1512 m                                     |
+| Country           | Switzerland                                |
+| County            | Glarus, Schwyz                             |
+| Images taken with | Canon EOS1300D + 18 - 55 mm, f/3.5 - f/5.6 |
 
 Interactive map: [outdooractive](https://www.outdooractive.com/en/route/hiking-trail/canton-of-glarus/braunwald-kloental/57076907/#dm=1)
 

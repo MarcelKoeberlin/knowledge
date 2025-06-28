@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/flumserberg-6-gipfel-june-28-2025/","hide":"true","updated":"2025-06-28T23:15:12.358+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/flumserberg-6-gipfel-june-28-2025/","hide":"true","updated":"2025-06-28T23:20:05.387+02:00"}
 ---
 
 Jump back to [[Photography/Hikes/Hikes\|hike selection]].
@@ -7,16 +7,17 @@ Jump back to [[Photography/Hikes/Hikes\|hike selection]].
 ---
 # Flumserberg - 6 Gipfel (June 28, 2025)
 
-| Stat           | Value                   |
-| -------------- | ----------------------- |
-| Distance       | 14.9 km                 |
-| Time           | 5h20 (including breaks) |
-| Highest Point  | 2316 m                  |
-| Lowest Point   | 1374 m                  |
-| Ascent (up)    | 604 m                   |
-| Descent (down) | 1254 m                  |
-| Country        | Switzerland             |
-| County         | St. Gallen              |
+| Stat              | Value                                                 |
+| ----------------- | ----------------------------------------------------- |
+| Distance          | 14.9 km                                               |
+| Time              | 5h20 (including breaks)                               |
+| Highest Point     | 2316 m                                                |
+| Lowest Point      | 1374 m                                                |
+| Ascent (up)       | 604 m                                                 |
+| Descent (down)    | 1254 m                                                |
+| Country           | Switzerland                                           |
+| County            | St. Gallen                                            |
+| Images taken with | Sony $\alpha\text{6400}$ + 18 - 135 mm, f/3.5 - f/5.6 |
 
 Interactive map: [outdooractive](https://www.outdooractive.com/en/route/hiking-trail/heidiland/flumserberg-6-gipfel-tour/319564984/?share=%7E3zzqhskm%244ossnfvm)
 
