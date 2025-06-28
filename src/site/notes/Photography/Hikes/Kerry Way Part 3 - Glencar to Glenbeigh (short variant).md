@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-3-glencar-to-glenbeigh-short-variant/","hide":"true","updated":"2025-06-19T21:59:49.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-3-glencar-to-glenbeigh-short-variant/","hide":"true","updated":"2025-06-27T15:14:45.000+02:00"}
 ---
 
 [[Photography/Hikes/Hikes\|Jump back to hike selection]].

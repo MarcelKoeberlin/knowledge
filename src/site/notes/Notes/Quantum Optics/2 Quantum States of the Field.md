@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/quantum-optics/2-quantum-states-of-the-field/","hide":"true","updated":"2025-05-30T15:22:40.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/quantum-optics/2-quantum-states-of-the-field/","hide":"true","updated":"2025-05-30T15:22:40.066+02:00"}
 ---
 
 Jump back to ==[[Notes/Quantum Optics/Quantum Optics#Table of Contents\|chapter selection]]==.

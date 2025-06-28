@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/8-laser-fundamentals/","hide":"true","updated":"2025-06-04T15:34:06.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/8-laser-fundamentals/","hide":"true","updated":"2025-06-04T15:34:06.701+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.

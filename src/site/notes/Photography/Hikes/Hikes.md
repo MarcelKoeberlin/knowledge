@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/hikes/","hide":"true","updated":"2025-06-21T17:29:41.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/hikes/","hide":"true","updated":"2025-06-28T22:55:52.278+02:00"}
 ---
 
 Jump back to [[Photography/Photography\|photography]]. 
@@ -9,6 +9,7 @@ Jump back to [[Photography/Photography\|photography]].
 Hikes sorted by date:
 
 [[Photography/Hikes/Braunwald - Klöntal (June 14, 2025)\|Braunwald - Klöntal (June 14, 2025)]]
+[[Photography/Hikes/Flumserberg - 6 Gipfel (June 28, 2025)\|Flumserberg - 6 Gipfel (June 28, 2025)]]
 
 ---
 Upcoming (walked variation depends on fitness that day): 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/master-thesis/4-conclusion-and-outlook/","hide":"true","updated":"2025-06-04T14:17:06.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/master-thesis/4-conclusion-and-outlook/","hide":"true","updated":"2025-06-04T14:17:06.769+02:00"}
 ---
 
 Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.

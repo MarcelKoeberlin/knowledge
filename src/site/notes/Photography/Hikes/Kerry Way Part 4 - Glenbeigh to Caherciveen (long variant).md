@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-4-glenbeigh-to-caherciveen-long-variant/","hide":"true","updated":"2025-06-19T21:59:50.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-4-glenbeigh-to-caherciveen-long-variant/","hide":"true","updated":"2025-06-27T22:52:29.436+02:00"}
 ---
 
 [[Photography/Hikes/Hikes\|Jump back to hike selection]].
@@ -7,17 +7,17 @@
 ---
 # Kerry Way Part 4 - Glenbeigh to Caherciveen (long variant)
  
-| Stat              | Value                                |
-| ----------------- | ------------------------------------ |
-| Distance          | 32.7 km                              |
-| Time              | XhXX (including breaks)              |
-| Highest Point     | 330 m                                |
-| Lowest Point      | 13 m                                 |
-| Ascent (up)       | 580 m                                |
-| Descent (down)    | 579 m                                |
-| Country           | Ireland                              |
-| County            | Kerry                                |
-| Images taken with | Sony $\alpha\text{6400}$ + 16 -50 mm |
+| Stat              | Value                                 |
+| ----------------- | ------------------------------------- |
+| Distance          | 32.7 km                               |
+| Time              | XhXX (including breaks)               |
+| Highest Point     | 330 m                                 |
+| Lowest Point      | 13 m                                  |
+| Ascent (up)       | 580 m                                 |
+| Descent (down)    | 579 m                                 |
+| Country           | Ireland                               |
+| County            | Kerry                                 |
+| Images taken with | Sony $\alpha\text{6400}$ + 16 - 50 mm |
 
 Interactive map: [outdooractive](https://www.outdooractive.com/en/route/hiking-trail/southwest-ireland/kerry-way-part-4-glenbeigh-caherciveen-long-variation-/318373809/?share=%7E3ixcw3hp%244osshygt)
 

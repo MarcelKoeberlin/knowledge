@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/5-fourier-optics/","hide":"true","updated":"2025-06-04T15:34:05.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/5-fourier-optics/","hide":"true","updated":"2025-06-04T15:34:05.532+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.

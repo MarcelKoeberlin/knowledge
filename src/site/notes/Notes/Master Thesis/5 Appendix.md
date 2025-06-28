@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/master-thesis/5-appendix/","hide":"true","updated":"2025-06-04T14:26:42.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/master-thesis/5-appendix/","hide":"true","updated":"2025-06-04T14:26:42.326+02:00"}
 ---
 
 Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.

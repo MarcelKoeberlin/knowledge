@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/master-thesis/3-setup-characterisation-and-results/","hide":"true","updated":"2025-06-04T14:25:41.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/master-thesis/3-setup-characterisation-and-results/","hide":"true","updated":"2025-06-04T14:25:41.514+02:00"}
 ---
 
 Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.
