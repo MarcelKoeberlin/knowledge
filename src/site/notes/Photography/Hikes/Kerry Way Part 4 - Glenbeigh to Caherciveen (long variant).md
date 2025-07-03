@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-4-glenbeigh-to-caherciveen-long-variant/","hide":"true","updated":"2025-06-27T22:52:29.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-4-glenbeigh-to-caherciveen-long-variant/","hide":"true","updated":"2025-06-27T22:52:29.436+02:00"}
 ---
 
 [[Photography/Hikes/Hikes\|Jump back to hike selection]].

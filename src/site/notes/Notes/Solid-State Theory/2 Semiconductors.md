@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/2-semiconductors/","hide":"true","updated":"2025-05-31T10:09:24.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/2-semiconductors/","hide":"true","updated":"2025-05-31T10:09:24.489+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
