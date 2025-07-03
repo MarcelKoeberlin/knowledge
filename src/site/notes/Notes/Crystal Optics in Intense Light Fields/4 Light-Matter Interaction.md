@@ -7,9 +7,9 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 **Table of Contents**
 
-[[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction#4.1 Describing the Light Field\|4.1 Describing the Light Field]]
-[[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction#4.2 Multipole Expansion of the Light Field\|4.2 Multipole Expansion of the Light Field]]
-[[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction#4.3 Microscopic Approach to Magneto-Optics\|4.3 Microscopic Approach to Magneto-Optics]]
+[[#4.1 Describing the Light Field|4.1 Describing the Light Field]]
+[[#4.2 Multipole Expansion of the Light Field|4.2 Multipole Expansion of the Light Field]]
+[[#4.3 Microscopic Approach to Magneto-Optics|4.3 Microscopic Approach to Magneto-Optics]]
 
 ---
 # 4 Light Matter Interaction

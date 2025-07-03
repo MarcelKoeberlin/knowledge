@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/2-linear-pulse-propagation/","hide":"true","updated":"2025-06-08T18:45:12.764+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/2-linear-pulse-propagation/","hide":"true","updated":"2025-06-08T18:45:12.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -7,10 +7,10 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 **Table of Contents**
 
-[[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.1 Wave Equation in the Spectral Domain: Helmholtz Equation\|2.1 Wave Equation in the Spectral Domain: Helmholtz Equation]]
-[[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.2 Linear vs Nonlinear Wave Propagation\|2.2 Linear vs Nonlinear Wave Propagation]]
-[[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.3 Ultrafast Pulses\|2.3 Ultrafast Pulses]]
-[[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.4 Linear pulse Propagation in a Dispersive Material\|2.4 Linear pulse Propagation in a Dispersive Material]]
+[[#2.1 Wave Equation in the Spectral Domain: Helmholtz Equation|2.1 Wave Equation in the Spectral Domain: Helmholtz Equation]]
+[[#2.2 Linear vs Nonlinear Wave Propagation|2.2 Linear vs Nonlinear Wave Propagation]]
+[[#2.3 Ultrafast Pulses|2.3 Ultrafast Pulses]]
+[[#2.4 Linear pulse Propagation in a Dispersive Material|2.4 Linear pulse Propagation in a Dispersive Material]]
 
 ---
 # 2 Linear Pulse Propagation
@@ -151,7 +151,7 @@ A crucial conclusion for linear, **lossless** dispersive media is that $|H(\omeg
 ## 2.3 Ultrafast Pulses
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=55&selection=76,0,78,16| ]]
 
-A coherent light pulse forms a wave packet of photons and can be described as a superposition of plane waves with different frequencies and phases at a fixed position in space. The shortest possible pulse duration for a given spectral amplitude distribution is obtained when the spectral phase is flat (constant) or linear with frequency (see [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.3.2 Shortest Pulse Duration\|section 2.3.2]]). For a pulse observed at a fixed position, we find its temporal profile via the inverse Fourier transform:
+A coherent light pulse forms a wave packet of photons and can be described as a superposition of plane waves with different frequencies and phases at a fixed position in space. The shortest possible pulse duration for a given spectral amplitude distribution is obtained when the spectral phase is flat (constant) or linear with frequency (see [[#2.3.2 Shortest Pulse Duration|section 2.3.2]]). For a pulse observed at a fixed position, we find its temporal profile via the inverse Fourier transform:
 $$
 \mathbf{E}(t)=\frac{1}{2 \pi} \int_{-\infty}^{\infty} \mathbf{E}(\omega) e^{i \omega t} d\omega.
 $$

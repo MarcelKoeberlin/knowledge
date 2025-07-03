@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/3-reflection-and-transmission-at-interfaces/","hide":"true","updated":"2025-06-04T15:34:04.875+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/3-reflection-and-transmission-at-interfaces/","hide":"true","updated":"2025-06-04T15:34:04.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,10 +7,10 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 **Table of Contents**
 
-[[Notes/2025 Quantum Electronics/3 Reflection and Transmission at Interfaces#3.1 Boundary Conditions for Isotropic Media\|3.1 Boundary Conditions for Isotropic Media]]
-[[Notes/2025 Quantum Electronics/3 Reflection and Transmission at Interfaces#3.2 Brewster's Angle\|3.2 Brewster's Angle]]
-[[Notes/2025 Quantum Electronics/3 Reflection and Transmission at Interfaces#3.3 Total Internal Reflection\|3.3 Total Internal Reflection]]
-[[Notes/2025 Quantum Electronics/3 Reflection and Transmission at Interfaces#3.4 Evanescent Waves\|3.4 Evanescent Waves]]
+[[#3.1 Boundary Conditions for Isotropic Media|3.1 Boundary Conditions for Isotropic Media]]
+[[#3.2 Brewster's Angle|3.2 Brewster's Angle]]
+[[#3.3 Total Internal Reflection|3.3 Total Internal Reflection]]
+[[#3.4 Evanescent Waves|3.4 Evanescent Waves]]
 
 ---
 # 3 Reflection and Transmission at Interfaces
@@ -92,7 +92,7 @@ Consider the next plot, which shows the power reflectance $R$, transmittance $T$
 
 ![Attachments/Notes/2025 Quantum Electronics/3 Reflection and Transmission at Interfaces/QE_script 7.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/3%20Reflection%20and%20Transmission%20at%20Interfaces/QE_script%207.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=66&rect=72,154,527,349| ]]
 
-For internal reflection, the phase retardation for reflected light changes continuously for angles of incidence greater than the critical angle (see [[Notes/2025 Quantum Electronics/3 Reflection and Transmission at Interfaces#3.3 Total Internal Reflection\|total internal reflection]]). The phase of transmitted light (if any) typically does not change or changes by $\pi$ if coefficients become negative. 
+For internal reflection, the phase retardation for reflected light changes continuously for angles of incidence greater than the critical angle (see [[#3.3 Total Internal Reflection|total internal reflection]]). The phase of transmitted light (if any) typically does not change or changes by $\pi$ if coefficients become negative. 
 
 At normal incidence ($\theta_1=0^\circ$), TE and TM polarisations are indistinguishable. The Fresnel equations give $r_p = -r_s = \frac{n_2-n_1}{n_2+n_1}$ and $t_p=t_s=\frac{2n_1}{n_1+n_2}$. The sign difference $r_p=-r_s$ arises from the conventional choice of positive directions for the electric field components in p-polarisation for the incident and reflected waves, as illustrated here:
 

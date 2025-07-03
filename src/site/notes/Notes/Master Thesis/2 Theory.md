@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/master-thesis/2-theory/","hide":"true","updated":"2025-06-04T12:29:14.315+02:00"}
+{"dg-publish":true,"permalink":"/notes/master-thesis/2-theory/","hide":"true","updated":"2025-06-04T12:29:14.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.
@@ -7,13 +7,13 @@ Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter se
 ---
 **Table of Contents**
 
-[[Notes/Master Thesis/2 Theory#2.1 Soliton modelocking\|2.1 Soliton modelocking]]
-[[Notes/Master Thesis/2 Theory#2.2 Saturable Absorbers and Passive Modelocking\|2.2 Saturable Absorbers and Passive Modelocking]]
-[[Notes/Master Thesis/2 Theory#2.3 Power Spectral Density, Relative Intensity Noise, and Signal-to-Noise Ratio\|2.3 Power Spectral Density, Relative Intensity Noise, and Signal-to-Noise Ratio]]
-[[Notes/Master Thesis/2 Theory#2.4 Noise of Modelocked Lasers\|2.4 Noise of Modelocked Lasers]]
-[[Notes/Master Thesis/2 Theory#2.5 Shot Noise in Lasers\|2.5 Shot Noise in Lasers]]
-[[Notes/Master Thesis/2 Theory#2.6 Influence of Spectral Broadening on Noise\|2.6 Influence of Spectral Broadening on Noise]]
-[[Notes/Master Thesis/2 Theory#2.7 Using Noise Gain from Spectral Broadening to Infer a Low Shot-Noise Level\|2.7 Using Noise Gain from Spectral Broadening to Infer a Low Shot-Noise Level]]
+[[#2.1 Soliton modelocking|2.1 Soliton modelocking]]
+[[#2.2 Saturable Absorbers and Passive Modelocking|2.2 Saturable Absorbers and Passive Modelocking]]
+[[#2.3 Power Spectral Density, Relative Intensity Noise, and Signal-to-Noise Ratio|2.3 Power Spectral Density, Relative Intensity Noise, and Signal-to-Noise Ratio]]
+[[#2.4 Noise of Modelocked Lasers|2.4 Noise of Modelocked Lasers]]
+[[#2.5 Shot Noise in Lasers|2.5 Shot Noise in Lasers]]
+[[#2.6 Influence of Spectral Broadening on Noise|2.6 Influence of Spectral Broadening on Noise]]
+[[#2.7 Using Noise Gain from Spectral Broadening to Infer a Low Shot-Noise Level|2.7 Using Noise Gain from Spectral Broadening to Infer a Low Shot-Noise Level]]
 
 ---
 # 2 Theory

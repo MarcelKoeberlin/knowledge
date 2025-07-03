@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/5-fourier-optics/","hide":"true","updated":"2025-06-04T15:34:05.532+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/5-fourier-optics/","hide":"true","updated":"2025-06-04T15:34:05.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,14 +7,14 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 **Table of Contents**
 
-[[Notes/2025 Quantum Electronics/5 Fourier Optics#5.1 Plane Waves and the Helmholtz Equation\|5.1 Plane Waves and the Helmholtz Equation]]
-[[Notes/2025 Quantum Electronics/5 Fourier Optics#5.2 Paraxial Approximation\|5.2 Paraxial Approximation]]
-[[Notes/2025 Quantum Electronics/5 Fourier Optics#5.3 Fresnel Approximation\|5.3 Fresnel Approximation]]
-[[Notes/2025 Quantum Electronics/5 Fourier Optics#5.4 The Fraunhofer Limit: Far Field\|5.4 The Fraunhofer Limit: Far Field]]
-[[Notes/2025 Quantum Electronics/5 Fourier Optics#5.5 Diffraction Patterns -  Amplitude Modulation\|5.5 Diffraction Patterns -  Amplitude Modulation]]
-[[Notes/2025 Quantum Electronics/5 Fourier Optics#5.6 Fourier Optics with a Lens\|5.6 Fourier Optics with a Lens]]
-[[Notes/2025 Quantum Electronics/5 Fourier Optics#5.7 Holography\|5.7 Holography]]
-[[Notes/2025 Quantum Electronics/5 Fourier Optics#5.8 Paraxial Ray Optics\|5.8 Paraxial Ray Optics]]
+[[#5.1 Plane Waves and the Helmholtz Equation|5.1 Plane Waves and the Helmholtz Equation]]
+[[#5.2 Paraxial Approximation|5.2 Paraxial Approximation]]
+[[#5.3 Fresnel Approximation|5.3 Fresnel Approximation]]
+[[#5.4 The Fraunhofer Limit: Far Field|5.4 The Fraunhofer Limit: Far Field]]
+[[#5.5 Diffraction Patterns -  Amplitude Modulation|5.5 Diffraction Patterns -  Amplitude Modulation]]
+[[#5.6 Fourier Optics with a Lens|5.6 Fourier Optics with a Lens]]
+[[#5.7 Holography|5.7 Holography]]
+[[#5.8 Paraxial Ray Optics|5.8 Paraxial Ray Optics]]
 
 ---
 # 5 Fourier Optics

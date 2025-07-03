@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/5-laser-rate-equations/","hide":"true","updated":"2025-06-08T18:14:54.089+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/5-laser-rate-equations/","hide":"true","updated":"2025-06-08T18:14:54.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -7,8 +7,8 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 **Table of Contents**
 
-[[Notes/Ultrafast Laser Physics/5 Laser Rate Equations#5.1 Rate Equations for the Ideal Four-Level System\|5.1 Rate Equations for the Ideal Four-Level System]]
-[[Notes/Ultrafast Laser Physics/5 Laser Rate Equations#5.2 Relaxation Oscillations\|5.2 Relaxation Oscillations]]
+[[#5.1 Rate Equations for the Ideal Four-Level System|5.1 Rate Equations for the Ideal Four-Level System]]
+[[#5.2 Relaxation Oscillations|5.2 Relaxation Oscillations]]
 
 ---
 # 5 Laser Rate Equations and Relaxation Oscillations

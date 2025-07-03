@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/6-experimental-methods-of-nonlinear-optics/","hide":"true","updated":"2025-06-04T15:33:55.626+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/6-experimental-methods-of-nonlinear-optics/","hide":"true","updated":"2025-06-04T15:33:55.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -7,9 +7,9 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 **Table of Contents**
 
-[[Notes/Crystal Optics in Intense Light Fields/6 Experimental Methods of Nonlinear Optics#6.1 Lasers\|6.1 Lasers]]
-[[Notes/Crystal Optics in Intense Light Fields/6 Experimental Methods of Nonlinear Optics#6.2 Frequency Tuning\|6.2 Frequency Tuning]]
-[[Notes/Crystal Optics in Intense Light Fields/6 Experimental Methods of Nonlinear Optics#6.3 Phase-Sensitive SHG\|6.3 Phase-Sensitive SHG]]
+[[#6.1 Lasers|6.1 Lasers]]
+[[#6.2 Frequency Tuning|6.2 Frequency Tuning]]
+[[#6.3 Phase-Sensitive SHG|6.3 Phase-Sensitive SHG]]
 
 ---
 # 6 Experimental Methods of Nonlinear Optics

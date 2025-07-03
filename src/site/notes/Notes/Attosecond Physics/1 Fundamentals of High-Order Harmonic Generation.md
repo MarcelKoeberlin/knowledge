@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-05-30T15:19:41.211+02:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-05-30T15:19:41.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -7,9 +7,9 @@ Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|
 ---
 **Table of Contents**
 
-[[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation#1.1 Simple Man's Model\|1.1 Simple Man's Model]]
-[[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation#1.2 Phase Matching and Propagation of HHG in the Gas Medium\|1.2 Phase Matching and Propagation of HHG in the Gas Medium]]
-[[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation#1.3 Dependence of HHG Spectra on Macroscopic Conditions\|1.3 Dependence of HHG Spectra on Macroscopic Conditions]]
+[[#1.1 Simple Man's Model|1.1 Simple Man's Model]]
+[[#1.2 Phase Matching and Propagation of HHG in the Gas Medium|1.2 Phase Matching and Propagation of HHG in the Gas Medium]]
+[[#1.3 Dependence of HHG Spectra on Macroscopic Conditions|1.3 Dependence of HHG Spectra on Macroscopic Conditions]]
 
 ---
 # 1 Fundamentals of High-Order Harmonic Generation

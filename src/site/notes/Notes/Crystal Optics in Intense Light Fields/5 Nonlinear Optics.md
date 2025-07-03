@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/5-nonlinear-optics/","hide":"true","updated":"2025-06-04T15:33:55.624+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/5-nonlinear-optics/","hide":"true","updated":"2025-06-04T15:33:55.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -7,10 +7,10 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 **Table of Contents**
 
-[[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5.1 Microscopy for Nonlinear Optics\|5.1 Microscopy for Nonlinear Optics]]
-[[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5.2 Wave Equation in Nonlinear Optics\|5.2 Wave Equation in Nonlinear Optics]]
-[[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5.3 Magnetic SHG in Chromium(III)-Oxide ($\ce{Cr2O3}$)\|5.3 Magnetic SHG in Chromium(III)-Oxide]]
-[[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5.4 Microscopic Mechanisms of Nonlinear Magneto-optical Processes\|5.4 Microscopic Mechanisms of Nonlinear Magneto-optical Processes]]
+[[#5.1 Microscopy for Nonlinear Optics|5.1 Microscopy for Nonlinear Optics]]
+[[#5.2 Wave Equation in Nonlinear Optics|5.2 Wave Equation in Nonlinear Optics]]
+[[#5.3 Magnetic SHG in Chromium(III)-Oxide ($\ce{Cr2O3}$)|5.3 Magnetic SHG in Chromium(III)-Oxide]]
+[[#5.4 Microscopic Mechanisms of Nonlinear Magneto-optical Processes|5.4 Microscopic Mechanisms of Nonlinear Magneto-optical Processes]]
 
 ---
 # 5 Nonlinear Optics
@@ -389,7 +389,7 @@ The following figure shows the sample with the polarisation altered from right c
 ## 5.4 Microscopic Mechanisms of Nonlinear Magneto-optical Processes
 [[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=79&selection=2,0,3,9| ]]
 
-The observations of SHG in $\mathrm{Cr}_{2} \mathrm{O}_{3}$ discussed in the [[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics#5.3 Magnetic SHG in Chromium(III)-Oxide ($ ce{Cr2O3}$)\|previous section]] require coupling of the light field and magnetism at a microscopic level. Explaining the nonreciprocal optical effects in $\mathrm{Cr}_{2} \mathrm{O}_{3}$ on a microscopic level is not trivial and requires the interplay of spin-orbit coupling and a trigonal distortion in the crystal lattice, leading to a ligand field contribution.
+The observations of SHG in $\mathrm{Cr}_{2} \mathrm{O}_{3}$ discussed in the [[#5.3 Magnetic SHG in Chromium(III)-Oxide ($ ce{Cr2O3}$)|previous section]] require coupling of the light field and magnetism at a microscopic level. Explaining the nonreciprocal optical effects in $\mathrm{Cr}_{2} \mathrm{O}_{3}$ on a microscopic level is not trivial and requires the interplay of spin-orbit coupling and a trigonal distortion in the crystal lattice, leading to a ligand field contribution.
 
 The outermost electrons of the $\mathrm{Cr}^{3+}$ ion occupy the $3d$ orbitals. The crystal field due to the surrounding oxygen ions splits this five-fold degenerate $3d$ orbital into two sets of levels: the triply degenerate lower $t_{2g}$ levels (typically $d_{xy}, d_{yz}, d_{zx}$) and the doubly degenerate upper $e_g$ levels (typically $d_{x^2-y^2}, d_{z^2}$). In the ground state of $\mathrm{Cr}^{3+}$ in an octahedral environment, the $t_{2g}$ states are occupied by three electrons, and the $e_g$ states are empty. SHG in $\mathrm{Cr}_{2} \mathrm{O}_{3}$ can be triggered by the absorption of two photons by the $\mathrm{Cr}^{3+}$ ion. The ion can be excited, for instance, to a configuration like $(t_{2g})^2 e_g$ by two consecutive electric dipole transitions, corresponding to an $\mathbf{r} \cdot \mathbf{E}$ term in the interaction Hamiltonian. A contribution to the electric susceptibility $\chi_{e}^{(2)}$ results from an electric dipole relaxation process. Accordingly, a contribution to the magnetic susceptibility $\chi_{m}^{(2)}$ results from a magnetic dipole relaxation process, which corresponds to an $\mathbf{L} \cdot \mathbf{B}$ term in the Hamiltonian.
 

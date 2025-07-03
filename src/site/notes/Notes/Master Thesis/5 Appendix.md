@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/master-thesis/5-appendix/","hide":"true","updated":"2025-06-04T14:26:42.326+02:00"}
+{"dg-publish":true,"permalink":"/notes/master-thesis/5-appendix/","hide":"true","updated":"2025-06-04T14:26:42.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.
@@ -7,11 +7,11 @@ Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter se
 ---
 **Table of Contents**
 
-[[Notes/Master Thesis/5 Appendix#5.1 Proof of Schottky's Theorem for Shot Noise\|5.1 Proof of Schottky's Theorem for Shot Noise]]
-[[Notes/Master Thesis/5 Appendix#5.2 Modulation Instabilities\|5.2 Modulation Instabilities]]
-[[Notes/Master Thesis/5 Appendix#5.3 Autocorrelator\|5.3 Autocorrelator]]
-[[Notes/Master Thesis/5 Appendix#5.4 Diagnostics Measurements\|5.4 Diagnostics Measurements]]
-[[Notes/Master Thesis/5 Appendix#5.5 Welch's Method to Obtain Power Spectral Density Estimates\|5.5 Welch's Method to Obtain Power Spectral Density Estimates]]
+[[#5.1 Proof of Schottky's Theorem for Shot Noise|5.1 Proof of Schottky's Theorem for Shot Noise]]
+[[#5.2 Modulation Instabilities|5.2 Modulation Instabilities]]
+[[#5.3 Autocorrelator|5.3 Autocorrelator]]
+[[#5.4 Diagnostics Measurements|5.4 Diagnostics Measurements]]
+[[#5.5 Welch's Method to Obtain Power Spectral Density Estimates|5.5 Welch's Method to Obtain Power Spectral Density Estimates]]
 
 ---
 # 5 Appendix

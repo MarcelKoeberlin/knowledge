@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/1-plane-wave-propagation-in-dispersive-media/","hide":"true","updated":"2025-06-04T15:33:55.628+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/1-plane-wave-propagation-in-dispersive-media/","hide":"true","updated":"2025-06-04T15:33:55.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -7,19 +7,19 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 **Table of Contents**
 
-[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.1 Maxwell Equations\|1.1 Maxwell Equations]]
-[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.2 Material Equations\|1.2 Material Equations]]
-[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.3 Wave Equation with Refractive Index\|1.3 Wave Equation with Refractive Index]]
-[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.4 TEM Wave and Impedance\|1.4 TEM Wave and Impedance]]
-[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.5 Polarisation\|1.5 Polarisation]]
-[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.6 Energy Density, Poynting Vector, and Intensity\|1.6 Energy Density, Poynting Vector, and Intensity]]
-[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.7 Dispersion\|1.7 Dispersion]]
-[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.8 Sellmeier Equation in the Visible and Near-Infrared\|1.8 Sellmeier Equation in the Visible and Near-Infrared]]
+[[#1.1 Maxwell Equations|1.1 Maxwell Equations]]
+[[#1.2 Material Equations|1.2 Material Equations]]
+[[#1.3 Wave Equation with Refractive Index|1.3 Wave Equation with Refractive Index]]
+[[#1.4 TEM Wave and Impedance|1.4 TEM Wave and Impedance]]
+[[#1.5 Polarisation|1.5 Polarisation]]
+[[#1.6 Energy Density, Poynting Vector, and Intensity|1.6 Energy Density, Poynting Vector, and Intensity]]
+[[#1.7 Dispersion|1.7 Dispersion]]
+[[#1.8 Sellmeier Equation in the Visible and Near-Infrared|1.8 Sellmeier Equation in the Visible and Near-Infrared]]
 
 ---
 # 1 Plane Wave Propagation in Dispersive Media
 
-We will now begin with the description of the simplest type of electromagnetic field: the plane wave, and we will consider its propagation in a dispersive medium. For this, we require Maxwell's equations. Note however, that we will not derive them here, as it is assumed the reader is already somewhat familiar with them. The following two sections on the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.1 Maxwell Equations\|Maxwell equations]] and the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.2 Material Equations\|material equations]] are also treated in a similar way in my [[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.2 Maxwell's Equations in a Medium\|quantum electronics notes]].
+We will now begin with the description of the simplest type of electromagnetic field: the plane wave, and we will consider its propagation in a dispersive medium. For this, we require Maxwell's equations. Note however, that we will not derive them here, as it is assumed the reader is already somewhat familiar with them. The following two sections on the [[#1.1 Maxwell Equations|Maxwell equations]] and the [[#1.2 Material Equations|material equations]] are also treated in a similar way in my [[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.2 Maxwell's Equations in a Medium\|quantum electronics notes]].
 ## 1.1 Maxwell Equations
 [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=21&selection=3,0,5,31| ]]
 

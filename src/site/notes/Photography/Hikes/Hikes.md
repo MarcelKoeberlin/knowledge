@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/hikes/","hide":"true","updated":"2025-06-28T22:55:52.278+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/hikes/","hide":"true","updated":"2025-07-01T11:27:19.000+02:00"}
 ---
 
 Jump back to [[Photography/Photography\|photography]]. 
@@ -22,7 +22,7 @@ Upcoming (walked variation depends on fitness that day):
 - [[Photography/Hikes/Kerry Way Part 5 - Caherciveen to Waterville\|Kerry Way Part 5 - Caherciveen to Waterville]]
 - [[Photography/Hikes/Kerry Way Part 6 - Waterville to Caherdaniel (short variation)\|Kerry Way Part 6 - Waterville to Caherdaniel (short variation)]]
 - [[Photography/Hikes/Kerry Way Part 6 - Waterville to Caherdaniel (long variation)\|Kerry Way Part 6 - Waterville to Caherdaniel (long variation)]]
-- [[Photography/Hikes/Kerry Way Part 7 - Caherdaniel to Tahilla\|Kerry Way Part 7 - Caherdaniel to Tahilla]]
-- [[Photography/Hikes/Kerry Way Part 8 - Tahilla to Kenmare\|Kerry Way Part 8 - Tahilla to Kenmare]]
+- [[Photography/Hikes/Kerry Way Part 7 - Caherdaniel to Sneem\|Kerry Way Part 7 - Caherdaniel to Sneem]]
+- [[Photography/Hikes/Kerry Way Part 8 - Tahilla to Templenoe\|Kerry Way Part 8 - Tahilla to Templenoe]]
 
 ---

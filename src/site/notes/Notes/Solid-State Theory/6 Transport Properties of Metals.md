@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/6-transport-properties-of-metals/","hide":"true","updated":"2025-05-31T15:30:52.969+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/6-transport-properties-of-metals/","hide":"true","updated":"2025-05-31T15:30:52.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -7,14 +7,14 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 **Table of Contents**
 
-[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.1 Electrical Conductivity\|6.1 Electrical Conductivity]]
-[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.2 Transport Equations and Relaxation Time\|6.2 Transport Equations and Relaxation Time]]
-[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.3 Impurity Scattering\|6.3 Impurity Scattering]]
-[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.4 Electron-Phonon Scattering\|6.4 Electron-Phonon Scattering]]
-[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.5 Electron-Electron Scattering\|6.5 Electron-Electron Scattering]]
-[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.6 Matthiessen's Rule and the Ioffe-Regel Limit\|6.6 Matthiessen's Rule and the Ioffe-Regel Limit]]
-[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.7 General Transport Coefficients\|6.7 General Transport Coefficients]]
-[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.8 Anderson Localisation in One-Dimensional Systems\|6.8 Anderson Localisation in One-Dimensional Systems]]
+[[#6.1 Electrical Conductivity|6.1 Electrical Conductivity]]
+[[#6.2 Transport Equations and Relaxation Time|6.2 Transport Equations and Relaxation Time]]
+[[#6.3 Impurity Scattering|6.3 Impurity Scattering]]
+[[#6.4 Electron-Phonon Scattering|6.4 Electron-Phonon Scattering]]
+[[#6.5 Electron-Electron Scattering|6.5 Electron-Electron Scattering]]
+[[#6.6 Matthiessen's Rule and the Ioffe-Regel Limit|6.6 Matthiessen's Rule and the Ioffe-Regel Limit]]
+[[#6.7 General Transport Coefficients|6.7 General Transport Coefficients]]
+[[#6.8 Anderson Localisation in One-Dimensional Systems|6.8 Anderson Localisation in One-Dimensional Systems]]
 
 ---
 # 6 Transport Properties of Metals

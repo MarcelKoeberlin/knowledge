@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/1-signals-and-systems/","hide":"true","updated":"2025-05-30T20:20:05.632+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/1-signals-and-systems/","hide":"true","updated":"2025-05-30T20:20:05.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -7,15 +7,15 @@ Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents
 ---
 **Table of Contents**
 
-[[Notes/Signals and Systems/1 Signals and Systems#1.1 Continuous-Time and Discrete-Time Signals\|1.1 Continuous-Time and Discrete-Time Signals]]
-[[Notes/Signals and Systems/1 Signals and Systems#1.2 Energy and Power\|1.2 Energy and Power]]
-[[Notes/Signals and Systems/1 Signals and Systems#1.3 Transformations\|1.3 Transformations]]
-[[Notes/Signals and Systems/1 Signals and Systems#1.4 Periodic Signals\|1.4 Periodic Signals]]
-[[Notes/Signals and Systems/1 Signals and Systems#1.5 Even and Odd Signals\|1.5 Even and Odd Signals]]
-[[Notes/Signals and Systems/1 Signals and Systems#1.6 Exponential Signals\|1.6 Exponential Signals]]
-[[Notes/Signals and Systems/1 Signals and Systems#1.7 Unit Impulse and Unit Step\|1.7 Unit Impulse and Unit Step]]
-[[Notes/Signals and Systems/1 Signals and Systems#1.8 Interconnection of Systems\|1.8 Interconnection of Systems]]
-[[Notes/Signals and Systems/1 Signals and Systems#1.9 Basic Properties\|1.9 Basic Properties]]
+[[#1.1 Continuous-Time and Discrete-Time Signals|1.1 Continuous-Time and Discrete-Time Signals]]
+[[#1.2 Energy and Power|1.2 Energy and Power]]
+[[#1.3 Transformations|1.3 Transformations]]
+[[#1.4 Periodic Signals|1.4 Periodic Signals]]
+[[#1.5 Even and Odd Signals|1.5 Even and Odd Signals]]
+[[#1.6 Exponential Signals|1.6 Exponential Signals]]
+[[#1.7 Unit Impulse and Unit Step|1.7 Unit Impulse and Unit Step]]
+[[#1.8 Interconnection of Systems|1.8 Interconnection of Systems]]
+[[#1.9 Basic Properties|1.9 Basic Properties]]
 
 ---
 # 1 Signals and Systems
@@ -126,7 +126,7 @@ Consider the continuous-time complex exponential signal of the form $x(t) = C e^
     2.  If $\mathfrak{Re}\left[\alpha\right] = \sigma_0 > 0$: $x(t)$ is a sinusoidal signal multiplied by an exponentially increasing envelope.
     3.  If $\mathfrak{Re}\left[\alpha\right] = \sigma_0 < 0$: $x(t)$ is a sinusoidal signal multiplied by an exponentially decaying envelope.
 
-Many of the concepts discussed from [[Notes/Signals and Systems/1 Signals and Systems#1.3 Transformations\|section 1.3]] to [[Notes/Signals and Systems/1 Signals and Systems#1.6 Exponential Signals\|section 1.6]] have direct analogues for discrete-time signals. However, a key difference arises in the periodicity of discrete-time complex exponentials: A discrete-time complex exponential $x[n]=e^{i\omega_0 n}$ is periodic if and only if its frequency $\omega_0$ is a rational multiple of $2\pi$. That is, $\omega_0/(2\pi) = k/N$ for some integers $k$ and $N \neq 0$. This implies $\omega_0 N = 2\pi k$ must hold for some integer $N$, which is then a period.
+Many of the concepts discussed from [[#1.3 Transformations|section 1.3]] to [[#1.6 Exponential Signals|section 1.6]] have direct analogues for discrete-time signals. However, a key difference arises in the periodicity of discrete-time complex exponentials: A discrete-time complex exponential $x[n]=e^{i\omega_0 n}$ is periodic if and only if its frequency $\omega_0$ is a rational multiple of $2\pi$. That is, $\omega_0/(2\pi) = k/N$ for some integers $k$ and $N \neq 0$. This implies $\omega_0 N = 2\pi k$ must hold for some integer $N$, which is then a period.
 
 ---
 ## 1.7 Unit Impulse and Unit Step

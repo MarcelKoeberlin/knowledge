@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-06-04T15:33:59.801+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-06-04T15:33:59.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,16 +7,16 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 **Table of Contents**
 
-[[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.1 Microscopic Form of Maxwell's Equations in Vacuum\|1.1 Microscopic Form of Maxwell's Equations in Vacuum]]
-[[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.2 Maxwell's Equations in a Medium\|1.2 Maxwell's Equations in a Medium]]
-[[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.3 The Material Equations\|1.3 The Material Equations]]
-[[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.4 Macroscopic Approximation\|1.4 Macroscopic Approximation]]
-[[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.5 Wave Equation\|1.5 Wave Equation]]
-[[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.6 Solutions to the wave equation\|1.6 Solutions to the wave equation]]
-[[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.7 Polarisation\|1.7 Polarisation]]
-[[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.8 Poynting Vector and Poynting's Theorem\|1.8 Poynting Vector and Poynting's Theorem]]
-[[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.9 Timescales\|1.9 Timescales]]
-[[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.10 Momentum of Light\|1.10 Momentum of Light]]
+[[#1.1 Microscopic Form of Maxwell's Equations in Vacuum|1.1 Microscopic Form of Maxwell's Equations in Vacuum]]
+[[#1.2 Maxwell's Equations in a Medium|1.2 Maxwell's Equations in a Medium]]
+[[#1.3 The Material Equations|1.3 The Material Equations]]
+[[#1.4 Macroscopic Approximation|1.4 Macroscopic Approximation]]
+[[#1.5 Wave Equation|1.5 Wave Equation]]
+[[#1.6 Solutions to the wave equation|1.6 Solutions to the wave equation]]
+[[#1.7 Polarisation|1.7 Polarisation]]
+[[#1.8 Poynting Vector and Poynting's Theorem|1.8 Poynting Vector and Poynting's Theorem]]
+[[#1.9 Timescales|1.9 Timescales]]
+[[#1.10 Momentum of Light|1.10 Momentum of Light]]
 
 ---
 # 1 Electromagnetic Theory of Light

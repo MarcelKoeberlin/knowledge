@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/3-dispersion-compensation/","hide":"true","updated":"2025-06-04T15:33:55.629+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/3-dispersion-compensation/","hide":"true","updated":"2025-06-04T15:33:55.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -7,12 +7,12 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 **Table of Contents**
 
-[[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.1 Prism Compressor\|3.1 Prism Compressor]]
-[[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.2 Grating Compressor and Pulse Shaper\|3.2 Grating Compressor and Pulse Shaper]]
-[[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.3 Gires-Tournois Interferometer (GTI)\|3.3 Gires-Tournois Interferometer (GTI)]]
-[[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.4 Mirrors with Controlled Phase Properties\|3.4 Mirrors with Controlled Phase Properties]]
-[[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.5 Dazzlers\|3.5 Dazzlers]]
-[[Notes/Ultrafast Laser Physics/3 Dispersion Compensation#3.6 Dispersion Measurement\|3.6 Dispersion Measurement]]
+[[#3.1 Prism Compressor|3.1 Prism Compressor]]
+[[#3.2 Grating Compressor and Pulse Shaper|3.2 Grating Compressor and Pulse Shaper]]
+[[#3.3 Gires-Tournois Interferometer (GTI)|3.3 Gires-Tournois Interferometer (GTI)]]
+[[#3.4 Mirrors with Controlled Phase Properties|3.4 Mirrors with Controlled Phase Properties]]
+[[#3.5 Dazzlers|3.5 Dazzlers]]
+[[#3.6 Dispersion Measurement|3.6 Dispersion Measurement]]
 
 ---
 # 3 Dispersion Compensation

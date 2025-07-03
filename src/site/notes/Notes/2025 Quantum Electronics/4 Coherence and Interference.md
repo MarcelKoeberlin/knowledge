@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/4-coherence-and-interference/","hide":"true","updated":"2025-06-04T15:34:01.614+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/4-coherence-and-interference/","hide":"true","updated":"2025-06-04T15:34:01.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,13 +7,13 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 **Table of Contents**
 
-[[Notes/2025 Quantum Electronics/4 Coherence and Interference#4.1 Young's Double Slit Experiment\|4.1 Young's Double Slit Experiment]]
-[[Notes/2025 Quantum Electronics/4 Coherence and Interference#4.2 Coherence Function\|4.2 Coherence Function]]
-[[Notes/2025 Quantum Electronics/4 Coherence and Interference#4.3 Coherence Time and Coherence Length\|4.3 Coherence Time and Coherence Length]]
-[[Notes/2025 Quantum Electronics/4 Coherence and Interference#4.4 Wiener-Khinchin Theorem\|4.4 Wiener-Khinchin Theorem]]
-[[Notes/2025 Quantum Electronics/4 Coherence and Interference#4.5 Interference\|4.5 Interference]]
-[[Notes/2025 Quantum Electronics/4 Coherence and Interference#4.6 Fabry-Pérot Interferometer - Etalon\|4.6 Fabry-Pérot Interferometer - Etalon]]
-[[Notes/2025 Quantum Electronics/4 Coherence and Interference#4.7 Matrix Methods for Multiple Surfaces\|4.7 Matrix Methods for Multiple Surfaces]]
+[[#4.1 Young's Double Slit Experiment|4.1 Young's Double Slit Experiment]]
+[[#4.2 Coherence Function|4.2 Coherence Function]]
+[[#4.3 Coherence Time and Coherence Length|4.3 Coherence Time and Coherence Length]]
+[[#4.4 Wiener-Khinchin Theorem|4.4 Wiener-Khinchin Theorem]]
+[[#4.5 Interference|4.5 Interference]]
+[[#4.6 Fabry-Pérot Interferometer - Etalon|4.6 Fabry-Pérot Interferometer - Etalon]]
+[[#4.7 Matrix Methods for Multiple Surfaces|4.7 Matrix Methods for Multiple Surfaces]]
 
 ---
 # 4 Coherence and Interference

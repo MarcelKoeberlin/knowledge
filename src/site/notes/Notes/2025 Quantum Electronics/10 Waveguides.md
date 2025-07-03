@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/10-waveguides/","hide":"true","updated":"2025-06-04T15:34:05.305+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/10-waveguides/","hide":"true","updated":"2025-06-04T15:34:05.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,9 +7,9 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 **Table of Contents**
 
-[[Notes/2025 Quantum Electronics/10 Waveguides#10.1 Planar Mirror Waveguide\|10.1 Planar Mirror Waveguide]]
-[[Notes/2025 Quantum Electronics/10 Waveguides#10.2 Planar Dielectric Waveguide\|10.2 Planar Dielectric Waveguide]]
-[[Notes/2025 Quantum Electronics/10 Waveguides#10.3 Optical Fibres\|10.3 Optical Fibres]]
+[[#10.1 Planar Mirror Waveguide|10.1 Planar Mirror Waveguide]]
+[[#10.2 Planar Dielectric Waveguide|10.2 Planar Dielectric Waveguide]]
+[[#10.3 Optical Fibres|10.3 Optical Fibres]]
 
 ---
 # 10 Waveguides
@@ -19,13 +19,13 @@ Waveguides are devices that transmit and guide light and other electromagnetic r
 
 ![Attachments/Notes/2025 Quantum Electronics/10 Waveguides/QE_script 2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/10%20Waveguides/QE_script%202.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=227&rect=122,180,479,303| ]]
 
-The difference between the colours in the schematic typically represents different refractive indices. The figure shows, from (a) to (c): a slab waveguide, a strip (or channel) waveguide, and an [[Notes/2025 Quantum Electronics/10 Waveguides#10.3 Optical Fibres\|optical fibre]].
+The difference between the colours in the schematic typically represents different refractive indices. The figure shows, from (a) to (c): a slab waveguide, a strip (or channel) waveguide, and an [[#10.3 Optical Fibres|optical fibre]].
 
 ---
 ## 10.1 Planar Mirror Waveguide
 [[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=70&selection=0,23,0,23| ]] [[Notes/2025 Quantum Electronics/QE_script.pdf#page=228&selection=4,0,6,36| ]]
 
-The following figure shows a planar mirror waveguide, consisting of two parallel, highly reflective (ideally perfect) mirrors placed a distance $d$ apart, with a medium of refractive index $n$ between them. While conceptually simple, this is a rather impractical device to construct perfectly. Instead, [[Notes/2025 Quantum Electronics/10 Waveguides#10.2 Planar Dielectric Waveguide\|planar dielectric waveguides]] based on total internal reflection are commonly used, as discussed later.
+The following figure shows a planar mirror waveguide, consisting of two parallel, highly reflective (ideally perfect) mirrors placed a distance $d$ apart, with a medium of refractive index $n$ between them. While conceptually simple, this is a rather impractical device to construct perfectly. Instead, [[#10.2 Planar Dielectric Waveguide|planar dielectric waveguides]] based on total internal reflection are commonly used, as discussed later.
 
 ![Attachments/Notes/2025 Quantum Electronics/10 Waveguides/QE_script 3.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/10%20Waveguides/QE_script%203.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=228&rect=143,434,445,560| ]]
 

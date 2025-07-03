@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-05-31T16:47:49.885+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2025-05-31T16:47:49.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -7,14 +7,14 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 **Table of Contents**
 
-[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1.1 Symmetries of Crystals\|1.1 Symmetries of Crystals]]
-[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1.2 Bloch's Theorem and Bloch Functions\|1.2 Bloch's Theorem and Bloch Functions]]
-[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1.3 Nearly Free Electron Approximation\|1.3 Nearly Free Electron Approximation]]
-[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1.4 Tight-Binding Approximation\|1.4 Tight-Binding Approximation]]
-[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1.5 Symmetry Properties of the Band Structure\|1.5 Symmetry Properties of the Band Structure]]
-[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1.6 Band-Filling and Materials Properties\|1.6 Band-Filling and Materials Properties]]
-[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1.7 Dynamics of Band Electrons - Semiclassical Approach\|1.7 Dynamics of Band Electrons - Semiclassical Approach]]
-[[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1.8 Approximative Band Structure Calculations\|1.8 Approximative Band Structure Calculations]]
+[[#1.1 Symmetries of Crystals|1.1 Symmetries of Crystals]]
+[[#1.2 Bloch's Theorem and Bloch Functions|1.2 Bloch's Theorem and Bloch Functions]]
+[[#1.3 Nearly Free Electron Approximation|1.3 Nearly Free Electron Approximation]]
+[[#1.4 Tight-Binding Approximation|1.4 Tight-Binding Approximation]]
+[[#1.5 Symmetry Properties of the Band Structure|1.5 Symmetry Properties of the Band Structure]]
+[[#1.6 Band-Filling and Materials Properties|1.6 Band-Filling and Materials Properties]]
+[[#1.7 Dynamics of Band Electrons - Semiclassical Approach|1.7 Dynamics of Band Electrons - Semiclassical Approach]]
+[[#1.8 Approximative Band Structure Calculations|1.8 Approximative Band Structure Calculations]]
 
 ---
 # 1 Electrons in the Periodic Crystal
@@ -291,7 +291,7 @@ $$
 &=\epsilon_{k}^{(0)}+V_{0}-\sum_{G \neq 0} \frac{\left|V_{-G}\right|^{2}}{\epsilon_{k-G}^{(0)}-\epsilon_{k}^{(0)}} .
 \end{aligned}
 $$
-Note that the definitions of $V_{G}$ and $c_{G}$ are in line with those used in [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1.3 Nearly Free Electron Approximation\|Section 1.3]]. For the potential,
+Note that the definitions of $V_{G}$ and $c_{G}$ are in line with those used in [[#1.3 Nearly Free Electron Approximation|Section 1.3]]. For the potential,
 $$
 \begin{aligned}
 V(x)&=\langle x| \widehat{V}|x\rangle=\sum_{k, k^{\prime}}\left\langle x \mid k^{\prime}\right\rangle \underbrace{\left\langle k^{\prime}\right| \widehat{V}|k\rangle}_{V_{G} \delta_{k^{\prime}, k+G}}\langle k \mid x\rangle\\

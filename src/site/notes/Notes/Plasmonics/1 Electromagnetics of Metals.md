@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/1-electromagnetics-of-metals/","hide":"true","updated":"2025-06-04T15:33:55.626+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/1-electromagnetics-of-metals/","hide":"true","updated":"2025-06-04T15:33:55.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -7,11 +7,11 @@ Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selectio
 ---
 **Table of Contents**
 
-[[Notes/Plasmonics/1 Electromagnetics of Metals#1.1 Maxwell's Equation of Macroscopic Electromagnetism\|1.1 Maxwell's Equation of Macroscopic Electromagnetism]]
-[[Notes/Plasmonics/1 Electromagnetics of Metals#1.2 Travelling-Wave Solution\|1.2 Travelling-Wave Solution]]
-[[Notes/Plasmonics/1 Electromagnetics of Metals#1.3 The Dispersion of the Free Electron Gas and Volume Plasmons\|1.3 The Dispersion of the Free Electron Gas and Volume Plasmons]]
-[[Notes/Plasmonics/1 Electromagnetics of Metals#1.4 Real Metals and Interband Transitions\|1.4 Real Metals and Interband Transitions]]
-[[Notes/Plasmonics/1 Electromagnetics of Metals#1.5 The Energy of the Electromagnetic Field in Metals\|1.5 The Energy of the Electromagnetic Field in Metals]]
+[[#1.1 Maxwell's Equation of Macroscopic Electromagnetism|1.1 Maxwell's Equation of Macroscopic Electromagnetism]]
+[[#1.2 Travelling-Wave Solution|1.2 Travelling-Wave Solution]]
+[[#1.3 The Dispersion of the Free Electron Gas and Volume Plasmons|1.3 The Dispersion of the Free Electron Gas and Volume Plasmons]]
+[[#1.4 Real Metals and Interband Transitions|1.4 Real Metals and Interband Transitions]]
+[[#1.5 The Energy of the Electromagnetic Field in Metals|1.5 The Energy of the Electromagnetic Field in Metals]]
 
 ---
 # 1 Electromagnetics of Metals 
@@ -165,7 +165,7 @@ Note that the frequency dependence of the dielectric function is called dispersi
 ## 1.3 The Dispersion of the Free Electron Gas and Volume Plasmons 
 [[Reading/Books/Plasmonics/Plasmonics - Fundamentals and Applications.pdf#page=34&selection=41,0,42,8| ]]
 
-Let us discuss the transparency regime $\omega > \omega_p$ of the free electron gas model. For that, consider the [[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.1.1 Drude-Lorentz model\|Lorentz-Drude model]]. The dispersion of the [[Notes/Plasmonics/1 Electromagnetics of Metals#1.2 Travelling-Wave Solution\|travelling waves]] is:
+Let us discuss the transparency regime $\omega > \omega_p$ of the free electron gas model. For that, consider the [[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.1.1 Drude-Lorentz model\|Lorentz-Drude model]]. The dispersion of the [[#1.2 Travelling-Wave Solution|travelling waves]] is:
 
 $$
 \omega^2 = \omega_p^2 + K^2c^2.

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/master-thesis/1-introduction/","hide":"true","updated":"2025-06-04T14:36:09.820+02:00"}
+{"dg-publish":true,"permalink":"/notes/master-thesis/1-introduction/","hide":"true","updated":"2025-06-04T14:36:09.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.
@@ -7,11 +7,11 @@ Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter se
 ---
 **Table of Contents**
 
-[[Notes/Master Thesis/1 Introduction#1.1 History of Lasers and Modelocking\|1.1 History of Lasers and Modelocking]]
-[[Notes/Master Thesis/1 Introduction#1.2 The Rise of Thin-Disk Lasers\|1.2 The Rise of Thin-Disk Lasers]]
-[[Notes/Master Thesis/1 Introduction#1.3 Noise in different architectures\|1.3 Noise in different architectures]]
-[[Notes/Master Thesis/1 Introduction#1.4 Final Goal of This Thesis\|1.4 Final Goal of This Thesis]]
-[[Notes/Master Thesis/1 Introduction#1.5 The Structure of the Thesis\|1.5 The Structure of the Thesis]]
+[[#1.1 History of Lasers and Modelocking|1.1 History of Lasers and Modelocking]]
+[[#1.2 The Rise of Thin-Disk Lasers|1.2 The Rise of Thin-Disk Lasers]]
+[[#1.3 Noise in different architectures|1.3 Noise in different architectures]]
+[[#1.4 Final Goal of This Thesis|1.4 Final Goal of This Thesis]]
+[[#1.5 The Structure of the Thesis|1.5 The Structure of the Thesis]]
 
 ---
 # 1 Introduction

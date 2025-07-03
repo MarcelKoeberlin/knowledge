@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/master-thesis/3-setup-characterisation-and-results/","hide":"true","updated":"2025-06-04T14:25:41.514+02:00"}
+{"dg-publish":true,"permalink":"/notes/master-thesis/3-setup-characterisation-and-results/","hide":"true","updated":"2025-06-04T14:25:41.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.
@@ -7,13 +7,13 @@ Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter se
 ---
 **Table of Contents**
 
-**[[Notes/Master Thesis/3 Setup, Characterisation and Results#3.1 Oscillator\|3.1 Oscillator]]**
-**[[Notes/Master Thesis/3 Setup, Characterisation and Results#3.2 Beam Diagnostics\|3.2 Beam Diagnostics]]**
-**[[Notes/Master Thesis/3 Setup, Characterisation and Results#3.3 Fibre Coupling\|3.3 Fibre Coupling]]**
-**[[Notes/Master Thesis/3 Setup, Characterisation and Results#3.4 Grating Spectrometer\|3.4 Grating Spectrometer]]**
-**[[Notes/Master Thesis/3 Setup, Characterisation and Results#3.5 Characterisation\|3.5 Characterisation]]**
-**[[Notes/Master Thesis/3 Setup, Characterisation and Results#3.6 Technical Considerations\|3.6 Technical Considerations]]**
-**[[Notes/Master Thesis/3 Setup, Characterisation and Results#3.7 Full Setup\|3.7 Full Setup]]**
+**[[#3.1 Oscillator|3.1 Oscillator]]**
+**[[#3.2 Beam Diagnostics|3.2 Beam Diagnostics]]**
+**[[#3.3 Fibre Coupling|3.3 Fibre Coupling]]**
+**[[#3.4 Grating Spectrometer|3.4 Grating Spectrometer]]**
+**[[#3.5 Characterisation|3.5 Characterisation]]**
+**[[#3.6 Technical Considerations|3.6 Technical Considerations]]**
+**[[#3.7 Full Setup|3.7 Full Setup]]**
 
 ---
 

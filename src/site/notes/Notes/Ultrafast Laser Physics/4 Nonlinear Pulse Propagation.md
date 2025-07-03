@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/4-nonlinear-pulse-propagation/","hide":"true","updated":"2025-06-04T15:33:55.641+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/4-nonlinear-pulse-propagation/","hide":"true","updated":"2025-06-04T15:33:55.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -7,11 +7,11 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 **Table of Contents**
 
-[[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.1 Kerr Effect and Self-Phase Modulation\|4.1 Kerr Effect and Self-Phase Modulation]]
-[[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.2 Self-Focusing and Filamentation\|4.2 Self-Focusing and Filamentation]]
-[[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.3 Solitons - Nonlinear Schrödinger Equation\|4.3 Solitons - Nonlinear Schrödinger Equation]]
-[[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.4 Self-Steepening\|4.4 Self-Steepening]]
-[[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.5 Nonlinear Propagation in a Saturable Absorber or Saturable Amplifier\|4.5 Nonlinear Propagation in a Saturable Absorber or Saturable Amplifier]]
+[[#4.1 Kerr Effect and Self-Phase Modulation|4.1 Kerr Effect and Self-Phase Modulation]]
+[[#4.2 Self-Focusing and Filamentation|4.2 Self-Focusing and Filamentation]]
+[[#4.3 Solitons - Nonlinear Schrödinger Equation|4.3 Solitons - Nonlinear Schrödinger Equation]]
+[[#4.4 Self-Steepening|4.4 Self-Steepening]]
+[[#4.5 Nonlinear Propagation in a Saturable Absorber or Saturable Amplifier|4.5 Nonlinear Propagation in a Saturable Absorber or Saturable Amplifier]]
 
 ---
 # 4 Nonlinear Pulse Propagation

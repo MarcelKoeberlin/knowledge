@@ -4,7 +4,7 @@
 
 These notes accompany the lecture 'Crystal Optics in Intense Light Fields' taught by Prof. Fiebig in 2025. I chose to cover this course because it provides a solid fundamental basis for my PhD work. The material is primarily based on the _unofficial_ notes from 2015 (as Prof. Fiebig refers to them), combined with his current lecture slides, though the order has been slightly adjusted. All content is written in my own words.
  
-==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|Table of Contents]]==
+==[[#Table of Contents|Table of Contents]]==
 
 ---
 These lecture notes explore how light interacts with matter in modern materials and systems, with a special focus on the role of symmetry. We will look at both linear and nonlinear effects, building from fundamental concepts to phenomena at the forefront of current research.

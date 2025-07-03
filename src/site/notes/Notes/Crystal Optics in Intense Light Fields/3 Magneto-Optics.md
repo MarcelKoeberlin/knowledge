@@ -7,7 +7,7 @@
 ---
 **Table of Contents**
 
-[[Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics#3.1 Survey of Magneto-Optic Effects\|3.1 Survey of Magneto-Optic Effects]]
+[[#3.1 Survey of Magneto-Optic Effects|3.1 Survey of Magneto-Optic Effects]]
 
 ---
 # 3 Magneto-Optics

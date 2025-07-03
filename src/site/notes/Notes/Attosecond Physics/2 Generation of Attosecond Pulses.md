@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/2-generation-of-attosecond-pulses/","hide":"true","updated":"2025-05-30T13:03:45.261+02:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/2-generation-of-attosecond-pulses/","hide":"true","updated":"2025-05-30T13:03:45.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -7,15 +7,15 @@ Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|
 ---
 **Table of Contents**
 
-[[Notes/Attosecond Physics/2 Generation of Attosecond Pulses#2.1 Attosecond Pulse Trains\|2.1 Attosecond Pulse Trains]]
-[[Notes/Attosecond Physics/2 Generation of Attosecond Pulses#2.2 Amplitude Gating\|2.2 Amplitude Gating]]
-[[Notes/Attosecond Physics/2 Generation of Attosecond Pulses#2.3 Polarisation Gating\|2.3 Polarisation Gating]]
-[[Notes/Attosecond Physics/2 Generation of Attosecond Pulses#2.4 Interference Polarisation Gating\|2.4 Interference Polarisation Gating]]
-[[Notes/Attosecond Physics/2 Generation of Attosecond Pulses#2.5 Two-Colour Gating Method\|2.5 Two-Colour Gating Method]]
-[[Notes/Attosecond Physics/2 Generation of Attosecond Pulses#2.6 (Generalised) Double Optical Gating (DOG)\|2.6 (Generalised) Double Optical Gating (DOG)]]
-[[Notes/Attosecond Physics/2 Generation of Attosecond Pulses#2.7 Ionisation Gating\|2.7 Ionisation Gating]]
-[[Notes/Attosecond Physics/2 Generation of Attosecond Pulses#2.8 Spatial Gating\|2.8 Spatial Gating]]
-[[Notes/Attosecond Physics/2 Generation of Attosecond Pulses#2.9 Generating Circularly Polarised High Harmonics\|2.9 Generating Circularly Polarised High Harmonics]]
+[[#2.1 Attosecond Pulse Trains|2.1 Attosecond Pulse Trains]]
+[[#2.2 Amplitude Gating|2.2 Amplitude Gating]]
+[[#2.3 Polarisation Gating|2.3 Polarisation Gating]]
+[[#2.4 Interference Polarisation Gating|2.4 Interference Polarisation Gating]]
+[[#2.5 Two-Colour Gating Method|2.5 Two-Colour Gating Method]]
+[[#2.6 (Generalised) Double Optical Gating (DOG)|2.6 (Generalised) Double Optical Gating (DOG)]]
+[[#2.7 Ionisation Gating|2.7 Ionisation Gating]]
+[[#2.8 Spatial Gating|2.8 Spatial Gating]]
+[[#2.9 Generating Circularly Polarised High Harmonics|2.9 Generating Circularly Polarised High Harmonics]]
 
 ---
 # 2 Generation of Single Attosecond Pulses
@@ -157,7 +157,7 @@ As shown, by carefully choosing the relative phase and intensity (for instance, 
 ## 2.6 (Generalised) Double Optical Gating (DOG)
 [[Reading/Books/Attosecond Physics/Attosecond Physics Attosecond Measurements and Control.pdf#page=70&selection=37,0,37,62| ]]
 
-Combining a fundamental laser field with its second harmonic (a two-colour field as discussed in [[Notes/Attosecond Physics/2 Generation of Attosecond Pulses#2.5 Two-Colour Gating Method\|section 2.5]]) inherently breaks the inversion symmetry of the total driving field waveform, $E(t) \neq -E(t+T_0/2)$. This allows both even and odd harmonics to be generated. The resulting harmonic spectrum can exhibit peaks spaced by $\omega_0$, rather than $2\omega_0$. According to Fourier transform theory, in the time domain, this denser harmonic spectrum corresponds to a train of attosecond pulses with an equal separation of $T_0 = 2\pi/\omega_0$ (one attosecond burst per fundamental optical cycle), instead of $T_0/2$.
+Combining a fundamental laser field with its second harmonic (a two-colour field as discussed in [[#2.5 Two-Colour Gating Method|section 2.5]]) inherently breaks the inversion symmetry of the total driving field waveform, $E(t) \neq -E(t+T_0/2)$. This allows both even and odd harmonics to be generated. The resulting harmonic spectrum can exhibit peaks spaced by $\omega_0$, rather than $2\omega_0$. According to Fourier transform theory, in the time domain, this denser harmonic spectrum corresponds to a train of attosecond pulses with an equal separation of $T_0 = 2\pi/\omega_0$ (one attosecond burst per fundamental optical cycle), instead of $T_0/2$.
 
 ![Attachments/Attosecond Physics Attosecond Measurements and Control 8.webp|700](/img/user/Attachments/Attosecond%20Physics%20Attosecond%20Measurements%20and%20Control%208.webp)[[Reading/Books/Attosecond Physics/Attosecond Physics Attosecond Measurements and Control.pdf#page=71&rect=192,440,386,611| ]]
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/2-linear-time-invariant-systems/","hide":"true","updated":"2025-05-30T20:21:15.892+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/2-linear-time-invariant-systems/","hide":"true","updated":"2025-05-30T20:21:08.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -7,12 +7,12 @@ Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents
 ---
 **Table of Contents**
 
-[[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.1 The Convolution Sum\|2.1 The Convolution Sum]]
-[[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.2 Convolution Properties of LTI Systems\|2.2 Convolution Properties of LTI Systems]]
-[[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.3 Basic Properties\|2.3 Basic Properties]]
-[[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.4 Causal LTI Systems Described by Differential Equations\|2.4 Causal LTI Systems Described by Differential Equations]]
-[[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.5 Block Diagram Representation\|2.5 Block Diagram Representation]]
-[[Notes/Signals and Systems/2 Linear Time-Invariant Systems#2.6 Singularity Functions\|2.6 Singularity Functions]]
+[[#2.1 The Convolution Sum|2.1 The Convolution Sum]]
+[[#2.2 Convolution Properties of LTI Systems|2.2 Convolution Properties of LTI Systems]]
+[[#2.3 Basic Properties|2.3 Basic Properties]]
+[[#2.4 Causal LTI Systems Described by Differential Equations|2.4 Causal LTI Systems Described by Differential Equations]]
+[[#2.5 Block Diagram Representation|2.5 Block Diagram Representation]]
+[[#2.6 Singularity Functions|2.6 Singularity Functions]]
 
 ---
 # 2 Linear Time-Invariant Systems

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-06-04T15:34:02.493+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-06-04T15:34:02.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,14 +7,14 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 **Table of Contents**
 
-[[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|2.1 Origin of Dispersion]]
-[[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.2 Kramers-Kronig Relations\|2.2 Kramers-Kronig Relations]]
-[[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.3 Equations in Frequency Domain\|2.3 Equations in Frequency Domain]]
-[[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.4 Helmholtz Equation\|2.4 Helmholtz Equation]]
-[[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.5 Refractive Index in Dispersive Media\|2.5 Refractive Index in Dispersive Media]]
-[[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.6 Light Pulses\|2.6 Light Pulses]]
-[[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.7 Time-Bandwidth Product of Wavepackets\|2.7 Time-Bandwidth Product of Wavepackets]]
-[[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.8 Phase, Group and Front Velocity\|2.8 Phase, Group and Front Velocity]]
+[[#2.1 Origin of Dispersion|2.1 Origin of Dispersion]]
+[[#2.2 Kramers-Kronig Relations|2.2 Kramers-Kronig Relations]]
+[[#2.3 Equations in Frequency Domain|2.3 Equations in Frequency Domain]]
+[[#2.4 Helmholtz Equation|2.4 Helmholtz Equation]]
+[[#2.5 Refractive Index in Dispersive Media|2.5 Refractive Index in Dispersive Media]]
+[[#2.6 Light Pulses|2.6 Light Pulses]]
+[[#2.7 Time-Bandwidth Product of Wavepackets|2.7 Time-Bandwidth Product of Wavepackets]]
+[[#2.8 Phase, Group and Front Velocity|2.8 Phase, Group and Front Velocity]]
 
 ---
 # 2 Propagation in Dispersive Media

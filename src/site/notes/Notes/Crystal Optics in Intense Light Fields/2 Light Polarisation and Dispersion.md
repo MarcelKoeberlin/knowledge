@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2025-06-04T15:33:55.611+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2025-06-04T15:33:55.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -7,9 +7,9 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 **Table of Contents**
 
-[[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion#2.1 Jones Vector Formalism\|2.1 Jones Vector Formalism]]
-[[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion#2.2 Dispersion of Light in Matter\|2.2 Dispersion of Light in Matter]]
-[[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion#2.3 Classes of Electronic Transitions\|2.3 Classes of Electronic Transitions]]
+[[#2.1 Jones Vector Formalism|2.1 Jones Vector Formalism]]
+[[#2.2 Dispersion of Light in Matter|2.2 Dispersion of Light in Matter]]
+[[#2.3 Classes of Electronic Transitions|2.3 Classes of Electronic Transitions]]
 
 ---
 # 2 Light Polarisation and Dispersion

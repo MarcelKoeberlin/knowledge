@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/5-discrete-time-fourier-transform/","hide":"true","updated":"2025-05-30T20:32:50.501+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/5-discrete-time-fourier-transform/","hide":"true","updated":"2025-05-30T20:32:50.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -7,10 +7,10 @@ Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents
 ---
 **Table of Contents**
 
-[[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.1 Representation of Aperiodic Signals: The Discrete-Time Fourier Transform\|5.1 Representation of Aperiodic Signals: The Discrete-Time Fourier Transform]]
-[[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.2 The Fourier Transform for Periodic Signals\|5.2 The Fourier Transform for Periodic Signals]]
-[[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.3 Properties of the Discrete-Time Fourier Transform\|5.3 Properties of the Discrete-Time Fourier Transform]]
-[[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.4 Duality Between the Discrete-Time and Continuous-Time Fourier Transform\|5.4 Duality Between the Discrete-Time and Continuous-Time Fourier Transform]]
+[[#5.1 Representation of Aperiodic Signals: The Discrete-Time Fourier Transform|5.1 Representation of Aperiodic Signals: The Discrete-Time Fourier Transform]]
+[[#5.2 The Fourier Transform for Periodic Signals|5.2 The Fourier Transform for Periodic Signals]]
+[[#5.3 Properties of the Discrete-Time Fourier Transform|5.3 Properties of the Discrete-Time Fourier Transform]]
+[[#5.4 Duality Between the Discrete-Time and Continuous-Time Fourier Transform|5.4 Duality Between the Discrete-Time and Continuous-Time Fourier Transform]]
 
 ---
 # 5 Discrete-Time Fourier Transform

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/1-macroscopic-description-of-crystal-optical-effects/","hide":"true","updated":"2025-05-30T13:13:11.538+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/1-macroscopic-description-of-crystal-optical-effects/","hide":"true","updated":"2025-05-30T13:13:11.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -7,12 +7,12 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 **Table of Contents**
 
-[[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.1 Symmetry Principles\|1.1 Symmetry Principles]]
-[[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.2 Group Theory and Symmetry Operations in Crystals\|1.2 Group Theory and Symmetry Operations in Crystals]]
-[[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.3 Coordinate Transformations\|1.3 Coordinate Transformations]]
-[[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.4 Symmetry Groups\|1.4 Symmetry Groups]]
-[[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.5 Obtaining Tensor Components\|1.5 Obtaining Tensor Components]]
-[[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.6 Beyond Group Theory\|1.6 Beyond Group Theory]]
+[[#1.1 Symmetry Principles|1.1 Symmetry Principles]]
+[[#1.2 Group Theory and Symmetry Operations in Crystals|1.2 Group Theory and Symmetry Operations in Crystals]]
+[[#1.3 Coordinate Transformations|1.3 Coordinate Transformations]]
+[[#1.4 Symmetry Groups|1.4 Symmetry Groups]]
+[[#1.5 Obtaining Tensor Components|1.5 Obtaining Tensor Components]]
+[[#1.6 Beyond Group Theory|1.6 Beyond Group Theory]]
 
 ---
 # 1 Macroscopic Description of Crystal Optical Effects

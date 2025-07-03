@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-06-17T14:42:18.000+02:00"}
+{"dg-publish":true,"permalink":"/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-07-01T13:17:26.000+02:00"}
 ---
 
 # 1 Laser Startup
@@ -21,7 +21,7 @@ E8:
 - Gradually ramp up the Evo30 current to 17.9 V as the temperature decreases. It should equilibrate around $193$ K.
 - Pressure of chamber should not rise about $\text{9e-2}$ mbar
 - After the Element2 started up, open the shutter
-> [!Info] See [[Attoline/Procedures#2 Modelocking and Element 2 Alignment\|#2 Modelocking and Element 2 Alignment]] if automatic startup fails.
+> [!Info] See [[#2 Modelocking and Element 2 Alignment]] if automatic startup fails.
 
 - If the CEP stabilisation is used:
 	- check that the f-2f beating signal is around 104 MHz and at -30 dBm
@@ -105,7 +105,7 @@ E8:
 > [!TIP] Doesn't work? Turn trigger on
 - Set proper exposure
 - Optimise x, y, z position
-- Overlap them [[Attoline/Procedures#5.1 Spatial Overlap\|spatially]] and [[Attoline/Procedures#5.2 Temporal Overlap\|temporally]].
+- Overlap them [[#5.1 Spatial Overlap|spatially]] and [[#5.2 Temporal Overlap|temporally]].
 - Tune to specific power with IRIS pump / IR
 > [!WARNING] Turn on the shutter chiller
 
@@ -148,7 +148,7 @@ E8:
 - Set manometer to 295
 - Turn on pre-amp current
 - Turn on FASTcomtec sockets
-- Overlap them [[Attoline/Procedures#5.1 Spatial Overlap\|spatially]] and [[Attoline/Procedures#5.2 Temporal Overlap\|temporally]]
+- Overlap them [[#5.1 Spatial Overlap|spatially]] and [[#5.2 Temporal Overlap|temporally]]
 - Open gas TOF at bottle
 - Open gas before and after manometer
 - Set manometer to 295
@@ -246,6 +246,27 @@ In E6.2:
 - Within the chamber, loosen the bottom two screws with hand underneath (do not fully remove screws)
 - Swap the sample
 - Close the window with new copper ring and screws
-- [[Attoline/Procedures#10.2 Purging (any) chamber\|Purge]] the chamber
+- [[#10.2 Purging (any) chamber|Purge]] the chamber
+
+# Changing TOF Nozzle for RABBITT
+- As reference, it is worth aligning the alignment laser first
+- Vent the target, TOF, and manipulator chamber (since that one has the nitrogen valve). 
+- Remove the big flange on the window side.
+- Old nozzle was 5 cm long, new one is 4 cm long. It is bent forward in beam direction to help see scattering on the bottom camera.
+- Nozzle is glued (TedPella Silver conductive epoxy) to a rod. That rod is connected by swagelock to the alignment stage.
+- Alignment stage behaves a bit odd, since it cant be properly used over the full range in beam direction. At the end, it goes down instead of forward - keep that in mind.
+- Glue is very hard and has to be chiselled away.
+- Clean the rod using isopropanol and acetone, and then also use the ultrasonic bath. 
+- It is easiest to use a hot plate for the glue to harden.
+- After nozzle is glued back on, attach rod back to alignment stage. 
+- Clean everything (also inside the chamber) using isopropanol and acetone. 
+- Close the flange again (use a Ratsche at 20-25 Nm).
+- Wait for the pressure to go low again.
+- Let in some gas through the nozzle to see if the pressure rises. With 295 at the manometer, the pressure should be around $1$ to $2$ $10^{-5}$ mbar in the TOF. 
+- Degas the gauges using the controller. Not all gauges have that option.
+- Attach heating around the whole beamline part containing TOF, manipulator chamber, target chamber and importantly also the very top part. Make sure that 
+- Heat at 100 $^\circ$C to condensate water remaining in the TOF. Use temperature sensors!
+
+
 
 ---

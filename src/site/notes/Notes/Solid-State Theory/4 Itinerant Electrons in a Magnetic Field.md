@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/4-itinerant-electrons-in-a-magnetic-field/","hide":"true","updated":"2025-05-31T10:12:57.877+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/4-itinerant-electrons-in-a-magnetic-field/","hide":"true","updated":"2025-05-31T10:12:57.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -7,8 +7,8 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 **Table of Contents**
 
-[[Notes/Solid-State Theory/4 Itinerant Electrons in a Magnetic Field#4.1 The de Haas-van Alphen Effect\|4.1 The de Haas-van Alphen Effect]]
-[[Notes/Solid-State Theory/4 Itinerant Electrons in a Magnetic Field#4.2 Quantum Hall Effect\|4.2 Quantum Hall Effect]]
+[[#4.1 The de Haas-van Alphen Effect|4.1 The de Haas-van Alphen Effect]]
+[[#4.2 Quantum Hall Effect|4.2 Quantum Hall Effect]]
 
 ---
 # 4 Itinerant Electrons in a Magnetic Field

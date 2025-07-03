@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/2-surface-plasmon-polaritons-at-metal-insulator-interfaces/","hide":"true","updated":"2025-05-30T15:21:48.410+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/2-surface-plasmon-polaritons-at-metal-insulator-interfaces/","hide":"true","updated":"2025-05-30T15:21:48.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -7,9 +7,9 @@ Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selectio
 ---
 **Table of Contents**
 
-[[Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces#2.1 The Wave Equation\|2.1 The Wave Equation]]
-[[Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces#2.2 Surface Plasmon Polaritons at a Single Interface\|2.2 Surface Plasmon Polaritons at a Single Interface]]
-[[Notes/Plasmonics/2 Surface Plasmon Polaritons at Metal-Insulator Interfaces#2.3 Multilayer Systems\|2.3 Multilayer Systems]]
+[[#2.1 The Wave Equation|2.1 The Wave Equation]]
+[[#2.2 Surface Plasmon Polaritons at a Single Interface|2.2 Surface Plasmon Polaritons at a Single Interface]]
+[[#2.3 Multilayer Systems|2.3 Multilayer Systems]]
 
 ---
 # 2 Surface Plasmon Polaritons at Metal-Insulator Interfaces

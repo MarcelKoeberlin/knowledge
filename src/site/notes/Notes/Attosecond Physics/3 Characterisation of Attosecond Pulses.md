@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/3-characterisation-of-attosecond-pulses/","hide":"true","updated":"2025-05-30T13:04:03.926+02:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/3-characterisation-of-attosecond-pulses/","hide":"true","updated":"2025-05-30T13:04:03.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -7,13 +7,13 @@ Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|
 ---
 **Table of Contents**
 
-[[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.1 Characterisation of Ultrashort Pulses\|3.1 Characterisation of Ultrashort Pulses]]
-[[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.2 RABBITT: Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions\|3.2 RABBITT: Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions]]
-[[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.3 Attosecond Pulse Characterisation: FROG-CRAB\|3.3 Attosecond Pulse Characterisation: FROG-CRAB]]
-[[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.4 Control of Amplitude and Phase of an APT\|3.4 Control of Amplitude and Phase of an APT]]
-[[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.5 Temporal Information Extracted from Attosecond Pulse Train (APT) Photoionisation Experiments\|3.5 Temporal Information Extracted from Attosecond Pulse Train (APT) Photoionisation Experiments]]
-[[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.6 PROBE and PROBD\|3.6 PROBE and PROBD]]
-[[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.7 From RABBITT to Streaking Regime\|3.7 From RABBITT to Streaking Regime]]
+[[#3.1 Characterisation of Ultrashort Pulses|3.1 Characterisation of Ultrashort Pulses]]
+[[#3.2 RABBITT: Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions|3.2 RABBITT: Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions]]
+[[#3.3 Attosecond Pulse Characterisation: FROG-CRAB|3.3 Attosecond Pulse Characterisation: FROG-CRAB]]
+[[#3.4 Control of Amplitude and Phase of an APT|3.4 Control of Amplitude and Phase of an APT]]
+[[#3.5 Temporal Information Extracted from Attosecond Pulse Train (APT) Photoionisation Experiments|3.5 Temporal Information Extracted from Attosecond Pulse Train (APT) Photoionisation Experiments]]
+[[#3.6 PROBE and PROBD|3.6 PROBE and PROBD]]
+[[#3.7 From RABBITT to Streaking Regime|3.7 From RABBITT to Streaking Regime]]
 
 ---
 # 3 Characterisation and Control of Attosecond Pulses

@@ -9,7 +9,7 @@ Read the thesis in its original form [here](https://github.com/MarcelKoeberlin/M
 - Supervising Professor: Prof. Dr. Ursula Keller
 - Date: October 4, 2024
   
-==[[Notes/Master Thesis/Master Thesis#Table of Contents\|Table of Contents]]==
+==[[#Table of Contents|Table of Contents]]==
 
 ---
 This thesis presents the design, construction, and characterisation of a modelocked thin disk laser (TDL) with an average output power of $60$ W , a pulse duration of $1030$ fs , and a repetition rate of $20$ MHz . Mode-locking is achieved using a sapphire-bonded SESAM, and beam stabilisation is implemented with a two-actuator, two-detector system, reducing beam position fluctuations significantly. The stabilised laser is input to a hollow-core photonic crystal fibre (HCPCF). This results in a fibre coupling efficiency of $82 \%$ at $36$ W input power.

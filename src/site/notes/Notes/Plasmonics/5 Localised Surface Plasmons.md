@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/5-localised-surface-plasmons/","hide":"true","updated":"2025-05-30T15:22:15.902+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/5-localised-surface-plasmons/","hide":"true","updated":"2025-05-30T15:22:15.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -7,11 +7,11 @@ Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selectio
 ---
 **Table of Contents**
 
-[[Notes/Plasmonics/5 Localised Surface Plasmons#5.1 Normal Modes of Sub-Wavelength Metal Particles\|5.1 Normal Modes of Sub-Wavelength Metal Particles]]
-[[Notes/Plasmonics/5 Localised Surface Plasmons#5.2 Beyond the Quasi-Static Approximation and Plasmon Lifetime\|5.2 Beyond the Quasi-Static Approximation and Plasmon Lifetime]]
-[[Notes/Plasmonics/5 Localised Surface Plasmons#5.3 Coupling Between Localised Plasmons\|5.3 Coupling Between Localised Plasmons]]
-[[Notes/Plasmonics/5 Localised Surface Plasmons#5.4 Void Plasmons and Metallic Nanoshells\|5.4 Void Plasmons and Metallic Nanoshells]]
-[[Notes/Plasmonics/5 Localised Surface Plasmons#5.5 Localised Plasmons and Gain media\|5.5 Localised Plasmons and Gain media]]
+[[#5.1 Normal Modes of Sub-Wavelength Metal Particles|5.1 Normal Modes of Sub-Wavelength Metal Particles]]
+[[#5.2 Beyond the Quasi-Static Approximation and Plasmon Lifetime|5.2 Beyond the Quasi-Static Approximation and Plasmon Lifetime]]
+[[#5.3 Coupling Between Localised Plasmons|5.3 Coupling Between Localised Plasmons]]
+[[#5.4 Void Plasmons and Metallic Nanoshells|5.4 Void Plasmons and Metallic Nanoshells]]
+[[#5.5 Localised Plasmons and Gain media|5.5 Localised Plasmons and Gain media]]
 
 ---
 # 5 Localised Surface Plasmons

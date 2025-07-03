@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/8-laser-fundamentals/","hide":"true","updated":"2025-06-04T15:34:06.701+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/8-laser-fundamentals/","hide":"true","updated":"2025-06-04T15:34:06.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,16 +7,16 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 **Table of Contents**
 
-[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.1 Fundamental Light-Matter Interaction\|8.1 Fundamental Light-Matter Interaction]]
-[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.2 Einstein Coefficients and Rate Equation\|8.2 Einstein Coefficients and Rate Equation]]
-[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.3 Lasers\|8.3 Lasers]]
-[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.4 Laser Rate Equations\|8.4 Laser Rate Equations]]
-[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.5 Experimental Parameters of Lasers\|8.5 Experimental Parameters of Lasers]]
-[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.6 Initial Laser Dynamics\|8.6 Initial Laser Dynamics]]
-[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.7 Mode Selection\|8.7 Mode Selection]]
-[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.8 Hole Burning\|8.8 Hole Burning]]
-[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.9 Pulsed Lasers - Overview\|8.9 Pulsed Lasers - Overview]]
-[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.10 Examples of Lasers\|8.10 Examples of Lasers]]
+[[#8.1 Fundamental Light-Matter Interaction|8.1 Fundamental Light-Matter Interaction]]
+[[#8.2 Einstein Coefficients and Rate Equation|8.2 Einstein Coefficients and Rate Equation]]
+[[#8.3 Lasers|8.3 Lasers]]
+[[#8.4 Laser Rate Equations|8.4 Laser Rate Equations]]
+[[#8.5 Experimental Parameters of Lasers|8.5 Experimental Parameters of Lasers]]
+[[#8.6 Initial Laser Dynamics|8.6 Initial Laser Dynamics]]
+[[#8.7 Mode Selection|8.7 Mode Selection]]
+[[#8.8 Hole Burning|8.8 Hole Burning]]
+[[#8.9 Pulsed Lasers - Overview|8.9 Pulsed Lasers - Overview]]
+[[#8.10 Examples of Lasers|8.10 Examples of Lasers]]
 
 ---
 # 8 Laser Fundamentals
@@ -26,7 +26,7 @@ In this chapter, the fundamental principles underlying the physics of a laser ar
 $$
 \text{Laser} \equiv \text{Light Amplification by Stimulated Emission of Radiation}
 $$
-Later on, we will understand why each word in this acronym plays a crucial role for these devices to function. A laser requires, at a very basic level, an amplifying medium (called the _gain medium_), a feedback mechanism (typically an optical resonator), and an energy source (called the _pump_). For now, we will consider a laser as an optical resonator system capable of emitting coherent light. We will discuss this in more detail in [[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.3 Lasers\|section 8.3]]. The following figure sketches the minimum requirements that a laser needs to have, as already mentioned:
+Later on, we will understand why each word in this acronym plays a crucial role for these devices to function. A laser requires, at a very basic level, an amplifying medium (called the _gain medium_), a feedback mechanism (typically an optical resonator), and an energy source (called the _pump_). For now, we will consider a laser as an optical resonator system capable of emitting coherent light. We will discuss this in more detail in [[#8.3 Lasers|section 8.3]]. The following figure sketches the minimum requirements that a laser needs to have, as already mentioned:
 
 ![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=3&rect=302,93,794,301| ]]
 

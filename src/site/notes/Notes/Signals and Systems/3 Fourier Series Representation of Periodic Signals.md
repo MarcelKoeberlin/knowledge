@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/3-fourier-series-representation-of-periodic-signals/","hide":"true","updated":"2025-05-30T20:27:27.115+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/3-fourier-series-representation-of-periodic-signals/","hide":"true","updated":"2025-05-30T20:27:27.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
@@ -7,16 +7,16 @@ Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents
 ---
 **Table of Contents**
 
-[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.1 The Response of LTI Systems to Complex Exponentials\|3.1 The Response of LTI Systems to Complex Exponentials]]
-[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.2 Fourier Series Representation of Continuous-Time Periodic Signals\|3.2 Fourier Series Representation of Continuous-Time Periodic Signals]]
-[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.3 Convergence of the Fourier Series\|3.3 Convergence of the Fourier Series]]
-[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.4 Properties of the Continuous-Time Fourier Series\|3.4 Properties of the Continuous-Time Fourier Series]]
-[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.5 Fourier Series Representation of Discrete-Time Periodic Signals\|3.5 Fourier Series Representation of Discrete-Time Periodic Signals]]
-[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.6 Properties of the Discrete-Time Fourier Series\|3.6 Properties of the Discrete-Time Fourier Series]]
-[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.7 Fourier Series and LTI Systems\|3.7 Fourier Series and LTI Systems]]
-[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.8 Filtering\|3.8 Filtering]]
-[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.9 Important Examples: Continuous-Time\|3.9 Important Examples: Continuous-Time]]
-[[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals#3.10 Important Examples: Discrete-Time Filters\|3.10 Important Examples: Discrete-Time Filters]]
+[[#3.1 The Response of LTI Systems to Complex Exponentials|3.1 The Response of LTI Systems to Complex Exponentials]]
+[[#3.2 Fourier Series Representation of Continuous-Time Periodic Signals|3.2 Fourier Series Representation of Continuous-Time Periodic Signals]]
+[[#3.3 Convergence of the Fourier Series|3.3 Convergence of the Fourier Series]]
+[[#3.4 Properties of the Continuous-Time Fourier Series|3.4 Properties of the Continuous-Time Fourier Series]]
+[[#3.5 Fourier Series Representation of Discrete-Time Periodic Signals|3.5 Fourier Series Representation of Discrete-Time Periodic Signals]]
+[[#3.6 Properties of the Discrete-Time Fourier Series|3.6 Properties of the Discrete-Time Fourier Series]]
+[[#3.7 Fourier Series and LTI Systems|3.7 Fourier Series and LTI Systems]]
+[[#3.8 Filtering|3.8 Filtering]]
+[[#3.9 Important Examples: Continuous-Time|3.9 Important Examples: Continuous-Time]]
+[[#3.10 Important Examples: Discrete-Time Filters|3.10 Important Examples: Discrete-Time Filters]]
 
 ---
 # 3 Fourier Series Representation of Periodic Signals

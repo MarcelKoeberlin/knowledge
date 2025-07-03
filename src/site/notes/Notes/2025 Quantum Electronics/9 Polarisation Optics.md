@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/9-polarisation-optics/","hide":"true","updated":"2025-06-04T15:34:05.388+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/9-polarisation-optics/","hide":"true","updated":"2025-06-04T15:34:05.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,12 +7,12 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 **Table of Contents**
 
-[[Notes/2025 Quantum Electronics/9 Polarisation Optics#9.1 Poincaré Sphere and Stokes Vector\|9.1 Poincaré Sphere and Stokes Vector]]
-[[Notes/2025 Quantum Electronics/9 Polarisation Optics#9.2 Jones Vector Formalism\|9.2 Jones Vector Formalism]]
-[[Notes/2025 Quantum Electronics/9 Polarisation Optics#9.3 Anisotropic Materials\|9.3 Anisotropic Materials]]
-[[Notes/2025 Quantum Electronics/9 Polarisation Optics#9.4 Optical Activity\|9.4 Optical Activity]]
-[[Notes/2025 Quantum Electronics/9 Polarisation Optics#9.5 Magneto-Optics\|9.5 Magneto-Optics]]
-[[Notes/2025 Quantum Electronics/9 Polarisation Optics#9.6 Electro-Optics\|9.6 Electro-Optics]]
+[[#9.1 Poincaré Sphere and Stokes Vector|9.1 Poincaré Sphere and Stokes Vector]]
+[[#9.2 Jones Vector Formalism|9.2 Jones Vector Formalism]]
+[[#9.3 Anisotropic Materials|9.3 Anisotropic Materials]]
+[[#9.4 Optical Activity|9.4 Optical Activity]]
+[[#9.5 Magneto-Optics|9.5 Magneto-Optics]]
+[[#9.6 Electro-Optics|9.6 Electro-Optics]]
 
 ---
 # 9 Polarisation Optics

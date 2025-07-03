@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/7-optical-resonators/","hide":"true","updated":"2025-06-04T15:33:59.572+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/7-optical-resonators/","hide":"true","updated":"2025-06-04T15:33:59.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,9 +7,9 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 **Table of Contents**
 
-[[Notes/2025 Quantum Electronics/7 Optical Resonators#7.1 Spherical Mirror Resonator\|7.1 Spherical Mirror Resonator]]
-[[Notes/2025 Quantum Electronics/7 Optical Resonators#7.2 Resonance Frequencies\|7.2 Resonance Frequencies]]
-[[Notes/2025 Quantum Electronics/7 Optical Resonators#7.3 Resonator Losses\|7.3 Resonator Losses]]
+[[#7.1 Spherical Mirror Resonator|7.1 Spherical Mirror Resonator]]
+[[#7.2 Resonance Frequencies|7.2 Resonance Frequencies]]
+[[#7.3 Resonator Losses|7.3 Resonator Losses]]
 
 ---
 # 7 Optical Resonators

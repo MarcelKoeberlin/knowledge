@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/quantum-optics/1-quantisation-of-the-electromagnetic-field/","hide":"true","updated":"2025-05-30T15:22:33.486+02:00"}
+{"dg-publish":true,"permalink":"/notes/quantum-optics/1-quantisation-of-the-electromagnetic-field/","hide":"true","updated":"2025-05-30T15:22:33.000+02:00"}
 ---
 
 Jump back to ==[[Notes/Quantum Optics/Quantum Optics#Table of Contents\|chapter selection]]==.
@@ -7,10 +7,10 @@ Jump back to ==[[Notes/Quantum Optics/Quantum Optics#Table of Contents\|chapter 
 ---
 **Table of Contents**
 
-[[Notes/Quantum Optics/1 Quantisation of the Electromagnetic Field#1.1 Maxwell Equations\|1.1 Maxwell Equations]]
-[[Notes/Quantum Optics/1 Quantisation of the Electromagnetic Field#1.2 Coulomb Gauge\|1.2 Coulomb Gauge]]
-[[Notes/Quantum Optics/1 Quantisation of the Electromagnetic Field#1.3 Canonical Quantisation\|1.3 Canonical Quantisation]]
-[[Notes/Quantum Optics/1 Quantisation of the Electromagnetic Field#1.4 Diagonalisation of the Hamiltonian\|1.4 Diagonalisation of the Hamiltonian]]
+[[#1.1 Maxwell Equations|1.1 Maxwell Equations]]
+[[#1.2 Coulomb Gauge|1.2 Coulomb Gauge]]
+[[#1.3 Canonical Quantisation|1.3 Canonical Quantisation]]
+[[#1.4 Diagonalisation of the Hamiltonian|1.4 Diagonalisation of the Hamiltonian]]
 
 ---
 # 1 Quantisation of the Electromagnetic Field

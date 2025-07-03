@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/6-beam-types/","hide":"true","updated":"2025-06-04T15:34:03.800+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/6-beam-types/","hide":"true","updated":"2025-06-04T15:34:03.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,12 +7,12 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 **Table of Contents**
 
-[[Notes/2025 Quantum Electronics/6 Beam Types#6.1 Gaussian Beam Optics\|6.1 Gaussian Beam Optics]]
-[[Notes/2025 Quantum Electronics/6 Beam Types#6.2 Paraxial Helmholtz Equation and Slowly-Varying Envelope Approximation\|6.2 Paraxial Helmholtz Equation and Slowly-Varying Envelope Approximation]]
-[[Notes/2025 Quantum Electronics/6 Beam Types#6.3 Hermite-Gaussian Beams\|6.3 Hermite-Gaussian Beams]]
-[[Notes/2025 Quantum Electronics/6 Beam Types#6.4 Laguerre-Gaussian Beams\|6.4 Laguerre-Gaussian Beams]]
-[[Notes/2025 Quantum Electronics/6 Beam Types#6.5 Bessel Beams\|6.5 Bessel Beams]]
-[[Notes/2025 Quantum Electronics/6 Beam Types#6.6 Summary\|6.6 Summary]]
+[[#6.1 Gaussian Beam Optics|6.1 Gaussian Beam Optics]]
+[[#6.2 Paraxial Helmholtz Equation and Slowly-Varying Envelope Approximation|6.2 Paraxial Helmholtz Equation and Slowly-Varying Envelope Approximation]]
+[[#6.3 Hermite-Gaussian Beams|6.3 Hermite-Gaussian Beams]]
+[[#6.4 Laguerre-Gaussian Beams|6.4 Laguerre-Gaussian Beams]]
+[[#6.5 Bessel Beams|6.5 Bessel Beams]]
+[[#6.6 Summary|6.6 Summary]]
 
 ---
 # 6 Beam Types
@@ -156,7 +156,7 @@ This connection between ray optics (via ABCD matrices) and Gaussian beam optics 
 ## 6.2 Paraxial Helmholtz Equation and Slowly-Varying Envelope Approximation
 [[Notes/2025 Quantum Electronics/QE_script.pdf#page=118&selection=3,0,5,37| ]] [[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=3&selection=0,67,0,67| ]]
 
-Let us return once more to the Helmholtz equation, introduced in [[Notes/2025 Quantum Electronics/6 Beam Types#6.1.1 Gaussian Beams as Solution to the Helmholtz Equation\|section 6.1.1]]:
+Let us return once more to the Helmholtz equation, introduced in [[#6.1.1 Gaussian Beams as Solution to the Helmholtz Equation|section 6.1.1]]:
 $$
 \nabla^2 U+k^2 U=0.
 $$
