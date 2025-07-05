@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-3-glencar-to-glenbeigh-short-variant/","hide":"true","updated":"2025-06-27T15:14:45.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-3-glencar-to-glenbeigh-short-variant/","hide":"true","updated":"2025-07-05T21:07:37.619+02:00"}
 ---
 
 [[Photography/Hikes/Hikes\|Jump back to hike selection]].
@@ -26,4 +26,3 @@ Interactive map: [outdooractive](https://www.outdooractive.com/en/route/hiking-t
 ![Attachments/Photography/Hikes/Kerry Way Part 3 - Glencar to Glenbeigh (short variant)/Kerry_part3 - short-0.jpg](/img/user/Attachments/Photography/Hikes/Kerry%20Way%20Part%203%20-%20Glencar%20to%20Glenbeigh%20(short%20variant)/Kerry_part3%20-%20short-0.jpg)
 
 ---
-These selected images are compressed. For best experience, view the website in light mode (see sun/moon icon on the bottom right after site has loaded).

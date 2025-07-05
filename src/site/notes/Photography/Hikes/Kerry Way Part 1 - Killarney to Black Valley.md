@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-1-killarney-to-black-valley/","hide":"true","updated":"2025-06-19T21:59:46.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-1-killarney-to-black-valley/","hide":"true","updated":"2025-07-05T21:07:29.064+02:00"}
 ---
 
 [[Photography/Hikes/Hikes\|Jump back to hike selection]].
@@ -26,4 +26,3 @@ Interactive map: [outdooractive](https://www.outdooractive.com/en/route/hiking-t
 ![Attachments/Photography/Hikes/Kerry Way Part 1 - Killarney to Black Valley/kerry_part1-0.jpg](/img/user/Attachments/Photography/Hikes/Kerry%20Way%20Part%201%20-%20Killarney%20to%20Black%20Valley/kerry_part1-0.jpg)
 
 ---
-These selected images are compressed. For best experience, view the website in light mode (see sun/moon icon on the bottom right after site has loaded).
