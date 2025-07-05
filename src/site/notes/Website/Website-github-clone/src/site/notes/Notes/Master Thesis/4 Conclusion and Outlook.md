@@ -1,0 +1,24 @@
+---
+{"dg-publish":true,"permalink":"/website/website-github-clone/src/site/notes/notes/master-thesis/4-conclusion-and-outlook/","updated":"2025-07-03T20:20:02.057+02:00"}
+---
+
+
+Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.
+
+---
+# 4 Conclusion and Outlook
+ [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=66&selection=4,0,4,22| ]]
+ 
+In this project, a mode-locked thin-disk laser was successfully designed, built, and characterised. The laser achieved an average output power of $60 \text{ W}$, a pulse duration of $1030 \text{ fs}$, and a repetition rate of $19.7 \text{ MHz}$. Mode-locking was accomplished using a sapphire-bonded SESAM. The chosen repetition frequency enables measurements up to a few $\text{MHz}$ without interference from the fundamental repetition frequency peak while maintaining high peak powers needed for strong spectral broadening.
+
+Spectral broadening simulations were developed, accounting for inherent fluctuations in the average output power of TDLs and pressure-dependent nonlinear refractive indices. The power and gain densities were calculated, and optimal parameters were identified to elevate the noise of the system. The simulations suggest a noise gain of $35 \text{ dB}$ peak value and spectral broadening with a full width at half maximum (FWHM) from $1.5 \text{ nm}$ to $25 \text{ nm}$. In the wings of the spectrum, $29 \text{ dB}$ noise gain is achievable. The pressure dependence of the resulting spectrum and noise density was discussed in detail. Modulation instabilities were thoroughly examined and were found not to pose significant problems theoretically.
+
+A telescope was constructed for the coupling into the fibre. This was set up to achieve a beam waist radius of $21 \text{ }\mu\text{m}$ at the fibre input, and a cylindrical telescope was implemented to correct the ellipticity of the beam. An active beam stabilisation system, consisting of two actuators and two detectors, was installed, effectively reducing beam position fluctuations from a standard deviation of $3.59 \text{ }\mu\text{m}$ and $4.04 \text{ }\mu\text{m}$ to $1.46 \text{ }\mu\text{m}$ and $1.21 \text{ }\mu\text{m}$, respectively. Polarisation and power control into the fibre were achieved using a combination of thin-film polarisers and half-wave plates, resulting in a coupling efficiency of $82\%$ at $36 \text{ W}$ input power. The gas pressure system was tested but found to leak at a non-negligible rate, which prevented the final noise measurement (see below for details). A grating spectrometer, including a water-cooled beam block and custom slits, was designed and built with a predicted wavelength resolution of $0.5 \text{ nm}$. Two different silicon photodiodes were characterised and tested.
+
+The signal acquisition chain was developed to measure the shot-noise limit of the laser at high $(\text{MHz})$ frequencies. Overloading made measurements with a signal source analyser difficult due to the need to measure close to the repetition rate of the laser. Therefore, the final measurement consists of the noise traces of the SSA and the oscilloscope. Here, the influence of different low-pass filters, voltage amplification and its added noise, and oscilloscope digitisation noise was studied. To measure the achieved shot-noise level of $-162 \text{ dBc/Hz}$, optimal amplification and settings were determined. Furthermore, the final noise measurement, which consisted of two different measurement processes for low and high frequencies with different settings, was discussed. Here, the averaging of the signal is of increased importance when compared with SSA measurements.
+
+Several interlocks were designed and implemented to prevent damage to electrical or optical components. One interlock protects the pump diode, and therefore the fibre, by using feedback from the beam stabilisation stage, while another protects the photodiodes using an Arduino-controlled D-mirror.
+
+Looking ahead, the immediate next steps are clear. At the time of writing, the fibre is still being repaired in France to address the gas leakage issue. Once the repair is complete, the following steps involve sending $50 \text{ W}$ of average power through the fibre, using the grating spectrometer to select a specific wavelength range in the spectrum, and repeating the noise measurement with the settings identified as optimal. By comparing the unbroadened and broadened laser noise spectra, it should be possible to infer, to the best of our knowledge, a record-low shot-noise level of $S_{\text{shot}}=(-162-29) \text{ dBc/Hz} = -191 \text{ dBc/Hz}$ if measured in the wings, or $S_{\text{shot}}=(-162-35) \text{ dBc/Hz} = -197 \text{ dBc/Hz}$ if measured at the noise gain peak.
+
+---
