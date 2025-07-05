@@ -8,13 +8,13 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 **Table of Contents**
 
-[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.1 Many-Body Wave Functions and Particle Statistics\|9.1 Many-Body Wave Functions and Particle Statistics]]
-[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.2 Independent, Indistinguishable Particles\|9.2 Independent, Indistinguishable Particles]]
-[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.3 Second Quantisation Formalism\|9.3 Second Quantisation Formalism]]
-[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.4 Observables in Second Quantisation\|9.4 Observables in Second Quantisation]]
-[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.5 Equation of Motion\|9.5 Equation of Motion]]
-[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.6 Correlation Functions\|9.6 Correlation Functions]]
-[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.7 Selected Applications\|9.7 Selected Applications]]
+[[#9.1 Many-Body Wave Functions and Particle Statistics|9.1 Many-Body Wave Functions and Particle Statistics]]
+[[#9.2 Independent, Indistinguishable Particles|9.2 Independent, Indistinguishable Particles]]
+[[#9.3 Second Quantisation Formalism|9.3 Second Quantisation Formalism]]
+[[#9.4 Observables in Second Quantisation|9.4 Observables in Second Quantisation]]
+[[#9.5 Equation of Motion|9.5 Equation of Motion]]
+[[#9.6 Correlation Functions|9.6 Correlation Functions]]
+[[#9.7 Selected Applications|9.7 Selected Applications]]
 
 ---
 # 9 Identical Quantum Particles - Formalism of Second Quantisation
@@ -797,7 +797,7 @@ $$
 \end{align*}
 $$
 
-using results from the section on [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.4 Observables in Second Quantisation\|Observables in Second Quantisation]]. Moreover, $g=2$ and $s= \pm 1$ (representing eigenvalues for spin up/down components). First we calculate the magnetisation in zero magnetic field,
+using results from the section on [[#9.4 Observables in Second Quantisation|Observables in Second Quantisation]]. Moreover, $g=2$ and $s= \pm 1$ (representing eigenvalues for spin up/down components). First we calculate the magnetisation in zero magnetic field,
 $$
 \begin{align*}
 \left\langle\hat{M}_{z}\right\rangle=\mu_{B} \sum_{\boldsymbol{k}, s} s\left\langle\hat{c}_{\boldsymbol{k} s}^{\dagger} \hat{c}_{\boldsymbol{k} s}\right\rangle=\mu_{B} \sum_{\boldsymbol{k}, s} s n_{\boldsymbol{k}s}=0 .
@@ -809,7 +809,7 @@ $$
 \left\langle\hat{M}_{z}^{2}\right\rangle=\mu_{B}^{2} \sum_{\boldsymbol{k}, s} \sum_{\boldsymbol{k}^{\prime}, s^{\prime}} s s^{\prime}\left\langle\hat{c}_{\boldsymbol{k} s}^{\dagger} \hat{c}_{\boldsymbol{k} s} \hat{c}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger} \hat{c}_{\boldsymbol{k}^{\prime} s^{\prime}}\right\rangle,
 \end{align*}
 $$
-which we determine using a similar method as in the section on [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.6.1 Fermions\|fermion correlation functions]]. The expectation value of four fermion operators for a non-interacting system is given by:
+which we determine using a similar method as in the section on [[#9.6.1 Fermions|fermion correlation functions]]. The expectation value of four fermion operators for a non-interacting system is given by:
 $$
 \begin{align*}
 \left\langle\hat{c}_{\boldsymbol{k} s}^{\dagger} \hat{c}_{\boldsymbol{k} s} \hat{c}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger} \hat{c}_{\boldsymbol{k}^{\prime} s^{\prime}}\right\rangle=\left\langle\hat{n}_{\boldsymbol{k} s}\right\rangle\left(1-\left\langle\hat{n}_{\boldsymbol{k} s}\right\rangle\right) \delta_{\boldsymbol{k} \boldsymbol{k}^{\prime}} \delta_{s s^{\prime}}+\left\langle\hat{n}_{\boldsymbol{k} s}\right\rangle\left\langle\hat{n}_{\boldsymbol{k}^{\prime} s^{\prime}}\right\rangle .
@@ -874,7 +874,7 @@ The factor $(1-n_{\boldsymbol{k} s})$ introduces the quantum correction (Pauli b
 ---
 ### 9.7.2 Bose-Einstein Condensate and Coherent States
 
-Our aim here is to characterise the Bose-Einstein condensate further beyond what we did in the [[Notes/Solid-State Theory/8 Magnetism of Localised Moments\|previous chapter]]. Here, we consider the concepts of both off-diagonal long-range order and the order parameter for the condensate. We start with the discussion of the single-particle correlation function for a homogeneous gas of spin-0 bosons in more detail than in the section on [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.6.2 Bosons\|boson correlation functions]],
+Our aim here is to characterise the Bose-Einstein condensate further beyond what we did in the [[Notes/Solid-State Theory/8 Magnetism of Localised Moments\|previous chapter]]. Here, we consider the concepts of both off-diagonal long-range order and the order parameter for the condensate. We start with the discussion of the single-particle correlation function for a homogeneous gas of spin-0 bosons in more detail than in the section on [[#9.6.2 Bosons|boson correlation functions]],
 $$
 \begin{align*}
 g(\boldsymbol{r}-\boldsymbol{r}^{\prime})&=\left\langle\widehat{\Psi}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}\left(\boldsymbol{r}^{\prime}\right)\right\rangle\\&=\frac{1}{V} \sum_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}\left\langle\hat{a}_{\boldsymbol{k}}^{\dagger} \hat{a}_{\boldsymbol{k}^{\prime}}\right\rangle e^{i\left(\boldsymbol{k}^{\prime} \cdot \boldsymbol{r}^{\prime}-\boldsymbol{k} \cdot \boldsymbol{r}\right)}\\&=\frac{1}{V} \sum_{\boldsymbol{k}}\left\langle\hat{n}_{\boldsymbol{k}}\right\rangle e^{-i \boldsymbol{k} \cdot\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)},

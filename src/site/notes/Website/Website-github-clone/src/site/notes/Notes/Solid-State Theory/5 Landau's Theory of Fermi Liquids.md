@@ -8,9 +8,9 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 **Table of Contents**
 
-[[Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids#5.1 Lifetime of Quasi-Particles\|5.1 Lifetime of Quasi-Particles]]
-[[Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids#5.2 Phenomenological Theory of Fermi Liquids\|5.2 Phenomenological Theory of Fermi Liquids]]
-[[Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids#5.3 Microscopic Considerations\|5.3 Microscopic Considerations]]
+[[#5.1 Lifetime of Quasi-Particles|5.1 Lifetime of Quasi-Particles]]
+[[#5.2 Phenomenological Theory of Fermi Liquids|5.2 Phenomenological Theory of Fermi Liquids]]
+[[#5.3 Microscopic Considerations|5.3 Microscopic Considerations]]
 
 ---
 # 5 Landau's Theory of Fermi Liquids

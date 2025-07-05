@@ -8,10 +8,10 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 **Table of Contents**
 
-[[Notes/Solid-State Theory/3 Metals#3.1 The Jellium Model of the Metallic State\|3.1 The Jellium Model of the Metallic State]]
-[[Notes/Solid-State Theory/3 Metals#3.2 Charge Excitations and the Dielectric Function\|3.2 Charge Excitations and the Dielectric Function]]
-[[Notes/Solid-State Theory/3 Metals#3.3 Lattice Vibrations - Phonons\|3.3 Lattice Vibrations - Phonons]]
-[[Notes/Solid-State Theory/3 Metals#3.4 Appendix: Linear Response Theory\|3.4 Appendix: Linear Response Theory]]
+[[#3.1 The Jellium Model of the Metallic State|3.1 The Jellium Model of the Metallic State]]
+[[#3.2 Charge Excitations and the Dielectric Function|3.2 Charge Excitations and the Dielectric Function]]
+[[#3.3 Lattice Vibrations - Phonons|3.3 Lattice Vibrations - Phonons]]
+[[#3.4 Appendix: Linear Response Theory|3.4 Appendix: Linear Response Theory]]
 
 ---
 # 3 Metals
