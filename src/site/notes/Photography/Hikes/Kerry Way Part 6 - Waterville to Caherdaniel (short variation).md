@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-6-waterville-to-caherdaniel-short-variation/","hide":"true","updated":"2025-06-19T21:59:54.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-6-waterville-to-caherdaniel-short-variation/","hide":"true","updated":"2025-07-13T18:39:50.375+02:00"}
 ---
 
-[[Photography/Hikes/Hikes\|Jump back to hike selection]].
+[[Photography/Hikes/Hikes and Travels\|Jump back to hike selection]].
 
 ---
 # Kerry Way Part 6 - Waterville to Caherdaniel (short variation)

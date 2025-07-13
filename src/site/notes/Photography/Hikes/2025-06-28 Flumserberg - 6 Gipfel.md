@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/2025-06-28-flumserberg-6-gipfel/","hide":"true","updated":"2025-07-05T21:25:12.476+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/2025-06-28-flumserberg-6-gipfel/","hide":"true","updated":"2025-07-13T18:40:40.415+02:00"}
 ---
 
-Jump back to [[Photography/Hikes/Hikes\|hike selection]].
+Jump back to [[Photography/Hikes/Hikes and Travels\|selection]].
 
 ---
 # 2025-06-28 Flumserberg - 6 Gipfel

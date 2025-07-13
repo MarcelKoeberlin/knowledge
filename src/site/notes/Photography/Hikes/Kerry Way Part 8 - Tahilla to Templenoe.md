@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-8-tahilla-to-templenoe/","hide":"true","updated":"2025-07-01T11:34:13.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-8-tahilla-to-templenoe/","hide":"true","updated":"2025-07-13T18:39:50.373+02:00"}
 ---
 
-[[Photography/Hikes/Hikes\|Jump back to hike selection]].
+[[Photography/Hikes/Hikes and Travels\|Jump back to hike selection]].
 
 ---
 # Kerry Way Part 8 - Tahilla to Templenoe

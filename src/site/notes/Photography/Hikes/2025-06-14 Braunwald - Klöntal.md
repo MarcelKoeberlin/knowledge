@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/2025-06-14-braunwald-kloental/","hide":"true","updated":"2025-07-05T21:25:25.123+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/2025-06-14-braunwald-kloental/","hide":"true","updated":"2025-07-13T18:40:33.929+02:00"}
 ---
 
-Jump back to [[Photography/Hikes/Hikes\|hike selection]].
+Jump back to [[Photography/Hikes/Hikes and Travels\|selection]].
 
 ---
 # 2025-06-14 Braunwald - Klöntal
@@ -20,7 +20,7 @@ Jump back to [[Photography/Hikes/Hikes\|hike selection]].
 | Images taken with | Canon EOS1300D + 18 - 55 mm, f/3.5 - f/5.6 |
 
 Interactive map: [outdooractive](https://www.outdooractive.com/en/route/hiking-trail/canton-of-glarus/braunwald-kloental/57076907/#dm=1)
-Picture: [Google Photos](https://photos.app.goo.gl/AzviwtzndqE3h2a39)
+Pictures: [Google Photos](https://photos.app.goo.gl/AzviwtzndqE3h2a39)
 
 **Overview Map**
 

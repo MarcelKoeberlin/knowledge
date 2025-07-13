@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-2-black-valley-to-glencar/","hide":"true","updated":"2025-07-05T21:07:33.503+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/kerry-way-part-2-black-valley-to-glencar/","hide":"true","updated":"2025-07-13T18:39:50.367+02:00"}
 ---
 
-[[Photography/Hikes/Hikes\|Jump back to hike selection]].
+[[Photography/Hikes/Hikes and Travels\|Jump back to hike selection]].
 
 ---
 # Kerry Way Part 2 - Black Valley to Glencar
