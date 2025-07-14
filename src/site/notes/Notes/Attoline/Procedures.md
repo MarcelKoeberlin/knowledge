@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-07-01T13:17:26.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-07-14T16:46:24.000+02:00"}
 ---
 
 # 1 Laser Startup
@@ -148,17 +148,17 @@ E8:
 - Set manometer to 295
 - Turn on pre-amp current
 - Turn on FASTcomtec sockets
+- Measure IR power and set with 1AB to roughly 1 mW
 - Overlap them [[#5.1 Spatial Overlap|spatially]] and [[#5.2 Temporal Overlap|temporally]]
 - Open gas TOF at bottle
 - Open gas before and after manometer
 - Set manometer to 295
 - Drive in nozzle to line
-- Measure IR power and set with 1AB to roughly 1 mW
 - Insert 100 nm filter
 - Turn on trigger (below intralux)
 - Start MCS6A program
 - Start Attoline, set device to FAST and do 3000 accumulation
-- Let XUV pass, open shutter (doesn't matter if it saturates)
+- Let XUV pass, open shutter (doesn't matter if counts saturate)
 - Ramp up MCP (high voltage on) voltage slowly with right knob, expect counts over 1.95 V
 - Go to roughly 2000, and do not go above 2.1 V
 - Optimise by moving nozzle
@@ -226,9 +226,12 @@ In E6.2:
 - After the turbos have spun up, and pressure is around 1e-4/1e-5 mbar, open all other pre-vacs
 - In generation chamber: Rotate filters back
 # 11 SPIDER
-- Outcouple probe (HHG arm) beam with mirror
-- Use two mirrors to send through black tunnel
-- Follow introductory manual step-by-step
+Doing a SPIDER can be useful when RABBITT measurement looks unexpected.
+
+- Outcouple probe (HHG) arm with the same mirror that is used to do spatial and temporal overlap. 
+- Use mirrors after power meter to send the beam through the black tunnel.
+- Use SPIDER laptop and connect to SPIDER box.
+- Follow introductory manual step-by-step.
 # 12 Swapping Samples
 - Close prevac to upper turbo labelled 'turbo manipulation chamber'
 - On Stepper motor controller, set drives to 'on' and use Joystick
@@ -251,11 +254,12 @@ In E6.2:
 # Changing TOF Nozzle for RABBITT
 - As reference, it is worth aligning the alignment laser first
 - Vent the target, TOF, and manipulator chamber (since that one has the nitrogen valve). 
+- Remove all cables from the TOF (the single, centred green one and the red ones around it). 
 - Remove the big flange on the window side.
 - Old nozzle was 5 cm long, new one is 4 cm long. It is bent forward in beam direction to help see scattering on the bottom camera.
 - Nozzle is glued (TedPella Silver conductive epoxy) to a rod. That rod is connected by swagelock to the alignment stage.
 - Alignment stage behaves a bit odd, since it cant be properly used over the full range in beam direction. At the end, it goes down instead of forward - keep that in mind.
-- Glue is very hard and has to be chiselled away.
+- Possibly not relevant for silver epoxy glue: Glue is very hard and has to be chiselled away.
 - Clean the rod using isopropanol and acetone, and then also use the ultrasonic bath. 
 - It is easiest to use a hot plate for the glue to harden.
 - After nozzle is glued back on, attach rod back to alignment stage. 
@@ -266,7 +270,7 @@ In E6.2:
 - Degas the gauges using the controller. Not all gauges have that option.
 - Attach heating around the whole beamline part containing TOF, manipulator chamber, target chamber and importantly also the very top part. Make sure that 
 - Heat at 100 $^\circ$C to condensate water remaining in the TOF. Use temperature sensors!
-
+- Don't forget to reattach the TOF cables before measuring! :-)
 
 
 ---

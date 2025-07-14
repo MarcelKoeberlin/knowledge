@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/photography/","hide":"true","updated":"2025-07-13T18:39:50.352+02:00"}
+{"dg-publish":true,"permalink":"/photography/photography/","hide":"true","updated":"2025-07-13T18:39:50.000+02:00"}
 ---
 
 This page contains photographs mostly of hikes, but also a section about 'general' photography, which is simply sorted by month. 
