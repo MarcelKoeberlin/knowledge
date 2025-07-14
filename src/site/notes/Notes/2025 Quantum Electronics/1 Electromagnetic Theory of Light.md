@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-06-04T15:33:59.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-07-14T18:48:09.000+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
