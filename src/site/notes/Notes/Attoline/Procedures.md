@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-07-14T16:46:24.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-07-23T16:31:22.000+02:00"}
 ---
 
 # 1 Laser Startup
@@ -93,22 +93,23 @@ E8:
 
 ---
 # 4 ATAS
-- Insert sample
-- Open chamber with crank
-- Start VAB program COM3 position, set COM port, 'online'
-- Check counts while inserting
-- Turn on light in chamber
-- Start camera on ThinkPad
-- Turn on stepper and control (?)
-- Lower end of sample holder at $z\approx 34$ 
-- Start STRA program 
-> [!TIP] Doesn't work? Turn trigger on
-- Set proper exposure
-- Optimise x, y, z position
-- Overlap them [[#5.1 Spatial Overlap|spatially]] and [[#5.2 Temporal Overlap|temporally]].
-- Tune to specific power with IRIS pump / IR
-> [!WARNING] Turn on the shutter chiller
-
+- On upper right monitor, open Main_synchro_STRA_clean in LabView
+- The blue bar on the right shows stability and should be below 2. It depends mostly on the iris and the exposure time. 
+- Turn on shutter chiller
+- Turn on trigger
+- Open the crank between sample and target chamber. 
+- Turn on stepper motor, open VAB program (COM3 position, set COM port, 'online'), and move sample down while checking the HHG counts.
+>[!Danger]
+>Always check on the camera! You should not go much above y=4.5 mm!
+- There are 9 squares per grid, one is bigger, each is (250 um)$^2$ big and 300 um distance in between. 
+	- It is good to scan the sample first, so find samples, write down their position. Also write down when you think there is a hole instead of a sample. x
+- The counts disappear at the bottom of the sample holder, around z=35 mm.
+- Set the pump power to 1 mW and work yourself up if you see no signals...
+- If you have found your sample, do the [[#5.1 Spatial Overlap|spatial]] and [[#5.2 Temporal Overlap|temporal]] overlap.
+- Set the program to Newport such that 
+- Start STRA program and set to Newport, the delay should set to a number (around -50000), which is the zero of your temporal overlap.
+- ==Turn off stepper motor, Steckdosenleiste, licht.==
+- Start the measurement around 500 fs before, so -50000-500.
 ---
 # 5 Overlap
 - Overlap is done without filter and without gas: You compare both red pulses. 

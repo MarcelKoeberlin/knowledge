@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/2025-06-28-flumserberg-6-gipfel/","hide":"true","updated":"2025-07-13T18:40:40.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/2025-06-28-flumserberg-6-gipfel/","hide":"true","updated":"2025-07-19T21:04:30.000+02:00"}
 ---
 
 Jump back to [[Photography/Hikes/Hikes and Travels\|selection]].
@@ -20,7 +20,7 @@ Jump back to [[Photography/Hikes/Hikes and Travels\|selection]].
 | Images taken with | Sony $\alpha\text{6400}$ + 18 - 135 mm, f/3.5 - f/5.6 |
 
 Interactive map: [outdooractive](https://www.outdooractive.com/en/route/hiking-trail/heidiland/flumserberg-6-gipfel-tour/319564984/?share=%7E3zzqhskm%244ossnfvm)
-Pictures: [Google Photos](https://photos.app.goo.gl/29phnFoKbqkEcpCJA)
+Pictures: [Google Photos](https://photos.app.goo.gl/AzviwtzndqE3h2a39)
 
 **Overview Map**
 
