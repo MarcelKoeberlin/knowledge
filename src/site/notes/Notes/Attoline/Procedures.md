@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-07-23T16:31:22.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-07-24T14:04:46.000+02:00"}
 ---
 
 # 1 Laser Startup
@@ -109,6 +109,8 @@ E8:
 - Set the program to Newport such that 
 - Start STRA program and set to Newport, the delay should set to a number (around -50000), which is the zero of your temporal overlap.
 - ==Turn off stepper motor, Steckdosenleiste, licht.==
+- ==Make sure 'stop program after current step' is not selected!!==
+- ==Set shutter controller to 'remote'.==
 - Start the measurement around 500 fs before, so -50000-500.
 ---
 # 5 Overlap
