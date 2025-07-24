@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-07-24T14:04:46.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-07-24T14:08:40.000+02:00"}
 ---
 
 # 1 Laser Startup
@@ -111,7 +111,7 @@ E8:
 - ==Turn off stepper motor, Steckdosenleiste, licht.==
 - ==Make sure 'stop program after current step' is not selected!!==
 - ==Set shutter controller to 'remote'.==
-- Start the measurement around 500 fs before, so -50000-500.
+- Start the measurement around 200 fs before, so set -50000-200, where 50000 is for example the initial value of 'Start'.
 ---
 # 5 Overlap
 - Overlap is done without filter and without gas: You compare both red pulses. 
