@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-07-24T14:08:40.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-07-24T18:58:35.000+02:00"}
 ---
 
 # 1 Laser Startup
@@ -161,6 +161,7 @@ E8:
 - Turn on trigger (below intralux)
 - Start MCS6A program
 - Start Attoline, set device to FAST and do 3000 accumulation
+- ==Click 'save to file' before starting, otherwise it will not save an STK file, but just a TOF file which does not contain much data. ==
 - Let XUV pass, open shutter (doesn't matter if counts saturate)
 - Ramp up MCP (high voltage on) voltage slowly with right knob, expect counts over 1.95 V
 - Go to roughly 2000, and do not go above 2.1 V

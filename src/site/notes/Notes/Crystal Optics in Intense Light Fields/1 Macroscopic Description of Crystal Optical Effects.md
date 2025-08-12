@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/1-macroscopic-description-of-crystal-optical-effects/","hide":"true","updated":"2025-05-30T13:13:11.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/1-macroscopic-description-of-crystal-optical-effects/","hide":"true","updated":"2025-05-30T13:13:11.538+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.

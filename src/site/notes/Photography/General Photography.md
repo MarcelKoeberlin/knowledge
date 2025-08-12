@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/general-photography/","hide":"true","updated":"2025-07-05T20:50:57.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/general-photography/","hide":"true","updated":"2025-07-05T20:50:57.019+02:00"}
 ---
 
 Jump back to [[Photography/Photography\|photography]].
