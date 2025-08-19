@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/2025-08-01-ireland-kerry-cliffs-valentia-island/","hide":"true","updated":"2025-08-10T19:48:34.620+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/2025-08-01-ireland-kerry-cliffs-valentia-island/","hide":"true","updated":"2025-08-10T19:48:34.000+02:00"}
 ---
 
 Jump back to [[Photography/Hikes/Hikes and Travels\|selection]].

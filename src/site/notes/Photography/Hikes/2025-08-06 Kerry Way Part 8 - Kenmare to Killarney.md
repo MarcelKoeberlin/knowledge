@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/2025-08-06-kerry-way-part-8-kenmare-to-killarney/","hide":"true","updated":"2025-08-10T19:54:44.614+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/2025-08-06-kerry-way-part-8-kenmare-to-killarney/","hide":"true","updated":"2025-08-10T19:54:44.000+02:00"}
 ---
 
 Jump back to [[Photography/Hikes/Hikes and Travels\|selection]].

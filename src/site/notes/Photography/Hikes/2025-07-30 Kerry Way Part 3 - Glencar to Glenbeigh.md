@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/2025-07-30-kerry-way-part-3-glencar-to-glenbeigh/","hide":"true","updated":"2025-08-10T19:43:22.142+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/2025-07-30-kerry-way-part-3-glencar-to-glenbeigh/","hide":"true","updated":"2025-08-10T19:43:22.000+02:00"}
 ---
 
 Jump back to [[Photography/Hikes/Hikes and Travels\|selection]].

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/2025-07-31-kerry-way-part-4-glenbeigh-to-caherciveen-via-kells/","hide":"true","updated":"2025-08-10T19:47:32.525+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/2025-07-31-kerry-way-part-4-glenbeigh-to-caherciveen-via-kells/","hide":"true","updated":"2025-08-10T19:47:32.000+02:00"}
 ---
 
 Jump back to [[Photography/Hikes/Hikes and Travels\|selection]].
