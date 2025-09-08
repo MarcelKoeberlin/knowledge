@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attoline/procedures/","hide":"true","hideInGraph":"true","updated":"2025-07-24T18:58:35.000+02:00"}
+{"dg-publish":true,"dg-path":"procedures","permalink":"/procedures/","hide":"true","hideInGraph":"true","updated":"2025-09-08T11:00:25.000+02:00"}
 ---
 
 # 1 Laser Startup
@@ -255,7 +255,7 @@ Doing a SPIDER can be useful when RABBITT measurement looks unexpected.
 - Close the window with new copper ring and screws
 - [[#10.2 Purging (any) chamber|Purge]] the chamber
 
-# Changing TOF Nozzle for RABBITT
+# 13 Changing TOF Nozzle for RABBITT
 - As reference, it is worth aligning the alignment laser first
 - Vent the target, TOF, and manipulator chamber (since that one has the nitrogen valve). 
 - Remove all cables from the TOF (the single, centred green one and the red ones around it). 
@@ -276,5 +276,33 @@ Doing a SPIDER can be useful when RABBITT measurement looks unexpected.
 - Heat at 100 $^\circ$C to condensate water remaining in the TOF. Use temperature sensors!
 - Don't forget to reattach the TOF cables before measuring! :-)
 
+# 14 ATAS with python
+- Close all LabView scripts
+- Connect ML USB cable (instead of Nadja) to XUV camera
+- Connect Pixis ML training trigger (hanging from the top) to camera
+- Turn on shutter chiller
+- Open the crank between sample and target chamber. 
+- Turn on stepper motor, open VAB program (COM3 position, set COM port, 'online'), and move sample down while checking the HHG counts.
+>[!Danger]
+>Always check on the camera! You should not go much above y=4.5 mm!
+- There are 9 squares per grid, one is bigger, each is (250 um)$^2$ big and 300 um distance in between. 
+	- It is good to scan the sample first, so find samples, write down their position. Also write down when you think there is a hole instead of a sample. 
+- The counts disappear at the bottom of the sample holder, around z=35 mm.
+- Set the pump power to 1 mW and work yourself up if you see no signals...
+- Use the trigger box to set parameters. After every change, keep reset pressed for a few seconds:
+	- PPAS: Pulses per acquisition state (~exposure time)
+	- SPSS: Shots per shutter state
+	- SPDS: Shots per delay state
+- Use main_v1.py on the raspberry (run on VS code for interface to open).
+- The actual repetition frequency of the laser is 1.03 kHz. 
+- main.py on the thinkpad is the main ATAS program.
+- Set the correct settings on the trigger box, hold reset.
+- Run the raspberry program, set the correct settings and click start.
+- On the thinkpad, set the exposure time to lower than $\left(\mathrm{PPAS}*0.97-8\right)$ms, since the readout is 8 ms. That means, for PPAS = 40, set the exposure time to lower 30.
+- Turn on the shutter controller, and set to remote and N.C. Press reset for good measure.
+- The time for each delay step is $\mathrm{time}=\mathrm{SPSS}\cdot\mathrm{SPDS}\cdot\mathrm{PPAS}\cdot2.$ In the raspberry terminal, you should see a trigger count go up (by two) every time the delay stage moves. 
+- Do the [[#5.2 Temporal Overlap|temporal]] and [[#5.1 Spatial Overlap|spatial]] overlap. Use that 1 $\mu$m corresponds to 6 fs. To start before overlap, move the delay stage to POSITIVE numbers. For 120 fs before, move the delay stage by 20 $\mu$m.
+- Start the main.py on the thinkpad, go to the trigger box and **hold** start. 
+- ==Turn off stepper motor, Steckdosenleiste, licht.==
 
 ---
