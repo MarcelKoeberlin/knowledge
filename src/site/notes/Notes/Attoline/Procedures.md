@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"procedures","permalink":"/procedures/","hide":"true","hideInGraph":"true","updated":"2025-09-08T11:00:25.000+02:00"}
+{"dg-publish":true,"dg-path":"procedures","permalink":"/procedures/","hide":"true","hideInGraph":"true","updated":"2025-09-11T23:42:45.000+02:00"}
 ---
 
 # 1 Laser Startup
@@ -106,6 +106,8 @@ E8:
 - The counts disappear at the bottom of the sample holder, around z=35 mm.
 - Set the pump power to 1 mW and work yourself up if you see no signals...
 - If you have found your sample, do the [[#5.1 Spatial Overlap|spatial]] and [[#5.2 Temporal Overlap|temporal]] overlap.
+>[!WARNING]
+>Dont forget the 5V piezo!
 - Set the program to Newport such that 
 - Start STRA program and set to Newport, the delay should set to a number (around -50000), which is the zero of your temporal overlap.
 - ==Turn off stepper motor, Steckdosenleiste, licht.==
@@ -129,17 +131,6 @@ E8:
 - Maximize signal with the mirror before the 'wheel', but after the beam splitter
 - Maximize interference with motion controller: 'Move relative position'
 - Write down the position
-
----
-# 6 Measuring STRA
-- Lift toroidal mirror
-- Insert filter
-- Turn shutter controller off
-- Open gas to HHG
-- STRA: Set position before zero
-- Turn shutter on, and check if something happens with the counts
-- Start
-- Shutter settings: SPSS * steps > 100
 
 ---
 # 7 RABBITT
@@ -301,7 +292,11 @@ Doing a SPIDER can be useful when RABBITT measurement looks unexpected.
 - On the thinkpad, set the exposure time to lower than $\left(\mathrm{PPAS}*0.97-8\right)$ms, since the readout is 8 ms. That means, for PPAS = 40, set the exposure time to lower 30.
 - Turn on the shutter controller, and set to remote and N.C. Press reset for good measure.
 - The time for each delay step is $\mathrm{time}=\mathrm{SPSS}\cdot\mathrm{SPDS}\cdot\mathrm{PPAS}\cdot2.$ In the raspberry terminal, you should see a trigger count go up (by two) every time the delay stage moves. 
-- Do the [[#5.2 Temporal Overlap|temporal]] and [[#5.1 Spatial Overlap|spatial]] overlap. Use that 1 $\mu$m corresponds to 6 fs. To start before overlap, move the delay stage to POSITIVE numbers. For 120 fs before, move the delay stage by 20 $\mu$m.
+- Do the [[#5.2 Temporal Overlap|temporal]] and [[#5.1 Spatial Overlap|spatial]] overlap. 
+>[!Warning]
+>Dont forget the 5V piezo!
+
+- Use that 1 $\mu$m corresponds to 6 fs. To start before overlap, move the delay stage to POSITIVE numbers. For 120 fs before, move the delay stage by 20 $\mu$m.
 - Start the main.py on the thinkpad, go to the trigger box and **hold** start. 
 - ==Turn off stepper motor, Steckdosenleiste, licht.==
 
