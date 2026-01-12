@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/hikes-and-travels/","hide":"true","updated":"2025-08-10T20:13:12.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/hikes-and-travels/","hide":"true","updated":"2025-08-10T20:13:12.998+02:00"}
 ---
 
 Jump back to [[Photography/Photography\|photography]]. 

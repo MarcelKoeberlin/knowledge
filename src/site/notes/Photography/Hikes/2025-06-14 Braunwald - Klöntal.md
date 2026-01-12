@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/2025-06-14-braunwald-kloental/","hide":"true","updated":"2025-08-10T11:50:01.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/2025-06-14-braunwald-kloental/","hide":"true","updated":"2025-08-10T11:50:01.835+02:00"}
 ---
 
 Jump back to [[Photography/Hikes/Hikes and Travels\|selection]].

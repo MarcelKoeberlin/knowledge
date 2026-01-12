@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/hikes/2025-07-28-kerry-way-part-1-killarney-to-black-valley/","hide":"true","updated":"2025-08-10T19:39:20.000+02:00"}
+{"dg-publish":true,"permalink":"/photography/hikes/2025-07-28-kerry-way-part-1-killarney-to-black-valley/","hide":"true","updated":"2025-08-10T19:39:20.550+02:00"}
 ---
 
 Jump back to [[Photography/Hikes/Hikes and Travels\|selection]].
