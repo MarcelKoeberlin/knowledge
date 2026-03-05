@@ -1,6 +1,18 @@
 ---
-{"dg-publish":true,"dg-path":"procedures","permalink":"/procedures/","hide":"true","hideInGraph":"true","updated":"2026-03-05T16:01:39.291+01:00"}
+{"dg-publish":true,"dg-path":"procedures","permalink":"/procedures/","hide":"true","hideInGraph":"true","updated":"2026-03-05T16:05:12.194+01:00"}
 ---
+
+**Table of Contents**
+
+[[Notes/Attoline/Procedures#1. GitHub Repositories\|1. GitHub Repositories]]
+[[Notes/Attoline/Procedures#2. ATAS Measurement Protocol\|2. ATAS Measurement Protocol]]
+[[Notes/Attoline/Procedures#3. Beam Overlap\|3. Beam Overlap]]
+[[Notes/Attoline/Procedures#4. RABBITT\|4. RABBITT]]
+[[Notes/Attoline/Procedures#5. Venting and Purging Chambers\|5. Venting and Purging Chambers]]
+[[Notes/Attoline/Procedures#6. SPIDER\|6. SPIDER]]
+[[Notes/Attoline/Procedures#7. Swapping Samples\|7. Swapping Samples]]
+[[Notes/Attoline/Procedures#8. Changing the TOF Nozzle for RABBITT\|8. Changing the TOF Nozzle for RABBITT]]
+[[Notes/Attoline/Procedures#9. Archive\|9. Archive]]
 
 **Important:** This document is meant as a guide and reminder for the attoline lab at ETH Zurich. Do not forget to think before you do anything!
 
