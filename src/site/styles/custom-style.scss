@@ -318,6 +318,10 @@ body {
       margin-bottom: 20px;
     }
 
+    .search-button .search-keys {
+      background-color: transparent;
+    }
+
     &>.folder {
       flex: 1;
       overflow-y: auto;
@@ -1168,3 +1172,20 @@ ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
   .markdown-rendered h1{
     margin: 0px !important;
   }
+.markdown-rendered code {
+  color: var(--code-normal);
+  font-family: var(--font-monospace);
+  background-color: transparent;
+  border-radius: var(--code-radius);
+  font-size: var(--code-size);
+  padding: 0.15em 0.3em;
+  border: var(--code-border-width) solid var(--code-border-color);
+  -webkit-box-decoration-break: clone;
+}
+.search-button .search-keys {
+  font-size: 0px;
+  padding: 0px 0px;
+  border-radius: 0px;
+  color: var(--text-faint);
+  background-color: transparent;
+}

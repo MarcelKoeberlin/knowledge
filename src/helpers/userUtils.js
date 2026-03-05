@@ -18,6 +18,11 @@ function sliceIntoChunks(arr, chunkSize) {
   return res;
 }
 
+function userComputed(data) {
+  return {};
+}
+
 // Export only necessary functions
+exports.userComputed = userComputed;
 exports.shuffle = shuffle;
 exports.sliceIntoChunks = sliceIntoChunks;
