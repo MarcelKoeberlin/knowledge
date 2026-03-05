@@ -7,13 +7,13 @@ Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter se
 ---
 **Table of Contents**
 
-**[[#3.1 Oscillator|3.1 Oscillator]]**
-**[[#3.2 Beam Diagnostics|3.2 Beam Diagnostics]]**
-**[[#3.3 Fibre Coupling|3.3 Fibre Coupling]]**
-**[[#3.4 Grating Spectrometer|3.4 Grating Spectrometer]]**
-**[[#3.5 Characterisation|3.5 Characterisation]]**
-**[[#3.6 Technical Considerations|3.6 Technical Considerations]]**
-**[[#3.7 Full Setup|3.7 Full Setup]]**
+**[[Notes/Master Thesis/3 Setup, Characterisation and Results#3.1 Oscillator\|3.1 Oscillator]]**
+**[[Notes/Master Thesis/3 Setup, Characterisation and Results#3.2 Beam Diagnostics\|3.2 Beam Diagnostics]]**
+**[[Notes/Master Thesis/3 Setup, Characterisation and Results#3.3 Fibre Coupling\|3.3 Fibre Coupling]]**
+**[[Notes/Master Thesis/3 Setup, Characterisation and Results#3.4 Grating Spectrometer\|3.4 Grating Spectrometer]]**
+**[[Notes/Master Thesis/3 Setup, Characterisation and Results#3.5 Characterisation\|3.5 Characterisation]]**
+**[[Notes/Master Thesis/3 Setup, Characterisation and Results#3.6 Technical Considerations\|3.6 Technical Considerations]]**
+**[[Notes/Master Thesis/3 Setup, Characterisation and Results#3.7 Full Setup\|3.7 Full Setup]]**
 
 ---
 
@@ -23,7 +23,7 @@ This chapter discusses the thesis's experimental setup, including the design of 
 
 ---
 ## 3.1 Oscillator
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=32&selection=12,0,14,10| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 The cavity design employs a two-pass geometry to achieve a repetition frequency of $19.7 \text{ MHz}$, a pulse duration of $1030 \text{ fs}$, and an average output power of $60 \text{ W}$. This two-pass configuration balances maximising the gain per roundtrip and maintaining a manageable system complexity, as each additional pass requires two more mirrors, which can quickly crowd the oscillator setup.
 
@@ -31,7 +31,7 @@ The choice of repetition rate is crucial and not arbitrary. A higher repetition 
 
 The repetition frequency is determined by the distance from the output coupler to the end mirror, $l=\frac{c}{2f_{\text{rep}}}=7.6 \text{ metres}$, where the factor of two accounts for the light being outcoupled only once per full roundtrip. The average output power is indirectly controlled, as the gain medium is assumed to be fixed. The output power relates to the intracavity power by $P_{\text{intra}}=\frac{P_{\text{avg}}}{r}$, where $r$ is the output coupling rate, influencing the fluence on the end mirror or saturable absorber, in this case, a SESAM. A bare two-pass cavity, symmetric in the beam waist as a function of position, serves as the starting point. The next figure shows this configuration with two passes on the disk, an output coupler, and an end mirror.
 
-![Attachments/Koeberlin_Master_Thesis 17.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2017.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=33&rect=116,451,503,696| ]]
+![Attachments/Koeberlin_Master_Thesis 17.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2017.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Evolution of the beam waist size (orange) within the simplest two-pass cavity in a symmetric configuration. The black dashed vertical lines and blue dots denote curved mirrors or the disk, with a nominal radius of curvature of $-2 \text{ m}$. The beam size exhibits a symmetric pattern, repeating approximately every $2.5 \text{ metres}$. This configuration serves as the starting point for optimising the final cavity design.
 
 From this starting point, parameters such as distances between mirrors are adjusted, and additional mirrors are added to fit our needs. For stability, the beam must always focus at the ends of the cavity to maintain the periodicity of the beam waist.
@@ -44,17 +44,17 @@ There is no additional SPM medium in the cavity, which is unique compared to mos
 
 The next figure shows the final configuration of the TDL cavity, featuring a telescope to control the beam size on the SESAM and, consequently, the fluence on the SESAM. Group Delay Dispersion is introduced using Gires-Tournois interferometer style (GTI) mirrors. These mirrors, while often named after the classical GTI with an air gap, are chirped mirrors. They achieve the desired wavelength-dependent phase shift through a carefully designed, wavelength-dependent optical path difference.
 
-![Attachments/Koeberlin_Master_Thesis 18.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2018.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=34&rect=118,372,501,613| ]]
+![Attachments/Koeberlin_Master_Thesis 18.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2018.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Beam waist evolution in the final cavity configuration, illustrating the change in beam waist size as the light travels through the cavity, starting from the output coupler and ending at the SESAM. Curved mirrors, the TDL disk, SESAM and OC are depicted with blue dots. Plane mirrors and plane GTIs are not shown.
 
 Long-term stability in high-power oscillators also necessitates careful management of thermal effects, as increased power enhances both thermal lensing and disk bending. These effects result in a temperature-dependent radius of curvature, influenced by heating and gas convection in front of the disk. Thermal lensing and gas convection effects are equally significant in an air-filled cavity. The cavity must operate in a regime where small variations in the disk's curvature do not lead to destabilisation. As shown in the next figure, no nearby singularities indicate a stable configuration:
 
-![Attachments/Koeberlin_Master_Thesis 19.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2019.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=35&rect=117,453,501,720| ]]
+![Attachments/Koeberlin_Master_Thesis 19.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2019.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Beam radius on the SESAM as a function of its thermal lensing. The horizontal axis covers a very broad range, fully encompassing the laser's operating range. The absence of singularities or rapid changes suggests a stable configuration with respect to thermal lensing. The operation point of the cavity is depicted as a dashed line.
 
 The following schematically depicts the final cavity configuration. To control the polarisation of the laser output, a thin-film polariser is introduced into the cavity. This ensures that only light with a well-defined polarisation can oscillate, improving the overall beam quality and stability of the cavity.
 
-![Attachments/Koeberlin_Master_Thesis 20.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2020.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=36&rect=117,447,499,721| ]]
+![Attachments/Koeberlin_Master_Thesis 20.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2020.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Schematic of the laser cavity and its components. GTI denotes the Gires-Tournois interferometer, TFP represents the thin-film polariser, OC is the output coupler, CCM is the concave mirror, CXM is the convex mirror, and TDL stands for the thin-disk laser. The blue elements behind the SESAM and TDL indicate active water cooling. The path of the oscillating light is shown schematically, with distances in millimetres marked in grey.
 
 The efficiency of the laser system is crucial for evaluating its performance. The output power $P_{\text{output}}$ is related to the pump power $P_{\text{pump}}$ by the following equation:
@@ -63,7 +63,7 @@ $$P_{\text{output}}=\eta\left(P_{\text{pump}}-P_{\text{threshold}}\right),$$
 
 where $P_{\text{threshold}}$ is the laser's threshold power, and $\eta$ represents the slope efficiency. This key figure of merit approaches $38\%$ at high pump powers. The next figure illustrates the output power and slope efficiency as a function of the pump power:
 
-![Attachments/Koeberlin_Master_Thesis 21.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2021.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=37&rect=113,491,501,722| ]]
+![Attachments/Koeberlin_Master_Thesis 21.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2021.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Output power (left) and slope efficiency (right) of the thin-disk laser as a function of pump power. The first data point is before mode-locking has been achieved, while the grey-shaded area is the Q-switching regime ($65 \text{ to } 115 \text{ W}$). Therefore, no data has been recorded here.
 
 The next table shows the parameters of this laser cavity.
@@ -78,7 +78,7 @@ The next table shows the parameters of this laser cavity.
 
 ---
 ## 3.2 Beam Diagnostics
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=36&selection=0,2,73,16| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 ### 3.2.1 $M^2$ Measurement
 
@@ -88,7 +88,7 @@ $$\theta=M^2 \frac{\lambda}{\pi w_0}$$
 
 The next figure presents the results of the $M^2$ measurement, yielding a value of $M^2 < 1.1$. This measurement was conducted by passing the laser beam through a focusing lens, after which a moving stage equipped with a slit profiler measured the beam width along the $X$ and $Y$ axes at various positions along the beam path. The collected data points were then fitted to calculate the $M^2$ value.
 
-![Attachments/Koeberlin_Master_Thesis 22.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2022.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=38&rect=110,482,504,719| ]]
+![Attachments/Koeberlin_Master_Thesis 22.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2022.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Results of the $M^2$ measurement using a beam slit profiler. The stage moved a total of $45 \text{ mm}$ to determine that $M^2 < 1.1$, with a Rayleigh length of $z_R=6.739 \text{ mm}$ at the focus. The divergence angle was calculated to be $\theta_{\text{div}}=13.872^{\circ}$.
 
 ### 3.2.2 Spectrum Analyser
@@ -97,7 +97,7 @@ A small portion of the output power, approximately $50 \text{ }\mu\text{W}$, is 
 
 Another small fraction of the laser power is directed to a microwave spectrum analyser (MSA) to obtain the frequency spectrum, which includes multiple harmonics of the mode-locked signal. A photodiode converts the optical signal into an electrical one for analysis by the MSA. s expected, as shown in the next-next figure, multiple peaks corresponding to harmonics of the repetition rate, $f_{\text{rep}}=19.7 \text{ MHz}$, are observed. The next figure displays a single peak captured by the MSA, corresponding to the laser's repetition frequency of $19.7 \text{ MHz}$. The measurement was performed with a resolution bandwidth of $300 \text{ Hz}$.
 
-![Attachments/Koeberlin_Master_Thesis 23.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2023.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=39&rect=153,518,465,717| ]]
+![Attachments/Koeberlin_Master_Thesis 23.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2023.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 Further diagnostic measurements at different pump powers are detailed in the [[Notes/Master Thesis/5 Appendix#Appendix\|appendix]].
 
@@ -105,13 +105,13 @@ Further diagnostic measurements at different pump powers are detailed in the [[N
 
 We use an intensity autocorrelator to determine the pulse width and the temporal structure of the laser output. The methodology and principles behind this technique are discussed in detail in the [[Notes/Master Thesis/5 Appendix#Appendix\|appendix]]. The measured pulse width is approximately $1037 \text{ fs}$, close to the transform-limited pulse duration of $1000 \text{ fs}$, as determined from the OSA measurement. The following figure shows the diagnostic results from the spectrum analysers and the autocorrelator. The dashed fit represents an ideal soliton pulse.
 
-![Attachments/Koeberlin_Master_Thesis 24.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2024.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=40&rect=110,474,501,723| ]]
+![Attachments/Koeberlin_Master_Thesis 24.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2024.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Combined diagnostic results from the microwave spectrum analyser (MSA) measured with $1 \text{ kHz}$ resolution bandwidth, autocorrelator, and optical spectrum analyser (OSA). The MSA reveals multiple harmonics corresponding to the laser's repetition rate, confirming stable mode-locking. The autocorrelator provides the pulse width measurement, while the OSA shows the laser's output spectrum, highlighting a central wavelength of $1029.75 \text{ nm}$ with a $1 \text{ nm}$ FWHM, consistent with the emission wavelength of Ytterbium. The red line represents an ideal soliton pulse fit.
 
 
 ---
 ## 3.3 Fibre Coupling
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=39&selection=37,5,37,7| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
  
 In this section, the path from the laser cavity to the hollow-core fibre is traced and explained in detail.
 
@@ -121,7 +121,7 @@ The specified mode-field diameter (MFD) of the fibre is $42 \text{ }\mu\text{m}$
 
 Two lenses should have focal lengths with an absolute ratio of 4:3. However, to avoid creating a focus between these two lenses (which could introduce additional artefacts due to high intensity), a combination of convex and concave lenses is used. This is realised using $f_{1, \text{cyl.}}=100 \text{ mm}$ and $f_{2, \text{cyl.}}=-75 \text{ mm}$, spaced at $100 \text{ mm}$ and $125 \text{ mm}$ behind the OC, respectively. The next figure shows the beam waist size of the horizontal and vertical axes, where position 0 is the OC of the laser cavity. The beam is assumed to be elliptical at the OC with a 4:3 ratio between both axes.
 
-![Attachments/Koeberlin_Master_Thesis 25.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2025.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=41&rect=117,459,504,699| ]]
+![Attachments/Koeberlin_Master_Thesis 25.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2025.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Beam waist evolution as the laser passes from the output coupler of the cavity through the telescope, which optimises the beam for fibre coupling. The orange and violet curves represent the beam waist sizes in the horizontal and vertical axes, respectively. The zoomed-in section highlights slight astigmatism between the horizontal and vertical foci at the fibre's focal point.
 
 The simulation suggests that this setup introduces slight astigmatism, with a spacing of roughly $100 \text{ }\mu\text{m}$ between the foci of the two axes. While strong astigmatism could significantly reduce coupling efficiency and increase the risk of damaging the fibre, this small amount of astigmatism does not appear to cause significant issues. This is evidenced by the fact that the experiments still achieved a good coupling efficiency of up to $85\%$. If astigmatism had been a significant issue, the coupling efficiency would be much lower.
@@ -144,12 +144,12 @@ The simulations assume a pressure of $25 \text{ bar}$ with Xenon in the fibre. H
 
 ---
 ## 3.4 Grating Spectrometer
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=43&selection=6,0,8,20| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
  
 As discussed in [[Notes/Master Thesis/2 Theory#2.6 Influence of Spectral Broadening on Noise\|Section 2.6]], applying high pressure to a gas with a high nonlinear refractive index and allowing the pulse to propagate will generally lead to significant spectral broadening. For example, a pulse that initially had a full-width at half-maximum (FWHM) of $1 \text{ nm}$ may broaden to an FWHM of approximately $50 \text{ nm}$. Since the focus is on the spectral regions where the gain is high and the power is sufficient for measurement, it is essential to filter a specific part of the spectrum selectively. This can be accomplished using a grating spectrometer, which allows for precisely selecting the wavelength range of interest. The principle behind this setup is straightforward: the fibre output is directed onto a blazed grating, which disperses the light, causing different wavelengths to have distinct wavevectors. By using a narrow slit, we can effectively select the desired spectral region. The next figure shows the schematic working principle of this spectrometer:
 
 
-![Attachments/Koeberlin_Master_Thesis 26.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2026.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=44&rect=113,587,499,721| ]]
+![Attachments/Koeberlin_Master_Thesis 26.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2026.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Schematic diagram of a grating spectrometer. The convex lens (CXL) focuses the incoming light and resolves the spectral overlap, allowing each wavelength to be detected at distinct positions on the detector.
 
 A grating functions by altering the incident phase and amplitude of incoming light to separate different wavelengths. The interference pattern created depends on the grating's geometry. In this thesis, a blazed grating is used, characterised by its blaze wavelength, groove spacing $d$, and blaze angle $\gamma$. The angles are measured relative to the surface normal, and the groove spacing can be expressed in terms of groove density $d=1/N$, where $N$ is typically given in lines per millimetre. The blaze angle $\gamma$ is the angle between the facet normal and the surface normal, and adjusting this angle allows for tuning the grating's efficiency.
@@ -187,7 +187,7 @@ Another crucial factor is the spectral resolution, which limits the minimum wave
     $$\Delta\lambda = \frac{\lambda}{m N_{\text{ill}}} = \frac{\lambda\cos(\theta_i)}{m 2Nw},$$
 
     where $w$ is the beam waist on the grating, $\theta_i$ is the angle of incidence, and the factor of 2 accounts for the beam waist being a radius. With the beam size of this TDL, this results in a spectral resolution below $0.5 \text{ nm}$ for a grating with $600 \text{ l/mm}$ and a Littrow angle of $18^{\circ}$. The next figure shows the beam waist after the fibre, demonstrating that the chosen setup with lenses results in a collimated beam on the grating, justifying the approximation of ignoring the Gaussian nature of the beam.
-    ![Attachments/Koeberlin_Master_Thesis 27.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2027.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=46&rect=116,494,504,721| ]]
+    ![Attachments/Koeberlin_Master_Thesis 27.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2027.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 	Evolution of the beam waist after exiting the fibre and passing through a $150 \text{ mm}$ focusing lens, which collimates the beam to a large radius at the grating. The beam slit is positioned at the focal point after reflection from the grating to select a specific wavelength range.
 
 
@@ -205,7 +205,7 @@ In summary, this setup allows resolving spectral features as small as $0.5 \text
 
 ---
 ## 3.5 Characterisation
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=45&selection=133,0,135,16| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 To fully characterise the laser noise, several key factors must be considered. Firstly, the photodiode (PD) must operate within its linear range, where its voltage response remains proportional to the incident power and does not become saturated. A low-pass filter might be necessary to suppress peaks at the repetition frequency, preventing potential damage to the oscilloscope or signal spectrum analyser.
 
@@ -219,10 +219,10 @@ Two photodiodes were evaluated for measuring the laser noise: Thorlabs' large-ar
 To assess the performance of the photodiodes, the average generated voltage response was measured against the incident power. The generated voltage was $50 \text{ }\Omega$ terminated and measured using either a multimeter or an oscilloscope. The multimeter provides the average voltage, while the oscilloscope allows for peak voltage measurements. However, peak voltage measurements can be misleading due to noise and short-term disturbances, often resulting in artificially high readings. The next two figures present the measured average voltages, with a reverse bias of $24 \text{ V}$ applied to the FDS100 photodiode.
 
 
-![Attachments/Koeberlin_Master_Thesis 28.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2028.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=47&rect=118,471,504,721| ]]
+![Attachments/Koeberlin_Master_Thesis 28.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2028.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Characterisation of the silicon photodiode DET100A/M, showing a linear response for chosen points up to $11.1 \text{ mW}$ of incident power. Points where the photodiode is already saturated are excluded from the linear fit.
 
-![Attachments/Koeberlin_Master_Thesis 29.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2029.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=48&rect=115,478,501,719| ]]
+![Attachments/Koeberlin_Master_Thesis 29.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2029.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Characterisation of the silicon photodiode FDS100, showing a linear response for chosen points up to $41.3 \text{ mW}$ of incident power. Points where the photodiode is already saturated are excluded from the linear fit.
 
 These results suggest that the small-area FDS100 photodiode should enable the measurement of lower shot-noise levels. The shot-noise limit, expressed in units of $\text{dBc/Hz}$, is given by:
@@ -235,10 +235,10 @@ $$\Delta S_{\text{shot}} = 10 \log_{10}\left(\frac{1100}{320}\right) = 5.36 \tex
 
 Therefore, in theory, the FDS100 photodiode should allow for the measurement of lower shot-noise levels. However, the results obtained did not align with expectations, as shown in the next two figures:
 
-![Attachments/Koeberlin_Master_Thesis 30.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2030.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=48&rect=114,216,499,420| ]]
+![Attachments/Koeberlin_Master_Thesis 30.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2030.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Noise PSD measured with the FDS100 photodiode at $24 \text{ V}$ reverse bias and $32 \text{ mW}$ incident power. The noise trace falls below the expected shot-noise limit, which is unexpected as the photodiode should not saturate at this incident power level.
 
-![Attachments/Koeberlin_Master_Thesis 31.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2031.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=49&rect=112,513,503,721| ]]
+![Attachments/Koeberlin_Master_Thesis 31.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2031.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Noise PSD measured with the FDS100 photodiode at $24 \text{ V}$ reverse bias and $8 \text{ mW}$ incident power. Surprisingly, despite the lower incident power, the noise trace again drops below the shot-noise limit around $1 \text{ MHz}$. Given the lower power, saturation should not occur, making this result equally unexpected.
 
 As a result, the final noise measurements were carried out using the DET100A/M photodiode. The choice of photodiode plays a crucial role in determining the optimal measurement settings. With the appropriate photodiode selected, it is essential to ensure the measurements are taken within the photodiode's linear range, avoiding saturation. Saturating the photodiode can result in an artificially reduced shot-noise level, compromising the accuracy of the measurement results.
@@ -298,23 +298,23 @@ The careful reader might also wonder why the highest available sampling rate was
 A series of experiments were conducted to determine the optimal sampling rate for measuring the noise spectral density of the laser. Noise measurements were compared under two conditions: a) with the laser light input and b) with the laser light blocked. The next five images display these comparisons, each consisting of three subplots: the top subplot shows the noise spectral density with the laser light input, with the raw Fourier transform in grey and the averaged trace in orange. The middle subplot shows the noise measurement with the beam blocked, again in raw (grey) and averaged (orange) traces. The bottom subplot presents the difference between the raw traces (grey) and the averaged traces (orange), with a black horizontal line indicating the zero mark.
 
 **Sample rate**: $50 \text{ MS/s}$:
-![Attachments/Koeberlin_Master_Thesis 32.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2032.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=53&rect=112,269,507,720| ]]
+![Attachments/Koeberlin_Master_Thesis 32.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2032.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Noise measurement comparisons at a sampling rate of $50 \text{ MS/s}$: Top subplot shows the laser light input; middle subplot shows the blocked beam; bottom subplot displays the difference between raw and averaged traces. At this rate, the oscilloscope fails to capture meaningful data above $1 \text{ MHz}$ because the difference is too low with $1 \text{ dB}$, indicating inadequate sampling.
 
 **Sample rate**: $100 \text{ MS/s}$:
-![Attachments/Koeberlin_Master_Thesis 33.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2033.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=54&rect=118,271,504,722| ]]
+![Attachments/Koeberlin_Master_Thesis 33.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2033.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Noise measurement comparisons at a sampling rate of $100 \text{ MS/s}$: Top subplot shows the laser light input; middle subplot shows the blocked beam; bottom subplot displays the difference between raw and averaged traces. The higher sampling rate captures more accurate data than $50 \text{ MS/s}$ but still shows signs of aliasing at higher frequencies.
 
 **Sample rate**: $250 \text{ MS/s}$:
-![Attachments/Koeberlin_Master_Thesis 34.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2034.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=55&rect=114,244,504,695| ]]
+![Attachments/Koeberlin_Master_Thesis 34.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2034.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Noise measurement comparisons at a sampling rate of $250 \text{ MS/s}$: Top subplot shows the laser light input; middle subplot shows the blocked beam; bottom subplot displays the difference between raw and averaged traces. Due to the difference of around $5 \text{ dB}$ between the averages of the traces, this sampling rate is identified as the minimum practical rate to avoid aliasing while maintaining manageable data size and processing speed.
 
 **Sample rate**: $500 \text{ MS/s}$:
-![Attachments/Koeberlin_Master_Thesis 35.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2035.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=56&rect=110,233,503,687| ]]
+![Attachments/Koeberlin_Master_Thesis 35.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2035.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Noise measurement comparisons at a sampling rate of : Top subplot shows the laser light input; middle subplot shows the blocked beam; bottom subplot displays the difference between raw and averaged traces. Aliasing effects are further reduced at this sampling rate, though larger data size may limit measurement duration.
 
 **Sample rate** $1 \text{ GS/s}$:
-![Attachments/Koeberlin_Master_Thesis 37.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2037.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=57&rect=115,234,500,670| ]]
+![Attachments/Koeberlin_Master_Thesis 37.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2037.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Noise measurement comparisons at a sampling rate of $1 \text{ GS/s}$: Top subplot shows the laser light input; middle subplot shows the blocked beam; bottom subplot displays the difference between raw and averaged traces. The highest sampling rate provides the most accurate data but at the cost of reduced measurement duration due to data size limitations.
 
 The results indicate that a sampling rate of $250 \text{ MS/s}$ is the minimum practical rate to balance the need to avoid aliasing with manageable data size and processing speed. At lower rates, such as $50 \text{ MS/s}$, the measured spectrum showed no meaningful data at $1 \text{ MHz}$, as evidenced by the meagre difference between the traces, indicating inadequate signal capture. A noticeable difference between the traces was only observed at sampling rates of $250 \text{ MS/s}$ or higher.
@@ -327,19 +327,19 @@ Because the x-axis is kept constant, the lowest possible frequency component is 
 
 A good noise measurement can be conducted based on the preceding discussions and the collected data. Two traces were measured, one for each amplifier, and they overlapped in the frequency range from $20 \text{ kHz to } 500 \text{ kHz}$ to determine the optimal stitching point. In the next figure, the result is shown. 
 
-![Attachments/Koeberlin_Master_Thesis 38.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2038.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=58&rect=114,335,500,496| ]]
+![Attachments/Koeberlin_Master_Thesis 38.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2038.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 The blue trace is the noise PSD obtained from the SSA measurement, and the orange trace is the noise PSD obtained with the oscilloscope. As the oscilloscope operates with a finite sampling rate and measures for a finite time, it is unsurprising that the data appears very noisy. Therefore, it is impossible to draw any conclusions yet. To obtain visual clarity, the data has to be smoothed. This is done using Welch's method, as explained in the [[Notes/Master Thesis/5 Appendix#Appendix\|appendix]]. The resulting smoothed curve is depicted in the next figure, and now it can be seen that the noise curve runs into the shot-noise limit of $-162 \text{ dBc/Hz}$ between $200 \text{ and } 300 \text{ kHz}$. Further, it can be seen that the noise curves obtained from SSA and oscilloscope agree well in the overlapping region.
 
-![Attachments/Koeberlin_Master_Thesis 39.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2039.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=59&rect=114,561,504,722| ]]
+![Attachments/Koeberlin_Master_Thesis 39.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2039.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 The stitching point is chosen as $100 \text{ kHz}$, as the next figure shows. The orange curve shows the stitched noise PSD obtained from both measurements. A $1/f^2$ fit is applied to the region from $30 \text{ to } 200 \text{ kHz}$ (in the $\log$ scale, this fit appears linearly and is shown for a wider frequency range). It can be seen that the fit approaches a value of a little lower than $-200 \text{ dBc/Hz}$ at $1 \text{ MHz}$ frequencies. Therefore, we expect the true laser noise to run into the shot-noise limit at $1 \text{ MHz}$. The offset between the curves, or the stitching error, is virtually zero.
 
-![Attachments/Koeberlin_Master_Thesis 40.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2040.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=59&rect=115,270,500,491| ]]
+![Attachments/Koeberlin_Master_Thesis 40.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2040.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 ---
 ## 3.6 Technical Considerations
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=60&selection=6,0,8,24| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
  
 In this section, technical considerations are addressed, and while not directly related to the core research, they are crucial for successful experimentation. These practical aspects can often become sources of frustration in the lab, as they are necessary but can be more challenging than anticipated. By sharing these insights, I hope to shed light on some of the unexpected daily challenges that can arise and potentially delay progress in the project.
 
@@ -352,14 +352,14 @@ The HCPCF is integrated with GLOphotonic's Powerlink system, which offers a comp
 
 An active laser beam stabilisation system from MRC is employed to achieve the required precision, utilizing a combination of two 4QD detectors and two controllable mirrors, referred to as actuators. The next figure illustrates the setup schematically.
 
-![Attachments/Koeberlin_Master_Thesis 41.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2041.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=60&rect=114,220,502,313| ]]
+![Attachments/Koeberlin_Master_Thesis 41.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2041.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Schematic of the beam stabilisation setup. The system utilises two 4QD detectors and two actuators to stabilise the laser beam actively. Detector 1 receives input from the leakage of actuator 2, while detector 2 receives input from a subsequent mirror. The detectors continuously adjust the actuators to maintain the beam's position, compensating for any fluctuations in beam-pointing and ensuring precise alignment.
 
 After being reflected by actuator 1, the laser beam reaches actuator 2, which then reflects it to the subsequent mirror. The movement of actuator 1 is controlled by detector 1, which receives input from the leakage of the mirror in front of actuator 2. Both detectors adjust their corresponding actuators to ensure the signal remains centred on their four photodiodes. This configuration compensates for beam-pointing fluctuations, thereby minimising variations in beam position and angle.
 
 To verify the effectiveness of the stabilisation system, the fluctuations in beam position were compared with the stabilisation system turned on and off. The next figure compares the unstabilised and stabilised horizontal and vertical positions.
 
-![Attachments/Koeberlin_Master_Thesis 42.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2042.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=61&rect=115,356,501,574| ]]
+![Attachments/Koeberlin_Master_Thesis 42.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2042.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Comparison of beam position fluctuations in both $x$ and $y$ directions with and without active stabilisation. The plots on the left show the fluctuations without stabilisation, while the plots on the right show the reduced fluctuations with stabilisation applied. The standard deviation for each case is indicated within the plots, demonstrating the effectiveness of the stabilisation system in minimising beam drift. The moving average is each over 30 data points, averaging over $1.3 \text{ seconds}$.
 
 As shown, the beam stabilisation reduces the positional standard deviation from $3.59 \text{ }\mu\text{m}$ and $4.04 \text{ }\mu\text{m}$ to $1.48 \text{ }\mu\text{m}$ and $1.21 \text{ }\mu\text{m}$, respectively, for the uncollimated beam. This demonstrates that the laser beam fluctuations have been minimised to a safe level for directing the full signal into the fibre without causing damage. When we initially directed more than $5 \text{ W}$ of power into the fibre, the laser occasionally shut down unexpectedly, triggering the interlock without an apparent cause. The issue was traced to the reflection of the fibre facet, which created a secondary light spot on the detectors. This caused the detectors to incorrectly interpret the beam position as outside their operational range. A straightforward solution was moving the detector away from the leaking mirror, ensuring the back-reflection bypassed the detector's sensitive area.
@@ -373,7 +373,7 @@ However, in this configuration, the laser would never turn on because the beam s
 
 With this system in place, the only light that could potentially damage the fibre or other optical components after an error is detected is the residual light already oscillating within the cavity.
 
-![Attachments/Koeberlin_Master_Thesis 43.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2043.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=63&rect=121,623,495,720| ]]
+![Attachments/Koeberlin_Master_Thesis 43.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2043.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Electrical circuit of the pump diode interlock system, illustrating the components involved in safeguarding the laser setup. The circuit includes a $5 \text{ V}$ TTL voltage source, an override switch, a solid-state relay (SSR), and a $24 \text{ V}$ interlock. This configuration ensures that the pump diode is shut down in case of beam misalignment or stabilisation failure, preventing potential damage to the fibre and optical components. The override switch allows for a controlled startup sequence, temporarily bypassing the interlock to activate the laser and stabilisation system.
 
 ---
@@ -384,11 +384,11 @@ After the light exits the fibre, it passes through a grating spectrometer, which
 ## 3.7 Full Setup
 
 The next figure provides a schematic overview of the experimental setup. This illustration includes key components such as active beam stabilisation, power and polarisation control, water cooling, and the grating spectrometer. The laser cavity, noise measurement, and diagnostic elements are represented schematically.
-![Attachments/Koeberlin_Master_Thesis 44.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2044.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=64&rect=116,296,502,629| ]]
+![Attachments/Koeberlin_Master_Thesis 44.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2044.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Schematic of the complete experimental setup, highlighting the active beam stabilisation, power and polarisation control, water cooling, and the grating spectrometer (distances not to scale). The laser cavity, noise measurement, and diagnostic components are shown schematically. CXL: convex lens, CCL: concave lens, $\lambda/2$: half-wave plate, OC: output coupler, TFP: thin-film polariser, HCPCF: hollow-core photonic crystal fibre.
 
 The next image shows the cavity as seen in the lab.
-![Attachments/Koeberlin_Master_Thesis 45.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2045.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=65&rect=191,191,424,714| ]]
+![Attachments/Koeberlin_Master_Thesis 45.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2045.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 The final laser cavity as seen in the laboratory. The dark red path traces the laser light oscillating in the cavity, while the bright red shows the outcoupled light, indicating that the output power is $10\%$ of the intracavity power.
 
 ---

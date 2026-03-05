@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/8-laser-fundamentals/","hide":"true","updated":"2025-06-04T15:34:06.701+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/8-laser-fundamentals/","hide":"true","updated":"2025-06-04T15:34:06.700+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -7,38 +7,38 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 **Table of Contents**
 
-[[#8.1 Fundamental Light-Matter Interaction|8.1 Fundamental Light-Matter Interaction]]
-[[#8.2 Einstein Coefficients and Rate Equation|8.2 Einstein Coefficients and Rate Equation]]
-[[#8.3 Lasers|8.3 Lasers]]
-[[#8.4 Laser Rate Equations|8.4 Laser Rate Equations]]
-[[#8.5 Experimental Parameters of Lasers|8.5 Experimental Parameters of Lasers]]
-[[#8.6 Initial Laser Dynamics|8.6 Initial Laser Dynamics]]
-[[#8.7 Mode Selection|8.7 Mode Selection]]
-[[#8.8 Hole Burning|8.8 Hole Burning]]
-[[#8.9 Pulsed Lasers - Overview|8.9 Pulsed Lasers - Overview]]
-[[#8.10 Examples of Lasers|8.10 Examples of Lasers]]
+[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.1 Fundamental Light-Matter Interaction\|8.1 Fundamental Light-Matter Interaction]]
+[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.2 Einstein Coefficients and Rate Equation\|8.2 Einstein Coefficients and Rate Equation]]
+[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.3 Lasers\|8.3 Lasers]]
+[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.4 Laser Rate Equations\|8.4 Laser Rate Equations]]
+[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.5 Experimental Parameters of Lasers\|8.5 Experimental Parameters of Lasers]]
+[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.6 Initial Laser Dynamics\|8.6 Initial Laser Dynamics]]
+[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.7 Mode Selection\|8.7 Mode Selection]]
+[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.8 Hole Burning\|8.8 Hole Burning]]
+[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.9 Pulsed Lasers - Overview\|8.9 Pulsed Lasers - Overview]]
+[[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.10 Examples of Lasers\|8.10 Examples of Lasers]]
 
 ---
 # 8 Laser Fundamentals
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=144&selection=1,0,1,18| ]] [[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=2&selection=0,0,0,29| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 In this chapter, the fundamental principles underlying the physics of a laser are discussed. However, before delving into the physics, let us understand what 'Laser' stands for:
 $$
 \text{Laser} \equiv \text{Light Amplification by Stimulated Emission of Radiation}
 $$
-Later on, we will understand why each word in this acronym plays a crucial role for these devices to function. A laser requires, at a very basic level, an amplifying medium (called the _gain medium_), a feedback mechanism (typically an optical resonator), and an energy source (called the _pump_). For now, we will consider a laser as an optical resonator system capable of emitting coherent light. We will discuss this in more detail in [[#8.3 Lasers|section 8.3]]. The following figure sketches the minimum requirements that a laser needs to have, as already mentioned:
+Later on, we will understand why each word in this acronym plays a crucial role for these devices to function. A laser requires, at a very basic level, an amplifying medium (called the _gain medium_), a feedback mechanism (typically an optical resonator), and an energy source (called the _pump_). For now, we will consider a laser as an optical resonator system capable of emitting coherent light. We will discuss this in more detail in [[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.3 Lasers\|section 8.3]]. The following figure sketches the minimum requirements that a laser needs to have, as already mentioned:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=3&rect=302,93,794,301| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 In the following section, we will first introduce Einstein coefficients and deduce from these the requirements for the gain medium.
 
 ---
 ## 8.1 Fundamental Light-Matter Interaction
-[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=6&selection=0,37,0,37| ]] [[Notes/2025 Quantum Electronics/QE_script.pdf#page=149&selection=6,0,8,46| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 This section aims to give a brief overview of light-matter (or photon-atom) interactions that are relevant to understanding lasers. A full treatment of this topic requires quantum electrodynamics (QED), which goes much beyond the scope of this course. First, let us consider a quantum-mechanical material, that is, a material with quantised energy levels. To keep it simple, imagine a two-level system, comprising a ground state $|1\rangle$ and an excited state $|2\rangle$. These states have energies $E_1$ and $E_2$, respectively, where by definition $E_1 < E_2$. We will focus on interactions with photons of energy $h\nu = E_2-E_1$ (where $\nu$ is the frequency and $h$ is Planck's constant, or $\hbar\omega = E_2-E_1$ for angular frequency $\omega$). Furthermore, we will only consider the transition $|1\rangle \leftrightarrow |2\rangle$ to be dipole allowed. Consider the following three fundamental interaction processes:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/QE_script 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/QE_script%205.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=150&rect=105,365,498,687| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/QE_script 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/QE_script%205.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 In the following, we will assume that all these processes occur effectively instantaneously relative to other timescales of interest:
 
@@ -50,7 +50,7 @@ From these points, it should be clear that the rates for absorption and stimulat
 
 ---
 ## 8.2 Einstein Coefficients and Rate Equation
-[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=12&selection=0,38,0,38| ]] [[Notes/2025 Quantum Electronics/QE_script.pdf#page=151&selection=4,0,9,31| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 Keeping the notation from above, $A_{21}$ is the **rate** of spontaneous emission for a single atom from level 2 to level 1 (units of $\text{s}^{-1}$). It is an intrinsic property of the specific atomic transition and is related to the radiative lifetime $t_{sp}$ of the excited state by:
 $$
@@ -58,7 +58,7 @@ A_{21} = \frac{1}{t_{sp}}.
 $$
 The lifetime $t_{sp}$ depends on the atom and the specific transition but not directly on the external electromagnetic field modes (though it can be modified by the local density of optical states, for instance in a cavity – the Purcell effect). Typical values for allowed atomic transitions are $t_{sp} \sim 10^{-8} \, \text{s}$. The population $N_2(t)$ of an ensemble of initially excited atoms decays as $N_2(t) = N_2(0)e^{-A_{21}t} = N_2(0)e^{-t/t_{sp}}$.
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals-1.webp) [[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=13&rect=183,148,660,467| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals-1.webp) [ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Similarly, we can define the absorption rate per atom, $W_{12}$, for the transition from level 1 to level 2, and the stimulated emission rate per atom, $W_{21}$, from level 2 to level 1. These rates are proportional to the spectral energy density $\rho(\nu_0)$ of the electromagnetic field at the transition frequency $\nu_0 = (E_2-E_1)/h$:
 $$
@@ -120,7 +120,7 @@ Although derived assuming thermal equilibrium, these relations between $A_{21}, 
 
 The energy difference between two states is $\hbar\omega_0 = E_2-E_1$. Ideally, one might expect transitions to occur at this exact frequency, resulting in an infinitely narrow spectral line. However, this is not observed in realistic systems:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%201.webp) [[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=23&rect=378,107,680,485| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%201.webp) [ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Real transitions always have a finite width in energy (and thus frequency). This broadening occurs even with an ideal spectrometer possessing arbitrarily high spectral resolution. Several physical effects contribute to this broadening.
 
@@ -128,7 +128,7 @@ Real transitions always have a finite width in energy (and thus frequency). This
 
 **Homogeneous broadening** occurs when the broadening mechanism affects all atoms (or molecules) in the ensemble in an identical way. Each atom effectively has the same resonance frequency and the same broadened lineshape.
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%202.webp) [[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=24&rect=25,352,384,488| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%202.webp) [ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Examples include:
 -   **Lifetime broadening (Natural broadening):** Arises from the finite lifetime $t_{sp}$ of the excited state due to spontaneous emission, dictated by the energy-time uncertainty principle ($\Delta E \Delta t \ge \hbar/2$).
@@ -136,7 +136,7 @@ Examples include:
 
 **Inhomogeneous broadening** occurs when different atoms in the ensemble experience slightly different local environments or conditions, leading to a distribution of individual resonance frequencies. The overall observed spectral line is the sum of many narrower lines, each slightly shifted.
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 3.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%203.webp) [[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=24&rect=21,161,371,295| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 3.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%203.webp) [ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 An important example is **Doppler broadening** in gases, where atoms moving with different velocities relative to an observer (or a detector) exhibit different apparent transition frequencies due to the Doppler effect. Another example is broadening in solids due to variations in the local crystal field experienced by different active ions.
 
@@ -151,7 +151,7 @@ I(\nu) \sim \frac{1}{(\nu-\nu_0)^2+(\Delta\nu_L/2)^2},
 $$
 where $\Delta\nu_L = A_{21}/(2\pi) = 1/(2\pi t_{sp})$ is the FWHM linewidth of this lifetime-broadened (natural) lineshape.
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%205.webp) [[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=26&rect=245,81,589,252| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%205.webp) [ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 This corresponds to an ensemble of atoms where each atom emits light with this characteristic spectral profile. The normalised lineshape function $g(\nu)$ associated with a Lorentzian profile is:
 $$
@@ -174,11 +174,11 @@ where $\lambda_0$ is the vacuum wavelength of the transition, $n$ is the refract
 
 ---
 ## 8.3 Lasers
-[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=38&selection=0,0,0,30| ]] [[Notes/2025 Quantum Electronics/QE_script.pdf#page=153&selection=23,0,25,14| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 Let us now return to achieving a functioning laser. For simplicity, we will consider a laser cavity designed to amplify light primarily in a small number of resonant modes:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=3&rect=302,93,794,301| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 ### 8.3.1 Population Inversion, Lasing Conditions and Gain
 
@@ -208,7 +208,7 @@ The total gain $G(\nu)$ after passing through a gain medium of length $d$ is $G(
 
 Thus, schematically a laser involves pumping to achieve population inversion in a gain medium, which is placed inside an optical resonator to provide feedback and mode selection:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/QE_script 5-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/QE_script%205-1.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=156&rect=73,476,304,616| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/QE_script 5-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/QE_script%205-1.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 The feedback also provides narrow spectral filtering due to the cavity resonances.
 
 ### 8.3.2 Achieving Population Inversion
@@ -218,13 +218,13 @@ As mentioned, pumping the system from state $|1\rangle$ to state $|2\rangle$ and
 The small-signal gain coefficient $\gamma_0(\nu)$ is the maximum gain achieved when the population inversion $N_0$ is at its maximum (for instance, in the absence of photons in the cavity to cause stimulated emission, $I \approx 0$): $\gamma_0(\nu)=N_0\sigma_{em}(\nu)$.
 
 ### 8.3.3 Three-Level Laser Systems
-[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=46&selection=0,0,0,22| ]] [[Notes/2025 Quantum Electronics/QE_script.pdf#page=165&selection=4,0,6,18| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 Since population inversion is unobtainable in an ideal two-level system pumped on the lasing transition, we consider systems with more levels. A three-level system is the minimum required for achieving inversion.
 
 The general layout is:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 8.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%208.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=46&rect=33,225,403,362| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 8.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%208.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Atoms are pumped from the ground state $|1\rangle$ to a higher energy level $|3\rangle$. This level $|3\rangle$ is typically a broad absorption band and is short-lived, with atoms rapidly decaying (often non-radiatively, lifetime $\tau_{32}$) to an intermediate metastable level $|2\rangle$. The lasing transition then occurs between level $|2\rangle$ and the ground state $|1\rangle$. The lifetime of level $|2\rangle$ due to spontaneous emission to state $|1\rangle$ is $\tau_{21}$, which needs to be long to allow population to accumulate in $|2\rangle$.
 The rate equations (assuming $N_3$ is small due to fast decay $\tau_{32} \ll \tau_{21}$, so pumped atoms quickly arrive in state $|2\rangle$ at a rate $R_p \approx W_p N_1$) become approximately:
@@ -240,34 +240,34 @@ Achieving inversion ($N_2>N_1$) in a three-level system is possible, but require
 
 The first laser, the ruby laser ($\text{Cr}^{3+}$ in $\text{Al}_2\text{O}_3$), was a three-level system:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 9.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%209.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=51&rect=43,111,707,515| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 9.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%209.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Erbium-doped silica fibre amplifiers/lasers can also operate on a quasi-three-level scheme depending on the wavelength.
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 10.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2010.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=54&rect=84,197,717,454| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 10.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2010.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Ytterbium-doped YAG ($\text{Yb:YAG}$) is another important gain medium that can operate as a quasi-three-level system (the lower laser level is very close to the ground state).
 
 ### 8.3.4 Four-Level System
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=166&selection=194,0,196,17| ]] [[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=55&selection=0,17,0,17| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 The challenges of high pump thresholds in three-level systems are largely overcome in a four-level system:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 11.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2011.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=55&rect=93,186,655,458| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 11.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2011.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Here, atoms are pumped from the ground state $|0\rangle$ to a higher pump band $|3\rangle$. They rapidly decay from $|3\rangle$ to the upper laser level $|2\rangle$ (metastable). The lasing transition occurs between $|2\rangle$ and a lower laser level $|1\rangle$. Crucially, level $|1\rangle$ is above the ground state $|0\rangle$ and rapidly depopulates to the ground state (lifetime $\tau_{10}$ is very short).
 This rapid depopulation of the lower laser level $|1\rangle$ ensures that its population $N_1$ remains very small. Thus, population inversion ($N_2 > N_1$) between levels $|2\rangle$ and $|1\rangle$ can be achieved with much lower pumping rates than in a three-level system, as $N_1 \approx 0$.
 The rate equations simplify under these assumptions ($\tau_{32} \to 0$, $\tau_{10} \to 0$). The steady-state inversion $N=N_2-N_1 \approx N_2$ is given by similar forms as for the three-level system but with parameters that make $N>0$ much easier to achieve for a given pump rate $W_p$.
 One example of a four-level laser system is Nd:YAG or Nd:glass (neodymium-doped YAG crystal or glass), widely used in high-power applications.
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 12.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2012.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=57&rect=52,117,420,391| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 12.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2012.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 ### 8.3.5 Pumping Schemes
-[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=62&selection=0,0,0,15| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 A variety of pumping schemes are used to deliver energy to the gain medium. Some examples include:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 13.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2013.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=62&rect=20,140,578,460| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 13.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2013.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 - (a) Gas laser pumped by direct current (DC) electrical discharge.
 - (b) Solid-state laser pumped by a flashlamp.
@@ -278,11 +278,11 @@ A variety of pumping schemes are used to deliver energy to the gain medium. Some
 
 ---
 ## 8.4 Laser Rate Equations
-[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=63&selection=0,0,0,50| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 We will treat an ideal four-level system in more detail. Assume an ideal system where $\tau_{32} \to 0$ (atoms pumped to $|3\rangle$ immediately transfer to $|2\rangle$) and $\tau_{10} \to 0$ (atoms arriving in $|1\rangle$ immediately decay to $|0\rangle$, so $N_1 \approx 0$). The lasing transition is $|2\rangle \to |1\rangle$.
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 14.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2014.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=63&rect=127,287,372,461| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 14.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2014.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Consider a single lasing mode within the cavity, and assume a homogeneously broadened gain medium. Let $n$ be the number of photons in the lasing mode and $N_2$ be the population density of the upper laser level (we can denote $N_2 \equiv N_{\text{inv}}$ as the inversion density, since $N_1 \approx 0$). Two coupled rate equations can describe the system:
 $$
@@ -316,7 +316,7 @@ Let $r = R_p/R_{p,th}$ be the normalised pumping rate.
 Then $n_s \approx \frac{\gamma_L}{K}(r-1)$.
 
 ![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 15.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2015.webp)
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 16.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2016.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=66&rect=454,107,785,364| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 16.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2016.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 - **Above threshold ($r>1$):**
   $$N_s \approx N_{\text{th}} = \frac{\gamma_c}{K}$$
@@ -329,14 +329,14 @@ Then $n_s \approx \frac{\gamma_L}{K}(r-1)$.
 The output power is proportional to $n_s$. Well above threshold ($r \gg 1$), the photon number $n_s$ (and thus output power) is approximately linearly proportional to the pump rate $R_p$.
 
 ![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 17.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2017.webp)
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 18.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2018.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=68&rect=416,94,709,286| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 18.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2018.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 The exact solutions show a smooth transition around the threshold:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 19.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2019.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=69&rect=236,179,612,465| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 19.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2019.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 ---
 ## 8.5 Experimental Parameters of Lasers
-[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=70&selection=0,34,0,34| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 In practice, inversion and photon number are not always the most directly accessible experimental quantities. Gain, loss, and output power (related to photon flux) are often more useful.
 The gain coefficient is $\gamma(\nu)=N_{\text{inv}} \sigma_{em}(\nu)$, where $N_{\text{inv}} = N_2 - (g_2/g_1)N_1$.
@@ -357,32 +357,32 @@ Both saturation intensity and fluence are material and transition-specific prope
 
 Gain clamping:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 20.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2020.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=74&rect=210,167,640,483| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 20.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2020.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 The small-signal gain $\gamma_0$ increases with pump power. The actual gain $\gamma$ clamps at the threshold value (gain = losses) once lasing starts. At saturation intensity $I=I_{sat}$, the gain is reduced to $\gamma_0/2$.
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 21.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2021.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=75&rect=294,152,803,457| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 21.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2021.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 Figure shows gain $g = \gamma L_g$.
 
 ---
 ## 8.6 Initial Laser Dynamics
-[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=76&selection=0,0,0,22| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Initially, when pumping starts, the photon flux in the cavity is negligible (originating from spontaneous emission). The population inversion $N_{\text{inv}}$ builds up towards its small-signal value $N_0$. Eventually, by chance, a spontaneously emitted photon will be emitted into a cavity mode that has net gain ($2\gamma_0 L_g > l$). This photon initiates stimulated emission. As the photon flux builds up through many round trips of amplification, it starts to deplete the population inversion (gain saturation). The gain is reduced until it exactly balances the losses. The photon flux then asymptotically reaches its steady-state value.
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 22.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2022.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=76&rect=47,127,376,437| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 22.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2022.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Initially, there is primarily incoherent spontaneous emission. As lasing threshold is reached and surpassed, coherent stimulated emission into one or a few cavity modes dominates. The total spontaneous emission into all $4\pi$ steradians may still occur, but the output beam consists mainly of coherent light.
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 23.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2023.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=77&rect=210,162,637,459| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 23.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2023.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Above threshold, pumping harder primarily increases the flux of coherent photons, while the population inversion (and thus gain) remains clamped at the threshold value $N_{\text{th}}$.
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 24.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2024.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=78&rect=50,208,548,432| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 24.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2024.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 To optimise the laser output power $P_{out} \sim \phi_{out}$, consider one mirror perfectly reflecting and the other having a power transmittance $\mathcal{T}$ (output coupler). The output photon flux $\phi_{out}$ is related to the intracavity flux $\phi_{intra}$ by $\phi_{out} = \phi_{intra} \mathcal{T} / (\text{round trip factor})$. It can be shown that an optimal transmittance $\mathcal{T}_{opt}$ exists that maximises output power for given laser parameters.
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 25.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2025.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=82&rect=145,204,667,447| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 25.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2025.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Another useful form for the threshold inversion density is:
 $$
@@ -392,27 +392,27 @@ This shows that it is more difficult to reach threshold (higher $N_{th}$) for sh
 
 ---
 ## 8.7 Mode Selection
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=156&selection=14,0,16,34| ]] [[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=85&selection=0,32,0,32| ]] [[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=94&selection=0,0,0,27| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 So far, we have assumed that the energy emitted by an atomic transition is quantised, ideally leading to emitted light at a single frequency $\nu_0=(E_2-E_1)/h$. However, we have also seen that in reality, broadening effects give the gain spectrum a finite width $g(\nu)$. Additionally, an optical cavity supports a discrete set of resonant modes (longitudinal and transverse). Longitudinal modes are narrowly peaked in frequency, spaced by the Free Spectral Range (FSR). These cavity resonances are typically much narrower than the gain bandwidth $g(\nu)$.
 Lasing will occur preferentially for those cavity modes that fall within the gain bandwidth $g(\nu)$ and for which the gain exceeds the losses. The cavity modes gain energy over many round trips through amplification by stimulated emission. In a multi-mode laser, several longitudinal modes may lase simultaneously. In many single-mode lasers, the cavity mode closest to the peak of the gain lineshape will experience the highest net gain and will dominate over other modes. As it builds up intensity, it saturates the gain medium, potentially suppressing other modes below their threshold.
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/QE_script 6.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/QE_script%206.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=157&rect=118,199,483,384| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/QE_script 6.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/QE_script%206.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 26.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2026.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=91&rect=51,96,802,441| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 26.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2026.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 For some applications, single-longitudinal-mode operation is required. This can be achieved by introducing spectrally selective loss elements into the cavity (such as etalons or birefringent filters) to ensure only one desired mode remains above threshold. The following figures show some methods for longitudinal mode selection:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 27.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2027.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=94&rect=324,213,793,386| ]]
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 28.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2028.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=95&rect=156,93,730,397| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 27.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2027.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 28.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2028.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Selection of a single transverse mode (typically the fundamental $TEM_{00}$ Gaussian mode) is also crucial for good beam quality. Transverse modes depend on the resonator geometry and can experience different diffraction losses, for instance, due to finite mirror sizes or intracavity apertures. By carefully designing the resonator and potentially including an aperture, higher-order transverse modes (which are typically larger in spatial extent) can be made to experience higher losses, thus ensuring fundamental mode operation.
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 30.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2030.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=99&rect=104,320,606,429| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 30.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2030.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Mode selection also depends on the type of pumping scheme and how well the pumped volume in the gain medium overlaps with the desired lasing mode volume:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 29.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2029.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=98&rect=115,118,808,469| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 29.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2029.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 ---
 ## 8.8 Hole Burning
@@ -424,27 +424,27 @@ There are two main types of hole burning relevant to lasers:
 
 ---
 ## 8.9 Pulsed Lasers - Overview
-[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=102&selection=0,0,0,30| ]] [[Notes/2025 Quantum Electronics/QE_script.pdf#page=180&selection=4,0,6,23| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 Previously, the discussion largely focused on continuous wave (CW) and single-mode lasers, which (ideally) have a constant intensity output as a function of time. Very often, however, pulsed laser operation is desired, as pulsed lasers are crucial for a wide range of applications. The average power of a laser is typically limited by thermal effects in the gain medium and pump source capabilities. A laser emitting short pulses essentially concentrates its energy into very brief intervals of light, which in turn leads to very high _peak_ power and _peak_ intensity, even if the _average_ power is moderate. High peak power enables various nonlinear optical applications important for industrial processes and scientific research. Furthermore, short pulses allow for high time-resolution in measurements of dynamical processes, such as molecular vibrations or even electronic wavepacket motion. These measurements and techniques form the core of [[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]]. The following is an overview of common methods to produce laser pulses.
 - **Gain Switching:** This is perhaps the simplest technique to produce pulses of light. The pump source is rapidly turned on and off, effectively switching the gain above and below the threshold. The duration of the pulses achievable with this method is limited by several timescales, including the initial build-up time of photons in the cavity and the decay time after the gain is switched off, both of which depend on the gain medium and cavity properties. The speed of switching the pump (and thus the gain) also limits the pulse duration. This method is typically suitable for generating relatively long pulses, with durations of several microseconds or longer.
-    ![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals-2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals-2.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=102&rect=53,107,723,447| ]]
+    ![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals-2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals-2.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 - **Q-Switching:** This method involves modulating the quality factor (Q-factor) of the laser cavity, which is inversely related to the cavity losses. Lasing requires gain to exceed losses. The idea is to initially keep the cavity losses very high (low Q), suppressing lasing, which allows the pump to build up a very large population inversion in the gain medium, far above the normal threshold level. At a chosen moment, the losses are suddenly reduced (Q is switched to a high value). With the gain now significantly exceeding the (lowered) losses, stimulated emission rapidly depopulates the inversion, releasing the stored energy as a short, intense pulse of light. This Q-switching can be achieved using active modulators (such as electro-optic or acousto-optic switches) or passive saturable absorbers. Compared to gain switching, the population inversion is already established at a high level before the pulse emits, allowing for shorter pulse durations and much higher peak powers. It is the method of choice for achieving pulses with large pulse energy (millijoules to joules). The duration is typically limited to nanoseconds.
-    ![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 2-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%202-1.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=103&rect=139,90,638,485| ]]
-    ![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 3-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%203-1.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=104&rect=488,246,824,455| ]]
+    ![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 2-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%202-1.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
+    ![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 3-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%203-1.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 - **Mode-locking (active/passive):** This technique allows the generation of the shortest pulses directly from a laser cavity, routinely reaching picosecond and femtosecond durations. It involves forcing many longitudinal modes of the laser cavity to oscillate with a fixed phase relationship ("phase-locking"). The coherent superposition of these phase-locked modes results in constructive interference at specific points in time, forming a train of ultrashort pulses. The individual pulse duration is inversely proportional to the total locked spectral bandwidth (the range of frequencies of the phase-locked modes). The temporal spacing between pulses in the train is given by the cavity round-trip time $T_R = 2nL/c$ for a linear cavity of length $L$. The discussion of this topic goes well beyond this introductory course and is treated in extensive detail in [[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]].
-    ![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 5-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%205-1.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=106&rect=107,113,695,465| ]]
+    ![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 5-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%205-1.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
     Mode-locking can be achieved in two main ways:
     -   **Active mode-locking:** An intracavity device (such as an acousto-optic or electro-optic modulator) actively modulates the resonator losses (or gain) at a frequency equal to the FSR ($1/T_R$). This creates short "windows" of net gain once per round trip, forcing the lasing modes to acquire specific phases that lead to pulsed operation.
     -   **Passive mode-locking:** This relies on nonlinear optical elements within the laser cavity whose properties change with light intensity. A common example is a saturable absorber, which has lower loss for higher intensity. An initial intensity fluctuation (pulse) experiences less loss than CW light, is amplified, and can grow to saturate the gain, eventually forming a stable ultrashort pulse circulating in the cavity. Kerr-lens mode-locking (KLM), which exploits the self-focusing effect in a Kerr medium, and semiconductor saturable absorber mirrors (SESAMs) are widely used passive mode-locking techniques.
 
 ---
 ## 8.10 Examples of Lasers
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=181&selection=41,0,43,18| ]] [[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=110&selection=0,14,0,14| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 There are many types of lasers, with the ruby and Nd:glass lasers having already been mentioned. The following figures and table show some more common types of lasers and some of their typical parameters:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 8-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%208-1.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=110&rect=158,176,662,460| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 8-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%208-1.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 | Laser                   | Type            | Wavelength(s)                                            | Operation Mode                        | Output Power                  |
 | :---------------------- | :-------------- | :------------------------------------------------------- | :------------------------------------ | :---------------------------- |
@@ -468,10 +468,10 @@ There are many types of lasers, with the ruby and Nd:glass lasers having already
 
 The following figure shows some laser gain bandwidths for common solid-state laser materials:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 9-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%209-1.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=114&rect=95,137,772,455| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 9-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%209-1.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 Note that Ti:Al$_2$O$_3$ is the famous Titanium-doped sapphire (Ti:sapphire) laser crystal. Its extremely broad emission bandwidth is due to the strong coupling of the active Ti$^{3+}$ ion's d-orbitals to the crystal lattice vibrations (vibronic broadening). This broad bandwidth supports wide frequency tuning as a continuous-wave laser or the generation of ultrashort (femtosecond) pulses when mode-locked. It operates as a four-level (or quasi-three-level at the short wavelength end) laser system:
 
-![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 10-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2010-1.webp)[[Notes/2025 Quantum Electronics/04_Laser_fundamentals.pdf#page=115&rect=38,103,344,435| ]]
+![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 10-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2010-1.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 ---

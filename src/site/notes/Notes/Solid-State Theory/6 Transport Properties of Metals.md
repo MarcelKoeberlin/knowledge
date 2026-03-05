@@ -7,24 +7,24 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 **Table of Contents**
 
-[[#6.1 Electrical Conductivity|6.1 Electrical Conductivity]]
-[[#6.2 Transport Equations and Relaxation Time|6.2 Transport Equations and Relaxation Time]]
-[[#6.3 Impurity Scattering|6.3 Impurity Scattering]]
-[[#6.4 Electron-Phonon Scattering|6.4 Electron-Phonon Scattering]]
-[[#6.5 Electron-Electron Scattering|6.5 Electron-Electron Scattering]]
-[[#6.6 Matthiessen's Rule and the Ioffe-Regel Limit|6.6 Matthiessen's Rule and the Ioffe-Regel Limit]]
-[[#6.7 General Transport Coefficients|6.7 General Transport Coefficients]]
-[[#6.8 Anderson Localisation in One-Dimensional Systems|6.8 Anderson Localisation in One-Dimensional Systems]]
+[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.1 Electrical Conductivity\|6.1 Electrical Conductivity]]
+[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.2 Transport Equations and Relaxation Time\|6.2 Transport Equations and Relaxation Time]]
+[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.3 Impurity Scattering\|6.3 Impurity Scattering]]
+[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.4 Electron-Phonon Scattering\|6.4 Electron-Phonon Scattering]]
+[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.5 Electron-Electron Scattering\|6.5 Electron-Electron Scattering]]
+[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.6 Matthiessen's Rule and the Ioffe-Regel Limit\|6.6 Matthiessen's Rule and the Ioffe-Regel Limit]]
+[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.7 General Transport Coefficients\|6.7 General Transport Coefficients]]
+[[Notes/Solid-State Theory/6 Transport Properties of Metals#6.8 Anderson Localisation in One-Dimensional Systems\|6.8 Anderson Localisation in One-Dimensional Systems]]
 
 ---
 # 6 Transport Properties of Metals
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=127&selection=2,0,2,30| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 The ability to transport electrical current is one of the most remarkable and characteristic properties of metals. At zero temperature, an ideal pure metal is a perfect electrical conductor, that is, its resistivity is zero. However, disorder due to impurities and lattice defects influence the transport and yield a finite residual resistivity, as found in real materials. At finite temperature, electron-electron and electron-phonon scattering lead to a temperature-dependent resistivity. Furthermore, an external magnetic field may influence the resistivity, a phenomenon called magnetoresistance, and also leads to the previously studied Hall effect. In this chapter, the effects of a magnetic field will not be considered. Finally, heat transport, which is also mostly mediated by electrons in metals, goes hand in hand with the electric transport. In this context, transport phenomena such as thermoelectricity (Seebeck and Peltier effect) will be analysed here.
 
 ---
 ## 6.1 Electrical Conductivity
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=127&selection=23,0,25,23| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 In a normal metal, an electrical current density $\mathbf{j}(\mathbf{q}, \omega)$ (in $\mathbf{q}, \omega$-space) is induced by an applied electrical field $\mathbf{E}(\mathbf{q}, \omega)$. For a homogeneous isotropic metal, we define the scalar (note that in an anisotropic material, the conductivity $\hat{\sigma}$ would be a full $3 \times 3$ tensor) electrical conductivity $\sigma(\mathbf{q}, \omega)$ within linear response, through
 $$
@@ -104,7 +104,7 @@ This relation is valid for all electronic systems (including semiconductors).
 
 ---
 ## 6.2 Transport Equations and Relaxation Time
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=129&selection=0,0,2,39| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 We introduce here Boltzmann's transport theory as a rather simple and efficient way to deal with dissipation and momentum relaxation of non-stationary electronic states in metals.
 
@@ -308,8 +308,8 @@ n(\omega) &\approx \frac{\omega_{p}}{2 \omega^{2} \bar{\tau}}.
 $$
 We find $\kappa(\omega) \gg n(\omega) \gg 1$, which implies a large reflectivity of metals in this frequency range as well. Note that visible frequencies are part of this regime:
 
-![Attachments/Script 59.webp|700](/img/user/Attachments/Script%2059.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=134&rect=191,483,396,743| ]]
-![Attachments/Script 60.webp|700](/img/user/Attachments/Script%2060.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=135&rect=197,601,392,750| ]]
+![Attachments/Script 59.webp|700](/img/user/Attachments/Script%2059.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
+![Attachments/Script 60.webp|700](/img/user/Attachments/Script%2060.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 The frequency dependence of the penetration depth becomes weak, and its magnitude is approximately given by the Debye length, $\delta \sim c / \omega_{p}$.
 
@@ -387,7 +387,7 @@ where one should remember that, for elastic scattering, the quasi-particle energ
 
 ---
 ## 6.3 Impurity Scattering
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=135&selection=622,0,624,19| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 ### 6.3.1 Potential Scattering
 
@@ -501,7 +501,7 @@ a characteristic energy scale of this system. The real behaviour of the conducti
 
 ---
 ## 6.4 Electron-Phonon Scattering
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=138&selection=224,0,226,26| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Even in perfect metals, the conductivity becomes non-zero at finite temperature. The thermally induced distortions of the lattice, phonons, act as fluctuating scattering centres. In the language of electron-phonon interaction, electrons are scattered via absorption and emission of phonons, which induce local fluctuations in volume (as discussed in [[Notes/Solid-State Theory/3 Metals\|Chapter 3]]). The corresponding coupling term was given in previously derived expressions and simplifies with the definition of the displacement field operator to
 $$
@@ -534,7 +534,7 @@ $$
 $$
 where $g(\mathbf{q})=\tilde{V}_{\mathbf{q}}|\mathbf{q}| \sqrt{2 \hbar / (\rho_{0} \omega_{\mathbf{q}})}$. Each of these four terms describes one of the single phonon scattering processes depicted here:
 
-![Attachments/Script 61.webp|700](/img/user/Attachments/Script%2061.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=139&rect=141,420,456,487| ]]
+![Attachments/Script 61.webp|700](/img/user/Attachments/Script%2061.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 The collision integral leads to a complicated integro-differential equation, whose solution is tedious and would involve the solution of the non-equilibrium phonon-problem as well. Instead of a full rigorous calculation including the non-equilibrium redistribution of phonons, we will consider the behaviour in various temperature regimes by an approximate treatment of the phonons. The characteristic temperature of phonons, the Debye temperature $\Theta_{D} \ll T_{F}$, is much smaller than the Fermi temperature. Hence, the phonon energy is unimportant for the energy conservation, $\epsilon_{\mathbf{k}'=\mathbf{k}+\mathbf{q}} \approx \epsilon_{\mathbf{k}}$. Therefore we are allowed to impose momentum conservation $\epsilon_{\mathbf{k}+\mathbf{q}}=\epsilon_{\mathbf{k}}$ and consider the lattice distortion as being essentially static, in the sense of an adiabatic Born-Oppenheimer approximation. The approximate collision integral then reads
 $$
@@ -563,7 +563,7 @@ $$
 $$
 where $\lambda$ is a dimensionless electron-phonon coupling constant. In usual metals $\lambda<1$. As in the case of defect scattering, the relaxation time depends only weakly on the electron energy. But, unlike previously, the direct temperature dependence enters via the dependence on temperature of the phonon occupation $N\left(\omega_{\mathbf{q}}\right)$.
 
-![Attachments/Script 62.webp|700](/img/user/Attachments/Script%2062.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=140&rect=218,384,372,534| ]]
+![Attachments/Script 62.webp|700](/img/user/Attachments/Script%2062.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 In order to perform the integration in the expression for $1/\tau$, we have to re-express $\delta\left(\epsilon_{\mathbf{k}+\mathbf{q}}-\epsilon_{\mathbf{k}}\right)$ by writing (with $q=|\mathbf{q}|, k_F=|\mathbf{k}_F|$):
 $$
@@ -615,7 +615,7 @@ which change the scattering strength (amplitude) of the lattice modulation linea
 
 ---
 ## 6.5 Electron-Electron Scattering
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=141&selection=448,0,450,28| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 In [[Notes/Solid-State Theory/5 Landau's Theory of Fermi Liquids\|Chapter 5]] we learned that, taking a short-ranged electron-electron interaction into account, scattering rate for electrons decreases strongly close to the Fermi surface. The basic reason for this lies in the constraint of the scattering phase space imposed by the Pauli principle. The lifetime, which we identify with the relaxation time here, has the form
 $$
@@ -670,13 +670,13 @@ $$
 $$
 which connects different Brillouin zones, as shown here:
 
-![Attachments/Script 63.webp|700](/img/user/Attachments/Script%2063.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=143&rect=173,541,419,749| ]]
+![Attachments/Script 63.webp|700](/img/user/Attachments/Script%2063.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 In this way momentum can be transferred to the lattice. Still the conditions are constraint by the fact that all electron momenta lie on the Fermi surface. Such processes are termed Umklapp scattering and play an important role in electron-phonon scattering as well.
 
 ---
 ## 6.6 Matthiessen's Rule and the Ioffe-Regel Limit
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=143&selection=55,0,57,43| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Matthiessen's rule states, that the scattering rates of different scattering processes can simply be added, leading to
 $$
@@ -736,7 +736,7 @@ where we used $\ell^{-1} \sim k_{F}$. For a typical value $k_{F} \sim 10^{8}\,\m
 
 ---
 ## 6.7 General Transport Coefficients
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=144&selection=336,0,338,28| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Simultaneously with charge, electrons will also transport energy, that is, heat and entropy. This is why charge and heat transport are naturally interconnected. In the following, we generalise the transport theory set up above to include this interplay.
 
@@ -768,7 +768,7 @@ $$
 \end{align*}
 $$
 
-![Attachments/Script 64.webp|700](/img/user/Attachments/Script%2064.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=145&rect=108,208,492,407| ]]
+![Attachments/Script 64.webp|700](/img/user/Attachments/Script%2064.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 In the relaxation time approximation for the collision integral, we obtain the solution
 $$
@@ -904,7 +904,7 @@ $$
 which for $T_{F}(\mathrm{Na, K}) \approx 3 \times 10^{4}\,\mathrm{K}$ leads to $Q \approx -1.4 \times (T/\mathrm{K})\,\mathrm{nV\,K^{-1}}$. 
 A comparison with experiments shows that the order of magnitude works reasonably well for Na and K. However, for Li and Cs even the sign is different. Differences occur through phonon effects, such as the so-called phonon drag which we have neglected here:
 
-![Attachments/Script 65.webp|700](/img/user/Attachments/Script%2065.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=148&rect=167,196,427,536| ]]
+![Attachments/Script 65.webp|700](/img/user/Attachments/Script%2065.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 In the following, we consider two different types of thermoelectric effects.
 
@@ -924,7 +924,7 @@ The resulting voltage $V$ appears between the two ends of a second metal $A$, wh
 
 The second phenomenon, termed Peltier effect, emerges in a system kept at the same temperature everywhere. Here, an electric current $\mathbf{J}_{e}$ between the two contacts of the metal $A$ induces a heat current in the bi-metallic system, such that heat is transferred from one reservoir (top) to another (bottom):
 
-![Attachments/Script 66.webp|700](/img/user/Attachments/Script%2066.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=149&rect=131,587,465,750| ]]
+![Attachments/Script 66.webp|700](/img/user/Attachments/Script%2066.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 This follows from the general transport equations by assuming $\mathbf{\nabla}T=0$, where
 $$
@@ -949,7 +949,7 @@ This means, that the heat transfer between reservoirs can be controlled by elect
 
 ---
 ## 6.8 Anderson Localisation in One-Dimensional Systems
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=150&selection=66,0,68,48| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Transport in one spatial dimension is very special, since there are only two different directions to go: forward and backward. We introduce the transfer matrix formalism and use it to express the conductivity through the Landauer formula. We will then investigate the effects of multiple scattering at different obstacles, leading to the so-called Anderson localisation, which turns a metal into an insulator.
 
@@ -957,7 +957,7 @@ Transport in one spatial dimension is very special, since there are only two dif
 
 The transmission and reflection at an arbitrary potential with finite support in one dimension can be described by a transfer matrix $\hat{T}$.
 
-![Attachments/Script 67.webp|700](/img/user/Attachments/Script%2067.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=150&rect=152,355,447,451| ]]
+![Attachments/Script 67.webp|700](/img/user/Attachments/Script%2067.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 In this situation, a suitable choice for a basis of the electron states is the set of plane waves $\{e^{\pm ikx}\}$ (see the conceptual diagram) moving in the positive (negative) $x$-direction with wave vector $+k$ ($-k$). Only plane waves with the same $|k|$ on the left ($I_{1}$) and right ($I_{2}$) side of the scatterer are interconnected. Therefore, we write
 $$
@@ -1059,7 +1059,7 @@ The Klitzing constant $R_{K}=h / e^{2} \approx 25.8\,\mathrm{k\Omega}$ is a resi
 
 We consider now two spatially separated scattering potentials, represented by $\hat{T}_{1}$ and $\hat{T}_{2}$ each determined by $r_{1}, t_{1}$ and $r_{2}, t_{2}$ respectively:
 
-![Attachments/Script 68.webp|700](/img/user/Attachments/Script%2068.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=152&rect=127,331,474,379| ]]
+![Attachments/Script 68.webp|700](/img/user/Attachments/Script%2068.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 The particles are multiply scattered at these potentials in a unknown manner, but the global result can again be expressed via a simple transfer matrix $\hat{T}=\hat{T}_{1} \hat{T}_{2}$, given by the matrix multiplication of each transfer matrix. All previously found properties remain valid for the new matrix $\hat{T}$, given by
 $$

@@ -7,23 +7,23 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 **Table of Contents**
 
-[[#9.1 Many-Body Wave Functions and Particle Statistics|9.1 Many-Body Wave Functions and Particle Statistics]]
-[[#9.2 Independent, Indistinguishable Particles|9.2 Independent, Indistinguishable Particles]]
-[[#9.3 Second Quantisation Formalism|9.3 Second Quantisation Formalism]]
-[[#9.4 Observables in Second Quantisation|9.4 Observables in Second Quantisation]]
-[[#9.5 Equation of Motion|9.5 Equation of Motion]]
-[[#9.6 Correlation Functions|9.6 Correlation Functions]]
-[[#9.7 Selected Applications|9.7 Selected Applications]]
+[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.1 Many-Body Wave Functions and Particle Statistics\|9.1 Many-Body Wave Functions and Particle Statistics]]
+[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.2 Independent, Indistinguishable Particles\|9.2 Independent, Indistinguishable Particles]]
+[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.3 Second Quantisation Formalism\|9.3 Second Quantisation Formalism]]
+[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.4 Observables in Second Quantisation\|9.4 Observables in Second Quantisation]]
+[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.5 Equation of Motion\|9.5 Equation of Motion]]
+[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.6 Correlation Functions\|9.6 Correlation Functions]]
+[[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.7 Selected Applications\|9.7 Selected Applications]]
 
 ---
 # 9 Identical Quantum Particles - Formalism of Second Quantisation
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=185&selection=2,0,4,12| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 This chapter gives an introduction to the formalism of second quantisation, which is a convenient technical tool for discussing many-body quantum systems. It is indispensable in quantum field theory as well as in solid state physics. We distinguish between fermions (half-integer spins) and bosons (integer spins), which behave quite differently, as we have seen in the [[Notes/Solid-State Theory/8 Magnetism of Localised Moments\|previous chapter]]. This behaviour is implemented in their many-body wave functions. While in the previous chapter we could circumvent dealing with this aspect as we considered independent, indistinguishable quantum particles, it is unavoidable to implement a more careful analysis once interactions between the particles appear.
 
 ---
 ## 9.1 Many-Body Wave Functions and Particle Statistics
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=185&selection=19,0,21,48| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 The Hamiltonian describing the dynamics of a system of many identical quantum particles must be invariant under exchange (permutation) of particle degrees of freedom (coordinate, momentum, spin, and so forth). The identical quantum particles are indistinguishable, since in quantum mechanics it is impossible to follow the trajectories of particles under general conditions, unlike in classical mechanics. Permutations play indeed an important role in characterising quantum particles. We introduce the many-body wave function of $N$ particles,
 $$
@@ -82,7 +82,7 @@ which implies the Pauli exclusion principle.
 
 ---
 ## 9.2 Independent, Indistinguishable Particles
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=186&selection=160,0,162,40| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 We consider $N$ identical particles in a potential $V$ which are not interacting with each other. The Hamiltonian is then given by
 $$
@@ -141,7 +141,7 @@ where $n_{\nu_{j}}$ denotes the number of particles in the single-particle state
 
 ---
 ## 9.3 Second Quantisation Formalism
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=187&selection=169,0,171,29| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 It is in principle possible to investigate many-body states using many-body wave functions. However, we will introduce here a formalism that is in many respects much more convenient and efficient. It is based on the operators which "create" or "annihilate" particles and act on states in the Fock space $\mathcal{F}$, which is an extended space of states combining Hilbert spaces $\mathcal{Q}_{n}$ for different particle numbers $n$,
 $$
@@ -387,7 +387,7 @@ Note that $N=\sum_{\boldsymbol{k}, s} n_{\boldsymbol{k}, s}$. Taking care of the
 
 ---
 ## 9.4 Observables in Second Quantisation
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=190&selection=191,0,193,34| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 It is possible to express Hermitian operators using the language of second quantisation. We will show this explicitly for the density operator by calculating matrix elements. The particle density operator is given by
 $$
@@ -487,7 +487,7 @@ Note that the momentum space representation has the simple straightforward inter
 
 ---
 ## 9.5 Equation of Motion
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=191&selection=594,0,596,18| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 For simplicity we discuss here a system of independent free quantum particles described by the Hamiltonian
 $$
@@ -579,7 +579,7 @@ which corresponds to the standard Bose-Einstein and Fermi-Dirac distribution.
 
 ---
 ## 9.6 Correlation Functions
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=193&selection=84,0,86,21| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Independent classical particles do not have any correlation with each other. This is different for quantum particles. The second quantisation language is very suitable for formulating correlation functions and for showing that fermion and boson gases behave rather differently.
 
@@ -685,7 +685,7 @@ g_{s s}\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)= \begin{cases}1-\left
 \end{align*}
 $$
 
-![Attachments/Script 83.webp|700](/img/user/Attachments/Script%2083.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=195&rect=95,608,503,745| ]]
+![Attachments/Script 83.webp|700](/img/user/Attachments/Script%2083.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 The case of $s \neq s^{\prime}$ leads to $g_{s s^{\prime}}(\boldsymbol{r}-\boldsymbol{r}')=1$, meaning there is no spatial correlation between spin-$1/2$ fermions of opposite spin in this non-interacting model. The probability to find another fermion around the position of a fermion at $\boldsymbol{r}$ corresponds to
 $$
@@ -769,14 +769,14 @@ $$
 
 The probability of finding two bosons at the same position ($\boldsymbol{r}=\boldsymbol{r}'$) is $g_2(0) = n^2(1+1) = 2n^2$, which is twice as large as for long distances ($g_2(\infty)=n^2$):
 
-![Attachments/Script 84.webp|700](/img/user/Attachments/Script%2084.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=197&rect=183,579,402,749| ]]
+![Attachments/Script 84.webp|700](/img/user/Attachments/Script%2084.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Thus, in contrast to fermions, bosons like to cluster together (bunching).
 The radius of bunching of the bosons in the limit $T \gg T_{c}$ is of order $\lambda$ and shrinks with increasing $T$ (classical limit).
 
 ---
 ## 9.7 Selected Applications
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=196&selection=699,0,701,21| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 We consider here three examples applying second quantisation to statistical physics systems.
 
@@ -796,7 +796,7 @@ $$
 \end{align*}
 $$
 
-using results from the section on [[#9.4 Observables in Second Quantisation|Observables in Second Quantisation]]. Moreover, $g=2$ and $s= \pm 1$ (representing eigenvalues for spin up/down components). First we calculate the magnetisation in zero magnetic field,
+using results from the section on [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.4 Observables in Second Quantisation\|Observables in Second Quantisation]]. Moreover, $g=2$ and $s= \pm 1$ (representing eigenvalues for spin up/down components). First we calculate the magnetisation in zero magnetic field,
 $$
 \begin{align*}
 \left\langle\hat{M}_{z}\right\rangle=\mu_{B} \sum_{\boldsymbol{k}, s} s\left\langle\hat{c}_{\boldsymbol{k} s}^{\dagger} \hat{c}_{\boldsymbol{k} s}\right\rangle=\mu_{B} \sum_{\boldsymbol{k}, s} s n_{\boldsymbol{k}s}=0 .
@@ -808,7 +808,7 @@ $$
 \left\langle\hat{M}_{z}^{2}\right\rangle=\mu_{B}^{2} \sum_{\boldsymbol{k}, s} \sum_{\boldsymbol{k}^{\prime}, s^{\prime}} s s^{\prime}\left\langle\hat{c}_{\boldsymbol{k} s}^{\dagger} \hat{c}_{\boldsymbol{k} s} \hat{c}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger} \hat{c}_{\boldsymbol{k}^{\prime} s^{\prime}}\right\rangle,
 \end{align*}
 $$
-which we determine using a similar method as in the section on [[#9.6.1 Fermions|fermion correlation functions]]. The expectation value of four fermion operators for a non-interacting system is given by:
+which we determine using a similar method as in the section on [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.6.1 Fermions\|fermion correlation functions]]. The expectation value of four fermion operators for a non-interacting system is given by:
 $$
 \begin{align*}
 \left\langle\hat{c}_{\boldsymbol{k} s}^{\dagger} \hat{c}_{\boldsymbol{k} s} \hat{c}_{\boldsymbol{k}^{\prime} s^{\prime}}^{\dagger} \hat{c}_{\boldsymbol{k}^{\prime} s^{\prime}}\right\rangle=\left\langle\hat{n}_{\boldsymbol{k} s}\right\rangle\left(1-\left\langle\hat{n}_{\boldsymbol{k} s}\right\rangle\right) \delta_{\boldsymbol{k} \boldsymbol{k}^{\prime}} \delta_{s s^{\prime}}+\left\langle\hat{n}_{\boldsymbol{k} s}\right\rangle\left\langle\hat{n}_{\boldsymbol{k}^{\prime} s^{\prime}}\right\rangle .
@@ -873,7 +873,7 @@ The factor $(1-n_{\boldsymbol{k} s})$ introduces the quantum correction (Pauli b
 ---
 ### 9.7.2 Bose-Einstein Condensate and Coherent States
 
-Our aim here is to characterise the Bose-Einstein condensate further beyond what we did in the [[Notes/Solid-State Theory/8 Magnetism of Localised Moments\|previous chapter]]. Here, we consider the concepts of both off-diagonal long-range order and the order parameter for the condensate. We start with the discussion of the single-particle correlation function for a homogeneous gas of spin-0 bosons in more detail than in the section on [[#9.6.2 Bosons|boson correlation functions]],
+Our aim here is to characterise the Bose-Einstein condensate further beyond what we did in the [[Notes/Solid-State Theory/8 Magnetism of Localised Moments\|previous chapter]]. Here, we consider the concepts of both off-diagonal long-range order and the order parameter for the condensate. We start with the discussion of the single-particle correlation function for a homogeneous gas of spin-0 bosons in more detail than in the section on [[Notes/Solid-State Theory/9 Identical Quantum Particles - Formalism of Second Quantisation#9.6.2 Bosons\|boson correlation functions]],
 $$
 \begin{align*}
 g(\boldsymbol{r}-\boldsymbol{r}^{\prime})&=\left\langle\widehat{\Psi}^{\dagger}(\boldsymbol{r}) \widehat{\Psi}\left(\boldsymbol{r}^{\prime}\right)\right\rangle\\&=\frac{1}{V} \sum_{\boldsymbol{k}, \boldsymbol{k}^{\prime}}\left\langle\hat{a}_{\boldsymbol{k}}^{\dagger} \hat{a}_{\boldsymbol{k}^{\prime}}\right\rangle e^{i\left(\boldsymbol{k}^{\prime} \cdot \boldsymbol{r}^{\prime}-\boldsymbol{k} \cdot \boldsymbol{r}\right)}\\&=\frac{1}{V} \sum_{\boldsymbol{k}}\left\langle\hat{n}_{\boldsymbol{k}}\right\rangle e^{-i \boldsymbol{k} \cdot\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)},
@@ -925,7 +925,7 @@ $$
 
 The single-particle correlation function decays exponentially for large distances:
 
-![Attachments/Script 85.webp|700](/img/user/Attachments/Script%2085.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=199&rect=190,392,410,531| ]]
+![Attachments/Script 85.webp|700](/img/user/Attachments/Script%2085.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 This behaviour is valid for $T>T_{c}$ where $\mu<0$. For $T<T_{c}$ the chemical potential lies at the lowest single-particle state, meaning $\mu=0$ for free bosons, such that $k_{0}=0$. For the long-distance behaviour, the above integral would suggest $g(\boldsymbol{R}) \sim 1/|\boldsymbol{R}|$. However, this is not true, since our integral approach for $T<T_c$ must explicitly account for the macroscopic occupation of the $\boldsymbol{k}=0$ state. Thus, we should use
 $$

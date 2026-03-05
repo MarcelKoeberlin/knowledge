@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/1-plane-wave-propagation-in-dispersive-media/","hide":"true","updated":"2025-06-04T15:33:55.628+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/1-plane-wave-propagation-in-dispersive-media/","hide":"true","updated":"2025-06-04T15:33:55.627+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -7,21 +7,21 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 **Table of Contents**
 
-[[#1.1 Maxwell Equations|1.1 Maxwell Equations]]
-[[#1.2 Material Equations|1.2 Material Equations]]
-[[#1.3 Wave Equation with Refractive Index|1.3 Wave Equation with Refractive Index]]
-[[#1.4 TEM Wave and Impedance|1.4 TEM Wave and Impedance]]
-[[#1.5 Polarisation|1.5 Polarisation]]
-[[#1.6 Energy Density, Poynting Vector, and Intensity|1.6 Energy Density, Poynting Vector, and Intensity]]
-[[#1.7 Dispersion|1.7 Dispersion]]
-[[#1.8 Sellmeier Equation in the Visible and Near-Infrared|1.8 Sellmeier Equation in the Visible and Near-Infrared]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.1 Maxwell Equations\|1.1 Maxwell Equations]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.2 Material Equations\|1.2 Material Equations]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.3 Wave Equation with Refractive Index\|1.3 Wave Equation with Refractive Index]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.4 TEM Wave and Impedance\|1.4 TEM Wave and Impedance]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.5 Polarisation\|1.5 Polarisation]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.6 Energy Density, Poynting Vector, and Intensity\|1.6 Energy Density, Poynting Vector, and Intensity]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.7 Dispersion\|1.7 Dispersion]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.8 Sellmeier Equation in the Visible and Near-Infrared\|1.8 Sellmeier Equation in the Visible and Near-Infrared]]
 
 ---
 # 1 Plane Wave Propagation in Dispersive Media
 
-We will now begin with the description of the simplest type of electromagnetic field: the plane wave, and we will consider its propagation in a dispersive medium. For this, we require Maxwell's equations. Note however, that we will not derive them here, as it is assumed the reader is already somewhat familiar with them. The following two sections on the [[#1.1 Maxwell Equations|Maxwell equations]] and the [[#1.2 Material Equations|material equations]] are also treated in a similar way in my [[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.2 Maxwell's Equations in a Medium\|quantum electronics notes]].
+We will now begin with the description of the simplest type of electromagnetic field: the plane wave, and we will consider its propagation in a dispersive medium. For this, we require Maxwell's equations. Note however, that we will not derive them here, as it is assumed the reader is already somewhat familiar with them. The following two sections on the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.1 Maxwell Equations\|Maxwell equations]] and the [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media#1.2 Material Equations\|material equations]] are also treated in a similar way in my [[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.2 Maxwell's Equations in a Medium\|quantum electronics notes]].
 ## 1.1 Maxwell Equations
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=21&selection=3,0,5,31| ]]
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 In this chapter, Maxwell's equations will be discussed in SI units. This formulation is important because it incorporates the influence of bound charges and bound currents into the displacement field $\mathbf{D}$ and the magnetising field $\mathbf{H}$. Then, the source terms in the equations only depend on the free charge density $\rho_{\text{f}}$, and the free current density $\mathbf{j}_{\text{f}}$. Free charges/currents could, for instance, be electrons in the conduction band of a metal or a semiconductor, in contrast to the core or bonding electrons which are considered bound. The macroscopic Maxwell's Equations in matter are then:
 
@@ -36,7 +36,7 @@ $$
 
 ---
 ## 1.2 Material Equations
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=22&selection=6,0,8,18| ]]
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The material equations describe how bound charges within a material respond to an electromagnetic (EM) wave, driven by the Coulomb or Lorentz force. As long as the applied fields are not excessively large, the response of each atom or molecule can often be modelled as a harmonic oscillator, where a negatively charged electron cloud oscillates with respect to the positively charged core. Under the influence of an electromagnetic wave, the electrons are set into forced oscillations induced by the incident EM wave. In the linear regime, these oscillating electrons then emit secondary radiation at the same frequency as the incident wave, but generally with a frequency-dependent phase difference. Therefore, the field propagating in the medium is a superposition of the incident wave and the phase-shifted waves emitted by the electrons. In the visible and near-infrared spectrum for transparent media, this superposition of waves typically propagates more slowly than the original incident wave would in vacuum.
 
@@ -93,7 +93,7 @@ For the remainder of these notes, we will primarily consider dielectric material
 
 ---
 ## 1.3 Wave Equation with Refractive Index
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=24&selection=56,0,58,35| ]]
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The wave equation in a material with bound electrons is a direct consequence of Maxwell's equations. We assume no free charges ($\rho_{\text{f}}=0$) and no free currents ($\mathbf{j}_{\text{f}}=0$), so $\nabla\cdot\mathbf{D}=0$. The effect of the bound electrons is incorporated through the polarisation $\mathbf{P}$ (and thus through $\mathbf{D}=\varepsilon_0\mathbf{E}+\mathbf{P}$). For a homogeneous, isotropic, linear, non-magnetic medium, the wave equation for the electric field $\mathbf{E}$ can be written as:
 $$
@@ -136,7 +136,7 @@ T=\frac{2\pi}{\omega}=\frac{1}{f}.
 $$
 The next figure shows a plane wave for a constant position as a function of time (left), and for a constant time as a function of position (right):
 
-![Attachments/UltraFastLasers_Keller.webp|700](/img/user/Attachments/UltraFastLasers_Keller.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=27&rect=55,104,383,221| ]]
+![Attachments/UltraFastLasers_Keller.webp|700](/img/user/Attachments/UltraFastLasers_Keller.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The period in the time domain is $T$. The wavelength in vacuum is $\lambda_0 = cT$. The optical frequency $f$ (or $\omega$) does not change when light enters a linear medium from vacuum. This is a direct consequence of the boundary conditions at the interface. Since the phase velocity changes in a dispersive medium from $c$ to $v_p = c/n$, the wavelength also changes:
 $$
@@ -144,7 +144,7 @@ $$
 $$
 This is schematically shown in the next figure:
 
-![Attachments/UltraFastLasers_Keller 1.webp|700](/img/user/Attachments/UltraFastLasers_Keller%201.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=28&rect=232,514,382,606| ]]
+![Attachments/UltraFastLasers_Keller 1.webp|700](/img/user/Attachments/UltraFastLasers_Keller%201.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 It is often much easier to work with the complex notation for the plane wave:
 $$
@@ -165,7 +165,7 @@ Next, there is a summary of relevant quantities and their behaviour in vacuum an
 
 ---
 ## 1.4 TEM Wave and Impedance
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=30&selection=197,0,199,22| ]]
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Very importantly, for plane waves in isotropic media, Maxwell's equations imply that the field vectors and the wavevector are mutually orthogonal:
 $$
@@ -173,7 +173,7 @@ $$
 $$
 Such a wave is called a transverse electromagnetic (TEM) wave because both the electric and magnetic fields are transverse (perpendicular) to the direction of wave propagation $\mathbf{k}$. For a plane harmonic wave in a lossless medium, the fields $\mathbf{E}$ and $\mathbf{H}$ are in phase:
 
-![Attachments/UltraFastLasers_Keller 2.webp|700](/img/user/Attachments/UltraFastLasers_Keller%202.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=31&rect=103,144,336,259| ]]
+![Attachments/UltraFastLasers_Keller 2.webp|700](/img/user/Attachments/UltraFastLasers_Keller%202.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Further, their amplitudes are related by the wave impedance $Z$ of the medium. For a plane wave $\mathbf{E}(\mathbf{r},t) = \mathbf{E}_0 e^{i(\mathbf{k}\cdot\mathbf{r}-\omega t)}$, the magnetic field is $\mathbf{H}(\mathbf{r},t) = \frac{1}{Z} (\hat{\mathbf{k}} \times \mathbf{E}(\mathbf{r},t))$, where $\hat{\mathbf{k}}=\mathbf{k}/|\mathbf{k}|$. This means $|\mathbf{H}_0| = |\mathbf{E}_0|/Z$. The impedance $Z$ is defined by:
 - In vacuum: $\quad Z_0 \equiv \sqrt{\frac{\mu_0}{\varepsilon_0}} = \mu_0 c \approx 377 \, \Omega$.
@@ -182,7 +182,7 @@ If $n(\omega)$ is complex, $Z(\omega)$ will also be complex, implying a phase sh
 
 ---
 ## 1.5 Polarisation
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=33&selection=341,0,343,12| ]]
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 So far, the electromagnetic wave discussed was implicitly linearly polarised, meaning that the electric field vector oscillates along one fixed direction in the plane perpendicular to $\mathbf{k}$. The direction in which the electric field oscillates is called the polarisation direction. Mathematically, a linearly polarised plane wave propagating along $z$ (figure a), polarised along the $x$-direction, has the form:
 $$
@@ -194,10 +194,10 @@ $$
 $$
 A special case is when $\Delta\varphi=0$ or $\Delta\varphi=\pi$; in this case, the wave remains linearly polarised, with its polarisation direction generally tilted in the $xy$-plane. Another special case occurs when $E_1=E_2$ and the phase difference is $\Delta\varphi = \pm\pi/2$. In that case, the wave is called circularly polarised (figure c), where the tip of the electric field vector traces out a circle in the $xy$-plane at frequency $\omega$.
 
-![Attachments/UltraFastLasers_Keller 3.webp|700](/img/user/Attachments/UltraFastLasers_Keller%203.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=34&rect=56,292,383,604| ]]
+![Attachments/UltraFastLasers_Keller 3.webp|700](/img/user/Attachments/UltraFastLasers_Keller%203.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 ## 1.6 Energy Density, Poynting Vector, and Intensity
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=35&selection=124,0,126,46| ]]
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 For optically isotropic materials, both the Poynting vector (direction of energy flow) and the wave vector $\mathbf{k}$ (direction of phase propagation) are parallel and perpendicular to the wavefronts for plane waves. The following energy-related quantities are important:
 
@@ -227,19 +227,19 @@ For the special case of a monochromatic plane wave $\mathbf{E}(\mathbf{r}, t)=\m
 
 ---
 ## 1.7 Dispersion
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=36&selection=187,0,189,10| ]]
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The fact that the refractive index $n(\omega)$ is frequency dependent implies that the wave number $k(\omega)=n(\omega)\omega/c$ is no longer directly proportional to the frequency $\omega$, as it is in vacuum (where $k_0=\omega/c$). This frequency dependence of $n(\omega)$ (and thus of $k(\omega)$ and $v_p(\omega)$) is called **dispersion**. For more details, see [[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|here]]. It is very important to know $n(\omega)$ to describe pulse propagation, as can be seen in examples of how different materials affect light:
 
-![Attachments/UltraFastLasers_Keller 4.webp|700](/img/user/Attachments/UltraFastLasers_Keller%204.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=36&rect=57,103,382,184| ]]
+![Attachments/UltraFastLasers_Keller 4.webp|700](/img/user/Attachments/UltraFastLasers_Keller%204.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 ---
 ## 1.8 Sellmeier Equation in the Visible and Near-Infrared
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=37&selection=86,0,88,51| ]]
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 In many cases, we will discuss transparent dielectric materials, meaning materials with negligible absorption in the spectral region of interest. Glass, for instance, is transparent in the visible spectrum but absorbs strongly in the ultraviolet (UV) and parts of the infrared (IR) spectral regions. The range in which a material is transparent is called its spectral window. Usually, within this window and away from absorption bands, materials exhibit **normal dispersion**, where the refractive index $n'(\omega) = \mathfrak{Re}\left[n(\omega)\right]$ increases with frequency ($\frac{dn'}{d\omega}>0$), or equivalently, decreases with wavelength ($\frac{dn'}{d\lambda_0}<0$).
 
-![Attachments/UltraFastLasers_Keller 5.webp|700](/img/user/Attachments/UltraFastLasers_Keller%205.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=38&rect=136,147,303,340| ]]
+![Attachments/UltraFastLasers_Keller 5.webp|700](/img/user/Attachments/UltraFastLasers_Keller%205.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Far away from absorption resonances, the dispersion of the real part of the refractive index can often be accurately described by the Sellmeier equation. This equation can be derived from a classical oscillator model (like the Lorentz model) by considering the contributions of multiple absorption resonances at frequencies $\omega_j$. If these resonances are narrow, their contribution to the real part of the susceptibility $\chi_r(\omega)$ (and thus to $n^2(\omega) = 1+\chi_r(\omega)$ for non-magnetic media) can be approximated. The Kramers-Kronig relations connect the real part $\chi_r(\omega)$ and imaginary part $\chi_i(\omega)$ of the susceptibility:
 $$

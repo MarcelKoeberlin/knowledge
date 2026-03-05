@@ -7,23 +7,23 @@ Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents
 ---
 **Table of Contents**
 
-[[#5.1 Representation of Aperiodic Signals: The Discrete-Time Fourier Transform|5.1 Representation of Aperiodic Signals: The Discrete-Time Fourier Transform]]
-[[#5.2 The Fourier Transform for Periodic Signals|5.2 The Fourier Transform for Periodic Signals]]
-[[#5.3 Properties of the Discrete-Time Fourier Transform|5.3 Properties of the Discrete-Time Fourier Transform]]
-[[#5.4 Duality Between the Discrete-Time and Continuous-Time Fourier Transform|5.4 Duality Between the Discrete-Time and Continuous-Time Fourier Transform]]
+[[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.1 Representation of Aperiodic Signals: The Discrete-Time Fourier Transform\|5.1 Representation of Aperiodic Signals: The Discrete-Time Fourier Transform]]
+[[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.2 The Fourier Transform for Periodic Signals\|5.2 The Fourier Transform for Periodic Signals]]
+[[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.3 Properties of the Discrete-Time Fourier Transform\|5.3 Properties of the Discrete-Time Fourier Transform]]
+[[Notes/Signals and Systems/5 Discrete-Time Fourier Transform#5.4 Duality Between the Discrete-Time and Continuous-Time Fourier Transform\|5.4 Duality Between the Discrete-Time and Continuous-Time Fourier Transform]]
 
 ---
 # 5 Discrete-Time Fourier Transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=389&selection=2,0,8,9| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 ---
 ## 5.1 Representation of Aperiodic Signals: The Discrete-Time Fourier Transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=390&selection=24,0,40,9| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 Consider a general aperiodic sequence $x[n]$. For heuristic derivation, we can initially imagine $x[n]$ as being of finite duration, such that $x[n] = 0$ outside some range, for instance $N_1 \le n \le N_2$. From this aperiodic signal, we can construct a periodic signal $\tilde{x}[n]$ by repeating $x[n]$ with a period $N > (N_2-N_1+1)$, so that the original $x[n]$ (padded with zeros to length $N$ if necessary) forms one period of $\tilde{x}[n]$:
 
 ![Attachments/Oppenheim,Willsky_Signals and Systems 20.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2020.webp)
-![Attachments/Oppenheim,Willsky_Signals and Systems 21.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2021.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=390&rect=141,92,456,171| ]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 21.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2021.webp)[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 As we increase the period $N \to \infty$, the periodic signal $\tilde{x}[n]$ becomes identical to the aperiodic signal $x[n]$ for all $n$. By considering the Discrete-Time Fourier Series (DTFS) of $\tilde{x}[n]$ and taking this limit, we can derive the Discrete-Time Fourier Transform (DTFT) pair:
 $$
@@ -38,7 +38,7 @@ Compared to the [[Notes/Signals and Systems/4 Continuous-Time Fourier Transform\
 
 A consequence of this $2\pi$-periodicity is that frequencies $\omega$ and $\omega+2\pi m$ (for any integer $m$) are indistinguishable for discrete-time signals. Low frequencies (slowly varying signals $x[n]$) correspond to values of $\omega$ near integer multiples of $2\pi$ (for example, $\omega \approx 0, \pm 2\pi, \dots$). High frequencies (rapidly varying signals $x[n]$) correspond to values of $\omega$ near odd multiples of $\pi$ (for example, $\omega \approx \pm\pi, \pm 3\pi, \dots$; $e^{i\pi n} = (-1)^n$ is the most rapidly varying sequence). This behaviour is illustrated below:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 22.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2022.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=393&rect=90,213,452,508| ]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 22.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2022.webp)[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 ### 5.1.1 Convergence Issues of the Discrete-Time Fourier Transform
 
@@ -54,7 +54,7 @@ These conditions are analogous to those for the continuous-time Fourier transfor
 
 ---
 ## 5.2 The Fourier Transform for Periodic Signals
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=398&selection=160,0,170,7| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 As in the continuous-time case, the DTFT can be extended to include periodic signals by allowing Dirac impulse functions in the frequency domain representation. Consider a single complex exponential sequence:
 $$
@@ -66,7 +66,7 @@ X(e^{i\omega}) = \sum_{l=-\infty}^{+\infty} 2\pi \delta(\omega - \omega_0 - 2\pi
 $$
 This represents impulses at $\omega_0, \omega_0 \pm 2\pi, \omega_0 \pm 4\pi, \dots$.
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 23.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2023.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=400&rect=47,401,342,491| ]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 23.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2023.webp)[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 To verify, the inverse DTFT over any interval of length $2\pi$ (which will contain exactly one impulse from the train, say at $\omega_0+2\pi r$ for some integer $r$) gives:
 $$
@@ -90,7 +90,7 @@ where it is understood that $a_m$ here refers to the periodically extended seque
 
 ---
 ## 5.3 Properties of the Discrete-Time Fourier Transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=403&selection=94,0,106,9| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 If $x[n] \stackrel{DTFT}{\longleftrightarrow} X(e^{i\omega})$ and $y[n] \stackrel{DTFT}{\longleftrightarrow} Y(e^{i\omega})$, the DTFT satisfies several useful properties. Note that $X(e^{i\omega})$ and $Y(e^{i\omega})$ are periodic with period $2\pi$.
 
@@ -124,13 +124,13 @@ This expresses the total energy of the signal $x[n]$ (sum of squared magnitudes)
 
 ---
 ## 5.4 Duality
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=426&selection=8,0,21,30| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 A notable duality exists that interrelates the mathematical forms of different Fourier representations. Specifically, there is a strong structural similarity between the Discrete-Time Fourier Transform (DTFT) and the Continuous-Time Fourier Series (CTFS).
 The DTFT analysis equation is $X(e^{i\omega}) = \sum_{n=-\infty}^{\infty} x[n]e^{-i\omega n}$. This involves a summation over a discrete variable $n$ and produces a continuous, periodic function of $\omega$.
 The CTFS synthesis equation is $x(t) = \sum_{k=-\infty}^{\infty} a_k e^{ik\omega_0 t}$. This involves a summation over a discrete variable $k$ and produces a continuous, periodic function of $t$.
 A similar structural correspondence exists between the DTFT synthesis equation (integral over continuous $\omega$ to get discrete $x[n]$) and the CTFS analysis equation (integral over continuous $t$ to get discrete $a_k$). By appropriately interchanging time and frequency variables, and summation with integration, these transform pairs exhibit a formal duality.
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 24.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2024.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=427&rect=45,117,493,263| ]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 24.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2024.webp)[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 ---

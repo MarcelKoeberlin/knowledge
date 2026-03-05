@@ -7,11 +7,11 @@
 ---
 **Table of Contents**
 
-[[#3.1 Survey of Magneto-Optic Effects|3.1 Survey of Magneto-Optic Effects]]
+[[Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics#3.1 Survey of Magneto-Optic Effects\|3.1 Survey of Magneto-Optic Effects]]
 
 ---
 # 3 Magneto-Optics
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=47&selection=8,60,9,39| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 All effects discussed up to the [[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion#2 Light Polarisation and Dispersion\|previous chapter]] primarily involved the interaction of the electric field of light with the electric dipole moments within materials. In a simplified manner, these dipole moments arise from the displacement of charges, and their interaction with light can be understood by considering transitions between electronic ground and excited states.
 
@@ -24,7 +24,7 @@ Magneto-optic effects were first discovered in 1845 when Michael Faraday observe
 
 ---
 ## 3.1 Survey of Magneto-Optic Effects
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=47&selection=57,0,57,33| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 In analogy to opto-elastic or electro-optic effects (where strain or an electric field induces optical anisotropy), magnetically induced effects can lead to linear and circular birefringence or dichroism. The description of these effects can often be based on a modified harmonic oscillator model (Lorentz model) for electrons, now including the Lorentz force due to the external static magnetic field.
 The equation of motion for an electron of mass $m$ and charge $-e$, bound by a harmonic restoring force (spring constant $G = m\omega_0^2$), in the presence of an optical electric field $\mathbf{E}(\mathbf{r},t)$ and a static magnetic field $\mathbf{B}_{\text{ext}}(\mathbf{r})$ is:
@@ -94,12 +94,12 @@ where $n_0$ is the average refractive index in the absence of the magnetic field
 ### 3.1.2 Voigt Effect
 The Voigt effect (or Cotton-Mouton effect in liquids/gases) occurs in the Voigt geometry, where the static magnetic field $\mathbf{H}$ (or $\mathbf{B}_{\text{ext}}$) is perpendicular to the light propagation direction $\mathbf{k}$. This configuration induces linear birefringence (different refractive indices for light polarised parallel and perpendicular to $\mathbf{H}$) and/or linear dichroism. The Voigt effect typically scales quadratically with the magnetic field strength, $\Delta n \sim H^2$.
 
-![Attachments/Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics/Script (Unofficial) 2.webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/3%20Magneto-Optics/Script%20(Unofficial)%202.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=52&rect=239,675,412,758| ]]
+![Attachments/Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics/Script (Unofficial) 2.webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/3%20Magneto-Optics/Script%20(Unofficial)%202.webp)[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 ### 3.1.3 Magneto-Optic Kerr Effect
 The magneto-optic Kerr effect (MOKE) describes changes in the polarisation state (rotation and ellipticity) of light upon reflection from a magnetised surface. Since it is a reflection effect, the change is fixed for a given material and geometry, independent of a propagation length within the sample. The Kerr rotation and ellipticity are generally linearly related to the magnetisation $\mathbf{M}$ of the material (and thus to an applied field $\mathbf{H}$ for non-saturated ferromagnets or paramagnets). The angle of rotation is typically small, often less than $0.1^\circ$. Three main MOKE geometries are distinguished based on the orientation of the magnetisation vector $\mathbf{M}$ relative to the surface and the plane of incidence:
 
-![Attachments/Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics/Script (Unofficial) 3.webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/3%20Magneto-Optics/Script%20(Unofficial)%203.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=52&rect=156,567,498,646| ]]
+![Attachments/Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics/Script (Unofficial) 3.webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/3%20Magneto-Optics/Script%20(Unofficial)%203.webp)[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 Let $\mathcal{P}$ be the plane of incidence.
 - **Polar MOKE (P-MOKE):** Magnetisation $\mathbf{M}$ is perpendicular to the reflection surface and parallel to the plane of incidence (if plane of incidence contains surface normal). Effectively $\mathbf{M} \perp \text{surface}$. Symmetry arguments considering reflection on $\mathcal{P}$ show that conversion between s- and p-polarised light (i.e., $r_{sp}$ and $r_{ps}$ components of reflection matrix are non-zero) is allowed.

@@ -7,11 +7,11 @@ Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter se
 ---
 **Table of Contents**
 
-[[#5.1 Proof of Schottky's Theorem for Shot Noise|5.1 Proof of Schottky's Theorem for Shot Noise]]
-[[#5.2 Modulation Instabilities|5.2 Modulation Instabilities]]
-[[#5.3 Autocorrelator|5.3 Autocorrelator]]
-[[#5.4 Diagnostics Measurements|5.4 Diagnostics Measurements]]
-[[#5.5 Welch's Method to Obtain Power Spectral Density Estimates|5.5 Welch's Method to Obtain Power Spectral Density Estimates]]
+[[Notes/Master Thesis/5 Appendix#5.1 Proof of Schottky's Theorem for Shot Noise\|5.1 Proof of Schottky's Theorem for Shot Noise]]
+[[Notes/Master Thesis/5 Appendix#5.2 Modulation Instabilities\|5.2 Modulation Instabilities]]
+[[Notes/Master Thesis/5 Appendix#5.3 Autocorrelator\|5.3 Autocorrelator]]
+[[Notes/Master Thesis/5 Appendix#5.4 Diagnostics Measurements\|5.4 Diagnostics Measurements]]
+[[Notes/Master Thesis/5 Appendix#5.5 Welch's Method to Obtain Power Spectral Density Estimates\|5.5 Welch's Method to Obtain Power Spectral Density Estimates]]
 
 ---
 # 5 Appendix
@@ -20,7 +20,7 @@ The purpose of this appendix is to offer additional context on certain topics th
 
 ---
 ## 5.1 Proof of Schottky's Theorem for Shot Noise
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=73&selection=7,0,7,42| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
  
 Schottky's theorem is a fundamental result in electronics, stating that the shot noise power spectral density (PSD) is proportional to the average current.
 
@@ -74,7 +74,7 @@ While this expression differs from the earlier result, it is important to consid
 
 ---
 ## 5.2 Modulation Instabilities
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=75&selection=4,0,4,24| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
  
 To begin the discussion, it is essential to recognise that the nonlinear coefficient, $\gamma$, is generally frequency-dependent, that is, $\gamma=\gamma(\omega)$. Additionally, approximating the dispersion as a polynomial truncated at the second order may not always be sufficient. This section closely follows established derivations and discussions, for instance, those found in seminal texts on nonlinear fibre optics. Therefore, we start with a generalised form of the Nonlinear Schrödinger Equation (NLSE):
 
@@ -130,16 +130,16 @@ $$\lambda_{\pm}^{\text{gain}} = \pm \frac{1}{2}\sqrt{-\Delta k(\Omega)(\Delta k(
 
 The parameter $\gamma_0 P_0$ is associated with the CW intensity, indicating the presence or absence of modulation instability gain at different frequencies. As shown in the next figure, the behaviour of the modulation instabilities is characterised by the wavenumber shift and the corresponding power gain across different optical frequencies. The figure illustrates how the instabilities predominantly exhibit significant gain far from the central optical frequency of the laser, indicating that these instabilities are not relevant in the frequency range of interest.
 
-![Attachments/Koeberlin_Master_Thesis 46.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2046.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=78&rect=113,218,490,708| ]]
+![Attachments/Koeberlin_Master_Thesis 46.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2046.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Overview of modulation instabilities in the fibre. (a) The group velocity dispersion (GVD) data shows the raw GVD values across different optical frequencies, with a marker at the centre wavelength highlighting the GVD used in calculations. (b) Wavenumber shift as a function of optical frequency, comparing the full model and the model considering only the GVD contribution. The horizontal dashed line represents the constant term $4\gamma P_0$. (c) Power gain in dB for the cases considering only GVD and the full model, showing significant differences away from the centre frequency. (d) Nonlinear gain across optical frequencies, illustrating the gain behaviour influenced by nonlinear effects. The x-axis is shared among all subplots, representing optical frequency in THz.
 
 ---
 ## 5.3 Autocorrelator
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=77&selection=4,0,4,14| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 As pulse durations become shorter than $1 \text{ ps}$, which is beyond the electronic time resolution, measuring pulse width using purely electronic means becomes increasingly difficult. A widely used method for characterising ultrashort pulses is intensity autocorrelation, which employs second harmonic generation (SHG), as depicted in the next figure. The following description closely follows established explanations found in literature on ultrashort pulses.
 
-![Attachments/Koeberlin_Master_Thesis 47.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2047.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=79&rect=121,543,497,705| ]]
+![Attachments/Koeberlin_Master_Thesis 47.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2047.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 In this method, a beamsplitter divides the incident laser beam into two beams of identical intensity. One of the beam paths is delayed relative to the other by a time $\tau$. Both beams are then focused into a nonlinear crystal where they overlap in both space and time. Due to the nonlinear properties of the crystal, SHG occurs, generating a signal at twice the frequency of the original beam ($2\omega$). The intensity of this SHG signal depends on the time delay $\tau$ between the two pulses.
 
@@ -151,22 +151,22 @@ Since this intensity is symmetric with respect to the delay, that is, $I_{2\omeg
 
 ---
 ## 5.4 Diagnostics Measurements
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=77&selection=128,0,128,24| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
  
 This section presents various measurements from the optical spectrum analyser (OSA), microwave spectrum analyser (MSA), and autocorrelator for completeness. The results are shown in Figures 4.3 to 4.5.
 
-![Attachments/Koeberlin_Master_Thesis 48.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2048.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=79&rect=152,206,463,402| ]]
+![Attachments/Koeberlin_Master_Thesis 48.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2048.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Combined diagnostic results from the microwave spectrum analyser (MSA) with a resolution bandwidth of $3 \text{ kHz}$, autocorrelator, and optical spectrum analyser (OSA). The red line indicates an ideal soliton pulse fit. Measurement performed at $173 \text{ W}$ pump power.
 
-![Attachments/Koeberlin_Master_Thesis 49.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2049.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=80&rect=149,507,466,705| ]]
+![Attachments/Koeberlin_Master_Thesis 49.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2049.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Combined diagnostic results from the microwave spectrum analyser (MSA) with a resolution bandwidth of $3 \text{ kHz}$, autocorrelator, and optical spectrum analyser (OSA). The red line indicates an ideal soliton pulse fit. Measurement performed at $191 \text{ W}$ pump power.
 
-![Attachments/Koeberlin_Master_Thesis 50.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2050.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=80&rect=151,204,466,403| ]]
+![Attachments/Koeberlin_Master_Thesis 50.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2050.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Combined diagnostic results from the microwave spectrum analyser (MSA) with a resolution bandwidth of $3 \text{ kHz}$, autocorrelator, and optical spectrum analyser (OSA). The red line indicates an ideal soliton pulse fit. Measurement performed at $214 \text{ W}$ pump power.
 
 ---
 ## 5.5 Welch's Method to Obtain Power Spectral Density Estimates
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=81&selection=4,0,5,7| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 As described in [[Notes/Master Thesis/3 Setup, Characterisation and Results#3.5.3 Optimising Sampling Rate for Accurate Noise Measurement\|Section 3.5.3]], Welch's method was employed to smooth the noise PSD data and provide visual clarity. Welch's method is a widely-used approach for estimating the power spectral density of a signal. Unlike a basic periodogram, which can be noisy and less reliable due to its high variance, Welch's method provides a smoother and more reliable estimate by averaging multiple periodograms of overlapping data segments. The initial noise in the data results from the fact that the experiment was conducted with a finite sampling rate and over a finite measurement time. If both the sampling rate and time were infinite, the resulting curve would appear smooth, as the non-stationary signal components would diminish. The process of Welch's method can be broken down into the following steps:
 

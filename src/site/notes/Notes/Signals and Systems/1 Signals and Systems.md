@@ -7,21 +7,21 @@ Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents
 ---
 **Table of Contents**
 
-[[#1.1 Continuous-Time and Discrete-Time Signals|1.1 Continuous-Time and Discrete-Time Signals]]
-[[#1.2 Energy and Power|1.2 Energy and Power]]
-[[#1.3 Transformations|1.3 Transformations]]
-[[#1.4 Periodic Signals|1.4 Periodic Signals]]
-[[#1.5 Even and Odd Signals|1.5 Even and Odd Signals]]
-[[#1.6 Exponential Signals|1.6 Exponential Signals]]
-[[#1.7 Unit Impulse and Unit Step|1.7 Unit Impulse and Unit Step]]
-[[#1.8 Interconnection of Systems|1.8 Interconnection of Systems]]
-[[#1.9 Basic Properties|1.9 Basic Properties]]
+[[Notes/Signals and Systems/1 Signals and Systems#1.1 Continuous-Time and Discrete-Time Signals\|1.1 Continuous-Time and Discrete-Time Signals]]
+[[Notes/Signals and Systems/1 Signals and Systems#1.2 Energy and Power\|1.2 Energy and Power]]
+[[Notes/Signals and Systems/1 Signals and Systems#1.3 Transformations\|1.3 Transformations]]
+[[Notes/Signals and Systems/1 Signals and Systems#1.4 Periodic Signals\|1.4 Periodic Signals]]
+[[Notes/Signals and Systems/1 Signals and Systems#1.5 Even and Odd Signals\|1.5 Even and Odd Signals]]
+[[Notes/Signals and Systems/1 Signals and Systems#1.6 Exponential Signals\|1.6 Exponential Signals]]
+[[Notes/Signals and Systems/1 Signals and Systems#1.7 Unit Impulse and Unit Step\|1.7 Unit Impulse and Unit Step]]
+[[Notes/Signals and Systems/1 Signals and Systems#1.8 Interconnection of Systems\|1.8 Interconnection of Systems]]
+[[Notes/Signals and Systems/1 Signals and Systems#1.9 Basic Properties\|1.9 Basic Properties]]
 
 ---
 # 1 Signals and Systems
 
 ## 1.1 Continuous-Time and Discrete-Time Signals
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=32&selection=69,0,79,7| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 Signals are represented mathematically as functions of one or more independent variables. Here, our attention is focused on signals involving a single independent variable, which we will usually denote as time $t$ for convenience. In the case of **continuous-time signals**, the independent variable is continuous, and thus these signals are defined for a continuum of values of the independent variable. On the other hand, **discrete-time signals** are defined only at discrete points in time; consequently, for these signals, the independent variable takes on only a discrete set of values.
 
@@ -31,7 +31,7 @@ Alternatively, a very important class of discrete-time signals arises from the *
 
 ---
 ## 1.2 Energy and Power
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=36&selection=158,0,170,5| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 In many applications, the signals considered are directly related to physical quantities such as power and energy in a physical system. As a starting example, consider a voltage $v(t)$ across a resistor with resistance $R$, causing a current $I(t)$ to flow. The instantaneous power dissipated in the resistor is $p(t) = v(t)I(t) = v^2(t)/R$. This allows us to calculate the total energy expended over the time interval $t_1 \le t \le t_2$ as:
 $$
@@ -69,7 +69,7 @@ These definitions allow us to identify three important classes of signals:
 
 ---
 ## 1.3 Transformations
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=38&selection=226,0,236,8| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 A central concept in signal and system analysis is the transformation of an independent variable (usually time) of a signal. Such transformations are fundamental to understanding how signals are modified or how different signals relate to one another. Examples of systems performing signal transformations are abundant, including audio equalisers that modify the spectrum of a music signal or medical imaging systems that reconstruct an image from sensor data.
 
@@ -80,7 +80,7 @@ Some important and very fundamental transformations of the time variable are:
 
 ---
 ## 1.4 Periodic Signals
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=42&selection=502,0,506,7| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 A very important class of signals encountered frequently is periodic signals. A continuous-time signal $x(t)$ is periodic if there exists a positive value $T$ such that:
 $$
@@ -90,7 +90,7 @@ In other words, a periodic signal is unchanged by a time shift of $T$. The signa
 
 ---
 ## 1.5 Even and Odd Signals
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=44&selection=36,0,46,7| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 Another set of useful properties of signals relates to their symmetry under time reversal. A signal $x(t)$ (or $x[n]$) is considered **even** if it is identical to its time-reversed counterpart:
 $$x(-t) = x(t) \quad (\text{or } x[-n]=x[n]).$$
@@ -112,7 +112,7 @@ $$
 
 ---
 ## 1.6 Exponential Signals
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=46&selection=12,0,17,18| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 Consider the continuous-time complex exponential signal of the form $x(t) = C e^{\alpha t}$, where $C$ and $\alpha$ are, in general, complex numbers. Depending on the values of $C$ and $\alpha$, these signals can exhibit a variety of characteristics:
 
@@ -126,11 +126,11 @@ Consider the continuous-time complex exponential signal of the form $x(t) = C e^
     2.  If $\mathfrak{Re}\left[\alpha\right] = \sigma_0 > 0$: $x(t)$ is a sinusoidal signal multiplied by an exponentially increasing envelope.
     3.  If $\mathfrak{Re}\left[\alpha\right] = \sigma_0 < 0$: $x(t)$ is a sinusoidal signal multiplied by an exponentially decaying envelope.
 
-Many of the concepts discussed from [[#1.3 Transformations|section 1.3]] to [[#1.6 Exponential Signals|section 1.6]] have direct analogues for discrete-time signals. However, a key difference arises in the periodicity of discrete-time complex exponentials: A discrete-time complex exponential $x[n]=e^{i\omega_0 n}$ is periodic if and only if its frequency $\omega_0$ is a rational multiple of $2\pi$. That is, $\omega_0/(2\pi) = k/N$ for some integers $k$ and $N \neq 0$. This implies $\omega_0 N = 2\pi k$ must hold for some integer $N$, which is then a period.
+Many of the concepts discussed from [[Notes/Signals and Systems/1 Signals and Systems#1.3 Transformations\|section 1.3]] to [[Notes/Signals and Systems/1 Signals and Systems#1.6 Exponential Signals\|section 1.6]] have direct analogues for discrete-time signals. However, a key difference arises in the periodicity of discrete-time complex exponentials: A discrete-time complex exponential $x[n]=e^{i\omega_0 n}$ is periodic if and only if its frequency $\omega_0$ is a rational multiple of $2\pi$. That is, $\omega_0/(2\pi) = k/N$ for some integers $k$ and $N \neq 0$. This implies $\omega_0 N = 2\pi k$ must hold for some integer $N$, which is then a period.
 
 ---
 ## 1.7 Unit Impulse and Unit Step
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=61&selection=111,0,127,9| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 In this section, several other basic signals of considerable importance in signal and system analysis are introduced.
 Consider the **discrete-time unit impulse** (or unit sample), $\delta[n]$:
@@ -179,25 +179,25 @@ The unit impulse should be considered an idealisation of a pulse that is infinit
 
 ---
 ## 1.8 Interconnection of Systems
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=72&selection=144,0,150,7| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 An important concept in systems analysis is the interconnection of systems, since many real-world systems are constructed as interconnections of several simpler subsystems. By decomposing a complex system into an interconnection of simpler subsystems, it may be possible to analyse or synthesise it using basic building blocks. The most frequently encountered connections are the _series (or cascade)_ and _parallel_ types:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=73&rect=87,275,458,599| ]]
+![Attachments/Oppenheim,Willsky_Signals and Systems.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems.webp)[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 The symbol $\bigoplus$ denotes addition of signals, so the output of the parallel system is the sum of the outputs from system 1 and system 2 (when both have the same input). Another important type of connection is the _feedback_ interconnection:
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 1.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%201.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=52,506,327,597| ]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 1.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%201.webp)[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 In this (negative) feedback configuration, the output of system 1 is the input to system 2. The output of system 2 is then fed back and subtracted from (or added to, for positive feedback) the external input to produce the actual input signal that drives system 1. These types of interconnections are prevalent in many practical systems, for instance, in control systems and amplifiers. Block diagram equivalences, such as shown below, are often useful for simplifying or analysing interconnected systems.
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 2.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%202.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=74&rect=90,84,325,315| ]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 2.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%202.webp)[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 ---
 ## 1.9 Basic Properties
 
 ### 1.9.1 Memory
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=75&selection=51,0,63,6| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 A system is said to be **memoryless** if its output at any given time depends only on the input at that same time. An example of a basic memoryless system is the identity system, $y(t)=x(t)$ or $y[n]=x[n]$, where the output is simply equal to the input. Another is a resistor where $v(t)=Ri(t)$.
 
@@ -207,16 +207,16 @@ Systems that are not memoryless are said to possess **memory**. Their output dep
 A capacitor is an example of a physical system component with memory, since the voltage across it is $V(t) = \frac{1}{C} \int_{-\infty}^{t} I(\tau) d\tau$, depending on the history of the current $I(\tau)$.
 
 ### 1.9.2 Invertibility and Inverse Systems
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=76&selection=165,0,173,7| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 A system is said to be **invertible** if distinct inputs produce distinct outputs. If a system is invertible, then an **inverse system** exists which, when cascaded with the original system, yields an output equal to the original system's input. That is, if system $S$ produces $y(t)$ from $x(t)$, its inverse $S^{-1}$ produces $x(t)$ from $y(t)$.
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 3.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%203.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&rect=104,566,358,606| ]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 3.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%203.webp)[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 Invertibility is important in many contexts, such as signal processing (for instance, deconvolution to remove distortions) and communication systems (for instance, decoding an encoded signal). Lossless data compression, for example, requires that the encoding process must be invertible to allow perfect reconstruction of the original data.
 
 ### 1.9.3 Causality
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=77&selection=205,0,209,9| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 A system is **causal** if its output at any time $t$ (or $n$) depends only on values of the input at the present time and in the past (i.e., for $t' \le t$ or $n' \le n$). Such a system is also termed **non-anticipative**, as its output does not anticipate future values of the input. All real-time physical systems must be causal.
 Examples of non-causal systems include:
@@ -228,20 +228,20 @@ y(t) = x(t+1) \quad (\text{depends on future input } x(t+1)).
 $$
 
 ### 1.9.4 Stability
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&selection=55,0,59,9| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 A system is **stable** in the Bounded-Input, Bounded-Output (BIBO) sense if every bounded input signal produces an output signal that is also bounded. That is, if an input $x(t)$ satisfies $|x(t)| \le B_x < \infty$ for all $t$ (where $B_x$ is a finite positive number), then the output $y(t)$ must satisfy $|y(t)| \le B_y < \infty$ for all $t$ (where $B_y$ is also a finite positive number, which may depend on $B_x$).
 For instance, consider a simple pendulum with small oscillations (stable system) versus an inverted pendulum (unstable system): a small perturbation (input) to the inverted pendulum can lead to a large, unbounded output (falling over).
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 4.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%204.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=79&rect=191,46,305,240| ]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 4.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%204.webp)[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 ### 1.9.5 Time Invariance
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=81&selection=204,0,206,15| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 A system is **time-invariant** if its behaviour and characteristics are fixed over time. Formally, a system is time-invariant if a time shift in the input signal causes an identical time shift in the output signal. That is, if an input $x[n]$ produces an output $y[n]$ (so $x[n] \to y[n]$), then for any arbitrary time shift $n_0$, the input $x_d[n]=x[n-n_0]$ must produce the output $y_d[n]=y[n-n_0]$. (An analogous definition applies for continuous-time systems with $t$ and $t_0$).
 
 ### 1.9.6 Linearity
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=84&selection=70,0,74,9| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 A system is **linear** if it satisfies the superposition principle. This principle combines two properties:
 1.  **Additivity:** If input $x_1(t)$ produces output $y_1(t)$, and input $x_2(t)$ produces output $y_2(t)$, then the input $x_1(t)+x_2(t)$ must produce the output $y_1(t)+y_2(t)$.

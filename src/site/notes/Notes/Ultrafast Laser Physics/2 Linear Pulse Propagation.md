@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/2-linear-pulse-propagation/","hide":"true","updated":"2025-06-08T18:45:12.764+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/2-linear-pulse-propagation/","hide":"true","updated":"2025-06-08T18:45:12.763+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -7,23 +7,23 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 **Table of Contents**
 
-[[#2.1 Wave Equation in the Spectral Domain: Helmholtz Equation|2.1 Wave Equation in the Spectral Domain: Helmholtz Equation]]
-[[#2.2 Linear vs Nonlinear Wave Propagation|2.2 Linear vs Nonlinear Wave Propagation]]
-[[#2.3 Ultrafast Pulses|2.3 Ultrafast Pulses]]
-[[#2.4 Linear pulse Propagation in a Dispersive Material|2.4 Linear pulse Propagation in a Dispersive Material]]
+[[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.1 Wave Equation in the Spectral Domain: Helmholtz Equation\|2.1 Wave Equation in the Spectral Domain: Helmholtz Equation]]
+[[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.2 Linear vs Nonlinear Wave Propagation\|2.2 Linear vs Nonlinear Wave Propagation]]
+[[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.3 Ultrafast Pulses\|2.3 Ultrafast Pulses]]
+[[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.4 Linear pulse Propagation in a Dispersive Material\|2.4 Linear pulse Propagation in a Dispersive Material]]
 
 ---
 # 2 Linear Pulse Propagation
 
 In [[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media\|Chapter 1]] we have seen that a monochromatic plane wave extends infinitely in space and time. To obtain a limited wave packet in time (a pulse), different plane waves with different wavelengths need to be superposed:
 
-![Attachments/UltraFastLasers_Keller 6.webp|700](/img/user/Attachments/UltraFastLasers_Keller%206.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=46&rect=262,415,385,604| ]]
+![Attachments/UltraFastLasers_Keller 6.webp|700](/img/user/Attachments/UltraFastLasers_Keller%206.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 In the visible spectrum, different wavelengths correspond to different colours. This has important implications: A laser pulse can never be single-coloured (monochromatic) and must differ from the monochromatic light of a continuous-wave (CW) laser. The more frequency components a pulse contains, the broader its spectrum is (by definition) and the shorter the pulse **can** be.
 
 Before diving deeper into this topic, it is important to recall some orders of magnitude:
 
-![Attachments/UltraFastLasers_Keller 7.webp|700](/img/user/Attachments/UltraFastLasers_Keller%207.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=46&rect=56,87,383,153| ]]
+![Attachments/UltraFastLasers_Keller 7.webp|700](/img/user/Attachments/UltraFastLasers_Keller%207.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Our eyes can only distinguish movements on timescales longer/slower than about $100 \, \text{ms}$. Mechanical shutters determining the exposure time in photography are limited to about $1 \, \text{ms}$. Any movements occurring faster than that will smear out on a photograph and will result in a blurry image. However, using strobe photography, it is possible to achieve exposure times as short as $1 \, \mu\text{s}$. With strobe photography, short light flashes started to become important for time-resolved measurements. Lasers are relevant here because we can generate much shorter flashes of light with lasers than with electrically switched light bulbs.
 
@@ -33,15 +33,15 @@ It is good practice to remember these orders of magnitude!
 
 ---
 ## 2.1 Wave Equation in the Spectral Domain: Helmholtz Equation
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=48&selection=29,0,32,8| ]]
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 We know that any function can be expanded in terms of a complete set of orthogonal functions. Examples of this are Fourier series and Fourier integrals. A Fourier transform decomposes an arbitrary function of time into its harmonic frequency components. The inverse Fourier transform does the opposite and constructs an arbitrary function of time as a superposition of harmonic functions of time with different frequencies:
 
-![Attachments/UltraFastLasers_Keller 8.webp|700](/img/user/Attachments/UltraFastLasers_Keller%208.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=48&rect=69,109,369,136| ]]
+![Attachments/UltraFastLasers_Keller 8.webp|700](/img/user/Attachments/UltraFastLasers_Keller%208.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 This is a powerful tool for describing ultrashort pulses, since the harmonic components have the physical meaning of plane waves with different frequencies. A light pulse can be formed by a superposition of plane waves with different (possibly discrete) frequencies at a fixed position in space:
 
-![Attachments/UltraFastLasers_Keller 9.webp|700](/img/user/Attachments/UltraFastLasers_Keller%209.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=49&rect=61,329,378,529| ]]
+![Attachments/UltraFastLasers_Keller 9.webp|700](/img/user/Attachments/UltraFastLasers_Keller%209.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The more waves are superposed, the shorter the pulse can be. If these frequencies are discrete and equally spaced, the superposition is not just one pulse, but a periodic pulse train with period $T_{\text{rep}}=2\pi/\Delta\omega$, where $\Delta\omega$ is the constant frequency spacing in the example figure.
 
@@ -90,7 +90,7 @@ which is analogous to the time-independent Schrödinger equation for a free part
 
 ---
 ## 2.2 Linear vs Nonlinear Wave Propagation
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=52&selection=80,0,82,40| ]]
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 In linear optics, the wave equation is linear, meaning that the electric and magnetic fields and their derivatives appear only to the first order. Therefore, the superposition principle is valid, such that linear combinations of individual solutions ($\mathbf{E}_i, \mathbf{H}_i$) are solutions as well:
 $$
@@ -149,9 +149,9 @@ A crucial conclusion for linear, **lossless** dispersive media is that $|H(\omeg
 
 ---
 ## 2.3 Ultrafast Pulses
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=55&selection=76,0,78,16| ]]
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
-A coherent light pulse forms a wave packet of photons and can be described as a superposition of plane waves with different frequencies and phases at a fixed position in space. The shortest possible pulse duration for a given spectral amplitude distribution is obtained when the spectral phase is flat (constant) or linear with frequency (see [[#2.3.2 Shortest Pulse Duration|section 2.3.2]]). For a pulse observed at a fixed position, we find its temporal profile via the inverse Fourier transform:
+A coherent light pulse forms a wave packet of photons and can be described as a superposition of plane waves with different frequencies and phases at a fixed position in space. The shortest possible pulse duration for a given spectral amplitude distribution is obtained when the spectral phase is flat (constant) or linear with frequency (see [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.3.2 Shortest Pulse Duration\|section 2.3.2]]). For a pulse observed at a fixed position, we find its temporal profile via the inverse Fourier transform:
 $$
 \mathbf{E}(t)=\frac{1}{2 \pi} \int_{-\infty}^{\infty} \mathbf{E}(\omega) e^{i \omega t} d\omega.
 $$
@@ -171,7 +171,7 @@ $$
 $$
 is called the complex **pulse envelope**. It describes the (generally slower) variation of the pulse's amplitude and phase relative to the fast carrier oscillation $e^{i\omega_0 t}$.
 
-![Attachments/UltraFastLasers_Keller 10.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2010.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=57&rect=186,510,386,604| ]]
+![Attachments/UltraFastLasers_Keller 10.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2010.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 ### 2.3.1 Time-Bandwidth Product
 
@@ -198,7 +198,7 @@ $$
 where $\Gamma_r > 0$. The real part $\Gamma_r$ determines the pulse duration, and the imaginary part $\Gamma_i$ determines the linear chirp of the Gaussian pulse. The electric field is $E(t) = A_0 \exp(-\Gamma_r t^2) \exp(i(\omega_0 t + \Gamma_i t^2))$.
 The next figure compares an unchirped pulse (top, $\Gamma_i=0$) and a chirped pulse (bottom, $\Gamma_i \neq 0$).
 
-![Attachments/UltraFastLasers_Keller 11.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2011.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=59&rect=175,370,386,604| ]]
+![Attachments/UltraFastLasers_Keller 11.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2011.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 If a pulse is chirped, its instantaneous frequency is time-dependent. The total phase of the chirped Gaussian pulse is $\phi_{\text{total}}(t) = \omega_0 t+\Gamma_i t^2$. The instantaneous frequency is:
 $$
@@ -232,7 +232,7 @@ is the temporal centre of gravity. It can be shown that, for a given power spect
 
 ---
 ## 2.4 Linear pulse Propagation in a Dispersive Material
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=62&selection=187,0,189,49| ]]
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Before beginning this section, it is important to clarify that linear pulse propagation means that no intensity-dependent material properties (nonlinear optical effects like the [[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.1 Kerr Effect and Self-Phase Modulation\|Kerr effect]]) are considered. However, the refractive index $n(\omega)$ of the medium can have any arbitrary (potentially highly non-linear as a function of $\omega$) frequency dependence, leading to dispersion.
 
@@ -284,7 +284,7 @@ v_g(\omega_0) = \left(\left.\frac{dk_n}{d\omega}\right|_{\omega_0}\right)^{-1} =
 $$
 The phase velocity describes the propagation velocity of the carrier wave (surfaces of constant phase). The group velocity corresponds to the propagation velocity of the peak of the pulse envelope (under certain approximations).
 
-![Attachments/UltraFastLasers_Keller 12.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2012.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=67&rect=234,504,385,605| ]]
+![Attachments/UltraFastLasers_Keller 12.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2012.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 In vacuum, $n(\omega)=1$, so $k_n(\omega)=\omega/c$, $k_n'(\omega)=1/c$, $k_n''(\omega)=0$. Thus $v_p=c$ and $v_g=c$.
 The first-order dispersion $k_n'$ determines the overall temporal shift of the pulse, quantified by the group delay $T_g$ after propagating a distance $z$:
@@ -296,7 +296,7 @@ $$
 
 A pulse is **temporally** broadened (or compressed, depending on initial chirp and dispersion sign) by propagation through a dispersive medium. Remember that a linear system can**not** spectrally broaden or narrow the pulse; $|E(z,\omega)|^2$ remains unchanged if the medium is lossless.
 
-![Attachments/UltraFastLasers_Keller 13.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2013.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=67&rect=60,125,378,191| ]]
+![Attachments/UltraFastLasers_Keller 13.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2013.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 This temporal reshaping can be seen by considering the FWHM pulse duration of an initially unchirped Gaussian pulse with initial duration $\tau_p(0)$ and complex parameter $\Gamma(0) = \Gamma_r(0)$. After propagating a distance $L_d$, the pulse acquires chirp and its new complex parameter is $\Gamma(L_d)$. The duration becomes:
 $$
@@ -309,7 +309,7 @@ $$
 $$
 Here, GDD (Group Delay Dispersion) is $\frac{d^2\phi}{d\omega^2} = k_n'' L_d$. The formula shows that the shorter the original pulse $\tau_p(0)$ (meaning larger spectral bandwidth), the more it is stretched in time by a given amount of GDD. The next figure shows the pulse broadening factor for Gaussian pulses of different initial durations passing through a $1 \, \text{cm}$ thick fused silica lens.
 
-![Attachments/UltraFastLasers_Keller 14.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2014.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=68&rect=73,444,363,611| ]]
+![Attachments/UltraFastLasers_Keller 14.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2014.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 **Strong Pulse Broadening Approximation**
 The case of strong pulse broadening occurs when the second term under the square root is much larger than 1, which means the accumulated GDD is large compared to $\tau_p^2(0)/(4\ln 2)$. This is often stated as when the propagation distance $L_d$ is much greater than the "dispersion length" $L_D = \tau_p^2(0)/(4\ln 2|k_n''|)$. Equivalently:
@@ -322,7 +322,7 @@ $$
 $$
 The effect of an unchirped pulse passing through a dispersive medium (with, say, positive $k_n''$) is schematically shown here:
 
-![Attachments/UltraFastLasers_Keller 15.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2015.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=71&rect=74,121,366,254| ]]
+![Attachments/UltraFastLasers_Keller 15.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2015.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The pulse becomes longer and acquires a linear chirp. For positive $k_n''$ (normal dispersion in typical glass for visible light), higher frequencies (blue) travel slower than lower frequencies (red). An initially unchirped pulse develops a positive chirp (red leading blue).
 $$
@@ -330,17 +330,17 @@ $$
 $$
 The broadened pulse is chirped by the dispersion. However, as mentioned, the pulse power spectrum $|E(z,\omega)|^2$ does not change during linear propagation in a lossless medium:
 
-![Attachments/UltraFastLasers_Keller 16.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2016.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=72&rect=55,465,384,608| ]]
+![Attachments/UltraFastLasers_Keller 16.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2016.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Linear dispersive pulse broadening (for initially unchirped pulses) arises from second-order and higher-order dispersion. It is therefore the frequency dependence of the group velocity (related to $k_n''$) that is primarily responsible for this broadening, not the frequency dependence of the phase velocity itself.
 
 This can be depicted as in the following figure. Consider that a short pulse can be thought of as a superposition of many longer sub-pulses, each with a slightly different centre wavelength/frequency. The superposition results in a short overall pulse because the electric fields in the wings of the sub-pulses interfere destructively:
 
-![Attachments/UltraFastLasers_Keller 17.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2017.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=73&rect=55,415,326,606| ]]
+![Attachments/UltraFastLasers_Keller 17.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2017.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Now observe what happens when this collection of sub-pulses passes through a dispersive medium:
 
-![Attachments/UltraFastLasers_Keller 18.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2018.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=73&rect=54,111,386,302| ]]
+![Attachments/UltraFastLasers_Keller 18.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2018.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Note that, in this conceptual picture, the individual sub-pulses (if they were narrow enough in spectrum not to experience significant GVD themselves) do not broaden significantly. Rather, the broadening of the resultant overall pulse comes from the fact that these sub-pulses, with their slightly different centre frequencies, travel at different group velocities through the dispersive medium. This differential group delay causes them to spread out in time, leading to broadening of the total pulse.
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/2-semiconductors/","hide":"true","updated":"2025-05-31T10:09:24.489+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/2-semiconductors/","hide":"true","updated":"2025-05-31T10:09:24.488+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -7,18 +7,18 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 **Table of Contents**
 
-[[#2.1 The Band Structure of the Elements in Group IV|2.1 The Band Structure of the Elements in Group IV]]
-[[#2.2 Elementary Excitations in Semiconductors|2.2 Elementary Excitations in Semiconductors]]
-[[#2.3 Doping Semiconductors|2.3 Doping Semiconductors]]
-[[#2.4 Semiconductor Devices|2.4 Semiconductor Devices]]
+[[Notes/Solid-State Theory/2 Semiconductors#2.1 The Band Structure of the Elements in Group IV\|2.1 The Band Structure of the Elements in Group IV]]
+[[Notes/Solid-State Theory/2 Semiconductors#2.2 Elementary Excitations in Semiconductors\|2.2 Elementary Excitations in Semiconductors]]
+[[Notes/Solid-State Theory/2 Semiconductors#2.3 Doping Semiconductors\|2.3 Doping Semiconductors]]
+[[Notes/Solid-State Theory/2 Semiconductors#2.4 Semiconductor Devices\|2.4 Semiconductor Devices]]
 
 ---
 # 2 Semiconductors
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=40&selection=2,0,2,14| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 The technological relevance of semiconductors can hardly be overstated. In this chapter, we review some of their basic properties. Regarding the electric conductivity, semiconductors are placed in between metals and insulators. Normal metals are good conductors at all temperatures, and the conductivity usually increases with decreasing temperature. On the other hand, for semiconductors and insulators the conductivity decreases upon cooling.
 
-![Attachments/Script 12.webp|700](/img/user/Attachments/Script%2012.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=40&rect=157,340,443,501| ]]
+![Attachments/Script 12.webp|700](/img/user/Attachments/Script%2012.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 We will see that the conductivity may be written in the Drude form as
 $$
@@ -44,7 +44,7 @@ For insulators, the energy gap is huge, for example, $5.5\,\mathrm{eV}$ for diam
 
 ---
 ## 2.1 The Band Structure of the Elements in Group IV
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=41&selection=131,0,133,46| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 ### 2.1.1 Crystal and Band Structure
 
@@ -60,15 +60,15 @@ $$
 
 Locally, the nearest neighbours of each atom form a tetrahedron around it, which leads to the diamond structure of the lattice:
 
-![Attachments/Script 13.webp|700](/img/user/Attachments/Script%2013.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=41&rect=183,159,405,308| ]]
+![Attachments/Script 13.webp|700](/img/user/Attachments/Script%2013.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Let us look now at the electron count. The two atoms per unit cell provide together eight valence electrons per unit cell. With these we can fill four bands completely (see [[Notes/Solid-State Theory/1 Electrons in the Periodic Crystal#1.6 Band-Filling and Materials Properties\|Section 1.6]]). Thus, in the ground state the lowest four bands constitute the completely filled valence bands, while all the upper ones are empty and represent conduction bands. The energy gap between the valence and conduction bands (top of valence band at $\mathbf{k}=0$ and bottom of conduction bands at $\mathbf{k}_{0} \neq 0$) is smallest for a non-vanishing connecting $\mathbf{k}$-vector. We call this an indirect gap. This is the case for both C and Si. A typical example for a direct gap semiconductor is GaAs where the two sublattices of the crystal structure in diamond are occupied by an atom of the group III and V, respectively, in the periodic table.
 
-![Attachments/Script 14.webp|700](/img/user/Attachments/Script%2014.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=42&rect=80,116,518,305| ]]
+![Attachments/Script 14.webp|700](/img/user/Attachments/Script%2014.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Note that generally energy gaps in semiconductors and insulators are classified to be direct if the wave-vector connecting the maximum of the valence band and the minimum of the conduction band vanishes. Otherwise a gap is called indirect:
 
-![Attachments/Script 15.webp|700](/img/user/Attachments/Script%2015.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=43&rect=111,554,489,720| ]]
+![Attachments/Script 15.webp|700](/img/user/Attachments/Script%2015.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 List of some facts about these materials of the group IV and compounds combining group III and V:
 
@@ -79,7 +79,7 @@ List of some facts about these materials of the group IV and compounds combining
 
 ---
 ## 2.2 Elementary Excitations in Semiconductors
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=43&selection=59,0,61,40| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 We consider a simple two-band model to illustrate the most basic properties of the excitation spectrum of a semiconductor. The Hamiltonian is given by
 $$
@@ -89,7 +89,7 @@ $$
 $$
 where $\epsilon_{V, \mathbf{k}}$ and $\epsilon_{C, \mathbf{k}}$ are the band energies of the valence band and conduction band, respectively. The figure shows the schematic band structure of a direct-gap semiconductor with a $\mathbf{k} \cdot \mathbf{p}$-approximation around the top of the valence and the bottom of the conduction band:
 
-![Attachments/Script 16.webp|700](/img/user/Attachments/Script%2016.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=44&rect=164,591,435,744| ]]
+![Attachments/Script 16.webp|700](/img/user/Attachments/Script%2016.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 The operator $c_{n \mathbf{k} s}^{\dagger}\left(c_{n \mathbf{k} s}\right)$ creates (annihilates) an electron with (lattice) momentum $\mathbf{k}$ and spin $s$ in the band $n, n \in\{V, C\}$. In the ground state $\left|\Phi_{0}\right\rangle$,
 $$
@@ -203,7 +203,7 @@ $$
 \end{aligned}
 $$
 
-![Attachments/Script 17.webp|700](/img/user/Attachments/Script%2017.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=46&rect=104,607,476,746| ]]
+![Attachments/Script 17.webp|700](/img/user/Attachments/Script%2017.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 The figure shows the electron-hole excitation spectrum for direct and indirect gap semiconductors, excitation energy $E$ versus momentum transfer $\mathbf{q}$. Excitations exist in the shaded region, where $I(\mathbf{q}, E) \neq 0$.
 where the field operators are defined by
 $$
@@ -308,7 +308,7 @@ $$
 
 Typical values of the constants on the right-hand side are $\varepsilon \sim 10$ and $\mu_{\mathrm{ex}} \sim m / 10$, so that the binding energy is in the meV range. This energy is much smaller than the energy gap, such that the excitons are inside the gap:
 
-![Attachments/Script 18.webp|700](/img/user/Attachments/Script%2018.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=48&rect=164,612,429,750| ]]
+![Attachments/Script 18.webp|700](/img/user/Attachments/Script%2018.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 The exciton levels are dispersive and their spectrum becomes increasingly dense with increasing energy, similar to the hydrogen atom. When they merge with the particle-hole continuum the bound state is 'ionised', that is, the electron and the hole dissociate and behave like independent particles.
 Strongly bound excitons are called Frenkel excitons. In the limit of strong binding, the pair is almost local, so that the excitation is restricted to a single atom rather than involving the whole semiconductor band structure.
@@ -339,11 +339,11 @@ $$
 $$
 where $c_{\pm}$are constants and $\mathbf{Q}$ corresponds to the wave vector of the phonon connecting the top of the valence band and the bottom of the conduction band. There are two relevant processes: either the phonon is absorbed ($c_{+}$-process) or it is emitted ($c_{-}$-process). The next figure shows the phonon-assisted photon absorption in a semiconductor with indirect gap: phonon absorption (left panel) and phonon emission (right panel).
 
-![Attachments/Script 19.webp|700](/img/user/Attachments/Script%2019.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=49&rect=161,445,435,605| ]]
+![Attachments/Script 19.webp|700](/img/user/Attachments/Script%2019.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 In addition to the absorption into the particle-hole spectrum, absorption processes inducing exciton states exist. They lead to discrete absorption peaks below the absorption continuum. This is the situation in a direct-gap semiconductor:
 
-![Attachments/Script 20.webp|700](/img/user/Attachments/Script%2020.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=49&rect=183,162,411,342| ]]
+![Attachments/Script 20.webp|700](/img/user/Attachments/Script%2020.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Naturally, the recombination of electrons and holes is important as well; in particular, if it is a radiative recombination, that is, leads to the emission of a photon. Additionally, other recombination channels such as recombination at impurities, interfaces and through Auger processes are possible. The radiative recombination for the direct-gap semiconductors is most relevant for applications. The photon emission rate follows the approximate law
 $$
@@ -355,7 +355,7 @@ with the photon density $N_{\gamma}(\omega)$. This yields the dominant rate for 
 
 ---
 ## 2.3 Doping Semiconductors
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=50&selection=57,0,59,21| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Let us replace a Si atom in a Si semiconductor by aluminium (Al) from group III or phosphorus (P) from group V, which then act as impurities in the crystal lattice. Both Al and P are in the same row of the periodic table. Aluminium has one valence electron less than Si, while phosphorus has one more. Their electron configurations are given by
 $$
@@ -406,7 +406,7 @@ $$
 
 Thus, the resulting states are weakly bound, with energies inside the band gap. We conclude that the net effect of the P-impurities is to introduce additional electrons into the crystal, whose energies lie just below the conduction band ($E_{g} \sim 1\,\mathrm{eV}$ while $E_{g}-E_{1} \sim 10\,\mathrm{meV}$). Therefore, they can easily be transferred to the conduction band by thermal excitation (ionisation). One speaks of an n-doped semiconductor (n: negative charge). In full analogy one can consider Al-impurities, thereby replacing electrons with holes: An Al-atom introduces an additional hole into the lattice which is weakly bound to the Al-ion (its energy is slightly above the band edge of the valence band) and may dissociate from the impurity by thermal excitation. This case is called p-doping (p: positive charge). In both cases, the chemical potential is tied to the dopant levels, that is, it lies between the dopant level and the valence band for p-doping and between the dopant level and the conduction band in case of n-doping:
 
-![Attachments/Script 21.webp|700](/img/user/Attachments/Script%2021.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=51&rect=102,414,491,547| ]]
+![Attachments/Script 21.webp|700](/img/user/Attachments/Script%2021.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 The electric conductivity of semiconductors (in particular at room temperature) can be tuned strongly by doping with so-called donors (n-doping) and acceptors (p-doping). Practically all dopant atoms are ionised, with the electrons/holes becoming mobile. Combining differently doped semiconductors, the possibility to engineer electronic properties is enhanced even more. This is the basic reason for the semiconductors being ubiquitous in modern electronics.
 
@@ -441,13 +441,13 @@ We conclude, that in n-doped semiconductors the vast majority of mobile carriers
 
 ---
 ## 2.4 Semiconductor Devices
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=52&selection=61,0,63,21| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Semiconductors are among the most important components of current high-technology. In this section, we consider a few basic examples of semiconductor devices.
 
 ---
 ### 2.4.1 pn-Contacts
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=52&selection=185,207,416,361| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 The so-called pn-junctions (made by bringing a p-doped and an n-doped version of the same semiconductor into contact) are used as rectifiers. When contacting the two types of doped semiconductors the chemical potential, which is pinned by the dopant (impurity) levels, determines the behaviour of the electrons at the interface. In electrostatic equilibrium, the chemical potential is constant across the interface. This is accompanied by a "band bending" leading to the ionisation of the impurity levels in the interface region, as depicted conceptually. Consequently, these ions produce an electric dipole layer which induces an electrostatic potential shift across the interface. Additionally, the carrier concentration is strongly reduced in the interface region (depletion layer).
 
 ![Attachments/Script 22.webp|700](/img/user/Attachments/Script%2022.webp)
@@ -467,7 +467,7 @@ $$
 
 For $U>0$, the current is rapidly enhanced with increasing voltage. This is called forward bias. By contrast, charge transport is suppressed for $U<0$ (reverse bias), leading to small currents only. The current-voltage characteristic $J(U)$ shows a clearly asymmetric behaviour, which can be used to rectify ac-currents. Rectifiers (or diodes) are an important component of many integrated circuits.
 
-![Attachments/Script 23.webp|700](/img/user/Attachments/Script%2023.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=53&rect=70,338,524,424| ]]
+![Attachments/Script 23.webp|700](/img/user/Attachments/Script%2023.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 ### 2.4.2 Semiconductor Diodes
 
@@ -495,13 +495,13 @@ $$
 
 The maximum efficiency is reached by applying an external voltage $U_{c}<U_{L}$ such that the product $J_{c} U_{c}$ is maximised, where $J_{c}=J_{\mathrm{tot}}\left(U=U_{c}\right)$:
 
-![Attachments/Script 24.webp|700](/img/user/Attachments/Script%2024.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=54&rect=80,327,517,463| ]]
+![Attachments/Script 24.webp|700](/img/user/Attachments/Script%2024.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 #### 2.4.2.3 MOSFET
 
 The arguably most important application of semiconductors is the transistor, an element existing with different architectures. Here we briefly introduce the MOSFET (Metal-Oxide-Semiconductor-Field-Effect-Transistor). A transistor is a switch allowing to control the current through the device by switching a small control voltage. In the MOSFET, this is achieved by changing the charge carrier concentration in a p-doped semiconductor using a metallic gate. The basic design of a MOSFET is as follows: A thin layer of $\mathrm{SiO}_{2}$ is deposited on the surface of a p-type semiconductor. $\mathrm{SiO}_{2}$ is a good insulator that is compatible with the lattice structure of Si. Next, a metallic layer, used as a gate electrode, is deposited on top of the insulating layer.
 
-![Attachments/Script 25.webp|700](/img/user/Attachments/Script%2025.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=55&rect=164,675,431,759| ]]
+![Attachments/Script 25.webp|700](/img/user/Attachments/Script%2025.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 The voltage between the Si semiconductor and the metal electrode is called gate voltage $U_{G}$. The insulating $\mathrm{SiO}_{2}$ layer ensures that no currents flow between the electrode and the semiconductor when a gate voltage is applied. The switchable currents in the MOSFET flow between the source and the drain which are heavily n-doped semiconductor regions. Depending on the applied gate voltage $U_{G}$ three different regimes can be realised:
 
@@ -536,7 +536,7 @@ The voltage between the Si semiconductor and the metal electrode is called gate 
 -   $1<\frac{e U_{G}}{E_{g}}$
     When the applied gate voltage is sufficiently large, a so-called inversion layer is created:
 
-    ![Attachments/Script 26.webp|700](/img/user/Attachments/Script%2026.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=55&rect=81,480,515,642| ]]
+    ![Attachments/Script 26.webp|700](/img/user/Attachments/Script%2026.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
     Close to the boundary, the conduction band is bent down so that its lower edge lies below the chemical potential. The electrons accumulating in this inversion layer providing carriers connecting the n-type source and drain electrodes and producing a large, nearly metallic, current between source and drain. Conduction band electrons accumulating in the inversion layer behave like a two-dimensional electron gas. In such a system, the quantum Hall effect (QHE), which is characterised by highly unusual charge transport properties in the presence of a large magnetic field, can occur.
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/master-thesis/2-theory/","hide":"true","updated":"2025-06-04T12:29:14.315+02:00"}
+{"dg-publish":true,"permalink":"/notes/master-thesis/2-theory/","hide":"true","updated":"2025-06-04T12:29:14.314+02:00"}
 ---
 
 Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.
@@ -7,19 +7,19 @@ Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter se
 ---
 **Table of Contents**
 
-[[#2.1 Soliton modelocking|2.1 Soliton modelocking]]
-[[#2.2 Saturable Absorbers and Passive Modelocking|2.2 Saturable Absorbers and Passive Modelocking]]
-[[#2.3 Power Spectral Density, Relative Intensity Noise, and Signal-to-Noise Ratio|2.3 Power Spectral Density, Relative Intensity Noise, and Signal-to-Noise Ratio]]
-[[#2.4 Noise of Modelocked Lasers|2.4 Noise of Modelocked Lasers]]
-[[#2.5 Shot Noise in Lasers|2.5 Shot Noise in Lasers]]
-[[#2.6 Influence of Spectral Broadening on Noise|2.6 Influence of Spectral Broadening on Noise]]
-[[#2.7 Using Noise Gain from Spectral Broadening to Infer a Low Shot-Noise Level|2.7 Using Noise Gain from Spectral Broadening to Infer a Low Shot-Noise Level]]
+[[Notes/Master Thesis/2 Theory#2.1 Soliton modelocking\|2.1 Soliton modelocking]]
+[[Notes/Master Thesis/2 Theory#2.2 Saturable Absorbers and Passive Modelocking\|2.2 Saturable Absorbers and Passive Modelocking]]
+[[Notes/Master Thesis/2 Theory#2.3 Power Spectral Density, Relative Intensity Noise, and Signal-to-Noise Ratio\|2.3 Power Spectral Density, Relative Intensity Noise, and Signal-to-Noise Ratio]]
+[[Notes/Master Thesis/2 Theory#2.4 Noise of Modelocked Lasers\|2.4 Noise of Modelocked Lasers]]
+[[Notes/Master Thesis/2 Theory#2.5 Shot Noise in Lasers\|2.5 Shot Noise in Lasers]]
+[[Notes/Master Thesis/2 Theory#2.6 Influence of Spectral Broadening on Noise\|2.6 Influence of Spectral Broadening on Noise]]
+[[Notes/Master Thesis/2 Theory#2.7 Using Noise Gain from Spectral Broadening to Infer a Low Shot-Noise Level\|2.7 Using Noise Gain from Spectral Broadening to Infer a Low Shot-Noise Level]]
 
 ---
 # 2 Theory
 
 ## 2.1 Soliton modelocking
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=8&selection=6,0,8,19| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
  
 Soliton modelocking is a frequently used method to produce ultrashort pulses utilising the formation of solitons. When the effects of self-phase modulation (SPM) and negative group delay dispersion (GDD) balance, a soliton pulse is formed, which can propagate without pulse or spectral broadening in a dispersive medium. This balance is self-stabilising: since SPM depends on peak power while GDD does not, deviations in pulse parameters tend to be corrected, leading to a stable solution. This inherent stability makes solitons robust against distortions.
 
@@ -47,11 +47,11 @@ where $F_{P}$ is the pulse fluence. The full-width-at-half-maximum (FWHM) pulse 
 
 The following two figures compare the cases of negative and positive SPM, showing how positive GDD requires negative SPM to create a soliton.
 
-![Attachments/Koeberlin_Master_Thesis.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=9&rect=121,541,503,676| ]]
+![Attachments/Koeberlin_Master_Thesis.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 A soliton can only form if the SPM has the opposite sign of the GDD. In this case, positive GDD requires negative SPM for a stable wavepacket (a soliton) to form. The shape remains unchanged in the time and frequency domain.
 
 
-![Attachments/Koeberlin_Master_Thesis 1.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%201.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=9&rect=124,314,501,455| ]]
+![Attachments/Koeberlin_Master_Thesis 1.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%201.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Positive SPM amplifies the broadening effect of the already positive GDD. A soliton cannot form, and the pulse will keep broadening.
 
 It is important to note that the preceding discussion assumes a uniform distribution of SPM and GDD. However, in practice, this uniformity is not always maintained within the laser cavity. Consequently, the pulse shape is only fully restored after a complete roundtrip through the cavity. During this roundtrip, the pulse may deviate from its ideal form, leading to temporary distortions.
@@ -102,7 +102,7 @@ Under this condition, the perturbation behaves almost as if it were continuous, 
 
 ---
 ## 2.2 Saturable Absorbers and Passive Modelocking
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=11&selection=6,0,8,43| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 Until now, modelocking has been primarily explained through the nonlinear Schrödinger equation, highlighting the balancing effects of group delay dispersion and self-phase modulation. While the NLSE provides a powerful framework for understanding the formation and stability of soliton pulses, it does not fully capture all aspects of the laser dynamics. Specifically, the influence of gain, loss, and the initial pulse formation within the laser cavity are not addressed. In this section, passive modelocking is described from the perspective of saturable absorbers, such as the SESAM, with a particular focus on the formation of pulses.
 
@@ -138,20 +138,20 @@ $$
 
 Here, $\tau_0$ is the characteristic soliton duration, and the continuum refers to a weak and temporally spread-out pulse, as depicted in the following figure:
 
-![Attachments/Koeberlin_Master_Thesis 2.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%202.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=12&rect=120,395,496,539| ]]
+![Attachments/Koeberlin_Master_Thesis 2.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%202.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Illustration of soliton modelocking with gain and loss dynamics. The main soliton pulse (left) is stabilised by the interplay of gain and saturable absorption, while a weak, temporally spread-out continuum (right) is suppressed due to low intensity and the absence of self-phase modulation (SPM). The slow saturable absorber prevents the continuum from reaching the gain threshold, thereby maintaining a stable pulse within the laser cavity.
 
 Due to its low intensity, the continuum does not experience SPM, resulting in its spread over time due to GDD (as shown on the right side of the previous figure). Because it is spectrally narrow, it experiences high gain. The slow SA is still fast enough to ensure that the continuum experiences enhanced losses, preventing it from reaching the threshold where gain equals losses. This stabilisation mechanism gradually removes the continuum or noise, thereby stabilising the soliton pulse. This explains how passive modelocking produces stable pulses despite the presence of the continuum. Passive modelocking ideally starts from noise fluctuations within the laser, where a noise spike is amplified more than other fluctuations until it reaches a steady state.
 
 As mentioned, the SESAM used in this thesis is a slow, saturable absorber. The next figure depicts the reflectivity behaviour as a function of the incident fluence:
 
-![Attachments/Koeberlin_Master_Thesis 3.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%203.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=13&rect=127,515,500,715| ]]
+![Attachments/Koeberlin_Master_Thesis 3.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%203.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 As expected, the reflectivity initially increases with increasing fluence. However, eventually, the reflectivity decreases again due to second-order processes such as two-photon absorption. This leads to a rollover in the curve, typical of SESAMs, and is also called inverse saturable absorption.
 
 ---
 ## 2.3 Power Spectral Density, Relative Intensity Noise, and Signal-to-Noise Ratio
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=13&selection=13,0,16,25| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 This section delves into several fundamental concepts essential to this thesis, including [[Notes/Signals and Systems/1 Signals and Systems#1 Signals and Systems\|signal processing]] and optical communication: Power Spectral Density, Relative Intensity Noise, and Signal-to-Noise Ratio. To avoid confusion between various notations, this thesis adheres to the [IEEE standard on random instabilities](https://ieeexplore.ieee.org/document/4797525).
 
@@ -236,7 +236,7 @@ It is essential to specify these frequency limits because the variance, or root 
 
 ---
 ## 2.4 Noise of Modelocked Lasers
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=16&selection=6,0,8,27| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
  
 As this work primarily concerns noise, it is essential to discuss the noise characteristics of modelocked lasers. When light intensity $I(t)$ is detected by a photodetector, it ideally produces an electric current $J(t) \sim I(t)$, and a spectrum analyser measures the power spectral density.
 
@@ -318,7 +318,7 @@ where $P_{\mathrm{sb}}\left[f_{1}, f_{2}\right]$ is the power from the integrati
 
 ---
 ## 2.5 Shot Noise in Lasers
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=18&selection=53,0,55,20| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
  
 Shot noise is a fundamental type of noise in electronic and optical devices, arising from the discrete nature of charge carriers (electrons) and light (photons). In lasers, shot noise is a consequence of the quantum statistical nature of photon emission. Although photon emission in lasers primarily occurs through stimulated emission, which leads to correlated emission events, the underlying processes are inherently probabilistic. The random nature of these processes, which follow a Poisson distribution, results in intrinsic fluctuations in the number of photons detected over a given interval. These fluctuations are inherent to the light itself, regardless of the stability of the light source.
 
@@ -356,14 +356,14 @@ While shot noise tends to dominate at high frequencies, the specific frequency a
 
 At lower frequencies, various other noise sources become significant, including relaxation oscillations, pump noise, thermal noise, and $1 / f$ noise. These sources contribute to the overall noise profile of the laser and can overshadow shot noise at these frequencies. To illustrate this effect, the next figure shows the RIN and timing noise of a SESAM modelocked Ytterbium-doped solid-state laser with a GHz repetition rate. Relaxation oscillations can clearly be seen as a prominent peak, whereas the laser noise approaches the shot noise limit at higher frequencies:
 
-![Attachments/Koeberlin_Master_Thesis 4.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%204.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=20&rect=121,483,497,718| ]]
+![Attachments/Koeberlin_Master_Thesis 4.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%204.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Relative intensity noise (RIN) and timing noise characteristics of a SESAM modelocked Ytterbium-doped solid-state laser operating at a GHz repetition rate. The figure illustrates various noise sources, with relaxation oscillations appearing as a prominent peak at lower frequencies. At higher frequencies, the noise level approaches the shot noise limit, indicating the dominance of quantum noise in this region.
 
 A detector is said to be "shot noise-limited" when the predominant noise source affecting its performance is shot noise rather than thermal or electronic noise. In such systems, improving the SNR primarily involves increasing the optical power, as shot noise power scales linearly with optical power, while the signal power scales quadratically with optical field or linearly with optical power, leading to SNR improvements. Achieving shot noise-limited performance is desirable in applications requiring high precision and sensitivity, such as quantum optics and spectroscopy.
 
 ---
 ## 2.6 Influence of Spectral Broadening on Noise
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=19&selection=78,0,80,41| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
  
 Spectral broadening is a significant nonlinear optical effect utilised in various applications, such as supercontinuum generation, pulse compression, and potentially in enhancing noise measurement techniques. During spectral broadening, noise is influenced. In the frequency range where shot noise is the dominant noise source of the unbroadened laser system, spectral broadening can cause an increase in the noise PSD.
 
@@ -465,7 +465,7 @@ where the dependence of peak power $P_{\mathrm{peak}}$ and FWHM pulse width $\ta
 
 The next figure shows the measured pulse width for average laser output powers ranging from $34\,\mathrm{W}$ to $60\,\mathrm{W}$:
 
-![Attachments/Koeberlin_Master_Thesis 5.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%205.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=24&rect=116,335,500,562| ]]
+![Attachments/Koeberlin_Master_Thesis 5.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%205.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Measured pulse width as a function of average laser output power, fitted with an inverse power law $(1 / \bar{P})$. The data represents the operating range of the laser between $33\,\mathrm{W}$ and $60\,\mathrm{W}$, where stable modelocking occurs without CW breakthrough or other artefacts.
 
 As the soliton FWHM pulse width follows the relationship
@@ -478,61 +478,61 @@ where $F_{p}$ is the pulse fluence and $E_p$ is the pulse energy, an inverse ave
 
 Using this method, we can incorporate fluctuating peak powers and pulse widths into the simulation. Next, we compare the spectra with and without fluctuations. The next figure illustrates this comparison, showing that the ratio between these two spectra can be significant at specific wavelengths, resulting in substantial noise amplification, which we will refer to as noise gain moving forward. 
 
-![Attachments/Koeberlin_Master_Thesis 6.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%206.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=25&rect=113,494,502,723| ]]
+![Attachments/Koeberlin_Master_Thesis 6.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%206.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Power density per nanometer (left, blue) and noise gain per nanometer (right, orange) as a function of wavelength. The power density reaches $4\,\mathrm{W}$, while the noise gain peaks at $35\,\mathrm{dB}$ and maintains around $29\,\mathrm{dB}$ in the spectral wings. The fibre coupling efficiency is $82 \%$.
 
 As the title indicates, "power contributing to SPM" refers to the power that efficiently couples into the fibre. The pulse width for simulation input is determined using the fitted relationship, based on the power coupled into the fibre, considering the presence of an output coupler for the diagnostics beam and an isolator.
 
 It is essential to note that the vertical axes represent gain and power per slice of one nanometer. This is significant because any measurement setup can only capture a finite spectral range. Increasing the slice interval to $2\,\mathrm{nm}$ will double the power within this range but will not necessarily result in a higher noise gain:
 
-![Attachments/Koeberlin_Master_Thesis 7.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%207.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=26&rect=113,491,499,720| ]]
+![Attachments/Koeberlin_Master_Thesis 7.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%207.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Power density per two nanometers (left, blue) and noise gain per two nanometers (right, orange) as a function of wavelength. As expected, the power density reaches $8\,\mathrm{W}$ (doubling from the $1\,\mathrm{nm}$ slice), while the noise gain slightly decreases, peaking at $30\,\mathrm{dB}$ and $28\,\mathrm{dB}$ in the spectral wings. The fibre coupling efficiency is $82 \%$.
 
 At larger intervals, spectral features become smeared, diminishing the distinct features of spectral broadening. Simulations indicate that a $1\,\mathrm{nm}$ spectral slice provides sufficient gain while remaining relatively simple to isolate.
 
 We observe that at specific wavelengths, the relative change in intensity is significant (on the order of $35\,\mathrm{dB}$). We could potentially infer a lower shot noise level if we can measure the intensity change at these wavelengths. However, many high-gain points, especially on the spectrum's wings, correspond to low-intensity wavelengths, making them challenging to detect with the photodetectors used in this thesis. Even more critically, the reduced power at these outer wavelengths means that the power is counteracting the potential benefits of the high gain. To illustrate this effect, the following figure shows that most points in the wings disappear once we assume the detector requires a specific amount of power to measure a signal reliably:
 
-![Attachments/Koeberlin_Master_Thesis 8.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%208.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=27&rect=113,493,500,721| ]]
+![Attachments/Koeberlin_Master_Thesis 8.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%208.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Power density per nanometer (left, blue) and noise gain per nanometer (right, orange) as a function of wavelength. The power density reaches $4\,\mathrm{W}$, with the noise gain peaking at $35\,\mathrm{dB}$. The imposed cut-off at $20\,\mathrm{mW}$ causes some points at the spectral wings to be inaccessible. The fibre coupling efficiency is $82 \%$.
 
 Some high-gain points vanish due to low intensity, which numerical calculations and inherent rounding errors may artificially introduce. For the laser parameters (average power $\bar{P}=60\,\mathrm{W}$, FWHM pulse width $\tau_{p}=1027\,\mathrm{fs}$, and pressure $p=20\,\mathrm{bar}$), up to $29\,\mathrm{dB}$ of gain can still be achieved in the spectral wings. Interestingly, even when assuming a minimum required power per spectral slice and keeping all parameters constant except for the pressure, higher pressure does not necessarily result in a larger gain.
 
 To illustrate this effect, the next figure presents a pressure scan ranging from $1$ to $30\,\mathrm{bar}$ in increments of $0.1\,\mathrm{bar}$, with all other laser parameters held constant. The maximum achievable gain occurs at the highest pressure point, with a consistent increase from $15$ to $30\,\mathrm{bar}$. However, note the gain density around $5.2\,\mathrm{bar}$. 
 
-![Attachments/Koeberlin_Master_Thesis 9.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%209.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=28&rect=114,481,503,719| ]]
+![Attachments/Koeberlin_Master_Thesis 9.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%209.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Pressure scan from $1$ to $30\,\mathrm{bar}$ in steps of $0.1\,\mathrm{bar}$. The simulation is run once for each pressure, and the gain density values are plotted along a vertical line. The parameters remain constant: $50\,\mathrm{W}$ input power, $82 \%$ fibre coupling efficiency, and $1027\,\mathrm{fs}$ pulse width with a cut-off at $20\,\mathrm{mW}$.
 
 While this outlier may initially appear to be a numerical artefact, the next figure demonstrates that this point is located precisely at the centre of the broadened spectrum:
 
-![Attachments/Koeberlin_Master_Thesis 10.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2010.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=28&rect=118,189,503,407| ]]
+![Attachments/Koeberlin_Master_Thesis 10.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2010.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 Power density per nanometer (left, blue) and noise gain per nanometer (right, orange) as a function of wavelength for three different pressures: $5.2$, $5.5$, and $5.6\,\mathrm{bar}$. The central peak starts to split around $5.6\,\mathrm{bar}$, leading to a sudden change in maximum gain. The fibre coupling efficiency is $82 \%$.
 
 Whenever the central peak "splits" into two new peaks, the maximum gain momentarily decreases before these new peaks become dominant, causing the pressure scan to follow a new trend. The noise gains for pressures of $5.2$, $5.5$, and $5.6\,\mathrm{bar}$ are stacked to show the significant change in maximum gain as the central peak begins to split.
 
 ---
 ## 2.7 Using Noise Gain from Spectral Broadening to Infer a Low Shot-Noise Level
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=27&selection=66,0,69,26| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 Now that the impact of spectral broadening on noise has been discussed, it is crucial to explain how this technique can be used to infer a low shot-noise level. To illustrate this, the next six figures demonstrate the step-by-step process for estimating a low shot-noise level. The noise trace used in these figures is generated for illustrative purposes. 
 
 This procedure requires only a single photodiode, a method to raise the noise PSD uniformly across all frequencies, and two measurements: one of the laser before spectral broadening and one after. The strength of this method is that the measurement challenge is shifted from the detection setup to obtaining the uniform noise gain.
 
 **Step 1:** Assumed noise PSD of a $60\,\mathrm{W}$ laser, running into the shotnoise limit of $-202\,\mathrm{dBc/Hz}$ around $1\,\mathrm{MHz}$. To obtain this noise trace, one must measure the full $60\,\mathrm{W}$ of optical power with a photodiode, which is impractical.
-![Attachments/Koeberlin_Master_Thesis 11.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2011.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=29&rect=123,493,491,705| ]]
+![Attachments/Koeberlin_Master_Thesis 11.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2011.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 **Step 2:** Assuming the photodiode can only measure up to $10\,\mathrm{mW}$ of optical power, the shot-noise limit would be at $-162\,\mathrm{dBc/Hz}$. In the laboratory, the blue noise PSD would be measured, following the true noise PSD but hitting the detector-limited shot-noise threshold earlier.
-![Attachments/Koeberlin_Master_Thesis 12.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2012.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=29&rect=122,201,491,409| ]]
+![Attachments/Koeberlin_Master_Thesis 12.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2012.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 **Step 3:** Now assume a tool (in this case, spectral broadening) exists that uniformly raises the entire noise PSD by a fixed amount - in this case, $30\,\mathrm{dB}$. As a result, the true noise PSD (orange) would shift upwards by $30\,\mathrm{dB}$ across all frequencies (red).
-![Attachments/Koeberlin_Master_Thesis 13.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2013.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=30&rect=126,492,493,716| ]]
+![Attachments/Koeberlin_Master_Thesis 13.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2013.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 **Step 4:** Repeating the noise measurement with the laser that has its noise increased, the green curve is obtained in the lab. The measured noise trace will still be limited by the photodiode's shot-noise threshold at $-162\,\mathrm{dBc/Hz}$, but this occurs at a higher frequency due to the increased noise.
-![Attachments/Koeberlin_Master_Thesis 14.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2014.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=30&rect=127,187,493,415| ]]
+![Attachments/Koeberlin_Master_Thesis 14.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2014.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 **Step 5:** After conducting measurements on both the original laser and the noisy laser, the blue and green curves are. They are consistently spaced apart by $30\,\mathrm{dB}$. A low shot-noise limit can be inferred based on the assumption that the noise gain equally affects all frequencies (see step 6).
-![Attachments/Koeberlin_Master_Thesis 15.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2015.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=31&rect=122,488,494,712| ]]
+![Attachments/Koeberlin_Master_Thesis 15.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2015.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 **Step 6:** Given the assumption that the noise gain increases the noise PSD by $30\,\mathrm{dB}$ uniformly across all frequencies, we infer that the true shotnoise limit is at $-192\,\mathrm{dBc/Hz}$.
-![Attachments/Koeberlin_Master_Thesis 16.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2016.webp)[[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=31&rect=122,178,495,406| ]]
+![Attachments/Koeberlin_Master_Thesis 16.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2016.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 ---

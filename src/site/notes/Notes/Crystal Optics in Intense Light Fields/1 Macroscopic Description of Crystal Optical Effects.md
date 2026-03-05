@@ -7,16 +7,16 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 **Table of Contents**
 
-[[#1.1 Symmetry Principles|1.1 Symmetry Principles]]
-[[#1.2 Group Theory and Symmetry Operations in Crystals|1.2 Group Theory and Symmetry Operations in Crystals]]
-[[#1.3 Coordinate Transformations|1.3 Coordinate Transformations]]
-[[#1.4 Symmetry Groups|1.4 Symmetry Groups]]
-[[#1.5 Obtaining Tensor Components|1.5 Obtaining Tensor Components]]
-[[#1.6 Beyond Group Theory|1.6 Beyond Group Theory]]
+[[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.1 Symmetry Principles\|1.1 Symmetry Principles]]
+[[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.2 Group Theory and Symmetry Operations in Crystals\|1.2 Group Theory and Symmetry Operations in Crystals]]
+[[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.3 Coordinate Transformations\|1.3 Coordinate Transformations]]
+[[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.4 Symmetry Groups\|1.4 Symmetry Groups]]
+[[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.5 Obtaining Tensor Components\|1.5 Obtaining Tensor Components]]
+[[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects#1.6 Beyond Group Theory\|1.6 Beyond Group Theory]]
 
 ---
 # 1 Macroscopic Description of Crystal Optical Effects
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=7&selection=0,0,1,14| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 There are two main approaches to describe the physical properties and behaviour of light within macroscopic crystals: the macroscopic and the microscopic approach.
 
@@ -36,7 +36,7 @@ Both of these approaches can be utilised. Even without detailed knowledge of the
 
 ---
 ## 1.1 Symmetry Principles
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=7&selection=93,0,93,23| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 Symmetry considerations alone constrain the form of material tensors and allow fundamental statements about their behaviour and the physical effects they describe. The most fundamental statement relating physical properties to crystal symmetry is **Neumann's Principle**:
 
@@ -44,7 +44,7 @@ _The symmetry elements of any physical property of a crystal must include all th
 
 This principle expresses that the symmetry of a material must be reflected in its physical properties. For instance, consider the pyroelectric effect (polarisation induced by a uniform temperature change) or the piezomagnetic effect in a crystal possessing a centre of inversion. Such symmetry forbids these effects. Charge separation induced by heat (pyroelectricity) will not occur in any crystal that has a centre of symmetry.
 
-![Attachments/Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects/Script (Unofficial).webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/1%20Macroscopic%20Description%20of%20Crystal%20Optical%20Effects/Script%20(Unofficial).webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=8&rect=241,699,410,761| ]]
+![Attachments/Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects/Script (Unofficial).webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/1%20Macroscopic%20Description%20of%20Crystal%20Optical%20Effects/Script%20(Unofficial).webp)[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 As a direct consequence, a material tensor $Q_{ijk...}$ must be invariant under all symmetry operations of the crystal's point group. This provides a powerful method to determine which tensor components can be non-zero and which relations must exist between them, and can allow the use of $Q_{ijk...}$ as a structural probe.
 
@@ -52,14 +52,14 @@ However, one has to be careful with the interpretation of Neumann's Principle. T
 
 ---
 ## 1.2 Group Theory and Symmetry Operations in Crystals
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=8&selection=68,1,68,16| ]] [[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=8&selection=77,0,77,35| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf) [ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 Group theory provides the mathematical apparatus and formalism to describe symmetries and the associated transformation properties of physical quantities and their relating tensors (like $Q_{ijk}$). It allows for systematic calculations with sets of symmetry operations. A **symmetry operation** is a transformation (such as rotation, reflection, inversion) that, when applied to an object or a crystal structure, leaves it indistinguishable from its original state. For instance, an equilateral triangle rotated by $120^{\circ}$ about its centre cannot be distinguished from its original orientation (unless its vertices are labelled). The $120^{\circ}$ rotation is therefore a symmetry operation for the equilateral triangle. All symmetry operations relevant to crystals are either translations, point operations (rotations, reflections, inversion), or combinations thereof.
 
 ### 1.2.1 Translations
 
 If a physical system (or its properties) is unaffected by a spatial translation through a vector $\mathbf{R}$, the system possesses translational symmetry. For a crystal lattice, translational symmetry is defined by the lattice vectors. Consider the next figure: symmetries in a crystal involve translations along lattice vectors over integer multiples of unit cells (a trivial translational symmetry for the infinite lattice), or potentially over sub-unit cell distances for certain repeating motifs (non-trivial in the context of space groups).
 
-![Attachments/Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects/Script (Unofficial) 1.webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/1%20Macroscopic%20Description%20of%20Crystal%20Optical%20Effects/Script%20(Unofficial)%201.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=9&rect=179,648,373,760| ]]
+![Attachments/Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects/Script (Unofficial) 1.webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/1%20Macroscopic%20Description%20of%20Crystal%20Optical%20Effects/Script%20(Unofficial)%201.webp)[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 The mathematical operation is a shift of position vector $\mathbf{r}$:
 $$
@@ -104,11 +104,11 @@ $$
 In quantum mechanics, $\hat{T}$ is an anti-unitary operator, and $\hat{T}^2 = +\mathbb{1}$ for integer spin systems (bosons) and $\hat{T}^2 = -\mathbb{1}$ for half-integer spin systems (fermions). For classical fields and functions, we often consider $\hat{T}^2=\mathbb{1}$, leading to eigenvalues $\lambda = \pm 1$ for functions having definite symmetry under time reversal.
 Considering crystalline materials with magnetic order, time reversal symmetry (or its breaking) is crucial. An intrinsic atomic magnetic moment (often due to electron spin) can be visualised as arising from a microscopic current loop. Time reversal would invert the direction of this current, thus reversing the magnetic moment:
 
-![Attachments/Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects/Script (Unofficial) 2.webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/1%20Macroscopic%20Description%20of%20Crystal%20Optical%20Effects/Script%20(Unofficial)%202.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=10&rect=242,696,409,763| ]]
+![Attachments/Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects/Script (Unofficial) 2.webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/1%20Macroscopic%20Description%20of%20Crystal%20Optical%20Effects/Script%20(Unofficial)%202.webp)[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 ---
 ## 1.3 Coordinate Transformations
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=10&selection=122,0,122,30| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 In contrast to symmetry operations (which transform the object/crystal with respect to a fixed coordinate system), a **coordinate transformation** $\hat{R}$ transforms the description of the system from an initial coordinate system $K'$ to a final coordinate system $K$:
 $$
@@ -171,7 +171,7 @@ However, the tensor $F_{ijk}$ itself has specific properties. If we assume the u
 
 ---
 ## 1.4 Symmetry Groups
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=14&selection=2,0,2,19| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 **A symmetry group of an object (such as a crystal) is the set of all symmetry operations that leave the object invariant.** These operations form a mathematical group. Symmetry operations include rotations, inversions, reflections, and their combinations (point group operations), and for crystalline solids, translations (leading to space groups). For magnetic materials, time reversal is also included.
 
@@ -183,7 +183,7 @@ A useful notation to describe symmetry operations:
 -   $N(\dots)$: $N$ symmetry operations of the type in brackets. For instance, $3(2_{\perp})$ means three 2-fold rotation axes perpendicular to a principal reference axis.
 
 ![Attachments/Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects/Script (Unofficial) 3.webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/1%20Macroscopic%20Description%20of%20Crystal%20Optical%20Effects/Script%20(Unofficial)%203.webp)
-![Attachments/Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects/Script (Unofficial) 4.webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/1%20Macroscopic%20Description%20of%20Crystal%20Optical%20Effects/Script%20(Unofficial)%204.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=15&rect=207,671,319,759| ]]
+![Attachments/Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects/Script (Unofficial) 4.webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/1%20Macroscopic%20Description%20of%20Crystal%20Optical%20Effects/Script%20(Unofficial)%204.webp)[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 ### 1.4.1 Number of Symmetry Groups
 
@@ -193,7 +193,7 @@ A useful notation to describe symmetry operations:
 
 ---
 ## 1.5 Obtaining Tensor Components
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=15&selection=134,0,134,31| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 This section discusses determining the non-zero and independent components of a material tensor based on crystal symmetry.
 
@@ -224,7 +224,7 @@ Reference tables (like Birss) provide pre-calculated forms of tensors for each s
 
 ---
 ## 1.6 Beyond Group Theory
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=17&selection=192,0,192,23| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 Symmetry operations (group theory) determine which tensor components _can_ be non-zero. Additional physical considerations or intrinsic symmetries of the specific physical process can impose further restrictions ("particularisation") or relations between these allowed components.
 

@@ -7,20 +7,20 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 **Table of Contents**
 
-[[#6.1 Gaussian Beam Optics|6.1 Gaussian Beam Optics]]
-[[#6.2 Paraxial Helmholtz Equation and Slowly-Varying Envelope Approximation|6.2 Paraxial Helmholtz Equation and Slowly-Varying Envelope Approximation]]
-[[#6.3 Hermite-Gaussian Beams|6.3 Hermite-Gaussian Beams]]
-[[#6.4 Laguerre-Gaussian Beams|6.4 Laguerre-Gaussian Beams]]
-[[#6.5 Bessel Beams|6.5 Bessel Beams]]
-[[#6.6 Summary|6.6 Summary]]
+[[Notes/2025 Quantum Electronics/6 Beam Types#6.1 Gaussian Beam Optics\|6.1 Gaussian Beam Optics]]
+[[Notes/2025 Quantum Electronics/6 Beam Types#6.2 Paraxial Helmholtz Equation and Slowly-Varying Envelope Approximation\|6.2 Paraxial Helmholtz Equation and Slowly-Varying Envelope Approximation]]
+[[Notes/2025 Quantum Electronics/6 Beam Types#6.3 Hermite-Gaussian Beams\|6.3 Hermite-Gaussian Beams]]
+[[Notes/2025 Quantum Electronics/6 Beam Types#6.4 Laguerre-Gaussian Beams\|6.4 Laguerre-Gaussian Beams]]
+[[Notes/2025 Quantum Electronics/6 Beam Types#6.5 Bessel Beams\|6.5 Bessel Beams]]
+[[Notes/2025 Quantum Electronics/6 Beam Types#6.6 Summary\|6.6 Summary]]
 
 ---
 # 6 Beam Types
-[[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=2&selection=0,35,0,35| ]] [[Notes/2025 Quantum Electronics/QE_script.pdf#page=118&selection=0,9,1,24| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 In this chapter, we return to the treatment of optical beams and will discuss different types of beams encountered in optics. The most important of these, particularly in laser applications, is the Gaussian beam.
 
 ## 6.1 Gaussian Beam Optics
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=115&selection=4,0,6,20| ]] [[Notes/2025 Quantum Electronics/02_Fundamental_phenomena.pdf#page=148&selection=0,0,0,14| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/02_Fundamental_phenomena.pdf)
 
 Gaussian beams are highly relevant in optical laboratories as they accurately describe the spatial profile of light produced by most lasers operating in the fundamental transverse mode, and they are the characteristic modes of stable optical resonators and cavities. A fundamental Gaussian beam with its waist (narrowest point) located at $z=0$ and propagating along the $z$-axis is described by the complex amplitude $U(\mathbf{r})$:
 $$
@@ -60,7 +60,7 @@ Here, $z_w$ is the position of the beam waist (if $z_w=0$, then $q(z)=z+iz_R$), 
 
 $W(z)$ is the beam radius, defined as the radial distance where the beam intensity falls to $1/e^2$ (approx. 13.5%) of its on-axis maximum value in a transverse plane at position $z$. Twice the beam radius, $2W(z)$, is sometimes called the spot size. The transverse intensity profile of a Gaussian beam is circularly symmetric (for the fundamental mode).
 
-![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/02_Fundamental_phenomena 25.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/02_Fundamental_phenomena%2025.webp)[[Notes/2025 Quantum Electronics/02_Fundamental_phenomena.pdf#page=153&rect=108,178,437,435| ]]
+![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/02_Fundamental_phenomena 25.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/02_Fundamental_phenomena%2025.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/02_Fundamental_phenomena.pdf)
 
 Here, the minimal beam radius (waist) $W_0$ occurs at the waist position (e.g., $z=0$ if $z_w=0$). From the waist, the radius $W(z)$ increases hyperbolically in both directions. Wavefronts are planar at the beam waist ($R(z_w) \to \infty$) but become increasingly curved (approximately spherical) far from the waist. For a fixed Rayleigh range $z_R$, the waist radius $W_0 = \sqrt{2z_R/k} = \sqrt{\lambda_0 z_R/(\pi n)}$ is smaller for shorter wavelengths $\lambda_0$.
 
@@ -68,7 +68,7 @@ Here, the minimal beam radius (waist) $W_0$ occurs at the waist position (e.g., 
 
 The Rayleigh range (or Rayleigh length) $z_R$ is a crucial parameter characterising the longitudinal extent of the beam waist region. It is defined as the distance from the waist ($z=z_w$) at which the beam radius has increased to $W(z_w \pm z_R) = W_0\sqrt{2}$, meaning the cross-sectional area of the beam, $\pi W^2(z)$, has doubled compared to its area at the waist, $\pi W_0^2$.
 
-![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/02_Fundamental_phenomena 26.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/02_Fundamental_phenomena%2026.webp)[[Notes/2025 Quantum Electronics/02_Fundamental_phenomena.pdf#page=155&rect=183,254,683,443| ]]
+![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/02_Fundamental_phenomena 26.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/02_Fundamental_phenomena%2026.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/02_Fundamental_phenomena.pdf)
 
 The depth of focus of a Gaussian beam is often considered to be $2z_R$. We deduce the following behaviour:
 - For a fixed beam waist $W_0$: The shorter the wavelength $\lambda_0$ (or larger $n$), the longer the Rayleigh range $z_R = \pi W_0^2 n / \lambda_0$, and thus the longer the depth of focus.
@@ -79,7 +79,7 @@ The depth of focus of a Gaussian beam is often considered to be $2z_R$. We deduc
 The beam divergence describes how quickly the beam width $W(z)$ increases for $|z| \gg z_R$ (in the far field). The half-angle of divergence $\theta_0$ is defined as the angle of the asymptote of $W(z)$ with respect to the $z$-axis:
 $$ \theta_0 = \lim_{z\to\infty} \frac{W(z)}{|z-z_w|} \approx \frac{W_0}{z_R} = \frac{\lambda_0}{\pi W_0 n}. $$
 
-![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/02_Fundamental_phenomena 27.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/02_Fundamental_phenomena%2027.webp)[[Notes/2025 Quantum Electronics/02_Fundamental_phenomena.pdf#page=157&rect=180,260,668,427| ]]
+![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/02_Fundamental_phenomena 27.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/02_Fundamental_phenomena%2027.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/02_Fundamental_phenomena.pdf)
 
 Again, we deduce the following behaviour:
 - For a fixed beam waist $W_0$: The shorter the wavelength $\lambda_0$, the smaller the divergence angle $\theta_0$.
@@ -93,7 +93,7 @@ R(z) = (z-z_w)\left[1+\left(\frac{z_R}{z-z_w}\right)^2\right].
 $$
 Near the beam waist ($z \approx z_w$), $R(z_w) \to \infty$, indicating planar wavefronts. Far from the waist ($|z-z_w| \gg z_R$), $R(z) \approx z-z_w$, meaning the wavefronts become approximately spherical, appearing to originate from a point source located at the waist position $z_w$.
 
-![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/02_Fundamental_phenomena 28.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/02_Fundamental_phenomena%2028.webp)[[Notes/2025 Quantum Electronics/02_Fundamental_phenomena.pdf#page=158&rect=161,207,655,416| ]]
+![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/02_Fundamental_phenomena 28.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/02_Fundamental_phenomena%2028.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/02_Fundamental_phenomena.pdf)
 
 ### 6.1.5 Gouy Phase
 
@@ -118,7 +118,7 @@ $$
 $$
 The beam waist radius $W$ is unchanged immediately after passing through an ideal thin lens: $W_{\text{out}}(z_L) = W_{\text{in}}(z_L)$.
 
-![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/02_Fundamental_phenomena 30.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/02_Fundamental_phenomena%2030.webp)[[Notes/2025 Quantum Electronics/02_Fundamental_phenomena.pdf#page=164&rect=554,133,828,281| ]]
+![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/02_Fundamental_phenomena 30.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/02_Fundamental_phenomena%2030.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/02_Fundamental_phenomena.pdf)
 *(Figure shows transformation of $W(z)$ and $R(z)$ by a lens)*
 
 If a Gaussian beam with waist $W_0$ at $z_w$ (input parameters $z_R, W_0$) is incident on a thin lens of focal length $f$, the output beam will be a new Gaussian beam with a new waist $W_0'$ at a new position $z_w'$, and a new Rayleigh range $z_R'$. These new parameters can be found using the ABCD matrix formalism for the q-parameter. The magnification $M = W_0'/W_0$ and the new waist position can be expressed in terms of $f$, $z_w$ (distance of input waist from lens), and $z_R$. For a lens at $z=0$, and input waist at $z_1$ (so $z_w=z_1$ in prior notation), the output waist is at $z_2$ and has radius $W_{02}$:
@@ -141,7 +141,7 @@ $$
 $$
 If an optical system is described by an ABCD ray-transfer matrix for paraxial rays, the q-parameter of an input Gaussian beam $q_1$ transforms to an output $q_2$ according to Kogelnik's ABCD law:
 
-![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/02_Fundamental_phenomena 31.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/02_Fundamental_phenomena%2031.webp)[[Notes/2025 Quantum Electronics/02_Fundamental_phenomena.pdf#page=169&rect=187,240,646,394| ]]
+![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/02_Fundamental_phenomena 31.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/02_Fundamental_phenomena%2031.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/02_Fundamental_phenomena.pdf)
 
 $$
 q_2=\frac{A q_1+B}{C q_1+D}.
@@ -154,9 +154,9 @@ This powerful result allows us to use the same ABCD matrices derived for [[Notes
 This connection between ray optics (via ABCD matrices) and Gaussian beam optics (via the q-parameter) is not coincidental. In the limit $\lambda_0 \to 0$, the imaginary part of $1/q(z)$ vanishes, and $1/q(z) \to 1/R(z)$. For paraxial rays, $R(z) \approx r(z)/\theta(z)$ (where $r$ is ray height, $\theta$ is ray angle). The ABCD law for $q$ then becomes consistent with the ray transformation $\binom{r_2}{\theta_2}=\mathbf{M}\binom{r_1}{\theta_1}$.
 
 ## 6.2 Paraxial Helmholtz Equation and Slowly-Varying Envelope Approximation
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=118&selection=3,0,5,37| ]] [[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=3&selection=0,67,0,67| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf)
 
-Let us return once more to the Helmholtz equation, introduced in [[#6.1.1 Gaussian Beams as Solution to the Helmholtz Equation|section 6.1.1]]:
+Let us return once more to the Helmholtz equation, introduced in [[Notes/2025 Quantum Electronics/6 Beam Types#6.1.1 Gaussian Beams as Solution to the Helmholtz Equation\|section 6.1.1]]:
 $$
 \nabla^2 U+k^2 U=0.
 $$
@@ -178,7 +178,7 @@ $$
 $$
 The next figure schematically sketches the field (fast oscillations) and its slowly varying envelope.
 
-![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/03_Beams_and_resonators.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/03_Beams_and_resonators.webp)[[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=3&rect=553,227,828,401| ]]
+![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/03_Beams_and_resonators.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/03_Beams_and_resonators.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf)
 
 Consider now the 2D spatial Fourier transform of the paraxial Helmholtz equation with respect to $x$ and $y$. Let $B(k_x,k_y,z)=\mathcal{F}_{xy}\{A(x,y,z)\}$. Then $\mathcal{F}_{xy}\{\nabla_T^2 A\} = -(k_x^2+k_y^2)B$. This yields:
 $$
@@ -196,11 +196,11 @@ This exactly retrieves the phase factor $e^{-i z (k_x^2+k_y^2)/(2k)}$ found in t
 
 At this point, it is good to recall the hierarchy of approximations we have used:
 
-![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/03_Beams_and_resonators 1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/03_Beams_and_resonators%201.webp)[[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=5&rect=131,90,704,481| ]]
+![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/03_Beams_and_resonators 1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/03_Beams_and_resonators%201.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf)
 
 ---
 ## 6.3 Hermite-Gaussian Beams
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=119&selection=171,0,173,22| ]] [[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=6&selection=0,0,0,22| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf)
 
 This subsection and the remainder of this chapter will be kept rather concise, as it serves mainly to introduce these beam types rather than delve into exhaustive detail.
 
@@ -225,15 +225,15 @@ where $C_{l,m}$ is a normalisation constant, $H_l(u)$ and $H_m(v)$ are Hermite p
 The integers $l,m \ge 0$ are mode indices. The fundamental Gaussian beam corresponds to $l=m=0$.
 Low-order Hermite-Gaussian beam intensity profiles at the waist ($z=z_w$) are shown below:
 
-![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/QE_script.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/QE_script.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=122&rect=124,460,496,673| ]]
+![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/QE_script.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/QE_script.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 Higher-order solutions ($l>0$ or $m>0$) exhibit nodes (lines of zero intensity) in the transverse plane; $l$ nodes in the $x$-direction and $m$ nodes in the $y$-direction. Hermite-Gaussian beams form a complete orthogonal set of solutions and are often used as a basis to describe laser beams in optical resonators, particularly those with rectangular symmetry defined by astigmatic components or apertures. In many laser applications, however, operation in the fundamental $TEM_{00}$ mode is desired to achieve the best beam quality, and contributions from higher-order modes are suppressed.
 
-![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/QE_script 1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/QE_script%201.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=123&rect=127,394,533,663| ]]
+![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/QE_script 1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/QE_script%201.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 ---
 ## 6.4 Laguerre-Gaussian Beams
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=122&selection=27,0,29,23| ]] [[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=14&selection=0,0,0,23| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf)
 
 If the paraxial Helmholtz equation is solved in cylindrical coordinates $(\rho,\phi,z)$, another complete orthogonal set of solutions is found: the Laguerre-Gaussian beams. The complex amplitude of such a beam (mode $LG_{p,l}$) is:
 $$
@@ -245,13 +245,13 @@ $$
 where $L_p^{|l|}(x)$ are the generalised Laguerre polynomials, $p \ge 0$ is the radial mode index (number of radial nodes excluding the one at $\rho=\infty$), and $l$ is the azimuthal mode index or topological charge (an integer). The fundamental Gaussian beam is $LG_{0,0}$ ($p=0, l=0$).
 The intensity profiles of Laguerre-Gaussian beams typically exhibit cylindrical symmetry for $l=0$ (donut shape for $p>0, l=0$) or more complex ringed structures with azimuthal phase variation $e^{-il\phi}$ for $l \neq 0$. Beams with $l\neq0$ have zero intensity on the beam axis ($\rho=0$) and possess a helical wavefront. This helical phase means these beams carry orbital angular momentum (OAM) of $l\hbar$ per photon. This OAM can impart a torque on microscopic objects, making Laguerre-Gaussian beams useful for optical tweezers, particle manipulation (rotation), and in quantum information. The following figure shows intensity profiles for some low-order Laguerre-Gaussian beams:
 
-![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/QE_script 2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/QE_script%202.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=124&rect=126,389,537,665| ]]
+![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/QE_script 2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/QE_script%202.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 The sign of $l$ determines the handedness (direction of rotation) of the helical phase front. The magnitude of $|l|$ indicates how many $2\pi$ phase twists occur around the circumference.
 
 ---
 ## 6.5 Bessel Beams
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=124&selection=45,0,47,12| ]] [[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=20&selection=0,12,0,12| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf)
 
 Yet another approach to finding beam solutions involves seeking beams that are "diffraction-free" or "non-diffracting," meaning their transverse intensity profile ideally does not change upon propagation. These are distinct from Gaussian beams, which inherently diverge. An ideal Bessel beam has a field profile of the form:
 $$
@@ -267,19 +267,19 @@ A(\rho, \phi)=A_m J_m(k_T \rho) e^{im \phi}.
 $$
 Here, $J_m(x)$ are Bessel functions of the first kind of order $m$. For the fundamental Bessel beam ($m=0$), $A(\rho) = A_0 J_0(k_T \rho)$, which is real (for real $A_0$) and cylindrically symmetric. The wavefronts $e^{-ik_z z}$ are planar. The transverse intensity profile $|J_0(k_T\rho)|^2$ consists of a central bright spot surrounded by concentric rings, and this profile ideally propagates indefinitely without spreading:
 
-![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/QE_script 3.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/QE_script%203.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=126&rect=72,567,532,688| ]]
+![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/QE_script 3.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/QE_script%203.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 Bessel beams are exact solutions to the full Helmholtz equation (not just the paraxial one, though they can also be paraxial if $k_T \ll k_z$). This non-diffracting property is remarkable. Such beams are also, for instance, solutions to the wave equation in an optical fibre (as guided modes).
 
 However, an ideal Bessel beam (extending infinitely in the transverse plane) carries infinite power, which is not physically realisable. In practice, Bessel beams can only be approximated over a finite transverse region and for a finite propagation distance. They can be generated experimentally using, for instance, an axicon lens, a conical lens that transforms an incident plane wave or Gaussian beam into an approximation of a Bessel beam over a certain range, or by using spatial light modulators (SLMs) to shape the wavefront.
 
-![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/03_Beams_and_resonators 3.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/03_Beams_and_resonators%203.webp)[[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=25&rect=173,163,610,415| ]]
+![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/03_Beams_and_resonators 3.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/03_Beams_and_resonators%203.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf)
 
 ---
 ## 6.6 Summary
 
 To summarise the transverse intensity profiles of these three (excluding the fundamental Gaussian beam, which is $TEM_{00}$ or $LG_{00}$) beam types:
 
-![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/03_Beams_and_resonators 2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/03_Beams_and_resonators%202.webp)[[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=27&rect=40,100,809,465| ]]
+![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/03_Beams_and_resonators 2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/03_Beams_and_resonators%202.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf)
 
 ---

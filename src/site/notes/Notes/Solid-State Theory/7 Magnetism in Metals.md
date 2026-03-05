@@ -7,13 +7,13 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 **Table of Contents**
 
-[[#7.1 Stoner Instability|7.1 Stoner Instability]]
-[[#7.2 General Spin Susceptibility and Magnetic Instabilities|7.2 General Spin Susceptibility and Magnetic Instabilities]]
-[[#7.3 Stoner Excitations|7.3 Stoner Excitations]]
+[[Notes/Solid-State Theory/7 Magnetism in Metals#7.1 Stoner Instability\|7.1 Stoner Instability]]
+[[Notes/Solid-State Theory/7 Magnetism in Metals#7.2 General Spin Susceptibility and Magnetic Instabilities\|7.2 General Spin Susceptibility and Magnetic Instabilities]]
+[[Notes/Solid-State Theory/7 Magnetism in Metals#7.3 Stoner Excitations\|7.3 Stoner Excitations]]
 
 ---
 # 7 Magnetism in Metals
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=155&selection=2,0,2,19| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Magnetic ordering in metals can be viewed as an instability of the Fermi liquid state. We introduce this new phase of metals through the description of the Stoner ferromagnetism. The discussion of antiferromagnetism and spin density wave phases will be only brief in this chapter. In Stoner ferromagnets the magnetic moment is provided by the spin of itinerant electrons. Magnetism due to localised magnetic moments will be considered in the context of Mott insulators, which are the subject of the next chapter.
 Well-known examples of elemental ferromagnetic metals are iron (Fe), cobalt (Co), and nickel (Ni) belonging to the $3d$ transition metals, where the $3d$-orbital character is dominant for the conduction electrons at the Fermi energy. These orbitals are rather tightly bound to the atomic cores such that the electron mobility is reduced, enhancing the effect of interaction which is essential for the formation of a magnetic state. Other forms of magnetism, such as antiferromagnetism and the spin density wave state are found in the $3d$ transition metals Cr and Mn. Note, $4d$ and $5d$ transition metals within the same columns of the periodic system are not magnetic. Their $d$-orbitals are more extended, leading to a higher mobility of the electrons, such that the mutual interaction is insufficient to trigger magnetism. It is, however, possible to find ferromagnetism in $\mathrm{ZrZn}_{2}$ where zinc (Zn) may act as a spacer reducing the mobility of the $4d$-electrons of zirconium (Zr). The $4d$-elements Pd and Rh, and the $5d$-element Pt are, however, nearly ferromagnetic. Going further in the periodic table, the $4f$-orbitals appearing in the lanthanides are nearly localised and can lead to ferromagnetism, as illustrated by the elements going from Gd through Tm in the periodic system.
@@ -21,7 +21,7 @@ Magnetism appears through a phase transition, meaning that the metal is non-magn
 
 ---
 ## 7.1 Stoner Instability
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=156&selection=0,0,2,18| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 In the following section, we study the emergence of the metallic ferromagnetism originating from the Stoner mechanism. In close analogy to the first Hund's rule, the exchange interaction among the electrons plays a crucial role here. The alignment of the electronic spins in a favoured direction allows the system to reduce the energy contribution due to Coulomb repulsion. According to Landau's theory of Fermi liquids, the interaction between electrons renormalises the spin susceptibility $\chi_{0}$ to
 $$
@@ -154,7 +154,7 @@ m^{2}= \begin{cases}0, & a<1 \\ \frac{a-1}{|b|}, & a \geq 1\end{cases}
 $$
 With this, $a=1$ corresponds to a critical value.
 
-![Attachments/Script 69.webp|700](/img/user/Attachments/Script%2069.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=158&rect=122,189,470,341| ]]
+![Attachments/Script 69.webp|700](/img/user/Attachments/Script%2069.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Here, this condition corresponds to
 $$
@@ -182,15 +182,15 @@ m(U)=\frac{1}{\Lambda_{2}\left(\epsilon_{F}\right)}\left(\frac{2}{U N(\epsilon_F
 $$
 for $U>U_{c}$ and $m=0$ for $U<U_{c}$. The density of states as an internal parameter can, for example, be changed by applying a pressure. By reducing the lattice constant, pressure may facilitate the motion of the conduction electrons and increase the Fermi velocity. Consequently, the density of states is reduced:
 
-![Attachments/Script 70.webp|700](/img/user/Attachments/Script%2070.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=159&rect=120,253,466,397| ]]
+![Attachments/Script 70.webp|700](/img/user/Attachments/Script%2070.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Indeed, pressure is able to destroy ferromagnetism in weakly ferromagnetic materials as $\mathrm{ZrZn_2}$, $\mathrm{MnSi}$, and $\mathrm{UGe_2}$. In other materials, the Curie temperature is high enough, such that the technologically applicable pressure is insufficient to suppress magnetism. It is, however, possible, that pressure leads to other transitions, such as structural phase transitions, that eventually destroy magnetism. This is seen in iron (Fe), where a pressure of about $12\,\mathrm{GPa}$ induces a transition from magnetic iron with body-centred crystal (bcc) structure to a nonmagnetic, hexagonal close packed (hcp) structure:
 
-![Attachments/Script 71.webp|700](/img/user/Attachments/Script%2071.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=160&rect=101,601,485,750| ]]
+![Attachments/Script 71.webp|700](/img/user/Attachments/Script%2071.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 While this structural transition is a quantum phase transition as well, it appears as a discontinuous, first order transition. Note that the Stoner instability is a simplification of the quantum phase transition. In most cases, a discontinuous phase transition originates in the band structure or in fluctuation effects, which were ignored here. In some cases, pressure can also induce an increase in $N\left(\epsilon_{F}\right)$, for example in metals with multiple bands, where compression leads to a redistribution of charge. One example is the ruthenate $\mathrm{Sr}_{3} \mathrm{Ru}_{2} \mathrm{O}_{7}$ for which uniaxial pressure along the $z$-axis leads to magnetism. Finally, let us turn to the question, why Cu, being a direct neighbour of Ni in the $3d$-row of the periodic table, is not ferromagnetic, even though both elemental metals share the same fcc crystal structure. The answer is given by the Stoner criterion $U N\left(\epsilon_{F}\right)=2$. While the conduction electrons at the Fermi level of Ni have $3d$-character and belong to a narrow band with a large density of states, the Fermi energy of Cu is situated in the broad $4s$-band and constitutes a much smaller density of states:
 
-![Attachments/Script 72.webp|700](/img/user/Attachments/Script%2072.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=160&rect=189,260,403,430| ]]
+![Attachments/Script 72.webp|700](/img/user/Attachments/Script%2072.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 With this, the Cu conduction electrons are much less localised and feature a weaker tendency towards ferromagnetic order.
 
@@ -246,7 +246,7 @@ corresponding to the form found in the Landau Fermi liquid theory with $F_{0}^{a
 
 ---
 ## 7.2 General Spin Susceptibility and Magnetic Instabilities
- [[Courses/2. Semester/Solid State Theory/Script.pdf#page=161&selection=600,0,602,54| ]]
+ [ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 The ferromagnetic state is characterised by a uniform magnetisation. There are, however, magnetically ordered states which do not feature a non-zero net magnetisation but specially modulated magnetic moments. Examples are spin density wave (SDW) states, antiferromagnets and spin spiral states. In this section, we analyse general instability conditions for metallic systems towards some magnetic ordering.
 
@@ -465,7 +465,7 @@ R_{0}=\frac{\overline{\chi_{0}(\mathbf{q})}}{\chi_{0}(\mathbf{q}=0)}=\ln \left(\
 $$
 with $\eta=\epsilon_{F} / D$ where $-D<\epsilon_{F}<+D$. For both small and large band fillings ($\epsilon_{F}$ close to the band edges), the tendency towards ferromagnetism dominates, whereas when $\epsilon_{F}$ lies in the centre of the band, the susceptibility $\chi_{0}(\mathbf{q})$ is not maximal at $\mathbf{q}=0$ anymore, and magnetic ordering with a well-defined finite $\mathbf{q}=\mathbf{Q}$ becomes more probable.
 
-![Attachments/Script 73.webp|700](/img/user/Attachments/Script%2073.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=165&rect=191,597,399,756| ]]
+![Attachments/Script 73.webp|700](/img/user/Attachments/Script%2073.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 ---
 ### 7.2.3 Influence of the Band Structure
@@ -525,7 +525,7 @@ $$
 $$
 with $\delta \rho \ll \rho_{0}$. The spin density states frequently appear in low-dimensional systems like organic conductors, or in transition metals such as chromium (Cr) for example. In all cases, nesting plays an important role:
 
-![Attachments/Script 74.webp|700](/img/user/Attachments/Script%2074.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=167&rect=113,507,483,638| ]]
+![Attachments/Script 74.webp|700](/img/user/Attachments/Script%2074.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 In quasi-one-dimensional electron systems, a main direction of motion dominates over two other directions with weak dispersion. In this case, the nesting condition is very probable to be fulfilled, as it is schematically shown in the centre panel of the figure above. Chromium is a three-dimensional metal, where nesting occurs between an electron-like Fermi surface around the $\Gamma$-point and a hole-like Fermi surface at the Brillouin zone boundary ($H$-point). These Fermi surfaces originate in different bands (right panel in the figure shown above). Chromium has a body-centred cubic crystal structure, where the $H$-point at $(\pi/a, 0,0)$ leads to the nesting vector $\mathbf{Q}_{x} \|(1,0,0)$ and equivalent vectors in $y$- and $z$-direction, which are incommensurable with the lattice.
 
@@ -539,7 +539,7 @@ where $a$ is the lattice constant and $t$ the hopping term. Because of half fill
 
 ---
 ## 7.3 Stoner Excitations
-[[Courses/2. Semester/Solid State Theory/Script.pdf#page=167&selection=230,0,232,18| ]]
+[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 In this last section, we discuss the elementary excitations of the ferromagnetic ground state with $n_{\uparrow}>n_{\downarrow}$, including both particle-hole excitations and collective modes. For this purpose we use the Stoner model Hamiltonian, introduced earlier, which we write here entirely in momentum space operators,
 $$
@@ -571,7 +571,7 @@ $$
 
 We have to ensure that an electron with $(\mathbf{k}, \uparrow)$ is available to be removed, and that the state $(\mathbf{k}+\mathbf{q}, \downarrow)$ is unoccupied. The independent electron-hole part of the spectrum constitutes a continuum of excitations and is depicted by the shaded region:
 
-![Attachments/Script 75.webp|700](/img/user/Attachments/Script%2075.webp)[[Courses/2. Semester/Solid State Theory/Script.pdf#page=170&rect=186,390,407,548| ]]
+![Attachments/Script 75.webp|700](/img/user/Attachments/Script%2075.webp)[ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
 Note that the spin splitting of the spectrum opens a window in the low-energy low-momentum transfer sector of the excitations.
 The excitation energy of $\left|\psi_{\mathbf{q}}\right\rangle$ can be obtained by solving the following Schrödinger equation

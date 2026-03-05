@@ -6,7 +6,7 @@ Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter se
 
 ---
 # 4 Conclusion and Outlook
- [[Master Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf#page=66&selection=4,0,4,22| ]]
+ [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
  
 In this project, a mode-locked thin-disk laser was successfully designed, built, and characterised. The laser achieved an average output power of $60 \text{ W}$, a pulse duration of $1030 \text{ fs}$, and a repetition rate of $19.7 \text{ MHz}$. Mode-locking was accomplished using a sapphire-bonded SESAM. The chosen repetition frequency enables measurements up to a few $\text{MHz}$ without interference from the fundamental repetition frequency peak while maintaining high peak powers needed for strong spectral broadening.
 

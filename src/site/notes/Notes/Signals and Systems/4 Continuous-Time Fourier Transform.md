@@ -7,15 +7,15 @@ Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents
 ---
 **Table of Contents**
 
-[[#4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform|4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform]]
-[[#4.2 Convergence of Fourier Transforms|4.2 Convergence of Fourier Transforms]]
-[[#4.3 Properties of the Continuous-Time Fourier Transform|4.3 Properties of the Continuous-Time Fourier Transform]]
-[[#4.4 Basic Fourier Transform Pairs|4.4 Basic Fourier Transform Pairs]]
-[[#4.5 Systems Characterised by Linear Constant-Coefficient Differential Equations|4.5 Systems Characterised by Linear Constant-Coefficient Differential Equations]]
+[[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform\|4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform]]
+[[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.2 Convergence of Fourier Transforms\|4.2 Convergence of Fourier Transforms]]
+[[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.3 Properties of the Continuous-Time Fourier Transform\|4.3 Properties of the Continuous-Time Fourier Transform]]
+[[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.4 Basic Fourier Transform Pairs\|4.4 Basic Fourier Transform Pairs]]
+[[Notes/Signals and Systems/4 Continuous-Time Fourier Transform#4.5 Systems Characterised by Linear Constant-Coefficient Differential Equations\|4.5 Systems Characterised by Linear Constant-Coefficient Differential Equations]]
 
 ---
 # 4 Continuous-Time Fourier Transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=315&selection=2,0,8,9| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 A large class of signals, including all signals with finite energy, can be represented as a linear combination (or more generally, an integral) of complex exponentials. For periodic signals, as discussed in [[Notes/Signals and Systems/3 Fourier Series Representation of Periodic Signals\|Chapter 3]], these complex exponential building blocks are harmonically related, leading to a discrete sum in the Fourier series representation. For aperiodic signals, the constituent frequencies are infinitesimally close, and the representation takes the form of an integral rather than a sum. The resulting continuous spectrum of complex amplitudes is called the **Fourier transform**, and the synthesis integral used to reconstruct the signal from its spectrum is called the **inverse Fourier transform**.
 
@@ -23,7 +23,7 @@ The Fourier transform was one of Joseph Fourier's most significant contributions
 
 ---
 ## 4.1 Representation of Aperiodic Signals: The Continuous-Time Fourier Transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=316&selection=38,0,52,9| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 ### 4.1.1 Example: From Periodic Square Wave to Aperiodic Rectangular Pulse
 Consider a periodic square wave $x_T(t)$ with period $T$, defined over one period as:
@@ -40,7 +40,7 @@ As $T \to \infty$, the periodic square wave $\tilde{x}(t)$ approaches a single, 
 ### 4.1.2 Derivation
 For a general aperiodic signal $x(t)$ (assumed to be of finite duration for this heuristic derivation, or otherwise satisfying convergence conditions), we can construct a periodic signal $\tilde{x}(t)$ by repeating $x(t)$ with a period $T$, such that $x(t)$ is one period of $\tilde{x}(t)$.
 
-![Attachments/Oppenheim,Willsky_Signals and Systems 19.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2019.webp)[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=318&rect=120,433,420,596| ]]
+![Attachments/Oppenheim,Willsky_Signals and Systems 19.webp|700](/img/user/Attachments/Oppenheim,Willsky_Signals%20and%20Systems%2019.webp)[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 As $T \to \infty$, $\tilde{x}(t)$ becomes identical to $x(t)$ for all $t$. The Fourier series representation of $\tilde{x}(t)$ is:
 $$
@@ -70,7 +70,7 @@ Here, $X(i\omega)$ is called the **Fourier transform**, **spectrum**, or **spect
 
 ---
 ## 4.2 Convergence of Fourier Transforms
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=320&selection=148,0,154,18| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 Although the heuristic derivation assumed $x(t)$ has finite duration, the CTFT pair applies to a broader class of signals, including many of infinite duration. The existence and convergence of the Fourier transform integral $X(i\omega)$ and the inverse transform integral (reconstructing $x(t)$) depend on the properties of $x(t)$. Let $\hat{x}(t)$ be the signal reconstructed by the inverse transform:
 $$
@@ -95,7 +95,7 @@ Periodic signals, which are generally neither absolutely integrable nor square i
 
 ---
 ## 4.3 Properties of the Continuous-Time Fourier Transform
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=359&selection=16,0,34,5| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 If $x(t) \stackrel{FT}{\longleftrightarrow} X(i\omega)$ and $y(t) \stackrel{FT}{\longleftrightarrow} Y(i\omega)$, several useful properties hold:
 
@@ -120,7 +120,7 @@ If $x(t) \stackrel{FT}{\longleftrightarrow} X(i\omega)$ and $y(t) \stackrel{FT}{
 
 ---
 ### Parseval's Relation
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=343&selection=12,0,16,8| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 If $x(t)$ and $X(i\omega)$ are a Fourier transform pair (using $i\omega$ or $j\omega$ interchangeably for notation), then Parseval's relation states:
 $$
@@ -150,7 +150,7 @@ The term on the left-hand side, $\int_{-\infty}^{\infty}|x(t)|^2 dt$, is the tot
 
 ---
 ## 4.4 Basic Fourier Transform Pairs
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=360&selection=30,0,36,5| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 | Signal $x(t)$                                       |                                  Fourier Transform $X(i\omega)$                                  | Fourier Series Coefficients $a_k$ (if $x(t)$ is periodic with period $T=2\pi/\omega_0$) |
 | :-------------------------------------------------- | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
@@ -171,7 +171,7 @@ Note: The specific Fourier Series coefficients for periodic signals depend on th
 
 ---
 ## 4.5 Systems Characterised by Linear Constant-Coefficient Differential Equations
-[[Reading/Books/Electrical Engineering and Signal Processing/Oppenheim,Willsky_Signals and Systems.pdf#page=361&selection=44,0,58,9| ]]
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 Continuous-time LTI systems are often described by linear constant-coefficient differential equations of the general form:
 $$

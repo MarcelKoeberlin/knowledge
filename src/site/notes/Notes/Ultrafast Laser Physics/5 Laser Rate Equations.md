@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/5-laser-rate-equations/","hide":"true","updated":"2025-06-08T18:14:54.089+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/5-laser-rate-equations/","hide":"true","updated":"2025-06-08T18:14:54.088+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
@@ -7,29 +7,29 @@ Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of 
 ---
 **Table of Contents**
 
-[[#5.1 Rate Equations for the Ideal Four-Level System|5.1 Rate Equations for the Ideal Four-Level System]]
-[[#5.2 Relaxation Oscillations|5.2 Relaxation Oscillations]]
+[[Notes/Ultrafast Laser Physics/5 Laser Rate Equations#5.1 Rate Equations for the Ideal Four-Level System\|5.1 Rate Equations for the Ideal Four-Level System]]
+[[Notes/Ultrafast Laser Physics/5 Laser Rate Equations#5.2 Relaxation Oscillations\|5.2 Relaxation Oscillations]]
 
 ---
 # 5 Laser Rate Equations and Relaxation Oscillations
-[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=203&selection=0,1,3,18| ]]
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 This chapter builds on the assumption that the reader is familiar with how [[Notes/2025 Quantum Electronics/8 Laser Fundamentals\|lasers]] operate. Most modern lasers are diode-pumped solid-state lasers, typically pumped by high-power semiconductor diode arrays or bars. Since the individual diodes in such an array are not mutually coupled, the spatial coherence of the emitted pump beam is limited. Nevertheless, they are significantly brighter than flashlamps. More importantly, their much narrower spectral emission allows them to be tuned directly into an absorption line of the solid-state gain medium. This results in more efficient pump absorption and reduced thermal loading, especially when the pump photon energy is close to the upper laser level energy. A primary advantage of diode-pumped solid-state lasers is their ability to convert low-cost, low-beam-quality optical power from high-power diode arrays into a near-diffraction-limited output beam with high efficiency.
 
 As the following figure illustrates, one can distinguish between longitudinally and transversally pumped schemes:
 
-![Attachments/UltraFastLasers_Keller 58.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2058.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=207&rect=162,454,388,609| ]]
+![Attachments/UltraFastLasers_Keller 58.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2058.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Longitudinal pumping generally offers superior pumping efficiency in the low-power regime because the pump volume can be well matched to the laser mode volume within the laser crystal. For the laser crystal itself, a distinction is made by the type of lasing transition. Most often, [[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.3.3 Three-Level Laser Systems\|three-level]] and [[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.3.4 Four-Level System\|four-level]] systems are employed, as shown below:
 
-![Attachments/UltraFastLasers_Keller 59.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2059.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=207&rect=66,357,373,449| ]]
-![Attachments/UltraFastLasers_Keller 60.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2060.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=207&rect=139,242,285,345| ]]
+![Attachments/UltraFastLasers_Keller 59.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2059.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
+![Attachments/UltraFastLasers_Keller 60.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2060.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The four-level system represents an *ideal* case, although careful design can also yield excellent performance from a three-level laser. The following discussion will focus on the ideal four-level laser system, for which the three-level system requires some modification. This is not discussed further here but is treated in my other notes [[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.3.3 Three-Level Laser Systems\|here]].
 
 ---
 ## 5.1 Rate Equations for the Ideal Four-Level System
- [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=208&selection=6,0,8,44| ]]
+ [ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 We consider a [[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.2.2 Homogeneous vs Inhomogeneous Broadening\|homogeneously broadened]] laser medium within a [[Notes/2025 Quantum Electronics/7 Optical Resonators#7 Optical Resonators\|linear resonator]], which supports standing waves inside the cavity. The saturated gain coefficient is described by
 $$
@@ -111,7 +111,7 @@ N_{\mathrm{s}} \approx N_{\mathrm{th}}=\frac{\gamma_{\mathrm{c}}}{K}
 $$
 This behaviour is illustrated in the following figure:
 
-![Attachments/UltraFastLasers_Keller 61.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2061.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=211&rect=181,306,396,606| ]]
+![Attachments/UltraFastLasers_Keller 61.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2061.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 
 ### 5.1.2 Gain-Saturation
@@ -134,13 +134,13 @@ $$
 $$
 This relationship is shown in the following figure:
 
-![Attachments/UltraFastLasers_Keller 62.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2062.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=212&rect=114,448,320,614| ]]
+![Attachments/UltraFastLasers_Keller 62.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2062.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Above threshold, inversion clamping ensures that each additional absorbed pump photon is converted into a photon via stimulated emission. Consequently, the output power increases linearly with pump power.
 
 ---
 ## 5.2 Relaxation Oscillations
- [[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=215&selection=115,0,117,45| ]]
+ [ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 As before, we consider the ideal four-level system. If the laser is briefly disturbed from its steady state, the photon number and inversion will deviate from their equilibrium values. It then takes a characteristic time to return to steady state. We can analyse this by linearising the rate equations for small perturbations, $\delta n(t)$ and $\delta N(t)$, around the steady-state values:
 $$
@@ -226,7 +226,7 @@ f_{\text {relax }} \approx \frac{1}{2 \pi} \sqrt{\gamma_{\mathrm{L}} \gamma_{\ma
 $$
 Here, we defined the stimulated lifetime $\tau_{\text {stim }}=\tau_{\mathrm{L}} /(r-1)$. Relaxation oscillations can be measured with a fast photodiode and a microwave spectrum analyser, appearing as a peak in the laser's intensity noise spectrum.
 
-![Attachments/UltraFastLasers_Keller 63.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2063.webp)[[Reading/Books/Lasers and Nonlinear Optics/UltraFastLasers_Keller.pdf#page=219&rect=54,501,385,611| ]]
+![Attachments/UltraFastLasers_Keller 63.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2063.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The relaxation frequency increases with the pump power (since $r$ increases), and the strength of the relative intensity fluctuations decreases with increasing pump power, as
 $$

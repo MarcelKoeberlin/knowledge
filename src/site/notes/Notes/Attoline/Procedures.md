@@ -21,7 +21,7 @@ E8:
 - Gradually ramp up the Evo30 current to 17.9 V as the temperature decreases. It should equilibrate around $193$ K.
 - Pressure of chamber should not rise about $\text{9e-2}$ mbar
 - After the Element2 started up, open the shutter
-> [!Info] See [[#2 Modelocking and Element 2 Alignment]] if automatic startup fails.
+> [!Info] See [[Notes/Attoline/Procedures#2 Modelocking and Element 2 Alignment\|#2 Modelocking and Element 2 Alignment]] if automatic startup fails.
 
 - If the CEP stabilisation is used:
 	- check that the f-2f beating signal is around 104 MHz and at -30 dBm
@@ -105,7 +105,7 @@ E8:
 	- It is good to scan the sample first, so find samples, write down their position. Also write down when you think there is a hole instead of a sample. x
 - The counts disappear at the bottom of the sample holder, around z=35 mm.
 - Set the pump power to 1 mW and work yourself up if you see no signals...
-- If you have found your sample, do the [[#5.1 Spatial Overlap|spatial]] and [[#5.2 Temporal Overlap|temporal]] overlap.
+- If you have found your sample, do the [[Notes/Attoline/Procedures#5.1 Spatial Overlap\|spatial]] and [[Notes/Attoline/Procedures#5.2 Temporal Overlap\|temporal]] overlap.
 >[!WARNING]
 >Dont forget the 5V piezo!
 - Set the program to Newport such that 
@@ -143,7 +143,7 @@ E8:
 - Turn on pre-amp current
 - Turn on FASTcomtec sockets
 - Measure IR power and set with 1AB to roughly 1 mW
-- Overlap them [[#5.1 Spatial Overlap|spatially]] and [[#5.2 Temporal Overlap|temporally]]
+- Overlap them [[Notes/Attoline/Procedures#5.1 Spatial Overlap\|spatially]] and [[Notes/Attoline/Procedures#5.2 Temporal Overlap\|temporally]]
 - Open gas TOF at bottle
 - Open gas before and after manometer
 - Set manometer to 295
@@ -244,7 +244,7 @@ Doing a SPIDER can be useful when RABBITT measurement looks unexpected.
 - Within the chamber, loosen the bottom two screws with hand underneath (do not fully remove screws)
 - Swap the sample
 - Close the window with new copper ring and screws
-- [[#10.2 Purging (any) chamber|Purge]] the chamber
+- [[Notes/Attoline/Procedures#10.2 Purging (any) chamber\|Purge]] the chamber
 
 # 13 Changing TOF Nozzle for RABBITT
 - As reference, it is worth aligning the alignment laser first
@@ -292,7 +292,7 @@ Doing a SPIDER can be useful when RABBITT measurement looks unexpected.
 - On the thinkpad, set the exposure time to lower than $\left(\mathrm{PPAS}*0.97-8\right)$ms, since the readout is 8 ms. That means, for PPAS = 40, set the exposure time to lower 30.
 - Turn on the shutter controller, and set to remote and N.C. Press reset for good measure.
 - The time for each delay step is $\mathrm{time}=\mathrm{SPSS}\cdot\mathrm{SPDS}\cdot\mathrm{PPAS}\cdot2.$ In the raspberry terminal, you should see a trigger count go up (by two) every time the delay stage moves. 
-- Do the [[#5.2 Temporal Overlap|temporal]] and [[#5.1 Spatial Overlap|spatial]] overlap. 
+- Do the [[Notes/Attoline/Procedures#5.2 Temporal Overlap\|temporal]] and [[Notes/Attoline/Procedures#5.1 Spatial Overlap\|spatial]] overlap. 
 >[!Warning]
 >Dont forget the 5V piezo!
 

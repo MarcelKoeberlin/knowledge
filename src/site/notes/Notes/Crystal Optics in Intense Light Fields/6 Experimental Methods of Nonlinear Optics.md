@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/6-experimental-methods-of-nonlinear-optics/","hide":"true","updated":"2025-06-04T15:33:55.626+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/6-experimental-methods-of-nonlinear-optics/","hide":"true","updated":"2025-06-04T15:33:55.625+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -7,13 +7,13 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 **Table of Contents**
 
-[[#6.1 Lasers|6.1 Lasers]]
-[[#6.2 Frequency Tuning|6.2 Frequency Tuning]]
-[[#6.3 Phase-Sensitive SHG|6.3 Phase-Sensitive SHG]]
+[[Notes/Crystal Optics in Intense Light Fields/6 Experimental Methods of Nonlinear Optics#6.1 Lasers\|6.1 Lasers]]
+[[Notes/Crystal Optics in Intense Light Fields/6 Experimental Methods of Nonlinear Optics#6.2 Frequency Tuning\|6.2 Frequency Tuning]]
+[[Notes/Crystal Optics in Intense Light Fields/6 Experimental Methods of Nonlinear Optics#6.3 Phase-Sensitive SHG\|6.3 Phase-Sensitive SHG]]
 
 ---
 # 6 Experimental Methods of Nonlinear Optics
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Notes.pdf#page=56| ]] [[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=83&selection=0,0,1,6| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Notes.pdf) [ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 As already mentioned in the [[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics\|previous chapter]], observing nonlinear effects requires high intensity fields. This, in turn, requires high intensity light sources to compensate for the difference in the first and second order susceptibility $\chi^{(1)}$ and $\chi^{(2)},$ the respective susceptibility tensors in the Taylor expansion of $P_i(\omega).$ In the following, three light sources are compared regarding their intensity:
 
@@ -25,7 +25,7 @@ As already mentioned in the [[Notes/Crystal Optics in Intense Light Fields/5 Non
 
 ---
 ## 6.1 Lasers
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=83&selection=3,0,3,10| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 As becomes clear from the previous table, the laser is the clear winner for use in nonlinear effects. Additionally, it offers high [[Notes/2025 Quantum Electronics/4 Coherence and Interference#4.2 Coherence Function\|coherence]], a well-defined and narrow [[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.2.1 Transition Width\|spectral band]], as well as a well-defined [[Notes/2025 Quantum Electronics/8 Laser Fundamentals#8.1 Fundamental Light-Matter Interaction\|polarisation state]]. These are important and desirable properties when designing an experiment. Two common light sources used in nonlinear optics are neodymium-doped yttrium aluminium garnet lasers (Nd:YAG laser) or titanium-sapphire lasers (Ti:Sa laser). Some output parameters are presented in the next table:
 
@@ -36,7 +36,7 @@ As becomes clear from the previous table, the laser is the clear winner for use 
 
 ---
 ## 6.2 Frequency Tuning
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=84&selection=78,0,78,20| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 A laser initially only emits at its own characteristic, well-defined frequency governed by the lasing transition. However, for experimental purposes, it is often required for the frequency to be tunable to some degree. This can be done by exploiting nonlinear processes; commonly used methods include parametric conversion and harmonic generation.
 
@@ -68,7 +68,7 @@ Both methods combined may then be applied to the two laser systems introduced ab
 
 ---
 ## 6.3 Phase-Sensitive SHG
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=85&selection=25,0,25,23| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 In a standard SHG experiment, the signal is measured as an intensity (for example, via a photodiode), such that all phase information is lost:
 $$
@@ -91,7 +91,7 @@ $$
 $$
 The only reason the antiferromagnetic domains could be observed in $\mathrm{Cr_2O_3}$ using SHG is that this material intrinsically provides an i-type reference wave via the magnetic dipole (MD-SHG) contribution. Very often, however, no intrinsic reference is present, and a reference needs to be generated externally. By passing the fundamental beam through a quartz plate (or another suitable material) after it has passed through the sample, the fundamental wave generates an SHG reference wave. Interference then allows the extraction of phase as well as amplitude of the signal from the sample. The experiment is schematically depicted in the following figure:
 
-![Attachments/Script (Unofficial) 12.webp|700](/img/user/Attachments/Script%20(Unofficial)%2012.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=85&rect=117,656,414,762| ]]
+![Attachments/Script (Unofficial) 12.webp|700](/img/user/Attachments/Script%20(Unofficial)%2012.webp)[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 Such a setup requires the reference crystal (and the sample) to be transparent at both the fundamental and the harmonic frequency, and the reference crystal additionally has to have a high conversion efficiency. Optical quartz plates usually fulfil these requirements while being available at good quality.
 
@@ -105,7 +105,7 @@ I_{\mathrm{SHG}}^{\mathrm{min}}=0 \quad \text{ and } \quad I_{\mathrm{SHG}}^{\ma
 $$
 Usually, the phase is continuously adjusted by a Soleil-Babinet compensator. The alignment of the reference crystal is chosen such that the polarisation of the reference beam is orthogonal to the signal beam, and the Soleil-Babinet compensator is aligned such that these two polarisations coincide with its ordinary and extraordinary axes. The birefringence of the compensator then allows tuning of the relative phase. Finally, a linear polariser is used to adjust the relative amplitudes. By rotating the polariser, the projection of one amplitude onto the other is varied. The following figure shows the projection of the magnetic signal onto the reference signal. By adjusting the rotation of the polariser, the relative amplitude may be adjusted:
 
-![Attachments/Script (Unofficial) 13.webp|700](/img/user/Attachments/Script%20(Unofficial)%2013.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=86&rect=241,345,414,453| ]]
+![Attachments/Script (Unofficial) 13.webp|700](/img/user/Attachments/Script%20(Unofficial)%2013.webp)[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 As became clear, a phase-sensitive SHG measurement requires good interference. Therefore, divergence and propagation effects like beam broadening between the sample and reference crystal can lead to the loss of spatial coherence. Temporal coherence, indicated by the [[Notes/2025 Quantum Electronics/4 Coherence and Interference#4.3 Coherence Time and Coherence Length\|coherence time and length]], is related to the spectral width of the light. For a given spectral lineshape, the product of spectral width $\Delta f$ and coherence time $\tau_c$ is approximately constant. For instance, for a Gaussian spectrum, $\Delta f \cdot \tau_c \approx 0.441$ (using FWHM definitions).
 
@@ -129,7 +129,7 @@ C \begin{cases}=\alpha & \text{if } I_{\mathrm{sig}}=I_{\mathrm{ref}} \\ <\alpha
 $$
 However, loss in contrast is not only due to the loss of temporal coherence but also because the spatial overlap and wavefront matching of the sample and reference beams may not be perfect due to propagation effects. Achromatic beam imaging, as shown in the following figure, can help to overcome problems of spatial decoherence:
 
-![Attachments/Script (Unofficial) 14.webp|700](/img/user/Attachments/Script%20(Unofficial)%2014.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=89&rect=101,612,430,711| ]]
+![Attachments/Script (Unofficial) 14.webp|700](/img/user/Attachments/Script%20(Unofficial)%2014.webp)[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 Spatial decoherence due to effects like beam broadening can be mitigated by careful optical design, for instance using appropriate imaging optics like a spherical mirror. Temporal decoherence is minimised by using narrowband light sources with a correspondingly large coherence time.
 

@@ -7,13 +7,13 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 **Table of Contents**
 
-[[#4.1 Describing the Light Field|4.1 Describing the Light Field]]
-[[#4.2 Multipole Expansion of the Light Field|4.2 Multipole Expansion of the Light Field]]
-[[#4.3 Microscopic Approach to Magneto-Optics|4.3 Microscopic Approach to Magneto-Optics]]
+[[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction#4.1 Describing the Light Field\|4.1 Describing the Light Field]]
+[[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction#4.2 Multipole Expansion of the Light Field\|4.2 Multipole Expansion of the Light Field]]
+[[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction#4.3 Microscopic Approach to Magneto-Optics\|4.3 Microscopic Approach to Magneto-Optics]]
 
 ---
 # 4 Light Matter Interaction
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=53&selection=157,0,157,28| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 To investigate light-matter interaction rigorously, a quantum mechanical treatment is necessary. We describe an undisturbed physical system (such as an atom or a unit cell in a crystal) by a Hilbert space spanned by a set of mutually orthogonal eigenstates $|n\rangle$ of the unperturbed Hamiltonian $\hat{H}_0$. The energy eigenvalues are given by:
 $$
@@ -145,7 +145,7 @@ The effective "light fields" in this multipole interaction picture are $\mathbf{
 
 ---
 ## 4.3 Microscopic Approach to Magneto-Optics
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=57&selection=305,0,305,41| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 In [[Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics#3.1 Survey of Magneto-Optic Effects\|the earlier chapter]], we described magneto-optic effects using a classical harmonic oscillator model, which led to a dielectric tensor of the form:
 $$
@@ -192,7 +192,7 @@ The macroscopic polarisation $\mathbf{P}$ is related to $\mathbf{E}_{\text{macro
 Microscopically, $\mathbf{P}$ is related to the average induced dipole moment per unit volume, which depends on the atomic/molecular polarisability $\alpha_{\text{mol}}$ and the local field: $\mathbf{P}=N \alpha_{\text{mol}} \mathbf{E}_{\text{loc}}$.
 For a dense medium, particularly for a spherical or ellipsoidal sample in a uniform external field, or atoms in a cubic lattice site, the local field can be related to the macroscopic field by the Lorentz local field correction (for isotropic media or cubic symmetry):
 
-![Attachments/Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction/Script (Unofficial) 4.webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/4%20Light-Matter%20Interaction/Script%20(Unofficial)%204.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=60&rect=127,618,524,763| ]]
+![Attachments/Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction/Script (Unofficial) 4.webp|700](/img/user/Attachments/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/4%20Light-Matter%20Interaction/Script%20(Unofficial)%204.webp)[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 $$
 \mathbf{E}_{\text{loc}} = \mathbf{E}_{\text{macro}} + \frac{\mathbf{P}}{3\varepsilon_0}.
@@ -251,7 +251,7 @@ $$
 $$
 This lineshape is symmetric (dispersive-looking) around $\omega_{n0}$.
 
-![Attachments/Script (Unofficial) 2.webp|700](/img/user/Attachments/Script%20(Unofficial)%202.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=64&rect=156,666,316,760| ]]
+![Attachments/Script (Unofficial) 2.webp|700](/img/user/Attachments/Script%20(Unofficial)%202.webp)[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 **Paramagnetic type:** The ground state $|g\rangle$ is degenerate and split by the magnetic field. The populations of these split ground sub-levels, $\rho_{g\pm}^{(0)}$, become unequal due to thermal Boltzmann distribution, proportional to magnetisation $M(T)$. Transitions from these sub-levels to an excited state $|n\rangle$ (which may also be split) have different strengths for $\sigma_+$ and $\sigma_-$ light, or the same oscillator strength but different populations. If the excited state splitting is negligible compared to linewidth:
 $$
@@ -259,7 +259,7 @@ $$
 $$
 where $\varphi_A(\omega, \omega_{n0})$ is an absorptive-looking (antisymmetric if $\chi'$ is taken) lineshape function peaked near $\omega_{n0}$.
 
-![Attachments/Script (Unofficial) 3.webp|700](/img/user/Attachments/Script%20(Unofficial)%203.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=64&rect=334,667,490,758| ]]
+![Attachments/Script (Unofficial) 3.webp|700](/img/user/Attachments/Script%20(Unofficial)%203.webp)[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 Typically, paramagnetic rotation is larger than diamagnetic rotation, especially at low temperatures where $M(T)$ is large. The ratio scales as $\Phi_{F, \text{max}}^{(\text{dia})}/\Phi_{F, \text{max}}^{(\text{para})} \sim \Delta_n/\Gamma_{n0} \cdot (1/m(T))$, which is often less than 1.
 
@@ -267,7 +267,7 @@ Typically, paramagnetic rotation is larger than diamagnetic rotation, especially
 
 The energy levels $|n\rangle$ and transition frequencies $\omega_{ng}$ are determined by a hierarchy of interactions in an atom/ion within a crystal:
 
-![Attachments/Script (Unofficial) 4.webp|700](/img/user/Attachments/Script%20(Unofficial)%204.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=65&rect=67,633,471,765| ]]
+![Attachments/Script (Unofficial) 4.webp|700](/img/user/Attachments/Script%20(Unofficial)%204.webp)[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 - $\hat{H}_0$: Hamiltonian of the free ion (non-interacting electrons, central potential).
 - $\hat{H}_{\text{ee}}$: Electrostatic interactions between electrons (Coulomb repulsion, exchange interaction), leading to Russell-Saunders terms $^{2S+1}L$.

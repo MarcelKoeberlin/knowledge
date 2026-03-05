@@ -7,22 +7,22 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 **Table of Contents**
 
-[[#9.1 Poincaré Sphere and Stokes Vector|9.1 Poincaré Sphere and Stokes Vector]]
-[[#9.2 Jones Vector Formalism|9.2 Jones Vector Formalism]]
-[[#9.3 Anisotropic Materials|9.3 Anisotropic Materials]]
-[[#9.4 Optical Activity|9.4 Optical Activity]]
-[[#9.5 Magneto-Optics|9.5 Magneto-Optics]]
-[[#9.6 Electro-Optics|9.6 Electro-Optics]]
+[[Notes/2025 Quantum Electronics/9 Polarisation Optics#9.1 Poincaré Sphere and Stokes Vector\|9.1 Poincaré Sphere and Stokes Vector]]
+[[Notes/2025 Quantum Electronics/9 Polarisation Optics#9.2 Jones Vector Formalism\|9.2 Jones Vector Formalism]]
+[[Notes/2025 Quantum Electronics/9 Polarisation Optics#9.3 Anisotropic Materials\|9.3 Anisotropic Materials]]
+[[Notes/2025 Quantum Electronics/9 Polarisation Optics#9.4 Optical Activity\|9.4 Optical Activity]]
+[[Notes/2025 Quantum Electronics/9 Polarisation Optics#9.5 Magneto-Optics\|9.5 Magneto-Optics]]
+[[Notes/2025 Quantum Electronics/9 Polarisation Optics#9.6 Electro-Optics\|9.6 Electro-Optics]]
 
 ---
 # 9 Polarisation Optics
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=184&selection=1,0,1,19| ]] [[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=2&selection=0,0,0,65| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 As described [[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.7 Polarisation\|earlier]], a basic property of light is its polarisation. There are several different ways to describe the polarisation state of light. Here we will discuss three of the more common formalisms: the Poincaré sphere, the Stokes parameters, and the Jones vector formalism.
 
 ---
 ## 9.1 Poincaré Sphere and Stokes Vector
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=184&selection=3,0,7,13| ]] [[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=4&selection=0,28,0,28| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 Let us assume that we have a plane wave propagating in the $+z$ direction in free space. Using complex notation, the transverse electric field components $\mathcal{E}_x$ and $\mathcal{E}_y$ can be written at a specific point (say, $z=0$) as a function of time:
 $$
@@ -44,7 +44,7 @@ $$
 $$
 where $\phi = \phi_y - \phi_x$ is the relative phase difference. This is depicted in the following figure:
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/QE_script.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/QE_script.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=185&rect=151,260,451,540| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/QE_script.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/QE_script.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 The shape and orientation of this ellipse can be characterised by two angles: an orientation angle $\psi$ (the angle of the major axis of the ellipse with respect to the $x$-axis) and an ellipticity angle $\chi$ (where $\tan|\chi|$ is the ratio of the semi-minor to semi-major axes). These are given by:
 $$
@@ -56,9 +56,9 @@ $$
 $$
 The sign of $\chi$ indicates the handedness of the polarisation: positive $\chi$ for right-handed elliptical polarisation (clockwise rotation of $\mathbf{E}$ when looking towards the source, by one convention) and negative $\chi$ for left-handed. These two angles, $2\psi$ (longitude, ranging from $0$ to $2\pi$) and $2\chi$ (latitude, ranging from $-\pi/2$ to $\pi/2$), uniquely define a point on the surface of a sphere of unit radius, known as the **Poincaré sphere**. Each point on the sphere represents a distinct polarisation state.
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/QE_script 1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/QE_script%201.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=186&rect=119,541,478,701| ]]
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=7&rect=43,98,403,460| ]]
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%201.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=8&rect=33,112,440,453| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/QE_script 1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/QE_script%201.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%201.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 Linear polarisations lie on the equator of the Poincaré sphere ($2\chi=0$). Right-circular polarisation corresponds to the north pole ($2\chi=\pi/2$), and left-circular polarisation to the south pole ($2\chi=-\pi/2$). The Poincaré sphere describes only the polarisation state, not the overall intensity of the light.
 Another representation, which includes intensity information, is the set of **Stokes parameters**:
@@ -74,7 +74,7 @@ These parameters are not all independent. For fully polarised light, $S_0^2 = S_
 
 ---
 ## 9.2 Jones Vector Formalism
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=187&selection=99,0,101,22| ]] [[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=11&selection=0,39,0,39| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 Another powerful way to describe fully polarised light is using the Jones vector, a two-component complex vector representing the amplitudes and phases of the $x$ and $y$ components of the electric field:
 $$
@@ -114,16 +114,16 @@ $$
 where $\mathbf{R}(\theta) = \begin{pmatrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta \end{pmatrix}$ is the coordinate rotation matrix from lab to retarder frame (and $\mathbf{R}(-\theta)$ is its inverse, from retarder to lab frame).
 This transformation shows, for instance, that a half-wave plate with its fast axis at an angle $\theta$ to an incident linear polarisation will rotate that linear polarisation by an angle $2\theta$. Some more examples:
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%202.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=20&rect=23,128,599,444| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 2.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%202.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 **Generating arbitrary polarisation states**
 Using a sequence of wave plates, it is possible to transform any given input polarisation state into any desired output polarisation state. For instance, starting with linearly polarised light, an arbitrary polarisation state can be generated using a combination of a quarter-wave plate (QWP) and a half-wave plate (HWP), often followed by another QWP for full generality.
 A common setup is QWP($\theta_1$) - HWP($\theta_2$) - QWP($\theta_3$), where $\theta_i$ are the orientation angles of the fast axes.
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications-1.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=21&rect=18,138,435,470| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications-1.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 Figure illustrates how HWP rotates states on the equator, and QWP+HWP can move states off the equator.
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 1-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%201-1.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=21&rect=516,243,802,365| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 1-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%201-1.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 The Jones matrix for an element (like a QWP or HWP, whose standard matrix is $\mathbf{J}(0)$ when aligned with axes) rotated by an angle $\theta$ is $\mathbf{J}_{\text{element}}(\theta)=\mathbf{R}(-\theta) \mathbf{J}_{\text{element}}(0) \mathbf{R}(\theta)$. The final Jones matrix of the system is a product of three such matrices:
 $$
@@ -138,7 +138,7 @@ Since any SU(2) transformation corresponds to a rotation on the Poincaré sphere
 
 ---
 ## 9.3 Anisotropic Materials
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=189&selection=51,0,53,31| ]] [[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=26&selection=0,0,0,45| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 Thinking back to the [[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.4 Macroscopic Approximation\|assumptions]] made in [[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1 Electromagnetic Theory of Light\|chapter 1]], we will now relax one of them: the assumption of an isotropic material.
 
@@ -146,7 +146,7 @@ The isotropy assumption stated: $\mathbf{P}$ and $\mathbf{M}$ align with $\mathb
 
 Many real materials are not isotropic. This is true for any material that exhibits some form of structural order over scales comparable to or larger than molecular dimensions, such as single crystals or liquid crystals. In such anisotropic materials, the optical properties (like refractive index) depend on both the direction of light propagation and its polarisation state. Examples of isotropic materials include amorphous solids (like glass), gases, most liquids, and polycrystalline materials if the crystallites are randomly oriented and much smaller than the wavelength.
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 2-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%202-1.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=26&rect=124,149,721,369| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 2-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%202-1.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 On a macroscopic scale, isotropic media do not possess a directional dependence of their optical properties. Even cubic crystals, due to their high degree of symmetry, are optically isotropic.
 
@@ -179,7 +179,7 @@ The quantities $n_{x'} = \sqrt{\varepsilon_{x'}}$, $n_{y'} = \sqrt{\varepsilon_{
 
 For plane waves in non-magnetic, anisotropic media, the vectors $(\mathbf{D}, \mathbf{H}, \mathbf{k})$ form an orthogonal triad, and $(\mathbf{E}, \mathbf{H}, \mathbf{S})$ form another orthogonal triad. Crucially, $\mathbf{E}$ is not generally parallel to $\mathbf{D}$, and the Poynting vector $\mathbf{S}$ (direction of energy flow) is not generally parallel to the wavevector $\mathbf{k}$ (direction of phase propagation). The angle $\alpha$ between $\mathbf{S}$ and $\mathbf{k}$ is the walk-off angle.
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 4.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%204.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=31&rect=409,84,797,417| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 4.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%204.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 ### 9.3.1 Index Ellipsoid and Ellipse
 
@@ -189,7 +189,7 @@ $$
 $$
 where $n_x, n_y, n_z$ are the principal refractive indices.
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%205.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=34&rect=382,97,756,508| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%205.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 For a given direction of wave propagation $\mathbf{k}$, the allowed polarisations (directions of $\mathbf{D}$) and corresponding refractive indices can be found by considering the intersection of a plane normal to $\mathbf{k}$ (passing through the origin) with the index ellipsoid. This intersection is an ellipse (the "index ellipse"). The semi-axes of this index ellipse give the two allowed refractive indices for waves propagating along $\mathbf{k}$, and their directions correspond to the two allowed orthogonal directions of $\mathbf{D}$ for these eigenpolarisations (normal modes). These two waves propagate with different phase velocities $c/n_1'$ and $c/n_2'$, where $n_1'$ and $n_2'$ are the lengths of the semi-axes.
 
@@ -208,7 +208,7 @@ In a uniaxial crystal (with optic axis along $z$, so $n_x=n_y=n_o$ (ordinary ind
     $$
 For the e-wave, $\mathbf{E}$ is not generally parallel to $\mathbf{D}$, and $\mathbf{S}$ is not generally parallel to $\mathbf{k}$ (walk-off occurs).
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 6.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%206.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=39&rect=47,95,835,372| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 6.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%206.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 ### 9.3.2 Dispersion Relation
 
@@ -218,7 +218,7 @@ $$
 $$
 where $k_0 = \omega/c$. For non-trivial solutions, the determinant of this matrix must be zero. This condition defines a 3D surface in k-space for a given $\omega$, known as the normal surface or k-surface. It generally consists of two sheets, corresponding to the two allowed eigenpolarisations.
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/QE_script-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/QE_script-1.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=194&rect=111,533,490,673| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/QE_script-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/QE_script-1.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 For a uniaxial crystal with optic axis along $z$ ($n_x=n_y=n_o, n_z=n_e$), the determinant condition simplifies to:
 $$
@@ -237,49 +237,49 @@ The effective refractive index for the extraordinary wave whose wavevector $\mat
 The directions of $\mathbf{E}$, $\mathbf{D}$, $\mathbf{S}$, and $\mathbf{k}$ for ordinary and extraordinary waves are shown:
 
 ![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 7.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%207.webp)
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 8.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%208.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=43&rect=406,117,737,403| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 8.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%208.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 For the o-wave, $\mathbf{S} \parallel \mathbf{k}$. For the e-wave, $\mathbf{S}$ is generally not parallel to $\mathbf{k}$ (walk-off). $\mathbf{E}$ is tangential to the normal surface at point $\mathbf{k}/k_0$.
 
 Examples of uniaxial crystals are calcite ($n_e < n_o$, negative uniaxial) and quartz ($n_e > n_o$, positive uniaxial).
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 9.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%209.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=44&rect=84,227,719,438| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 9.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%209.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 ### 9.3.3 Refraction at Interfaces
 
 Birefringence (double refraction) occurs when an unpolarised or generally polarised light beam is incident obliquely on the surface of an anisotropic crystal. The incident wave generally splits into two refracted waves (o-wave and e-wave) that travel in different directions with different polarisations and speeds.
 
 ![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 10.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2010.webp)
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 11.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2011.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=45&rect=484,130,761,421| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 11.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2011.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 The directions of the refracted waves are determined by applying the boundary condition that the tangential component of $\mathbf{k}$ must be conserved across the interface, separately for the o-wave and e-wave using their respective k-surfaces.
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 14.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2014.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=47&rect=109,131,439,461| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 14.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2014.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 Figure showing that for a given incident $k_{\|}$, two $k$-vectors might satisfy the e-wave normal surface condition, but only one has energy flow (Poynting vector $\mathbf{S}$) directed into the second medium.
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 15.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2015.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=48&rect=119,152,425,463| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 15.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2015.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 Figure showing a scenario where s-polarised light might undergo TIR while p-polarised light (as an e-wave) is refracted, or vice-versa, used in polarisers.
 
 This effect is used in polarising beamsplitters like the Wollaston, Rochon, and Sénarmont prisms, which use birefringent crystals to spatially separate the two orthogonal polarisation components.
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 18.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2018.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=49&rect=79,216,740,419| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 18.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2018.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 The Nicol prism is another classic polariser based on birefringence and TIR in calcite.
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 19.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2019.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=50&rect=40,238,777,404| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 19.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2019.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 ### 9.3.4 Dichroism
 
 Dichroism is the property of some anisotropic materials to exhibit polarisation-dependent absorption. One polarisation component is absorbed much more strongly than the orthogonal component.
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 20.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2020.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=52&rect=135,139,742,481| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 20.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2020.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 This is used in dichroic sheet polarisers (like Polaroid film), which consist of aligned absorbing molecules or crystals that preferentially absorb light polarised along one direction.
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 21.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2021.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=53&rect=93,160,754,427| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 21.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2021.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 ---
 ## 9.4 Optical Activity
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=195&selection=191,0,193,16| ]] [[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=54&selection=0,0,0,16| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 Optical activity is the property of certain materials to rotate the plane of polarisation of linearly polarised light as it propagates through them. This occurs in materials that are chiral (lacking mirror symmetry in their molecular or crystal structure), such as quartz, sugar solutions, and some organic molecules.
 In these materials, the dielectric tensor $\boldsymbol{\varepsilon}_r$ is not symmetric ($\varepsilon_{jk} \neq \varepsilon_{kj}$); it possesses an antisymmetric part, or more generally, the material equations include terms coupling $\mathbf{E}$ to $\nabla \times \mathbf{E}$ (spatial dispersion of a particular kind). The normal modes of propagation in an optically active material are right-circularly polarised (RCP) and left-circularly polarised (LCP) light, which travel with different phase velocities (i.e., experience different refractive indices $n_+$ and $n_-$).
@@ -296,13 +296,13 @@ $$
 $$
 This is still linearly polarised light, but its plane of polarisation has been rotated by an angle $\Delta\theta = \frac{\pi d}{\lambda_0}(n_- - n_+)$. The direction of rotation depends on which circular component travels faster.
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 22.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2022.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=55&rect=144,102,677,389| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 22.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2022.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 Optical activity is a reciprocal effect: if light passes through the medium, is reflected by a mirror, and passes back through the medium, the rotation induced on the return trip cancels the initial rotation. The polarisation returns to its original state.
 
 ---
 ## 9.5 Magneto-Optics
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=198&selection=4,0,6,14| ]] [[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=58&selection=0,0,0,14| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 Magneto-optics deals with phenomena where the optical properties of a medium are altered by the presence of a quasi-static external magnetic field. This modification of optical properties is a form of nonlinear optics, though often treated within a linear response framework for the light fields once the magnetic field's influence on material parameters is established. A more in-depth discussion can be found in the [[Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics#3 Magneto-Optics\|crystal optics course]].
 
@@ -313,13 +313,13 @@ $$
 where $\mathcal{V}$ is the Verdet constant, a material- and wavelength-dependent parameter. Typical values for $\mathcal{V}$ are around $3 \times 10^{-4} \, \text{degrees} / (\text{Gauss} \cdot \text{cm})$ (or $\sim 0.03 \, \text{rad} / (\text{T} \cdot \text{m})$) at optical wavelengths for glasses.
 A key difference between the Faraday effect and natural optical activity is that the Faraday effect is non-reciprocal; it breaks time-reversal symmetry due to the axial nature of the magnetic field (which is a c-type tensor, odd under time reversal).
 
-![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 23.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2023.webp)[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=58&rect=409,93,810,484| ]]
+![Attachments/Notes/2025 Quantum Electronics/9 Polarisation Optics/05_Devices_and_applications 23.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/9%20Polarisation%20Optics/05_Devices_and_applications%2023.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
 
 If linearly polarised light passes through a Faraday rotator, its polarisation rotates by $\Delta\theta_F$. If it is then reflected and passes back through the rotator in the opposite direction, the magnetic field direction relative to the light's new propagation direction is unchanged (if $\mathbf{B}$ is fixed in space). Consequently, the rotation adds further, resulting in a total rotation of $2\Delta\theta_F$ relative to the input polarisation upon exiting. This non-reciprocal property is utilised in optical isolators (Faraday isolators), which allow light to pass in one direction but block or attenuate it in the reverse direction.
 
 ---
 ## 9.6 Electro-Optics
-[[Notes/2025 Quantum Electronics/05_Devices_and_applications.pdf#page=61&selection=0,0,0,14| ]] [[Notes/2025 Quantum Electronics/QE_script.pdf#page=198&selection=72,0,74,14| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 Electro-optics concerns the modification of a material's optical properties by an applied quasi-static or low-frequency external electric field $\mathbf{E}^{(0)}$.
 -   The **Pockels effect** (or linear electro-optic effect) describes a change in the refractive index (or, more generally, the impermeability tensor) that is linearly proportional to the applied electric field. It occurs only in non-centrosymmetric crystals.

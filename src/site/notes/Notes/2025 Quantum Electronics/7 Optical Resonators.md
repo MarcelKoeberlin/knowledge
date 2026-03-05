@@ -7,31 +7,31 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 **Table of Contents**
 
-[[#7.1 Spherical Mirror Resonator|7.1 Spherical Mirror Resonator]]
-[[#7.2 Resonance Frequencies|7.2 Resonance Frequencies]]
-[[#7.3 Resonator Losses|7.3 Resonator Losses]]
+[[Notes/2025 Quantum Electronics/7 Optical Resonators#7.1 Spherical Mirror Resonator\|7.1 Spherical Mirror Resonator]]
+[[Notes/2025 Quantum Electronics/7 Optical Resonators#7.2 Resonance Frequencies\|7.2 Resonance Frequencies]]
+[[Notes/2025 Quantum Electronics/7 Optical Resonators#7.3 Resonator Losses\|7.3 Resonator Losses]]
 
 ---
 # 7 Optical Resonators
-[[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=28&selection=0,0,0,29| ]] [[Notes/2025 Quantum Electronics/QE_script.pdf#page=129&selection=1,0,1,18| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 An optical resonator, or optical cavity, is a device designed to confine light, effectively storing electromagnetic energy within a defined volume for a certain duration. This is generally achieved by guiding the propagation of light along a path that self-reproduces after periodic round trips. One example of an optical resonator that we have already encountered is the [[Notes/2025 Quantum Electronics/4 Coherence and Interference#4.6 Fabry-Pérot Interferometer - Etalon\|Fabry-Pérot cavity]].
 
 Optical resonators only allow discrete frequencies of light to be sustained and stored within them; these specific frequencies correspond to the _longitudinal modes_ (or axial modes) of the resonator. Associated with these longitudinal modes are specific transverse intensity patterns, known as _transverse modes_. Most laser resonators are designed to support a specific fundamental transverse spatial beam shape, commonly a Gaussian beam:
 
-![Attachments/Notes/2025 Quantum Electronics/7 Optical Resonators/03_Beams_and_resonators 4.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/7%20Optical%20Resonators/03_Beams_and_resonators%204.webp)[[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=33&rect=119,115,736,440| ]]
+![Attachments/Notes/2025 Quantum Electronics/7 Optical Resonators/03_Beams_and_resonators 4.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/7%20Optical%20Resonators/03_Beams_and_resonators%204.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf)
 
 A very important concept is that of an _optical mode_, which, in broad terms, is a self-consistent electromagnetic field configuration that reproduces itself after one round trip within the resonator (apart from a possible constant phase shift and amplitude reduction due to losses). Modes are therefore eigensolutions of the wave equation subject to the boundary conditions imposed by the resonator geometry. In the following sections, we will mostly focus on linear cavities (formed by two mirrors). Ring resonators, which employ three or more mirrors to form a closed loop path, will also be mentioned, but their detailed treatment is more involved:
 
-![Attachments/Notes/2025 Quantum Electronics/7 Optical Resonators/03_Beams_and_resonators 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/7%20Optical%20Resonators/03_Beams_and_resonators%205.webp)[[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=34&rect=71,156,612,450| ]]
+![Attachments/Notes/2025 Quantum Electronics/7 Optical Resonators/03_Beams_and_resonators 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/7%20Optical%20Resonators/03_Beams_and_resonators%205.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf)
 
 ---
 ## 7.1 Spherical Mirror Resonator
-[[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=35&selection=0,0,0,27| ]] [[Notes/2025 Quantum Electronics/QE_script.pdf#page=133&selection=45,0,47,27| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 A spherical mirror resonator consists of two mirrors, both of which typically have spherically curved surfaces. As we will see later, this type of resonator generally offers much higher _stability_ against misalignment compared to planar-mirror resonators (which are a special case of spherical mirrors with infinite radius of curvature). The following figure shows an example of a spherical mirror resonator with two concave mirrors:
 
-![Attachments/Notes/2025 Quantum Electronics/7 Optical Resonators/QE_script 4.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/7%20Optical%20Resonators/QE_script%204.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=134&rect=161,559,449,685| ]]
+![Attachments/Notes/2025 Quantum Electronics/7 Optical Resonators/QE_script 4.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/7%20Optical%20Resonators/QE_script%204.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 In this context, "spherical" means that the mirror surface is a segment of a sphere with a radius of curvature $R$. The convention used here is that a positive $R$ denotes a concave mirror (curved towards the cavity interior), while a negative $R$ denotes a convex mirror. Some sources use the opposite sign convention, which is something one should always be aware of. We are interested in answering the question: "Under what conditions is the resonator stable?"
 
@@ -76,11 +76,11 @@ $$
 where $g_i = 1-d/R_i$ is the g-parameter for mirror $i$. Note that configurations where $g_1g_2=0$ or $g_1g_2=1$ are on the boundary of stability and are termed _conditionally stable_. In practice, these are difficult to achieve perfectly due to alignment tolerances and mirror imperfections. For instance, a Fabry-Pérot etalon with two perfectly plane mirrors ($R_1, R_2 \to \infty \implies g_1=g_2=1$) is conditionally stable; only an ideally collimated on-axis beam would be confined, which is unrealistic. Such cavities are less efficient at storing light over many round trips than truly stable cavities.
 The stability map shows regions of stability (blue) based on $g_1$ and $g_2$:
 
-![Attachments/Notes/2025 Quantum Electronics/7 Optical Resonators/QE_script 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/7%20Optical%20Resonators/QE_script%205.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=136&rect=131,381,471,691| ]]
+![Attachments/Notes/2025 Quantum Electronics/7 Optical Resonators/QE_script 5.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/7%20Optical%20Resonators/QE_script%205.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 The dashed diagonal red line indicates symmetric configurations where $R_1=R_2$ (so $g_1=g_2$). Some typical stable configurations for spherical resonators are shown below:
 
-![Attachments/Notes/2025 Quantum Electronics/7 Optical Resonators/QE_script 6.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/7%20Optical%20Resonators/QE_script%206.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=137&rect=79,602,530,693| ]]
+![Attachments/Notes/2025 Quantum Electronics/7 Optical Resonators/QE_script 6.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/7%20Optical%20Resonators/QE_script%206.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 A resonator is symmetric if $R_1=R_2$. A symmetric confocal resonator has $R_1=R_2=d$ (focal points of mirrors coincide at cavity centre). A symmetric concentric resonator has $R_1=R_2=d/2$ (centres of curvature coincide), which is conditionally stable ($g_1g_2=1$).
 
@@ -114,11 +114,11 @@ W_1=W_2=\sqrt{2} W_0 = \sqrt{\lambda_0 R / (\pi n)}.
 \end{gathered}
 $$
 
-![Attachments/Notes/2025 Quantum Electronics/7 Optical Resonators/QE_script 7.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/7%20Optical%20Resonators/QE_script%207.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=140&rect=105,517,503,680| ]]
+![Attachments/Notes/2025 Quantum Electronics/7 Optical Resonators/QE_script 7.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/7%20Optical%20Resonators/QE_script%207.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 ---
 ## 7.2 Resonance Frequencies
-[[Notes/2025 Quantum Electronics/QE_script.pdf#page=140&selection=47,0,49,21| ]] [[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=57&selection=0,0,0,41| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf)
 
 So far, we have considered the condition that the spatial envelope $A(\mathbf{r})$ of a Gaussian beam must be self-replicating after one round trip. This extends to the full electric field, including its rapidly oscillating phase. Recall the phase of a Gaussian beam (propagating along $z$, waist at $z_w=0$) is $\phi(x,y,z) = kz - \zeta(z) + k(x^2+y^2)/(2R(z))$, where $\zeta(z) = \arctan(z/z_R)$ is the Gouy phase.
 For a self-consistent mode, the total phase change accumulated by the beam over one complete round trip must be an integer multiple of $2\pi$.
@@ -142,7 +142,7 @@ The free spectral range (FSR) for longitudinal modes ($l,m$ fixed) is $f_F = c/(
 
 ---
 ## 7.3 Resonator Losses
-[[Notes/2025 Quantum Electronics/03_Beams_and_resonators.pdf#page=62&selection=0,0,0,18| ]] [[Notes/2025 Quantum Electronics/QE_script.pdf#page=141&selection=110,0,112,14| ]]
+[ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 Up until now, we have treated resonators as perfect, implying, for instance, that mirrors have 100% reflectivity and there are no diffraction losses. In reality, losses are always present. Imperfect reflectivity is often the dominant loss mechanism and is, in fact, desired for one mirror to act as an output coupler. Losses broaden the resonance lines.
 
@@ -168,7 +168,7 @@ $$
 $$
 The next figure shows the normalised intensity spectrum of an optical resonator:
 
-![Attachments/Notes/2025 Quantum Electronics/7 Optical Resonators/QE_script 4-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/7%20Optical%20Resonators/QE_script%204-1.webp)[[Notes/2025 Quantum Electronics/QE_script.pdf#page=143&rect=91,438,509,675| ]]
+![Attachments/Notes/2025 Quantum Electronics/7 Optical Resonators/QE_script 4-1.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/7%20Optical%20Resonators/QE_script%204-1.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 The finesse $\mathcal{F}$ controls the sharpness (linewidth) of the resonance peaks. Higher reflectivity $r_{\text{RT}}$ (lower loss) leads to higher finesse and sharper peaks. The Full Width at Half Maximum (FWHM) linewidth $\delta f$ of each resonance is related to the free spectral range $f_F$ and the finesse by:
 $$

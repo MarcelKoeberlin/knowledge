@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2025-06-04T15:33:55.611+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2025-06-04T15:33:55.610+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -7,13 +7,13 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 **Table of Contents**
 
-[[#2.1 Jones Vector Formalism|2.1 Jones Vector Formalism]]
-[[#2.2 Dispersion of Light in Matter|2.2 Dispersion of Light in Matter]]
-[[#2.3 Classes of Electronic Transitions|2.3 Classes of Electronic Transitions]]
+[[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion#2.1 Jones Vector Formalism\|2.1 Jones Vector Formalism]]
+[[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion#2.2 Dispersion of Light in Matter\|2.2 Dispersion of Light in Matter]]
+[[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion#2.3 Classes of Electronic Transitions\|2.3 Classes of Electronic Transitions]]
 
 ---
 # 2 Light Polarisation and Dispersion
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=19&selection=0,20,0,20| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 Light is an electromagnetic wave. Unlike sound waves, which are longitudinal, light is a transverse wave. This means that the direction of the electric (and magnetic) field oscillation is perpendicular to the direction of propagation (the wavevector $\mathbf{k}$). This is covered in more detail in my notes on [[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1 Electromagnetic Theory of Light\|quantum electronics]]. We start by considering the simplest electromagnetic wave, the plane wave, described by its electric field:
 $$
@@ -32,7 +32,7 @@ where $a_x, a_y$ are real amplitudes and $\phi_x, \phi_y$ are initial phases. Th
 
 ---
 ## 2.1 Jones Vector Formalism
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=19&selection=51,0,51,26| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 In the Jones vector formalism, the polarisation state of a completely polarised light wave is described by a two-component complex vector, the Jones vector $\mathbf{J}$. Using the complex amplitudes of the $x$ and $y$ components of the electric field:
 $$
@@ -92,7 +92,7 @@ A key property of a half-wave plate is that if the input is linearly polarised a
 
 ---
 ## 2.2 Dispersion of Light in Matter
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=35&selection=33,0,33,14| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 We now slightly shift the topic to the dispersion of light in matter. The amplitude and phase response of an electromagnetic wave interacting with a material is generally a function of wavelength or frequency. We will treat a crystal lattice (or more generally, a dielectric material) as a collection of bound charges that can be modelled as harmonic oscillators. This is the **Lorentz model**. For more details on this approach, see [[Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media#2.1 Origin of Dispersion\|this chapter]]. These charge oscillations lead to a macroscopic polarisation $\mathbf{P}(\omega)$. The driving force in the following model is the electric field $\mathbf{E}$ of the light wave:
 $$
@@ -124,14 +124,14 @@ Here, $\omega_0$ is the transverse resonance frequency ($\omega_{TO}$ or $\omega
 
 The dispersion relation $k(\omega) = \omega\sqrt{\varepsilon_r(\omega)}/c$ exhibits characteristic features due to this resonant dielectric function:
 
-![Attachments/Script (Unofficial) 1.webp|700](/img/user/Attachments/Script%20(Unofficial)%201.webp)[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=37&rect=272,394,433,649| ]]
+![Attachments/Script (Unofficial) 1.webp|700](/img/user/Attachments/Script%20(Unofficial)%201.webp)[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 Figure shows uncoupled photon dispersion $k=\omega\sqrt{\varepsilon_\infty}/c$ and $k=\omega\sqrt{\varepsilon_s}/c$ as dashed lines, the transverse oscillator resonance at $\omega_\perp=\omega_0$, and the longitudinal mode at $\omega_\parallel=\omega_L$. The solid red curves are the upper and lower polariton branches.
 
 When light interacts with such resonant matter, it induces a polarisation which couples to the electromagnetic wave. This coupled excitation of light and matter (such as an optical phonon or exciton) is called a **polariton**. In the figure, the horizontal line at $\omega_\parallel$ represents a purely longitudinal excitation (where $\varepsilon_r=0$), while the resonance at $\omega_\perp=\omega_0$ is for a transverse excitation. The interaction (coupling) leads to an avoided crossing behaviour, forming the upper and lower polariton branches.
 
 ---
 ## 2.3 Classes of Electronic Transitions
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Script (Unofficial).pdf#page=38&selection=2,0,2,39| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
 To understand the origin of different $\omega_{0,j}$ and oscillator strengths in the dielectric function of materials, we consider three major classes of electronic transitions relevant for crystal optics. These excitations lead to characteristic features in the optical spectra:
 - In **ionic crystals** (like NaCl) or covalent **semiconductors** (like Si, GaAs) with occupied valence (often p-like) and empty conduction (often s-like) bands, charge excitations correspond to interband transitions. These typically occur at energies of $1-10 \, \text{eV}$. These crystals have extended electronic wave functions (Bloch states), and the crystal field (periodic potential) determines the band structure. For example, in ZnO, transitions like $\mathrm{O}^{2-}(2\text{p}) \rightarrow \mathrm{Zn}^{2+}(4\text{s})$ contribute to the optical response.

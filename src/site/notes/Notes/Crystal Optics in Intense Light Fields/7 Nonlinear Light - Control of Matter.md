@@ -9,7 +9,7 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 
 ---
 # 7 Nonlinear Light - Control of Matter
-[[Notes/Crystal Optics in Intense Light Fields/PDFs/Lecture1_Horstmann.pdf#page=1| ]]
+[ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Lecture1_Horstmann.pdf)
 
 So far, we have harnessed nonlinear light-matter interaction as probes of electronic, lattice and magnetic structure. Next, we will discuss how nonlinear light-matter interaction can be used to control the lattice and electronic structure. When we say 'matter', what we mean in this context are the electronic and vibrational states of the material that we are interested in. This modifies the properties of light, defined through its frequency, amplitude and phase and so on. Then, the light itself controls the properties of the matter again. We will discuss two cases, the first being the optical control of vibronic states ([[Impulse stimulated Raman scattering\|Impulse stimulated Raman scattering]]), and optical control of electronic states ([[Floquet engineering\|Floquet engineering]]).  
 
