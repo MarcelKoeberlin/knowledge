@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/photography/travels/2025-07-atto-x-conference-in-lund/","hide":"true","updated":"2025-07-13T20:13:07.631+02:00"}
+{"dg-publish":true,"permalink":"/photography/travels/2025-07-atto-x-conference-in-lund/","hide":"true","updated":"2026-03-08T19:35:34.018+01:00"}
 ---
 
-Jump back to [[Photography/Hikes/Hikes and Travels\|selection]].
+Jump back to [[Photography/Photography\|selection]].
 
 ---
 # 2025-07 Atto X Conference in Lund

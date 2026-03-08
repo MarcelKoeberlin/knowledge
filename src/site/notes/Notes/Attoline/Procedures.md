@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"procedures","permalink":"/procedures/","hide":"true","hideInGraph":"true","updated":"2026-03-05T16:05:12.194+01:00"}
+{"dg-publish":true,"dg-path":"procedures","permalink":"/procedures/","hide":"true","hideInGraph":"true","updated":"2026-03-05T16:12:33.201+01:00"}
 ---
 
 **Table of Contents**
@@ -246,7 +246,7 @@ Overlap is performed without filters and without gas by comparing both red pulse
 5. Adjust the wedge at the most responsive position until modelocking is achieved.
 6. Adjusting FWHM: Deeper wedge insertion results in a narrower spectrum/smaller FWHM.
 7. Re-adjust the output coupler and end mirror if the wedge is moved significantly (the x-axis is highly sensitive).
-8. Press 'state 2' in the Element2 software to stabilise power at **630 mW**.
+8. Press 'state 2' in the Element2 software to stabilise p[[]]ower at **630 mW**.
 
 ### 9.3 High-Harmonic Generation
 1. Insert beam blocks 1 and 2.
