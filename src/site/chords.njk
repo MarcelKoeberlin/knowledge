@@ -1,3 +1,6 @@
+---
+permalink: "/chords/index.html"
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +11,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <style>
+        .home-button {
+            text-decoration: none; position: fixed; top: 15px; left: 20px; z-index: 100;
+            color: #c0caf5; display: flex; align-items: center; cursor: pointer;
+        }
+        .home-button h1 {
+        margin: 0;
+        font-size: 1.5em;
+        font-weight: 700;
+        font-size: inherit;
+        font: initial;
+        background: linear-gradient(to right, #ff3c00, #ff8f00);
+            background-clip: border-box;
+        background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(0,0,0,0);
+        position-area: start;
+        }
+        .home-button h1::before {
+            content: " ";
+            display: inline-block;
+            width: 1em;
+            height: 1.2em;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(/img/logo.svg);
+            background-position: bottom;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
         :root {
-            --chord-text-colour: #ff3c00;
+            --chord-text-colour: #ff8f00;
             --white-key-bg: #CAE5FF;
             --black-key-bg: #12355B;
             --pressed-white-bg: #ff00cb;
             --pressed-black-bg: #4b9aff;
-            --out-of-scale-opacity: 0.3;
             --fretboard-bg: #2e221b;
             --fret-wire-colour: #565f89;
             --string-colour: #a9b1d6;
@@ -26,43 +59,63 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
-            min-height: 100vh;
-            /* Added subtle background gradient */
+            justify-content: center;
+            height: 100vh;
             background: linear-gradient(to bottom right, var(--bg-colour), #24283b);
             background-attachment: fixed;
             color: #c0caf5;
             margin: 0;
-            padding-top: 5vh;
+            padding: 0;
             box-sizing: border-box;
-            overflow-x: hidden;
+            overflow: hidden;
         }
 
-        #status {color: #CAE5FF; }
+        #status {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #CAE5FF;
+        }
 
         #chord-display {
             font-family: 'Kinnari', 'Karla', sans-serif;
-            font-size: 60pt;
-            font-weight: bold;
-            font-style: italic;
+            font-size: clamp(3rem, 10vw, 15vh);
+            font-weight: normal;
             text-align: center;
-            /* Fancy blaze orange gradient */
-            background: linear-gradient(to bottom right, var(--chord-text-colour), #ff8f00);
+            
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            filter: drop-shadow(0.2em 0.2em 0.4em rgba(0,0,0,0.5));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chord-gradient-text {
+            background: linear-gradient(to bottom right, var(--chord-text-colour), var(--pressed-white-bg));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            color: transparent; 
+            color: transparent;
         }
 
         /* Shared Wrapper for scrolling */
         .instrument-wrapper {
-            width: 100%;
-            max-width: 100vw;
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            width: calc(100vw - 10px);
+            max-width: none;
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
             display: flex;
             flex-direction: column;
             align-items: center;
+            max-height: 70%
         }
 
         /* --- Trails Canvas --- */
@@ -71,14 +124,14 @@
             margin: 0 auto;
             background: transparent;
             width: 100%;  
-            height: auto
+            /* height: auto;  removed to let script enforce height if needed, but it works without it */
         }
 
         /* --- Piano Styling --- */
         #piano {
             position: relative;
             display: flex;
-            height: 150px;
+            height: clamp(100px, 20vh, 20vh); /* Limit to 20% height max */
             width: 100%; /* Forces full width span */
             margin: 0 auto;
         }
@@ -88,7 +141,7 @@
             display: flex;
             align-items: flex-end;
             justify-content: center;
-            padding-bottom: 8px;
+            padding-bottom: 10px;
             font-size: 0.75rem;
             color: #1a1b26; 
             font-weight: bold;
@@ -99,7 +152,34 @@
             background-color: var(--white-key-bg);
             border: 1px solid #1a1b26;
             border-radius: 0 0 5px 5px;
+            position: relative;
         }
+        
+        .key-label {
+            z-index: 2;
+            position: relative;
+            pointer-events: none;
+        }
+
+        .white-key.in-scale::after, .black-key.in-scale::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            border-radius: 0 0 4px 4px;
+            pointer-events: none;
+        }
+        .white-key.in-scale::after {
+            background-color: var(--pressed-white-bg);
+            filter: brightness(1);
+        }
+        .black-key.in-scale::after {
+            background-color: var(--pressed-black-bg);
+            filter: brightness(1);
+        }
+
         .black-key {
             height: 60%;
             background-color: var(--black-key-bg);
@@ -110,9 +190,6 @@
         }
         .white-key.active { background-color: var(--pressed-white-bg) !important; opacity: 1 !important; }
         .black-key.active { background-color: var(--pressed-black-bg) !important; opacity: 1 !important; }
-        .white-key.out-of-scale:not(.active), .black-key.out-of-scale:not(.active) {
-            opacity: var(--out-of-scale-opacity);
-        }
 
         .hide-labels .key-label { display: none; }
         .labels-white-only .black-key .key-label { display: none; }
@@ -182,8 +259,9 @@
             transform: scale(1.3);
             box-shadow: 0 0 10px rgba(255,255,255,0.5);
         }
-        .fret-cell.out-of-scale:not(.active) .fret-marker {
-            opacity: var(--out-of-scale-opacity);
+        .fret-cell.in-scale .fret-marker {
+            box-shadow: 0px 3px 0px var(--pressed-white-bg);
+            filter: brightness(1.2);
         }
 
         .fret-number-row {
@@ -204,16 +282,15 @@
         /* Controls */
         .controls-container {
             position: fixed;
-            bottom: 40px;
+            top: 3rem;
+            left: 1vw;
             display: flex;
-            gap: 15px;
+            gap: 1vw;
             align-items: center;
             flex-wrap: wrap;
-            justify-content: center;
-            width: 100%;
-            padding: 0 20px;
-            box-sizing: border-box;
+            justify-content: flex-start;
             z-index: 50;
+            max-width: 95vw;
         }
 
         select, button {
@@ -271,17 +348,10 @@
         }
         #close-settings { width: 100%; margin-top: 15px; font-family: 'Karla', sans-serif; }
 
-        .keyboard-hint {
-            margin-top: 10px;
-            font-size: 0.9rem;
-            color: #565f89;
-            text-align: center;
-        }
-
         .footer-signature {
             position: fixed;
-            bottom: 10px;
-            right: 15px;
+            top: 2px;
+            right: 2px;
             font-size: 0.8rem;
             color: #565f89;
             pointer-events: none;
@@ -291,17 +361,17 @@
 </head>
 <body>
 
+    <a href="/" class="home-button">
+        <h1>{{meta.siteName | default('Digital Garden')}}</h1>
+    </a>
+
     <div id="status">Waiting for MIDI or Keyboard input...</div>
-    <div id="chord-display">Play a chord</div>
+    <div id="chord-display"><div class="chord-gradient-text"><span style='font-style:normal; font-weight:normal;'>- - -</span></div></div>
 
     <div class="instrument-wrapper" id="main-scroll-wrapper">
         <canvas id="trails-canvas"></canvas>
         <div id="piano" class="show-all-labels"></div>
         <div id="fretboard-container"></div>
-    </div>
-
-    <div class="keyboard-hint">
-        Laptop Keyboard Map: Z-M (Lower Octave) | Q-I (Upper Octave)
     </div>
 
     <div class="controls-container">
@@ -363,8 +433,14 @@
             <input type="color" id="col-unpressed-black" data-var="--black-key-bg">
         </div>
         <div class="setting-row">
-            <label>Dimming Amount</label>
-            <input type="range" id="slider-opacity" data-var="--out-of-scale-opacity" min="0" max="1" step="0.05">
+            <label>Note Naming</label>
+            <select id="accidental-selector">
+                <option value="logic" selected>Logic Pro (Db, Eb, F#, Ab, Bb)</option>
+                <option value="sharps">Sharps (C#, D#, etc.)</option>
+                <option value="flats">Flats (Db, Eb, etc.)</option>
+                <option value="mixed">Mixed (C#, Eb, F#, Ab, Bb)</option>
+                
+            </select>
         </div>
 
         <div class="setting-section-title">Piano Options</div>
@@ -403,18 +479,26 @@
     </div>
 
     <script>
-        const NOTE_NAMES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+        const NOTE_NAMINGS = {
+            'sharps': ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'],
+            'flats': ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'],
+            'mixed': ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'],
+            'logic': ['C', 'Db', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B']
+        };
+        let NOTE_NAMES = NOTE_NAMINGS['sharps'];
         let activeNotes = new Set();
         let currentInstrument = 'piano';
+        let chordFadeTimeout;
+        let completeFadeTimeout;
+        let noteReleaseTimeout; // Handle "sticky" partial releases when taking hands off keyboard/MIDI
 
         // --- Settings Management ---
         const defaultSettings = {
-            '--chord-text-colour': '#ff3c00',
+            '--chord-text-colour': '#ff8f00',
             '--pressed-white-bg': '#ff00cb',
             '--pressed-black-bg': '#4b9aff',
             '--white-key-bg': '#CAE5FF',
-            '--black-key-bg': '#12355B',
-            '--out-of-scale-opacity': '0.3'
+            '--black-key-bg': '#12355B'
         };
 
         function loadSettings() {
@@ -428,6 +512,8 @@
             }
 
             document.getElementById('size-selector').value = localStorage.getItem('piano-size') || "76";
+            document.getElementById('accidental-selector').value = localStorage.getItem('accidental-mode') || "sharps";
+            NOTE_NAMES = NOTE_NAMINGS[document.getElementById('accidental-selector').value];
             document.getElementById('scale-root').value = localStorage.getItem('scale-root') || "none";
             document.getElementById('scale-type').value = localStorage.getItem('scale-type') || "Major";
             document.getElementById('label-selector').value = localStorage.getItem('piano-labels') || "show-all-labels";
@@ -444,6 +530,7 @@
                 settingsToSave[input.dataset.var] = input.value;
             });
             localStorage.setItem('instrument-settings', JSON.stringify(settingsToSave));
+            localStorage.setItem('accidental-mode', document.getElementById('accidental-selector').value);
             localStorage.setItem('piano-size', document.getElementById('size-selector').value);
             localStorage.setItem('scale-root', document.getElementById('scale-root').value);
             localStorage.setItem('scale-type', document.getElementById('scale-type').value);
@@ -553,17 +640,17 @@
         }
 
         function updateScaleHighlight() {
-            document.querySelectorAll('.out-of-scale').forEach(el => el.classList.remove('out-of-scale'));
+            document.querySelectorAll('.in-scale').forEach(el => el.classList.remove('in-scale'));
             const validClasses = getValidPitchClasses();
             if (!validClasses) return;
 
             for (let i = 21; i <= 108; i++) {
-                if (!validClasses.includes(i % 12)) {
+                if (validClasses.includes(i % 12)) {
                     const keyElement = document.getElementById(`note-${i}`);
-                    if (keyElement) keyElement.classList.add('out-of-scale');
+                    if (keyElement) keyElement.classList.add('in-scale');
 
                     const fretElements = document.querySelectorAll(`.fret-cell[data-note="${i}"]`);
-                    fretElements.forEach(el => el.classList.add('out-of-scale'));
+                    fretElements.forEach(el => el.classList.add('in-scale'));
                 }
             }
         }
@@ -635,6 +722,21 @@
                 label.innerText = NOTE_NAMES[i % 12];
                 key.appendChild(label);
 
+                if (i % 12 === 0) {
+                    const octaveLabel = document.createElement('span');
+                    octaveLabel.className = 'octave-label';
+                    octaveLabel.style.position = 'absolute';
+                    octaveLabel.style.top = '5px';
+                    octaveLabel.style.left = '5px';
+                    octaveLabel.style.fontSize = '1rem';
+                    octaveLabel.style.color = '#888';
+                    octaveLabel.style.pointerEvents = 'none';
+                    octaveLabel.style.fontWeight = 'normal';
+                    // Typical MIDI mapping: C1 is note 24, so (24 / 12) - 1 = 1
+                    octaveLabel.innerText = Math.floor(i / 12) - 1;
+                    key.appendChild(octaveLabel);
+                }
+
                 if (isBlack) {
                     key.style.width = `${blackKeyPct}%`;
                     const leftPos = (whiteKeyIndex * whiteKeyPct) - (blackKeyPct / 2);
@@ -654,6 +756,7 @@
         function updateKeyPositions() {
             const piano = document.getElementById('piano');
             canvas.width = piano.offsetWidth;
+            canvas.height = window.innerHeight * 0.6;
             
             const range = pianoSizes[document.getElementById('size-selector').value];
             if (!range) return;
@@ -767,42 +870,135 @@
         }
 
         // --- Logic & Input Handling ---
+        function getChordNameHTML(rootName, type, bassName, inversion) {
+            let html = `<div class="chord-gradient-text"><span style="font-weight:bold; font-style:normal;">${rootName}</span><span style="font-weight:normal; font-style:italic;"> ${type}</span>`;
+            if (bassName && bassName !== rootName) {
+                html += `<span style="font-weight:normal; font-style:italic;">/${bassName.toLowerCase()}</span>`;
+            }
+            if (inversion) {
+                html += `<span style="font-size: 0.2em; font-weight:normal; font-style:italic; display:block; margin-top:-2em; margin-left: 20em;">${inversion}</span>`;
+            }
+            html += `</div>`;
+            return html;
+        }
+
         function getChordName(notesSet) {
-            if (notesSet.size === 0) return "Play a chord";
-            let notes = Array.from(notesSet);
-            let pitchClasses = Array.from(new Set(notes.map(n => n % 12))).sort((a, b) => a - b);
+            if (notesSet.size === 0) return "<span style='font-style:normal; font-weight:normal;'>- - -</span>";
+            let notes = Array.from(notesSet).sort((a, b) => a - b);
+            let bassNote = notes[0];
+            let bassPC = bassNote % 12;
+            let pitchClasses = Array.from(new Set(notes.map(n => n % 12)));
 
-            if (pitchClasses.length < 2) return NOTE_NAMES[pitchClasses[0]];
-            if (pitchClasses.length < 3 && pitchClasses[1] - pitchClasses[0] === 7) return `${NOTE_NAMES[pitchClasses[0]]} Power Chord (5)`;
+            if (pitchClasses.length < 2) return getChordNameHTML(NOTE_NAMES[pitchClasses[0]], '', '', '');
+            if (pitchClasses.length < 3 && (pitchClasses.includes((bassPC + 7)%12))) {
+                return getChordNameHTML(NOTE_NAMES[bassPC], '5', '', '');
+            }
 
-            for (let root of pitchClasses) {
+            // Define known chords
+            const CHORDS = [
+                { type: '13', intervals: [4, 7, 10, 2, 9] },
+                { type: 'maj13', intervals: [4, 7, 11, 2, 9] },
+                { type: 'min13', intervals: [3, 7, 10, 2, 9] },
+                { type: '11', intervals: [4, 7, 10, 2, 5] },
+                { type: 'maj11', intervals: [4, 7, 11, 2, 5] },
+                { type: 'min11', intervals: [3, 7, 10, 2, 5] },
+                { type: '9', intervals: [4, 7, 10, 2] },
+                { type: 'maj9', intervals: [4, 7, 11, 2] },
+                { type: 'min9', intervals: [3, 7, 10, 2] },
+                { type: '7b9', intervals: [4, 7, 10, 1] },
+                { type: '7#9', intervals: [4, 7, 10, 3] },
+                { type: 'm7b9', intervals: [3, 7, 10, 1] },
+                { type: '9sus4', intervals: [5, 7, 10, 2], avoid: [3, 4] },
+                { type: '6/9', intervals: [4, 7, 9, 2] },
+                { type: 'm6/9', intervals: [3, 7, 9, 2] },
+                { type: 'maj7', intervals: [4, 7, 11] },
+                { type: '7', intervals: [4, 7, 10] },
+                { type: 'min7', intervals: [3, 7, 10] },
+                { type: 'm7b5', intervals: [3, 6, 10] },
+                { type: 'dim7', intervals: [3, 6, 9] },
+                { type: 'mM7', intervals: [3, 7, 11] },
+                { type: 'aug7', intervals: [4, 8, 10] },
+                { type: 'augM7', intervals: [4, 8, 11] },
+                { type: '7b5', intervals: [4, 6, 10] },
+                { type: '7sus4', intervals: [5, 7, 10], avoid: [3, 4] },
+                { type: 'maj6', intervals: [4, 7, 9] },
+                { type: 'min6', intervals: [3, 7, 9] },
+                { type: 'add9', intervals: [4, 7, 2] },
+                { type: 'madd9', intervals: [3, 7, 2] },
+                { type: 'add4', intervals: [4, 7, 5] },
+                { type: 'sus4', intervals: [5, 7], avoid: [3, 4] },
+                { type: 'sus2', intervals: [2, 7], avoid: [3, 4] },
+                { type: 'maj', intervals: [4, 7] },
+                { type: 'min', intervals: [3, 7] },
+                { type: 'dim', intervals: [3, 6] },
+                { type: 'aug', intervals: [4, 8] }
+            ];
+
+            let bestMatch = null;
+
+            // Sort pitchClasses so that bassPC is tested first (root position preference)
+            let rootsToTest = [bassPC, ...pitchClasses.filter(pc => pc !== bassPC)];
+
+            for (let root of rootsToTest) {
                 let intervals = pitchClasses.map(pc => (pc - root + 12) % 12);
                 let has = (int) => intervals.includes(int);
-                let rootName = NOTE_NAMES[root];
 
-                if (has(4) && has(7) && has(10) && has(2)) return `${rootName} Dominant 9`;
-                if (has(4) && has(7) && has(11) && has(2)) return `${rootName} Major 9`;
-                if (has(3) && has(7) && has(10) && has(2)) return `${rootName} Minor 9`;
-                if (has(3) && has(6) && has(10)) return `${rootName} Half-Diminished 7`;
-                if (has(4) && has(7) && has(10)) return `${rootName} Dominant 7`;
-                if (has(4) && has(7) && has(11)) return `${rootName} Major 7`;
-                if (has(3) && has(7) && has(10)) return `${rootName} Minor 7`;
-                if (has(4) && has(7) && has(9)) return `${rootName} Major 6`;
-                if (has(3) && has(7) && has(9)) return `${rootName} Minor 6`;
-                if (has(2) && has(7) && !has(3) && !has(4)) return `${rootName} sus2`;
-                if (has(5) && has(7) && !has(3) && !has(4)) return `${rootName} sus4`;
-                if (has(4) && has(7)) return `${rootName} Major`;
-                if (has(3) && has(7)) return `${rootName} Minor`;
-                if (has(3) && has(6)) return `${rootName} Diminished`;
-                if (has(4) && has(8)) return `${rootName} Augmented`;
+                let match = CHORDS.find(c => {
+                    let hasAll = c.intervals.every(i => has(i));
+                    let avoidsAll = c.avoid ? c.avoid.every(i => !has(i)) : true;
+                    return hasAll && avoidsAll;
+                });
+
+                if (match) {
+                    let expectedCount = match.intervals.length + 1;
+                    let extraNotes = pitchClasses.length - expectedCount;
+                    
+                    if (extraNotes <= 1) { 
+                        let score = match.intervals.length * 10 - extraNotes * 5;
+                        if (root === bassPC) score += 20; 
+
+                        if (!bestMatch || score > bestMatch.score) {
+                            bestMatch = { root, type: match.type, score, matchLengths: match.intervals.length };
+                        }
+                    }
+                }
             }
-            return "Unknown Chord";
+
+            if (bestMatch) {
+                let rootName = NOTE_NAMES[bestMatch.root];
+                let type = bestMatch.type;
+                let bassName = NOTE_NAMES[bassPC];
+                
+                let inversion = '';
+                if (bestMatch.root !== bassPC) {
+                    let bassInterval = (bassPC - bestMatch.root + 12) % 12;
+                    if (bassInterval === 3 || bassInterval === 4) inversion = '1st inversion';
+                    else if (bassInterval === 7 || bassInterval === 6) inversion = '2nd inversion';
+                    else if (bassInterval === 10 || bassInterval === 11 || bassInterval === 9) inversion = '3rd inversion';
+                    else inversion = 'inverted';
+                } else {
+                    inversion = 'root';
+                }
+
+                return getChordNameHTML(rootName, type, bassName, inversion);
+            }
+
+            return "<div class='chord-gradient-text'><span style='font-style:normal; font-weight:bold;'>?</span></div>";
         }
 
         function triggerNoteOn(note) {
+            clearTimeout(chordFadeTimeout);
+            clearTimeout(completeFadeTimeout);
+            clearTimeout(noteReleaseTimeout);
+            noteReleaseTimeout = null;
+
+            const display = document.getElementById('chord-display');
+            display.style.transition = 'none';
+            display.style.opacity = '1';
+
             activeNotes.add(note);
             playSound(note);
-            document.getElementById('chord-display').innerText = getChordName(activeNotes);
+            display.innerHTML = getChordName(activeNotes);
 
             trails.push({ note: note, startTime: performance.now(), active: true });
 
@@ -818,7 +1014,40 @@
         function triggerNoteOff(note) {
             activeNotes.delete(note);
             stopSound(note);
-            document.getElementById('chord-display').innerText = getChordName(activeNotes);
+
+            const display = document.getElementById('chord-display');
+
+            if (activeNotes.size > 0) {
+                // Wait a tiny bit (50ms) before updating the display to the new chord. 
+                // This accounts for imperfect human release timings, preventing "C Maj" 
+                // flickering to "C" for a frame just because some keys were lifted 10ms sooner.
+                if (!noteReleaseTimeout) {
+                    noteReleaseTimeout = setTimeout(() => {
+                        if (activeNotes.size > 0) {
+                            display.innerHTML = getChordName(activeNotes);
+                            display.style.opacity = '1';
+                            display.style.transition = 'none';
+                        }
+                        noteReleaseTimeout = null;
+                    }, 50);
+                }
+            } else {
+                // If all keys are released, immediately stop any pending partial-release updates
+                clearTimeout(noteReleaseTimeout);
+                noteReleaseTimeout = null;
+
+                chordFadeTimeout = setTimeout(() => {
+                    display.style.transition = 'opacity 1s ease-in-out';
+                    display.style.opacity = '0';
+                    completeFadeTimeout = setTimeout(() => {
+                        if (activeNotes.size === 0) {
+                            display.innerHTML = "<div class='chord-gradient-text'><span style='font-style:normal; font-weight:normal;'>- - -</span></div>";
+                            display.style.transition = 'opacity 0.3s ease-in-out';
+                            display.style.opacity = '1';
+                        }
+                    }, 1000); 
+                }, 2000); 
+            }
 
             const activeTrail = trails.find(t => t.note === note && t.active);
             if (activeTrail) {
@@ -883,6 +1112,13 @@
         });
 
         document.getElementById('instrument-selector').addEventListener('change', applyInstrumentLayout);
+        document.getElementById('accidental-selector').addEventListener('change', (e) => {
+            NOTE_NAMES = NOTE_NAMINGS[e.target.value];
+            applyInstrumentLayout();
+            if (activeNotes.size > 0) {
+                document.getElementById('chord-display').innerHTML = getChordName(activeNotes);
+            }
+        });
         document.getElementById('size-selector').addEventListener('change', applyInstrumentLayout);
         document.getElementById('label-selector').addEventListener('change', applyInstrumentLayout);
         document.getElementById('scale-root').addEventListener('change', updateScaleHighlight);
