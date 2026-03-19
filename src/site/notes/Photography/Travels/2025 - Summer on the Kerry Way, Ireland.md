@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/travels/2025-summer-on-the-kerry-way-ireland/","hide":"true","updated":"2026-03-08T19:35:34.027+01:00"}
+{"dg-publish":true,"permalink":"/photography/travels/2025-summer-on-the-kerry-way-ireland/","hide":"true","updated":"2026-03-08T19:35:34.026+01:00"}
 ---
 
 Jump back to [[Photography/Photography\|selection]].

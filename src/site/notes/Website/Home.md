@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2026-03-05T16:02:38.555+01:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2026-03-19T13:08:38.026+01:00"}
 ---
 
 Hi there!
@@ -21,7 +21,8 @@ This is the perfect place to start reading up on some topics:
 | **[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]]**                                              | Chapter 4    |
 | **[[Notes/Quantum Optics/Quantum Optics\|Quantum Optics]]**                                                                         | Chapter 2    |
 
->[!Information] Here you can find pictures taken by me: [[Photography/Photography\|Photography]].
+Here you can find pictures taken by me: [[Photography/Photography\|Photography]].
+Here you can find an experimental chord viewer for MIDI inputs: [[chords.html|Chords]].
 
 ---
 I’ve always preferred making my own notes for studying, even when the official lecture notes were well-written. I held my notes to a high standard – initially, just enough for me to pass the exam. Over time, that standard grew, and eventually, some of my friends started using them too. When I arrived at ETH, I was pleased to find the [VMP](https://exams.vmp.ethz.ch/) website, which hosts old exam protocols and lecture notes. I decided to upload my own notes there, hoping they might be useful to someone.
