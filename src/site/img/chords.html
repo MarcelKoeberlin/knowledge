@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDI Chord Reader & Instrument Visualiser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --chord-text-colour: #ff3c00;
+            --white-key-bg: #CAE5FF;
+            --black-key-bg: #12355B;
+            --pressed-white-bg: #ff00cb;
+            --pressed-black-bg: #4b9aff;
+            --out-of-scale-opacity: 0.3;
+            --fretboard-bg: #2e221b;
+            --fret-wire-colour: #565f89;
+            --string-colour: #a9b1d6;
+            --bg-colour: #1a1b26;
+        }
+
+        body {
+            font-family: 'Karla', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            /* Added subtle background gradient */
+            background: linear-gradient(to bottom right, var(--bg-colour), #24283b);
+            background-attachment: fixed;
+            color: #c0caf5;
+            margin: 0;
+            padding-top: 5vh;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        #status {color: #CAE5FF; }
+
+        #chord-display {
+            font-family: 'Kinnari', 'Karla', sans-serif;
+            font-size: 60pt;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            /* Fancy blaze orange gradient */
+            background: linear-gradient(to bottom right, var(--chord-text-colour), #ff8f00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent; 
+        }
+
+        /* Shared Wrapper for scrolling */
+        .instrument-wrapper {
+            width: 100%;
+            max-width: 100vw;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* --- Trails Canvas --- */
+        #trails-canvas {
+            display: block;
+            margin: 0 auto;
+            background: transparent;
+            width: 100%;  
+            height: auto
+        }
+
+        /* --- Piano Styling --- */
+        #piano {
+            position: relative;
+            display: flex;
+            height: 150px;
+            width: 100%; /* Forces full width span */
+            margin: 0 auto;
+        }
+        .white-key, .black-key {
+            box-sizing: border-box;
+            transition: background-color 0.1s, opacity 0.3s;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 8px;
+            font-size: 0.75rem;
+            color: #1a1b26; 
+            font-weight: bold;
+            user-select: none;
+        }
+        .white-key {
+            height: 100%;
+            background-color: var(--white-key-bg);
+            border: 1px solid #1a1b26;
+            border-radius: 0 0 5px 5px;
+        }
+        .black-key {
+            height: 60%;
+            background-color: var(--black-key-bg);
+            position: absolute;
+            border-radius: 0 0 4px 4px;
+            z-index: 10;
+            color: #c0caf5; 
+        }
+        .white-key.active { background-color: var(--pressed-white-bg) !important; opacity: 1 !important; }
+        .black-key.active { background-color: var(--pressed-black-bg) !important; opacity: 1 !important; }
+        .white-key.out-of-scale:not(.active), .black-key.out-of-scale:not(.active) {
+            opacity: var(--out-of-scale-opacity);
+        }
+
+        .hide-labels .key-label { display: none; }
+        .labels-white-only .black-key .key-label { display: none; }
+        .labels-black-only .white-key .key-label { display: none; }
+
+        /* --- Guitar Fretboard Styling --- */
+        #fretboard-container {
+            display: none;
+            flex-direction: column;
+            background-color: var(--fretboard-bg);
+            border: 3px solid #111;
+            border-radius: 8px;
+            margin: 0 auto;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .string-row {
+            display: flex;
+            position: relative;
+            height: 35px;
+            align-items: center;
+        }
+        .string-line {
+            position: absolute;
+            left: 0; right: 0; top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--string-colour);
+            z-index: 1;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+        }
+        .string-row:nth-child(1) .string-line { height: 1px; } 
+        .string-row:nth-child(2) .string-line { height: 1.5px; } 
+        .string-row:nth-child(3) .string-line { height: 2px; } 
+        .string-row:nth-child(4) .string-line { height: 2.5px; } 
+        .string-row:nth-child(5) .string-line { height: 3px; } 
+        .string-row:nth-child(6) .string-line { height: 4px; } 
+
+        .fret-cell {
+            width: 70px;
+            height: 100%;
+            border-right: 3px solid var(--fret-wire-colour);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            flex-shrink: 0;
+        }
+        .fret-cell.nut {
+            border-right: 8px solid #c0caf5;
+            background-color: #111;
+            width: 40px;
+        }
+        .fret-marker {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 0.6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.1s, opacity 0.3s, transform 0.1s;
+        }
+        .fret-marker.active {
+            transform: scale(1.3);
+            box-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
+        .fret-cell.out-of-scale:not(.active) .fret-marker {
+            opacity: var(--out-of-scale-opacity);
+        }
+
+        .fret-number-row {
+            display: flex;
+            height: 20px;
+            align-items: center;
+            color: #565f89;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .fret-number-cell {
+            width: 70px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .fret-number-cell.nut-label { width: 40px; }
+
+        /* Controls */
+        .controls-container {
+            position: fixed;
+            bottom: 40px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+            z-index: 50;
+        }
+
+        select, button {
+            font-family: 'Karla', sans-serif;
+            background-color: #24283b;
+            color: #c0caf5;
+            border: 1px solid #414868;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        /* Settings Panel */
+        #settings-panel {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #24283b;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #414868;
+            z-index: 100;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            min-width: 320px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .setting-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            gap: 20px;
+        }
+        .setting-section-title {
+            margin: 20px 0 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #414868;
+            color: #9ece6a;
+            font-size: 1.1rem;
+        }
+        input[type="color"] { background: none; border: none; cursor: pointer; height: 30px; width: 40px; }
+        input[type="range"] { width: 100px; }
+        input[type="number"] {
+            font-family: 'Karla', sans-serif;
+            width: 50px;
+            background-color: #1a1b26;
+            color: #c0caf5;
+            border: 1px solid #414868;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        #close-settings { width: 100%; margin-top: 15px; font-family: 'Karla', sans-serif; }
+
+        .keyboard-hint {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #565f89;
+            text-align: center;
+        }
+
+        .footer-signature {
+            position: fixed;
+            bottom: 10px;
+            right: 15px;
+            font-size: 0.8rem;
+            color: #565f89;
+            pointer-events: none;
+            z-index: 60;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="status">Waiting for MIDI or Keyboard input...</div>
+    <div id="chord-display">Play a chord</div>
+
+    <div class="instrument-wrapper" id="main-scroll-wrapper">
+        <canvas id="trails-canvas"></canvas>
+        <div id="piano" class="show-all-labels"></div>
+        <div id="fretboard-container"></div>
+    </div>
+
+    <div class="keyboard-hint">
+        Laptop Keyboard Map: Z-M (Lower Octave) | Q-I (Upper Octave)
+    </div>
+
+    <div class="controls-container">
+        <button id="btn-settings">⚙️ Settings</button>
+        <select id="instrument-selector">
+            <option value="piano" selected>Piano</option>
+            <option value="guitar">Guitar</option>
+        </select>
+        <select id="scale-root">
+            <option value="none">No Scale</option>
+            <option value="0">C</option>
+            <option value="1">C#</option>
+            <option value="2">D</option>
+            <option value="3">D#</option>
+            <option value="4">E</option>
+            <option value="5">F</option>
+            <option value="6">F#</option>
+            <option value="7">G</option>
+            <option value="8">G#</option>
+            <option value="9">A</option>
+            <option value="10">A#</option>
+            <option value="11">B</option>
+        </select>
+        <select id="scale-type">
+            <option value="Major">Major</option>
+            <option value="Minor">Minor</option>
+            <option value="Harmonic Minor">Harmonic Minor</option>
+            <option value="Major Pentatonic">Major Pentatonic</option>
+            <option value="Minor Pentatonic">Minor Pentatonic</option>
+            <option value="Diminished">Diminished</option>
+            <option value="Blues">Blues</option>
+        </select>
+    </div>
+
+    <div class="footer-signature">by Marcel Köberlin, last update on 19.03.2026 at 12:14</div>
+
+    <div id="settings-panel">
+        <h3 style="margin-top:0; text-align:center;">Settings</h3>
+
+        <div class="setting-section-title">Visuals</div>
+        <div class="setting-row">
+            <label>Chord Text</label>
+            <input type="color" id="col-chord" data-var="--chord-text-colour">
+        </div>
+        <div class="setting-row">
+            <label>Pressed White Key</label>
+            <input type="color" id="col-pressed-white" data-var="--pressed-white-bg">
+        </div>
+        <div class="setting-row">
+            <label>Pressed Black Key</label>
+            <input type="color" id="col-pressed-black" data-var="--pressed-black-bg">
+        </div>
+        <div class="setting-row">
+            <label>Unpressed White Key</label>
+            <input type="color" id="col-unpressed-white" data-var="--white-key-bg">
+        </div>
+        <div class="setting-row">
+            <label>Unpressed Black Key</label>
+            <input type="color" id="col-unpressed-black" data-var="--black-key-bg">
+        </div>
+        <div class="setting-row">
+            <label>Dimming Amount</label>
+            <input type="range" id="slider-opacity" data-var="--out-of-scale-opacity" min="0" max="1" step="0.05">
+        </div>
+
+        <div class="setting-section-title">Piano Options</div>
+        <div class="setting-row">
+            <label>Keyboard Size</label>
+            <select id="size-selector">
+                <option value="25">25 Keys</option>
+                <option value="37">37 Keys</option>
+                <option value="49">49 Keys</option>
+                <option value="61">61 Keys</option>
+                <option value="76">76 Keys</option>
+                <option value="88">88 Keys</option>
+            </select>
+        </div>
+        <div class="setting-row">
+            <label>Show Note Labels</label>
+            <select id="label-selector">
+                <option value="show-all-labels">All Keys</option>
+                <option value="labels-white-only">White Keys Only</option>
+                <option value="labels-black-only">Black Keys Only</option>
+                <option value="hide-labels">None</option>
+            </select>
+        </div>
+
+        <div class="setting-section-title">Guitar Options</div>
+        <div class="setting-row">
+            <label>Start Fret</label>
+            <input type="number" id="fret-start" min="0" max="24" value="0">
+        </div>
+        <div class="setting-row">
+            <label>End Fret</label>
+            <input type="number" id="fret-end" min="1" max="24" value="12">
+        </div>
+
+        <button id="close-settings">Close & Save</button>
+    </div>
+
+    <script>
+        const NOTE_NAMES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+        let activeNotes = new Set();
+        let currentInstrument = 'piano';
+
+        // --- Settings Management ---
+        const defaultSettings = {
+            '--chord-text-colour': '#ff3c00',
+            '--pressed-white-bg': '#ff00cb',
+            '--pressed-black-bg': '#4b9aff',
+            '--white-key-bg': '#CAE5FF',
+            '--black-key-bg': '#12355B',
+            '--out-of-scale-opacity': '0.3'
+        };
+
+        function loadSettings() {
+            const rootStyle = document.documentElement.style;
+            const savedSettings = JSON.parse(localStorage.getItem('instrument-settings')) || defaultSettings;
+
+            for (const [key, value] of Object.entries(savedSettings)) {
+                rootStyle.setProperty(key, value);
+                const input = document.querySelector(`input[data-var="${key}"]`);
+                if (input) input.value = value;
+            }
+
+            document.getElementById('size-selector').value = localStorage.getItem('piano-size') || "76";
+            document.getElementById('scale-root').value = localStorage.getItem('scale-root') || "none";
+            document.getElementById('scale-type').value = localStorage.getItem('scale-type') || "Major";
+            document.getElementById('label-selector').value = localStorage.getItem('piano-labels') || "show-all-labels";
+            document.getElementById('fret-start').value = localStorage.getItem('fret-start') || "0";
+            document.getElementById('fret-end').value = localStorage.getItem('fret-end') || "12";
+            document.getElementById('instrument-selector').value = localStorage.getItem('current-instrument') || "piano";
+
+            applyInstrumentLayout();
+        }
+
+        function saveSettings() {
+            const settingsToSave = {};
+            document.querySelectorAll('#settings-panel input[data-var]').forEach(input => {
+                settingsToSave[input.dataset.var] = input.value;
+            });
+            localStorage.setItem('instrument-settings', JSON.stringify(settingsToSave));
+            localStorage.setItem('piano-size', document.getElementById('size-selector').value);
+            localStorage.setItem('scale-root', document.getElementById('scale-root').value);
+            localStorage.setItem('scale-type', document.getElementById('scale-type').value);
+            localStorage.setItem('piano-labels', document.getElementById('label-selector').value);
+            localStorage.setItem('fret-start', document.getElementById('fret-start').value);
+            localStorage.setItem('fret-end', document.getElementById('fret-end').value);
+            localStorage.setItem('current-instrument', document.getElementById('instrument-selector').value);
+        }
+
+        // --- Audio Engine ---
+        let audioCtx;
+        const activeOscillators = {};
+
+        function initAudio() {
+            if (!audioCtx) {
+                const AudioContext = window.AudioContext || window.webkitAudioContext;
+                audioCtx = new AudioContext();
+            }
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+        }
+
+        function playSound(note) {
+            initAudio();
+            if (activeOscillators[note]) return;
+            currentInstrument === 'piano' ? playPianoSound(note) : playGuitarSound(note);
+        }
+
+        function playPianoSound(note) {
+            const gainNode = audioCtx.createGain();
+            const freq = 440 * Math.pow(2, (note - 69) / 12);
+
+            gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
+            gainNode.gain.linearRampToValueAtTime(0.15, audioCtx.currentTime + 0.015);
+            gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 2.5);
+
+            const osc = audioCtx.createOscillator();
+            osc.type = 'triangle';
+            osc.frequency.value = freq;
+
+            const filter = audioCtx.createBiquadFilter();
+            filter.type = 'lowpass';
+            filter.frequency.value = Math.min(freq * 3, 3000);
+
+            osc.connect(filter);
+            filter.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+
+            osc.start();
+            activeOscillators[note] = { osc, gainNode };
+        }
+
+        function playGuitarSound(note) {
+            const gainNode = audioCtx.createGain();
+            const freq = 440 * Math.pow(2, (note - 69) / 12);
+
+            gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
+            gainNode.gain.linearRampToValueAtTime(0.2, audioCtx.currentTime + 0.005);
+            gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 3.0);
+
+            const osc = audioCtx.createOscillator();
+            osc.type = 'sawtooth'; 
+            osc.frequency.value = freq;
+
+            const filter = audioCtx.createBiquadFilter();
+            filter.type = 'lowpass';
+            filter.frequency.setValueAtTime(Math.min(freq * 8, 6000), audioCtx.currentTime);
+            filter.frequency.exponentialRampToValueAtTime(Math.max(freq * 1.5, 300), audioCtx.currentTime + 0.5);
+
+            osc.connect(filter);
+            filter.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+
+            osc.start();
+            activeOscillators[note] = { osc, gainNode };
+        }
+
+        function stopSound(note) {
+            if (activeOscillators[note]) {
+                const { osc, gainNode } = activeOscillators[note];
+                const now = audioCtx.currentTime;
+                gainNode.gain.cancelScheduledValues(now);
+                gainNode.gain.setValueAtTime(gainNode.gain.value, now);
+                gainNode.gain.exponentialRampToValueAtTime(0.001, now + 0.1);
+
+                osc.stop(now + 0.15);
+                delete activeOscillators[note];
+            }
+        }
+
+        // --- Scale Logic ---
+        const SCALE_INTERVALS = {
+            'Major': [0, 2, 4, 5, 7, 9, 11],
+            'Minor': [0, 2, 3, 5, 7, 8, 10],
+            'Harmonic Minor': [0, 2, 3, 5, 7, 8, 11],
+            'Major Pentatonic': [0, 2, 4, 7, 9],
+            'Minor Pentatonic': [0, 3, 5, 7, 10],
+            'Diminished': [0, 2, 3, 5, 6, 8, 9, 11],
+            'Blues': [0, 3, 5, 6, 7, 10]
+        };
+
+        function getValidPitchClasses() {
+            const rootVal = document.getElementById('scale-root').value;
+            const typeVal = document.getElementById('scale-type').value;
+            if (rootVal === 'none') return null;
+            const root = parseInt(rootVal);
+            return SCALE_INTERVALS[typeVal].map(interval => (root + interval) % 12);
+        }
+
+        function updateScaleHighlight() {
+            document.querySelectorAll('.out-of-scale').forEach(el => el.classList.remove('out-of-scale'));
+            const validClasses = getValidPitchClasses();
+            if (!validClasses) return;
+
+            for (let i = 21; i <= 108; i++) {
+                if (!validClasses.includes(i % 12)) {
+                    const keyElement = document.getElementById(`note-${i}`);
+                    if (keyElement) keyElement.classList.add('out-of-scale');
+
+                    const fretElements = document.querySelectorAll(`.fret-cell[data-note="${i}"]`);
+                    fretElements.forEach(el => el.classList.add('out-of-scale'));
+                }
+            }
+        }
+
+        // --- Layout Rendering ---
+        function applyInstrumentLayout() {
+            currentInstrument = document.getElementById('instrument-selector').value;
+            const pianoWrap = document.getElementById('piano');
+            const fretWrap = document.getElementById('fretboard-container');
+            const canvas = document.getElementById('trails-canvas');
+
+            if (currentInstrument === 'piano') {
+                pianoWrap.style.display = 'flex';
+                canvas.style.display = 'block';
+                fretWrap.style.display = 'none';
+                renderPiano(document.getElementById('size-selector').value);
+            } else {
+                pianoWrap.style.display = 'none';
+                canvas.style.display = 'none';
+                fretWrap.style.display = 'flex';
+                renderFretboard();
+            }
+            updateScaleHighlight();
+        }
+
+        // --- Piano Visuals & Trails ---
+        const pianoSizes = {
+            "25": { start: 48, end: 72 },
+            "37": { start: 48, end: 84 },
+            "49": { start: 36, end: 84 },
+            "61": { start: 36, end: 96 },
+            "76": { start: 28, end: 103 },
+            "88": { start: 21, end: 108 }
+        };
+
+        const canvas = document.getElementById('trails-canvas');
+        const ctx = canvas.getContext('2d');
+        let trails = [];
+        let keyPositions = {}; 
+
+        function renderPiano(sizeKey) {
+            const piano = document.getElementById('piano');
+            piano.innerHTML = '';
+            keyPositions = {};
+
+            const range = pianoSizes[sizeKey];
+            let totalWhiteKeys = 0;
+            
+            // Calculate total white keys to determine percentage widths
+            for (let i = range.start; i <= range.end; i++) {
+                if (![1, 3, 6, 8, 10].includes(i % 12)) totalWhiteKeys++;
+            }
+
+            const whiteKeyPct = 100 / totalWhiteKeys;
+            const blackKeyPct = whiteKeyPct * 0.6; 
+            let whiteKeyIndex = 0;
+
+            piano.className = document.getElementById('label-selector').value;
+
+            for (let i = range.start; i <= range.end; i++) {
+                const isBlack = [1, 3, 6, 8, 10].includes(i % 12);
+                const key = document.createElement('div');
+
+                key.id = `note-${i}`;
+                key.classList.add(isBlack ? 'black-key' : 'white-key');
+
+                const label = document.createElement('span');
+                label.className = 'key-label';
+                label.innerText = NOTE_NAMES[i % 12];
+                key.appendChild(label);
+
+                if (isBlack) {
+                    key.style.width = `${blackKeyPct}%`;
+                    const leftPos = (whiteKeyIndex * whiteKeyPct) - (blackKeyPct / 2);
+                    key.style.left = `${leftPos}%`;
+                } else {
+                    key.style.width = `${whiteKeyPct}%`;
+                    whiteKeyIndex++;
+                }
+
+                if (activeNotes.has(i)) key.classList.add('active');
+                piano.appendChild(key);
+            }
+
+            updateKeyPositions();
+        }
+
+        function updateKeyPositions() {
+            const piano = document.getElementById('piano');
+            canvas.width = piano.offsetWidth;
+            
+            const range = pianoSizes[document.getElementById('size-selector').value];
+            if (!range) return;
+            
+            for (let i = range.start; i <= range.end; i++) {
+                const keyEl = document.getElementById(`note-${i}`);
+                if (keyEl) {
+                    keyPositions[i] = {
+                        x: keyEl.offsetLeft,
+                        w: keyEl.offsetWidth,
+                        isBlack: keyEl.classList.contains('black-key')
+                    };
+                }
+            }
+        }
+
+        // Recalculate trail positions when window resizes
+        window.addEventListener('resize', () => {
+            if (currentInstrument === 'piano') updateKeyPositions();
+        });
+
+        function drawTrails() {
+            if (currentInstrument !== 'piano') return requestAnimationFrame(drawTrails);
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            const now = performance.now();
+            const speed = 0.15; 
+
+            const rootStyle = getComputedStyle(document.documentElement);
+            const colWhite = rootStyle.getPropertyValue('--pressed-white-bg').trim();
+            const colBlack = rootStyle.getPropertyValue('--pressed-black-bg').trim();
+
+            for (let i = trails.length - 1; i >= 0; i--) {
+                const trail = trails[i];
+                const keyInfo = keyPositions[trail.note];
+                if (!keyInfo) continue;
+
+                const headY = canvas.height - (now - trail.startTime) * speed;
+                let tailY = canvas.height;
+
+                if (!trail.active) {
+                    tailY = canvas.height - (now - trail.endTime) * speed;
+                }
+
+                if (tailY < 0) {
+                    trails.splice(i, 1);
+                    continue;
+                }
+
+                ctx.fillStyle = keyInfo.isBlack ? colBlack : colWhite;
+                ctx.beginPath();
+                ctx.roundRect(keyInfo.x + 2, headY, keyInfo.w - 4, tailY - headY, 4);
+                ctx.fill();
+            }
+
+            requestAnimationFrame(drawTrails);
+        }
+        requestAnimationFrame(drawTrails);
+
+        // --- Guitar Visuals ---
+        function renderFretboard() {
+            const container = document.getElementById('fretboard-container');
+            container.innerHTML = '';
+
+            let startFret = parseInt(document.getElementById('fret-start').value);
+            let endFret = parseInt(document.getElementById('fret-end').value);
+
+            if (startFret < 0) startFret = 0;
+            if (endFret > 24) endFret = 24;
+            if (startFret > endFret) { let temp = startFret; startFret = endFret; endFret = temp; }
+
+            const standardTuningMidi = [64, 59, 55, 50, 45, 40];
+
+            const numberRow = document.createElement('div');
+            numberRow.className = 'fret-number-row';
+            for (let fret = startFret; fret <= endFret; fret++) {
+                const cell = document.createElement('div');
+                cell.className = 'fret-number-cell';
+                if (fret === 0) cell.classList.add('nut-label');
+                cell.innerText = fret === 0 ? '' : fret;
+                numberRow.appendChild(cell);
+            }
+            container.appendChild(numberRow);
+
+            standardTuningMidi.forEach(stringBaseNote => {
+                const stringRow = document.createElement('div');
+                stringRow.className = 'string-row';
+
+                const line = document.createElement('div');
+                line.className = 'string-line';
+                stringRow.appendChild(line);
+
+                for (let fret = startFret; fret <= endFret; fret++) {
+                    const midiNote = stringBaseNote + fret;
+                    const cell = document.createElement('div');
+                    cell.className = 'fret-cell';
+                    if (fret === 0) cell.classList.add('nut');
+                    cell.dataset.note = midiNote;
+
+                    const marker = document.createElement('div');
+                    marker.className = 'fret-marker';
+                    marker.innerText = NOTE_NAMES[midiNote % 12];
+
+                    if (activeNotes.has(midiNote)) marker.classList.add('active');
+
+                    cell.appendChild(marker);
+                    stringRow.appendChild(cell);
+                }
+                container.appendChild(stringRow);
+            });
+        }
+
+        // --- Logic & Input Handling ---
+        function getChordName(notesSet) {
+            if (notesSet.size === 0) return "Play a chord";
+            let notes = Array.from(notesSet);
+            let pitchClasses = Array.from(new Set(notes.map(n => n % 12))).sort((a, b) => a - b);
+
+            if (pitchClasses.length < 2) return NOTE_NAMES[pitchClasses[0]];
+            if (pitchClasses.length < 3 && pitchClasses[1] - pitchClasses[0] === 7) return `${NOTE_NAMES[pitchClasses[0]]} Power Chord (5)`;
+
+            for (let root of pitchClasses) {
+                let intervals = pitchClasses.map(pc => (pc - root + 12) % 12);
+                let has = (int) => intervals.includes(int);
+                let rootName = NOTE_NAMES[root];
+
+                if (has(4) && has(7) && has(10) && has(2)) return `${rootName} Dominant 9`;
+                if (has(4) && has(7) && has(11) && has(2)) return `${rootName} Major 9`;
+                if (has(3) && has(7) && has(10) && has(2)) return `${rootName} Minor 9`;
+                if (has(3) && has(6) && has(10)) return `${rootName} Half-Diminished 7`;
+                if (has(4) && has(7) && has(10)) return `${rootName} Dominant 7`;
+                if (has(4) && has(7) && has(11)) return `${rootName} Major 7`;
+                if (has(3) && has(7) && has(10)) return `${rootName} Minor 7`;
+                if (has(4) && has(7) && has(9)) return `${rootName} Major 6`;
+                if (has(3) && has(7) && has(9)) return `${rootName} Minor 6`;
+                if (has(2) && has(7) && !has(3) && !has(4)) return `${rootName} sus2`;
+                if (has(5) && has(7) && !has(3) && !has(4)) return `${rootName} sus4`;
+                if (has(4) && has(7)) return `${rootName} Major`;
+                if (has(3) && has(7)) return `${rootName} Minor`;
+                if (has(3) && has(6)) return `${rootName} Diminished`;
+                if (has(4) && has(8)) return `${rootName} Augmented`;
+            }
+            return "Unknown Chord";
+        }
+
+        function triggerNoteOn(note) {
+            activeNotes.add(note);
+            playSound(note);
+            document.getElementById('chord-display').innerText = getChordName(activeNotes);
+
+            trails.push({ note: note, startTime: performance.now(), active: true });
+
+            if (currentInstrument === 'piano') {
+                const keyElement = document.getElementById(`note-${note}`);
+                if (keyElement) keyElement.classList.add('active');
+            } else {
+                const fretElements = document.querySelectorAll(`.fret-cell[data-note="${note}"] .fret-marker`);
+                fretElements.forEach(el => el.classList.add('active'));
+            }
+        }
+
+        function triggerNoteOff(note) {
+            activeNotes.delete(note);
+            stopSound(note);
+            document.getElementById('chord-display').innerText = getChordName(activeNotes);
+
+            const activeTrail = trails.find(t => t.note === note && t.active);
+            if (activeTrail) {
+                activeTrail.active = false;
+                activeTrail.endTime = performance.now();
+            }
+
+            if (currentInstrument === 'piano') {
+                const keyElement = document.getElementById(`note-${note}`);
+                if (keyElement) keyElement.classList.remove('active');
+            } else {
+                const fretElements = document.querySelectorAll(`.fret-cell[data-note="${note}"] .fret-marker`);
+                fretElements.forEach(el => el.classList.remove('active'));
+            }
+        }
+
+        function getMIDIMessage(midiMessage) {
+            const command = midiMessage.data[0];
+            const note = midiMessage.data[1];
+            const velocity = (midiMessage.data.length > 2) ? midiMessage.data[2] : 0;
+
+            if (command === 144 && velocity > 0) triggerNoteOn(note);
+            else if (command === 128 || (command === 144 && velocity === 0)) triggerNoteOff(note);
+        }
+
+        if (navigator.requestMIDIAccess) {
+            navigator.requestMIDIAccess().then(midiAccess => {
+                document.getElementById('status').innerText = "MIDI Connected.";
+                const inputs = midiAccess.inputs.values();
+                for (let input = inputs.next(); input && !input.done; input = inputs.next()) {
+                    input.value.onmidimessage = getMIDIMessage;
+                }
+            }, () => {
+                document.getElementById('status').innerText = "MIDI access denied. Use keyboard.";
+            });
+        }
+
+        const keyMap = {
+            'z': 48, 's': 49, 'x': 50, 'd': 51, 'c': 52, 'v': 53, 'g': 54, 'b': 55, 'h': 56, 'n': 57, 'j': 58, 'm': 59, ',': 60,
+            'q': 60, '2': 61, 'w': 62, '3': 63, 'e': 64, 'r': 65, '5': 66, 't': 67, '6': 68, 'y': 69, '7': 70, 'u': 71, 'i': 72
+        };
+
+        window.addEventListener('keydown', (e) => {
+            if (e.repeat) return;
+            const note = keyMap[e.key.toLowerCase()];
+            if (note) triggerNoteOn(note);
+        });
+
+        window.addEventListener('keyup', (e) => {
+            const note = keyMap[e.key.toLowerCase()];
+            if (note) triggerNoteOff(note);
+        });
+
+        // --- UI Events ---
+        const settingsPanel = document.getElementById('settings-panel');
+        document.getElementById('btn-settings').addEventListener('click', () => settingsPanel.style.display = 'block');
+
+        document.getElementById('close-settings').addEventListener('click', () => {
+            saveSettings();
+            applyInstrumentLayout(); 
+            settingsPanel.style.display = 'none';
+        });
+
+        document.getElementById('instrument-selector').addEventListener('change', applyInstrumentLayout);
+        document.getElementById('size-selector').addEventListener('change', applyInstrumentLayout);
+        document.getElementById('label-selector').addEventListener('change', applyInstrumentLayout);
+        document.getElementById('scale-root').addEventListener('change', updateScaleHighlight);
+        document.getElementById('scale-type').addEventListener('change', updateScaleHighlight);
+
+        document.querySelectorAll('#settings-panel input[type="color"], #settings-panel input[type="range"]').forEach(input => {
+            input.addEventListener('input', (e) => {
+                document.documentElement.style.setProperty(e.target.dataset.var, e.target.value);
+            });
+        });
+
+        // --- Initialise ---
+        loadSettings();
+    </script>
+</body>
+</html>
