@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"procedures","permalink":"/procedures/","hide":"true","hideInGraph":"true","updated":"2026-03-05T16:12:33.202+01:00"}
+{"dg-publish":true,"dg-path":"procedures","permalink":"/procedures/","hide":"true","hideInGraph":"true","updated":"2026-04-08T15:13:20.922+02:00"}
 ---
 
 **Table of Contents**
@@ -19,15 +19,15 @@
 ## 1. GitHub Repositories
 Since February 2026, 99% of tools and measurement programmes run on Python. All code is stored in private GitHub repositories. If you are a new PhD student and need access, send a message to Marcel Köberlin. You can find most repositories on the lab PCs; always ensure they are updated to the latest version.
 
-| Repository                    | Status     | Description                                                                                                                                                                                      |
-| :---------------------------- | :--------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **AttoCode**                  | Active     | Main repository. Contains XUV spectrometer, code for OceanOptics, Lucid cameras, Grafana, MRC beam stabilisation, pressure readers, Rigol spectrum analyser, and Coherent FieldMax power meters. |
-| **rabbitt-attoline**          | Active     | Code to run a RABBITT measurement. Bundled with mcs6a.exe, but needs to be installed for the .dll to be found.                                                                                   |
-| **attoline-temporal-overlap** | Active     | Semester project aiming to automate temporal overlap.                                                                                                                                            |
-| **attoline-spatial-overlap**  | Active     | Semester project aiming to automate spatial overlap.                                                                                                                                             |
-| **OceanOptics**               | Deprecated | Now contained within AttoCode.                                                                                                                                                                   |
-| **Raspberry-Code Delaystage** | Deprecated | Now contained within AttoCode.                                                                                                                                                                   |
-| **Lucid-API**                 | Deprecated | Now contained within AttoCode.                                                                                                                                                                   |
+| Repository                    | Status     | Description                                                                                                                                                                                                                                 |
+| :---------------------------- | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **AttoCode**                  | Active     | Main repository. Contains XUV spectrometer, code for OceanOptics, Lucid cameras, Grafana, MRC beam stabilisation, pressure readers, Rigol spectrum analyser, rabbitt/TOF, spatial and temporal overlap, and Coherent FieldMax power meters. |
+| **rabbitt-attoline**          | Deprecated | Code to run a RABBITT measurement. Bundled with mcs6a.exe, but needs to be installed for the .dll to be found.                                                                                                                              |
+| **attoline-temporal-overlap** | Deprecated | Semester project aiming to automate temporal overlap.                                                                                                                                                                                       |
+| **attoline-spatial-overlap**  | Deprecated | Semester project aiming to automate spatial overlap.                                                                                                                                                                                        |
+| **OceanOptics**               | Deprecated | Now contained within AttoCode.                                                                                                                                                                                                              |
+| **Raspberry-Code Delaystage** | Deprecated | Now contained within AttoCode.                                                                                                                                                                                                              |
+| **Lucid-API**                 | Deprecated | Now contained within AttoCode.                                                                                                                                                                                                              |
 
 ---
 

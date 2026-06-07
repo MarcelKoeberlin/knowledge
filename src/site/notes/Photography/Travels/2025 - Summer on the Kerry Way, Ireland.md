@@ -1,8 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/photography/travels/2025-summer-on-the-kerry-way-ireland/","hide":"true","updated":"2026-03-08T19:35:34.026+01:00"}
+{"dg-publish":true,"permalink":"/photography/travels/2025-summer-on-the-kerry-way-ireland/","hide":"true","updated":"2026-06-07T12:36:06.942+02:00"}
 ---
 
 Jump back to [[Photography/Photography\|selection]].
+
+_This road winds through a western country of rain-bright fields, dark lakes, and sea-winds that carry the cries of birds over the ridges. Beyond each bend lies another fold of green earth and silver water, as though the hills themselves were keeping quiet counsel._
 
 ---
 # 2025 - Summer hiking the Kerry Way, Ireland
@@ -18,5 +20,12 @@ Jump back to [[Photography/Photography\|selection]].
 2025-08-01 Ireland, Kerry Cliffs - Valentia Island: [Google Photos](https://photos.app.goo.gl/fge8k245g8XGCcoq8)
 2025-08 Kerry Way, Sneem and Malahide: [Google Photos](https://photos.app.goo.gl/nN2q3QrbDYPVEZ1Y8)
 
+<iframe  
+width="100%"  
+height="500"  
+frameborder="0"  
+allowfullscreen  
+src="https://umap.openstreetmap.fr/en/map/kerry-way_1418347?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true">  
+</iframe>
 
 ---

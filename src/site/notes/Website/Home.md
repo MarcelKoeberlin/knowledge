@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2026-03-19T13:08:38.026+01:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2026-04-16T21:21:51.281+02:00"}
 ---
 
 Hi there!
@@ -16,13 +16,13 @@ This is the perfect place to start reading up on some topics:
 | **[[Notes/Solid-State Theory/Solid-State Theory\|Solid-State Theory]]**                                                             | ✅            |
 | **[[Notes/2025 Quantum Electronics/Quantum Electronics\|Quantum Electronics]]**                                                     | ✅            |
 | **[[Notes/Master Thesis/Master Thesis\|Master Thesis]]**                                                                            | ✅            |
-| **[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields\|Crystal Optics in Intense Light Fields]]** | Chapter 6    |
+| **[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields\|Crystal Optics in Intense Light Fields]]** | ✅            |
 | **[[Notes/Signals and Systems/Signals and Systems\|Signals and Systems]]**                                                          | Chapter 5    |
 | **[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]]**                                              | Chapter 4    |
 | **[[Notes/Quantum Optics/Quantum Optics\|Quantum Optics]]**                                                                         | Chapter 2    |
 
 Here you can find pictures taken by me: [[Photography/Photography\|Photography]].
-Here you can find an experimental chord viewer for MIDI inputs: [Chords](/chords).
+Here you can find an experimental chord viewer for MIDI inputs: [[chords.html\|Chords]].
 
 ---
 I’ve always preferred making my own notes for studying, even when the official lecture notes were well-written. I held my notes to a high standard – initially, just enough for me to pass the exam. Over time, that standard grew, and eventually, some of my friends started using them too. When I arrived at ETH, I was pleased to find the [VMP](https://exams.vmp.ethz.ch/) website, which hosts old exam protocols and lecture notes. I decided to upload my own notes there, hoping they might be useful to someone.
@@ -37,4 +37,3 @@ I genuinely hope this website and its content are useful to you. If so, I'd be d
 _If you have any comments or suggestions, please feel free to reach out to me on [GitHub](https://github.com/MarcelKoeberlin) , [LinkedIn](https://www.linkedin.com/in/marcel-k%25C3%25B6berlin-776397244/), or via email using the button on the bottom right._
 
 ---
-
