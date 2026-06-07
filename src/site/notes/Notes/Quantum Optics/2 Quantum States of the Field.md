@@ -53,7 +53,9 @@ $$
 [ ](/img/user/Courses/1.%20Semester/Quantum%20Optics/QO_Home.pdf)
 
 The photon number state is an eigenstate of the photon number operator $\hat{n}=\hat{a}^\dagger\hat{a}$. Therefore, 
-$$\langle n| \Delta \hat{n}|n\rangle=0=\langle n| \hat{n}^2|n\rangle-\langle n| \hat{n}|n\rangle^2.$$
+$$
+\langle n| \Delta \hat{n}|n\rangle=0=\langle n| \hat{n}^2|n\rangle-\langle n| \hat{n}|n\rangle^2.
+$$
 Intuitively, it is a state where we have "perfect" knowledge of the intensity, but no knowledge of the phase. The expectation values of both field quadratures vanish:
 $$
 \langle n| \hat{X}|n\rangle=\langle n| \hat{Y}|n\rangle=0.
@@ -128,13 +130,21 @@ $$
 The introduction of the coherent state to optical fields is one of the starting points of quantum optics. They have a number of useful and important properties:
 
 - Normalisation:
-	$$ \langle\alpha \mid \alpha\rangle=e^{-|\alpha|^2} \sum_{n=0}^{\infty} \frac{\alpha^{* n} \alpha^n}{n!}=1 $$
+	$$
+	\langle\alpha \mid \alpha\rangle=e^{-|\alpha|^2} \sum_{n=0}^{\infty} \frac{\alpha^{* n} \alpha^n}{n!}=1
+	$$
 - They are an overcomplete set, e.g. they span the whole Hilbert space, but are not orthogonal 
-	$$ \langle\alpha \mid \beta\rangle=e^{-\frac{1}{2}|\alpha|^2-\frac{1}{2}|\beta|^2+\alpha^* \beta} \Rightarrow|\langle\alpha \mid \beta\rangle|^2=e^{-|\alpha-\beta|^2}. $$
+	$$
+	\langle\alpha \mid \beta\rangle=e^{-\frac{1}{2}|\alpha|^2-\frac{1}{2}|\beta|^2+\alpha^* \beta} \Rightarrow|\langle\alpha \mid \beta\rangle|^2=e^{-|\alpha-\beta|^2}.
+	$$
 - They are eigenstates of the annihilation operator:
-	$$ \hat{a}|\alpha\rangle=e^{-\frac{1}{2}|\alpha|^2} \sum_{n=1}^{\infty} \frac{\alpha^n}{\sqrt{(n-1)!}}|n-1\rangle=\alpha|\alpha\rangle. $$
+	$$
+	\hat{a}|\alpha\rangle=e^{-\frac{1}{2}|\alpha|^2} \sum_{n=1}^{\infty} \frac{\alpha^n}{\sqrt{(n-1)!}}|n-1\rangle=\alpha|\alpha\rangle.
+	$$
 - They are left eigenstates of the creation operator
-	$$ (\hat{a}|\alpha\rangle)^{\dagger}=\langle\alpha| \hat{a}^{\dagger}=\langle\alpha| \alpha^*. $$
+	$$
+	(\hat{a}|\alpha\rangle)^{\dagger}=\langle\alpha| \hat{a}^{\dagger}=\langle\alpha| \alpha^*.
+	$$
 
 With these properties at hand, we may find a number of relevant statistical quantities. Assuming we have the ability to measure the photon number, we obtain for the mean 
 
@@ -357,7 +367,9 @@ $$
 \Delta \psi=\frac{e^s}{2} \frac{1}{|\alpha|}=\frac{e^s}{2 \sqrt{\langle n\rangle}}.
 $$
 So we have that  
-$$\Delta n \cdot \Delta \psi=\frac{1}{2},$$
+$$
+\Delta n \cdot \Delta \psi=\frac{1}{2},
+$$
 as is expected for minimum uncertainty states. By playing with the value of $s$, we can enhance or reduce the relative weight of the phase and photon number uncertainty (or by rotating the angle $\frac{\theta}{2}$, of course). This is then called phase-squeezed or amplitude-squeezed, respectively:
 
 ![Attachments/QO_Home 3.webp|700](/img/user/Attachments/QO_Home%203.webp)[ ](/img/user/Courses/1.%20Semester/Quantum%20Optics/QO_Home.pdf)

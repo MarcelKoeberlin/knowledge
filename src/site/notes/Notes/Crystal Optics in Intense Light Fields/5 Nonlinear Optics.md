@@ -369,10 +369,14 @@ $$
 $$
 with 
 - Incoherent term: 
-	$$C  =\left|\chi_{m q}\right|^{2}+\left|\chi_{e}\right|^{2}.$$
+	$$
+	C  =\left|\chi_{m q}\right|^{2}+\left|\chi_{e}\right|^{2}.
+	$$
 	Always positive and domain-independent.
 - Interference term:
-	$$\Delta  =2\left(\chi_{m q}^{\prime} \chi_{e}^{\prime \prime}-\chi_{m q}^{\prime \prime} \chi_{e}^{\prime}\right)$$
+	$$
+	\Delta  =2\left(\chi_{m q}^{\prime} \chi_{e}^{\prime \prime}-\chi_{m q}^{\prime \prime} \chi_{e}^{\prime}\right)
+	$$
 	This term is positive or negative depending on the domain.
 
 From the last equation it becomes clear that the SHG light intensity changes either on domain change, or on changing the circular polarisation state. We expect no change upon changing both domain and polarisation. The two types of domains should therefore reveal the same SHG spectra, but with a reversed dependence on the circular polarisation.
@@ -407,7 +411,9 @@ $$
 Two crucial perturbations enable and modify these SHG processes:
 
 1.  **Spin-orbit coupling** allows the light to couple to the magnetic state of the material. The contribution to the interaction Hamiltonian is usually written as:
-    $$H_{SO}=\tilde{\lambda} \mathbf{L} \cdot \mathbf{S}$$
+    $$
+    H_{SO}=\tilde{\lambda} \mathbf{L} \cdot \mathbf{S}
+    $$
     where $\tilde{\lambda}$ is a proportionality factor (the spin-orbit coupling constant). This interaction mixes electronic states, for example, different $d$-orbitals like $t_{2g}$ and $e_g$ states. A matrix element for this mixing could be $\tilde{\lambda}\left\langle d_{xy}\right| \mathbf{L} \cdot \mathbf{S}\left|d_{x^{2}-y^{2}}\right\rangle \sim \lambda_{SO}\left\langle S_{z}\right\rangle$, where $\lambda_{SO}$ is related to $\tilde{\lambda}$ and $\langle S_z \rangle$ is the expectation value of the spin component along the quantisation axis (the $c$-axis in $\mathrm{Cr_2O_3}$, so $\mathbf{S} = S_z \mathbf{e}_z$).
 
 2.  **Ligand field contribution (trigonal distortion)**: The local environment of the $\mathrm{Cr}^{3+}$ ions in $\mathrm{Cr_2O_3}$ is not perfectly octahedral but exhibits a trigonal distortion. This distortion provides an additional term in the crystal field Hamiltonian, $H_{CF}$. This trigonal crystal field distortion breaks inversion symmetry locally and can mix orbitals of different parity, for instance, $3d$ and $4p$ orbitals of the $\mathrm{Cr}^{3+}$ ion. A matrix element for this mixing might be represented as $\left\langle p_{x}+p_{y}\right| H_{CF} \left|d_{x y}\right\rangle \sim \eta_{CF}$, where $\eta_{CF}$ characterises the strength of this parity-mixing interaction.

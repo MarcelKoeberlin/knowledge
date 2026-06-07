@@ -118,10 +118,14 @@ where $\mathbf{x}$ and $\mathbf{x}'$ are position vectors in $K$ and $K'$, respe
 
 Coordinate transformations are related to symmetry operations in that applying a symmetry operation to an object is equivalent to applying the inverse coordinate transformation to the coordinate system, while keeping the object fixed. Physical quantities (scalars, vectors, tensors) also transform under a coordinate change. For example, a vector $\mathbf{V}'$ in $K'$ becomes $\mathbf{V} = \hat{R}\mathbf{V}'$ in $K$. Examples of transformation matrices:
 - Rotation by angle $\phi$ about the $z$-axis (passive rotation of coordinates, or active rotation of vector):
-    $$\hat{R}_{\phi, z}=\begin{pmatrix}\cos\phi & \sin\phi & 0 \\-\sin\phi & \cos\phi & 0 \\0 & 0 & 1\end{pmatrix} \quad (\text{for } \mathbf{r}' = \hat{R}_{\phi,z}^{-1} \mathbf{r} = \hat{R}_{-\phi,z} \mathbf{r})$$
+    $$
+    \hat{R}_{\phi, z}=\begin{pmatrix}\cos\phi & \sin\phi & 0 \\-\sin\phi & \cos\phi & 0 \\0 & 0 & 1\end{pmatrix} \quad (\text{for } \mathbf{r}' = \hat{R}_{\phi,z}^{-1} \mathbf{r} = \hat{R}_{-\phi,z} \mathbf{r})
+    $$
     Or, for transforming components $v_i = \sum_j R_{ij} v'_j$: $\hat{R}_{\phi,z} = \begin{pmatrix}\cos\phi & -\sin\phi & 0 \\ \sin\phi & \cos\phi & 0 \\ 0 & 0 & 1 \end{pmatrix}$. It is important to be consistent.
 - Inversion through the origin:
-    $$\hat{I}=\begin{pmatrix}-1 & 0 & 0 \\0 & -1 & 0 \\0 & 0 & -1\end{pmatrix}=-\boldsymbol{\delta}$$
+    $$
+    \hat{I}=\begin{pmatrix}-1 & 0 & 0 \\0 & -1 & 0 \\0 & 0 & -1\end{pmatrix}=-\boldsymbol{\delta}
+    $$
 - Time-reversal operator $\hat{T}$ acting on spin states $|\uparrow\rangle, |\downarrow\rangle$ can be represented by matrices like $i\sigma_y$ (Pauli matrix), for instance, $\hat{T}\begin{pmatrix} a \\ b \end{pmatrix} = \begin{pmatrix} -b^* \\ a^* \end{pmatrix}$ (anti-unitary).
 
 ### 1.3.1 General Transformation of Tensors
@@ -207,11 +211,19 @@ $$
 $$
 The condition $\varepsilon_{ij} = \sum_{i'j'} R_{ii'} R_{jj'} \varepsilon_{i'j'}$ (since $\varepsilon'=\varepsilon$ in the same coordinate system after the object is rotated back) is applied.
 For example, for $\varepsilon_{31}$:
-$\varepsilon_{31} = R_{33}R_{11}\varepsilon_{31} + R_{33}R_{12}\varepsilon_{32} = 1 \cdot (-1/2)\varepsilon_{31} + 1 \cdot (\sqrt{3}/2)\varepsilon_{32}$.
-$(3/2)\varepsilon_{31} = (\sqrt{3}/2)\varepsilon_{32}$.
+$$
+\varepsilon_{31} = R_{33}R_{11}\varepsilon_{31} + R_{33}R_{12}\varepsilon_{32} = 1 \cdot (-1/2)\varepsilon_{31} + 1 \cdot (\sqrt{3}/2)\varepsilon_{32}.
+$$
+$$
+(3/2)\varepsilon_{31} = (\sqrt{3}/2)\varepsilon_{32}.
+$$
 For $\varepsilon_{32}$:
-$\varepsilon_{32} = R_{33}R_{21}\varepsilon_{31} + R_{33}R_{22}\varepsilon_{32} = 1 \cdot (-\sqrt{3}/2)\varepsilon_{31} + 1 \cdot (-1/2)\varepsilon_{32}$.
-$(3/2)\varepsilon_{32} = (-\sqrt{3}/2)\varepsilon_{31}$.
+$$
+\varepsilon_{32} = R_{33}R_{21}\varepsilon_{31} + R_{33}R_{22}\varepsilon_{32} = 1 \cdot (-\sqrt{3}/2)\varepsilon_{31} + 1 \cdot (-1/2)\varepsilon_{32}.
+$$
+$$
+(3/2)\varepsilon_{32} = (-\sqrt{3}/2)\varepsilon_{31}.
+$$
 Solving these yields $\varepsilon_{31}=\varepsilon_{32}=0$. Similarly $\varepsilon_{13}=\varepsilon_{23}=0$. Other relations like $\varepsilon_{11}=\varepsilon_{22}$ and $\varepsilon_{12}=-\varepsilon_{21}$ would also emerge from $C_3$ symmetry. If $\varepsilon_{ij}$ is also symmetric ($\varepsilon_{12}=\varepsilon_{21}$), then $\varepsilon_{12}=\varepsilon_{21}=0$.
 
 **Acquiring Tensor Components from Tables**

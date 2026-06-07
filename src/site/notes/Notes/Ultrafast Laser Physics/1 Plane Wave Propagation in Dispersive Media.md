@@ -202,28 +202,46 @@ A special case is when $\Delta\varphi=0$ or $\Delta\varphi=\pi$; in this case, t
 For optically isotropic materials, both the Poynting vector (direction of energy flow) and the wave vector $\mathbf{k}$ (direction of phase propagation) are parallel and perpendicular to the wavefronts for plane waves. The following energy-related quantities are important:
 
 - Energy density (instantaneous, for linear media):
-    $$w(t) = \frac{1}{2}(\mathbf{E}(t) \cdot \mathbf{D}(t) + \mathbf{H}(t) \cdot \mathbf{B}(t)) = \frac{1}{2} \varepsilon_{\text{abs}} |\mathbf{E}(t)|^2 + \frac{1}{2} \mu_{\text{abs}} |\mathbf{H}(t)|^2.$$
+    $$
+    w(t) = \frac{1}{2}(\mathbf{E}(t) \cdot \mathbf{D}(t) + \mathbf{H}(t) \cdot \mathbf{B}(t)) = \frac{1}{2} \varepsilon_{\text{abs}} |\mathbf{E}(t)|^2 + \frac{1}{2} \mu_{\text{abs}} |\mathbf{H}(t)|^2.
+    $$
     (using real fields $\mathbf{E}(t), \mathbf{H}(t)$ and absolute permittivities/permeabilities).
 - Poynting vector (instantaneous, for real fields):
-    $$\mathbf{S}(t) = \mathbf{E}(t) \times \mathbf{H}(t).$$
+    $$
+    \mathbf{S}(t) = \mathbf{E}(t) \times \mathbf{H}(t).
+    $$
 - Poynting vector (time-averaged, for complex field amplitudes $\tilde{\mathbf{E}}_0, \tilde{\mathbf{H}}_0$ such that physical field is $\mathfrak{Re}[\tilde{\mathbf{E}}_0 e^{i\omega t}]$):
-    $$\langle\mathbf{S}\rangle = \frac{1}{2} \mathfrak{Re}\left[\tilde{\mathbf{E}}_0 \times \tilde{\mathbf{H}}_0^*\right].$$
+    $$
+    \langle\mathbf{S}\rangle = \frac{1}{2} \mathfrak{Re}\left[\tilde{\mathbf{E}}_0 \times \tilde{\mathbf{H}}_0^*\right].
+    $$
 - Intensity:
-    $$I = |\langle\mathbf{S}\rangle|.$$
+    $$
+    I = |\langle\mathbf{S}\rangle|.
+    $$
 	For a plane wave in an isotropic, lossless medium, $\langle w \rangle = \varepsilon_{\text{abs}} \langle |\mathbf{E}(t)|^2 \rangle$. The relation $I = v_p \langle w \rangle$ holds.
 
 For the special case of a monochromatic plane wave $\mathbf{E}(\mathbf{r}, t)=\mathfrak{Re}\left[\tilde{\mathbf{E}}_0 e^{i(\mathbf{k} \cdot \mathbf{r}-\omega t)}\right]$:
 - Magnetic field (complex amplitude):
-    $$\tilde{\mathbf{H}}_0 = \frac{1}{Z}\left(\hat{\mathbf{k}} \times \tilde{\mathbf{E}}_0\right).$$
+    $$
+    \tilde{\mathbf{H}}_0 = \frac{1}{Z}\left(\hat{\mathbf{k}} \times \tilde{\mathbf{E}}_0\right).
+    $$
 - Energy density (time-averaged, assuming non-magnetic, lossless medium with real $n$ and $\varepsilon_r$):
-    $$\langle w \rangle = \frac{1}{2} \varepsilon_0 \varepsilon_r \frac{|\tilde{\mathbf{E}}_0|^2}{2} + \frac{1}{2} \mu_0 \frac{|\tilde{\mathbf{H}}_0|^2}{2} = \frac{1}{2} \varepsilon_0 \varepsilon_r \frac{|\tilde{\mathbf{E}}_0|^2}{2},$$
+    $$
+    \langle w \rangle = \frac{1}{2} \varepsilon_0 \varepsilon_r \frac{|\tilde{\mathbf{E}}_0|^2}{2} + \frac{1}{2} \mu_0 \frac{|\tilde{\mathbf{H}}_0|^2}{2} = \frac{1}{2} \varepsilon_0 \varepsilon_r \frac{|\tilde{\mathbf{E}}_0|^2}{2},
+    $$
     assuming that electric and magnetic energies are equal. 
 - Poynting vector (instantaneous):
-    $$\mathbf{S}(\mathbf{r}, t) = \frac{1}{Z} |\mathfrak{Re}\left[\tilde{\mathbf{E}}_0 e^{i(\mathbf{k} \cdot \mathbf{r}-\omega t)}\right]|^2 \hat{\mathbf{k}}.$$
+    $$
+    \mathbf{S}(\mathbf{r}, t) = \frac{1}{Z} |\mathfrak{Re}\left[\tilde{\mathbf{E}}_0 e^{i(\mathbf{k} \cdot \mathbf{r}-\omega t)}\right]|^2 \hat{\mathbf{k}}.
+    $$
 - Poynting vector (time-averaged):
-    $$\langle\mathbf{S}\rangle = \frac{1}{2Z} |\tilde{\mathbf{E}}_0|^2 \hat{\mathbf{k}}.$$
+    $$
+    \langle\mathbf{S}\rangle = \frac{1}{2Z} |\tilde{\mathbf{E}}_0|^2 \hat{\mathbf{k}}.
+    $$
 - Intensity:
-    $$I = \frac{1}{2Z} |\tilde{\mathbf{E}}_0|^2 = \frac{1}{2} \sqrt{\frac{\varepsilon_0\varepsilon_r}{\mu_0\mu_r}} |\tilde{\mathbf{E}}_0|^2 = \frac{1}{2} c \varepsilon_0 n |\tilde{\mathbf{E}}_0|^2 \quad (\text{for } \mu_r=1).$$
+    $$
+    I = \frac{1}{2Z} |\tilde{\mathbf{E}}_0|^2 = \frac{1}{2} \sqrt{\frac{\varepsilon_0\varepsilon_r}{\mu_0\mu_r}} |\tilde{\mathbf{E}}_0|^2 = \frac{1}{2} c \varepsilon_0 n |\tilde{\mathbf{E}}_0|^2 \quad (\text{for } \mu_r=1).
+    $$
 
 ---
 ## 1.7 Dispersion

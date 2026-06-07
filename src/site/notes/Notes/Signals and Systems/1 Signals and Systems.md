@@ -93,9 +93,13 @@ In other words, a periodic signal is unchanged by a time shift of $T$. The signa
 [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 Another set of useful properties of signals relates to their symmetry under time reversal. A signal $x(t)$ (or $x[n]$) is considered **even** if it is identical to its time-reversed counterpart:
-$$x(-t) = x(t) \quad (\text{or } x[-n]=x[n]).$$
+$$
+x(-t) = x(t) \quad (\text{or } x[-n]=x[n]).
+$$
 A signal is considered **odd** if it is the negative of its time-reversed counterpart:
-$$x(-t) = -x(t) \quad (\text{or } x[-n]=-x[n]).$$
+$$
+x(-t) = -x(t) \quad (\text{or } x[-n]=-x[n]).
+$$
 An odd signal must be zero at time zero (if defined at $t=0$ or $n=0$), since $x(-0) = -x(0)$ implies $x(0)=-x(0)$, so $2x(0)=0$, which means $x(0)=0$.
 Any signal can be uniquely decomposed into a sum of an even part and an odd part:
 $$

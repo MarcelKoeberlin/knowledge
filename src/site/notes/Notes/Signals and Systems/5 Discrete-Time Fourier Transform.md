@@ -44,10 +44,14 @@ A consequence of this $2\pi$-periodicity is that frequencies $\omega$ and $\omeg
 
 The derivation above heuristically assumed a finite-duration $x[n]$. However, the DTFT pair also holds for many signals of infinite duration. For the infinite summation in the analysis equation $X(e^{i\omega}) = \sum_{n=-\infty}^{+\infty} x[n] e^{-i\omega n}$ to converge, $x[n]$ must satisfy certain conditions. Sufficient conditions include:
 1.  $x[n]$ is **absolutely summable**:
-    $$\sum_{n=-\infty}^{+\infty} |x[n]| < \infty.$$
+    $$
+    \sum_{n=-\infty}^{+\infty} |x[n]| < \infty.
+    $$
     If this holds, $X(e^{i\omega})$ converges uniformly to a continuous function of $\omega$.
 2.  $x[n]$ has **finite energy** (is square-summable):
-    $$\sum_{n=-\infty}^{+\infty} |x[n]|^2 < \infty.$$
+    $$
+    \sum_{n=-\infty}^{+\infty} |x[n]|^2 < \infty.
+    $$
     If this holds, $X(e^{i\omega})$ converges in the mean-square sense over one period.
 
 These conditions are analogous to those for the continuous-time Fourier transform. Notably, the inverse transform integral (synthesis equation) always converges if $X(e^{i\omega})$ is a valid DTFT that is, for instance, square-integrable over one period, because the integration is over a finite interval.

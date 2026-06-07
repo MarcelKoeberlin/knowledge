@@ -137,7 +137,9 @@ Next, we find the impulse response $h(x,y,z)$ for Fresnel propagation, which is 
 1.  The 2D Fourier transform of $U(x',y',0)=\delta(x')\delta(y')$ is $V(k_x,k_y,0) = \iint \delta(x')\delta(y') e^{i(k_x x' + k_y y')}dx'dy' = 1$.
 2.  Therefore, $V(k_x,k_y,z) = 1 \cdot H(k_x,k_y,z) = e^{ikz} e^{-i z\frac{k_x^2+k_y^2}{2k}}$.
 3.  We take the inverse Fourier transform:
-    $$h(x,y,z) = U(x,y,z) = \frac{e^{ikz}}{(2\pi)^2} \iint e^{-i z\frac{k_x^2+k_y^2}{2k}} e^{-i(k_x x + k_y y)} dk_x dk_y.$$
+    $$
+    h(x,y,z) = U(x,y,z) = \frac{e^{ikz}}{(2\pi)^2} \iint e^{-i z\frac{k_x^2+k_y^2}{2k}} e^{-i(k_x x + k_y y)} dk_x dk_y.
+    $$
 
 We find that the impulse response function $h(x,y,z)$ is given by:
 $$

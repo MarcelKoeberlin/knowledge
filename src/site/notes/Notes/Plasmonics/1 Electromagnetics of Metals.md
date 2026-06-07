@@ -114,7 +114,9 @@ for a given wave vector $k$. From now, we will write $\varepsilon,$ but actually
 $$
 \varepsilon(\omega) = \varepsilon_1(\omega) + i \varepsilon_2(\omega),$$
 and 
-$$\sigma(\omega) = \sigma_1(\omega) + i \sigma_2(\omega)$$
+$$
+\sigma(\omega) = \sigma_1(\omega) + i \sigma_2(\omega)
+$$
 are complex-valued functions of angular frequency $\omega$. At optical frequencies, $\varepsilon$ can be experimentally determined, for example, via reflectivity studies and the determination of the complex refractive index $\tilde{n}(\omega) = n(\omega) + i \kappa(\omega)$ of the medium, defined as:
 $$
 \tilde{n} = \sqrt{\varepsilon}.
@@ -155,11 +157,15 @@ $$
 Note that the frequency dependence of the dielectric function is called dispersion, while its dependence on the wavevector is called spatial dispersion. By considering the relation in real space, and invoking the zero divergence of the displacement field, we find that we can differentiate two cases:
 
 - **Longitudinal waves**: Seeking a non-zero longitudinal electric field, we impose $\mathbf{K}\cdot\mathbf{E}(\mathbf{K},\omega)\neq 0.$ This then leads to 
-	$$  \varepsilon(\mathbf{K}, \omega) = 0,$$
+	$$
+	\varepsilon(\mathbf{K}, \omega) = 0,
+	$$
 	which can be further simplified to $\varepsilon(\omega)=0$ for a local medium. This signifies that longitudinal collective oscillations can only occur at frequencies corresponding to zeros of $\varepsilon(\omega)$. Indeed, one such solution is $\omega=\omega_p$ in the case of a non-lossy Drude model. Keep in mind, neglecting the $\mathbf{K}$-dependence typically holds well for $K\ll\omega_p/k_F.$ The Drude model is inherently a local model, that makes this assumption.
 
 - **Transverse waves**, $\mathbf{K} \cdot \mathbf{E} = 0$, resulting in the generic dispersion relation:
-	$$  K^2 = \varepsilon(\mathbf{K}, \omega) \frac{\omega^2}{c^2}.$$
+	$$
+	K^2 = \varepsilon(\mathbf{K}, \omega) \frac{\omega^2}{c^2}.
+	$$
 
 ---
 ## 1.3 The Dispersion of the Free Electron Gas and Volume Plasmons 

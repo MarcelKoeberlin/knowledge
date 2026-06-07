@@ -912,6 +912,8 @@ permalink: "/chords/index.html"
             }, () => {
                 document.getElementById("status").innerText = "MIDI access denied. Use keyboard.";
             });
+        } else {
+            document.getElementById("status").innerText = "MIDI unavailable. Use keyboard.";
         }
 
         const keyMap = {
@@ -982,7 +984,9 @@ permalink: "/chords/index.html"
                 });
 
                 // Determine priority
-                const midiAccess = await navigator.requestMIDIAccess().catch(() => null);
+                const midiAccess = navigator.requestMIDIAccess
+                    ? await navigator.requestMIDIAccess().catch(() => null)
+                    : null;
                 const hasMidi = midiAccess && midiAccess.inputs.size > 0;
 
                 if (hasMidi) {

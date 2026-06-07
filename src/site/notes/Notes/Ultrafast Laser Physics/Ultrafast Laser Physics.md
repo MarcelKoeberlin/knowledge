@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Ultrafast Laser Physics","permalink":"/notes/ultrafast-laser-physics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-06-08T18:13:15.022+02:00"}
+{"dg-publish":true,"dg-path":"Notes/Ultrafast Laser Physics","permalink":"/notes/ultrafast-laser-physics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2026-06-07T00:00:00.000+02:00"}
 ---
 
  These notes follow along the excellent book [Ultrafast Lasers: A Comprehensive Introduction to Fundamental Principles with Practical Applications](https://link.springer.com/book/10.1007/978-3-030-82532-4) written by Prof. Keller. For my original notes on the lecture 'Ultrafast Laser Physics' taught by Prof. Gallmann in the fall semester of 2023/24, please visit the exam collection of the VMP [here](https://exams.vmp.ethz.ch/user/mkoeberlin/document/lecture-notes). The content of this lecture and book was imperative in my initial decision to pursue laser physics.
 
-==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|Table of Contents]]==
+==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents|Table of Contents]]==
 
 ---
 
@@ -13,10 +13,17 @@ The generation and control of short, intense laser pulses stand among the most d
 ---
 
 # Table of Contents
-[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media\|1 Plane Wave Propagation in Dispersive Media]]
-[[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation\|2 Linear Pulse Propagation]]
-[[Notes/Ultrafast Laser Physics/3 Dispersion Compensation\|3 Dispersion Compensation]]
-[[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation\|4 Nonlinear Pulse Propagation]]
-[[Notes/Ultrafast Laser Physics/5 Laser Rate Equations\|5 Laser Rate Equations]]
+[[Notes/Ultrafast Laser Physics/1 Plane Wave Propagation in Dispersive Media|1 Plane Wave Propagation in Dispersive Media]]
+[[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation|2 Linear Pulse Propagation]]
+[[Notes/Ultrafast Laser Physics/3 Dispersion Compensation|3 Dispersion Compensation]]
+[[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation|4 Nonlinear Pulse Propagation]]
+[[Notes/Ultrafast Laser Physics/5 Laser Rate Equations|5 Laser Rate Equations]]
+[[Notes/Ultrafast Laser Physics/6 Active Modelocking|6 Active Modelocking]]
+[[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers|7 Saturable Absorbers for Solid-State Lasers]]
+[[Notes/Ultrafast Laser Physics/8 Q-Switching|8 Q-Switching]]
+[[Notes/Ultrafast Laser Physics/9 Passive Modelocking|9 Passive Modelocking]]
+[[Notes/Ultrafast Laser Physics/10 Pulse Duration Measurements|10 Pulse Duration Measurements]]
+[[Notes/Ultrafast Laser Physics/11 Intensity Noise and Timing Jitter of Modelocked Lasers|11 Intensity Noise and Timing Jitter of Modelocked Lasers]]
+[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers|12 Optical Frequency Comb from Modelocked Lasers]]
 
 ---

@@ -83,9 +83,13 @@ $$
 $$
 The effect is that we can now divide the electric field equation into two parts:
 1. The part parallel to $\textbf{k}$: 
-	$$ \tilde{\mathbf{E}}_{\text {perp }}=-\frac{\partial \tilde{\mathbf{A}}}{\partial t} $$
+	$$
+	\tilde{\mathbf{E}}_{\text {perp }}=-\frac{\partial \tilde{\mathbf{A}}}{\partial t}
+	$$
 2. The part perpendicular to $\textbf{k}$: 
-	$$ \tilde{\mathbf{E}}_{\text {perp }}=-\frac{\partial \tilde{\mathbf{A}}}{\partial t} $$
+	$$
+	\tilde{\mathbf{E}}_{\text {perp }}=-\frac{\partial \tilde{\mathbf{A}}}{\partial t}
+	$$
 
 Both these results are general meaning that they hold in the presence of charges too. Consider as well the first equation of the Maxwell equations in the presence of a charge density: 
 

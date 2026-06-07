@@ -38,7 +38,9 @@ From this starting point, parameters such as distances between mirrors are adjus
 
 To achieve soliton mode-locking, sufficient self-phase modulation is needed to counteract the group delay dispersion. The B-integral quantifies the SPM:
 
-$$B=\frac{2\pi}{\lambda}\int n_2 I(z)dz$$
+$$
+B=\frac{2\pi}{\lambda}\int n_2 I(z)dz
+$$
 
 There is no additional SPM medium in the cavity, which is unique compared to most low-power, non-thin-disk lasers that achieve significant self-phase modulation (SPM) within the gain medium, as SPM through air propagation is negligible. In contrast, high-power TDLs usually require a vacuum to reduce undesirable SPM effects. For stable mode-locking, a B-integral around $50 \text{ mrad}$ is typically required, based on empirical results.
 
@@ -59,7 +61,9 @@ Schematic of the laser cavity and its components. GTI denotes the Gires-Tournois
 
 The efficiency of the laser system is crucial for evaluating its performance. The output power $P_{\text{output}}$ is related to the pump power $P_{\text{pump}}$ by the following equation:
 
-$$P_{\text{output}}=\eta\left(P_{\text{pump}}-P_{\text{threshold}}\right),$$
+$$
+P_{\text{output}}=\eta\left(P_{\text{pump}}-P_{\text{threshold}}\right),
+$$
 
 where $P_{\text{threshold}}$ is the laser's threshold power, and $\eta$ represents the slope efficiency. This key figure of merit approaches $38\%$ at high pump powers. The next figure illustrates the output power and slope efficiency as a function of the pump power:
 
@@ -84,7 +88,9 @@ The next table shows the parameters of this laser cavity.
 
 After the laser light exits the cavity, it is crucial to characterise the output beam quality. A small fraction of the laser power is extracted and directed towards the diagnostics setup. The key metric for beam quality is the $M^2$ value, which quantifies how closely the laser beam approximates an ideal Gaussian beam. An ideal Gaussian beam has an $M^2$ value of 1, indicating minimal divergence and optimal focusability. A higher $M^2$ value indicates greater beam divergence and reduced focusability. The relationship between the beam divergence angle $\theta$, the beam waist $w_0$, and the $M^2$ value is given by:
 
-$$\theta=M^2 \frac{\lambda}{\pi w_0}$$
+$$
+\theta=M^2 \frac{\lambda}{\pi w_0}
+$$
 
 The next figure presents the results of the $M^2$ measurement, yielding a value of $M^2 < 1.1$. This measurement was conducted by passing the laser beam through a focusing lens, after which a moving stage equipped with a slit profiler measured the beam width along the $X$ and $Y$ axes at various positions along the beam path. The collected data points were then fitted to calculate the $M^2$ value.
 
@@ -156,27 +162,37 @@ A grating functions by altering the incident phase and amplitude of incoming lig
 
 The grating equation relates the angle of incidence $\alpha_i$ with the diffraction angle $\beta_m$, depending on the diffraction order $m$ and the wavelength $\lambda$:
 
-$$d\left(\sin\alpha_i + \sin\beta_m\right) = m\lambda$$
+$$
+d\left(\sin\alpha_i + \sin\beta_m\right) = m\lambda
+$$
 
 No diffraction pattern is observed in the zeroth order mode ($m=0$), making this case uninteresting. In this mode, the only solution is $\alpha_i = -\beta_m$, meaning the angle of incidence equals the angle of diffraction, analogous to specular reflection on a flat surface. This result is independent of wavelength and thus provides no spectral information.
 
 At twice the blaze angle, we find:
 
-$$d\sin(-2\gamma) = m\lambda.$$
+$$
+d\sin(-2\gamma) = m\lambda.
+$$
 
 A special case is the so-called Littrow configuration, where the grating efficiency is maximised. This occurs when $\alpha_i = \beta_m$ and $m>0$. Referring to the grating equation discussed above, we find:
 
-$$2d\sin\theta_L = m\lambda_D,$$
+$$
+2d\sin\theta_L = m\lambda_D,
+$$
 
 where $\theta_L$ is the Littrow angle, and $\lambda_D$ is the design wavelength, defined as the wavelength at which the grating is most efficient. The Littrow angle depends on the most intense order ($m=1$), and at $\lambda=\lambda_D$, we have $\theta_L=\gamma=\arcsin\left(N\frac{m\lambda_D}{2}\right)$. Since arcsin returns real values only for inputs between -1 and 1, this also defines a maximum groove density $N_{\text{max}} \le \frac{2}{m\lambda_D}$.
 
 The angular dispersion $D$ is given by:
 
-$$D = \frac{d\beta}{d\lambda} = \frac{Nm}{\cos\beta}.$$
+$$
+D = \frac{d\beta}{d\lambda} = \frac{Nm}{\cos\beta}.
+$$
 
 Next, we analyse the free spectral range. Reflected light of different orders may overlap, but this can be avoided for the wavelength range $[\lambda_1, \lambda_2]$ if:
 
-$$\lambda_2 - \lambda_1 = \frac{\lambda_1}{m}$$
+$$
+\lambda_2 - \lambda_1 = \frac{\lambda_1}{m}
+$$
 
 holds for $\lambda_1 < \lambda_2$. Fortunately, this is not an issue with $m=1$, as can be easily verified by considering the central wavelength of $1030 \text{ nm}$.
 
@@ -184,7 +200,9 @@ Another crucial factor is the spectral resolution, which limits the minimum wave
 
 1)  **Resolving Power**: The resolving power is defined as $R=\frac{\lambda}{\Delta\lambda}=m N_{\text{ill}}$, where $\Delta\lambda$ is the smallest resolvable difference from $\lambda$, and $N_{\text{ill}}$ is the number of illuminated grooves. This allows us to estimate:
 
-    $$\Delta\lambda = \frac{\lambda}{m N_{\text{ill}}} = \frac{\lambda\cos(\theta_i)}{m 2Nw},$$
+    $$
+    \Delta\lambda = \frac{\lambda}{m N_{\text{ill}}} = \frac{\lambda\cos(\theta_i)}{m 2Nw},
+    $$
 
     where $w$ is the beam waist on the grating, $\theta_i$ is the angle of incidence, and the factor of 2 accounts for the beam waist being a radius. With the beam size of this TDL, this results in a spectral resolution below $0.5 \text{ nm}$ for a grating with $600 \text{ l/mm}$ and a Littrow angle of $18^{\circ}$. The next figure shows the beam waist after the fibre, demonstrating that the chosen setup with lenses results in a collimated beam on the grating, justifying the approximation of ignoring the Gaussian nature of the beam.
     ![Attachments/Koeberlin_Master_Thesis 27.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2027.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
@@ -193,11 +211,15 @@ Another crucial factor is the spectral resolution, which limits the minimum wave
 
 2)  **Gaussian Optics**: First, assume the grating behaves like an ordinary mirror, not affecting the beam waist. Then, ray transfer matrix analysis simulation shows that the focus behind the second lens will have a waist $w_{\text{exit}}=50.4 \text{ }\mu\text{m}$. Now, consider the problem: If this behaviour holds for every spectral component, what must be the wavelength difference $\Delta\lambda$ for their positions in the focus after the lens to differ by $w_{\text{exit}}$? The spectrum will not be smeared if their separation is larger than their individual waist sizes. This problem simplifies near the Littrow configuration, as the projection of two spots from two spectral components onto a common surface is equal, even for different spectral components. The spatial distance between two wavelengths is:
 
-    $$\Delta x = f_2\left(\sin(\beta_m(\lambda_2)) - \sin(\beta_m(\lambda_1))\right) \approx f_2 m N \Delta\lambda$$
+    $$
+    \Delta x = f_2\left(\sin(\beta_m(\lambda_2)) - \sin(\beta_m(\lambda_1))\right) \approx f_2 m N \Delta\lambda
+    $$
 
     where $\beta_m(\lambda) = \arcsin(m\lambda N - \sin\alpha_i)$ is the diffraction angle for a given wavelength $\lambda$ and incident angle $\alpha_i$, and $f_2$ is the focal length of the lens after the grating. Setting $\Delta x = 2w_{\text{exit}}$, we obtain:
 
-    $$\Delta\lambda = 2\frac{w_{\text{exit}}}{f_2 mN}$$
+    $$
+    \Delta\lambda = 2\frac{w_{\text{exit}}}{f_2 mN}
+    $$
 
     which is approximately $0.3 \text{ nm}$. Since this value is lower than the resolution obtained using the resolving power, smearing due to the Gaussian nature of the beam is unlikely to be problematic, as the resolving power would not have permitted higher resolution in the first place.
 
@@ -227,11 +249,15 @@ Characterisation of the silicon photodiode FDS100, showing a linear response for
 
 These results suggest that the small-area FDS100 photodiode should enable the measurement of lower shot-noise levels. The shot-noise limit, expressed in units of $\text{dBc/Hz}$, is given by:
 
-$$S_{\text{shot}} = 10 \log_{10}\left(2q \frac{R}{V_{\text{DC}}} \cdot 1 \text{ Hz}\right),$$
+$$
+S_{\text{shot}} = 10 \log_{10}\left(2q \frac{R}{V_{\text{DC}}} \cdot 1 \text{ Hz}\right),
+$$
 
 where $q$ is the electron charge, $R=50 \text{ }\Omega$ is the termination resistance, and $V_{\text{DC}}$ is the generated average (DC) voltage. A detailed derivation is provided in the relevant theoretical section. Comparing the generated DC voltages at the maximum point of the linear range ($1100 \text{ mV}$ for DET100A/M and $320 \text{ mV}$ for FDS100):
 
-$$\Delta S_{\text{shot}} = 10 \log_{10}\left(\frac{1100}{320}\right) = 5.36 \text{ dB}.$$
+$$
+\Delta S_{\text{shot}} = 10 \log_{10}\left(\frac{1100}{320}\right) = 5.36 \text{ dB}.
+$$
 
 Therefore, in theory, the FDS100 photodiode should allow for the measurement of lower shot-noise levels. However, the results obtained did not align with expectations, as shown in the next two figures:
 
@@ -248,7 +274,9 @@ As a result, the final noise measurements were carried out using the DET100A/M p
 
 Before delving into noise characterisation, it is essential to differentiate between the various types of laser noise when measuring with an oscilloscope: shot noise, amplifier noise, and oscilloscope (or quantisation) noise. Amplifier noise includes contributions from thermal (Johnson) noise and the amplifier's noise figure, increasing with the amplifier's gain and temperature. The noise power of the amplifier can be estimated as:
 
-$$S_{\text{amp}} = (g R_{\text{load}})^2 I_{\text{Johnson}}(10^{\text{NF}/10} - 1) l_{\text{output}}$$
+$$
+S_{\text{amp}} = (g R_{\text{load}})^2 I_{\text{Johnson}}(10^{\text{NF}/10} - 1) l_{\text{output}}
+$$
 
 where $g$ is the amplifier's voltage gain, $I_{\text{Johnson}}$ is the Johnson noise current, NF is the amplifier's noise figure, and $l_{\text{output}}$ is the output loss factor. On the other hand, oscilloscope noise arises primarily from the quantisation process and the oscilloscope's inherent noise floor. This includes limitations due to the number of bits used and the voltage resolution. Oscilloscope noise can be reduced or minimised by choosing a high voltage resolution (for instance, a small voltage per division), such as zooming in on the oscilloscope as much as possible. With the correct settings on the oscilloscope, the analysis reveals that shot noise is the dominant noise source, allowing us to neglect oscilloscope and amplifier noise in the following discussions safely.
 
@@ -261,26 +289,36 @@ For the frequency range from $1 \text{ Hz to } 100 \text{ kHz}$, we employed the
 
 To convert the signal from voltage to $\text{dBc/Hz}$, we require the carrier spectral density $S_c(f)$ and the signal spectral density $S_V(f)$. The carrier density is obtained by terminating the amplifier output with a $50 \text{ }\Omega$ resistor and measuring the resulting DC voltage $V_{\text{DC}}$ using a multimeter. The amplifier is then switched to AC coupling, so the SSA does not overload. The carrier spectral density is calculated as follows:
 
-$$S_c = \left(V_{\text{DC}} \cdot \frac{1}{2}\right)^2$$
+$$
+S_c = \left(V_{\text{DC}} \cdot \frac{1}{2}\right)^2
+$$
 
 where the factor of $1/2$ accounts for the effective resistance. The signal power spectral density $S_V(f)$ is derived from the time-discrete signal, which is sampled at a rate $f_s$ with $N$ data points:
 
-$$S_V(f) = \frac{|\mathcal{F}V(f)|^2}{Nf_s}$$
+$$
+S_V(f) = \frac{|\mathcal{F}V(f)|^2}{Nf_s}
+$$
 
 which, like the carrier PSD, is expressed in units of volts squared. The spectral noise density is then calculated as:
 
-$$S(f) = 10\log_{10}\left(\frac{S_V(f)}{S_c}\right).$$
+$$
+S(f) = 10\log_{10}\left(\frac{S_V(f)}{S_c}\right).
+$$
 
 **High-Frequency Region**
 For frequencies above $60 \text{ kHz}$, the DUPVA 1-70 voltage amplifier was utilised, which provides a flat amplification profile up to multiple GHz. The flat amplification profile starting from $60 \text{ kHz}$ has been experimentally confirmed in past experiments. In this higher frequency region, the measurement procedure is adjusted slightly, as only the AC part of the signal is amplified. The DC component is split off with a Bias-T, then terminated with a $50 \text{ }\Omega$ resistor, and measured with a multimeter for normalisation.
 
 When calculating the carrier spectral density in this region, the actual gain of the voltage amplifier must be considered. Although the DUPVA 1-70 was expected to deliver a $40 \text{ dB}$ gain (corresponding to a voltage gain $g=100$), subsequent measurements revealed an actual gain of $g \approx 86.23$, corresponding to an amplification of $38.17 \text{ dB}$. Accounting for this, the carrier spectral density is given by:
 
-$$S_c = (gV_{\text{DC}})^2.$$
+$$
+S_c = (gV_{\text{DC}})^2.
+$$
 
 To obtain a meaningful shot-noise level, the DC voltage measured with this voltage amplifier is used. The shot-noise level can be determined using:
 
-$$S_{\text{shot}} = 10\log_{10}\left(2q\frac{R}{V_{\text{DC}}} \cdot 1 \text{ Hz}\right),$$
+$$
+S_{\text{shot}} = 10\log_{10}\left(2q\frac{R}{V_{\text{DC}}} \cdot 1 \text{ Hz}\right),
+$$
 
 where $R=50 \text{ }\Omega$ is the termination resistance and $q$ is the electron charge. For the laser presented in this work, the shot-noise limited detection is $S_{\text{shot}}=-162 \text{ dBc/Hz}$.
 

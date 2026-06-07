@@ -79,11 +79,15 @@ $$
 Sufficient conditions for the Fourier transform $X(i\omega)$ to exist and for $\hat{x}(t)$ to represent $x(t)$ include:
 
 1.  $x(t)$ is **square integrable** (i.e., $x(t)$ has finite energy):
-    $$\int_{-\infty}^\infty |x(t)|^2 dt < \infty.$$
+    $$
+    \int_{-\infty}^\infty |x(t)|^2 dt < \infty.
+    $$
     If this condition holds, then $X(i\omega)$ also has finite energy ($\int_{-\infty}^\infty |X(i\omega)|^2 d\omega < \infty$, by Parseval's relation), and the inverse transform converges to $x(t)$ in the mean-square sense. That is, the energy of the difference $e(t) = \hat{x}(t) - x(t)$ is zero.
 2.  $x(t)$ satisfies the **Dirichlet conditions**:
     -   $x(t)$ is **absolutely integrable**:
-        $$\int_{-\infty}^\infty |x(t)| dt < \infty.$$
+        $$
+        \int_{-\infty}^\infty |x(t)| dt < \infty.
+        $$
         (This condition alone guarantees that $X(i\omega)$ is well-defined and bounded for all $\omega$).
     -   $x(t)$ has a finite number of maxima and minima in any finite interval (bounded variation).
     -   $x(t)$ has a finite number of discontinuities in any finite interval, and each discontinuity must be finite.

@@ -23,7 +23,7 @@ function filterFullGraphData(graphData) {
     };
 }
 
-function filterLocalGraphData(graphData) {
+function filterLocalGraphData(graphData, depth = 1) {
     if (!graphData) return null;
     const allNodes = JSON.parse(JSON.stringify(graphData.nodes));
     const allLinks = JSON.parse(JSON.stringify(graphData.links));
@@ -41,11 +41,24 @@ function filterLocalGraphData(graphData) {
 
     currentNode.current = true;
 
-    // Depth 1: collect immediate neighbors (neighbors array contains URLs)
+    // Collect neighbours by URL up to the selected depth.
+    const urlToNode = Object.fromEntries(Object.values(allNodes).map(n => [n.url, n]));
     const neighbourhood = new Set();
+    let frontier = new Set([currentNode.url]);
     neighbourhood.add(currentNode.url);
-    if (currentNode.neighbors) {
-        currentNode.neighbors.forEach(n => neighbourhood.add(n));
+
+    for (let level = 0; level < depth; level++) {
+        const next = new Set();
+        for (const url of frontier) {
+            const node = urlToNode[url];
+            if (!node || !node.neighbors) continue;
+            for (const neighbour of node.neighbors) {
+                if (!neighbourhood.has(neighbour)) next.add(neighbour);
+                neighbourhood.add(neighbour);
+            }
+        }
+        frontier = next;
+        if (frontier.size === 0) break;
     }
 
     const nodes = Object.values(allNodes).filter(n => {
@@ -207,14 +220,15 @@ function renderGraph(graphData, containerId, isFullScreen) {
         const r = nodeRadius(n.id, degreeMap);
 
         const label = new Text(n.text, {
-            fontSize: 16,
+            fontSize: isFullScreen ? 13 : 12,
             fill: textColor,
             fontFamily: bodyFont,
         });
         label.resolution = 2;
         label.anchor.set(0.5, 1);
-        label.scale.set(1 / 3);
-        label.alpha = 0;
+        const baseLabelScale = isFullScreen ? 0.7 : 0.9;
+        label.scale.set(baseLabelScale);
+        label.alpha = isFullScreen ? 0 : 0.85;
 
         const gfx = new Graphics();
         gfx.interactive = true;
@@ -253,6 +267,7 @@ function renderGraph(graphData, containerId, isFullScreen) {
             gfx,
             label,
             radius: r,
+            baseLabelScale,
             active: false,
             baseAlpha: 1,
             targetAlpha: 1,
@@ -339,10 +354,13 @@ function renderGraph(graphData, containerId, isFullScreen) {
             stage.scale.set(transform.k, transform.k);
             stage.position.set(transform.x, transform.y);
 
+            const baseLabelAlpha = isFullScreen ? 0 : 0.85;
             const scaleOpacity = Math.max((transform.k - 1) / 3.75, 0);
             for (const n of nodeRenderData) {
+                const labelScale = n.baseLabelScale / transform.k;
+                n.label.scale.set(labelScale);
                 if (n.simulationData.id !== hoveredNodeId) {
-                    n.label.alpha = scaleOpacity;
+                    n.label.alpha = Math.max(baseLabelAlpha, scaleOpacity);
                 }
             }
         });
@@ -360,6 +378,7 @@ function renderGraph(graphData, containerId, isFullScreen) {
             if (x == null || y == null) continue;
             n.gfx.position.set(x, y);
             n.label.position.set(x, y - n.radius - 2);
+            n.label.scale.set(n.baseLabelScale / currentTransform.k);
 
             n.currentAlpha = lerp(n.currentAlpha, n.targetAlpha, smoothing);
             n.gfx.alpha = n.currentAlpha;
@@ -430,6 +449,7 @@ let graphDataCache = null;
 let fullGraphDataCache = null;
 let localGraphCleanup = null;
 let globalGraphCleanup = null;
+let localGraphDepth = 1;
 
 async function init() {
     const { graphData, fullGraphData } = await fetchGraphData();
@@ -443,7 +463,7 @@ function renderLocal() {
         localGraphCleanup();
         localGraphCleanup = null;
     }
-    const data = filterLocalGraphData(graphDataCache);
+    const data = filterLocalGraphData(graphDataCache, localGraphDepth);
     const cleanup = renderGraph(data, 'link-graph', false);
     localGraphCleanup = cleanup;
 }
@@ -465,7 +485,7 @@ function openFullGraph() {
 }
 
 function openExpandedLocal() {
-    openModal(filterLocalGraphData(graphDataCache));
+    openModal(filterLocalGraphData(graphDataCache, localGraphDepth));
 }
 
 function closeFullGraph() {
@@ -479,25 +499,46 @@ function closeFullGraph() {
 // Expose to Alpine
 window.__graph = { openFullGraph, closeFullGraph, openExpandedLocal, rerenderLocal: renderLocal };
 
+function setupDepthControl() {
+    const slider = document.getElementById('graph-depth');
+    const display = document.getElementById('depth-display');
+    if (!slider || !display) return;
+    slider.value = String(localGraphDepth);
+    display.textContent = String(localGraphDepth);
+    slider.addEventListener('input', () => {
+        localGraphDepth = Number(slider.value);
+        display.textContent = String(localGraphDepth);
+        renderLocal();
+    });
+}
+
 // Re-render when the style editor changes CSS variables
 document.addEventListener('forestry:css-changed', function() {
     if (graphDataCache) renderLocal();
 });
 
+setupDepthControl();
 init();
 </script>
 
 <div id="graph-component" class="graph" x-data="{ showFullGraph: false }">
     <div class="graph-title-container">
         <div class="graph-title">Connected Pages</div>
+    </div>
+    <div class="graph-canvas-wrap">
         <div id="graph-controls">
+            <label class="depth-control" for="graph-depth">
+                <span>Depth</span>
+                <input id="graph-depth" type="range" min="1" max="3" step="1" value="1">
+                <span id="depth-display">1</span>
+            </label>
             <div class="ctrl-right">
                 <span id="global-graph-btn" x-on:click="showFullGraph = true; window.__graph.openFullGraph()"><i data-lucide="globe" aria-hidden="true"></i></span>
                 <span id="graph-fs-btn" x-on:click="showFullGraph = true; window.__graph.openExpandedLocal()"><i data-lucide="expand" aria-hidden="true"></i></span>
             </div>
         </div>
+        <div id="link-graph"></div>
     </div>
-    <div id="link-graph"></div>
     <div x-show="showFullGraph" id="full-graph" class="show" style="display: none;" x-on:click.self="window.__graph.closeFullGraph(); showFullGraph = false;">
         <span id="full-graph-close" x-on:click="window.__graph.closeFullGraph(); showFullGraph = false;"><i data-lucide="x" aria-hidden="true"></i></span>
         <div id="full-graph-container"></div>

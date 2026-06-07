@@ -5,6 +5,7 @@ body.theme-dark {
   --interactive-accent: #006f8b;
   --h1-color: var(--interactive-accent);
   --low-contrast: #4f1d0e;
+  --ulu-marker-color: rgb(from var(--text-accent-hover) r g b / 0.24);
 }
 
 body.theme-light {
@@ -14,6 +15,7 @@ body.theme-light {
   --interactive-accent: #004d61;
   --h1-color: var(--interactive-accent);
   --low-contrast: #ffe0b8;
+  --ulu-marker-color: rgb(from var(--text-accent-hover) r g b / 0.16);
 }
 
 .markdown-rendered .internal-link {
@@ -23,6 +25,11 @@ body.theme-light {
     text-decoration-line: none; /* Optional: Removes default underline if any */
   /* Add a transition for smoother effect changes */
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
 }
 
 //.markdown-rendered .internal-link::after { /* Changed from ::before to ::after */
@@ -513,10 +520,6 @@ body {
     display: block;
   }
 
-  .toc-container li::before {
-    content: "" !important;
-  }
-
   nav.navbar {
         right: 10px;
       left: 10px;
@@ -793,25 +796,60 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
   position: fixed;
 }
 
+.graph-canvas-wrap {
+  position: relative;
+}
+
 #graph-controls {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  gap: 5px;
+  justify-content: flex-end;
+  gap: 8px;
   position: absolute;
-  top: 115%;
+  top: 8px;
+  right: 8px;
   cursor: pointer;
-  right: 0px;
-  left: 10px;
-  color: var(--internal-link);
-  z-index: 9;
-  background: linear-gradient(to right,#ff3c00, #ff8f00);
-    background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(0,0,0,0);
+  color: var(--text-muted);
+  z-index: 20;
+  background: rgb(from var(--background-primary) r g b / 0.88);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgb(from var(--color-base-00) r g b / 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 4px 6px;
+  -webkit-text-fill-color: currentColor;
   font: inherit;
 }
+
+#graph-controls .depth-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+#graph-controls .depth-control input[type="range"] {
+  width: 72px;
+  min-width: 72px;
+}
+
+#graph-controls .ctrl-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#graph-controls .ctrl-right span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--internal-link);
+}
+
 #graph-controls .depth-control #depth-display {
   background-color: var(--internal-link);
   color: #fff;
@@ -1101,16 +1139,6 @@ img {
   }
 }
 
-body .cm-s-obsidian ol li::before {
-  counter-increment: foobar;
-  content: counter(foobar) ")";
-  font-size: unset;
-  position: absolute;
-  margin-left: -1.5rem;
-  font-family: "Karla";
-  font-variant-ligatures: common-ligatures;
-}
-
 ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
   color: var(--text-normal);
   font-size: unset;
@@ -1140,6 +1168,139 @@ ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
   text-decoration-line: var(--link-external-decoration);
   background-position: center right;
   background-size: 13px;
+}
+
+.markdown-preview-view table {
+  background-image: none !important;
+}
+
+body .markdown-preview-view a.internal-link,
+.markdown-rendered .internal-link,
+.toc-container a,
+nav.toc a,
+.backlinks a,
+.backlink-card a,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+
+body:not(.ulu-rough-highlight) mark,
+body:not(.ulu-rough-highlight) .markdown-source-view.mod-cm6 .cm-highlight:not(.cm-formatting-highlight),
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link.cm-highlight:not(.cm-formatting-highlight) {
+  background: var(--ulu-marker-color) !important;
+  color: var(--text-normal) !important;
+}
+
+body.theme-dark mark,
+body.theme-dark .markdown-source-view.mod-cm6 .cm-highlight:not(.cm-formatting-highlight) {
+  --ulu-marker-color: rgb(from var(--text-accent-hover) r g b / 0.24);
+}
+
+body.theme-light mark,
+body.theme-light .markdown-source-view.mod-cm6 .cm-highlight:not(.cm-formatting-highlight) {
+  --ulu-marker-color: rgb(from var(--text-accent-hover) r g b / 0.16);
+}
+
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+  list-style: revert !important;
+  list-style-position: outside !important;
+  padding-inline-start: 1.5em !important;
+}
+
+.markdown-preview-view ul {
+  list-style-type: disc !important;
+}
+
+.markdown-preview-view ol {
+  list-style-type: decimal !important;
+  counter-reset: none !important;
+}
+
+.markdown-preview-view li {
+  list-style: revert !important;
+  list-style-type: revert !important;
+  position: static !important;
+  padding-left: 0 !important;
+}
+
+.markdown-preview-view li::marker {
+  content: normal !important;
+  display: list-item !important;
+  color: var(--text-normal) !important;
+}
+
+.markdown-preview-view ul > li::before,
+.markdown-preview-view ol > li::before,
+.callout-content ul > li::before,
+.callout-content ol > li::before {
+  content: none !important;
+  display: none !important;
+}
+
+.markdown-source-view.mod-cm6 .list-bullet,
+.markdown-source-view.mod-cm6 .cm-formatting-list-ol,
+.markdown-source-view.mod-cm6 .cm-line:hover .list-bullet,
+.markdown-source-view.mod-cm6 .cm-line:hover .cm-formatting-list-ol {
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  color: var(--text-normal) !important;
+  display: inline !important;
+  min-width: 0 !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin-right: 0.35em !important;
+  font: inherit !important;
+  transform: none !important;
+}
+
+.markdown-source-view.mod-cm6 .list-bullet {
+  color: var(--text-normal) !important;
+}
+
+.markdown-source-view.mod-cm6 .list-bullet::before,
+.markdown-source-view.mod-cm6 .list-bullet::after {
+  content: none !important;
+  display: none !important;
+}
+
+.toc-container ol,
+.toc-container ul,
+.toc-container li {
+  list-style: none !important;
+  list-style-type: none !important;
+}
+
+.toc-container ol,
+.toc-container ul {
+  padding-inline-start: var(--dg-toc-indent) !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.toc-container nav > ol,
+.toc-container nav > ul,
+.toc-container > ol,
+.toc-container > ul {
+  padding-inline-start: 0 !important;
+}
+
+.toc-container li {
+  margin-inline-start: 0 !important;
+  padding: var(--dg-toc-item-padding) !important;
+}
+
+.toc-container li::marker,
+.toc-container li::before {
+  content: none !important;
+  display: none !important;
 }
 
 ::selection {

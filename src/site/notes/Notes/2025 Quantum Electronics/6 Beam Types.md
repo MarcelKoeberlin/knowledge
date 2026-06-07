@@ -77,7 +77,9 @@ The depth of focus of a Gaussian beam is often considered to be $2z_R$. We deduc
 ### 6.1.3 Beam Divergence
 
 The beam divergence describes how quickly the beam width $W(z)$ increases for $|z| \gg z_R$ (in the far field). The half-angle of divergence $\theta_0$ is defined as the angle of the asymptote of $W(z)$ with respect to the $z$-axis:
-$$ \theta_0 = \lim_{z\to\infty} \frac{W(z)}{|z-z_w|} \approx \frac{W_0}{z_R} = \frac{\lambda_0}{\pi W_0 n}. $$
+$$
+\theta_0 = \lim_{z\to\infty} \frac{W(z)}{|z-z_w|} \approx \frac{W_0}{z_R} = \frac{\lambda_0}{\pi W_0 n}.
+$$
 
 ![Attachments/Notes/2025 Quantum Electronics/6 Beam Types/02_Fundamental_phenomena 27.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/6%20Beam%20Types/02_Fundamental_phenomena%2027.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/02_Fundamental_phenomena.pdf)
 
@@ -148,9 +150,13 @@ q_2=\frac{A q_1+B}{C q_1+D}.
 $$
 This powerful result allows us to use the same ABCD matrices derived for [[Notes/2025 Quantum Electronics/5 Fourier Optics#5.8 Paraxial Ray Optics\|paraxial ray optics]] to transform Gaussian beams. For example:
 - Propagation through free space of length $d$: $\mathbf{M} = \begin{pmatrix} 1 & d \\ 0 & 1 \end{pmatrix}$.
-  $q_2 = \frac{1 \cdot q_1 + d}{0 \cdot q_1 + 1} = q_1+d$.
+  $$
+  q_2 = \frac{1 \cdot q_1 + d}{0 \cdot q_1 + 1} = q_1+d.
+  $$
 - Passage through a thin lens of focal length $f$: $\mathbf{M} = \begin{pmatrix} 1 & 0 \\ -1/f & 1 \end{pmatrix}$.
-  $q_2=\frac{1 \cdot q_1 + 0}{(-1/f) q_1 + 1} = \frac{q_1}{1-q_1/f}$.
+  $$
+  q_2=\frac{1 \cdot q_1 + 0}{(-1/f) q_1 + 1} = \frac{q_1}{1-q_1/f}.
+  $$
 This connection between ray optics (via ABCD matrices) and Gaussian beam optics (via the q-parameter) is not coincidental. In the limit $\lambda_0 \to 0$, the imaginary part of $1/q(z)$ vanishes, and $1/q(z) \to 1/R(z)$. For paraxial rays, $R(z) \approx r(z)/\theta(z)$ (where $r$ is ray height, $\theta$ is ray angle). The ABCD law for $q$ then becomes consistent with the ray transformation $\binom{r_2}{\theta_2}=\mathbf{M}\binom{r_1}{\theta_1}$.
 
 ## 6.2 Paraxial Helmholtz Equation and Slowly-Varying Envelope Approximation

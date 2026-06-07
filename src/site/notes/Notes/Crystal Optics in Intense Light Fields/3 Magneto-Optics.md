@@ -34,7 +34,9 @@ $$
 where we have also included a phenomenological damping term $m\Gamma_d \dot{\mathbf{r}}$. For further analysis, let us assume the static magnetic field is uniform and applied along the $z$-direction, $\mathbf{B}_{\text{ext}} = B_z \hat{\mathbf{z}}$. We consider the response to a time-harmonic optical electric field $\mathbf{E}(\omega) = \mathbf{E}_{0} e^{-i \omega t}$, which induces a time-harmonic polarisation $\mathbf{P}(\omega) = \mathbf{P}_{0} e^{-i \omega t}$.
 The polarisation is related to the electron displacement $\mathbf{r}$ by $\mathbf{P} = -Ne\mathbf{r}$, where $N$ is the density of responding electrons. Thus, $\mathbf{r} = -\mathbf{P}/(Ne)$.
 Substituting this into the equation of motion and Fourier transforming (with $\partial/\partial t \rightarrow -i\omega$ for $e^{-i\omega t}$ convention, or $i\omega$ for $e^{i\omega t}$ convention; let us assume $e^{-i\omega t}$ for consistency with many classical optics texts when $P(\omega)$ is related to $E(\omega)$ by $\chi(\omega)$ directly), we find:
-$(-\omega^2 m - i\omega m\Gamma_d + G) \mathbf{P}(\omega) = Ne^2 \mathbf{E}(\omega) - i\omega e (\mathbf{P}(\omega) \times \mathbf{B}_{\text{ext}})$.
+$$
+(-\omega^2 m - i\omega m\Gamma_d + G) \mathbf{P}(\omega) = Ne^2 \mathbf{E}(\omega) - i\omega e (\mathbf{P}(\omega) \times \mathbf{B}_{\text{ext}}).
+$$
 This leads to a matrix equation for the components of $\mathbf{P}(\omega)$:
 $$
 \begin{pmatrix}
@@ -73,7 +75,9 @@ $$
 \boldsymbol{\varepsilon}_r(\omega)=\begin{pmatrix} \varepsilon_1 & -ig & 0 \\ ig & \varepsilon_1 & 0 \\ 0 & 0 & \varepsilon_2 \end{pmatrix},
 $$
 where
-$\varepsilon_1 = 1 + \frac{\Omega_p^2(\omega_0^2-\omega^2)}{(\omega_0^2-\omega^2)^2 - (\omega\omega_C)^2}$,
+$$
+\varepsilon_1 = 1 + \frac{\Omega_p^2(\omega_0^2-\omega^2)}{(\omega_0^2-\omega^2)^2 - (\omega\omega_C)^2},
+$$
 $\varepsilon_2 = 1 + \frac{\Omega_p^2}{\omega_0^2-\omega^2}$ (independent of $\omega_C$), and
 $g = \frac{\Omega_p^2 \omega\omega_C}{(\omega_0^2-\omega^2)^2 - (\omega\omega_C)^2}$ is the gyration constant or gyrotropic factor.
 This factor $g$ describes the rotation induced by the Lorentz force and is non-zero for magnetised materials, satisfying $g \sim \omega_C \sim |\mathbf{B}|$. The diagonal elements $\varepsilon_1$ also depend on $\omega_C$. The dielectric tensor describes a material that is effectively uniaxial (since $\varepsilon_1 \neq \varepsilon_2$ generally, with optic axis along $z$) and exhibits optical activity (due to $g \neq 0$) induced by the magnetic field. The magneto-optical Voigt parameter is sometimes defined as $Q \approx g/\varepsilon_1$ for small $g$.

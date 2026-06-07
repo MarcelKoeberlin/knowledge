@@ -59,11 +59,17 @@ $$
 
 The convolution operation for LTI systems satisfies several important properties (shown here for continuous time, with analogous properties for discrete time):
 1.  **Commutativity**: The order of convolution does not matter.
-    $$x(t) * h(t) = h(t) * x(t)$$
+    $$
+    x(t) * h(t) = h(t) * x(t)
+    $$
 2.  **Distributivity**: Convolution distributes over addition. This means a system with an impulse response $h_1(t)+h_2(t)$ (parallel combination) convolved with $x(t)$ is the same as $x(t)$ convolved with $h_1(t)$ plus $x(t)$ convolved with $h_2(t)$.
-    $$x(t) * (h_1(t) + h_2(t)) = (x(t) * h_1(t)) + (x(t) * h_2(t))$$
+    $$
+    x(t) * (h_1(t) + h_2(t)) = (x(t) * h_1(t)) + (x(t) * h_2(t))
+    $$
 3.  **Associativity**: The order of cascading LTI systems does not matter.
-    $$x(t) * (h_1(t) * h_2(t)) = (x(t) * h_1(t)) * h_2(t)$$
+    $$
+    x(t) * (h_1(t) * h_2(t)) = (x(t) * h_1(t)) * h_2(t)
+    $$
 
 Distributivity can be depicted graphically:
 

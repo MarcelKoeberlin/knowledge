@@ -99,14 +99,20 @@ $$
 $$
 Some examples of Jones matrices for common optical elements:
 - Linear polariser passing $x$-polarised light (and blocking $y$-polarised light):
-    $$\mathbf{T}_{\text{LP,x}}=\begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$$
+    $$
+    \mathbf{T}_{\text{LP,x}}=\begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}
+    $$
 - Wave retarder (wave plate): Introduces a phase shift $\Gamma$ between two orthogonal linear polarisation components. If the $x$-axis is the fast axis (lower refractive index) and the $y$-axis is the slow axis (higher refractive index), the matrix is:
-    $$\mathbf{T}_{\text{ret}}=\begin{pmatrix} 1 & 0 \\ 0 & e^{-i \Gamma} \end{pmatrix}$$
+    $$
+    \mathbf{T}_{\text{ret}}=\begin{pmatrix} 1 & 0 \\ 0 & e^{-i \Gamma} \end{pmatrix}
+    $$
     where $\Gamma = (n_s-n_f)k_0 d$ is the retardance ($n_s, n_f$ are slow/fast refractive indices, $d$ is thickness).
     - For $\Gamma=\pi/2$, it is a quarter-wave plate. It can convert linearly polarised light (at $45^\circ$ to its axes) to circularly polarised light, and vice versa.
     - For $\Gamma=\pi$, it is a half-wave plate. It can rotate the plane of linearly polarised light or convert right-circularly polarised light into left-circularly polarised light, and vice versa.
 - Ideal polarisation rotator that rotates the plane of linear polarisation by an angle $\theta$ counter-clockwise:
-    $$\mathbf{T}_{\text{rot}}(\theta)=\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$$
+    $$
+    \mathbf{T}_{\text{rot}}(\theta)=\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}
+    $$
 The Jones matrices for wave retarders given above assume their principal axes (fast/slow) are aligned with the $x$ and $y$ coordinate axes. If a wave retarder (whose fast axis is, say, along its own $x'$-axis) is rotated by an angle $\theta$ with respect to the laboratory $x$-axis, its Jones matrix $\mathbf{T}'$ in the lab frame is obtained by a similarity transformation:
 $$
 \mathbf{T}'(\theta) = \mathbf{R}(-\theta) \mathbf{T}_{\text{ret,axes}} \mathbf{R}(\theta),

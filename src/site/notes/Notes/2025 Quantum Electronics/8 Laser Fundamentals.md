@@ -319,8 +319,12 @@ Then $n_s \approx \frac{\gamma_L}{K}(r-1)$.
 ![Attachments/Notes/2025 Quantum Electronics/8 Laser Fundamentals/04_Laser_fundamentals 16.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/8%20Laser%20Fundamentals/04_Laser_fundamentals%2016.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
 
 - **Above threshold ($r>1$):**
-  $$N_s \approx N_{\text{th}} = \frac{\gamma_c}{K}$$
-  $$n_s \approx \frac{\gamma_L}{K}(r-1)$$
+  $$
+  N_s \approx N_{\text{th}} = \frac{\gamma_c}{K}
+  $$
+  $$
+  n_s \approx \frac{\gamma_L}{K}(r-1)
+  $$
   The inversion is clamped to its threshold value. Every additionally pumped atom primarily contributes to stimulated emission, increasing the coherent photon number $n_s$.
 - **Below threshold ($r<1$):**
   Stimulated emission is negligible ($n_s \approx 0$). $dN_{\text{inv}}/dt \approx R_p - \gamma_L N_s = 0 \implies N_s \approx R_p/\gamma_L = r R_{p,th}/\gamma_L = r (N_{\text{th}}/\tau_L) \tau_L = r N_{\text{th}}$.

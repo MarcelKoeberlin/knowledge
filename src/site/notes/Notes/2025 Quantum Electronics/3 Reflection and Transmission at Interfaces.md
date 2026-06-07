@@ -54,9 +54,13 @@ Consider three plane waves: incident (subscript 1 or $i$), reflected (subscript 
 
 From the conservation of the tangential component of $\mathbf{k}$ ($k_x$ if the interface is the $xy$-plane and propagation is in $xz$-plane), and given that $k_i = k_r = k_1 = n_1\omega/c$ and $k_t = k_2 = n_2\omega/c$:
 -  The **Law of Reflection**: the angle of incidence equals the angle of reflection:
-	$$k_{i,x} = k_{r,x} \implies k_1 \sin\theta_1 = k_1 \sin\theta_3 \implies \sin\theta_1 = \sin\theta_3 \implies \theta_1 = \theta_3.$$ 
+	$$
+	k_{i,x} = k_{r,x} \implies k_1 \sin\theta_1 = k_1 \sin\theta_3 \implies \sin\theta_1 = \sin\theta_3 \implies \theta_1 = \theta_3.
+	$$
 -   **Snell's Law** of refraction: 
-	$$k_{i,x} = k_{t,x} \implies k_1 \sin\theta_1 = k_2 \sin\theta_2 \implies n_1 \frac{\omega}{c} \sin\theta_1 = n_2 \frac{\omega}{c} \sin\theta_2 \implies n_1\sin\theta_1 = n_2\sin\theta_2.$$
+	$$
+	k_{i,x} = k_{t,x} \implies k_1 \sin\theta_1 = k_2 \sin\theta_2 \implies n_1 \frac{\omega}{c} \sin\theta_1 = n_2 \frac{\omega}{c} \sin\theta_2 \implies n_1\sin\theta_1 = n_2\sin\theta_2.
+	$$
 The angles $\theta_j$ are typically defined with respect to the surface normal $\hat{\mathbf{n}}$: $\theta_j=\arccos\left(\frac{|\mathbf{k}_j \cdot \hat{\mathbf{n}}|}{|\mathbf{k}_j|}\right)$.
 
 To find the amplitudes of the reflected and transmitted waves, we decompose the incident electric field into components perpendicular (s-polarisation or TE) and parallel (p-polarisation or TM) to the plane of incidence (the plane containing $\mathbf{k}_i$ and $\hat{\mathbf{n}}$).
@@ -106,21 +110,61 @@ For TM (p-polarised) waves, if the component of $\mathbf{E}$ parallel to the pla
 
 For p-polarised light, the reflectivity $|r_p|^2$ becomes zero at a specific angle of incidence called Brewster's angle, $\theta_B$. This occurs when $r_p=0$, so from the Fresnel equation for $r_p$:
 $$
-n_2 \cos \theta_1 - n_1 \cos \theta_2 = 0 \implies n_2 \cos\theta_B = n_1 \cos\theta_t,
+\begin{aligned}
+n_2 \cos \theta_1 - n_1 \cos \theta_2 &= 0 \\
+&\implies n_2 \cos\theta_B = n_1 \cos\theta_t,
+\end{aligned}
 $$
 where $\theta_1 = \theta_B$ and $\theta_2 = \theta_t$ is the angle of transmission.
+
 Using Snell's Law, $n_1 \sin\theta_B = n_2 \sin\theta_t$, we can solve for $\theta_B$.
+
 Square both equations:
-$n_2^2 \cos^2\theta_B = n_1^2 \cos^2\theta_t = n_1^2 (1-\sin^2\theta_t)$
-$n_1^2 \sin^2\theta_B = n_2^2 \sin^2\theta_t \implies \sin^2\theta_t = (n_1/n_2)^2 \sin^2\theta_B$.
+$$
+\begin{aligned}
+n_2^2 \cos^2\theta_B
+  &= n_1^2 \cos^2\theta_t
+  = n_1^2 (1-\sin^2\theta_t), \\
+n_1^2 \sin^2\theta_B
+  &= n_2^2 \sin^2\theta_t
+  \implies \sin^2\theta_t
+  = \left(\frac{n_1}{n_2}\right)^2 \sin^2\theta_B.
+\end{aligned}
+$$
+
 Substituting $\sin^2\theta_t$:
-$n_2^2 \cos^2\theta_B = n_1^2 (1 - (n_1/n_2)^2 \sin^2\theta_B) = n_1^2 - (n_1^4/n_2^2)\sin^2\theta_B$.
-$n_2^2 (1-\sin^2\theta_B) = n_1^2 - (n_1^4/n_2^2)\sin^2\theta_B$.
-$n_2^2 - n_2^2\sin^2\theta_B = n_1^2 - (n_1^4/n_2^2)\sin^2\theta_B$.
-$n_2^2 - n_1^2 = (n_2^2 - n_1^4/n_2^2)\sin^2\theta_B = \frac{n_2^4-n_1^4}{n_2^2}\sin^2\theta_B = \frac{(n_2^2-n_1^2)(n_2^2+n_1^2)}{n_2^2}\sin^2\theta_B$.
+$$
+\begin{aligned}
+n_2^2 \cos^2\theta_B
+  &= n_1^2 \left(1 - \left(\frac{n_1}{n_2}\right)^2 \sin^2\theta_B\right)
+  = n_1^2 - \frac{n_1^4}{n_2^2}\sin^2\theta_B, \\
+n_2^2 (1-\sin^2\theta_B)
+  &= n_1^2 - \frac{n_1^4}{n_2^2}\sin^2\theta_B, \\
+n_2^2 - n_2^2\sin^2\theta_B
+  &= n_1^2 - \frac{n_1^4}{n_2^2}\sin^2\theta_B, \\
+n_2^2 - n_1^2
+  &= \left(n_2^2 - \frac{n_1^4}{n_2^2}\right)\sin^2\theta_B \\
+  &= \frac{n_2^4-n_1^4}{n_2^2}\sin^2\theta_B
+  = \frac{(n_2^2-n_1^2)(n_2^2+n_1^2)}{n_2^2}\sin^2\theta_B.
+\end{aligned}
+$$
+
 If $n_1 \neq n_2$, we can divide by $(n_2^2-n_1^2)$:
-$1 = \frac{n_1^2+n_2^2}{n_2^2}\sin^2\theta_B \implies \sin^2\theta_B = \frac{n_2^2}{n_1^2+n_2^2}$.
-Then $\tan^2\theta_B = \frac{\sin^2\theta_B}{\cos^2\theta_B} = \frac{\sin^2\theta_B}{1-\sin^2\theta_B} = \frac{n_2^2/(n_1^2+n_2^2)}{1 - n_2^2/(n_1^2+n_2^2)} = \frac{n_2^2/(n_1^2+n_2^2)}{n_1^2/(n_1^2+n_2^2)} = \left(\frac{n_2}{n_1}\right)^2$.
+$$
+1 = \frac{n_1^2+n_2^2}{n_2^2}\sin^2\theta_B \implies \sin^2\theta_B = \frac{n_2^2}{n_1^2+n_2^2}.
+$$
+Then:
+$$
+\begin{aligned}
+\tan^2\theta_B
+  &= \frac{\sin^2\theta_B}{\cos^2\theta_B}
+  = \frac{\sin^2\theta_B}{1-\sin^2\theta_B} \\
+  &= \frac{n_2^2/(n_1^2+n_2^2)}{1 - n_2^2/(n_1^2+n_2^2)}
+  = \frac{n_2^2/(n_1^2+n_2^2)}{n_1^2/(n_1^2+n_2^2)}
+  = \left(\frac{n_2}{n_1}\right)^2.
+\end{aligned}
+$$
+
 Thus, Brewster's angle is given by:
 $$
 \tan\theta_B = \frac{n_2}{n_1}.

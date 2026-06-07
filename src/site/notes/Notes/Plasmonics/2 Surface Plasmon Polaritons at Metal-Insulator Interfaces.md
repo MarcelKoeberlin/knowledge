@@ -140,9 +140,13 @@ We are interested in the lowest-order bound TM modes that are non-oscillatory (e
 Now consider the symmetric case where the claddings (media 2 and 3) share the same dielectric response, so $\varepsilon_2 = \varepsilon_3$, and thus $\kappa_2 = \kappa_3$. The dispersion relations for the coupled modes in such a symmetric three-layer structure (central layer $\varepsilon_1$, thickness $d,$ claddings $\varepsilon_2$) are given by a pair of transcendental equations:
 
 - For symmetric $H_y$ field profile; often termed antisymmetric or odd mode for $E_x$:
-	$$\tanh\left(\frac{\kappa_1 d}{2}\right) = -\frac{\kappa_2 \varepsilon_1}{\kappa_1 \varepsilon_2}$$
+	$$
+	\tanh\left(\frac{\kappa_1 d}{2}\right) = -\frac{\kappa_2 \varepsilon_1}{\kappa_1 \varepsilon_2}
+	$$
 - For antisymmetric $H_y$ field profile; often termed symmetric or even mode for $E_x$ or charge distribution): 
-	$$\coth\left(\frac{\kappa_1 d}{2}\right) = -\frac{\kappa_2 \varepsilon_1}{\kappa_1 \varepsilon_2}$$
+	$$
+	\coth\left(\frac{\kappa_1 d}{2}\right) = -\frac{\kappa_2 \varepsilon_1}{\kappa_1 \varepsilon_2}
+	$$
 
 Here $\kappa_1 = \sqrt{\beta^2 - k_0^2\varepsilon_1}$ and $\kappa_2 = \sqrt{\beta^2 - k_0^2\varepsilon_2}$. The parity refers to the symmetry of the dominant field component ($H_y$) or charge distribution with respect to the center of the middle layer. For example:
 1. The first equation (with $\tanh$) typically corresponds to modes where $H_y(z)$ is symmetric (even function) with respect to the center of layer 1, and $E_x(z)$ is antisymmetric (odd).

@@ -247,7 +247,7 @@ This can eventually lead to the formation of an optical shock, where the intensi
 ## 4.5 Nonlinear Propagation in a Saturable Absorber or Saturable Amplifier
 [ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
-This section introduces concepts fundamental for understanding passive mode-locking (covered in [[Notes/Ultrafast Laser Physics/8 Passive Modelocking\|Chapter 8]]).
+This section introduces concepts fundamental for understanding passive mode-locking (covered in [[Notes/Ultrafast Laser Physics/9 Passive Modelocking\|Chapter 9]]).
 Consider a homogeneously broadened solid-state laser medium, describable as a two-level atomic system. The rate equations lead to a gain that saturates with increasing light intensity. The intensity-dependent gain coefficient $g(I)$ (for intensity) is often written as:
 $$
 g(I)=\frac{g_0}{1+I/I_{\text{sat}}},

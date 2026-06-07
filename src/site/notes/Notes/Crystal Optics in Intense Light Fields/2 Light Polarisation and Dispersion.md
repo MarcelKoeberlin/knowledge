@@ -49,9 +49,13 @@ Two orthogonal Jones vectors form a basis for the polarisation space, such that 
 
 Some common basis vectors and examples of normalised Jones vectors are:
 - Linearly polarised light along the $x$-axis and $y$-axis:
-    $$\mathbf{J}_{x}=\begin{pmatrix} 1 \\ 0 \end{pmatrix} \quad \text{and} \quad \mathbf{J}_{y}=\begin{pmatrix} 0 \\ 1 \end{pmatrix}.$$
+    $$
+    \mathbf{J}_{x}=\begin{pmatrix} 1 \\ 0 \end{pmatrix} \quad \text{and} \quad \mathbf{J}_{y}=\begin{pmatrix} 0 \\ 1 \end{pmatrix}.
+    $$
 - Left-circularly polarised (LCP) and right-circularly polarised (RCP) light (convention: looking towards the source, LCP E-field rotates counter-clockwise, RCP clockwise):
-    $$\mathbf{J}_{\text{LCP}}=\frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ i \end{pmatrix} \quad \text{and} \quad \mathbf{J}_{\text{RCP}}=\frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ -i \end{pmatrix}.$$
+    $$
+    \mathbf{J}_{\text{LCP}}=\frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ i \end{pmatrix} \quad \text{and} \quad \mathbf{J}_{\text{RCP}}=\frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ -i \end{pmatrix}.
+    $$
     (Note: definitions of LCP/RCP can vary; here $E_y$ leads $E_x$ by $\pi/2$ for LCP, and lags for RCP).
 
 The Jones vector formalism is particularly useful because the action of deterministic optical devices or materials that alter the polarisation state of light can be described by $2 \times 2$ complex matrices, known as Jones matrices. If $\mathbf{J}_{\text{in}}$ is the input polarisation state, then the output state $\mathbf{J}_{\text{out}}$ after passing through an element with Jones matrix $\mathbf{M}$ is:
@@ -77,9 +81,13 @@ $$
 \mathbf{M}_{\text{WP}}(\Gamma)=\begin{pmatrix} 1 & 0 \\ 0 & e^{-i\Gamma} \end{pmatrix}.
 $$
 - A **half-wave plate** ($\lambda/2$ plate) introduces $\Gamma=\pi$:
-  $$\mathbf{M}_{\lambda/2}^0=\begin{pmatrix} 1 & 0 \\ 0 & e^{-i\pi} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}.$$
+  $$
+  \mathbf{M}_{\lambda/2}^0=\begin{pmatrix} 1 & 0 \\ 0 & e^{-i\pi} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}.
+  $$
 - A **quarter-wave plate** ($\lambda/4$ plate) introduces $\Gamma=\pi/2$:
-  $$\mathbf{M}_{\lambda/4}^0=\begin{pmatrix} 1 & 0 \\ 0 & e^{-i\pi/2} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & -i \end{pmatrix}.$$
+  $$
+  \mathbf{M}_{\lambda/4}^0=\begin{pmatrix} 1 & 0 \\ 0 & e^{-i\pi/2} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & -i \end{pmatrix}.
+  $$
 If a half-wave plate is aligned with its fast axis along $x$ (so $\varphi=0^\circ$), incident x-polarised light $\begin{pmatrix}1\\0\end{pmatrix}$ remains unchanged:
 $$
 \mathbf{J}_{\text{out}} = \mathbf{M}_{\lambda/2}^0 \mathbf{J}_{\text{in}} = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}\begin{pmatrix} 1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1 \\ 0 \end{pmatrix}.
