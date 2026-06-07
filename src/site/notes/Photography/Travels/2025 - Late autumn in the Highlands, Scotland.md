@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/travels/2025-late-autumn-in-the-highlands-scotland/","hide":"true","updated":"2026-06-07T14:50:49.931+02:00"}
+{"dg-publish":true,"permalink":"/photography/travels/2025-late-autumn-in-the-highlands-scotland/","hide":"true","updated":"2026-06-07T15:05:39.070+02:00"}
 ---
 
 Jump back to [[Photography/Photography\|selection]].
@@ -20,7 +20,7 @@ width="100%"
 height="500"  
 frameborder="0"  
 allowfullscreen  
-src="http://u.osmfr.org/m/1418399/?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true">  
+src="http://u.osmfr.org/m/1418399/?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true">  
 </iframe>
 
 

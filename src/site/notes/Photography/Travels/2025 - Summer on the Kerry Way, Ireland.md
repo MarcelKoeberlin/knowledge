@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/travels/2025-summer-on-the-kerry-way-ireland/","hide":"true","updated":"2026-06-07T14:50:02.805+02:00"}
+{"dg-publish":true,"permalink":"/photography/travels/2025-summer-on-the-kerry-way-ireland/","hide":"true","updated":"2026-06-07T15:06:04.169+02:00"}
 ---
 
 Jump back to [[Photography/Photography\|selection]].
@@ -25,7 +25,7 @@ width="100%"
 height="500"  
 frameborder="0"  
 allowfullscreen  
-src="https://umap.openstreetmap.fr/en/map/kerry-way_1418347?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true">  
+src="https://umap.openstreetmap.fr/en/map/kerry-way_1418347?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true">  
 </iframe>
 
 ---

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/travels/2026-early-summer-in-the-lake-district-uk/","hide":"true","updated":"2026-06-07T14:49:45.551+02:00"}
+{"dg-publish":true,"permalink":"/photography/travels/2026-early-summer-in-the-lake-district-uk/","hide":"true","updated":"2026-06-07T15:06:16.100+02:00"}
 ---
 
 Jump back to [[Photography/Photography\|selection]].
@@ -17,7 +17,7 @@ width="100%"
 height="500"  
 frameborder="0"  
 allowfullscreen  
-src="https://umap.openstreetmap.fr/en/map/cumbria-way_1418354?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true">  
+src="https://umap.openstreetmap.fr/en/map/cumbria-way_1418354?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true">  
 </iframe>
 
 ---
