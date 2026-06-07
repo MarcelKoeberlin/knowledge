@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/travels/2025-summer-on-the-kerry-way-ireland/","hide":"true","updated":"2026-06-07T15:06:04.169+02:00"}
+{"dg-publish":true,"permalink":"/photography/travels/2025-summer-on-the-kerry-way-ireland/","hide":"true","updated":"2026-06-07T17:16:15.112+02:00"}
 ---
 
 Jump back to [[Photography/Photography\|selection]].
@@ -20,12 +20,6 @@ _In peak summer the Kerry Way is all deep green hills, flowering hedgerows, and 
 2025-08-01 Ireland, Kerry Cliffs - Valentia Island: [Google Photos](https://photos.app.goo.gl/fge8k245g8XGCcoq8)
 2025-08 Kerry Way, Sneem and Malahide: [Google Photos](https://photos.app.goo.gl/nN2q3QrbDYPVEZ1Y8)
 
-<iframe  
-width="100%"  
-height="500"  
-frameborder="0"  
-allowfullscreen  
-src="https://umap.openstreetmap.fr/en/map/kerry-way_1418347?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true">  
-</iframe>
+<iframe width="100%" height="700rem" src="https://maphub.net/embed_h/E90mItXLbE6l0wFK?panel=1&panel_closed=1" frameborder="0"></iframe>
 
 ---
