@@ -1,22 +1,22 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/7-saturable-absorbers-for-solid-state-lasers/","hide":"true","updated":"2026-06-07T00:00:00.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/7-saturable-absorbers-for-solid-state-lasers/","hide":"true","updated":"2026-06-07T20:14:09.237+02:00"}
 ---
 
-Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents|chapter selection]]==.
+Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
 
-[[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers#7.1 Why Saturable Absorbers Matter|7.1 Why Saturable Absorbers Matter]]
-[[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers#7.2 Slow and Fast Saturable Absorbers|7.2 Slow and Fast Saturable Absorbers]]
-[[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers#7.3 Nonlinear Reflectivity Models|7.3 Nonlinear Reflectivity Models]]
-[[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers#7.4 Semiconductor Saturable Absorbers|7.4 Semiconductor Saturable Absorbers]]
-[[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers#7.5 SESAMs|7.5 SESAMs]]
-[[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers#7.6 Damage, Measurement, and Design Parameters|7.6 Damage, Measurement, and Design Parameters]]
+[[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers#7.1 Why Saturable Absorbers Matter\|7.1 Why Saturable Absorbers Matter]]
+[[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers#7.2 Slow and Fast Saturable Absorbers\|7.2 Slow and Fast Saturable Absorbers]]
+[[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers#7.3 Nonlinear Reflectivity Models\|7.3 Nonlinear Reflectivity Models]]
+[[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers#7.4 Semiconductor Saturable Absorbers\|7.4 Semiconductor Saturable Absorbers]]
+[[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers#7.5 SESAMs\|7.5 SESAMs]]
+[[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers#7.6 Damage, Measurement, and Design Parameters\|7.6 Damage, Measurement, and Design Parameters]]
 
 ---
 # 7 Saturable Absorbers for Solid-State Lasers
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=297)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 A saturable absorber is an optical element whose loss decreases when the optical intensity or fluence becomes large. In a laser cavity this creates an intensity-dependent discrimination: weak continuous-wave light sees high loss, while a short intense pulse sees lower loss. This mechanism is central to passive Q-switching and passive modelocking.
 
@@ -24,7 +24,7 @@ For solid-state lasers the most important modern implementation is the semicondu
 
 ---
 ## 7.1 Why Saturable Absorbers Matter
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=297)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The microscopic picture is simple. At low intensity, photons are absorbed by exciting carriers from a lower to an upper state. At high intensity, the available absorbing states are depleted or filled, so fewer photons can be absorbed. The absorber becomes more transparent.
 
@@ -59,7 +59,7 @@ Changing the spot size on the absorber is therefore a direct way of changing the
 
 ---
 ## 7.2 Slow and Fast Saturable Absorbers
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=300)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The absorber recovery time $\tau_A$ should always be compared with the pulse duration $\tau_p$ and the cavity roundtrip time $T_R$.
 
@@ -87,7 +87,7 @@ For a short pulse in the slow-absorber limit, recovery during the pulse can be n
 
 ---
 ## 7.3 Nonlinear Reflectivity Models
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=306)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 For a mirror-type absorber it is often more useful to describe the nonlinear response directly by a fluence-dependent reflectivity. In the slow-absorber limit, a simple pulse-averaged model is
 $$
@@ -117,7 +117,7 @@ The relevant absorber parameters are therefore not just $\Delta R$ and $F_{\math
 
 ---
 ## 7.4 Semiconductor Saturable Absorbers
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=313)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 In a semiconductor absorber, photons with energy near or above the bandgap create electron-hole pairs. Absorption decreases when the relevant electronic states are filled, so further transitions are blocked. This is the physical origin of saturation.
 
@@ -134,7 +134,7 @@ Fast recovery is useful for high repetition rates and short pulses, but delibera
 
 ---
 ## 7.5 SESAMs
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=324)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 A semiconductor saturable absorber mirror consists of at least two functional parts:
 
@@ -155,7 +155,7 @@ For ultrafast lasers, SESAM dispersion can be as important as its nonlinear refl
 
 ---
 ## 7.6 Damage, Measurement, and Design Parameters
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=355)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The absorber must survive the intracavity fluence. Damage can be caused by optical breakdown, local heating, defect absorption, or excessive carrier density. The damage threshold is usually specified as a fluence, because pulsed operation deposits energy over a small area in a short time.
 
@@ -174,4 +174,4 @@ The most important SESAM design parameters are:
 
 For passive modelocking, the absorber should saturate at the pulse fluence but not at the cw intracavity intensity. For passive Q-switching, the absorber should allow the gain to build up before it bleaches. The same physical device can therefore behave very differently depending on the cavity, pump level, beam size, and gain medium.
 
-For few-cycle oscillators that later seed [[Notes/Attosecond Physics/2 Generation of Attosecond Pulses|single-attosecond-pulse generation]], absorber design is usually indirect but still important. A noisy or Q-switched modelocked oscillator makes downstream amplification and CEP stabilisation harder. A robust SESAM can provide reliable self-starting, while Kerr-lens or soliton dynamics provide the strongest pulse shortening.
+For few-cycle oscillators that later seed [[Notes/Attosecond Physics/2 Generation of Attosecond Pulses\|single-attosecond-pulse generation]], absorber design is usually indirect but still important. A noisy or Q-switched modelocked oscillator makes downstream amplification and CEP stabilisation harder. A robust SESAM can provide reliable self-starting, while Kerr-lens or soliton dynamics provide the strongest pulse shortening.

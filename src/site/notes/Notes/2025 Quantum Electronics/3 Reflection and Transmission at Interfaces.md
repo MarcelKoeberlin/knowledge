@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/3-reflection-and-transmission-at-interfaces/","hide":"true","updated":"2025-06-04T15:34:04.874+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/3-reflection-and-transmission-at-interfaces/","hide":"true","updated":"2026-06-07T19:30:24.051+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.

@@ -1,22 +1,22 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/7-sampling/","hide":"true","updated":"2026-06-07T00:00:00.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/7-sampling/","hide":"true","updated":"2026-06-07T20:05:43.062+02:00"}
 ---
 
-Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents|chapter selection]]==.
+Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
 
-[[Notes/Signals and Systems/7 Sampling#7.1 The Sampling Theorem|7.1 The Sampling Theorem]]
-[[Notes/Signals and Systems/7 Sampling#7.2 Reconstruction and Interpolation|7.2 Reconstruction and Interpolation]]
-[[Notes/Signals and Systems/7 Sampling#7.3 Aliasing|7.3 Aliasing]]
-[[Notes/Signals and Systems/7 Sampling#7.4 Discrete-Time Processing of Continuous-Time Signals|7.4 Discrete-Time Processing of Continuous-Time Signals]]
-[[Notes/Signals and Systems/7 Sampling#7.5 Discrete-Time Sampling, Decimation, and Interpolation|7.5 Discrete-Time Sampling, Decimation, and Interpolation]]
-[[Notes/Signals and Systems/7 Sampling#7.6 Quantization and Practical Conversion|7.6 Quantization and Practical Conversion]]
+[[Notes/Signals and Systems/7 Sampling#7.1 The Sampling Theorem\|7.1 The Sampling Theorem]]
+[[Notes/Signals and Systems/7 Sampling#7.2 Reconstruction and Interpolation\|7.2 Reconstruction and Interpolation]]
+[[Notes/Signals and Systems/7 Sampling#7.3 Aliasing\|7.3 Aliasing]]
+[[Notes/Signals and Systems/7 Sampling#7.4 Discrete-Time Processing of Continuous-Time Signals\|7.4 Discrete-Time Processing of Continuous-Time Signals]]
+[[Notes/Signals and Systems/7 Sampling#7.5 Discrete-Time Sampling, Decimation, and Interpolation\|7.5 Discrete-Time Sampling, Decimation, and Interpolation]]
+[[Notes/Signals and Systems/7 Sampling#7.6 Quantization and Practical Conversion\|7.6 Quantization and Practical Conversion]]
 
 ---
 # 7 Sampling
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=545) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=182)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 Sampling is the bridge between continuous-time and discrete-time signal processing. The surprising result is that a continuous-time signal can be represented exactly by equally spaced samples if it is bandlimited and if the sampling rate is high enough.
 
@@ -24,7 +24,7 @@ The exact theorem is idealised. Real systems need anti-aliasing filters, sample-
 
 ---
 ## 7.1 The Sampling Theorem
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=546)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 Sampling a continuous-time signal at period $T$ can be represented by multiplying it with an impulse train
 $$
@@ -60,7 +60,7 @@ This is the sampling theorem. The frequency $2\omega_M$ is the Nyquist rate. Equ
 
 ---
 ## 7.2 Reconstruction and Interpolation
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=553)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 If the sampling theorem is satisfied, the original signal is recovered by an ideal lowpass filter that selects the central spectral replica and rejects all others. The required reconstruction filter has gain $T$ in the passband:
 $$
@@ -98,7 +98,7 @@ The magnitude has a sinc droop, so perfect reconstruction after a zero-order hol
 
 ---
 ## 7.3 Aliasing
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=558)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 If the shifted spectral replicas overlap, the original spectrum cannot be recovered by lowpass filtering. This overlap is aliasing.
 
@@ -120,7 +120,7 @@ Aliasing is not just a mathematical nuisance. It is the reason a stroboscope can
 
 ---
 ## 7.4 Discrete-Time Processing of Continuous-Time Signals
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=565) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=196)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 A common processing chain is
 $$
@@ -147,7 +147,7 @@ There are three important practical caveats:
 
 ---
 ## 7.5 Discrete-Time Sampling, Decimation, and Interpolation
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=576) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=208)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 Sampling ideas also apply entirely within discrete time. Downsampling by an integer factor $M$ keeps every $M$-th sample:
 $$
@@ -178,7 +178,7 @@ Changing a sampling rate by a rational factor $L/M$ is done by interpolation by 
 
 ---
 ## 7.6 Quantization and Practical Conversion
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=234)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 An A/D converter does not only sample in time; it also quantizes amplitude. If the quantization step is $\Delta$, the quantized value can be modelled as
 $$

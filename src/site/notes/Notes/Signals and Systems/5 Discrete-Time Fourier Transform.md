@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/5-discrete-time-fourier-transform/","hide":"true","updated":"2025-05-30T20:32:50.501+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/5-discrete-time-fourier-transform/","hide":"true","updated":"2026-06-07T19:28:58.300+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.

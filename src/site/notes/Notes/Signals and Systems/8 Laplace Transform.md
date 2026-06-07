@@ -1,27 +1,27 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/8-laplace-transform/","hide":"true","updated":"2026-06-07T00:00:00.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/8-laplace-transform/","hide":"true","updated":"2026-06-07T20:07:00.271+02:00"}
 ---
 
-Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents|chapter selection]]==.
+Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
 
-[[Notes/Signals and Systems/8 Laplace Transform#8.1 Definition and Region of Convergence|8.1 Definition and Region of Convergence]]
-[[Notes/Signals and Systems/8 Laplace Transform#8.2 Poles, Zeros, and Inverse Transforms|8.2 Poles, Zeros, and Inverse Transforms]]
-[[Notes/Signals and Systems/8 Laplace Transform#8.3 Properties of the Laplace Transform|8.3 Properties of the Laplace Transform]]
-[[Notes/Signals and Systems/8 Laplace Transform#8.4 LTI Systems and System Functions|8.4 LTI Systems and System Functions]]
-[[Notes/Signals and Systems/8 Laplace Transform#8.5 Unilateral Laplace Transform|8.5 Unilateral Laplace Transform]]
+[[Notes/Signals and Systems/8 Laplace Transform#8.1 Definition and Region of Convergence\|8.1 Definition and Region of Convergence]]
+[[Notes/Signals and Systems/8 Laplace Transform#8.2 Poles, Zeros, and Inverse Transforms\|8.2 Poles, Zeros, and Inverse Transforms]]
+[[Notes/Signals and Systems/8 Laplace Transform#8.3 Properties of the Laplace Transform\|8.3 Properties of the Laplace Transform]]
+[[Notes/Signals and Systems/8 Laplace Transform#8.4 LTI Systems and System Functions\|8.4 LTI Systems and System Functions]]
+[[Notes/Signals and Systems/8 Laplace Transform#8.5 Unilateral Laplace Transform\|8.5 Unilateral Laplace Transform]]
 
 ---
 # 8 Laplace Transform
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=685)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 The Fourier transform is ideal for stable LTI systems and finite-energy signals, but many important signals do not have Fourier transforms in the ordinary sense. The Laplace transform extends Fourier analysis by adding an exponential weighting factor. This makes it possible to describe growing and decaying signals, transient responses, unstable systems, and differential equations with initial conditions.
 
 ---
 ## 8.1 Definition and Region of Convergence
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=686)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 The bilateral Laplace transform of a continuous-time signal $x(t)$ is
 $$
@@ -66,7 +66,7 @@ For rational transforms, the ROC is a vertical strip or half-plane in the $s$-pl
 
 ---
 ## 8.2 Poles, Zeros, and Inverse Transforms
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=693)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 For rational transforms,
 $$
@@ -99,7 +99,7 @@ Poles near the imaginary axis create peaks in the frequency response. Zeros near
 
 ---
 ## 8.3 Properties of the Laplace Transform
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=713)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 If
 $$
@@ -131,7 +131,7 @@ The final-value theorem is dangerous if the system has poles in the right half-p
 
 ---
 ## 8.4 LTI Systems and System Functions
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=724)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 For a continuous-time LTI system,
 $$
@@ -170,7 +170,7 @@ The denominator roots are the natural modes of the system. The numerator roots s
 
 ---
 ## 8.5 Unilateral Laplace Transform
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=745)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 The unilateral Laplace transform is defined by
 $$

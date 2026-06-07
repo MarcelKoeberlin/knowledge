@@ -1,23 +1,23 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/9-passive-modelocking/","hide":"true","updated":"2026-06-07T00:00:00.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/9-passive-modelocking/","hide":"true","updated":"2026-06-07T20:14:09.308+02:00"}
 ---
 
-Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents|chapter selection]]==.
+Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
 
-[[Notes/Ultrafast Laser Physics/9 Passive Modelocking#9.1 Basic Principle|9.1 Basic Principle]]
-[[Notes/Ultrafast Laser Physics/9 Passive Modelocking#9.2 Coupled-Cavity and Additive-Pulse Modelocking|9.2 Coupled-Cavity and Additive-Pulse Modelocking]]
-[[Notes/Ultrafast Laser Physics/9 Passive Modelocking#9.3 Slow Saturable Absorber with Dynamic Gain Saturation|9.3 Slow Saturable Absorber with Dynamic Gain Saturation]]
-[[Notes/Ultrafast Laser Physics/9 Passive Modelocking#9.4 Fast Saturable Absorbers and Kerr-Lens Modelocking|9.4 Fast Saturable Absorbers and Kerr-Lens Modelocking]]
-[[Notes/Ultrafast Laser Physics/9 Passive Modelocking#9.5 Soliton Modelocking with Slow Absorbers|9.5 Soliton Modelocking with Slow Absorbers]]
-[[Notes/Ultrafast Laser Physics/9 Passive Modelocking#9.6 Q-Switching Instabilities|9.6 Q-Switching Instabilities]]
-[[Notes/Ultrafast Laser Physics/9 Passive Modelocking#9.7 Modern Solid-State Modelocked Lasers|9.7 Modern Solid-State Modelocked Lasers]]
+[[Notes/Ultrafast Laser Physics/9 Passive Modelocking#9.1 Basic Principle\|9.1 Basic Principle]]
+[[Notes/Ultrafast Laser Physics/9 Passive Modelocking#9.2 Coupled-Cavity and Additive-Pulse Modelocking\|9.2 Coupled-Cavity and Additive-Pulse Modelocking]]
+[[Notes/Ultrafast Laser Physics/9 Passive Modelocking#9.3 Slow Saturable Absorber with Dynamic Gain Saturation\|9.3 Slow Saturable Absorber with Dynamic Gain Saturation]]
+[[Notes/Ultrafast Laser Physics/9 Passive Modelocking#9.4 Fast Saturable Absorbers and Kerr-Lens Modelocking\|9.4 Fast Saturable Absorbers and Kerr-Lens Modelocking]]
+[[Notes/Ultrafast Laser Physics/9 Passive Modelocking#9.5 Soliton Modelocking with Slow Absorbers\|9.5 Soliton Modelocking with Slow Absorbers]]
+[[Notes/Ultrafast Laser Physics/9 Passive Modelocking#9.6 Q-Switching Instabilities\|9.6 Q-Switching Instabilities]]
+[[Notes/Ultrafast Laser Physics/9 Passive Modelocking#9.7 Modern Solid-State Modelocked Lasers\|9.7 Modern Solid-State Modelocked Lasers]]
 
 ---
 # 9 Passive Modelocking
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=437)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Passive modelocking uses an intensity-dependent element inside the cavity to favour pulsed operation without an external modulation signal. The most common mechanisms are a real saturable absorber, such as a SESAM, or an artificial saturable absorber, such as Kerr-lens modelocking.
 
@@ -25,7 +25,7 @@ Compared with active modelocking, passive modelocking can produce much shorter p
 
 ---
 ## 9.1 Basic Principle
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=437)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 In passive modelocking, the cavity is arranged so that a short pulse experiences lower roundtrip loss than weak cw light or noise. Once a fluctuation becomes slightly more intense, it saturates the absorber more strongly, experiences less loss, and grows relative to the background. This positive feedback can lead to a stable circulating pulse.
 
@@ -49,11 +49,11 @@ P_{\mathrm{av}}=E_p f_{\mathrm{rep}}=\frac{E_p}{T_R}.
 $$
 This relation is useful because many stability conditions involve pulse energy, while thermal loading and pump requirements often involve average power.
 
-For strong-field and [[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation|HHG]] applications, the oscillator usually does not directly provide enough pulse energy. Its job is to produce a stable, coherent seed pulse train. The pulses are then stretched, amplified, compressed, and sometimes spectrally broadened. Passive modelocking is therefore the starting point of the timing and phase coherence that later matters in attosecond experiments.
+For strong-field and [[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation\|HHG]] applications, the oscillator usually does not directly provide enough pulse energy. Its job is to produce a stable, coherent seed pulse train. The pulses are then stretched, amplified, compressed, and sometimes spectrally broadened. Passive modelocking is therefore the starting point of the timing and phase coherence that later matters in attosecond experiments.
 
 ---
 ## 9.2 Coupled-Cavity and Additive-Pulse Modelocking
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=445)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Historically, passive modelocking was also achieved by coupled-cavity or additive-pulse modelocking. In these schemes, the main cavity is coupled to an auxiliary cavity. Interference between the returning fields creates an intensity-dependent transmission or loss.
 
@@ -63,7 +63,7 @@ Although SESAMs and Kerr-lens modelocking are more common in modern solid-state 
 
 ---
 ## 9.3 Slow Saturable Absorber with Dynamic Gain Saturation
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=454)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 A slow saturable absorber alone does not necessarily shorten the trailing edge of the pulse, because once it is bleached it can remain transparent for the rest of the pulse. Pulse shaping can still occur if the gain also changes dynamically during the pulse.
 
@@ -73,7 +73,7 @@ In solid-state lasers, the upper-state lifetime is often much longer than the pu
 
 ---
 ## 9.4 Fast Saturable Absorbers and Kerr-Lens Modelocking
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=466)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 A fast saturable absorber follows the instantaneous pulse intensity. It gives lower loss at the peak of the pulse and higher loss in the wings, so it directly favours pulse shortening. A simple model is
 $$
@@ -93,7 +93,7 @@ The Kerr lens can be interpreted as an intensity-dependent mode-size change. In 
 
 ---
 ## 9.5 Soliton Modelocking with Slow Absorbers
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=475)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Many femtosecond solid-state lasers use a slow SESAM together with soliton pulse shaping. The SESAM starts and stabilises modelocking, while the pulse duration is mainly determined by the balance between negative group-delay dispersion and self-phase modulation.
 
@@ -121,7 +121,7 @@ The sign convention is easy to lose track of, so the physical statement is more 
 
 ---
 ## 9.6 Q-Switching Instabilities
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=514)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 A passively modelocked laser can become Q-switched if the absorber and gain also support a slower energy-storage cycle. Then the laser emits bursts of modelocked pulses under a Q-switched envelope rather than a steady pulse train.
 
@@ -139,7 +139,7 @@ This is why SESAM parameters cannot be chosen independently of the laser cavity.
 
 ---
 ## 9.7 Modern Solid-State Modelocked Lasers
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=525)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Modern passive modelocking covers several regimes:
 
@@ -150,4 +150,4 @@ Modern passive modelocking covers several regimes:
 
 The performance frontier is not one-dimensional. Shortest pulse duration, highest average power, highest repetition rate, lowest noise, broadest tuning, and easiest self-starting are different optimisation targets. Passive modelocking is powerful precisely because its physical mechanisms can be combined: saturable absorption for self-starting, Kerr lensing for fast nonlinear loss, soliton shaping for femtosecond pulses, and engineered dispersion for stable operation.
 
-Few-cycle passive modelocked oscillators are especially important because the electric-field waveform becomes experimentally relevant. In [[Notes/Attosecond Physics/2 Generation of Attosecond Pulses#2.2 Amplitude Gating|amplitude gating]] for isolated attosecond pulse generation, only the strongest half-cycle of a few-cycle driver should contribute efficiently to HHG. That requires not only short intensity envelopes, but also stable carrier-envelope phase, which connects directly to [[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers|frequency combs]].
+Few-cycle passive modelocked oscillators are especially important because the electric-field waveform becomes experimentally relevant. In [[Notes/Attosecond Physics/2 Generation of Attosecond Pulses#2.2 Amplitude Gating\|amplitude gating]] for isolated attosecond pulse generation, only the strongest half-cycle of a few-cycle driver should contribute efficiently to HHG. That requires not only short intensity envelopes, but also stable carrier-envelope phase, which connects directly to [[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers\|frequency combs]].

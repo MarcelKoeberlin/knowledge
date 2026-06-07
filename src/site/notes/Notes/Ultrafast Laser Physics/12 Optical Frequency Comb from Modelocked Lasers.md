@@ -1,23 +1,23 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/12-optical-frequency-comb-from-modelocked-lasers/","hide":"true","updated":"2026-06-07T00:00:00.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/12-optical-frequency-comb-from-modelocked-lasers/","hide":"true","updated":"2026-06-07T20:14:09.450+02:00"}
 ---
 
-Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents|chapter selection]]==.
+Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
 
-[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers#12.1 Comb Lines from a Modelocked Laser|12.1 Comb Lines from a Modelocked Laser]]
-[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers#12.2 Carrier-Envelope Offset Phase and Frequency|12.2 Carrier-Envelope Offset Phase and Frequency]]
-[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers#12.3 Measuring the CEO Frequency|12.3 Measuring the CEO Frequency]]
-[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers#12.4 Phase Noise and Frequency Noise|12.4 Phase Noise and Frequency Noise]]
-[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers#12.5 Optical Linewidth and Stability|12.5 Optical Linewidth and Stability]]
-[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers#12.6 Stabilised Frequency Combs|12.6 Stabilised Frequency Combs]]
-[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers#12.7 Practical Comb Technology|12.7 Practical Comb Technology]]
+[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers#12.1 Comb Lines from a Modelocked Laser\|12.1 Comb Lines from a Modelocked Laser]]
+[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers#12.2 Carrier-Envelope Offset Phase and Frequency\|12.2 Carrier-Envelope Offset Phase and Frequency]]
+[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers#12.3 Measuring the CEO Frequency\|12.3 Measuring the CEO Frequency]]
+[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers#12.4 Phase Noise and Frequency Noise\|12.4 Phase Noise and Frequency Noise]]
+[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers#12.5 Optical Linewidth and Stability\|12.5 Optical Linewidth and Stability]]
+[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers#12.6 Stabilised Frequency Combs\|12.6 Stabilised Frequency Combs]]
+[[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers#12.7 Practical Comb Technology\|12.7 Practical Comb Technology]]
 
 ---
 # 12 Optical Frequency Comb from Modelocked Lasers
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=657)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 A modelocked laser is simultaneously an ultrashort-pulse source and an optical frequency comb. In the time domain it emits a periodic train of pulses. In the frequency domain this periodicity produces a set of equally spaced optical lines. The line spacing is the pulse repetition rate, and the absolute position of the comb is set by the carrier-envelope offset.
 
@@ -29,7 +29,7 @@ where $m$ is a large integer, $f_{\mathrm{rep}}$ is the repetition rate, and $f_
 
 ---
 ## 12.1 Comb Lines from a Modelocked Laser
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=657)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The electric field of a pulse can be written as
 $$
@@ -56,7 +56,7 @@ This is the key difference between "a stable repetition rate" and "a fully known
 
 ---
 ## 12.2 Carrier-Envelope Offset Phase and Frequency
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=660)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The carrier-envelope offset describes the position of the optical carrier relative to the pulse envelope. A useful time-domain definition is
 $$
@@ -64,7 +64,7 @@ $$
 $$
 For long pulses, a changing carrier-envelope phase often has little direct effect on the intensity envelope. For few-cycle pulses, the peak electric field depends strongly on this phase, so CEO stability becomes essential in strong-field and attosecond experiments.
 
-For example, in a near-infrared pulse with only a few optical cycles, changing $\phi_{\mathrm{CEO}}$ can move the largest electric-field half-cycle from the centre of the envelope to a neighbouring half-cycle. In [[Notes/Attosecond Physics/2 Generation of Attosecond Pulses#2.2 Amplitude Gating|amplitude gating]], that can decide whether one attosecond burst or a train of bursts is generated.
+For example, in a near-infrared pulse with only a few optical cycles, changing $\phi_{\mathrm{CEO}}$ can move the largest electric-field half-cycle from the centre of the envelope to a neighbouring half-cycle. In [[Notes/Attosecond Physics/2 Generation of Attosecond Pulses#2.2 Amplitude Gating\|amplitude gating]], that can decide whether one attosecond burst or a train of bursts is generated.
 
 The instantaneous optical frequency is the time derivative of the total phase:
 $$
@@ -78,7 +78,7 @@ In a modelocked laser, the CEO phase is determined by the difference between pha
 
 ---
 ## 12.3 Measuring the CEO Frequency
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=666)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The standard self-referencing technique is an $f$-to-$2f$ interferometer. It requires an octave-spanning comb spectrum. Consider one comb tooth at the low-frequency side:
 $$
@@ -106,7 +106,7 @@ The $f$-to-$2f$ beat is only useful if it has enough signal-to-noise ratio for p
 
 ---
 ## 12.4 Phase Noise and Frequency Noise
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=673)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Optical phase noise is usually described by the phase fluctuation $\varphi(t)$ or its PSD $S_\varphi(f)$. The corresponding frequency fluctuation in cycles per second is
 $$
@@ -134,7 +134,7 @@ For the comb tooth $m$, repetition-rate noise is multiplied by the large integer
 
 ---
 ## 12.5 Optical Linewidth and Stability
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=681)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The linewidth of a comb tooth depends on the integrated phase noise of that tooth. Slow frequency drift can broaden the line over long measurement times, even if the short-term linewidth is narrow. For this reason, linewidth always depends on observation time and noise spectrum.
 
@@ -155,7 +155,7 @@ Another useful concept is the separation between phase noise that contributes st
 
 ---
 ## 12.6 Stabilised Frequency Combs
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=693)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 A fully stabilised comb controls both degrees of freedom:
 $$
@@ -177,7 +177,7 @@ For amplified ultrafast systems, the oscillator comb is often only the beginning
 
 ---
 ## 12.7 Practical Comb Technology
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=704)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 A practical frequency comb system contains more than the oscillator. Typical components are:
 

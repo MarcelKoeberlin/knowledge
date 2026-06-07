@@ -1,27 +1,27 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/6-time-and-frequency-characterisation-of-signals-and-systems/","hide":"true","updated":"2026-06-07T00:00:00.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/6-time-and-frequency-characterisation-of-signals-and-systems/","hide":"true","updated":"2026-06-07T20:05:42.896+02:00"}
 ---
 
-Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents|chapter selection]]==.
+Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
 
-[[Notes/Signals and Systems/6 Time and Frequency Characterisation of Signals and Systems#6.1 Magnitude and Phase|6.1 Magnitude and Phase]]
-[[Notes/Signals and Systems/6 Time and Frequency Characterisation of Signals and Systems#6.2 Frequency Response of LTI Systems|6.2 Frequency Response of LTI Systems]]
-[[Notes/Signals and Systems/6 Time and Frequency Characterisation of Signals and Systems#6.3 Linear Phase and Group Delay|6.3 Linear Phase and Group Delay]]
-[[Notes/Signals and Systems/6 Time and Frequency Characterisation of Signals and Systems#6.4 Ideal and Nonideal Filters|6.4 Ideal and Nonideal Filters]]
-[[Notes/Signals and Systems/6 Time and Frequency Characterisation of Signals and Systems#6.5 First-Order and Second-Order Systems|6.5 First-Order and Second-Order Systems]]
+[[Notes/Signals and Systems/6 Time and Frequency Characterisation of Signals and Systems#6.1 Magnitude and Phase\|6.1 Magnitude and Phase]]
+[[Notes/Signals and Systems/6 Time and Frequency Characterisation of Signals and Systems#6.2 Frequency Response of LTI Systems\|6.2 Frequency Response of LTI Systems]]
+[[Notes/Signals and Systems/6 Time and Frequency Characterisation of Signals and Systems#6.3 Linear Phase and Group Delay\|6.3 Linear Phase and Group Delay]]
+[[Notes/Signals and Systems/6 Time and Frequency Characterisation of Signals and Systems#6.4 Ideal and Nonideal Filters\|6.4 Ideal and Nonideal Filters]]
+[[Notes/Signals and Systems/6 Time and Frequency Characterisation of Signals and Systems#6.5 First-Order and Second-Order Systems\|6.5 First-Order and Second-Order Systems]]
 
 ---
 # 6 Time and Frequency Characterisation of Signals and Systems
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=454)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 The Fourier transform gives a complete frequency-domain description of a signal, but it is easy to lose sight of what the separate pieces mean. This chapter connects the magnitude and phase of a transform to the time-domain behaviour of signals and systems. For LTI systems, this is also where filters become more than algebraic transfer functions: their magnitude response shapes amplitudes, while their phase response determines delays and waveform distortion.
 
 ---
 ## 6.1 Magnitude and Phase
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=454)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 A Fourier transform is generally complex. For continuous time,
 $$
@@ -47,7 +47,7 @@ Thus the magnitude is even and the phase is odd, apart from phase wrapping by mu
 
 ---
 ## 6.2 Frequency Response of LTI Systems
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=458)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 For an LTI system with impulse response $h$, the Fourier transform of the impulse response is the frequency response. In continuous time,
 $$
@@ -73,7 +73,7 @@ If $|H|$ is flat but $\angle H$ is nonlinear, the output can still be distorted.
 
 ---
 ## 6.3 Linear Phase and Group Delay
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=459)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 A system has linear phase over a frequency band if
 $$
@@ -109,7 +109,7 @@ samples, up to possible phase jumps at zeros of the response. This is one of the
 
 ---
 ## 6.4 Ideal and Nonideal Filters
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=470)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 The ideal continuous-time lowpass filter has
 $$
@@ -155,7 +155,7 @@ This is a recurring tradeoff: sharper frequency selectivity requires a longer im
 
 ---
 ## 6.5 First-Order and Second-Order Systems
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=479)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 A continuous-time first-order lowpass system can be written as
 $$
@@ -201,4 +201,4 @@ In discrete time, second-order sections are usually written as
 $$
 H(z)=\frac{b_0+b_1z^{-1}+b_2z^{-2}}{1+a_1z^{-1}+a_2z^{-2}}.
 $$
-The pole radii determine decay time, and the pole angles determine oscillation frequency. This pole-zero viewpoint becomes much more systematic in the [[Notes/Signals and Systems/9 Z-Transform|z-transform]] chapter.
+The pole radii determine decay time, and the pole angles determine oscillation frequency. This pole-zero viewpoint becomes much more systematic in the [[Notes/Signals and Systems/9 Z-Transform\|z-transform]] chapter.

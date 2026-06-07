@@ -1,29 +1,29 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/11-digital-filter-structures-and-design/","hide":"true","updated":"2026-06-07T00:00:00.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/11-digital-filter-structures-and-design/","hide":"true","updated":"2026-06-07T20:09:33.576+02:00"}
 ---
 
-Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents|chapter selection]]==.
+Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
 
-[[Notes/Signals and Systems/11 Digital Filter Structures and Design#11.1 FIR and IIR Filters|11.1 FIR and IIR Filters]]
-[[Notes/Signals and Systems/11 Digital Filter Structures and Design#11.2 Realisation Structures|11.2 Realisation Structures]]
-[[Notes/Signals and Systems/11 Digital Filter Structures and Design#11.3 Linear Phase, All-Pass, and Minimum Phase|11.3 Linear Phase, All-Pass, and Minimum Phase]]
-[[Notes/Signals and Systems/11 Digital Filter Structures and Design#11.4 Filter Specifications|11.4 Filter Specifications]]
-[[Notes/Signals and Systems/11 Digital Filter Structures and Design#11.5 IIR Filter Design|11.5 IIR Filter Design]]
-[[Notes/Signals and Systems/11 Digital Filter Structures and Design#11.6 FIR Filter Design|11.6 FIR Filter Design]]
-[[Notes/Signals and Systems/11 Digital Filter Structures and Design#11.7 Numerical Effects|11.7 Numerical Effects]]
+[[Notes/Signals and Systems/11 Digital Filter Structures and Design#11.1 FIR and IIR Filters\|11.1 FIR and IIR Filters]]
+[[Notes/Signals and Systems/11 Digital Filter Structures and Design#11.2 Realisation Structures\|11.2 Realisation Structures]]
+[[Notes/Signals and Systems/11 Digital Filter Structures and Design#11.3 Linear Phase, All-Pass, and Minimum Phase\|11.3 Linear Phase, All-Pass, and Minimum Phase]]
+[[Notes/Signals and Systems/11 Digital Filter Structures and Design#11.4 Filter Specifications\|11.4 Filter Specifications]]
+[[Notes/Signals and Systems/11 Digital Filter Structures and Design#11.5 IIR Filter Design\|11.5 IIR Filter Design]]
+[[Notes/Signals and Systems/11 Digital Filter Structures and Design#11.6 FIR Filter Design\|11.6 FIR Filter Design]]
+[[Notes/Signals and Systems/11 Digital Filter Structures and Design#11.7 Numerical Effects\|11.7 Numerical Effects]]
 
 ---
 # 11 Digital Filter Structures and Design
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=303) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=403) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=522)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 Once the z-transform has described a discrete-time LTI system, the next question is how to realise and design it. A digital filter is not just a transfer function; it is also a numerical algorithm. Different realisations of the same $H(z)$ can have very different sensitivity to coefficient quantization, round-off noise, overflow, and hardware cost.
 
 ---
 ## 11.1 FIR and IIR Filters
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=303)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 A general causal rational digital filter is described by
 $$
@@ -52,7 +52,7 @@ The basic tradeoff is:
 
 ---
 ## 11.2 Realisation Structures
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=403)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 The same rational $H(z)$ can be implemented in several structures.
 
@@ -80,7 +80,7 @@ Transposed structures reverse the signal-flow graph while preserving the transfe
 
 ---
 ## 11.3 Linear Phase, All-Pass, and Minimum Phase
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=330)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 A real FIR filter has exact linear phase if its impulse response is symmetric or antisymmetric:
 $$
@@ -117,7 +117,7 @@ This is a useful warning: specifying only $|H(e^{j\omega})|$ does not uniquely d
 
 ---
 ## 11.4 Filter Specifications
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=522)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 Digital filter design starts from specifications. For a lowpass filter, typical parameters are:
 
@@ -146,7 +146,7 @@ No finite-order filter can have an ideal brick-wall transition. A narrower trans
 
 ---
 ## 11.5 IIR Filter Design
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=525)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 IIR digital filters are often designed from analogue prototypes. Classical analogue lowpass families include Butterworth, Chebyshev, inverse Chebyshev, and elliptic filters.
 
@@ -186,7 +186,7 @@ $$
 
 ---
 ## 11.6 FIR Filter Design
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=562)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 The ideal lowpass impulse response is infinite:
 $$
@@ -218,7 +218,7 @@ Window design is simple and predictable. Equiripple design is usually more effic
 
 ---
 ## 11.7 Numerical Effects
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=444)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 Digital filters are implemented with finite word length. This introduces several effects:
 

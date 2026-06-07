@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/9-polarisation-optics/","hide":"true","updated":"2025-06-04T15:34:05.388+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/9-polarisation-optics/","hide":"true","updated":"2026-06-07T19:28:58.279+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.

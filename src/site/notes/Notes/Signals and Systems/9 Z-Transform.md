@@ -1,27 +1,27 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/9-z-transform/","hide":"true","updated":"2026-06-07T00:00:00.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/9-z-transform/","hide":"true","updated":"2026-06-07T20:07:00.351+02:00"}
 ---
 
-Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents|chapter selection]]==.
+Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
 
-[[Notes/Signals and Systems/9 Z-Transform#9.1 Definition and Region of Convergence|9.1 Definition and Region of Convergence]]
-[[Notes/Signals and Systems/9 Z-Transform#9.2 Poles, Zeros, and the Unit Circle|9.2 Poles, Zeros, and the Unit Circle]]
-[[Notes/Signals and Systems/9 Z-Transform#9.3 Properties and Inverse z-Transform|9.3 Properties and Inverse z-Transform]]
-[[Notes/Signals and Systems/9 Z-Transform#9.4 LTI Systems and Difference Equations|9.4 LTI Systems and Difference Equations]]
-[[Notes/Signals and Systems/9 Z-Transform#9.5 Unilateral z-Transform|9.5 Unilateral z-Transform]]
+[[Notes/Signals and Systems/9 Z-Transform#9.1 Definition and Region of Convergence\|9.1 Definition and Region of Convergence]]
+[[Notes/Signals and Systems/9 Z-Transform#9.2 Poles, Zeros, and the Unit Circle\|9.2 Poles, Zeros, and the Unit Circle]]
+[[Notes/Signals and Systems/9 Z-Transform#9.3 Properties and Inverse z-Transform\|9.3 Properties and Inverse z-Transform]]
+[[Notes/Signals and Systems/9 Z-Transform#9.4 LTI Systems and Difference Equations\|9.4 LTI Systems and Difference Equations]]
+[[Notes/Signals and Systems/9 Z-Transform#9.5 Unilateral z-Transform\|9.5 Unilateral z-Transform]]
 
 ---
 # 9 Z-Transform
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=772) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=128)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 The z-transform is the discrete-time analogue of the Laplace transform. It extends the DTFT by evaluating a sequence against complex exponentials with arbitrary radius, not only unit magnitude. This makes it the natural tool for discrete-time system functions, recursive filters, stability, causality, and difference equations.
 
 ---
 ## 9.1 Definition and Region of Convergence
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=772)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 The bilateral z-transform of a sequence $x[n]$ is
 $$
@@ -64,7 +64,7 @@ $$
 
 ---
 ## 9.2 Poles, Zeros, and the Unit Circle
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=779)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 For rational transforms,
 $$
@@ -89,7 +89,7 @@ This is why digital filters are often designed by placing poles and zeros. A not
 
 ---
 ## 9.3 Properties and Inverse z-Transform
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=798)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 Important z-transform properties include:
 
@@ -117,7 +117,7 @@ maps to $a^n u[n]$ if the ROC is $|z|>|a|$, and to $-a^n u[-n-1]$ if the ROC is 
 
 ---
 ## 9.4 LTI Systems and Difference Equations
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=805) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=160)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 For a discrete-time LTI system,
 $$
@@ -160,7 +160,7 @@ FIR systems have only zeros, except for possible poles at the origin depending o
 
 ---
 ## 9.5 Unilateral z-Transform
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=820)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 The unilateral z-transform is
 $$

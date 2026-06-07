@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2026-04-16T21:21:51.281+02:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2026-06-07T20:23:13.758+02:00"}
 ---
 
 Hi there!
@@ -9,17 +9,17 @@ photos taken during one of my hikes.
 
 This is the perfect place to start reading up on some topics:
 
-| **Notes**                                                                                                                           | **Progress** |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| **[[Notes/Attosecond Physics/Attosecond Physics\|Attosecond Physics]]**                                                             | ✅            |
-| **[[Notes/Plasmonics/Plasmonics\|Plasmonics]]**                                                                                     | ✅            |
-| **[[Notes/Solid-State Theory/Solid-State Theory\|Solid-State Theory]]**                                                             | ✅            |
-| **[[Notes/2025 Quantum Electronics/Quantum Electronics\|Quantum Electronics]]**                                                     | ✅            |
-| **[[Notes/Master Thesis/Master Thesis\|Master Thesis]]**                                                                            | ✅            |
-| **[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields\|Crystal Optics in Intense Light Fields]]** | ✅            |
-| **[[Notes/Signals and Systems/Signals and Systems\|Signals and Systems]]**                                                          | Chapter 5    |
-| **[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]]**                                              | Chapter 4    |
-| **[[Notes/Quantum Optics/Quantum Optics\|Quantum Optics]]**                                                                         | Chapter 2    |
+| **Notes**                                                                                                                           | **Progress**            |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| **[[Notes/Attosecond Physics/Attosecond Physics\|Attosecond Physics]]**                                                             | ✅                       |
+| **[[Notes/Plasmonics/Plasmonics\|Plasmonics]]**                                                                                     | ✅                       |
+| **[[Notes/Solid-State Theory/Solid-State Theory\|Solid-State Theory]]**                                                             | ✅                       |
+| **[[Notes/2025 Quantum Electronics/Quantum Electronics\|Quantum Electronics]]**                                                     | ✅                       |
+| **[[Notes/Master Thesis/Master Thesis\|Master Thesis]]**                                                                            | ✅                       |
+| **[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields\|Crystal Optics in Intense Light Fields]]** | ✅                       |
+| **[[Notes/Signals and Systems/Signals and Systems\|Signals and Systems]]**                                                          | ✅ (6+ pictures missing) |
+| **[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]]**                                              | ✅ (5+ pictures missing) |
+| **[[Notes/Quantum Optics/Quantum Optics\|Quantum Optics]]**                                                                         | Chapter 2               |
 
 Here you can find pictures taken by me: [[Photography/Photography\|Photography]].
 Here you can find an experimental chord viewer for MIDI inputs: [Chords](/chords/).
@@ -34,6 +34,4 @@ I genuinely hope this website and its content are useful to you. If so, I'd be d
 **Marcel**
 
 ---
-_If you have any comments or suggestions, please feel free to reach out to me on [GitHub](https://github.com/MarcelKoeberlin) , [LinkedIn](https://www.linkedin.com/in/marcel-k%25C3%25B6berlin-776397244/), or via email using the button on the bottom right._
-
----
+_Faithless is he that says farewell when the road darkens._

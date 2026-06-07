@@ -1,22 +1,22 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/10-pulse-duration-measurements/","hide":"true","updated":"2026-06-07T00:00:00.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/10-pulse-duration-measurements/","hide":"true","updated":"2026-06-07T20:12:14.459+02:00"}
 ---
 
-Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents|chapter selection]]==.
+Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
 
-[[Notes/Ultrafast Laser Physics/10 Pulse Duration Measurements#10.1 Why Pulse Duration Is Not Directly Obvious|10.1 Why Pulse Duration Is Not Directly Obvious]]
-[[Notes/Ultrafast Laser Physics/10 Pulse Duration Measurements#10.2 Electronic Measurements|10.2 Electronic Measurements]]
-[[Notes/Ultrafast Laser Physics/10 Pulse Duration Measurements#10.3 Optical Autocorrelation|10.3 Optical Autocorrelation]]
-[[Notes/Ultrafast Laser Physics/10 Pulse Duration Measurements#10.4 Frequency-Resolved Optical Gating|10.4 Frequency-Resolved Optical Gating]]
-[[Notes/Ultrafast Laser Physics/10 Pulse Duration Measurements#10.5 SPIDER|10.5 SPIDER]]
-[[Notes/Ultrafast Laser Physics/10 Pulse Duration Measurements#10.6 Practical Cross-Checks|10.6 Practical Cross-Checks]]
+[[Notes/Ultrafast Laser Physics/10 Pulse Duration Measurements#10.1 Why Pulse Duration Is Not Directly Obvious\|10.1 Why Pulse Duration Is Not Directly Obvious]]
+[[Notes/Ultrafast Laser Physics/10 Pulse Duration Measurements#10.2 Electronic Measurements\|10.2 Electronic Measurements]]
+[[Notes/Ultrafast Laser Physics/10 Pulse Duration Measurements#10.3 Optical Autocorrelation\|10.3 Optical Autocorrelation]]
+[[Notes/Ultrafast Laser Physics/10 Pulse Duration Measurements#10.4 Frequency-Resolved Optical Gating\|10.4 Frequency-Resolved Optical Gating]]
+[[Notes/Ultrafast Laser Physics/10 Pulse Duration Measurements#10.5 SPIDER\|10.5 SPIDER]]
+[[Notes/Ultrafast Laser Physics/10 Pulse Duration Measurements#10.6 Practical Cross-Checks\|10.6 Practical Cross-Checks]]
 
 ---
 # 10 Pulse Duration Measurements
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=565)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Measuring ultrashort pulses is difficult because the pulse can be shorter than any available electronic detector response. A femtosecond pulse cannot simply be sent to a photodiode and read from an oscilloscope. Instead, one usually uses the pulse itself, or a related nonlinear optical process, as the time reference.
 
@@ -28,7 +28,7 @@ Knowing only the optical spectrum or only an autocorrelation is not enough to re
 
 ---
 ## 10.1 Why Pulse Duration Is Not Directly Obvious
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=565)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The spectrum gives a lower bound on the pulse duration through the time-bandwidth product:
 $$
@@ -46,11 +46,11 @@ If the measured pulse is longer than the transform limit, it is chirped or other
 
 The pulse duration convention must also be stated. In these notes, $\tau_p$ usually refers to an intensity full-width at half maximum unless another definition is explicitly given.
 
-For few-cycle pulses, the usual separation between envelope and carrier becomes less comfortable. A pulse can have a short intensity FWHM but still have a distorted electric-field waveform because of spectral phase. This is why pulse duration measurements and CEO measurements are complementary in experiments connected to [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses|attosecond pulse characterisation]].
+For few-cycle pulses, the usual separation between envelope and carrier becomes less comfortable. A pulse can have a short intensity FWHM but still have a distorted electric-field waveform because of spectral phase. This is why pulse duration measurements and CEO measurements are complementary in experiments connected to [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses\|attosecond pulse characterisation]].
 
 ---
 ## 10.2 Electronic Measurements
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=567)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Electronic detection is useful for nanosecond and sometimes picosecond pulses, but it is limited by photodiode bandwidth, oscilloscope bandwidth, cable dispersion, and detector capacitance. A detector with load resistance $R_L$ and capacitance $C$ has an approximate RC bandwidth
 $$
@@ -70,7 +70,7 @@ For modelocked lasers, electronics are very useful for measuring repetition rate
 
 ---
 ## 10.3 Optical Autocorrelation
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=570)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 An optical autocorrelator splits the pulse into two replicas, delays one by $\tau$, recombines them in a nonlinear crystal, and measures a nonlinear signal as a function of delay. For second-harmonic generation, the intensity autocorrelation is
 $$
@@ -97,7 +97,7 @@ This contains additional phase-sensitive information and can reveal coherence, c
 
 ---
 ## 10.4 Frequency-Resolved Optical Gating
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=581)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Frequency-resolved optical gating (FROG) records a spectrogram rather than a single autocorrelation curve. A delayed gate function selects part of the pulse, and the spectrum of the gated field is measured:
 $$
@@ -133,7 +133,7 @@ FROG is robust and widely used, but it is not always the fastest or simplest met
 
 ---
 ## 10.5 SPIDER
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=586)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 SPIDER stands for spectral phase interferometry for direct electric-field reconstruction. Instead of retrieving the field iteratively, SPIDER measures the phase difference between two spectrally sheared replicas of the pulse.
 
@@ -158,7 +158,7 @@ The strength of SPIDER is that it directly measures a spectral phase difference.
 
 ---
 ## 10.6 Practical Cross-Checks
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=588)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 No single pulse measurement should be trusted blindly. Useful cross-checks are:
 
@@ -170,4 +170,4 @@ No single pulse measurement should be trusted blindly. Useful cross-checks are:
 
 In practice, an optical spectrum plus autocorrelation is often enough for routine alignment, while FROG or SPIDER is needed when the actual electric field, chirp, or pulse pedestal matters.
 
-Attosecond diagnostics build on the same logic but must go further, because the XUV pulse is usually too weak and too short for direct nonlinear autocorrelation. Methods such as [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.2 RABBITT Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions|RABBITT]] and [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.3 Attosecond Pulse Characterisation FROG-CRAB|FROG-CRAB]] transfer timing and phase information into measurable photoelectron spectra.
+Attosecond diagnostics build on the same logic but must go further, because the XUV pulse is usually too weak and too short for direct nonlinear autocorrelation. Methods such as [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.2 RABBITT Reconstruction of Attosecond Beating by Interference of Two-Photon Transitions\|RABBITT]] and [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.3 Attosecond Pulse Characterisation FROG-CRAB\|FROG-CRAB]] transfer timing and phase information into measurable photoelectron spectra.

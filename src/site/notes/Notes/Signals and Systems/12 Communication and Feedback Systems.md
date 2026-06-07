@@ -1,28 +1,28 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/12-communication-and-feedback-systems/","hide":"true","updated":"2026-06-07T00:00:00.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/12-communication-and-feedback-systems/","hide":"true","updated":"2026-06-07T20:09:33.647+02:00"}
 ---
 
-Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents|chapter selection]]==.
+Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
 
-[[Notes/Signals and Systems/12 Communication and Feedback Systems#12.1 Modulation as Frequency Shifting|12.1 Modulation as Frequency Shifting]]
-[[Notes/Signals and Systems/12 Communication and Feedback Systems#12.2 Amplitude Modulation and Demodulation|12.2 Amplitude Modulation and Demodulation]]
-[[Notes/Signals and Systems/12 Communication and Feedback Systems#12.3 Multiplexing and Pulse-Amplitude Modulation|12.3 Multiplexing and Pulse-Amplitude Modulation]]
-[[Notes/Signals and Systems/12 Communication and Feedback Systems#12.4 Frequency Modulation|12.4 Frequency Modulation]]
-[[Notes/Signals and Systems/12 Communication and Feedback Systems#12.5 Linear Feedback Systems|12.5 Linear Feedback Systems]]
-[[Notes/Signals and Systems/12 Communication and Feedback Systems#12.6 Stability Margins|12.6 Stability Margins]]
+[[Notes/Signals and Systems/12 Communication and Feedback Systems#12.1 Modulation as Frequency Shifting\|12.1 Modulation as Frequency Shifting]]
+[[Notes/Signals and Systems/12 Communication and Feedback Systems#12.2 Amplitude Modulation and Demodulation\|12.2 Amplitude Modulation and Demodulation]]
+[[Notes/Signals and Systems/12 Communication and Feedback Systems#12.3 Multiplexing and Pulse-Amplitude Modulation\|12.3 Multiplexing and Pulse-Amplitude Modulation]]
+[[Notes/Signals and Systems/12 Communication and Feedback Systems#12.4 Frequency Modulation\|12.4 Frequency Modulation]]
+[[Notes/Signals and Systems/12 Communication and Feedback Systems#12.5 Linear Feedback Systems\|12.5 Linear Feedback Systems]]
+[[Notes/Signals and Systems/12 Communication and Feedback Systems#12.6 Stability Margins\|12.6 Stability Margins]]
 
 ---
 # 12 Communication and Feedback Systems
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=613) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=847)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf) [ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 The earlier chapters develop the tools: convolution, Fourier transforms, sampling, Laplace transforms, z-transforms, and filters. Communication and feedback systems show why these tools matter. Communication uses modulation to move information around in frequency. Feedback uses system interconnection to change sensitivity, tracking, stability, and robustness.
 
 ---
 ## 12.1 Modulation as Frequency Shifting
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=613)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 Multiplication by a complex exponential shifts a spectrum. If
 $$
@@ -51,7 +51,7 @@ This is the mathematical basis of amplitude modulation, frequency-division multi
 
 ---
 ## 12.2 Amplitude Modulation and Demodulation
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=616)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 In double-sideband suppressed-carrier amplitude modulation,
 $$
@@ -90,7 +90,7 @@ Single-sideband modulation transmits only one sideband. It is more bandwidth eff
 
 ---
 ## 12.3 Multiplexing and Pulse-Amplitude Modulation
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=625)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 Frequency-division multiplexing places different messages in different frequency bands:
 $$
@@ -120,7 +120,7 @@ Pulse-code modulation (PCM) adds quantization and binary coding. It is the basis
 
 ---
 ## 12.4 Frequency Modulation
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=642)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 In frequency modulation, the message changes the instantaneous frequency rather than the amplitude. A typical FM signal is
 $$
@@ -142,7 +142,7 @@ This phase viewpoint also connects modulation to later topics such as phase-lock
 
 ---
 ## 12.5 Linear Feedback Systems
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=847)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 In a basic negative-feedback loop, the forward system is $G$ and the feedback system is $H$. The closed-loop transfer function is
 $$
@@ -177,7 +177,7 @@ Thus the closed-loop response is set mainly by the feedback path, not by the for
 
 ---
 ## 12.6 Stability Margins
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim%2CWillsky_Signals%20and%20Systems.pdf#page=878)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Oppenheim,Willsky_Signals%20and%20Systems.pdf)
 
 For continuous-time rational systems, closed-loop stability requires all closed-loop poles to lie in the left half-plane. For discrete-time systems, they must lie inside the unit circle.
 

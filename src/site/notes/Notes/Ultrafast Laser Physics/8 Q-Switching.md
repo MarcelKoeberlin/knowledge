@@ -1,21 +1,21 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/8-q-switching/","hide":"true","updated":"2026-06-07T00:00:00.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/8-q-switching/","hide":"true","updated":"2026-06-07T20:12:14.319+02:00"}
 ---
 
-Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents|chapter selection]]==.
+Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
 
-[[Notes/Ultrafast Laser Physics/8 Q-Switching#8.1 Basic Idea of Q-Switching|8.1 Basic Idea of Q-Switching]]
-[[Notes/Ultrafast Laser Physics/8 Q-Switching#8.2 Active Q-Switching|8.2 Active Q-Switching]]
-[[Notes/Ultrafast Laser Physics/8 Q-Switching#8.3 Rate-Equation Picture|8.3 Rate-Equation Picture]]
-[[Notes/Ultrafast Laser Physics/8 Q-Switching#8.4 Passive Q-Switching|8.4 Passive Q-Switching]]
-[[Notes/Ultrafast Laser Physics/8 Q-Switching#8.5 Passively Q-Switched Microchip Lasers|8.5 Passively Q-Switched Microchip Lasers]]
+[[Notes/Ultrafast Laser Physics/8 Q-Switching#8.1 Basic Idea of Q-Switching\|8.1 Basic Idea of Q-Switching]]
+[[Notes/Ultrafast Laser Physics/8 Q-Switching#8.2 Active Q-Switching\|8.2 Active Q-Switching]]
+[[Notes/Ultrafast Laser Physics/8 Q-Switching#8.3 Rate-Equation Picture\|8.3 Rate-Equation Picture]]
+[[Notes/Ultrafast Laser Physics/8 Q-Switching#8.4 Passive Q-Switching\|8.4 Passive Q-Switching]]
+[[Notes/Ultrafast Laser Physics/8 Q-Switching#8.5 Passively Q-Switched Microchip Lasers\|8.5 Passively Q-Switched Microchip Lasers]]
 
 ---
 # 8 Q-Switching
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=392)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Q-switching is a method for producing short, energetic laser pulses by modulating the cavity quality factor $Q$. The gain medium is pumped while the resonator loss is high, so lasing is suppressed and energy accumulates in the inversion. When the loss is suddenly reduced, the stored energy is released in a pulse.
 
@@ -25,7 +25,7 @@ Historically, Q-switching was a crucial route to high peak powers before femtose
 
 ---
 ## 8.1 Basic Idea of Q-Switching
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=392)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The quality factor of a resonator describes how slowly energy decays from the cavity. A high-$Q$ cavity has low loss and a long photon lifetime. A low-$Q$ cavity has high loss and a short photon lifetime.
 
@@ -41,7 +41,7 @@ This energy-storage picture is the reason Q-switching and modelocking should not
 
 ---
 ## 8.2 Active Q-Switching
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=396)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 In active Q-switching, an external device controls the intracavity loss. Common implementations are:
 
@@ -59,9 +59,9 @@ Efficient Q-switching requires $r>1$. Larger $r$ means more stored energy and fa
 
 ---
 ## 8.3 Rate-Equation Picture
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=401)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
-The same photon-number and inversion rate equations from [[Notes/Ultrafast Laser Physics/5 Laser Rate Equations|chapter 5]] are used, but now the cavity loss is time dependent:
+The same photon-number and inversion rate equations from [[Notes/Ultrafast Laser Physics/5 Laser Rate Equations\|chapter 5]] are used, but now the cavity loss is time dependent:
 $$
 \begin{aligned}
 \frac{dn}{dt}&=K N n-\gamma_c(t)n,\\
@@ -124,9 +124,9 @@ The output coupling determines how much of the intracavity pulse energy leaves t
 
 ---
 ## 8.4 Passive Q-Switching
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=410)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
-In passive Q-switching the external switch is replaced by a [[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers|saturable absorber]]. At low intensity, the absorber introduces high loss and prevents lasing. As the gain builds up, intracavity intensity eventually becomes large enough to bleach the absorber. The cavity loss then drops, the photon number rises, and a pulse is emitted.
+In passive Q-switching the external switch is replaced by a [[Notes/Ultrafast Laser Physics/7 Saturable Absorbers for Solid-State Lasers\|saturable absorber]]. At low intensity, the absorber introduces high loss and prevents lasing. As the gain builds up, intracavity intensity eventually becomes large enough to bleach the absorber. The cavity loss then drops, the photon number rises, and a pulse is emitted.
 
 The important difference to active Q-switching is that the pulse repetition rate is not set directly by an external clock. It is set by the pump rate, gain lifetime, absorber parameters, and cavity loss. Increasing pump power usually increases the repetition rate and can also change the pulse energy.
 
@@ -141,7 +141,7 @@ Passive Q-switching is self-timed. After each pulse the gain is depleted and the
 
 ---
 ## 8.5 Passively Q-Switched Microchip Lasers
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=426)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Microchip lasers are very short monolithic or semi-monolithic solid-state lasers. Their short cavity length gives large axial-mode spacing and compact, robust operation. Combining a gain chip with a saturable absorber can produce passively Q-switched pulses from a very small device.
 

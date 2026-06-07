@@ -1,22 +1,22 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/10-discrete-fourier-transform-and-fft/","hide":"true","updated":"2026-06-07T00:00:00.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/10-discrete-fourier-transform-and-fft/","hide":"true","updated":"2026-06-07T20:09:33.504+02:00"}
 ---
 
-Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents|chapter selection]]==.
+Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
 
-[[Notes/Signals and Systems/10 Discrete Fourier Transform and FFT#10.1 From DTFT to DFT|10.1 From DTFT to DFT]]
-[[Notes/Signals and Systems/10 Discrete Fourier Transform and FFT#10.2 DFT Properties|10.2 DFT Properties]]
-[[Notes/Signals and Systems/10 Discrete Fourier Transform and FFT#10.3 Circular and Linear Convolution|10.3 Circular and Linear Convolution]]
-[[Notes/Signals and Systems/10 Discrete Fourier Transform and FFT#10.4 Spectral Leakage and Windowing|10.4 Spectral Leakage and Windowing]]
-[[Notes/Signals and Systems/10 Discrete Fourier Transform and FFT#10.5 Fast Fourier Transform|10.5 Fast Fourier Transform]]
-[[Notes/Signals and Systems/10 Discrete Fourier Transform and FFT#10.6 Short-Time Fourier Analysis|10.6 Short-Time Fourier Analysis]]
+[[Notes/Signals and Systems/10 Discrete Fourier Transform and FFT#10.1 From DTFT to DFT\|10.1 From DTFT to DFT]]
+[[Notes/Signals and Systems/10 Discrete Fourier Transform and FFT#10.2 DFT Properties\|10.2 DFT Properties]]
+[[Notes/Signals and Systems/10 Discrete Fourier Transform and FFT#10.3 Circular and Linear Convolution\|10.3 Circular and Linear Convolution]]
+[[Notes/Signals and Systems/10 Discrete Fourier Transform and FFT#10.4 Spectral Leakage and Windowing\|10.4 Spectral Leakage and Windowing]]
+[[Notes/Signals and Systems/10 Discrete Fourier Transform and FFT#10.5 Fast Fourier Transform\|10.5 Fast Fourier Transform]]
+[[Notes/Signals and Systems/10 Discrete Fourier Transform and FFT#10.6 Short-Time Fourier Analysis\|10.6 Short-Time Fourier Analysis]]
 
 ---
 # 10 Discrete Fourier Transform and FFT
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=652)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 The DTFT is the natural Fourier representation for infinite-length discrete-time signals, but it is still a continuous function of frequency. Computers need finite lists of numbers. The discrete Fourier transform (DFT) turns a finite sequence into a finite list of frequency samples, and the fast Fourier transform (FFT) computes that list efficiently.
 
@@ -24,7 +24,7 @@ This chapter is therefore the bridge from transform theory to numerical signal p
 
 ---
 ## 10.1 From DTFT to DFT
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=652)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 For a length-$N$ sequence $x[n]$, defined for $0\leq n\leq N-1$, the DFT is
 $$
@@ -69,7 +69,7 @@ When using the DFT to analyse a finite segment of a longer signal, we are implic
 
 ---
 ## 10.2 DFT Properties
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=676)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 The DFT has properties analogous to the DTFT, but all indexing is modulo $N$.
 
@@ -105,7 +105,7 @@ Energy is preserved up to the normalization convention.
 
 ---
 ## 10.3 Circular and Linear Convolution
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=685)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 The DFT converts circular convolution into multiplication:
 $$
@@ -138,7 +138,7 @@ Both methods implement ordinary LTI filtering while using FFTs internally.
 
 ---
 ## 10.4 Spectral Leakage and Windowing
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=821)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 When a finite segment is analysed with a DFT, the signal is multiplied by a window $w[n]$:
 $$
@@ -163,7 +163,7 @@ Zero-padding does not improve the true frequency resolution. It samples the same
 
 ---
 ## 10.5 Fast Fourier Transform
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=745)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 Direct computation of the DFT requires $N^2$ complex multiplications. The FFT exploits symmetry and periodicity of the twiddle factors
 $$
@@ -212,7 +212,7 @@ Important implementation details are:
 
 ---
 ## 10.6 Short-Time Fourier Analysis
-[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf#page=840)
+[ ](/img/user/Reading/Books/Electrical%20Engineering%20and%20Signal%20Processing/Discrete-Time%20Signal%20Processing%20Oppenheimer.pdf)
 
 The DFT assumes the analysed segment is the object of interest. For signals whose spectrum changes with time, one uses a sliding window:
 $$

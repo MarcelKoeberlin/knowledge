@@ -1,22 +1,22 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/11-intensity-noise-and-timing-jitter-of-modelocked-lasers/","hide":"true","updated":"2026-06-07T00:00:00.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/11-intensity-noise-and-timing-jitter-of-modelocked-lasers/","hide":"true","updated":"2026-06-07T20:14:09.379+02:00"}
 ---
 
-Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents|chapter selection]]==.
+Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
 
-[[Notes/Ultrafast Laser Physics/11 Intensity Noise and Timing Jitter of Modelocked Lasers#11.1 Noise Variables of a Pulse Train|11.1 Noise Variables of a Pulse Train]]
-[[Notes/Ultrafast Laser Physics/11 Intensity Noise and Timing Jitter of Modelocked Lasers#11.2 Power Spectral Density and RMS Noise|11.2 Power Spectral Density and RMS Noise]]
-[[Notes/Ultrafast Laser Physics/11 Intensity Noise and Timing Jitter of Modelocked Lasers#11.3 Photodetection Noise Limits|11.3 Photodetection Noise Limits]]
-[[Notes/Ultrafast Laser Physics/11 Intensity Noise and Timing Jitter of Modelocked Lasers#11.4 Measuring Intensity Noise and Timing Jitter|11.4 Measuring Intensity Noise and Timing Jitter]]
-[[Notes/Ultrafast Laser Physics/11 Intensity Noise and Timing Jitter of Modelocked Lasers#11.5 Noise Characteristics of Modelocked Lasers|11.5 Noise Characteristics of Modelocked Lasers]]
-[[Notes/Ultrafast Laser Physics/11 Intensity Noise and Timing Jitter of Modelocked Lasers#11.6 Signal-to-Noise Optimisation|11.6 Signal-to-Noise Optimisation]]
+[[Notes/Ultrafast Laser Physics/11 Intensity Noise and Timing Jitter of Modelocked Lasers#11.1 Noise Variables of a Pulse Train\|11.1 Noise Variables of a Pulse Train]]
+[[Notes/Ultrafast Laser Physics/11 Intensity Noise and Timing Jitter of Modelocked Lasers#11.2 Power Spectral Density and RMS Noise\|11.2 Power Spectral Density and RMS Noise]]
+[[Notes/Ultrafast Laser Physics/11 Intensity Noise and Timing Jitter of Modelocked Lasers#11.3 Photodetection Noise Limits\|11.3 Photodetection Noise Limits]]
+[[Notes/Ultrafast Laser Physics/11 Intensity Noise and Timing Jitter of Modelocked Lasers#11.4 Measuring Intensity Noise and Timing Jitter\|11.4 Measuring Intensity Noise and Timing Jitter]]
+[[Notes/Ultrafast Laser Physics/11 Intensity Noise and Timing Jitter of Modelocked Lasers#11.5 Noise Characteristics of Modelocked Lasers\|11.5 Noise Characteristics of Modelocked Lasers]]
+[[Notes/Ultrafast Laser Physics/11 Intensity Noise and Timing Jitter of Modelocked Lasers#11.6 Signal-to-Noise Optimisation\|11.6 Signal-to-Noise Optimisation]]
 
 ---
 # 11 Intensity Noise and Timing Jitter of Modelocked Lasers
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=607)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 A modelocked laser is not only described by its pulse duration, spectrum, and average power. For many applications, especially frequency combs, pump-probe experiments, and precision timing, the noise of the pulse train is equally important.
 
@@ -29,7 +29,7 @@ They are different physical quantities, but they can couple to each other throug
 
 ---
 ## 11.1 Noise Variables of a Pulse Train
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=607)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 An ideal pulse train has pulses at times
 $$
@@ -52,7 +52,7 @@ Noise above this is aliased in a discrete pulse-to-pulse measurement. Continuous
 
 ---
 ## 11.2 Power Spectral Density and RMS Noise
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=611)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Noise is usually described by a power spectral density (PSD). If $x(t)$ is a zero-mean fluctuation with single-sided PSD $S_x(f)$, the variance in a measurement bandwidth $[f_1,f_2]$ is
 $$
@@ -89,7 +89,7 @@ One must keep the units straight. $S_{\Delta T}(f)$ has units of $\mathrm{s^2/Hz
 
 ---
 ## 11.3 Photodetection Noise Limits
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=618)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Photodetection converts optical power into current. If the average photocurrent is $J_{\mathrm{av}}$, the shot-noise current PSD is
 $$
@@ -114,7 +114,7 @@ This AM-to-PM conversion is a major practical limitation. If the photodiode resp
 
 ---
 ## 11.4 Measuring Intensity Noise and Timing Jitter
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=623)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Intensity noise can be measured by detecting the laser power with a photodiode and analysing the baseband voltage noise. The DC component gives the average power, while the AC component gives the fluctuations. Care is needed to subtract detector noise and electronic noise floors.
 
@@ -140,7 +140,7 @@ For both intensity and timing measurements, the bandwidth and averaging method m
 
 ---
 ## 11.5 Noise Characteristics of Modelocked Lasers
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=630)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Noise in a modelocked laser can come from many sources:
 
@@ -161,7 +161,7 @@ The most common mistake is to quote a single rms number without the integration 
 
 ---
 ## 11.6 Signal-to-Noise Optimisation
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=635)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Optimising signal-to-noise ratio depends on the experiment. General strategies include:
 
@@ -175,4 +175,4 @@ Optimising signal-to-noise ratio depends on the experiment. General strategies i
 
 For pump-probe experiments, intensity noise often limits the smallest measurable differential signal. For frequency-comb applications, timing jitter and optical phase noise can be more important. The correct noise metric is therefore set by the physical observable, not by the easiest number to measure.
 
-In [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.7 From RABBITT to Streaking Regime|attosecond pump-probe measurements]], both kinds of noise can matter at once. Intensity noise changes ionisation and HHG yield, while timing jitter changes the delay axis. Slow timing drift can wash out sub-cycle dynamics even when every individual laser shot is short.
+In [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses#3.7 From RABBITT to Streaking Regime\|attosecond pump-probe measurements]], both kinds of noise can matter at once. Intensity noise changes ionisation and HHG yield, while timing jitter changes the delay axis. Slow timing drift can wash out sub-cycle dynamics even when every individual laser shot is short.

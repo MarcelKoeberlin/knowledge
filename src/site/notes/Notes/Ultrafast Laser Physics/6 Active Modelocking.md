@@ -1,22 +1,22 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/6-active-modelocking/","hide":"true","updated":"2026-06-07T00:00:00.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/6-active-modelocking/","hide":"true","updated":"2026-06-07T20:12:14.177+02:00"}
 ---
 
-Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents|chapter selection]]==.
+Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.
 
 ---
 **Table of Contents**
 
-[[Notes/Ultrafast Laser Physics/6 Active Modelocking#6.1 Modelocking Basics|6.1 Modelocking Basics]]
-[[Notes/Ultrafast Laser Physics/6 Active Modelocking#6.2 Basic Principle of Active Modelocking|6.2 Basic Principle of Active Modelocking]]
-[[Notes/Ultrafast Laser Physics/6 Active Modelocking#6.3 Optical Loss Modulators|6.3 Optical Loss Modulators]]
-[[Notes/Ultrafast Laser Physics/6 Active Modelocking#6.4 Active Modelocking Without SPM and GDD|6.4 Active Modelocking Without SPM and GDD]]
-[[Notes/Ultrafast Laser Physics/6 Active Modelocking#6.5 Adding SPM and GDD|6.5 Adding SPM and GDD]]
-[[Notes/Ultrafast Laser Physics/6 Active Modelocking#6.6 Gain Broadening, Gain Saturation, and Synchronous Modelocking|6.6 Gain Broadening, Gain Saturation, and Synchronous Modelocking]]
+[[Notes/Ultrafast Laser Physics/6 Active Modelocking#6.1 Modelocking Basics\|6.1 Modelocking Basics]]
+[[Notes/Ultrafast Laser Physics/6 Active Modelocking#6.2 Basic Principle of Active Modelocking\|6.2 Basic Principle of Active Modelocking]]
+[[Notes/Ultrafast Laser Physics/6 Active Modelocking#6.3 Optical Loss Modulators\|6.3 Optical Loss Modulators]]
+[[Notes/Ultrafast Laser Physics/6 Active Modelocking#6.4 Active Modelocking Without SPM and GDD\|6.4 Active Modelocking Without SPM and GDD]]
+[[Notes/Ultrafast Laser Physics/6 Active Modelocking#6.5 Adding SPM and GDD\|6.5 Adding SPM and GDD]]
+[[Notes/Ultrafast Laser Physics/6 Active Modelocking#6.6 Gain Broadening, Gain Saturation, and Synchronous Modelocking\|6.6 Gain Broadening, Gain Saturation, and Synchronous Modelocking]]
 
 ---
 # 6 Active Modelocking
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=243)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 For the analytical treatment of active modelocking, Keller follows the Haus/Siegman picture: instead of describing every optical cycle, one describes how the slowly-varying pulse envelope changes from roundtrip to roundtrip. This leads to the Haus master equation, which is essentially a cavity-averaged evolution equation for a pulse envelope under gain, loss, gain filtering, dispersion, nonlinearity, and modulation.
 
@@ -24,7 +24,7 @@ The important conceptual point is that modelocking is not just "making the laser
 
 ---
 ## 6.1 Modelocking Basics
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=243)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The optical resonator boundary condition requires the field to reproduce itself after one roundtrip. For a roundtrip amplitude gain $g$, roundtrip amplitude loss $l$, and roundtrip phase $\phi$, the steady-state condition can be written as
 $$
@@ -58,7 +58,7 @@ I_{\mathrm{train}}(t)
 $$
 The individual pulse duration is controlled by the spectral envelope $\tilde E_p(\omega)$ and its phase $\tilde\phi(\omega)$, while the pulse-to-pulse spacing is fixed by the cavity roundtrip time.
 
-![Attachments/UltraFastLasers_Keller 67.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2067.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=248)
+![Attachments/UltraFastLasers_Keller 67.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2067.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 It is useful to keep three regimes separate:
 
@@ -66,13 +66,13 @@ It is useful to keep three regimes separate:
 - **Modelocking:** the laser emits one or more pulses per cavity roundtrip. The pulse repetition rate is fixed by the roundtrip time, and the optical spectrum consists of phase-locked axial modes.
 - **Q-switched modelocking:** a short modelocked pulse train exists, but its envelope is modulated by slower Q-switched macropulses. This is usually an instability for lasers intended to run in steady modelocked operation.
 
-For picosecond active modelocking, the slowly-varying-envelope approximation is usually safe. For few-cycle passive modelocking, the position of the carrier field under the envelope becomes important; this is the carrier-envelope offset discussed in [[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers|chapter 12]].
+For picosecond active modelocking, the slowly-varying-envelope approximation is usually safe. For few-cycle passive modelocking, the position of the carrier field under the envelope becomes important; this is the carrier-envelope offset discussed in [[Notes/Ultrafast Laser Physics/12 Optical Frequency Comb from Modelocked Lasers\|chapter 12]].
 
-This distinction also explains why active modelocking is historically important but not usually the final source for [[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation|high-harmonic generation]]. Active modelocking can produce a stable and electronically synchronised pulse train, but the pulses are typically too long and have too little peak electric field for efficient HHG. Attosecond experiments usually need the additional pulse shortening, dispersion control, nonlinear broadening, and CEO control discussed in the later passive modelocking and comb chapters.
+This distinction also explains why active modelocking is historically important but not usually the final source for [[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation\|high-harmonic generation]]. Active modelocking can produce a stable and electronically synchronised pulse train, but the pulses are typically too long and have too little peak electric field for efficient HHG. Attosecond experiments usually need the additional pulse shortening, dispersion control, nonlinear broadening, and CEO control discussed in the later passive modelocking and comb chapters.
 
 ---
 ## 6.2 Basic Principle of Active Modelocking
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=249)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 In active modelocking the laser contains an intracavity modulator driven by an external radio-frequency signal. The modulator changes the loss periodically with period $T_R$ or with a rational fraction of it. If exactly one pulse circulates in the cavity, the modulation is called fundamental active modelocking and the drive frequency is
 $$
@@ -80,7 +80,7 @@ f_m=f_{\mathrm{rep}}=\frac{1}{T_R}.
 $$
 For a linear standing-wave cavity, the modulator is usually placed close to an end mirror. Then the right- and left-propagating parts of the pulse pass the modulator at nearly the same modulation phase. If the modulator is placed at a more general position, the two passages see different phases and harmonic modelocking or unstable operation can be favoured.
 
-![Attachments/UltraFastLasers_Keller 68.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2068.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=250)
+![Attachments/UltraFastLasers_Keller 68.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2068.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The loss modulation can be expanded around its minimum as
 $$
@@ -94,19 +94,19 @@ This shortening cannot continue indefinitely. Shorter pulses have broader spectr
 - the time-dependent loss modulator narrows the pulse in time;
 - the finite gain bandwidth narrows the spectrum and therefore broadens the pulse in time.
 
-![Attachments/UltraFastLasers_Keller 69.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2069.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=251)
+![Attachments/UltraFastLasers_Keller 69.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2069.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The same idea can be viewed in the frequency domain. A sinusoidal modulation at the axial-mode spacing couples one axial mode to its neighbours. The modulation sidebands are phase coherent with the original field, so the modulator effectively seeds adjacent modes with a fixed phase relation. Repeating this process over many modes creates a phase-locked comb.
 
 ---
 ## 6.3 Optical Loss Modulators
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=252)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 Most active modelocked solid-state lasers use an acousto-optic modulator (AOM) or an electro-optic modulator (EOM). In both cases, the goal is not only to vary the loss but to vary it at a frequency phase-locked to the resonator roundtrip.
 
 For an AOM, an acoustic wave creates a time-dependent refractive-index grating in a transparent medium. The optical beam is diffracted by this grating; if the laser uses the undiffracted beam, diffraction appears as a controllable loss. A standing acoustic wave can therefore produce a nearly sinusoidal loss modulation.
 
-![Attachments/UltraFastLasers_Keller 70.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2070.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=253)
+![Attachments/UltraFastLasers_Keller 70.webp|700](/img/user/Attachments/UltraFastLasers_Keller%2070.webp)[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 If the acoustic wave has frequency $\omega_a$, a standing-wave intensity pattern modulates the refractive index at approximately $2\omega_a$. The optical loss modulation is then adjusted such that its period matches the pulse roundtrip time. The modulation depth must be large enough to discriminate against light away from the preferred time slot, but excessive loss increases threshold and can destabilise the laser.
 
@@ -114,9 +114,9 @@ An EOM can also be used. It changes the refractive index through the electro-opt
 
 ---
 ## 6.4 Active Modelocking Without SPM and GDD
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=255)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
-The cleanest analytical model neglects both [[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.4 Self-Phase Modulation|self-phase modulation]] and [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.4.2 First and Second Order Dispersion|group-delay dispersion]]. In this limit, the relevant effects are saturated gain, finite gain bandwidth, constant loss, and time-dependent modulator loss.
+The cleanest analytical model neglects both [[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.4 Self-Phase Modulation\|self-phase modulation]] and [[Notes/Ultrafast Laser Physics/2 Linear Pulse Propagation#2.4.2 First and Second Order Dispersion\|group-delay dispersion]]. In this limit, the relevant effects are saturated gain, finite gain bandwidth, constant loss, and time-dependent modulator loss.
 
 The gain can be approximated by a parabola around the centre frequency:
 $$
@@ -155,12 +155,12 @@ A useful way to remember this result is that active modelocking supplies an exte
 
 ---
 ## 6.5 Adding SPM and GDD
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=263)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 When the pulse becomes shorter or the intracavity peak power becomes larger, the simple Gaussian model is no longer sufficient. Two additional effects become important:
 
-- [[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.4 Self-Phase Modulation|SPM]] creates an intensity-dependent phase shift.
-- [[Notes/Ultrafast Laser Physics/3 Dispersion Compensation|GDD]] creates a frequency-dependent delay.
+- [[Notes/Ultrafast Laser Physics/4 Nonlinear Pulse Propagation#4.4 Self-Phase Modulation\|SPM]] creates an intensity-dependent phase shift.
+- [[Notes/Ultrafast Laser Physics/3 Dispersion Compensation\|GDD]] creates a frequency-dependent delay.
 
 Including these terms, the master equation takes the schematic form
 $$
@@ -189,7 +189,7 @@ In practice this means that the boundary between "active" and "passive" modelock
 
 ---
 ## 6.6 Gain Broadening, Gain Saturation, and Synchronous Modelocking
-[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf#page=270)
+[ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/UltraFastLasers_Keller.pdf)
 
 The gain model matters. In a homogeneously broadened gain medium, all axial modes compete for the same inversion. Without a mechanism that enforces phase locking, this tends to favour single-mode operation. In an inhomogeneously broadened medium, different spectral parts can saturate somewhat independently, so multimode operation can be easier. However, multimode operation alone is not modelocking; the phases still have to be locked.
 
