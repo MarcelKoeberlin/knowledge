@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/photography/travels/2025-summer-on-the-kerry-way-ireland/","hide":"true","updated":"2026-06-07T12:36:06.942+02:00"}
+{"dg-publish":true,"permalink":"/photography/travels/2025-summer-on-the-kerry-way-ireland/","hide":"true","updated":"2026-06-07T14:50:02.805+02:00"}
 ---
 
 Jump back to [[Photography/Photography\|selection]].
 
-_This road winds through a western country of rain-bright fields, dark lakes, and sea-winds that carry the cries of birds over the ridges. Beyond each bend lies another fold of green earth and silver water, as though the hills themselves were keeping quiet counsel._
+_In peak summer the Kerry Way is all deep green hills, flowering hedgerows, and sea-bright air, with the Atlantic flashing between the folds of the land. The path winds onward through warmth, wind, and sudden rain, as if each valley and ridge were revealing one more secret of the western shore._
 
 ---
 # 2025 - Summer hiking the Kerry Way, Ireland

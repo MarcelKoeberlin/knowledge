@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"photography","permalink":"/photography/","hide":"true","updated":"2026-03-08T19:36:57.091+01:00"}
+{"dg-publish":true,"dg-path":"photography","permalink":"/photography/","hide":"true","updated":"2026-06-07T14:40:40.530+02:00"}
 ---
 
 This page contains photographs mostly of adventures, hikes and bike tours and everything else photo-worthy.
