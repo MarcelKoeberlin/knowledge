@@ -38,5 +38,6 @@
     <a href="/physics/">Physics</a>
     <a href="/photography/">Photography</a>
     <a href="/chords/">Chords</a>
+    <a href="/about/">About Me</a>
   </nav>
 </section>
