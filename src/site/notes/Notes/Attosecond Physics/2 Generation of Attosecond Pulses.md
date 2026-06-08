@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/2-generation-of-attosecond-pulses/","hide":"true","updated":"2026-06-07T19:54:05.957+02:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/2-generation-of-attosecond-pulses/","hide":"true","updated":"2026-06-07T20:39:33.262+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -20,6 +20,8 @@ Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|
 ---
 # 2 Generation of Single Attosecond Pulses
 [ ](/img/user/Reading/Books/Attosecond%20Physics/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications.pdf) [ ](/img/user/Reading/Books/Attosecond%20Physics/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications.pdf)
+
+**Main thread.** A high-harmonic spectrum already contains the bandwidth for attosecond pulses; the hard part is controlling which half-cycle contributes. Pulse trains arise naturally from repeated emission, while single attosecond pulses require temporal, polarisation, ionisation, spatial, or two-colour gating.
 
 High-order harmonics were first observed around 1987 and 1988. However, it took nearly a decade before the first attosecond pulses were reported. In 2001, both the first attosecond pulse train (APT) and the first single attosecond pulse (SAP) were demonstrated. It was already known from theoretical considerations and spectral measurements that high-order harmonics exhibit a flat plateau in their spectra. Furthermore, theoretical models indicated that these harmonics possess nearly constant relative phases. This led to the speculation that the coherent superposition of such harmonics could produce a train of attosecond pulses.
 

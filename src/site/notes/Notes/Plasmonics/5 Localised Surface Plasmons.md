@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/5-localised-surface-plasmons/","hide":"true","updated":"2025-05-30T15:22:15.902+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/5-localised-surface-plasmons/","hide":"true","updated":"2026-06-07T20:39:33.689+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -16,6 +16,8 @@ Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selectio
 ---
 # 5 Localised Surface Plasmons
 [ ](/img/user/Reading/Books/Plasmonics/Plasmonics%20-%20Fundamentals%20and%20Applications.pdf)
+
+**Main thread.** Localised plasmons replace propagation along an interface by resonant charge motion in a finite nanostructure. The quasi-static sphere gives the cleanest intuition: resonance occurs when the particle polarisation strongly opposes the restoring field, but real particles then add radiation damping, retardation, coupling, and material loss.
 
 The second fundamental excitation in plasmonics is the so-called localised surface plasmon. In contrast to the propagating SPPs already discussed, these are non-propagating excitations of the conduction electrons coupled to the electromagnetic field, typically occurring in metallic nanoparticles or nanostructures significantly smaller than the wavelength of incident light.
 

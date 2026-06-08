@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":false,"dgShowInlineTitle":false,"updated":"2026-06-08T00:00:00.000+02:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","updated":"2026-06-08T17:39:58.048+02:00"}
 ---
 
 <div class="ascii-rain" aria-hidden="true">
@@ -32,8 +32,8 @@
 </div>
 
 <section class="home-shell">
-  <h1>Marcel Koeberlin</h1>
-  <p class="home-intro">Physics student and note-maker interested in ultrafast light, condensed matter, photography, and small tools that make learning more pleasant.</p>
+  <h1>Marcel Köberlin</h1>
+  <p class="home-intro">Just the small personal website of a physics PhD who happens to like photography and playing instruments</p>
   <nav class="home-links" aria-label="Primary sections">
     <a href="/physics/">Physics</a>
     <a href="/photography/">Photography</a>

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2025-05-30T15:19:41.210+02:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/1-fundamentals-of-high-order-harmonic-generation/","hide":"true","updated":"2026-06-07T20:39:33.191+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -14,6 +14,8 @@ Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|
 ---
 # 1 Fundamentals of High-Order Harmonic Generation
 [ ](/img/user/Reading/Books/Attosecond%20Physics/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications.pdf)
+
+**Main thread.** HHG is the bridge from femtosecond driving lasers to attosecond XUV radiation. The microscopic three-step model explains the cutoff and trajectory picture, while phase matching explains why only some of those single-atom emissions survive as a macroscopic beam.
 
 Harmonic generation is an important nonlinear process in optics. If incoming electromagnetic radiation oscillates at frequency $\omega$, its second harmonic has the frequency $2\omega$. Generalising, the $n$-th harmonic will then oscillate at $n\omega$, which is $n$ times the frequency of the _fundamental_ signal $\omega$. One simplified way to think about this is that $n$ photons, each of energy $\hbar\omega$, are absorbed in some nonlinear material, leading to the generation of a single photon of energy $n\hbar\omega$. This chapter focuses on high-order harmonic generation (HHG), which usually considers harmonics of order $n \gtrsim 20$.
 

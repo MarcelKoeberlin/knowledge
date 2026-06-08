@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/7-magnetism-in-metals/","hide":"true","updated":"2025-05-31T15:53:26.247+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/7-magnetism-in-metals/","hide":"true","updated":"2026-06-07T20:41:04.349+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -14,6 +14,8 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 # 7 Magnetism in Metals
 [ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
+
+**Main thread.** Itinerant magnetism is a Fermi-surface instability. Exchange interactions favour spin polarisation, but whether magnetism appears depends on the density of states, band structure, and the momentum dependence of the spin susceptibility.
 
 Magnetic ordering in metals can be viewed as an instability of the Fermi liquid state. We introduce this new phase of metals through the description of the Stoner ferromagnetism. The discussion of antiferromagnetism and spin density wave phases will be only brief in this chapter. In Stoner ferromagnets the magnetic moment is provided by the spin of itinerant electrons. Magnetism due to localised magnetic moments will be considered in the context of Mott insulators, which are the subject of the next chapter.
 Well-known examples of elemental ferromagnetic metals are iron (Fe), cobalt (Co), and nickel (Ni) belonging to the $3d$ transition metals, where the $3d$-orbital character is dominant for the conduction electrons at the Fermi energy. These orbitals are rather tightly bound to the atomic cores such that the electron mobility is reduced, enhancing the effect of interaction which is essential for the formation of a magnetic state. Other forms of magnetism, such as antiferromagnetism and the spin density wave state are found in the $3d$ transition metals Cr and Mn. Note, $4d$ and $5d$ transition metals within the same columns of the periodic system are not magnetic. Their $d$-orbitals are more extended, leading to a higher mobility of the electrons, such that the mutual interaction is insufficient to trigger magnetism. It is, however, possible to find ferromagnetism in $\mathrm{ZrZn}_{2}$ where zinc (Zn) may act as a spacer reducing the mobility of the $4d$-electrons of zirconium (Zr). The $4d$-elements Pd and Rh, and the $5d$-element Pt are, however, nearly ferromagnetic. Going further in the periodic table, the $4f$-orbitals appearing in the lanthanides are nearly localised and can lead to ferromagnetism, as illustrated by the elements going from Gd through Tm in the periodic system.

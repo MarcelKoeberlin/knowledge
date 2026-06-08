@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Crystal Optics in Intense Light Fields","permalink":"/notes/crystal-optics-in-intense-light-fields/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2025-06-01T17:49:11.000+02:00"}
+{"dg-publish":true,"dg-path":"Notes/Crystal Optics in Intense Light Fields","permalink":"/notes/crystal-optics-in-intense-light-fields/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2026-06-07T20:35:41.108+02:00"}
 ---
 
 These notes accompany the lecture 'Crystal Optics in Intense Light Fields' taught by Prof. Fiebig in 2025. I chose to cover this course because it provides a solid fundamental basis for my PhD work. The material is primarily based on the _unofficial_ notes from 2015 (as Prof. Fiebig refers to them), combined with his current lecture slides, though the order has been slightly adjusted. All content is written in my own words.
@@ -17,6 +17,8 @@ The second half of the course shifts toward nonlinear optics—phenomena that ar
 
 Throughout, the goal is to build an understanding of how symmetry and light together shape the behaviour of materials, from basic effects to advanced applications.
 
+The most important thread is the repeated use of symmetry as a selection rule. Once the transformation properties of fields, tensors, and order parameters are clear, many apparently different effects -- birefringence, Faraday rotation, electro-optic modulation, second-harmonic generation, and Raman driving -- become variations of the same question: which material response is allowed by the symmetry of the medium and the experiment?
+
 ---
 # Table of Contents
 [[Notes/Crystal Optics in Intense Light Fields/1 Macroscopic Description of Crystal Optical Effects\|1 Macroscopic Description of Crystal Optical Effects]]
@@ -25,5 +27,6 @@ Throughout, the goal is to build an understanding of how symmetry and light toge
 [[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction\|4 Light-Matter Interaction]]
 [[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics\|5 Nonlinear Optics]]
 [[Notes/Crystal Optics in Intense Light Fields/6 Experimental Methods of Nonlinear Optics\|6 Experimental Methods of Nonlinear Optics]]
+[[Notes/Crystal Optics in Intense Light Fields/7 Nonlinear Light - Control of Matter\|7 Nonlinear Light - Control of Matter]]
 
 ---

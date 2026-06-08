@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/4-itinerant-electrons-in-a-magnetic-field/","hide":"true","updated":"2025-05-31T10:12:57.876+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/4-itinerant-electrons-in-a-magnetic-field/","hide":"true","updated":"2026-06-07T20:41:04.136+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -14,7 +14,9 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 # 4 Itinerant Electrons in a Magnetic Field
 [ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
 
-Electrons couple through their orbital motion and their spin to external magnetic fields. In this chapter we focus on the case of orbital coupling which can be also used as a diagnostic tool to observe the presence of a Fermi surface in a metallic system and to map out the Fermi surface topology. A further most intriguing feature of electrons moving in a magnetic field is the Quantum Hall effect of a two-dimensional electronic system. In both case the Landau levels with play an important role and will be introduced here in a first step.
+**Main thread.** Magnetic fields quantise orbital motion into Landau levels. In three-dimensional metals this produces oscillatory thermodynamic signals that reveal the Fermi surface, while in two dimensions the same quantisation underlies the integer and fractional quantum Hall effects.
+
+Electrons couple through their orbital motion and their spin to external magnetic fields. In this chapter we focus on the case of orbital coupling, which can also be used as a diagnostic tool to observe the presence of a Fermi surface in a metallic system and to map out its topology. A further intriguing feature of electrons moving in a magnetic field is the quantum Hall effect in two-dimensional electronic systems. In both cases, Landau levels play the central role and will be introduced first.
 
 ## 4.1 The de Haas-van Alphen Effect
 [ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)

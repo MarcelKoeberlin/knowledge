@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/master-thesis/4-conclusion-and-outlook/","hide":"true","updated":"2025-06-04T14:17:06.769+02:00"}
+{"dg-publish":true,"permalink":"/notes/master-thesis/4-conclusion-and-outlook/","hide":"true","updated":"2026-06-07T20:45:43.734+02:00"}
 ---
 
 Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.
@@ -8,6 +8,8 @@ Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter se
 # 4 Conclusion and Outlook
  [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
  
+**Main thread.** The project reached the laser, coupling, spectrometer, and detector-characterisation milestones, but the final broadened-noise measurement was blocked by the fibre gas leak. The outlook is therefore technically specific: repair the pressure system, repeat the broadened-spectrum noise measurement, and compare it to the calibrated unbroadened baseline.
+
 In this project, a mode-locked thin-disk laser was successfully designed, built, and characterised. The laser achieved an average output power of $60 \text{ W}$, a pulse duration of $1030 \text{ fs}$, and a repetition rate of $19.7 \text{ MHz}$. Mode-locking was accomplished using a sapphire-bonded SESAM. The chosen repetition frequency enables measurements up to a few $\text{MHz}$ without interference from the fundamental repetition frequency peak while maintaining high peak powers needed for strong spectral broadening.
 
 Spectral broadening simulations were developed, accounting for inherent fluctuations in the average output power of TDLs and pressure-dependent nonlinear refractive indices. The power and gain densities were calculated, and optimal parameters were identified to elevate the noise of the system. The simulations suggest a noise gain of $35 \text{ dB}$ peak value and spectral broadening with a full width at half maximum (FWHM) from $1.5 \text{ nm}$ to $25 \text{ nm}$. In the wings of the spectrum, $29 \text{ dB}$ noise gain is achievable. The pressure dependence of the resulting spectrum and noise density was discussed in detail. Modulation instabilities were thoroughly examined and were found not to pose significant problems theoretically.

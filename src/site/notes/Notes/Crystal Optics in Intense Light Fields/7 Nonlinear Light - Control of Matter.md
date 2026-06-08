@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/7-nonlinear-light-control-of-matter/","hide":"true","updated":"2025-06-13T17:29:54.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/7-nonlinear-light-control-of-matter/","hide":"true","updated":"2026-06-07T20:45:07.053+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -10,6 +10,8 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 # 7 Nonlinear Light - Control of Matter
 [ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Lecture1_Horstmann.pdf)
+
+**Main thread.** The previous chapters used nonlinear light-matter interaction as a probe. Here the perspective is reversed: tailored light fields drive lattice or electronic degrees of freedom strongly enough that the material state itself is modified.
 
 So far, we have harnessed nonlinear light-matter interaction as probes of electronic, lattice and magnetic structure. Next, we will discuss how nonlinear light-matter interaction can be used to control the lattice and electronic structure. When we say 'matter', what we mean in this context are the electronic and vibrational states of the material that we are interested in. This modifies the properties of light, defined through its frequency, amplitude and phase and so on. Then, the light itself controls the properties of the matter again. We will discuss two cases, the first being the optical control of vibronic states ([[Impulse stimulated Raman scattering\|Impulse stimulated Raman scattering]]), and optical control of electronic states ([[Floquet engineering\|Floquet engineering]]).  
 
@@ -23,7 +25,7 @@ Raman scattering is a type of inelastic scattering of light in matter. It is a c
  
 ![[Attachments/Pasted image 20250613121616.phg\|700]]
  
- Beware of a common misconception: Light is scattered directly at the nuclei, however this is typically not the core. We can understand the frequency of the scattered light by considering the vibrational ground- and excited state, and the virtual states due to light-matter interaction. They are virtual as they are no eigenstate of the Hamiltonian, and therefore very short-lived ([source](https://www.doitpoms.ac.uk/tlplib/raman/raman_scattering.php)):
+Beware of a common misconception: Raman scattering is not light bouncing directly off nuclei. The optical field primarily drives the electronic polarisation, and the nuclear vibration modulates that polarisation. We can understand the frequency of the scattered light by considering the vibrational ground and excited states, together with virtual states due to light-matter interaction. These virtual states are not eigenstates of the Hamiltonian and are therefore very short-lived ([source](https://www.doitpoms.ac.uk/tlplib/raman/raman_scattering.php)):
  
 ![[Attachments/Pasted image 20250613122049.phg\|700]]
 
@@ -156,7 +158,6 @@ Light can thus be used to control and excite coherent vibrational motion.
 
 ---
 ## Raman-Active Phonon Modes by Impulse Stimulated Raman Scattering (ISRS)
-
 
 
 

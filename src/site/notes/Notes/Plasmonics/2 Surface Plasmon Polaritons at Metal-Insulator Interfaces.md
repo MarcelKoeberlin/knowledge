@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/2-surface-plasmon-polaritons-at-metal-insulator-interfaces/","hide":"true","updated":"2026-06-07T19:28:58.287+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/2-surface-plasmon-polaritons-at-metal-insulator-interfaces/","hide":"true","updated":"2026-06-07T20:39:33.477+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -14,6 +14,8 @@ Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selectio
 ---
 # 2 Surface Plasmon Polaritons at Metal-Insulator Interfaces
 [ ](/img/user/Reading/Books/Plasmonics/Plasmonics%20-%20Fundamentals%20and%20Applications.pdf)
+
+**Main thread.** A surface plasmon polariton is a bound electromagnetic mode, not just a charge oscillation. The mode exists because the fields can decay away from the interface on both sides while still propagating along it, which requires opposite signs of the dielectric response in the metal and dielectric.
 
 ## 2.1 The Wave Equation
 

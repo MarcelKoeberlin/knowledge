@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2026-06-07T19:28:58.282+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/2-light-polarisation-and-dispersion/","hide":"true","updated":"2026-06-07T20:45:06.704+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -14,6 +14,8 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 # 2 Light Polarisation and Dispersion
 [ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
+
+**Main thread.** Polarisation provides the language for anisotropic optics, while dispersion provides the link between material resonances and refractive index. Together they explain why crystals split, rotate, delay, or absorb different field components differently.
 
 Light is an electromagnetic wave. Unlike sound waves, which are longitudinal, light is a transverse wave. This means that the direction of the electric (and magnetic) field oscillation is perpendicular to the direction of propagation (the wavevector $\mathbf{k}$). This is covered in more detail in my notes on [[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1 Electromagnetic Theory of Light\|quantum electronics]]. We start by considering the simplest electromagnetic wave, the plane wave, described by its electric field:
 $$

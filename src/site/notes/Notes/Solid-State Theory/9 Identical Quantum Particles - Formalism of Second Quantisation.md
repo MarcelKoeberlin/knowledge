@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/9-identical-quantum-particles-formalism-of-second-quantisation/","hide":"true","updated":"2025-05-31T16:39:02.582+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/9-identical-quantum-particles-formalism-of-second-quantisation/","hide":"true","updated":"2026-06-07T20:46:58.430+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -18,6 +18,8 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 # 9 Identical Quantum Particles - Formalism of Second Quantisation
 [ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
+
+**Main thread.** Second quantisation replaces explicit many-particle wavefunctions by operators that create and annihilate particles. This makes indistinguishability automatic, handles interactions cleanly, and gives direct access to correlation functions and collective excitations.
 
 This chapter gives an introduction to the formalism of second quantisation, which is a convenient technical tool for discussing many-body quantum systems. It is indispensable in quantum field theory as well as in solid state physics. We distinguish between fermions (half-integer spins) and bosons (integer spins), which behave quite differently, as we have seen in the [[Notes/Solid-State Theory/8 Magnetism of Localised Moments\|previous chapter]]. This behaviour is implemented in their many-body wave functions. While in the previous chapter we could circumvent dealing with this aspect as we considered independent, indistinguishable quantum particles, it is unavoidable to implement a more careful analysis once interactions between the particles appear.
 
@@ -754,7 +756,7 @@ g_{2}\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)=n^2 + n^2 = 2n^2.
 \end{align*}
 $$
 
-However, a more careful evaluation for $N$ particles in a finite volume gives $g_2(\boldsymbol{r}-\boldsymbol{r}') = N(N-1)/V^2 = n^2(1-1/N) \approx n^2$ for large $N$. For ideal bosons in a coherent state (like a simple BEC ground state), there are no density-density correlations beyond $n^2$. The result $2n^2$ (or $n^2 + |g_1|^2$) arises for thermal or chaotic bosonic fields. The original text's derivation for $T=0$:
+However, a more careful evaluation for $N$ particles in a finite volume gives $g_2(\boldsymbol{r}-\boldsymbol{r}') = N(N-1)/V^2 = n^2(1-1/N) \approx n^2$ for large $N$. For ideal bosons in a coherent state (like a simple BEC ground state), there are no density-density correlations beyond $n^2$. The result $2n^2$ (or $n^2 + |g_1|^2$) arises for thermal or chaotic bosonic fields. The finite-$N$ correction can be written as:
 $$
 g_{2}\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)=2 n^{2}-\frac{1}{V^{2}} N(N+1)=\frac{N(N-1)}{V^{2}},
 $$
@@ -861,7 +863,7 @@ $$
 \end{align*}
 $$
 
-This leads to the classical Curie susceptibility $\chi = \frac{\mu_B^2 n}{k_B T}$. The correction term in the original text arises if $n_{ks}$ is not negligible.
+This leads to the classical Curie susceptibility $\chi = \frac{\mu_B^2 n}{k_B T}$. If $n_{\boldsymbol{k}s}$ is not negligible, the leading quantum-statistical correction is
 $$
 \begin{align*}
 \chi=\frac{\mu_{B}^{2} n}{k_{B} T}\left(1-\frac{n \lambda^{3}}{2^{5 / 2}}\right)

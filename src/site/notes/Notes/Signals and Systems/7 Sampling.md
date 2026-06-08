@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/7-sampling/","hide":"true","updated":"2026-06-07T20:05:43.062+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/7-sampling/","hide":"true","updated":"2026-06-07T20:05:43.061+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.

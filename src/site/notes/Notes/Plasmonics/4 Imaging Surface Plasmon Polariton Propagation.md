@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/4-imaging-surface-plasmon-polariton-propagation/","hide":"true","updated":"2025-05-30T15:22:11.929+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/4-imaging-surface-plasmon-polariton-propagation/","hide":"true","updated":"2026-06-07T20:39:33.618+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -15,6 +15,8 @@ Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selectio
 ---
 # 4 Imaging Surface Plasmon Polariton Propagation
 [ ](/img/user/Reading/Books/Plasmonics/Plasmonics%20-%20Fundamentals%20and%20Applications.pdf)
+
+**Main thread.** Excitation tells us that an SPP exists; imaging tells us how it actually propagates. The measurement challenge is that the SPP field is partly evanescent, so each imaging method trades off spatial resolution, invasiveness, collection efficiency, and access to phase or propagation length.
 
 While the successful excitation of surface plasmon polaritons (SPPs) using optical techniques can be deduced from a decrease in reflectivity (as discussed in [[Notes/Plasmonics/3 Excitation of Surface Plasmon Polaritons at Planar Interfaces\|Chapter 3]]), visualising the propagation of SPPs away from their excitation region is highly desirable. This visualisation allows for the direct determination of key SPP parameters such as the propagation length $L$ (related to $\mathfrak{Im}\left[\beta\right]$) and provides insights into the out-of-plane confinement, for instance, by assessing $\hat{z} = 1/\mathfrak{Re}\left[\kappa_d\right]$, the characteristic decay length of the SPP fields into the dielectric side of the interface.
 

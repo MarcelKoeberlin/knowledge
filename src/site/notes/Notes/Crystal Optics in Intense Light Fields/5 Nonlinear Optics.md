@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/5-nonlinear-optics/","hide":"true","updated":"2026-06-07T19:28:58.282+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/5-nonlinear-optics/","hide":"true","updated":"2026-06-07T20:45:06.914+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -16,7 +16,9 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 # 5 Nonlinear Optics
 [ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Notes.pdf) [ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
 
-Up so far, we have only treated linear effects. The term linear is with regards to the polarisation of the material depending linearly on the external electric field
+**Main thread.** Nonlinear optics keeps the same symmetry logic as linear optics but expands the material polarisation in powers of the optical field. New frequencies and phase-matching conditions appear because the nonlinear polarisation acts as a source term for new light fields.
+
+So far, we have only treated linear effects. The term linear is with regards to the polarisation of the material depending linearly on the external electric field
 $$
 P_{i}(\omega)=\varepsilon_{0} \chi_{i j}^{(1)}(\omega) E_{j}(\omega).
 $$
@@ -30,7 +32,7 @@ $$
 
 This expansion occurs in the susceptibility tensor, such that higher powers of the electric respectively magnetic field occur. It is important not to confuse this with the $\mathbf{A}^2$ term in the chapter on [[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction\|light-matter interaction]]. The interactions discussed in nonlinear optics still originate from the electric and magnetic dipoles, and from the electric quadrupole, all of which were discussed [[Notes/Crystal Optics in Intense Light Fields/4 Light-Matter Interaction#4.2 Multipole Expansion of the Light Field\|here]]. 
 
-When considering $E_{j}=E_{k}$ in the second term of equation of the general polarisation, doubling the electric field leads to four times the polarization, e.g. $2 \mathbf{E} \rightarrow 4 \mathbf{P}$, which is a strictly nonlinear relation. Usually though, these terms are negligible as $P^{(2)}$ is often many orders of magnitude smaller than $P^{(1)}.$ However, in intense light fields such as those of pulsed lasers, this term becomes relevant. For the strongest exciting lasers, we have that $P^{(n)} \simeq P^{(n+1)}$ for high orders. Therefore, in these cases, the expansion becomes obsolete and requires a wholly different theory. Although $P^{(2)}$ may be small in size, it oscillates at a different frequency that the incident ('fundamental') light. Therefore, separation from the background radiation is not necessary. 
+When considering $E_{j}=E_{k}$ in the second term of the general polarisation, doubling the electric field leads to four times the polarisation, e.g. $2 \mathbf{E} \rightarrow 4 \mathbf{P}$, which is a strictly nonlinear relation. Usually though, these terms are negligible as $P^{(2)}$ is often many orders of magnitude smaller than $P^{(1)}.$ However, in intense light fields such as those of pulsed lasers, this term becomes relevant. For the strongest exciting lasers, we have that $P^{(n)} \simeq P^{(n+1)}$ for high orders. Therefore, in these cases, the expansion becomes obsolete and requires a wholly different theory. Although $P^{(2)}$ may be small in size, it oscillates at a different frequency than the incident ('fundamental') light. Therefore, separation from the background radiation is not necessary. 
 
 Many linear effects have a nonlinear counterpart. As an example, consider the [[Notes/Crystal Optics in Intense Light Fields/3 Magneto-Optics#3.1.3 magneto-optic Kerr Effect\|magneto-optic Kerr effect]]: The rotation angle of the polarisation in reflection $\phi_K$  is related to the polarisation of the material $P_K$ (which itself depends on the susceptibility), the magnetic field $H$ and the electric field $E$ by 
 $$

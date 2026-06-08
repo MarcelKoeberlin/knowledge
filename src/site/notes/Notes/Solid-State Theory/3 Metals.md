@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/3-metals/","hide":"true","updated":"2025-05-31T10:01:38.498+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/3-metals/","hide":"true","updated":"2026-06-07T20:41:04.066+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -15,6 +15,8 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 # 3 Metals
 [ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
+
+**Main thread.** Metals are gapless many-electron systems. The jellium model gives a controlled starting point, screening explains why Coulomb interactions become manageable at long distances, and linear response connects microscopic excitations to measurable dielectric and transport properties.
 
 The electronic states in a periodic atomic lattice are extended and have an energy spectrum forming energy bands. In the ground state these energy states are filled successively starting at the bottom of the electronic spectrum until the number of electrons is exhausted. Metallic behaviour occurs whenever in this way a band is only partially filled. The fundamental difference that distinguishes metals from insulators and semiconductors is the absence of a gap for electron-hole excitations. In metals, the ground state can be excited at arbitrarily small energies which has profound phenomenological consequences.
 We will consider a basic model suitable for the description of simple metals like the alkali metals Li, Na, or K, where the (atomic) electron configuration consists of closed shell cores and one single valence electron in an $ns$-orbital. Neglecting the core electrons (completely filled bands), we consider the valence electrons only and apply the approximation of nearly free electrons. The lowest band around the $\Gamma$-point is then half-filled. First, we will also neglect the influence of the periodic lattice potential and consider the problem of a free electron gas subject to mutual (repulsive) Coulomb interaction.
@@ -679,7 +681,7 @@ $$
 \chi_{0}(q, \omega=0)= \begin{cases}-\frac{1}{2 \pi q v_F} \ln \left|\frac{s+2}{s-2}\right|, & \text{1D} \\ -\frac{m}{2 \pi \hbar^2}\left\{1-\left(1-\frac{4}{s^{2}}\right)^{1 / 2} \theta(s-2)\right\}, & \text{2D} \\ -\frac{m k_{F}}{2 \pi^{2} \hbar^2}\left\{1-\frac{s}{4}\left(1-\frac{4}{s^{2}}\right) \ln \left|\frac{s+2}{s-2}\right|\right\}, & \text{3D}\end{cases}
 \end{align*}
 $$
-where $s=q / k_{F}$. (Note: Pre-factors for 1D and 2D $\chi_0$ were adjusted to standard forms; original 1D prefactor was missing $v_F$, 2D prefactor $1/(2\pi)$ implies units where $\hbar^2/m=1$ or similar simplification. I've put in more standard forms with $m, \hbar, v_F$ for dimensional correctness, assuming parabolic bands. If the original expressions were specifically derived with certain simplifications, they might differ. The 3D form $k_F/(2\pi^2)$ also implies $\hbar^2/m=1$ if compared to $N(\epsilon_F)$ forms, or means $m k_F / (2\pi^2 \hbar^2)$ if explicit. I have used the latter convention for the 3D prefactor and tried to make 1D/2D consistent, assuming the user is working in a system where $m, \hbar$ are explicit).
+where $s=q / k_{F}$. The prefactors shown here use explicit $m$, $\hbar$, and $v_F$ for parabolic bands. If one works in units where $\hbar^2/m=1$, the same expressions may appear with shorter prefactors, but the singular behaviour at $q=2k_F$ is unchanged.
 
 Interestingly $\chi_{0}(q, 0)$ has a singularity at $q=2 k_{F}$ in all dimensions:
 

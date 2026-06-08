@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/4-coherence-and-interference/","hide":"true","updated":"2025-06-04T15:34:01.614+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/4-coherence-and-interference/","hide":"true","updated":"2026-06-07T20:42:28.403+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -18,6 +18,8 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 # 4 Coherence and Interference
 [ ](/img/user/Notes/2025%20Quantum%20Electronics/02_Fundamental_phenomena.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
+
+**Main thread.** Interference requires phase relationships that survive averaging. Coherence functions quantify how stable these relationships are in space and time, while interferometers and etalons turn phase differences into measurable intensity patterns.
 
 Coherence can be initially understood as the ability of light to exhibit interference phenomena. This will be our starting point, but as we will see, a more precise description is necessary. Additionally, interference, a concept perhaps already familiar, is the superposition of waves that results in a (quasi-)stationary intensity pattern, commonly referred to as a standing wave if the waves are counter-propagating. Fully stationary interference patterns require several conditions to be met by the superposing waves:
 - The waves must possess the same polarisation state.

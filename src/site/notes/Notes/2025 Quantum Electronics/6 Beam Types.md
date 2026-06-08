@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/6-beam-types/","hide":"true","updated":"2026-06-07T19:28:58.278+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/6-beam-types/","hide":"true","updated":"2026-06-07T20:43:12.502+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -17,6 +17,9 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 # 6 Beam Types
 [ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
+
+**Main thread.** Real laser beams are finite transverse wave packets. Gaussian, Hermite-Gaussian, Laguerre-Gaussian, and Bessel beams are different solution families of the paraxial or full Helmholtz equation, each with characteristic phase, divergence, and mode structure.
+
 In this chapter, we return to the treatment of optical beams and will discuss different types of beams encountered in optics. The most important of these, particularly in laser applications, is the Gaussian beam.
 
 ## 6.1 Gaussian Beam Optics

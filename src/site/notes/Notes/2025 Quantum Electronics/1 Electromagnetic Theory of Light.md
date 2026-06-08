@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/1-electromagnetic-theory-of-light/","hide":"true","updated":"2025-07-15T14:45:09.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/1-electromagnetic-theory-of-light/","hide":"true","updated":"2026-06-07T20:42:28.192+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -21,6 +21,8 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 # 1 Electromagnetic Theory of Light
 [ ](/img/user/Reading/Books/Lasers%20and%20Nonlinear%20Optics/Fundamentals%20of%20Photonics.pdf)
+
+**Main thread.** This chapter builds the field language used throughout the course. Maxwell's equations define electromagnetic waves, material equations describe how matter responds, and energy, momentum, and polarisation provide the observables used in later optical systems.
 
 Light is an electromagnetic wave governed by the same theoretical principles that describe all forms of electromagnetic radiation. It consists of coupled oscillating electric and magnetic fields.
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/7-optical-resonators/","hide":"true","updated":"2025-06-04T15:33:59.572+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/7-optical-resonators/","hide":"true","updated":"2026-06-07T20:43:12.572+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -14,6 +14,8 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 # 7 Optical Resonators
 [ ](/img/user/Notes/2025%20Quantum%20Electronics/03_Beams_and_resonators.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
+
+**Main thread.** A resonator is a self-consistency condition for light. A spatial mode must reproduce its Gaussian beam parameter after a round trip, and its phase must also reproduce itself up to an integer multiple of $2\pi$.
 
 An optical resonator, or optical cavity, is a device designed to confine light, effectively storing electromagnetic energy within a defined volume for a certain duration. This is generally achieved by guiding the propagation of light along a path that self-reproduces after periodic round trips. One example of an optical resonator that we have already encountered is the [[Notes/2025 Quantum Electronics/4 Coherence and Interference#4.6 Fabry-Pérot Interferometer - Etalon\|Fabry-Pérot cavity]].
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/8-laser-fundamentals/","hide":"true","updated":"2026-06-07T19:28:58.278+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/8-laser-fundamentals/","hide":"true","updated":"2026-06-07T20:43:12.642+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -21,6 +21,8 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 # 8 Laser Fundamentals
 [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/04_Laser_fundamentals.pdf)
+
+**Main thread.** A laser combines gain, feedback, and mode selection. The microscopic Einstein-coefficient picture explains stimulated emission, while the rate equations explain threshold, saturation, relaxation oscillations, and the onset of steady lasing.
 
 In this chapter, the fundamental principles underlying the physics of a laser are discussed. However, before delving into the physics, let us understand what 'Laser' stands for:
 $$

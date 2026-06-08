@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/signals-and-systems/9-z-transform/","hide":"true","updated":"2026-06-07T20:07:00.351+02:00"}
+{"dg-publish":true,"permalink":"/notes/signals-and-systems/9-z-transform/","hide":"true","updated":"2026-06-07T20:07:00.350+02:00"}
 ---
 
 Jump back to ==[[Notes/Signals and Systems/Signals and Systems#Table of Contents\|chapter selection]]==.

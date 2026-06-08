@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Notes/Attosecond Physics","permalink":"/notes/attosecond-physics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2026-06-07T19:54:05.809+02:00"}
+{"dg-publish":true,"dg-path":"Notes/Attosecond Physics","permalink":"/notes/attosecond-physics/","dgShowBacklinks":"false","dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgShowToc":"false","updated":"2026-06-07T20:35:40.969+02:00"}
 ---
 
 These notes serve as an introduction to the exciting field of attosecond physics, based primarily on foundational texts such as [Attosecond and Strong-Field Physics](https://www.cambridge.org/core/books/attosecond-and-strongfield-physics/B75E906A3C0AFE97902F0500312816B3) and [Attosecond Physics: Attosecond Measurements and Control of Physical Systems](https://link.springer.com/book/10.1007/978-3-642-37623-8). While these comprehensive books offer extensive theoretical and mathematical insights, their depth can make them dense and abstract. In contrast, these notes aim to foster an intuitive understanding of the underlying physics. Key formulas are included, but lengthy derivations are generally omitted for conceptual clarity. However, mathematical details are included where they significantly enhance understanding.
@@ -18,10 +18,13 @@ Probing and controlling electron dynamics on the attosecond timescale became fea
 
 Attosecond pulses promise unprecedented access to observing and influencing electron dynamics at their intrinsic timescale. However, precisely determining and interpreting the key parameters that characterise such dynamics remains a non-trivial experimental and theoretical challenge.
 
+The notes are organised around the experimental chain: first, how high-order harmonics are generated; second, how this radiation is gated into isolated attosecond bursts or pulse trains; third, how the pulses are measured; and finally, how single attosecond pulses can be used to interrogate electron dynamics in atoms and molecules.
+
 ---
 # Table of Contents
 [[Notes/Attosecond Physics/1 Fundamentals of High-Order Harmonic Generation\|1 Fundamentals of High-Order Harmonic Generation]]
 [[Notes/Attosecond Physics/2 Generation of Attosecond Pulses\|2 Generation of Attosecond Pulses]]
 [[Notes/Attosecond Physics/3 Characterisation of Attosecond Pulses\|3 Characterisation of Attosecond Pulses]]
+[[Notes/Attosecond Physics/4 Probing Electron Dynamics with Single Attosecond Pulses\|4 Probing Electron Dynamics with Single Attosecond Pulses]]
 
 ---

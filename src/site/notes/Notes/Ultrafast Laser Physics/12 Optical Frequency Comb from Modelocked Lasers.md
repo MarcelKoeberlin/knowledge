@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/12-optical-frequency-comb-from-modelocked-lasers/","hide":"true","updated":"2026-06-07T20:14:09.450+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/12-optical-frequency-comb-from-modelocked-lasers/","hide":"true","updated":"2026-06-07T20:14:09.449+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.

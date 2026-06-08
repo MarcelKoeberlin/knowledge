@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/travels/2026-early-summer-in-the-lake-district-uk/","hide":"true","updated":"2026-06-07T17:15:25.881+02:00"}
+{"dg-publish":true,"permalink":"/photography/travels/2026-early-summer-in-the-lake-district-uk/","hide":"true","updated":"2026-06-07T17:15:25.880+02:00"}
 ---
 
 Jump back to [[Photography/Photography\|selection]].

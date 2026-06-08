@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/plasmonics/3-excitation-of-surface-plasmon-polaritons-at-planar-interfaces/","hide":"true","updated":"2025-05-30T15:22:07.791+02:00"}
+{"dg-publish":true,"permalink":"/notes/plasmonics/3-excitation-of-surface-plasmon-polaritons-at-planar-interfaces/","hide":"true","updated":"2026-06-07T20:39:33.547+02:00"}
 ---
 
 Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selection]]==.
@@ -14,6 +14,8 @@ Jump back to ==[[Notes/Plasmonics/Plasmonics#Table of Contents\|chapter selectio
 ---
 # 3 Excitation of Surface Plasmon Polaritons at Planar Interfaces
 [ ](/img/user/Reading/Books/Plasmonics/Plasmonics%20-%20Fundamentals%20and%20Applications.pdf)
+
+**Main thread.** The excitation problem is a momentum-matching problem. A smooth interface supports an SPP with too much in-plane momentum for direct illumination, so prism coupling, gratings, and tight focusing all exist to supply the missing parallel wave vector.
 
 Surface plasmon polaritons (SPPs) propagating at the flat interface between a conductor and a dielectric are essentially two-dimensional electromagnetic waves. Their confinement is a consequence of their propagation constant $\beta$ being greater than the wave number $k = k_0 \sqrt{\varepsilon_d}$ of light in the adjacent dielectric medium (where $\varepsilon_d$ is the dielectric permittivity of the dielectric), or $\beta > k_0 \sqrt{\varepsilon_d}$. This condition leads to evanescent decay of the SPP fields on both sides of the interface. Therefore, direct excitation of SPPs by three-dimensional light beams incident from the dielectric onto a smooth metal surface is not possible, as the in-plane wave vector component of the incident light ($k_x = k_0 \sqrt{\varepsilon_d} \sin\theta$) is always smaller than $\beta$. Special techniques for phase-matching are required to overcome this momentum mismatch.
 

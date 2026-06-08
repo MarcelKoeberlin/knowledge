@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/5-landau-s-theory-of-fermi-liquids/","hide":"true","updated":"2025-05-31T10:23:30.229+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/5-landau-s-theory-of-fermi-liquids/","hide":"true","updated":"2026-06-07T20:41:04.207+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -14,6 +14,8 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 # 5 Landau's Theory of Fermi Liquids
 [ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
+
+**Main thread.** Landau's theory explains why an interacting metal can still look like a gas of particles near the Fermi surface. The particles are not bare electrons but quasiparticles with renormalised mass, lifetime, and interactions encoded in the Landau parameters.
 
 In the previous chapters, we considered the electrons of the system as more or less independent particles. The effect of their mutual interactions only entered via the renormalisation of potentials and in the emergence of collective excitations. The underlying assumptions of our earlier discussions were that electrons in the presence of interactions can still be described as Fermionic particles with a well-defined energy-momentum relation, and that their ground state is a filled Fermi sea with a sharp Fermi surface. Since there is no guarantee that this hypothesis holds in general (and indeed, this is not always true), we have to show that in metals the description of electrons as quasi-particles is justified. This quasi-particle picture will lead us to Landau's phenomenological theory of Fermi liquids. Indeed, it is very surprising that a strongly interacting many-electron system does not end up in an extremely complex quantum state. What saves us are two important points:
 1. In a metal the long-ranged Coulomb interaction is screened and becomes short-ranged;

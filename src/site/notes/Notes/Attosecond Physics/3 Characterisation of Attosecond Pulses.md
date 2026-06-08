@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/attosecond-physics/3-characterisation-of-attosecond-pulses/","hide":"true","updated":"2025-05-30T13:04:03.926+02:00"}
+{"dg-publish":true,"permalink":"/notes/attosecond-physics/3-characterisation-of-attosecond-pulses/","hide":"true","updated":"2026-06-07T20:39:33.333+02:00"}
 ---
 
 Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|chapter selection]]==.
@@ -18,6 +18,8 @@ Jump back to ==[[Notes/Attosecond Physics/Attosecond Physics#Table of Contents\|
 ---
 # 3 Characterisation and Control of Attosecond Pulses
 [ ](/img/user/Reading/Books/Attosecond%20Physics/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications.pdf) [ ](/img/user/Reading/Books/Attosecond%20Physics/Attosecond%20and%20Strong-Field%20Physics%20Principles%20and%20Applications.pdf)
+
+**Main thread.** Attosecond metrology is mostly a phase-retrieval problem. Optical pulse diagnostics such as autocorrelation, FROG, and SPIDER provide the analogy, but attosecond pulses require indirect schemes such as RABBITT and streaking because there is no ordinary XUV autocorrelator with a known shorter gate pulse.
 
 Before diving into the specifics of characterising attosecond pulses, it is instructive to briefly review the characterisation of more conventional ultrashort (femtosecond) optical pulses, as many underlying principles and challenges are related.
 

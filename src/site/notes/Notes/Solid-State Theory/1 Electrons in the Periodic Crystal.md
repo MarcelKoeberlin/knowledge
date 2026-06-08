@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2026-06-07T19:28:58.301+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/1-electrons-in-the-periodic-crystal/","hide":"true","updated":"2026-06-07T20:41:03.922+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -19,6 +19,8 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 # 1 Electrons in the Periodic Crystal
 [ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
+
+**Main thread.** The periodic lattice turns free-electron motion into band theory. Symmetry gives the good quantum number $\mathbf{k}$, reciprocal space organises degeneracies and gaps, and the nearly-free and tight-binding limits explain the same band structure from opposite sides.
 
 One defining characteristic of many solids is the regular arrangement of their atoms, forming a crystal. Electrons in such crystals experience a periodic potential, originating from the lattice of ions and the mean interaction with other electrons:
 

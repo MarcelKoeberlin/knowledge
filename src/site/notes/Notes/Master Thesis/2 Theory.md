@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/master-thesis/2-theory/","hide":"true","updated":"2025-06-04T12:29:14.314+02:00"}
+{"dg-publish":true,"permalink":"/notes/master-thesis/2-theory/","hide":"true","updated":"2026-06-07T20:46:58.500+02:00"}
 ---
 
 Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.
@@ -17,6 +17,8 @@ Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter se
 
 ---
 # 2 Theory
+
+**Main thread.** The theoretical basis connects three ingredients: soliton modelocking defines the pulse source, PSD/RIN/shot-noise theory defines the measurement target, and nonlinear fibre propagation explains how spectral broadening can amplify otherwise inaccessible noise fluctuations.
 
 ## 2.1 Soliton modelocking
  [ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
@@ -517,7 +519,7 @@ Now that the impact of spectral broadening on noise has been discussed, it is cr
 
 This procedure requires only a single photodiode, a method to raise the noise PSD uniformly across all frequencies, and two measurements: one of the laser before spectral broadening and one after. The strength of this method is that the measurement challenge is shifted from the detection setup to obtaining the uniform noise gain.
 
-**Step 1:** Assumed noise PSD of a $60\,\mathrm{W}$ laser, running into the shotnoise limit of $-202\,\mathrm{dBc/Hz}$ around $1\,\mathrm{MHz}$. To obtain this noise trace, one must measure the full $60\,\mathrm{W}$ of optical power with a photodiode, which is impractical.
+**Step 1:** Assumed noise PSD of a $60\,\mathrm{W}$ laser, running into the shot-noise limit of $-202\,\mathrm{dBc/Hz}$ around $1\,\mathrm{MHz}$. To obtain this noise trace, one must measure the full $60\,\mathrm{W}$ of optical power with a photodiode, which is impractical.
 ![Attachments/Koeberlin_Master_Thesis 11.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2011.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 **Step 2:** Assuming the photodiode can only measure up to $10\,\mathrm{mW}$ of optical power, the shot-noise limit would be at $-162\,\mathrm{dBc/Hz}$. In the laboratory, the blue noise PSD would be measured, following the true noise PSD but hitting the detector-limited shot-noise threshold earlier.
@@ -529,10 +531,10 @@ This procedure requires only a single photodiode, a method to raise the noise PS
 **Step 4:** Repeating the noise measurement with the laser that has its noise increased, the green curve is obtained in the lab. The measured noise trace will still be limited by the photodiode's shot-noise threshold at $-162\,\mathrm{dBc/Hz}$, but this occurs at a higher frequency due to the increased noise.
 ![Attachments/Koeberlin_Master_Thesis 14.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2014.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
-**Step 5:** After conducting measurements on both the original laser and the noisy laser, the blue and green curves are. They are consistently spaced apart by $30\,\mathrm{dB}$. A low shot-noise limit can be inferred based on the assumption that the noise gain equally affects all frequencies (see step 6).
+**Step 5:** After conducting measurements on both the original laser and the noisy laser, the blue and green curves can be compared directly. They are consistently spaced apart by $30\,\mathrm{dB}$. A low shot-noise limit can be inferred based on the assumption that the noise gain equally affects all frequencies (see step 6).
 ![Attachments/Koeberlin_Master_Thesis 15.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2015.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
-**Step 6:** Given the assumption that the noise gain increases the noise PSD by $30\,\mathrm{dB}$ uniformly across all frequencies, we infer that the true shotnoise limit is at $-192\,\mathrm{dBc/Hz}$.
+**Step 6:** Given the assumption that the noise gain increases the noise PSD by $30\,\mathrm{dB}$ uniformly across all frequencies, we infer that the true shot-noise limit is at $-192\,\mathrm{dBc/Hz}$.
 ![Attachments/Koeberlin_Master_Thesis 16.webp|700](/img/user/Attachments/Koeberlin_Master_Thesis%2016.webp)[ ](/img/user/Master%20Thesis/ulp-stud/Thesis/Koeberlin_Master_Thesis.pdf)
 
 ---

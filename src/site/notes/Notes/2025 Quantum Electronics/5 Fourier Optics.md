@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/5-fourier-optics/","hide":"true","updated":"2026-06-07T19:28:58.277+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/5-fourier-optics/","hide":"true","updated":"2026-06-07T20:43:12.431+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -19,6 +19,8 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 # 5 Fourier Optics
 [ ](/img/user/Notes/2025%20Quantum%20Electronics/02_Fundamental_phenomena.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
+
+**Main thread.** Fourier optics treats propagation as spatial-frequency filtering. Apertures, diffraction, lenses, and holograms become easier to understand once the optical field is decomposed into plane-wave components.
 
 In this chapter, we will use a plane wave expansion of a monochromatic field to study light propagation through an optical system. The simplest of these systems is free space. It will soon become clear why this chapter is specifically titled 'Fourier' Optics.
 

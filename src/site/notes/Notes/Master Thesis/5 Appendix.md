@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/master-thesis/5-appendix/","hide":"true","updated":"2026-06-07T19:28:58.286+02:00"}
+{"dg-publish":true,"permalink":"/notes/master-thesis/5-appendix/","hide":"true","updated":"2026-06-07T20:45:43.803+02:00"}
 ---
 
 Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.
@@ -15,6 +15,8 @@ Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter se
 
 ---
 # 5 Appendix
+
+**Main thread.** The appendix collects supporting derivations and diagnostic details that would interrupt the main experimental narrative. It is useful as a reference for shot-noise scaling, modulation-instability estimates, autocorrelation, beam diagnostics, and Welch PSD estimation.
 
 The purpose of this appendix is to offer additional context on certain topics that were considered too extensive to include in the main body of this thesis. Given that the primary focus of this thesis is experimental, theoretical aspects, including derivations and proofs, are provided here for completeness.
 

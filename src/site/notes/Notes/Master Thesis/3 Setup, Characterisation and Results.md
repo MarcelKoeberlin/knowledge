@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/master-thesis/3-setup-characterisation-and-results/","hide":"true","updated":"2026-06-07T19:28:58.285+02:00"}
+{"dg-publish":true,"permalink":"/notes/master-thesis/3-setup-characterisation-and-results/","hide":"true","updated":"2026-06-07T20:45:43.663+02:00"}
 ---
 
 Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.
@@ -18,6 +18,8 @@ Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter se
 ---
 
 # 3 Setup, Characterisation and Results
+
+**Main thread.** This chapter follows the beam path and the measurement chain. The important logic is that every optical design choice -- oscillator geometry, beam stabilisation, fibre coupling, spectrometer resolution, and detector electronics -- affects whether the final noise measurement is physically meaningful.
 
 This chapter discusses the thesis's experimental setup, including the design of the oscillator, fibre coupling, grating spectrometer, and noise measurement techniques. The steps are discussed in the order of the beam path, starting from the laser cavity and ending in the detection setup.
 

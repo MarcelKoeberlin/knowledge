@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/3-magneto-optics/","hide":"true","updated":"2026-06-07T19:28:58.282+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/3-magneto-optics/","hide":"true","updated":"2026-06-07T20:45:06.774+02:00"}
 ---
 
 	 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -12,6 +12,8 @@
 ---
 # 3 Magneto-Optics
 [ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
+
+**Main thread.** Magneto-optics studies how magnetic fields and magnetic order change optical propagation. The key distinction is geometry: Faraday, Voigt, and Kerr effects differ by the relative orientation of propagation, magnetisation, and reflection.
 
 All effects discussed up to the [[Notes/Crystal Optics in Intense Light Fields/2 Light Polarisation and Dispersion#2 Light Polarisation and Dispersion\|previous chapter]] primarily involved the interaction of the electric field of light with the electric dipole moments within materials. In a simplified manner, these dipole moments arise from the displacement of charges, and their interaction with light can be understood by considering transitions between electronic ground and excited states.
 

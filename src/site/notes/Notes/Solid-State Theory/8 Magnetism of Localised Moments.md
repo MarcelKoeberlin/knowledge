@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/solid-state-theory/8-magnetism-of-localised-moments/","hide":"true","updated":"2025-05-31T16:07:15.463+02:00"}
+{"dg-publish":true,"permalink":"/notes/solid-state-theory/8-magnetism-of-localised-moments/","hide":"true","updated":"2026-06-07T20:41:04.419+02:00"}
 ---
 
 Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|chapter selection]]==.
@@ -14,6 +14,8 @@ Jump back to ==[[Notes/Solid-State Theory/Solid-State Theory#Table of Contents\|
 ---
 # 8 Magnetism of Localised Moments
 [ ](/img/user/Courses/2.%20Semester/Solid%20State%20Theory/Script.pdf)
+
+**Main thread.** Local-moment magnetism appears when charge motion is suppressed but spin degrees of freedom remain active. The Hubbard model captures the competition between hopping $t$ and on-site repulsion $U$, and in the Mott-insulating limit virtual hopping produces spin exchange.
 
 Up to now, we have mostly assumed that the interaction between electrons leads to secondary effects. This was, essentially, the message of the Fermi liquid theory, the standard model of condensed matter physics. There, the interactions of course renormalise the properties of a metal, but their description is still possible by using a language of nearly independent fermionic quasiparticles with a few modifications. Even in connection with the magnetism of itinerant electrons, where interactions proved to be crucial, the description was in terms of extended Bloch states. Many properties were determined by the band structure of the electrons in the lattice; the electrons were preferably described in $k$-space.
 

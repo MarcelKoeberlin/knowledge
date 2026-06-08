@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/4-light-matter-interaction/","hide":"true","updated":"2025-06-02T15:52:06.000+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/4-light-matter-interaction/","hide":"true","updated":"2026-06-07T20:45:06.844+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -14,6 +14,8 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 # 4 Light Matter Interaction
 [ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
+
+**Main thread.** The microscopic view replaces phenomenological tensors by transition matrix elements. Electric-dipole, magnetic-dipole, and electric-quadrupole couplings appear from expanding the light field, and their selection rules explain many macroscopic optical effects.
 
 To investigate light-matter interaction rigorously, a quantum mechanical treatment is necessary. We describe an undisturbed physical system (such as an atom or a unit cell in a crystal) by a Hilbert space spanned by a set of mutually orthogonal eigenstates $|n\rangle$ of the unperturbed Hamiltonian $\hat{H}_0$. The energy eigenvalues are given by:
 $$

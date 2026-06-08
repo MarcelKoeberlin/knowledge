@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/10-waveguides/","hide":"true","updated":"2025-06-04T15:34:05.304+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/10-waveguides/","hide":"true","updated":"2026-06-07T20:43:12.783+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -14,6 +14,8 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 # 10 Waveguides
 [ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
+
+**Main thread.** Waveguides turn transverse boundary conditions into discrete propagation modes. Whether the guide is metallic, dielectric, planar, integrated, or fibre-based, the central quantities are the propagation constant, cutoff, confinement, dispersion, and loss.
 
 Waveguides are devices that transmit and guide light and other electromagnetic radiation along a prescribed path. In contrast to traditional free-space optics, this guidance occurs within or along a material structure. Waveguides offer the advantage of alignment robustness and, particularly in the case of optical fibres, the ability to circumvent obstructions. They are used extensively in telecommunication over long distances, and also in biomedical applications where light needs to be delivered to or collected from difficult-to-access places. Waveguides are key components of 'integrated optics'. They come in many different forms, as the following figure illustrates:
 

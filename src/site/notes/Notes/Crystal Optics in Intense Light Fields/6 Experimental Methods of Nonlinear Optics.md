@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/6-experimental-methods-of-nonlinear-optics/","hide":"true","updated":"2025-06-04T15:33:55.625+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/6-experimental-methods-of-nonlinear-optics/","hide":"true","updated":"2026-06-07T20:45:06.984+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -14,6 +14,8 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 # 6 Experimental Methods of Nonlinear Optics
 [ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Notes.pdf) [ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
+
+**Main thread.** Nonlinear optical experiments are intensity-limited and phase-sensitive. The practical questions are how to generate strong coherent fields, tune their wavelength, preserve overlap and coherence, and separate the nonlinear signal from the fundamental light.
 
 As already mentioned in the [[Notes/Crystal Optics in Intense Light Fields/5 Nonlinear Optics\|previous chapter]], observing nonlinear effects requires high intensity fields. This, in turn, requires high intensity light sources to compensate for the difference in the first and second order susceptibility $\chi^{(1)}$ and $\chi^{(2)},$ the respective susceptibility tensors in the Taylor expansion of $P_i(\omega).$ In the following, three light sources are compared regarding their intensity:
 

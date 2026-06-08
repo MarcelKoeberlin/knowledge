@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/3-reflection-and-transmission-at-interfaces/","hide":"true","updated":"2026-06-07T19:30:24.051+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/3-reflection-and-transmission-at-interfaces/","hide":"true","updated":"2026-06-07T20:42:28.333+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -14,6 +14,8 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 
 ---
 # 3 Reflection and Transmission at Interfaces
+**Main thread.** Interfaces translate Maxwell boundary conditions into observable amplitudes. Fresnel coefficients, Brewster's angle, total internal reflection, and evanescent waves are all consequences of enforcing tangential-field continuity while conserving the parallel wave vector.
+
 ## 3.1 Boundary Conditions for Isotropic Media
 [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/01_Introduction_and_theoretical_foundation.pdf)
 

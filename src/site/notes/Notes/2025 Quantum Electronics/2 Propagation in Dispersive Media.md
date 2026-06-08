@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/2-propagation-in-dispersive-media/","hide":"true","updated":"2025-06-04T15:34:02.492+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/2-propagation-in-dispersive-media/","hide":"true","updated":"2026-06-07T20:46:58.358+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -19,6 +19,8 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 # 2 Propagation in Dispersive Media
 [ ](/img/user/Notes/2025%20Quantum%20Electronics/01_Introduction_and_theoretical_foundation.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
+
+**Main thread.** Dispersion is the statement that a medium has memory. Once the polarisation depends on frequency, the real and imaginary parts of the response are connected by causality, and pulses acquire group delay, broadening, and absorption.
 
 Thinking back to [[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.4 Macroscopic Approximation\|approximation 4 in Chapter 1]], we assumed that the polarisation and magnetisation depend linearly on the instantaneous values of the electric and magnetic fields. However, as we noted, this is only true for slow changes in the fields with time and cannot be entirely true for rapidly oscillating fields. In other words, we assumed the system (material) to have no [[Notes/Signals and Systems/1 Signals and Systems#1.9.1 Memory\|memory]]. This assumption implies an absence of dispersion, as we will see soon. While it seems obvious that the polarisation and magnetisation cannot depend on _future_ field values ([[Notes/Signals and Systems/1 Signals and Systems#1.9.3 Causality\|causality]]), real materials do possess some limited memory of past fields:
 $$
@@ -121,7 +123,7 @@ Both functions are plotted in the next figure, assuming weak damping ($\gamma \l
 ![Attachments/Notes/2025 Quantum Electronics/2 Propagation in Dispersive Media/QE_script.webp|700](/img/user/Attachments/Notes/2025%20Quantum%20Electronics/2%20Propagation%20in%20Dispersive%20Media/QE_script.webp)[ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf)
 
 For high frequencies ($\omega \gg \omega_0$), the susceptibility $\chi_e'(\omega)$ becomes small and negative, approaching zero, while $\chi_e''(\omega)$ also approaches zero. The polarisation is out of phase with the electric field by nearly $\pi$ if $\chi_e' < 0$.
-At resonance ($\omega=\omega_0$), the real part $\chi_e'(\omega_0)=0$, and the susceptibility is purely imaginary: $\chi_e(\omega_0) = -i \chi_0 \frac{\omega_0}{\gamma}$ from the original formula or $i \chi_0 \frac{\omega_0}{\gamma}$ with the sign correction for $\chi_e''$. If $\chi_e'' > 0$, then $\chi_e(\omega_0) = i \chi_0 \frac{\omega_0}{\gamma}$. The polarisation is phase-shifted by $\pi/2$ relative to the electric field. The peak magnitude of $\chi_e''(\omega_0)$ is $Q\chi_0$, where $Q=\omega_0/\gamma$ is the quality factor of the resonator. It quantifies how much energy is stored in the resonator compared to the energy lost per oscillation cycle. Reducing the damping $\gamma$ makes the resonance peak narrower and higher.
+At resonance ($\omega=\omega_0$), the real part $\chi_e'(\omega_0)=0$, and the susceptibility is purely imaginary. With the sign convention used here and $\chi_e''>0$, one obtains $\chi_e(\omega_0)=i\chi_0\omega_0/\gamma$. The polarisation is phase-shifted by $\pi/2$ relative to the electric field. The peak magnitude of $\chi_e''(\omega_0)$ is $Q\chi_0$, where $Q=\omega_0/\gamma$ is the quality factor of the resonator. It quantifies how much energy is stored in the resonator compared to the energy lost per oscillation cycle. Reducing the damping $\gamma$ makes the resonance peak narrower and higher.
 The same general arguments apply to magnetisation density, but at optical frequencies, magnetic resonances ($\chi_m(\omega)$) are often negligible for most materials.
 
 Very often, real systems can be represented as collections of resonators with a distribution of resonance frequencies $\omega_0^{(j)}$ and damping factors $\gamma^{(j)}$:

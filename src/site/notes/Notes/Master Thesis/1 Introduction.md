@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/master-thesis/1-introduction/","hide":"true","updated":"2025-06-04T14:36:09.819+02:00"}
+{"dg-publish":true,"permalink":"/notes/master-thesis/1-introduction/","hide":"true","updated":"2026-06-07T20:45:43.524+02:00"}
 ---
 
 Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter selection]]==.
@@ -15,6 +15,8 @@ Jump back to ==[[Notes/Master Thesis/Master Thesis#Table of contents\|chapter se
 
 ---
 # 1 Introduction
+
+**Main thread.** The thesis motivation is to combine high-power thin-disk laser operation with low-noise diagnostics. The central experimental target is not only generating a stable high-power pulse train, but also creating a measurement path sensitive enough to infer very low shot-noise levels after nonlinear spectral broadening.
 
 ## 1.1 History of Lasers and Modelocking
 

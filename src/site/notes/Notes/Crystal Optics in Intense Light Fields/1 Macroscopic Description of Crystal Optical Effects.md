@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/1-macroscopic-description-of-crystal-optical-effects/","hide":"true","updated":"2026-06-07T19:28:58.281+02:00"}
+{"dg-publish":true,"permalink":"/notes/crystal-optics-in-intense-light-fields/1-macroscopic-description-of-crystal-optical-effects/","hide":"true","updated":"2026-06-07T20:45:06.635+02:00"}
 ---
 
 Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields#Table of Contents\|chapter selection]]==.
@@ -17,6 +17,8 @@ Jump back to ==[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in 
 ---
 # 1 Macroscopic Description of Crystal Optical Effects
 [ ](/img/user/Notes/Crystal%20Optics%20in%20Intense%20Light%20Fields/PDFs/Script%20(Unofficial).pdf)
+
+**Main thread.** Crystal optics is organised by symmetry. Macroscopic tensors encode which material responses are allowed, and group operations provide a systematic way to eliminate tensor components that would violate the symmetry of the crystal.
 
 There are two main approaches to describe the physical properties and behaviour of light within macroscopic crystals: the macroscopic and the microscopic approach.
 

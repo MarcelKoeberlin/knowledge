@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"physics","permalink":"/physics/","hide":"true","dgShowBacklinks":"false","dgShowLocalGraph":false,"dgShowInlineTitle":false,"updated":"2026-06-08T00:00:00.000+02:00"}
+{"dg-publish":true,"dg-path":"physics","permalink":"/physics/","hide":"true","dgShowBacklinks":"false","updated":"2026-06-08T16:20:56.799+02:00"}
 ---
 
 <section class="physics-index">

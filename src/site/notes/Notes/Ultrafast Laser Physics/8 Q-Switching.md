@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/8-q-switching/","hide":"true","updated":"2026-06-07T20:12:14.319+02:00"}
+{"dg-publish":true,"permalink":"/notes/ultrafast-laser-physics/8-q-switching/","hide":"true","updated":"2026-06-07T20:12:14.318+02:00"}
 ---
 
 Jump back to ==[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics#Table of Contents\|chapter selection]]==.

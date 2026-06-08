@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/photography/travels/2025-late-autumn-in-the-highlands-scotland/","hide":"true","updated":"2026-06-07T17:17:23.918+02:00"}
+{"dg-publish":true,"permalink":"/photography/travels/2025-late-autumn-in-the-highlands-scotland/","hide":"true","updated":"2026-06-07T17:17:23.917+02:00"}
 ---
 
 Jump back to [[Photography/Photography\|selection]].

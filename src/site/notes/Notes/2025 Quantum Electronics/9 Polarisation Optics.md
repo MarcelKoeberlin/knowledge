@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/9-polarisation-optics/","hide":"true","updated":"2026-06-07T19:28:58.279+02:00"}
+{"dg-publish":true,"permalink":"/notes/2025-quantum-electronics/9-polarisation-optics/","hide":"true","updated":"2026-06-07T20:43:12.712+02:00"}
 ---
 
 Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Contents\|chapter selection]]==.
@@ -17,6 +17,8 @@ Jump back to ==[[Notes/2025 Quantum Electronics/Quantum Electronics#Table of Con
 ---
 # 9 Polarisation Optics
 [ ](/img/user/Notes/2025%20Quantum%20Electronics/QE_script.pdf) [ ](/img/user/Notes/2025%20Quantum%20Electronics/05_Devices_and_applications.pdf)
+
+**Main thread.** Polarisation optics tracks the vector nature of light. Jones vectors describe coherent amplitudes, Stokes vectors describe measurable intensities, and anisotropic or magneto-optic materials transform polarisation through birefringence, dichroism, and non-reciprocal rotation.
 
 As described [[Notes/2025 Quantum Electronics/1 Electromagnetic Theory of Light#1.7 Polarisation\|earlier]], a basic property of light is its polarisation. There are several different ways to describe the polarisation state of light. Here we will discuss three of the more common formalisms: the Poincaré sphere, the Stokes parameters, and the Jones vector formalism.
 
