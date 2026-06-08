@@ -1,37 +1,42 @@
 ---
-{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":true,"updated":"2026-06-07T20:23:13.758+02:00"}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/home/","hide":"true","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":false,"dgShowInlineTitle":false,"updated":"2026-06-08T00:00:00.000+02:00"}
 ---
 
-Hi there!
+<div class="ascii-rain" aria-hidden="true">
+  <span>010110100111001010010111</span>
+  <span>110010010101101001110010</span>
+  <span>001101011100101001011101</span>
+  <span>101001110010100101110011</span>
+  <span>011100101001011101001010</span>
+  <span>100101110011010010101110</span>
+  <span>111001010010111001101001</span>
+  <span>010101101001110010100101</span>
+  <span>001011101001010110100111</span>
+  <span>101110011010010101110010</span>
+  <span>010010111001101001010111</span>
+  <span>110100101011100110100101</span>
+  <span>001101001010111001101001</span>
+  <span>101001011100110100101011</span>
+  <span>011010010101110011010010</span>
+  <span>100111001010010111001101</span>
+  <span>010010111001101001010111</span>
+  <span>110100101011100110100101</span>
+  <span>101010011100101001011100</span>
+  <span>001011010011101001010110</span>
+  <span>111001101001010111001010</span>
+  <span>010110011010010101110011</span>
+  <span>100101001011100110100101</span>
+  <span>011100101001011010011101</span>
+  <span>110010100101110011010010</span>
+  <span>001010111001101001010111</span>
+</div>
 
-Welcome to my personal website - a space where I share everything I consider worth publishing. This site serves as a "digital garden", but also as an image archive for 
-photos taken during one of my hikes. 
-
-This is the perfect place to start reading up on some topics:
-
-| **Notes**                                                                                                                           | **Progress**            |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| **[[Notes/Attosecond Physics/Attosecond Physics\|Attosecond Physics]]**                                                             | ✅                       |
-| **[[Notes/Plasmonics/Plasmonics\|Plasmonics]]**                                                                                     | ✅                       |
-| **[[Notes/Solid-State Theory/Solid-State Theory\|Solid-State Theory]]**                                                             | ✅                       |
-| **[[Notes/2025 Quantum Electronics/Quantum Electronics\|Quantum Electronics]]**                                                     | ✅                       |
-| **[[Notes/Master Thesis/Master Thesis\|Master Thesis]]**                                                                            | ✅                       |
-| **[[Notes/Crystal Optics in Intense Light Fields/Crystal Optics in Intense Light Fields\|Crystal Optics in Intense Light Fields]]** | ✅                       |
-| **[[Notes/Signals and Systems/Signals and Systems\|Signals and Systems]]**                                                          | ✅ (6+ pictures missing) |
-| **[[Notes/Ultrafast Laser Physics/Ultrafast Laser Physics\|Ultrafast Laser Physics]]**                                              | ✅ (5+ pictures missing) |
-| **[[Notes/Quantum Optics/Quantum Optics\|Quantum Optics]]**                                                                         | Chapter 2               |
-
-Here you can find pictures taken by me: [[Photography/Photography\|Photography]].
-Here you can find an experimental chord viewer for MIDI inputs: [Chords](/chords/).
-
----
-I’ve always preferred making my own notes for studying, even when the official lecture notes were well-written. I held my notes to a high standard – initially, just enough for me to pass the exam. Over time, that standard grew, and eventually, some of my friends started using them too. When I arrived at ETH, I was pleased to find the [VMP](https://exams.vmp.ethz.ch/) website, which hosts old exam protocols and lecture notes. I decided to upload my own notes there, hoping they might be useful to someone.
-
-So, I began converting my handwritten notes to Markdown, the format this website uses. It's a fair bit of work, and as my standards for quality kept rising, I decided to start creating some notes completely from scratch. It might sound a bit strange, but I quickly discovered that while the physics itself is fascinating, I genuinely enjoy the act of writing good, clear notes. It started with my "Ultrafast Laser Physics" notes, and the content just grew from there. 
-
-I genuinely hope this website and its content are useful to you. If so, I'd be delighted to hear any feedback on the material, questions you might have, or your thoughts on the website itself! :)
-
-**Marcel**
-
----
-_Faithless is he that says farewell when the road darkens._
+<section class="home-shell">
+  <h1>Marcel Koeberlin</h1>
+  <p class="home-intro">Physics student and note-maker interested in ultrafast light, condensed matter, photography, and small tools that make learning more pleasant.</p>
+  <nav class="home-links" aria-label="Primary sections">
+    <a href="/physics/">Physics</a>
+    <a href="/photography/">Photography</a>
+    <a href="/chords/">Chords</a>
+  </nav>
+</section>
